@@ -20,6 +20,8 @@ import os
 import re
 import sys
 import time
+import urllib.error
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -65,12 +67,24 @@ def main():
         print("THREADS_WORKER_URL 미설정 — 패널 수집 건너뜀", file=sys.stderr)
         return
 
+    key = os.environ.get("THREADS_WORKER_KEY", "")
+    if not key:
+        print("THREADS_WORKER_KEY 미설정 — Worker 가 401 을 돌려줄 것이다", file=sys.stderr)
+
     handles = ",".join(h for h, *_ in PANEL)
     url = "%s/?h=%s&debug=1" % (worker, urllib.parse.quote(handles))
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "signal-actions/1.0"})
+        # 키는 쿼리스트링이 아니라 헤더로 보낸다 — URL 은 로그에 남는다
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "signal-actions/1.0",
+            "Authorization": "Bearer " + key,
+        })
         with urllib.request.urlopen(req, timeout=180) as r:
             d = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        print("Worker %s: %s" % (e.code, e.read()[:160].decode("utf-8", "replace")),
+              file=sys.stderr)
+        sys.exit(0)
     except Exception as e:
         print("Worker 호출 실패: %s" % e, file=sys.stderr)
         sys.exit(0)          # 패널 실패가 전체 워크플로를 죽이지 않게
@@ -126,5 +140,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import urllib.parse
     main()

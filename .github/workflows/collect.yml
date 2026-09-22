@@ -72,6 +72,8 @@ jobs:
         continue-on-error: true
         env:
           WORKER: ${{ secrets.THREADS_WORKER_URL }}
+          THREADS_WORKER_URL: ${{ secrets.THREADS_WORKER_URL }}
+          THREADS_WORKER_KEY: ${{ secrets.THREADS_WORKER_KEY }}
         run: python scripts/fetch_panel.py
 
       - name: Commit

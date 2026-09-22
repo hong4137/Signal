@@ -11,6 +11,14 @@
  *   막히면 로그인 벽이 뜨고 본문이 안 나온다.
  *
  * 사용: GET /?h=jojoldu  또는  /?h=a,b,c  (쉼표로 여러 계정)
+ *       Authorization: Bearer <ACCESS_KEY>   ← 필수
+ *
+ * 접근 보호
+ *   workers.dev 주소는 공개다. 열어두면 남이 반복 호출해
+ *   무료 브라우저 한도(하루 10분)를 태울 수 있다.
+ *   ACCESS_KEY 시크릿이 없으면 **아무도** 못 쓴다(fail closed).
+ *     npx wrangler secret put ACCESS_KEY
+ *   로컬 `wrangler dev` 에서는 .dev.vars 에 ACCESS_KEY=... 로 둔다(커밋 금지).
  */
 import puppeteer from "@cloudflare/puppeteer";
 
@@ -18,11 +26,38 @@ const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
   "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36";
 
+const MAX_HANDLES = 6;
+
+/** 길이 노출을 줄이려 전체를 훑는 비교 */
+function safeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string") return false;
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    if (request.method !== "GET") {
+      return json({ ok: false, error: "GET 만 허용" }, 405);
+    }
+
+    // ── 접근 검사 ── 시크릿이 없으면 잠긴 상태로 둔다
+    if (!env.ACCESS_KEY) {
+      return json({ ok: false, error: "ACCESS_KEY 미설정 — wrangler secret put ACCESS_KEY" }, 503);
+    }
+    const bearer = (request.headers.get("authorization") || "")
+      .replace(/^Bearer\s+/i, "").trim();
+    const given = bearer || url.searchParams.get("k") || "";
+    if (!safeEqual(given, env.ACCESS_KEY)) {
+      return json({ ok: false, error: "unauthorized" }, 401);
+    }
+
     const handles = (url.searchParams.get("h") || "jojoldu")
-      .split(",").map((s) => s.trim()).filter(Boolean).slice(0, 6);
+      .split(",").map((s) => s.trim()).filter(Boolean).slice(0, MAX_HANDLES);
     const debug = url.searchParams.get("debug") === "1";
 
     let browser;
