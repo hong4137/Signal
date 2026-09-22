@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "signal-threads",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // Browser Rendering — Workers 안에서 실제 크롬을 띄운다.
+  // 무료 플랜 하루 10분·동시 3개. 계정 5개×5초=25초/회 이므로 여유가 크다.
+  "browser": {
+    "binding": "BROWSER"
+  }
+}

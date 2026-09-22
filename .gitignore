@@ -1,0 +1,22 @@
+# 의존성
+node_modules/
+cf-threads/node_modules/
+cf-threads/.wrangler/
+__pycache__/
+*.pyc
+
+# 로그·임시
+*.log
+dev.log
+_kr_pool.json
+embed.json
+th.html
+rss_probe.xml
+
+# ⚠️ 키는 절대 커밋하지 않는다. Actions Secrets 로만 넣는다.
+.env
+*.key
+*secret*
+
+# 목업(데이터 내장 스냅샷) — index.html 이 실물이다
+mockup.html
