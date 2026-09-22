@@ -1,0 +1,84 @@
+name: Signal collect
+
+# 하루 3회 — 22시 판이 핵심이다(미국 오전이 한국 밤).
+# 브리핑 sync-drive.yml 과 같은 패턴. PC 가 꺼져 있어도 돈다.
+on:
+  schedule:
+    - cron: '0 23 * * *'   # KST 08:00
+    - cron: '0 5 * * *'    # KST 14:00
+    - cron: '0 13 * * *'   # KST 22:00  ← 핵심 판
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '수집 윈도우(일)'
+        required: false
+        default: '3'
+      min_comments:
+        description: 'HN 댓글 하한'
+        required: false
+        default: '120'
+      skip_enrich:
+        description: '1이면 Gemini 보강 생략'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: signal-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── 1. 수집 — 순수 HTTP. 데이터센터 IP 에서 잘 돈다 ──
+      - name: Collect
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub 검색 레이트리밋 완화
+        run: |
+          python collect.py \
+            --days "${{ github.event.inputs.days || '3' }}" \
+            --min-comments "${{ github.event.inputs.min_comments || '120' }}" \
+            --top 30
+
+      # ── 2. 보강 — 한국어 요약 + 국내 매칭 ──
+      #    키가 없으면 조용히 건너뛴다(수집 결과는 그대로 남는다)
+      - name: Enrich
+        if: ${{ github.event.inputs.skip_enrich != '1' }}
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY:       ${{ secrets.GEMINI_API_KEY }}
+          NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "GEMINI_API_KEY 미설정 — 보강 건너뜀"; exit 0
+          fi
+          python enrich.py --limit 12 --batch 3 --max-calls 12
+
+      # ── 3. Threads 패널 — Cloudflare Worker 호출 ──
+      #    Worker 가 브라우저를 대신 띄운다. Actions 에는 브라우저가 필요 없다.
+      - name: Threads panel
+        if: ${{ secrets.THREADS_WORKER_URL != '' }}
+        continue-on-error: true
+        env:
+          WORKER: ${{ secrets.THREADS_WORKER_URL }}
+        run: python scripts/fetch_panel.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data panel_kr.json
+          git diff --staged --quiet || git commit -m "Signal $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase origin main || true
+          git push
