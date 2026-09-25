@@ -99,7 +99,7 @@ export default {
             walled,
             // 한글 문장이 있으면 본문이 그려진 것이다
             ko: (body.match(/[가-힣]{4,}/g) || []).length,
-            text: body.slice(0, 2200),
+            text: body.slice(0, 9000),   // 글 여러 편이 들어가야 한다
           };
         });
 
@@ -114,7 +114,7 @@ export default {
           verdict: data.walled ? "BLOCKED(로그인 벽)"
                  : data.ko > 20 ? "OK(본문 렌더됨)"
                  : "UNCLEAR",
-          text: debug ? data.text : data.text.slice(0, 700),
+          text: debug ? data.text : data.text.slice(0, 900),
         });
         await page.close();
       }

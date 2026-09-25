@@ -39,23 +39,75 @@ MAX_POSTS = 3
 MIN_LEN = 40          # 이보다 짧은 줄은 UI 부스러기다
 
 
+# 글 한 편은 여러 줄로 쪼개져 온다. 줄 단위로 자르면 조각만 남고
+# 짧은 줄은 통째로 사라진다(실측: integer.han 전멸).
+# 대신 **핸들 줄이 각 글의 시작**이라는 구조를 경계로 쓴다.
+#
+#   jojoldu          ← 글 시작
+#   Herdr            ← 주제 태그(선택)
+#   6d               ← 시각
+#   요즘 AI Agent…    ← 본문 (여러 줄)
+#   18 / 5 / 1 / 2   ← 반응 수
+#   jojoldu          ← 다음 글
+
+_TIME = re.compile(r"^(\d+[dhmwsy]|\d+\s*(초|분|시간|일|주|개월|년)\s*전?|"
+                   r"\d{4}-\d{2}-\d{2}|방금|just now|now)$", re.I)
+_NUM = re.compile(r"^[\d,]+(\.\d+)?[KkMm]?$")
+_CHROME = re.compile(
+    r"^(로그인|팔로우|팔로워|언급|스레드|답글|미디어|리포스트|고정됨|번역 보기|"
+    r"Follow|Mention|Threads|Replies|Media|Reposts|Pinned|Translate|"
+    r"Log in|Log in to|© ?\d{4}|Threads 약관|개인정보처리방침|쿠키|문제 신고|"
+    r"Instagram으로|더 확인해보세요|Say more)")
+
+
 def parse_posts(handle, text):
-    """Worker 가 준 innerText 에서 글만 추려낸다.
-    프로필 머리말·탭 이름·푸터를 걷어내고 문장만 남긴다."""
-    skip = re.compile(
-        r"^(로그인|팔로우|팔로워|언급|스레드|답글|미디어|리포스트|고정됨|"
-        r"Follow|Mention|Threads|Replies|Media|Reposts|Pinned|"
-        r"Log in|© \d{4}|Threads 약관|개인정보처리방침|쿠키|문제 신고|"
-        r"Instagram으로|\d+ followers)")
+    """innerText 를 글 단위로 복원한다."""
+    lines = [l.strip() for l in (text or "").split("\n")]
+
+    # 1) 프로필 머리말 제거 — 'followers/팔로워' 줄까지가 헤더다
+    for i, l in enumerate(lines[:40]):
+        if re.search(r"(followers|팔로워)", l):
+            lines = lines[i + 1:]
+            break
+
+    # 2) 핸들 줄을 경계로 블록 분할
+    blocks, cur = [], None
+    for l in lines:
+        if l == handle:
+            if cur:
+                blocks.append(cur)
+            cur = []
+        elif cur is not None:
+            cur.append(l)
+    if cur:
+        blocks.append(cur)
+
+    # 3) 블록마다 앞머리(주제·시각)·꼬리(반응 수)를 떼고 본문을 잇는다
     out, seen = [], set()
-    for ln in (text or "").split("\n"):
-        ln = ln.strip()
-        if len(ln) < MIN_LEN or skip.match(ln) or ln == handle:
+    for b in blocks:
+        react, body, at = 0, [], ""
+        for l in b:
+            if not l or _CHROME.match(l):
+                continue
+            if _TIME.match(l):
+                at = at or l
+                continue
+            if _NUM.match(l):
+                # 본문 뒤에 붙는 숫자만 반응 수로 본다
+                if body:
+                    try:
+                        react = max(react, int(l.replace(",", "")))
+                    except ValueError:
+                        pass
+                continue
+            if len(l) <= 12 and not body:
+                continue          # 주제 태그("Herdr", "소프트뱅크 해커톤")
+            body.append(l)
+        t = " ".join(body).strip()
+        if len(t) < MIN_LEN or t in seen:
             continue
-        if ln in seen:
-            continue
-        seen.add(ln)
-        out.append(ln)
+        seen.add(t)
+        out.append({"t": t[:600], "at": at, "react": react})
         if len(out) >= MAX_POSTS:
             break
     return out
@@ -107,7 +159,8 @@ def main():
         accounts.append({
             "h": h, "n": n, "tier": tier, "role": role,
             "bio": "", "followers": "",
-            "posts": [{"at": "", "t": p, "react": 0, "link": ""} for p in posts],
+            "posts": [{"at": p["at"], "t": p["t"], "react": p["react"], "link": ""}
+                      for p in posts],
         })
 
     payload = {
