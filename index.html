@@ -1,267 +1,306 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Signal Layer</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Nanum+Myeongjo:wght@400;700&display=swap">
 <style>
+/* ─────────────────────────────────────────────────────────────
+   Signal Layer — 관측소
+   배경은 장식이 아니라 데이터다. 14일 담론량을 능선으로 깔고,
+   그 위에서 읽는다. 수집이 돌면 배경도 바뀐다.
+   ───────────────────────────────────────────────────────────── */
 :root{
-  --paper:#F2F4F6; --surface:#FFFFFF; --ink:#161A1E; --ink-2:#39424B;
-  --muted:#5C6874; --rule:#DCE1E6; --rule-soft:#E9EDF1;
-  --heat:#C2491F; --heat-soft:#C2491F1F;
-  --weight:#1A5FB4; --weight-soft:#1A5FB41A;
+  --ground:#F1F3F5; --panel:#FFFFFF; --panel-2:#F7F8FA;
+  --ink:#10141A; --ink-2:#39424D; --muted:#6A7482;
+  --rule:#D9DEE4; --rule-2:#E9EDF1;
+  --heat:#C2491F; --heat-15:#C2491F26; --heat-08:#C2491F14;
+  --weight:#1A5FB4; --weight-15:#1A5FB426; --weight-08:#1A5FB412;
+  --ridge:#1A5FB4; --ridge-op:.10; --glow:0 0 0 rgba(0,0,0,0);
+  --serif:"Instrument Serif","Nanum Myeongjo",Georgia,serif;
+  --myeong:"Nanum Myeongjo","Instrument Serif",serif;
   --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --cond:"IBM Plex Sans Condensed","IBM Plex Sans KR",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#14171A; --surface:#1B1F24; --ink:#E9ECEF; --ink-2:#C2C9D0;
-    --muted:#95A0AB; --rule:#272C32; --rule-soft:#21262B;
-    --heat:#D2603A; --heat-soft:#D2603A26;
-    --weight:#3D7FCC; --weight-soft:#3D7FCC26;
+    --ground:#0C0F13; --panel:#141920; --panel-2:#11161C;
+    --ink:#EEF1F4; --ink-2:#BFC7D0; --muted:#818C99;
+    --rule:#212832; --rule-2:#1A2029;
+    --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
+    --weight:#3D7FCC; --weight-15:#3D7FCC2E; --weight-08:#3D7FCC17;
+    --ridge:#3D7FCC; --ridge-op:.22; --glow:0 0 22px rgba(210,96,58,.45);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#14171A; --surface:#1B1F24; --ink:#E9ECEF; --ink-2:#C2C9D0;
-  --muted:#95A0AB; --rule:#272C32; --rule-soft:#21262B;
-  --heat:#D2603A; --heat-soft:#D2603A26;
-  --weight:#3D7FCC; --weight-soft:#3D7FCC26;
+  --ground:#0C0F13; --panel:#141920; --panel-2:#11161C;
+  --ink:#EEF1F4; --ink-2:#BFC7D0; --muted:#818C99;
+  --rule:#212832; --rule-2:#1A2029;
+  --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
+  --weight:#3D7FCC; --weight-15:#3D7FCC2E; --weight-08:#3D7FCC17;
+  --ridge:#3D7FCC; --ridge-op:.22; --glow:0 0 22px rgba(210,96,58,.45);
 }
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);
-  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
-@media(max-width:560px){.wrap{padding-inline:16px;padding-block:20px 48px}}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-weight:400;font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:24px;padding-block:0 80px;
+  position:relative;z-index:1}
+@media(max-width:600px){.wrap{padding-inline:16px}}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
-.eyebrow{font-family:var(--cond);font-weight:600;font-size:11.5px;letter-spacing:.11em;
-  text-transform:uppercase;color:var(--muted)}
 a{color:inherit}
+::selection{background:var(--heat-15)}
 
-/* ── header ── */
-.masthead{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 24px;
-  padding-bottom:14px;border-bottom:2px solid var(--ink)}
-.masthead h1{font-family:var(--cond);font-weight:600;font-size:34px;letter-spacing:-.01em;
-  margin:0;line-height:1}
-.stamp{font-family:var(--mono);font-size:12px;color:var(--muted);margin-left:auto;
-  display:flex;gap:14px;flex-wrap:wrap}
-.stamp b{font-weight:500;color:var(--ink-2)}
-.layers{display:flex;flex-wrap:wrap;gap:0;margin-top:0;border-bottom:1px solid var(--rule)}
-.layer{padding:9px 16px 9px 0;margin-right:16px;border-right:1px solid var(--rule);
-  display:flex;align-items:baseline;gap:7px}
-.layer:last-child{border-right:0}
-.layer .n{font-family:var(--mono);font-size:15px;font-weight:600}
-.layer .k{font-family:var(--cond);font-size:11.5px;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--muted)}
-.layer.off .n,.layer.off .k{opacity:.45}
+/* ── 배경 능선 — 14일 담론량 ── */
+#ridge{position:absolute;inset:0 0 auto 0;height:520px;z-index:0;pointer-events:none;
+  overflow:hidden;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 42%,transparent 96%);
+  mask-image:linear-gradient(180deg,#000 0%,#000 42%,transparent 96%)}
+#ridge svg{width:100%;height:100%;display:block}
 
-/* ── read ── */
-.read{margin:26px 0 8px;font-size:19px;line-height:1.5;max-width:60ch;
-  font-weight:400;text-wrap:balance}
-.read em{font-style:normal;font-weight:600;color:var(--heat);
-  box-shadow:inset 0 -.4em 0 var(--heat-soft)}
-.read b{font-weight:600}
+/* ── masthead ── */
+header{padding-block:56px 26px}
+@media(max-width:600px){header{padding-block:34px 18px}}
+.brand{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(46px,8.4vw,86px);
+  line-height:.86;letter-spacing:-.018em;margin:0}
+h1 em{font-style:italic;color:var(--heat)}
+.tagline{font-family:var(--myeong);font-size:14px;color:var(--muted);
+  padding-bottom:9px;letter-spacing:.02em}
+.stampline{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;
+  padding-top:13px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11.5px;color:var(--muted);align-items:baseline}
+.stampline b{color:var(--ink-2);font-weight:500}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--heat);
+  display:inline-block;margin-right:7px;vertical-align:1px;box-shadow:var(--glow)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-left:auto}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;
+  padding:3px 9px;border:1px solid var(--rule);border-radius:999px;color:var(--muted)}
+.chip b{color:var(--ink-2);font-weight:600}
+.chip.off{opacity:.42}
+
+/* ── 판독 ── */
+.read{font-family:var(--myeong);font-size:clamp(21px,2.9vw,30px);line-height:1.52;
+  margin:42px 0 0;max-width:24em;text-wrap:balance;font-weight:400;color:var(--ink)}
+.read em{font-style:normal;color:var(--heat);
+  background:linear-gradient(transparent 62%,var(--heat-15) 62%)}
+.read b{font-weight:700}
 
 /* ── section ── */
-section{margin-top:40px}
-.shead{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
-.shead h2{font-family:var(--cond);font-weight:600;font-size:15px;letter-spacing:.09em;
-  text-transform:uppercase;margin:0}
-.shead .note{font-size:12.5px;color:var(--muted)}
-.rule{height:1px;background:var(--rule);margin:8px 0 18px}
+section{margin-top:72px}
+@media(max-width:600px){section{margin-top:52px}}
+.shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  padding-bottom:11px;border-bottom:1px solid var(--ink)}
+.shead h2{font-family:var(--myeong);font-weight:700;font-size:19px;margin:0;
+  letter-spacing:.01em}
+.shead .idx{font-family:var(--mono);font-size:11px;color:var(--muted);
+  letter-spacing:.14em}
+.shead .note{font-size:12.5px;color:var(--muted);margin-left:auto;text-align:right}
+@media(max-width:560px){.shead .note{margin-left:0;text-align:left;width:100%}}
 
-/* ── scatter ── */
-.plotwrap{position:relative;background:var(--surface);border:1px solid var(--rule);
-  border-radius:3px;padding:14px 14px 8px}
+/* ── 관측: 산포도 ── */
+.obs{margin-top:22px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:2px;padding:20px 20px 12px;position:relative}
 svg{display:block;width:100%;height:auto;max-width:100%}
-.tip{position:absolute;pointer-events:none;opacity:0;transition:opacity .12s;
-  background:var(--ink);color:var(--paper);padding:7px 10px;border-radius:3px;
-  font-size:12.5px;line-height:1.4;max-width:250px;z-index:5}
-.tip .m{font-family:var(--mono);font-size:11.5px;opacity:.75;display:block;margin-top:3px}
-.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:12.5px;color:var(--muted)}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;
-  margin-right:6px;vertical-align:-1px}
+.tip{position:absolute;pointer-events:none;opacity:0;transition:opacity .13s;
+  background:var(--ink);color:var(--ground);padding:9px 12px;border-radius:2px;
+  font-size:13px;line-height:1.45;max-width:270px;z-index:5;box-shadow:0 6px 24px rgba(0,0,0,.28)}
+.tip .m{font-family:var(--mono);font-size:11px;opacity:.72;display:block;margin-top:4px}
+.legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px;padding-top:12px;
+  border-top:1px solid var(--rule-2);font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;
+  margin-right:7px;vertical-align:0}
 
-/* ── sparks ── */
-.sparks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
-@media(max-width:700px){.sparks{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:400px){.sparks{grid-template-columns:1fr}}
-.spark{background:var(--surface);padding:12px 13px 8px}
-.spark .top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
-.spark .g{font-weight:600;font-size:13.5px}
-.spark .d{font-family:var(--mono);font-size:12.5px;font-weight:500}
-.spark .d.up{color:var(--heat)} .spark .d.dn{color:var(--muted)}
-.spark .sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:1px}
+/* ── 온도 스트립 ── */
+.temp{margin-top:22px;display:flex;flex-direction:column;gap:1px;
+  background:var(--rule);border:1px solid var(--rule)}
+.trow{background:var(--panel);display:grid;
+  grid-template-columns:122px minmax(0,1fr) 64px;align-items:center;gap:14px;
+  padding:11px 16px}
+@media(max-width:560px){.trow{grid-template-columns:96px minmax(0,1fr) 52px;
+  gap:9px;padding:9px 11px}}
+.trow .g{font-family:var(--myeong);font-weight:700;font-size:14px}
+.trow .bar{height:26px;position:relative}
+.trow .bar svg{height:26px}
+.trow .d{font-family:var(--mono);font-size:13px;text-align:right;font-weight:500}
+.trow .d.up{color:var(--heat)}
+.trow .d.dn{color:var(--muted);font-weight:400}
 
-/* ── lists ── */
-ol.feed{list-style:none;margin:0;padding:0}
-ol.feed li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:14px;
-  padding:15px 0;border-bottom:1px solid var(--rule-soft)}
+/* ── feed ── */
+ol.feed{list-style:none;margin:24px 0 0;padding:0}
+ol.feed li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:24px;
+  padding:26px 0;border-bottom:1px solid var(--rule-2)}
+ol.feed li:first-child{padding-top:6px}
 ol.feed li:last-child{border-bottom:0}
-@media(max-width:520px){
-  ol.feed li{grid-template-columns:1fr;gap:5px}
-  .rmark{text-align:left!important}
+@media(max-width:620px){
+  ol.feed li{grid-template-columns:1fr;gap:10px;padding:20px 0}
 }
-.rmark{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--heat);
-  text-align:right;padding-top:1px;line-height:1.3}
-.rmark.lo{color:var(--muted);font-weight:400}
-.rmark small{display:block;font-size:10.5px;font-weight:400;color:var(--muted);
-  letter-spacing:.04em}
-.ttl{font-size:15px;line-height:1.42;font-weight:500}
-.ttl a{text-decoration:none;border-bottom:1px solid var(--rule)}
-.ttl a:hover{border-bottom-color:var(--ink)}
-.sum{font-size:14px;line-height:1.62;color:var(--ink-2);margin-top:6px;max-width:66ch}
-.meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:6px;
-  display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.tbadge{font-family:var(--sans);font-size:11px;font-weight:500;color:var(--weight);
-  background:var(--weight-soft);padding:1px 7px;border-radius:2px;letter-spacing:0}
-/* 국내 대응 보도 — 있으면 파란 띠, 없으면 사유를 적는다 */
-.kr{margin-top:8px;padding-left:11px;border-left:2px solid var(--weight);
-  display:flex;flex-direction:column;gap:3px}
-.kr a{font-size:13.5px;text-decoration:none;border-bottom:1px solid transparent;
-  color:var(--weight)}
+.gutter{text-align:right}
+@media(max-width:620px){.gutter{text-align:left;display:flex;align-items:baseline;gap:10px}}
+.rbig{font-family:var(--serif);font-size:44px;line-height:.82;color:var(--heat);
+  display:block;letter-spacing:-.02em}
+.rbig.lo{color:var(--muted);opacity:.72}
+.gutter .lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  color:var(--muted);display:block;margin-top:7px}
+@media(max-width:620px){.gutter .lab{margin-top:0}}
+.ttl{font-family:var(--myeong);font-size:19px;line-height:1.38;font-weight:400;
+  letter-spacing:-.005em}
+.ttl a{text-decoration:none;background-image:linear-gradient(var(--rule),var(--rule));
+  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
+  transition:background-size .2s}
+.ttl a:hover{background-image:linear-gradient(var(--heat),var(--heat))}
+.sum{font-size:14.5px;line-height:1.72;color:var(--ink-2);margin:11px 0 0;max-width:62ch;
+  font-weight:300}
+.meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:11px;
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;letter-spacing:.02em}
+.tbadge{font-family:var(--sans);font-size:10.5px;font-weight:500;color:var(--weight);
+  border:1px solid var(--weight-15);background:var(--weight-08);
+  padding:2px 8px;border-radius:999px;letter-spacing:0}
+.kr{margin-top:14px;padding:11px 14px;background:var(--weight-08);
+  border-left:2px solid var(--weight);display:flex;flex-direction:column;gap:5px}
+.kr a{font-size:14px;text-decoration:none;color:var(--weight);
+  border-bottom:1px solid transparent}
 .kr a:hover{border-bottom-color:var(--weight)}
 .kr .none{font-size:12.5px;color:var(--muted)}
-.kr.empty{border-left-color:var(--rule)}
+.kr.empty{background:transparent;border-left-color:var(--rule);padding-block:6px}
 
 /* ── 국내 패널 ── */
-.panel{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
-  border-radius:3px;overflow:hidden}
-.acct{background:var(--surface);padding:15px 16px}
-.acct .who{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:2px}
-.acct .nm{font-weight:600;font-size:14.5px}
-.acct .hd{font-family:var(--mono);font-size:12px;color:var(--weight)}
-.acct .rl{font-size:12px;color:var(--muted);margin-left:auto}
-.tier{font-family:var(--cond);font-size:10.5px;font-weight:600;letter-spacing:.08em;
-  padding:1px 6px;border-radius:2px;background:var(--weight-soft);color:var(--weight)}
-.tier.c{background:var(--rule-soft);color:var(--muted)}
-.acct blockquote{margin:10px 0 0;padding-left:12px;border-left:2px solid var(--rule);
-  font-size:14px;line-height:1.6;color:var(--ink-2);max-width:68ch}
-.acct .pm{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px;
-  display:flex;gap:12px;flex-wrap:wrap}
-.demoted{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.6;
-  padding-left:12px;border-left:2px solid var(--rule)}
+.panel-grid{margin-top:24px;display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.acct{background:var(--panel);border:1px solid var(--rule);border-radius:2px;
+  padding:19px 20px;display:flex;flex-direction:column}
+.acct .who{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;
+  padding-bottom:11px;border-bottom:1px solid var(--rule-2);margin-bottom:13px}
+.acct .nm{font-family:var(--myeong);font-weight:700;font-size:16px}
+.acct .hd{font-family:var(--mono);font-size:11.5px;color:var(--weight);text-decoration:none}
+.acct .rl{font-size:11.5px;color:var(--muted);width:100%;margin-top:-4px}
+.tier{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
+  width:19px;height:19px;display:grid;place-items:center;border-radius:50%;
+  background:var(--weight);color:var(--panel)}
+.tier.c{background:var(--rule);color:var(--muted)}
+.acct blockquote{margin:0 0 13px;font-family:var(--myeong);font-size:14px;
+  line-height:1.68;color:var(--ink-2)}
+.acct blockquote:last-of-type{margin-bottom:0}
+.acct .pm{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;
+  display:flex;gap:12px}
+.demoted{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.7;
+  padding-left:14px;border-left:1px solid var(--rule)}
 .demoted b{color:var(--ink-2);font-weight:600}
 
-/* ── reddit ── */
-.rd{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
-  gap:0 30px}
-.rd li{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:8px 0;
-  border-bottom:1px solid var(--rule-soft);list-style:none}
-.rd .rk{font-family:var(--mono);font-size:12.5px;color:var(--muted);text-align:right}
-.rd .sub{font-family:var(--mono);font-size:11px;color:var(--weight)}
+/* ── 하단 3단 ── */
+.tri{margin-top:24px;display:grid;gap:34px;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.tri h3{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+  color:var(--muted);margin:0 0 12px;padding-bottom:9px;
+  border-bottom:1px solid var(--rule);font-weight:500}
+.tri ul{list-style:none;margin:0;padding:0}
+.tri li{padding:9px 0;border-bottom:1px solid var(--rule-2);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:11px;align-items:baseline}
+.tri li:last-child{border-bottom:0}
+.tri .v{font-family:var(--mono);font-size:11.5px;color:var(--muted);min-width:46px}
+.tri .t{font-size:13.5px;overflow-wrap:anywhere;line-height:1.45}
+.tri .t a{text-decoration:none;border-bottom:1px solid var(--rule-2)}
+.tri .dsc{font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
+.tri .sb{font-family:var(--mono);font-size:10.5px;color:var(--weight)}
 
-/* ── strip ── */
-.strip{display:grid;grid-template-columns:1fr 1fr;gap:36px}
-@media(max-width:800px){.strip{grid-template-columns:1fr;gap:30px}}
-.strip ul{list-style:none;margin:0;padding:0}
-.strip li{display:flex;gap:11px;align-items:baseline;padding:7px 0;
-  border-bottom:1px solid var(--rule-soft)}
-.strip .v{font-family:var(--mono);font-size:12.5px;color:var(--muted);
-  min-width:56px;text-align:right}
-.strip .t{font-size:13.5px;overflow-wrap:anywhere}
-.strip .dsc{font-size:12px;color:var(--muted);display:block}
-
-footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--rule);
-  font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 20px}
-code{font-family:var(--mono);font-size:.92em;background:var(--rule-soft);
-  padding:1px 5px;border-radius:2px}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;
+  font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.02em}
+footer .mk{font-family:var(--serif);font-size:19px;color:var(--ink-2);letter-spacing:-.01em}
+code{font-family:var(--mono);font-size:.9em}
+.err{font-family:var(--myeong);font-size:19px;margin:60px 0;line-height:1.7}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
+
+<div id="ridge" aria-hidden="true"></div>
 
 <div class="wrap">
   <header>
-    <div class="masthead">
-      <h1>SIGNAL LAYER</h1>
-      <div class="stamp">
-        <span>수집 <b id="s-upd"></b></span>
-        <span>윈도우 <b id="s-win"></b></span>
-      </div>
+    <div class="brand">
+      <h1>Signal<em>.</em></h1>
+      <span class="tagline">개발자들이 무엇을 두고 다투는가</span>
     </div>
-    <div class="layers" id="layers"></div>
+    <div class="stampline">
+      <span><span class="dot"></span>관측 <b id="s-upd"></b></span>
+      <span>윈도우 <b id="s-win"></b></span>
+      <div class="chips" id="chips"></div>
+    </div>
   </header>
 
   <p class="read" id="read"></p>
 
   <section>
     <div class="shead">
-      <h2>규모 × 논쟁</h2>
-      <span class="note">두 축을 한 점수로 합치지 않는다. 가로는 얼마나 많이, 세로는 얼마나 갈렸나.</span>
+      <span class="idx">01</span>
+      <h2>관측</h2>
+      <span class="note">가로는 얼마나 많이, 세로는 얼마나 갈렸나.<br>두 축을 한 점수로 합치지 않는다.</span>
     </div>
-    <div class="rule"></div>
-    <div class="plotwrap">
-      <svg id="plot" viewBox="0 0 820 440" role="img" aria-label="댓글수와 논쟁도 산포도"></svg>
+    <div class="obs">
+      <svg id="plot" viewBox="0 0 860 470" role="img" aria-label="댓글 수와 논쟁도 산포도"></svg>
       <div class="tip" id="tip"></div>
       <div class="legend">
-        <span><i style="background:var(--heat)"></i>HN 게시물</span>
-        <span><i style="background:var(--weight)"></i>신뢰층이 함께 다룸</span>
-        <span>가로축 댓글 수 · 세로축 <span class="num">r</span> = 댓글÷업보트</span>
+        <span><i style="background:var(--heat)"></i>Hacker News</span>
+        <span><i style="background:var(--weight)"></i>신뢰층이 함께 다룬 것</span>
+        <span class="num">r = 댓글 ÷ 업보트</span>
       </div>
     </div>
   </section>
 
   <section>
     <div class="shead">
-      <h2>주제군 14일 추세</h2>
-      <span class="note">배경 지표. 최근 3일과 직전 4일의 평균 비교.</span>
+      <span class="idx">02</span>
+      <h2>온도</h2>
+      <span class="note">주제군 14일 추세 · 최근 3일과 직전 4일의 비교</span>
     </div>
-    <div class="rule"></div>
-    <div class="sparks" id="sparks"></div>
+    <div class="temp" id="temp"></div>
   </section>
 
   <section>
-    <div class="shead"><h2>논쟁</h2>
-      <span class="note">r 높은 순 · 요약은 기사가 아니라 <b>댓글</b>을 정리한 것</span></div>
-    <div class="rule"></div>
+    <div class="shead">
+      <span class="idx">03</span>
+      <h2>논쟁</h2>
+      <span class="note">요약은 기사가 아니라 <b>댓글</b>을 정리한 것</span>
+    </div>
     <ol class="feed" id="debate"></ol>
   </section>
 
   <section>
-    <div class="shead"><h2>규모</h2><span class="note">댓글 많은 순</span></div>
-    <div class="rule"></div>
+    <div class="shead">
+      <span class="idx">04</span>
+      <h2>규모</h2>
+      <span class="note">댓글이 가장 많이 붙은 것</span>
+    </div>
     <ol class="feed" id="volume"></ol>
   </section>
 
   <section>
     <div class="shead">
-      <h2>국내 패널</h2>
+      <span class="idx">05</span>
+      <h2>국내</h2>
       <span class="note" id="panel-note"></span>
     </div>
-    <div class="rule"></div>
-    <div class="panel" id="panel"></div>
+    <div class="panel-grid" id="panel"></div>
     <div class="demoted" id="demoted"></div>
   </section>
 
   <section>
     <div class="shead">
-      <h2>Reddit</h2>
-      <span class="note" id="rd-note"></span>
+      <span class="idx">06</span>
+      <h2>주변</h2>
+      <span class="note">Reddit · 모델 트렌딩 · 신규 저장소</span>
     </div>
-    <div class="rule"></div>
-    <ul class="rd" id="reddit"></ul>
-  </section>
-
-  <section class="strip">
-    <div>
-      <div class="shead"><h2>모델 트렌딩</h2><span class="note">HuggingFace</span></div>
-      <div class="rule"></div>
-      <ul id="models"></ul>
-    </div>
-    <div>
-      <div class="shead"><h2>신규 저장소</h2><span class="note">7일 내 · 스팸 필터 후</span></div>
-      <div class="rule"></div>
-      <ul id="repos"></ul>
+    <div class="tri">
+      <div><h3 id="rd-h">REDDIT</h3><ul id="reddit"></ul></div>
+      <div><h3>MODELS — HUGGINGFACE</h3><ul id="models"></ul></div>
+      <div><h3>NEW REPOS — 7D</h3><ul id="repos"></ul></div>
     </div>
   </section>
 
   <footer>
-    <span>목업 · 실제 수집 데이터</span>
-    <span><code>collect.py --days 4 --min-comments 100</code></span>
+    <span class="mk">Signal</span>
+    <span>HN · Reddit · HuggingFace · GitHub · 신뢰층 · Threads</span>
+    <span><code>collect.py → enrich.py → cf-threads</code></span>
   </footer>
 </div>
 
 <script>
-
-/* ── 데이터 로더 ──────────────────────────────────────────────
-   목업은 데이터가 박혀 있었지만 실제 페이지는 수집 결과를 읽는다.
-   collect.py / enrich.py / fetch_panel.py 가 커밋한 파일들이다. */
 async function loadData() {
   const bust = u => u + '?t=' + Math.floor(Date.now() / 60000);
   const grab = async (u, d) => {
@@ -269,254 +308,245 @@ async function loadData() {
     catch (e) { return d; }
   };
   const [L, T, P] = await Promise.all([
-    grab('data/latest.json', null),
-    grab('data/trend.json', null),
-    grab('panel_kr.json', null),
+    grab('data/latest.json', null), grab('data/trend.json', null), grab('panel_kr.json', null),
   ]);
-  if (!L) throw new Error('data/latest.json 을 읽지 못했다');
+  if (!L) throw new Error('data/latest.json');
 
-  // 두 축을 합집합으로 — 중복 제거하되 순서는 논쟁축 우선
   const seen = new Set(), items = [];
   for (const src of [L.by_debate || [], L.by_volume || []]) {
     for (const b of src) {
       if (seen.has(b.title)) continue;
       seen.add(b.title);
-      items.push({
-        t: b.title, c: b.comments, p: b.points, r: b.r,
-        u: b.discussion || b.url, tr: b.trust || [],
-        sm: b.summary_ko || '', ev: b.is_event,
-        kr: (b.kr || []).map(a => ({ t: a.t, u: a.u })),
-      });
+      items.push({ t: b.title, c: b.comments, p: b.points, r: b.r,
+        u: b.discussion || b.url, tr: b.trust || [], sm: b.summary_ko || '',
+        ev: b.is_event, kr: (b.kr || []).map(a => ({ t: a.t, u: a.u })) });
     }
   }
-
   let trend = [];
   if (T && T.series && T.series.length) {
-    const groups = Object.keys(T.series[0]).filter(k => k !== 'date' && k !== 'n');
-    trend = groups.map(g => {
+    const gs = Object.keys(T.series[0]).filter(k => k !== 'date' && k !== 'n');
+    trend = gs.map(g => {
       const v = T.series.map(s => s[g] || 0);
       const a = v.slice(-3).reduce((x, y) => x + y, 0) / 3;
       const b = v.slice(-7, -3).reduce((x, y) => x + y, 0) / 4;
       return { g, v, now: Math.round(a), prev: Math.round(b),
-               d: b > 0 ? Math.round((a / b) * 10) / 10 : (a > 0 ? 99 : 0) };
+        d: b > 0 ? Math.round(a / b * 10) / 10 : (a > 0 ? 99 : 0) };
     }).sort((x, y) => y.v.reduce((a, b) => a + b, 0) - x.v.reduce((a, b) => a + b, 0));
   }
-
-  return {
-    updated: L.updated, win: L.window_days, mode: L.reddit_mode,
+  return { updated: L.updated, win: L.window_days, mode: L.reddit_mode,
     counts: L.counts || {}, items,
     reddit: (L.reddit_top || []).map(r => ({ t: r.title, s: r.sub, rk: r.rank, u: r.discussion })),
     models: (L.models || []).slice(0, 6).map(m => ({ t: m.title, ts: m.trending, l: m.likes })),
-    repos: (L.new_repos || []).slice(0, 5).map(g => ({ t: g.title, s: g.stars, d: g.desc })),
-    days: T ? T.series.map(s => s.date) : [],
-    trend,
-    panel: P ? { collected: P.collected, accounts: P.accounts || [], demoted: P.demoted || [] } : null,
-  };
+    repos: (L.new_repos || []).slice(0, 5).map(g => ({ t: g.title, s: g.stars, d: g.desc, u: g.url })),
+    trend, panel: P ? { collected: P.collected, accounts: P.accounts || [], demoted: P.demoted || [] } : null };
 }
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 
 (async function boot() {
   let DATA;
-  try {
-    DATA = await loadData();
-  } catch (e) {
-    document.querySelector('.wrap').insertAdjacentHTML('afterbegin',
-      '<p class="read">데이터를 불러오지 못했습니다. 수집이 아직 한 번도 돌지 않았을 수 있습니다. ' +
+  try { DATA = await loadData(); }
+  catch (e) {
+    $('.wrap').insertAdjacentHTML('afterbegin',
+      '<p class="err">아직 관측 기록이 없습니다.<br>' +
       '<code>python collect.py</code> 또는 Actions 의 <b>Signal collect</b> 를 한 번 실행하세요.</p>');
     return;
   }
 
-const $ = s => document.querySelector(s);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  /* ── 배경 능선 — 14일 담론량을 쌓아 올린다 ── */
+  (() => {
+    const T = DATA.trend;
+    if (!T.length) return;
+    const n = T[0].v.length, W = 1600, H = 520;
+    const totals = Array.from({ length: n }, (_, i) => T.reduce((s, g) => s + g.v[i], 0));
+    const max = Math.max(...totals, 1);
+    const px = i => (i / (n - 1)) * W;
+    const Yv = v => H - v / max * H * .92;
+    // 14점을 직선으로 이으면 파편이 된다. Catmull-Rom 으로 능선을 만든다.
+    const curve = (pts, rev) => {
+      const P = rev ? pts.slice().reverse() : pts;
+      let d = `${P[0][0].toFixed(1)},${P[0][1].toFixed(1)}`;
+      for (let i = 0; i < P.length - 1; i++) {
+        const p0 = P[i === 0 ? 0 : i - 1], p1 = P[i], p2 = P[i + 1],
+              p3 = P[i + 2 > P.length - 1 ? P.length - 1 : i + 2];
+        const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+        const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+        d += ` C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)}` +
+             ` ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+      }
+      return d;
+    };
+    let acc = new Array(n).fill(0), paths = '';
+    T.slice().reverse().forEach((g, gi) => {
+      const top = acc.map((a, i) => a + g.v[i]);
+      const upPts = top.map((v, i) => [px(i), Yv(v)]);
+      const dnPts = acc.map((v, i) => [px(i), Yv(v)]);
+      paths += `<path d="M${curve(upPts)} L${curve(dnPts, true)} Z"
+        fill="var(--ridge)" fill-opacity="${(0.09 + gi * 0.05).toFixed(3)}"/>`;
+      acc = top;
+    });
+    paths += `<path d="M${curve(acc.map((v, i) => [px(i), Yv(v)]))}" fill="none"
+      stroke="var(--ridge)" stroke-opacity=".45" stroke-width="1.5"
+      vector-effect="non-scaling-stroke"/>`;
+    $('#ridge').innerHTML =
+      `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="opacity:var(--ridge-op)">${paths}</svg>`;
+  })();
 
-/* ── header ── */
-$('#s-upd').textContent = DATA.updated;
-$('#s-win').textContent = DATA.win + '일';
-const LAY = [['hn','Hacker News'],['reddit','Reddit'],['hf','HuggingFace'],
-             ['github','GitHub'],['trust','신뢰층']];
-const nSum = DATA.items.filter(d => d.sm).length;
-const nKr  = DATA.items.filter(d => d.kr && d.kr.length).length;
-$('#layers').innerHTML = LAY.map(([k,label]) => {
-  const n = DATA.counts[k] || 0;
-  return `<div class="layer${n?'':' off'}"><span class="n num">${n}</span><span class="k">${label}</span></div>`;
-}).join('') + `<div class="layer"><span class="n num">${nSum}</span><span class="k">요약</span></div>`
-  + `<div class="layer${nKr?'':' off'}"><span class="n num">${nKr}</span><span class="k">국내 연결</span></div>`;
+  /* ── masthead ── */
+  $('#s-upd').textContent = DATA.updated;
+  $('#s-win').textContent = DATA.win + '일';
+  const LAY = [['hn','HN'],['reddit','REDDIT'],['hf','HF'],['github','GH'],['trust','신뢰층']];
+  const nSum = DATA.items.filter(d => d.sm).length;
+  const nKr = DATA.items.filter(d => d.kr && d.kr.length).length;
+  $('#chips').innerHTML = LAY.map(([k, l]) => {
+    const n = DATA.counts[k] || 0;
+    return `<span class="chip${n ? '' : ' off'}"><b>${n}</b> ${l}</span>`;
+  }).join('') + `<span class="chip"><b>${nSum}</b> 요약</span>`
+    + `<span class="chip${nKr ? '' : ' off'}"><b>${nKr}</b> 국내</span>`;
 
-/* ── 판독: 데이터에서 문장을 만든다 ── */
-(() => {
-  const up = DATA.trend.filter(t => t.d >= 1.2);
-  const dn = DATA.trend.filter(t => t.d <= 0.8);
-  const hot = DATA.items.reduce((a,b) => b.r > a.r ? b : a);
-  const big = DATA.items.reduce((a,b) => b.c > a.c ? b : a);
-  let s = '';
-  if (up.length === 1 && dn.length >= 3) {
-    s = `여섯 주제군 중 <b>${dn.length}개가 내려갔고</b>, <em>${up[0].g}</em>만 ×${up[0].d}로 올랐다. `;
-  } else if (up.length) {
-    s = `<em>${up.map(t=>t.g).join('·')}</em>가 올랐고 ${dn.length}개 군이 내려갔다. `;
-  } else {
-    s = `여섯 주제군이 모두 잦아들었다. `;
-  }
-  s += `가장 갈린 글은 <b>「${esc(hot.t)}」</b>(r&nbsp;${hot.r.toFixed(2)}), `;
-  s += `가장 많이 붙은 글은 <b>「${esc(big.t)}」</b>(댓글&nbsp;${big.c}).`;
-  $('#read').innerHTML = s;
-})();
+  /* ── 판독 ── */
+  (() => {
+    const up = DATA.trend.filter(t => t.d >= 1.2), dn = DATA.trend.filter(t => t.d <= 0.8);
+    const hot = DATA.items.reduce((a, b) => b.r > a.r ? b : a);
+    let s = '';
+    if (up.length === 1 && dn.length >= 3)
+      s = `여섯 주제군 가운데 <b>${dn.length}개가 내려앉았고</b>, <em>${up[0].g}</em>만 ×${up[0].d}로 올랐다. `;
+    else if (up.length)
+      s = `<em>${up.map(t => t.g).join(' · ')}</em>가 오르고 ${dn.length}개 군이 내려앉았다. `;
+    else s = `여섯 주제군이 모두 잦아들었다. `;
+    s += `가장 갈린 자리는 <b>「${esc(hot.t)}」</b>, 업보트 하나에 댓글 ${hot.r.toFixed(2)}개가 붙었다.`;
+    $('#read').innerHTML = s;
+  })();
 
-/* ── 산포도 ── */
-(() => {
-  const W = 820, H = 440, L = 58, R = 18, T = 26, B = 52;
-  const pw = W - L - R, ph = H - T - B;
-  const xMax = Math.ceil(Math.max(...DATA.items.map(d=>d.c)) / 200) * 200;
-  const yMax = Math.ceil(Math.max(...DATA.items.map(d=>d.r)) * 5) / 5;
-  const X = v => L + (v / xMax) * pw;
-  const Y = v => T + ph - (v / yMax) * ph;
-  let g = '';
-
-  // r = 1.0 위아래를 영역으로 구분 — 논쟁 지대
-  g += `<rect x="${L}" y="${T}" width="${pw}" height="${Y(1)-T}" fill="var(--heat-soft)"/>`;
-
-  // y 격자
-  for (let v = 0; v <= yMax + 1e-9; v += 0.5) {
-    const y = Y(v), on = Math.abs(v-1) < 1e-9;
-    g += `<line x1="${L}" y1="${y}" x2="${W-R}" y2="${y}" stroke="var(${on?'--heat':'--rule'})"
-          stroke-width="${on?1.5:1}" ${on?'':'stroke-dasharray="2 4"'}/>`;
-    g += `<text x="${L-10}" y="${y+4}" text-anchor="end" font-family="var(--mono)"
-          font-size="12" fill="var(--muted)">${v.toFixed(1)}</text>`;
-  }
-  // x 격자
-  for (let v = 0; v <= xMax; v += xMax/4) {
-    const x = X(v);
-    if (v) g += `<line x1="${x}" y1="${T}" x2="${x}" y2="${T+ph}" stroke="var(--rule)" stroke-dasharray="2 4"/>`;
-    g += `<text x="${x}" y="${T+ph+22}" text-anchor="middle" font-family="var(--mono)"
-          font-size="12" fill="var(--muted)">${v}</text>`;
-  }
-  // 축 이름
-  g += `<text x="${L}" y="${T-10}" font-family="var(--cond)" font-size="12" letter-spacing="1"
-        fill="var(--heat)">논쟁 지대 · r ≥ 1.0</text>`;
-  g += `<text x="${W-R}" y="${T+ph+44}" text-anchor="end" font-family="var(--cond)"
-        font-size="12" letter-spacing="1" fill="var(--muted)">댓글 수 →</text>`;
-  // 세로축 이름은 두지 않는다 — 범례가 이미 r 을 설명하고,
-  // 눈금 라벨(왼쪽 끝 x≈22)과 간격이 겹칠 만큼 가깝다.
-
-  // 마크 — 겹침 대비 surface 링
-  DATA.items.forEach((d,i) => {
-    const tr = d.tr && d.tr.length;
-    g += `<circle class="pt" data-i="${i}" cx="${X(d.c)}" cy="${Y(d.r)}" r="6"
-          fill="var(${tr?'--weight':'--heat'})" fill-opacity="${tr?1:.82}"
-          stroke="var(--surface)" stroke-width="2" style="cursor:pointer"/>`;
-  });
-  // 직접 라벨 — 극단값만
-  DATA.items.forEach(d => {
-    if (d.r < 1.3 && d.c < 420) return;
-    const x = X(d.c), y = Y(d.r), left = x > W*0.62;
-    g += `<text x="${x + (left?-12:12)}" y="${y+4}" text-anchor="${left?'end':'start'}"
-          font-size="12" fill="var(--ink-2)">${esc(d.t.length>30?d.t.slice(0,29)+'…':d.t)}</text>`;
-  });
-  $('#plot').innerHTML = g;
-
-  const tip = $('#tip'), wrap = $('#plot').parentElement;
-  $('#plot').addEventListener('pointerover', e => {
-    const c = e.target.closest('.pt'); if (!c) return;
-    const d = DATA.items[+c.dataset.i];
-    tip.innerHTML = `${esc(d.t)}<span class="m">댓글 ${d.c} · 업보트 ${d.p} · r ${d.r.toFixed(2)}`
-      + (d.tr.length ? ` · ${esc(d.tr.join(', '))}` : '') + `</span>`;
-    const br = wrap.getBoundingClientRect(), cr = c.getBoundingClientRect();
-    tip.style.opacity = 1;
-    const tw = tip.offsetWidth;
-    tip.style.left = Math.min(Math.max(cr.left - br.left + cr.width/2 - tw/2, 6), br.width - tw - 6) + 'px';
-    tip.style.top = (cr.top - br.top - tip.offsetHeight - 9) + 'px';
-  });
-  $('#plot').addEventListener('pointerout', () => tip.style.opacity = 0);
-})();
-
-/* ── 스파크라인 (small multiples · 공통 스케일) ── */
-(() => {
-  const max = Math.max(...DATA.trend.flatMap(t => t.v)) || 1;
-  $('#sparks').innerHTML = DATA.trend.map(t => {
-    const w = 190, h = 38, n = t.v.length;
-    const px = i => (i/(n-1))*w, py = v => h - (v/max)*h;
-    const pts = t.v.map((v,i) => `${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ');
-    const last = t.v[n-1];
-    const rising = t.d >= 1.2;
-    return `<div class="spark">
-      <div class="top"><span class="g">${esc(t.g)}</span>
-        <span class="d ${rising?'up':'dn'}">×${t.d.toFixed(1)}</span></div>
-      <div class="sub">최근 ${t.now} ← 직전 ${t.prev}</div>
-      <svg viewBox="0 -3 ${w} ${h+9}" preserveAspectRatio="none" style="height:46px;margin-top:5px">
-        <polygon points="0,${h} ${pts} ${w},${h}" fill="var(${rising?'--heat-soft':'--rule-soft'})"/>
-        <polyline points="${pts}" fill="none" stroke="var(${rising?'--heat':'--muted'})"
-          stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-        <circle cx="${w}" cy="${py(last)}" r="3" fill="var(${rising?'--heat':'--muted'})"/>
-      </svg></div>`;
-  }).join('');
-})();
-
-/* ── 목록 ── */
-function feed(el, arr, mode) {
-  el.innerHTML = arr.map(d => {
-    const mark = mode === 'r'
-      ? `<span class="rmark${d.r < 1 ? ' lo' : ''}">${d.r.toFixed(2)}<small>r</small></span>`
-      : `<span class="rmark lo">${d.c}<small>댓글</small></span>`;
-    const badge = d.tr && d.tr.length
-      ? `<span class="tbadge">${esc(d.tr.join(' · '))}</span>` : '';
-    const sum = d.sm ? `<p class="sum">${esc(d.sm)}</p>` : '';
-    // 국내 칸은 비어 있어도 채운다 — '없음'도 정보다
-    let kr = '';
-    if (d.sm) {
-      kr = d.kr && d.kr.length
-        ? `<div class="kr">${d.kr.map(a =>
-            `<a href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a>`).join('')}</div>`
-        : `<div class="kr empty"><span class="none">국내 대응 보도 — ${
-            d.ev ? '검색 결과 없음' : '주장·에세이라 대상 아님'}</span></div>`;
+  /* ── 01 관측 ── */
+  (() => {
+    const W = 860, H = 470, L = 62, R = 22, T = 34, B = 54;
+    const pw = W - L - R, ph = H - T - B;
+    const xMax = Math.ceil(Math.max(...DATA.items.map(d => d.c)) / 200) * 200 || 200;
+    const yMax = Math.max(Math.ceil(Math.max(...DATA.items.map(d => d.r)) * 5) / 5, 1.2);
+    const X = v => L + v / xMax * pw, Y = v => T + ph - v / yMax * ph;
+    let g = `<rect x="${L}" y="${T}" width="${pw}" height="${Y(1) - T}" fill="var(--heat-08)"/>`;
+    for (let v = 0; v <= yMax + 1e-9; v += 0.5) {
+      const y = Y(v), on = Math.abs(v - 1) < 1e-9;
+      g += `<line x1="${L}" y1="${y}" x2="${W - R}" y2="${y}"
+        stroke="var(${on ? '--heat' : '--rule-2'})" stroke-width="${on ? 1.2 : 1}"
+        ${on ? 'stroke-dasharray="5 4"' : ''}/>`;
+      g += `<text x="${L - 12}" y="${y + 4}" text-anchor="end" font-family="var(--mono)"
+        font-size="11.5" fill="var(--muted)">${v.toFixed(1)}</text>`;
     }
-    return `<li>${mark}<div><div class="ttl">
-      <a href="${esc(d.u)}" target="_blank" rel="noopener">${esc(d.t)}</a></div>${sum}
-      <div class="meta"><span>댓글 ${d.c}</span><span>업보트 ${d.p}</span>
-      ${mode === 'r' ? '' : `<span>r ${d.r.toFixed(2)}</span>`}${badge}</div>${kr}</div></li>`;
-  }).join('');
-}
-// 요약이 붙은 항목을 앞세운다 — 보강은 상위 일부에만 돌기 때문
-const byR = [...DATA.items].sort((a,b) => (b.sm?1:0)-(a.sm?1:0) || b.r-a.r || b.c-a.c);
-const byC = [...DATA.items].sort((a,b) => (b.sm?1:0)-(a.sm?1:0) || b.c-a.c);
-feed($('#debate'), byR.slice(0,7), 'r');
-feed($('#volume'), byC.filter(d => !byR.slice(0,7).includes(d)).slice(0,6), 'c');
+    for (let v = 0; v <= xMax; v += xMax / 4) {
+      const x = X(v);
+      if (v) g += `<line x1="${x}" y1="${T}" x2="${x}" y2="${T + ph}" stroke="var(--rule-2)"/>`;
+      g += `<text x="${x}" y="${T + ph + 24}" text-anchor="middle" font-family="var(--mono)"
+        font-size="11.5" fill="var(--muted)">${v}</text>`;
+    }
+    g += `<text x="${L}" y="${T - 13}" font-family="var(--mono)" font-size="11"
+      letter-spacing="1.6" fill="var(--heat)">논쟁 지대 · r ≥ 1.0</text>`;
+    g += `<text x="${W - R}" y="${T + ph + 46}" text-anchor="end" font-family="var(--mono)"
+      font-size="11" letter-spacing="1.6" fill="var(--muted)">댓글 수 →</text>`;
+    DATA.items.forEach((d, i) => {
+      const tr = d.tr && d.tr.length;
+      g += `<circle class="pt" data-i="${i}" cx="${X(d.c)}" cy="${Y(d.r)}" r="${d.r >= 1 ? 7 : 5.5}"
+        fill="var(${tr ? '--weight' : '--heat'})" fill-opacity="${tr ? 1 : .8}"
+        stroke="var(--panel)" stroke-width="2" style="cursor:pointer"/>`;
+    });
+    DATA.items.forEach(d => {
+      if (d.r < 1.3 && d.c < 420) return;
+      const x = X(d.c), y = Y(d.r), left = x > W * .6;
+      g += `<text x="${x + (left ? -14 : 14)}" y="${y + 4}" text-anchor="${left ? 'end' : 'start'}"
+        font-size="12" fill="var(--ink-2)">${esc(d.t.length > 32 ? d.t.slice(0, 31) + '…' : d.t)}</text>`;
+    });
+    $('#plot').innerHTML = g;
+    const tip = $('#tip'), box = $('#plot').parentElement;
+    $('#plot').addEventListener('pointerover', e => {
+      const c = e.target.closest('.pt'); if (!c) return;
+      const d = DATA.items[+c.dataset.i];
+      tip.innerHTML = `${esc(d.t)}<span class="m">댓글 ${d.c} · 업보트 ${d.p} · r ${d.r.toFixed(2)}`
+        + (d.tr.length ? ` · ${esc(d.tr.join(', '))}` : '') + `</span>`;
+      const br = box.getBoundingClientRect(), cr = c.getBoundingClientRect();
+      tip.style.opacity = 1;
+      const tw = tip.offsetWidth;
+      tip.style.left = Math.min(Math.max(cr.left - br.left + cr.width / 2 - tw / 2, 8), br.width - tw - 8) + 'px';
+      tip.style.top = (cr.top - br.top - tip.offsetHeight - 11) + 'px';
+    });
+    $('#plot').addEventListener('pointerout', () => tip.style.opacity = 0);
+  })();
 
-/* ── 국내 패널 ── */
-(() => {
-  const P = DATA.panel;
-  if (!P) return;
-  $('#panel-note').textContent =
-    `Threads · ${P.collected} 수집 · 정적 요청으로는 본문이 안 나와 브라우저 렌더링으로 읽음`;
-  $('#panel').innerHTML = P.accounts.map(a => `
-    <div class="acct">
-      <div class="who">
-        <span class="tier${a.tier === 'C' ? ' c' : ''}">${esc(a.tier)}</span>
+  /* ── 02 온도 ── */
+  (() => {
+    const max = Math.max(...DATA.trend.flatMap(t => t.v)) || 1;
+    $('#temp').innerHTML = DATA.trend.map(t => {
+      const n = t.v.length, W = 460, H = 26;
+      const px = i => i / (n - 1) * W, py = v => H - v / max * (H - 3) - 1;
+      const pts = t.v.map((v, i) => `${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ');
+      const rise = t.d >= 1.2;
+      return `<div class="trow">
+        <span class="g">${esc(t.g)}</span>
+        <span class="bar"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+          <polygon points="0,${H} ${pts} ${W},${H}" fill="var(${rise ? '--heat-15' : '--rule-2'})"/>
+          <polyline points="${pts}" fill="none" stroke="var(${rise ? '--heat' : '--muted'})"
+            stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+          <circle cx="${W}" cy="${py(t.v[n - 1])}" r="2.6" fill="var(${rise ? '--heat' : '--muted'})"/>
+        </svg></span>
+        <span class="d ${rise ? 'up' : 'dn'}">×${t.d.toFixed(1)}</span></div>`;
+    }).join('');
+  })();
+
+  /* ── 03·04 feed ── */
+  function feed(el, arr, mode) {
+    el.innerHTML = arr.map(d => {
+      const gut = mode === 'r'
+        ? `<span class="rbig${d.r < 1 ? ' lo' : ''}">${d.r.toFixed(2)}</span><span class="lab">R</span>`
+        : `<span class="rbig lo">${d.c}</span><span class="lab">댓글</span>`;
+      const badge = d.tr && d.tr.length ? `<span class="tbadge">${esc(d.tr.join(' · '))}</span>` : '';
+      const sum = d.sm ? `<p class="sum">${esc(d.sm)}</p>` : '';
+      let kr = '';
+      if (d.sm) kr = d.kr && d.kr.length
+        ? `<div class="kr">${d.kr.map(a => `<a href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a>`).join('')}</div>`
+        : `<div class="kr empty"><span class="none">국내 대응 보도 — ${d.ev ? '검색 결과 없음' : '주장·에세이라 대상 아님'}</span></div>`;
+      return `<li><div class="gutter">${gut}</div><div>
+        <div class="ttl"><a href="${esc(d.u)}" target="_blank" rel="noopener">${esc(d.t)}</a></div>
+        ${sum}<div class="meta"><span>댓글 ${d.c}</span><span>업보트 ${d.p}</span>
+        ${mode === 'r' ? '' : `<span>r ${d.r.toFixed(2)}</span>`}${badge}</div>${kr}</div></li>`;
+    }).join('');
+  }
+  const byR = [...DATA.items].sort((a, b) => (b.sm ? 1 : 0) - (a.sm ? 1 : 0) || b.r - a.r || b.c - a.c);
+  const top = byR.slice(0, 7);
+  feed($('#debate'), top, 'r');
+  feed($('#volume'), [...DATA.items].sort((a, b) => (b.sm ? 1 : 0) - (a.sm ? 1 : 0) || b.c - a.c)
+    .filter(d => !top.includes(d)).slice(0, 5), 'c');
+
+  /* ── 05 국내 ── */
+  (() => {
+    const P = DATA.panel;
+    if (!P) { $('#panel-note').textContent = '패널 기록 없음'; return; }
+    $('#panel-note').textContent = `Threads · ${P.collected} 관측`;
+    $('#panel').innerHTML = P.accounts.map(a => `<div class="acct">
+      <div class="who"><span class="tier${a.tier === 'C' ? ' c' : ''}">${esc(a.tier)}</span>
         <span class="nm">${esc(a.n)}</span>
         <a class="hd" href="https://www.threads.com/@${esc(a.h)}" target="_blank" rel="noopener">@${esc(a.h)}</a>
-        <span class="rl">${esc(a.role)} · 팔로워 ${esc(a.followers)}</span>
-      </div>
-      ${a.posts.map(p => `<blockquote>${esc(p.t)}
-        <div class="pm"><span>${esc(p.at)}</span><span>반응 ${p.react}</span>
-        ${p.link ? `<span>${esc(p.link)}</span>` : ''}</div></blockquote>`).join('')}
+        <span class="rl">${esc(a.role || '')}</span></div>
+      ${a.posts.slice(0, 2).map(p => `<blockquote>${esc(p.t)}
+        <div class="pm">${p.at ? `<span>${esc(p.at)}</span>` : ''}
+        ${p.react ? `<span>반응 ${p.react}</span>` : ''}</div></blockquote>`).join('')}
     </div>`).join('');
-  $('#demoted').innerHTML = (P.demoted || []).map(d =>
-    `<div><b>강등 — ${esc(d.n)} @${esc(d.h)}</b> · ${esc(d.why)}</div>`).join('');
-})();
+    $('#demoted').innerHTML = (P.demoted || []).map(d =>
+      `<div><b>강등 · ${esc(d.n)}</b> — ${esc(d.why)}</div>`).join('');
+  })();
 
-/* ── Reddit ── */
-$('#rd-note').textContent = DATA.mode === 'rss'
-  ? 'RSS 경로 — 점수·댓글수가 없다. Reddit이 매긴 인기순 그대로.'
-  : 'OAuth 경로 — 점수·댓글수 포함.';
-$('#reddit').innerHTML = DATA.reddit.map(r =>
-  `<li><span class="rk">${r.rk}</span><div><div class="ttl">
-    <a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a></div>
-    <div class="sub">r/${esc(r.s)}</div></div></li>`).join('');
-
-/* ── 스트립 ── */
-$('#models').innerHTML = DATA.models.map(m =>
-  `<li><span class="v">${m.ts}</span><span class="t">${esc(m.t)}
-   <span class="dsc">likes ${m.l}</span></span></li>`).join('');
-$('#repos').innerHTML = DATA.repos.map(g =>
-  `<li><span class="v">★${g.s}</span><span class="t">${esc(g.t)}
-   <span class="dsc">${esc(g.d)}</span></span></li>`).join('');
-
+  /* ── 06 주변 ── */
+  $('#rd-h').textContent = 'REDDIT — ' + (DATA.mode === 'rss' ? '인기순 · 수치 없음' : 'OAUTH');
+  $('#reddit').innerHTML = DATA.reddit.slice(0, 8).map(r =>
+    `<li><span class="v">${r.rk}</span><span class="t">
+      <a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a>
+      <span class="sb">r/${esc(r.s)}</span></span></li>`).join('');
+  $('#models').innerHTML = DATA.models.map(m =>
+    `<li><span class="v">${m.ts}</span><span class="t">${esc(m.t)}
+      <span class="dsc">likes ${m.l}</span></span></li>`).join('');
+  $('#repos').innerHTML = DATA.repos.map(g =>
+    `<li><span class="v">★${g.s}</span><span class="t">
+      ${g.u ? `<a href="${esc(g.u)}" target="_blank" rel="noopener">${esc(g.t)}</a>` : esc(g.t)}
+      <span class="dsc">${esc(g.d || '')}</span></span></li>`).join('');
 })();
 </script>
