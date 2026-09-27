@@ -190,26 +190,57 @@ ol.feed li:last-child{border-bottom:0}
 .kr .none{font-size:12.5px;color:var(--muted)}
 .kr.empty{background:transparent;border-left-color:var(--rule);padding-block:6px}
 
-/* ── 국내 패널 ── */
-.panel-grid{margin-top:24px;display:grid;gap:18px;
-  grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
-.acct{background:var(--panel);border:1px solid var(--rule);border-radius:2px;
-  padding:19px 20px;display:flex;flex-direction:column}
-.acct .who{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;
-  padding-bottom:11px;border-bottom:1px solid var(--rule-2);margin-bottom:13px}
-.acct .nm{font-family:var(--sans);font-weight:600;font-size:15.5px;letter-spacing:-.005em}
-.acct .hd{font-family:var(--mono);font-size:11.5px;color:var(--weight);text-decoration:none}
-.acct .rl{font-size:11.5px;color:var(--muted);width:100%;margin-top:-4px}
-.tier{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
-  width:19px;height:19px;display:grid;place-items:center;border-radius:50%;
-  background:var(--weight);color:var(--panel)}
-.tier.c{background:var(--rule);color:var(--muted)}
-.acct blockquote{margin:0 0 13px;font-family:var(--sans);font-size:13.5px;font-weight:300;
-  line-height:1.72;color:var(--ink-2);padding-left:11px;border-left:1px solid var(--rule)}
-.acct blockquote:last-of-type{margin-bottom:0}
-.acct .pm{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;
-  display:flex;gap:12px}
-.demoted{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.7;
+/* ── 국내 패널 ──────────────────────────────────────────────
+   이 구획만 일부러 다른 매체처럼 굴린다. 소셜 글을 인용하는 자리이므로
+   소셜처럼 보여야 한다. 각진 HUD 와 대비되는 둥근 말풍선·스레드 연결선.
+   ─────────────────────────────────────────────────────────── */
+.panel-grid{margin-top:26px;display:grid;gap:14px;align-items:start;
+  grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.acct{background:var(--panel);border:1px solid var(--rule);border-radius:14px;
+  padding:18px 18px 14px;position:relative;box-shadow:var(--shadow)}
+
+/* 머리: 아바타 + 이름 + 핸들 */
+.acct .who{display:grid;grid-template-columns:38px minmax(0,1fr);
+  gap:11px;align-items:center;margin-bottom:14px}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--sans);font-weight:600;font-size:15px;
+  background:var(--weight-15);color:var(--weight);
+  border:1.5px solid var(--weight);position:relative}
+.av.b{border-style:solid;border-color:var(--weight-15)}
+.av.c{background:var(--rule-2);color:var(--muted);border-color:var(--rule)}
+.av .tg{position:absolute;right:-3px;bottom:-3px;width:15px;height:15px;
+  border-radius:50%;background:var(--panel);border:1px solid var(--rule);
+  font-family:var(--mono);font-size:8.5px;font-weight:700;
+  display:grid;place-items:center;color:var(--weight)}
+.av.c .tg{color:var(--muted)}
+.acct .line1{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;min-width:0}
+.acct .nm{font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:-.01em}
+.acct .hd{font-family:var(--mono);font-size:11.5px;color:var(--weight);
+  text-decoration:none;opacity:.85}
+.acct .hd:hover{opacity:1;text-decoration:underline}
+.acct .rl{font-size:11.5px;color:var(--muted);margin-top:2px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* 글: 말풍선 + 스레드 연결선 */
+.thread{position:relative;padding-left:19px}
+.thread::before{content:"";position:absolute;left:0;top:2px;bottom:16px;
+  width:1px;background:linear-gradient(var(--weight-15),transparent)}
+.post{position:relative;margin-bottom:11px}
+.post:last-child{margin-bottom:0}
+.post::before{content:"";position:absolute;left:-23px;top:11px;width:9px;height:9px;
+  border-radius:50%;background:var(--panel);border:1.5px solid var(--weight);opacity:.6}
+.bub{background:var(--panel-2);border:1px solid var(--rule-2);border-radius:12px;
+  border-top-left-radius:4px;padding:12px 14px;font-size:13.5px;font-weight:300;
+  line-height:1.72;color:var(--ink-2);
+  display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+.post.open .bub{-webkit-line-clamp:unset;display:block}
+.pm{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:6px;
+  display:flex;gap:13px;align-items:center;padding-left:3px}
+.pm .hrt{color:var(--heat)}
+.more{background:none;border:0;padding:0;font-family:var(--sans);font-size:11px;
+  color:var(--weight);cursor:pointer;margin-left:auto}
+.more:hover{text-decoration:underline}
+.demoted{margin-top:20px;font-size:12.5px;color:var(--muted);line-height:1.7;
   padding-left:14px;border-left:1px solid var(--rule)}
 .demoted b{color:var(--ink-2);font-weight:600}
 
@@ -553,15 +584,38 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
     const P = DATA.panel;
     if (!P) { $('#panel-note').textContent = '패널 기록 없음'; return; }
     $('#panel-note').textContent = `Threads · ${P.collected} 관측`;
-    $('#panel').innerHTML = P.accounts.map(a => `<div class="acct">
-      <div class="who"><span class="tier${a.tier === 'C' ? ' c' : ''}">${esc(a.tier)}</span>
-        <span class="nm">${esc(a.n)}</span>
-        <a class="hd" href="https://www.threads.com/@${esc(a.h)}" target="_blank" rel="noopener">@${esc(a.h)}</a>
-        <span class="rl">${esc(a.role || '')}</span></div>
-      ${a.posts.slice(0, 2).map(p => `<blockquote>${esc(p.t)}
-        <div class="pm">${p.at ? `<span>${esc(p.at)}</span>` : ''}
-        ${p.react ? `<span>반응 ${p.react}</span>` : ''}</div></blockquote>`).join('')}
-    </div>`).join('');
+    const initial = a => (a.n || a.h).trim().charAt(0);
+    $('#panel').innerHTML = P.accounts.map(a => {
+      const t = (a.tier || 'C').toUpperCase();
+      const cls = t === 'A' ? '' : (t === 'B' ? ' b' : ' c');
+      return `<div class="acct">
+        <div class="who">
+          <span class="av${cls}">${esc(initial(a))}<span class="tg">${esc(t)}</span></span>
+          <span>
+            <span class="line1"><span class="nm">${esc(a.n)}</span>
+              <a class="hd" href="https://www.threads.com/@${esc(a.h)}"
+                 target="_blank" rel="noopener">@${esc(a.h)}</a></span>
+            <span class="rl">${esc(a.role || '')}</span>
+          </span>
+        </div>
+        <div class="thread">${a.posts.slice(0, 3).map(p => `
+          <div class="post">
+            <div class="bub">${esc(p.t)}</div>
+            <div class="pm">${p.at ? `<span>${esc(p.at)}</span>` : ''}
+              ${p.react ? `<span class="hrt">♡ ${p.react}</span>` : ''}
+              <button class="more" type="button">더 보기</button></div>
+          </div>`).join('')}</div>
+      </div>`;
+    }).join('');
+    // 7줄에서 잘린 글만 '더 보기'를 남긴다
+    $('#panel').querySelectorAll('.post').forEach(post => {
+      const bub = post.querySelector('.bub'), btn = post.querySelector('.more');
+      if (bub.scrollHeight <= bub.clientHeight + 2) { btn.remove(); return; }
+      btn.addEventListener('click', () => {
+        post.classList.toggle('open');
+        btn.textContent = post.classList.contains('open') ? '접기' : '더 보기';
+      });
+    });
     $('#demoted').innerHTML = (P.demoted || []).map(d =>
       `<div><b>강등 · ${esc(d.n)}</b> — ${esc(d.why)}</div>`).join('');
   })();
