@@ -12,10 +12,10 @@
   /* 라이트 — 관측지(paper) */
   --ground:#EDF0F3; --panel:#FFFFFF; --panel-2:#F6F8FA;
   --ink:#0D1117; --ink-2:#39424D; --muted:#69737F;
-  --rule:#D6DCE3; --rule-2:#E7EBF0; --grid:#0089BD0A;
+  --rule:#D6DCE3; --rule-2:#E7EBF0; --grid:#006E980C;
   --heat:#C2491F; --heat-15:#C2491F26; --heat-08:#C2491F14;
-  --weight:#0089BD; --weight-15:#0089BD26; --weight-08:#0089BD12;
-  --ridge:#0089BD; --ridge-op:.11;
+  --weight:#006E98; --weight-15:#006E9826; --weight-08:#006E9810;
+  --ridge:#006E98; --ridge-op:.085;
   --glow:none; --glow-t:none; --shadow:0 1px 2px rgba(13,17,23,.05);
   --serif:"Instrument Serif",Georgia,serif;
   --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -27,7 +27,7 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
-    --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#6F7A88;
+    --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
     --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
     --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
     --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
@@ -38,7 +38,7 @@
 }
 :root[data-theme="dark"]{
   --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
-  --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#6F7A88;
+  --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
   --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
   --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
   --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
@@ -86,7 +86,21 @@ h1 em{font-style:italic;color:var(--heat);text-shadow:var(--glow)}
 .stampline b{color:var(--ink-2);font-weight:500}
 .dot{width:5px;height:5px;border-radius:50%;background:var(--heat);
   display:inline-block;margin-right:7px;vertical-align:1px;box-shadow:var(--glow)}
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin-left:auto}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-left:auto;align-items:center}
+.tgl{font-family:var(--mono);font-size:10px;letter-spacing:.12em;cursor:pointer;
+  background:none;color:var(--muted);border:1px solid var(--rule);border-radius:999px;
+  padding:4px 11px;display:inline-flex;align-items:center;gap:7px;
+  transition:color .15s,border-color .15s}
+.tgl:hover{color:var(--weight);border-color:var(--weight)}
+.tgl:focus-visible{outline:2px solid var(--weight);outline-offset:2px}
+.tgl .sw{width:20px;height:11px;border-radius:999px;border:1px solid currentColor;
+  position:relative;display:inline-block}
+.tgl .sw::after{content:"";position:absolute;top:1px;left:1px;width:7px;height:7px;
+  border-radius:50%;background:currentColor;transition:transform .18s}
+:root[data-theme="dark"] .tgl .sw::after{transform:translateX(9px)}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .tgl .sw::after{transform:translateX(9px)}
+}
 .chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;
   padding:3px 9px;border:1px solid var(--rule);border-radius:999px;color:var(--muted)}
 .chip b{color:var(--ink-2);font-weight:600}
@@ -268,6 +282,12 @@ code{font-family:var(--mono);font-size:.9em}
 .err{font-family:var(--sans);font-size:19px;margin:60px 0;line-height:1.7}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
+<script>
+/* 페인트 전에 저장된 테마를 먼저 씌운다 — 다크→라이트 깜빡임 방지.
+   저장값이 없으면 손대지 않는다(= OS 설정을 따른다). */
+(function(){try{var t=localStorage.getItem('signal-theme');
+  if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 
 <div id="grid" aria-hidden="true"></div>
 <div id="ridge" aria-hidden="true"></div>
@@ -282,6 +302,7 @@ code{font-family:var(--mono);font-size:.9em}
       <span><span class="dot"></span>관측 <b id="s-upd"></b></span>
       <span>윈도우 <b id="s-win"></b></span>
       <div class="chips" id="chips"></div>
+      <button class="tgl" id="tgl" type="button" aria-label="명암 전환"><span class="sw"></span><span id="tgl-l">DARK</span></button>
     </div>
   </header>
 
@@ -453,6 +474,26 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
       vector-effect="non-scaling-stroke"/>`;
     $('#ridge').innerHTML =
       `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="opacity:var(--ridge-op)">${paths}</svg>`;
+  })();
+
+  /* ── 명암 전환 ── */
+  (() => {
+    const KEY = 'signal-theme', root = document.documentElement, btn = $('#tgl');
+    const cur = () => root.getAttribute('data-theme')
+      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const paint = () => { $('#tgl-l').textContent = cur().toUpperCase(); };
+    paint();
+    btn.addEventListener('click', () => {
+      const next = cur() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+      paint();
+    });
+    // 저장값이 없으면 OS 설정 변화를 계속 따른다
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      let saved = null; try { saved = localStorage.getItem(KEY); } catch (e) {}
+      if (!saved) { root.removeAttribute('data-theme'); paint(); }
+    });
   })();
 
   /* ── masthead ── */
