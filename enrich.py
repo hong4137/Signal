@@ -236,6 +236,8 @@ def call_gemini(prompt, key, max_calls, tries=2, deadline=210):
                 return out, ""
             except Exception:
                 return None, "parse"
+    if len(_dead) >= len(MODELS):
+        return None, "all-models-down(이번 실행 포기)"
     return None, "all-models-failed:%s" % last
 
 

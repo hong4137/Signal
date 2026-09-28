@@ -44,6 +44,10 @@ jobs:
       - name: Collect
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub 검색 레이트리밋 완화
+          # Substack 이 Actions(Azure) IP 를 403 으로 막는다.
+          # collect.py 가 403 일 때만 Worker 프록시로 우회하므로 여기에도 필요하다.
+          THREADS_WORKER_URL: ${{ secrets.THREADS_WORKER_URL }}
+          THREADS_WORKER_KEY: ${{ secrets.THREADS_WORKER_KEY }}
         run: |
           python collect.py \
             --days "${{ github.event.inputs.days || '3' }}" \
