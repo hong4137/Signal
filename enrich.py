@@ -150,17 +150,21 @@ def hn_comments(sid, want=12):
 # ─────────────────────────────────────────────────────────────
 
 _used = 0        # 실제로 응답을 받은(=쿼터를 쓴) 호출
-_tries = 0       # 재시도 포함 총 시도. 503 폭풍에서 무한정 도는 걸 막는다
+_tries = 0       # 재시도 포함 총 시도
+_dead = set()    # 이번 실행에서 503 으로 죽은 모델. 배치마다 다시 두드리지 않는다
+_t0 = None       # Gemini 작업 시작 시각 — 벽시계 마감이 진짜 안전장치다
 
 
-def call_gemini(prompt, key, max_calls, tries=3):
+def call_gemini(prompt, key, max_calls, tries=2, deadline=210):
     """⚠️ 503 은 쿼터를 쓰지 않는다. 예산에 넣으면 안 된다.
 
     2026-09-28 실측: 플래시 계열 전 모델이 503 이라 배치 하나가
     재시도 12회로 하루치 예산을 통째로 태웠다 — 요약 0건.
     성공한 호출만 max_calls 에 센다.
     """
-    global _used, _tries
+    global _used, _tries, _t0
+    if _t0 is None:
+        _t0 = time.time()
     if _used >= max_calls:
         return None, "budget-exhausted"
     payload = {
@@ -175,31 +179,41 @@ def call_gemini(prompt, key, max_calls, tries=3):
     }
     body = json.dumps(payload).encode()
     last = "?"
-    attempt_cap = max_calls * 5                  # 503 폭풍에서의 상한
-    for mi, model in enumerate(MODELS):          # 과부하면 다음 모델로
+    # ⚠️ 시도 횟수만으로 막으면 백오프 때문에 10분 넘게 물린다(2026-09-28 실측).
+    #    벽시계 마감을 둔다. 모델을 6개나 두드리며 매 배치 처음부터 반복하지도 않는다.
+    for mi, model in enumerate(MODELS):
+        if model in _dead:
+            continue
+        fails = 0
         for k in range(tries):
             if _used >= max_calls:
                 return None, "budget-exhausted"
-            if _tries >= attempt_cap:
-                return None, "attempts-exhausted:%s" % last
+            if time.time() - _t0 > deadline:
+                return None, "deadline:%s" % last
             _tries += 1
             req = urllib.request.Request(
                 ENDPOINT.format(m=model), data=body,
                 headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+            # ⚠️ 요청 타임아웃이 마감보다 길면 마감이 무의미하다.
+            #    (실측: 60초 마감인데 180초 소켓 대기로 232초 소요)
+            left = deadline - (time.time() - _t0)
             try:
-                with urllib.request.urlopen(req, timeout=180) as r:
+                with urllib.request.urlopen(req, timeout=max(12, min(45, left))) as r:
                     j = json.loads(r.read().decode())
             except urllib.error.HTTPError as e:
                 last = "http:%s" % e.code
                 if e.code == 429:
                     _used += 1                   # 429 는 쿼터를 쓴 결과다
                 if e.code in RETRYABLE:
-                    if k < tries - 1:
-                        w = 8 * (k + 1) + random.uniform(0, 4)
+                    fails += 1
+                    if k < tries - 1 and time.time() - _t0 < deadline - 12:
+                        w = 4 * (k + 1) + random.uniform(0, 3)
                         print("    %s (%s) — %.0f초 후 재시도" % (last, model, w), file=sys.stderr)
                         time.sleep(w)
                         continue
-                    break                         # 이 모델은 포기, 다음 모델
+                    if fails >= 2:
+                        _dead.add(model)          # 이번 실행 내내 건너뛴다
+                    break                         # 다음 모델로
                 return None, "%s %s" % (last, e.read()[:150].decode("utf-8", "replace"))
             except Exception as e:
                 last = "net:%s" % type(e).__name__
@@ -372,6 +386,8 @@ def main():
     ap.add_argument("--limit", type=int, default=14, help="보강할 항목 수")
     ap.add_argument("--batch", type=int, default=3, help="한 호출에 묶을 항목 수")
     ap.add_argument("--max-calls", type=int, default=12, help="Gemini 호출 상한 (무료 20 RPD)")
+    ap.add_argument("--deadline", type=int, default=210,
+                    help="Gemini 작업 벽시계 마감(초). 503 폭풍에서 물리는 걸 막는다")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--rematch", action="store_true",
                     help="Gemini 호출 없이 캐시의 kr_query 로 국내 검색만 다시 돌린다")
@@ -430,10 +446,12 @@ def main():
     got = {}
     for i in range(0, len(todo), args.batch):
         chunk = [b for _, _, b in todo[i:i + args.batch]]
-        res, err = call_gemini(build_prompt(chunk), key, args.max_calls)
+        res, err = call_gemini(build_prompt(chunk), key, args.max_calls,
+                               deadline=args.deadline)
         if res is None:
             print("  [Gemini] 배치 %d 실패: %s" % (i // args.batch + 1, err), file=sys.stderr)
-            if err == "budget-exhausted":
+            if err == "budget-exhausted" or err.startswith("deadline"):
+                print("  [Gemini] 중단(%s) — 남은 배치는 다음 실행에서" % err, file=sys.stderr)
                 break
             continue
         for r in res:
