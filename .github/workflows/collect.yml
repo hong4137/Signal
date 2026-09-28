@@ -67,14 +67,20 @@ jobs:
 
       # ── 3. Threads 패널 — Cloudflare Worker 호출 ──
       #    Worker 가 브라우저를 대신 띄운다. Actions 에는 브라우저가 필요 없다.
+      # ⚠️ secrets 컨텍스트는 if: 에 쓸 수 없다 (env:/with: 에서만 가능).
+      #    if: ${{ secrets.X != '' }} 로 쓰면 워크플로가 검증 단계에서 실패하고,
+      #    그러면 스케줄 자체가 등록되지 않는다 — cron 이 영영 안 돈다.
+      #    비어 있는지는 스텝 안에서 확인한다.
       - name: Threads panel
-        if: ${{ secrets.THREADS_WORKER_URL != '' }}
         continue-on-error: true
         env:
-          WORKER: ${{ secrets.THREADS_WORKER_URL }}
           THREADS_WORKER_URL: ${{ secrets.THREADS_WORKER_URL }}
           THREADS_WORKER_KEY: ${{ secrets.THREADS_WORKER_KEY }}
-        run: python scripts/fetch_panel.py
+        run: |
+          if [ -z "$THREADS_WORKER_URL" ]; then
+            echo "THREADS_WORKER_URL 미설정 — 패널 건너뜀"; exit 0
+          fi
+          python scripts/fetch_panel.py
 
       - name: Commit
         run: |
