@@ -86,10 +86,26 @@ UA = "Mozilla/5.0 (compatible; SignalLayer/1.0; +https://github.com/hong4137)"
 # utils
 # ─────────────────────────────────────────────────────────────
 
-def _get(url, timeout=30, headers=None):
+def _get(url, timeout=30, headers=None, allow_proxy=False):
     req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        # Substack 등이 데이터센터 IP 를 403 으로 막는다(2026-09-28 Actions 실측:
+        # Zvi·AI Supremacy·Deep Learning Focus 전부 403, 같은 요청이 로컬에선 200).
+        # Worker 프록시가 있으면 CF 네트워크를 거쳐 다시 받는다.
+        if e.code in (403, 451) and allow_proxy:
+            w = os.environ.get("THREADS_WORKER_URL", "").rstrip("/")
+            k = os.environ.get("THREADS_WORKER_KEY", "")
+            if w and k:
+                pu = "%s/?url=%s" % (w, urllib.parse.quote(url, safe=""))
+                pr = urllib.request.Request(pu, headers={
+                    "User-Agent": UA, "Authorization": "Bearer " + k})
+                with urllib.request.urlopen(pr, timeout=timeout) as r2:
+                    print("    [프록시] %s" % url.split("/")[2], file=sys.stderr)
+                    return r2.read().decode("utf-8", "replace")
+        raise
 
 
 def get_json(url, timeout=30, headers=None):
@@ -310,7 +326,7 @@ def collect_trust():
     out = []
     for name, url in TRUST_FEEDS:
         try:
-            xml = _get(url, timeout=25)
+            xml = _get(url, timeout=25, allow_proxy=True)
         except Exception as e:
             print("  [신뢰층] %s 오류: %s" % (name, e), file=sys.stderr)
             continue

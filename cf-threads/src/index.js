@@ -56,6 +56,33 @@ export default {
       return json({ ok: false, error: "unauthorized" }, 401);
     }
 
+    // ── 가벼운 프록시 모드 ──
+    // Substack 등이 GitHub Actions(Azure) IP 를 403 으로 막는다(실측).
+    // 브라우저를 띄우지 않고 CF 네트워크에서 그냥 받아 넘긴다 — 무료 브라우저 시간 미사용.
+    const proxy = url.searchParams.get("url");
+    if (proxy) {
+      let target;
+      try { target = new URL(proxy); } catch (e) {
+        return json({ ok: false, error: "bad url" }, 400);
+      }
+      if (target.protocol !== "https:") {
+        return json({ ok: false, error: "https only" }, 400);
+      }
+      try {
+        const r = await fetch(target.toString(), {
+          headers: { "User-Agent": UA, "Accept": "application/rss+xml,application/xml,text/xml,*/*" },
+          cf: { cacheTtl: 300 },
+        });
+        const body = await r.text();
+        return new Response(body, {
+          status: r.status,
+          headers: { "content-type": r.headers.get("content-type") || "text/plain; charset=utf-8" },
+        });
+      } catch (e) {
+        return json({ ok: false, error: "fetch:" + String(e).slice(0, 120) }, 502);
+      }
+    }
+
     const handles = (url.searchParams.get("h") || "jojoldu")
       .split(",").map((s) => s.trim()).filter(Boolean).slice(0, MAX_HANDLES);
     const debug = url.searchParams.get("debug") === "1";

@@ -621,6 +621,19 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
     .filter(d => !top.includes(d)).slice(0, 5), 'c');
 
   /* ── 05 국내 ── */
+  // '1d' 같은 상대시각은 하루만 지나도 언제인지 알 수 없다.
+  // 수집 때 환산해둔 절대시각(ts)을 보여주고, 원문은 title 로 남긴다.
+  const fmtTs = ts => {
+    if (!ts) return '';
+    const d = new Date(ts.replace(' ', 'T'));
+    if (isNaN(d)) return ts;
+    const now = new Date(), day = 864e5;
+    const same = k => d.toDateString() === new Date(now - k * day).toDateString();
+    const hm = ts.slice(11, 16);
+    if (same(0)) return `오늘 ${hm}`;
+    if (same(1)) return `어제 ${hm}`;
+    return `${ts.slice(5, 10).replace('-', '/')} ${hm}`;
+  };
   (() => {
     const P = DATA.panel;
     if (!P) { $('#panel-note').textContent = '패널 기록 없음'; return; }
@@ -642,7 +655,8 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
         <div class="thread">${a.posts.slice(0, 3).map(p => `
           <div class="post">
             <div class="bub">${esc(p.t)}</div>
-            <div class="pm">${p.at ? `<span>${esc(p.at)}</span>` : ''}
+            <div class="pm">${p.ts || p.at
+              ? `<span title="${esc(p.at || '')}">${esc(fmtTs(p.ts) || p.at)}</span>` : ''}
               ${p.react ? `<span class="hrt">♡ ${p.react}</span>` : ''}
               <button class="more" type="button">더 보기</button></div>
           </div>`).join('')}</div>

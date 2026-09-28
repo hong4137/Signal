@@ -52,6 +52,33 @@ MIN_LEN = 40          # 이보다 짧은 줄은 UI 부스러기다
 
 _TIME = re.compile(r"^(\d+[dhmwsy]|\d+\s*(초|분|시간|일|주|개월|년)\s*전?|"
                    r"\d{4}-\d{2}-\d{2}|방금|just now|now)$", re.I)
+
+# Threads 는 '4m' '1h' '1d' 처럼 상대시각만 준다. 하루만 지나도 언제인지 알 수 없고,
+# 수집이 며칠 멈추면 '1d' 가 언제의 1일 전인지 분간이 안 된다.
+# 수집 시각을 알고 있으므로 절대 시각으로 환산해 함께 저장한다.
+_UNIT = {"s": 1, "m": 60, "h": 3600, "d": 86400, "w": 604800, "y": 31536000,
+         "초": 1, "분": 60, "시간": 3600, "일": 86400, "주": 604800,
+         "개월": 2592000, "년": 31536000}
+
+
+def absolutize(rel, base_epoch):
+    """'1d' → ('2026-09-27 01:05', '1d'). 못 풀면 (None, 원문)."""
+    if not rel:
+        return None, ""
+    r = rel.strip()
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", r)
+    if m:
+        return r + " 00:00", r
+    if re.match(r"^(방금|just now|now)$", r, re.I):
+        return time.strftime("%Y-%m-%d %H:%M", time.localtime(base_epoch)), r
+    m = re.match(r"^(\d+)\s*([a-z]|초|분|시간|일|주|개월|년)", r, re.I)
+    if not m:
+        return None, r
+    n, u = int(m.group(1)), m.group(2).lower()
+    sec = _UNIT.get(u)
+    if not sec:
+        return None, r
+    return time.strftime("%Y-%m-%d %H:%M", time.localtime(base_epoch - n * sec)), r
 _NUM = re.compile(r"^[\d,]+(\.\d+)?[KkMm]?$")
 _CHROME = re.compile(
     r"^(로그인|팔로우|팔로워|언급|스레드|답글|미디어|리포스트|고정됨|번역 보기|"
@@ -60,7 +87,7 @@ _CHROME = re.compile(
     r"Instagram으로|더 확인해보세요|Say more)")
 
 
-def parse_posts(handle, text):
+def parse_posts(handle, text, base_epoch=None):
     """innerText 를 글 단위로 복원한다."""
     lines = [l.strip() for l in (text or "").split("\n")]
 
@@ -107,7 +134,8 @@ def parse_posts(handle, text):
         if len(t) < MIN_LEN or t in seen:
             continue
         seen.add(t)
-        out.append({"t": t[:600], "at": at, "react": react})
+        ts, _ = absolutize(at, base_epoch) if base_epoch else (None, at)
+        out.append({"t": t[:600], "at": at, "ts": ts, "react": react})
         if len(out) >= MAX_POSTS:
             break
     return out
@@ -145,6 +173,7 @@ def main():
         print("Worker 오류: %s" % json.dumps(d, ensure_ascii=False)[:200], file=sys.stderr)
         sys.exit(0)
 
+    now_epoch = time.time() + 9 * 3600      # KST 기준 수집 시각
     meta = {h: (n, t, r) for h, n, t, r in PANEL}
     accounts, blocked = [], []
     for res in d.get("results", []):
@@ -152,15 +181,15 @@ def main():
         if res.get("walled"):
             blocked.append(h)
             continue
-        posts = parse_posts(h, res.get("text", ""))
+        posts = parse_posts(h, res.get("text", ""), base_epoch=now_epoch)
         if not posts:
             continue
         n, tier, role = meta.get(h, (h, "C", ""))
         accounts.append({
             "h": h, "n": n, "tier": tier, "role": role,
             "bio": "", "followers": "",
-            "posts": [{"at": p["at"], "t": p["t"], "react": p["react"], "link": ""}
-                      for p in posts],
+            "posts": [{"at": p["at"], "ts": p.get("ts"), "t": p["t"],
+                       "react": p["react"], "link": ""} for p in posts],
         })
 
     payload = {

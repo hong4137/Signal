@@ -52,7 +52,8 @@ NAVER_KEYFILE = r"d:/개발/네이버 API.txt"
 # gemini-2.5-flash 는 404 — 신규 사용자에게 더 이상 제공되지 않는다. 넣지 말 것.
 _pref = os.environ.get("SIGNAL_MODEL")
 MODELS = [m for m in [_pref, "gemini-3.5-flash-lite", "gemini-3.5-flash",
-                      "gemini-3.6-flash", "gemini-3.8-flash", "gemini-flash-latest"] if m]
+                      "gemini-3.6-flash", "gemini-3.8-flash", "gemini-flash-lite-latest",
+                      "gemini-flash-latest"] if m]
 MODELS = list(dict.fromkeys(MODELS))
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
 RETRYABLE = {429, 500, 502, 503, 504}
@@ -148,11 +149,18 @@ def hn_comments(sid, want=12):
 # Gemini
 # ─────────────────────────────────────────────────────────────
 
-_used = 0
+_used = 0        # 실제로 응답을 받은(=쿼터를 쓴) 호출
+_tries = 0       # 재시도 포함 총 시도. 503 폭풍에서 무한정 도는 걸 막는다
 
 
 def call_gemini(prompt, key, max_calls, tries=3):
-    global _used
+    """⚠️ 503 은 쿼터를 쓰지 않는다. 예산에 넣으면 안 된다.
+
+    2026-09-28 실측: 플래시 계열 전 모델이 503 이라 배치 하나가
+    재시도 12회로 하루치 예산을 통째로 태웠다 — 요약 0건.
+    성공한 호출만 max_calls 에 센다.
+    """
+    global _used, _tries
     if _used >= max_calls:
         return None, "budget-exhausted"
     payload = {
@@ -167,11 +175,14 @@ def call_gemini(prompt, key, max_calls, tries=3):
     }
     body = json.dumps(payload).encode()
     last = "?"
+    attempt_cap = max_calls * 5                  # 503 폭풍에서의 상한
     for mi, model in enumerate(MODELS):          # 과부하면 다음 모델로
         for k in range(tries):
             if _used >= max_calls:
                 return None, "budget-exhausted"
-            _used += 1
+            if _tries >= attempt_cap:
+                return None, "attempts-exhausted:%s" % last
+            _tries += 1
             req = urllib.request.Request(
                 ENDPOINT.format(m=model), data=body,
                 headers={"x-goog-api-key": key, "Content-Type": "application/json"})
@@ -180,6 +191,8 @@ def call_gemini(prompt, key, max_calls, tries=3):
                     j = json.loads(r.read().decode())
             except urllib.error.HTTPError as e:
                 last = "http:%s" % e.code
+                if e.code == 429:
+                    _used += 1                   # 429 는 쿼터를 쓴 결과다
                 if e.code in RETRYABLE:
                     if k < tries - 1:
                         w = 8 * (k + 1) + random.uniform(0, 4)
@@ -193,6 +206,7 @@ def call_gemini(prompt, key, max_calls, tries=3):
                 time.sleep(4 * (k + 1))
                 continue
 
+            _used += 1                           # 여기까지 왔으면 쿼터를 썼다
             cands = j.get("candidates") or []
             if not cands:
                 return None, "no-candidate"
