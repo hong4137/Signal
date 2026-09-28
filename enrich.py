@@ -151,94 +151,105 @@ def hn_comments(sid, want=12):
 
 _used = 0        # 실제로 응답을 받은(=쿼터를 쓴) 호출
 _tries = 0       # 재시도 포함 총 시도
-_dead = set()    # 이번 실행에서 503 으로 죽은 모델. 배치마다 다시 두드리지 않는다
+_good = None     # 이번 실행에서 실제로 통한 모델. 찾았으면 계속 쓴다
+_spent = set()   # 429 로 '오늘치 소진' 판정된 모델. 자정까지 안 열리니 건드리지 않는다
 _t0 = None       # Gemini 작업 시작 시각 — 벽시계 마감이 진짜 안전장치다
 
 
-def call_gemini(prompt, key, max_calls, tries=2, deadline=210):
-    """⚠️ 503 은 쿼터를 쓰지 않는다. 예산에 넣으면 안 된다.
+def _post(model, body, key, timeout):
+    req = urllib.request.Request(
+        ENDPOINT.format(m=model), data=body,
+        headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode())
 
-    2026-09-28 실측: 플래시 계열 전 모델이 503 이라 배치 하나가
-    재시도 12회로 하루치 예산을 통째로 태웠다 — 요약 0건.
-    성공한 호출만 max_calls 에 센다.
+
+def _parse(j):
+    cands = j.get("candidates") or []
+    if not cands:
+        return None, "no-candidate"
+    fr = cands[0].get("finishReason", "")
+    txt = "".join(p.get("text", "") for p in cands[0].get("content", {}).get("parts", []))
+    if fr and fr != "STOP":
+        return None, "truncated:%s" % fr
+    try:
+        return json.loads(txt), ""
+    except Exception:
+        return None, "parse"
+
+
+def call_gemini(prompt, key, max_calls, deadline=240):
+    """살아 있는 모델을 빨리 찾는다.
+
+    ⚠️ 무료 등급의 503 은 전면 장애가 아니라 **모델별로 돌아가며** 난다
+       (2026-09-29 15:54 실측: 7개 중 3.6-flash·flash-latest 만 200).
+       그러니 한 모델을 붙들고 재시도하지 말고, 한 번씩 훑어 살아 있는 놈을 찾고,
+       찾으면 그 모델로 남은 배치를 계속 돌린다.
+       모델을 영구 제외하지도 않는다 — 30초 뒤 살아나기도 한다.
     """
-    global _used, _tries, _t0
+    global _used, _tries, _good, _t0, _spent
     if _t0 is None:
         _t0 = time.time()
-    if _used >= max_calls:
-        return None, "budget-exhausted"
-    payload = {
+    body = json.dumps({
         "systemInstruction": {"parts": [{"text": SYSTEM}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.25,
-            "maxOutputTokens": 8192,
-            "responseMimeType": "application/json",
-            "responseSchema": SCHEMA,
+            "temperature": 0.25, "maxOutputTokens": 8192,
+            "responseMimeType": "application/json", "responseSchema": SCHEMA,
         },
-    }
-    body = json.dumps(payload).encode()
-    last = "?"
-    # ⚠️ 시도 횟수만으로 막으면 백오프 때문에 10분 넘게 물린다(2026-09-28 실측).
-    #    벽시계 마감을 둔다. 모델을 6개나 두드리며 매 배치 처음부터 반복하지도 않는다.
-    for mi, model in enumerate(MODELS):
-        if model in _dead:
-            continue
-        fails = 0
-        for k in range(tries):
-            if _used >= max_calls:
-                return None, "budget-exhausted"
-            if time.time() - _t0 > deadline:
-                return None, "deadline:%s" % last
-            _tries += 1
-            req = urllib.request.Request(
-                ENDPOINT.format(m=model), data=body,
-                headers={"x-goog-api-key": key, "Content-Type": "application/json"})
-            # ⚠️ 요청 타임아웃이 마감보다 길면 마감이 무의미하다.
-            #    (실측: 60초 마감인데 180초 소켓 대기로 232초 소요)
-            left = deadline - (time.time() - _t0)
-            try:
-                with urllib.request.urlopen(req, timeout=max(12, min(45, left))) as r:
-                    j = json.loads(r.read().decode())
-            except urllib.error.HTTPError as e:
-                last = "http:%s" % e.code
-                if e.code == 429:
-                    _used += 1                   # 429 는 쿼터를 쓴 결과다
-                if e.code in RETRYABLE:
-                    fails += 1
-                    if k < tries - 1 and time.time() - _t0 < deadline - 12:
-                        w = 4 * (k + 1) + random.uniform(0, 3)
-                        print("    %s (%s) — %.0f초 후 재시도" % (last, model, w), file=sys.stderr)
-                        time.sleep(w)
-                        continue
-                    if fails >= 2:
-                        _dead.add(model)          # 이번 실행 내내 건너뛴다
-                    break                         # 다음 모델로
-                return None, "%s %s" % (last, e.read()[:150].decode("utf-8", "replace"))
-            except Exception as e:
-                last = "net:%s" % type(e).__name__
-                time.sleep(4 * (k + 1))
-                continue
+    }).encode()
 
-            _used += 1                           # 여기까지 왔으면 쿼터를 썼다
-            cands = j.get("candidates") or []
-            if not cands:
-                return None, "no-candidate"
-            fr = cands[0].get("finishReason", "")
-            txt = "".join(p.get("text", "")
-                          for p in cands[0].get("content", {}).get("parts", []))
-            if fr and fr != "STOP":
-                return None, "truncated:%s" % fr
-            try:
-                out = json.loads(txt)
-                if mi:
-                    print("    (모델 대체: %s)" % model, file=sys.stderr)
-                return out, ""
-            except Exception:
-                return None, "parse"
-    if len(_dead) >= len(MODELS):
-        return None, "all-models-down(이번 실행 포기)"
-    return None, "all-models-failed:%s" % last
+    order = [m for m in (([_good] if _good else []) + [x for x in MODELS if x != _good])
+             if m not in _spent]
+    if not order:
+        return None, "all-models-spent(오늘치 소진 — 다음 날 재개)"
+    # 가용 모델이 분 단위로 바뀌므로 기다렸다 다시 시도할 가치가 있다.
+    # 다만 몰아치면 429 가 나고 **429 는 쿼터를 쓴다**(실측: 3분 56회 → 429 4건).
+    # 그래서 한 번에 한 모델씩, 간격을 두고 천천히 돌린다.
+    GAP = 8
+    last, n = "?", 0
+    while True:
+        model = order[n % len(order)]
+        n += 1
+        if _used >= max_calls:
+            return None, "budget-exhausted"
+        left = deadline - (time.time() - _t0)
+        if left <= 10:
+            return None, "all-models-down:%s(%d회 시도)" % (last, n - 1)
+        _tries += 1
+        try:
+            j = _post(model, body, key, max(12, min(45, left)))
+        except urllib.error.HTTPError as e:
+            last = "http:%s" % e.code
+            if e.code == 429:
+                # ⚠️ 503 과 정반대다. 429 는 '이 모델의 하루 20회를 다 썼다'는 뜻
+                # (quotaId: GenerateRequestsPerDayPerProjectPerModel-FreeTier, 한도 20).
+                # 자정까지 절대 안 열리므로 다시 두드리면 순손실이다.
+                _spent.add(model)
+                order = [m for m in order if m not in _spent]
+                print("    %s 오늘치 소진 — 제외 (남은 모델 %d개)"
+                      % (model, len(order)), file=sys.stderr)
+                if not order:
+                    return None, "all-models-spent(오늘치 소진)"
+                n = 0
+                continue
+            elif e.code in RETRYABLE:
+                time.sleep(min(GAP, max(0, left - 10)))
+            else:
+                return None, "%s %s" % (last, e.read()[:150].decode("utf-8", "replace"))
+            continue
+        except Exception as e:
+            last = "net:%s" % type(e).__name__
+            time.sleep(min(GAP, max(0, left - 10)))
+            continue
+        _used += 1                            # 여기까지 왔으면 쿼터를 썼다
+        out, err = _parse(j)
+        if out is not None:
+            if _good != model:
+                print("    (모델: %s · %d번째 시도)" % (model, n), file=sys.stderr)
+            _good = model
+            return out, ""
+        return None, err
 
 
 def build_prompt(batch):
@@ -387,8 +398,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=14, help="보강할 항목 수")
     ap.add_argument("--batch", type=int, default=3, help="한 호출에 묶을 항목 수")
-    ap.add_argument("--max-calls", type=int, default=12, help="Gemini 호출 상한 (무료 20 RPD)")
-    ap.add_argument("--deadline", type=int, default=210,
+    ap.add_argument("--max-calls", type=int, default=40,
+                    help="성공 호출 상한. 무료 등급은 **모델당** 하루 20회라 "
+                         "모델을 갈아타면 7개×20=140회까지 가능하다")
+    ap.add_argument("--deadline", type=int, default=240,
                     help="Gemini 작업 벽시계 마감(초). 503 폭풍에서 물리는 걸 막는다")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--rematch", action="store_true",
@@ -448,11 +461,10 @@ def main():
     got = {}
     for i in range(0, len(todo), args.batch):
         chunk = [b for _, _, b in todo[i:i + args.batch]]
-        res, err = call_gemini(build_prompt(chunk), key, args.max_calls,
-                               deadline=args.deadline)
+        res, err = call_gemini(build_prompt(chunk), key, args.max_calls, deadline=args.deadline)
         if res is None:
             print("  [Gemini] 배치 %d 실패: %s" % (i // args.batch + 1, err), file=sys.stderr)
-            if err == "budget-exhausted" or err.startswith("deadline"):
+            if err == "budget-exhausted" or err.startswith(("deadline", "all-models-down")):
                 print("  [Gemini] 중단(%s) — 남은 배치는 다음 실행에서" % err, file=sys.stderr)
                 break
             continue
