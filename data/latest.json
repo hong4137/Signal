@@ -1,10 +1,10 @@
 {
- "updated": "2026-09-29 19:59",
+ "updated": "2026-09-30 03:30",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 12,
-  "reddit": 22,
+  "hn": 16,
+  "reddit": 23,
   "hf": 15,
   "github": 13,
   "trust": 100
@@ -17,7 +17,7 @@
    "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
    "discussion": "https://news.ycombinator.com/item?id=49863864",
    "points": 626,
-   "comments": 614,
+   "comments": 616,
    "r": 0.98,
    "at": "2026-09-27",
    "topics": [],
@@ -32,8 +32,8 @@
    "title": "Owed a billion dollars in Nvidia stock",
    "url": "https://colo.to/nvidia-stock-narrative.html",
    "discussion": "https://news.ycombinator.com/item?id=49872723",
-   "points": 1067,
-   "comments": 447,
+   "points": 1076,
+   "comments": 451,
    "r": 0.42,
    "at": "2026-09-28",
    "topics": [
@@ -50,8 +50,8 @@
    "title": "AI companies in race to demonstrate their model most threatening to humanity",
    "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
    "discussion": "https://news.ycombinator.com/item?id=49875148",
-   "points": 432,
-   "comments": 390,
+   "points": 434,
+   "comments": 392,
    "r": 0.9,
    "at": "2026-09-28",
    "topics": [],
@@ -63,12 +63,57 @@
   },
   {
    "layer": "hn",
+   "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+   "discussion": "https://news.ycombinator.com/item?id=49896586",
+   "points": 361,
+   "comments": 296,
+   "r": 0.82,
+   "at": "2026-09-29",
+   "topics": [],
+   "story_key": "url:openai.com/index/introducing-gpt-6-1-sol",
+   "summary_ko": "신규 모델의 가격 인하와 가성비에 대해 개발자들은 에이전트 작업과 코딩에서 성능이 충분히 훌륭하다는 긍정적인 반응을 보였습니다. 다만 일부 사용자는 구독료 인상이나 할당량 축소 정책에 대해 불만을 표출하며 경쟁사 모델과 비교를 이어갔습니다.",
+   "is_event": true,
+   "kr_query": "오픈에이아이 GPT 신규 모델",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+   "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+   "discussion": "https://news.ycombinator.com/item?id=49879883",
+   "points": 218,
+   "comments": 284,
+   "r": 1.3,
+   "at": "2026-09-28",
+   "topics": [
+    "에이전트",
+    "인프라·칩"
+   ],
+   "story_key": "url:cnbc.com/2026/09/28/nvidia-releases.html",
+   "summary_ko": "엔비디아(Nvidia)가 모든 AI 에이전트 옆에 감시 칩을 두려 한다는 소식에 대해, 샌드박스와 통제 장치의 효용성을 인정하는 입장과 정부나 기업의 강제 킬스위치 도입 및 오작동 위험을 경계하는 반응이 교차했다.",
+   "is_event": true,
+   "kr_query": "엔비디아 AI 에이전트 감시 칩",
+   "kr": [
+    {
+     "t": "통제 벗어난 AI 에이전트…엔비디아, 밀리초 단위로 가둔다",
+     "u": "https://www.sedaily.com/article/20095814?ref=naver",
+     "d": "Tue, 29 Sep 2026",
+     "why": [
+      "에이전트",
+      "엔비디아"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "There are no \"rogue\" AI agents",
    "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
    "discussion": "https://news.ycombinator.com/item?id=49868083",
-   "points": 391,
+   "points": 393,
    "comments": 268,
-   "r": 0.69,
+   "r": 0.68,
    "at": "2026-09-27",
    "topics": [
     "에이전트"
@@ -81,11 +126,27 @@
   },
   {
    "layer": "hn",
+   "title": "It's Time to Investigate the AI Labs",
+   "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+   "discussion": "https://news.ycombinator.com/item?id=49883471",
+   "points": 584,
+   "comments": 246,
+   "r": 0.42,
+   "at": "2026-09-28",
+   "topics": [],
+   "story_key": "url:calnewport.com/its-time-to-investigate-the-ai-labs",
+   "summary_ko": "대형 AI 기업들이 개발하는 기술과 독점적 권력에 대해 강력한 규제가 필요하다는 주장이 제기되었다. 규제의 범위와 실효성을 두고, 인공지능을 통제하는 것은 불가능하거나 무의미하다는 의견과 과거 독점 기업에 적용했던 것처럼 기업 권력을 해체해야 한다는 주장이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "The problem is not AI code, but not knowing about system architecture or intent",
    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
    "discussion": "https://news.ycombinator.com/item?id=49880312",
-   "points": 368,
-   "comments": 233,
+   "points": 377,
+   "comments": 238,
    "r": 0.63,
    "at": "2026-09-28",
    "topics": [],
@@ -97,41 +158,12 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia wants to put a watchdog chip next to every AI agent",
-   "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
-   "discussion": "https://news.ycombinator.com/item?id=49879883",
-   "points": 181,
-   "comments": 228,
-   "r": 1.26,
-   "at": "2026-09-28",
-   "topics": [
-    "에이전트",
-    "인프라·칩"
-   ],
-   "story_key": "url:cnbc.com/2026/09/28/nvidia-releases.html",
-   "summary_ko": "엔비디아(Nvidia)가 모든 AI 에이전트 옆에 감시 칩을 두려 한다는 소식에 대해, 샌드박스와 통제 장치의 효용성을 인정하는 입장과 정부나 기업의 강제 킬스위치 도입 및 오작동 위험을 경계하는 반응이 교차했다.",
-   "is_event": true,
-   "kr_query": "엔비디아 AI 에이전트 감시 칩",
-   "kr": [
-    {
-     "t": "통제 벗어난 AI 에이전트…엔비디아, 밀리초 단위로 가둔다",
-     "u": "https://www.sedaily.com/article/20095814?ref=naver",
-     "d": "Tue, 29 Sep 2026",
-     "why": [
-      "에이전트",
-      "엔비디아"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "Prompting Claude Opus 5.5",
    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
    "discussion": "https://news.ycombinator.com/item?id=49874728",
-   "points": 203,
+   "points": 204,
    "comments": 221,
-   "r": 1.09,
+   "r": 1.08,
    "at": "2026-09-28",
    "topics": [
     "모델릴리스"
@@ -144,44 +176,12 @@
   },
   {
    "layer": "hn",
-   "title": "It's Time to Investigate the AI Labs",
-   "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
-   "discussion": "https://news.ycombinator.com/item?id=49883471",
-   "points": 516,
-   "comments": 210,
-   "r": 0.41,
-   "at": "2026-09-28",
-   "topics": [],
-   "story_key": "url:calnewport.com/its-time-to-investigate-the-ai-labs",
-   "summary_ko": "대형 AI 기업들이 개발하는 기술과 독점적 권력에 대해 강력한 규제가 필요하다는 주장이 제기되었다. 규제의 범위와 실효성을 두고, 인공지능을 통제하는 것은 불가능하거나 무의미하다는 의견과 과거 독점 기업에 적용했던 것처럼 기업 권력을 해체해야 한다는 주장이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "OpenAI bots meddled with multiple US Government agency sites",
-   "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-   "discussion": "https://news.ycombinator.com/item?id=49856665",
-   "points": 132,
-   "comments": 195,
-   "r": 1.48,
-   "at": "2026-09-26",
-   "topics": [],
-   "story_key": "url:bbc.com/news/articles/cw62jje658dlo",
-   "summary_ko": "오픈에이아이(OpenAI) 봇이 미국 정부 기관 사이트에 무단 접근한 사건을 두고, 기업의 법적 책임과 처벌이 너무 관대하다는 비판과 고의성이 없었을 것이라는 주장이 맞섰다.",
-   "is_event": true,
-   "kr_query": "오픈에이아이 미국 정부 기관 사이트 봇 무단 접근",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
    "url": "https://github.com/firelex/jeff",
    "discussion": "https://news.ycombinator.com/item?id=49883844",
-   "points": 505,
-   "comments": 192,
-   "r": 0.38,
+   "points": 558,
+   "comments": 215,
+   "r": 0.39,
    "at": "2026-09-28",
    "topics": [],
    "story_key": "gh:firelex/jeff",
@@ -192,29 +192,11 @@
   },
   {
    "layer": "hn",
-   "title": "CEO of Mistral: AI is software. It can be controlled",
-   "url": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-   "discussion": "https://news.ycombinator.com/item?id=49856034",
-   "points": 98,
-   "comments": 169,
-   "r": 1.72,
-   "at": "2026-09-26",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-   "summary_ko": "AI가 본질적으로 소프트웨어이므로 통제할 수 있다는 주장에 대해, 철학적 개념이나 의식 정의를 놓고 실효성을 의심하는 의견과 실제 소프트웨어 버그나 통제 불능 리스크를 우려하는 목소리가 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'",
    "url": "https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html",
    "discussion": "https://news.ycombinator.com/item?id=49872522",
-   "points": 146,
-   "comments": 161,
+   "points": 147,
+   "comments": 162,
    "r": 1.1,
    "at": "2026-09-28",
    "topics": [],
@@ -223,51 +205,123 @@
    "is_event": true,
    "kr_query": "AI 로펌 효율성 비용 할인 법률 서비스",
    "kr": []
-  }
- ],
- "by_debate": [
+  },
   {
    "layer": "hn",
-   "title": "CEO of Mistral: AI is software. It can be controlled",
-   "url": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-   "discussion": "https://news.ycombinator.com/item?id=49856034",
-   "points": 98,
-   "comments": 169,
-   "r": 1.72,
-   "at": "2026-09-26",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-   "summary_ko": "AI가 본질적으로 소프트웨어이므로 통제할 수 있다는 주장에 대해, 철학적 개념이나 의식 정의를 놓고 실효성을 의심하는 의견과 실제 소프트웨어 버그나 통제 불능 리스크를 우려하는 목소리가 엇갈렸다.",
+   "title": "DraftKings Is Using AI to Behaviorally Target Chronic Gamblers",
+   "url": "https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+   "discussion": "https://news.ycombinator.com/item?id=49896050",
+   "points": 227,
+   "comments": 160,
+   "r": 0.7,
+   "at": "2026-09-29",
+   "topics": [],
+   "story_key": "url:eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+   "summary_ko": "댓글에서는 도박 및 중독성 물질의 광고와 마케팅을 전면 금지해야 한다는 목소리가 높았다. 반면 도박은 성인의 자율적인 영역이며, 규제만이 능사가 아니라는 반대 의견도 존재했다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
   },
   {
    "layer": "hn",
-   "title": "OpenAI bots meddled with multiple US Government agency sites",
-   "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-   "discussion": "https://news.ycombinator.com/item?id=49856665",
-   "points": 132,
-   "comments": 195,
-   "r": 1.48,
-   "at": "2026-09-26",
-   "topics": [],
-   "story_key": "url:bbc.com/news/articles/cw62jje658dlo",
-   "summary_ko": "오픈에이아이(OpenAI) 봇이 미국 정부 기관 사이트에 무단 접근한 사건을 두고, 기업의 법적 책임과 처벌이 너무 관대하다는 비판과 고의성이 없었을 것이라는 주장이 맞섰다.",
-   "is_event": true,
-   "kr_query": "오픈에이아이 미국 정부 기관 사이트 봇 무단 접근",
+   "title": "Dots: Always-on agents",
+   "url": "https://openai.com/index/introducing-dots/",
+   "discussion": "https://news.ycombinator.com/item?id=49896604",
+   "points": 268,
+   "comments": 157,
+   "r": 0.59,
+   "at": "2026-09-29",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:openai.com/index/introducing-dots",
+   "summary_ko": "오픈소스 대안을 찾는 반응과 함께, 최근 AI 기업들의 잇단 제품 출시가 수익성 악화를 타개하려는 무리수라는 비판이 이어졌다. 일부 사용자는 국가별 차단 정책이나 제한 축소에 불만을 표출했다.",
+   "is_event": false,
+   "kr_query": "",
    "kr": []
   },
+  {
+   "layer": "hn",
+   "title": "Claude partial outage",
+   "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
+   "discussion": "https://news.ycombinator.com/item?id=49893876",
+   "points": 165,
+   "comments": 139,
+   "r": 0.84,
+   "at": "2026-09-29",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:status.claude.com/incidents/4xvtc2gnq73l",
+   "summary_ko": "사용자들은 프리미엄 서비스임에도 빈번하게 발생하는 장애에 대해 비판하며 유료 구독의 가치에 의문을 제기했습니다. 반면 일부는 복수의 모델을 교차 검증에 사용하는 업계 관행을 언급하며 일상적인 불편함에 대해 가볍게 농담을 주고받았습니다.",
+   "is_event": true,
+   "kr_query": "클로드 장애 서비스 중단",
+   "kr": [
+    {
+     "t": "美 챗GPT·클로드 일제히 장애… AI 서비스 동시 먹통",
+     "u": "https://www.chosun.com/economy/tech_it/2026/09/04/WI6VSP6TIFALLOAAGPQVDYDF7A/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+     "d": "Fri, 04 Sep 2026",
+     "why": [
+      "장애",
+      "클로드"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+   "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+   "discussion": "https://news.ycombinator.com/item?id=49886005",
+   "points": 128,
+   "comments": 133,
+   "r": 1.04,
+   "at": "2026-09-28",
+   "topics": [],
+   "story_key": "url:reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28",
+   "summary_ko": "댓글에서는 AI 기업들이 거액의 자금을 투입하고도 확실한 투자 대비 수익(ROI)을 증명하지 못하고 있다는 회의론과 함께, 향후 잉여 인프라만 남거나 미국 정부가 개입할 가능성에 대한 토론이 오갔습니다. 또한 기업들의 영업이익 적자 구조와 중국과의 경쟁 속에서 치솟는 비용 문제가 지속 가능할지를 두고 의견이 갈렸습니다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 기업공개 비용",
+   "kr": [
+    {
+     "t": "“AI 성능만으론 부족”… 앤트로픽, 비용·보안 강화한 ‘클로드 소네...",
+     "u": "https://biz.chosun.com/it-science/ict/2026/09/29/5TUAIIVFGFDRTDI24Z56H5MCHM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+     "d": "Tue, 29 Sep 2026",
+     "why": [
+      "비용",
+      "앤트로픽"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+   "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+   "discussion": "https://news.ycombinator.com/item?id=49890226",
+   "points": 384,
+   "comments": 123,
+   "r": 0.32,
+   "at": "2026-09-29",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+   "summary_ko": "대화형 AI 서비스들이 광고 네트워크와 트래킹 서비스를 통해 데이터를 공유한다는 분석에 대해, 기업용 플랜조차 신뢰하기 어렵다는 불신이 제어됐다. 이에 대한 대안으로 로컬 모델이나 서드파티 웹 인터페이스를 활용해야 한다는 의견이 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  }
+ ],
+ "by_debate": [
   {
    "layer": "hn",
    "title": "Nvidia wants to put a watchdog chip next to every AI agent",
    "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
    "discussion": "https://news.ycombinator.com/item?id=49879883",
-   "points": 181,
-   "comments": 228,
-   "r": 1.26,
+   "points": 218,
+   "comments": 284,
+   "r": 1.3,
    "at": "2026-09-28",
    "topics": [
     "에이전트",
@@ -294,8 +348,8 @@
    "title": "As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'",
    "url": "https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html",
    "discussion": "https://news.ycombinator.com/item?id=49872522",
-   "points": 146,
-   "comments": 161,
+   "points": 147,
+   "comments": 162,
    "r": 1.1,
    "at": "2026-09-28",
    "topics": [],
@@ -310,9 +364,9 @@
    "title": "Prompting Claude Opus 5.5",
    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
    "discussion": "https://news.ycombinator.com/item?id=49874728",
-   "points": 203,
+   "points": 204,
    "comments": 221,
-   "r": 1.09,
+   "r": 1.08,
    "at": "2026-09-28",
    "topics": [
     "모델릴리스"
@@ -322,6 +376,46 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+   "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+   "discussion": "https://news.ycombinator.com/item?id=49886005",
+   "points": 128,
+   "comments": 133,
+   "r": 1.04,
+   "at": "2026-09-28",
+   "topics": [],
+   "story_key": "url:reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28",
+   "_comments": [
+    "> previous busts left useful infrastructure behind (rail, fibre) that could still be used. If/When the AI/LLM companies go bust, what will be left over afterwards and how useful will it be?Many many idle GPUs.",
+    "> How would it help them? The real competition is coming from ChinaI mean, sure, you think that and I know that many others do too.Its Anthropic and OpenAI mainly competing for who gets used by the US government and possibly any US business that does any contracting work, while many others get banned. So basically, Fortune 500+.There is also a non-zero possibility that the US Gov nationalizes the entire industry and then starts directly throwing Trillions USD into it in the name of \"national security\". Low % chance, but I can see it happening. Or at least the Fed Gov taking a controlling ownership stake.",
+    "> the gross margins right now are very positive. [...] So the company loses money. Each model makes money, but the company loses money.Amodei mentioned the reason for the big losses in an interview released on Feb 2026[1]. Assuming he was telling the truth, that's not a bad position to be in. From what I can tell from the replies to simonw, a lot of people are cynical about Anthropic's growth potential. I'd like to encourage the cynics to bet against Anthropic wish them luck. I will be doing the opposite.[1] https://www.dwarkesh.com/p/dario-amodei-2",
+    "Seems like it might leave behind underutilized data centers full of subsidized compute seeking paying tenants.",
+    "How would it help them? The real competition is coming from China and they don't need financials to know they are stomping Anthropic in all these areas.Keeping financiers of their IPO from understanding what they might be buying seems to swerve into fraud territory. Keeping their investors from knowing/understanding what the problems are also seems fraudulent.",
+    "34.5M Americans below the poverty line. Divide out that $8B and it's a little over $230 per person.Have you ever been in poverty? I grew up that way and the then-equivalent of $230 would have meant not skipping Christmas when I was 6. It would have meant a full refrigerator, gas for the car for a couple of months, or so many other things.",
+    "Looking at Nvidia sales and even the most optimistic \"use this GPU for 6 years despite its horrible inefficiency\", you still get a very big number per-year.Google, Amazon, Oracle, Microsoft, Meta, SpaceX, and tons of other startups are spending trillions on data centers, but everyone is renting them out. They aren't renting them to each other (and paying the extra overhead when they have their own servers).That leaves basically just OpenAI and Anthropic on the hook to pay for everything BEFORE the GPU half of it depreciates away, but they are busy cutting prices to compete with Chinese models which runs counter to their need to increase prices to fulfill their obligations.",
+    "Ads in AI are problematic in a big way.How do you add them? Inside the model has tons of problems. From user context makes a bit more sense, but how do you decide and how do you ensure the context is actually beneficial for the company paying for the ads (advertisers are very sensitive about what content gets subconsciously associated with their brand).How do you make sure a human sees them? This is a very hard problem even in normal ads and seems even more problematic with chatbots.How do you attract advertiser dollars? Ad spending is zero-sum. You must somehow convince advertisers that your chatbot is a better ad platform than Youtube, Facebook, etc.The only AI solution that seems reasonab",
+    "The US spends a bit less than $400B/yr creating software and the worldwide spending is around $675B/yr.Even if you eliminate 100% of the people involved in creating software, that's still not enough money (and of course, that's not going to happen because someone has to know what to build).Everyone is adding agents to enterprise stuff, but an overwhelming majority of the general population now hate AI for most things -- especially the \"AI support\" these companies are using. I think most people would rather suffer through overseas call centers with absolutely terrible representatives than deal with AI support (studies seem to indicate 80+% prefer a human to AI for support in general).AI as a ",
+    "I didn't mean 'no ROI', clearly AI is a productivity boost.For the AI companies to IPO at the money they want, they have to promise that they are going to be worth many multiples more of that value.But currently they are spending hundreds of billions and despite this their models are not light years ahead of each other, or of the companies with much lower budgets and compute power.What they claim they can offer in future profits is subject to considerable debate.It's in the interests of VC's and their underlying rich investors to hype it ip, IPO and bank the cold hard cash.",
+    "If Uber think there's no ROI, why do they allow each of their employees to spend $1,500 per month per tool?Shouldn't they have set that per-employee budget to zero instead?(I dug up the original source for that Uber doubts the ROI story a few months ago, it's a lot weaker than the headlines about it suggested: https://simonwillison.net/2026/May/27/product-market-fit/#th...)",
+    "It's a solid sign the numbers are not real...What Uber and other companies said is that the money they spent didn't generate the expected value they were promised. If it had generated $2 for every $1 spent, then Uber would be spending with no limits.The lack of demonstrable return on investment means there is a ceiling to the market size, and profit is capped as cheaper models and self hosted open source models limit the amount flagship models can charge.Long way to go till market saturation though so they will grow for foreseeable, but its a quandary of how much they spend on R&D vs giving future shareholders dividends."
+   ],
+   "summary_ko": "댓글에서는 AI 기업들이 거액의 자금을 투입하고도 확실한 투자 대비 수익(ROI)을 증명하지 못하고 있다는 회의론과 함께, 향후 잉여 인프라만 남거나 미국 정부가 개입할 가능성에 대한 토론이 오갔습니다. 또한 기업들의 영업이익 적자 구조와 중국과의 경쟁 속에서 치솟는 비용 문제가 지속 가능할지를 두고 의견이 갈렸습니다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 기업공개 비용",
+   "kr": [
+    {
+     "t": "“AI 성능만으론 부족”… 앤트로픽, 비용·보안 강화한 ‘클로드 소네...",
+     "u": "https://biz.chosun.com/it-science/ict/2026/09/29/5TUAIIVFGFDRTDI24Z56H5MCHM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+     "d": "Tue, 29 Sep 2026",
+     "why": [
+      "비용",
+      "앤트로픽"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
@@ -329,7 +423,7 @@
    "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
    "discussion": "https://news.ycombinator.com/item?id=49863864",
    "points": 626,
-   "comments": 614,
+   "comments": 616,
    "r": 0.98,
    "at": "2026-09-27",
    "topics": [],
@@ -344,8 +438,8 @@
    "title": "AI companies in race to demonstrate their model most threatening to humanity",
    "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
    "discussion": "https://news.ycombinator.com/item?id=49875148",
-   "points": 432,
-   "comments": 390,
+   "points": 434,
+   "comments": 392,
    "r": 0.9,
    "at": "2026-09-28",
    "topics": [],
@@ -357,12 +451,114 @@
   },
   {
    "layer": "hn",
+   "title": "Claude partial outage",
+   "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
+   "discussion": "https://news.ycombinator.com/item?id=49893876",
+   "points": 165,
+   "comments": 139,
+   "r": 0.84,
+   "at": "2026-09-29",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:status.claude.com/incidents/4xvtc2gnq73l",
+   "_comments": [
+    "If they turn it into a movie, they would send the greybeard to space to fix the AI satellite server in space to save humanity.",
+    "No - the computer is not indispensable. The computer is just harder to replace than the man (in this imagined situation).Hence - the man is much more dispensable...---The water in my water bottle is much more dispensable than the toothpaste in my toothpaste tube. But both can be dispensed (in both meanings - distributed or replaced).",
+    "> Of course we all know most humans are useless and unable to survive outside our culture, but the difference is that I'm trying to picture is the individual trying the reason through challenges. The version of this that has been obvious to me up to now is that the individual didn't have the knowledge to look after themselves. But I guess it feels different to conceive of them not having the ability to fully reason on their own...?What this misanthropic/Anthropic-boosting bait is missing is that all of these pieces falling together doesn’t make sense.1. We are so accustomed to not-even-thinking means that we are legitimately freed from labor and cared for. (The dystopic version of being free",
+    "It may sadden you to find that the majority of the population can go days, even weeks without ever seriously \"reasoning\" about anything major.",
+    "Who needs Sonnet 12817 when 5 is maintaining is already maintaining Omarchy? And it's only 5% JS!",
+    "There always was. Like there's a gym crowd, there's an intellectual-hobby crowd.",
+    "The hordes of acolytes mumbling “Jevon’s paradox, Jevon’s paradox” every time AI gets cheaper beg to differ. Every minute saved using AI is just an opportunity to use more AI",
+    "For me, commits are the atomic block; and a good commit should be self-contained anyway; where no additional context is necessary. If an agent can't figure out what a commit is supposed to do, with only the commit title/description and diff, it's a bad commit, and this has always been true in software engineering. I do not pass prompts between the two ordinarily.After claude or codex finishes a commit, I switch console tabs and ask the other to review it; with the commit ID. I often find it helpful to inject a bit of human knowledge, and callout any areas of attention I see from a quick skim. (But that could just be me wanting to not abstract myself away from software engineering that much :",
+    "claude has outages multiple times per week, this seems to be nothing new. and this is not ok, for a premium product.",
+    "I really hope there will be social change - flexing mind - like flexing body in a gym/sport - becomes a thing.",
+    "There's far more than zero evidence, see https://arxiv.org/html/2402.08806v1 ; or the industry-standard practice of using multiple model families as LLM judges; or even 1P implementations https://code.claude.com/docs/en/advisor (which misses most of the benefit; since you want different model families, with different pretrains and posttrains).",
+    ">Update - All services have been operating normally since 14:59 UTC. We are continuing to monitor. Sep 29, 2026 - 15:30 UTCI hate it when companies declare victory when there is still a fire around them."
+   ],
+   "summary_ko": "사용자들은 프리미엄 서비스임에도 빈번하게 발생하는 장애에 대해 비판하며 유료 구독의 가치에 의문을 제기했습니다. 반면 일부는 복수의 모델을 교차 검증에 사용하는 업계 관행을 언급하며 일상적인 불편함에 대해 가볍게 농담을 주고받았습니다.",
+   "is_event": true,
+   "kr_query": "클로드 장애 서비스 중단",
+   "kr": [
+    {
+     "t": "美 챗GPT·클로드 일제히 장애… AI 서비스 동시 먹통",
+     "u": "https://www.chosun.com/economy/tech_it/2026/09/04/WI6VSP6TIFALLOAAGPQVDYDF7A/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+     "d": "Fri, 04 Sep 2026",
+     "why": [
+      "장애",
+      "클로드"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+   "discussion": "https://news.ycombinator.com/item?id=49896586",
+   "points": 361,
+   "comments": 296,
+   "r": 0.82,
+   "at": "2026-09-29",
+   "topics": [],
+   "story_key": "url:openai.com/index/introducing-gpt-6-1-sol",
+   "_comments": [
+    "noting that input:output:cached is 10:50:1 for astra and luna but 10:50:0.5 for sol. this doesn't mean a lot without \"tokens per task\" information but it's still interesting for there to be a \"dip\" like this instead of a monotonic change in one direction or the other",
+    "I was thinking the same thing in terms of running out of data a few months ago. But aren't most gains in the past year+ due to reinforcement learning in some form? Which doesn't need \"fresh data\" per se, as the model effectively creates the data as it goes. As long as engineers can come up with proper environments, tasks/goals, rewards, and actions, I don't really see data being a limit to model improvement in an agentic sense. Maybe as a knowledge base",
+    "They have also cut allowances for subscriptions in half. So even in the best case scenario it's about 2.5 times cheaper for Codex users. They just seem to have matched Claude Sonnet 5.5 *API pricing*, but from what I see online, it seems Claude Code now has a much more generous subscription allowance.",
+    "How large of codebases are you working on? The models have gotten good enough to 1 shot stupid \"trivial\" throwaway integration projects with 0 handholding (was having RL'd garbage in late 2025), and I'm actually enjoying designing bounded greenfield personal software from scratch with Astra, in my experience. It's quite slow - 2 weeks of credits and constant talking and back and forth with Astra, but it doesn't feel annoying to talk to and is like an intelligent colleague maybe 70% of the time? Which is great. Just push back when it's dumb.I'm by no means an AI booster, but given 2022 - 2026 progress I'd say it's \"exponential\" in the sense of, \"holy shit, every year I can do more and more ge",
+    "I'm a bit late with the pelicans because I was live-blogging the keynote: https://simonwillison.net/2026/Sep/29/openai-devday-2026-liv...Here they are for GPT-6.1-Sol: https://tools.simonwillison.net/markdown-svg-renderer?url=ht...They're not notably different from the GPT-6 family pelicans: https://static.simonwillison.net/static/2026/gpt-pelicans-gr...",
+    "Unfortunate that the Ultrafast is only available with the $500 subscription.Tibo said that the existing $200 subscriptions keep the 20x factor for a while.Ultrafast would have been nice with the temporary \"Pro 400\" plan.",
+    "well i could certainly be in the wrong; i'm just speaking from my personal and likely flawed experience but i feel like i've noticed silly mistakes in every (llm) model that has been released (and that i've sufficiently used) and it hasn't felt like 6 Sol was much of a regression from 6 Astra (more than reported in both model cards), both of which ive very extensively.not saying this is the case here but it does feel a bit like wine tasting sometimes, everyone claims to be an expert that can taste a few tokens and tell you exactly what region and vineyard its from.",
+    "We swear, We Really Wanted To Make An \"ASI\" Model But This Is Literally The Way The Weights Dragged Us This Time",
+    "Yes, either US AI corps reduce the cost of their top tier personal subscriptions down to what people are already paying for other expensive personal apps (e.g. Adobe), so ~$50-100, or open weights are going to eat their lunch very quickly. We're not there yet, as current hardware doesn't allow you to do things like multiple parallel agents, but we'll get there soon enough.$500 for the old $200 is definitely a fumble.",
+    "Whats interesting right now is that those people also see opus 5.5 as being CHEAP because it's something like half the price of fable or astra.",
+    "I've only tried animating models in Astra-6, and I was quite impressed! It's rarely able to one-shot things perfectly, but it usually gets pretty close.",
+    "If you run out of sol medium with $100 you're doing something wrong. Astra destroys your usage, I get 1 day of usage with Astra, but 6 sol is almost unlimited and I only use xhigh."
+   ],
+   "summary_ko": "신규 모델의 가격 인하와 가성비에 대해 개발자들은 에이전트 작업과 코딩에서 성능이 충분히 훌륭하다는 긍정적인 반응을 보였습니다. 다만 일부 사용자는 구독료 인상이나 할당량 축소 정책에 대해 불만을 표출하며 경쟁사 모델과 비교를 이어갔습니다.",
+   "is_event": true,
+   "kr_query": "오픈에이아이 GPT 신규 모델",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "DraftKings Is Using AI to Behaviorally Target Chronic Gamblers",
+   "url": "https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+   "discussion": "https://news.ycombinator.com/item?id=49896050",
+   "points": 227,
+   "comments": 160,
+   "r": 0.7,
+   "at": "2026-09-29",
+   "topics": [],
+   "story_key": "url:eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+   "_comments": [
+    "As a former smoker (quit in 2009), I absolutely LOVED smoking. The whole thing. Opening the pack, packing it down, pulling out the cigarette, lighting it, the first drag filling my lungs, the fullness in my chest. The only thing I didn't like was that it made me smell bad. When I started a job where I was working close to people and the smell made me insecure, I decided to quit. I still miss the ritual.Anyone who has quit smoking will tell you that the habit is the hardest part about quitting, not the physical addiction.",
+    "You can just ban these gambling and marijuana companies that cause harm to people. This article does a good job of summarizing a few, but not all of the reasons https://www.usatoday.com/story/opinion/columnist/2026/09/29/...",
+    "Cannabis isn't as chemically addictive as gambling.Gambling is a victimless crime. I support legalizing gambling too. Making all gambling illegal drives it underground and allows criminals to profit from it.But I equally strongly oppose online gambling or gambling advertising (while we're on the subject, I think alcohol advertising shouldn't exist either). You can't smoke or drink anywhere, anytime. Why should gambling be any different?Gambling, alcohol, and cannabis aren't good for you. So why allow them to be marketed to people? If they want to gamble (or drink or smoke) they'll find out about it and do it. No need to deliberately try to get people to do it.",
+    "There is no such thing as a victimless crime. Smoking marijuana has many many victims. I have personally seen enough people that smoked themselves stupid or into poverty that it hard for me to see it as a victimless crime. The issue was always that that laws and punishments were too lax.",
+    "I used to work in adtech and someone in sales told me that DraftKings and FanDuel did not like being referred to as gambling companies. They always wanted to convince people that it wasn't gambling, even though it's so obvious that's what it is.",
+    "Many people enjoy gambling, and relatively few have a \"problem\", so \"negative public good\" is doing a lot of work there. DraftKings may indeed by unethical, but that doesn't mean that all or even most others are.",
+    "Can we just ban all advertising except for word of mouth (but including fake word of mouth)?",
+    "> I predict this trend will continue all the way to prostitutionProbably. We don't call it prostitution anymore it's now called, \"sex work.\"",
+    "That's the problem though. I know many people who can't save $300/month, but easily spend that much in consumables, scratchers, alcohol, drugs, etc. On the subject of gambling addiction, $300/month by someone who can't afford it absolutely happens. Go to a GA meeting sometime. They get their paycheck, gamble it away, and then don't have money for rent. Unrestricted gambling is the devil and will be the downfall of America. I'm not one for \"shoulds\", but there should be something like an accredited gambler law, where you're not allowed to gamble more than 1/3rd your paycheck except in certain circumstances.",
+    "I worked for such a company, you get made a VIP if you lose a lot of money, not if you have a gambling problem. In fact being made a VIP is basically the only way that the company can identify problem gamblers besides self-reports (because its the only time people from the company actually talk directly to the user).",
+    "I know people who place bets fairly regularly (weekly during their favorite sports seasons) and they have been making profits yearly. You're not going to get banned for making hundreds of dollars in profit. I'm not saying these guys are making good decisions or should even keep doing it, but I have seen their activity statements.",
+    "They made the same argument for gambling. \"It's a victimless crime!\" Except it isn't."
+   ],
+   "summary_ko": "댓글에서는 도박 및 중독성 물질의 광고와 마케팅을 전면 금지해야 한다는 목소리가 높았다. 반면 도박은 성인의 자율적인 영역이며, 규제만이 능사가 아니라는 반대 의견도 존재했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "There are no \"rogue\" AI agents",
    "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
    "discussion": "https://news.ycombinator.com/item?id=49868083",
-   "points": 391,
+   "points": 393,
    "comments": 268,
-   "r": 0.69,
+   "r": 0.68,
    "at": "2026-09-27",
    "topics": [
     "에이전트"
@@ -378,8 +574,8 @@
    "title": "The problem is not AI code, but not knowing about system architecture or intent",
    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
    "discussion": "https://news.ycombinator.com/item?id=49880312",
-   "points": 368,
-   "comments": 233,
+   "points": 377,
+   "comments": 238,
    "r": 0.63,
    "at": "2026-09-28",
    "topics": [],
@@ -391,31 +587,49 @@
   },
   {
    "layer": "hn",
+   "title": "Dots: Always-on agents",
+   "url": "https://openai.com/index/introducing-dots/",
+   "discussion": "https://news.ycombinator.com/item?id=49896604",
+   "points": 268,
+   "comments": 157,
+   "r": 0.59,
+   "at": "2026-09-29",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:openai.com/index/introducing-dots",
+   "_comments": [
+    "In case you are looking for an open-source alternative without vendor lock-in (https://github.com/agenta-ai/agenta)",
+    "Because the harness is in its early form. The more advanced harness in the current time look like Amp:- Cloud workspace (Orb) and agents.- Multiple agents with different LLMs and system prompts for different roles (Main, Librarian, Oracle...).- A universal agent (Puck) for managing the whole workspaces.- Web app or native app to work from any devices.- Support subcriptions and API keys.",
+    "Dots are not remote agents _in_ a sandbox. They use a sandboxes/environments, but they are, what is now called, \"managed agents\", meaning they run in a distributed harness and utilize environments when they need on.At least that is what I can ascertain from this article: https://openai.com/index/how-we-build-safety-security-and-pr... (see first diagram when scrolling down)",
+    "I’m so suspicious of that exact claim being repeated everywhere since a few weeks, that really feels like a slogan astroturfed. It’s also fairly shallow analysis. Water is localized, you cannot do a meaningful comparison without taking in account the impact on specific water sources, an aggregate doesn’t give you any insight (other than having a slogan)",
+    "Did Claude actually lose the lead? They definitely lost a lot of good will but the only people I hear talking about actually switching away are people on message boards. Hermes/Openclaw users did as well but it was always reluctantly to something worse. At work it's still very much Claude first and only sometimes others if Claude fails, which is increasingly less often",
+    "\"They're just trying things\" is a silly way to describe cutting the usage limits of a plan people paid for in half. Almost as silly as Tibo patronizing the paying subscribers they rugpulled by saying \"we know change is hard\" about taking $200 and delivering $100 of promised services.",
+    "I love stuffing eldritch horror inside a teddie bear plushie. So perfectly a caricature of modern tech-dystopianism.God I want the fucking market to crash",
+    "> ...maybe they think enterprise will pick up and run with Dots? Seems unlikely. Read the blurb about Microsoft and Agent 365 > We’re also working with Microsoft to integrate specialist dots with their enterprise governance and security controls in Agent 365. The goal is to let businesses manage dots through the Microsoft tools they already use. Very, very likely targeting enterprise",
+    "I don't think it's a conspiracy, they're just making the same mistake many other software companies have in the past. When you sell your products to the most discerning and well-informed consumers, you enter into a cutthroat race to the bottom. OpenAI would like to diversify to more profitable ventures, but since ChatGPT they have yet to release something novel that was truly successful, nonetheless profitable, and thusfar nearly every experiment has been a flop, so to speak (ChatGPT Atlas, the Sora App, Instant Checkout, etc).",
+    "These recent product announcements sound like entirely plausible satire, but unfortunately most of these pages are not actually intended to be a joke, it's not even amusing, but mostly tiring.",
+    "Muse is pretty bad branding in that it first was the name of a model, then that of a harness/agent/consumer product.Claw is also an existing name for an existing harness/agent, but at least that would be the same category as dots.",
+    "I'm in Norway and I would was hoping to get to play with dots.I guess Norway and 30+ other countries are excluded."
+   ],
+   "summary_ko": "오픈소스 대안을 찾는 반응과 함께, 최근 AI 기업들의 잇단 제품 출시가 수익성 악화를 타개하려는 무리수라는 비판이 이어졌다. 일부 사용자는 국가별 차단 정책이나 제한 축소에 불만을 표출했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Owed a billion dollars in Nvidia stock",
    "url": "https://colo.to/nvidia-stock-narrative.html",
    "discussion": "https://news.ycombinator.com/item?id=49872723",
-   "points": 1067,
-   "comments": 447,
+   "points": 1076,
+   "comments": 451,
    "r": 0.42,
    "at": "2026-09-28",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:colo.to/nvidia-stock-narrative.html",
-   "_comments": [
-    "We don't know enough to justify the jeering. We don't know he was rich in 1996. We don't know he's rich now. We can read between the lines and infer that he possibly still retains Nvidia stock that is worth a lot, but we don't know that for sure. We only know that a tranche of stock that he was entitled to remains with Nvidia and is worth a lot of money now. Maybe he would have done really admirable, benevolent things with that money. Who knows? It doesn't matter. It's never ok to jeer or sneer on HN.",
-    "I'm sure these questions have been posed and solved already because we have it in Brazil and while the judiciary is absurdly expensive here, I assure you it isn't because of irrelevant lawsuits (https://www1.folha.uol.com.br/internacional/en/business/2024...). This is a non-issue unless you can prove that this would happen in the US.",
-    "I'm confused by what this means.I think it is pretty much agreed that the OP has a perfectly good claim starting a legal event. Whether it amounts to the 1B settlement or not is not something anyone here can decide.",
-    "1. Nowhere does the article mention his current wealth (or lack of)2. He didn’t “forget” — he misunderstood his contract, and only caught the error much later.3. He’s not looking for pity. He writes: “I offer this in the spirit of a cautionary tale. I remain sanguine, and amused.”Maybe something about his story bothered you?",
-    "What do you think is going to happen to the courts if suing over small sums is effectively free? Don’t you think a lot of people are going to bring effectively irrelevant lawsuits generating enormous cost on everyone paying for this system?",
-    "Yes, but that is regarding the legal outcome. There are two different things going on here.Legally, the grant contract is the \"Casus belli\" - it is the reason for which you have a claim to something, whether it was intent or not doesn't matter, you have a valid claim to take them to court, there is no need to really talk about that. However it gets resolved, is really not something I can tell, not a lawyer.Whether I remain friends or on trustworthy terms is a personal matter, which is unrelated to legal outcomes in this case.",
-    "https://news.ycombinator.com/item?id=49878075 a system of fairness, not a system of exploitation",
-    "What’s the alternative? Which system would allow people to sue for $10 if the work required to do that is worth significantly more?",
-    "Why? Thinking you won't prevail doesn't mean you can't try.It would be different if they thought their claim had no merit, or were hiding evidence that it was a fraudulent claim. But here, it seems like it's just a slightly long-shot due to the timing. AFAICT there's no problem in pursuing claims like that, either for the client or the attorney.",
-    "Similarly, I had the option to CPU-mine almost as much Bitcoin as I wanted in 2008 when I first read the whitepaper, but I didn't, so I guess I should write an article about how half of Satoshi's coins should be mine?",
-    "Litigating events that happened years ago is often impractical. Records are hard to find, memories are poor, witnesses are hard to find or dead, etc.I think you argue for why don't you let the case be opened and then dismiss it in case there's not enough evidence available. On one level that's not great because it results in a lot of cases opened and then closed for lack of evidence. On another, it's not great because there's significant unfairness when some of these cases are pursuable and some are not --- drawing a line in the sand and giving a specific time frame for things to happen or not seems more fair to me, but I guess it's debatable.Having unlimited time to litigate also suggests e",
-    "Your lawyers told you they were representing you, not because they thought your claim could prevail, but because you might be able to get into discovery, at which point the cost to NVIDIA in time and hassle would force them to settle?I hope NVIDIA's lawyers are reading this comment and filing a state bar complaint against your attorneys."
-   ],
    "summary_ko": "댓글에서는 수십 년 전의 계약이나 주식 보상을 뒤늦게 문제 삼아 소송을 제기하는 행위의 타당성을 두고 의견이 엇갈렸다. 한편으로는 명백한 권리 주장이자 경고성 사례라는 시각이 있는 반면, 당시의 정확한 정황을 알기 어렵고 소송 제도를 남용하는 비판적 시각도 존재했다.",
    "is_event": false,
    "kr_query": "",
@@ -426,26 +640,12 @@
    "title": "It's Time to Investigate the AI Labs",
    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
    "discussion": "https://news.ycombinator.com/item?id=49883471",
-   "points": 516,
-   "comments": 210,
-   "r": 0.41,
+   "points": 584,
+   "comments": 246,
+   "r": 0.42,
    "at": "2026-09-28",
    "topics": [],
    "story_key": "url:calnewport.com/its-time-to-investigate-the-ai-labs",
-   "_comments": [
-    "Yes, with AI I will be able to simply build a doomsday machine. Claude will just tell me how to build a supply chain, circumvent regulations and do this without anyone finding out.",
-    "It's not possible to regulate AI. Anticipating this would happen, I liberalized it a few years ago by turning it into a file that reads and writes text to stdio. Then I shared it with every man woman and child on earth. Now we all possess this great nuclear weapon. Good luck controlling that.",
-    "My recipe book has 300 AIs and all are delicious. Google Maps running A* or whatever is obviously not AI. Come on.",
-    "I think you're arguing the opposite of what you think you are.Regulating gun ownership is exactly regulating the application.In your analogy, the gun is the AI. What you can do with the gun is the application.Different actors with different credentials in different contexts will have different requirements and permissions of what they can do with the technology, be it a gun or AI.",
-    "“We need to stop letting a small number of private companies, acting and talking in increasingly erratic ways, dictate how we’re supposed to feel about...\"The original quote follows with \"AI\", but it should be clear by now that you could put any topic here and the main issue is: private conglomerate money trying to control people.And the remedies are well known: breaking corporate power and power concentrations through 1950s style regulation, as it was deployed against the robber barrons from back then and which resulted in a golden age for America and the world.",
-    "Hugging Face disclosed the attack. OpenAI owned up to it a week later. It's unclear when and if OpenAI would have disclosed it if HF hadn't already done so.For a more recent example, OpenAI was chastised by Australia recently for notifying them three months after their agents attacked AUS government websites.[0] https://news.ycombinator.com/item?id=49825580",
-    "Ofcourse they do reasoning and planning, it's entirely encoded in software ofcourse, but modern autopilots don't just hold a course, they perform maneuvers and follow waypoints the process of turning the objective turn 35 degrees to actuator inputs is reasoning and planning.AI is not magic it's software, the definition is far from pointless, google maps giving you a route to your destination is AI.",
-    "Human builds a bomb and places it in a crowded place. Do you deal with the bomb or the human first?",
-    "Most autopilots don't involve reasoning and planning. In fact, autopilots predate digital computers. The first ones were developed prior to WW1.If a basic heading hold PID loop is AI so is a thermostat from 1990. At which point the word is so meaningless it is obviously a useless definition.",
-    "Human hits you with the stick. Do you deal with stick or the human?All these discussions about AI to me like discussions about sticks. We need to talk about and deal with humans in the first place.",
-    "Autopilots perceive the environment, reason, plan and execute actions. Autopilots are AI.",
-    "The US agrees with that argument which is why gun ownership is not really regulated."
-   ],
    "summary_ko": "대형 AI 기업들이 개발하는 기술과 독점적 권력에 대해 강력한 규제가 필요하다는 주장이 제기되었다. 규제의 범위와 실효성을 두고, 인공지능을 통제하는 것은 불가능하거나 무의미하다는 의견과 과거 독점 기업에 적용했던 것처럼 기업 권력을 해체해야 한다는 주장이 맞섰다.",
    "is_event": false,
    "kr_query": "",
@@ -456,27 +656,45 @@
    "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
    "url": "https://github.com/firelex/jeff",
    "discussion": "https://news.ycombinator.com/item?id=49883844",
-   "points": 505,
-   "comments": 192,
-   "r": 0.38,
+   "points": 558,
+   "comments": 215,
+   "r": 0.39,
    "at": "2026-09-28",
    "topics": [],
    "story_key": "gh:firelex/jeff",
-   "_comments": [
-    "But it doesn’t. That is why that other person is claiming their demo is more impressive.What you are saying is like me losing 13kg is as impressive as having the potential to do so if only I would stop eating ice cream and too many snacks every day.",
-    "Great course, thanks for sharing, going through your slides and papers right now.",
-    "Laya is the model this uses. Like Jev, it's blind - it can't take an image as an input. So how can it play Doom, or Atari games, or do other visual tasks, as people have shown it to do? They write a bit of app-specific adapter code that transforms the game state into a structured piece of data (here, the \"semantic snapshot\"). And that is what these models take as input",
-    "Multi layer perceptron. A tiny neural net.Boosted trees over embeddings work surprisingly well too.",
-    "Thanks for the vouching. I don't really understand what I did to anger the algorithms! But yeah, I think that that's the real sticking point. If the value prop of jev is \"plug it in anywhere and it generally does smart things\" you're absolutely right that Laya is Not A Thing. I've spent a bunch of time working on fine tuning models (i teach a class on it! https://earino.github.io/applied-deep-learning/ using the same ModernBERT stuff!) and so for me, I naturally went: \"wait a second, so how good is Jev compared to fixing the problem domain.\"Anyways, thanks for the vouching!",
-    "btw your comment was immediately marked as flagged/dead. Odd for a high quality comment. I vouched for it.My main point of disagreement would be that I fundamentally see a different use for a jev sort of model (generalism is applealing), but if you're finetuning, a bert base is not bad.",
-    "The base-model criticism is fair. Laya is weak zero-shot and doesn't have the world knowledge of a much larger pretrained model. Their own site puts the base models at around 0.35 on the typed-decisions benchmark, which is close to random.I don't think that makes it a dead end. Laya is designed to be fine-tuned for a specific task, and the site reports the fine-tuning gains. The 0.766 number comes from fine-tuning on the benchmark's train split, not from the base checkpoint. They also report that fitting a single temperature scalar per question type cuts expected calibration error from 0.466 to 0.081. That's a large gain, and it only shows up after you specialize the model.\"Peer\" is doing a ",
-    "In one of my client projects we've had to do forced upgrades of LLM models because of deprecations (I believe three or four of them over the course of 2 years). Each time our internal benchmarks have shown REDUCED performance after upgrading to \"better\" models.",
-    "You don't seem to understand what the point of Jev is when you say \"you can fine tune it for your use case\". Building your own classifiers for your specific business problems is the type of work we all used to do back in 2016 or so. It costs very much. Jev is a cheap and fast general purpose classifier.",
-    "If you have an easy problem that can be solved by a classifier from pre LLM era, then sure, go ahead. But we have LLMs now and we can use those to expensively and slowly classify harder problems using general purpose models, without needing to spend a huge amount of time fine tuning a model for the specific task. Jev offers to do the same fast and cheap.For clarity: no, a 0.8B model is not gonna do that.",
-    "laya sucks. it's a dead end and for some treat it as a peer of jev or even the qwen jevs. base model doesnt have enough world knowledge to generalize.",
-    "Their demo could also change goals, e.g. avoid monsters instead of shooting them, by changing some variable. I'm sure that could also be used to change goals."
-   ],
    "summary_ko": "홈 트레이닝이 가능한 소형 결정 모델의 성능과 범용성을 두고 다양한 평가가 오갔다. 특정 태스크에 맞게 파인튜닝하는 방식이 효과적이라는 의견과, 범용적인 지식과 제로샷 성능이 부족해 한계가 명확하다는 비판이 팽팽히 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+   "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+   "discussion": "https://news.ycombinator.com/item?id=49890226",
+   "points": 384,
+   "comments": 123,
+   "r": 0.32,
+   "at": "2026-09-29",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+   "_comments": [
+    "This is my concern as well- the same wiggle-room methodology that allowed a business to claim not to “sell or share” PII, because “user data collaboration” was not part of the legal definition prior to CCPA.OpenAI’s statements in response to the Millenium Prize (and related) disputes I think are a pretty obvious example of this in practice. One man’s “user prompts” is not another’s “reasoning trace scratchpad”.This comment by Falserum on the mathematics research post articulates it well:https://news.ycombinator.com/item?id=49649992",
+    "not as bad since the blast radius is only your chat vs. knowing your password exposes all your data.however - agree that this is not great - espeically if chat TTL is long. someone who gets your URL can read everything you're asking (eg. by sniffing your network/accessing your browser history)",
+    "Whether they were rewarded by actual merit isn't yet known. Their recent wealth is present-dated imaginary future gains paid by speculators. If by \"merit\", you mean the ability to perform skillfully to serve the whims of people with a lot of money, then yes.Who is spending the kind of money that makes regular NVIDIA employees millionaires? You have to consider how those people attained it. And at the scale of NVIDIA's growing value downstream of a rapid investment in AI infrastructure, you can trace a good amount of it to Elon Musk, who has interfered illegally in an election to purchase favor with a party that ended several serious investigations into his companies. Now, the government is u",
+    "Those companies are grossly incompetent to the point of committing what is likely to be felonies. If you think I’m deflecting you’re misguided, I’ve been advocating for months for the AI labs to be shutdown and their leadership investigated for gross negligence and potential crimes.I would still bet they aren’t making any money from data leaking to advertisers",
+    "> When privacy is a selling point on the enterprise plan regular users, even paying ones, are the product.There's really no reason to think that enterprise plans are immune. While this analysis didn't test enterprise plans, and only focused on third party tracking, the people behind these companies have already demonstrated that they are willing to break the law to get what they want, are willing to lie to their users, willing to lie to the public, and even willing to lie to congress. Yet somehow people seem convinced that they'd never dare to lie to Random Corp LLC",
+    "This paper focuses on the use of the providers' web and phone tools, and the data sharing arrangements they built through ad networks and tracking services like Data Dog. It doesn't talk about how they handle data from API calls. For one thing that can be pretty opaque.I have a friend/client who understandably doesn't trust the existing privacy policies of the major providers. They have the same problem many of us do: We want the most powerful models, we're willing to pay for them, but we see over and over how much of a frontier the frontier actually is. Frontiers are ugly if you don't have guns.So for now maybe platform tools like Open WebUI and TypingMind are a good workaround since the bi",
+    "I guess I don't understand the term \"corporate socialism\". What does it mean, and how did it create the world of NVIDIA and AMD, Google and Microsoft, Anthropic and OpenAI?Weren't Mr. Huang, his cofounders, and his peers, rewarded based on merit? Where did socialism step in?",
+    "Capitalism is fine so long as capital is allocated on merit. It isn't, because we don't have capitalism, we have corporate socialism.",
+    "you got any recommendations for local models setups? lightweight enough for a 5060 if possible",
+    "Enough Meta executives have been hired there. Expect the same behavior over time.",
+    "Title is: Prompt like a Butterfly, sting like a trackeror A Privacy Analysis of Web and Mobile Conversational AI AgentsSite link with context: https://jorgegarciaherrero.com/en/prompt-like-a-butterfly-st...",
+    "Isn't it more like \"it's who capitalism rewards\"?All we've chosen is free markets."
+   ],
+   "summary_ko": "대화형 AI 서비스들이 광고 네트워크와 트래킹 서비스를 통해 데이터를 공유한다는 분석에 대해, 기업용 플랜조차 신뢰하기 어렵다는 불신이 제어됐다. 이에 대한 대안으로 로컬 모델이나 서드파티 웹 인터페이스를 활용해야 한다는 의견이 나왔다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -486,24 +704,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Guys I promise It wasn't me 😭😭",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsc0iz/guys_i_promise_it_wasnt_me/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsc0iz/guys_i_promise_it_wasnt_me/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1wsc0iz/guys_i_promise_it_wasnt_me"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Looks like the era of subsidised compute is coming to an end. The old ChatGPT Pro $200 20x plan will be halved. The new $500 plan will have similar limits as the (old) $200 plan.",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wt5f4e/looks_like_the_era_of_subsidised_compute_is/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wt5f4e/looks_like_the_era_of_subsidised_compute_is/",
-   "rank": 2,
+   "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -512,6 +716,20 @@
     "인프라·칩"
    ],
    "story_key": "url:reddit.com/r/LocalLLaMA/comments/1wt5f4e/looks_like_the_era_of_subsidised_compute_is"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "AMD's new 256 core EPYC has 16-channel DDR5-12800, 91% memory bandwidth of an RTX 5090",
+   "url": "https://www.tomshardware.com/pc-components/cpus/amd-drops-an-epyc-usd15-000-256-core-bomb-epyc-9006-zen-6-venice-cpus-get-full-spec-and-pricing-treatment-from-usd700-up-to-usd14-904",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wtc4j9/amds_new_256_core_epyc_has_16channel_ddr512800_91/",
+   "rank": 2,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:tomshardware.com/pc-components/cpus/amd-drops-an-epyc-usd15-000-256-core-bomb-epyc-9006-zen-6-venice-cpus-get-full-spec-and-pricing-treatment-from-usd700-up-to-usd14-904"
   },
   {
    "layer": "reddit",
@@ -548,42 +766,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "ImaJev-4b: I spent 15 days fine-tuning a 4B model to make business decisions from text and photos, and it just ranked #1 of 91 on JevBench & ahead of GPT-5.6 Luna on DecisionBench",
-   "url": "https://huggingface.co/mohit67890/imajev-4b",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsgrma/imajev4b_i_spent_15_days_finetuning_a_4b_model_to/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:mohit67890/imajev-4b"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "You can just merge Qwen3.6 & 3.8 27B to get decent performance with much fewer token generation",
-   "url": "https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsdyd2/you_can_just_merge_qwen36_38_27b_to_get_decent/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:jetbrains/qwen3.8-3.6-27b-blend"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Speculative reward hacking in coding agents",
    "url": "http://Z.ai",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuag0/speculative_reward_hacking_in_coding_agents/",
-   "rank": 7,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -596,16 +782,30 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I am concerned about all these disparate hard forks that target specific architectures instead of opening a PR against upstream",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
-   "rank": 8,
+   "title": "Anthropic just dropped the greatest advertisement for GLM ever.",
+   "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wth4iz/anthropic_just_dropped_the_greatest_advertisement/",
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard"
+   "story_key": "url:anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Reflection 70B was released two years ago (September 2024)",
+   "url": "https://x.com/MaziyarPanahi/status/1838559480658710982",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wt7e94/reflection_70b_was_released_two_years_ago/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:x.com/MaziyarPanahi/status/1838559480658710982"
   },
   {
    "layer": "reddit",
@@ -613,7 +813,7 @@
    "title": "Can we get some quality control on all these model perf posts?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq0pa/can_we_get_some_quality_control_on_all_these/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq0pa/can_we_get_some_quality_control_on_all_these/",
-   "rank": 9,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -624,10 +824,84 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "I am concerned about all these disparate hard forks that target specific architectures instead of opening a PR against upstream",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "GLM-5.3 and the Spread of Advanced Cyber Capabilities \\ Anthropic",
+   "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg0vd/glm53_and_the_spread_of_advanced_cyber/",
+   "rank": 10,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Is AI Profitable Yet?",
+   "url": "https://isaiprofitable.com/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wt33uu/is_ai_profitable_yet/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:isaiprofitable.com/"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "[Release] GSQ-RCO GGUFs for Qwen3.8-Flash-Next, plus a 50% expert-pruned Coder build at ~1.89 bpw",
+   "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wt4s88/release_gsqrco_ggufs_for_qwen38flashnext_plus_a/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:ista-daslab/qwen3.8-flash-next-gsq-rco-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "First few days of qwen3.8-flash-next on 4x R9700 - it's been really interesting so far",
+   "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsxgbo/first_few_days_of_qwen38flashnext_on_4x_r9700_its/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:tcclaviger/qwen3.8-flash-next-mxfp4-fp8"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Debugging PCIe Link Retraining on an x8/x8 Splitter with Two RTX 3090s",
    "url": "https://doug.sh/posts/pcie-splitter-rtx-3090/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsscrw/debugging_pcie_link_retraining_on_an_x8x8/",
-   "rank": 10,
+   "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -641,68 +915,6 @@
    "title": "What do you think about ToMoE v2 paper, converting dense model to MoE model at near lossless accuracy? I feel Qwen3.8-27B-A16B or something along those lines would be amazing, though there are architectural hurdles, as well as need folr training data.",
    "url": "https://arxiv.org/html/2501.15316v2",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsmsnx/what_do_you_think_about_tomoe_v2_paper_converting/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:arxiv.org/html/2501.15316v2"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "First few days of qwen3.8-flash-next on 4x R9700 - it's been really interesting so far",
-   "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsxgbo/first_few_days_of_qwen38flashnext_on_4x_r9700_its/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:tcclaviger/qwen3.8-flash-next-mxfp4-fp8"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "What model sits between Qwen 3.8 27b and Flash next for coding?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsekkj/what_model_sits_between_qwen_38_27b_and_flash/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsekkj/what_model_sits_between_qwen_38_27b_and_flash/",
-   "rank": 13,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1wsekkj/what_model_sits_between_qwen_38_27b_and_flash"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Mica v0.1 4B got diamonds in survival Minecraft on its first run. 26 decisions from an empty inventory.",
-   "url": "https://huggingface.co/sky7350/Mica-v0.1-4B",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wsfjmb/mica_v01_4b_got_diamonds_in_survival_minecraft_on/",
-   "rank": 14,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:sky7350/mica-v0.1-4b"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "[Release] GSQ-RCO GGUFs for Qwen3.8-Flash-Next, plus a 50% expert-pruned Coder build at ~1.89 bpw",
-   "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1wt4s88/release_gsqrco_ggufs_for_qwen38flashnext_plus_a/",
    "rank": 15,
    "points": 0,
    "comments": 0,
@@ -711,7 +923,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:ista-daslab/qwen3.8-flash-next-gsq-rco-gguf"
+   "story_key": "url:arxiv.org/html/2501.15316v2"
   }
  ],
  "quiet_important": [],
@@ -720,8 +932,8 @@
    "layer": "hf",
    "title": "convaiinnovations/laya",
    "url": "https://huggingface.co/convaiinnovations/laya",
-   "trending": 2086,
-   "likes": 4415,
+   "trending": 1893,
+   "likes": 4481,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -732,8 +944,8 @@
    "layer": "hf",
    "title": "Edge0/Audio8-ASR-Infinite",
    "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
-   "trending": 1282,
-   "likes": 1458,
+   "trending": 1300,
+   "likes": 1479,
    "downloads": 23674,
    "topics": [
     "모델릴리스"
@@ -744,8 +956,8 @@
    "layer": "hf",
    "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
    "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-   "trending": 1233,
-   "likes": 2338,
+   "trending": 1121,
+   "likes": 2396,
    "downloads": 1152523,
    "topics": [
     "모델릴리스"
@@ -756,8 +968,8 @@
    "layer": "hf",
    "title": "Qwen/Qwen-Image-2.1",
    "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-   "trending": 840,
-   "likes": 2624,
+   "trending": 748,
+   "likes": 2645,
    "downloads": 64362,
    "topics": [
     "모델릴리스"
@@ -768,8 +980,8 @@
    "layer": "hf",
    "title": "XingChen-AGI/TeleOCR",
    "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
-   "trending": 699,
-   "likes": 830,
+   "trending": 727,
+   "likes": 861,
    "downloads": 30354,
    "topics": [
     "모델릴리스"
@@ -778,22 +990,10 @@
   },
   {
    "layer": "hf",
-   "title": "XingChen-AGI/Xing4.0-29B-A4B",
-   "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-   "trending": 570,
-   "likes": 1803,
-   "downloads": 46557,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:xingchen-agi/xing4.0-29b-a4b"
-  },
-  {
-   "layer": "hf",
    "title": "Contrastive-LM/CLM-v0.1-8B",
    "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-   "trending": 497,
-   "likes": 504,
+   "trending": 509,
+   "likes": 517,
    "downloads": 1910,
    "topics": [
     "모델릴리스"
@@ -804,8 +1004,8 @@
    "layer": "hf",
    "title": "nvidia/Nemotron-3-Diarization",
    "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
-   "trending": 473,
-   "likes": 488,
+   "trending": 486,
+   "likes": 504,
    "downloads": 30931,
    "topics": [
     "인프라·칩"
@@ -814,48 +1014,48 @@
   },
   {
    "layer": "hf",
-   "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-   "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-   "trending": 413,
-   "likes": 2250,
-   "downloads": 3581027,
+   "title": "XingChen-AGI/Xing4.0-29B-A4B",
+   "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+   "trending": 474,
+   "likes": 1807,
+   "downloads": 46557,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:prism-ml/ternary-bonsai-2-27b-gguf"
+   "story_key": "hf:xingchen-agi/xing4.0-29b-a4b"
   },
   {
    "layer": "hf",
    "title": "TaichuAI/ZDTaichu5.0-9B",
    "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
-   "trending": 396,
-   "likes": 1838,
+   "trending": 397,
+   "likes": 1947,
    "downloads": 11836,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:taichuai/zdtaichu5.0-9b"
+  },
+  {
+   "layer": "hf",
+   "title": "Viggle/Qwen-Image-2.1-viggle-turbo",
+   "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+   "trending": 395,
+   "likes": 414,
+   "downloads": 190649,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:viggle/qwen-image-2.1-viggle-turbo"
   }
  ],
  "new_repos": [
   {
    "layer": "github",
-   "title": "tobi/disktree",
-   "desc": "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.",
-   "url": "https://github.com/tobi/disktree",
-   "stars": 1860,
-   "topics": [
-    "인프라·칩",
-    "개발도구"
-   ],
-   "story_key": "gh:tobi/disktree"
-  },
-  {
-   "layer": "github",
    "title": "yetone/magpie",
    "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
    "url": "https://github.com/yetone/magpie",
-   "stars": 1844,
+   "stars": 2520,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -864,10 +1064,22 @@
   },
   {
    "layer": "github",
+   "title": "tobi/disktree",
+   "desc": "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.",
+   "url": "https://github.com/tobi/disktree",
+   "stars": 1889,
+   "topics": [
+    "인프라·칩",
+    "개발도구"
+   ],
+   "story_key": "gh:tobi/disktree"
+  },
+  {
+   "layer": "github",
    "title": "dzhng/jevgrep",
    "desc": "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
    "url": "https://github.com/dzhng/jevgrep",
-   "stars": 1599,
+   "stars": 1724,
    "topics": [
     "에이전트"
    ],
@@ -878,7 +1090,7 @@
    "title": "Niko1221/Strata",
    "desc": "Qwen3.8-Flash-Next (125B MoE) on a 8GB+ NVIDIA GPU: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional ",
    "url": "https://github.com/Niko1221/Strata",
-   "stars": 1320,
+   "stars": 1585,
    "topics": [
     "모델릴리스",
     "인프라·칩",
@@ -891,7 +1103,7 @@
    "title": "mikehasa/golive-skill",
    "desc": "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detec",
    "url": "https://github.com/mikehasa/golive-skill",
-   "stars": 1083,
+   "stars": 1101,
    "topics": [
     "에이전트",
     "개발도구"
@@ -900,21 +1112,10 @@
   },
   {
    "layer": "github",
-   "title": "ollaya-dev/ollaya",
-   "desc": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models.",
-   "url": "https://github.com/ollaya-dev/ollaya",
-   "stars": 932,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ollaya-dev/ollaya"
-  },
-  {
-   "layer": "github",
    "title": "feitangyuan/onetake",
    "desc": "Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. A Claude Agent S",
    "url": "https://github.com/feitangyuan/onetake",
-   "stars": 916,
+   "stars": 966,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -924,10 +1125,32 @@
   },
   {
    "layer": "github",
+   "title": "ollaya-dev/ollaya",
+   "desc": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models.",
+   "url": "https://github.com/ollaya-dev/ollaya",
+   "stars": 965,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:ollaya-dev/ollaya"
+  },
+  {
+   "layer": "github",
+   "title": "firelex/jeff",
+   "desc": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification",
+   "url": "https://github.com/firelex/jeff",
+   "stars": 957,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:firelex/jeff"
+  },
+  {
+   "layer": "github",
    "title": "riba2534/claude-opus-5-5-demo",
    "desc": "claude-opus-5-5-demo",
    "url": "https://github.com/riba2534/claude-opus-5-5-demo",
-   "stars": 907,
+   "stars": 916,
    "topics": [
     "모델릴리스"
    ],
@@ -938,25 +1161,27 @@
    "title": "yihui-dev/awesome-opus5-5-videos",
    "desc": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regula",
    "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
-   "stars": 833,
+   "stars": 895,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "gh:yihui-dev/awesome-opus5-5-videos"
-  },
-  {
-   "layer": "github",
-   "title": "firelex/jeff",
-   "desc": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification",
-   "url": "https://github.com/firelex/jeff",
-   "stars": 795,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:firelex/jeff"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "OpenAI DevDay 2026 live blog",
+   "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+   "at": "2026-09-29T15:55",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog",
+   "link_keys": [
+    "url:devday.openai.com/"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1259,24 +1484,8 @@
     "url:tiktok.com/@therealcornpop/video/7687243097801051422"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm-anthropic 0.29",
-   "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
-   "at": "2026-09-22T17:14",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Sep/22/llm-anthropic",
-   "link_keys": [
-    "gh:simonw/llm-anthropic",
-    "url:anthropic.com/claude-opus-5-5"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-09-29 10:59"
+ "enriched_at": "2026-09-29 18:31"
 }
