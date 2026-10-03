@@ -330,7 +330,7 @@ code{font-family:var(--mono);font-size:.9em}
     <div class="shead">
       <span class="idx">02</span>
       <h2>온도</h2>
-      <span class="note">주제군 14일 추세 · 최근 3일과 직전 4일의 비교</span>
+      <span class="note">주제군 14일 추세 · 완료된 날끼리 비교<br><span style="opacity:.75">점선 구간은 오늘(진행 중)</span></span>
     </div>
     <div class="temp" id="temp"></div>
   </section>
@@ -408,11 +408,15 @@ async function loadData() {
   let trend = [];
   if (T && T.series && T.series.length) {
     const gs = Object.keys(T.series[0]).filter(k => k !== 'date' && k !== 'n');
+    // 오늘은 아직 진행 중이라 하루치가 안 찬다. 증감 계산에서 빼지 않으면
+    // 매번 '오늘 급락' 으로 읽힌다. 완료된 날만 비교한다.
+    const partial = T.series.length && T.series[T.series.length - 1].partial;
     trend = gs.map(g => {
       const v = T.series.map(s => s[g] || 0);
-      const a = v.slice(-3).reduce((x, y) => x + y, 0) / 3;
-      const b = v.slice(-7, -3).reduce((x, y) => x + y, 0) / 4;
-      return { g, v, now: Math.round(a), prev: Math.round(b),
+      const c = partial ? v.slice(0, -1) : v;
+      const a = c.slice(-3).reduce((x, y) => x + y, 0) / 3;
+      const b = c.slice(-7, -3).reduce((x, y) => x + y, 0) / 4;
+      return { g, v, partial, now: Math.round(a), prev: Math.round(b),
         d: b > 0 ? Math.round(a / b * 10) / 10 : (a > 0 ? 99 : 0) };
     }).sort((x, y) => y.v.reduce((a, b) => a + b, 0) - x.v.reduce((a, b) => a + b, 0));
   }
@@ -584,12 +588,18 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
       const px = i => i / (n - 1) * W, py = v => H - v / max * (H - 3) - 1;
       const pts = t.v.map((v, i) => `${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ');
       const rise = t.d >= 1.2;
+      // 진행 중인 오늘은 점선으로 — 완료된 날과 같은 선으로 그으면 급락처럼 보인다
+      const tail = t.partial && n >= 2
+        ? `<polyline points="${px(n-2).toFixed(1)},${py(t.v[n-2]).toFixed(1)} ${px(n-1).toFixed(1)},${py(t.v[n-1]).toFixed(1)}"
+             fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="3 3"
+             vector-effect="non-scaling-stroke"/>` : '';
       return `<div class="trow">
         <span class="g">${esc(t.g)}</span>
         <span class="bar"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
           <polygon points="0,${H} ${pts} ${W},${H}" fill="var(${rise ? '--heat-15' : '--rule-2'})"/>
-          <polyline points="${pts}" fill="none" stroke="var(${rise ? '--heat' : '--muted'})"
-            stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+          <polyline points="${t.partial ? t.v.slice(0,-1).map((v,i)=>`${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ') : pts}"
+            fill="none" stroke="var(${rise ? '--heat' : '--muted'})"
+            stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>${tail}
           <circle cx="${W}" cy="${py(t.v[n - 1])}" r="2.6" fill="var(${rise ? '--heat' : '--muted'})"/>
         </svg></span>
         <span class="d ${rise ? 'up' : 'dn'}">×${t.d.toFixed(1)}</span></div>`;

@@ -487,10 +487,20 @@ def _reddit_oauth(min_comments=150):
 # ─────────────────────────────────────────────────────────────
 
 def collect_trend(days=14, min_points=100):
-    now = int(time.time())
+    """주제군 일별 화력.
+
+    ⚠️ 버킷을 '지금으로부터 N×24시간' 으로 자르면 안 된다.
+       마지막 칸이 '어제 이 시각 ~ 지금' 이 되는데 라벨은 시작점(어제)이 붙어,
+       내용은 대부분 오늘인데 화면에서는 오늘이 통째로 빠져 보인다(실측 민원).
+       KST 자정으로 끊고, 그 날짜로 라벨을 붙인다. 마지막 칸은 오늘(진행 중)이다.
+    """
+    now = datetime.now(KST)
+    midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
     series, totals = [], {g: 0 for g in GROUPS}
     for i in range(days - 1, -1, -1):
-        a, b = now - (i + 1) * 86400, now - i * 86400
+        d0 = midnight - timedelta(days=i)
+        d1 = d0 + timedelta(days=1)
+        a, b = int(d0.timestamp()), int(min(d1, now).timestamp())
         url = ("https://hn.algolia.com/api/v1/search?tags=story"
                "&numericFilters=created_at_i>%d,created_at_i<%d,points>%d"
                "&hitsPerPage=100" % (a, b, min_points))
@@ -506,8 +516,9 @@ def collect_trend(days=14, min_points=100):
                 day[g] += p
                 totals[g] += p
         series.append({
-            "date": datetime.fromtimestamp(a, KST).strftime("%m-%d"),
+            "date": d0.strftime("%m-%d"),
             "n": len(hits),
+            "partial": i == 0,        # 오늘은 아직 진행 중이다
             **day,
         })
     return {"series": series, "totals": totals, "days": days, "min_points": min_points}
