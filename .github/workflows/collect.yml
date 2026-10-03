@@ -86,11 +86,32 @@ jobs:
           fi
           python scripts/fetch_panel.py
 
+      # ⚠️ data/ 와 panel_kr.json 은 매 실행 통째로 다시 만들어지는 생성물이다.
+      #    봇 커밋끼리 겹치면 충돌이 나는데, 그때 정답은 **방금 수집한 쪽**이다.
+      #    예전엔 `git pull --rebase || true` 로 실패를 삼켜 detached HEAD 로
+      #    푸시를 시도하다 워크플로가 통째로 실패했다.
       - name: Commit
         run: |
+          set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data panel_kr.json
-          git diff --staged --quiet || git commit -m "Signal $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main || true
-          git push
+          if git diff --staged --quiet; then
+            echo "변경 없음 — 커밋 생략"; exit 0
+          fi
+          git commit -m "Signal $(date -u +'%Y-%m-%d %H:%M') UTC"
+
+          for try in 1 2 3; do
+            git fetch -q origin main
+            # 리베이스 중에는 'theirs' 가 지금 얹고 있는 우리 커밋이다
+            if ! git rebase -X theirs origin/main; then
+              git checkout --theirs -- data panel_kr.json 2>/dev/null || true
+              git add -A data panel_kr.json
+              GIT_EDITOR=true git rebase --continue || { git rebase --abort; exit 1; }
+            fi
+            if git push; then
+              echo "푸시 성공 (시도 $try)"; exit 0
+            fi
+            echo "푸시 경합 — 재시도 $try"; sleep 5
+          done
+          echo "3회 재시도 실패"; exit 1
