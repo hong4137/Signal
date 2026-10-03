@@ -19,6 +19,7 @@ Signal Layer 수집기 — buzz-first
   python collect.py --dry-run       파일 쓰지 않고 표만 출력
 """
 import argparse
+import io
 import json
 import os
 import re
@@ -517,11 +518,44 @@ def collect_trend(days=14, min_points=100):
                 totals[g] += p
         series.append({
             "date": d0.strftime("%m-%d"),
+            "ymd": d0.strftime("%Y-%m-%d"),   # 누적 파일은 연도가 있어야 한다
             "n": len(hits),
             "partial": i == 0,        # 오늘은 아직 진행 중이다
             **day,
         })
     return {"series": series, "totals": totals, "days": days, "min_points": min_points}
+
+
+def update_trend_history(trend):
+    """일자별 집계를 누적 파일에 합친다.
+
+    trend.json 은 14일 롤링이라 그 이전이 덮여 사라진다.
+    '9월에 담론 축이 어디였나' 를 되짚을 수 없으면 트렌드 도구로서 반쪽이다.
+    완료된 날은 값이 바뀌지 않으므로 그대로 덮어써도 자가 치유된다.
+    """
+    path = os.path.join(DATA, "trend_history.json")
+    hist = {"days": {}, "groups": list(GROUPS)}
+    try:
+        old = json.load(io.open(path, encoding="utf-8"))
+        if isinstance(old, dict) and isinstance(old.get("days"), dict):
+            hist = old
+            hist["groups"] = list(GROUPS)
+    except Exception:
+        pass
+    for s in trend.get("series", []):
+        ymd = s.get("ymd")
+        if not ymd:
+            continue
+        rec = {g: s.get(g, 0) for g in GROUPS}
+        rec["n"] = s.get("n", 0)
+        if s.get("partial"):
+            rec["partial"] = True          # 다음 실행이 완성본으로 덮는다
+        hist["days"][ymd] = rec
+    hist["updated"] = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
+    hist["span"] = [min(hist["days"]), max(hist["days"])] if hist["days"] else []
+    io.open(path, "w", encoding="utf-8").write(
+        json.dumps(hist, ensure_ascii=False, separators=(",", ":")))
+    return len(hist["days"])
 
 
 # ─────────────────────────────────────────────────────────────
@@ -653,6 +687,8 @@ def write_out(payload, now, trend):
     if trend:
         with open(os.path.join(DATA, "trend.json"), "w", encoding="utf-8") as f:
             json.dump(trend, f, ensure_ascii=False, indent=1)
+        n = update_trend_history(trend)
+        print("  누적 추세: %d일치 보존" % n, file=sys.stderr)
     return stamp
 
 

@@ -141,6 +141,56 @@ def parse_posts(handle, text, base_epoch=None):
     return out
 
 
+def update_panel_history(accounts, collected):
+    """패널 글을 누적 보존한다.
+
+    panel_kr.json 은 매 실행 덮어쓴다. Threads 에서도 글은 밀려 내려가므로
+    우리가 안 남기면 영영 사라진다 — 수집해놓고 버리는 꼴이다.
+    같은 글이 여러 판에 걸쳐 잡히므로 (계정, 본문) 으로 중복을 제거하고,
+    첫 관측·마지막 관측·최대 반응 수를 누적한다.
+    """
+    path = os.path.join(ROOT, "data", "panel_history.json")
+    hist = {"posts": []}
+    try:
+        old = json.load(io.open(path, encoding="utf-8"))
+        if isinstance(old.get("posts"), list):
+            hist = old
+    except Exception:
+        pass
+
+    idx = {}
+    for p in hist["posts"]:
+        idx[(p.get("h"), (p.get("t") or "")[:120])] = p
+
+    added = 0
+    for a in accounts:
+        for p in a.get("posts", []):
+            k = (a["h"], (p.get("t") or "")[:120])
+            cur = idx.get(k)
+            if cur:
+                cur["last_seen"] = collected
+                cur["react"] = max(cur.get("react", 0), p.get("react", 0))
+                if p.get("ts") and not cur.get("ts"):
+                    cur["ts"] = p["ts"]
+            else:
+                rec = {"h": a["h"], "n": a.get("n", a["h"]), "tier": a.get("tier", "C"),
+                       "t": p.get("t", ""), "ts": p.get("ts"), "at": p.get("at", ""),
+                       "react": p.get("react", 0),
+                       "first_seen": collected, "last_seen": collected}
+                hist["posts"].append(rec)
+                idx[k] = rec
+                added += 1
+
+    # 최신순 정렬 후 상한 — ts 없는 건 first_seen 으로 대신한다
+    hist["posts"].sort(key=lambda x: (x.get("ts") or x.get("first_seen") or ""), reverse=True)
+    hist["posts"] = hist["posts"][:800]
+    hist["updated"] = collected
+    hist["count"] = len(hist["posts"])
+    io.open(path, "w", encoding="utf-8").write(
+        json.dumps(hist, ensure_ascii=False, separators=(",", ":")))
+    return added, len(hist["posts"])
+
+
 def main():
     worker = (os.environ.get("THREADS_WORKER_URL") or "").rstrip("/")
     if not worker:
@@ -216,6 +266,11 @@ def main():
 
     io.open(OUT, "w", encoding="utf-8").write(
         json.dumps(payload, ensure_ascii=False, indent=1))
+    try:
+        new, tot = update_panel_history(payload["accounts"], payload["collected"])
+        print("  누적 패널: 신규 %d개 · 총 %d개 보존" % (new, tot), file=sys.stderr)
+    except Exception as e:
+        print("  [누적 패널] 실패: %s" % e, file=sys.stderr)
     print("패널 %d계정 · 글 %d개%s" % (
         len(accounts), sum(len(a["posts"]) for a in accounts),
         (" · 차단 %s" % ",".join(blocked)) if blocked else ""))

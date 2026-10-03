@@ -1,0 +1,296 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signal 기록</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#EDF0F3; --panel:#FFFFFF; --panel-2:#F6F8FA;
+  --ink:#0D1117; --ink-2:#39424D; --muted:#69737F;
+  --rule:#D6DCE3; --rule-2:#E7EBF0; --grid:#006E980C;
+  --heat:#C2491F; --heat-15:#C2491F26; --heat-08:#C2491F14;
+  --weight:#006E98; --weight-15:#006E9826; --weight-08:#006E9810;
+  --shadow:0 1px 2px rgba(13,17,23,.05);
+  --serif:"Instrument Serif",Georgia,serif;
+  --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
+    --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
+    --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
+    --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
+    --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
+    --shadow:0 2px 14px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
+  --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
+  --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
+  --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
+  --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
+  --shadow:0 2px 14px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:24px;padding-block:0 80px}
+@media(max-width:600px){.wrap{padding-inline:16px}}
+a{color:inherit}
+header{padding-block:48px 24px}
+.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6.4vw,62px);
+  line-height:.9;margin:0;letter-spacing:-.015em}
+h1 em{font-style:italic;color:var(--heat)}
+.back{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--weight);
+  text-decoration:none;border:1px solid var(--rule);border-radius:999px;padding:4px 12px}
+.back:hover{border-color:var(--weight)}
+.sub{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.1em;
+  margin-top:14px;padding-top:13px;border-top:1px solid var(--rule)}
+
+section{margin-top:52px}
+.shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  padding-bottom:11px;border-bottom:1px solid var(--ink);position:relative}
+.shead h2{font-family:var(--sans);font-weight:600;font-size:17px;margin:0;letter-spacing:.06em}
+.shead .idx{font-family:var(--mono);font-size:10.5px;color:var(--weight);letter-spacing:.2em}
+.shead .note{font-size:12.5px;color:var(--muted);margin-left:auto}
+@media(max-width:560px){.shead .note{margin-left:0;width:100%}}
+.shead::after{content:"";position:absolute;left:0;bottom:-1px;width:44px;height:1px;background:var(--weight)}
+
+/* 장기 추세 */
+.long{margin-top:22px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:2px;padding:20px;box-shadow:var(--shadow);position:relative}
+svg{display:block;width:100%;height:auto;max-width:100%}
+.lg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;padding-top:12px;
+  border-top:1px solid var(--rule-2);font-size:12px}
+.lg button{font-family:var(--sans);font-size:12px;background:none;cursor:pointer;
+  border:1px solid var(--rule);border-radius:999px;padding:3px 11px;color:var(--muted)}
+.lg button.on{color:var(--panel);border-color:transparent}
+.tip{position:absolute;pointer-events:none;opacity:0;transition:opacity .12s;
+  background:var(--ink);color:var(--ground);padding:8px 11px;border-radius:2px;
+  font-size:12.5px;z-index:5;white-space:nowrap}
+
+/* 판본 목록 */
+.eds{margin-top:22px;display:grid;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);max-height:460px;overflow-y:auto}
+.ed{background:var(--panel);display:grid;grid-template-columns:132px 54px minmax(0,1fr);
+  gap:14px;align-items:baseline;padding:11px 15px;cursor:pointer;border:0;width:100%;
+  text-align:left;font-family:var(--sans);font-size:14px;color:inherit}
+@media(max-width:560px){.ed{grid-template-columns:104px 42px minmax(0,1fr);gap:9px;padding:9px 11px}}
+.ed:hover{background:var(--panel-2)}
+.ed.on{background:var(--weight-08);box-shadow:inset 2px 0 0 var(--weight)}
+.ed .t{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.ed .n{font-family:var(--mono);font-size:12px;color:var(--weight);text-align:right}
+.ed .h{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13.5px}
+
+/* 판본 내용 */
+#view{margin-top:22px}
+ol.feed{list-style:none;margin:0;padding:0}
+ol.feed li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:20px;
+  padding:20px 0;border-bottom:1px solid var(--rule-2)}
+@media(max-width:620px){ol.feed li{grid-template-columns:1fr;gap:8px}}
+.rbig{font-family:var(--serif);font-size:36px;line-height:.85;color:var(--heat);display:block}
+.rbig.lo{color:var(--muted);opacity:.7}
+.gutter{text-align:right}
+@media(max-width:620px){.gutter{text-align:left}}
+.gutter .lab{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);
+  display:block;margin-top:6px}
+.ttl{font-size:16.5px;font-weight:500;line-height:1.4}
+.ttl a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.sum{font-size:14px;line-height:1.7;color:var(--ink-2);margin:9px 0 0;max-width:62ch;font-weight:300}
+.meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;
+  display:flex;gap:13px;flex-wrap:wrap}
+.kr{margin-top:11px;padding:9px 12px;background:var(--weight-08);
+  border-left:2px solid var(--weight);display:flex;flex-direction:column;gap:4px}
+.kr a{font-size:13.5px;color:var(--weight);text-decoration:none}
+
+/* 패널 기록 */
+.pfilter{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}
+.pfilter button{font-family:var(--mono);font-size:11px;background:none;cursor:pointer;
+  border:1px solid var(--rule);border-radius:999px;padding:4px 12px;color:var(--muted)}
+.pfilter button.on{color:var(--weight);border-color:var(--weight);background:var(--weight-08)}
+.plist{margin-top:16px;display:grid;gap:12px}
+.pitem{background:var(--panel);border:1px solid var(--rule);border-radius:12px;
+  border-top-left-radius:4px;padding:14px 16px}
+.pitem .who{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+.pitem .nm{font-weight:600;font-size:14px}
+.pitem .hd{font-family:var(--mono);font-size:11px;color:var(--weight);text-decoration:none}
+.pitem .when{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-left:auto}
+.pitem p{margin:0;font-size:13.5px;line-height:1.72;color:var(--ink-2);font-weight:300}
+.more{display:block;margin:18px auto 0;font-family:var(--mono);font-size:11.5px;
+  background:none;border:1px solid var(--rule);border-radius:999px;padding:7px 20px;
+  color:var(--muted);cursor:pointer}
+.more:hover{border-color:var(--weight);color:var(--weight)}
+.empty{color:var(--muted);font-size:14px;padding:26px 0}
+footer{margin-top:72px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>기록<em>.</em></h1>
+      <a class="back" href="./">← 지금</a>
+    </div>
+    <div class="sub" id="sub">불러오는 중…</div>
+  </header>
+
+  <section>
+    <div class="shead"><span class="idx">01</span><h2>장기 추세</h2>
+      <span class="note" id="long-note"></span></div>
+    <div class="long">
+      <svg id="long" viewBox="0 0 900 300" role="img" aria-label="주제군 장기 추세"></svg>
+      <div class="tip" id="ltip"></div>
+      <div class="lg" id="lgd"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="idx">02</span><h2>판본</h2>
+      <span class="note">누르면 그 시점의 관측을 봅니다</span></div>
+    <div class="eds" id="eds"></div>
+    <div id="view"></div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="idx">03</span><h2>패널 기록</h2>
+      <span class="note" id="pnote"></span></div>
+    <div class="pfilter" id="pfilter"></div>
+    <div class="plist" id="plist"></div>
+    <button class="more" id="pmore" hidden>더 보기</button>
+  </section>
+
+  <footer>Signal · 관측 기록</footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const grab = async (u, d) => { try { const r = await fetch(u + '?t=' + Math.floor(Date.now()/6e4));
+  return r.ok ? await r.json() : d; } catch (e) { return d; } };
+
+(async function boot() {
+  const [idx, hist, panel] = await Promise.all([
+    grab('data/archive/index.json', null),
+    grab('data/trend_history.json', null),
+    grab('data/panel_history.json', null),
+  ]);
+
+  $('#sub').textContent =
+    `판본 ${idx ? idx.editions.length : 0}개 · 추세 ${hist ? Object.keys(hist.days).length : 0}일 · 패널 ${panel ? panel.count : 0}개 글`;
+
+  /* ── 01 장기 추세 ── */
+  if (hist && hist.days) {
+    const days = Object.keys(hist.days).sort();
+    const groups = hist.groups || [];
+    const PAL = ['--heat','--weight','--ink-2','--muted','--heat','--weight'];
+    const DASH = ['', '', '', '', '4 3', '4 3'];
+    let on = new Set(groups.slice(0, 3));
+    $('#long-note').textContent = `${days[0]} ~ ${days[days.length-1]} · ${days.length}일`;
+
+    const draw = () => {
+      const W = 900, H = 300, L = 52, R = 14, T = 16, B = 34;
+      const pw = W - L - R, ph = H - T - B;
+      let max = 1;
+      groups.forEach(g => { if (on.has(g)) days.forEach(d => max = Math.max(max, hist.days[d][g] || 0)); });
+      const X = i => L + (days.length < 2 ? pw/2 : i / (days.length - 1) * pw);
+      const Y = v => T + ph - v / max * ph;
+      let s = '';
+      for (let k = 0; k <= 4; k++) {
+        const y = T + ph - k / 4 * ph, v = Math.round(max * k / 4);
+        s += `<line x1="${L}" y1="${y}" x2="${W-R}" y2="${y}" stroke="var(--rule-2)"/>`;
+        s += `<text x="${L-9}" y="${y+4}" text-anchor="end" font-family="var(--mono)"
+              font-size="10.5" fill="var(--muted)">${v}</text>`;
+      }
+      const step = Math.max(1, Math.round(days.length / 7));
+      days.forEach((d, i) => { if (i % step) return;
+        s += `<text x="${X(i)}" y="${T+ph+20}" text-anchor="middle" font-family="var(--mono)"
+              font-size="10.5" fill="var(--muted)">${d.slice(5)}</text>`; });
+      groups.forEach((g, gi) => {
+        if (!on.has(g)) return;
+        const pts = days.map((d, i) => `${X(i).toFixed(1)},${Y(hist.days[d][g]||0).toFixed(1)}`).join(' ');
+        s += `<polyline points="${pts}" fill="none" stroke="var(${PAL[gi%PAL.length]})"
+              stroke-width="1.8" stroke-linejoin="round" ${DASH[gi%DASH.length] ? `stroke-dasharray="${DASH[gi%DASH.length]}"` : ''}
+              vector-effect="non-scaling-stroke" opacity=".9"/>`;
+      });
+      $('#long').innerHTML = s;
+    };
+    $('#lgd').innerHTML = groups.map((g, i) =>
+      `<button data-g="${esc(g)}" class="${on.has(g)?'on':''}"
+        style="${on.has(g)?`background:var(${PAL[i%PAL.length]})`:''}">${esc(g)}</button>`).join('');
+    $('#lgd').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      const g = b.dataset.g;
+      on.has(g) ? on.delete(g) : on.add(g);
+      const i = groups.indexOf(g);
+      b.classList.toggle('on', on.has(g));
+      b.style.background = on.has(g) ? `var(${PAL[i%PAL.length]})` : '';
+      draw();
+    });
+    draw();
+  } else {
+    $('#long-note').textContent = '누적 기록 없음';
+  }
+
+  /* ── 02 판본 ── */
+  if (idx && idx.editions) {
+    const fmt = s => `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)} ${s.slice(9,11)}:${s.slice(11,13)}`;
+    $('#eds').innerHTML = idx.editions.map(e =>
+      `<button class="ed" data-s="${esc(e.stamp)}">
+        <span class="t">${fmt(e.stamp)}</span><span class="n">${e.n}건</span>
+        <span class="h">${esc(e.top || '')}</span></button>`).join('');
+    $('#eds').addEventListener('click', async e => {
+      const b = e.target.closest('.ed'); if (!b) return;
+      [...$('#eds').children].forEach(x => x.classList.toggle('on', x === b));
+      $('#view').innerHTML = '<p class="empty">불러오는 중…</p>';
+      const d = await grab(`data/archive/${b.dataset.s}.json`, null);
+      if (!d) { $('#view').innerHTML = '<p class="empty">판본을 불러오지 못했습니다.</p>'; return; }
+      const seen = new Set(), items = [];
+      for (const src of [d.by_debate || [], d.by_volume || []])
+        for (const x of src) { if (seen.has(x.title)) continue; seen.add(x.title); items.push(x); }
+      items.sort((a, b2) => (b2.summary_ko?1:0)-(a.summary_ko?1:0) || b2.r - a.r);
+      $('#view').innerHTML = `<ol class="feed">` + items.slice(0, 10).map(x => `
+        <li><div class="gutter"><span class="rbig${x.r<1?' lo':''}">${x.r.toFixed(2)}</span>
+          <span class="lab">R</span></div>
+          <div><div class="ttl"><a href="${esc(x.discussion||x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>
+          ${x.summary_ko ? `<p class="sum">${esc(x.summary_ko)}</p>` : ''}
+          <div class="meta"><span>댓글 ${x.comments}</span><span>업보트 ${x.points}</span>
+          ${x.trust && x.trust.length ? `<span>신뢰층 ${esc(x.trust.join(', '))}</span>` : ''}</div>
+          ${x.kr && x.kr.length ? `<div class="kr">${x.kr.map(a =>
+            `<a href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a>`).join('')}</div>` : ''}
+          </div></li>`).join('') + `</ol>`;
+      $('#view').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  /* ── 03 패널 기록 ── */
+  if (panel && panel.posts && panel.posts.length) {
+    const accts = [...new Set(panel.posts.map(p => p.h))];
+    let who = null, shown = 12;
+    $('#pnote').textContent = `${panel.posts.length}개 글 · 갱신 ${panel.updated}`;
+    const render = () => {
+      const list = panel.posts.filter(p => !who || p.h === who);
+      $('#plist').innerHTML = list.slice(0, shown).map(p => `
+        <div class="pitem"><div class="who">
+          <span class="nm">${esc(p.n)}</span>
+          <a class="hd" href="https://www.threads.com/@${esc(p.h)}" target="_blank" rel="noopener">@${esc(p.h)}</a>
+          <span class="when">${esc((p.ts || p.first_seen || '').slice(0,16))}${p.react ? ` · ♡ ${p.react}` : ''}</span>
+        </div><p>${esc(p.t)}</p></div>`).join('') || '<p class="empty">글이 없습니다.</p>';
+      $('#pmore').hidden = shown >= list.length;
+    };
+    $('#pfilter').innerHTML = `<button class="on" data-h="">전체</button>` +
+      accts.map(h => `<button data-h="${esc(h)}">@${esc(h)}</button>`).join('');
+    $('#pfilter').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      [...$('#pfilter').children].forEach(x => x.classList.toggle('on', x === b));
+      who = b.dataset.h || null; shown = 12; render();
+    });
+    $('#pmore').addEventListener('click', () => { shown += 12; render(); });
+    render();
+  } else {
+    $('#pnote').textContent = '누적 기록 없음';
+    $('#plist').innerHTML = '<p class="empty">아직 쌓인 패널 글이 없습니다.</p>';
+  }
+})();
+</script>
