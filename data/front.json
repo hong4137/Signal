@@ -1,10 +1,10 @@
 {
- "edition": "2026-10-05 20:58",
- "no": 62,
+ "edition": "2026-10-06 06:03",
+ "no": 63,
  "sources": {
   "briefing": "2026-10-05",
   "must": "2026-10-05 18:31",
-  "signal": "2026-10-05 20:57"
+  "signal": "2026-10-06 06:01"
  },
  "links": {
   "briefing": "https://hong4137.github.io/briefing/archive/2026-10-05.html",
@@ -28,9 +28,9 @@
   "reaction": {
    "title": "I quit OpenAI because its culture is broken",
    "url": "https://news.ycombinator.com/item?id=49944227",
-   "comments": 794,
-   "points": 476,
-   "r": 1.67,
+   "comments": 807,
+   "points": 485,
+   "r": 1.66,
    "summary": "댓글에서는 내부고발자의 폭로 진정성과 기업의 마케팅 전략을 두고 의견이 엇갈렸다. 일각에서는 대기업의 폐쇄적인 문화와 자율 규제의 한계를 지적하며 목소리를 높인 용기를 옹호한 반면, 다른 편에서는 구체적인 증거가 부족하고 IPO를 앞둔 과장 광고나 마케팅의 일종일 뿐이라며 비판했다.",
    "sides": {
     "a": "대기업의 폐쇄적인 문화와 자율 규제의 한계를 지적하며 목소리를 높인 용기를 옹호한",
@@ -178,7 +178,11 @@
      "source": "CNBC Tech Featured",
      "url": "https://hong4137.github.io/briefing/archive/2026-10-05.html#art-8",
      "badge": "NEW",
-     "echo": null,
+     "echo": {
+      "comments": 158,
+      "r": 0.71,
+      "url": "https://news.ycombinator.com/item?id=49968105"
+     },
      "img": {
       "src": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=240&h=240&fit=crop&auto=format&q=75",
       "alt": "아두이노·전자부품",
@@ -412,59 +416,48 @@
    "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
    "url": "https://news.ycombinator.com/item?id=49946228",
    "deck": "AI의 자율성과 에이전트 기능이 확대되면서 파일 시스템 접근이나 샌드박스 우회 등 보안 통제가 불가능해질 것이라는 우려가 나왔다. 반면 최근의 소동들은…",
-   "comments": 772,
-   "r": 1.91
+   "comments": 817,
+   "r": 1.99
   },
   {
    "title": "Improper redaction reveals Google Data Center water and electricity usage",
    "url": "https://news.ycombinator.com/item?id=49957068",
    "deck": "댓글에서는 데이터센터의 막대한 물과 전력 소비량이 지역 사회에 미치는 부담을 두고 격론이 벌어졌다. 일각에서는 지역 자원 고갈과 환경 오염 문제를 제기하며…",
-   "comments": 545,
-   "r": 1.32
+   "comments": 666,
+   "r": 1.31
   },
   {
    "title": "Religious scholars met with Anthropic",
    "url": "https://news.ycombinator.com/item?id=49950052",
    "deck": "AI의 의식(consciousness) 개념을 생물학적 진화 과정과 동일선상에 놓을 수 없다는 의견과, 복잡계 철학 관점에서 섣부른 의인화를 경계해야 한다는…",
-   "comments": 417,
-   "r": 2.57
+   "comments": 428,
+   "r": 2.59
   }
  ],
  "features": [
   {
-   "title": "Don't be fooled–LLMs don't reason",
-   "url": "https://news.ycombinator.com/item?id=49933459",
-   "deck": "대형언어모델(LLM)이 진정한 추론을 하는지에 대해 의견이 팽팽히 맞선다. 일각에서는 모델이 단순 다음 토큰 예측에 불과하며 명확한 지식 상태나 독립적 신념이 없다고 지적하는 반면, 인간 역시 이와 유사한 한계를 가지며 신경망 가중치 내에서 복잡한…",
-   "comments": 159,
-   "points": 75,
-   "r": 2.12,
-   "sides": {
-    "a": "모델이 단순 다음 토큰 예측에 불과하며 명확한 지식 상태나 독립적 신념이 없다고 지적하는",
-    "b": "인간 역시 이와 유사한 한계를 가지며 신경망 가중치 내에서 복잡한 상태 기계를 근사해 추론을 수행한다고 반박한다",
-    "la": "지적",
-    "lb": "반박"
-   }
+   "title": "Questions for Believers in AI Consciousness",
+   "url": "https://news.ycombinator.com/item?id=49968964",
+   "deck": "AI의 의식 가능성을 두고 원자 배열과 데이터 처리 방식이 인간과 다르지 않다는 의견과, 단순한 정적 세계 모델일 뿐 진정한 감각이나 대사는 없다는 반론이 맞섰다. 과학적 도구만으로는 의식을 측정하기 어렵다는 지적과 함께, 물리적 원리를 위반하지…",
+   "comments": 155,
+   "points": 38,
+   "r": 4.08,
+   "sides": null
   },
   {
-   "title": "Pop!_OS bans AI-generated code from much of its codebase",
-   "url": "https://news.ycombinator.com/item?id=49946321",
-   "deck": "일부 개발자는 오픈소스 프로젝트에 무분별한 AI 생성 코드가 스팸처럼 유입되어 기여 관리 비용이 감당하기 어렵다고 동조한다. 반면 철저한 사전 검토와 계획을 거치면 AI가 코딩에 큰 도움이 된다며 지나친 금지는 역효과라는 의견도 맞선다.",
-   "comments": 167,
-   "points": 117,
-   "r": 1.43,
-   "sides": {
-    "a": "일부 개발자는 오픈소스 프로젝트에 무분별한 AI 생성 코드가 스팸처럼 유입되어 기여 관리 비용이 감당하기 어렵다고 동조한다",
-    "b": "철저한 사전 검토와 계획을 거치면 AI가 코딩에 큰 도움이 된다며 지나친 금지는 역효과라는 의견도 맞선다",
-    "la": "한쪽",
-    "lb": "다른 쪽"
-   }
+   "title": "Sales of sub-€25,000 electric car models set to rise sevenfold",
+   "url": "https://news.ycombinator.com/item?id=49961890",
+   "deck": "2만 5천 유로 미만의 저가형 전기차 판매량이 급증할 것이라는 전망에 대해, 신차 구매 여력과 유지비, 충전 인프라 문제를 두고 다양한 의견이 오갔다. 중국산 차량 관세와 보조금 정책의 실효성, 그리고 도심용 소형차와 사륜차의 한계를 지적하는…",
+   "comments": 126,
+   "points": 80,
+   "r": 1.57,
+   "sides": null
   }
  ],
  "temperature": {
   "group": "안전·거버넌스",
-  "ratio": 3.0,
+  "ratio": 4.0,
   "values": [
-   185,
    0,
    121,
    0,
@@ -476,10 +469,10 @@
    189,
    0,
    0,
-   425
+   562,
+   0
   ],
   "dates": [
-   "09-22",
    "09-23",
    "09-24",
    "09-25",
@@ -491,7 +484,8 @@
    "10-01",
    "10-02",
    "10-03",
-   "10-04"
+   "10-04",
+   "10-05"
   ]
  },
  "domestic": {
@@ -556,9 +550,9 @@
    "handle": "choi.openai",
    "tier": "A",
    "role": "최신 AI 릴리스 한국어 속보",
-   "text": "서로 다른 게임을 섞은 프로토타입까지 AI로 한 번에 만드는 사례가 나오고 있습니다. 한 개발자가 Fable 5.5를 이용해 Minecraft와 Pokémon을 결합한 게임을 한 번의 생성으로…",
-   "ts": "2026-10-05 19:58",
-   "react": 24
+   "text": "에마드 모스타크(Emad Mostaque)는 휴머노이드 로봇의 조작 모델 격차가 최근 해결되면서 실물 로봇의 성능이 임계점을 넘었다고 밝혔습니다. 그는 프론티어 AI 모델이 특정 수준을 넘어서는 순간…",
+   "ts": "2026-10-06 03:03",
+   "react": 10
   },
   {
    "kind": "panel",
@@ -567,8 +561,8 @@
    "tier": "A",
    "role": "개발 현장 도구 관찰",
    "text": "AI 덕분에 그동안 미뤄왔던 일들을 하나씩 하고 있다. 하루하루 놀랍고, 더 잘 활용하고 싶다. 근데 요즘 AI 이야기를 보면 얼마나 쉽게 할 수 있는지에 대한 이야기가 많다. 그런 이야기를 보다 보면…",
-   "ts": "2026-10-04 20:58",
-   "react": 5
+   "ts": "2026-10-05 06:03",
+   "react": 6
   },
   {
    "kind": "panel",
@@ -577,7 +571,7 @@
    "tier": "B",
    "role": "AI 에이전트 운영 경험",
    "text": "남겨 둔 불빛, 탁자 위의 찻잔 두 개, 누군가의 곁에 마련한 자리. 오늘 #루덱스 #Ludex 빌리지에서는 잠시 쉬어가는 영상을 공개했습니다. 다큐멘터리 삽입곡 ‘Measured Breaths’를…",
-   "ts": "2026-10-01 20:58",
+   "ts": "2026-10-02 06:03",
    "react": 0
   },
   {
@@ -585,8 +579,8 @@
    "who": "AI Supremacy",
    "text": "I quit OpenAI because its culture is broken",
    "url": "https://news.ycombinator.com/item?id=49944227",
-   "comments": 794,
-   "r": 1.67
+   "comments": 807,
+   "r": 1.66
   }
  ]
 }
