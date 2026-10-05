@@ -19,8 +19,6 @@ body{position:relative;color:#E8E6E1;font-family:"IBM Plex Sans KR",sans-serif}
 .ph::after{content:"";position:absolute;inset:0;
   background:linear-gradient(90deg,#0A0D14 0%,rgba(10,13,20,.86) 26%,rgba(10,13,20,.35) 62%,rgba(10,13,20,.15) 100%),
              linear-gradient(0deg,rgba(10,13,20,.9) 0%,rgba(10,13,20,0) 45%)}
-.seis{position:absolute;left:0;right:0;top:58px;height:150px}
-.seis svg{width:100%;height:100%;display:block}
 .top{position:absolute;left:64px;right:64px;top:34px;display:flex;justify-content:space-between;
   font-family:"JetBrains Mono","IBM Plex Sans KR",monospace;font-size:19px;letter-spacing:.06em;color:#AFB6C0}
 .top b{color:#E8E6E1}
@@ -42,7 +40,6 @@ body{position:relative;color:#E8E6E1;font-family:"IBM Plex Sans KR",sans-serif}
 </style>
 <div class="grid"></div>
 <div class="ph" id="ph"></div>
-<div class="seis" id="seis"></div>
 <div class="top"><span id="date"></span><span id="no"></span></div>
 <div class="name">Daily <em>UptoDate</em></div>
 <div class="rule"></div>
@@ -61,16 +58,4 @@ $('#hl').textContent = D.headline;
 if (D.img) $('#ph').style.backgroundImage = `url("${D.img}")`;
 $('#stats').innerHTML = D.stats.map(s =>
   `<div class="st"><div class="n" style="color:${s.c}">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
-/* 제호 뒤 지진계 — 1면과 같은 하루 담론량 */
-(() => {
-  const v = D.wave || []; if (v.length < 3) return;
-  const W = 1200, H = 150, mid = H/2, max = Math.max(...v, 1), step = W / v.length, bw = Math.max(2, step*.55);
-  let g = '';
-  v.forEach((x,i) => {
-    const h = Math.max(1.5, x/max*H*.47), last = i === v.length-1;
-    g += `<rect x="${(i*step+(step-bw)/2).toFixed(1)}" y="${(mid-h).toFixed(1)}" width="${bw.toFixed(1)}" height="${(2*h).toFixed(1)}"
-      fill="${last ? '#D2603A' : '#18A2C6'}" opacity="${last ? .9 : .32}"/>`;
-  });
-  $('#seis').innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><line x1="0" x2="${W}" y1="${mid}" y2="${mid}" stroke="#18A2C6" stroke-opacity=".25"/>${g}</svg>`;
-})();
 </script>

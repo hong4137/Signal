@@ -52,15 +52,6 @@ def main():
     d = datetime.strptime(F["edition"][:10], "%Y-%m-%d")
     date_ko = "%d년 %d월 %d일 %s요일" % (d.year, d.month, d.day, DOW[d.weekday()])
 
-    hist = {}
-    try:
-        hist = json.load(io.open(os.path.join(DATA, "trend_history.json"), encoding="utf-8"))
-    except Exception:
-        pass
-    days = sorted((hist.get("days") or {}).keys())
-    wave = [sum(v for k, v in hist["days"][x].items() if k != "n" and isinstance(v, (int, float)))
-            for x in days]
-
     stats = []
     if R:
         stats.append({"n": "{:,}".format(R.get("comments", 0)), "l": "커뮤니티 댓글", "c": "#D2603A"})
@@ -75,7 +66,7 @@ def main():
         "date": date_ko, "no": F.get("no"),
         "kicker": "오늘의 1면 · 외신 × 커뮤니티" if L.get("kind") == "cross" else "오늘의 1면 · 커뮤니티 최대 토론",
         "headline": L.get("headline") or "오늘의 AI·테크 1면",
-        "img": img, "stats": stats, "wave": wave[-61:],
+        "img": img, "stats": stats,
     }
     tpl = io.open(os.path.join(ROOT, "scripts", "og_card.html"), encoding="utf-8").read()
     page = tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
