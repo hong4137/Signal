@@ -134,8 +134,9 @@ a:hover .hl,a.hl:hover{text-decoration:underline;text-decoration-thickness:1px;t
   flex-wrap:wrap;gap:4px 14px}
 .byline a{color:var(--weight)}
 .lead .body{font-size:15.5px;line-height:1.75;color:var(--ink);word-break:keep-all;margin:16px 0 0}
-.lead .body:first-letter{font-family:var(--head-ko);font-weight:800;float:left;font-size:3.3em;
-  line-height:.9;padding:4px 8px 0 0;color:var(--heat)}
+/* 드롭캡은 소설·잡지의 장치라 뺐다 (편집기자 조언). 대신 기사식 꼬리표로 무엇의 요약인지 밝힌다 */
+.lead .body::before{content:"댓글창 요약";display:block;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;color:var(--heat);margin-bottom:4px}
 .why{margin-top:14px;font-family:var(--mono);font-size:10.5px;color:var(--muted);line-height:1.7}
 .why i{font-style:normal;border:1px solid var(--hair);border-radius:3px;padding:0 5px;margin-right:3px;color:var(--ink-2)}
 
