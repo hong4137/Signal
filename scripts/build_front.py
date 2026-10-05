@@ -24,6 +24,7 @@ Must News 는 섞지 않는다
 
 출력  data/front.json
 """
+import html
 import io
 import json
 import os
@@ -80,6 +81,7 @@ ACT = {
     "안전": ["safety", "risk", "extinction", "안전", "위험", "절멸"],
     "문화": ["culture", "toxic", "broken", "문화"],
 }
+WEAK_ACT = {"안전", "규제", "출시", "문화"}     # 거의 모든 AI 기사에 나오는 동작어
 STOP = {"있다", "했다", "한다", "이다", "대한", "위해", "통해", "관련", "최근", "이번", "지난",
         "가장", "일각", "다른", "편에서", "의견", "엇갈렸다", "있는", "하는", "되는", "에서",
         "으로", "에게", "부터", "까지", "그리고", "하지만", "또한", "모두", "것으로", "것이"}
@@ -102,6 +104,63 @@ def tags(text):
     e = {k for k, vs in ENT.items() if any(v in t for v in vs)}
     a = {k for k, vs in ACT.items() if any(v in t for v in vs)}
     return e, a
+
+
+EN_STOP = {"with", "from", "that", "this", "have", "after", "about", "their", "your", "into",
+           "over", "what", "when", "will", "says", "said", "they", "were", "been", "more",
+           "than", "just", "only", "also", "being", "could", "would", "should", "because"}
+
+
+def en_words(text):
+    return {w for w in re.findall(r"[a-z][a-z0-9]{3,}", (text or "").lower()) if w not in EN_STOP}
+
+
+def _txt(h):
+    return html.unescape(re.sub(r"<[^>]+>", "", h or "")).strip()
+
+
+def _grab(pat, body):
+    m = re.search(pat, body, re.S)
+    return _txt(m.group(1)) if m else ""
+
+
+def briefing_articles(date):
+    """외신 브리핑 상세 페이지의 기사 카드 전부.
+
+    briefings.json 에는 요약 꼭지 3개뿐이고, 실제 기사(하루 20여 건)는
+    archive/<날짜>.html 에만 있다. 카드마다 id="art-N" 이 붙어 있고
+    그 사이트의 app.js 가 #art-N 으로 들어오면 해당 카드로 스크롤·강조한다.
+    """
+    url = LINK_BRIEFING % date
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        s = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
+    except Exception as e:
+        print("  [외신 상세] 실패: %s" % e, file=sys.stderr)
+        return []
+    out, sec = [], ""
+    for m in re.finditer(r'<h2 class="section-title">(.*?)</h2>'
+                         r'|<article class="article-card[^"]*"([^>]*)>(.*?)</article>', s, re.S):
+        if m.group(1) is not None:
+            sec = re.sub(r"^[^\w가-힣']+", "", _txt(m.group(1))).strip()
+            sec = "TOP" if "TOP" in sec.upper() else sec
+            continue
+        attrs, body = m.group(2), m.group(3)
+        aid = re.search(r'id="(art-\d+)"', attrs)
+        cu = re.search(r'data-card-url="([^"]*)"', attrs)
+        en = _grab(r'class="article-title">(.*?)</h3>', body)
+        ko = _grab(r'class="article-title-kr">(.*?)</p>', body)
+        head, _, sub = ko.partition(" — ")
+        out.append({
+            "id": aid.group(1) if aid else None, "sec": sec,
+            "badge": _grab(r'class="badge[^"]*">(.*?)</span>', body),
+            "en": en, "head": head.strip() or en, "sub": sub.strip(),
+            "summary": _grab(r'class="article-summary">(.*?)</p>', body),
+            "source": _grab(r'class="source">(.*?)</span>', body),
+            "url": html.unescape(cu.group(1)) if cu else None,
+            "link": url + ("#" + aid.group(1) if aid else ""),
+        })
+    return out
 
 
 def ko_nouns(text):
@@ -167,7 +226,13 @@ def main():
         print("  [Must News] 실패: %s" % e, file=sys.stderr)
         M = {}
 
-    segs = [s for s in (brief.get("segments") or []) if s.get("title")]
+    blink = LINK_BRIEFING % brief["date"] if brief.get("date") else None
+    arts = briefing_articles(brief.get("date")) if brief.get("date") else []
+    if not arts:
+        # 상세 페이지를 못 읽으면 요약 꼭지 3개로라도 짠다
+        arts = [{"id": None, "sec": "TOP", "badge": "", "en": "", "head": sg["title"], "sub": "",
+                 "summary": sg.get("summary") or "", "source": "", "url": None, "link": blink}
+                for sg in (brief.get("segments") or []) if sg.get("title")]
     sig, seen = [], set()
     for src in (latest.get("by_volume") or [], latest.get("by_debate") or []):
         for b in src:
@@ -182,51 +247,69 @@ def main():
                 "summary": g.get("summary_ko", ""), "sides": sides(g.get("summary_ko")),
                 "trust": g.get("trust", []), "kr": (g.get("kr") or [])[:2]}
 
-    def match(seg):
-        """외신 한 꼭지 ↔ Signal 항목 중 같은 사건으로 볼 만한 최선."""
-        st = seg.get("title", "") + " " + (seg.get("summary") or "")
+    def pair(art, g):
+        """외신 기사 한 건 ↔ Signal 항목 한 건이 같은 사건인가. 아니면 None."""
+        st = " ".join((art["head"], art["sub"], art["en"], art["summary"]))
         se, sa = tags(st)
-        sk = ko_nouns(st)
-        best = None
-        for g in sig:
-            ge, ga = tags(g["title"] + " " + (g.get("summary_ko") or ""))
-            e, a = se & ge, sa & ga
-            k = sk & ko_nouns(g.get("summary_ko") or "")
-            # 회사 이름 하나만 겹치는 건 약하다(OpenAI 는 거의 매일 나온다).
-            # 개체 + (동작 또는 한글 명사 2개) 가 함께 겹쳐야 같은 사건으로 본다.
-            if not e or not (a or len(k) >= 2):
-                continue
-            score = g["comments"] * (1 + len(e) + 1.5 * len(a) + 0.4 * len(k))
-            if not best or score > best[0]:
-                best = (score, g, sorted(e), sorted(a | k)[:6])
-        return best
+        ge, ga = tags(g["title"] + " " + (g.get("summary_ko") or ""))
+        e, a = se & ge, sa & ga
+        k = (ko_nouns(st) & ko_nouns(g.get("summary_ko") or "")) | \
+            (en_words(art["en"]) & en_words(g["title"]))
+        # 회사 이름 하나만 겹치는 건 약하다(OpenAI 는 거의 매일 나온다).
+        # 개체 + (강한 동작 / 약한 동작+공유 단어 / 공유 단어 2개) 여야 같은 사건으로 본다.
+        # '안전'·'규제' 같은 일반 동작어만으로는 안 된다 — 10-05 실측:
+        # 중국 'AI 연인' 규제 ↔ Qwen 로컬 구동 글이 'qwen'+'위험' 으로 붙었다.
+        strong = a - WEAK_ACT
+        if not e or not (strong or (a and k) or len(k) >= 2):
+            return None
+        score = g["comments"] * (1 + len(e) + 1.5 * len(a) + 0.4 * len(k))
+        return (score, sorted(e), sorted(a | k)[:6])
 
-    # ── 톱 선정: 외신 브리핑 × Signal 교차 ──
-    matches = {i: match(s) for i, s in enumerate(segs[:8])}
-    hit = [(m[0], i) for i, m in matches.items() if m]
-    blink = LINK_BRIEFING % brief["date"] if brief.get("date") else None
+    # 모든 (기사, 반향) 쌍을 점수순으로 세우고 한 번씩만 짝짓는다
+    pairs = []
+    for ai, art in enumerate(arts):
+        for gi, g in enumerate(sig):
+            m = pair(art, g)
+            if m:
+                pairs.append((m[0], ai, gi, m[1], m[2]))
+    pairs.sort(key=lambda x: -x[0])
+    echo_of, taken = {}, set()
+    for score, ai, gi, ents, shared in pairs:
+        if ai in echo_of or gi in taken:
+            continue
+        echo_of[ai] = (score, sig[gi], ents, shared)
+        taken.add(gi)
 
+    def echo(ai):
+        m = echo_of.get(ai)
+        if not m:
+            return None
+        g = m[1]
+        return {"comments": g["comments"], "r": g["r"], "url": g.get("discussion") or g.get("url")}
+
+    # ── 톱 선정: 외신 × 반향 교차. 편집자가 TOP 으로 고른 기사에 가점 ──
     lead = None
-    used_seg, used_sig = set(), set()
-    if hit:
-        _, si = max(hit)
-        _, g, ents, shared = matches[si]
-        s = segs[si]
+    used_art, used_sig = set(), set()
+    cand = [(m[0] * (1.5 if arts[ai]["sec"] == "TOP" else 1), ai) for ai, m in echo_of.items()]
+    if cand:
+        _, ai = max(cand)
+        _, g, ents, shared = echo_of[ai]
+        art = arts[ai]
         lead = {
             "kind": "cross",
-            "headline": s["title"],
-            "deck": trim(s.get("summary"), 220),
-            "fact_src": "외신 브리핑 · %s" % brief.get("date", ""),
-            "fact_url": blink,
+            "headline": art["head"], "sub": art["sub"],
+            "deck": trim(art["summary"], 260),
+            "fact_src": "외신 브리핑" + (" · " + art["source"] if art["source"] else ""),
+            "fact_url": art["link"], "orig_url": art["url"],
             "reaction": reaction(g),
             "why": {"entities": ents, "shared": shared},
         }
-        used_seg.add(si)
+        used_art.add(ai)
         used_sig.add(g["title"])
     else:
-        cand = [g for g in sig if g.get("summary_ko")] or sig
-        if cand:
-            g = max(cand, key=lambda x: x["comments"])
+        cg = [g for g in sig if g.get("summary_ko")] or sig
+        if cg:
+            g = max(cg, key=lambda x: x["comments"])
             lead = {
                 "kind": "signal",
                 "headline": g["title"], "deck": trim(g.get("summary_ko"), 220),
@@ -234,21 +317,26 @@ def main():
                 "reaction": reaction(g),
             }
             used_sig.add(g["title"])
+    for ai in echo_of:
+        used_sig.add(echo_of[ai][1]["title"])
 
-    # ── 좌측 레일: 외신 브리핑 나머지 ──
-    left = []
-    for i, sg in enumerate(segs):
-        if i in used_seg:
+    def card(ai, n):
+        x = arts[ai]
+        return {"head": x["head"], "sub": x["sub"], "en": x["en"], "deck": trim(x["summary"], n),
+                "source": x["source"], "url": x["link"], "badge": x["badge"], "echo": echo(ai)}
+
+    # ── 좌측 레일: 외신 TOP 나머지 ──
+    left = [card(ai, 150) for ai, x in enumerate(arts) if x["sec"] == "TOP" and ai not in used_art]
+    used_art |= {ai for ai, x in enumerate(arts) if x["sec"] == "TOP"}
+
+    # ── 외신면: 나머지 전부를 섹션별로 ──
+    foreign = []
+    for ai, x in enumerate(arts):
+        if ai in used_art:
             continue
-        m = matches.get(i)
-        echo = None
-        if m and m[1]["title"] not in used_sig:
-            echo = {"comments": m[1]["comments"], "r": m[1]["r"],
-                    "url": m[1].get("discussion") or m[1].get("url")}
-            used_sig.add(m[1]["title"])
-        left.append({"title": sg["title"], "deck": trim(sg.get("summary"), 130),
-                     "url": blink, "echo": echo})
-    left = left[:4]
+        if not foreign or foreign[-1]["name"] != x["sec"]:
+            foreign.append({"name": x["sec"], "items": []})
+        foreign[-1]["items"].append(card(ai, 120))
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
     wire = [{"title": g["title"], "url": g.get("discussion") or g.get("url"),
@@ -283,8 +371,8 @@ def main():
                 "dates": [s["date"] for s in ser[-14:]]}
 
     # ── 국내면: Must News ──
-    arts = (M.get("articles") or [])[:6]
-    dom_lead = max(arts, key=lambda a: a.get("outlets", 0)) if arts else None
+    marts = (M.get("articles") or [])[:6]
+    dom_lead = max(marts, key=lambda a: a.get("outlets", 0)) if marts else None
     domestic = {
         "updated": M.get("updated", ""),
         "lead": {"title": dom_lead["title"], "url": dom_lead.get("url"),
@@ -292,7 +380,7 @@ def main():
                  "sources": (dom_lead.get("sources") or [])[:12]} if dom_lead else None,
         "list": [{"rank": a.get("rank"), "title": a["title"], "url": a.get("url"),
                   "outlets": a.get("outlets", 0), "source": a.get("source", "")}
-                 for a in arts if not dom_lead or a["title"] != dom_lead["title"]][:5],
+                 for a in marts if not dom_lead or a["title"] != dom_lead["title"]][:5],
     }
 
     # ── 해석 레일: 패널 + 신뢰층 ──
@@ -324,7 +412,7 @@ def main():
         "sources": {"briefing": brief.get("date", ""), "must": M.get("updated", ""),
                     "signal": latest.get("updated", "")},
         "links": {"briefing": blink, "must": LINK_MUST},
-        "lead": lead, "left": left, "wire": wire, "features": features, "temperature": temp,
+        "lead": lead, "left": left, "foreign": foreign, "wire": wire, "features": features, "temperature": temp,
         "domestic": domestic, "voices": voices,
     }
     io.open(os.path.join(DATA, "front.json"), "w", encoding="utf-8").write(
@@ -335,8 +423,8 @@ def main():
         print("  톱(%s): %s" % (lead["kind"], lead["headline"][:50]))
         if lead.get("why"):
             print("     교차 근거: 개체 %s · 공유 %s" % (lead["why"]["entities"], lead["why"]["shared"]))
-    print("  좌측 %d(반향 %d) · 해외 %d · 피처 %d · 온도 %s · 국내 %d · 해석 %d" % (
-        len(left), sum(1 for x in left if x["echo"]), len(wire), len(features), temp["group"] if temp else "-",
+    print("  외신 %d건(좌측 %d · 외신면 %d) · 반향 붙음 %d · 해외 %d · 피처 %d · 온도 %s · 국내 %d · 해석 %d" % (
+        len(arts), len(left), sum(len(f["items"]) for f in foreign), len(echo_of), len(wire), len(features), temp["group"] if temp else "-",
         len(domestic["list"]) + (1 if domestic["lead"] else 0), len(voices)))
 
 

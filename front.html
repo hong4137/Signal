@@ -161,6 +161,21 @@ figure{margin:0}
 @media(max-width:520px){.vs{grid-template-columns:1fr}.vs .mid{text-align:center;margin:6px 0}.vs .b{text-align:left}
   .dc{padding:18px 16px}.dc .big{gap:18px}.dc .big .r{margin-left:0;text-align:left}}
 
+.subh{font-family:var(--serif-ko);font-weight:700;font-size:19px;line-height:1.45;margin:-4px 0 12px;
+  color:var(--heat);word-break:keep-all}
+.sub2{font-size:13px;font-weight:600;color:var(--ink-2);margin:-2px 0 6px;line-height:1.45;word-break:keep-all}
+/* 외신면 — 섹션을 신문 단처럼 흘린다 */
+.fx .fxcols{column-count:3;column-gap:30px;column-rule:1px solid var(--hair)}
+@media(max-width:1020px){.fx .fxcols{column-count:2}}
+@media(max-width:640px){.fx .fxcols{column-count:1}}
+.fxsec{break-inside:avoid-column;margin-bottom:20px}
+.fxname{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;font-weight:700;color:var(--heat);
+  border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:10px}
+.fxi{display:block;padding:0 0 11px;margin:0 0 11px;border-bottom:1px dotted var(--hair);break-inside:avoid}
+.fxsec .fxi:last-child{border:0;margin-bottom:0}
+.fxi .t{display:block;font-family:var(--serif-ko);font-weight:700;font-size:15.5px;line-height:1.42;word-break:keep-all}
+.fxi .u{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-top:2px;word-break:keep-all}
+.fxi .d{display:block;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px;word-break:keep-all}
 /* 외신 레일 */
 .story{padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--hair)}
 .story:last-child{border-bottom:0}
@@ -294,6 +309,13 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = n => Number(n || 0).toLocaleString('ko-KR');
 const DOW = '일월화수목금토';
+
+/* 'Guardian Featured, TechCrunch, The Verge 다매체 보도' → 'Guardian 외 2곳' */
+function shortSrc(src){
+  const t = String(src || '').replace(/다매체 보도|Featured|Hero/g, '').trim();
+  const p = t.split(/\s*,\s*/).filter(Boolean);
+  return p.length > 1 ? `${p[0]} 외 ${p.length - 1}곳` : (p[0] || '');
+}
 
 function korDate(ymd){
   const d = new Date(ymd + 'T00:00:00+09:00');
@@ -429,8 +451,10 @@ function render(F){
     lead = `<article class="lead">
       <div class="kicker">${cross ? '교차 · 외신 보도 × 커뮤니티 반향' : '반향 · 커뮤니티 최대 토론'}<span class="ln"></span></div>
       <h2>${L.fact_url ? `<a class="hl" href="${esc(L.fact_url)}">${esc(L.headline)}</a>` : esc(L.headline)}</h2>
+      ${L.sub ? `<p class="subh">${esc(L.sub)}</p>` : ''}
       <p class="deck">${esc(L.deck)}</p>
-      <div class="byline"><span>사실 — <a href="${esc(L.fact_url || '#')}">${esc(L.fact_src)}</a></span>
+      <div class="byline"><span>사실 — <a href="${esc(L.fact_url || '#')}">외신 브리핑 카드</a>${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
+        ${L.orig_url ? `<span><a href="${esc(L.orig_url)}">원문 ↗</a></span>` : ''}
         <span>반향 — <a href="${esc(R.url)}">HN 토론 ${fmt(R.comments)}개 댓글</a></span></div>
       ${debateCard(R)}
       ${R.summary ? `<p class="body">${esc(R.summary)}</p>` : ''}
@@ -444,8 +468,10 @@ function render(F){
   const left = `
     <div class="sect">외신 <span>${esc(S.briefing||'')}</span></div>
     ${(F.left||[]).map(s => `<article class="story">
-      <h3><a class="hl" href="${esc(s.url||'#')}">${esc(s.title)}</a></h3>
+      <h3><a class="hl" href="${esc(s.url||'#')}">${esc(s.head || s.title)}</a></h3>
+      ${s.sub ? `<div class="sub2">${esc(s.sub)}</div>` : ''}
       <p>${esc(s.deck)}</p>
+      ${s.source ? `<span class="meta">${esc(shortSrc(s.source))}</span>` : ''}
       ${s.echo ? `<a class="echo" href="${esc(s.echo.url)}">커뮤니티 반향 · 댓글 ${fmt(s.echo.comments)} · r ${s.echo.r.toFixed(2)}</a>`
                : `<span class="noecho">커뮤니티 반향 없음</span>`}
     </article>`).join('')}
@@ -471,6 +497,21 @@ function render(F){
 
   /* 국내면 */
   const D = F.domestic || {};
+  const FS = F.foreign || [];
+  const nF = FS.reduce((n, x) => n + x.items.length, 0);
+  const foreign = nF ? `<section class="dom fx">
+    <div class="domhead"><h2>외신<small>JFNB 외신 브리핑 · ${esc(S.briefing || '')} · ${nF + (F.left||[]).length + (L && L.kind === 'cross' ? 1 : 0)}건</small></h2>
+      <a class="meta" href="${esc((F.links||{}).briefing||'#')}" style="color:var(--weight)">브리핑 전체 →</a></div>
+    <div class="fxcols">${FS.map(sec => `<div class="fxsec">
+      <div class="fxname">${esc(sec.name)}</div>
+      ${sec.items.map(x => `<a class="fxi" href="${esc(x.url)}">
+        <span class="t hl">${esc(x.head)}</span>
+        ${x.sub ? `<span class="u">${esc(x.sub)}</span>` : ''}
+        <span class="d">${esc(x.deck)}</span>
+        <span class="meta">${esc(shortSrc(x.source))}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
+      </a>`).join('')}
+    </div>`).join('')}</div></section>` : '';
+
   const dom = D.lead ? `<section class="dom">
     <div class="domhead"><h2>국내<small>MUST NEWS · ${esc((D.updated||'').slice(5))}</small></h2>
       <a class="meta" href="${esc((F.links||{}).must||'#')}" style="color:var(--weight)">전체 순위 →</a></div>
@@ -497,7 +538,7 @@ function render(F){
       <div class="col c-left">${left}</div>
       <div class="col c-lead">${lead}${feat}</div>
       <div class="col c-right">${right}</div>
-    </div>${dom}`;
+    </div>${foreign}${dom}`;
 
   $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진 없음 — 모든 그림은 수집 데이터로 그렸다</span>
     <span><a href="${esc((F.links||{}).briefing||'#')}">외신 브리핑</a> · <a href="${esc((F.links||{}).must||'#')}">Must News</a> · <a href="index.html">반향 관측</a></span>`;
