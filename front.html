@@ -176,6 +176,29 @@ figure{margin:0}
 .fxi .t{display:block;font-family:var(--serif-ko);font-weight:700;font-size:15.5px;line-height:1.42;word-break:keep-all}
 .fxi .u{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-top:2px;word-break:keep-all}
 .fxi .d{display:block;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px;word-break:keep-all}
+/* 사진 카드 */
+.pc{margin:2px 0 18px}
+.pcimg{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;background:var(--c-bg)}
+.pcimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.pcshade{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(5,7,11,.55) 0%,rgba(5,7,11,0) 28%,rgba(5,7,11,0) 42%,rgba(5,7,11,.92) 100%)}
+.pctag{position:absolute;left:18px;top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
+  color:#E8E6E1;font-weight:700}
+.pcnum{position:absolute;right:16px;top:12px;text-align:right;color:#E8E6E1;font-size:10.5px;
+  font-family:var(--mono);letter-spacing:.06em;line-height:1.1}
+.pcnum b{display:block;font-size:30px;color:#D2603A;letter-spacing:-.03em}
+.pcq{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-family:var(--serif-ko);font-weight:900;
+  font-size:clamp(19px,2.5vw,28px);line-height:1.3;letter-spacing:-.02em;word-break:keep-all;
+  text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.pcq::before{content:"“";color:#D2603A;margin-right:2px}
+.pcq::after{content:"”";color:#D2603A;margin-left:2px}
+.pc figcaption a{color:var(--weight)}
+@media(max-width:520px){.pcnum b{font-size:22px}.pctag{left:12px;top:10px}.pcq{left:12px;right:12px;bottom:10px}}
+.thumb{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:10px;
+  background:var(--hair)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb span{position:absolute;left:8px;top:8px;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.12em;background:#05070BCC;color:#E8E6E1;padding:2px 7px;border-radius:2px}
 /* 외신 레일 */
 .story{padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--hair)}
 .story:last-child{border-bottom:0}
@@ -349,6 +372,22 @@ function seismo(hist){
   $('#seislab').textContent = `배경 · ${days[0].slice(5)}–${days.at(-1).slice(5)} 하루 담론량 · 최고 ${days[pk].slice(5)}`;
 }
 
+/* ── 사진 카드 — 외신 브리핑이 고른 사진 위에 카드뉴스처럼 글을 얹는다 ── */
+function photoCard(L, R){
+  const I = L.img;
+  return `<figure class="pc">
+  <a class="pcimg" href="${esc(L.fact_url || '#')}">
+    <img src="${esc(I.src)}" srcset="${esc(I.sm)} 640w, ${esc(I.src)} 1200w" sizes="(max-width:700px) 100vw, 640px"
+      alt="${esc(I.alt)}" width="1200" height="675">
+    <span class="pcshade"></span>
+    <span class="pctag">외신 브리핑 TOP${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
+    ${R ? `<span class="pcnum"><b>${fmt(R.comments)}</b>커뮤니티 댓글</span>` : ''}
+    ${L.sub ? `<span class="pcq">${esc(L.sub.replace(/^["“]|["”]$/g, ''))}</span>` : ''}
+  </a>
+  <figcaption>${I.credit ? `<b>사진</b> <a href="${esc(I.credit_url)}">${esc(I.credit)}</a> / Unsplash` : '<b>사진</b> Unsplash'} · 외신 브리핑 선정</figcaption>
+</figure>`;
+}
+
 /* ── 카드: 논쟁 ── */
 function debateCard(R){
   const tot = Math.max(R.comments, R.points, 1);
@@ -451,7 +490,7 @@ function render(F){
     lead = `<article class="lead">
       <div class="kicker">${cross ? '교차 · 외신 보도 × 커뮤니티 반향' : '반향 · 커뮤니티 최대 토론'}<span class="ln"></span></div>
       <h2>${L.fact_url ? `<a class="hl" href="${esc(L.fact_url)}">${esc(L.headline)}</a>` : esc(L.headline)}</h2>
-      ${L.sub ? `<p class="subh">${esc(L.sub)}</p>` : ''}
+      ${L.img ? photoCard(L, R) : (L.sub ? `<p class="subh">${esc(L.sub)}</p>` : '')}
       <p class="deck">${esc(L.deck)}</p>
       <div class="byline"><span>사실 — <a href="${esc(L.fact_url || '#')}">외신 브리핑 카드</a>${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
         ${L.orig_url ? `<span><a href="${esc(L.orig_url)}">원문 ↗</a></span>` : ''}
@@ -467,7 +506,8 @@ function render(F){
   /* 좌: 외신 + 해외 반향 */
   const left = `
     <div class="sect">외신 <span>${esc(S.briefing||'')}</span></div>
-    ${(F.left||[]).map(s => `<article class="story">
+    ${(F.left||[]).map((s, i) => `<article class="story">
+      ${s.img ? `<a class="thumb" href="${esc(s.url||'#')}"><img src="${esc(s.img.sm)}" alt="${esc(s.img.alt)}" loading="lazy" width="640" height="360"><span>TOP ${i + 1 + (L && L.kind === 'cross' ? 1 : 0)}</span></a>` : ''}
       <h3><a class="hl" href="${esc(s.url||'#')}">${esc(s.head || s.title)}</a></h3>
       ${s.sub ? `<div class="sub2">${esc(s.sub)}</div>` : ''}
       <p>${esc(s.deck)}</p>
@@ -540,7 +580,7 @@ function render(F){
       <div class="col c-right">${right}</div>
     </div>${foreign}${dom}`;
 
-  $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진 없음 — 모든 그림은 수집 데이터로 그렸다</span>
+  $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진은 외신 브리핑이 고른 것, 나머지 그림은 수집 데이터로 그렸다</span>
     <span><a href="${esc((F.links||{}).briefing||'#')}">외신 브리핑</a> · <a href="${esc((F.links||{}).must||'#')}">Must News</a> · <a href="index.html">반향 관측</a></span>`;
 }
 

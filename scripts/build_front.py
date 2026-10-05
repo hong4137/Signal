@@ -119,6 +119,14 @@ def _txt(h):
     return html.unescape(re.sub(r"<[^>]+>", "", h or "")).strip()
 
 
+def photo(url, w, h):
+    """Unsplash 주소의 크기만 바꾼다 — 같은 사진을 자리에 맞게 다시 받는다."""
+    if not url:
+        return None
+    url = re.sub(r"([?&])w=\d+", r"\g<1>w=%d" % w, url)
+    return re.sub(r"([?&])h=\d+", r"\g<1>h=%d" % h, url)
+
+
 def _grab(pat, body):
     m = re.search(pat, body, re.S)
     return _txt(m.group(1)) if m else ""
@@ -233,6 +241,21 @@ def main():
         arts = [{"id": None, "sec": "TOP", "badge": "", "en": "", "head": sg["title"], "sub": "",
                  "summary": sg.get("summary") or "", "source": "", "url": None, "link": blink}
                 for sg in (brief.get("segments") or []) if sg.get("title")]
+
+    # ── 사진: 외신 브리핑이 이미 골라둔 것만 쓴다 (Unsplash) ──
+    # 요약 꼭지(segments) 순서 = TOP 기사 순서(art-0..2). 그날의 히어로 사진은
+    # 주제(hero_source)가 같은 꼭지에 준다 — 저작자 표기가 붙은 건 히어로뿐이다.
+    tops = [i for i, x in enumerate(arts) if x["sec"] == "TOP"]
+    for i, sg in zip(tops, brief.get("segments") or []):
+        if sg.get("thumb_url"):
+            hero = brief.get("hero_url") and sg.get("thumb_category") == brief.get("hero_source")
+            arts[i]["img"] = {
+                "src": photo(brief["hero_url"] if hero else sg["thumb_url"], 1200, 675),
+                "sm": photo(brief["hero_url"] if hero else sg["thumb_url"], 640, 360),
+                "alt": (brief.get("hero_alt") if hero else sg.get("thumb_alt")) or "",
+                "credit": brief.get("hero_credit_name", "") if hero else "",
+                "credit_url": brief.get("hero_credit_url", "") if hero else "",
+            }
     sig, seen = [], set()
     for src in (latest.get("by_volume") or [], latest.get("by_debate") or []):
         for b in src:
@@ -300,7 +323,7 @@ def main():
             "headline": art["head"], "sub": art["sub"],
             "deck": trim(art["summary"], 260),
             "fact_src": "외신 브리핑" + (" · " + art["source"] if art["source"] else ""),
-            "fact_url": art["link"], "orig_url": art["url"],
+            "fact_url": art["link"], "orig_url": art["url"], "img": art.get("img"),
             "reaction": reaction(g),
             "why": {"entities": ents, "shared": shared},
         }
@@ -323,7 +346,8 @@ def main():
     def card(ai, n):
         x = arts[ai]
         return {"head": x["head"], "sub": x["sub"], "en": x["en"], "deck": trim(x["summary"], n),
-                "source": x["source"], "url": x["link"], "badge": x["badge"], "echo": echo(ai)}
+                "source": x["source"], "url": x["link"], "badge": x["badge"], "echo": echo(ai),
+                "img": x.get("img")}
 
     # ── 좌측 레일: 외신 TOP 나머지 ──
     left = [card(ai, 150) for ai, x in enumerate(arts) if x["sec"] == "TOP" and ai not in used_art]
