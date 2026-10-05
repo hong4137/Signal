@@ -1,11 +1,11 @@
 <!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Signal 1면</title>
+<title>Daily UptoDate</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;700;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 /* ─────────────────────────────────────────────────────────────
-   Signal 1면 — 세 파이프라인을 한 면에 조판한다.
+   Daily UptoDate — 세 파이프라인을 한 면에 조판한다.
    사진은 쓰지 않는다. 사진 자리에는 우리 숫자로 그린 카드가 들어간다.
    카드는 테마와 무관하게 늘 어둡다 — 신문 위의 보도사진처럼
    지면과 분리된 '그림'으로 읽히게 하려는 것.
@@ -69,6 +69,7 @@ a:hover .hl,a.hl:hover{text-decoration:underline;text-decoration-thickness:1px;t
 .name{position:relative;font-family:var(--serif);font-weight:400;margin:0;
   font-size:clamp(58px,11vw,128px);line-height:.82;letter-spacing:-.025em}
 .name em{color:var(--heat);font-style:italic}
+.name a{color:inherit;text-decoration:none}
 .sub{position:relative;margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.24em;
   color:var(--ink-2)}
 .seislab{position:absolute;right:0;bottom:6px;font-family:var(--mono);font-size:10px;color:var(--muted);
@@ -307,6 +308,15 @@ footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-fa
   font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
+/* 맨 위로 — 한 화면 이상 내려가면 나타난다 */
+#totop{position:fixed;right:22px;bottom:22px;z-index:20;display:flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;cursor:pointer;
+  color:var(--sheet);background:var(--ink);border:0;border-radius:999px;padding:10px 16px;
+  box-shadow:0 6px 20px -6px rgba(0,0,0,.45);opacity:0;transform:translateY(12px);pointer-events:none;
+  transition:opacity .2s,transform .2s}
+#totop.on{opacity:1;transform:none;pointer-events:auto}
+#totop:hover{background:var(--heat);color:#fff}
+@media(max-width:700px){#totop{right:14px;bottom:14px;padding:10px 13px}#totop span{display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 <script>
@@ -327,7 +337,7 @@ footer a{color:var(--weight)}
 
   <header class="mast">
     <div id="seis" aria-hidden="true"></div>
-    <h1 class="name">Signal <em>Daily</em></h1>
+    <h1 class="name"><a href="/" title="홈으로">Daily <em>UptoDate</em></a></h1>
     <div class="sub">외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것</div>
     <div class="seislab" id="seislab"></div>
   </header>
@@ -337,6 +347,7 @@ footer a{color:var(--weight)}
 
   <footer id="foot"></footer>
 </div>
+<button id="totop" type="button" aria-label="맨 위로">↑<span>맨 위로</span></button>
 
 <script>
 const $ = s => document.querySelector(s);
@@ -608,6 +619,15 @@ function render(F){
   } catch (e) {
     $('#main').innerHTML = `<div class="err">지면을 불러오지 못했습니다 (${esc(e.message)}).</div>`;
   }
+})();
+
+/* 맨 위로 */
+(() => {
+  const b = $('#totop');
+  const upd = () => b.classList.toggle('on', scrollY > innerHeight);
+  addEventListener('scroll', upd, {passive:true}); upd();
+  b.addEventListener('click', () => scrollTo({top:0, behavior:
+    matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
 })();
 
 /* 테마 — index.html 과 같은 키를 쓴다 */
