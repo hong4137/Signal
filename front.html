@@ -321,6 +321,16 @@ footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-fa
   font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
+/* 모바일에선 데이터 그래픽(논쟁·온도·확산·줄다리기)을 빼고 숫자 한 줄만 남긴다 */
+.m-only{display:none}
+.gfx-gap{margin-top:22px}
+.mstat{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin:0 0 12px;line-height:1.6}
+.mstat b{font-weight:700;color:var(--ink)} .mstat b.h{color:var(--heat)} .mstat b.w{color:var(--weight)}
+@media(max-width:700px){
+  .gfx{display:none!important}
+  .gfx-gap{margin-top:0}
+  .m-only{display:block}
+}
 /* 맨 위로 — 한 화면 이상 내려가면 나타난다 */
 #totop{position:fixed;right:22px;bottom:22px;z-index:20;display:flex;align-items:center;gap:6px;
   font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;cursor:pointer;
@@ -400,7 +410,7 @@ function debateCard(R){
   const rmax = 3, rv = Math.min(R.r, rmax);
   const pc = v => +(v/rmax*100).toFixed(1);
   const S = R.sides;
-  return `<figure>
+  return `<figure class="gfx">
   <div class="card dc">
     <div class="cap"><span><b>논쟁</b> · Hacker News 댓글창</span><span>${R.r >= 1 ? '논쟁선 위' : '논쟁선 아래'}</span></div>
     <div class="big">
@@ -443,7 +453,7 @@ function tempCard(T){
       fill="${recent ? '#D2603A' : base ? '#18A2C6' : '#2A3341'}"/>`;
   });
   const ay = H - (avg/max)*(H-14);
-  return `<figure>
+  return `<figure class="gfx">
   <div class="card tc">
     <div class="cap"><span><b>온도</b> · 주제군 담론량</span><span>${esc(T.dates[0])}–${esc(T.dates.at(-1))}</span></div>
     <div class="head"><div class="g">${esc(T.group)}</div><div class="x">×${T.ratio}</div></div>
@@ -460,7 +470,7 @@ function spreadCard(L){
   const n = L.outlets || 0, src = L.sources || [];
   let cells = '';
   for (let i = 0; i < n; i++) cells += src[i] ? `<div class="on" title="${esc(src[i])}">${esc(src[i])}</div>` : `<div></div>`;
-  return `<figure>
+  return `<figure class="gfx">
   <div class="card sc">
     <div class="cap"><span><b style="color:var(--c-weight)">확산</b> · 같은 날 같은 사안</span><span>Must News 집계</span></div>
     <div class="big"><span class="n">${n}</span><span class="l">개 매체가 썼다</span></div>
@@ -473,7 +483,7 @@ function spreadCard(L){
 /* ── 카드: 피처 줄다리기 ── */
 function tugCard(f){
   const S = f.sides;
-  return `<div class="card fc">
+  return `<div class="card fc gfx">
     <div class="rv">${f.r.toFixed(2)}<small>추천당 댓글</small></div>
     ${S ? `<div class="tug"><span class="a">${esc(S.la)}</span><span class="b">${esc(S.lb)}</span></div>` : '<div></div>'}
     <div class="sm">댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</div>
@@ -502,6 +512,7 @@ function render(F){
         ${L.orig_url ? `<span><a href="${esc(L.orig_url)}">원문 ↗</a></span>` : ''}
         <span>반향 — <a href="${esc(R.url)}">HN 토론 ${fmt(R.comments)}개 댓글</a></span></div>
       ${debateCard(R)}
+      <p class="m-only mstat">댓글 <b class="h">${fmt(R.comments)}</b> · 추천 <b class="w">${fmt(R.points)}</b> · 추천당 댓글 <b>${R.r.toFixed(2)}</b>${R.r >= 1 ? ' — 논쟁선(1.0) 위' : ''}</p>
       ${R.summary ? `<p class="body">${esc(R.summary)}</p>` : ''}
       ${(R.kr||[]).length ? `<div class="why" style="margin-top:12px">국내 연결 — ${R.kr.map(k=>`<a href="${esc(k.url)}" style="color:var(--weight)">${esc(k.title)}</a>`).join(' · ')}</div>` : ''}
       ${cross && L.why ? `<div class="why">톱 선정 근거 — 외신 꼭지와 커뮤니티 글이 같은 사건을 가리킨다:
@@ -536,9 +547,9 @@ function render(F){
         <a class="tr hl" href="${esc(v.url)}">${esc(v.text)}</a>
         <span class="meta">댓글 ${fmt(v.comments)} · r ${Number(v.r).toFixed(2)}</span></div></div>`).join('');
   const right = `
-    <div class="sect">온도 <span>14일</span></div>
-    ${tempCard(F.temperature)}
-    <div class="sect" style="margin-top:22px">국내 해석 <span>Threads 패널</span></div>
+    <div class="gfx"><div class="sect">온도 <span>14일</span></div>
+    ${tempCard(F.temperature)}</div>
+    <div class="sect gfx-gap">국내 해석 <span>Threads 패널</span></div>
     ${voices || '<p class="meta">수집된 글 없음</p>'}`;
 
   /* 국내면 */
@@ -568,6 +579,7 @@ function render(F){
         <div class="kicker w">가장 넓게 퍼진 사안<span class="ln"></span></div>
         <h3><a class="hl" href="${esc(D.lead.url)}">${esc(D.lead.title)}</a></h3>
         ${spreadCard(D.lead)}
+        <p class="m-only mstat"><b class="w">${fmt(D.lead.outlets)}개 매체</b>가 같은 날 보도 — ${esc((D.lead.sources||[]).slice(0,3).join(', '))}${(D.lead.sources||[]).length > 3 ? ` 외 ${D.lead.outlets - 3}곳` : ''}</p>
       </div>
       <ol class="domlist">${(D.list||[]).map(a => `<li><span class="rk">${esc(a.rank)}</span>
         <a href="${esc(a.url)}"><span class="t hl">${esc(a.title)}</span><span class="s">${esc(a.source)}</span></a>
@@ -579,6 +591,7 @@ function render(F){
     <div class="sect">논쟁 <span>댓글창이 갈라진 글</span></div>
     <div class="featgrid">${F.features.map(f => `<article>
       ${tugCard(f)}
+      <p class="m-only mstat">추천당 댓글 <b class="h">${f.r.toFixed(2)}</b> · 댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</p>
       <h3><a class="hl" href="${esc(f.url)}">${esc(f.title)}</a></h3>
       <p>${esc(f.deck)}</p></article>`).join('')}</div></section>` : '';
 
