@@ -32,6 +32,7 @@
   /* 카드(사진 자리) — 고정 다크 */
   --c-bg:#0A0D14; --c-bg2:#111620; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996;
   --c-rule:#232B38; --c-heat:#D2603A; --c-weight:#18A2C6;
+  --violet:#6A4FD0;
   /* 큰 한글은 고딕 — 명조 제목은 문학지처럼 읽힌다 (2026-10-05 편집기자 조언).
      명조는 인용문에만 남긴다. 영문 제호는 세리프 그대로(신문 제호의 관례). */
   --head-ko:"Pretendard Variable",Pretendard,"IBM Plex Sans KR",system-ui,sans-serif;
@@ -46,6 +47,7 @@
     --rule:#E8E6E1; --hair:#222A36; --heat:#D2603A; --weight:#18A2C6;
     --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
     --c-bg:#05070B; --c-bg2:#0A0E15; --c-rule:#1C2330;
+    --violet:#9C88F7;
   }
 }
 :root[data-theme="dark"]{
@@ -53,6 +55,7 @@
   --rule:#E8E6E1; --hair:#222A36; --heat:#D2603A; --weight:#18A2C6;
   --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
   --c-bg:#05070B; --c-bg2:#0A0E15; --c-rule:#1C2330;
+  --violet:#9C88F7;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -321,6 +324,20 @@ footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-fa
   font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
+/* ── SNS 글 표식 — 기사와 구분한다. 섹션마다 이모지 + 왼쪽 색 막대 ──
+   💬 논쟁 = 주황 · 📡 외신 밖의 반향 = 청록 · 🧵 국내 해석 = 보라 */
+.sect .se{color:var(--ink);font-weight:700;letter-spacing:.14em}
+.sns{position:relative;padding-left:13px!important}
+.sns::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:3px;border-radius:2px;background:var(--sc)}
+.wire li.sns::before{bottom:15px}
+.voice.sns::before{top:14px;bottom:14px}
+.sns-h{--sc:var(--heat)} .sns-w{--sc:var(--weight)} .sns-v{--sc:var(--violet)}
+.pf{display:inline-block;font-style:normal;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;
+  padding:1px 6px;border-radius:2px;margin:0 0 5px;vertical-align:middle;
+  color:var(--sc);background:color-mix(in srgb,var(--sc) 14%,transparent)}
+.who .pf{margin:0 0 0 auto}
+.voice .who{align-items:center}
+.pf-hn,.pf-rd{display:table}
 /* 모바일에선 데이터 그래픽(논쟁·온도·확산·줄다리기)을 빼고 숫자 한 줄만 남긴다 */
 .m-only{display:none}
 .gfx-gap{margin-top:22px}
@@ -375,6 +392,14 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = n => Number(n || 0).toLocaleString('ko-KR');
 const DOW = '일월화수목금토';
+
+/* SNS 출처 꼬리표 */
+function pf(url){
+  const u = String(url || '');
+  if (u.includes('reddit.com')) return '<i class="pf pf-rd">Reddit</i>';
+  if (u.includes('ycombinator.com')) return '<i class="pf pf-hn">Hacker News</i>';
+  return '';
+}
 
 /* 'Guardian Featured, TechCrunch, The Verge 다매체 보도' → 'Guardian 외 2곳' */
 function shortSrc(src){
@@ -532,24 +557,24 @@ function render(F){
       ${s.echo ? `<a class="echo" href="${esc(s.echo.url)}">커뮤니티 반향 · 댓글 ${fmt(s.echo.comments)} · r ${s.echo.r.toFixed(2)}</a>`
                : `<span class="noecho">커뮤니티 반향 없음</span>`}
     </article>`).join('')}
-    ${(F.wire||[]).length ? `<div class="sect" style="margin-top:8px">외신 밖의 반향 <span>HN·Reddit</span></div>
-    <ul class="wire">${F.wire.map(w => `<li><a href="${esc(w.url)}">
-      <span class="en hl">${esc(w.title)}</span><span class="ko">${esc(w.deck)}</span>
+    ${(F.wire||[]).length ? `<div class="sect" style="margin-top:8px"><span class="se">📡 외신 밖의 반향</span><span>HN·Reddit</span></div>
+    <ul class="wire">${F.wire.map(w => `<li class="sns sns-w"><a href="${esc(w.url)}">
+      ${pf(w.url)}<span class="en hl">${esc(w.title)}</span><span class="ko">${esc(w.deck)}</span>
       <span class="meta"><span class="h">댓글 ${fmt(w.comments)}</span> · r ${w.r.toFixed(2)}</span></a></li>`).join('')}</ul>` : ''}`;
 
   /* 우: 해석 */
   const voices = (F.voices||[]).map(v => v.kind === 'panel'
-    ? `<div class="voice"><div class="av ${esc(v.tier)}">${esc((v.who||'?').trim()[0])}</div><div>
-        <div class="who">${esc(v.who)} <span>@${esc(v.handle)} · ${esc((v.ts||'').slice(5,16))}</span></div>
+    ? `<div class="voice sns sns-v"><div class="av ${esc(v.tier)}">${esc((v.who||'?').trim()[0])}</div><div>
+        <div class="who">${esc(v.who)} <span>@${esc(v.handle)} · ${esc((v.ts||'').slice(5,16))}</span><i class="pf pf-th">Threads</i></div>
         <a href="https://www.threads.com/@${esc(v.handle)}"><q>${esc(v.text)}</q></a></div></div>`
-    : `<div class="voice"><div class="av">✓</div><div>
-        <div class="who">${esc(v.who)} <span>신뢰층이 링크</span></div>
+    : `<div class="voice sns sns-v"><div class="av">✓</div><div>
+        <div class="who">${esc(v.who)} <span>신뢰층이 링크</span><i class="pf pf-tr">신뢰층</i></div>
         <a class="tr hl" href="${esc(v.url)}">${esc(v.text)}</a>
         <span class="meta">댓글 ${fmt(v.comments)} · r ${Number(v.r).toFixed(2)}</span></div></div>`).join('');
   const right = `
     <div class="gfx"><div class="sect">온도 <span>14일</span></div>
     ${tempCard(F.temperature)}</div>
-    <div class="sect gfx-gap">국내 해석 <span>Threads 패널</span></div>
+    <div class="sect gfx-gap"><span class="se">🧵 국내 해석</span><span>Threads 패널</span></div>
     ${voices || '<p class="meta">수집된 글 없음</p>'}`;
 
   /* 국내면 */
@@ -588,12 +613,13 @@ function render(F){
 
   /* 피처 */
   const feat = (F.features||[]).length ? `<section class="feat infeat">
-    <div class="sect">논쟁 <span>댓글창이 갈라진 글</span></div>
+    <div class="sect"><span class="se">💬 논쟁</span><span>댓글창이 갈라진 글</span></div>
     <div class="featgrid">${F.features.map(f => `<article>
       ${tugCard(f)}
+      <div class="sns sns-h">${pf(f.url)}
       <p class="m-only mstat">추천당 댓글 <b class="h">${f.r.toFixed(2)}</b> · 댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</p>
       <h3><a class="hl" href="${esc(f.url)}">${esc(f.title)}</a></h3>
-      <p>${esc(f.deck)}</p></article>`).join('')}</div></section>` : '';
+      <p>${esc(f.deck)}</p></div></article>`).join('')}</div></section>` : '';
 
   $('#main').innerHTML = `<div class="page">
       <div class="col c-left">${left}</div>
