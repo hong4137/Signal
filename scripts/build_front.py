@@ -127,6 +127,62 @@ def photo(url, w, h):
     return re.sub(r"([?&])h=\d+", r"\g<1>h=%d" % h, url)
 
 
+# ── 자료사진 보관함 ──
+# 그날 사진이 없는 기사에는 data/photo_catalog.json 에서 '자료사진'을 고른다.
+# 카탈로그 = 외신 브리핑이 쓴 Unsplash 사진 97장을 **눈으로 검수**해 다시 태그한 81장.
+# 브리핑이 붙인 분류·설명은 믿지 않는다 — 실측하니 '회로 기판' 설명에 애니 그림,
+# '세계 지도' 설명에 물류창고가 걸려 있었다. 카탈로그에 없는 사진은 쓰지 않는다.
+#
+# (기사에 이런 말이 있으면 → 이 태그의 사진)  위에서부터 우선
+PHOTO_TOPIC = [
+    (r"트럼프|Trump", "trump"),
+    (r"구글|Google", "google"),
+    (r"테슬라|Tesla", "tesla"),
+    (r"스페이스X|SpaceX", "spacex"),
+    (r"로봇|휴머노이드", "robot"),
+    (r"전기차|\bEV\b|사이버캡|로보택시|자율주행|자동차", "car"),
+    (r"우주|위성|로켓", "space"),
+    (r"드론|국방|방산|군사|미사일", "drone"),
+    (r"헬스|의료|신약|바이오|제약|병원", "health"),
+    (r"데이터센터|서버", "datacenter"),
+    (r"반도체|노광|ASML|RISC|파운드리|웨이퍼|GPU|칩", "chip"),
+    (r"감시|번호판|해킹|보안|취약점|바운티|유출|사이버", "security"),
+    (r"법원|판사|소송|위헌|판결|재판", "court"),
+    (r"주가|IPO|상장|증시|투자|펀드|버블|조정", "finance"),
+    (r"쇼핑|이커머스|테무|소매|배송|무역|관세|수출|물류", "trade"),
+    (r"플랫폼|앱스토어|메신저|SNS|소셜|로블록스|스팀", "social"),
+    (r"규제|법안|당국|정부|의회|위원회|백악관", "government"),
+    (r"데이터|프라이버시|개인정보", "data"),
+    (r"오픈소스|코드|개발자|깃허브", "code"),
+    (r"인수|합병|CEO|경영|사임|퇴사", "business"),
+    (r"신학|종교|학자|연구진|대학", "research"),
+]
+PHOTO_SEC = {"AI/기술": "ai", "경제/금융": "finance", "반도체/인프라": "chip",
+             "정책/플랫폼": "government", "하드웨어/기타": "hardware", "Claude's Pick": "finance"}
+PHOTO_ANY = ["ai", "code", "data"]
+
+
+def photo_pool(_B=None):
+    cat = load(os.path.join(DATA, "photo_catalog.json"), {}) or {}
+    return cat.get("photos") or []
+
+
+def pick_photo(pool, it, sec, used):
+    """기사 → 주제 태그가 맞는 자료사진 한 장. 같은 면에서 겹치지 않게 고른다."""
+    text = " ".join((it.get("head", ""), it.get("sub", ""), it.get("en", ""), it.get("deck", "")))
+    wants = [t for pat, t in PHOTO_TOPIC if re.search(pat, text, re.I)]
+    wants += [PHOTO_SEC.get(sec, "ai")] + PHOTO_ANY
+    seed = sum(ord(ch) for ch in (it.get("en") or it.get("head") or ""))
+    for want in wants:
+        cand = [x for x in pool if x["url"] not in used and want in x["tags"]]
+        if cand:
+            ph = cand[seed % len(cand)]
+            used.add(ph["url"])
+            return {"url": ph["url"], "alt": ph["desc"], "credit": ph.get("credit", ""),
+                    "credit_url": ph.get("credit_url", ""), "tag": want}
+    return None
+
+
 def _grab(pat, body):
     m = re.search(pat, body, re.S)
     return _txt(m.group(1)) if m else ""
@@ -227,7 +283,7 @@ def main():
         brief = (B.get("briefings") or [{}])[0]
     except Exception as e:
         print("  [외신 브리핑] 실패: %s" % e, file=sys.stderr)
-        brief = {}
+        B, brief = {}, {}
     try:
         M = get(SRC_MUST)
     except Exception as e:
@@ -361,6 +417,22 @@ def main():
         if not foreign or foreign[-1]["name"] != x["sec"]:
             foreign.append({"name": x["sec"], "items": []})
         foreign[-1]["items"].append(card(ai, 120))
+
+    # 섹션마다 사진 리듬을 준다 — 가디언·한겨레 섹션면처럼 크기를 섞는다.
+    #   첫 기사: 16:9 사진 / 4건 이상인 섹션의 셋째: 작은 정사각 썸네일 / 나머지: 글만
+    pool = photo_pool(B)
+    used_ph = {re.sub(r"\?.*$", "", x["img"]["src"]) for x in [lead or {}] + left if x.get("img")}
+    for sec in foreign:
+        for i, it in enumerate(sec["items"]):
+            size = "lead" if i == 0 else ("side" if i == 2 and len(sec["items"]) >= 4 else None)
+            if not size or it.get("img"):
+                continue
+            ph = pick_photo(pool, it, sec["name"], used_ph)
+            if ph:
+                w, h = (960, 540) if size == "lead" else (240, 240)
+                it["img"] = {"src": photo(ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75", w, h),
+                             "alt": ph["alt"], "credit": ph["credit"], "credit_url": ph["credit_url"],
+                             "size": size, "file": True}
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
     wire = [{"title": g["title"], "url": g.get("discussion") or g.get("url"),
