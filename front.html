@@ -16,6 +16,7 @@
 <meta property="og:image:alt" content="Daily UptoDate 2026년 10월 5일 월요일 1면 — 오픈AI 안전 보고서 책임자 사임">
 <meta name="twitter:card" content="summary_large_image">
 <!--og:end-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;700;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 /* ─────────────────────────────────────────────────────────────
@@ -32,6 +33,9 @@
   /* 카드(사진 자리) — 고정 다크 */
   --c-bg:#0A0D14; --c-bg2:#111620; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996;
   --c-rule:#232B38; --c-heat:#D2603A; --c-weight:#18A2C6;
+  /* 큰 한글은 고딕 — 명조 제목은 문학지처럼 읽힌다 (2026-10-05 편집기자 조언).
+     명조는 인용문에만 남긴다. 영문 제호는 세리프 그대로(신문 제호의 관례). */
+  --head-ko:"Pretendard Variable",Pretendard,"IBM Plex Sans KR",system-ui,sans-serif;
   --serif-ko:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
   --serif:"Instrument Serif",Georgia,serif;
   --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -84,7 +88,7 @@ a:hover .hl,a.hl:hover{text-decoration:underline;text-decoration-thickness:1px;t
   font-size:clamp(58px,11vw,128px);line-height:.82;letter-spacing:-.025em}
 .name em{color:var(--heat);font-style:italic}
 .name a{color:inherit;text-decoration:none}
-.sub{position:relative;margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.24em;
+.sub{position:relative;margin-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.24em;
   color:var(--ink-2)}
 .seislab{position:absolute;right:0;bottom:6px;font-family:var(--mono);font-size:10px;color:var(--muted);
   letter-spacing:.06em}
@@ -121,15 +125,16 @@ a:hover .hl,a.hl:hover{text-decoration:underline;text-decoration-thickness:1px;t
 .sect span{color:var(--muted);font-weight:400;letter-spacing:.06em}
 
 /* 톱 */
-.lead h2{font-family:var(--serif-ko);font-weight:900;margin:0 0 12px;
+.lead h2,.story h3,.domlead h3,.pcq,.subh{text-wrap:balance}
+.lead h2{font-family:var(--head-ko);font-weight:800;margin:0 0 12px;
   font-size:clamp(32px,4.4vw,52px);line-height:1.16;letter-spacing:-.03em;word-break:keep-all}
-.lead .deck{font-family:var(--serif-ko);font-weight:500;font-size:18px;line-height:1.6;color:var(--ink-2);
+.lead .deck{font-family:var(--head-ko);font-weight:400;font-size:18px;line-height:1.6;color:var(--ink-2);
   margin:0 0 16px;word-break:keep-all}
 .byline{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:16px;display:flex;
   flex-wrap:wrap;gap:4px 14px}
 .byline a{color:var(--weight)}
 .lead .body{font-size:15.5px;line-height:1.75;color:var(--ink);word-break:keep-all;margin:16px 0 0}
-.lead .body:first-letter{font-family:var(--serif-ko);font-weight:900;float:left;font-size:3.3em;
+.lead .body:first-letter{font-family:var(--head-ko);font-weight:800;float:left;font-size:3.3em;
   line-height:.9;padding:4px 8px 0 0;color:var(--heat)}
 .why{margin-top:14px;font-family:var(--mono);font-size:10.5px;color:var(--muted);line-height:1.7}
 .why i{font-style:normal;border:1px solid var(--hair);border-radius:3px;padding:0 5px;margin-right:3px;color:var(--ink-2)}
@@ -176,7 +181,7 @@ figure{margin:0}
 @media(max-width:520px){.vs{grid-template-columns:1fr}.vs .mid{text-align:center;margin:6px 0}.vs .b{text-align:left}
   .dc{padding:18px 16px}.dc .big{gap:18px}.dc .big .r{margin-left:0;text-align:left}}
 
-.subh{font-family:var(--serif-ko);font-weight:700;font-size:19px;line-height:1.45;margin:-4px 0 12px;
+.subh{font-family:var(--head-ko);font-weight:700;font-size:19px;line-height:1.45;margin:-4px 0 12px;
   color:var(--heat);word-break:keep-all}
 .sub2{font-size:13px;font-weight:600;color:var(--ink-2);margin:-2px 0 6px;line-height:1.45;word-break:keep-all}
 /* 외신면 — 섹션을 신문 단처럼 흘린다 */
@@ -199,7 +204,7 @@ figure{margin:0}
 .has-side .fxph{grid-column:2;grid-row:1/span 4;aspect-ratio:1;width:84px}
 .has-side .fxph i{display:none}
 .has-side>span:not(.fxph){grid-column:1}
-.fxi .t{display:block;font-family:var(--serif-ko);font-weight:700;font-size:15.5px;line-height:1.42;word-break:keep-all}
+.fxi .t{display:block;font-family:var(--head-ko);font-weight:700;font-size:15.5px;line-height:1.42;word-break:keep-all}
 .fxi .u{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-top:2px;word-break:keep-all}
 .fxi .d{display:block;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px;word-break:keep-all}
 /* 사진 카드 */
@@ -213,7 +218,7 @@ figure{margin:0}
 .pcnum{position:absolute;right:16px;top:12px;text-align:right;color:#E8E6E1;font-size:10.5px;
   font-family:var(--mono);letter-spacing:.06em;line-height:1.1}
 .pcnum b{display:block;font-size:30px;color:#D2603A;letter-spacing:-.03em}
-.pcq{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-family:var(--serif-ko);font-weight:900;
+.pcq{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-family:var(--head-ko);font-weight:800;
   font-size:clamp(19px,2.5vw,28px);line-height:1.3;letter-spacing:-.02em;word-break:keep-all;
   text-shadow:0 1px 12px rgba(0,0,0,.5)}
 .pcq::before{content:"“";color:#D2603A;margin-right:2px}
@@ -228,7 +233,7 @@ figure{margin:0}
 /* 외신 레일 */
 .story{padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--hair)}
 .story:last-child{border-bottom:0}
-.story h3{font-family:var(--serif-ko);font-weight:700;font-size:19px;line-height:1.38;margin:0 0 7px;
+.story h3{font-family:var(--head-ko);font-weight:700;font-size:19px;line-height:1.38;margin:0 0 7px;
   letter-spacing:-.02em;word-break:keep-all}
 .story p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.62;word-break:keep-all}
 .echo{display:inline-flex;gap:6px;align-items:center;margin-top:8px;font-family:var(--mono);font-size:10.5px;
@@ -262,12 +267,12 @@ figure{margin:0}
 /* 국내면 */
 .dom{margin-top:30px;border-top:3px solid var(--rule);padding-top:10px}
 .domhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:16px}
-.domhead h2{font-family:var(--serif-ko);font-weight:900;font-size:24px;margin:0;letter-spacing:-.02em}
+.domhead h2{font-family:var(--head-ko);font-weight:800;font-size:24px;margin:0;letter-spacing:-.02em}
 .domhead h2 small{font-family:var(--mono);font-size:10.5px;font-weight:400;letter-spacing:.14em;color:var(--muted);margin-left:10px}
 .domgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0 0}
 .domgrid>*{min-width:0}
 .domlead{padding-right:26px}
-.domlead h3{font-family:var(--serif-ko);font-weight:900;font-size:clamp(23px,2.6vw,30px);line-height:1.3;
+.domlead h3{font-family:var(--head-ko);font-weight:800;font-size:clamp(23px,2.6vw,30px);line-height:1.3;
   letter-spacing:-.025em;margin:0 0 14px;word-break:keep-all}
 .sc{padding:16px 16px 14px}
 .dots{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:5px;margin:14px 0 6px}
@@ -284,7 +289,7 @@ figure{margin:0}
 .domlist li:first-child{padding-top:0}
 .domlist li:last-child{border:0}
 .domlist .rk{font-family:var(--serif);font-size:24px;line-height:1;color:var(--muted)}
-.domlist .t{font-family:var(--serif-ko);font-weight:700;font-size:15.5px;line-height:1.45;word-break:keep-all}
+.domlist .t{font-family:var(--head-ko);font-weight:700;font-size:15.5px;line-height:1.45;word-break:keep-all}
 .domlist .s{font-family:var(--sans);font-weight:400;font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
 .ol{font-family:var(--mono);font-size:11px;color:var(--weight);white-space:nowrap}
 @media(max-width:820px){.domgrid{grid-template-columns:1fr}.domlead{padding:0 0 18px}
