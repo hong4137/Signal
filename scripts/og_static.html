@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<!--
+  링크 미리보기 썸네일 (1200×630) — 고정본.
+  매일 바꿀 필요가 없어 제호 중심의 한 장으로 둔다. 바꾸려면 이 파일을 고친 뒤
+  헤드리스 크롬으로 data/og.png 를 다시 찍는다:
+    chrome --headless=new --hide-scrollbars --window-size=1200,630 --virtual-time-budget=15000 \
+           --screenshot=data/og.png scripts/og_static.html
+  세 가닥 막대 = 1면을 이루는 세 줄기(외신·국내·커뮤니티)의 색.
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&family=IBM+Plex+Sans+KR:wght@500;600;700&display=block">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden;background:#0A0D14}
+body{position:relative;color:#E8E6E1;font-family:"Pretendard Variable","IBM Plex Sans KR",sans-serif}
+.frame{position:absolute;inset:48px 64px;border-top:4px solid #E8E6E1;border-bottom:1px solid #E8E6E1}
+.frame::after{content:"";position:absolute;left:0;right:0;bottom:6px;border-bottom:1px solid #E8E6E1}
+.name{position:absolute;left:0;right:0;top:118px;text-align:center;font-family:"Instrument Serif",serif;
+  font-size:168px;line-height:1;letter-spacing:-.02em;color:#F4F2EC;white-space:nowrap}
+.name em{color:#D2603A;font-style:italic}
+.tag{position:absolute;left:0;right:0;top:330px;text-align:center;font-size:34px;font-weight:700;
+  letter-spacing:-.01em;color:#F4F2EC}
+.tag span{color:#7E8996;font-weight:500;margin:0 14px}
+.bars{position:absolute;left:50%;top:412px;transform:translateX(-50%);display:flex;gap:10px}
+.bars i{display:block;width:84px;height:6px;border-radius:3px}
+.foot{position:absolute;left:64px;right:64px;bottom:70px;display:flex;justify-content:space-between;
+  font-family:"JetBrains Mono","IBM Plex Sans KR",monospace;font-size:21px;letter-spacing:.06em;color:#AFB6C0}
+.foot b{color:#18A2C6;font-weight:500}
+</style>
+<div class="frame"></div>
+<div class="name">Daily <em>UptoDate</em></div>
+<div class="tag">외신이 보도하고<span>·</span>국내가 받아쓰고<span>·</span>커뮤니티가 다툰 것</div>
+<div class="bars"><i style="background:#18A2C6"></i><i style="background:#D2603A"></i><i style="background:#9C88F7"></i></div>
+<div class="foot"><span>AI·테크 1면 · 매일 아침 8시 전</span><b>signal.sharktalk.co.kr</b></div>

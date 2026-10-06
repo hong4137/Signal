@@ -92,8 +92,6 @@ jobs:
         continue-on-error: true
         run: |
           python scripts/build_front.py
-          # 링크 미리보기 썸네일(data/og.png) + front.html 의 og 태그. 러너에 google-chrome 이 있다.
-          python scripts/render_og.py || echo "og 썸네일 실패 — 기존 것 유지"
 
       # ⚠️ data/ 와 panel_kr.json 은 매 실행 통째로 다시 만들어지는 생성물이다.
       #    봇 커밋끼리 겹치면 충돌이 나는데, 그때 정답은 **방금 수집한 쪽**이다.
@@ -104,7 +102,7 @@ jobs:
           set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data panel_kr.json front.html
+          git add -A data panel_kr.json
           if git diff --staged --quiet; then
             echo "변경 없음 — 커밋 생략"; exit 0
           fi
@@ -115,7 +113,7 @@ jobs:
             # 리베이스 중에는 'theirs' 가 지금 얹고 있는 우리 커밋이다
             if ! git rebase -X theirs origin/main; then
               git checkout --theirs -- data panel_kr.json 2>/dev/null || true
-              git add -A data panel_kr.json front.html
+              git add -A data panel_kr.json
               GIT_EDITOR=true git rebase --continue || { git rebase --abort; exit 1; }
             fi
             if git push; then

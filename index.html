@@ -413,7 +413,7 @@ async function loadData() {
   }
   let trend = [];
   if (T && T.series && T.series.length) {
-    const gs = Object.keys(T.series[0]).filter(k => k !== 'date' && k !== 'n');
+    const gs = Object.keys(T.series[0]).filter(k => typeof T.series[0][k] === 'number' && k !== 'n');
     // 오늘은 아직 진행 중이라 하루치가 안 찬다. 증감 계산에서 빼지 않으면
     // 매번 '오늘 급락' 으로 읽힌다. 완료된 날만 비교한다.
     const partial = T.series.length && T.series[T.series.length - 1].partial;

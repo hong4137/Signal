@@ -4,16 +4,17 @@
 <title>Daily UptoDate</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230A0D14%22/%3E%3Ctext x=%2232%22 y=%2248%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-style=%22italic%22 font-size=%2246%22 fill=%22%23D2603A%22%3EU%3C/text%3E%3C/svg%3E">
 <!--og:start-->
-<meta name="description" content="오늘의 톱 — 앤스로픽·오픈AI·구글·메타, 뉴욕시의회 AI 위험 청문회 증언대에 (커뮤니티 댓글 815) · 외신·국내·커뮤니티 반향을 한 면에.">
+<!-- 미리보기 태그는 고정이다. 썸네일은 scripts/og_static.html 로 찍은 data/og.png 한 장. -->
+<meta name="description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Daily UptoDate">
-<meta property="og:title" content="Daily UptoDate · 2026년 10월 6일 화요일">
-<meta property="og:description" content="오늘의 톱 — 앤스로픽·오픈AI·구글·메타, 뉴욕시의회 AI 위험 청문회 증언대에 (커뮤니티 댓글 815) · 외신·국내·커뮤니티 반향을 한 면에.">
+<meta property="og:title" content="Daily UptoDate">
+<meta property="og:description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
 <meta property="og:url" content="https://signal.sharktalk.co.kr/front.html">
-<meta property="og:image" content="https://signal.sharktalk.co.kr/data/og.png?v=202610062038">
+<meta property="og:image" content="https://signal.sharktalk.co.kr/data/og.png?v=static1">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Daily UptoDate 2026년 10월 6일 화요일 1면 — 앤스로픽·오픈AI·구글·메타, 뉴욕시의회 AI 위험 청문회 증언대에">
+<meta property="og:image:alt" content="Daily UptoDate — 외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것">
 <meta name="twitter:card" content="summary_large_image">
 <!--og:end-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -324,6 +325,7 @@ footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-fa
   font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
+.orig{display:block;font-size:11.5px;color:var(--muted);margin:-2px 0 6px;line-height:1.4}
 /* ── SNS 글 표식 — 기사와 구분한다. 섹션마다 이모지 + 왼쪽 색 막대 ──
    💬 논쟁 = 주황 · 📡 외신 밖의 반향 = 청록 · 🧵 국내 해석 = 보라 */
 .sect .se{color:var(--ink);font-weight:700;letter-spacing:.14em}
@@ -392,6 +394,10 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = n => Number(n || 0).toLocaleString('ko-KR');
 const DOW = '일월화수목금토';
+
+/* 제목 — '앤스로픽·오픈AI·구글' 같은 나열이 '·' 앞에서 끊기지 않게 단어 결합자(U+2060)로 묶고,
+   편집 데스크가 넣은 \n 은 줄바꿈으로 바꾼다 */
+const hd = s => esc(s).replace(/·/g, '\u2060·\u2060').replace(/\n/g, '<br>');
 
 /* SNS 출처 꼬리표 */
 function pf(url){
@@ -528,18 +534,19 @@ function render(F){
   let lead = '';
   if (L){
     const cross = L.kind === 'cross';
+    const kick = cross ? '교차 · 외신 보도 × 커뮤니티 반향' : L.kind === 'desk' ? '오늘의 톱 · 외신' : '반향 · 커뮤니티 최대 토론';
     lead = `<article class="lead">
-      <div class="kicker">${cross ? '교차 · 외신 보도 × 커뮤니티 반향' : '반향 · 커뮤니티 최대 토론'}<span class="ln"></span></div>
-      <h2>${L.fact_url ? `<a class="hl" href="${esc(L.fact_url)}">${esc(L.headline)}</a>` : esc(L.headline)}</h2>
+      <div class="kicker">${kick}<span class="ln"></span></div>
+      <h2>${L.fact_url ? `<a class="hl" href="${esc(L.fact_url)}">${hd(L.headline)}</a>` : hd(L.headline)}</h2>
       ${L.img ? photoCard(L, R) : (L.sub ? `<p class="subh">${esc(L.sub)}</p>` : '')}
       <p class="deck">${esc(L.deck)}</p>
       <div class="byline"><span>사실 — <a href="${esc(L.fact_url || '#')}">외신 브리핑 카드</a>${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
         ${L.orig_url ? `<span><a href="${esc(L.orig_url)}">원문 ↗</a></span>` : ''}
-        <span>반향 — <a href="${esc(R.url)}">HN 토론 ${fmt(R.comments)}개 댓글</a></span></div>
-      ${debateCard(R)}
-      <p class="m-only mstat">댓글 <b class="h">${fmt(R.comments)}</b> · 추천 <b class="w">${fmt(R.points)}</b> · 추천당 댓글 <b>${R.r.toFixed(2)}</b>${R.r >= 1 ? ' — 논쟁선(1.0) 위' : ''}</p>
-      ${R.summary ? `<p class="body">${esc(R.summary)}</p>` : ''}
-      ${(R.kr||[]).length ? `<div class="why" style="margin-top:12px">국내 연결 — ${R.kr.map(k=>`<a href="${esc(k.url)}" style="color:var(--weight)">${esc(k.title)}</a>`).join(' · ')}</div>` : ''}
+        ${R ? `<span>반향 — <a href="${esc(R.url)}">HN 토론 ${fmt(R.comments)}개 댓글</a></span>` : ''}</div>
+      ${R ? debateCard(R) : ''}
+      ${R ? `<p class="m-only mstat">댓글 <b class="h">${fmt(R.comments)}</b> · 추천 <b class="w">${fmt(R.points)}</b> · 추천당 댓글 <b>${R.r.toFixed(2)}</b>${R.r >= 1 ? ' — 논쟁선(1.0) 위' : ''}</p>` : ''}
+      ${R && R.summary ? `<p class="body">${esc(R.summary)}</p>` : ''}
+      ${R && (R.kr||[]).length ? `<div class="why" style="margin-top:12px">국내 연결 — ${R.kr.map(k=>`<a href="${esc(k.url)}" style="color:var(--weight)">${esc(k.title)}</a>`).join(' · ')}</div>` : ''}
       ${cross && L.why ? `<div class="why">톱 선정 근거 — 외신 꼭지와 커뮤니티 글이 같은 사건을 가리킨다:
         ${L.why.entities.map(e=>`<i>${esc(e)}</i>`).join('')}${L.why.shared.map(e=>`<i>${esc(e)}</i>`).join('')}</div>` : ''}
     </article>`;
@@ -550,7 +557,7 @@ function render(F){
     <div class="sect">외신 <span>${esc(S.briefing||'')}</span></div>
     ${(F.left||[]).map((s, i) => `<article class="story">
       ${s.img ? `<a class="thumb" href="${esc(s.url||'#')}"><img src="${esc(s.img.sm)}" alt="${esc(s.img.alt)}" loading="lazy" width="640" height="360"><span>TOP ${i + 1 + (L && L.kind === 'cross' ? 1 : 0)}</span></a>` : ''}
-      <h3><a class="hl" href="${esc(s.url||'#')}">${esc(s.head || s.title)}</a></h3>
+      <h3><a class="hl" href="${esc(s.url||'#')}">${hd(s.head || s.title)}</a></h3>
       ${s.sub ? `<div class="sub2">${esc(s.sub)}</div>` : ''}
       <p>${esc(s.deck)}</p>
       ${s.source ? `<span class="meta">${esc(shortSrc(s.source))}</span>` : ''}
@@ -559,7 +566,7 @@ function render(F){
     </article>`).join('')}
     ${(F.wire||[]).length ? `<div class="sect" style="margin-top:8px"><span class="se">📡 외신 밖의 반향</span><span>HN·Reddit</span></div>
     <ul class="wire">${F.wire.map(w => `<li class="sns sns-w"><a href="${esc(w.url)}">
-      ${pf(w.url)}<span class="en hl">${esc(w.title)}</span><span class="ko">${esc(w.deck)}</span>
+      ${pf(w.url)}${w.title_ko ? `<span class="en hl">${hd(w.title_ko)}</span><span class="orig">${esc(w.title)}</span>` : `<span class="en hl">${esc(w.title)}</span>`}<span class="ko">${esc(w.deck)}</span>
       <span class="meta"><span class="h">댓글 ${fmt(w.comments)}</span> · r ${w.r.toFixed(2)}</span></a></li>`).join('')}</ul>` : ''}`;
 
   /* 우: 해석 */
@@ -589,7 +596,7 @@ function render(F){
       ${sec.items.map(x => `<a class="fxi${x.img ? ' has-' + x.img.size : ''}" href="${esc(x.url)}">
         ${x.img ? `<span class="fxph"><img src="${esc(x.img.src)}" alt="${esc(x.img.alt)}" loading="lazy"
           width="${x.img.size === 'lead' ? 960 : 240}" height="${x.img.size === 'lead' ? 540 : 240}"><i>자료사진</i></span>` : ''}
-        <span class="t hl">${esc(x.head)}</span>
+        <span class="t hl">${hd(x.head)}</span>
         ${x.sub ? `<span class="u">${esc(x.sub)}</span>` : ''}
         <span class="d">${esc(x.deck)}</span>
         <span class="meta">${esc(shortSrc(x.source))}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
@@ -602,7 +609,7 @@ function render(F){
     <div class="domgrid">
       <div class="domlead">
         <div class="kicker w">가장 넓게 퍼진 사안<span class="ln"></span></div>
-        <h3><a class="hl" href="${esc(D.lead.url)}">${esc(D.lead.title)}</a></h3>
+        <h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
         ${spreadCard(D.lead)}
         <p class="m-only mstat"><b class="w">${fmt(D.lead.outlets)}개 매체</b>가 같은 날 보도 — ${esc((D.lead.sources||[]).slice(0,3).join(', '))}${(D.lead.sources||[]).length > 3 ? ` 외 ${D.lead.outlets - 3}곳` : ''}</p>
       </div>
@@ -618,7 +625,8 @@ function render(F){
       ${tugCard(f)}
       <div class="sns sns-h">${pf(f.url)}
       <p class="m-only mstat">추천당 댓글 <b class="h">${f.r.toFixed(2)}</b> · 댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</p>
-      <h3><a class="hl" href="${esc(f.url)}">${esc(f.title)}</a></h3>
+      <h3><a class="hl" href="${esc(f.url)}">${hd(f.title_ko || f.title)}</a></h3>
+      ${f.title_ko ? `<span class="orig">${esc(f.title)}</span>` : ''}
       <p>${esc(f.deck)}</p></div></article>`).join('')}</div></section>` : '';
 
   $('#main').innerHTML = `<div class="page">

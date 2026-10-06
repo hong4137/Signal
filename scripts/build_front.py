@@ -87,6 +87,21 @@ STOP = {"있다", "했다", "한다", "이다", "대한", "위해", "통해", "�
         "으로", "에게", "부터", "까지", "그리고", "하지만", "또한", "모두", "것으로", "것이"}
 
 
+# 클라우드 루틴(편집국)은 hong4137.github.io 에 접속할 수 없다(샌드박스 403).
+# 대신 외신 브리핑·Must News 리포를 받아 두고 경로를 넘긴다.
+#   BRIEFING_DIR = hong4137/briefing 클론 경로
+#   MUST_DIR     = hong4137/Must-News 클론 경로
+# 둘 다 없으면 지금처럼 웹에서 받는다 (GitHub Actions).
+BRIEFING_DIR = os.environ.get("BRIEFING_DIR")
+MUST_DIR = os.environ.get("MUST_DIR")
+
+
+def get_local_or_web(local, url):
+    if local and os.path.exists(local):
+        return json.load(io.open(local, encoding="utf-8"))
+    return get(url)
+
+
 def get(u):
     req = urllib.request.Request(u, headers=UA)
     return json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))
@@ -197,8 +212,12 @@ def briefing_articles(date):
     """
     url = LINK_BRIEFING % date
     try:
-        req = urllib.request.Request(url, headers=UA)
-        s = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
+        local = BRIEFING_DIR and os.path.join(BRIEFING_DIR, "archive", "%s.html" % date)
+        if local and os.path.exists(local):
+            s = io.open(local, encoding="utf-8").read()
+        else:
+            req = urllib.request.Request(url, headers=UA)
+            s = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
     except Exception as e:
         print("  [외신 상세] 실패: %s" % e, file=sys.stderr)
         return []
@@ -279,19 +298,32 @@ def main():
     panel = load(os.path.join(ROOT, "panel_kr.json"), {}) or {}
 
     try:
-        B = get(SRC_BRIEFING)
+        B = get_local_or_web(BRIEFING_DIR and os.path.join(BRIEFING_DIR, "briefings.json"), SRC_BRIEFING)
         brief = (B.get("briefings") or [{}])[0]
     except Exception as e:
         print("  [외신 브리핑] 실패: %s" % e, file=sys.stderr)
         B, brief = {}, {}
     try:
-        M = get(SRC_MUST)
+        M = get_local_or_web(MUST_DIR and os.path.join(MUST_DIR, "data", "ranking.json"), SRC_MUST)
     except Exception as e:
         print("  [Must News] 실패: %s" % e, file=sys.stderr)
         M = {}
 
     blink = LINK_BRIEFING % brief["date"] if brief.get("date") else None
+
+    # ── 편집 데스크 (data/desk.json) ──
+    # 편집국 루틴(클로드)이 매일 아침 적어두는 손질. 없으면 원본 그대로 낸다.
+    # 키: 외신 기사 = "<브리핑 날짜>#art-N", 커뮤니티 글 = 토론 URL.
+    #   headline  제목 다시 쓰기 ("\n" = 줄바꿈 위치)
+    #   sub       부제
+    #   drop_photo  사진이 기사와 안 맞음 → 빼거나 자료사진으로 교체
+    #   drop_echo   붙은 커뮤니티 반향이 다른 사건임 → 뗀다
+    # "lead": 키 → 톱으로 올릴 외신 기사
+    desk = load(os.path.join(DATA, "desk.json"), {}) or {}
+    dx = desk.get("items") or {}
     arts = briefing_articles(brief.get("date")) if brief.get("date") else []
+    for x in arts:
+        x["key"] = "%s#%s" % (brief.get("date"), x["id"]) if x.get("id") else None
     if not arts:
         # 상세 페이지를 못 읽으면 요약 꼭지 3개로라도 짠다
         arts = [{"id": None, "sec": "TOP", "badge": "", "en": "", "head": sg["title"], "sub": "",
@@ -364,27 +396,33 @@ def main():
         if not m:
             return None
         g = m[1]
-        return {"comments": g["comments"], "r": g["r"], "url": g.get("discussion") or g.get("url")}
+        return {"title": g["title"], "comments": g["comments"], "r": g["r"],
+                "url": g.get("discussion") or g.get("url")}
 
     # ── 톱 선정: 외신 × 반향 교차. 편집자가 TOP 으로 고른 기사에 가점 ──
     lead = None
     used_art, used_sig = set(), set()
     cand = [(m[0] * (1.5 if arts[ai]["sec"] == "TOP" else 1), ai) for ai, m in echo_of.items()]
-    if cand:
-        _, ai = max(cand)
-        _, g, ents, shared = echo_of[ai]
+    pick = next((i for i, x in enumerate(arts) if desk.get("lead") and x.get("key") == desk["lead"]), None)
+    if pick is None and cand:
+        pick = max(cand)[1]
+    if pick is not None:
+        ai = pick
+        m = echo_of.get(ai)
         art = arts[ai]
         lead = {
-            "kind": "cross",
+            "kind": "cross" if m else "desk",
+            "key": art.get("key"),
             "headline": art["head"], "sub": art["sub"],
             "deck": trim(art["summary"], 260),
             "fact_src": "외신 브리핑" + (" · " + art["source"] if art["source"] else ""),
             "fact_url": art["link"], "orig_url": art["url"], "img": art.get("img"),
-            "reaction": reaction(g),
-            "why": {"entities": ents, "shared": shared},
+            "reaction": reaction(m[1]) if m else None,
+            "why": {"entities": m[2], "shared": m[3]} if m else None,
         }
         used_art.add(ai)
-        used_sig.add(g["title"])
+        if m:
+            used_sig.add(m[1]["title"])
     else:
         cg = [g for g in sig if g.get("summary_ko")] or sig
         if cg:
@@ -401,7 +439,8 @@ def main():
 
     def card(ai, n):
         x = arts[ai]
-        return {"head": x["head"], "sub": x["sub"], "en": x["en"], "deck": trim(x["summary"], n),
+        return {"key": x.get("key"), "head": x["head"], "sub": x["sub"], "en": x["en"],
+                "deck": trim(x["summary"], n),
                 "source": x["source"], "url": x["link"], "badge": x["badge"], "echo": echo(ai),
                 "img": x.get("img")}
 
@@ -418,14 +457,44 @@ def main():
             foreign.append({"name": x["sec"], "items": []})
         foreign[-1]["items"].append(card(ai, 120))
 
+    applied = 0
+    for it in ([lead] if lead else []) + left + [i for sec in foreign for i in sec["items"]]:
+        d = dx.get(it.get("key") or "")
+        if not d:
+            continue
+        hk = "headline" if "headline" in it else "head"
+        if d.get("headline"):
+            it[hk] = d["headline"]
+        if "sub" in d:
+            it["sub"] = d["sub"] or ""
+        if d.get("drop_echo"):
+            # 규칙이 다른 사건을 짝지었다 — 반향을 떼고, 그 글은 다른 칸에 다시 쓸 수 있게 풀어준다
+            if it is lead and lead.get("reaction"):
+                used_sig.discard(lead["reaction"]["title"])
+                lead.update(reaction=None, why=None, kind="desk")
+            elif it.get("echo"):
+                used_sig.discard(it["echo"]["title"])
+                it["echo"] = None
+        if d.get("drop_photo"):
+            it["img"] = None
+            it["no_photo"] = it is not lead      # 톱은 자료사진으로 메우고, 나머지는 글만
+        applied += 1
+
     # 섹션마다 사진 리듬을 준다 — 가디언·한겨레 섹션면처럼 크기를 섞는다.
     #   첫 기사: 16:9 사진 / 4건 이상인 섹션의 셋째: 작은 정사각 썸네일 / 나머지: 글만
     pool = photo_pool(B)
+    if lead and lead.get("key") and not lead.get("img") and (dx.get(lead["key"]) or {}).get("drop_photo"):
+        ph = pick_photo(pool, {"head": lead["headline"], "sub": lead.get("sub", ""), "en": "",
+                               "deck": lead.get("deck", "")}, "AI/기술", set())
+        if ph:
+            src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=80"
+            lead["img"] = {"src": photo(src, 1200, 675), "sm": photo(src, 640, 360), "alt": ph["alt"],
+                           "credit": ph["credit"], "credit_url": ph["credit_url"], "file": True}
     used_ph = {re.sub(r"\?.*$", "", x["img"]["src"]) for x in [lead or {}] + left if x.get("img")}
     for sec in foreign:
         for i, it in enumerate(sec["items"]):
             size = "lead" if i == 0 else ("side" if i == 2 and len(sec["items"]) >= 4 else None)
-            if not size or it.get("img"):
+            if not size or it.get("img") or it.get("no_photo"):
                 continue
             ph = pick_photo(pool, it, sec["name"], used_ph)
             if ph:
@@ -435,21 +504,31 @@ def main():
                              "size": size, "file": True}
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
-    wire = [{"title": g["title"], "url": g.get("discussion") or g.get("url"),
+    wire = [{"key": g.get("discussion") or g.get("url"), "title": g["title"], "url": g.get("discussion") or g.get("url"),
              "deck": trim(g.get("summary_ko"), 90), "comments": g["comments"], "r": g["r"]}
             for g in sorted(sig, key=lambda x: -x["comments"])
             if g["title"] not in used_sig and g.get("summary_ko")][:3]
     for w in wire:
         used_sig.add(w["title"])
+        d = dx.get(w["key"] or "")
+        if d and d.get("headline"):
+            w["title_ko"] = d["headline"]
+            applied += 1
 
     # ── 하단 피처: Signal 논쟁 상위 (요약 있는 것 우선) ──
     feats = sorted([g for g in sig if g["title"] not in used_sig and g.get("summary_ko")],
                    key=lambda x: (-x["r"], -x["comments"]))[:2]
     features = [{
+        "key": g.get("discussion") or g.get("url"),
         "title": g["title"], "url": g.get("discussion") or g.get("url"),
         "deck": trim(g.get("summary_ko"), 140), "comments": g["comments"],
         "points": g["points"], "r": g["r"], "sides": sides(g.get("summary_ko")),
     } for g in feats]
+    for f in features:
+        d = dx.get(f["key"] or "")
+        if d and d.get("headline"):
+            f["title_ko"] = d["headline"]
+            applied += 1
 
     # ── 온도 카드: 가장 많이 오른 주제군 (완료된 날끼리) ──
     temp = None
@@ -508,6 +587,8 @@ def main():
         "sources": {"briefing": brief.get("date", ""), "must": M.get("updated", ""),
                     "signal": latest.get("updated", "")},
         "links": {"briefing": blink, "must": LINK_MUST},
+        "desk": {"edited_at": desk.get("edited_at"), "applied": applied,
+                 "notes": desk.get("notes") or []},
         "lead": lead, "left": left, "foreign": foreign, "wire": wire, "features": features, "temperature": temp,
         "domestic": domestic, "voices": voices,
     }
