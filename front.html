@@ -672,7 +672,7 @@ function render(F){
 
   if (lede) lede.then(j => {
     const el = $('#domlede');
-    if (el && j && j.lead) { el.textContent = j.lead; el.hidden = false; }
+    if (el && j && j.lead) { el.textContent = j.lead.replace(/([.!?])(?=[가-힣A-Z])/g, '$1 '); el.hidden = false; }   // 언론사 요약은 문장 사이 띄어쓰기가 빠져 오곤 한다
   });
 
   $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진은 외신 브리핑이 고른 것(Unsplash), '자료사진'은 그 보관함에서 주제로 골랐다 · 나머지 그림은 수집 데이터</span>
