@@ -582,7 +582,8 @@ def main():
                  "sources": (dom_lead.get("sources") or [])[:12],
                  "angles": angles(dom_lead)} if dom_lead else None,
         "list": [{"rank": a.get("rank"), "title": a["title"], "url": a.get("url"),
-                  "outlets": a.get("outlets", 0), "source": a.get("source", "")}
+                  "outlets": a.get("outlets", 0), "source": a.get("source", ""),
+                  "must_idx": (M.get("articles") or []).index(a)}
                  for a in marts if not dom_lead or a["title"] != dom_lead["title"]][:5],
     }
 

@@ -1,5 +1,5 @@
 {
- "edition": "2026-10-07 00:57",
+ "edition": "2026-10-07 01:19",
  "no": 64,
  "sources": {
   "briefing": "2026-10-06",
@@ -18,19 +18,19 @@
    "반향 떼기: 톱(뉴욕시의회 AI 청문회)에 붙은 'I quit OpenAI because its culture is broken'은 다른 사건이라 뗌",
    "반향 떼기: 올트먼 '나쁜 일 감수' 인터뷰 기사에 붙은 'OpenAI rogue agent activities on Wikimedia'는 다른 사건이라 뗌",
    "톱 유지: 반향은 뗐지만 TOP의 다른 기사가 청문회보다 명백히 더 중요하지는 않아 그대로 둠",
-   "톱 제목: 원제가 두 줄을 넘어 'AI 빅4,/뉴욕시의회 증언대에'로 줄이고, 회사 나열은 부제로 옮김",
    "사진: 프록시 403으로 사진 내려받기 실패(CONNECT tunnel failed) — alt로만 판단",
    "사진 빼기: 테크 부호 자산 기사의 사진(alt 'World map shipping route')은 기사와 무관해 뺌. 톱(서버랙 광케이블)·올트먼(매트릭스 코드)은 일반 AI 이미지라 유지",
    "외신 제목: 24자 폭을 넘는 워터마크·Reflection·비주얼 광고·현대차 CEO 기사 제목을 줄임",
    "외신 제목: 영어 원제로 남은 Claude's Pick 3건(Etched·AI 안경·에이전트 함대)에 deck 내용으로 한글 제목을 붙임",
-   "커뮤니티: 피처 2건·와이어 3건에 한국어 제목을 붙임 (톱에서 뗀 'I quit OpenAI' 글이 와이어로 내려와 함께 제목을 닮)"
+   "커뮤니티: 피처 2건·와이어 3건에 한국어 제목을 붙임 (톱에서 뗀 'I quit OpenAI' 글이 와이어로 내려와 함께 제목을 닮)",
+   "톱 제목: 억지 줄바꿈('AI 빅4,')을 없애고 한 문장 제목으로 되돌림, 부제는 deck의 소환장·xAI 불출석 사실로 (사람 편집, 01:10)"
   ]
  },
  "lead": {
   "kind": "desk",
   "key": "2026-10-06#art-1",
-  "headline": "AI 빅4,\n뉴욕시의회 증언대에",
-  "sub": "앤스로픽·오픈AI·구글·메타, AI 위험 청문회 출석",
+  "headline": "앤스로픽·오픈AI·구글·메타, 뉴욕시의회 AI 위험 청문회 증언대에",
+  "sub": "소환장 위협에 출석 선회…xAI는 끝내 불출석",
   "deck": "뉴욕시의회가 의원 51명 전원이 참석하는 이례적 '전체위원회' 형식으로 AI 위험 청문회를 열었다. 앤스로픽·오픈AI·구글은 처음엔 출석을 거부했다가 소환장 위협에 지난 주말 입장을 바꿨고, 스페이스X(xAI) 측은 끝내 나오지 않아 시의회가 소환장 위반이라고 밝혔다. 전 앤스로픽 연구원 제이컵 콕슨은 업계 스스로도 AI 개발 경쟁의 위험을 충분히 이해하지 못하고 있으며 현 경로라면 인류가 AI 통제력을 잃을 가능성이 더 크다고 경고했다. 줄리 메닌 의장은…",
   "fact_src": "외신 브리핑 · CNBC Featured, Bloomberg, Quartz, UPI 다매체 보도",
   "fact_url": "https://hong4137.github.io/briefing/archive/2026-10-06.html#art-1",
@@ -581,35 +581,40 @@
     "title": "엔비디아 AI 노트북 OLED 한국이 독점",
     "url": "https://www.thelec.kr/news/articleView.html?idxno=63239",
     "outlets": 11,
-    "source": "디일렉"
+    "source": "디일렉",
+    "must_idx": 0
    },
    {
     "rank": 2,
     "title": "‘아이온2’ 글로벌 동접 40만…게임은 긍정, 과금엔 불만",
     "url": "https://www.thelec.kr/news/articleView.html?idxno=63294",
     "outlets": 24,
-    "source": "디일렉"
+    "source": "디일렉",
+    "must_idx": 1
    },
    {
     "rank": 3,
     "title": "토큰증권 시행 4개월 앞…LG CNS, 디지털자산 플랫폼 ‘기틀’ 출시",
     "url": "https://www.thelec.kr/news/articleView.html?idxno=63300",
     "outlets": 11,
-    "source": "디일렉"
+    "source": "디일렉",
+    "must_idx": 2
    },
    {
     "rank": 5,
     "title": "LG전자, 월드모델로 피지컬AI 공략…'K-원팀'으로 기술 개발",
     "url": "https://zdnet.co.kr/view/?no=20261006165307",
     "outlets": 45,
-    "source": "ZDNet Korea"
+    "source": "ZDNet Korea",
+    "must_idx": 4
    },
    {
     "rank": 6,
     "title": "LG전자, 북미서 5GW 대형 AIDC 칠러 장기 공급계약",
     "url": "https://zdnet.co.kr/view/?no=20261005230637",
     "outlets": 16,
-    "source": "ZDNet Korea"
+    "source": "ZDNet Korea",
+    "must_idx": 5
    }
   ]
  },
