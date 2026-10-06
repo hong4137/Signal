@@ -258,6 +258,9 @@ def angles(story, n=5):
         words = set(re.findall(r"[가-힣A-Za-z0-9]{2,}", t))
         if words and len(words & base) / len(words) > 0.7:
             continue                      # 대표 제목을 거의 그대로 받아쓴 것
+        shared = words & base
+        if len(shared) < 2 and not any(len(w) >= 3 for w in shared):
+            continue                      # 같은 묶음이어도 다른 사건이다 (10-06 엔비디아 OLED 묶음에 한컴·장관 기사)
         seen.add(src)
         out.append({"source": src, "title": t, "url": m.get("url")})
         if len(out) >= n:
@@ -566,9 +569,16 @@ def main():
 
     # ── 국내면: Must News ──
     marts = (M.get("articles") or [])[:6]
-    dom_lead = max(marts, key=lambda a: a.get("outlets", 0)) if marts else None
+    # 국내 톱 — 기본은 Must News 1위. 매체 수 최다로 고르면 보도자료(기관 발표·협약·출시)가
+    # 올라온다(10-06 누리호 이송 88곳). 편집국이 desk.json 의 domestic_lead(Must News 순서)로
+    # 가치 있는 기사를 지정하면 그걸 쓴다.
+    allm = M.get("articles") or []
+    pick = desk.get("domestic_lead")
+    dom_pick = isinstance(pick, int) and 0 <= pick < len(allm) and allm[pick] in marts
+    dom_lead = (allm[pick] if dom_pick else marts[0]) if marts else None
     domestic = {
         "updated": M.get("updated", ""),
+        "picked": bool(dom_pick), "pick_note": desk.get("domestic_note", "") if dom_pick else "",
         "lead": {"title": dom_lead["title"], "url": dom_lead.get("url"),
                  "outlets": dom_lead.get("outlets", 0),
                  "source": dom_lead.get("source", ""),

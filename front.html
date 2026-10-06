@@ -637,7 +637,7 @@ function render(F){
       <a class="meta" href="${esc((F.links||{}).must||'#')}" style="color:var(--weight)">전체 순위 →</a></div>
     <div class="domgrid">
       <div class="domlead">
-        <div class="kicker w">가장 넓게 퍼진 사안<span class="ln"></span></div>
+        <div class="kicker w">${D.picked ? '국내 톱 · 편집국 선정' : '국내 톱 · Must News 1위'}<span class="ln"></span></div>
         <div class="domtop">
           <h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
           <div class="reach"><b>${fmt(D.lead.outlets)}</b><span>개 매체</span></div>
