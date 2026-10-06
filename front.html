@@ -352,6 +352,8 @@ footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-fa
   font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
+#wireblk.moved,#wirecont{margin-top:26px}
+#wirecont .se small{font-weight:400;color:var(--muted);letter-spacing:.04em}
 .orig{display:block;font-size:11.5px;color:var(--muted);margin:-2px 0 6px;line-height:1.4}
 /* ── SNS 글 표식 — 기사와 구분한다. 섹션마다 이모지 + 왼쪽 색 막대 ──
    💬 논쟁 = 주황 · 📡 외신 밖의 반향 = 청록 · 🧵 국내 해석 = 보라 */
@@ -593,10 +595,10 @@ function render(F){
       ${s.echo ? `<a class="echo" href="${esc(s.echo.url)}">커뮤니티 반향 · 댓글 ${fmt(s.echo.comments)} · r ${s.echo.r.toFixed(2)}</a>`
                : `<span class="noecho">커뮤니티 반향 없음</span>`}
     </article>`).join('')}
-    ${(F.wire||[]).length ? `<div class="sect" style="margin-top:8px"><span class="se">📡 외신 밖의 반향</span><span>HN·Reddit</span></div>
+    ${(F.wire||[]).length ? `<div id="wireblk"><div class="sect" style="margin-top:8px"><span class="se">📡 외신 밖의 반향</span><span>HN·Reddit</span></div>
     <ul class="wire">${F.wire.map(w => `<li class="sns sns-w"><a href="${esc(w.url)}">
       ${pf(w.url)}${w.title_ko ? `<span class="en hl">${hd(w.title_ko)}</span><span class="orig">${esc(w.title)}</span>` : `<span class="en hl">${esc(w.title)}</span>`}<span class="ko">${esc(w.deck)}</span>
-      <span class="meta"><span class="h">댓글 ${fmt(w.comments)}</span> · r ${w.r.toFixed(2)}</span></a></li>`).join('')}</ul>` : ''}`;
+      <span class="meta"><span class="h">댓글 ${fmt(w.comments)}</span> · r ${w.r.toFixed(2)}</span></a></li>`).join('')}</ul></div>` : ''}`;
 
   /* 우: 해석 */
   const voices = (F.voices||[]).map(v => v.kind === 'panel'
@@ -690,6 +692,8 @@ function render(F){
     });
   }
 
+  balanceSoon();
+
   if (lede) lede.then(j => {
     const el = $('#domlede');
     if (el && j && j.lead) { el.textContent = j.lead.replace(/([.!?])(?=[가-힣A-Z])/g, '$1 '); el.hidden = false; }   // 언론사 요약은 문장 사이 띄어쓰기가 빠져 오곤 한다
@@ -729,6 +733,57 @@ function render(F){
     $('#visits').hidden = false;
   });
 })();
+
+/* ── 칸 균형 ──
+   세 칸 중 왼쪽(외신 TOP + 외신 밖의 반향)만 길게 내려가고 가운데·오른쪽 아래가 비는 날이 있다.
+   그려진 뒤 칸마다 실제 내용 높이를 재서, '외신 밖의 반향' 묶음을 가장 짧은 칸 아래로 옮긴다.
+   사진이 늦게 뜨거나 폭이 바뀌면 다시 잰다. 한 칸(모바일)일 땐 제자리로 돌려 둔다. */
+function contentH(col){
+  const kids = [...col.children].filter(e => e.getClientRects().length);
+  if (!kids.length) return 0;
+  return kids[kids.length - 1].getBoundingClientRect().bottom - col.getBoundingClientRect().top;
+}
+function balance(){
+  const W = $('#wireblk'), L = $('.c-left'), C = $('.c-lead'), R = $('.c-right');
+  if (!W || !L || !C || !R) return;
+  // 제자리로 되돌리고 잰다
+  const home = W.querySelector('ul.wire'), cont = $('#wirecont');
+  if (cont) { cont.querySelectorAll('li').forEach(li => home.appendChild(li)); cont.remove(); }
+  if (W.parentElement !== L) L.appendChild(W);
+  W.classList.remove('moved');
+  const w = innerWidth;
+  if (w <= 700) return;                                   // 한 칸 — 옮기지 않는다
+  const cands = w > 1020 ? [C, R] : [R];                   // 두 칸일 땐 가운데가 위로 빠져 있다
+  const lis = [...home.children];
+  const head = W.querySelector('.sect').getBoundingClientRect().height + 26;
+  const ih = lis.map(li => li.getBoundingClientRect().height + 13);
+  const hL = contentH(L), hc = cands.map(contentH);
+  const spread = a => Math.max(...a) - Math.min(...a);
+  // 끝에서 k개를 가장 짧은 칸으로 보낼 때 세 칸 높이 차가 가장 작아지는 k 를 고른다
+  let best = { k: 0, c: -1, s: spread([hL, ...hc]) };
+  for (let k = 1; k <= lis.length; k++) {
+    const moved = ih.slice(-k).reduce((x, y) => x + y, 0);
+    const all = k === lis.length;
+    cands.forEach((c, i) => {
+      const hs = [hL - moved - (all ? head : 0), ...hc.map((h, j) => j === i ? h + moved + head : h)];
+      const sp = spread(hs);
+      if (sp < best.s - 40) best = { k, c: i, s: sp };
+    });
+  }
+  if (!best.k) return;
+  const to = cands[best.c];
+  if (best.k === lis.length) { to.appendChild(W); W.classList.add('moved'); return; }
+  const box = document.createElement('div');
+  box.id = 'wirecont'; box.className = 'moved';
+  box.innerHTML = `<div class="sect"><span class="se">📡 외신 밖의 반향 <small>(이어서)</small></span><span>HN·Reddit</span></div><ul class="wire"></ul>`;
+  lis.slice(-best.k).forEach(li => box.querySelector('ul').appendChild(li));
+  to.appendChild(box);
+}
+let _bal;
+function balanceSoon(){ clearTimeout(_bal); _bal = setTimeout(balance, 60); }
+addEventListener('resize', balanceSoon);
+addEventListener('load', balanceSoon);
+document.addEventListener('load', e => { if (e.target.tagName === 'IMG') balanceSoon(); }, true);
 
 /* 맨 위로 */
 (() => {
