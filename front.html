@@ -203,9 +203,13 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .secn{margin-top:34px}
 /* 외신면 */
 .fxcols{column-count:3;column-gap:30px;column-rule:1px solid var(--hair)}
-.fxsec{break-inside:avoid-column;margin-bottom:22px}
-.fxname{font-size:13px;font-weight:800;color:var(--heat);border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:10px}
-.fxi{display:block;padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid var(--hair);break-inside:avoid}
+/* 섹션은 단을 넘어 흐른다(통째로 묶으면 단 길이가 들쭉날쭉해 한 단이 크게 빈다).
+   기사 하나는 쪼개지 않고, 섹션 이름이 단 끝에 홀로 남지 않게 한다 */
+.fxsec{margin-bottom:22px}
+.fxname{font-size:13px;font-weight:800;color:var(--heat);border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:10px;
+  break-after:avoid;break-inside:avoid}
+.fxi{display:block;padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid var(--hair);break-inside:avoid;
+  -webkit-column-break-inside:avoid;page-break-inside:avoid}
 .fxsec .fxi:last-child{border:0;margin-bottom:0}
 .fxi .ph{position:relative;overflow:hidden;border-radius:2px;background:var(--soft)}
 .fxi .ph img{width:100%;height:100%;object-fit:cover}
@@ -228,6 +232,9 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .reach b{display:block;font-family:var(--mono);font-weight:700;font-size:clamp(36px,4vw,50px);color:var(--weight);letter-spacing:-.04em}
 .reach span{display:block;font-size:12px;color:var(--muted);margin-top:6px;white-space:nowrap}
 .domlede{margin:0 0 14px;font-size:15px;line-height:1.72;color:var(--ink-2)}
+.domph{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin:6px 0 14px;background:var(--soft)}
+.domph img{width:100%;height:100%;object-fit:cover}
+.outlets{margin:6px 0 0;font-size:14px;line-height:1.75;color:var(--ink-2)}
 .angles{border-top:2px solid var(--weight);padding-top:8px}
 .anghd{font-size:13px;font-weight:800;color:var(--weight);margin-bottom:2px}
 .ang{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--hair)}
@@ -496,7 +503,10 @@ function render(F){
     const kick = L.kind === 'cross' ? '오늘의 톱 · 외신 보도와 커뮤니티 반향' : L.kind === 'desk' ? '오늘의 톱 · 외신' : '오늘의 톱 · 커뮤니티';
     const rel = [];
     (L.related || []).forEach(k => rel.push(`<li><a class="hl" href="${esc(k.url)}">${hd(k.head)}</a><span>${esc(shortSrc(k.src))}</span></li>`));
-    (R && R.kr || []).forEach(k => rel.push(`<li><a class="hl" href="${esc(k.url)}">${esc(k.title)}</a><span>국내</span></li>`));
+    (R && R.kr || []).forEach(k => {          // 국내 연결 — Signal 데이터는 t/u 칸을 쓴다
+      const t = k.title || k.t, u = k.url || k.u;
+      if (t) rel.push(`<li><a class="hl" href="${esc(u || '#')}">${esc(t)}</a><span>국내${k.src || k.s ? ' · ' + esc(k.src || k.s) : ''}</span></li>`);
+    });
     lead = `<article class="lead">
       <div class="kick">${kick}</div>
       <h2><a class="hl" href="${esc(L.fact_url || '#')}">${hd(L.headline)}</a></h2>
@@ -554,11 +564,14 @@ function render(F){
       <div class="domlead">
         <span class="lab d">${D.picked ? '국내 톱 · 편집국 선정' : '국내 톱 · Must News 1위'}</span>
         ${D.picked && D.pick_note ? `<p class="picknote">${esc(D.pick_note)}</p>` : ''}
+        ${D.lead.img ? `<a class="domph ph" href="${esc(D.lead.url)}"><img src="${esc(D.lead.img.src)}" alt="${esc(D.lead.img.alt)}" loading="lazy"><i class="file">자료사진</i></a>` : ''}
         <div class="domtop"><h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
           <div class="reach"><b>${fmt(D.lead.outlets)}</b><span>개 매체 보도</span></div></div>
         <p class="domlede" id="domlede"${D.lead.lede ? '' : ' hidden'}>${esc(D.lead.lede || '')}</p>
         ${(D.lead.angles || []).length ? `<div class="angles"><div class="anghd">같은 사안, 매체별 제목</div>
-          ${D.lead.angles.map(m => `<a class="ang" href="${esc(m.url)}"><span class="s">${esc(m.source)}</span><span class="t hl">${hd(m.title)}</span></a>`).join('')}</div>` : ''}
+          ${D.lead.angles.map(m => `<a class="ang" href="${esc(m.url)}"><span class="s">${esc(m.source)}</span><span class="t hl">${hd(m.title)}</span></a>`).join('')}</div>`
+          : (D.lead.sources || []).length ? `<div class="angles"><div class="anghd">보도한 매체</div>
+            <p class="outlets">${D.lead.sources.map(esc).join(' · ')}${D.lead.outlets > D.lead.sources.length ? ` 외 ${fmt(D.lead.outlets - D.lead.sources.length)}곳` : ''}</p></div>` : ''}
       </div>
       <ol class="domlist">${(D.list || []).map(a => `<li><span class="rk">${esc(a.rank)}</span>
         <a href="${esc(a.url)}"><span class="t hl">${hd(a.title)}</span><span class="s">${esc(a.source)}</span>

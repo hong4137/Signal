@@ -611,6 +611,15 @@ def main():
                  for a in marts if not dom_lead or a["title"] != dom_lead["title"]][:5],
     }
 
+    # 국내 톱 사진 — 검수된 자료사진에서 주제로. 1면 줄에 같은 기사가 오르면 같은 사진을 쓴다.
+    if domestic["lead"]:
+        ph = pick_photo(pool, {"head": domestic["lead"]["title"], "sub": "", "en": "", "deck": ""},
+                        "반도체/인프라", used_ph)
+        if ph:
+            src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
+            domestic["lead"]["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270),
+                                       "alt": ph["alt"], "file": True}
+
     # ── 1면 배치 ──
     # 신문 1면 블록: 톱 + 사이드 2~3건 + 하단 주요기사 줄 3~4건. 외신·국내·커뮤니티를 섞는다.
     # 편집국이 desk.json "front": {"side": [키…], "row": [키…]} 로 고르면 그대로, 없으면 기본 배치.
@@ -643,7 +652,8 @@ def main():
         if d.get("headline"):
             applied += 1
         cand[k] = {"key": k, "kind": "domestic", "label": "국내", "head": d.get("headline") or a["title"],
-                   "sub": d.get("sub", ""), "deck": "", "img": None, "url": a.get("url"),
+                   "sub": d.get("sub", ""), "deck": "",
+                   "img": (domestic["lead"] or {}).get("img") if a is dom_lead else None, "url": a.get("url"),
                    "src": "%s · %s곳 보도" % (a.get("source", ""), a.get("outlets", 0)),
                    "must_idx": must_order.index(a)}
     for f in features + wire:
