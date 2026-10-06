@@ -246,6 +246,25 @@ def briefing_articles(date):
     return out
 
 
+def angles(story, n=5):
+    """같은 사안을 매체마다 어떻게 제목 달았나 — 매체당 하나, 대표 제목과 겹치지 않는 것.
+    Must News 가 묶은 기사(members)에서 고른다. '[속보]' 같은 말머리는 뗀다."""
+    seen, out = {story.get("source")}, []
+    base = set(re.findall(r"[가-힣A-Za-z0-9]{2,}", story.get("title", "")))
+    for m in story.get("members") or []:
+        src, t = m.get("source", ""), re.sub(r"^\s*\[[^\]]{1,8}\]\s*", "", m.get("title", "")).strip()
+        if not t or src in seen:
+            continue
+        words = set(re.findall(r"[가-힣A-Za-z0-9]{2,}", t))
+        if words and len(words & base) / len(words) > 0.7:
+            continue                      # 대표 제목을 거의 그대로 받아쓴 것
+        seen.add(src)
+        out.append({"source": src, "title": t, "url": m.get("url")})
+        if len(out) >= n:
+            break
+    return out
+
+
 def ko_nouns(text):
     return {w for w in re.findall(r"[가-힣]{2,}", text or "") if w not in STOP}
 
@@ -552,7 +571,13 @@ def main():
         "updated": M.get("updated", ""),
         "lead": {"title": dom_lead["title"], "url": dom_lead.get("url"),
                  "outlets": dom_lead.get("outlets", 0),
-                 "sources": (dom_lead.get("sources") or [])[:12]} if dom_lead else None,
+                 "source": dom_lead.get("source", ""),
+                 "published": dom_lead.get("publishedAt", ""),
+                 # 첫 문단 — Must News 가 내보내기 시작하면 바로 쓴다 (칸 이름은 아직 미정이라 후보를 다 본다)
+                 "lede": trim(next((dom_lead.get(k) for k in ("lede", "lead", "desc", "description", "summary", "snippet")
+                                    if isinstance(dom_lead.get(k), str) and dom_lead.get(k).strip()), ""), 200),
+                 "sources": (dom_lead.get("sources") or [])[:12],
+                 "angles": angles(dom_lead)} if dom_lead else None,
         "list": [{"rank": a.get("rank"), "title": a["title"], "url": a.get("url"),
                   "outlets": a.get("outlets", 0), "source": a.get("source", "")}
                  for a in marts if not dom_lead or a["title"] != dom_lead["title"]][:5],
