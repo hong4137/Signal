@@ -573,6 +573,9 @@ def main():
                  "outlets": dom_lead.get("outlets", 0),
                  "source": dom_lead.get("source", ""),
                  "published": dom_lead.get("publishedAt", ""),
+                 # 첫머리는 sharktalk.co.kr 포털이 원문의 og:description 을 받아 준다 — 회차·순서로 부른다
+                 "must_id": re.sub(r"\D", "", (M.get("updated") or ""))[:8] + "_" + re.sub(r"\D", "", (M.get("updated") or ""))[8:12],
+                 "must_idx": (M.get("articles") or []).index(dom_lead),
                  # 첫 문단 — Must News 가 내보내기 시작하면 바로 쓴다 (칸 이름은 아직 미정이라 후보를 다 본다)
                  "lede": trim(next((dom_lead.get(k) for k in ("lede", "lead", "desc", "description", "summary", "snippet")
                                     if isinstance(dom_lead.get(k), str) and dom_lead.get(k).strip()), ""), 200),
