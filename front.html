@@ -18,377 +18,349 @@
 <meta name="twitter:card" content="summary_large_image">
 <!--og:end-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;700;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 /* ─────────────────────────────────────────────────────────────
-   Daily UptoDate — 세 파이프라인을 한 면에 조판한다.
-   사진은 쓰지 않는다. 사진 자리에는 우리 숫자로 그린 카드가 들어간다.
-   카드는 테마와 무관하게 늘 어둡다 — 신문 위의 보도사진처럼
-   지면과 분리된 '그림'으로 읽히게 하려는 것.
+   Daily UptoDate — AI·테크 신문 1면.
+   지면 문법은 한국 일간지에서 가져왔다 (조선·동아·중앙·한겨레 실측, 2026-10-07).
+   · 1면 블록: 사이드 기사 | 톱 | 오피니언 — 그 아래 주요기사 줄 — 그 아래 섹션면(외신·국내·커뮤니티)
+   · 제목은 한 문장, 줄은 칸 폭이 정한다. 크기로 위계를 준다 (톱 > 사이드 > 줄 > 목록).
+   · 모바일은 톱 사진을 화면 끝까지, 나머지는 '제목+요약 | 오른쪽 사진' 목록.
+   · 작은 고정폭 꼬리표 대신 읽히는 고딕 꼬리표. 숫자만 고정폭.
    ───────────────────────────────────────────────────────────── */
 :root{
-  --ground:#E4E8EC; --sheet:#FCFCFB; --ink:#0D1117; --ink-2:#39424D; --muted:#66707C;
-  --rule:#0D1117; --hair:#D3D9E0; --heat:#C2491F; --weight:#006E98;
+  --ground:#E6E9ED; --sheet:#FFFFFF; --ink:#111418; --ink-2:#3A424C; --muted:#6B7480;
+  --rule:#111418; --hair:#DDE2E7; --soft:#F4F6F8;
+  --heat:#C2491F; --weight:#006E98; --violet:#6A4FD0;
   --shadow:0 1px 0 rgba(13,17,23,.04),0 18px 40px -24px rgba(13,17,23,.28);
-  /* 카드(사진 자리) — 고정 다크 */
-  --c-bg:#0A0D14; --c-bg2:#111620; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996;
-  --c-rule:#232B38; --c-heat:#D2603A; --c-weight:#18A2C6;
-  --violet:#6A4FD0;
-  /* 큰 한글은 고딕 — 명조 제목은 문학지처럼 읽힌다 (2026-10-05 편집기자 조언).
-     명조는 인용문에만 남긴다. 영문 제호는 세리프 그대로(신문 제호의 관례). */
-  --head-ko:"Pretendard Variable",Pretendard,"IBM Plex Sans KR",system-ui,sans-serif;
+  /* 데이터 그림 — 테마와 무관하게 어둡다 (사진 자리) */
+  --c-bg:#0A0D14; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996; --c-rule:#232B38;
+  --c-heat:#D2603A; --c-weight:#18A2C6;
+  --ko:"Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --serif-ko:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
   --serif:"Instrument Serif",Georgia,serif;
-  --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --ground:#06080D; --sheet:#0E131C; --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
-    --rule:#E8E6E1; --hair:#222A36; --heat:#D2603A; --weight:#18A2C6;
+    --ground:#06080D; --sheet:#0E131C; --ink:#ECEAE5; --ink-2:#B4BBC5; --muted:#808B98;
+    --rule:#ECEAE5; --hair:#232B37; --soft:#141A24;
+    --heat:#D2603A; --weight:#18A2C6; --violet:#9C88F7;
     --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
-    --c-bg:#05070B; --c-bg2:#0A0E15; --c-rule:#1C2330;
-    --violet:#9C88F7;
+    --c-bg:#05070B; --c-rule:#1C2330;
   }
 }
 :root[data-theme="dark"]{
-  --ground:#06080D; --sheet:#0E131C; --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
-  --rule:#E8E6E1; --hair:#222A36; --heat:#D2603A; --weight:#18A2C6;
+  --ground:#06080D; --sheet:#0E131C; --ink:#ECEAE5; --ink-2:#B4BBC5; --muted:#808B98;
+  --rule:#ECEAE5; --hair:#232B37; --soft:#141A24;
+  --heat:#D2603A; --weight:#18A2C6; --violet:#9C88F7;
   --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
-  --c-bg:#05070B; --c-bg2:#0A0E15; --c-rule:#1C2330;
-  --violet:#9C88F7;
+  --c-bg:#05070B; --c-rule:#1C2330;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
-  font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--ko);
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
 a{color:inherit;text-decoration:none}
 a:hover .hl,a.hl:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+img{display:block;max-width:100%}
+.ph{display:block}
+figure{margin:0}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
 ::selection{background:#D2603A33}
+h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 
-.sheet{max-width:1240px;margin:28px auto 64px;background:var(--sheet);box-shadow:var(--shadow);
-  padding:0 36px 40px}
-@media(max-width:700px){.sheet{margin:0;padding:0 16px 32px;box-shadow:none}}
+.sheet{max-width:1240px;margin:24px auto 64px;background:var(--sheet);box-shadow:var(--shadow);padding:0 36px 36px}
 
-/* ── 상단 띠 ── */
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
-  padding:12px 0 10px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
-.topbar nav{display:flex;gap:4px;flex-wrap:wrap}
-.topbar nav a,.topbar button{font:inherit;color:var(--ink-2);border:1px solid var(--hair);background:none;
-  border-radius:999px;padding:3px 11px;cursor:pointer}
+/* ── 상단 띠 · 제호 · 날짜줄 ── */
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0 10px;
+  font-size:12.5px;color:var(--muted)}
+.topbar nav{display:flex;gap:4px}
+.topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:var(--ink-2);border:1px solid var(--hair);background:none;
+  border-radius:999px;padding:3px 12px;cursor:pointer}
 .topbar nav a.on{color:var(--sheet);background:var(--ink);border-color:var(--ink)}
-.topbar nav a:hover,.topbar button:hover{border-color:var(--ink)}
-
-/* ── 제호 — 61일 담론량 지진계 위에 앉는다 ── */
-.mast{position:relative;border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);
-  padding:12px 0 9px;text-align:center;overflow:hidden}
-.name{position:relative;font-family:var(--serif);font-weight:400;margin:0;
-  font-size:clamp(40px,5.4vw,66px);line-height:.95;letter-spacing:-.02em}
+.mast{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0 9px;text-align:center}
+.name{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(40px,5.4vw,66px);line-height:.95;letter-spacing:-.02em}
 .name em{color:var(--heat);font-style:italic}
-.name a{color:inherit;text-decoration:none}
-.sub{position:relative;margin-top:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
-  color:var(--ink-2)}
-@media(max-width:700px){.sub{letter-spacing:.06em;font-size:10px}}
-.dateline{display:flex;justify-content:space-between;gap:10px 20px;flex-wrap:wrap;
-  border-bottom:3px double var(--rule);padding:8px 0 7px;
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+.tag{margin-top:7px;font-size:12.5px;letter-spacing:.12em;color:var(--ink-2)}
+.dateline{display:flex;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;border-bottom:3px double var(--rule);
+  padding:8px 0 7px;font-size:12.5px;color:var(--ink-2)}
 .dateline b{color:var(--ink);font-weight:700}
 
-/* ── 지면 그리드 ── */
-.page{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.15fr) minmax(0,1fr);
-  margin-top:22px}
-.col{padding:0 22px;min-width:0}
-.col+.col{border-left:1px solid var(--hair)}
-.col:first-child{padding-left:0}.col:last-child{padding-right:0}
-@media(max-width:1020px){
-  .page{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .c-lead{grid-column:1/-1;order:-1;padding:0 0 26px!important;border:0!important;
-    border-bottom:1px solid var(--hair)!important;margin-bottom:22px}
-  .c-left{padding-left:0}
-}
-@media(max-width:700px){
-  .page{grid-template-columns:minmax(0,1fr)}
-  .col{padding:0!important;border:0!important}
-  .c-left{border-bottom:1px solid var(--hair)!important;padding-bottom:22px!important;margin-bottom:22px}
-}
+/* ── 꼬리표 ── */
+.lab{display:block;font-size:12.5px;font-weight:700;letter-spacing:-.005em;margin-bottom:5px}
+.lab.f{color:var(--heat)} .lab.d{color:var(--weight)} .lab.c{color:var(--violet)}
+.src{display:block;font-size:12px;color:var(--muted);margin-top:6px}
+.src .h{color:var(--heat);font-weight:600}
+.secthd{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:2px solid var(--rule);
+  padding-top:9px;margin:0 0 16px}
+.secthd h2{font-size:21px;letter-spacing:-.02em}
+.secthd h2 small{font-size:12.5px;font-weight:500;color:var(--muted);margin-left:8px;letter-spacing:0}
+.secthd a,.secthd span{font-size:12.5px;color:var(--weight)}
+.mini{display:flex;justify-content:space-between;font-size:13px;font-weight:800;border-top:2px solid var(--rule);
+  padding-top:8px;margin:0 0 12px}
+.mini span{font-weight:500;color:var(--muted);font-size:12px}
 
-.kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--heat);
-  font-weight:700;text-transform:uppercase;margin-bottom:8px;display:flex;gap:8px;align-items:center}
-.kicker.w{color:var(--weight)}
-.kicker .ln{flex:1;height:1px;background:var(--hair)}
-.sect{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;font-weight:700;color:var(--ink);
-  border-top:2px solid var(--rule);padding-top:7px;margin:0 0 14px;display:flex;justify-content:space-between}
-.sect span{color:var(--muted);font-weight:400;letter-spacing:.06em}
+/* ── 1면 블록 ── */
+.front{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr) minmax(0,290px);margin-top:22px}
+.front>*{min-width:0}
+.fside{padding-right:24px;border-right:1px solid var(--hair)}
+.flead{padding:0 26px}
+.fop{padding-left:24px;border-left:1px solid var(--hair)}
+
+/* 사이드 기사 */
+.story{display:block;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--hair)}
+.story:last-child{border:0;margin-bottom:0}
+.story .ph{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:10px;background:var(--soft)}
+.story .ph img{width:100%;height:100%;object-fit:cover}
+.story h3{font-size:19px;line-height:1.38}
+.story .sb{display:block;font-size:14px;font-weight:600;color:var(--ink-2);margin-top:4px;line-height:1.45}
+.story p{margin:7px 0 0;font-size:14px;color:var(--ink-2);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ph .file{position:absolute;right:5px;bottom:4px;font-size:10px;color:#E8E6E1;background:#05070BB3;padding:0 5px;border-radius:2px}
+.echo{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--heat);border:1px solid currentColor;
+  border-radius:999px;padding:1px 10px}
 
 /* 톱 */
-.lead h2,.story h3,.domlead h3,.pcq,.subh{text-wrap:balance}
-.lead h2{font-family:var(--head-ko);font-weight:800;margin:0 0 12px;
-  font-size:clamp(28px,3.1vw,42px);line-height:1.22;letter-spacing:-.03em;word-break:keep-all}
-.lead .deck{font-family:var(--head-ko);font-weight:400;font-size:18px;line-height:1.6;color:var(--ink-2);
-  margin:0 0 16px;word-break:keep-all}
-.byline{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:16px;display:flex;
-  flex-wrap:wrap;gap:4px 14px}
-.byline a{color:var(--weight)}
-.lead .body{font-size:15.5px;line-height:1.75;color:var(--ink);word-break:keep-all;margin:16px 0 0}
-/* 드롭캡은 소설·잡지의 장치라 뺐다 (편집기자 조언). 대신 기사식 꼬리표로 무엇의 요약인지 밝힌다 */
-.lead .body::before{content:"댓글창 요약";display:block;font-family:var(--mono);font-size:10.5px;font-weight:700;
-  letter-spacing:.14em;color:var(--heat);margin-bottom:4px}
-.why{margin-top:14px;font-family:var(--mono);font-size:10.5px;color:var(--muted);line-height:1.7}
-.why i{font-style:normal;border:1px solid var(--hair);border-radius:3px;padding:0 5px;margin-right:3px;color:var(--ink-2)}
-
-/* ── 카드 — 사진 자리 ── */
-.card{background:var(--c-bg);color:var(--c-ink);border-radius:2px;position:relative;overflow:hidden;
-  font-family:var(--sans)}
-.card .cap{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--c-mut);
-  display:flex;justify-content:space-between;gap:8px}
-.card .cap b{color:var(--c-heat);font-weight:700}
-.card::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background-image:linear-gradient(#18A2C60C 1px,transparent 1px),linear-gradient(90deg,#18A2C60C 1px,transparent 1px);
-  background-size:24px 24px}
-.card>*{position:relative}
-figcaption{font-size:12.5px;color:var(--muted);margin:7px 0 0;line-height:1.55;word-break:keep-all}
-figcaption b{color:var(--ink-2);font-weight:600}
-figure{margin:0}
-
-/* 논쟁 카드 */
-.dc{padding:22px 24px 20px}
-.dc .big{display:flex;gap:28px;align-items:flex-end;margin:16px 0 8px;flex-wrap:wrap}
-.dc .big div{line-height:1}
-.dc .big .n{font-family:var(--mono);font-weight:700;font-size:clamp(46px,6vw,72px);letter-spacing:-.04em}
-.dc .big .l{font-size:12px;color:var(--c-ink2);margin-top:6px;letter-spacing:.04em}
-.dc .big .r{margin-left:auto;text-align:right}
-.bars{display:grid;gap:5px;margin:4px 0 18px}
-.bars div{height:6px;border-radius:1px}
-.gauge{margin:6px 0 20px}
-.gl{position:relative;height:16px;font-family:var(--mono);font-size:10.5px;color:var(--c-mut)}
-.gl span{position:absolute;transform:translateX(-50%);white-space:nowrap;top:0}
-.gt{position:relative;height:12px;margin:3px 0 4px;border-bottom:1px solid #3A4352}
-.gt i{position:absolute;bottom:0;height:8px;background:#D2603A}
-.gt b{position:absolute;bottom:-1px;width:1px;height:6px;background:#3A4352}
-.gt b.base{width:2px;height:14px;background:#E8E6E1}
-.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:0 14px;align-items:stretch;
-  border-top:1px solid var(--c-rule);padding-top:16px}
-.vs .side{font-size:13.5px;line-height:1.6;color:var(--c-ink);word-break:keep-all}
-.vs .side .t{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.14em;margin-bottom:6px;
-  display:inline-block;padding:1px 7px;border-radius:2px}
-.vs .a .t{background:#18A2C622;color:var(--c-weight)}
-.vs .b .t{background:#D2603A26;color:var(--c-heat)}
-.vs .b{text-align:right}
-.vs .mid{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--c-mut);align-self:center}
-@media(max-width:520px){.vs{grid-template-columns:1fr}.vs .mid{text-align:center;margin:6px 0}.vs .b{text-align:left}
-  .dc{padding:18px 16px}.dc .big{gap:18px}.dc .big .r{margin-left:0;text-align:left}}
-
-.subh{font-family:var(--head-ko);font-weight:700;font-size:19px;line-height:1.45;margin:-4px 0 12px;
-  color:var(--heat);word-break:keep-all}
-.sub2{font-size:13px;font-weight:600;color:var(--ink-2);margin:-2px 0 6px;line-height:1.45;word-break:keep-all}
-/* 외신면 — 섹션을 신문 단처럼 흘린다 */
-.fx .fxcols{column-count:3;column-gap:30px;column-rule:1px solid var(--hair)}
-@media(max-width:1020px){.fx .fxcols{column-count:2}}
-@media(max-width:640px){.fx .fxcols{column-count:1}}
-.fxsec{break-inside:avoid-column;margin-bottom:20px}
-.fxname{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;font-weight:700;color:var(--heat);
-  border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:10px}
-.fxi{display:block;padding:0 0 11px;margin:0 0 11px;border-bottom:1px dotted var(--hair);break-inside:avoid}
-.fxsec .fxi:last-child{border:0;margin-bottom:0}
-.fxph{display:block;position:relative;overflow:hidden;border-radius:2px;background:var(--hair)}
-.fxph img{display:block;width:100%;height:100%;object-fit:cover}
-.fxph i{position:absolute;right:5px;bottom:4px;font-style:normal;font-family:var(--mono);font-size:9px;
-  letter-spacing:.06em;color:#E8E6E1;background:#05070BB3;padding:0 5px;border-radius:2px}
-.has-lead .fxph{aspect-ratio:16/9;margin-bottom:9px}
-.has-lead .t{font-size:17.5px!important}
-/* 한겨레식 — 글 오른쪽 정사각 썸네일 */
-.has-side{display:grid!important;grid-template-columns:minmax(0,1fr) 84px;column-gap:12px;align-items:start}
-.has-side .fxph{grid-column:2;grid-row:1/span 4;aspect-ratio:1;width:84px}
-.has-side .fxph i{display:none}
-.has-side>span:not(.fxph){grid-column:1}
-.fxi .t{display:block;font-family:var(--head-ko);font-weight:700;font-size:15.5px;line-height:1.42;word-break:keep-all}
-.fxi .u{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-top:2px;word-break:keep-all}
-.fxi .d{display:block;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px;word-break:keep-all}
-/* 사진 카드 */
-.pc{margin:2px 0 18px}
-.pcimg{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;background:var(--c-bg)}
-.pcimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.pcshade{position:absolute;inset:0;background:
-  linear-gradient(180deg,rgba(5,7,11,.55) 0%,rgba(5,7,11,0) 28%,rgba(5,7,11,0) 42%,rgba(5,7,11,.92) 100%)}
-.pctag{position:absolute;left:18px;top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
-  color:#E8E6E1;font-weight:700}
-.pcnum{position:absolute;right:16px;top:12px;text-align:right;color:#E8E6E1;font-size:10.5px;
-  font-family:var(--mono);letter-spacing:.06em;line-height:1.1}
-.pcnum b{display:block;font-size:30px;color:#D2603A;letter-spacing:-.03em}
-.pcq{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-family:var(--head-ko);font-weight:800;
-  font-size:clamp(19px,2.5vw,28px);line-height:1.3;letter-spacing:-.02em;word-break:keep-all;
-  text-shadow:0 1px 12px rgba(0,0,0,.5)}
-.pcq::before{content:"“";color:#D2603A;margin-right:2px}
-.pcq::after{content:"”";color:#D2603A;margin-left:2px}
+.lead .kick{font-size:13px;font-weight:800;color:var(--heat);margin-bottom:8px}
+.lead h2{font-size:clamp(28px,3vw,40px);line-height:1.24;margin-bottom:14px}
+.lead .subh{font-size:18px;font-weight:700;color:var(--ink-2);margin:-4px 0 14px;line-height:1.45;display:none}
+.lead .deck{font-size:16.5px;line-height:1.72;color:var(--ink);margin:14px 0 12px}
+.lead .by{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}
+.lead .by a{color:var(--weight)}
+.pc .pcimg{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;background:var(--c-bg)}
+.pc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pc .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,11,0) 45%,rgba(5,7,11,.88) 100%)}
+.pc .q{position:absolute;left:18px;right:18px;bottom:15px;color:#fff;font-weight:800;font-size:clamp(18px,2vw,24px);
+  line-height:1.35;letter-spacing:-.02em;text-shadow:0 1px 12px rgba(0,0,0,.5);text-wrap:balance}
+.pc figcaption{font-size:12px;color:var(--muted);margin-top:6px}
 .pc figcaption a{color:var(--weight)}
-@media(max-width:520px){.pcnum b{font-size:22px}.pctag{left:12px;top:10px}.pcq{left:12px;right:12px;bottom:10px}}
-.thumb{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:10px;
-  background:var(--hair)}
-.thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.thumb span{position:absolute;left:8px;top:8px;font-family:var(--mono);font-size:10px;font-weight:700;
-  letter-spacing:.12em;background:#05070BCC;color:#E8E6E1;padding:2px 7px;border-radius:2px}
-/* 외신 레일 */
-.story{padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--hair)}
-.story:last-child{border-bottom:0}
-.story h3{font-family:var(--head-ko);font-weight:700;font-size:19px;line-height:1.38;margin:0 0 7px;
-  letter-spacing:-.02em;word-break:keep-all}
-.story p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.62;word-break:keep-all}
-.echo{display:inline-flex;gap:6px;align-items:center;margin-top:8px;font-family:var(--mono);font-size:10.5px;
-  color:var(--heat);border:1px solid currentColor;border-radius:999px;padding:1px 9px}
-.noecho{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
-.wire{list-style:none;margin:0;padding:0}
-.wire li{padding:0 0 13px;margin:0 0 13px;border-bottom:1px dotted var(--hair)}
-.wire li:last-child{border:0}
-.wire .en{font-weight:600;font-size:14px;line-height:1.4;display:block;margin-bottom:4px}
-.wire .ko{font-size:12.5px;color:var(--ink-2);line-height:1.55;display:block;word-break:keep-all}
-.meta{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;display:block}
-.meta .h{color:var(--heat)} .meta .w{color:var(--weight)}
 
-/* 해석 레일 */
-.tc{padding:16px 16px 14px}
-.tc .head{display:flex;justify-content:space-between;align-items:flex-end;margin:10px 0 10px}
-.tc .g{font-size:15px;font-weight:600}
-.tc .x{font-family:var(--mono);font-weight:700;font-size:40px;line-height:.9;color:var(--c-heat);letter-spacing:-.04em}
-.tc svg{width:100%;height:96px;display:block}
-.voice{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;padding:14px 0;border-bottom:1px solid var(--hair)}
-.voice:last-child{border:0}
-.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;
-  color:#fff;background:var(--weight)}
-.av.A{background:var(--heat)}
-.voice .who{font-size:13px;font-weight:700;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
-.voice .who span{font-family:var(--mono);font-weight:400;font-size:10.5px;color:var(--muted)}
-.voice q{display:block;font-family:var(--serif-ko);font-size:14px;line-height:1.66;color:var(--ink);margin-top:4px;
-  quotes:"“" "”";word-break:keep-all}
-.voice .tr{font-size:13px;line-height:1.5;margin-top:4px}
+/* 쟁점 박스 — 신문의 찬반 박스. 커뮤니티 반응을 두 진영으로 */
+.issue{margin-top:18px;border:1px solid var(--hair);border-top:3px solid var(--heat);background:var(--soft);padding:14px 16px 14px}
+.issue .ih{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.issue .ih b{font-size:14.5px;font-weight:800}
+.issue .ih span{font-size:12.5px;color:var(--muted)}
+.issue .ih .num{color:var(--heat);font-weight:700}
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.sides>div{padding:0 14px 0 0;font-size:14px;line-height:1.62;color:var(--ink)}
+.sides>div+div{padding:0 0 0 14px;border-left:1px solid var(--hair)}
+.sides .t{display:inline-block;font-size:12px;font-weight:800;padding:1px 8px;border-radius:2px;margin-bottom:6px}
+.sides .a .t{background:color-mix(in srgb,var(--weight) 15%,transparent);color:var(--weight)}
+.sides .b .t{background:color-mix(in srgb,var(--heat) 15%,transparent);color:var(--heat)}
+.issue p{margin:0;font-size:14px;line-height:1.65}
+.issue .go{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--weight);font-weight:600}
+.relh{margin-top:18px;font-size:13px;font-weight:800;border-top:1px solid var(--rule);padding-top:8px}
+.rel{list-style:none;margin:6px 0 0;padding:0;font-size:15px;font-weight:600}
+.rel li{padding:5px 0 5px 12px;position:relative;line-height:1.5}
+.rel li::before{content:"";position:absolute;left:0;top:13px;width:4px;height:4px;background:var(--ink-2)}
+.rel li span{font-size:12px;color:var(--muted);margin-left:6px}
 
+/* 오피니언 — Threads 패널·신뢰층 */
+.op{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:12px;padding:13px 0;border-bottom:1px solid var(--hair)}
+.op:last-of-type{border-bottom:0}
+.op .who{font-size:12.5px;font-weight:800;color:var(--violet)}
+.op .who span{font-weight:500;color:var(--muted);margin-left:5px}
+.op q{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;quotes:"“" "”";
+  font-family:var(--serif-ko);font-size:15px;line-height:1.6;margin-top:4px;font-weight:500}
+.op .tr{display:block;font-size:15px;font-weight:700;line-height:1.45;margin-top:4px}
+.op .when{display:block;font-size:11.5px;color:var(--muted);margin-top:5px}
+.av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;
+  background:var(--weight)}
+.av.A{background:var(--heat)} .av.T{background:var(--violet)}
+/* 숫자로 본 오늘 */
+.numbox{margin-top:18px;border-top:2px solid var(--rule);padding-top:9px}
+.numbox .nh{display:flex;justify-content:space-between;font-size:13px;font-weight:800}
+.numbox .nh span{font-weight:500;color:var(--muted);font-size:12px}
+.numbox .nv{display:flex;align-items:baseline;justify-content:space-between;margin:8px 0 6px}
+.numbox .nv b{font-size:16px}
+.numbox .nv .x{font-family:var(--mono);font-weight:700;font-size:34px;color:var(--heat);letter-spacing:-.04em}
+.numbox svg{width:100%;height:54px;display:block}
+.numbox p{margin:6px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+
+/* ── 주요기사 줄 ── */
+.row{margin-top:28px}
+.rowg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.rowg>a{display:block;padding:0 18px;min-width:0}
+.rowg>a:first-child{padding-left:0}
+.rowg>a:last-child{padding-right:0}
+.rowg>a+a{border-left:1px solid var(--hair)}
+.rowg .ph{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:10px;background:var(--soft)}
+.rowg .ph img{width:100%;height:100%;object-fit:cover}
+.rowg h3{font-size:17px;line-height:1.4}
+.rowg .sb{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+.rowg p{margin:6px 0 0;font-size:13.5px;color:var(--ink-2);line-height:1.58;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rowg p:empty{display:none}
+
+/* ── 섹션면 ── */
+.secn{margin-top:34px}
+/* 외신면 */
+.fxcols{column-count:3;column-gap:30px;column-rule:1px solid var(--hair)}
+.fxsec{break-inside:avoid-column;margin-bottom:22px}
+.fxname{font-size:13px;font-weight:800;color:var(--heat);border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:10px}
+.fxi{display:block;padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid var(--hair);break-inside:avoid}
+.fxsec .fxi:last-child{border:0;margin-bottom:0}
+.fxi .ph{position:relative;overflow:hidden;border-radius:2px;background:var(--soft)}
+.fxi .ph img{width:100%;height:100%;object-fit:cover}
+.has-lead .ph{aspect-ratio:16/9;margin-bottom:9px}
+.has-side{display:grid!important;grid-template-columns:minmax(0,1fr) 84px;column-gap:12px;align-items:start}
+.has-side .ph{grid-column:2;grid-row:1/span 4;aspect-ratio:1;width:84px}
+.has-side .ph .file{display:none}
+.has-side>span:not(.ph){grid-column:1}
+.fxi .t{display:block;font-weight:800;font-size:16px;line-height:1.42;letter-spacing:-.02em}
+.has-lead .t{font-size:18px}
+.fxi .u{display:block;font-size:13px;font-weight:600;color:var(--ink-2);margin-top:2px}
+.fxi .d{display:block;font-size:13px;color:var(--muted);line-height:1.58;margin-top:4px}
 /* 국내면 */
-.dom{margin-top:30px;border-top:3px solid var(--rule);padding-top:10px}
-.domhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:16px}
-.domhead h2{font-family:var(--head-ko);font-weight:800;font-size:24px;margin:0;letter-spacing:-.02em}
-.domhead h2 small{font-family:var(--mono);font-size:10.5px;font-weight:400;letter-spacing:.14em;color:var(--muted);margin-left:10px}
-.domgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0 0}
+.domgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
 .domgrid>*{min-width:0}
 .domlead{padding-right:26px}
-.domlead h3{font-family:var(--head-ko);font-weight:800;font-size:clamp(23px,2.6vw,30px);line-height:1.3;
-  letter-spacing:-.025em;margin:0 0 14px;word-break:keep-all}
-.sc{padding:16px 16px 14px}
-/* 국내 대표 사안 — 제목 옆에 몇 곳이 썼는지, 아래에 매체마다 단 제목 */
-.domtop{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;margin-bottom:16px}
-.domtop h3{margin:0}
-.reach{text-align:right;line-height:1;padding-top:2px}
-.reach b{display:block;font-family:var(--mono);font-weight:700;font-size:clamp(40px,4.4vw,56px);
-  color:var(--weight);letter-spacing:-.04em}
+.domtop{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;margin-bottom:12px}
+.domtop h3{font-size:clamp(22px,2.4vw,28px);line-height:1.32}
+.reach{text-align:right;line-height:1}
+.reach b{display:block;font-family:var(--mono);font-weight:700;font-size:clamp(36px,4vw,50px);color:var(--weight);letter-spacing:-.04em}
 .reach span{display:block;font-size:12px;color:var(--muted);margin-top:6px;white-space:nowrap}
-.domlede{margin:-6px 0 16px;font-size:14.5px;line-height:1.7;color:var(--ink-2);word-break:keep-all}
+.domlede{margin:0 0 14px;font-size:15px;line-height:1.72;color:var(--ink-2)}
 .angles{border-top:2px solid var(--weight);padding-top:8px}
-.anghd{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;font-weight:700;color:var(--weight);margin-bottom:4px}
-.ang{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:baseline;padding:9px 0;
-  border-bottom:1px dotted var(--hair)}
+.anghd{font-size:13px;font-weight:800;color:var(--weight);margin-bottom:2px}
+.ang{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--hair)}
 .ang:last-child{border:0}
-.ang .src{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--weight);white-space:nowrap;
-  overflow:hidden;text-overflow:ellipsis}
-.ang .t{font-family:var(--head-ko);font-weight:600;font-size:15px;line-height:1.45;word-break:keep-all}
-@media(max-width:520px){.ang{grid-template-columns:1fr;gap:2px}}
-.domlist li{position:relative}
-.domlist .bar{position:absolute;left:38px;bottom:-1px;height:2px;background:var(--weight);border-radius:1px;opacity:.85;
-  max-width:calc(100% - 38px)}
-.dots{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:5px;margin:14px 0 6px}
-.dots div{height:30px;border-radius:2px;background:#18A2C61F;border:1px solid #18A2C640;
-  font-size:10.5px;color:var(--c-ink);display:flex;align-items:center;justify-content:center;
-  text-align:center;padding:0 4px;line-height:1.15;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.dots div.on{background:#18A2C6;border-color:#18A2C6;color:#05070B;font-weight:600}
-.sc .big{display:flex;align-items:baseline;gap:10px;margin-top:8px}
-.sc .big .n{font-family:var(--mono);font-weight:700;font-size:48px;line-height:1;color:var(--c-weight);letter-spacing:-.04em}
-.sc .big .l{font-size:13px;color:var(--c-ink2)}
+.ang .s{font-size:12.5px;font-weight:700;color:var(--weight);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ang .t{font-weight:600;font-size:15px;line-height:1.45}
 .domlist{list-style:none;margin:0;padding:0 0 0 26px;border-left:1px solid var(--hair)}
-.domlist li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:baseline;
+.domlist li{position:relative;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:baseline;
   padding:11px 0;border-bottom:1px solid var(--hair)}
 .domlist li:first-child{padding-top:0}
 .domlist li:last-child{border:0}
 .domlist .rk{font-family:var(--serif);font-size:24px;line-height:1;color:var(--muted)}
-.domlist .t{font-family:var(--head-ko);font-weight:700;font-size:15.5px;line-height:1.45;word-break:keep-all}
-.domlist .lede2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-  font-size:12.5px;line-height:1.6;color:var(--ink-2);margin-top:5px;word-break:keep-all}
-.domlist .lede2[hidden]{display:none}
-.domlist .s{font-family:var(--sans);font-weight:400;font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
-.ol{font-family:var(--mono);font-size:11px;color:var(--weight);white-space:nowrap}
-@media(max-width:820px){.domgrid{grid-template-columns:1fr}.domlead{padding:0 0 18px}
-  .domlist{padding:16px 0 0;border-left:0;border-top:1px solid var(--hair)}}
+.domlist .t{font-weight:700;font-size:16px;line-height:1.45}
+.domlist .s{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.domlist .l2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font-size:13.5px;line-height:1.6;color:var(--ink-2);margin-top:5px}
+.domlist .l2[hidden]{display:none}
+.ol{font-family:var(--mono);font-size:12px;color:var(--weight);white-space:nowrap}
+.domlist .bar{position:absolute;left:38px;bottom:-1px;height:2px;background:var(--weight);opacity:.85;max-width:calc(100% - 38px)}
+.picknote{font-size:12.5px;color:var(--muted);margin:-6px 0 12px}
+/* 커뮤니티면 */
+.comg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.comg>*{min-width:0;padding:0 20px}
+.comg>*:first-child{padding-left:0}
+.comg>*:last-child{padding-right:0}
+.comg>*+*{border-left:1px solid var(--hair)}
+.cm h3{font-size:17px;line-height:1.4}
+.cm .sb{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.cm p{margin:7px 0 0;font-size:14px;color:var(--ink-2);line-height:1.62}
+.tug{display:flex;height:24px;border-radius:2px;overflow:hidden;font-size:12px;font-weight:800;margin:4px 0 10px}
+.tug span{display:flex;align-items:center;padding:0 9px;white-space:nowrap;color:#fff}
+.tug .a{background:var(--weight)} .tug .b{background:var(--heat);flex:1;justify-content:flex-end}
+.rnum{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.rnum b{color:var(--heat);font-size:20px;letter-spacing:-.03em;margin-right:4px}
 
-/* 하단 피처 */
-.feat{margin-top:30px;border-top:3px solid var(--rule);padding-top:10px}
-.infeat{margin-top:28px;border-top-width:2px}
-.infeat .sect{border-top:0;padding-top:0}
-.infeat .featgrid>article{padding:0 16px}
-.infeat .featgrid>article:first-child{padding-left:0}
-.infeat .featgrid>article+article{padding-right:0}
-.infeat .fc{grid-template-columns:1fr;gap:8px}
-.infeat .fc .rv{grid-row:auto;display:flex;align-items:baseline;gap:10px}
-.infeat .fc .rv small{display:inline;margin:0}
-.infeat h3{font-size:16.5px}
-.featgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
-.featgrid>article{padding:0 22px;min-width:0}
-.featgrid>article:first-child{padding-left:0}
-.featgrid>article+article{border-left:1px solid var(--hair);padding-right:0}
-@media(max-width:760px){.featgrid{grid-template-columns:1fr}.featgrid>article{padding:0!important;border:0!important}
-  .featgrid>article+article{margin-top:22px;padding-top:22px!important;border-top:1px solid var(--hair)!important}}
-.fc{padding:14px 16px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 18px;align-items:center;margin-bottom:12px}
-.fc .rv{font-family:var(--mono);font-weight:700;font-size:44px;line-height:1;color:var(--c-heat);letter-spacing:-.04em;grid-row:span 2}
-.fc .rv small{display:block;font-size:10px;letter-spacing:.14em;color:var(--c-mut);font-weight:400;margin-top:6px}
-.fc .tug{display:flex;height:22px;border-radius:2px;overflow:hidden;font-family:var(--mono);font-size:10.5px;font-weight:700}
-.fc .tug span{display:flex;align-items:center;padding:0 8px;white-space:nowrap}
-.fc .tug .a{background:#18A2C6;color:#05070B}
-.fc .tug .b{background:#D2603A;color:#05070B;justify-content:flex-end;flex:1}
-.fc .sm{font-family:var(--mono);font-size:10.5px;color:var(--c-mut)}
-.feat h3{font-weight:700;font-size:18px;line-height:1.35;margin:0 0 6px;letter-spacing:-.01em}
-.feat p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.65;word-break:keep-all}
-
-.visits{margin-top:10px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
-.visits b{color:var(--ink-2);font-weight:500}
+footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-size:12px;color:var(--muted);line-height:1.8;
+  display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
+footer a{color:var(--weight)}
+.visits{margin-top:10px;text-align:center;font-size:12px;color:var(--muted)}
+.visits b{color:var(--ink-2);font-weight:600;font-family:var(--mono)}
 .visits span{margin:0 8px}
 .visits[hidden]{display:none}
-footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:12px;font-family:var(--mono);
-  font-size:10.5px;color:var(--muted);line-height:1.8;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
-footer a{color:var(--weight)}
 .err{padding:60px 0;font-size:17px}
-#wireblk.moved,#wirecont{margin-top:26px}
-#wirecont .se small{font-weight:400;color:var(--muted);letter-spacing:.04em}
-.orig{display:block;font-size:11.5px;color:var(--muted);margin:-2px 0 6px;line-height:1.4}
-/* ── SNS 글 표식 — 기사와 구분한다. 섹션마다 이모지 + 왼쪽 색 막대 ──
-   💬 논쟁 = 주황 · 📡 외신 밖의 반향 = 청록 · 🧵 국내 해석 = 보라 */
-.sect .se{color:var(--ink);font-weight:700;letter-spacing:.14em}
-.sns{position:relative;padding-left:13px!important}
-.sns::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:3px;border-radius:2px;background:var(--sc)}
-.wire li.sns::before{bottom:15px}
-.voice.sns::before{top:14px;bottom:14px}
-.sns-h{--sc:var(--heat)} .sns-w{--sc:var(--weight)} .sns-v{--sc:var(--violet)}
-.pf{display:inline-block;font-style:normal;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;
-  padding:1px 6px;border-radius:2px;margin:0 0 5px;vertical-align:middle;
-  color:var(--sc);background:color-mix(in srgb,var(--sc) 14%,transparent)}
-.who .pf{margin:0 0 0 auto}
-.voice .who{align-items:center}
-.pf-hn,.pf-rd{display:table}
-/* 모바일에선 데이터 그래픽(논쟁·온도·확산·줄다리기)을 빼고 숫자 한 줄만 남긴다 */
-.m-only{display:none}
-.gfx-gap{margin-top:22px}
-.mstat{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin:0 0 12px;line-height:1.6}
-.mstat b{font-weight:700;color:var(--ink)} .mstat b.h{color:var(--heat)} .mstat b.w{color:var(--weight)}
-@media(max-width:700px){
-  .gfx{display:none!important}
-  .gfx-gap{margin-top:0}
-  .m-only{display:block}
-}
-/* 맨 위로 — 한 화면 이상 내려가면 나타난다 */
-#totop{position:fixed;right:22px;bottom:22px;z-index:20;display:flex;align-items:center;gap:6px;
-  font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;cursor:pointer;
-  color:var(--sheet);background:var(--ink);border:0;border-radius:999px;padding:10px 16px;
-  box-shadow:0 6px 20px -6px rgba(0,0,0,.45);opacity:0;transform:translateY(12px);pointer-events:none;
-  transition:opacity .2s,transform .2s}
+#totop{position:fixed;right:22px;bottom:22px;z-index:20;display:flex;align-items:center;gap:6px;font:inherit;font-size:13px;
+  font-weight:700;cursor:pointer;color:var(--sheet);background:var(--ink);border:0;border-radius:999px;padding:10px 16px;
+  box-shadow:0 6px 20px -6px rgba(0,0,0,.45);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .2s,transform .2s}
 #totop.on{opacity:1;transform:none;pointer-events:auto}
-#totop:hover{background:var(--heat);color:#fff}
-@media(max-width:700px){#totop{right:14px;bottom:14px;padding:10px 13px}#totop span{display:none}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ── 태블릿 (701~1020): 톱이 위로, 사이드·오피니언이 두 칸 ── */
+@media(max-width:1020px){
+  .front{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .flead{grid-column:1/-1;order:-1;padding:0 0 24px;margin-bottom:22px;border-bottom:1px solid var(--hair)}
+  .fside{padding-right:20px}
+  .fop{padding-left:20px}
+  .rowg{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+  .rowg>a{padding:0 16px!important;border:0!important}
+  .rowg>a:nth-child(odd){padding-left:0!important}
+  .rowg>a:nth-child(even){padding-right:0!important;border-left:1px solid var(--hair)!important}
+  .fxcols{column-count:2}
+  .comg{grid-template-columns:1fr 1fr}
+  .comg>*:nth-child(3){grid-column:1/-1;border:0;padding:22px 0 0;margin-top:22px;border-top:1px solid var(--hair)}
+}
+
+/* ── 모바일 (≤700): 한국 언론사 모바일 문법 ── */
+@media(max-width:700px){
+  body{font-size:16px;background:var(--sheet)}
+  .sheet{margin:0;padding:0 16px 28px;box-shadow:none}
+  .topbar{padding:10px 0 8px}
+  .topbar>span{display:none}
+  .topbar nav{width:100%;justify-content:flex-end}
+  .mast{padding:10px 0 8px}
+  .name{font-size:38px}
+  .tag{font-size:11.5px;letter-spacing:.04em}
+  .dateline{font-size:12px}
+  .dateline .src3{display:none}
+
+  /* 톱이 맨 위 — 사진을 화면 끝까지, 그 아래 제목 (조선·한겨레 모바일) */
+  .front{display:flex;flex-direction:column;margin-top:0}
+  .fside,.flead,.fop{padding:0;border:0}
+  .flead{order:-1;margin:0 -16px;padding-bottom:18px;border-bottom:8px solid var(--soft)}
+  .lead{display:flex;flex-direction:column}
+  .lead>.pc{order:-1;margin-bottom:14px}
+  .lead .pc .pcimg{border-radius:0}
+  .lead .pc .q,.lead .pc .shade{display:none}
+  .lead .pc figcaption{padding:0 16px}
+  .lead>*:not(.pc):not(.issue){padding-left:16px;padding-right:16px}
+  .lead .kick{margin:0 0 6px}
+  .lead h2{font-size:25px;line-height:1.32;margin-bottom:8px}
+  .lead .subh{display:block;font-size:16px;margin:0 0 10px}
+  .lead .deck{font-size:16px;line-height:1.75;margin:8px 0 10px;
+    display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .issue{margin:14px 16px 0}
+  .sides{grid-template-columns:1fr}
+  .sides>div,.sides>div+div{padding:0;border:0}
+  .sides>div+div{margin-top:10px;padding-top:10px;border-top:1px solid var(--hair)}
+  .lead>.relh{margin:16px 16px 0;padding:8px 0 0}
+  .lead>.rel{margin:4px 16px 0;padding:0}
+
+  /* 목록형: 제목·요약 왼쪽, 사진 오른쪽 */
+  .fside{padding-top:6px}
+  .story,.rowg>a{display:grid!important;grid-template-columns:minmax(0,1fr) 108px;column-gap:14px;align-items:start;
+    padding:16px 0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--hair)!important}
+  .story .ph,.rowg .ph{grid-column:2;grid-row:1/span 5;aspect-ratio:4/3;width:108px;margin:0;border-radius:4px}
+  .story .ph .file,.rowg .ph .file{display:none}
+  .story>*:not(.ph),.rowg>a>*:not(.ph){grid-column:1}
+  .story h3,.rowg h3{font-size:17px;line-height:1.42}
+  .story .sb{font-size:14px}
+  .story p,.rowg p{font-size:14px;-webkit-line-clamp:2;margin-top:5px}
+  .rowg{display:block}
+  .rowg>a:nth-child(n){border-left:0!important;padding-left:0!important;padding-right:0!important}
+  .row{margin-top:8px}
+  .row .secthd,.secn .secthd{border-top:0;padding-top:20px;margin-bottom:4px}
+  .fop{margin-top:6px}
+  .fop .mini{border-top:0;padding-top:22px;font-size:18px}
+  .op{grid-template-columns:44px minmax(0,1fr)}
+  .op .av{grid-column:1;grid-row:1}
+  .op>div:first-child{grid-column:2}
+  .op q{-webkit-line-clamp:3}
+  .numbox{display:none}
+
+  .secn{margin-top:14px;border-top:8px solid var(--soft);margin-left:-16px;margin-right:-16px;padding:0 16px}
+  .secthd h2{font-size:20px}
+  .fxcols{column-count:1}
+  .has-lead .ph{aspect-ratio:16/9}
+  .fxi{padding:14px 0;margin:0}
+  .fxi .t{font-size:17px}
+  .fxi .d{font-size:14px}
+  .domgrid{grid-template-columns:1fr}
+  .domlead{padding:0 0 14px}
+  .domlist{padding:12px 0 0;border:0;border-top:1px solid var(--hair)}
+  .ang{grid-template-columns:1fr;gap:2px}
+  .comg{display:block}
+  .comg>*{padding:16px 0!important;border:0!important;border-bottom:1px solid var(--hair)!important;margin:0!important}
+  .tug{display:none}
+  footer{font-size:11.5px}
+  #totop{right:14px;bottom:14px;padding:10px 13px}
+  #totop span{display:none}
+}
 </style>
 <script>
 (function(){try{var t=localStorage.getItem('signal-theme');
@@ -397,7 +369,7 @@ footer a{color:var(--weight)}
 
 <div class="sheet">
   <div class="topbar">
-    <span id="tb-left">AI·테크 담론 관측 — 외신 · 국내 · 커뮤니티</span>
+    <span>AI·테크 1면 — 외신 · 국내 · 커뮤니티</span>
     <nav>
       <a class="on" href="front.html">1면</a>
       <a href="index.html">반향 관측</a>
@@ -405,10 +377,9 @@ footer a{color:var(--weight)}
       <button id="tgl" type="button" aria-label="테마 전환">◐</button>
     </nav>
   </div>
-
   <header class="mast">
     <h1 class="name"><a href="/" title="홈으로">Daily <em>UptoDate</em></a></h1>
-    <div class="sub">외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것</div>
+    <div class="tag">외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것</div>
   </header>
   <div class="dateline" id="dateline"><span>…</span></div>
 
@@ -424,304 +395,210 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = n => Number(n || 0).toLocaleString('ko-KR');
 const DOW = '일월화수목금토';
-
-/* 제목 — '앤스로픽·오픈AI·구글' 같은 나열이 '·' 앞에서 끊기지 않게 단어 결합자(U+2060)로 묶는다.
-   한국 일간지 1면처럼 제목은 한 문장이고 줄은 칸 폭대로 흐른다(조선·동아·한겨레 실측, 2026-10-07).
-   억지 줄바꿈(\n)은 받지 않는다 */
-const hd = s => esc(String(s ?? '').replace(/\s*\n\s*/g, ' ')).replace(/·/g, '\u2060·\u2060');
-
-/* SNS 출처 꼬리표 */
-function pf(url){
-  const u = String(url || '');
-  if (u.includes('reddit.com')) return '<i class="pf pf-rd">Reddit</i>';
-  if (u.includes('ycombinator.com')) return '<i class="pf pf-hn">Hacker News</i>';
-  return '';
-}
-
-/* 'Guardian Featured, TechCrunch, The Verge 다매체 보도' → 'Guardian 외 2곳' */
-function shortSrc(src){
-  const t = String(src || '').replace(/다매체 보도|Featured|Hero/g, '').trim();
-  const p = t.split(/\s*,\s*/).filter(Boolean);
-  return p.length > 1 ? `${p[0]} 외 ${p.length - 1}곳` : (p[0] || '');
-}
+/* 제목 — 한 문장, 줄은 칸 폭이 정한다. '·' 나열이 줄 끝에서 끊기지 않게 단어 결합자로 묶는다 */
+const hd = s => esc(String(s ?? '').replace(/\s*\n\s*/g, ' ')).replace(/·/g, '⁠·⁠');
+const spaced = s => String(s || '').replace(/([.!?])(?=[가-힣A-Z])/g, '$1 ');   // 언론사 요약의 붙은 문장 띄우기
 
 function korDate(ymd){
   const d = new Date(ymd + 'T00:00:00+09:00');
   return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${DOW[d.getDay()]}요일`;
 }
+function shortSrc(src){
+  const t = String(src || '').replace(/다매체 보도|Featured|Hero/g, '').trim();
+  const p = t.split(/\s*,\s*/).filter(Boolean);
+  return p.length > 1 ? `${p[0]} 외 ${p.length - 1}곳` : (p[0] || '');
+}
+const KIND = { foreign: 'f', domestic: 'd', community: 'c' };
+const ph = (img, cls = 'ph') => img ? `<span class="${cls}"><img src="${esc(img.sm || img.src)}" alt="${esc(img.alt)}" loading="lazy">${img.file ? '<i class="file">자료사진</i>' : ''}</span>` : '';
 
-/* ── 사진 카드 — 외신 브리핑이 고른 사진 위에 카드뉴스처럼 글을 얹는다 ── */
-function photoCard(L, R){
+/* 국내 기사 첫머리 — sharktalk.co.kr 포털이 언론사 공개 요약(og:description)을 받아 준다 */
+const mustLede = (id, idx) => /^\d{8}_\d{4}$/.test(id || '') && Number.isInteger(idx)
+  ? fetch(`https://sharktalk.co.kr/api/board/must/${id}/${idx}/lead`).then(r => r.ok ? r.json() : {}).then(j => spaced(j && j.lead)).catch(() => '')
+  : Promise.resolve('');
+
+/* ── 조각들 ── */
+function storyCard(x){          // 1면 사이드
+  return `<a class="story" href="${esc(x.url)}">
+    ${ph(x.img)}
+    <span class="lab ${KIND[x.kind]}">${esc(x.label)}</span>
+    <h3 class="hl">${hd(x.head)}</h3>
+    ${x.sub ? `<span class="sb">${hd(x.sub)}</span>` : ''}
+    <p ${x.kind === 'domestic' ? `data-mi="${x.must_idx}"` : ''}>${esc(x.deck)}</p>
+    <span class="src">${esc(x.src || '')}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
+  </a>`;
+}
+function rowCard(x){            // 주요기사 줄
+  return `<a href="${esc(x.url)}">
+    ${ph(x.img)}
+    <span class="lab ${KIND[x.kind]}">${esc(x.label)}</span>
+    <h3 class="hl">${hd(x.head)}</h3>
+    ${x.sub ? `<span class="sb">${esc(x.sub)}</span>` : ''}
+    <p ${x.kind === 'domestic' ? `data-mi="${x.must_idx}"` : ''}>${esc(x.deck)}</p>
+    <span class="src">${esc(x.src || '')}</span>
+  </a>`;
+}
+function photo(L, R){
   const I = L.img;
   return `<figure class="pc">
-  <a class="pcimg" href="${esc(L.fact_url || '#')}">
-    <img src="${esc(I.src)}" srcset="${esc(I.sm)} 640w, ${esc(I.src)} 1200w" sizes="(max-width:700px) 100vw, 640px"
-      alt="${esc(I.alt)}" width="1200" height="675">
-    <span class="pcshade"></span>
-    <span class="pctag">외신 브리핑 TOP${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
-    ${R ? `<span class="pcnum"><b>${fmt(R.comments)}</b>커뮤니티 댓글</span>` : ''}
-    ${L.sub ? `<span class="pcq">${esc(L.sub.replace(/^["“]|["”]$/g, ''))}</span>` : ''}
-  </a>
-  <figcaption>${I.credit ? `<b>사진</b> <a href="${esc(I.credit_url)}">${esc(I.credit)}</a> / Unsplash` : '<b>사진</b> Unsplash'} · 외신 브리핑 선정</figcaption>
-</figure>`;
+    <a class="pcimg" href="${esc(L.fact_url || '#')}">
+      <img src="${esc(I.src)}" srcset="${esc(I.sm)} 640w, ${esc(I.src)} 1200w" sizes="(max-width:700px) 100vw, 640px" alt="${esc(I.alt)}">
+      ${L.sub ? `<span class="shade"></span><span class="q">${hd(L.sub)}</span>` : ''}
+    </a>
+    <figcaption>${I.credit ? `사진 <a href="${esc(I.credit_url)}">${esc(I.credit)}</a> / Unsplash` : (I.file ? '자료사진 · Unsplash' : '사진 · Unsplash')} · 외신 브리핑 선정</figcaption>
+  </figure>`;
 }
-
-/* ── 카드: 논쟁 ── */
-function debateCard(R){
-  const tot = Math.max(R.comments, R.points, 1);
-  const rmax = 3, rv = Math.min(R.r, rmax);
-  const pc = v => +(v/rmax*100).toFixed(1);
+function issueBox(R){           // 쟁점 박스 — 커뮤니티 반응을 찬반으로
   const S = R.sides;
-  return `<figure class="gfx">
-  <div class="card dc">
-    <div class="cap"><span><b>논쟁</b> · Hacker News 댓글창</span><span>${R.r >= 1 ? '논쟁선 위' : '논쟁선 아래'}</span></div>
-    <div class="big">
-      <div><div class="n" style="color:var(--c-heat)">${fmt(R.comments)}</div><div class="l">댓글</div></div>
-      <div><div class="n" style="color:var(--c-weight)">${fmt(R.points)}</div><div class="l">추천</div></div>
-      <div class="r"><div class="n" style="color:var(--c-ink)">${R.r.toFixed(2)}</div><div class="l">추천 1개당 댓글</div></div>
-    </div>
-    <div class="bars" aria-hidden="true">
-      <div style="width:${(R.comments/tot*100).toFixed(1)}%;background:var(--c-heat)"></div>
-      <div style="width:${(R.points/tot*100).toFixed(1)}%;background:var(--c-weight)"></div>
-    </div>
-    <div class="gauge" aria-hidden="true">
-      <div class="gl"><span style="left:${pc(rv)}%;color:var(--c-heat);font-weight:700">${R.r.toFixed(2)} ▾</span></div>
-      <div class="gt">
-        <i style="left:${pc(1)}%;width:${Math.max(0, pc(rv)-pc(1)).toFixed(1)}%"></i>
-        ${[0,0.5,1,1.5,2,2.5,3].map(t => `<b class="${t===1?'base':''}" style="left:${pc(t)}%"></b>`).join('')}
-      </div>
-      <div class="gl"><span style="left:0;transform:none">0</span><span style="left:${pc(1)}%;color:var(--c-ink)">1.0 논쟁선</span><span style="left:auto;right:0;transform:none">3.0</span></div>
-    </div>
-    ${S ? `<div class="vs">
-      <div class="side a"><span class="t">${esc(S.la)}</span><div>${esc(S.a)}</div></div>
-      <div class="mid">vs</div>
-      <div class="side b"><span class="t">${esc(S.lb)}</span><div>${esc(S.b)}</div></div>
-    </div>` : ''}
-  </div>
-  <figcaption><b>그림</b> 「${esc(R.title)}」 토론의 댓글·추천 비율. 추천보다 댓글이 많으면 동의보다 반박이 오간 글이다.</figcaption>
-</figure>`;
+  return `<div class="issue">
+    <div class="ih"><b>커뮤니티 반응</b><span>Hacker News 댓글 <span class="num">${fmt(R.comments)}</span> · 추천 ${fmt(R.points)} · 추천당 댓글 ${R.r.toFixed(2)}</span></div>
+    ${S ? `<div class="sides"><div class="a"><span class="t">${esc(S.la)}</span><div>${esc(S.a)}</div></div>
+      <div class="b"><span class="t">${esc(S.lb)}</span><div>${esc(S.b)}</div></div></div>`
+        : `<p>${esc(R.summary)}</p>`}
+    <a class="go" href="${esc(R.url)}">토론 원문 보기 →</a>
+  </div>`;
 }
-
-/* ── 카드: 온도 ── */
-function tempCard(T){
+function numBox(T){             // 숫자로 본 오늘 — 주제군 온도
   if (!T) return '';
-  const v = T.values, n = v.length, max = Math.max(...v, 1);
-  const W = 300, H = 96, bw = W/n;
-  const prior = v.slice(-7,-3), avg = prior.reduce((a,b)=>a+b,0) / (prior.length||1);
-  let g = '';
-  v.forEach((x,i) => {
-    const h = (x/max) * (H-14), recent = i >= n-3, base = i >= n-7 && i < n-3;
-    g += `<rect x="${(i*bw+1.5).toFixed(1)}" y="${(H-h).toFixed(1)}" width="${(bw-3).toFixed(1)}" height="${h.toFixed(1)}"
-      fill="${recent ? '#D2603A' : base ? '#18A2C6' : '#2A3341'}"/>`;
-  });
-  const ay = H - (avg/max)*(H-14);
-  return `<figure class="gfx">
-  <div class="card tc">
-    <div class="cap"><span><b>온도</b> · 주제군 담론량</span><span>${esc(T.dates[0])}–${esc(T.dates.at(-1))}</span></div>
-    <div class="head"><div class="g">${esc(T.group)}</div><div class="x">×${T.ratio}</div></div>
-    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${g}
-      <line x1="${((n-7)*bw).toFixed(1)}" x2="${W}" y1="${ay.toFixed(1)}" y2="${ay.toFixed(1)}" stroke="#E8E6E1" stroke-dasharray="3 3" stroke-width="1" vector-effect="non-scaling-stroke"/>
-    </svg>
-  </div>
-  <figcaption><b>그림</b> 최근 3일(주황)이 그 전 4일(청록) 평균(점선)의 ${T.ratio}배. 하루 단위, 오늘 미완성분 제외.</figcaption>
-</figure>`;
-}
-
-/* ── 카드: 확산 ── */
-function spreadCard(L){
-  const n = L.outlets || 0, src = L.sources || [];
-  let cells = '';
-  for (let i = 0; i < n; i++) cells += src[i] ? `<div class="on" title="${esc(src[i])}">${esc(src[i])}</div>` : `<div></div>`;
-  return `<figure class="gfx">
-  <div class="card sc">
-    <div class="cap"><span><b style="color:var(--c-weight)">확산</b> · 같은 날 같은 사안</span><span>Must News 집계</span></div>
-    <div class="big"><span class="n">${n}</span><span class="l">개 매체가 썼다</span></div>
-    <div class="dots">${cells}</div>
-  </div>
-  <figcaption><b>그림</b> 한 칸이 매체 하나. 이름이 확인된 ${src.length}곳만 표시했다.</figcaption>
-</figure>`;
-}
-
-/* ── 카드: 피처 줄다리기 ── */
-function tugCard(f){
-  const S = f.sides;
-  return `<div class="card fc gfx">
-    <div class="rv">${f.r.toFixed(2)}<small>추천당 댓글</small></div>
-    ${S ? `<div class="tug"><span class="a">${esc(S.la)}</span><span class="b">${esc(S.lb)}</span></div>` : '<div></div>'}
-    <div class="sm">댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</div>
+  const v = T.values, n = v.length, max = Math.max(...v, 1), W = 280, H = 54, bw = W / n;
+  const bars = v.map((x, i) => {
+    const h = Math.max(1, x / max * (H - 4)), recent = i >= n - 3;
+    return `<rect x="${(i * bw + 1).toFixed(1)}" y="${(H - h).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${h.toFixed(1)}" fill="${recent ? 'var(--heat)' : 'var(--hair)'}"/>`;
+  }).join('');
+  return `<div class="numbox">
+    <div class="nh">숫자로 본 오늘<span>최근 14일</span></div>
+    <div class="nv"><b>${esc(T.group)} 담론</b><span class="x">×${T.ratio}</span></div>
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${bars}</svg>
+    <p>최근 3일 커뮤니티 담론량이 그 전 4일의 ${T.ratio}배. 하루 단위, 오늘 미완성분 제외.</p>
   </div>`;
 }
 
 function render(F){
-  const L = F.lead, R = L && L.reaction;
-  const ymd = (F.edition || '').slice(0,10);
-  const S = F.sources || {};
-  $('#dateline').innerHTML = `
-    <span><b>${esc(korDate(ymd))}</b></span>
-    <span>제 ${F.no ?? '–'}호</span>
-    <span>외신 ${esc(S.briefing || '–')} · 국내 ${esc((S.must||'–').slice(5))} · 커뮤니티 ${esc((S.signal||'–').slice(5))}</span>`;
+  const L = F.lead, R = L && L.reaction, S = F.sources || {}, SL = F.slots || { side: [], row: [] };
+  const ymd = (F.edition || '').slice(0, 10);
+  $('#dateline').innerHTML = `<span><b>${esc(korDate(ymd))}</b></span><span>제 ${F.no ?? '–'}호</span>
+    <span class="src3">외신 ${esc(S.briefing || '–')} · 국내 ${esc((S.must || '–').slice(5))} · 커뮤니티 ${esc((S.signal || '–').slice(5))}</span>`;
 
   /* 톱 */
   let lead = '';
-  if (L){
-    const cross = L.kind === 'cross';
-    const kick = cross ? '교차 · 외신 보도 × 커뮤니티 반향' : L.kind === 'desk' ? '오늘의 톱 · 외신' : '반향 · 커뮤니티 최대 토론';
+  if (L) {
+    const kick = L.kind === 'cross' ? '오늘의 톱 · 외신 보도와 커뮤니티 반향' : L.kind === 'desk' ? '오늘의 톱 · 외신' : '오늘의 톱 · 커뮤니티';
+    const rel = [];
+    (L.related || []).forEach(k => rel.push(`<li><a class="hl" href="${esc(k.url)}">${hd(k.head)}</a><span>${esc(shortSrc(k.src))}</span></li>`));
+    (R && R.kr || []).forEach(k => rel.push(`<li><a class="hl" href="${esc(k.url)}">${esc(k.title)}</a><span>국내</span></li>`));
     lead = `<article class="lead">
-      <div class="kicker">${kick}<span class="ln"></span></div>
-      <h2>${L.fact_url ? `<a class="hl" href="${esc(L.fact_url)}">${hd(L.headline)}</a>` : hd(L.headline)}</h2>
-      ${L.img ? photoCard(L, R) : (L.sub ? `<p class="subh">${esc(L.sub)}</p>` : '')}
+      <div class="kick">${kick}</div>
+      <h2><a class="hl" href="${esc(L.fact_url || '#')}">${hd(L.headline)}</a></h2>
+      ${L.sub ? `<p class="subh">${hd(L.sub)}</p>` : ''}
+      ${L.img ? photo(L, R) : ''}
       <p class="deck">${esc(L.deck)}</p>
-      <div class="byline"><span>사실 — <a href="${esc(L.fact_url || '#')}">외신 브리핑 카드</a>${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
-        ${L.orig_url ? `<span><a href="${esc(L.orig_url)}">원문 ↗</a></span>` : ''}
-        ${R ? `<span>반향 — <a href="${esc(R.url)}">HN 토론 ${fmt(R.comments)}개 댓글</a></span>` : ''}</div>
-      ${R ? debateCard(R) : ''}
-      ${R ? `<p class="m-only mstat">댓글 <b class="h">${fmt(R.comments)}</b> · 추천 <b class="w">${fmt(R.points)}</b> · 추천당 댓글 <b>${R.r.toFixed(2)}</b>${R.r >= 1 ? ' — 논쟁선(1.0) 위' : ''}</p>` : ''}
-      ${R && R.summary ? `<p class="body">${esc(R.summary)}</p>` : ''}
-      ${R && (R.kr||[]).length ? `<div class="why" style="margin-top:12px">국내 연결 — ${R.kr.map(k=>`<a href="${esc(k.url)}" style="color:var(--weight)">${esc(k.title)}</a>`).join(' · ')}</div>` : ''}
-      ${cross && L.why ? `<div class="why">톱 선정 근거 — 외신 꼭지와 커뮤니티 글이 같은 사건을 가리킨다:
-        ${L.why.entities.map(e=>`<i>${esc(e)}</i>`).join('')}${L.why.shared.map(e=>`<i>${esc(e)}</i>`).join('')}</div>` : ''}
+      <div class="by"><span>외신 브리핑${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
+        ${L.orig_url ? `<a href="${esc(L.orig_url)}">원문 ↗</a>` : ''}<a href="${esc(L.fact_url || '#')}">브리핑 카드 →</a></div>
+      ${R ? issueBox(R) : ''}
+      ${rel.length ? `<div class="relh">관련 기사</div><ul class="rel">${rel.join('')}</ul>` : ''}
     </article>`;
   }
+  if (L && !L.img && L.sub) lead = lead.replace('class="subh"', 'class="subh" style="display:block"');
 
-  /* 좌: 외신 + 해외 반향 */
-  const left = `
-    <div class="sect">외신 <span>${esc(S.briefing||'')}</span></div>
-    ${(F.left||[]).map((s, i) => `<article class="story">
-      ${s.img ? `<a class="thumb" href="${esc(s.url||'#')}"><img src="${esc(s.img.sm)}" alt="${esc(s.img.alt)}" loading="lazy" width="640" height="360"><span>TOP ${i + 1 + (L && L.kind === 'cross' ? 1 : 0)}</span></a>` : ''}
-      <h3><a class="hl" href="${esc(s.url||'#')}">${hd(s.head || s.title)}</a></h3>
-      ${s.sub ? `<div class="sub2">${esc(s.sub)}</div>` : ''}
-      <p>${esc(s.deck)}</p>
-      ${s.source ? `<span class="meta">${esc(shortSrc(s.source))}</span>` : ''}
-      ${s.echo ? `<a class="echo" href="${esc(s.echo.url)}">커뮤니티 반향 · 댓글 ${fmt(s.echo.comments)} · r ${s.echo.r.toFixed(2)}</a>`
-               : `<span class="noecho">커뮤니티 반향 없음</span>`}
-    </article>`).join('')}
-    ${(F.wire||[]).length ? `<div id="wireblk"><div class="sect" style="margin-top:8px"><span class="se">📡 외신 밖의 반향</span><span>HN·Reddit</span></div>
-    <ul class="wire">${F.wire.map(w => `<li class="sns sns-w"><a href="${esc(w.url)}">
-      ${pf(w.url)}${w.title_ko ? `<span class="en hl">${hd(w.title_ko)}</span><span class="orig">${esc(w.title)}</span>` : `<span class="en hl">${esc(w.title)}</span>`}<span class="ko">${esc(w.deck)}</span>
-      <span class="meta"><span class="h">댓글 ${fmt(w.comments)}</span> · r ${w.r.toFixed(2)}</span></a></li>`).join('')}</ul></div>` : ''}`;
+  /* 오피니언 */
+  const ops = (F.voices || []).map(v => v.kind === 'panel'
+    ? `<a class="op" href="https://www.threads.com/@${esc(v.handle)}"><div>
+        <div class="who">${esc(v.who)}<span>${esc(v.role || '@' + v.handle)}</span></div>
+        <q>${esc(v.text)}</q><span class="when">Threads · ${esc((v.ts || '').slice(5, 16))}</span></div>
+        <div class="av ${esc(v.tier)}">${esc((v.who || '?').trim()[0])}</div></a>`
+    : `<a class="op" href="${esc(v.url)}"><div>
+        <div class="who">${esc(v.who)}<span>신뢰층이 링크</span></div>
+        <span class="tr hl">${esc(v.text)}</span><span class="when">Hacker News 댓글 ${fmt(v.comments)}</span></div>
+        <div class="av T">✓</div></a>`).join('');
 
-  /* 우: 해석 */
-  const voices = (F.voices||[]).map(v => v.kind === 'panel'
-    ? `<div class="voice sns sns-v"><div class="av ${esc(v.tier)}">${esc((v.who||'?').trim()[0])}</div><div>
-        <div class="who">${esc(v.who)} <span>@${esc(v.handle)} · ${esc((v.ts||'').slice(5,16))}</span><i class="pf pf-th">Threads</i></div>
-        <a href="https://www.threads.com/@${esc(v.handle)}"><q>${esc(v.text)}</q></a></div></div>`
-    : `<div class="voice sns sns-v"><div class="av">✓</div><div>
-        <div class="who">${esc(v.who)} <span>신뢰층이 링크</span><i class="pf pf-tr">신뢰층</i></div>
-        <a class="tr hl" href="${esc(v.url)}">${esc(v.text)}</a>
-        <span class="meta">댓글 ${fmt(v.comments)} · r ${Number(v.r).toFixed(2)}</span></div></div>`).join('');
-  const right = `
-    <div class="gfx"><div class="sect">온도 <span>14일</span></div>
-    ${tempCard(F.temperature)}</div>
-    <div class="sect gfx-gap"><span class="se">🧵 국내 해석</span><span>Threads 패널</span></div>
-    ${voices || '<p class="meta">수집된 글 없음</p>'}`;
+  const front = `<section class="front">
+    <div class="fside">${(SL.side || []).map(storyCard).join('')}</div>
+    <div class="flead">${lead}</div>
+    <aside class="fop"><div class="mini">해석<span>국내 Threads 패널 · 신뢰층</span></div>${ops || '<p class="src">수집된 글 없음</p>'}${numBox(F.temperature)}</aside>
+  </section>`;
+
+  const row = (SL.row || []).length ? `<section class="row">
+    <div class="secthd"><h2>주요 기사<small>${SL.picked ? '편집국 선정' : '외신 · 국내 · 커뮤니티'}</small></h2></div>
+    <div class="rowg">${SL.row.map(rowCard).join('')}</div></section>` : '';
+
+  /* 외신면 */
+  const FS = F.foreign || [];
+  const nF = FS.reduce((n, x) => n + x.items.length, 0);
+  const foreign = nF ? `<section class="secn" id="foreign">
+    <div class="secthd"><h2>외신<small>JFNB 외신 브리핑 · ${esc(S.briefing || '')}</small></h2><a href="${esc((F.links || {}).briefing || '#')}">브리핑 전체 →</a></div>
+    <div class="fxcols">${FS.map(sec => `<div class="fxsec"><div class="fxname">${esc(sec.name === 'TOP' ? '주요' : sec.name)}</div>
+      ${sec.items.map(x => `<a class="fxi${x.img ? ' has-' + (x.img.size || 'lead') : ''}" href="${esc(x.url)}">
+        ${x.img ? `<span class="ph"><img src="${esc(x.img.sm || x.img.src)}" alt="${esc(x.img.alt)}" loading="lazy">${x.img.file ? '<i class="file">자료사진</i>' : ''}</span>` : ''}
+        <span class="t hl">${hd(x.head)}</span>${x.sub ? `<span class="u">${hd(x.sub)}</span>` : ''}
+        <span class="d">${esc(x.deck)}</span>
+        <span class="src">${esc(shortSrc(x.source))}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
+      </a>`).join('')}</div>`).join('')}</div></section>` : '';
 
   /* 국내면 */
   const D = F.domestic || {};
-  const FS = F.foreign || [];
-  const nF = FS.reduce((n, x) => n + x.items.length, 0);
-  const foreign = nF ? `<section class="dom fx">
-    <div class="domhead"><h2>외신<small>JFNB 외신 브리핑 · ${esc(S.briefing || '')} · ${nF + (F.left||[]).length + (L && L.kind === 'cross' ? 1 : 0)}건</small></h2>
-      <a class="meta" href="${esc((F.links||{}).briefing||'#')}" style="color:var(--weight)">브리핑 전체 →</a></div>
-    <div class="fxcols">${FS.map(sec => `<div class="fxsec">
-      <div class="fxname">${esc(sec.name)}</div>
-      ${sec.items.map(x => `<a class="fxi${x.img ? ' has-' + x.img.size : ''}" href="${esc(x.url)}">
-        ${x.img ? `<span class="fxph"><img src="${esc(x.img.src)}" alt="${esc(x.img.alt)}" loading="lazy"
-          width="${x.img.size === 'lead' ? 960 : 240}" height="${x.img.size === 'lead' ? 540 : 240}"><i>자료사진</i></span>` : ''}
-        <span class="t hl">${hd(x.head)}</span>
-        ${x.sub ? `<span class="u">${esc(x.sub)}</span>` : ''}
-        <span class="d">${esc(x.deck)}</span>
-        <span class="meta">${esc(shortSrc(x.source))}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
-      </a>`).join('')}
-    </div>`).join('')}</div></section>` : '';
-
-  const dom = D.lead ? `<section class="dom">
-    <div class="domhead"><h2>국내<small>MUST NEWS · ${esc((D.updated||'').slice(5))}</small></h2>
-      <a class="meta" href="${esc((F.links||{}).must||'#')}" style="color:var(--weight)">전체 순위 →</a></div>
+  const mx = D.lead ? Math.max(D.lead.outlets || 0, ...(D.list || []).map(a => +a.outlets || 0), 1) : 1;
+  const dom = D.lead ? `<section class="secn" id="domestic">
+    <div class="secthd"><h2>국내<small>Must News · ${esc((D.updated || '').slice(5))}</small></h2><a href="${esc((F.links || {}).must || '#')}">전체 순위 →</a></div>
     <div class="domgrid">
       <div class="domlead">
-        <div class="kicker w">${D.picked ? '국내 톱 · 편집국 선정' : '국내 톱 · Must News 1위'}<span class="ln"></span></div>
-        <div class="domtop">
-          <h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
-          <div class="reach"><b>${fmt(D.lead.outlets)}</b><span>개 매체</span></div>
-        </div>
+        <span class="lab d">${D.picked ? '국내 톱 · 편집국 선정' : '국내 톱 · Must News 1위'}</span>
+        ${D.picked && D.pick_note ? `<p class="picknote">${esc(D.pick_note)}</p>` : ''}
+        <div class="domtop"><h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
+          <div class="reach"><b>${fmt(D.lead.outlets)}</b><span>개 매체 보도</span></div></div>
         <p class="domlede" id="domlede"${D.lead.lede ? '' : ' hidden'}>${esc(D.lead.lede || '')}</p>
-        ${(D.lead.angles||[]).length ? `<div class="angles">
-          <div class="anghd">같은 사안, 매체별 제목</div>
-          ${D.lead.angles.map(m => `<a class="ang" href="${esc(m.url)}"><span class="src">${esc(m.source)}</span><span class="t hl">${hd(m.title)}</span></a>`).join('')}
-        </div>` : ''}
+        ${(D.lead.angles || []).length ? `<div class="angles"><div class="anghd">같은 사안, 매체별 제목</div>
+          ${D.lead.angles.map(m => `<a class="ang" href="${esc(m.url)}"><span class="s">${esc(m.source)}</span><span class="t hl">${hd(m.title)}</span></a>`).join('')}</div>` : ''}
       </div>
-      <ol class="domlist">${(() => {
-        const mx = Math.max(D.lead.outlets || 0, ...(D.list||[]).map(a => +a.outlets || 0), 1);
-        return (D.list||[]).map(a => `<li><span class="rk">${esc(a.rank)}</span>
+      <ol class="domlist">${(D.list || []).map(a => `<li><span class="rk">${esc(a.rank)}</span>
         <a href="${esc(a.url)}"><span class="t hl">${hd(a.title)}</span><span class="s">${esc(a.source)}</span>
-          <span class="lede2" data-mi="${Number.isInteger(a.must_idx) ? a.must_idx : ''}" hidden></span></a>
+        <span class="l2" data-mi="${Number.isInteger(a.must_idx) ? a.must_idx : ''}" hidden></span></a>
         <span class="ol">${fmt(a.outlets)}곳</span>
-        <i class="bar" style="width:${Math.max(2, (+a.outlets || 0) / mx * 100).toFixed(1)}%"></i></li>`).join('');
-      })()}</ol>
+        <i class="bar" style="width:${Math.max(2, (+a.outlets || 0) / mx * 100).toFixed(1)}%"></i></li>`).join('')}</ol>
     </div></section>` : '';
 
-  /* 피처 */
-  const feat = (F.features||[]).length ? `<section class="feat infeat">
-    <div class="sect"><span class="se">💬 논쟁</span><span>댓글창이 갈라진 글</span></div>
-    <div class="featgrid">${F.features.map(f => `<article>
-      ${tugCard(f)}
-      <div class="sns sns-h">${pf(f.url)}
-      <p class="m-only mstat">추천당 댓글 <b class="h">${f.r.toFixed(2)}</b> · 댓글 ${fmt(f.comments)} · 추천 ${fmt(f.points)}</p>
-      <h3><a class="hl" href="${esc(f.url)}">${hd(f.title_ko || f.title)}</a></h3>
-      ${f.title_ko ? `<span class="orig">${esc(f.title)}</span>` : ''}
-      <p>${esc(f.deck)}</p></div></article>`).join('')}</div></section>` : '';
+  /* 커뮤니티면 — 논쟁(줄다리기) + 외신 밖의 반향 */
+  const items = [
+    ...(F.features || []).map(f => ({ ...f, feat: true })),
+    ...(F.wire || []),
+  ].slice(0, 3);
+  const com = items.length ? `<section class="secn" id="community">
+    <div class="secthd"><h2>커뮤니티<small>해외 개발자들이 다툰 글 · Hacker News · Reddit</small></h2><a href="index.html">반향 관측 →</a></div>
+    <div class="comg">${items.map(x => `<a class="cm" href="${esc(x.url)}">
+      <span class="lab c">${x.feat ? '논쟁 · 댓글창이 갈라진 글' : '외신 밖의 반향'}</span>
+      ${x.feat && x.sides ? `<div class="tug"><span class="a">${esc(x.sides.la)}</span><span class="b">${esc(x.sides.lb)}</span></div>` : ''}
+      <h3 class="hl">${hd(x.title_ko || x.title)}</h3>${x.title_ko ? `<span class="sb">${esc(x.title)}</span>` : ''}
+      <p>${esc(x.deck)}</p>
+      <span class="src rnum"><b>${x.r.toFixed(2)}</b>추천당 댓글 · 댓글 ${fmt(x.comments)}</span></a>`).join('')}</div></section>` : '';
 
-  /* 국내 대표 사안의 기사 첫머리 — 포털(sharktalk.co.kr)이 언론사 공개 요약을 받아 준다. 실패하면 칸을 비운다 */
-  const lede = D.lead && !D.lead.lede && /^\d{8}_\d{4}$/.test(D.lead.must_id || '') && Number.isInteger(D.lead.must_idx)
-    ? fetch(`https://sharktalk.co.kr/api/board/must/${D.lead.must_id}/${D.lead.must_idx}/lead`).then(r => r.ok ? r.json() : {}).catch(() => ({}))
-    : null;
+  $('#main').innerHTML = front + row + foreign + dom + com;
 
-  $('#main').innerHTML = `<div class="page">
-      <div class="col c-left">${left}</div>
-      <div class="col c-lead">${lead}${feat}</div>
-      <div class="col c-right">${right}</div>
-    </div>${foreign}${dom}`;
-
-  /* 순위 목록에도 첫머리 두 줄 */
-  if (D.lead && /^\d{8}_\d{4}$/.test(D.lead.must_id || '')) {
-    document.querySelectorAll('.lede2[data-mi]').forEach(el => {
-      if (el.dataset.mi === '') return;
-      fetch(`https://sharktalk.co.kr/api/board/must/${D.lead.must_id}/${el.dataset.mi}/lead`)
-        .then(r => r.ok ? r.json() : {}).catch(() => ({}))
-        .then(j => { if (j && j.lead) { el.textContent = j.lead.replace(/([.!?])(?=[가-힣A-Z])/g, '$1 '); el.hidden = false; } });
-    });
-  }
-
-  balanceSoon();
-
-  if (lede) lede.then(j => {
-    const el = $('#domlede');
-    if (el && j && j.lead) { el.textContent = j.lead.replace(/([.!?])(?=[가-힣A-Z])/g, '$1 '); el.hidden = false; }   // 언론사 요약은 문장 사이 띄어쓰기가 빠져 오곤 한다
+  /* 국내 첫머리 — 톱·순위·1면 칸 */
+  const mid = SL.must_id || (D.lead && D.lead.must_id);
+  if (D.lead && !D.lead.lede) mustLede(mid, D.lead.must_idx).then(t => { const el = $('#domlede'); if (t && el) { el.textContent = t; el.hidden = false; } });
+  document.querySelectorAll('[data-mi]').forEach(el => {
+    if (el.dataset.mi === '' || el.textContent.trim()) return;
+    mustLede(mid, +el.dataset.mi).then(t => { if (t) { el.textContent = t; el.hidden = false; } });
   });
 
-  $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진은 외신 브리핑이 고른 것(Unsplash), '자료사진'은 그 보관함에서 주제로 골랐다 · 나머지 그림은 수집 데이터</span>
-    <span><a href="${esc((F.links||{}).briefing||'#')}">외신 브리핑</a> · <a href="${esc((F.links||{}).must||'#')}">Must News</a> · <a href="index.html">반향 관측</a></span>`;
+  $('#foot').innerHTML = `<span>조판 ${esc(F.edition)} KST · 사진은 외신 브리핑이 고른 것과 그 보관함의 자료사진(Unsplash) · 그림은 수집 데이터</span>
+    <span><a href="${esc((F.links || {}).briefing || '#')}">외신 브리핑</a> · <a href="${esc((F.links || {}).must || '#')}">Must News</a> · <a href="index.html">반향 관측</a></span>`;
 }
 
 (async () => {
   try {
-    const F = await fetch('data/front.json', {cache:'no-cache'})
-      .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); });
+    const F = await fetch('data/front.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
     render(F);
   } catch (e) {
     $('#main').innerHTML = `<div class="err">지면을 불러오지 못했습니다 (${esc(e.message)}).</div>`;
   }
 })();
 
-/* 방문자 수 — 외신 브리핑 페이지와 같은 방식(abacus 카운터, 같은 사람은 KST 하루 한 번만 센다).
-   이름공간은 따로 쓴다. 실패하면 칸을 숨긴 채 둔다 */
+/* 방문자 수 — 외신 브리핑과 같은 방식(abacus, 같은 사람은 KST 하루 한 번) */
 (() => {
   const API = 'https://abacus.jasoncameron.dev', NS = 'hong4137-uptodate', LS = 'uptodate-visited';
   const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
   let seen = false;
   try { seen = localStorage.getItem(LS) === today; } catch (e) {}
-  const mode = seen ? 'get' : 'hit';
-  const val = d => (d && (d.value ?? d.count));
+  const mode = seen ? 'get' : 'hit', val = d => (d && (d.value ?? d.count));
   Promise.all([
     fetch(`${API}/${mode}/${NS}/global`).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch(`${API}/${mode}/${NS}/daily-${today}`).then(r => r.ok ? r.json() : null).catch(() => null),
@@ -734,75 +611,20 @@ function render(F){
   });
 })();
 
-/* ── 칸 균형 ──
-   세 칸 중 왼쪽(외신 TOP + 외신 밖의 반향)만 길게 내려가고 가운데·오른쪽 아래가 비는 날이 있다.
-   그려진 뒤 칸마다 실제 내용 높이를 재서, '외신 밖의 반향' 묶음을 가장 짧은 칸 아래로 옮긴다.
-   사진이 늦게 뜨거나 폭이 바뀌면 다시 잰다. 한 칸(모바일)일 땐 제자리로 돌려 둔다. */
-function contentH(col){
-  const kids = [...col.children].filter(e => e.getClientRects().length);
-  if (!kids.length) return 0;
-  return kids[kids.length - 1].getBoundingClientRect().bottom - col.getBoundingClientRect().top;
-}
-function balance(){
-  const W = $('#wireblk'), L = $('.c-left'), C = $('.c-lead'), R = $('.c-right');
-  if (!W || !L || !C || !R) return;
-  // 제자리로 되돌리고 잰다
-  const home = W.querySelector('ul.wire'), cont = $('#wirecont');
-  if (cont) { cont.querySelectorAll('li').forEach(li => home.appendChild(li)); cont.remove(); }
-  if (W.parentElement !== L) L.appendChild(W);
-  W.classList.remove('moved');
-  const w = innerWidth;
-  if (w <= 700) return;                                   // 한 칸 — 옮기지 않는다
-  const cands = w > 1020 ? [C, R] : [R];                   // 두 칸일 땐 가운데가 위로 빠져 있다
-  const lis = [...home.children];
-  const head = W.querySelector('.sect').getBoundingClientRect().height + 26;
-  const ih = lis.map(li => li.getBoundingClientRect().height + 13);
-  const hL = contentH(L), hc = cands.map(contentH);
-  const spread = a => Math.max(...a) - Math.min(...a);
-  // 끝에서 k개를 가장 짧은 칸으로 보낼 때 세 칸 높이 차가 가장 작아지는 k 를 고른다
-  let best = { k: 0, c: -1, s: spread([hL, ...hc]) };
-  for (let k = 1; k <= lis.length; k++) {
-    const moved = ih.slice(-k).reduce((x, y) => x + y, 0);
-    const all = k === lis.length;
-    cands.forEach((c, i) => {
-      const hs = [hL - moved - (all ? head : 0), ...hc.map((h, j) => j === i ? h + moved + head : h)];
-      const sp = spread(hs);
-      if (sp < best.s - 40) best = { k, c: i, s: sp };
-    });
-  }
-  if (!best.k) return;
-  const to = cands[best.c];
-  if (best.k === lis.length) { to.appendChild(W); W.classList.add('moved'); return; }
-  const box = document.createElement('div');
-  box.id = 'wirecont'; box.className = 'moved';
-  box.innerHTML = `<div class="sect"><span class="se">📡 외신 밖의 반향 <small>(이어서)</small></span><span>HN·Reddit</span></div><ul class="wire"></ul>`;
-  lis.slice(-best.k).forEach(li => box.querySelector('ul').appendChild(li));
-  to.appendChild(box);
-}
-let _bal;
-function balanceSoon(){ clearTimeout(_bal); _bal = setTimeout(balance, 60); }
-addEventListener('resize', balanceSoon);
-addEventListener('load', balanceSoon);
-document.addEventListener('load', e => { if (e.target.tagName === 'IMG') balanceSoon(); }, true);
-
 /* 맨 위로 */
 (() => {
   const b = $('#totop');
   const upd = () => b.classList.toggle('on', scrollY > innerHeight);
-  addEventListener('scroll', upd, {passive:true}); upd();
-  b.addEventListener('click', () => scrollTo({top:0, behavior:
-    matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
+  addEventListener('scroll', upd, { passive: true }); upd();
+  b.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
 })();
 
-/* 테마 — index.html 과 같은 키를 쓴다 */
-(() => {
-  const KEY = 'signal-theme', root = document.documentElement;
-  $('#tgl').addEventListener('click', () => {
-    const cur = root.getAttribute('data-theme') ||
-      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const nx = cur === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', nx);
-    try { localStorage.setItem(KEY, nx); } catch(e) {}
-  });
-})();
+/* 테마 — index.html 과 같은 키 */
+$('#tgl').addEventListener('click', () => {
+  const root = document.documentElement;
+  const cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const nx = cur === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', nx);
+  try { localStorage.setItem('signal-theme', nx); } catch (e) {}
+});
 </script>

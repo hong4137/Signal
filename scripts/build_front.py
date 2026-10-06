@@ -459,6 +459,31 @@ def main():
     for ai in echo_of:
         used_sig.add(echo_of[ai][1]["title"])
 
+    # ── 톱의 관련 기사 — 신문이 톱 아래 다는 '관련' 목록 ──
+    # 같은 회사·기관(개체)을 다루고 한글 명사도 겹치는 외신 기사 최대 3건. 편집국이 desk.json
+    # "related": [키…] 로 지정하면 그걸 쓴다.
+    if lead and lead.get("key"):
+        lt = " ".join((lead["headline"], lead.get("sub", ""), lead.get("deck", "")))
+        le, _ = tags(lt)
+        lk = ko_nouns(lt)
+        scored = []
+        for x in arts:
+            if x.get("key") == lead["key"]:
+                continue
+            xt = " ".join((x["head"], x["sub"], x["en"], x["summary"]))
+            xe, _ = tags(xt)
+            sc = 2 * len(le & xe) + len(lk & ko_nouns(xt))
+            if le & xe and sc >= 3:
+                scored.append((sc, x))
+        # "related" 칸이 있으면 편집국 지정(빈 배열이면 관련 기사 없음), 없으면 자동
+        if isinstance(desk.get("related"), list):
+            want = [k for k in desk["related"] if isinstance(k, str)]
+            pick_rel = sorted([x for x in arts if x.get("key") in want], key=lambda x: want.index(x["key"]))
+        else:
+            pick_rel = [x for _, x in sorted(scored, key=lambda t: -t[0])]
+        lead["related"] = [{"key": x["key"], "head": (dx.get(x["key"]) or {}).get("headline") or x["head"],
+                            "url": x["link"], "src": x["source"]} for x in pick_rel[:3]]
+
     def card(ai, n):
         x = arts[ai]
         return {"key": x.get("key"), "head": x["head"], "sub": x["sub"], "en": x["en"],
@@ -513,17 +538,6 @@ def main():
             lead["img"] = {"src": photo(src, 1200, 675), "sm": photo(src, 640, 360), "alt": ph["alt"],
                            "credit": ph["credit"], "credit_url": ph["credit_url"], "file": True}
     used_ph = {re.sub(r"\?.*$", "", x["img"]["src"]) for x in [lead or {}] + left if x.get("img")}
-    for sec in foreign:
-        for i, it in enumerate(sec["items"]):
-            size = "lead" if i == 0 else ("side" if i == 2 and len(sec["items"]) >= 4 else None)
-            if not size or it.get("img") or it.get("no_photo"):
-                continue
-            ph = pick_photo(pool, it, sec["name"], used_ph)
-            if ph:
-                w, h = (960, 540) if size == "lead" else (240, 240)
-                it["img"] = {"src": photo(ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75", w, h),
-                             "alt": ph["alt"], "credit": ph["credit"], "credit_url": ph["credit_url"],
-                             "size": size, "file": True}
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
     wire = [{"key": g.get("discussion") or g.get("url"), "title": g["title"], "url": g.get("discussion") or g.get("url"),
@@ -597,6 +611,100 @@ def main():
                  for a in marts if not dom_lead or a["title"] != dom_lead["title"]][:5],
     }
 
+    # ── 1면 배치 ──
+    # 신문 1면 블록: 톱 + 사이드 2~3건 + 하단 주요기사 줄 3~4건. 외신·국내·커뮤니티를 섞는다.
+    # 편집국이 desk.json "front": {"side": [키…], "row": [키…]} 로 고르면 그대로, 없으면 기본 배치.
+    # 키: 외신 "<브리핑날짜>#art-N", 국내 "must:<Must News 순서>", 커뮤니티 = 토론 URL.
+    # 1면에 올린 기사는 아래 섹션면에서 뺀다 (같은 기사가 두 번 나오지 않게).
+    def short_src(src):
+        t = re.sub(r"다매체 보도|Featured|Hero", "", src or "").strip()
+        ps = [x.strip() for x in t.split(",") if x.strip()]
+        return ("%s 외 %d곳" % (ps[0], len(ps) - 1)) if len(ps) > 1 else (ps[0] if ps else "")
+
+    def plat(u):
+        return "Reddit" if "reddit.com" in (u or "") else "Hacker News"
+
+    cand = {}
+    for it in left:
+        cand[it["key"]] = {"key": it["key"], "kind": "foreign", "label": "외신", "head": it["head"],
+                           "sub": it["sub"], "deck": it["deck"], "img": it.get("img"), "url": it["url"],
+                           "src": short_src(it["source"]), "echo": it.get("echo")}
+    for sec in foreign:
+        for it in sec["items"]:
+            cand[it["key"]] = {"key": it["key"], "kind": "foreign",
+                               "label": "외신 · " + ("Pick" if "Pick" in sec["name"] else sec["name"]),
+                               "head": it["head"], "sub": it["sub"], "deck": it["deck"], "img": None,
+                               "no_photo": it.get("no_photo"), "url": it["url"],
+                               "src": short_src(it["source"]), "echo": it.get("echo"), "sec": sec["name"]}
+    must_order = M.get("articles") or []
+    for a in marts:
+        k = "must:%d" % must_order.index(a)
+        d = dx.get(k) or {}
+        if d.get("headline"):
+            applied += 1
+        cand[k] = {"key": k, "kind": "domestic", "label": "국내", "head": d.get("headline") or a["title"],
+                   "sub": d.get("sub", ""), "deck": "", "img": None, "url": a.get("url"),
+                   "src": "%s · %s곳 보도" % (a.get("source", ""), a.get("outlets", 0)),
+                   "must_idx": must_order.index(a)}
+    for f in features + wire:
+        cand[f["key"]] = {"key": f["key"], "kind": "community", "label": "커뮤니티 · " + plat(f["url"]),
+                          "head": f.get("title_ko") or f["title"], "sub": f["title"] if f.get("title_ko") else "",
+                          "deck": f["deck"], "img": None, "url": f["url"],
+                          "src": "댓글 {:,} · 추천당 댓글 {:.2f}".format(f["comments"], f["r"])}
+
+    dom_key = "must:%d" % must_order.index(dom_lead) if dom_lead else None
+    side_def = [it["key"] for it in left][:3]
+    row_def = [k for k in ([dom_key] + [f["key"] for f in features[:1]] + [w["key"] for w in wire[:1]] +
+                           [sec["items"][0]["key"] for sec in foreign[:1] if sec["items"]]) if k]
+    fr = desk.get("front") or {}
+    side = [k for k in (fr.get("side") or []) if k in cand][:3]
+    picked_front = len(side) >= 2
+    if not picked_front:
+        side = side_def
+    row = [k for k in (fr.get("row") or []) if k in cand and k not in side][:4]
+    if len(row) < 3:
+        row = [k for k in row_def if k not in side][:4]
+    else:
+        picked_front = True
+
+    # 1면 기사에 사진 — 외신 TOP 은 브리핑 사진, 나머지는 검수된 자료사진에서 주제로
+    for k in side + row:
+        it = cand[k]
+        if it.get("img") or it.get("no_photo") or (dx.get(k) or {}).get("drop_photo"):
+            continue
+        ph = pick_photo(pool, {"head": it["head"], "sub": it["sub"], "en": "", "deck": it["deck"]},
+                        it.get("sec") or ("AI/기술" if it["kind"] != "domestic" else "반도체/인프라"), used_ph)
+        if ph:
+            src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
+            it["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270), "alt": ph["alt"], "file": True}
+
+    placed = set(side + row)
+    rest_top = [it for it in left if it["key"] not in placed]
+    foreign = [{"name": sc["name"], "items": [i for i in sc["items"] if i["key"] not in placed]} for sc in foreign]
+    if rest_top:
+        foreign.insert(0, {"name": "TOP", "items": rest_top})
+    foreign = [sc for sc in foreign if sc["items"]]
+    features = [f for f in features if f["key"] not in placed]
+    wire = [w for w in wire if w["key"] not in placed]
+    slots = {"side": [cand[k] for k in side], "row": [cand[k] for k in row], "picked": picked_front,
+             "must_id": (lambda u: u[:8] + "_" + u[8:12] if len(u) >= 12 else "")(re.sub(r"\D", "", M.get("updated") or ""))}
+
+    # 외신면 사진 리듬 — 섹션 첫 기사 16:9, 4건 이상 섹션의 셋째 정사각 썸네일
+    for sec in foreign:
+        for i, it in enumerate(sec["items"]):
+            if it.get("img") and not it["img"].get("file"):
+                continue                       # 브리핑이 고른 사진(TOP)은 그대로
+            it["img"] = None
+            size = "lead" if i == 0 else ("side" if i == 2 and len(sec["items"]) >= 4 else None)
+            if not size or it.get("no_photo"):
+                continue
+            ph = pick_photo(pool, it, sec["name"], used_ph)
+            if ph:
+                w, h = (960, 540) if size == "lead" else (240, 240)
+                it["img"] = {"src": photo(ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75", w, h),
+                             "alt": ph["alt"], "credit": ph["credit"], "credit_url": ph["credit_url"],
+                             "size": size, "file": True}
+
     # ── 해석 레일: 패널 + 신뢰층 ──
     voices = []
     for a in sorted(panel.get("accounts") or [], key=lambda x: x.get("tier", "C")):
@@ -628,7 +736,8 @@ def main():
         "links": {"briefing": blink, "must": LINK_MUST},
         "desk": {"edited_at": desk.get("edited_at"), "applied": applied,
                  "notes": desk.get("notes") or []},
-        "lead": lead, "left": left, "foreign": foreign, "wire": wire, "features": features, "temperature": temp,
+        "lead": lead, "slots": slots, "left": [], "foreign": foreign, "wire": wire, "features": features,
+        "temperature": temp,
         "domestic": domestic, "voices": voices,
     }
     io.open(os.path.join(DATA, "front.json"), "w", encoding="utf-8").write(
@@ -639,6 +748,8 @@ def main():
         print("  톱(%s): %s" % (lead["kind"], lead["headline"][:50]))
         if lead.get("why"):
             print("     교차 근거: 개체 %s · 공유 %s" % (lead["why"]["entities"], lead["why"]["shared"]))
+    print("  1면 사이드 %s · 줄 %s%s" % ([x["kind"][0] for x in slots["side"]], [x["kind"][0] for x in slots["row"]],
+                                     " (편집국 배치)" if slots["picked"] else ""))
     print("  외신 %d건(좌측 %d · 외신면 %d) · 반향 붙음 %d · 해외 %d · 피처 %d · 온도 %s · 국내 %d · 해석 %d" % (
         len(arts), len(left), sum(len(f["items"]) for f in foreign), len(echo_of), len(wire), len(features), temp["group"] if temp else "-",
         len(domestic["list"]) + (1 if domestic["lead"] else 0), len(voices)))
