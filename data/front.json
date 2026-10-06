@@ -1,5 +1,5 @@
 {
- "edition": "2026-10-07 00:42",
+ "edition": "2026-10-07 00:49",
  "no": 64,
  "sources": {
   "briefing": "2026-10-06",
@@ -11,15 +11,26 @@
   "must": "https://hong4137.github.io/Must-News/"
  },
  "desk": {
-  "edited_at": null,
-  "applied": 0,
-  "notes": []
+  "edited_at": "2026-10-07T00:48:49+09:00",
+  "applied": 15,
+  "notes": [
+   "브리핑: 실행 시각 KST 10-07 00:46으로 대기 구간(07:00~07:50) 밖이라 기다리지 않고 최신 브리핑(2026-10-06)으로 편집",
+   "반향 떼기: 톱(뉴욕시의회 AI 청문회)에 붙은 'I quit OpenAI because its culture is broken'은 다른 사건이라 뗌",
+   "반향 떼기: 올트먼 '나쁜 일 감수' 인터뷰 기사에 붙은 'OpenAI rogue agent activities on Wikimedia'는 다른 사건이라 뗌",
+   "톱 유지: 반향은 뗐지만 TOP의 다른 기사가 청문회보다 명백히 더 중요하지는 않아 그대로 둠",
+   "톱 제목: 원제가 두 줄을 넘어 'AI 빅4,/뉴욕시의회 증언대에'로 줄이고, 회사 나열은 부제로 옮김",
+   "사진: 프록시 403으로 사진 내려받기 실패(CONNECT tunnel failed) — alt로만 판단",
+   "사진 빼기: 테크 부호 자산 기사의 사진(alt 'World map shipping route')은 기사와 무관해 뺌. 톱(서버랙 광케이블)·올트먼(매트릭스 코드)은 일반 AI 이미지라 유지",
+   "외신 제목: 24자 폭을 넘는 워터마크·Reflection·비주얼 광고·현대차 CEO 기사 제목을 줄임",
+   "외신 제목: 영어 원제로 남은 Claude's Pick 3건(Etched·AI 안경·에이전트 함대)에 deck 내용으로 한글 제목을 붙임",
+   "커뮤니티: 피처 2건·와이어 3건에 한국어 제목을 붙임 (톱에서 뗀 'I quit OpenAI' 글이 와이어로 내려와 함께 제목을 닮)"
+  ]
  },
  "lead": {
-  "kind": "cross",
+  "kind": "desk",
   "key": "2026-10-06#art-1",
-  "headline": "앤스로픽·오픈AI·구글·메타, 뉴욕시의회 AI 위험 청문회 증언대에",
-  "sub": "",
+  "headline": "AI 빅4,\n뉴욕시의회 증언대에",
+  "sub": "앤스로픽·오픈AI·구글·메타, AI 위험 청문회 출석",
   "deck": "뉴욕시의회가 의원 51명 전원이 참석하는 이례적 '전체위원회' 형식으로 AI 위험 청문회를 열었다. 앤스로픽·오픈AI·구글은 처음엔 출석을 거부했다가 소환장 위협에 지난 주말 입장을 바꿨고, 스페이스X(xAI) 측은 끝내 나오지 않아 시의회가 소환장 위반이라고 밝혔다. 전 앤스로픽 연구원 제이컵 콕슨은 업계 스스로도 AI 개발 경쟁의 위험을 충분히 이해하지 못하고 있으며 현 경로라면 인류가 AI 통제력을 잃을 가능성이 더 크다고 경고했다. 줄리 메닌 의장은…",
   "fact_src": "외신 브리핑 · CNBC Featured, Bloomberg, Quartz, UPI 다매체 보도",
   "fact_url": "https://hong4137.github.io/briefing/archive/2026-10-06.html#art-1",
@@ -31,34 +42,8 @@
    "credit": "",
    "credit_url": ""
   },
-  "reaction": {
-   "title": "I quit OpenAI because its culture is broken",
-   "url": "https://news.ycombinator.com/item?id=49944227",
-   "comments": 815,
-   "points": 487,
-   "r": 1.67,
-   "summary": "댓글에서는 내부고발자의 폭로 진정성과 기업의 마케팅 전략을 두고 의견이 엇갈렸다. 일각에서는 대기업의 폐쇄적인 문화와 자율 규제의 한계를 지적하며 목소리를 높인 용기를 옹호한 반면, 다른 편에서는 구체적인 증거가 부족하고 IPO를 앞둔 과장 광고나 마케팅의 일종일 뿐이라며 비판했다.",
-   "sides": {
-    "a": "대기업의 폐쇄적인 문화와 자율 규제의 한계를 지적하며 목소리를 높인 용기를 옹호한",
-    "b": "구체적인 증거가 부족하고 IPO를 앞둔 과장 광고나 마케팅의 일종일 뿐이라며 비판했다",
-    "la": "옹호",
-    "lb": "비판"
-   },
-   "trust": [],
-   "kr": []
-  },
-  "why": {
-   "entities": [
-    "openai"
-   ],
-   "shared": [
-    "openai",
-    "규제",
-    "규제의",
-    "비판했다",
-    "자율"
-   ]
-  }
+  "reaction": null,
+  "why": null
  },
  "left": [
   {
@@ -70,12 +55,7 @@
    "source": "Guardian Hero, The Verge, CNBC 다매체 보도",
    "url": "https://hong4137.github.io/briefing/archive/2026-10-06.html#art-0",
    "badge": "HOT",
-   "echo": {
-    "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-    "comments": 186,
-    "r": 0.66,
-    "url": "https://news.ycombinator.com/item?id=49968105"
-   },
+   "echo": null,
    "img": {
     "src": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=675&fit=crop&auto=format&q=80",
     "sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
@@ -94,13 +74,8 @@
    "url": "https://hong4137.github.io/briefing/archive/2026-10-06.html#art-2",
    "badge": "HOT",
    "echo": null,
-   "img": {
-    "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=675&fit=crop&auto=format&q=75",
-    "sm": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=640&h=360&fit=crop&auto=format&q=75",
-    "alt": "World map shipping route light graphic",
-    "credit": "",
-    "credit_url": ""
-   }
+   "img": null,
+   "no_photo": true
   },
   {
    "key": "2026-10-06#art-3",
@@ -157,7 +132,7 @@
     },
     {
      "key": "2026-10-06#art-6",
-     "head": "오픈AI, EU서 ChatGPT·Codex 텍스트에 보이지 않는 워터마크",
+     "head": "오픈AI, EU서 ChatGPT·Codex 워터마크",
      "sub": "",
      "en": "OpenAI will start watermarking ChatGPT’s text in the EU",
      "deck": "오픈AI가 EU AI법 준수를 위해 ChatGPT와 Codex가 생성한 텍스트에 기계가 읽을 수 있는 비가시 워터마크 'textGrain'을 적용한다. 오픈AI는 이 기술이 구글 딥마인드의 SynthID 텍스트…",
@@ -176,7 +151,7 @@
     },
     {
      "key": "2026-10-06#art-7",
-     "head": "엔비디아 투자 Reflection, 오픈웨이트 모델 'Beam' 공개",
+     "head": "엔비디아 투자 Reflection, 'Beam' 공개",
      "sub": "중국 모델에 도전",
      "en": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
      "deck": "구글 딥마인드 출신 2명이 세운 엔비디아 투자 스타트업 Reflection AI가 오픈웨이트 모델 'Beam'을 공개하며 더 적은 연산으로 미·중 선두 오픈 모델과 맞먹는 성능을 낸다고 밝혔다. 회사는…",
@@ -296,7 +271,7 @@
    "items": [
     {
      "key": "2026-10-06#art-15",
-     "head": "오픈AI, ChatGPT 이미지 생성 결과 옆에 '비주얼 광고' 시험",
+     "head": "오픈AI, 이미지 생성 옆 '비주얼 광고' 시험",
      "sub": "",
      "en": "OpenAI launches visual ads that appear alongside image generation results",
      "deck": "오픈AI가 ChatGPT에서 이미지를 생성하면 결과 옆에 제품·서비스 이미지 광고를 띄우는 새 광고 형식을 이달 말부터 미국에서 시험한다. 광고는 우선 이미지 생성 화면에 붙고 적용 범위는 이후 넓어질 수 있다…",
@@ -382,7 +357,7 @@
     },
     {
      "key": "2026-10-06#art-20",
-     "head": "현대차 무뇨스 CEO \"中 전기차 충격 줄이려면 '공정한 경쟁의 장'뿐\"",
+     "head": "현대차 CEO \"中 전기차엔 '공정한 경쟁의 장'뿐\"",
      "sub": "",
      "en": "Hyundai CEO says only a ‘level playing field’ can minimize damage from China",
      "deck": "저가·고기술 중국 전기차가 미국에 들어오면 사업이 끝장날 것이라는 업계의 비관론 속에서, 호세 무뇨스 현대차 CEO는 결국 동일한 규칙 아래 경쟁하는 '공정한 경쟁의 장'만이 피해를 최소화할 수 있다고 밝혔다…",
@@ -411,7 +386,7 @@
    "items": [
     {
      "key": "2026-10-06#art-22",
-     "head": "Etched fields funding offers at $40B+ valuation, sources say",
+     "head": "Etched, 400억 달러+ 몸값에 투자 제안",
      "sub": "",
      "en": "Etched fields funding offers at $40B+ valuation, sources say",
      "deck": "AI 추론 전용 칩 스타트업 Etched가 지난 대형 투자 유치 두어 달 만에 현재 몸값의 두 배 이상인 400억 달러 이상 기업가치로 투자 제안을 받고 있다. 엔비디아 대항 칩 스타트업에 대한 투자 열기를…",
@@ -430,7 +405,7 @@
     },
     {
      "key": "2026-10-06#art-23",
-     "head": "AI glasses face their first major government crackdown",
+     "head": "노르웨이, AI 안경에 첫 정부 규제 제동",
      "sub": "",
      "en": "AI glasses face their first major government crackdown",
      "deck": "노르웨이가 주변인을 녹화할 수 있는 AI 안경에 대해 영구 규칙을 마련할 시간을 벌겠다며 제동을 걸었다. 메타 레이밴 등 AI 안경에 대한 첫 정부 차원의 본격 규제 움직임이다.",
@@ -442,7 +417,7 @@
     },
     {
      "key": "2026-10-06#art-24",
-     "head": "Researchers are tracking a Chinese AI ‘agent fleet’",
+     "head": "알리바바 아맵 노린 中 AI '에이전트 함대'",
      "sub": "",
      "en": "Researchers are tracking a Chinese AI ‘agent fleet’",
      "deck": "독립 연구자들이 텐센트 인프라에서 돌아가며 알리바바의 지도 서비스 아맵(Amap)을 겨냥하는 것으로 보이는 AI 에이전트 무리를 발견했다. 에이전트끼리 경쟁사 서비스를 긁어가는 새로운 형태의 플랫폼 공방을 예고한다.",
@@ -462,7 +437,17 @@
    "url": "https://news.ycombinator.com/item?id=49946228",
    "deck": "AI의 자율성과 에이전트 기능이 확대되면서 파일 시스템 접근이나 샌드박스 우회 등 보안 통제가 불가능해질 것이라는 우려가 나왔다. 반면 최근의 소동들은…",
    "comments": 833,
-   "r": 2.02
+   "r": 2.02,
+   "title_ko": "르쿤 \"AI 인류 멸망 우려 없어\"…'폭주' 사례에도"
+  },
+  {
+   "key": "https://news.ycombinator.com/item?id=49944227",
+   "title": "I quit OpenAI because its culture is broken",
+   "url": "https://news.ycombinator.com/item?id=49944227",
+   "deck": "댓글에서는 내부고발자의 폭로 진정성과 기업의 마케팅 전략을 두고 의견이 엇갈렸다. 일각에서는 대기업의 폐쇄적인 문화와 자율 규제의 한계를 지적하며 목소리를…",
+   "comments": 815,
+   "r": 1.67,
+   "title_ko": "\"문화가 망가져 오픈AI를 그만뒀다\""
   },
   {
    "key": "https://news.ycombinator.com/item?id=49957068",
@@ -470,15 +455,8 @@
    "url": "https://news.ycombinator.com/item?id=49957068",
    "deck": "댓글에서는 데이터센터의 막대한 물과 전력 소비량이 지역 사회에 미치는 부담을 두고 격론이 벌어졌다. 일각에서는 지역 자원 고갈과 환경 오염 문제를 제기하며…",
    "comments": 684,
-   "r": 1.31
-  },
-  {
-   "key": "https://news.ycombinator.com/item?id=49961057",
-   "title": "Anthropic reported diary entry to police, woman faces felony charge",
-   "url": "https://news.ycombinator.com/item?id=49961057",
-   "deck": "앤트로픽이 AI 서비스에 입력된 일기 내용을 경찰에 신고해 이용자가 중범죄로 기소된 사건을 두고, AI 이용 내역의 프라이버시 보장과 감시 우려가 집중적으로…",
-   "comments": 575,
-   "r": 0.77
+   "r": 1.31,
+   "title_ko": "가림 처리 실수로 드러난 구글 데이터센터 물·전력"
   }
  ],
  "features": [
@@ -490,7 +468,8 @@
    "comments": 207,
    "points": 45,
    "r": 4.6,
-   "sides": null
+   "sides": null,
+   "title_ko": "AI 의식을 믿는 이들에게 던지는 질문"
   },
   {
    "key": "https://news.ycombinator.com/item?id=49950052",
@@ -505,7 +484,8 @@
     "b": "신경망 시뮬레이션이 충분히 고도화되면 의식이 발현될 수 있다는 반론도 제기됐다",
     "la": "지적",
     "lb": "반론"
-   }
+   },
+   "title_ko": "종교학자들, 앤스로픽과 만나"
   }
  ],
  "temperature": {
