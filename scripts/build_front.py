@@ -356,8 +356,12 @@ def main():
     # 요약 꼭지(segments) 순서 = TOP 기사 순서(art-0..2). 그날의 히어로 사진은
     # 주제(hero_source)가 같은 꼭지에 준다 — 저작자 표기가 붙은 건 히어로뿐이다.
     tops = [i for i, x in enumerate(arts) if x["sec"] == "TOP"]
+    # 금지 사진(photo_catalog.json "banned" — 예: 랜선 꽂힌 스위치)은 브리핑이 골라도 쓰지 않는다
+    banned = {re.sub(r"^.*photo-|\?.*$", "", b["url"]) for b in
+              ((load(os.path.join(DATA, "photo_catalog.json"), {}) or {}).get("banned") or [])}
+    is_banned = lambda u: any(b and b in (u or "") for b in banned)
     for i, sg in zip(tops, brief.get("segments") or []):
-        if sg.get("thumb_url"):
+        if sg.get("thumb_url") and not is_banned(brief.get("hero_url") if (brief.get("hero_url") and sg.get("thumb_category") == brief.get("hero_source")) else sg["thumb_url"]):
             hero = brief.get("hero_url") and sg.get("thumb_category") == brief.get("hero_source")
             arts[i]["img"] = {
                 "src": photo(brief["hero_url"] if hero else sg["thumb_url"], 1200, 675),
