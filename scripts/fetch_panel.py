@@ -29,11 +29,11 @@ OUT = os.path.join(ROOT, "panel_kr.json")
 
 # 티어는 팔로워가 아니라 **내용**으로 매긴다 (2026-09-23 교정)
 PANEL = [
-    ("choi.openai",  "CHOI",        "A", "최신 AI 릴리스 한국어 속보"),
-    ("jojoldu",      "이동욱 (향로)", "A", "개발 현장 도구 관찰"),
-    ("integer.han",  "한정수",       "B", "직접 써본 실측 경험"),
-    ("hiconcep",     "정지훈",       "B", "AI 에이전트 운영 경험"),
-    ("wooviewing",   "우뷰",         "C", "반도체·인프라 투자 관점"),
+    ("choi.openai",  "CHOI",        "A", "새 AI 소식을 한국어로 가장 빨리"),
+    ("jojoldu",      "이동욱 (향로)", "A", "개발 현장에서 보는 AI 도구"),
+    ("integer.han",  "한정수",       "B", "AI 도구를 직접 써 본 후기"),
+    ("hiconcep",     "정지훈",       "B", "AI 에이전트를 직접 운영하는 경험"),
+    ("wooviewing",   "우뷰",         "C", "반도체·인프라를 보는 투자자 시선"),
 ]
 MAX_POSTS = 3
 MIN_LEN = 40          # 이보다 짧은 줄은 UI 부스러기다

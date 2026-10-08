@@ -541,7 +541,7 @@ def main():
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
     wire = [{"key": g.get("discussion") or g.get("url"), "title": g["title"], "url": g.get("discussion") or g.get("url"),
-             "deck": trim(g.get("summary_ko"), 90), "comments": g["comments"], "r": g["r"]}
+             "deck": trim(g.get("summary_ko"), 90), "comments": g["comments"], "points": g["points"], "r": g["r"]}
             for g in sorted(sig, key=lambda x: -x["comments"])
             if g["title"] not in used_sig and g.get("summary_ko")][:3]
     for w in wire:
@@ -660,7 +660,8 @@ def main():
         cand[f["key"]] = {"key": f["key"], "kind": "community", "label": "커뮤니티 · " + plat(f["url"]),
                           "head": f.get("title_ko") or f["title"], "sub": f["title"] if f.get("title_ko") else "",
                           "deck": f["deck"], "img": None, "url": f["url"],
-                          "src": "댓글 {:,} · 추천당 댓글 {:.2f}".format(f["comments"], f["r"])}
+                          "src": plat(f["url"]) + " · 댓글 {:,}".format(f["comments"]) +
+                                 (" · 추천 {:,}".format(f["points"]) if f.get("points") else "")}
 
     dom_key = "must:%d" % must_order.index(dom_lead) if dom_lead else None
     side_def = [it["key"] for it in left][:3]
