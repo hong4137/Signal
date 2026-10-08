@@ -157,13 +157,6 @@
    "why": "10월 국정감사 — 테크·산업 기관 감사일"
   },
   {
-   "id": "tech-events",
-   "q": "tech event keynote launch {mon_en} {y} Apple Google Nvidia OpenAI",
-   "when": "always",
-   "status": "core",
-   "why": "테크 발표회"
-  },
-  {
    "id": "global-cb",
    "q": "ECB BOJ rate decision date {y} {m}월 일본은행 유럽중앙은행",
    "when": "always",
@@ -199,6 +192,27 @@
    "status": "trial",
    "why": "대형은행 실적 날짜와 장전 발표 여부 확인",
    "added": "2026-10-09"
+  },
+  {
+   "id": "dev-conf",
+   "q": "developer conference keynote {mon_en} {y} schedule",
+   "when": "always",
+   "status": "core",
+   "why": "대형 개발자 회의(신제품·서비스 발표 무대)"
+  },
+  {
+   "id": "launch-event",
+   "q": "launch event announcement date {mon_en} {y} Apple Google Samsung Nvidia OpenAI Anthropic Microsoft Meta",
+   "when": "always",
+   "status": "core",
+   "why": "기업 신제품·서비스 발표 행사"
+  },
+  {
+   "id": "kr-dev-conf",
+   "q": "개발자 콘퍼런스 {m}월 {y} 네이버 카카오 삼성 LG 키노트",
+   "when": "always",
+   "status": "core",
+   "why": "국내 개발자 회의·테크 행사"
   }
  ],
  "stats": {
@@ -394,6 +408,38 @@
    "id": "nv-event",
    "q": "신제품 공개 행사 예정 AI",
    "when": "always"
+  },
+  {
+   "id": "nv-devconf",
+   "q": "개발자 콘퍼런스 개최",
+   "when": "always"
+  },
+  {
+   "id": "nv-keynote",
+   "q": "키노트 발표 예정",
+   "when": "always"
+  },
+  {
+   "id": "nv-unpacked",
+   "q": "언팩 행사 공개 예정",
+   "when": "always"
   }
+ ],
+ "events_annual_help": "해마다 열리는 대형 개발자 회의·발표 행사 — 날짜가 정해지면 루틴이 검색으로 확인해 싣는다",
+ "events_annual": [
+  "Apple WWDC·9월 아이폰 이벤트·10월 Mac 이벤트",
+  "Google I/O·Made by Google",
+  "Microsoft Build·Ignite",
+  "Meta Connect",
+  "NVIDIA GTC·Computex 키노트",
+  "OpenAI DevDay",
+  "Anthropic Code with Claude",
+  "AWS re:Invent",
+  "Samsung Galaxy Unpacked·SDC",
+  "GitHub Universe",
+  "Tesla AI Day·주주총회",
+  "CES·MWC",
+  "네이버 DAN·카카오 if(kakao)·NHN FORWARD",
+  "SK AI Summit·삼성 AI 포럼"
  ]
 }

@@ -739,15 +739,18 @@ def main():
     if first:
         no = (now.date() - datetime.strptime(first, "%Y-%m-%d").date()).days + 1
 
-    # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json 에서 오늘~5일 뒤 ──
+    # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json 에서 오늘~2일 뒤(3일치) ──
+    # 확정(verified)된 것만 싣는다. 편집국이 desk.json "calendar_drop": [제목…] 으로 뺄 수 있다.
     cal = load(os.path.join(DATA, "calendar.json"), {}) or {}
     d0 = now.date().isoformat()
-    d5 = (now.date() + timedelta(days=5)).isoformat()
+    d2 = (now.date() + timedelta(days=2)).isoformat()
+    cal_drop = {str(t).strip() for t in (desk.get("calendar_drop") or [])}
     cal_ev = [e for e in (cal.get("events") or [])
-              if isinstance(e, dict) and d0 <= str(e.get("date", "")) <= d5 and e.get("title")
-              and int(e.get("importance") or 0) >= 3]
+              if isinstance(e, dict) and d0 <= str(e.get("date", "")) <= d2 and e.get("title")
+              and e.get("verified") is True and int(e.get("importance") or 0) >= 3
+              and str(e["title"]).strip() not in cal_drop]
     cal_ev.sort(key=lambda e: (e["date"], e.get("time") or "99:99"))
-    calendar = {"generated_at": cal.get("generated_at"), "from": d0, "to": d5,
+    calendar = {"generated_at": cal.get("generated_at"), "from": d0, "to": d2, "dropped": len(cal_drop),
                 "events": [{k: e.get(k) for k in ("date", "time", "region", "category", "title", "importance",
                                                    "why", "consensus", "previous", "source", "verified")}
                            for e in cal_ev]} if cal_ev else None

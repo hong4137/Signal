@@ -85,7 +85,8 @@ def plan(d0):
     d5 = d0 + timedelta(days=5)
     return {"today": d0.isoformat(), "window": [d0.isoformat(), d5.isoformat()],
             "queries": qs, "rule_candidates": rules(d0, d5),
-            "trusted": pb.get("trusted", {}), "learned": pb.get("learned", [])[-10:]}
+            "trusted": pb.get("trusted", {}), "events_annual": pb.get("events_annual", []),
+            "learned": pb.get("learned", [])[-10:]}
 
 
 def record(path, d0):

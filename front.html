@@ -120,6 +120,14 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .story .ph{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:10px;background:var(--soft)}
 .story .ph img{width:100%;height:100%;object-fit:cover}
 .story h3{font-size:19px;line-height:1.38}
+/* 사이드 둘째부터는 작은 썸네일 — 첫 기사만 큰 사진 (칸 높이를 톱·일정 칸과 맞춘다) */
+@media(min-width:1021px){
+  .fside .story+.story{display:grid;grid-template-columns:minmax(0,1fr) 84px;column-gap:12px;align-items:start}
+  .fside .story+.story>*{grid-column:1}
+  .fside .story+.story .ph{grid-column:2;grid-row:1/span 5;aspect-ratio:1;margin:2px 0 0}
+  .fside .story+.story h3{font-size:17px}
+  .fside .story+.story p{-webkit-line-clamp:2}
+}
 .story .sb{display:block;font-size:14px;font-weight:600;color:var(--ink-2);margin-top:4px;line-height:1.45}
 .story p{margin:7px 0 0;font-size:14px;color:var(--ink-2);line-height:1.6;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -187,16 +195,17 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .av.A{background:var(--heat)} .av.T{background:var(--violet)}
 /* 숫자로 본 오늘 */
 .numbox{margin-top:18px;border-top:2px solid var(--rule);padding-top:9px}
+.flead .numbox{margin-top:22px}
 /* 주요 경제 일정 */
-.calbox{margin-top:18px;border-top:2px solid var(--rule);padding-top:9px}
-.calbox .nh{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;font-weight:800}
-.calbox .nh span{font-weight:500;color:var(--muted);font-size:12px}
-.cday{margin-top:10px}
+.calbox .mini{margin-top:0}
+.calnone{margin:10px 0 0}
+.cday{margin-top:6px}
 .cday>b{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:800;
   padding:4px 0 3px;border-bottom:1px solid var(--hair)}
 .cday>b span{font-weight:600;font-size:11.5px;color:var(--heat)}
 .cday ul{list-style:none;margin:0;padding:0}
-.ce{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 8px;padding:7px 0;border-bottom:1px dotted var(--hair)}
+.ce{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 8px;padding:8px 0;border-bottom:1px dotted var(--hair)}
+.cday li:last-child{border-bottom:0}
 .ce .ct{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted);padding-top:2px}
 .ce .cn{font-size:14px;font-weight:600;line-height:1.4;color:var(--ink);text-decoration:none}
 .ce a.cn:hover{text-decoration:underline}
@@ -207,10 +216,6 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .ce .uv{font-size:10.5px;font-weight:600;color:var(--muted);margin-left:4px;white-space:nowrap}
 .ce p{margin:2px 0 0;font-size:12.5px;color:var(--ink-2);line-height:1.5}
 .ce .cv{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
-.calbox:not(.open) .lo{display:none}
-.calbox:not(.open) .cday.lo-all{display:none}
-.calmore{margin-top:8px;background:none;border:0;padding:0;font:inherit;font-size:12.5px;font-weight:700;
-  color:var(--weight);cursor:pointer}
 .numbox .nh{display:flex;justify-content:space-between;font-size:13px;font-weight:800}
 .numbox .nh span{font-weight:500;color:var(--muted);font-size:12px}
 .numbox .nv{display:flex;align-items:baseline;justify-content:space-between;margin:8px 0 6px}
@@ -221,6 +226,11 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 
 /* ── 주요기사 줄 ── */
 .row{margin-top:28px}
+.opsec{margin-top:30px}
+.opg{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:0}
+.opg>.op{padding:12px 18px 14px;border-bottom:0;border-left:1px solid var(--hair);align-content:start}
+.opg>.op:first-child{padding-left:0;border-left:0}
+.opg>.op:last-child{padding-right:0}
 .rowg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
 .rowg>a{display:block;padding:0 18px;min-width:0}
 .rowg>a:first-child{padding-left:0}
@@ -331,6 +341,10 @@ footer a{color:var(--weight)}
   .rowg>a:nth-child(even){padding-right:0!important;border-left:1px solid var(--hair)!important}
   .fxcols{column-count:2}
   .comg{grid-template-columns:1fr 1fr}
+  .opg{grid-template-columns:1fr 1fr!important;row-gap:4px}
+  .opg>.op{padding:12px 16px!important;border-left:0!important}
+  .opg>.op:nth-child(odd){padding-left:0!important}
+  .opg>.op:nth-child(even){padding-right:0!important;border-left:1px solid var(--hair)!important}
   .comg>*:nth-child(3){grid-column:1/-1;border:0;padding:22px 0 0;margin-top:22px;border-top:1px solid var(--hair)}
 }
 
@@ -352,7 +366,9 @@ footer a{color:var(--weight)}
   /* 톱이 맨 위 — 사진을 화면 끝까지, 그 아래 제목 (조선·한겨레 모바일) */
   .front{display:flex;flex-direction:column;margin-top:0}
   .fside,.flead,.fop{padding:0;border:0}
-  .flead{order:-1;margin:0 -16px;padding-bottom:18px;border-bottom:8px solid var(--soft)}
+  .flead{order:-2;margin:0 -16px;padding-bottom:18px;border-bottom:8px solid var(--soft)}
+  .fop{order:-1;padding-bottom:16px!important;margin:0 -16px!important;padding:0 16px 16px!important;
+    border-bottom:8px solid var(--soft)!important}                /* 톱 다음은 경제 일정 */
   .lead{display:flex;flex-direction:column}
   .lead>.pc{order:-1;margin-bottom:14px}
   .lead .pc .pcimg{border-radius:0}
@@ -385,12 +401,15 @@ footer a{color:var(--weight)}
   .rowg>a:nth-child(n){border-left:0!important;padding-left:0!important;padding-right:0!important}
   .row{margin-top:8px}
   .row .secthd,.secn .secthd{border-top:0;padding-top:20px;margin-bottom:4px}
-  .fop{margin-top:6px}
   .fop .mini{border-top:0;padding-top:22px;font-size:18px}
   .op{grid-template-columns:44px minmax(0,1fr)}
   .op .av{grid-column:1;grid-row:1}
   .op>div:first-child{grid-column:2}
   .op q{-webkit-line-clamp:3}
+  .opsec{margin-top:14px;border-top:8px solid var(--soft);margin-left:-16px;margin-right:-16px;padding:0 16px}
+  .opsec .secthd{border-top:0;padding-top:20px;margin-bottom:4px}
+  .opg{grid-template-columns:1fr!important}
+  .opg>.op{padding:13px 0!important;border-left:0!important;border-bottom:1px solid var(--hair)!important}
   .numbox{display:none}
 
   .secn{margin-top:14px;border-top:8px solid var(--soft);margin-left:-16px;margin-right:-16px;padding:0 16px}
@@ -530,36 +549,25 @@ function numBox(T){             // 숫자로 본 오늘 — 주제군 온도
 }
 
 const REG = { KR: '한국', US: '미국', CN: '중국', JP: '일본', EU: '유럽', GLOBAL: '세계' };
-function calBox(C){              // 주요 경제 일정 — 오늘부터 5일, 한국 시간
+function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 확정된 것만, 한국 시간
   /* '오늘'은 판 날짜가 아니라 읽는 시점(한국 시간) — 지난 일정은 뺀다 */
   const ymd = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
-  const evs = ((C && C.events) || []).filter(e => e.date >= ymd);
-  if (!evs.length) return '';
+  const end = new Date(Date.parse(ymd + 'T00:00:00Z') + 2 * 864e5).toISOString().slice(0, 10);
+  const evs = ((C && C.events) || []).filter(e => e.date >= ymd && e.date <= end && e.verified !== false);
   const day = d => { const x = new Date(d + 'T00:00:00+09:00'); return `${x.getMonth()+1}.${x.getDate()} (${DOW[x.getDay()]})`; };
-  const rel = d => { const n = Math.round((new Date(d + 'T00:00:00+09:00') - new Date(ymd + 'T00:00:00+09:00')) / 864e5);
-    return n === 0 ? '오늘' : n === 1 ? '내일' : ''; };
-  /* 접힌 상태 — 오늘은 전부, 그 뒤는 중요도 4 이상(업종·시장을 움직이는 것)만 */
-  const keep = (e, d) => d === ymd || (e.importance || 3) >= 4;
+  const rel = d => d === ymd ? '오늘' : d === new Date(Date.parse(ymd + 'T00:00:00Z') + 864e5).toISOString().slice(0, 10) ? '내일' : '';
   const groups = {};
   evs.forEach(e => (groups[e.date] = groups[e.date] || []).push(e));
-  let hidden = 0;
-  const html = Object.keys(groups).sort().map(d => {
-    const lis = groups[d].map(e => {
-      const lo = !keep(e, d);
-      if (lo) hidden++;
+  const html = Object.keys(groups).sort().map(d => `<div class="cday"><b>${day(d)}<span>${rel(d)}</span></b><ul>${
+    groups[d].map(e => {
       const cv = [e.consensus && '예상 ' + e.consensus, e.previous && '직전 ' + e.previous].filter(Boolean).join(' · ');
       const nm = `<em class="rg">${esc(REG[e.region] || e.region || '')}</em>${esc(e.title)}`;
-      return `<li class="ce${e.importance >= 5 ? ' i5' : ''}${lo ? ' lo' : ''}"><span class="ct">${esc(e.time || '–')}</span><div>
-        ${e.source ? `<a class="cn" href="${esc(e.source)}" target="_blank" rel="noopener">${nm}</a>` : `<span class="cn">${nm}</span>`}${e.verified === false ? '<span class="uv">미확정</span>' : ''}
+      return `<li class="ce${e.importance >= 5 ? ' i5' : ''}"><span class="ct">${esc(e.time || '–')}</span><div>
+        ${e.source ? `<a class="cn" href="${esc(e.source)}" target="_blank" rel="noopener">${nm}</a>` : `<span class="cn">${nm}</span>`}
         ${e.why ? `<p>${esc(e.why)}</p>` : ''}${cv ? `<p class="cv">${esc(cv)}</p>` : ''}</div></li>`;
-    }).join('');
-    const allLo = groups[d].every(e => !keep(e, d));
-    return `<div class="cday${allLo ? ' lo-all' : ''}"><b>${day(d)}<span>${rel(d)}</span></b><ul>${lis}</ul></div>`;
-  }).join('');
-  return `<div class="calbox" id="calbox">
-    <div class="nh">주요 경제 일정<span>향후 5일 · 한국 시간</span></div>${html}
-    ${hidden ? `<button class="calmore" type="button" aria-expanded="false">일정 ${hidden}건 더 보기</button>` : ''}
-  </div>`;
+    }).join('')}</ul></div>`).join('');
+  return `<div class="calbox" id="calbox"><div class="mini">주요 경제 일정<span>오늘부터 3일 · 한국 시간</span></div>
+    ${html || '<p class="src calnone">사흘 안에 확정된 주요 일정이 없다</p>'}</div>`;
 }
 
 function render(F){
@@ -608,8 +616,14 @@ function render(F){
   const front = `<section class="front">
     <div class="fside">${(SL.side || []).map(storyCard).join('')}</div>
     <div class="flead">${lead}</div>
-    <aside class="fop"><div class="mini">오피니언<span>AI 현장의 목소리</span></div>${ops || '<p class="src">수집된 글 없음</p>'}${calBox(F.calendar)}${numBox(F.temperature)}</aside>
+    <aside class="fop">${calBox(F.calendar)}${numBox(F.temperature)}</aside>
   </section>`;
+
+  /* 오피니언 — 1면 블록 아래 가로 띠 (신문 오피니언면처럼 필진을 나란히) */
+  const nOp = (F.voices || []).length;
+  const opsec = nOp ? `<section class="opsec" id="opinion">
+    <div class="secthd"><h2>오피니언<small>AI 현장의 목소리</small></h2></div>
+    <div class="opg" style="--n:${Math.min(nOp, 5)}">${ops}</div></section>` : '';
 
   const row = (SL.row || []).length ? `<section class="row">
     <div class="secthd"><h2>주요 기사<small>${SL.picked ? '편집국 선정' : '외신 · 국내 · 커뮤니티'}</small></h2></div>
@@ -667,7 +681,7 @@ function render(F){
       <p>${esc(x.deck)}</p>
       <span class="src">${x.url && x.url.includes('reddit.com') ? 'Reddit' : 'Hacker News'} · 댓글 ${fmt(x.comments)}${x.points ? ' · 추천 ' + fmt(x.points) : ''}</span></a>`).join('')}</div></section>` : '';
 
-  $('#main').innerHTML = front + row + foreign + dom + com;
+  $('#main').innerHTML = front + row + opsec + foreign + dom + com;
 
   /* 패널 글 펼치기 — 링크(Threads에서 보기)는 그대로 열리게 둔다 */
   document.querySelectorAll('.opx').forEach(el => {
@@ -676,10 +690,12 @@ function render(F){
     el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t(); } });
   });
 
-  /* 경제 일정 더 보기 */
-  const cm = document.querySelector('.calmore');
-  if (cm) { const n = cm.textContent; cm.addEventListener('click', () => {
-    const o = $('#calbox').classList.toggle('open'); cm.setAttribute('aria-expanded', o); cm.textContent = o ? '접기' : n; }); }
+  /* 1면 칸 맞추기 — '숫자로 본 오늘'을 톱 칸과 일정 칸 중 짧은 쪽 아래에 붙인다 (일정 수가 날마다 달라서) */
+  const nb = document.querySelector('.numbox'), fl = document.querySelector('.flead'), fo = document.querySelector('.fop');
+  if (nb && fl && fo && innerWidth > 1020) {
+    const inner = el => [...el.children].filter(c => c !== nb).reduce((a, c) => a + c.getBoundingClientRect().height, 0);
+    if (inner(fl) < inner(fo)) fl.appendChild(nb);
+  }
 
   /* 국내 첫머리 — 톱·순위·1면 칸 */
   const mid = SL.must_id || (D.lead && D.lead.must_id);
