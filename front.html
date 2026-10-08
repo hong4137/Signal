@@ -171,6 +171,17 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
   font-family:var(--serif-ko);font-size:15px;line-height:1.6;margin-top:4px;font-weight:500}
 .op .tr{display:block;font-size:15px;font-weight:700;line-height:1.45;margin-top:4px}
 .op .when{display:block;font-size:11.5px;color:var(--muted);margin-top:5px}
+/* 패널 글 — 누르면 그 자리에서 전문이 펼쳐진다 (Threads 로 넘어가지 않는다) */
+.opx{cursor:pointer}
+.opx .qf,.opx .thr{display:none}
+.opx.open .qs{display:none}
+.opx.open .qf{display:block;-webkit-line-clamp:unset;overflow:visible;white-space:pre-line}
+.opx.open .thr{display:inline-block;margin-top:6px;font-size:12px;color:var(--weight)}
+.op .more{font-weight:600;color:var(--violet);margin-left:8px}
+.opx.open .more::after{content:" 접기"}
+.opx.open .more{font-size:0}
+.opx.open .more::after{font-size:11.5px}
+.opx:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
 .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;
   background:var(--weight)}
 .av.A{background:var(--heat)} .av.T{background:var(--violet)}
@@ -523,10 +534,12 @@ function render(F){
 
   /* 오피니언 */
   const ops = (F.voices || []).map(v => v.kind === 'panel'
-    ? `<a class="op" href="https://www.threads.com/@${esc(v.handle)}"><div>
+    ? `<div class="op opx" role="button" tabindex="0" aria-expanded="false"><div>
         <div class="who">${esc(v.who)}<span>${esc(v.role || '@' + v.handle)}</span></div>
-        <q>${esc(v.text)}</q><span class="when">Threads · ${esc((v.ts || '').slice(5, 16))}</span></div>
-        <div class="av ${esc(v.tier)}">${esc((v.who || '?').trim()[0])}</div></a>`
+        <q class="qs">${esc(v.text)}</q><q class="qf">${esc(v.full || v.text)}</q>
+        <span class="when">Threads · ${esc((v.ts || '').slice(5, 16))}<b class="more">전문 보기</b></span>
+        <a class="thr" href="https://www.threads.com/@${esc(v.handle)}" target="_blank" rel="noopener">Threads에서 보기 ↗</a></div>
+        <div class="av ${esc(v.tier)}">${esc((v.who || '?').trim()[0])}</div></div>`
     : `<a class="op" href="${esc(v.url)}"><div>
         <div class="who">${esc(v.who)}<span>신뢰층이 링크</span></div>
         <span class="tr hl">${esc(v.text)}</span><span class="when">Hacker News 댓글 ${fmt(v.comments)}</span></div>
@@ -595,6 +608,13 @@ function render(F){
       <span class="src rnum"><b>${x.r.toFixed(2)}</b>추천당 댓글 · 댓글 ${fmt(x.comments)}</span></a>`).join('')}</div></section>` : '';
 
   $('#main').innerHTML = front + row + foreign + dom + com;
+
+  /* 패널 글 펼치기 — 링크(Threads에서 보기)는 그대로 열리게 둔다 */
+  document.querySelectorAll('.opx').forEach(el => {
+    const t = () => { const o = el.classList.toggle('open'); el.setAttribute('aria-expanded', o); };
+    el.addEventListener('click', e => { if (!e.target.closest('a')) t(); });
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t(); } });
+  });
 
   /* 국내 첫머리 — 톱·순위·1면 칸 */
   const mid = SL.must_id || (D.lead && D.lead.must_id);

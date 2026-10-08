@@ -722,7 +722,7 @@ def main():
         if p.get("t"):
             voices.append({"kind": "panel", "who": a.get("n"), "handle": a.get("h"),
                            "tier": a.get("tier", "C"), "role": a.get("role", ""),
-                           "text": trim(p["t"], 115), "ts": p.get("ts"),
+                           "text": trim(p["t"], 115), "full": p["t"], "ts": p.get("ts"),
                            "react": p.get("react", 0)})
         if len(voices) >= 3:
             break
