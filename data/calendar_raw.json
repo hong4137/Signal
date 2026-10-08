@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T00:39:51+09:00",
+ "generated_at": "2026-10-09T00:41:00+09:00",
  "window": {
   "from": "2026-10-09",
   "to": "2026-10-16"
@@ -7,7 +7,7 @@
  "sources": {
   "FRED": {
    "ok": true,
-   "count": 15
+   "count": 5
   },
   "Finnhub": {
    "ok": true,
@@ -54,61 +54,6 @@
   }
  ],
  "events": [
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-09",
-   "time": "21:30",
-   "region": "US",
-   "title": "미국 주간 신규 실업수당 청구",
-   "importance": 3,
-   "detail": "State Unemployment Insurance Weekly Claims Report (미 동부 2026-10-09 08:30 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=469"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-10",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-09 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-11",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-10 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-12",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-11 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-13",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-12 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
   {
    "src": "Finnhub",
    "kind": "event",
@@ -158,17 +103,6 @@
    "url": "https://finnhub.io/"
   },
   {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-14",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-13 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
    "src": "Finnhub",
    "kind": "event",
    "date": "2026-10-14",
@@ -207,17 +141,6 @@
    "src": "FRED",
    "kind": "event",
    "date": "2026-10-15",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-14 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-15",
    "time": "21:30",
    "region": "US",
    "title": "미국 소매판매",
@@ -251,45 +174,12 @@
    "src": "FRED",
    "kind": "event",
    "date": "2026-10-16",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-15 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-16",
-   "time": "21:30",
-   "region": "US",
-   "title": "미국 주간 신규 실업수당 청구",
-   "importance": 3,
-   "detail": "State Unemployment Insurance Weekly Claims Report (미 동부 2026-10-16 08:30 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=469"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-16",
    "time": "22:15",
    "region": "US",
    "title": "미국 산업생산",
    "importance": 3,
    "detail": "G.17 Industrial Production and Capacity Utilization (미 동부 2026-10-16 09:15 관행 시각)",
    "url": "https://fred.stlouisfed.org/release?rid=13"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-17",
-   "time": "03:00",
-   "region": "US",
-   "title": "FOMC 금리 결정",
-   "importance": 5,
-   "detail": "FOMC Press Release (미 동부 2026-10-16 14:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=101"
   }
  ],
  "filings": [],
@@ -2017,9 +1907,9 @@
    "date": null,
    "published": "2026-10-07 00:06",
    "region": "KR",
-   "title": "'티앤이코리아 공모주' 7~14일 수요예측...예상 공모가와 청약일정은?",
-   "detail": "희망 공모가 상단 기준 공모 규모는 2011억원, 예상 시가총액은 1조54억원이다.  상장 주관사는 신한투자증권이다. 청약일정은 20일부터 21일까지이며, 상장일은 아직 미정이다. 티앤이코리아는 다양한 산업 현장에서...",
-   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3714566"
+   "title": "'엘리스그룹 공모주' 청약일정 돌입...상장일은 오는 19일",
+   "detail": "엘리스그룹 공모주 로고 인공지능(AI) 인프라 기업 엘리스그룹은 7~8일 일반투자자 대상 공모청약을... AI PMDC(Portable Modular Data Center) 수출 및 AX 솔루션 해외 진출을 가속화할 계획이다. 상장일은 오는 19일이다.",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3714567"
   },
   {
    "src": "네이버뉴스",
@@ -2028,9 +1918,9 @@
    "date": null,
    "published": "2026-10-07 00:06",
    "region": "KR",
-   "title": "'엘리스그룹 공모주' 청약일정 돌입...상장일은 오는 19일",
-   "detail": "엘리스그룹 공모주 로고 인공지능(AI) 인프라 기업 엘리스그룹은 7~8일 일반투자자 대상 공모청약을... AI PMDC(Portable Modular Data Center) 수출 및 AX 솔루션 해외 진출을 가속화할 계획이다. 상장일은 오는 19일이다.",
-   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3714567"
+   "title": "'티앤이코리아 공모주' 7~14일 수요예측...예상 공모가와 청약일정은?",
+   "detail": "희망 공모가 상단 기준 공모 규모는 2011억원, 예상 시가총액은 1조54억원이다.  상장 주관사는 신한투자증권이다. 청약일정은 20일부터 21일까지이며, 상장일은 아직 미정이다. 티앤이코리아는 다양한 산업 현장에서...",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3714566"
   },
   {
    "src": "네이버뉴스",
@@ -2149,9 +2039,9 @@
    "date": null,
    "published": "2026-10-04 08:00",
    "region": "KR",
-   "title": "[이번주 IPO]10월 둘째 주 수요예측·청약 일정",
-   "detail": "상장주관사는 신한투자증권이다. <일반청약> ◆엘리스그룹= 희망 공모가는 7만400~9만500원이다. 총 공모 금액은 1564억~2011억원으로 예상된다. 수요예측은 지난 1일까지 진행했고 일반 청약은 오는 7~8일 양일간...",
-   "url": "https://view.asiae.co.kr/article/2026100209524915386"
+   "title": "[공모주달력]징검다리 휴일 속 빼곡한 일정…엘리스그룹 청약 돌입",
+   "detail": "10월 둘째 주 공모주 시장은 개천절 대체공휴일인 5일, 한글날인 9일을 쉬어가요. 영업일은 사흘뿐이지만 공모가 확정부터 청약과 환불까지 일정이 몰려 있어요. '코스닥 도전장' 엘리스그룹 청약 돌입 먼저...",
+   "url": "https://news.bizwatch.co.kr/article/market/2026/10/02/0030"
   },
   {
    "src": "네이버뉴스",
@@ -2160,9 +2050,9 @@
    "date": null,
    "published": "2026-10-04 08:00",
    "region": "KR",
-   "title": "[공모주달력]징검다리 휴일 속 빼곡한 일정…엘리스그룹 청약 돌입",
-   "detail": "10월 둘째 주 공모주 시장은 개천절 대체공휴일인 5일, 한글날인 9일을 쉬어가요. 영업일은 사흘뿐이지만 공모가 확정부터 청약과 환불까지 일정이 몰려 있어요. '코스닥 도전장' 엘리스그룹 청약 돌입 먼저...",
-   "url": "https://news.bizwatch.co.kr/article/market/2026/10/02/0030"
+   "title": "[이번주 IPO]10월 둘째 주 수요예측·청약 일정",
+   "detail": "상장주관사는 신한투자증권이다. <일반청약> ◆엘리스그룹= 희망 공모가는 7만400~9만500원이다. 총 공모 금액은 1564억~2011억원으로 예상된다. 수요예측은 지난 1일까지 진행했고 일반 청약은 오는 7~8일 양일간...",
+   "url": "https://view.asiae.co.kr/article/2026100209524915386"
   },
   {
    "src": "네이버뉴스",
@@ -2798,9 +2688,9 @@
    "date": null,
    "published": "2026-10-08 05:31",
    "region": "KR",
-   "title": "록히드마틴에 도전장 낸 안두릴[글로벌 모닝 브리핑]",
-   "detail": "이날 오후 공개되는 연방준비제도(Fed)의 9월 연방공개시장위원회(FOMC) 의사록을 앞두고 장기채 매도가 이어졌고, 전날 잠시 진정됐던 매도세도 되살아났습니다. 시장에서는 물가 압력과 주요국의 재정적자 및 국채...",
-   "url": "https://www.sedaily.com/article/20099289?ref=naver"
+   "title": "연준 대다수 “연내 한 번 더 금리 인상”…10월 신호는 없었다",
+   "detail": "미국 연방준비제도(Fed·연준)의 9월 연방공개시장위원회(FOMC)에서 대다수 참석자들이 연내 추가 금리... 이 외에 시장은 11월 3일 미국 중간선거를 앞두고 연준이 금리를 올리는 모험을 하지는 않을 것이라고 보고...",
+   "url": "https://www.sedaily.com/article/20099323?ref=naver"
   },
   {
    "src": "네이버뉴스",
@@ -2809,9 +2699,9 @@
    "date": null,
    "published": "2026-10-08 05:31",
    "region": "KR",
-   "title": "연준 대다수 “연내 한 번 더 금리 인상”…10월 신호는 없었다",
-   "detail": "미국 연방준비제도(Fed·연준)의 9월 연방공개시장위원회(FOMC)에서 대다수 참석자들이 연내 추가 금리... 이 외에 시장은 11월 3일 미국 중간선거를 앞두고 연준이 금리를 올리는 모험을 하지는 않을 것이라고 보고...",
-   "url": "https://www.sedaily.com/article/20099323?ref=naver"
+   "title": "록히드마틴에 도전장 낸 안두릴[글로벌 모닝 브리핑]",
+   "detail": "이날 오후 공개되는 연방준비제도(Fed)의 9월 연방공개시장위원회(FOMC) 의사록을 앞두고 장기채 매도가 이어졌고, 전날 잠시 진정됐던 매도세도 되살아났습니다. 시장에서는 물가 압력과 주요국의 재정적자 및 국채...",
+   "url": "https://www.sedaily.com/article/20099289?ref=naver"
   },
   {
    "src": "네이버뉴스",
