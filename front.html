@@ -240,13 +240,14 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .cday ul{list-style:none;margin:0;padding:0}
 .ce{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 8px;padding:8px 0;border-bottom:1px dotted var(--hair)}
 .cday li:last-child{border-bottom:0}
-.ce .ct{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted);padding-top:2px}
-.ce .cn{font-size:14px;font-weight:600;line-height:1.4;color:var(--ink);text-decoration:none}
+.ce .ct{display:flex;flex-direction:column;align-items:flex-start;gap:5px;font-family:var(--mono);font-variant-numeric:tabular-nums;
+  font-size:12px;color:var(--muted);padding-top:2px}
+.ce .cn{display:block;font-size:14px;font-weight:600;line-height:1.42;color:var(--ink);text-decoration:none;text-wrap:balance}
 .ce a.cn:hover{text-decoration:underline}
 .ce.i5 .cn{font-weight:800}
 .ce.i5 .ct{color:var(--heat);font-weight:700}
 .ce .rg{display:inline-block;font-style:normal;font-size:10.5px;font-weight:700;color:var(--muted);
-  border:1px solid var(--hair);border-radius:2px;padding:0 3px;margin-right:5px;vertical-align:2px;line-height:1.45}
+  border:1px solid var(--hair);border-radius:2px;padding:0 3px;margin:0;line-height:1.45;font-family:var(--ko)}
 .ce .uv{font-size:10.5px;font-weight:600;color:var(--muted);margin-left:4px;white-space:nowrap}
 .ce p{margin:2px 0 0;font-size:12.5px;color:var(--ink-2);line-height:1.5}
 .ce .cv{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
@@ -596,8 +597,8 @@ function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 
   const html = Object.keys(groups).sort().map(d => `<div class="cday"><b>${day(d)}<span>${rel(d)}</span></b><ul>${
     groups[d].map(e => {
       const cv = [e.consensus && '예상 ' + e.consensus, e.previous && '직전 ' + e.previous].filter(Boolean).join(' · ');
-      const nm = `<em class="rg">${esc(REG[e.region] || e.region || '')}</em>${esc(e.title)}`;
-      return `<li class="ce${e.importance >= 5 ? ' i5' : ''}"><span class="ct">${esc(e.time || '–')}</span><div>
+      const nm = esc(e.title);          // 지역 꼬리표는 왼쪽 시각 아래 — 제목이 두 줄이 돼도 왼쪽 끝이 가지런하다
+      return `<li class="ce${e.importance >= 5 ? ' i5' : ''}"><span class="ct">${esc(e.time || '–')}<em class="rg">${esc(REG[e.region] || e.region || '')}</em></span><div>
         ${e.source ? `<a class="cn" href="${esc(e.source)}" target="_blank" rel="noopener">${nm}</a>` : `<span class="cn">${nm}</span>`}
         ${e.why ? `<p>${esc(e.why)}</p>` : ''}${cv ? `<p class="cv">${esc(cv)}</p>` : ''}</div></li>`;
     }).join('')}</ul></div>`).join('');
