@@ -317,5 +317,83 @@
    "date": "2026-10-09",
    "note": "미 동부 시각은 KST로 바꿀 때 날짜가 넘어간다: 08:30 ET CPI는 같은 날 21:30, 14:00 ET 베이지북은 다음 날 03:00이라 범위 밖"
   }
+ ],
+ "naver_help": "네이버 뉴스 검색(수집기 03:00) — 짧은 헤드라인형 검색어를 최신순으로, 최근 7일 기사만 남긴다. 길고 구체적인 검색어는 옛 기사만 걸린다.",
+ "naver": [
+  {
+   "id": "nv-nextweek",
+   "q": "다음주 증시 일정",
+   "when": "always"
+  },
+  {
+   "id": "nv-thisweek",
+   "q": "이번주 증시 일정",
+   "when": "always"
+  },
+  {
+   "id": "nv-weekly",
+   "q": "주간 증시 캘린더",
+   "when": "always"
+  },
+  {
+   "id": "nv-prelim",
+   "q": "잠정실적 발표 예정",
+   "when": "months:1,4,7,10"
+  },
+  {
+   "id": "nv-earnings",
+   "q": "실적 발표 예정 컨퍼런스콜",
+   "when": "months:1,2,4,5,7,8,10,11"
+  },
+  {
+   "id": "nv-ir",
+   "q": "기업설명회 개최",
+   "when": "always"
+  },
+  {
+   "id": "nv-bok",
+   "q": "금통위 기준금리 결정 앞두고",
+   "when": "always"
+  },
+  {
+   "id": "nv-stats",
+   "q": "발표 예정 통계 고용동향 소비자물가",
+   "when": "always"
+  },
+  {
+   "id": "nv-export",
+   "q": "수출 잠정치 관세청",
+   "when": "always"
+  },
+  {
+   "id": "nv-audit",
+   "q": "국정감사 일정 과방위 산자위",
+   "when": "months:10"
+  },
+  {
+   "id": "nv-policy",
+   "q": "반도체 대책 발표 예정",
+   "when": "always"
+  },
+  {
+   "id": "nv-ipo",
+   "q": "공모주 청약 상장 일정",
+   "when": "always"
+  },
+  {
+   "id": "nv-us",
+   "q": "뉴욕증시 주간전망",
+   "when": "always"
+  },
+  {
+   "id": "nv-fomc",
+   "q": "FOMC 앞두고",
+   "when": "always"
+  },
+  {
+   "id": "nv-event",
+   "q": "신제품 공개 행사 예정 AI",
+   "when": "always"
+  }
  ]
 }
