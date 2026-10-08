@@ -1,37 +1,321 @@
 {
  "about": "경제 일정 루틴의 검색 계획표. scripts/calendar_queries.py plan 이 오늘 날짜로 빈칸을 채워 실행 목록을 만든다. q 의 {..} 는 변수, when 은 적용 시기. status: core(사람이 관리) / trial(루틴이 제안, 7회 연속 0건이면 retired).",
  "vars_help": {
-  "{y}": "올해", "{m}": "이번 달", "{wk}": "이번 달 몇째 주", "{d0}": "오늘 M월 D일", "{d5}": "5일 뒤 M월 D일",
-  "{mon}": "이번(또는 다음) 주 월요일 M월 D일", "{mon_en}": "그 월요일 영어 (October 12)", "{q}": "실적 분기(직전 분기)", "{qy}": "그 분기의 연도",
-  "{watch_kr}": "관심 종목(한국) 이름들", "{watch_us}": "관심 종목(미국 등) 이름들"
+  "{y}": "올해",
+  "{m}": "이번 달",
+  "{wk}": "이번 달 몇째 주",
+  "{d0}": "오늘 M월 D일",
+  "{d5}": "5일 뒤 M월 D일",
+  "{mon}": "이번(또는 다음) 주 월요일 M월 D일",
+  "{mon_en}": "그 월요일 영어 (October 12)",
+  "{q}": "실적 분기(직전 분기)",
+  "{qy}": "그 분기의 연도",
+  "{watch_kr}": "관심 종목(한국) 이름들",
+  "{watch_us}": "관심 종목(미국 등) 이름들"
  },
  "when_help": "always | months:1,4,7,10 | days:1-12 | dow:3-6 (월=0) — 쉼표로 여러 조건을 주면 모두 만족해야 한다",
  "watch": {
-  "kr": ["삼성전자", "SK하이닉스", "LG전자", "현대차", "LG에너지솔루션", "네이버", "카카오", "삼성바이오로직스"],
-  "us": ["NVIDIA", "TSMC", "ASML", "Microsoft", "Apple", "Alphabet", "Amazon", "Meta", "Tesla", "Micron", "Broadcom", "Netflix"]
+  "kr": [
+   "삼성전자",
+   "SK하이닉스",
+   "LG전자",
+   "현대차",
+   "LG에너지솔루션",
+   "네이버",
+   "카카오",
+   "삼성바이오로직스"
+  ],
+  "us": [
+   "NVIDIA",
+   "TSMC",
+   "ASML",
+   "Microsoft",
+   "Apple",
+   "Alphabet",
+   "Amazon",
+   "Meta",
+   "Tesla",
+   "Micron",
+   "Broadcom",
+   "Netflix"
+  ]
  },
  "trusted": {
-  "KR": ["bok.or.kr", "kostat.go.kr", "motie.go.kr", "customs.go.kr", "dart.fss.or.kr", "krx.co.kr", "yna.co.kr", "hankyung.com", "mk.co.kr", "edaily.co.kr", "sedaily.com", "news1.kr", "newsis.com"],
-  "US": ["federalreserve.gov", "bls.gov", "bea.gov", "treasurydirect.gov", "census.gov", "reuters.com", "bloomberg.com", "cnbc.com", "wsj.com", "marketwatch.com", "investing.com", "nasdaq.com"]
+  "KR": [
+   "bok.or.kr",
+   "kostat.go.kr",
+   "motie.go.kr",
+   "customs.go.kr",
+   "dart.fss.or.kr",
+   "krx.co.kr",
+   "yna.co.kr",
+   "hankyung.com",
+   "mk.co.kr",
+   "edaily.co.kr",
+   "sedaily.com",
+   "news1.kr",
+   "newsis.com"
+  ],
+  "US": [
+   "federalreserve.gov",
+   "bls.gov",
+   "bea.gov",
+   "treasurydirect.gov",
+   "census.gov",
+   "reuters.com",
+   "bloomberg.com",
+   "cnbc.com",
+   "wsj.com",
+   "marketwatch.com",
+   "investing.com",
+   "nasdaq.com"
+  ]
  },
  "queries": [
-  {"id": "kr-week", "q": "이번 주 증시 일정 {m}월 {wk}주차", "when": "always", "status": "core", "why": "국내 주간 일정표 — 후보를 넓게"},
-  {"id": "kr-nextweek", "q": "다음 주 주요 경제 일정 {mon} 증시 캘린더", "when": "dow:3-6", "status": "core", "why": "목~일엔 다음 주 일정표가 나온다"},
-  {"id": "us-week", "q": "economic calendar week of {mon_en} {y} CPI Fed earnings", "when": "always", "status": "core", "why": "미국 주간 지표·실적"},
-  {"id": "us-earnings-week", "q": "earnings this week {mon_en} {y}", "when": "always", "status": "core", "why": "미국 실적 발표 주간표"},
-  {"id": "fed-speak", "q": "Fed speakers this week {mon_en} {y} Powell Warsh FOMC minutes", "when": "always", "status": "core", "why": "연준 발언·의사록"},
-  {"id": "kr-bok", "q": "한은 금통위 {m}월 기준금리 결정 일정 {y}", "when": "always", "status": "core", "why": "금통위·의사록"},
-  {"id": "kr-stats", "q": "국가데이터처 {m}월 고용동향 소비자물가 산업활동동향 발표 일정", "when": "always", "status": "core", "why": "통계청(국가데이터처) 공표 일정"},
-  {"id": "kr-prelim", "q": "{q}분기 잠정실적 발표 예정 {watch_kr}", "when": "months:1,4,7,10,days:1-14", "status": "core", "why": "잠정실적 시즌 — 삼성전자 같은 걸 놓치지 않게"},
-  {"id": "kr-earnings", "q": "{qy}년 {q}분기 실적 발표일 컨퍼런스콜 {watch_kr}", "when": "months:1,2,4,5,7,8,10,11", "status": "core", "why": "국내 대형주 실적·IR 일정"},
-  {"id": "us-earnings-watch", "q": "Q{q} {qy} earnings date {watch_us}", "when": "months:1,2,4,5,7,8,10,11", "status": "core", "why": "관심 종목 실적일"},
-  {"id": "kr-policy", "q": "반도체 AI 정부 발표 예정 {d0} {d5} 대책 국회", "when": "always", "status": "core", "why": "정책 발표·국회 일정"},
-  {"id": "kr-audit", "q": "국정감사 일정 {d0} 과방위 산자위 정무위", "when": "months:10", "status": "core", "why": "10월 국정감사 — 테크·산업 기관 감사일"},
-  {"id": "tech-events", "q": "tech event keynote launch {mon_en} {y} Apple Google Nvidia OpenAI", "when": "always", "status": "core", "why": "테크 발표회"},
-  {"id": "global-cb", "q": "ECB BOJ rate decision date {y} {m}월 일본은행 유럽중앙은행", "when": "always", "status": "core", "why": "해외 중앙은행"},
-  {"id": "china-data", "q": "China economic data release this week {mon_en} {y} CPI exports PMI", "when": "always", "status": "core", "why": "중국 지표"},
-  {"id": "us-policy", "q": "tariff deadline government shutdown deadline {mon_en} {y}", "when": "always", "status": "core", "why": "정책 마감 시한"}
+  {
+   "id": "kr-week",
+   "q": "이번 주 증시 일정 {m}월 {wk}주차",
+   "when": "always",
+   "status": "core",
+   "why": "국내 주간 일정표 — 후보를 넓게"
+  },
+  {
+   "id": "kr-nextweek",
+   "q": "다음 주 주요 경제 일정 {mon} 증시 캘린더",
+   "when": "dow:3-6",
+   "status": "core",
+   "why": "목~일엔 다음 주 일정표가 나온다"
+  },
+  {
+   "id": "us-week",
+   "q": "economic calendar week of {mon_en} {y} CPI Fed earnings",
+   "when": "always",
+   "status": "core",
+   "why": "미국 주간 지표·실적"
+  },
+  {
+   "id": "us-earnings-week",
+   "q": "earnings this week {mon_en} {y}",
+   "when": "always",
+   "status": "core",
+   "why": "미국 실적 발표 주간표"
+  },
+  {
+   "id": "fed-speak",
+   "q": "Fed speakers this week {mon_en} {y} Powell Warsh FOMC minutes",
+   "when": "always",
+   "status": "core",
+   "why": "연준 발언·의사록"
+  },
+  {
+   "id": "kr-bok",
+   "q": "한은 금통위 {m}월 기준금리 결정 일정 {y}",
+   "when": "always",
+   "status": "core",
+   "why": "금통위·의사록"
+  },
+  {
+   "id": "kr-stats",
+   "q": "국가데이터처 {m}월 고용동향 소비자물가 산업활동동향 발표 일정",
+   "when": "always",
+   "status": "core",
+   "why": "통계청(국가데이터처) 공표 일정"
+  },
+  {
+   "id": "kr-prelim",
+   "q": "{q}분기 잠정실적 발표 예정 {watch_kr}",
+   "when": "months:1,4,7,10,days:1-14",
+   "status": "core",
+   "why": "잠정실적 시즌 — 삼성전자 같은 걸 놓치지 않게"
+  },
+  {
+   "id": "kr-earnings",
+   "q": "{qy}년 {q}분기 실적 발표일 컨퍼런스콜 {watch_kr}",
+   "when": "months:1,2,4,5,7,8,10,11",
+   "status": "core",
+   "why": "국내 대형주 실적·IR 일정"
+  },
+  {
+   "id": "us-earnings-watch",
+   "q": "Q{q} {qy} earnings date {watch_us}",
+   "when": "months:1,2,4,5,7,8,10,11",
+   "status": "core",
+   "why": "관심 종목 실적일"
+  },
+  {
+   "id": "kr-policy",
+   "q": "반도체 AI 정부 발표 예정 {d0} {d5} 대책 국회",
+   "when": "always",
+   "status": "core",
+   "why": "정책 발표·국회 일정"
+  },
+  {
+   "id": "kr-audit",
+   "q": "국정감사 일정 {d0} 과방위 산자위 정무위",
+   "when": "months:10",
+   "status": "core",
+   "why": "10월 국정감사 — 테크·산업 기관 감사일"
+  },
+  {
+   "id": "tech-events",
+   "q": "tech event keynote launch {mon_en} {y} Apple Google Nvidia OpenAI",
+   "when": "always",
+   "status": "core",
+   "why": "테크 발표회"
+  },
+  {
+   "id": "global-cb",
+   "q": "ECB BOJ rate decision date {y} {m}월 일본은행 유럽중앙은행",
+   "when": "always",
+   "status": "core",
+   "why": "해외 중앙은행"
+  },
+  {
+   "id": "china-data",
+   "q": "China economic data release this week {mon_en} {y} CPI exports PMI",
+   "when": "always",
+   "status": "core",
+   "why": "중국 지표"
+  },
+  {
+   "id": "us-policy",
+   "q": "tariff deadline government shutdown deadline {mon_en} {y}",
+   "when": "always",
+   "status": "core",
+   "why": "정책 마감 시한"
+  },
+  {
+   "id": "t-20261009-1",
+   "q": "{m} 미국 소비자물가 발표일 BLS 8:30 ET",
+   "when": "always",
+   "status": "trial",
+   "why": "BLS 발표일·시각을 공식 달력 기준으로 교차 확인",
+   "added": "2026-10-09"
+  },
+  {
+   "id": "t-20261009-2",
+   "q": "{mon_en} week bank earnings date before market open {y}",
+   "when": "always",
+   "status": "trial",
+   "why": "대형은행 실적 날짜와 장전 발표 여부 확인",
+   "added": "2026-10-09"
+  }
  ],
- "stats": {},
- "learned": []
+ "stats": {
+  "kr-week": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "kr-nextweek": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "us-week": {
+   "runs": 1,
+   "hits": 7,
+   "zero_streak": 0,
+   "last_run": "2026-10-09",
+   "last_hit": "2026-10-09"
+  },
+  "us-earnings-week": {
+   "runs": 1,
+   "hits": 5,
+   "zero_streak": 0,
+   "last_run": "2026-10-09",
+   "last_hit": "2026-10-09"
+  },
+  "fed-speak": {
+   "runs": 1,
+   "hits": 1,
+   "zero_streak": 0,
+   "last_run": "2026-10-09",
+   "last_hit": "2026-10-09"
+  },
+  "kr-bok": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "kr-stats": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "kr-prelim": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "kr-earnings": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "us-earnings-watch": {
+   "runs": 1,
+   "hits": 1,
+   "zero_streak": 0,
+   "last_run": "2026-10-09",
+   "last_hit": "2026-10-09"
+  },
+  "kr-policy": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "kr-audit": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "tech-events": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "global-cb": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  },
+  "china-data": {
+   "runs": 1,
+   "hits": 1,
+   "zero_streak": 0,
+   "last_run": "2026-10-09",
+   "last_hit": "2026-10-09"
+  },
+  "us-policy": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-09"
+  }
+ },
+ "learned": [
+  {
+   "date": "2026-10-09",
+   "note": "BLS 지표(CPI·PPI·소매판매) 날짜는 akrostec·financecalendar 등 2곳에서 교차 확인이 됐다"
+  },
+  {
+   "date": "2026-10-09",
+   "note": "10일이 토요일인 관세청 수출입 잠정치는 다음 평일로 밀리는데, 검색으로는 확정 못 했다 — 관세청 보도자료로만 확인 가능"
+  },
+  {
+   "date": "2026-10-09",
+   "note": "미 동부 시각은 KST로 바꿀 때 날짜가 넘어간다: 08:30 ET CPI는 같은 날 21:30, 14:00 ET 베이지북은 다음 날 03:00이라 범위 밖"
+  }
+ ]
 }
