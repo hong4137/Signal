@@ -181,14 +181,26 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .op .when{display:block;font-size:11.5px;color:var(--muted);margin-top:5px}
 /* 패널 글 — 누르면 그 자리에서 전문이 펼쳐진다 (Threads 로 넘어가지 않는다) */
 .opx{cursor:pointer}
-.opx .qf,.opx .thr{display:none}
-.opx.open .qs{display:none}
-.opx.open .qf{display:block;-webkit-line-clamp:unset;overflow:visible;white-space:pre-line}
-.opx.open .thr{display:inline-block;margin-top:6px;font-size:12px;color:var(--weight)}
+.opx:hover q{color:var(--ink)}
+#opdlg{border:0;padding:0;width:min(560px,calc(100% - 32px));max-height:min(78vh,720px);background:var(--sheet);color:var(--ink);
+  border-radius:8px;box-shadow:0 24px 70px rgba(0,0,0,.45);display:none;flex-direction:column}
+#opdlg[open]{display:flex}
+#opdlg::backdrop{background:rgba(6,8,13,.55)}
+#opdlg .dh{display:grid;grid-template-columns:44px minmax(0,1fr) 32px;gap:12px;align-items:center;padding:18px 20px 12px;border-bottom:1px solid var(--hair)}
+#opdlg .dh b{display:block;font-size:15px;color:var(--violet)}
+#opdlg .dh span{font-size:12.5px;color:var(--muted)}
+#opdlg .dx{background:none;border:0;color:var(--muted);font-size:26px;line-height:1;cursor:pointer;padding:0}
+#opdlg .db{padding:16px 20px;overflow:auto;white-space:pre-line;font-family:var(--serif-ko);font-size:16px;line-height:1.75}
+#opdlg .df{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 20px 16px;border-top:1px solid var(--hair);font-size:12.5px;color:var(--muted)}
+#opdlg .df a{color:var(--weight);font-weight:700}
+#opdlg .dn{margin-left:auto;display:flex;align-items:center;gap:8px}
+#opdlg .dn button{width:32px;height:32px;border-radius:50%;border:1px solid var(--hair);background:none;color:var(--ink);cursor:pointer;font-size:14px}
+#opdlg .dn button:disabled{opacity:.3;cursor:default}
+#opdlg .dn i{font-style:normal;font-family:var(--mono)}
+@media(max-width:700px){
+  #opdlg{width:100%;max-width:none;margin:auto 0 0;border-radius:14px 14px 0 0;max-height:85vh}   /* 아래에서 올라오는 시트 */
+}
 .op .more{font-weight:600;color:var(--violet);margin-left:8px}
-.opx.open .more::after{content:" 접기"}
-.opx.open .more{font-size:0}
-.opx.open .more::after{font-size:11.5px}
 .opx:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
 .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;
   background:var(--weight)}
@@ -602,11 +614,11 @@ function render(F){
 
   /* 오피니언 */
   const ops = (F.voices || []).map(v => v.kind === 'panel'
-    ? `<div class="op opx" role="button" tabindex="0" aria-expanded="false"><div>
+    ? `<div class="op opx" role="button" tabindex="0" aria-haspopup="dialog"><div>
         <div class="who">${esc(v.who)}<span>${esc(v.role || '@' + v.handle)}</span></div>
-        <q class="qs">${esc(v.text)}</q><q class="qf">${esc(v.full || v.text)}</q>
+        <q class="qs">${esc(v.text)}</q>
         <span class="when">국내 필진 · Threads · ${esc((v.ts || '').slice(5, 16))}<b class="more">전문 보기</b></span>
-        <a class="thr" href="https://www.threads.com/@${esc(v.handle)}" target="_blank" rel="noopener">Threads에서 보기 ↗</a></div>
+        </div>
         <div class="av ${esc(v.tier)}">${esc((v.who || '?').trim()[0])}</div></div>`
     : `<a class="op" href="${esc(v.url)}"><div>
         <div class="who">${esc(v.who)}<span>해외 필진이 소개한 글</span></div>
@@ -683,11 +695,53 @@ function render(F){
 
   $('#main').innerHTML = front + row + opsec + foreign + dom + com;
 
-  /* 패널 글 펼치기 — 링크(Threads에서 보기)는 그대로 열리게 둔다 */
-  document.querySelectorAll('.opx').forEach(el => {
-    const t = () => { const o = el.classList.toggle('open'); el.setAttribute('aria-expanded', o); };
-    el.addEventListener('click', e => { if (!e.target.closest('a')) t(); });
-    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t(); } });
+  /* 필진 글 전문 — 그 자리에서 늘이지 않고 미니 창으로. ←/→ 로 다른 필진 글, Esc·바깥 클릭으로 닫기 */
+  const PV = (F.voices || []).filter(v => v.kind === 'panel');
+  let dlg = document.getElementById('opdlg');
+  if (!dlg && PV.length) {
+    dlg = document.createElement('dialog');
+    dlg.id = 'opdlg';
+    dlg.setAttribute('aria-label', '필진 글 전문');
+    document.body.appendChild(dlg);
+    dlg.addEventListener('click', e => {
+      if (e.target === dlg) dlg.close();                       // 바깥(배경) 클릭
+      const b = e.target.closest('[data-go]');
+      if (b) showOp(+b.dataset.go);
+      if (e.target.closest('.dx')) dlg.close();
+    });
+    let tx = null;                                             // 휴대폰: 옆으로 밀어 넘기기
+    dlg.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+    dlg.addEventListener('touchend', e => {
+      if (tx === null) return;
+      const dx = e.changedTouches[0].clientX - tx, n = +dlg.dataset.i; tx = null;
+      if (dx < -60 && n < PV.length - 1) showOp(n + 1);
+      if (dx > 60 && n > 0) showOp(n - 1);
+    });
+    dlg.addEventListener('keydown', e => {
+      const n = +dlg.dataset.i;
+      if (e.key === 'ArrowRight' && n < PV.length - 1) showOp(n + 1);
+      if (e.key === 'ArrowLeft' && n > 0) showOp(n - 1);
+    });
+  }
+  function showOp(n){
+    const v = PV[n]; if (!v) return;
+    dlg.dataset.i = n;
+    dlg.innerHTML = `<div class="dh"><div class="av ${esc(v.tier)}">${esc((v.who || '?').trim()[0])}</div>
+        <div><b>${esc(v.who)}</b><span>${esc(v.role || '@' + v.handle)}</span></div>
+        <button class="dx" type="button" aria-label="닫기">×</button></div>
+      <div class="db">${esc(v.full || v.text)}</div>
+      <div class="df"><span>국내 필진 · Threads · ${esc((v.ts || '').slice(5, 16))}</span>
+        <a href="https://www.threads.com/@${esc(v.handle)}" target="_blank" rel="noopener">Threads에서 보기 ↗</a>
+        <span class="dn"><button type="button" data-go="${n - 1}" ${n ? '' : 'disabled'} aria-label="이전 글">←</button>
+          <i>${n + 1} / ${PV.length}</i>
+          <button type="button" data-go="${n + 1}" ${n < PV.length - 1 ? '' : 'disabled'} aria-label="다음 글">→</button></span></div>`;
+    if (!dlg.open) dlg.showModal();
+    dlg.querySelector('.db').scrollTop = 0;
+  }
+  document.querySelectorAll('.opx').forEach((el, n) => {
+    const open = () => showOp(n);
+    el.addEventListener('click', e => { if (!e.target.closest('a')) open(); });
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
   });
 
   /* 1면 칸 맞추기 — '숫자로 본 오늘'을 톱 칸과 일정 칸 중 짧은 쪽 아래에 붙인다 (일정 수가 날마다 달라서) */
