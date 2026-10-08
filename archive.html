@@ -1,35 +1,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Signal 기록</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 :root{
   --ground:#EDF0F3; --panel:#FFFFFF; --panel-2:#F6F8FA;
   --ink:#0D1117; --ink-2:#39424D; --muted:#69737F;
-  --rule:#D6DCE3; --rule-2:#E7EBF0; --grid:#006E980C;
-  --heat:#C2491F; --heat-15:#C2491F26; --heat-08:#C2491F14;
-  --weight:#006E98; --weight-15:#006E9826; --weight-08:#006E9810;
+  --rule:#D6DCE3; --rule-2:#E7EBF0; --grid:#3D63F00C;
+  --heat:#E2264F; --heat-15:#E2264F26; --heat-08:#E2264F14;
+  --weight:#3D63F0; --weight-15:#3D63F026; --weight-08:#3D63F010;
   --shadow:0 1px 2px rgba(13,17,23,.05);
-  --serif:"Instrument Serif",Georgia,serif;
+  --serif:"Sora","IBM Plex Sans KR",sans-serif;
   --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
-    --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
-    --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
-    --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
-    --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
+    --ground:#04060E; --panel:#090E21; --panel-2:#070B1A;
+    --ink:#F3F4F8; --ink-2:#AFB6C0; --muted:#7E8996;
+    --rule:#1E2440; --rule-2:#141A33; --grid:#7C95FF0E;
+    --heat:#FF5C7C; --heat-15:#FF5C7C2E; --heat-08:#FF5C7C1A;
+    --weight:#7C95FF; --weight-15:#7C95FF30; --weight-08:#7C95FF18;
     --shadow:0 2px 14px rgba(0,0,0,.4);
   }
 }
 :root[data-theme="dark"]{
-  --ground:#0A0D14; --panel:#111620; --panel-2:#0D121A;
-  --ink:#E8E6E1; --ink-2:#AFB6C0; --muted:#7E8996;
-  --rule:#1D2430; --rule-2:#161C26; --grid:#18A2C60E;
-  --heat:#D2603A; --heat-15:#D2603A2E; --heat-08:#D2603A1A;
-  --weight:#18A2C6; --weight-15:#18A2C630; --weight-08:#18A2C618;
+  --ground:#04060E; --panel:#090E21; --panel-2:#070B1A;
+  --ink:#F3F4F8; --ink-2:#AFB6C0; --muted:#7E8996;
+  --rule:#1E2440; --rule-2:#141A33; --grid:#7C95FF0E;
+  --heat:#FF5C7C; --heat-15:#FF5C7C2E; --heat-08:#FF5C7C1A;
+  --weight:#7C95FF; --weight-15:#7C95FF30; --weight-08:#7C95FF18;
   --shadow:0 2px 14px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}

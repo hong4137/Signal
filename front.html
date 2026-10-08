@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Daily UptoDate</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230A0D14%22/%3E%3Ctext x=%2232%22 y=%2248%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-style=%22italic%22 font-size=%2246%22 fill=%22%23D2603A%22%3EU%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%234E74FA%22/%3E%3Cstop offset=%22.55%22 stop-color=%22%23AC7DFF%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F94E6F%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23090E21%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2225%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%224.5%22/%3E%3Cpath d=%22M24 22v11a8 8 0 0 0 16 0v-6%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%225%22 stroke-linecap=%22round%22/%3E%3Cpath d=%22M35 28l5-6 5 6%22 fill=%22none%22 stroke=%22%23F94E6F%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
 <!--og:start-->
 <!-- 미리보기 태그는 고정이다. 썸네일은 scripts/og_static.html 로 찍은 data/og.png 한 장. -->
 <meta name="description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
@@ -11,14 +11,14 @@
 <meta property="og:title" content="Daily UptoDate">
 <meta property="og:description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
 <meta property="og:url" content="https://signal.sharktalk.co.kr/front.html">
-<meta property="og:image" content="https://signal.sharktalk.co.kr/data/og.png?v=static1">
+<meta property="og:image" content="https://signal.sharktalk.co.kr/data/og.png?v=static2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Daily UptoDate — 외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것">
 <meta name="twitter:card" content="summary_large_image">
 <!--og:end-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 /* ─────────────────────────────────────────────────────────────
    Daily UptoDate — AI·테크 신문 1면.
@@ -29,31 +29,34 @@
    · 작은 고정폭 꼬리표 대신 읽히는 고딕 꼬리표. 숫자만 고정폭.
    ───────────────────────────────────────────────────────────── */
 :root{
-  --ground:#E6E9ED; --sheet:#FFFFFF; --ink:#111418; --ink-2:#3A424C; --muted:#6B7480;
-  --rule:#111418; --hair:#DDE2E7; --soft:#F4F6F8;
-  --heat:#C2491F; --weight:#006E98; --violet:#6A4FD0;
+  --ground:#EDEEF2; --sheet:#FFFFFF; --ink:#111216; --ink-2:#4A4D57; --muted:#7A7E8A;
+  --rule:#111216; --hair:#E6E7EC; --soft:#F4F4F7;
+  --heat:#E2264F; --weight:#3D63F0; --violet:#8B5CF6;
+  --blue:#4E74FA; --pur:#AC7DFF; --pink:#F94E6F; --bar:#141519;
+  --grad:linear-gradient(90deg,#4E74FA 0%,#AC7DFF 55%,#F94E6F 100%);
   --shadow:0 1px 0 rgba(13,17,23,.04),0 18px 40px -24px rgba(13,17,23,.28);
   /* 데이터 그림 — 테마와 무관하게 어둡다 (사진 자리) */
   --c-bg:#0A0D14; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996; --c-rule:#232B38;
-  --c-heat:#D2603A; --c-weight:#18A2C6;
+  --c-heat:#F94E6F; --c-weight:#4E74FA;
   --ko:"Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --serif-ko:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
-  --serif:"Instrument Serif",Georgia,serif;
+  --serif:"Sora",var(--ko);
+  --latin:"Sora","Pretendard Variable",Pretendard,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --ground:#06080D; --sheet:#0E131C; --ink:#ECEAE5; --ink-2:#B4BBC5; --muted:#808B98;
-    --rule:#ECEAE5; --hair:#232B37; --soft:#141A24;
-    --heat:#D2603A; --weight:#18A2C6; --violet:#9C88F7;
+    --ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
+    --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C;
+    --heat:#FF5C7C; --weight:#7C95FF; --violet:#B794FF; --bar:#000000;
     --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
     --c-bg:#05070B; --c-rule:#1C2330;
   }
 }
 :root[data-theme="dark"]{
-  --ground:#06080D; --sheet:#0E131C; --ink:#ECEAE5; --ink-2:#B4BBC5; --muted:#808B98;
-  --rule:#ECEAE5; --hair:#232B37; --soft:#141A24;
-  --heat:#D2603A; --weight:#18A2C6; --violet:#9C88F7;
+  --ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
+  --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C;
+  --heat:#FF5C7C; --weight:#7C95FF; --violet:#B794FF; --bar:#000000;
   --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
   --c-bg:#05070B; --c-rule:#1C2330;
 }
@@ -67,21 +70,27 @@ img{display:block;max-width:100%}
 .ph{display:block}
 figure{margin:0}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
-::selection{background:#D2603A33}
+::selection{background:#AC7DFF44}
 h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 
 .sheet{max-width:1240px;margin:24px auto 64px;background:var(--sheet);box-shadow:var(--shadow);padding:0 36px 36px}
 
 /* ── 상단 띠 · 제호 · 날짜줄 ── */
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0 10px;
-  font-size:12.5px;color:var(--muted)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 36px;margin:0 -36px;
+  font-size:12.5px;color:#C9CBD3;background:var(--bar)}
 .topbar nav{display:flex;gap:4px}
-.topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:var(--ink-2);border:1px solid var(--hair);background:none;
+.topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:#E7E8EE;border:1px solid #3A3D47;background:none;
   border-radius:999px;padding:3px 12px;cursor:pointer}
-.topbar nav a.on{color:var(--sheet);background:var(--ink);border-color:var(--ink)}
-.mast{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0 9px;text-align:center}
-.name{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(40px,5.4vw,66px);line-height:.95;letter-spacing:-.02em}
-.name em{color:var(--heat);font-style:italic}
+.topbar nav a.on{color:#fff;background:var(--grad);border-color:transparent}
+.mast{border-bottom:1px solid var(--rule);padding:22px 0 14px;text-align:center}
+.name{margin:0;line-height:1}
+.name a{display:inline-flex;align-items:center;gap:clamp(12px,1.6vw,20px)}
+.name .seal{width:clamp(58px,7vw,92px);height:auto;flex:none;color:var(--ink)}
+#seal{display:flex}
+.name .wm{display:flex;flex-direction:column;align-items:flex-start;font-family:var(--latin);font-weight:800;
+  font-size:clamp(44px,6.2vw,80px);letter-spacing:-.045em;line-height:.95;color:var(--ink)}
+.name .wm small{font:700 clamp(10px,1vw,13px)/1 var(--latin);letter-spacing:.42em;color:var(--muted);margin:0 0 .28em .12em}
+.name .wm b{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{margin-top:7px;font-size:12.5px;letter-spacing:.12em;color:var(--ink-2)}
 .dateline{display:flex;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;border-bottom:3px double var(--rule);
   padding:8px 0 7px;font-size:12.5px;color:var(--ink-2)}
@@ -90,7 +99,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .secnav{display:flex;justify-content:center;gap:28px;padding:9px 0 8px;border-bottom:1px solid var(--hair);
   font-size:14px;font-weight:700}
 .secnav a{color:var(--ink-2)}
-.secnav a:hover{color:var(--heat)}
+.secnav a:hover{color:var(--ink);box-shadow:inset 0 -3px 0 0 var(--pur)}
 .secn{scroll-margin-top:12px}
 
 /* ── 꼬리표 ── */
@@ -136,7 +145,8 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
   border-radius:999px;padding:1px 10px}
 
 /* 톱 */
-.lead .kick{font-size:13px;font-weight:800;color:var(--heat);margin-bottom:8px}
+.lead .kick{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--grad);border-radius:999px;
+  padding:4px 11px;margin-bottom:10px;letter-spacing:.01em}
 .lead h2{font-size:clamp(28px,3vw,40px);line-height:1.24;margin-bottom:14px}
 .lead .subh{font-size:18px;font-weight:700;color:var(--ink-2);margin:-4px 0 14px;line-height:1.45;display:none}
 .lead .deck{font-size:16.5px;line-height:1.72;color:var(--ink);margin:14px 0 12px}
@@ -209,7 +219,9 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .numbox{margin-top:18px;border-top:2px solid var(--rule);padding-top:9px}
 .flead .numbox{margin-top:22px}
 /* 주요 경제 일정 */
-.calbox .mini{margin-top:0}
+.calbox{border:2px solid transparent;border-radius:14px;padding:12px 14px 6px;
+  background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box}
+.calbox .mini{margin-top:0;border-top:0;padding-top:0}
 .calnone{margin:10px 0 0}
 .cpager{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--muted)}
 .cpager i{font-style:normal;font-family:var(--mono)}
@@ -313,7 +325,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
   padding:11px 0;border-bottom:1px solid var(--hair)}
 .domlist li:first-child{padding-top:0}
 .domlist li:last-child{border:0}
-.domlist .rk{font-family:var(--serif);font-size:24px;line-height:1;color:var(--muted)}
+.domlist .rk{font-family:var(--latin);font-weight:800;font-size:22px;line-height:1;color:var(--muted)}
 .domlist .t{font-weight:700;font-size:16px;line-height:1.45}
 .domlist .s{display:block;font-size:12px;color:var(--muted);margin-top:2px}
 .domlist .l2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
@@ -374,9 +386,10 @@ footer a{color:var(--weight)}
 @media(max-width:700px){
   body{font-size:16px;background:var(--sheet)}
   .sheet{margin:0;padding:0 16px 28px;box-shadow:none}
-  .topbar{padding:10px 0 8px}
+  .topbar{padding:9px 16px;margin:0 -16px}
   .topbar>span{display:none}
-  .topbar nav{width:100%;justify-content:flex-end}
+  .topbar nav{width:100%;justify-content:flex-end;flex-wrap:nowrap}
+  .topbar nav a,.topbar button{padding:3px 10px;white-space:nowrap}
   .mast{padding:10px 0 8px}
   .name{font-size:38px}
   .tag{font-size:11.5px;letter-spacing:.04em}
@@ -397,7 +410,7 @@ footer a{color:var(--weight)}
   .lead .pc .q,.lead .pc .shade{display:none}
   .lead .pc figcaption{padding:0 16px}
   .lead>*:not(.pc):not(.issue){padding-left:16px;padding-right:16px}
-  .lead .kick{margin:0 0 6px}
+  .lead .kick{margin:0 0 8px;width:fit-content}
   .lead h2{font-size:25px;line-height:1.32;margin-bottom:8px}
   .lead .subh{display:block;font-size:16px;margin:0 0 10px}
   .lead .deck{font-size:16px;line-height:1.75;margin:8px 0 10px;
@@ -472,7 +485,7 @@ footer a{color:var(--weight)}
     </nav>
   </div>
   <header class="mast" id="top">
-    <h1 class="name"><a href="/" title="홈으로">Daily <em>UptoDate</em></a></h1>
+    <h1 class="name"><a href="/" title="홈으로" aria-label="Daily UptoDate"><span id="seal"></span><span class="wm"><small>DAILY</small><span>Upto<b>Date</b></span></span></a></h1>
     <div class="tag">외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것</div>
   </header>
   <div class="dateline" id="dateline"><span>…</span></div>
@@ -658,9 +671,32 @@ function balanceFront(){
   go(0);
 }
 
+/* 날짜 소인 — 로고. 가운데는 그날 판 날짜, 07:40(발행 시각) 눈금만 핑크 */
+function sealSVG(ymd){
+  const MON = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const [y, m, d] = (ymd || new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10)).split('-');
+  const ticks = Array.from({length: 60}, (_, i) => {
+    const a = i / 60 * 2 * Math.PI - Math.PI / 2, big = i % 5 === 0, hot = i === 46;
+    const r2 = hot ? 29.4 : big ? 32.6 : 33.8, f = n => (50 + n).toFixed(2);
+    return `<line x1="${f(35.2 * Math.cos(a))}" y1="${f(35.2 * Math.sin(a))}" x2="${f(r2 * Math.cos(a))}" y2="${f(r2 * Math.sin(a))}" stroke="${hot ? '#F94E6F' : 'url(#sg)'}" stroke-width="${hot ? 2.6 : big ? 1.1 : .55}" stroke-linecap="round"/>`;
+  }).join('');
+  return `<svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+    <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4E74FA"/><stop offset=".55" stop-color="#AC7DFF"/><stop offset="1" stop-color="#F94E6F"/></linearGradient>
+      <path id="sring" d="M50 50m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
+    <circle cx="50" cy="50" r="47.5" fill="none" stroke="url(#sg)" stroke-width="2.4"/>
+    <circle cx="50" cy="50" r="35.6" fill="none" stroke="url(#sg)" stroke-width="1.1"/>
+    <text font-family="Sora,sans-serif" font-weight="700" font-size="7" fill="currentColor"><textPath href="#sring" textLength="255" lengthAdjust="spacing">DAILY UPTODATE ✦ AI &amp; TECH MORNING EDITION ✦ SEOUL ✦&#160;</textPath></text>
+    ${ticks}
+    <text x="50" y="41.5" text-anchor="middle" font-family="Sora,sans-serif" font-weight="700" font-size="6.4" letter-spacing="1.4" fill="currentColor">${MON[+m - 1]} · ${y}</text>
+    <text x="50" y="67" text-anchor="middle" font-family="Sora,sans-serif" font-weight="800" font-size="27" letter-spacing="-1.5" fill="currentColor">${d}</text>
+  </svg>`;
+}
+document.getElementById('seal').innerHTML = sealSVG();
+
 function render(F){
   const L = F.lead, R = L && L.reaction, S = F.sources || {}, SL = F.slots || { side: [], row: [] };
   const ymd = (F.edition || '').slice(0, 10);
+  if (ymd) document.getElementById('seal').innerHTML = sealSVG(ymd);
   $('#dateline').innerHTML = `<span><b>${esc(korDate(ymd))}</b></span><span>제 ${F.no ?? '–'}호</span>
     <span class="src3">기준 시각 — 외신 ${esc(S.briefing || '–')} · 국내 ${esc((S.must || '–').slice(5))} · 커뮤니티 ${esc((S.signal || '–').slice(5))}</span>`;
 
