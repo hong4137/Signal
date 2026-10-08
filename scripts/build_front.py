@@ -739,6 +739,19 @@ def main():
     if first:
         no = (now.date() - datetime.strptime(first, "%Y-%m-%d").date()).days + 1
 
+    # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json 에서 오늘~5일 뒤 ──
+    cal = load(os.path.join(DATA, "calendar.json"), {}) or {}
+    d0 = now.date().isoformat()
+    d5 = (now.date() + timedelta(days=5)).isoformat()
+    cal_ev = [e for e in (cal.get("events") or [])
+              if isinstance(e, dict) and d0 <= str(e.get("date", "")) <= d5 and e.get("title")
+              and int(e.get("importance") or 0) >= 3]
+    cal_ev.sort(key=lambda e: (e["date"], e.get("time") or "99:99"))
+    calendar = {"generated_at": cal.get("generated_at"), "from": d0, "to": d5,
+                "events": [{k: e.get(k) for k in ("date", "time", "region", "category", "title", "importance",
+                                                   "why", "consensus", "previous", "source", "verified")}
+                           for e in cal_ev]} if cal_ev else None
+
     out = {
         "edition": now.strftime("%Y-%m-%d %H:%M"),
         "no": no,
@@ -749,7 +762,7 @@ def main():
                  "notes": desk.get("notes") or []},
         "lead": lead, "slots": slots, "left": [], "foreign": foreign, "wire": wire, "features": features,
         "temperature": temp,
-        "domestic": domestic, "voices": voices,
+        "domestic": domestic, "voices": voices, "calendar": calendar,
     }
     io.open(os.path.join(DATA, "front.json"), "w", encoding="utf-8").write(
         json.dumps(out, ensure_ascii=False, indent=1))
