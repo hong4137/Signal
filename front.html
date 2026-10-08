@@ -211,6 +211,16 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 /* 주요 경제 일정 */
 .calbox .mini{margin-top:0}
 .calnone{margin:10px 0 0}
+.cpager{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--muted)}
+.cpager i{font-style:normal;font-family:var(--mono)}
+.cpager button{width:28px;height:28px;border-radius:50%;border:1px solid var(--hair);background:none;color:var(--ink);cursor:pointer;font-size:15px;line-height:1}
+.cpager button:disabled{opacity:.3;cursor:default}
+/* 부톱 — 사이드에서 내려온 기사, 톱 아래 가로 배치 */
+.flead .story.sub{display:grid;grid-template-columns:minmax(0,1fr) 200px;column-gap:18px;align-items:start;
+  margin:24px 0 0;padding:16px 0 0;border-top:1px solid var(--rule);border-bottom:0}
+.flead .story.sub>*{grid-column:1}
+.flead .story.sub .ph{grid-column:2;grid-row:1/span 6;margin:2px 0 0}
+.flead .story.sub h3{font-size:20px}
 .cday{margin-top:6px}
 .cday>b{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:800;
   padding:4px 0 3px;border-bottom:1px solid var(--hair)}
@@ -582,6 +592,72 @@ function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 
     ${html || '<p class="src calnone">사흘 안에 확정된 주요 일정이 없다</p>'}</div>`;
 }
 
+function balanceFront(){
+  const fs = document.querySelector('.fside'), fl = document.querySelector('.flead'), fo = document.querySelector('.fop');
+  if (!fs || !fl || !fo) return;
+  const inner = (el, skip) => [...el.children].filter(c => c !== skip).reduce((a, c) => {
+    const st = getComputedStyle(c); return a + c.getBoundingClientRect().height + parseFloat(st.marginTop) + parseFloat(st.marginBottom);
+  }, 0);
+  const nb = document.querySelector('.numbox');
+
+  // ① 부톱
+  const stories = fs.querySelectorAll('.story');
+  if (stories.length >= 3 && inner(fs) - inner(fl, nb) > 260) {
+    const last = stories[stories.length - 1];
+    last.classList.add('sub');
+    fl.appendChild(last);
+  }
+  // ②
+  if (nb && inner(fl, nb) < inner(fo, nb)) fl.appendChild(nb);
+
+  // ③ 일정 쪽 넘김
+  const box = document.getElementById('calbox');
+  const target = Math.max(inner(fs), inner(fl));
+  if (!box || inner(fo) <= target + 8) return;
+  const days = [...box.querySelectorAll('.cday')];
+  if (!days.length) return;
+  const PAGER = 40;
+  const fixed = inner(fo) - inner(box) + (box.firstElementChild ? box.firstElementChild.getBoundingClientRect().height : 0);
+  const avail = target - fixed - PAGER - 12;
+  const hd = days[0].querySelector('b').getBoundingClientRect().height + 6;
+  const pages = [[]];
+  let h = 0;
+  days.forEach(d => {
+    let cur = null;
+    [...d.querySelectorAll('.ce')].forEach(li => {
+      const lh = li.getBoundingClientRect().height;
+      if (h > 0 && h + lh + (cur ? 0 : hd) > avail) { pages.push([]); h = 0; cur = null; }
+      if (!cur) {
+        cur = document.createElement('div'); cur.className = 'cday';
+        cur.appendChild(d.querySelector('b').cloneNode(true));
+        cur.appendChild(document.createElement('ul'));
+        pages[pages.length - 1].push(cur); h += hd;
+      }
+      cur.querySelector('ul').appendChild(li); h += lh;
+    });
+  });
+  if (pages.length < 2) return;
+  days.forEach(d => d.remove());
+  const wrap = document.createElement('div');
+  pages.forEach((pg, k) => {
+    const el = document.createElement('div'); el.className = 'cpg'; el.hidden = k > 0;
+    pg.forEach(d => el.appendChild(d)); wrap.appendChild(el);
+  });
+  const nav = document.createElement('div'); nav.className = 'cpager';
+  nav.innerHTML = `<button type="button" data-d="-1" aria-label="앞 일정">‹</button><i>1 / ${pages.length}</i><button type="button" data-d="1" aria-label="다음 일정">›</button>`;
+  box.appendChild(wrap); box.appendChild(nav);
+  let at = 0;
+  const go = d => {
+    at = Math.max(0, Math.min(pages.length - 1, at + d));
+    wrap.querySelectorAll('.cpg').forEach((el, k) => { el.hidden = k !== at; });
+    nav.querySelector('i').textContent = `${at + 1} / ${pages.length}`;
+    nav.querySelector('[data-d="-1"]').disabled = at === 0;
+    nav.querySelector('[data-d="1"]').disabled = at === pages.length - 1;
+  };
+  nav.addEventListener('click', e => { const b = e.target.closest('button'); if (b) go(+b.dataset.d); });
+  go(0);
+}
+
 function render(F){
   const L = F.lead, R = L && L.reaction, S = F.sources || {}, SL = F.slots || { side: [], row: [] };
   const ymd = (F.edition || '').slice(0, 10);
@@ -744,14 +820,13 @@ function render(F){
     el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
   });
 
-  /* 1면 칸 맞추기 — '숫자로 본 오늘'을 톱 칸과 일정 칸 중 짧은 쪽 아래에 붙인다 (일정 수가 날마다 달라서) */
-  const nb = document.querySelector('.numbox'), fl = document.querySelector('.flead'), fo = document.querySelector('.fop');
-  if (nb && fl && fo && innerWidth > 1020) {
-    const inner = el => [...el.children].filter(c => c !== nb).reduce((a, c) => a + c.getBoundingClientRect().height, 0);
-    if (inner(fl) < inner(fo)) fl.appendChild(nb);
-  }
+  /* 1면 칸 맞추기 (데스크톱) — 세 칸 높이를 고르게
+     ① 가운데(톱)가 왼쪽보다 한참 짧으면 사이드 마지막 기사를 톱 아래 '부톱'으로 내린다
+     ② '숫자로 본 오늘'은 톱 칸과 일정 칸 중 짧은 쪽 아래에 붙인다
+     ③ 그래도 일정 칸이 왼쪽·가운데보다 길면 일정을 쪽으로 나눠 넘겨 본다 (첫 쪽 = 오늘·내일) */
+  if (innerWidth > 1020) balanceFront();
 
-  /* 국내 첫머리 — 톱·순위·1면 칸 */
+  /* 국내 첫머리 — 톱·순위·1면 칸 */  /* 국내 첫머리 — 톱·순위·1면 칸 */
   const mid = SL.must_id || (D.lead && D.lead.must_id);
   if (D.lead && !D.lead.lede) mustLede(mid, D.lead.must_idx).then(t => { const el = $('#domlede'); if (t && el) { el.textContent = t; el.hidden = false; } });
   document.querySelectorAll('[data-mi]').forEach(el => {

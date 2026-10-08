@@ -530,7 +530,8 @@ def main():
     # 섹션마다 사진 리듬을 준다 — 가디언·한겨레 섹션면처럼 크기를 섞는다.
     #   첫 기사: 16:9 사진 / 4건 이상인 섹션의 셋째: 작은 정사각 썸네일 / 나머지: 글만
     pool = photo_pool(B)
-    if lead and lead.get("key") and not lead.get("img") and (dx.get(lead["key"]) or {}).get("drop_photo"):
+    # 톱에 사진이 없으면(브리핑이 안 달았거나 편집국이 뺐거나) 검수된 자료사진을 붙인다 — 신문 톱은 사진이 있다
+    if lead and lead.get("key") and not lead.get("img") and not (dx.get(lead["key"]) or {}).get("no_photo"):
         ph = pick_photo(pool, {"head": lead["headline"], "sub": lead.get("sub", ""), "en": "",
                                "deck": lead.get("deck", "")}, "AI/기술", set())
         if ph:
