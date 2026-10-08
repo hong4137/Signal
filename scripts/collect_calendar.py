@@ -47,8 +47,9 @@ FRED_PICK = [
     ("Surveys of Consumers", "미국 미시간대 소비자심리", 3, (10, 0)),
     ("ISM Manufacturing", "미국 ISM 제조업 지수", 4, (10, 0)),
     ("New Residential Construction", "미국 주택착공", 3, (8, 30)),
-    ("FOMC Press Release", "FOMC 금리 결정", 5, (14, 0)),
 ]
+# FRED 가 매일 갱신 자료로 싣는 것·같은 지표의 주별판은 뺀다 (FOMC 는 연준 일정표에서 받는다)
+FRED_SKIP = re.compile(r"^State |FOMC", re.I)
 
 # Finnhub — 관심 종목(미국 상장 심볼)
 US_SYMBOLS = {
@@ -87,6 +88,8 @@ def fred(d0, d1):
     out, seen = [], set()
     for r in rows:
         name = r.get("release_name", "")
+        if FRED_SKIP.search(name):
+            continue
         for pat, ko, imp, hm in FRED_PICK:
             if pat.lower() in name.lower():
                 d = date.fromisoformat(r["date"])
