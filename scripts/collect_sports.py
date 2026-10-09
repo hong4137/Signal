@@ -208,6 +208,8 @@ def first_score(ev):
     if ks:                                       # 핵심 선수(tier 1)는 더 크게 — 손흥민 경기가 튀르키예 리그 경기보다 아래로 가면 안 된다
         s += max(40 if p.get("tier") == 1 else 24 for p in ks) + 6 * (len(ks) - 1)
         why.append(" · ".join(p["ko"] for p in ks) + " 출전 팀")
+        side = "home" if (ev.get("home") or {}).get("name") == ks[0]["team"] else "away"     # 판 칩: '김민재 vs 아우크스부르크'
+        ev["kp"] = {"ko": ks[0]["ko"], "opp": (ev.get("away" if side == "home" else "home") or {}).get("ko")}
     note = ev.get("note") or ""
     for pat, pts, label in [(r"World Series", 45, "월드시리즈"), (r"ALCS|NLCS|LCS", 32, "리그 챔피언십시리즈"),
                             (r"ALDS|NLDS|Division Series", 22, "디비전시리즈"), (r"Wild Card", 14, "와일드카드"),

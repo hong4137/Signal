@@ -160,6 +160,42 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
   .tonight{grid-template-columns:1fr 1fr;gap:8px}
   .tn{padding:9px 10px} .tn .t{font-size:18px} .tn .t small{display:block;margin:0} .tn .n{font-size:13.5px} .tn .l{font-size:11px}
 }
+
+/* ── 주간 판: 요일(사람의 하루 06~06) × 시간대. 큰 경기는 꽉 찬 칩으로 튀어나온다 ── */
+.nowbar{padding:12px 28px;border-bottom:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.nowbar .now{font-size:17px;font-weight:900}
+.nowbar .now .t{font-family:var(--mono)}
+.nowbar .now em{font-style:normal;color:var(--heat);margin-left:6px}
+.nowbar .next{font-size:14px;color:var(--ink-2)}
+.nowbar .next b{color:var(--ink)}
+.board{padding:10px 28px 18px;border-bottom:1px solid var(--hair);overflow-x:auto}
+.bgrid{display:grid;grid-template-columns:58px repeat(7,minmax(118px,1fr));min-width:900px;border:1px solid var(--hair);border-radius:12px;overflow:hidden}
+.bh{padding:8px 6px;text-align:center;background:var(--soft);border-bottom:1px solid var(--hair);border-left:1px solid var(--hair);cursor:pointer}
+.bh b{display:block;font-size:15px}
+.bh span{font-size:12px;color:var(--muted)}
+.bh.today{background:var(--ink);color:var(--sheet)} .bh.today span{color:var(--sheet);opacity:.8}
+.bh.tmr b{color:var(--weight)}
+.bh.sat span{color:var(--weight)} .bh.sun span{color:var(--heat)}
+.bh.corner{cursor:default;border-left:0}
+.bl{font-size:11.5px;color:var(--muted);padding:8px 6px;border-bottom:1px solid var(--hair);background:var(--soft);line-height:1.3}
+.bl b{display:block;color:var(--ink-2);font-size:12.5px}
+.bc{border-left:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:5px;display:flex;flex-direction:column;gap:4px;min-height:44px}
+.bc.past{background:repeating-linear-gradient(135deg,transparent 0 6px,var(--soft) 6px 7px);opacity:.55}
+.bc.nowc{box-shadow:inset 0 0 0 2px var(--heat);position:relative}
+.bc.nowc::before{content:"지금";position:absolute;top:-1px;right:-1px;font-size:10px;font-weight:900;color:#fff;background:var(--heat);padding:1px 5px;border-radius:0 0 0 6px}
+.bc.todaycol{background:color-mix(in srgb,var(--heat) 4%,transparent)}
+.chip{all:unset;cursor:pointer;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;border-radius:7px;padding:3px 6px;font-size:12px;line-height:1.3;border:1.5px solid var(--sc);color:var(--ink);background:var(--sheet);overflow:hidden;word-break:keep-all}
+.chip .t{font-family:var(--mono);font-weight:700;margin-right:3px}
+.chip.s3{background:var(--sc);color:#fff;border-color:var(--sc);font-weight:800;font-size:13px;padding:5px 7px}
+.chip.s3 .t{color:#fff}
+.chip.s1{border-style:dashed;color:var(--ink-2);font-size:11.5px}
+.chip:hover{filter:brightness(1.08)}
+.pick.flash{animation:flash 1.4s ease}
+@keyframes flash{0%{box-shadow:0 0 0 4px var(--sc)}100%{box-shadow:0 0 0 0 transparent}}
+@media (max-width:700px){
+  .nowbar,.board{padding-left:16px;padding-right:16px}
+  .bgrid{grid-template-columns:44px repeat(7,112px);min-width:0;width:max-content}
+}
 </style>
 <div class="wrap">
   <div class="topbar"><span id="upd">불러오는 중…</span><a href="/front.html">Daily UptoDate ›</a></div>
@@ -170,7 +206,8 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
     </div>
     <a class="sub" id="cal" href="webcal://signal.sharktalk.co.kr/data/sports.ics">📅 캘린더로 구독하기</a>
   </header>
-  <nav class="week" id="week" aria-label="이번 주"></nav>
+  <div class="nowbar" id="nowbar"></div>
+  <div class="board" id="board" aria-label="이번 주 판"></div>
   <section><h2>지금부터 36시간 <span>예매 오픈·F1 예선도 함께</span></h2><div class="tonight" id="tonight"></div></section>
   <section><h2>이번 주 볼 경기 <span>날짜별 · 한국 시간 · 눌러서 자세히</span></h2><div class="filters" id="filters"></div><div id="picks"></div></section>
   <section><h2>이번 주 문화 <span>개봉 대작 · 중요한 공연 · 예매 오픈</span></h2><div class="cul" id="culture"></div></section>
@@ -186,7 +223,7 @@ const WD = ['일','월','화','수','목','금','토'];
 const T = s => { const [d, h] = s.split(' '); const dt = new Date(d + 'T' + h + ':00+09:00'); const wd = WD[new Date(d + 'T12:00:00+09:00').getUTCDay()];
   return {dt, key: d, d: `${+d.slice(5,7)}/${+d.slice(8,10)}(${wd})`, h, wd}; };
 const kstKey = ms => new Date(ms + 9*3600e3).toISOString().slice(0,10);
-const NOW = Date.now(), TODAY = kstKey(NOW);
+const NOW = Date.now(), TODAY = kstKey(NOW - 6 * 3600e3);   // 사람의 하루는 아침 6시에 바뀐다
 const dayDiff = key => Math.round((Date.parse(key + 'T00:00:00Z') - Date.parse(TODAY + 'T00:00:00Z')) / 864e5);
 const groupKey = kst => +kst.slice(11,13) < 6 ? kstKey(Date.parse(kst.slice(0,10) + 'T12:00:00+09:00') - 864e5) : kst.slice(0,10);
 const dayRel = key => { const n = dayDiff(key); return n === 0 ? '오늘' : n === 1 ? '내일' : n === 2 ? '모레' : n < 0 ? (n === -1 ? '어제' : `${-n}일 전`) : `D-${n}`; };
@@ -275,16 +312,51 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
   const culture = (C.events || []).filter(c => c.kst && c.verified !== false).map(c => ({...c, kind: 'culture', sport: c.type}));
   const all = [...(D.picks || []), ...culture].sort((a, b) => a.kst < b.kst ? -1 : 1);
 
-  // 주간 띠 — 오늘부터 7일, 날마다 그날 일정의 종목 이모지
-  const days = [...Array(7)].map((_, i) => kstKey(NOW + i * 864e5));
-  const byDay = {}; for (const p of all) (byDay[groupKey(p.kst)] ||= []).push(p);
-  for (const p of D.picks || []) for (const x of p.sessions || []) if (['SR','Qual'].includes(x.name)) (byDay[groupKey(x.kst)] ||= []).push({...p, kst: x.kst, _sess: true});
-  document.getElementById('week').innerHTML = days.map(k => { const t = T(k + ' 12:00'), n = dayDiff(k), list = byDay[k] || [];
-    const ems = [...new Set(list.map(p => (SP[sportOf(p)] || SP.etc)[0]))].join('');
-    return `<button class="wd${n === 0 ? ' today' : n === 1 ? ' tmr' : ''}${list.length ? '' : ' none'}${t.wd === '일' ? ' sun' : t.wd === '토' ? ' sat' : ''}" data-k="${k}">
-      <span class="rel">${n <= 1 ? dayRel(k) : '&nbsp;'}</span><span class="dt">${+k.slice(8,10)}<small>${t.wd}요일</small></span><span class="ems">${ems || '·'}</span></button>`; }).join('');
-  document.getElementById('week').addEventListener('click', e => { const b = e.target.closest('.wd'); if (!b) return;
-    const h = document.getElementById('day-' + b.dataset.k); if (h) h.scrollIntoView({behavior: 'smooth', block: 'start'}); });
+  // ── 지금 줄 + 주간 판 ──
+  const nowK = new Date(NOW + 9 * 3600e3), nh = nowK.getUTCHours(), nm = String(nowK.getUTCMinutes()).padStart(2, '0');
+  const humanWd = T(TODAY + ' 12:00').wd;
+  // 판에 올릴 항목: 경기·문화 + F1 예선·스프린트(결승은 경기 자체)
+  const items = [];
+  for (const p of all) {
+    items.push(p);
+    for (const x of p.sessions || []) if (['SR','Qual'].includes(x.name)) items.push({...p, kst: x.kst, sessName: SESS[x.name], stars: x.name === 'Qual' ? 2 : 1});
+  }
+  const shortName = p => {
+    if (p.kind === 'culture') return `${(SP[p.type] || SP.etc)[1]} · ${p.title}`;
+    if (sportOf(p) === 'f1') return `F1 ${p.sessName || '결승'}`;
+    if (p.follow && p.follow.kind === 'athlete') return `${p.follow.ko} ${p.note || ''}`.trim();
+    if (p.kp && p.kp.opp) return `${p.kp.ko} vs ${p.kp.opp}`;
+    const kor = (p.why || []).find(w => /출전 팀$/.test(w));
+    if (kor) return `${kor.replace(/ 출전 팀$/, '')} · ${(p.title || '').replace(' vs ', '-')}`;
+    if (p.follow) return `${p.follow.ko} · ${(p.title || '').replace(' vs ', '-')}`;
+    return (p.title || p.name || '').replace(' vs ', '-');
+  };
+  const BANDS = [[6, 12, '오전', '6–12시'], [12, 18, '오후', '12–18시'], [18, 22, '저녁', '18–22시'], [22, 26, '밤', '22–02시'], [26, 30, '새벽', '02–06시']];
+  const hh = kst => { const h = +kst.slice(11,13); return h < 6 ? h + 24 : h; };
+  const days = [...Array(7)].map((_, i) => kstKey(Date.parse(TODAY + 'T12:00:00+09:00') + i * 864e5));
+  const nowHH = nh < 6 ? nh + 24 : nh;
+  let html = '<div class="bgrid"><div class="bh corner"></div>' + days.map(k => { const t = T(k + ' 12:00'), n = dayDiff(k);
+    return `<div class="bh${n === 0 ? ' today' : n === 1 ? ' tmr' : ''}${t.wd === '토' ? ' sat' : t.wd === '일' ? ' sun' : ''}" data-k="${k}"><b>${n === 0 ? '오늘' : n === 1 ? '내일' : t.wd + '요일'}</b><span>${n <= 1 ? t.wd + ' ' : ''}${+k.slice(5,7)}/${+k.slice(8,10)}</span></div>`; }).join('');
+  for (const [a0, b0, lab, rng] of BANDS) {
+    html += `<div class="bl"><b>${lab}</b>${rng}</div>`;
+    for (const k of days) {
+      const n = dayDiff(k), cell = items.filter(p => groupKey(p.kst) === k && hh(p.kst) >= a0 && hh(p.kst) < b0).sort((x, y) => x.kst < y.kst ? -1 : 1);
+      const past = n === 0 && nowHH >= b0, isNow = n === 0 && nowHH >= a0 && nowHH < b0;
+      html += `<div class="bc${past ? ' past' : ''}${isNow ? ' nowc' : ''}${n === 0 ? ' todaycol' : ''}">${cell.map(p =>
+        `<button class="chip s${p.stars || 1}" style="${scVar(p)}" data-go="${esc(p.id || '')}" title="${esc((p.title || p.name) + (p.sessName ? ' ' + p.sessName : ''))}"><span class="t">${p.kst.slice(11,16)}</span>${(SP[sportOf(p)] || SP.etc)[0]} ${esc(shortName(p))}</button>`).join('')}</div>`;
+    }
+  }
+  document.getElementById('board').innerHTML = html + '</div>';
+  document.getElementById('board').addEventListener('click', e => {
+    const c = e.target.closest('.chip'), h = e.target.closest('.bh');
+    if (c) { const el = document.querySelector(`.pick[data-id="${CSS.escape(c.dataset.go)}"]`); if (el) { el.scrollIntoView({behavior: 'smooth', block: 'center'}); el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); } }
+    else if (h && h.dataset.k) { const d = document.getElementById('day-' + h.dataset.k); if (d) d.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+  });
+  // 지금 줄: 지금이 '사람의 하루'로 언제인지 + 다음 큰 경기
+  const upcomingBig = items.filter(p => T(p.kst).dt.getTime() > NOW && (p.stars >= 3 || p.type === 'ticket')).sort((x, y) => x.kst < y.kst ? -1 : 1)[0];
+  const leftToday = items.filter(p => groupKey(p.kst) === TODAY && T(p.kst).dt.getTime() > NOW - 2.5 * 3600e3).length;
+  document.getElementById('nowbar').innerHTML = `<span class="now">지금 <span class="t">${WD[nowK.getUTCDay()]} ${String(nh).padStart(2,'0')}:${nm}</span>${nh < 6 ? `<em>아직 ${humanWd}요일 밤</em>` : ''}</span>
+    <span class="next">오늘 남은 일정 <b>${leftToday}개</b></span>${upcomingBig ? `<span class="next">다음 큰 경기 <b>${(SP[sportOf(upcomingBig)] || SP.etc)[0]} ${esc(shortName(upcomingBig))}</b> · ${dayRel(groupKey(upcomingBig.kst))} ${upcomingBig.kst.slice(11,16)} ${relBadge(upcomingBig.kst, 2.5)}</span>` : ''}`;
 
   // 지금부터 36시간 — 경기 + F1 예선·스프린트 + 예매 오픈
   const inWin = k => { const t = T(k).dt.getTime(); return t > NOW - 2.5*3600e3 && t < NOW + 36*3600e3; };
