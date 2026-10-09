@@ -214,8 +214,19 @@ def newsroom_pool():
 
 def pick_newsroom(nr, text, used):
     """기사가 뉴스룸 사진이 있는 회사를 다루면 그 회사 공식 사진 — 주제가 맞는 것 먼저, 없으면 대표 사진.
-    회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다)."""
+    회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다).
+    제품 사진("match" 가 있는 사진)이 먼저다 — 제목에 그 제품 이름이 나오면 회사 이름이 없어도 1대1로 붙인다."""
     comps, photos = nr
+    def out(ph, c):
+        used.add(ph["url"])
+        cr = ph.get("credit") or c["credit"]
+        return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": cr,
+                "credit": cr, "credit_url": ph.get("page", "")}
+    title = text.get("title", "")
+    for ph in photos:
+        c = comps.get(ph["company"]) or {}
+        if ph.get("match") and c.get("permitted") is not False and ph["url"] not in used                 and re.search(ph["match"], title):
+            return out(ph, c)
     for cid, c in comps.items():
         if c.get("permitted") is False:            # 이용 조건 불명확 — 사람이 확인하고 켠다
             continue
@@ -223,13 +234,11 @@ def pick_newsroom(nr, text, used):
             continue
         cand = [x for x in photos if x["company"] == cid and x["url"] not in used]
         body = " ".join(text.values())
+        cand = [x for x in cand if not x.get("match")]   # 제품 사진은 그 제품 기사에만
         hit = [x for x in cand if x.get("topic") and re.search(x["topic"], body, re.I)]
         ph = (hit or [x for x in cand if x.get("default")] or cand or [None])[0]
         if ph:
-            used.add(ph["url"])
-            cr = ph.get("credit") or c["credit"]
-            return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": cr,
-                    "credit": cr, "credit_url": ph.get("page", "")}
+            return out(ph, c)
     return None
 
 
