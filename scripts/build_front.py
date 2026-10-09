@@ -177,9 +177,16 @@ PHOTO_SEC = {"AI/기술": "ai", "경제/금융": "finance", "반도체/인프라
 PHOTO_ANY = ["ai", "code", "data"]
 
 
+def photo_off():
+    """편집국이 발행 때 사진을 직접 열어 보고 끈 주소 — data/photo_off.json {"off": {url: {reason, date}}}.
+    죽은 주소(404·이미지 아님)나 설명과 다른 사진으로 바뀐 주소가 여기 쌓인다. 여기 있는 사진은 어디에도 쓰지 않는다."""
+    return set(((load(os.path.join(DATA, "photo_off.json"), {}) or {}).get("off") or {}).keys())
+
+
 def photo_pool(_B=None):
     cat = load(os.path.join(DATA, "photo_catalog.json"), {}) or {}
-    return cat.get("photos") or []
+    off = photo_off()
+    return [x for x in cat.get("photos") or [] if x["url"] not in off]
 
 
 def pick_photo(pool, it, sec, used):
@@ -201,7 +208,8 @@ def pick_photo(pool, it, sec, used):
 def newsroom_pool():
     nr = load(os.path.join(DATA, "newsroom_photos.json"), {}) or {}
     comps = {c["id"]: c for c in nr.get("companies") or []}
-    return comps, nr.get("photos") or []
+    off = photo_off()
+    return comps, [x for x in nr.get("photos") or [] if x["url"] not in off]
 
 
 def pick_newsroom(nr, text, used):
@@ -386,6 +394,7 @@ def main():
     # 금지 사진(photo_catalog.json "banned" — 예: 랜선 꽂힌 스위치)은 브리핑이 골라도 쓰지 않는다
     banned = {re.sub(r"^.*photo-|\?.*$", "", b["url"]) for b in
               ((load(os.path.join(DATA, "photo_catalog.json"), {}) or {}).get("banned") or [])}
+    banned |= {re.sub(r"^.*photo-|\?.*$", "", u) for u in photo_off()}
     is_banned = lambda u: any(b and b in (u or "") for b in banned)
     for i, sg in zip(tops, brief.get("segments") or []):
         if sg.get("thumb_url") and not is_banned(brief.get("hero_url") if (brief.get("hero_url") and sg.get("thumb_category") == brief.get("hero_source")) else sg["thumb_url"]):
