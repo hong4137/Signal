@@ -1,0 +1,183 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sports UptoDate</title>
+<meta name="description" content="이번 주 놓치면 안 되는 경기 — 언제, 어디서, 왜 봐야 하는지. 그리고 그 경기의 결과.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%234E74FA%22/%3E%3Cstop offset=%22.55%22 stop-color=%22%23AC7DFF%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F94E6F%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23090E21%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2225%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%224.5%22/%3E%3Cpath d=%22M24 22v11a8 8 0 0 0 16 0v-6%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%225%22 stroke-linecap=%22round%22/%3E%3Cpath d=%22M35 28l5-6 5 6%22 fill=%22none%22 stroke=%22%23F94E6F%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Sports UptoDate — 이번 주 볼 경기 가이드.
+   순서: 오늘 밤·내일 새벽 → 이번 주 볼 경기(자세히 펼치기) → 지난 경기 결과(스포일러 가림) → KBO·LCK(조용한 칸).
+   색·글꼴은 Daily UptoDate 와 같다. 그라데이션은 장치(꼬리표·밑줄·테두리)에만. */
+:root{
+  --ground:#EDEEF2; --sheet:#FFFFFF; --ink:#111216; --ink-2:#4A4D57; --muted:#7A7E8A;
+  --hair:#E6E7EC; --soft:#F4F4F7; --bar:#141519;
+  --heat:#E2264F; --weight:#3D63F0; --win:#11875A; --draw:#8A8F9C; --loss:#C23A4E;
+  --grad:linear-gradient(90deg,#4E74FA 0%,#AC7DFF 55%,#F94E6F 100%);
+  --ko:"Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --latin:"Sora","Pretendard Variable",Pretendard,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
+  --hair:#1E2440; --soft:#11162C; --bar:#000; --heat:#FF5C7C; --weight:#7C95FF; --win:#3CC48A; --loss:#FF6B80;}}
+:root[data-theme="dark"]{--ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
+  --hair:#1E2440; --soft:#11162C; --bar:#000; --heat:#FF5C7C; --weight:#7C95FF; --win:#3CC48A; --loss:#FF6B80;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--ko);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;background:var(--sheet);min-height:100vh}
+.topbar{background:var(--bar);color:#fff;font-size:12px;padding:8px 28px;display:flex;justify-content:space-between;gap:12px}
+.topbar a{color:#cfd3e0;text-decoration:none}
+.mast{padding:26px 28px 18px;border-bottom:1px solid var(--hair);display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wm{font-family:var(--latin);line-height:.95}
+.wm small{display:block;font-size:12px;letter-spacing:.32em;font-weight:700;color:var(--muted)}
+.wm b{font-size:44px;font-weight:800;letter-spacing:-.02em}
+.wm b i{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mast p{margin:6px 0 0;color:var(--ink-2);font-size:14px}
+.sub{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;
+  text-decoration:none;color:#fff;background:var(--grad)}
+.sub:hover{filter:brightness(1.08)}
+section{padding:22px 28px;border-bottom:1px solid var(--hair)}
+h2{margin:0 0 14px;font-size:19px;display:flex;align-items:baseline;gap:10px}
+h2 span{font-size:13px;color:var(--muted);font-weight:500}
+h2::before{content:"";width:4px;height:18px;background:var(--grad);border-radius:2px;align-self:center}
+/* 오늘 밤 */
+.tonight{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.tn{border:1px solid var(--hair);border-radius:12px;padding:12px 14px;background:var(--soft)}
+.tn .t{font-family:var(--mono);font-size:22px;font-weight:700}
+.tn .t small{font-size:12px;color:var(--muted);font-family:var(--ko);font-weight:500;margin-left:6px}
+.tn .n{font-weight:700;margin-top:2px}
+.tn .l{font-size:12px;color:var(--muted);margin-top:4px}
+.empty{color:var(--muted);font-size:14px}
+/* 픽 카드 */
+.pick{border:1px solid var(--hair);border-radius:14px;margin:0 0 12px;overflow:hidden;background:var(--sheet)}
+.pick.top{border:2px solid transparent;background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box}
+.ph{display:grid;grid-template-columns:118px 1fr auto;gap:14px;align-items:center;padding:14px 16px;cursor:pointer}
+.when{font-family:var(--mono)}
+.when .d{font-size:12px;color:var(--muted)}
+.when .h{font-size:24px;font-weight:700;line-height:1.1}
+.when .alarm{display:inline-block;margin-top:3px;font-size:11px;color:var(--heat);font-family:var(--ko);font-weight:700}
+.lg{font-size:12px;font-weight:700;color:var(--weight)}
+.lg em{font-style:normal;color:var(--muted);font-weight:500;margin-left:6px}
+.ttl{font-size:19px;font-weight:800;margin:2px 0 4px;letter-spacing:-.01em}
+.why{display:flex;flex-wrap:wrap;gap:6px}
+.why span{font-size:12px;background:var(--soft);border:1px solid var(--hair);border-radius:999px;padding:2px 9px;color:var(--ink-2)}
+.why span.k{border-color:transparent;background:#FDE7EC;color:#B3123A;font-weight:700}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .why span.k{background:#3A1220;color:#FF8FA6}}
+.side{text-align:right}
+.stars{color:#F5A524;letter-spacing:1px;font-size:15px}
+.tv{font-size:12px;color:var(--ink-2);margin-top:4px;max-width:170px}
+.more{font-size:12px;color:var(--muted);margin-top:6px}
+.det{display:none;padding:4px 16px 16px;border-top:1px dashed var(--hair)}
+.pick.open .det{display:block}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.box h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:700}
+.box p,.box li{font-size:14px;line-height:1.6;margin:0}
+.box ul{margin:0;padding-left:18px}
+.form{display:inline-flex;gap:3px;margin-left:6px;vertical-align:middle}
+.form i{font-style:normal;font-size:11px;font-weight:700;color:#fff;width:18px;height:18px;border-radius:4px;display:inline-grid;place-items:center}
+.form i.승{background:var(--win)} .form i.무{background:var(--draw)} .form i.패{background:var(--loss)}
+.prob{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:6px 0 4px}
+.prob b{background:var(--weight)} .prob s{background:var(--heat)}
+/* 결과 */
+.res{border:1px solid var(--hair);border-radius:12px;padding:12px 16px;margin:0 0 10px}
+.res .top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.reveal{border:0;border-radius:999px;padding:6px 14px;font-weight:700;font-size:13px;cursor:pointer;background:var(--ink);color:var(--sheet)}
+.spoil{display:none;margin-top:10px}
+.res.shown .spoil{display:block} .res.shown .reveal{display:none}
+.score{font-family:var(--mono);font-size:22px;font-weight:700}
+.kp{font-size:14px;margin-top:6px} .kp b{color:#B3123A}
+/* 조용한 칸 */
+.quiet{background:var(--soft)}
+.quiet h2{font-size:15px}
+.quiet li{font-size:13px;color:var(--ink-2);line-height:1.7}
+footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
+@media (max-width:700px){
+  .topbar,.mast,section,footer{padding-left:16px;padding-right:16px}
+  .wm b{font-size:34px}
+  .ph{grid-template-columns:84px 1fr;gap:10px}
+  .side{grid-column:1/-1;text-align:left;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .tv{max-width:none;margin:0}
+  .when .h{font-size:20px}
+  .ttl{font-size:17px}
+  .grid2{grid-template-columns:1fr}
+}
+</style>
+<div class="wrap">
+  <div class="topbar"><span id="upd">불러오는 중…</span><a href="/front.html">Daily UptoDate ›</a></div>
+  <header class="mast">
+    <div>
+      <div class="wm"><small>SPORTS</small><b>Upto<i>Date</i></b></div>
+      <p>이번 주 놓치면 안 되는 경기 — 언제, 어디서, 왜. 그리고 그 결과.</p>
+    </div>
+    <a class="sub" id="cal" href="webcal://signal.sharktalk.co.kr/data/sports.ics">📅 캘린더로 구독하기</a>
+  </header>
+  <section><h2>곧 시작 <span>앞으로 36시간 안에 고른 경기</span></h2><div class="tonight" id="tonight"></div></section>
+  <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div id="picks"></div></section>
+  <section><h2>지난 경기 결과 <span>스포일러 가림 — 눌러야 보입니다</span></h2><div id="results"></div></section>
+  <section class="quiet"><h2>KBO · LCK</h2><ul id="manual"></ul></section>
+  <footer>경기 데이터 ESPN · 국내 중계처는 시즌 편성 기준(바뀔 수 있음) · 시각은 모두 한국 시간.<br>
+    캘린더 구독: 구글 캘린더 › 다른 캘린더 › URL로 추가 › <code>https://signal.sharktalk.co.kr/data/sports.ics</code></footer>
+</div>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const WD = ['일','월','화','수','목','금','토'];
+const T = s => { const [d, h] = s.split(' '); const dt = new Date(d + 'T' + h + ':00+09:00'); return {dt, d: `${dt.getMonth()+1}/${dt.getDate()}(${WD[dt.getDay()]})`, h}; };
+const alarm = h => { const x = +h.slice(0,2); return x >= 1 && x <= 6 ? '<span class="alarm">⏰ 알람 필요</span>' : ''; };
+const form = f => f ? `<span class="form">${[...f].map(c => `<i class="${c}">${c}</i>`).join('')}</span>` : '';
+const teamLine = t => t ? `<b>${esc(t.ko)}</b>${t.rank ? ` ${esc(t.rank)}위` : ''}${t.pts ? ` · 승점 ${esc(t.pts)}` : ''}${!t.pts && t.record ? ` · ${esc(t.record)}` : ''}${form(t.form)}` : '';
+
+function detail(p){
+  const d = p.detail || {}, out = [];
+  if (p.home) out.push(`<div class="box"><h4>순위 · 최근 5경기</h4><p>${teamLine(p.home)}</p><p>${teamLine(p.away)}</p></div>`);
+  if (d.predictor) { const h = +d.predictor.home, a = +d.predictor.away;
+    out.push(`<div class="box"><h4>승리 확률 (ESPN 예측)</h4><div class="prob"><b style="width:${h}%"></b><s style="width:${a}%"></s></div><p>${esc(p.home.ko)} ${h.toFixed(1)}% · ${esc(p.away.ko)} ${a.toFixed(1)}%</p></div>`); }
+  if (d.h2h) out.push(`<div class="box"><h4>상대 전적</h4><p>${esc(d.h2h.summary)}</p><ul>${(d.h2h.last||[]).map(x => `<li>${esc(x.date)} · ${esc(x.score)}</li>`).join('')}</ul></div>`);
+  if ((d.leaders||[]).length) out.push(`<div class="box"><h4>주요 선수</h4><ul>${d.leaders.map(x => `<li>${esc(x.team)} · ${esc(x.who)} <span style="color:var(--muted)">${esc(x.val)}</span></li>`).join('')}</ul></div>`);
+  if ((d.injuries||[]).length) out.push(`<div class="box"><h4>결장·부상</h4><ul>${d.injuries.map(x => `<li>${esc(x.team)} · ${esc(x.who)} (${esc(x.status)})</li>`).join('')}</ul></div>`);
+  if (p.sessions) out.push(`<div class="box"><h4>주말 일정</h4><ul>${p.sessions.map(x => `<li>${esc({FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'}[x.name] || x.name)} · ${esc(x.kst)}</li>`).join('')}</ul></div>`);
+  const meta = [p.venue && `경기장 ${esc(p.venue)}`, p.tv && `중계 ${esc(p.tv)}`].filter(Boolean).join(' · ');
+  const pv = (d.preview||[]).filter(x => x.url).map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></li>`).join('');
+  return `<div class="grid2">${out.join('')}</div>${pv ? `<div class="box" style="margin-top:12px"><h4>미리 보기 (ESPN)</h4><ul>${pv}</ul></div>` : ''}${meta ? `<p class="more">${meta}</p>` : ''}`;
+}
+
+function card(p){
+  const t = T(p.kst), why = (p.why||[]).map(w => `<span class="${/출전/.test(w) ? 'k' : ''}">${esc(w)}</span>`).join('');
+  return `<div class="pick${p.stars >= 3 ? ' top' : ''}" data-id="${esc(p.id)}">
+    <div class="ph"><div class="when"><div class="d">${t.d}</div><div class="h">${t.h}</div>${alarm(t.h)}</div>
+      <div><div class="lg">${esc(p.league)}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div><div class="ttl">${esc(p.title || p.name)}</div><div class="why">${why}</div></div>
+      <div class="side"><div class="stars">${'★'.repeat(p.stars||1)}${'☆'.repeat(3-(p.stars||1))}</div><div class="tv">📺 ${esc(p.tv || '중계 미확인')}</div><div class="more">자세히 ▾</div></div></div>
+    <div class="det">${detail(p)}</div></div>`;
+}
+
+function resultCard(p){
+  const r = (p.detail||{}).result || {}, t = T(p.kst);
+  const kp = (r.korean||[]).map(k => {
+    if (k.line) return `<div class="kp"><b>${esc(k.ko)}</b> ${esc(Object.entries(k.line).map(([a,b]) => a + ' ' + b).join(' · '))}</div>`;
+    if (!k.played) return `<div class="kp"><b>${esc(k.ko)}</b> 결장</div>`;
+    return `<div class="kp"><b>${esc(k.ko)}</b> ${k.starter ? '선발' : '교체 출전'}${+k.goals ? ` · ${k.goals}골` : ''}${+k.assists ? ` · ${k.assists}도움` : ''}${k.shots ? ` · 슈팅 ${k.shots}` : ''}</div>`;
+  }).join('');
+  const goals = (r.goals||[]).map(g => `<li>${esc(g.min)} ${esc(g.text)}</li>`).join('');
+  return `<div class="res"><div class="top"><div><div class="lg">${esc(p.league)} <em>${t.d} ${t.h}</em></div><div class="ttl">${esc(p.title || p.name)}</div></div>
+    <button class="reveal">결과 보기</button></div>
+    <div class="spoil"><div class="score">${esc(r.score || p.status || '')}</div>${kp}${goals ? `<ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.6">${goals}</ul>` : ''}
+    ${r.video && r.video.url ? `<p class="more"><a href="${esc(r.video.url)}" target="_blank" rel="noopener">▶ ${esc(r.video.title)}</a></p>` : ''}</div></div>`;
+}
+
+fetch('data/sports.json?t=' + Date.now()).then(r => r.json()).then(D => {
+  document.getElementById('upd').textContent = '갱신 ' + D.updated;
+  const now = Date.now(), soon = (D.picks||[]).filter(p => { const t = T(p.kst).dt.getTime(); return t > now - 2*3600e3 && t < now + 36*3600e3; });
+  document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst);
+    return `<div class="tn"><div class="t">${t.h}<small>${t.d}</small></div><div class="n">${esc(p.title || p.name)}</div><div class="l">${esc(p.league)} · 📺 ${esc(p.tv || '미확인')}</div></div>`; }).join('')
+    : '<p class="empty">앞으로 36시간 안에 고른 경기가 없습니다. 아래 주간 목록을 보세요.</p>';
+  document.getElementById('picks').innerHTML = (D.picks||[]).map(card).join('') || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
+  document.getElementById('results').innerHTML = (D.results||[]).map(resultCard).join('') || '<p class="empty">아직 끝난 픽이 없습니다.</p>';
+  const m = D.manual || [];
+  document.getElementById('manual').innerHTML = m.length ? m.map(x => `<li>${esc(x.kst)} · <b>${esc(x.league)}</b> ${esc(x.title)}${x.tv ? ` · 📺 ${esc(x.tv)}` : ''}${x.result ? ` · <span style="color:var(--muted)">결과: ${esc(x.result)}</span>` : ''}</li>`).join('')
+    : '<li>확정된 일정이 들어오면 여기에 표시합니다.</li>';
+  document.querySelectorAll('.ph').forEach(h => h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
+  document.querySelectorAll('.reveal').forEach(b => b.addEventListener('click', () => b.closest('.res').classList.add('shown')));
+}).catch(() => { document.getElementById('upd').textContent = '데이터를 불러오지 못했습니다'; });
+</script>

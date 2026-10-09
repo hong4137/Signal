@@ -1,0 +1,373 @@
+{
+ "_note": "Sports UptoDate 한국어 이름·관심 설정. leagues = ESPN 경로·한국어 이름·관심 가중치(0~30). players = 추적할 한국 선수(ESPN 팀 표시 이름으로 매칭, en 은 경기 기록 대조용). teams = 팀 한국어 이름(없으면 영문 그대로 — 편집 루틴이 채운다). derbies = 라이벌전.",
+ "leagues": {
+  "soccer/eng.1": {
+   "ko": "EPL",
+   "w": 26,
+   "tv": "쿠팡플레이(스포츠패스)"
+  },
+  "soccer/uefa.champions": {
+   "ko": "챔피언스리그",
+   "w": 26,
+   "tv": "SPOTV · SPOTV NOW"
+  },
+  "soccer/esp.1": {
+   "ko": "라리가",
+   "w": 16,
+   "tv": "쿠팡플레이(스포츠패스)"
+  },
+  "soccer/ger.1": {
+   "ko": "분데스리가",
+   "w": 16,
+   "tv": "쿠팡플레이(스포츠패스)"
+  },
+  "soccer/ita.1": {
+   "ko": "세리에A",
+   "w": 10,
+   "tv": "SPOTV · SPOTV NOW"
+  },
+  "soccer/fra.1": {
+   "ko": "리그1",
+   "w": 8,
+   "tv": "국내 중계 미확인"
+  },
+  "soccer/uefa.europa": {
+   "ko": "유로파리그",
+   "w": 10,
+   "tv": "SPOTV · SPOTV NOW"
+  },
+  "soccer/usa.1": {
+   "ko": "MLS",
+   "w": 8,
+   "tv": "쿠팡플레이 · SPOTV Prime(LAFC)"
+  },
+  "soccer/eng.2": {
+   "ko": "챔피언십",
+   "w": 4,
+   "tv": "쿠팡플레이"
+  },
+  "soccer/por.1": {
+   "ko": "포르투갈 리그",
+   "w": 4,
+   "tv": "국내 중계 미확인"
+  },
+  "soccer/tur.1": {
+   "ko": "튀르키예 리그",
+   "w": 4,
+   "tv": "쿠팡플레이"
+  },
+  "soccer/fifa.friendly": {
+   "ko": "A매치 친선",
+   "w": 14,
+   "tv": "TV조선·tvN · 쿠팡플레이"
+  },
+  "soccer/fifa.worldq.afc": {
+   "ko": "월드컵 아시아 예선",
+   "w": 24,
+   "tv": "TV조선·tvN · 쿠팡플레이"
+  },
+  "soccer/afc.asian.cup": {
+   "ko": "아시안컵",
+   "w": 24,
+   "tv": "국내 중계 미확인"
+  },
+  "baseball/mlb": {
+   "ko": "MLB",
+   "w": 14,
+   "tv": "SPOTV · SPOTV NOW"
+  },
+  "basketball/nba": {
+   "ko": "NBA",
+   "w": 8,
+   "tv": "쿠팡플레이(스포츠패스)"
+  },
+  "football/nfl": {
+   "ko": "NFL",
+   "w": 4,
+   "tv": "쿠팡플레이(추정)"
+  },
+  "racing/f1": {
+   "ko": "F1",
+   "w": 18,
+   "tv": "쿠팡플레이(스포츠패스)"
+  },
+  "golf/lpga": {
+   "ko": "LPGA",
+   "w": 10,
+   "tv": "SPOTV"
+  },
+  "golf/pga": {
+   "ko": "PGA",
+   "w": 6,
+   "tv": "SPOTV"
+  },
+  "mma/ufc": {
+   "ko": "UFC",
+   "w": 4,
+   "tv": "티빙"
+  }
+ },
+ "players": [
+  {
+   "ko": "손흥민",
+   "en": "Son Heung-Min",
+   "team": "LAFC",
+   "tier": 1
+  },
+  {
+   "ko": "이강인",
+   "en": "Lee Kang-In",
+   "team": "Atlético Madrid",
+   "tier": 1
+  },
+  {
+   "ko": "김민재",
+   "en": "Kim Min-Jae",
+   "team": "Bayern Munich",
+   "tier": 1
+  },
+  {
+   "ko": "황희찬",
+   "en": "Hwang Hee-Chan",
+   "team": "Schalke 04",
+   "tier": 2
+  },
+  {
+   "ko": "이재성",
+   "en": "Lee Jae-Sung",
+   "team": "Mainz",
+   "tier": 2
+  },
+  {
+   "ko": "정우영",
+   "en": "Jeong Woo-Yeong",
+   "team": "Union Berlin",
+   "tier": 2
+  },
+  {
+   "ko": "옌스 카스트로프",
+   "en": "Jens Castrop",
+   "team": "Borussia Mönchengladbach",
+   "tier": 2
+  },
+  {
+   "ko": "황인범",
+   "en": "Hwang In-Beom",
+   "team": "FC Porto",
+   "tier": 2
+  },
+  {
+   "ko": "오현규",
+   "en": "Oh Hyeon-Gyu",
+   "team": "Besiktas",
+   "tier": 2
+  },
+  {
+   "ko": "배준호",
+   "en": "Bae Jun-Ho",
+   "team": "Stoke City",
+   "tier": 2
+  },
+  {
+   "ko": "엄지성",
+   "en": "Eom Ji-Sung",
+   "team": "Swansea City",
+   "tier": 2
+  },
+  {
+   "ko": "백승호",
+   "en": "Paik Seung-Ho",
+   "team": "Birmingham City",
+   "tier": 2
+  },
+  {
+   "ko": "조규성",
+   "en": "Cho Gue-Sung",
+   "team": "FC Midtjylland",
+   "tier": 2
+  },
+  {
+   "ko": "이정후",
+   "en": "Jung Hoo Lee",
+   "team": "San Francisco Giants",
+   "tier": 1
+  },
+  {
+   "ko": "김하성",
+   "en": "Ha-Seong Kim",
+   "team": "Atlanta Braves",
+   "tier": 2
+  },
+  {
+   "ko": "김혜성",
+   "en": "Hyeseong Kim",
+   "team": "Los Angeles Dodgers",
+   "tier": 1
+  },
+  {
+   "ko": "송성문",
+   "en": "Seong-Mun Song",
+   "team": "San Diego Padres",
+   "tier": 2
+  }
+ ],
+ "derbies": [
+  [
+   "Manchester United",
+   "Liverpool"
+  ],
+  [
+   "Manchester United",
+   "Manchester City"
+  ],
+  [
+   "Arsenal",
+   "Tottenham Hotspur"
+  ],
+  [
+   "Liverpool",
+   "Everton"
+  ],
+  [
+   "Chelsea",
+   "Arsenal"
+  ],
+  [
+   "Liverpool",
+   "Manchester City"
+  ],
+  [
+   "Manchester United",
+   "Tottenham Hotspur"
+  ],
+  [
+   "Real Madrid",
+   "Barcelona"
+  ],
+  [
+   "Real Madrid",
+   "Atlético Madrid"
+  ],
+  [
+   "Bayern Munich",
+   "Borussia Dortmund"
+  ],
+  [
+   "AC Milan",
+   "Internazionale"
+  ],
+  [
+   "Juventus",
+   "Internazionale"
+  ],
+  [
+   "Paris Saint-Germain",
+   "Marseille"
+  ],
+  [
+   "New York Yankees",
+   "Boston Red Sox"
+  ],
+  [
+   "Los Angeles Dodgers",
+   "San Francisco Giants"
+  ],
+  [
+   "Boston Celtics",
+   "Los Angeles Lakers"
+  ]
+ ],
+ "teams": {
+  "Liverpool": "리버풀",
+  "Manchester City": "맨시티",
+  "Manchester United": "맨유",
+  "Tottenham Hotspur": "토트넘",
+  "Arsenal": "아스널",
+  "Chelsea": "첼시",
+  "Newcastle United": "뉴캐슬",
+  "Aston Villa": "애스턴 빌라",
+  "Brighton & Hove Albion": "브라이턴",
+  "Brentford": "브렌트퍼드",
+  "Everton": "에버턴",
+  "Fulham": "풀럼",
+  "Crystal Palace": "크리스털 팰리스",
+  "Nottingham Forest": "노팅엄",
+  "AFC Bournemouth": "본머스",
+  "Leeds United": "리즈",
+  "Sunderland": "선덜랜드",
+  "Ipswich Town": "입스위치",
+  "Hull City": "헐 시티",
+  "Coventry City": "코번트리",
+  "Real Madrid": "레알 마드리드",
+  "Barcelona": "바르셀로나",
+  "Atlético Madrid": "아틀레티코 마드리드",
+  "Villarreal": "비야레알",
+  "Real Betis": "레알 베티스",
+  "Athletic Club": "아틀레틱 빌바오",
+  "Real Sociedad": "레알 소시에다드",
+  "Sevilla": "세비야",
+  "Valencia": "발렌시아",
+  "Alavés": "알라베스",
+  "Deportivo Alavés": "알라베스",
+  "Bayern Munich": "바이에른 뮌헨",
+  "Borussia Dortmund": "도르트문트",
+  "Bayer Leverkusen": "레버쿠젠",
+  "RB Leipzig": "라이프치히",
+  "Eintracht Frankfurt": "프랑크푸르트",
+  "Mainz": "마인츠",
+  "FC Augsburg": "아우크스부르크",
+  "Schalke 04": "샬케",
+  "SC Freiburg": "프라이부르크",
+  "Union Berlin": "우니온 베를린",
+  "Borussia Mönchengladbach": "묀헨글라트바흐",
+  "Paris Saint-Germain": "PSG",
+  "Marseille": "마르세유",
+  "Monaco": "모나코",
+  "Lyon": "리옹",
+  "Lille": "릴",
+  "Internazionale": "인테르",
+  "AC Milan": "AC 밀란",
+  "Juventus": "유벤투스",
+  "Napoli": "나폴리",
+  "FC Porto": "포르투",
+  "Benfica": "벤피카",
+  "Sporting CP": "스포르팅",
+  "Galatasaray": "갈라타사라이",
+  "Besiktas": "베식타스",
+  "PSV Eindhoven": "PSV",
+  "Club Brugge": "클럽 브뤼헤",
+  "LAFC": "LAFC",
+  "Vancouver Whitecaps": "밴쿠버",
+  "Inter Miami CF": "인터 마이애미",
+  "LA Galaxy": "LA 갤럭시",
+  "Los Angeles Dodgers": "LA 다저스",
+  "Milwaukee Brewers": "밀워키",
+  "San Francisco Giants": "SF 자이언츠",
+  "Atlanta Braves": "애틀랜타",
+  "San Diego Padres": "샌디에이고",
+  "New York Yankees": "뉴욕 양키스",
+  "Boston Red Sox": "보스턴",
+  "Tampa Bay Rays": "탬파베이",
+  "Cleveland Guardians": "클리블랜드",
+  "Chicago White Sox": "화이트삭스",
+  "Golden State Warriors": "골든스테이트",
+  "Los Angeles Lakers": "LA 레이커스",
+  "Boston Celtics": "보스턴 셀틱스",
+  "Kocaelispor": "코자엘리스포르",
+  "Viking FK": "바이킹",
+  "Fenerbahce": "페네르바체",
+  "Trabzonspor": "트라브존스포르",
+  "Bodø/Glimt": "보되/글림트",
+  "Las Palmas": "라스팔마스",
+  "Shakhtar Donetsk": "샤흐타르",
+  "AEK Athens": "AEK 아테네",
+  "Feyenoord": "페예노르트",
+  "Como": "코모",
+  "Slavia Prague": "슬라비아 프라하",
+  "RC Lens": "랑스"
+ },
+ "_tv": "국내 중계처는 2026-10-09 조사(쿠팡플레이·SPOTV 편성표와 2025~26 보도). 시즌마다 바뀐다 — 매 시즌 시작 때 다시 확인. KBO=지상파 3사·티빙, LCK=치지직·SOOP",
+ "must": {
+  "racing/f1": "F1 결승은 늘 싣는다(대시보드에서도 챙기던 종목)"
+ }
+}
