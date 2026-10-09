@@ -241,6 +241,18 @@ def pick_person(pp, title, used):
     return None
 
 
+def pick_face(nr, pp, title, used):
+    """회사에 대표 얼굴(face)이 정해져 있으면 — 제품 이름이 없는 그 회사 기사엔 그 사람 사진.
+    사용자 지시(2026-10-09): 오픈AI 기사는 웬만하면 샘 올트먼."""
+    comps, _ = nr
+    for c in comps.values():
+        if c.get("face") and re.search(c["match"], title or ""):
+            p = (pp.get("people") or {}).get(c["face"])
+            if p:
+                return pick_person({"base": pp["base"], "people": {c["face"]: dict(p, match=".")}}, title, used)
+    return None
+
+
 def pick_newsroom(nr, text, used, product_only=False):
     """기사가 뉴스룸 사진이 있는 회사를 다루면 그 회사 공식 사진 — 주제가 맞는 것 먼저, 없으면 대표 사진.
     회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다).
@@ -836,8 +848,8 @@ def main():
         if not it or (dx.get(key) or {}).get("drop_photo") or (dx.get(key) or {}).get("no_photo") or it.get("no_photo"):
             return
         tt = {"title": " ".join((title or "", sub or "")), "deck": deck or ""}
-        # 제품 이름(1대1) → 사람 얼굴 → 회사 사진 순
-        ph = pick_newsroom(nrp, tt, nr_used, product_only=True) or pick_person(ppl, tt["title"], nr_used)             or pick_newsroom(nrp, tt, nr_used)
+        # 제품 이름(1대1) → 제목에 나온 사람 얼굴 → 회사 대표 얼굴(face) → 회사 사진 순
+        ph = pick_newsroom(nrp, tt, nr_used, product_only=True) or pick_person(ppl, tt["title"], nr_used)             or pick_face(nrp, ppl, tt["title"], nr_used) or pick_newsroom(nrp, tt, nr_used)
         if ph:
             size = (it.get("img") or {}).get("size")
             it["img"] = dict(ph, **({"size": size} if size else {}))
