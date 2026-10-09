@@ -126,6 +126,582 @@
    "terms": "https://www.hyundai.com/worldwide/en/footer/contact-legal/legal",
    "terms_note": "불명확(2026-10-09): 글로벌 뉴스룸 미디어킷은 있으나 언론용 이용 조건 없음. 사이트 법적 고지는 서면 허락 없는 복제·게시 금지, 개인적 용도만 허용",
    "permitted": false
+  },
+  {
+   "id": "anthropic",
+   "name": "앤트로픽",
+   "credit": "앤트로픽 제공",
+   "match": "Anthropic|앤트로픽",
+   "terms": "https://www.anthropic.com/legal/trademark-guidelines",
+   "terms_note": "프레스 키트(anthropic.com/press-kit)는 로고·경영진 사진만 담고 사용 조건 문서가 없으며, 상표 가이드라인에도 보도·편집 목적 사용 조항이 없음. 문의 press@anthropic.com. 이미지 사용 허용 여부는 불명확 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "lego",
+   "name": "레고",
+   "credit": "레고 제공",
+   "match": "LEGO|레고",
+   "terms": "https://www.lego.com/en-us/legal/notices-and-policies/",
+   "terms_note": "LEGO Group 뉴스룸 보도자료 이미지; 보도 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "light",
+   "name": "Light",
+   "credit": "Light 제공",
+   "match": "Light",
+   "terms": "https://www.thelightphone.com/",
+   "terms_note": "Light Phone 공식 사이트 이미지; 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "mercedesbenz",
+   "name": "메르세데스-벤츠",
+   "credit": "메르세데스-벤츠 제공",
+   "match": "Mercedes\\-Benz|메르세데스\\-벤츠",
+   "terms": "https://media.mercedes-benz.com/en/terms-of-use",
+   "terms_note": "Mercedes-Benz Media는 언론용 공개 사이트이나 이용약관 문구를 자동으로 확인하지 못함; 출처 '© Mercedes-Benz' 표기 권장 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "openclaw",
+   "name": "OpenClaw",
+   "credit": "OpenClaw 제공",
+   "match": "Moltbot|OpenClaw",
+   "terms": "https://docs.openclaw.ai/",
+   "terms_note": "Moltbot=Clawdbot=OpenClaw 동일 프로젝트(OpenClaw 항목과 동일) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "nasa",
+   "name": "NASA",
+   "credit": "NASA 제공",
+   "match": "NASA",
+   "terms": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "terms_note": "NASA 이미지는 일반적으로 저작권 없는 퍼블릭 도메인(보도·교육 목적 사용 가능), 'NASA' 크레딧 표기 권장, 로고 사용/보증(endorsement) 암시 금지 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "northropgrumman",
+   "name": "노스럽 그러먼",
+   "credit": "노스럽 그러먼 제공",
+   "match": "Northrop\\ Grumman|노스럽\\ 그러먼",
+   "terms": "https://www.northropgrumman.com/terms-of-use",
+   "terms_note": "뉴스룸 공개 미디어 자료; 보도 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "oura",
+   "name": "오우라",
+   "credit": "오우라 제공",
+   "match": "Oura|오우라",
+   "terms": "https://ouraring.com/terms-and-conditions",
+   "terms_note": "프레스 페이지(press@ouraring.com 문의)만 있고 미디어 이미지 사용 조건은 명시되지 않음 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "qualcomm",
+   "name": "퀄컴",
+   "credit": "퀄컴 제공",
+   "match": "Qualcomm|퀄컴",
+   "terms": "https://www.qualcomm.com/news/media-center",
+   "terms_note": "미디어 센터/보도자료 이미지 사용 조건을 페이지에서 명시적으로 확인하지 못함(보도용 공개 자료로 추정) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "rivian",
+   "name": "리비안",
+   "credit": "리비안 제공",
+   "match": "Rivian|리비안",
+   "terms": "https://rivian.com/newsroom/media",
+   "terms_note": "Rivian 뉴스룸 미디어 사이트의 모든 이미지는 편집(보도) 목적에 한해 사용 허용, 광고·마케팅 등 상업적 사용 금지 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "rockstargames",
+   "name": "록스타 게임즈",
+   "credit": "록스타 게임즈 제공",
+   "match": "Rockstar\\ Games|록스타\\ 게임즈",
+   "terms": "https://www.rockstargames.com/legal",
+   "terms_note": "Rockstar Newswire/공식 사이트 이미지; 보도 이용 약관을 명시적으로 확인하지 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "slateauto",
+   "name": "슬레이트 오토",
+   "credit": "슬레이트 오토 제공",
+   "match": "Slate\\ Auto|슬레이트\\ 오토",
+   "terms": "https://www.slate.auto/en/press",
+   "terms_note": "Slate 프레스 페이지 존재; 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "snap",
+   "name": "스냅",
+   "credit": "스냅 제공",
+   "match": "Snap|스냅",
+   "terms": "https://newsroom.snap.com/media-kit",
+   "terms_note": "Snap 뉴스룸 미디어 킷 존재; 보도 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "sonos",
+   "name": "소노스",
+   "credit": "소노스 제공",
+   "match": "Sonos|소노스",
+   "terms": "https://www.sonos.com/en-us/legal/terms-of-use",
+   "terms_note": "Sonos 쇼핑/제품 페이지 이미지 사용; 보도용 미디어 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "spotify",
+   "name": "스포티파이",
+   "credit": "스포티파이 제공",
+   "match": "Spotify|스포티파이",
+   "terms": "https://newsroom.spotify.com/media-kit/",
+   "terms_note": "Spotify 뉴스룸 미디어 킷 존재; 세부 이용 조건은 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "valve",
+   "name": "밸브",
+   "credit": "밸브 제공",
+   "match": "Valve|밸브",
+   "terms": "https://www.valvesoftware.com/en/",
+   "terms_note": "Valve 별도 프레스 킷/보도 이용 약관을 확인하지 못함. Steam 스토어/뉴스 게시물에 공개된 공식 이미지를 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "verge",
+   "name": "Verge",
+   "credit": "Verge 제공",
+   "match": "Verge",
+   "terms": "https://www.vergemotorcycles.com/",
+   "terms_note": "공식 사이트 이미지(프레스 포토 섹션 존재 추정); 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "vizio",
+   "name": "비지오",
+   "credit": "비지오 제공",
+   "match": "Vizio|비지오",
+   "terms": "https://www.vizio.com/",
+   "terms_note": "공식 제품 페이지 이미지; 보도 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "volkswagen",
+   "name": "폭스바겐",
+   "credit": "폭스바겐 제공",
+   "match": "Volkswagen|폭스바겐",
+   "terms": "https://www.volkswagen-newsroom.com/en",
+   "terms_note": "VW 뉴스룸은 보도용 사이트이나 이용 조건 명시 확인 못함. 사용 이미지는 vw.com(미국) ID.4 마스트헤드 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "weave",
+   "name": "Weave",
+   "credit": "Weave 제공",
+   "match": "Weave",
+   "terms": "https://www.weaverobotics.com/",
+   "terms_note": "공식 사이트/블로그 이미지; 이용 조건 명시 없음 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "world",
+   "name": "월드",
+   "credit": "월드 제공",
+   "match": "World|월드",
+   "terms": "https://world.org/press",
+   "terms_note": "World 미디어 센터(press) 페이지 존재; 이미지 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "yarbo",
+   "name": "Yarbo",
+   "credit": "Yarbo 제공",
+   "match": "Yarbo",
+   "terms": "https://www.yarbo.com/",
+   "terms_note": "공식 쇼핑 페이지 이미지; 보도 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "commaai",
+   "name": "comma.ai",
+   "credit": "comma.ai 제공",
+   "match": "comma\\.ai",
+   "terms": "https://comma.ai/",
+   "terms_note": "공식 사이트 이미지; 이용 조건 명시 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "waymo",
+   "name": "웨이모",
+   "credit": "웨이모 제공(Source: Waymo)",
+   "match": "Waymo|웨이모",
+   "terms": "https://waymo.com/media-resources/",
+   "terms_note": "언론·교육 목적 사용 허용, 캡션에 \"Source: Waymo\" 표기 요구, 상업적 사용은 press@waymo.com 문의 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "zoox",
+   "name": "죽스",
+   "credit": "죽스 제공(Zoox, Inc.)",
+   "match": "Zoox|죽스",
+   "terms": "https://zoox.com/press-room",
+   "terms_note": "프레스룸 안내: 이 페이지의 미디어 콘텐츠는 보도·교육 목적에 한해 사용 가능하며 \"Zoox, Inc.\" 출처 표기 필요(상업적 사용은 문의), 상표는 로고 가이드 준수 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "spacex",
+   "name": "스페이스X",
+   "credit": "스페이스X 제공",
+   "match": "SpaceX|스페이스X",
+   "terms": "https://www.spacex.com/updates",
+   "terms_note": "공개된 미디어 키트·보도용 사용 약관이 없음(spacex.com/media 는 홈으로 리다이렉트). 사이트에 올라온 공식 사진을 보도 목적 핫링크하는 것이 명시적으로 허용되는지는 불명확, 출처는 'SpaceX 제공'으로 표기 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "tesla",
+   "name": "테슬라",
+   "credit": "테슬라 제공(Courtesy of Tesla, Inc.)",
+   "match": "Tesla|테슬라",
+   "terms": "https://www.tesla.com/tesla-gallery",
+   "terms_note": "Tesla Gallery(구 프레스킷)는 언론사가 Tesla 관련 기사·보도에 쓰는 것만 허용하며 광고·표지·상업 목적은 금지, 반드시 'Courtesy of Tesla, Inc.' 표기(한국어로는 'Tesla 제공' 취지). 갤러리 이미지는 zip 다운로드만 제공되어, 아래 이미지는 tesla.com 제품 페이지의 공식 CDN(digitalassets.tesla.com) 이미지임 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "byd",
+   "name": "BYD",
+   "credit": "BYD 제공",
+   "match": "BYD",
+   "terms": "https://press.bydauto.be/",
+   "terms_note": "BYD 벨기에 프레스룸(Prezly)이 보도 자료용으로 이미지 공개; 별도 이용 약관·출처 표기 요구는 못 찾음. (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "baidu",
+   "name": "바이두",
+   "credit": "바이두 제공",
+   "match": "Baidu|바이두",
+   "terms": "https://www.apollogo.com/",
+   "terms_note": "아폴로 고 공식 사이트에 이미지 이용 조건 명시 없음. 보도자료 이미지는 PR Newswire 배포용이나 외부 CDN이라 사이트 이미지를 사용. (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "honor",
+   "name": "아너",
+   "credit": "아너 제공",
+   "match": "Honor|아너",
+   "terms": "https://www.honor.com/global/legal/",
+   "terms_note": "미디어 이용 조건을 확인하지 못함(글로벌 뉴스룸·이벤트 페이지의 제품 이미지를 사용). (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "huawei",
+   "name": "화웨이",
+   "credit": "화웨이 제공",
+   "match": "Huawei|화웨이",
+   "terms": "https://www.huawei.com/en/legal",
+   "terms_note": "사이트 콘텐츠는 서면 동의 없이 복제·배포 금지이고 소비자 사이트는 개인·비상업 목적 사용만 명시. 보도 예외 조항은 없어 불명확. (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "lenovo",
+   "name": "레노버",
+   "credit": "레노버 제공",
+   "match": "Lenovo|레노버",
+   "terms": "https://www.lenovo.com/us/en/legal/",
+   "terms_note": "StoryHub는 언론용 프레스킷을 공개하나 이미지 이용 조건·출처 표기 요구는 명시되지 않음(이미지는 Lenovo StoryHub 공식 CDN). (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "nintendo",
+   "name": "닌텐도",
+   "credit": "닌텐도 제공",
+   "match": "Nintendo|닌텐도",
+   "terms": "https://www.nintendo.com/us/terms-of-use/",
+   "terms_note": "공식 프레스킷(press.nintendo.com) 접근 불가, 보도용 이미지 사용 조건을 확인하지 못함. 제품 소개 페이지 이미지를 핫링크 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "sony",
+   "name": "소니",
+   "credit": "소니 제공",
+   "match": "Sony|소니",
+   "terms": "https://ai.sony/terms-of-use",
+   "terms_note": "sony.com 보도자료 페이지는 자동 접근이 차단되어 이용 조건 확인 못함. 이미지는 Sony AI·소니재팬·플레이스테이션 공식 서버 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "unitree",
+   "name": "유니트리",
+   "credit": "유니트리 제공",
+   "match": "Unitree|유니트리",
+   "terms": "https://www.unitree.com/terms",
+   "terms_note": "보도용 이미지 사용 조건 명시를 찾지 못함. 제품 페이지 이미지를 핫링크 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "vivo",
+   "name": "비보",
+   "credit": "비보 제공",
+   "match": "Vivo|비보",
+   "terms": "https://www.vivo.com/en/terms-of-use",
+   "terms_note": "보도용 이미지 사용 조건을 확인하지 못함. 제품 페이지 이미지를 핫링크 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "xiaomi",
+   "name": "샤오미",
+   "credit": "샤오미 제공",
+   "match": "Xiaomi|샤오미",
+   "terms": "https://www.mi.com/global/terms-of-use",
+   "terms_note": "보도용 이미지 사용 조건을 확인하지 못함. 제품 페이지 이미지를 핫링크 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "1x",
+   "name": "1X",
+   "credit": "1X 제공",
+   "match": "1X",
+   "terms": "https://www.1x.tech/",
+   "terms_note": "별도의 보도자료/미디어 사용 약관 페이지를 확인하지 못함(약관 불명확) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "amd",
+   "name": "AMD",
+   "credit": "AMD 제공",
+   "match": "AMD",
+   "terms": "https://www.amd.com/en/legal/copyright.html",
+   "terms_note": "보도용 이미지 다운로드는 가능하나 AMD 상표·이미지 사용 약관 동의가 전제이며 출처 표기 규정은 명시되지 않음 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "adobe",
+   "name": "어도비",
+   "credit": "어도비 제공",
+   "match": "Adobe|어도비",
+   "terms": "https://www.adobe.com/legal/terms.html",
+   "terms_note": "보도용 이미지 사용 조건을 명확히 확인하지 못함(블로그 이미지를 핫링크) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "anysphere",
+   "name": "애니스피어(커서)",
+   "credit": "애니스피어(커서) 제공",
+   "match": "Anysphere|애니스피어\\(커서\\)",
+   "terms": "https://cursor.com/terms-of-service",
+   "terms_note": "별도 프레스킷 약관 없음, 블로그 공개 이미지 사용(보도 목적 허용 여부 불명확) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "credit": "Arm 제공",
+   "match": "Arm",
+   "terms": "https://www.arm.com/company/policies/terms-and-conditions",
+   "terms_note": "뉴스룸 이미지는 보도 목적 공개이나 사용 조건 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "blueorigin",
+   "name": "블루 오리진",
+   "credit": "블루 오리진 제공",
+   "match": "Blue\\ Origin|블루\\ 오리진",
+   "terms": "https://www.blueorigin.com/gallery",
+   "terms_note": "갤러리 이미지는 다운로드 가능하며 'Please credit Blue Origin' 출처 표기 요구 (2026-10-09 제품 사진 조사)",
+   "permitted": true
+  },
+  {
+   "id": "bose",
+   "name": "보스",
+   "credit": "보스 제공",
+   "match": "Bose|보스",
+   "terms": "https://www.bose.com/legal/terms-of-use",
+   "terms_note": "프레스룸 이미지 사용 조건 명문 확인 못함(제품 페이지 이미지 사용) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "bostondynamics",
+   "name": "보스턴 다이내믹스",
+   "credit": "보스턴 다이내믹스 제공",
+   "match": "Boston\\ Dynamics|보스턴\\ 다이내믹스",
+   "terms": "https://bostondynamics.com/terms/",
+   "terms_note": "보도 이미지 사용 조건 명문 확인 못함(뉴스 페이지 이미지 사용) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "ceer",
+   "name": "시어",
+   "credit": "시어 제공",
+   "match": "Ceer|시어",
+   "terms": "https://www.ceermotors.com/",
+   "terms_note": "프레스룸/약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "cerebras",
+   "name": "세레브라스",
+   "credit": "세레브라스 제공",
+   "match": "Cerebras|세레브라스",
+   "terms": "https://www.cerebras.ai/terms-of-use",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "chevrolet",
+   "name": "쉐보레",
+   "credit": "쉐보레 제공",
+   "match": "Chevrolet|쉐보레",
+   "terms": "https://www.gm.com/privacy-statement",
+   "terms_note": "GM 프레스룸은 언론용 이미지 제공이나 사용 약관 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "clicks",
+   "name": "Clicks",
+   "credit": "Clicks 제공",
+   "match": "Clicks",
+   "terms": "https://www.clicksphone.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "coldcard",
+   "name": "Coldcard",
+   "credit": "Coldcard 제공",
+   "match": "Coldcard",
+   "terms": "https://coldcard.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "dji",
+   "name": "DJI",
+   "credit": "DJI 제공",
+   "match": "DJI",
+   "terms": "https://www.dji.com/policy",
+   "terms_note": "보도 이미지 사용 조건 명문 확인 못함(romo.tech 공식 사이트 이미지) (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "dell",
+   "name": "델",
+   "credit": "델 제공",
+   "match": "Dell|델",
+   "terms": "https://www.dell.com/learn/us/en/uscorp1/terms-conditions",
+   "terms_note": "뉴스룸 접근이 봇 차단되어 쇼핑몰 제품 이미지를 사용, 보도 목적 허용 여부 불명확 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "donutlab",
+   "name": "Donut Lab",
+   "credit": "Donut Lab 제공",
+   "match": "Donut\\ Lab",
+   "terms": "https://www.donutlab.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "dyson",
+   "name": "다이슨",
+   "credit": "다이슨 제공",
+   "match": "Dyson|다이슨",
+   "terms": "https://www.dyson.com/legal",
+   "terms_note": "공식 보도자료 페이지 이미지 사용, 사용 약관 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "evenrealities",
+   "name": "Even Realities",
+   "credit": "Even Realities 제공",
+   "match": "Even\\ Realities",
+   "terms": "https://www.evenrealities.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "ferrari",
+   "name": "페라리",
+   "credit": "페라리 제공",
+   "match": "Ferrari|페라리",
+   "terms": "https://www.ferrari.com/en-EN/legal-notice",
+   "terms_note": "미디어센터가 보도용 이미지 제공, 출처 표기 규정 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "flipperdevices",
+   "name": "Flipper Devices",
+   "credit": "Flipper Devices 제공",
+   "match": "Flipper\\ Devices",
+   "terms": "https://busy.bar/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "framework",
+   "name": "프레임워크",
+   "credit": "프레임워크 제공",
+   "match": "Framework|프레임워크",
+   "terms": "https://frame.work/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 사이트 공개 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "gm",
+   "name": "GM",
+   "credit": "GM 제공",
+   "match": "GM",
+   "terms": "https://www.gm.com/privacy-statement",
+   "terms_note": "GM 프레스룸은 언론용 이미지 제공이나 사용 약관 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "hesai",
+   "name": "허사이",
+   "credit": "허사이 제공",
+   "match": "Hesai|허사이",
+   "terms": "https://www.hesaitech.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 공식 제품 페이지 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "huggingface",
+   "name": "허깅페이스",
+   "credit": "허깅페이스 제공",
+   "match": "Hugging\\ Face|허깅페이스",
+   "terms": "https://huggingface.co/blog",
+   "terms_note": "Microduck은 Pollen Robotics 공식 사이트 이미지 사용, 약관 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "intel",
+   "name": "인텔",
+   "credit": "인텔 제공",
+   "match": "Intel|인텔",
+   "terms": "https://www.intel.com/content/www/us/en/legal/terms-of-use.html",
+   "terms_note": "뉴스룸 이미지에 'Credit: Intel Corporation' 표기, 보도 사용은 통상 허용되나 약관 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "isaraerospace",
+   "name": "이자르 에어로스페이스",
+   "credit": "이자르 에어로스페이스 제공",
+   "match": "Isar\\ Aerospace|이자르\\ 에어로스페이스",
+   "terms": "https://www.isaraerospace.com/legal-notice",
+   "terms_note": "뉴스룸에 보도용 사진 게시('©-Isar-Aerospace' 출처), 사용 조건 명문 확인 못함 (2026-10-09 제품 사진 조사)",
+   "permitted": false
+  },
+  {
+   "id": "kingarthur",
+   "name": "King Arthur",
+   "credit": "King Arthur 제공",
+   "match": "King\\ Arthur",
+   "terms": "https://www.kingarthurbaking.com/",
+   "terms_note": "프레스킷 약관 확인 못함, 제품 공식 사이트 이미지 사용 (2026-10-09 제품 사진 조사)",
+   "permitted": false
   }
  ],
  "photos": [
@@ -646,6 +1222,1836 @@
    "default": false,
    "page": "https://openai.com/index/mrc-supercomputer-networking/",
    "company": "openai"
+  },
+  {
+   "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/3613f360926fae004521197488623465eb0cd751-1920x1035.png",
+   "desc": "Claude Code 터미널 첫 화면(v2.0.0, 최근 활동·새 기능 안내, 입력 프롬프트)을 어두운 배경의 창 모양으로 보여주는 공식 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+   "company": "anthropic",
+   "match": "Claude Code|Code Review|클로드 ?코드",
+   "product": "Claude Code"
+  },
+  {
+   "url": "https://assets.claude.com/e0035a095d8888c9739f8acb305f517b25d469eb.jpg",
+   "desc": "Claude Cowork 데스크톱 앱 창. 왼쪽 대화(가격 비교 요청)와 오른쪽 내장 브라우저 화면이 함께 보임",
+   "topic": "",
+   "default": false,
+   "page": "https://claude.com/product/cowork",
+   "company": "anthropic",
+   "match": "Cowork|코워크|법률 AI 도구",
+   "product": "Cowork"
+  },
+  {
+   "url": "https://assets.claude.com/fbd4a5fe6b0e7c0c45ab01fc9850a637eb25c820.jpg",
+   "desc": "Claude Science 앱 화면. 문헌 리뷰 요청과 에이전트 진행 상황, 오른쪽에 생성된 review.pdf 논문이 보임",
+   "topic": "",
+   "default": false,
+   "page": "https://claude.com/product/claude-science",
+   "company": "anthropic",
+   "match": "Claude Science|클로드 ?사이언스",
+   "product": "Claude Science"
+  },
+  {
+   "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/499e91975d880b35eac6e48ad43161de7d10416c-2876x1614.jpg",
+   "desc": "Claude Design 화면 일부. 지구본 시각화 디자인과 오른쪽 Tweaks 패널(테마·브레이크포인트·호 색상 슬라이더)이 보임. 왼쪽이 공식 크롭으로 잘려 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+   "company": "anthropic",
+   "match": "Claude Design|클로드 ?디자인",
+   "product": "Claude Design"
+  },
+  {
+   "url": "https://images.ctfassets.net/8su2tbn87fck/2xYBCD3PoQOWTR7xAp41vu/cfa61c4d6fa4454a92c3e2e7676c2de1/Chat.png?w=1920",
+   "desc": "브라우저 창에 뜬 ChatGPT 웹 화면(다크). 왼쪽 사이드바와 저녁 메뉴 대화, 하단 입력창이 보임",
+   "topic": "",
+   "default": false,
+   "page": "https://openai.com/chatgpt/overview/",
+   "company": "openai",
+   "match": "ChatGPT(?! ?Health)|챗 ?GPT(?! ?헬스)|CarPlay|인텔리전트 UI",
+   "product": "ChatGPT"
+  },
+  {
+   "url": "https://images.ctfassets.net/kftzwdyauwt9/4baKFoCwcNWcZG3AlIgUTv/c1734650b683d79a9333d448fcde684d/figma-designedDesktop.png?w=1920",
+   "desc": "Codex 데스크톱 앱 창(다크). 사이드바의 고정 프로젝트·최근 작업 목록과 오른쪽 대화가 보임. 공식 크롭이라 창 오른쪽이 잘려 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://openai.com/codex/",
+   "company": "openai",
+   "match": "Codex|코덱스",
+   "product": "Codex"
+  },
+  {
+   "url": "https://images.ctfassets.net/kftzwdyauwt9/48Gd0M6yeunR8ilNNevELk/ee5f662ffdac87af5380b58cfa8f0c4a/GPT-6_Astra_ChatGPT_Work_Dark_Mode.png",
+   "desc": "ChatGPT 앱 다크 화면. 왼쪽 대화(영국 출시 전략 요청)와 오른쪽 생성된 슬라이드 덱 미리보기, 입력창에 GPT-6 Astra 표기",
+   "topic": "",
+   "default": false,
+   "page": "https://openai.com/business/model/",
+   "company": "openai",
+   "match": "GPT-?6(\\.\\d)? ?(Astra|아스트라)|(OpenAI|오픈AI)\\S{0,3} .{0,15}(Astra|아스트라)",
+   "product": "GPT-6 Astra"
+  },
+  {
+   "url": "https://images.ctfassets.net/kftzwdyauwt9/401YnvyXTYuaYIEWxnV48W/4113364c476df0fd17cce4d6e299e7d0/Health_Chat_1.png?w=1920",
+   "desc": "스마트폰 ChatGPT Health 대화 화면. 지난 운동 기록을 보고 건강 조언을 받는 대화가 분홍·노랑 꽃 배경 위에 보임",
+   "topic": "",
+   "default": false,
+   "page": "https://openai.com/index/health-in-chatgpt/",
+   "company": "openai",
+   "match": "ChatGPT ?Health|챗 ?GPT ?헬스",
+   "product": "ChatGPT Health"
+  },
+  {
+   "url": "https://images.ctfassets.net/kftzwdyauwt9/1NZB4F7BL01EyZAiEQdj12/40b5d5cc58214ea082c25d136fb08ebf/introducing-dots-carousel-launch.png?w=1920",
+   "desc": "Dots 앱 창. 왼쪽 대화(슬라이드 수정 제안)와 오른쪽 문서 화면, 파란 캐릭터 Felipe가 보임",
+   "topic": "",
+   "default": false,
+   "page": "https://openai.com/index/introducing-dots/",
+   "company": "openai",
+   "match": "\\bDots\\b|도츠",
+   "product": "Dots"
+  },
+  {
+   "url": "https://www.lego.com/cdn/cs/aboutus/assets/blt33f1f8b4089b8256/SMARTBrick_16x9.jpg",
+   "desc": "어두운 배경에서 보라·청록 빛을 내는 LEGO 스마트 브릭 렌더 이미지(뒤편에 미니피규어)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.lego.com/aboutus/news/2026/december/lego-smart-play-announcement",
+   "company": "lego",
+   "match": "LEGO Smart Brick|Smart Brick|레고 ?스마트 ?브릭|스마트 ?브릭",
+   "product": "LEGO Smart Brick"
+  },
+  {
+   "url": "https://www.thelightphone.com/assets/images/social-share-card-flip.jpg",
+   "desc": "손에 든 Light Flip 클램쉘폰, 흑백 텍스트 메뉴 화면이 보임(해상도 낮음)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.thelightphone.com/flip",
+   "company": "light",
+   "match": "Light Flip|라이트 ?플립",
+   "product": "Light Flip"
+  },
+  {
+   "url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/3def3103-fd27-4d31-8081-99ad2bff5146/3_2_1024",
+   "desc": "산길 커브를 달리는 흰색 신형 전기 C-클래스(일루미네이티드 그릴), Mercedes-Benz Media 보도 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://media.mercedes-benz.com/en/article/7c3224df-0fd6-49bf-92fd-b6b7dbd0a5dd",
+   "company": "mercedesbenz",
+   "match": "C 400 4MATIC|(전기|[Ee]lectric) ?C[- ]?(Class|클래스)|C-Class|C-클래스",
+   "product": "Mercedes-Benz electric C-Class"
+  },
+  {
+   "url": "https://docs.openclaw.ai/assets/guide-agents-ui.webp",
+   "desc": "OpenClaw 공식 문서의 에이전트 관리 UI 화면(Research/Build/Personal 에이전트 카드). 해상도 낮고 UI 목업 성격",
+   "topic": "",
+   "default": false,
+   "page": "https://docs.openclaw.ai/",
+   "company": "openclaw",
+   "match": "Moltbot|Clawdbot|OpenClaw|오픈클로|몰트봇|OpenClaw|오픈클로|Clawdbot|Moltbot|몰트봇",
+   "product": "Moltbot"
+  },
+  {
+   "url": "https://images-assets.nasa.gov/image/SLS_MAF_20260401_ArtemisIILaunch_05/SLS_MAF_20260401_ArtemisIILaunch_05~large.jpg",
+   "desc": "2026년 4월 1일 케네디 우주센터에서 SLS 로켓·오리온이 발사되는 순간(NASA, 퍼블릭 도메인)",
+   "topic": "",
+   "default": false,
+   "page": "https://images.nasa.gov/details/SLS_MAF_20260401_ArtemisIILaunch_05",
+   "company": "nasa",
+   "match": "Artemis ?(II|2)|아르테미스(?: ?(II|2))?",
+   "product": "Artemis II"
+  },
+  {
+   "url": "https://images-assets.nasa.gov/image/GSFC_20250612_RST_034435/GSFC_20250612_RST_034435~large.jpg",
+   "desc": "고다드 클린룸에서 크레인에 매달린 로먼 우주망원경 관측선 본체(NASA, 퍼블릭 도메인)",
+   "topic": "",
+   "default": false,
+   "page": "https://images.nasa.gov/details/GSFC_20250612_RST_034435",
+   "company": "nasa",
+   "match": "Roman Space Telescope|낸시 ?그레이스 ?로먼|로먼 ?우주 ?망원경",
+   "product": "Nancy Grace Roman Space Telescope"
+  },
+  {
+   "url": "https://images-assets.nasa.gov/image/KSC-01172026-Artemis%20II_Rollout-5/KSC-01172026-Artemis%20II_Rollout-5~large.jpg",
+   "desc": "크롤러-트랜스포터에 실려 발사대로 이동하는 SLS 로켓과 오리온(Artemis II 롤아웃, NASA 퍼블릭 도메인)",
+   "topic": "",
+   "default": false,
+   "page": "https://images.nasa.gov/details/KSC-01172026-Artemis%20II_Rollout-5",
+   "company": "nasa",
+   "match": "\\bSLS\\b|Space Launch System|우주발사시스템",
+   "product": "SLS"
+  },
+  {
+   "url": "https://media.northropgrumman.com/aabe8a44-11cb-4701-a8e4-b4810057e7a0/mrv-mep-render-high-01_Original%20file.jpg",
+   "desc": "궤도상에서 Mission Extension Pod를 장착하는 MRV 렌더링(공식 3D 렌더, 실사 아님)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.northropgrumman.com/space/space-logistics-services",
+   "company": "northropgrumman",
+   "match": "Mission Robotic Vehicle|\\bMRV\\b",
+   "product": "Mission Robotic Vehicle"
+  },
+  {
+   "url": "https://ourahealth.imgix.net/homepage/oura-fall-campaign-desktop.jpg?ixlib=js-3.8.0&auto=format&fit=max&fm=png&q=70&w=1920&s=d29e36032138ab1e9079c3f7034207af",
+   "desc": "손가락 위에 실버 링을 낀 손 모델 컷(Oura 가을 캠페인 이미지, 링이 작게 보임). 서명(s=) 포함 imgix URL이라 캠페인 교체 시 깨질 수 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://ouraring.com/",
+   "company": "oura",
+   "match": "Oura|오우라|스마트링|스마트 ?반지",
+   "product": "Oura Ring"
+  },
+  {
+   "url": "https://s7d1.scene7.com/is/image/dmqualcommprod/SnapdragonX2EliteExtreme",
+   "desc": "붉은 회로기판 위에 놓인 Snapdragon X2 Elite 칩 렌더(해상도 800x450로 낮음)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.qualcomm.com/laptops/products/snapdragon-x2-elite",
+   "company": "qualcomm",
+   "match": "Snapdragon X2 Elite|X2 Elite|스냅드래곤 ?X2 ?엘리트",
+   "product": "Snapdragon X2 Elite"
+  },
+  {
+   "url": "https://s7d1.scene7.com/is/image/dmqualcommprod/SnapdragonWearEliteHeroImage",
+   "desc": "금색 Snapdragon Wear Elite 칩과 펜던트·스마트워치 내부 회로 렌더(칩 이름이 이미지에 포함)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.qualcomm.com/news/releases/2026/03/qualcomm-powers-the-rise-of-personal-ai-with-new-snapdragon-wear",
+   "company": "qualcomm",
+   "match": "Snapdragon Wear Elite|스냅드래곤 ?웨어 ?엘리트",
+   "product": "Snapdragon Wear Elite"
+  },
+  {
+   "url": "https://s7d1.scene7.com/is/image/dmqualcommprod/SnapdragonX2Plus",
+   "desc": "붉은 회로 위에 세워진 Snapdragon X2 Plus 칩 렌더",
+   "topic": "",
+   "default": false,
+   "page": "https://www.qualcomm.com/news/releases/2026/01/empowering-professionals-and-aspiring-creators--snapdragon-x2-pl",
+   "company": "qualcomm",
+   "match": "Snapdragon X2 Plus|X2 Plus|스냅드래곤 ?X2 ?플러스",
+   "product": "Snapdragon X2 Plus"
+  },
+  {
+   "url": "https://res.cloudinary.com/rivian-main/image/upload/f_auto/q_auto/v1/gold-iris/metadata/R2?_a=BAVMn6E80",
+   "desc": "언덕 도로에 서 있는 청록색 Rivian R2 SUV 전면 3/4 컷(공식 제품 페이지 대표 이미지)",
+   "topic": "",
+   "default": false,
+   "page": "https://rivian.com/r2",
+   "company": "rivian",
+   "match": "Rivian R2|리비안 ?R2|Rivian.{0,40}\\bR2\\b|\\bR2\\b.{0,40}(Rivian|리비안)|Rivian.{0,40}\\bR2\\b|\\bR2\\b.{0,40}(Rivian|리비안)|리비안 ?R2",
+   "product": "Rivian R2"
+  },
+  {
+   "url": "https://www.rockstargames.com/VI/_next/static/media/desktop.0iky3x6.hl8fo.jpg",
+   "desc": "GTA VI 공식 사이트의 게임 스크린샷: 해변에서 녹색 클래식카에 기대어 선 두 인물(Jason/Lucia). 빌드 해시 포함 정적 URL이라 사이트 개편 시 변경될 수 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://www.rockstargames.com/VI",
+   "company": "rockstargames",
+   "match": "GTA ?(6|VI|Ⅵ)|Grand Theft Auto ?(VI|6)|그랜드 ?theft|Grand Theft Auto ?(VI|6)|GTA ?(6|VI|Ⅵ)",
+   "product": "GTA VI"
+  },
+  {
+   "url": "https://images.ctfassets.net/20dhmw20vttc/3ExGHgsfJNJ8d4yh0w5ocN/d2c0ed3e1738d6eed1d24e97d39a899d/Studio_60_Front_Three_Quarter_Truck__Driver_Side-HK-Fix.jpg",
+   "desc": "창고 안에 서 있는 회색 Slate 픽업 트럭 전면 3/4 스튜디오 컷",
+   "topic": "",
+   "default": false,
+   "page": "https://www.slate.auto/en",
+   "company": "slateauto",
+   "match": "Slate Auto|Slate ?(Truck|트럭|pickup)|슬레이트 ?(오토|트럭)|\\bSlate\\b.{0,30}(pickup|픽업|트럭|Truck)|Slate Auto|슬레이트",
+   "product": "Slate Truck"
+  },
+  {
+   "url": "https://images.ctfassets.net/o1znirz7lzo4/1g8mAlZBp5PRB9JlvIMlWr/65684cb283ee2502ec3d0a3e00653a7d/SPECS26_Candy_View1.png",
+   "desc": "흰 배경 위 검정 Specs AR 안경 3/4 컷(템플에 'SPECS' 표기, 하단에 워드마크)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.specs.com/",
+   "company": "snap",
+   "match": "Snap AR (glasses|안경)|AR 안경|스냅 ?AR|Specs|Snap Specs|스냅 ?Specs|Specs",
+   "product": "Snap AR glasses"
+  },
+  {
+   "url": "https://media.sonos.com/images/znqtjj88/production/bb91a2ce61102500efe3698e24e6421781daf500-1920x1280.jpg",
+   "desc": "어두운 배경 위 검정 Sonos Ace Ultra 헤드폰 근접 컷",
+   "topic": "",
+   "default": false,
+   "page": "https://www.sonos.com/en-us/shop/sonos-ace-ultra",
+   "company": "sonos",
+   "match": "Ace Ultra|소노스 ?에이스",
+   "product": "Sonos Ace Ultra"
+  },
+  {
+   "url": "https://media.sonos.com/images/znqtjj88/production/aa40e39de1408b19189bfba4c662e2be896d45c1-2400x1600.jpg",
+   "desc": "TV 아래 선반에 놓인 흰색 Sonos Beam Ultra 사운드바 컷",
+   "topic": "",
+   "default": false,
+   "page": "https://www.sonos.com/en-us/shop/beam-ultra",
+   "company": "sonos",
+   "match": "Beam Ultra|빔 ?울트라",
+   "product": "Sonos Beam Ultra"
+  },
+  {
+   "url": "https://storage.googleapis.com/pr-newsroom-wp/1/2025/12/09141992-EntryPoints-1920x1080.png",
+   "desc": "스포티파이 앱 홈 화면에서 '2025 Wrapped' 진입점이 보이는 스마트폰 3대 UI 목업(2025년 버전)",
+   "topic": "",
+   "default": false,
+   "page": "https://newsroom.spotify.com/2025-12-03/2025-wrapped-user-experience/",
+   "company": "spotify",
+   "match": "Wrapped|랩트",
+   "product": "Wrapped"
+  },
+  {
+   "url": "https://clan.akamai.steamstatic.com/images/39049601/cd78aecb9b08a705ea2008a833c2b03f1305c848.jpg",
+   "desc": "어두운 배경 위 Steam Deck 정면 컷, 화면에 Steam 라이브러리 UI(해상도 800x450)",
+   "topic": "",
+   "default": false,
+   "page": "https://store.steampowered.com/steamdeck",
+   "company": "valve",
+   "match": "Steam ?Deck|스팀 ?덱",
+   "product": "Steam Deck"
+  },
+  {
+   "url": "https://clan.akamai.steamstatic.com/images/45479024/41ac1feaa13a1396844a31be91beb068eb2e509f.jpg",
+   "desc": "베이지 배경 위 Steam Frame 헤드셋과 양쪽 컨트롤러(해상도 800x450)",
+   "topic": "",
+   "default": false,
+   "page": "https://store.steampowered.com/sale/steamframe",
+   "company": "valve",
+   "match": "Steam ?Frame|스팀 ?프레임",
+   "product": "Steam Frame"
+  },
+  {
+   "url": "https://clan.akamai.steamstatic.com/images/45479024/d2ce7e96bb0ab51817ba37cf61e3ca919d6f7209.jpg",
+   "desc": "베이지 배경 위 Steam Machine 정면 컷(검정 큐브형, 전면 USB 포트)(해상도 800x450)",
+   "topic": "",
+   "default": false,
+   "page": "https://store.steampowered.com/sale/steammachine",
+   "company": "valve",
+   "match": "Steam ?Machine|스팀 ?머신",
+   "product": "Steam Machine"
+  },
+  {
+   "url": "https://www.vergemotorcycles.com/wp-content/uploads/2025/12/TS-Pro-Sideview.jpg",
+   "desc": "어두운 스튜디오에 선 붉은색 Verge TS Pro 전기 오토바이 측면 컷",
+   "topic": "",
+   "default": false,
+   "page": "https://www.vergemotorcycles.com/",
+   "company": "verge",
+   "match": "Verge|베르지|전고체 ?배터리 ?오토바이",
+   "product": "Verge solid-state electric motorcycle"
+  },
+  {
+   "url": "https://www.vizio.com/content/dam/vizio/2025/mini-led/severance.jpg",
+   "desc": "벽에 걸린 VIZIO Mini LED TV와 사운드바(화면에 Apple TV+ 홈 UI와 타사 드라마 포스터가 보임)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.vizio.com/en/tv/mini-led",
+   "company": "vizio",
+   "match": "Vizio|비지오",
+   "product": "Vizio 65-inch MiniLED TV"
+  },
+  {
+   "url": "https://assets.volkswagen.com/is/image/volkswagenag/VW_NGW6_Showroom_ID4_masthead_desktop?Zml0PWNyb3AsMSZmbXQ9cG5nLWFscGhhJndpZD0xNjAwJmhlaT05MDAmYmZjPW9mZiY5YWYy",
+   "desc": "주차 건물 안에 서 있는 파란색 VW ID.4 전면 3/4 컷(vw.com 미국 쇼룸 마스트헤드, PNG 2.3MB)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.vw.com/en/models/id-4.html",
+   "company": "volkswagen",
+   "match": "ID\\.?4|폭스바겐 ?ID\\.?4",
+   "product": "Volkswagen ID.4"
+  },
+  {
+   "url": "https://weaveassets.com/isaac-0-thumbnail.jpg",
+   "desc": "빨래를 개는 Weave Isaac 가사 로봇(양팔 로봇이 세탁기 앞 테이블에서 옷을 정리)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.weaverobotics.com/",
+   "company": "weave",
+   "match": "Weave|세탁 ?로봇|자율 ?세탁",
+   "product": "Weave laundry robot"
+  },
+  {
+   "url": "https://world-cdn.worldcoin.org/worldcoin-company-website/agcKIaYofJOwHRZf_video-2-.png",
+   "desc": "회색 배경 위 흰 구형 World Orb 홍채 인식 기기 스튜디오 컷",
+   "topic": "",
+   "default": false,
+   "page": "https://world.org/orb",
+   "company": "world",
+   "match": "World Orb|\\bOrb\\b|오브|World ID",
+   "product": "World Orb"
+  },
+  {
+   "url": "https://www.yarbo.com/cdn/shop/files/Yarbo_Robot_3.jpg",
+   "desc": "잔디밭에서 작업 중인 Yarbo 모듈형 무한궤도 잔디깎이 로봇",
+   "topic": "",
+   "default": false,
+   "page": "https://www.yarbo.com/",
+   "company": "yarbo",
+   "match": "Yarbo|야르보",
+   "product": "Yarbo mower robot"
+  },
+  {
+   "url": "https://comma.ai/og-comma-four.png",
+   "desc": "comma four 장치 상단부: 주행 화면(차선 가이드)이 켜진 디스플레이와 카메라 렌즈, 하단에 COMMA 워드마크",
+   "topic": "",
+   "default": false,
+   "page": "https://comma.ai/",
+   "company": "commaai",
+   "match": "comma\\.ai|\\bcomma\\b|코마",
+   "product": "comma.ai driver assist"
+  },
+  {
+   "url": "https://lh3.googleusercontent.com/ylRJH-iQxvsRkmNFXvprBouq6qBev9-oIUxi4mUgeM4xokctivOGbE6Do4dsqdv9XIr4Apt6rrl3ydtX57qqGY8vxrAwZou3A2w=w1920",
+   "desc": "샌프란시스코 빅토리아풍 주택가 길가에 선 흰색 웨이모 재규어 I-PACE 로보택시와 트렁크에 짐을 싣는 승객들",
+   "topic": "",
+   "default": false,
+   "page": "https://waymo.com/media-resources/",
+   "company": "waymo",
+   "match": "웨이모|Waymo",
+   "product": "Waymo robotaxi"
+  },
+  {
+   "url": "https://lh3.googleusercontent.com/Pm3Xo_CfaSCczgNVgmvnccLJf4GzTYq8leetVGO0WqFfXgg9UujlmM1vT5sNHbqRGLrDM3caW2wzP7nOcgX7iJ2dHjgTyU5g79qpxBs0Uj6lGcWF=w1920",
+   "desc": "샌프란시스코 도심 스카이라인을 배경으로 곡선 도로를 달리는 6세대 웨이모 드라이버 탑재 전기 로보택시 오자이(Ojai)",
+   "topic": "",
+   "default": false,
+   "page": "https://waymo.com/media-resources/",
+   "company": "waymo",
+   "match": "Ojai|오자이",
+   "product": "Waymo Ojai"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_gemini_live_inline.width-2000.format-webp.webp",
+   "desc": "스마트폰 화면에 Gemini Live가 켜져 \"Hey Gemini, what is the history of this?\" 질문과 요세미티 폭포 풍경이 보이는 장면",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/products/maps/national-parks-week-google-2026/",
+   "company": "google",
+   "match": "Gemini Live|Gemini(?! ?(Spark|3\\.1))|제미나이(?! ?스파크)",
+   "product": "Gemini"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Spark_-_1.width-1000.format-webp.webp",
+   "desc": "Gemini Spark 에이전트 앱 창 UI: 인턴십 모니터링 일정을 설정해 주는 대화 화면",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
+   "company": "google",
+   "match": "Gemini Spark|제미나이 ?스파크",
+   "product": "Gemini Spark"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel-11ProXL_Family-Shot.width-2000.format-webp.webp",
+   "desc": "네 가지 색상(블랙·올리브·민트·코랄)의 Pixel 11 Pro XL 뒷면이 나란히 놓인 제품 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+   "company": "google",
+   "match": "Pixel ?11|픽셀 ?11",
+   "product": "Pixel 11"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Made_by_Google_2026_Collection_s.width-2200.format-webp.webp",
+   "desc": "Pixel 11 시리즈 폰, Pixel Watch, Pixel Buds가 나란히 서 있는 2026 라인업 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-tag/",
+   "company": "google",
+   "match": "Pixel(?! ?(11|10a|Tag))|픽셀(?! ?(11|10a))",
+   "product": "Pixel"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/10acolors_small.width-2000.format-webp.webp",
+   "desc": "Pixel 10a 네 가지 색상 뒷면이 겹쳐 놓인 제품 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-10a/",
+   "company": "google",
+   "match": "Pixel ?10a|픽셀 ?10a",
+   "product": "Pixel 10a"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MBG2026_PixelTagHero.width-2200.format-webp.webp",
+   "desc": "나무 탁자 위 트레이에 열쇠와 함께 놓인 Pixel Tag 추적기",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-tag/",
+   "company": "google",
+   "match": "Pixel Tag|픽셀 ?태그",
+   "product": "Pixel Tag"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/30_Googlebook_lineup_video_ALT_N.width-2200.format-webp.webp",
+   "desc": "검은 배경에 Acer·ASUS·Dell·HP·Lenovo 파트너사의 Googlebook 노트북 5종이 서 있는 라인업(하단에 작은 브랜드 로고)",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/googlebook/first-look-googlebook/",
+   "company": "google",
+   "match": "Googlebook|구글북",
+   "product": "Googlebook"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/two_chips_for_the_agentic_era_he.width-2200.format-webp.webp",
+   "desc": "기판에 장착된 TPU 8i 칩 클로즈업 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+   "company": "google",
+   "match": "Google TPU|TPU|Tensor Processing Unit|텐서 ?처리 ?장치",
+   "product": "Google TPU"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/1_IO_Glasses_Product_GentleMonst.width-1600.format-webp.webp",
+   "desc": "Gentle Monster 디자인의 Android XR AI 스마트 안경(삼성·구글 협업) 제품 사진, 하단에 작은 로고",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/",
+   "company": "google",
+   "match": "Android XR|안드로이드 ?XR|구글 ?(AI ?)?(스마트 ?)?글래?스|Google (AI )?(smart )?glasses",
+   "product": "Android XR smart glasses"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/us_ggl_android_xr_xreal_aura_shoot_Keyword_.max-1440x810.png",
+   "desc": "XREAL AURA 유선 XR 안경이 스마트폰에 케이블로 연결된 제품 이미지, 상단에 제품명과 Android XR 로고",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/technology/xr-ar/awe-2026/",
+   "company": "google",
+   "match": "Aura|Xreal|엑스리얼",
+   "product": "Android XR Aura"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/foldable_gaming.width-2000.format-webp.webp",
+   "desc": "Android 17 폴더블 게임 레이아웃: 위쪽 게임 화면, 아래쪽 가상 게임패드가 있는 폴더블폰",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/platforms/android/android-17-features/",
+   "company": "google",
+   "match": "Android 17|안드로이드 ?17",
+   "product": "Android 17"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Chrome_Skills_Asset_5_Library_V2.width-2000.format-webp.webp",
+   "desc": "Chrome 브라우저 창에서 Skills 라이브러리 화면이 열린 UI",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+   "company": "google",
+   "match": "Chrome|크롬",
+   "product": "Chrome"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Band_Performace.width-2000.format-webp.webp",
+   "desc": "파랑·검정·빨강·민트 네 가지 색 Fitbit Air 퍼포먼스 루프 밴드 제품 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/",
+   "company": "google",
+   "match": "Fitbit Air|핏빗 ?에어",
+   "product": "Fitbit Air"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Acer_Chromebook_Plus_Spin_514.width-1000.format-webp.webp",
+   "desc": "흰 배경에 놓인 Acer Chromebook Plus Spin 514 노트북 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/chromebooks/acer-chromebook-plus-spin-514/",
+   "company": "google",
+   "match": "Chromebook|크롬북",
+   "product": "Chromebook"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Features_NB_Inline_202602.width-1000.format-webp.webp",
+   "desc": "Gemini 앱의 이미지 만들기 화면: 스타일 선택 격자와 프롬프트 입력창",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+   "company": "google",
+   "match": "Nano Banana",
+   "product": "Nano Banana 2"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Raccoon_Video_SynthIDDetector.max-1440x810.png",
+   "desc": "SynthID Detector 웹 UI: 너구리 영상에 \"SynthID was detected\" 결과가 표시된 화면",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+   "company": "google",
+   "match": "SynthID",
+   "product": "SynthID"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/02_Blog_Header_-_Hero_Shot_2096x1182.png",
+   "desc": "해안 풍경 위에 놓인 Willow 양자칩 렌더링, 좌우에 Google Quantum AI 로고와 Willow 워드마크",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip/",
+   "company": "google",
+   "match": "Willow|윌로우",
+   "product": "Willow"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Speaker_Hero.width-2200.format-webp.webp",
+   "desc": "Google Home Speaker 제품 히어로 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/",
+   "company": "google",
+   "match": "Google Home|구글 ?홈",
+   "product": "Google Home speaker (Gemini)"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2025/09/Ray-Ban-Meta_Social-Share.jpg",
+   "desc": "레이밴 메타(Gen 2) 웨이페어러형 안경을 쓴 기타리스트 근접 사진. 'Hey Meta, start hyperlapse.' 음성 명령 말풍선이 작게 합성돼 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2025/09/ray-ban-meta-gen-2-better-battery-life-video-capture/",
+   "company": "meta",
+   "match": "Ray-?Ban|레이밴|AI ?안경|AI ?글래스|Meta AI (글래스|스마트안경|안경)|메타 ?(글래스|안경)|카메라 없는 (레이밴|스마트 ?안경)",
+   "product": "Ray-Ban Meta glasses"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Social-Share.jpg",
+   "desc": "에실로룩소티카와 출시한 Meta 글래스(스마트글라스)를 쓴 모델 사진. 'Hey Meta, play something to match my view' 말풍선 합성",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+   "company": "meta",
+   "match": "레이밴|Ray-?Ban|오클리 ?메타|Oakley Meta|메타 ?(AI ?)?(스마트 ?)?글(라|래)스|Meta (AI )?(smart ?)?glasses",
+   "product": "Meta smart glasses (Ray-Ban Meta)"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Web-Calling-on-WhatsApp_Thumbnail.jpg",
+   "desc": "크롬 창에서 열린 WhatsApp 웹 영상통화 화면(6명 그리드, 대기실 승인 팝업). 'Call Transfer','Web Calling','Waiting Room' 라벨이 얹혀 있고 비율 1.33",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2026/07/new-whatsapp-features-keep-up-with-the-way-you-actually-live/",
+   "company": "meta",
+   "match": "WhatsApp|왓츠앱",
+   "product": "WhatsApp"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2024/04/MTIA-Chip_Social-Share.jpg",
+   "desc": "MTIA 칩 다이를 손가락으로 집어든 근접 사진(파란 배경). 2024년 차세대 MTIA 발표 때 공개된 사진이라 최신 세대(300/400 등)와는 다를 수 있음",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2024/04/introducing-our-next-generation-infrastructure-for-ai/",
+   "company": "meta",
+   "match": "MTIA|자체 ?AI ?칩|메타 자체 칩",
+   "product": "MTIA"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2023/09/Quest-3-Consumer-Highlights_Social-Share.jpg",
+   "desc": "Meta Quest 3 헤드셋을 쓴 사용자가 레고 보드 위에 혼합현실 레고 오브젝트를 만지는 사진. 컨트롤러 포함",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2023/09/meet-meta-quest-3-mixed-reality-headset/",
+   "company": "meta",
+   "match": "Quest ?3S?|퀘스트 ?3",
+   "product": "Meta Quest 3"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2026/07/Metas-AI-Glasses_Your-Questions-Answered_Header.jpg",
+   "desc": "Meta AI 글래스 세 가지 스타일(베이지 사각, 거북등 선글라스, 검정 오벌)을 쓴 모델 세 명의 단체 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
+   "company": "meta",
+   "match": "Meta smart glasses|메타 ?스마트글(라|래)스",
+   "product": "Meta smart glasses"
+  },
+  {
+   "url": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-GramsIntroducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-Grams_social.jpg",
+   "desc": "Meta VR Glasses(약 100g 실드형 VR 글래스)를 쓴 남성의 측면 사진. 텍스트 없음",
+   "topic": "",
+   "default": false,
+   "page": "https://about.fb.com/news/2026/09/introducing-meta-vr-glasses-3d-movies-immersive-live-sports-100-grams/",
+   "company": "meta",
+   "match": "Meta VR Glasses|(메타 )?VR ?글래스",
+   "product": "Meta VR Glasses"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/article/Apple-Siri-AI-conversation-01_big.jpg.large_2x.jpg",
+   "desc": "Mac 화면 위에 열린 Siri 대화창(문서를 보며 질문하고 답을 받는 모습)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+   "company": "apple",
+   "match": "Siri|시리|Siri ?AI|시리 ?AI",
+   "product": "Siri"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/article/Apple-Siri-AI-hero-260608_big.jpg.large_2x.jpg",
+   "desc": "Vision Pro·맥북·아이패드·아이폰·애플워치에서 새 Siri가 동작하는 WWDC 공식 히어로 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/",
+   "company": "apple",
+   "match": "(iOS ?27.{0,30}(Siri|시리))|((Siri|시리).{0,30}iOS ?27)|AI ?시리|새 ?(Siri|시리)",
+   "product": "Siri (iOS 27)"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/article/Apple-iPhone-Duo-colors-260909_big.jpg.large_2x.jpg",
+   "desc": "펼친 상태로 뒷면 카메라와 안쪽 화면을 보여주는 iPhone Duo 두 색상(실버·네이비) 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+   "company": "apple",
+   "match": "iPhone ?Duo|아이폰 ?듀오|폴더블 ?(iPhone|아이폰)|[Ff]oldable iPhone|[Ff]oldable iPhone|폴더블 ?(iPhone|아이폰)",
+   "product": "iPhone Duo"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.landing-big_2x.jpg",
+   "desc": "검은 배경 위 버건디 색 iPhone 18 Pro 앞면·뒷면 트리플 카메라 클로즈업",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+   "company": "apple",
+   "match": "iPhone ?18 ?Pro|아이폰 ?18 ?프로",
+   "product": "iPhone 18 Pro"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/06/apple-unveils-innovative-features-and-intelligence-experiences-across-services/article/Apple-iPadOS-27-Apple-Maps-Flyover_big.jpg.large_2x.jpg",
+   "desc": "아이패드에서 뉴욕 맨해튼을 3D 플라이오버로 보여주는 Apple Maps 화면",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/06/apple-unveils-innovative-features-and-intelligence-experiences-across-services/",
+   "company": "apple",
+   "match": "Apple Maps|애플 ?지도",
+   "product": "Apple Maps"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/article/Apple-Mac-mini-hero-260825_big.jpg.large_2x.jpg",
+   "desc": "손바닥 위에 올린 새 Mac mini(M6) 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+   "company": "apple",
+   "match": "Mac ?[Mm]ini|맥 ?미니|Mac ?[Mm]ini.{0,10}M6|M6.{0,10}Mac ?[Mm]ini|맥 ?미니.{0,10}M6",
+   "product": "Mac mini"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/article/Apple-Intelligence-hero-260608_big.jpg.large_2x.jpg",
+   "desc": "맥북과 아이폰 화면에서 Apple Intelligence 기능(메모·이미지 생성·메시지)이 동작하는 공식 히어로 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/",
+   "company": "apple",
+   "match": "Apple Intelligence|애플 ?인텔리전스",
+   "product": "Apple Intelligence"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/say-hello-to-macbook-neo/article/Apple-MacBook-Neo-hero-260304_big.jpg.large_2x.jpg",
+   "desc": "손 위에 올린 시트러스 색 MacBook Neo 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/",
+   "company": "apple",
+   "match": "MacBook ?Neo|맥북 ?네오",
+   "product": "MacBook Neo"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/article/Apple-Watch-Series-12-2up-260909_big.jpg.large_2x.jpg",
+   "desc": "심박 화면을 띄운 Apple Watch Series 12 앞면과 뒷면 센서(밀라네즈 루프) 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
+   "company": "apple",
+   "match": "Apple Watch Series ?12|애플 ?워치 ?시리즈 ?12",
+   "product": "Apple Watch Series 12"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/tile/Apple-AirTag-FineWoven-Key-Ring-lp.jpg.landing-big_2x.jpg",
+   "desc": "주황색 키링에 끼운 AirTag 클로즈업 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/",
+   "company": "apple",
+   "match": "AirTag ?2|에어태그 ?2|에어태그",
+   "product": "AirTag 2"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/tile/Apple-iPhone-17-Pro-camera-close-up-250909-lp.jpg.landing-big_2x.jpg",
+   "desc": "검은 배경 위 코즈믹 오렌지 iPhone 17 Pro 후면 카메라 클로즈업(일반 iPhone 기사용, 2026-01 당시 현행 라인업)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/",
+   "company": "apple",
+   "match": "(?<![\\w])(?<!Foldable )(?<!foldable )iPhone(?! ?(\\d|Duo|Air|Fold))|(?<!폴더블 )아이폰(?! ?(\\d|듀오|에어))",
+   "product": "iPhone"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/tile/Apple-MacBook-Pro-M5-Pro-and-M5-Max-Capture-One-260303-lp.jpg.landing-big_2x.jpg",
+   "desc": "현행 MacBook Pro(M5 Pro/Max)가 사진 편집 앱을 띄운 제품 사진. 터치스크린 모델은 미발표라 현행 모델 사진으로 대체",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/",
+   "company": "apple",
+   "match": "MacBook Pro.{0,12}[Tt]ouch|터치스크린 ?(MacBook|맥북) ?(Pro|프로)|(MacBook|맥북) ?(Pro|프로).{0,12}터치|MacBook ?Pro ?M5 ?Max|맥북 ?프로 ?M5 ?맥스|MacBook ?Pro ?M5 ?Pro|M5 Pro/Max|맥북 ?프로 ?M5 ?프로",
+   "product": "MacBook Pro touchscreen"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-airpods-max-2/article/Apple-AirPods-Max-2-lifestyle_big.jpg.large_2x.jpg",
+   "desc": "파란 배경에서 하늘색 AirPods Max 2를 착용한 모델 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/apple-introduces-airpods-max-2-powered-by-h2/",
+   "company": "apple",
+   "match": "AirPods ?Max ?2|에어팟 ?맥스 ?2",
+   "product": "AirPods Max 2"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/live-action/wwdc-2023/standard/mac-studio-mac-pro/Apple-WWDC23-Mac-Pro-M2-Ultra-3D-simulations-01-230605_big.jpg.large_2x.jpg",
+   "desc": "Pro Display XDR 옆에 놓인 Mac Pro 타워(2023 WWDC 공식 이미지, 가장 최근 Mac Pro 공식 사진)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2023/06/apple-unveils-new-mac-studio-and-brings-apple-silicon-to-mac-pro/",
+   "company": "apple",
+   "match": "Mac ?Pro(?! ?M5)|맥 ?프로",
+   "product": "Mac Pro"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-the-new-macbook-air-with-m5/article/Apple-MacBook-Air-hero-260303_big.jpg.large_2x.jpg",
+   "desc": "포토샵 화면을 띄운 MacBook Air(M5) 정면 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/",
+   "company": "apple",
+   "match": "MacBook ?Air ?M5|맥북 ?에어 ?M5|MacBook ?Air|맥북 ?에어",
+   "product": "MacBook Air M5"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/tile/Apple-iPad-Air-M4-multitasking-260302-lp.jpg.landing-big_2x.jpg",
+   "desc": "멀티태스킹 화면(노트·영상통화·리포트)을 띄운 iPad Air(M4) 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/",
+   "company": "apple",
+   "match": "iPad ?Air|아이패드 ?에어",
+   "product": "iPad Air (M4)"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-iphone-17e/article/Apple-iPhone-17e-hero-260302_big.jpg.large_2x.jpg",
+   "desc": "핑크 iPhone 17e 뒷면과 블랙 앞면이 겹쳐진 측면 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/03/apple-introduces-iphone-17e/",
+   "company": "apple",
+   "match": "iPhone ?17e|아이폰 ?17e",
+   "product": "iPhone 17e"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/article/Apple-M6-and-M5-Ultra-hero-260825_big.jpg.large_2x.jpg",
+   "desc": "Apple M6와 M5 Ultra 칩 두 개를 나란히 보여주는 공식 칩 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+   "company": "apple",
+   "match": "(?<![\\w])M[678](?![\\w\\d])(?! ?Ultra)|M[678] 칩",
+   "product": "M6/M7/M8 chips"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg",
+   "desc": "새 Mac Studio(M5 Max/M5 Ultra) 정면 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+   "company": "apple",
+   "match": "Mac ?Studio|맥 ?스튜디오|M5 Ultra",
+   "product": "Mac Studio (M5 Ultra)"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/apple-unveils-apple-watch-ultra-4/article/Apple-Watch-Ultra-4-hero-260909_big.jpg.large_2x.jpg",
+   "desc": "검은 배경에서 오렌지 액션 버튼과 크라운이 보이는 Apple Watch Ultra 4 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/",
+   "company": "apple",
+   "match": "Apple Watch Ultra ?4|애플 ?워치 ?울트라 ?4|울트라 ?4",
+   "product": "Apple Watch Ultra 4"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/article/Apple-AirPods-5-hero-260909_big.jpg.large_2x.jpg",
+   "desc": "무선 충전 케이스 위에 놓인 AirPods 5 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
+   "company": "apple",
+   "match": "AirPods ?5|에어팟 ?5",
+   "product": "AirPods 5"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/202310/65522f033d633283db5a5cde_nvidia-hgx-h200/nvidia-hgx-h200_dcd4e3bf-a064-4fb6-9b5f-561a684e7ffb-prv.jpg?v=dcd4e3bf-a064-4fb6-9b5f-561a684e7ffb",
+   "desc": "검은 배경 위에 NVIDIA 로고가 박힌 GPU 8개가 얹힌 HGX H200 가속기 보드 렌더링",
+   "topic": "",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/file?fid=65522f033d633283db5a5cde",
+   "company": "nvidia",
+   "match": "H200",
+   "product": "H200"
+  },
+  {
+   "url": "https://zoox.com/assets/1782850062-global-202606-zoox-updated-robotaxi-exterior-16x9.png?w=1920",
+   "desc": "언덕 배경에서 슬라이딩 도어를 연 Zoox 로보택시 외관(센서 4개, 양방향 차체)",
+   "topic": "",
+   "default": false,
+   "page": "https://zoox.com/press-room",
+   "company": "amazon",
+   "match": "Zoox|죽스|쥭스",
+   "product": "Zoox robotaxi"
+  },
+  {
+   "url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/CopiloApp-Home-Thumbnail?wid=1920&fmt=jpg",
+   "desc": "데스크톱 Copilot 앱 홈 화면(사이드바, 입력창 \"Hi, how can I help?\")",
+   "topic": "",
+   "default": false,
+   "page": "https://www.microsoft.com/en-us/microsoft-copilot",
+   "company": "microsoft",
+   "match": "(?<!GitHub )(?<!Github )Copilot(?!\\+)|(?<!깃허브 )코파일럿|Microsoft Copilot|마이크로소프트 코파일럿",
+   "product": "Copilot"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/2d/7e/53beaeee45ffb7ad4d6c4b3c6603/hugoreveal-brand-aurora-1.png",
+   "desc": "보라색 신호 파동 위에 놓인 Amazon Leo Ultra 위상배열 안테나 단말기",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-satellite-internet-ultra-pro",
+   "company": "amazon",
+   "match": "Amazon Leo|Amazon Kuiper|Project Kuiper|아마존 레오|위성 396기|휴대폰 직접 연결",
+   "product": "Amazon Leo"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/202605/154ea89a7177c7d568f2f4916c7fd53a/6a1c9d873d6332761e1d64a8_nvidia-rtx-spark/nvidia-rtx-spark_597f009e-8bc6-4bfb-bdf4-04317ae69806-prv.png?v=597f009e-8bc6-4bfb-bdf4-04317ae69806",
+   "desc": "투명한 노트북 내부 중앙에 RTX Spark 칩이 놓인 모습, 우하단에 NVIDIA RTX Spark 로고",
+   "topic": "",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/file?fid=6a1c9d873d6332761e1d64a8",
+   "company": "nvidia",
+   "match": "N[12]X|RTX ?Spark|RTX 스파크|N1/N1X|N1X|Arm 노트북|RTX ?Spark|RTX 스파크|N1X",
+   "product": "RTX Spark (N1X)"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/7f/04/b330b44243aaba47e1dfd954ee06/amazonalexatablet-alexaplus-amazonnews-ck10826.png",
+   "desc": "태블릿 화면 오른쪽에 Alexa+ 채팅(식물 관리 비교표)이 열린 모습",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/new-amazon-alexa-tablets-alexa-plus",
+   "company": "amazon",
+   "match": "Alexa\\+|Alexa(?! ?(?:Tablet|phone|스마트폰))|알렉사",
+   "product": "Alexa+"
+  },
+  {
+   "url": "https://images.ctfassets.net/8aevphvgewt8/408GOtU4YtxBmYvQfPEOUN/5e71a8000b38a8a9788719fec3b9023d/copilot-app.webp",
+   "desc": "어두운 테마의 GitHub Copilot 데스크톱 앱 화면(세션 목록, 프롬프트 입력창, 이슈 목록)",
+   "topic": "",
+   "default": false,
+   "page": "https://github.com/features/copilot",
+   "company": "microsoft",
+   "match": "GitHub Copilot|Github Copilot|깃허브 ?코파일럿",
+   "product": "GitHub Copilot"
+  },
+  {
+   "url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Windows-11-Hero-image-17102025?wid=1920&fmt=jpg",
+   "desc": "흰 배경 위의 노트북 화면에 Windows 11 바탕화면(블룸 월페이퍼)과 작업 표시줄이 보이는 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://www.microsoft.com/en-us/windows/windows-11",
+   "company": "microsoft",
+   "match": "Windows ?11|윈도우 ?11",
+   "product": "Windows 11"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/6b/41/34e3eb1641918ea99e8178bf84a0/x-ray-shop-tab.png",
+   "desc": "Prime Video 재생 화면에 X-Ray의 Shop 탭과 \"Open Amazon App\" 쇼핑 패널이 뜬 TV UI",
+   "topic": "",
+   "default": false,
+   "page": "https://press.aboutamazon.com/prime-video/2026/9/the-prime-video-shop-the-show-experience-introduces-new-features-and-expands-across-thousands-of-titles",
+   "company": "amazon",
+   "match": "Prime Video|프라임 ?비디오|Shop the Scene|Shop the Show",
+   "product": "Prime Video"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/42/40/2097c8104a08be1d4b0bb39b202d/about-amazon-hero-aws-trainium-3.jpg",
+   "desc": "검은 배경에 놓인 Annapurna Labs 각인의 AWS Trainium3 칩 클로즈업",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/aws/trainium-3-ultraserver-faster-ai-training-lower-cost",
+   "company": "amazon",
+   "match": "Trainium(?! ?3)|트레이니엄(?! ?3)|Trainium ?3|트레이니엄 ?3",
+   "product": "AWS Trainium"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/f8/9a/db4438604fa69f1fb37a8097858e/about-amazon-inline-devices-kindle-new-and-reimagined-amazon-news-cdlt-20260929.jpg",
+   "desc": "책 위에 놓인 자주색 신형 컬러 Kindle에 만화 페이지가 표시된 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/new-kindle-lineup-2026",
+   "company": "amazon",
+   "match": "Kindle|킨들|페이퍼화이트",
+   "product": "Kindle"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/bd/58/e8c21a4f4cd68c85e5b3c374042a/graviton5-angled-hero-amazonnews-ck6926.jpg",
+   "desc": "검은 배경에 비스듬히 놓인 AWS Graviton5 칩 클로즈업",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/aws/aws-trainium-graviton-ai-chips-explained",
+   "company": "amazon",
+   "match": "Graviton|그래비톤",
+   "product": "Amazon Graviton"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/82/af/48b3dee04d83a433225d0d307633/fire-tv-ember-artline-amazon-news-jp-041026.jpeg",
+   "desc": "거실 벽에 액자처럼 걸려 풍경 작품을 띄운 Amazon Ember Artline TV",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/amazon-ember-artline-lifestyle-tv-free-art",
+   "company": "amazon",
+   "match": "Ember Artline",
+   "product": "Ember Artline TV"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/b3/96/68ca8e744c1fa754c6279f372c7d/about-amazon-hero-fire-tv-stick-hero-option-2-amazon-news-jp-041026.jpg",
+   "desc": "리모컨 옆에 놓인 Fire TV Stick HD 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/fire-tv-stick-hd-slimmest-streaming-device",
+   "company": "amazon",
+   "match": "Fire TV Stick HD",
+   "product": "Fire TV Stick HD"
+  },
+  {
+   "url": "https://winblogs.thesourcemediaassets.com/sites/43/2024/05/Surface-Laptop-and-Surface-Pro-Hero1920-e1716240692230.png",
+   "desc": "사파이어 색상의 Surface Pro(11세대)와 Surface Laptop(7세대)을 함께 놓은 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://blogs.windows.com/devices/2024/05/20/introducing-the-ultimate-copilot-pcs-the-all-new-surface-pro-and-surface-laptop/",
+   "company": "microsoft",
+   "match": "Surface Laptop 7|서피스 랩톱 7|Surface Pro 11|서피스 프로 11",
+   "product": "Surface Laptop 7"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/f3/c1/cfcea1784fbdbecaa361808c37b1/about-amazon-hero-aa-102024-proteusworkday-featured-hero-v1-600kb-2550x1125.jpg",
+   "desc": "물류센터 바닥에서 초록 불빛을 켠 아마존 Proteus 자율주행 로봇",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/operations/amazon-proteus-robot-europe-investment-employee-support",
+   "company": "amazon",
+   "match": "Proteus",
+   "product": "Proteus"
+  },
+  {
+   "url": "https://winblogs.thesourcemediaassets.com/sites/43/2025/05/HeroMay61920.jpg",
+   "desc": "보라색 Surface Pro 12인치와 세이지색 Surface Laptop 13인치를 나란히 세운 제품 사진(상단에 Copilot+ PC 로고)",
+   "topic": "",
+   "default": false,
+   "page": "https://blogs.windows.com/devices/2025/05/06/introducing-all-new-surface-copilot-pcs-the-surface-pro-12-inch-and-surface-laptop-13-inch/",
+   "company": "microsoft",
+   "match": "Surface Laptop 13|서피스 랩톱 13|Surface Pro 12|서피스 프로 12",
+   "product": "Surface Laptop 13-inch"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/202603/69b83c0e3d6332288a74de14_nvidia-groq3-lpx-rack/nvidia-groq3-lpx-rack_e7ae19fb-d32c-4929-8087-8802cdc3ee67-prv.jpg?v=e7ae19fb-d32c-4929-8087-8802cdc3ee67",
+   "desc": "검은 배경의 서버 랙에 크림색 컴퓨트 트레이가 쌓인 NVIDIA Groq 3 LPX 랙",
+   "topic": "",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/file?fid=69b83c0e3d6332288a74de14",
+   "company": "nvidia",
+   "match": "Groq|\\bLPU\\b|LPX",
+   "product": "Groq LPU rack"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/e7/d3/295651cd4ac4ba0c96216ae6fad7/echo-speaker-family-2.png",
+   "desc": "나무 선반 위의 구형 구체 스피커 Echo Studio와 Echo Dot Max(최신 Echo Dot 계열)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/amazon-new-echo-devices-alexa-plus",
+   "company": "amazon",
+   "match": "Echo Dot|에코 ?닷",
+   "product": "Echo Dot"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/7b/c8/94101af5458c88f7ae53afbf52d4/fire-tv-stick-4k-ftv-remote-hero-amazonnews-ck92916.jpg",
+   "desc": "베이지 배경에서 신형 리모컨과 나란히 선 Fire TV Stick 4K 클로즈업(2026년 신형 4K 스틱)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/fire-tv-stick-4k-new-remote",
+   "company": "amazon",
+   "match": "Fire TV Stick|파이어 ?TV",
+   "product": "Fire TV Stick"
+  },
+  {
+   "url": "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/products/workstations/professional-desktop-gpus/rtx-pro-5500/nvidia-workstation-rtx-pro-5500-og.jpg",
+   "desc": "물결무늬 검은 배경 위의 검은색 RTX PRO 5500 블랙웰 워크스테이션 GPU 카드",
+   "topic": "",
+   "default": false,
+   "page": "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
+   "company": "nvidia",
+   "match": "RTX ?Pro ?5500",
+   "product": "RTX Pro 5500"
+  },
+  {
+   "url": "https://winblogs.thesourcemediaassets.com/sites/43/2026/05/SLU-Hero-Image-11920.png",
+   "desc": "검은 배경 화면의 Surface Laptop Ultra를 정면에서 찍은 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://blogs.windows.com/devices/2026/05/31/introducing-surface-laptop-ultra-made-for-world-makers/",
+   "company": "microsoft",
+   "match": "Surface Laptop Ultra|서피스 랩톱 울트라",
+   "product": "Surface Laptop Ultra"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/ad/dc/a7f630ec4671960c964ff943c481/amazonalexatablet-inline-amazonnews-ck10826.jpg",
+   "desc": "어두운 배경 위에 홈 화면(앱 아이콘, Ask Alexa 바)을 띄운 Amazon Alexa Tablet",
+   "topic": "",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/devices/new-amazon-alexa-tablets-alexa-plus",
+   "company": "amazon",
+   "match": "Alexa Tablet|Fire 태블릿",
+   "product": "Alexa Tablet"
+  },
+  {
+   "url": "https://starlink.com/assets-new/images/landing/field/v4_montana_dusk_sky.webp",
+   "desc": "해질녘 하늘 아래 지붕 위에 설치된 스타링크 표준형 안테나(디시)가 보이는 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.starlink.com/",
+   "company": "spacex",
+   "match": "Starlink(?! Mini)|스타링크(?! ?미니)",
+   "product": "Starlink"
+  },
+  {
+   "url": "https://www.spacex.com/assets/images/vehicles/starship/starship_hero_d.jpg",
+   "desc": "밤 발사장에서 수증기에 싸인 스타십 상단(우주선)을 위에서 내려다본 항공 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.spacex.com/vehicles/starship",
+   "company": "spacex",
+   "match": "Starship|스타십",
+   "product": "Starship"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-FSD-Carousel-Slide-1-Full-Self-Driving-_Supervised_-Desktop-LHD-US.jpg",
+   "desc": "모델 3 실내에서 운전자가 두 손을 무릎에 올린 채 FSD(Supervised) 주행 화면(차선·경로 표시)이 중앙 디스플레이에 떠 있는 사진 (비율 1.38, 1400x1015)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/model3",
+   "company": "tesla",
+   "match": "\\bFSD\\b|Full Self-Driving|완전자율주행|오토파일럿|Autopilot|HW3",
+   "product": "Tesla FSD"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Our-Fully-Autonomous-Fleet-Cybercab-Desktop.jpg",
+   "desc": "금색 사이버캡이 광장에 서 있고 한 남성이 열린 트렁크에 기타 케이스를 싣는 장면 (사이버캡 전체 외관이 선명)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/robotaxi",
+   "company": "tesla",
+   "match": "Cybercab|사이버캡",
+   "product": "Cybercab"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Our-Fully-Autonomous-Fleet-Model-Y-Desktop.jpg",
+   "desc": "마이애미 거리에서 'Robotaxi' 문구가 적힌 빨간 모델 Y 측면 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/robotaxi",
+   "company": "tesla",
+   "match": "테슬라 ?로보택시|Tesla ?[Rr]obotaxi",
+   "product": "Tesla Robotaxi"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/hardware.jpg",
+   "desc": "Tesla AI 페이지의 '하드웨어' 항목에 쓰인 Tesla 자체 칩 실리콘 다이 확대 사진 (비율 1.33, 최신 AI5 칩이 아닌 기존 FSD 칩 다이로 보임, 완제품 외형 사진 아님)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/AI",
+   "company": "tesla",
+   "match": "Tesla AI chip|Tesla 자체 AI 칩|테슬라 자체 AI 칩|AI[45] ?(칩|chip)",
+   "product": "Tesla AI chip"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Hero-Desktop-NA-SA-APAC.png",
+   "desc": "황혼 무렵 사암 절벽 위에 서 있는 사이버트럭 전면 3/4 측면 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/cybertruck",
+   "company": "tesla",
+   "match": "Cybertruck|사이버트럭",
+   "product": "Cybertruck"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Semi-Hero-Desktop-v2.jpg",
+   "desc": "석양의 항구 도로에서 컨테이너를 끄는 흰색 Tesla Semi 두 대",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/semi",
+   "company": "tesla",
+   "match": "Tesla Semi|테슬라 세미|\\bSemi\\b",
+   "product": "Tesla Semi"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-Hero-Desktop-US-v2.jpg",
+   "desc": "다리 위 도로를 달리는 빨간 Model S Plaid를 위에서 본 사진 (Model X 사진은 확인하지 못해 Model S 로 대체)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/models",
+   "company": "tesla",
+   "match": "Model [SX]\\b|모델 ?[SX]\\b",
+   "product": "Model S/X"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Tesla-Bot-AI.jpg",
+   "desc": "검은 배경에 서 있는 Tesla Optimus 휴머노이드 로봇 전신 3/4 사진 (비율 1.33, 로봇이 화면 중앙 좁게 위치)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/AI",
+   "company": "tesla",
+   "match": "Optimus|옵티머스",
+   "product": "Optimus"
+  },
+  {
+   "url": "https://starlink.com/assets-new/images/landing/field/mini_stickerless_ground.webp",
+   "desc": "해안 바위 위에 한 사람이 스타링크 미니(흰색 플랫 안테나)를 세워 놓는 장면",
+   "topic": "",
+   "default": false,
+   "page": "https://www.starlink.com/",
+   "company": "spacex",
+   "match": "Starlink Mini|스타링크 ?미니|Peakdo LinkPower",
+   "product": "Starlink Mini"
+  },
+  {
+   "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Premium-End-Desktop-NA.jpg",
+   "desc": "가을 숲길을 달리는 흰색 신형 Model 3 후면 3/4 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.tesla.com/model3",
+   "company": "tesla",
+   "match": "Model 3|모델 ?3",
+   "product": "Model 3"
+  },
+  {
+   "url": "https://cdn.uc.assets.prezly.com/0b497740-6b7c-4968-8c8b-6150557e0cbf/-/preview/-/format/auto/DENZA_Z9GT_01DYNAMIC_003.jpg",
+   "desc": "파리 시내 다리 위를 달리는 청록색 덴자 Z9 GT 슈팅브레이크. 에펠탑이 배경에 보인다(BYD 벨기에 프레스룸 보도자료 이미지).",
+   "topic": "",
+   "default": false,
+   "page": "https://press.bydauto.be/denza-goes-global-with-technology-drives-elegance",
+   "company": "byd",
+   "match": "Denza ?Z9 ?GT|덴자 ?Z9 ?GT|腾势 ?Z9 ?GT|Z9GT",
+   "product": "Denza Z9GT"
+  },
+  {
+   "url": "https://www.apollogo.com/rbkp/images/fengmian.jpg",
+   "desc": "화창한 도시 도로를 달리는 흰색 아폴로 고 로보택시(루프 센서 장착) 정면 사진.",
+   "topic": "",
+   "default": false,
+   "page": "https://www.apollogo.com/",
+   "company": "baidu",
+   "match": "Apollo ?Go|아폴로 ?고|바이두 로보택시|Baidu 로보택시|Baidu robotaxi",
+   "product": "Apollo Go"
+  },
+  {
+   "url": "https://www-file.honor.com/content/dam/honor/common/events/2026/honor-robot-phone-2026/imgs/section-kv/honorrobotphone-kv-bg@2x.jpg",
+   "desc": "어두운 우주 배경 위로 휴대폰 상단에서 짐벌 카메라가 솟아오른 아너 로봇폰 키비주얼(제품 페이지 이미지, 글자 없음).",
+   "topic": "",
+   "default": false,
+   "page": "https://www.honor.com/global/events/honor-robot-phone/",
+   "company": "honor",
+   "match": "Honor ?Robot ?Phone|Robot ?Phone|로봇폰|아너 로봇",
+   "product": "Honor Robot Phone"
+  },
+  {
+   "url": "https://www-file.huawei.com/dam/asset/view/7e9e39c3f0d24a51bfd23adf7bd0321b.png",
+   "desc": "어센드 칩 기반 Atlas 950 SuperPoD(AI 컴퓨팅 클러스터) 렌더링 이미지. 칩 단품이 아니라 어센드를 쓰는 서버 랙 열이다. 해상도 720x450로 낮음.",
+   "topic": "",
+   "default": false,
+   "page": "https://www.huawei.com/en/news/2026/3/mwc-superpod-computing",
+   "company": "huawei",
+   "match": "Huawei Ascend|어센드(?! ?9[56]0)|화웨이 AI ?칩|Ascend(?! ?9[56]0)|Ascend ?950DT|어센드 ?950DT",
+   "product": "Huawei Ascend"
+  },
+  {
+   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/mate-xt-2-ultimate-design/images/hero/huawei-mate-xt-2-ultimate-design-kv.png",
+   "desc": "보라색 화웨이 Mate XT 2 Ultimate Design 트라이폴드를 펼쳐 세운 키비주얼(투명 배경 PNG, 글자는 기기 각인만 있음).",
+   "topic": "",
+   "default": false,
+   "page": "https://consumer.huawei.com/cn/phones/mate-xt-2-ultimate-design/",
+   "company": "huawei",
+   "match": "Huawei Trifold|Trifold|트라이폴드|트리폴드|Mate ?XT ?2|메이트 ?XT ?2",
+   "product": "Huawei Trifold"
+  },
+  {
+   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/mate80-pro/img/kv/kv-2x.jpg",
+   "desc": "화웨이 Mate 80 Pro 뒷면의 원형 카메라 모듈을 비스듬히 잡은 제품 페이지 키비주얼(글자 없음, 기기 일부 클로즈업).",
+   "topic": "",
+   "default": false,
+   "page": "https://consumer.huawei.com/en/phones/mate80-pro/",
+   "company": "huawei",
+   "match": "Huawei Mate ?80 ?Pro|Mate ?80 ?Pro|메이트 ?80 ?프로",
+   "product": "Huawei Mate 80 Pro"
+  },
+  {
+   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/pura-x-max/images/hero/huawei-pura-x-max-kv.jpg",
+   "desc": "흰 배경에서 한 손은 보라색 Pura X Max 뒷면(카메라 3개), 다른 손은 펼친 화면을 들고 있는 키비주얼.",
+   "topic": "",
+   "default": false,
+   "page": "https://consumer.huawei.com/cn/phones/pura-x-max/",
+   "company": "huawei",
+   "match": "Huawei Pura ?X ?Max|Pura ?X ?Max|퓨라 ?X ?맥스",
+   "product": "Huawei Pura X Max"
+  },
+  {
+   "url": "https://dmassets.hyundai.com/is/image/hyundaiautoever/hyundai-ioniq-3-design-technology-001?wid=1920&fmt=jpeg&qlt=85",
+   "desc": "도심 광장에 세워 둔 연한 파란색 현대 아이오닉 3 전면 3/4 측면 사진(현대차 유럽 프레스룸 이미지).",
+   "topic": "",
+   "default": false,
+   "page": "https://www.hyundai.news/eu/models/electrified/ioniq-3/images.html",
+   "company": "hyundai",
+   "match": "Ioniq ?3|아이오닉 ?3",
+   "product": "Hyundai Ioniq 3"
+  },
+  {
+   "url": "https://motional.com/sites/default/files/2026-03/Driving2_RETOUCHED.jpg",
+   "desc": "라스베이거스 도로를 달리는 모셔널 아이오닉 5 로보택시(루프 센서). 모셔널 프레스킷 사진.",
+   "topic": "",
+   "default": false,
+   "page": "https://motional.com/press-kit",
+   "company": "hyundai",
+   "match": "Motional|모셔널",
+   "product": "Motional robotaxi"
+  },
+  {
+   "url": "https://bostondynamics.com/wp-content/uploads/2025/12/atlas-hero-2026-scaled.jpg",
+   "desc": "보스턴 다이내믹스 공장 안에서 정면으로 서 있는 신형 전동식 휴머노이드 아틀라스(보스턴 다이내믹스 공식 사이트 이미지).",
+   "topic": "",
+   "default": false,
+   "page": "https://bostondynamics.com/atlas/",
+   "company": "hyundai",
+   "match": "Atlas|아틀라스",
+   "product": "Atlas"
+  },
+  {
+   "url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/media-entertainment-solution/lg-unveils-the-wallpaper-tv-the-worlds-thinnest-true-wireless-oled-tv/lg-oled-evo-g6.jpg",
+   "desc": "거실 벽에 걸린 LG OLED evo AI TV(G6) 사진. 특정 스마트TV 기능 화면이 아닌 일반 LG TV 이미지.",
+   "topic": "",
+   "default": false,
+   "page": "https://www.lg.com/global/newsroom/news/media-entertainment-solution/lg-electronics-unveils-the-wallpaper-tv-the-worlds-thinnest-true-wireless-oled-tv/",
+   "company": "lge",
+   "match": "LG ?TV|LG smart ?TV|LG 스마트 ?TV",
+   "product": "LG smart TV"
+  },
+  {
+   "url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/media-entertainment-solution/lg-unveils-the-wallpaper-tv-the-worlds-thinnest-true-wireless-oled-tv/lg-oled-evo-w6-1.jpg",
+   "desc": "해안 도시 전망 거실에 설치된 얇은 LG OLED evo W6 월페이퍼 TV(우하단에 작은 제품명 로고만 있음).",
+   "topic": "",
+   "default": false,
+   "page": "https://www.lg.com/global/newsroom/news/media-entertainment-solution/lg-electronics-unveils-the-wallpaper-tv-the-worlds-thinnest-true-wireless-oled-tv/",
+   "company": "lge",
+   "match": "LG Wallpaper ?TV|Wallpaper ?TV|월페이퍼 ?TV|OLED evo W6",
+   "product": "LG Wallpaper TV"
+  },
+  {
+   "url": "https://media.lenovonews.fiestic.com/2025/09/08042747/05_console_mode-scaled.jpg",
+   "desc": "레노버 Legion Go 2를 거치대처럼 세워 두고 분리한 컨트롤러로 게임하는 모습(손과 게임 화면 포함).",
+   "topic": "",
+   "default": false,
+   "page": "https://news.lenovo.com/pressroom/press-releases/legion-gaming-devices-ai-tablets-software-best-in-customer-choice/",
+   "company": "lenovo",
+   "match": "Legion Go ?2|레기온 ?고 ?2",
+   "product": "Legion Go 2"
+  },
+  {
+   "url": "https://media.lenovonews.fiestic.com/2026/02/08044411/image5-2-e1772207142672.png",
+   "desc": "키보드를 붙여 노트북 모드로 펼친 레노버 Legion Go Fold 컨셉(투명 배경 PNG, 화면에 Legion 로고).",
+   "topic": "",
+   "default": false,
+   "page": "https://news.lenovo.com/pressroom/press-releases/consumer-mwc-2026-concepts-tablets-laptops/",
+   "company": "lenovo",
+   "match": "Legion Go ?Fold|레기온 ?고 ?폴드",
+   "product": "Legion Go Fold"
+  },
+  {
+   "url": "https://media.lenovonews.fiestic.com/2026/02/08044350/image2-1-scaled-e1772205767201.png",
+   "desc": "두 번째 화면을 노트북 아래에 붙이고 분리형 키보드를 앞에 둔 ThinkBook 모듈러 AI PC 컨셉(투명 배경 PNG).",
+   "topic": "",
+   "default": false,
+   "page": "https://news.lenovo.com/pressroom/press-releases/trusted-ai-powered-business-computing-modular-enterprise-mwc/",
+   "company": "lenovo",
+   "match": "ThinkBook|씽크북",
+   "product": "ThinkBook Modular AI PC"
+  },
+  {
+   "url": "https://www.nintendo.com/kr/hardware/switch2/sns.png",
+   "desc": "닌텐도 코리아 공식 소개 페이지의 공유용 이미지. 빨간 배경 위에 Switch 2 본체와 Joy-Con 2 도킹 모습, 좌측에 제품 로고",
+   "topic": "",
+   "default": false,
+   "page": "https://www.nintendo.com/kr/hardware/switch2/",
+   "company": "nintendo",
+   "match": "Switch ?2|스위치 ?2|닌텐도 ?스위치 ?2|Nintendo Switch ?2|Switch ?2|스위치 ?2|닌텐도 ?스위치 ?2",
+   "product": "Switch 2"
+  },
+  {
+   "url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/ncom/en_US/switch/site-design-update/oled-model-photo-01",
+   "desc": "닌텐도 공식 사이트의 Switch OLED 모델(화이트) 도크 장착 모습, 목재 테이블 위 제품 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.nintendo.com/us/gaming-systems/switch/oled-model/",
+   "company": "nintendo",
+   "match": "Nintendo Switch(?! ?2)|닌텐도 ?스위치(?! ?2)",
+   "product": "Nintendo Switch"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EC%84%B8%EA%B3%84-%EC%B5%9C%EC%B4%88-%E2%80%9812%EB%8B%A8-%EC%A0%81%EC%B8%B5-HBM3E-%EC%96%91%EC%82%B0-%EB%8F%8C%EC%9E%85_%EC%A0%9C%ED%92%88_02_2024.png",
+   "desc": "SK하이닉스 12단 36GB HBM3E 양산 보도자료의 제품 이미지(칩 앞뒷면 3개)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/12hi-hbm3e-production/",
+   "company": "skhynix",
+   "match": "HBM ?3E",
+   "product": "HBM3E"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2026/08/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EC%83%8C%EB%94%94%EC%8A%A4%ED%81%AC%EC%99%80-HBF-%EC%B2%AB-%ED%91%9C%EC%A4%80-%EA%B7%9C%EA%B2%A9-%EA%B3%B5%EA%B0%9C%E2%80%A6%E2%80%98FMS-2026%EC%84%9C-AI-%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%95%B4%EB%B2%95-%EC%95%8C%EB%A6%B0%EB%8B%A4_%EA%B8%B0%ED%83%80_%EC%9D%B4%EB%AF%B8%EC%A7%80_2026_01.jpg",
+   "desc": "SK하이닉스·샌디스크 HBF 첫 표준 규격 공개 보도 이미지. HBF 칩 CG 렌더링 + 하단 파트너 로고(제목 문구 없음)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/hbf-at-fms-2026/",
+   "company": "skhynix",
+   "match": "(?<![A-Za-z])HBF(?![A-Za-z])|고대역폭 ?플래시",
+   "product": "HBF"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/08/03101544/Samsung-Mobile-Galaxy-Unpacked-July-2026-Inside-the-Design-Galaxy-Z-Series-Galaxy-Watch_dl3.jpg",
+   "desc": "삼성 뉴스룸 보도 이미지. 보랏빛 배경에 Galaxy Z Fold8 Ultra·Fold8·Flip8 세 모델 세워 놓은 제품 컷 (4:3)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-inside-the-design-behind-the-latest-galaxy-z-series-and-galaxy-watch",
+   "company": "samsung",
+   "match": "Galaxy Z Fold ?8|Z ?Fold ?8|갤럭시 ?Z ?폴드 ?8|갤럭시 ?Z ?폴드|와이드 ?폴더블",
+   "product": "Galaxy Z Fold 8"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/02/26031312/Samsung-Mobile-Galaxy-Unpacked-2026-Galaxy-S26-Series-Launch_dl1.jpg",
+   "desc": "삼성 뉴스룸 Galaxy S26 시리즈 언팩 보도 이미지. 흰 테이블 위에 Galaxy S26 시리즈 4종 뒷면을 세워 놓은 제품 사진 (4:3)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet",
+   "company": "samsung",
+   "match": "Galaxy S26(?! ?Ultra)|갤럭시 ?S26(?! ?울트라)|Galaxy S26|갤럭시 ?S26",
+   "product": "Galaxy S26"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2025/12/02152709/Samsung-Mobile-Galaxy-Z-TriFold-Next-in-Mobile-Evolution_dl4.jpg",
+   "desc": "삼성 뉴스룸 보도 이미지. 흰 배경에서 펼쳐진 Galaxy Z TriFold 뒷면 카메라와 10인치 대화면 전면",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/introducing-galaxy-z-trifold-the-shape-of-whats-next-in-mobile-innovation",
+   "company": "samsung",
+   "match": "Galaxy Z ?TriFold|3단 ?폴딩폰|트라이폴드",
+   "product": "Galaxy Z TriFold"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22213526/Samsung-Mobile-Galaxy-Unpacked-July-2026-Intelligent-Eyewear-Launch_dl1.jpg",
+   "desc": "삼성·구글 인텔리전트 아이웨어 보도 이미지. 젠틀몬스터 협업 스마트글라스 제품 컷, 하단에 작은 브랜드 로고. (삼성 공식 명칭은 Intelligent Eyewear, 갤럭시 글라스는 출시 전 명칭)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear",
+   "company": "samsung",
+   "match": "갤럭시 ?글라스|Galaxy Glasses",
+   "product": "Galaxy Glasses"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/02/26031308/Samsung-Mobile-Galaxy-Unpacked-2026-Galaxy-S26-Series-Launch_dl5.jpg",
+   "desc": "삼성 뉴스룸 보도 이미지. 푸른 테이블 위 Galaxy S26 Ultra 뒷면과 Galaxy Buds4 Pro 충전 케이스 (4:3)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet",
+   "company": "samsung",
+   "match": "Galaxy S26 ?Ultra|갤럭시 ?S26 ?울트라",
+   "product": "Galaxy S26 Ultra"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22213528/Samsung-Mobile-Galaxy-Unpacked-July-2026-Intelligent-Eyewear-Launch_dl2.jpg",
+   "desc": "삼성·구글 인텔리전트 아이웨어 보도 이미지. 워비파커 협업 스마트글라스 제품 컷, 하단에 작은 브랜드 로고",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear",
+   "company": "samsung",
+   "match": "AI ?스마트 ?글래스|Samsung AI smart glasses|삼성 ?AI ?스마트글",
+   "product": "Samsung AI smart glasses"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/05/07155224/Samsung-Digital-Appliances-Bespoke-AI-Refrigerator-Family-Hub_dl1.jpg",
+   "desc": "삼성 뉴스룸 보도 이미지. 주방에 설치된 Bespoke AI 패밀리허브 냉장고(화이트 글라스 패널)",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-expands-ai-capabilities-of-bespoke-ai-refrigerator-family-hub-with-major-updates",
+   "company": "samsung",
+   "match": "Bespoke|비스포크|스마트 ?냉장고|smart refrigerator|패밀리 ?허브",
+   "product": "Bespoke AI refrigerator"
+  },
+  {
+   "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/02/12151306/Samsung-Semiconductors-Industry-First-Commercial-HBM4_dl1.jpg",
+   "desc": "삼성전자 HBM4 양산 출하 보도 이미지. 밝은 배경에 SAMSUNG HBM4 칩(앞면)과 금색 뒷면 나란히",
+   "topic": "",
+   "default": false,
+   "page": "https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing",
+   "company": "samsung",
+   "match": "삼성(전자)?\\S{0,3} ?HBM ?4|Samsung\\S{0,3} HBM ?4",
+   "product": "HBM4"
+  },
+  {
+   "url": "https://ace.ai.sony/hubfs/sony-ai-ace-portal-2026-hero-still.jpg.png",
+   "desc": "소니 AI 공식 Project Ace 사이트 히어로 이미지. 탁구 로봇 Ace의 로봇 팔이 라켓으로 공을 치는 순간(배경에 Sony AI 보드)",
+   "topic": "",
+   "default": false,
+   "page": "https://ace.ai.sony/",
+   "company": "sony",
+   "match": "Sony Ace|소니 ?탁구 ?로봇|Project Ace",
+   "product": "Sony Ace"
+  },
+  {
+   "url": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+   "desc": "플레이스테이션 공식 사이트 PS5 제품 이미지. 흰 배경에 PS5 본체(세로형)와 DualSense 컨트롤러",
+   "topic": "",
+   "default": false,
+   "page": "https://www.playstation.com/en-us/ps5/",
+   "company": "sony",
+   "match": "PS5|PlayStation ?5|플레이스테이션 ?5|플스 ?5",
+   "product": "PlayStation 5"
+  },
+  {
+   "url": "https://www.unitree.com/images/e05645ab412e43f3b6a7e4828f455268_1920x1080.jpg",
+   "desc": "유니트리 공식 R1 제품 페이지 이미지. 야외 도심 도로에서 동작 중인 R1 휴머노이드(흰색·파랑)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.unitree.com/R1/",
+   "company": "unitree",
+   "match": "Unitree ?R1|Unitree ?휴머노이드|유니트리 ?R1|유니트리 ?휴머노이드",
+   "product": "Unitree humanoid robot"
+  },
+  {
+   "url": "https://www.unitree.com/images/39d02ea5ef314413855ae4790812e9ff_1920x1080.jpg",
+   "desc": "유니트리 공식 G1 제품 페이지 이미지. 도시 거리를 걷는 G1 휴머노이드 로봇",
+   "topic": "",
+   "default": false,
+   "page": "https://www.unitree.com/g1/",
+   "company": "unitree",
+   "match": "Unitree|유니트리",
+   "product": "Unitree humanoid"
+  },
+  {
+   "url": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/product/1778490450602/zip/img/pc/vivo-x300-ultra-in-steppe-green.png",
+   "desc": "vivo 글로벌 공식 제품 페이지 이미지. Steppe Green X300 Ultra 뒷면(ZEISS 원형 카메라 모듈), 어두운 배경 위(가로 2.1:1)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.vivo.com/en/products/x300-ultra",
+   "company": "vivo",
+   "match": "X300 ?Ultra|X300울트라|비보 ?X300",
+   "product": "Vivo X300 Ultra"
+  },
+  {
+   "url": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-17-ultra/pc/9d34fe3dafd2af7d76a743e6d4ceda27.jpg?f=webp",
+   "desc": "샤오미 글로벌 공식 Xiaomi 17 Ultra 제품 페이지 이미지. 어두운 배경에서 손에 쥔 그린 Ultra 뒷면(라이카 카메라). 17 Ultra 기준, webp",
+   "topic": "",
+   "default": false,
+   "page": "https://www.mi.com/global/product/xiaomi-17-ultra/",
+   "company": "xiaomi",
+   "match": "Xiaomi ?17|샤오미 ?17|17 ?Ultra|17 ?울트라",
+   "product": "Xiaomi 17"
+  },
+  {
+   "url": "https://cdn.sanity.io/images/qka6yvsc/production/fdda789a2e7c6caa9a798dd920b8a0acb254ea9d-1200x630.jpg",
+   "desc": "1X의 가정용 휴머노이드 NEO 로봇이 노인 옆에 서 있는 공식 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.1x.tech/neo",
+   "company": "1x",
+   "match": "1X.{0,15}(?:Neo|NEO|네오)|Neo humanoid|네오 ?휴머노이드|\\bNEO\\b",
+   "product": "Neo"
+  },
+  {
+   "url": "https://www.amd.com/content/dam/amd/en/images/products/data-centers/4543000-helios-teaser.jpg",
+   "desc": "데이터센터에 설치된 AMD Helios 랙스케일 AI 서버 랙(여러 대) 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.amd.com/en/products/rackscale-solutions/helios.html",
+   "company": "amd",
+   "match": "AMD Helios|\\bHelios\\b|헬리오스",
+   "product": "AMD Helios"
+  },
+  {
+   "url": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/3764700-ryzen-ai-400-teaser.jpg",
+   "desc": "AMD Ryzen AI 400 시리즈 칩 패키지 렌더(칩 위에 AMD Ryzen AI 400 Series 표기)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.amd.com/en/products/processors/laptop/ryzen/ai-400-series/amd-ryzen-ai-9-hx-470.html",
+   "company": "amd",
+   "match": "Ryzen AI 400|라이젠 ?AI ?400",
+   "product": "Ryzen AI 400"
+  },
+  {
+   "url": "https://blog.adobe.com/en/publish/2026/04/27/media_120f55e65ce82173a0e54777188bd1ce9cf51b27e.png?width=2000&format=pjpg&optimize=medium",
+   "desc": "Firefly AI Assistant(베타) 화면. 'Mock up a cup, a shirt, and a tote bag' 프롬프트와 목업 결과 3장",
+   "topic": "",
+   "default": false,
+   "page": "https://blog.adobe.com/en/publish/2026/04/27/firefly-ai-assistant-public-beta",
+   "company": "adobe",
+   "match": "Firefly|파이어플라이",
+   "product": "Firefly AI Assistant"
+  },
+  {
+   "url": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/2-0-1.jpg",
+   "desc": "Cursor 앱(에이전트/에디터 창) 화면이 풍경화 배경 위에 떠 있는 공식 이미지(Cursor 2.0 블로그)",
+   "topic": "",
+   "default": false,
+   "page": "https://cursor.com/blog/2-0",
+   "company": "anysphere",
+   "match": "(?<![A-Za-z])Cursor(?![A-Za-z])|Anysphere|애니스피어",
+   "product": "Cursor"
+  },
+  {
+   "url": "https://newsroom.arm.com/wp-content/uploads/2026/03/20260216_VISION25_FrontOn_Chip-01-16x9_16bit_v2-1400x788.png",
+   "desc": "Arm AGI CPU 칩 정면 렌더(미디어킷 이미지, 어두운 배경)",
+   "topic": "",
+   "default": false,
+   "page": "https://newsroom.arm.com/news/arm-everywhere-media-kit",
+   "company": "arm",
+   "match": "AGI CPU|ARM AGI|Arm AGI",
+   "product": "ARM AGI CPU"
+  },
+  {
+   "url": "https://d1o72l87sylvqg.cloudfront.net/redstone/Gallery-NG3-liftoff5.jpg",
+   "desc": "발사대에서 이륙하는 New Glenn 로켓 사진(NG-3 갤러리). 3000x2000, 약 2.3MB",
+   "topic": "",
+   "default": false,
+   "page": "https://www.blueorigin.com/gallery",
+   "company": "blueorigin",
+   "match": "New Glenn|뉴 ?글렌",
+   "product": "New Glenn"
+  },
+  {
+   "url": "https://assets.bosecreative.com/transform/66a721ef-9a18-4e4d-bc5a-c3f4c6aa61e0/FY27_NCWE27-Blk_PDP_EcomGal1_Silo_D_1500x1120?format=jpg&quality=90",
+   "desc": "흰 배경 위 Bose 노이즈 캔슬링 유선 이어버드 제품컷(1500x1120, 비율 1.34)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
+   "company": "bose",
+   "match": "Bose Noise Cancelling Wired Earbuds|보스 노이즈 ?캔슬링 유선 ?이어버드|Bose.{0,20}유선 ?이어버드",
+   "product": "Bose Noise Cancelling Wired Earbuds"
+  },
+  {
+   "url": "https://bostondynamics.com/wp-content/uploads/2026/01/atlas-announcement.jpg",
+   "desc": "공장 환경의 신형 Atlas 휴머노이드 상체(Boston Dynamics 로고). 'Atlas'가 OpenAI Atlas 등과 겹칠 수 있어 매칭 주의",
+   "topic": "",
+   "default": false,
+   "page": "https://bostondynamics.com/news/boston-dynamics-unveils-new-atlas-robot/",
+   "company": "bostondynamics",
+   "match": "Boston Dynamics.{0,40}Atlas|Atlas.{0,25}(?:humanoid|휴머노이드)|보스턴 ?다이내믹스.{0,40}아틀라스|아틀라스.{0,20}(?:휴머노이드|로봇)|현대.{0,20}아틀라스",
+   "product": "Atlas"
+  },
+  {
+   "url": "https://assets.ceermotors.com/uploads/assets/Road_Warm_copie_53cef23944.webp",
+   "desc": "사막 도로를 달리는 Ceer Exobot 세단과 SUV 공식 사진(3277x2098)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.ceermotors.com/",
+   "company": "ceer",
+   "match": "Ceer|Exobot|씨어|엑소봇",
+   "product": "Ceer Exobot"
+  },
+  {
+   "url": "https://cdn.sanity.io/images/e4qjo92p/production/78c94c67be9b480e9e4e39b7c26e8b11da167325-4096x2160.png?w=2000&auto=format",
+   "desc": "클린룸 직원이 손에 든 Cerebras 웨이퍼 스케일 칩(금색 웨이퍼) 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.cerebras.ai/chip",
+   "company": "cerebras",
+   "match": "Cerebras|세레브라스",
+   "product": "Cerebras wafer-scale chip"
+  },
+  {
+   "url": "https://pressroom.chevrolet.com/content/Pages/news/us/en/2025/may/0521-Trail-Boss-joins-2026-Chevrolet-Silverado-EV/jcr:content/image.resize.maxw_1200.jpg/1747768435592.jpg",
+   "desc": "사막에서 먼지를 일으키며 달리는 붉은 쉐보레 Silverado EV 트레일 보스",
+   "topic": "",
+   "default": false,
+   "page": "https://pressroom.chevrolet.com/gmbx/us/en/chevrolet/pressroom/vehicles.detail.html/content/Pages/vehicle/us/en/chevrolet/silverado-ev/2026.html",
+   "company": "chevrolet",
+   "match": "Silverado EV|실버라도 ?EV",
+   "product": "Chevy Silverado EV"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/66f575e72f06b9820f448d43/6957c2f239a9f8b7c2518950_communicator-opengraph.jpg",
+   "desc": "손에 든 Clicks Communicator(쿼티 키보드 스마트폰) 제품 사진(2400x1260)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.clicksphone.com/",
+   "company": "clicks",
+   "match": "Clicks (?:Communicator|phone)|Clicks 스마트폰|클릭스|블랙베리 스타일 스마트폰",
+   "product": "Clicks phone"
+  },
+  {
+   "url": "https://coldcard.com/static/images/og-main.jpg",
+   "desc": "Coldcard Q와 Mk4 하드웨어 지갑 3D 렌더(어두운 배경)",
+   "topic": "",
+   "default": false,
+   "page": "https://coldcard.com/",
+   "company": "coldcard",
+   "match": "Coldcard|콜드카드",
+   "product": "Coldcard hardware wallet"
+  },
+  {
+   "url": "https://www-cdn.djiits.com/dps/8490686e03b130f96c24f55afe606b02.jpg?w=3820&h=2160",
+   "desc": "밝은 배경 위 DJI Romo 로봇청소기 정면 제품 사진(3820x2160). DJI 공식 CDN",
+   "topic": "",
+   "default": false,
+   "page": "https://www.romo.tech/",
+   "company": "dji",
+   "match": "DJI Romo|DJI.{0,10}로모|\\bRomo\\b",
+   "product": "DJI Romo"
+  },
+  {
+   "url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=jpeg&wid=1920&hei=1080&bgcolor=240,240,240&fit=fit,1",
+   "desc": "Dell XPS 13(2026) 노트북 정면 제품컷, 화면에 앱 창 표시. 흰 배경 JPEG(1920x1080)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-dx13260-laptop",
+   "company": "dell",
+   "match": "XPS 13|XPS13|Dell XPS|델 XPS|\\bXPS\\b",
+   "product": "XPS 13"
+  },
+  {
+   "url": "https://mlaygxxmuaqg.i.optimole.com/cb:mIuD.37fd9/w:1920/h:1212/q:mauto/f:best/https://www.donutlab.com/wp-content/uploads/2026/01/donutlab-hero-img-scaled.jpg",
+   "desc": "어두운 배경 위 Donut 고체 배터리 셀('DONUT | Solid state' 표기) 제품 렌더",
+   "topic": "",
+   "default": false,
+   "page": "https://www.donutlab.com/",
+   "company": "donutlab",
+   "match": "Donut Lab|도넛 ?랩",
+   "product": "Donut Lab battery"
+  },
+  {
+   "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/oral-care/electric-toothbrush/camerajet/rcc/WEB-682-HOMEPAGE-SIGNPOST-STATIC.jpg?$responsive$&cropPathE=tablet&fit=stretch,1&fmt=pjpeg&wid=1920",
+   "desc": "CameraJet 칫솔 헤드에서 물줄기가 분사되는 공식 클로즈업(1920x1123)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.dyson.com/oral-care/electric-toothbrush/camerajet",
+   "company": "dyson",
+   "match": "CameraJet|카메라제트|다이슨.{0,15}칫솔",
+   "product": "Dyson CameraJet"
+  },
+  {
+   "url": "https://cdn.sanity.io/images/wfyhg2qw/production/4d052cfc88516aa73bd6797d86ce135c9051d584-2800x2000.jpg?auto=format&fit=max&q=90&w=1920",
+   "desc": "Even Realities G2 스마트 글래스를 쓴 남성과 공중에 뜬 녹색 HUD 화면 공식 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://www.evenrealities.com/",
+   "company": "evenrealities",
+   "match": "Even Realities|이븐 ?리얼리티",
+   "product": "Even Realities smart glasses"
+  },
+  {
+   "url": "https://ferrari.scene7.com/is/image/ferrari/Luce_social",
+   "desc": "검은 배경 위 붉은 페라리 Luce 전기차 3/4 뷰 공식 이미지(1920x1080)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.ferrari.com/en-EN/magazine/articles/ferrari-luce-unveiled",
+   "company": "ferrari",
+   "match": "Ferrari Luce|페라리 ?루체|\\bLuce\\b|루체",
+   "product": "Luce"
+  },
+  {
+   "url": "https://cdn.shopify.com/s/files/1/0660/7693/4282/files/bb_productpic_smm.webp?v=1778085860",
+   "desc": "책상 위 Busy Bar 도트 디스플레이 'BUSY 15:10 LEFT' 제품 사진(1920x1200)",
+   "topic": "",
+   "default": false,
+   "page": "https://busy.bar/",
+   "company": "flipperdevices",
+   "match": "Busy Bar|비지 ?바",
+   "product": "Busy Bar"
+  },
+  {
+   "url": "https://images.prismic.io/frameworkmarketplace/aK2ni2GNHVfTOUNf_fw16_family_meta.jpg?auto=format,compress",
+   "desc": "주황 배경에 분해된 Framework Laptop 16 부품이 공중에 떠 있는 공식 이미지",
+   "topic": "",
+   "default": false,
+   "page": "https://frame.work/laptop16",
+   "company": "framework",
+   "match": "Framework Laptop 16|프레임워크 ?(?:노트북 ?)?16|프레임워크 ?노트북|Framework Laptop(?! ?(?:13 Pro|16))",
+   "product": "Framework Laptop 16"
+  },
+  {
+   "url": "https://images.frame.work/frameworkmarketplace/aeVG_51ZCF7ETVz5_fw13pro-link-preview.jpg?auto=format,compress&w=2400",
+   "desc": "검은 배경에 펼쳐 놓은 Framework Laptop 13 Pro 내부 부품(메인보드·배터리·모듈) 공식 이미지. 완제품 정면 사진은 아님",
+   "topic": "",
+   "default": false,
+   "page": "https://frame.work/laptop13pro",
+   "company": "framework",
+   "match": "Framework Laptop 13 Pro|프레임워크 ?13 ?프로",
+   "product": "Framework Laptop 13 Pro"
+  },
+  {
+   "url": "https://news.chevrolet.com/content/Pages/news/us/en/2026/jun/0516-chevrolet-next-generation-2027-silverado/jcr:content/image.resize.maxw_1200.jpg/1781617589598.jpg",
+   "desc": "산 위 도로에 나란히 선 2027 쉐보레 Silverado 1500 3대 공식 사진",
+   "topic": "",
+   "default": false,
+   "page": "https://news.chevrolet.com/content/public/us/en/chevrolet/newsroom.detail.html/Pages/news/us/en/2026/jun/0516-chevrolet-next-generation-2027-silverado.html",
+   "company": "gm",
+   "match": "2027 (?:Chevrolet |Chevy )?Silverado(?! ?EV)|GMC 시에라|쉐보레 실버라도(?! ?EV)",
+   "product": "2027 Chevrolet Silverado"
+  },
+  {
+   "url": "https://www.hesaitech.com/wp-content/uploads/2025/04/ETX-NEW-scaled.jpg",
+   "desc": "어두운 배경 위 Hesai ETX 라이다 제품 렌더(컬러 라이다 Picasso 칩이 탑재되는 ETX 라인)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.hesaitech.com/product/ETX",
+   "company": "hesai",
+   "match": "Hesai.{0,20}(?:color|Color|컬러)|컬러 ?라이다|허싸이.{0,15}라이다|Picasso",
+   "product": "Hesai color lidar"
+  },
+  {
+   "url": "https://pollen-robotics.com/assets/og/og-home.jpg",
+   "desc": "책상 위 모니터 앞에 서 있는 Microduck 오리 로봇(Hugging Face 자회사 Pollen Robotics 공식 사이트 이미지, 1200x630)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.pollen-robotics.com/",
+   "company": "huggingface",
+   "match": "Microduck|마이크로덕",
+   "product": "Microduck"
+  },
+  {
+   "url": "https://intelcorp.scene7.com/is/image/intelcorp/itt-employee-holds-chip:1440-1080",
+   "desc": "Intel Core Ultra 시리즈 3(Panther Lake) 칩을 손에 든 사진(Intel 로고 배경, 1440x1080). Intel Scene7 CDN",
+   "topic": "",
+   "default": false,
+   "page": "https://newsroom.intel.com/client-computing/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a",
+   "company": "intel",
+   "match": "Panther Lake|팬서 ?레이크|Core Ultra Series 3|코어 울트라 ?(?:시리즈 ?)?3",
+   "product": "Panther Lake"
+  },
+  {
+   "url": "https://isaraerospace.com/images/_2880xAUTO_crop_center-center_none/%C2%A9-Isar-Aerospace_Spectrum-on-pad_wide-shot.jpg",
+   "desc": "피오르 해안 발사장의 Spectrum 로켓 발사대 전경 공식 사진(2880x1920)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.isaraerospace.com/newsroom",
+   "company": "isaraerospace",
+   "match": "Isar.{0,25}Spectrum|Spectrum.{0,15}(?:rocket|로켓)|이자르|이자 에어로스페이스|Isar Aerospace",
+   "product": "Spectrum rocket"
+  },
+  {
+   "url": "https://www.sourdoughsidekick.com/cdn/shop/files/Sourdough_Sidekick_-_hero.png?v=1785247601",
+   "desc": "주방 조리대 위 Sourdough Sidekick(사워도우 스타터 자동 급여기) 제품 사진(1920x1080)",
+   "topic": "",
+   "default": false,
+   "page": "https://www.sourdoughsidekick.com/",
+   "company": "kingarthur",
+   "match": "Sourdough Sidekick|사워도우 ?사이드킥",
+   "product": "Sourdough Sidekick"
   }
  ]
 }

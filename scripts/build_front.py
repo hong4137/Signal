@@ -223,10 +223,16 @@ def pick_newsroom(nr, text, used):
         return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": cr,
                 "credit": cr, "credit_url": ph.get("page", "")}
     title = text.get("title", "")
+    best = None                                 # 이름이 가장 길게 맞는 제품 — '맥미니 M6' 가 '맥미니' 보다 먼저
     for ph in photos:
         c = comps.get(ph["company"]) or {}
-        if ph.get("match") and c.get("permitted") is not False and ph["url"] not in used                 and re.search(ph["match"], title):
-            return out(ph, c)
+        if not ph.get("match") or c.get("permitted") is False or ph["url"] in used:
+            continue
+        m = re.search(ph["match"], title, re.I)
+        if m and (best is None or len(m.group(0)) > best[0]):
+            best = (len(m.group(0)), ph, c)
+    if best:
+        return out(best[1], best[2])
     for cid, c in comps.items():
         if c.get("permitted") is False:            # 이용 조건 불명확 — 사람이 확인하고 켠다
             continue
@@ -235,7 +241,10 @@ def pick_newsroom(nr, text, used):
         cand = [x for x in photos if x["company"] == cid and x["url"] not in used]
         body = " ".join(text.values())
         cand = [x for x in cand if not x.get("match")]   # 제품 사진은 그 제품 기사에만
-        hit = [x for x in cand if x.get("topic") and re.search(x["topic"], body, re.I)]
+        # 주제가 맞는 사진 중 가장 길게 맞는 것 ('HBM4' 가 '양산' 보다 구체적이다), 제목에서 맞으면 더 우선
+        score = lambda x: max([(2, len(m.group(0))) for m in [re.search(x["topic"], text.get("title", ""), re.I)] if m]
+                              + [(1, len(m.group(0))) for m in [re.search(x["topic"], body, re.I)] if m] + [(0, 0)])
+        hit = sorted([x for x in cand if x.get("topic") and score(x) > (0, 0)], key=score, reverse=True)
         ph = (hit or [x for x in cand if x.get("default")] or cand or [None])[0]
         if ph:
             return out(ph, c)
