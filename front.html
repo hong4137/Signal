@@ -526,8 +526,10 @@ const badge = img => img.nr ? `<i class="file">${esc(img.nr)}</i>` : img.file ? 
 const ph = (img, cls = 'ph') => img ? `<span class="${cls}"><img src="${esc(img.sm || img.src)}" alt="${esc(img.alt)}" loading="lazy">${badge(img)}</span>` : '';
 
 /* 국내 기사 첫머리 — sharktalk.co.kr 포털이 언론사 공개 요약(og:description)을 받아 준다 */
+/* 원문 첫머리에 남은 HTML 엔티티(&middot; 등)를 글자로 — textarea 에 넣었다 빼면 브라우저가 풀어 준다 */
+const unent = s => { if (!s || !/&[#\w]+;/.test(s)) return s || ''; const t = document.createElement('textarea'); t.innerHTML = s; return t.value; };
 const mustLede = (id, idx) => /^\d{8}_\d{4}$/.test(id || '') && Number.isInteger(idx)
-  ? fetch(`https://sharktalk.co.kr/api/board/must/${id}/${idx}/lead`).then(r => r.ok ? r.json() : {}).then(j => spaced(j && j.lead)).catch(() => '')
+  ? fetch(`https://sharktalk.co.kr/api/board/must/${id}/${idx}/lead`).then(r => r.ok ? r.json() : {}).then(j => spaced(unent(j && j.lead))).catch(() => '')
   : Promise.resolve('');
 
 /* ── 조각들 ── */

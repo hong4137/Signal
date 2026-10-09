@@ -212,7 +212,31 @@ def newsroom_pool():
     return comps, [x for x in nr.get("photos") or [] if x["url"] not in off]
 
 
-def pick_newsroom(nr, text, used):
+def people_pool():
+    return load(os.path.join(DATA, "people_photos.json"), {}) or {}
+
+
+def pick_person(pp, title, used):
+    """제목·부제에 사람 이름이 나오면 그 사람 사진 — 회사·제품 사진보다 먼저다('AMD 리사 수…' 에는 리사 수 얼굴).
+    여러 명이면 제목에서 먼저 나온 사람. 사진은 우리 도메인의 위키미디어 공용 CC 사진이라 작가·라이선스를 단다."""
+    off, hits = photo_off(), []
+    for k, p in (pp.get("people") or {}).items():
+        m = re.search(p["match"], title or "", re.I if p.get("ignorecase") else 0)
+        if m:
+            hits.append((m.start(), k, p))
+    for _, k, p in sorted(hits, key=lambda h: h[0]):
+        cand = [x for x in p["photos"] if pp["base"] + x["id"] + ".webp" not in used | off]
+        if not cand:
+            continue
+        x = cand[sum(map(ord, title)) % len(cand)]
+        url = pp["base"] + x["id"] + ".webp"
+        used.add(url)
+        cr = "%s · %s" % (x["artist"], x["license"]) if x.get("artist") else x["license"]
+        return {"src": url, "sm": url, "alt": p["name"], "nr": cr, "credit": cr, "credit_url": x.get("page", ""), "person": k}
+    return None
+
+
+def pick_newsroom(nr, text, used, product_only=False):
     """기사가 뉴스룸 사진이 있는 회사를 다루면 그 회사 공식 사진 — 주제가 맞는 것 먼저, 없으면 대표 사진.
     회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다).
     제품 사진("match" 가 있는 사진)이 먼저다 — 제목에 그 제품 이름이 나오면 회사 이름이 없어도 1대1로 붙인다."""
@@ -233,6 +257,8 @@ def pick_newsroom(nr, text, used):
             best = (len(m.group(0)), ph, c)
     if best:
         return out(best[1], best[2])
+    if product_only:
+        return None
     for cid, c in comps.items():
         if c.get("permitted") is False:            # 이용 조건 불명확 — 사람이 확인하고 켠다
             continue
@@ -800,11 +826,13 @@ def main():
 
     # ── 기업 뉴스룸 공식 사진 — 회사가 주인공인 기사엔 Unsplash 대신 그 회사 사진 ('<회사> 제공') ──
     # 편집국이 drop_photo·no_photo 로 막은 기사는 건드리지 않는다. 같은 사진은 한 면에 한 번.
-    nrp, nr_used = newsroom_pool(), set()
+    nrp, ppl, nr_used = newsroom_pool(), people_pool(), set()
     def nr_swap(it, title, sub="", deck="", key=None):
         if not it or (dx.get(key) or {}).get("drop_photo") or (dx.get(key) or {}).get("no_photo") or it.get("no_photo"):
             return
-        ph = pick_newsroom(nrp, {"title": " ".join((title or "", sub or "")), "deck": deck or ""}, nr_used)
+        tt = {"title": " ".join((title or "", sub or "")), "deck": deck or ""}
+        # 제품 이름(1대1) → 사람 얼굴 → 회사 사진 순
+        ph = pick_newsroom(nrp, tt, nr_used, product_only=True) or pick_person(ppl, tt["title"], nr_used)             or pick_newsroom(nrp, tt, nr_used)
         if ph:
             size = (it.get("img") or {}).get("size")
             it["img"] = dict(ph, **({"size": size} if size else {}))
