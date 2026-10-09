@@ -45,15 +45,25 @@ h2 span{font-size:13px;color:var(--muted);font-weight:500}
 h2::before{content:"";width:4px;height:18px;background:var(--grad);border-radius:2px;align-self:center}
 /* 오늘 밤 */
 .tonight{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
-.tn{border:1px solid var(--hair);border-radius:12px;padding:12px 14px;background:var(--soft)}
+.tn{border:1px solid var(--hair);border-top:4px solid var(--sc,var(--hair));border-radius:12px;padding:12px 14px;background:var(--soft)}
 .tn .t{font-family:var(--mono);font-size:22px;font-weight:700}
 .tn .t small{font-size:12px;color:var(--muted);font-family:var(--ko);font-weight:500;margin-left:6px}
 .tn .n{font-weight:700;margin-top:2px}
 .tn .l{font-size:12px;color:var(--muted);margin-top:4px}
 .empty{color:var(--muted);font-size:14px}
 /* 픽 카드 */
-.pick{border:1px solid var(--hair);border-radius:14px;margin:0 0 12px;overflow:hidden;background:var(--sheet)}
-.pick.top{border:2px solid transparent;background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box}
+.pick{border:1px solid var(--hair);border-left:6px solid var(--sc,var(--hair));border-radius:14px;margin:0 0 12px;overflow:hidden;background:var(--sheet)}
+/* 종목 구분 — 이모지 + 색. 카드 왼쪽 띠와 꼬리표가 같은 색이다 */
+.sp{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:var(--sc);margin-right:8px}
+.sp i{font-style:normal;font-size:15px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:-4px 0 14px}
+.filters button{font:inherit;font-size:13px;border:1px solid var(--hair);background:var(--sheet);color:var(--ink-2);border-radius:999px;padding:5px 12px;cursor:pointer}
+.filters button.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.hide{display:none!important}
+.sess{font-size:12.5px;color:var(--ink-2);margin-top:6px;font-family:var(--mono)}
+.sess b{font-family:var(--ko);color:var(--sc)}
+.tbc{font-size:11px;color:var(--muted);font-family:var(--ko);display:block;margin-top:2px}
+.pick.top{border:2px solid transparent;border-left:6px solid var(--sc);background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box}
 .ph{display:grid;grid-template-columns:118px 1fr auto;gap:14px;align-items:center;padding:14px 16px;cursor:pointer}
 .when{font-family:var(--mono)}
 .when .d{font-size:12px;color:var(--muted)}
@@ -82,7 +92,7 @@ h2::before{content:"";width:4px;height:18px;background:var(--grad);border-radius
 .prob{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:6px 0 4px}
 .prob b{background:var(--weight)} .prob s{background:var(--heat)}
 /* 결과 */
-.res{border:1px solid var(--hair);border-radius:12px;padding:12px 16px;margin:0 0 10px}
+.res{border:1px solid var(--hair);border-left:6px solid var(--sc,var(--hair));border-radius:12px;padding:12px 16px;margin:0 0 10px}
 .res .top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
 .reveal{border:0;border-radius:999px;padding:6px 14px;font-weight:700;font-size:13px;cursor:pointer;background:var(--ink);color:var(--sheet)}
 .spoil{display:none;margin-top:10px}
@@ -115,7 +125,7 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
     <a class="sub" id="cal" href="webcal://signal.sharktalk.co.kr/data/sports.ics">📅 캘린더로 구독하기</a>
   </header>
   <section><h2>곧 시작 <span>앞으로 36시간 안에 고른 경기</span></h2><div class="tonight" id="tonight"></div></section>
-  <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div id="picks"></div></section>
+  <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div class="filters" id="filters"></div><div id="picks"></div></section>
   <section><h2>지난 경기 결과 <span>스포일러 가림 — 눌러야 보입니다</span></h2><div id="results"></div></section>
   <section class="quiet"><h2>KBO · LCK</h2><ul id="manual"></ul></section>
   <footer>경기 데이터 ESPN · 국내 중계처는 시즌 편성 기준(바뀔 수 있음) · 시각은 모두 한국 시간.<br>
@@ -124,6 +134,14 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
 <script>
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const WD = ['일','월','화','수','목','금','토'];
+/* 종목: 이모지 · 이름 · 색 (카드 왼쪽 띠·꼬리표·'곧 시작' 윗줄) */
+const SP = {soccer:['⚽','축구','#16A35F'], f1:['🏎️','F1','#E10600'], tennis:['🎾','테니스','#B7C400'], baseball:['⚾','야구','#2563EB'],
+  basketball:['🏀','농구','#F97316'], golf:['⛳','골프','#0D9488'], mma:['🥊','격투기','#B91C1C'], nfl:['🏈','미식축구','#8B5E34'],
+  kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
+const sportOf = p => p.sport || ({soccer:'soccer',racing:'f1',tennis:'tennis',baseball:'baseball',basketball:'basketball',golf:'golf',mma:'mma',football:'nfl'})[(p.path||'').split('/')[0]] || 'etc';
+const spTag = p => { const s = SP[sportOf(p)]; return `<span class="sp"><i>${s[0]}</i>${s[1]}</span>`; };
+const scVar = p => `--sc:${SP[sportOf(p)][2]}`;
+const SESS = {FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'};
 const T = s => { const [d, h] = s.split(' '); const dt = new Date(d + 'T' + h + ':00+09:00'); return {dt, d: `${dt.getMonth()+1}/${dt.getDate()}(${WD[dt.getDay()]})`, h}; };
 const alarm = h => { const x = +h.slice(0,2); return x >= 1 && x <= 6 ? '<span class="alarm">⏰ 알람 필요</span>' : ''; };
 const form = f => f ? `<span class="form">${[...f].map(c => `<i class="${c}">${c}</i>`).join('')}</span>` : '';
@@ -145,9 +163,10 @@ function detail(p){
 
 function card(p){
   const t = T(p.kst), why = (p.why||[]).map(w => `<span class="${/출전/.test(w) ? 'k' : ''}">${esc(w)}</span>`).join('');
-  return `<div class="pick${p.stars >= 3 ? ' top' : ''}" data-id="${esc(p.id)}">
-    <div class="ph"><div class="when"><div class="d">${t.d}</div><div class="h">${t.h}</div>${alarm(t.h)}</div>
-      <div><div class="lg">${esc(p.league)}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div><div class="ttl">${esc(p.title || p.name)}</div><div class="why">${why}</div></div>
+  const sess = (p.sessions||[]).filter(x => ['SR','Qual','Race'].includes(x.name)).map(x => { const s = T(x.kst); return `<b>${SESS[x.name]}</b> ${s.d} ${s.h}`; }).join(' · ');
+  return `<div class="pick${p.stars >= 3 ? ' top' : ''}" data-id="${esc(p.id)}" data-sp="${sportOf(p)}" style="${scVar(p)}">
+    <div class="ph"><div class="when"><div class="d">${t.d}</div><div class="h">${t.h}</div>${p.time_tbc ? '<span class="tbc">예정 · 앞 경기 따라 변동</span>' : ''}${alarm(t.h)}</div>
+      <div><div class="lg">${spTag(p)}${p.league === SP[sportOf(p)][1] ? '' : esc(p.league)}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div><div class="ttl">${esc(p.title || p.name)}</div><div class="why">${why}</div>${sess ? `<div class="sess">${sess}</div>` : ''}</div>
       <div class="side"><div class="stars">${'★'.repeat(p.stars||1)}${'☆'.repeat(3-(p.stars||1))}</div><div class="tv">📺 ${esc(p.tv || '중계 미확인')}</div><div class="more">자세히 ▾</div></div></div>
     <div class="det">${detail(p)}</div></div>`;
 }
@@ -160,23 +179,36 @@ function resultCard(p){
     return `<div class="kp"><b>${esc(k.ko)}</b> ${k.starter ? '선발' : '교체 출전'}${+k.goals ? ` · ${k.goals}골` : ''}${+k.assists ? ` · ${k.assists}도움` : ''}${k.shots ? ` · 슈팅 ${k.shots}` : ''}</div>`;
   }).join('');
   const goals = (r.goals||[]).map(g => `<li>${esc(g.min)} ${esc(g.text)}</li>`).join('');
-  return `<div class="res"><div class="top"><div><div class="lg">${esc(p.league)} <em>${t.d} ${t.h}</em></div><div class="ttl">${esc(p.title || p.name)}</div></div>
+  const pod = (r.podium||[]).map((n, i) => `${['🥇','🥈','🥉'][i]} ${esc(n)}`).join('  ');
+  return `<div class="res" data-sp="${sportOf(p)}" style="${scVar(p)}"><div class="top"><div><div class="lg">${spTag(p)}${esc(p.league)} <em>${t.d} ${t.h}</em></div><div class="ttl">${esc(p.title || p.name)}</div></div>
     <button class="reveal">결과 보기</button></div>
-    <div class="spoil"><div class="score">${esc(r.score || p.status || '')}</div>${kp}${goals ? `<ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.6">${goals}</ul>` : ''}
+    <div class="spoil"><div class="score">${pod || esc(r.score || p.status || '')}</div>${(r.top10||[]).length > 3 ? `<p class="more">4~10위 ${esc(r.top10.slice(3).join(' · '))}</p>` : ''}${kp}${goals ? `<ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.6">${goals}</ul>` : ''}
     ${r.video && r.video.url ? `<p class="more"><a href="${esc(r.video.url)}" target="_blank" rel="noopener">▶ ${esc(r.video.title)}</a></p>` : ''}</div></div>`;
 }
 
 fetch('data/sports.json?t=' + Date.now()).then(r => r.json()).then(D => {
   document.getElementById('upd').textContent = '갱신 ' + D.updated;
-  const now = Date.now(), soon = (D.picks||[]).filter(p => { const t = T(p.kst).dt.getTime(); return t > now - 2*3600e3 && t < now + 36*3600e3; });
-  document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst);
-    return `<div class="tn"><div class="t">${t.h}<small>${t.d}</small></div><div class="n">${esc(p.title || p.name)}</div><div class="l">${esc(p.league)} · 📺 ${esc(p.tv || '미확인')}</div></div>`; }).join('')
+  const now = Date.now(), inWin = k => { const t = T(k).dt.getTime(); return t > now - 2*3600e3 && t < now + 36*3600e3; };
+  const soon = [];
+  for (const p of D.picks||[]) {
+    if (p.sessions) { for (const x of p.sessions) if (['SR','Qual','Race'].includes(x.name) && inWin(x.kst)) soon.push({...p, kst: x.kst, sessName: SESS[x.name]}); }
+    else if (inWin(p.kst)) soon.push(p);
+  }
+  soon.sort((a, b) => a.kst < b.kst ? -1 : 1);
+  document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst), s = SP[sportOf(p)];
+    return `<div class="tn" style="${scVar(p)}"><div class="t">${t.h}<small>${t.d}</small></div><div class="n">${s[0]} ${esc(p.title || p.name)}${p.sessName ? ` <span style="color:var(--sc)">${p.sessName}</span>` : ''}</div><div class="l">${esc(p.league)}${p.note ? ' ' + esc(p.note) : ''} · 📺 ${esc(p.tv || '미확인')}</div></div>`; }).join('')
     : '<p class="empty">앞으로 36시간 안에 고른 경기가 없습니다. 아래 주간 목록을 보세요.</p>';
   document.getElementById('picks').innerHTML = (D.picks||[]).map(card).join('') || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
   document.getElementById('results').innerHTML = (D.results||[]).map(resultCard).join('') || '<p class="empty">아직 끝난 픽이 없습니다.</p>';
   const m = D.manual || [];
   document.getElementById('manual').innerHTML = m.length ? m.map(x => `<li>${esc(x.kst)} · <b>${esc(x.league)}</b> ${esc(x.title)}${x.tv ? ` · 📺 ${esc(x.tv)}` : ''}${x.result ? ` · <span style="color:var(--muted)">결과: ${esc(x.result)}</span>` : ''}</li>`).join('')
     : '<li>확정된 일정이 들어오면 여기에 표시합니다.</li>';
+  const present = [...new Set((D.picks||[]).map(sportOf))];
+  const fl = document.getElementById('filters');
+  fl.innerHTML = `<button class="on" data-f="all">전체</button>` + present.map(k => `<button data-f="${k}">${SP[k][0]} ${SP[k][1]}</button>`).join('');
+  fl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
+    fl.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    document.querySelectorAll('.pick,.res').forEach(c => c.classList.toggle('hide', b.dataset.f !== 'all' && c.dataset.sp !== b.dataset.f)); });
   document.querySelectorAll('.ph').forEach(h => h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
   document.querySelectorAll('.reveal').forEach(b => b.addEventListener('click', () => b.closest('.res').classList.add('shown')));
 }).catch(() => { document.getElementById('upd').textContent = '데이터를 불러오지 못했습니다'; });

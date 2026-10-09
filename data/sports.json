@@ -1,7 +1,36 @@
 {
- "updated": "2026-10-09 16:25 KST",
+ "updated": "2026-10-10 00:45 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
+  {
+   "id": "ten-184903",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP 상하이 마스터스",
+   "name": "Carlos Alcaraz vs Juan Manuel Cerundolo",
+   "title": "알카라스 vs 세룬돌로",
+   "date": "2026-10-10T10:00Z",
+   "kst": "2026-10-10 19:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "2회전",
+   "venue": "",
+   "tv": "티빙 · tvN SPORTS(추정)",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "score": 73,
+   "why": [
+    "알카라스 경기",
+    "한국 저녁 시간"
+   ],
+   "stars": 2
+  },
   {
    "id": "401884777",
    "path": "soccer/ger.1",
@@ -14,6 +43,7 @@
    "note": "",
    "venue": "WWK Arena",
    "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "soccer",
    "home": {
     "name": "FC Augsburg",
     "ko": "아우크스부르크",
@@ -90,7 +120,12 @@
      }
     ],
     "injuries": [],
-    "preview": []
+    "preview": [
+     {
+      "title": "Harry Kane contract talks with Bayern Munich 'very positive' - sporting director",
+      "url": "https://www.espn.com/soccer/story/_/id/50139069/harry-kane-bayern-munich-contract-sporting-director"
+     }
+    ]
    },
    "stars": 3
   },
@@ -106,6 +141,7 @@
    "note": "",
    "venue": "MEWA ARENA",
    "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "soccer",
    "home": {
     "name": "Mainz",
     "ko": "마인츠",
@@ -184,7 +220,7 @@
     "injuries": [],
     "preview": []
    },
-   "stars": 1
+   "stars": 2
   },
   {
    "id": "401882856",
@@ -198,6 +234,7 @@
    "note": "",
    "venue": "Mendizorrotza",
    "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "soccer",
    "home": {
     "name": "Alavés",
     "ko": "알라베스",
@@ -276,106 +313,16 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Thunder's Gilegous-Alexander buys stake in Atlético Madrid",
-      "url": "https://www.espn.com/soccer/story/_/id/50134792/thunder-gilegous-alexander-buys-stake-atletico-madrid"
+      "title": "Transfer rumors, news: Real Madrid eye McTominay as Napoli talks stall",
+      "url": "https://www.espn.com/soccer/story/_/id/50138310/transfer-rumors-news-real-madrid-eye-mctominay-napoli-talks-stall"
      },
      {
-      "title": "Raúl Asencio on drink driving conviction: 'I'm at Real Madrid, that can't happen again'",
-      "url": "https://www.espn.com/soccer/story/_/id/50131876/raul-asencio-real-madrid-drink-drinking-jose-mourinho"
+      "title": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+      "url": "https://www.espn.com/video/clip/_/id/50139426/mourinho-slams-ridiculous-journalist-believes-mbappe-failed-real-madrid"
      }
     ]
    },
    "stars": 3
-  },
-  {
-   "id": "401878773",
-   "path": "soccer/eng.1",
-   "league": "EPL",
-   "name": "Tottenham Hotspur at Manchester United",
-   "date": "2026-10-10T16:30Z",
-   "kst": "2026-10-11 01:30",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "venue": "Old Trafford",
-   "tv": "쿠팡플레이(스포츠패스)",
-   "home": {
-    "name": "Manchester United",
-    "ko": "맨유",
-    "abbr": "MAN",
-    "id": "360",
-    "score": "0",
-    "winner": false,
-    "record": "1-2-2",
-    "rank": "12",
-    "pts": "5",
-    "form": "무승패패무"
-   },
-   "away": {
-    "name": "Tottenham Hotspur",
-    "ko": "토트넘",
-    "abbr": "TOT",
-    "id": "367",
-    "score": "0",
-    "winner": false,
-    "record": "0-2-3",
-    "rank": "20",
-    "pts": "2",
-    "form": "패무무패패"
-   },
-   "title": "맨유 vs 토트넘",
-   "score": 48,
-   "why": [
-    "라이벌전"
-   ],
-   "detail": {
-    "h2h": {
-     "summary": "토트넘 우세 (3승 1무 1패)",
-     "last": [
-      {
-       "date": "2026-02-07",
-       "score": "맨유 2 토트넘 0"
-      },
-      {
-       "date": "2025-11-08",
-       "score": "토트넘 2 맨유 2"
-      },
-      {
-       "date": "2025-05-21",
-       "score": "토트넘 1 맨유 0"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "맨유",
-      "cat": "Goals",
-      "who": "Bruno Fernandes",
-      "val": "5경기 · 3골"
-     },
-     {
-      "team": "맨유",
-      "cat": "Assists",
-      "who": "Bruno Fernandes",
-      "val": "5경기 · 1도움"
-     },
-     {
-      "team": "토트넘",
-      "cat": "Goals",
-      "who": "Jan Paul van Hecke",
-      "val": "5경기 · 1골"
-     },
-     {
-      "team": "토트넘",
-      "cat": "Assists",
-      "who": "Andy Robertson",
-      "val": "5경기 · 1도움"
-     }
-    ],
-    "injuries": [],
-    "preview": []
-   },
-   "stars": 1
   },
   {
    "id": "761858",
@@ -389,6 +336,7 @@
    "note": "",
    "venue": "BMO Stadium",
    "tv": "쿠팡플레이 · SPOTV Prime(LAFC)",
+   "sport": "soccer",
    "home": {
     "name": "LAFC",
     "ko": "LAFC",
@@ -486,35 +434,41 @@
    "note": "",
    "venue": "",
    "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "f1",
    "sessions": [
     {
      "name": "FP1",
-     "kst": "10-09 17:30"
+     "date": "2026-10-09T08:30Z",
+     "kst": "2026-10-09 17:30"
     },
     {
      "name": "SS",
-     "kst": "10-09 21:30"
+     "date": "2026-10-09T12:30Z",
+     "kst": "2026-10-09 21:30"
     },
     {
      "name": "SR",
-     "kst": "10-10 18:00"
+     "date": "2026-10-10T09:00Z",
+     "kst": "2026-10-10 18:00"
     },
     {
      "name": "Qual",
-     "kst": "10-10 22:00"
+     "date": "2026-10-10T13:00Z",
+     "kst": "2026-10-10 22:00"
     },
     {
      "name": "Race",
-     "kst": "10-11 21:00"
+     "date": "2026-10-11T12:00Z",
+     "kst": "2026-10-11 21:00"
     }
    ],
    "title": "싱가포르 그랑프리",
-   "score": 38,
+   "score": 50,
    "why": [
     "그랑프리 결승",
     "한국 저녁 시간"
    ],
-   "stars": 1
+   "stars": 3
   },
   {
    "id": "401879264",
@@ -528,6 +482,7 @@
    "note": "",
    "venue": "Anfield",
    "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "soccer",
    "home": {
     "name": "Liverpool",
     "ko": "리버풀",
@@ -606,12 +561,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Was epic Man City-Liverpool rivalry all a sham after cheating scandal?",
-      "url": "https://www.espn.com/soccer/story/_/id/50126359/was-epic-man-city-liverpool-rivalry-all-sham-cheating-scandal"
+      "title": "Kompany: I still have great memories of my time at Man City despite PL charges",
+      "url": "https://www.espn.com/video/clip/_/id/50140918/great-memories-my-man-city-pl-charges"
      },
      {
-      "title": "Maresca: Man City players' focus is on Liverpool, not charges",
-      "url": "https://www.espn.com/video/clip/_/id/50135036/man-city-players-focus-liverpool-not-charges"
+      "title": "Alonso: We need to be patient over Manchester City guilty verdicts",
+      "url": "https://www.espn.com/video/clip/_/id/50140767/need-patient-manchester-city-guilty-verdicts"
      }
     ]
    },
@@ -629,6 +584,7 @@
    "note": "NLCS - Game 1",
    "venue": "American Family Field",
    "tv": "SPOTV · SPOTV NOW",
+   "sport": "baseball",
    "home": {
     "name": "Milwaukee Brewers",
     "ko": "밀워키",
@@ -728,17 +684,17 @@
      },
      {
       "team": "LA 다저스",
+      "who": "Brusdar Graterol",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "LA 다저스",
+      "who": "Miguel Rojas",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "LA 다저스",
       "who": "Gavin Stone",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "LA 다저스",
-      "who": "Jake Cousins",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "LA 다저스",
-      "who": "Ben Casparius",
       "status": "60-Day-IL"
      }
     ],
@@ -746,7 +702,12 @@
      "home": "55.4",
      "away": "44.6"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Every team's odds to win the 2026 World Series: Dodgers still favorites",
+      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
+     }
+    ]
    },
    "series": [
     {
@@ -760,177 +721,106 @@
     {
      "kst": "2026-10-15 09:00",
      "note": "NLCS - Game 3"
+    },
+    {
+     "kst": "2026-10-16 10:00",
+     "note": "NLCS - Game 4"
     }
    ],
    "stars": 3
   },
   {
-   "id": "401915412",
-   "path": "soccer/uefa.champions",
-   "league": "챔피언스리그",
-   "name": "Manchester United at Atlético Madrid",
-   "date": "2026-10-13T19:00Z",
-   "kst": "2026-10-14 04:00",
+   "id": "401908023",
+   "path": "baseball/mlb",
+   "league": "MLB",
+   "name": "CLE/CHW at Tampa Bay Rays",
+   "date": "2026-10-13T00:00Z",
+   "kst": "2026-10-13 09:00",
    "state": "pre",
    "status": "Scheduled",
-   "note": "",
-   "venue": "Riyadh Air Metropolitano",
+   "note": "ALCS - Game 1",
+   "venue": "Tropicana Field",
    "tv": "SPOTV · SPOTV NOW",
+   "sport": "baseball",
    "home": {
-    "name": "Atlético Madrid",
-    "ko": "아틀레티코 마드리드",
-    "abbr": "ATM",
-    "id": "1068",
+    "name": "Tampa Bay Rays",
+    "ko": "탬파베이",
+    "abbr": "TB",
+    "id": "30",
     "score": "0",
-    "winner": false,
-    "record": "0-0-1",
-    "rank": "25",
-    "pts": "0",
-    "form": "패패승승승"
+    "winner": null,
+    "record": "98-64",
+    "form": "승패승승승"
    },
    "away": {
-    "name": "Manchester United",
-    "ko": "맨유",
-    "abbr": "MAN",
-    "id": "360",
+    "name": "CLE/CHW",
+    "ko": "CLE/CHW",
+    "abbr": "CLE/CHW",
+    "id": "-2",
     "score": "0",
-    "winner": false,
-    "record": "1-0-0",
-    "rank": "4",
-    "pts": "3",
-    "form": "무승패패무"
+    "winner": null,
+    "record": "",
+    "form": ""
    },
-   "title": "아틀레티코 마드리드 vs 맨유",
-   "score": 64,
+   "title": "탬파베이 vs CLE/CHW",
+   "score": 46,
    "why": [
-    "이강인 출전 팀"
-   ],
-   "detail": {
-    "h2h": {
-     "summary": "아틀레티코 마드리드 우세 (2승 1무 1패)",
-     "last": [
-      {
-       "date": "2026-08-01",
-       "score": "맨유 2 아틀레티코 마드리드 1"
-      },
-      {
-       "date": "2022-07-30",
-       "score": "아틀레티코 마드리드 1 맨유 0"
-      },
-      {
-       "date": "2022-03-15",
-       "score": "맨유 0 아틀레티코 마드리드 1"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "아틀레티코 마드리드",
-      "cat": "Goals",
-      "who": "Marcos Llorente",
-      "val": "1경기 · 1골"
-     },
-     {
-      "team": "아틀레티코 마드리드",
-      "cat": "Assists",
-      "who": "Julián Álvarez",
-      "val": "1경기 · 1도움"
-     },
-     {
-      "team": "맨유",
-      "cat": "Goals",
-      "who": "Matheus Cunha",
-      "val": "1경기 · 1골"
-     },
-     {
-      "team": "맨유",
-      "cat": "Assists",
-      "who": "Patrick Dorgu",
-      "val": "1경기 · 1도움"
-     }
-    ],
-    "injuries": [],
-    "preview": [
-     {
-      "title": "UEFA receives Real Madrid dossier on Barcelona-Negreira case",
-      "url": "https://www.espn.com/soccer/story/_/id/50077749/uefa-real-madrid-dossier-barcelona-referee-negreira-case"
-     }
-    ]
-   },
-   "stars": 2
-  },
-  {
-   "id": "401915411",
-   "path": "soccer/uefa.champions",
-   "league": "챔피언스리그",
-   "name": "Bayern Munich at Viking FK",
-   "date": "2026-10-13T19:00Z",
-   "kst": "2026-10-14 04:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "venue": "Viking Stadion",
-   "tv": "SPOTV · SPOTV NOW",
-   "home": {
-    "name": "Viking FK",
-    "ko": "바이킹",
-    "abbr": "VIK",
-    "id": "510",
-    "score": "0",
-    "winner": false,
-    "record": "0-0-1",
-    "rank": "30",
-    "pts": "0",
-    "form": "승무패승승"
-   },
-   "away": {
-    "name": "Bayern Munich",
-    "ko": "바이에른 뮌헨",
-    "abbr": "MUN",
-    "id": "132",
-    "score": "0",
-    "winner": false,
-    "record": "1-0-0",
-    "rank": "2",
-    "pts": "3",
-    "form": "승무승승승"
-   },
-   "title": "바이킹 vs 바이에른 뮌헨",
-   "score": 64,
-   "why": [
-    "김민재 출전 팀"
+    "리그 챔피언십시리즈"
    ],
    "detail": {
     "leaders": [
      {
-      "team": "바이킹",
-      "cat": "Goals",
-      "who": "Zlatko Tripic",
-      "val": "1경기 · 1골"
+      "team": "탬파베이",
+      "cat": "Batting Average",
+      "who": "Chandler Simpson",
+      "val": ".306"
      },
      {
-      "team": "바이킹",
-      "cat": "Assists",
-      "who": "Henrik Rorvik Bjordal",
-      "val": "1경기 · 1도움"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Goals",
-      "who": "Michael Olise",
-      "val": "1경기 · 2골"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Assists",
-      "who": "Michael Olise",
-      "val": "1경기 · 1도움"
+      "team": "탬파베이",
+      "cat": "Home Runs",
+      "who": "Junior Caminero",
+      "val": "42"
      }
     ],
-    "injuries": [],
+    "injuries": [
+     {
+      "team": "탬파베이",
+      "who": "Gavin Lux",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Edwin Uceta",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Shane McClanahan",
+      "status": "Out"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Jonathan Heasley",
+      "status": "60-Day-IL"
+     }
+    ],
     "preview": []
    },
-   "stars": 2
+   "series": [
+    {
+     "kst": "2026-10-13 09:00",
+     "note": "ALCS - Game 1"
+    },
+    {
+     "kst": "2026-10-14 09:00",
+     "note": "ALCS - Game 2"
+    },
+    {
+     "kst": "2026-10-16 07:00",
+     "note": "ALCS - Game 3"
+    }
+   ],
+   "stars": 1
   }
  ],
  "results": [],

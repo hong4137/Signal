@@ -88,7 +88,7 @@
   },
   "racing/f1": {
    "ko": "F1",
-   "w": 18,
+   "w": 30,
    "tv": "쿠팡플레이(스포츠패스)"
   },
   "golf/lpga": {
@@ -105,6 +105,11 @@
    "ko": "UFC",
    "w": 4,
    "tv": "티빙"
+  },
+  "tennis/atp": {
+   "ko": "ATP",
+   "w": 10,
+   "tv": "티빙 · tvN SPORTS(추정)"
   }
  },
  "players": [
@@ -369,5 +374,86 @@
  "_tv": "국내 중계처는 2026-10-09 조사(쿠팡플레이·SPOTV 편성표와 2025~26 보도). 시즌마다 바뀐다 — 매 시즌 시작 때 다시 확인. KBO=지상파 3사·티빙, LCK=치지직·SOOP",
  "must": {
   "racing/f1": "F1 결승은 늘 싣는다(대시보드에서도 챙기던 종목)"
+ },
+ "follow": [
+  {
+   "kind": "athlete",
+   "path": "tennis/atp",
+   "en": "Carlos Alcaraz",
+   "ko": "알카라스",
+   "w": 55
+  },
+  {
+   "kind": "team",
+   "name": "Golden State Warriors",
+   "ko": "골든스테이트",
+   "w": 22
+  }
+ ],
+ "sport_cap": {
+  "soccer": 5
+ },
+ "_follow": "follow = 사용자가 챙기는 대상(대시보드에서 보던 것). F1·알카라스는 축구만큼 중요하다고 사용자가 못박음(2026-10-10). sport_cap = 한 종목이 주간 픽을 독차지하지 않게.",
+ "tennis_names": {
+  "Sinner": "신네르",
+  "Djokovic": "조코비치",
+  "Zverev": "즈베레프",
+  "Medvedev": "메드베데프",
+  "Fritz": "프리츠",
+  "Ruud": "루드",
+  "Rune": "루네",
+  "Draper": "드레이퍼",
+  "de Minaur": "드 미노",
+  "Shelton": "셸턴",
+  "Musetti": "무세티",
+  "Paul": "폴",
+  "Tiafoe": "티아포",
+  "Mensik": "멘식",
+  "Fonseca": "폰세카",
+  "Cerundolo": "세룬돌로",
+  "Lehecka": "레헤츠카",
+  "Lehečka": "레헤츠카",
+  "Rublev": "루블료프",
+  "Tsitsipas": "치치파스",
+  "Hurkacz": "후르카치",
+  "Khachanov": "하차노프",
+  "Dimitrov": "디미트로프",
+  "Bublik": "부블리크",
+  "Alcaraz": "알카라스",
+  "Draxl": "드랙슬",
+  "Machac": "마하치",
+  "Auger-Aliassime": "오제알리아심",
+  "Humbert": "윔베르",
+  "Kwon": "권순우",
+  "Davidovich Fokina": "다비도비치 포키나",
+  "Berrettini": "베레티니",
+  "Tabilo": "타빌로",
+  "Nakashima": "나카시마",
+  "Michelsen": "미켈슨"
+ },
+ "tournaments": {
+  "Shanghai Masters": "상하이 마스터스",
+  "China Open": "차이나 오픈",
+  "Japan Open": "재팬 오픈",
+  "Paris Masters": "파리 마스터스",
+  "Nitto ATP Finals": "ATP 파이널스",
+  "ATP Finals": "ATP 파이널스",
+  "Australian Open": "호주오픈",
+  "Roland Garros": "롤랑가로스",
+  "French Open": "롤랑가로스",
+  "Wimbledon": "윔블던",
+  "US Open": "US오픈",
+  "Indian Wells": "인디언웰스",
+  "Miami Open": "마이애미 오픈",
+  "Monte-Carlo Masters": "몬테카를로 마스터스",
+  "Madrid Open": "마드리드 오픈",
+  "Italian Open": "로마 마스터스",
+  "Canadian Open": "캐나다 마스터스",
+  "Cincinnati Open": "신시내티 마스터스",
+  "Vienna Open": "빈 오픈",
+  "Swiss Indoors": "바젤 오픈"
+ },
+ "path_cap": {
+  "baseball/mlb": 2
  }
 }
