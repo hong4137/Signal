@@ -1,5 +1,5 @@
 {
- "about": "기업 뉴스룸 공식 사진 — 기사가 그 회사를 다루면 Unsplash 자료사진보다 먼저 쓴다(build_front.py pick_newsroom). 회사마다 이용 조건을 확인하고 넣는다. 사진은 자르거나 고치지 않는다(16:9 원본만), 출처는 '<회사> 제공'.",
+ "about": "기업 뉴스룸 공식 사진 — 기사가 그 회사를 다루면 Unsplash 자료사진보다 먼저 쓴다(build_front.py pick_newsroom). 회사마다 이용 조건을 확인하고 넣는다. 사진은 자르거나 고치지 않는다(16:9 원본만), 출처는 '<회사> 제공'. permitted=false 회사는 이용 조건이 불명확해 쓰지 않는다(사람이 확인 후 켠다). 사진별 credit 이 있으면 그 표기를 쓴다.",
  "companies": [
   {
    "id": "samsung",
@@ -7,7 +7,125 @@
    "credit": "삼성전자 제공",
    "match": "삼성전자|삼성\\s?반도체|갤럭시|Samsung(?!\\s(Biologics|SDI|C&T|Heavy|Life|Fire|Securities|SDS|Electro-Mechanics))|삼성(?!바이오|SDI|물산|생명|화재|증권|중공업|SDS|전기|카드|E&A|웰스토리|에스원)",
    "terms": "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-%eb%89%b4%ec%8a%a4%eb%a3%b8-%ec%bd%98%ed%85%90%ec%b8%a0-%ec%9d%b4%ec%9a%a9%ec%97%90-%eb%8c%80%ed%95%9c-%ec%95%88%eb%82%b4",
-   "terms_note": "뉴스룸 자체 제작 기사·이미지는 자유 이용, 워터마크·외부 제공 이미지는 제외, 변형·가공 금지 (2026-10-09 확인)"
+   "terms_note": "뉴스룸 자체 제작 기사·이미지는 자유 이용, 워터마크·외부 제공 이미지는 제외, 변형·가공 금지 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "skhynix",
+   "name": "SK하이닉스",
+   "credit": "SK하이닉스 뉴스룸 제공",
+   "match": "SK\\s?하이닉스|하이닉스|SK\\s?hynix|[Hh]ynix",
+   "terms": "https://news.skhynix.co.kr/guideline/",
+   "terms_note": "뉴스룸 자체 제작 콘텐츠·이미지는 출처(SK하이닉스 뉴스룸) 표기 시 자유 배포·인용·공유. 워터마크 이미지·외부 작성자 콘텐츠 제외, 변형·가공 금지, 상업적 사용 금지 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "lge",
+   "name": "LG전자",
+   "credit": "LG전자 제공",
+   "match": "LG전자|엘지전자|LG [Ee]lectronics",
+   "terms": "https://www.lge.co.kr/newsroom-policy",
+   "terms_note": "불명확(2026-10-09): 국문 뉴스룸은 CCL 2.0(저작자표시·비영리·변경금지)이나 같은 조항에 '개인 목적으로만' 문구, 사진을 가져온 글로벌 lg.com 약관은 개인·비상업 1부 다운로드만 허용",
+   "permitted": false
+  },
+  {
+   "id": "nvidia",
+   "name": "엔비디아",
+   "credit": "엔비디아 제공",
+   "match": "엔비디아|NVIDIA|Nvidia|젠슨 ?황|Jensen Huang",
+   "terms": "https://www.nvidia.com/en-us/about-nvidia/terms-of-service/",
+   "terms_note": "불명확(2026-10-09): 뉴스룸 멀티미디어 갤러리는 다운로드 버튼을 둔 언론 배포용이지만 보도용 라이선스 문구가 없고, 일반 약관은 개인·비상업 1부 다운로드만 허용·공개 게시 금지",
+   "permitted": false
+  },
+  {
+   "id": "tsmc",
+   "name": "TSMC",
+   "credit": "TSMC(Taiwan Semiconductor Manufacturing Co., Ltd.) 제공",
+   "match": "TSMC|Taiwan Semiconductor|웨이저자|C\\.?C\\.? ?Wei",
+   "terms": "https://www.tsmc.com/english/dynamic-form/download_agreement_form",
+   "terms_note": "조건부(2026-10-09): 포토갤러리 다운로드 동의서 수락 필요(목적 'Media coverage' 선택지 있음) — 출처 'Taiwan Semiconductor Manufacturing Co., Ltd.' 표기, 편집·수정 금지, 종료 통지 시 삭제. 직접 링크는 WAF 로 가끔 403",
+   "permitted": false
+  },
+  {
+   "id": "apple",
+   "name": "애플",
+   "credit": "애플 제공",
+   "match": "(?<!파인)애플(?!망고|파이|주스|수박|사이다)|\\bApple\\b|아이폰|iPhone|아이패드|iPad|맥북|MacBook|애플 ?워치|Apple Watch|비전 ?프로|Vision Pro|팀 ?쿡|Tim Cook|WWDC",
+   "terms": "https://www.apple.com/newsroom/",
+   "terms_note": "뉴스룸 이미지 다운로드 묶음의 LEGAL_NOTICE: 개인·편집(editorial) 목적의 비상업적 사용, 애플의 명시적 허락 없는 변형·수정 금지 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "google",
+   "name": "구글",
+   "credit": "구글 제공(Source: Google)",
+   "match": "구글|\\bGoogle\\b|알파벳|Alphabet|제미나이|\\bGemini\\b|딥마인드|DeepMind|Pixel ?\\d|순다르 ?피차이|Sundar Pichai",
+   "terms": "https://blog.google/image-library/",
+   "terms_note": "구글 이미지 라이브러리: 'Source: Google' 출처를 밝히면 출판에 사용 가능 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "microsoft",
+   "name": "마이크로소프트",
+   "credit": "마이크로소프트 제공(Used with permission from Microsoft)",
+   "match": "마이크로소프트|Microsoft|(?<![A-Za-z])MS(?:FT)?(?![A-Za-z])|애저|\\bAzure\\b|코파일럿|Copilot|사티아 ?나델라|나델라|Nadella",
+   "terms": "https://www.microsoft.com/en-us/legal/intellectualproperty/permissions/default",
+   "terms_note": "뉴스센터 이미지는 언론·업계 애널리스트의 편집 목적 사용 허용, 'Used with permission from Microsoft' 표기 요구 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "openai",
+   "name": "오픈AI",
+   "credit": "오픈AI 제공",
+   "match": "오픈AI|오픈에이아이|OpenAI|챗GPT|ChatGPT|올트먼|올트만|Altman|스타게이트|Stargate",
+   "terms": "https://openai.com/brand/#usage-terms",
+   "terms_note": "불명확(2026-10-09): 브랜드 가이드는 로고·상표 규정뿐, 보도용 사진 라이선스·프레스킷 없음",
+   "permitted": false
+  },
+  {
+   "id": "meta",
+   "name": "메타",
+   "credit": "메타 제공",
+   "match": "메타(?!버스|데이터|인지|분석|물질)|\\bMeta\\b(?!-analys)|저커버그|Zuckerberg|페이스북|Facebook|인스타그램|Instagram|왓츠앱|WhatsApp|\\bLlama\\b",
+   "terms": "https://www.meta.com/media-gallery/",
+   "terms_note": "불명확(2026-10-09): 공식 미디어 갤러리가 보도용 사진을 내려받게 제공하지만 명시적 라이선스·출처 문구 없음(묵시적 보도용)",
+   "permitted": false
+  },
+  {
+   "id": "amazon",
+   "name": "아마존",
+   "credit": "아마존 제공",
+   "match": "아마존(?!강|열대|숲|유역|밀림)|Amazon(?! [Rr]ainforest| River)|\\bAWS\\b|앤디 재시|Andy Jassy|알렉사|Alexa|킨들|Kindle",
+   "terms": "https://press.aboutamazon.com/images-and-videos",
+   "terms_note": "불명확(2026-10-09): 프레스센터는 언론용 자료실이나 명시적 라이선스 문구 없음, 쓸 만한 사진은 aboutamazon.com 기사 이미지(조건 더 불명확)",
+   "permitted": false
+  },
+  {
+   "id": "naver",
+   "name": "네이버",
+   "credit": "네이버 제공",
+   "match": "네이버|(?<![A-Za-z])(?:NAVER|Naver)(?![A-Za-z])",
+   "terms": "https://www.navercorp.com/company/gallery",
+   "terms_note": "불명확(2026-10-09): 공식 '브랜드 리소스 > 사진' 갤러리가 사옥·데이터센터 사진을 공개 배포하지만 사진 이용 조건(출처 표기·변형·용도)은 명시 없음. 브랜드가이드 법적 고지는 로고에만 적용",
+   "permitted": false
+  },
+  {
+   "id": "kakao",
+   "name": "카카오",
+   "credit": "카카오 제공",
+   "match": "카카오(?!뱅크|페이|게임즈|엔터|모빌리티|헬스케어|스타일|VX|브레인|픽코마)|(?<![A-Za-z])Kakao(?![A-Za-z]| ?Bank| ?Pay| ?Games| ?Ent| ?Mobility)",
+   "terms": "https://www.kakaocorp.com/page/presskit/media-kit",
+   "terms_note": "카카오 공식 미디어자료: 원본 다운로드 제공, '모든 이미지와 영상, 자료는 상업적으로 이용할 수 없습니다' — 비상업 이용 가능으로 읽힘. 출처 형식·변형 금지 조항은 따로 없음 (2026-10-09 확인)",
+   "permitted": true
+  },
+  {
+   "id": "hyundai",
+   "name": "현대자동차",
+   "credit": "현대자동차 제공",
+   "match": "현대차(?!증권)|현대자동차|(?<![A-Za-z])Hyundai Motor(?! Securities)",
+   "terms": "https://www.hyundai.com/worldwide/en/footer/contact-legal/legal",
+   "terms_note": "불명확(2026-10-09): 글로벌 뉴스룸 미디어킷은 있으나 언론용 이용 조건 없음. 사이트 법적 고지는 서면 허락 없는 복제·게시 금지, 개인적 용도만 허용",
+   "permitted": false
   }
  ],
  "photos": [
@@ -53,6 +171,441 @@
    "desc": "삼성전자 구미 스마트시티",
    "topic": "갤럭시|스마트폰|모바일|폴더블|Galaxy|구미",
    "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-M16%EC%9D%B4%EC%B2%9C_1_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
+   "desc": "SK하이닉스 이천캠퍼스 M16 팹 전경",
+   "topic": "실적|영업이익|영업익|매출|분기|주가|시가총액|시총|이천|M16|D램|DRAM|earnings",
+   "default": true,
+   "page": "https://news.skhynix.co.kr/skhynix-m16-fab1icheon/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-M14%EC%9D%B4%EC%B2%9C_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
+   "desc": "SK하이닉스 이천캠퍼스 M14 팹 전경",
+   "topic": "M14|증설|설비투자|투자|팹|낸드|NAND",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/skhynix-m14-fabicheon/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-M1112%EC%B2%AD%EC%A3%BC_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
+   "desc": "SK하이닉스 청주캠퍼스 M11·M12 팹 전경",
+   "topic": "청주|M15X|M11|M12|M17|P&T7|패키징",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/skhynix-m1112-fabchungju/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EB%9D%BC%EC%9D%B86_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
+   "desc": "SK하이닉스 반도체 생산라인(클린룸)",
+   "topic": "공정|생산|양산|수율|클린룸|EUV|미세공정",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/sk-hynix-line-6/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2026/01/HBM4-16Hi-48GB1600X900.jpg",
+   "desc": "SK하이닉스 HBM4 16단 48GB 제품",
+   "topic": "HBM4|HBM|AI\\s?메모리|고대역폭|루빈|Rubin",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/ces2026-04/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EC%84%B8%EA%B3%84-%EC%B5%9C%EC%B4%88-%E2%80%9812%EB%8B%A8-%EC%A0%81%EC%B8%B5-HBM3E-%EC%96%91%EC%82%B0-%EB%8F%8C%EC%9E%85_%EC%A0%9C%ED%92%88_01_2024-1.png",
+   "desc": "SK하이닉스 12단 HBM3E 36GB 제품",
+   "topic": "HBM3E|HBM3|블랙웰|Blackwell",
+   "default": false,
+   "page": "https://news.skhynix.co.kr/12hi-hbm3e-production-1/",
+   "company": "skhynix"
+  },
+  {
+   "url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/corporate/financial-report-images/press-setting-image-desktop-tablet-lghqnight-1440.png",
+   "desc": "LG전자 본사 LG트윈타워(서울 여의도) 야경",
+   "topic": "",
+   "default": true,
+   "page": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-releases-preliminary-earnings-for-first-quarter-2026/",
+   "company": "lge"
+  },
+  {
+   "url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/LG%20CLOiD%20Image%201.jpg",
+   "desc": "LG전자 가정용 휴머노이드 로봇 'LG 클로이드(CLOiD)'",
+   "topic": "로봇|클로이드|CLOiD|휴머노이드|홈\\s?로봇|가전|CES",
+   "default": false,
+   "page": "https://www.lg.com/global/newsroom/multimedia/images/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",
+   "company": "lge"
+  },
+  {
+   "url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/eco-solution/lg-electronics-launches-air-cooled-centrifugal-chiller-for-ai-data-centers/LG%20Air%20Cooled%20Magnetic%20Bearing%20Centrifugal%20Chiller%20Image%201.jpg",
+   "desc": "LG전자 AI 데이터센터용 공랭식 원심식 칠러",
+   "topic": "칠러|chiller|냉각|CDU|HVAC|공조|데이터센터",
+   "default": false,
+   "page": "https://www.lg.com/global/newsroom/multimedia/images/lg-electronics-launches-air-cooled-centrifugal-chiller-for-ai-data-centers/",
+   "company": "lge"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/20224/628c2a47b3aed32797213f6c_voyager-exterior-sign-2/voyager-exterior-sign-2_1829ac3c-85ac-4929-8c67-5994c15c70c9-prv.jpg?v=1829ac3c-85ac-4929-8c67-5994c15c70c9",
+   "desc": "산타클라라 엔비디아 본사 보이저 사옥 앞 로고 사인",
+   "topic": "",
+   "default": true,
+   "page": "https://nvidianews.nvidia.com/multimedia/santa-clara-headquarters",
+   "company": "nvidia"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/20224/6296531eb3aed3741918b6b5_DH1L4415-HDR-20220527-r5/DH1L4415-HDR-20220527-r5_dba29dde-5a9b-4ac8-bf58-a0b78da89547-prv.jpg?v=dba29dde-5a9b-4ac8-bf58-a0b78da89547",
+   "desc": "엔비디아 본사 보이저 사옥 태양광 캐노피 아래 로고 사인",
+   "topic": "본사|사옥|실적|시가총액|주가",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/multimedia/santa-clara-headquarters",
+   "company": "nvidia"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/20242/65f8a8713d6332055d371a0e_nvidia-blackwell-architecture-image/nvidia-blackwell-architecture-image_10319aa0-e860-4073-be59-47e9b3860d0a-prv.jpg?v=10319aa0-e860-4073-be59-47e9b3860d0a",
+   "desc": "엔비디아 블랙웰 GPU",
+   "topic": "GPU|블랙웰|Blackwell|B200|B300|칩|반도체|수출 ?통제|H20",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/multimedia/data-center-cloud/accelerated-computing-platforms",
+   "company": "nvidia"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/202601/695c3b3b3d63323e2ab85448_nvidia-rubin-platform/nvidia-rubin-platform_f0b2b61b-6d27-4de9-a6d3-d921352e1368-prv.jpg?v=f0b2b61b-6d27-4de9-a6d3-d921352e1368",
+   "desc": "엔비디아 루빈 플랫폼 데이터센터 랙",
+   "topic": "루빈|Rubin|베라|Vera|차세대|로드맵|AI 팩토리",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/multimedia/data-center-cloud/accelerated-computing-platforms",
+   "company": "nvidia"
+  },
+  {
+   "url": "https://iprsoftwaremedia.com/219/files/20242/202403180530/65f7d1913d633238713719f6_NVIDIA-GB200-NVL72/NVIDIA-GB200-NVL72_2d8a95f6-4371-4a15-8353-bbce62fcf1d1-prv.jpg?v=2d8a95f6-4371-4a15-8353-bbce62fcf1d1",
+   "desc": "엔비디아 GB200 NVL72 랙 시스템",
+   "topic": "GB200|GB300|NVL72|랙|서버|데이터센터|슈퍼컴퓨터",
+   "default": false,
+   "page": "https://nvidianews.nvidia.com/multimedia/data-center-cloud/accelerated-computing-platforms",
+   "company": "nvidia"
+  },
+  {
+   "url": "https://pr.tsmc.com/sites/pr/multimedia-gallery/407A9160_2.jpg",
+   "desc": "대만 타이난 TSMC 팹18 사옥 전경",
+   "topic": "",
+   "default": true,
+   "page": "https://pr.tsmc.com/english/gallery-fabs-outside",
+   "company": "tsmc"
+  },
+  {
+   "url": "https://pr.tsmc.com/sites/pr/multimedia-gallery/JR41%20TSMC%20Okland%20SmithGroup%20-%200900%20WEB.jpg",
+   "desc": "미국 애리조나주 피닉스 TSMC 애리조나 공장",
+   "topic": "애리조나|Arizona|미국 ?(공장|팹|투자)|관세|피닉스",
+   "default": false,
+   "page": "https://pr.tsmc.com/english/gallery-fabs-outside",
+   "company": "tsmc"
+  },
+  {
+   "url": "https://pr.tsmc.com/sites/pr/multimedia-gallery/407A3769_1.jpg",
+   "desc": "대만 신주 TSMC 글로벌 R&D 센터",
+   "topic": "R&D|연구|2나노|A16|A14|공정 ?개발|신주",
+   "default": false,
+   "page": "https://pr.tsmc.com/english/gallery-fabs-outside",
+   "company": "tsmc"
+  },
+  {
+   "url": "https://pr.tsmc.com/sites/pr/multimedia-gallery/waferc001_2522_64RX_0.jpg",
+   "desc": "TSMC가 생산한 실리콘 웨이퍼",
+   "topic": "웨이퍼|파운드리|수율|나노|공정|칩|매출|실적",
+   "default": false,
+   "page": "https://pr.tsmc.com/english/gallery-fabs-inside",
+   "company": "tsmc"
+  },
+  {
+   "url": "https://pr.tsmc.com/sites/pr/multimedia-gallery/Fab15inc001_4574_euC4_0.jpg",
+   "desc": "대만 타이중 TSMC 팹15 클린룸 내부 웨이퍼 반송 설비",
+   "topic": "클린룸|생산 ?라인|증설|가동|생산능력",
+   "default": false,
+   "page": "https://pr.tsmc.com/english/gallery-fabs-inside",
+   "company": "tsmc"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/environments/apple-campus/apple-park-photo-1-building-trees_inline.jpg.large_2x.jpg",
+   "desc": "미국 쿠퍼티노 애플 본사 애플파크 본관",
+   "topic": "",
+   "default": true,
+   "page": "https://www.apple.com/newsroom/2017/02/apple-park-opens-to-employees-in-april/",
+   "company": "apple"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.og.jpg",
+   "desc": "애플 아이폰 18 프로",
+   "topic": "아이폰|iPhone|스마트폰",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+   "company": "apple"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2024/06/wwdc24-highlights/article/Apple-WWDC24-event-photos-Tim-Cook-240610_big.jpg.large_2x.jpg",
+   "desc": "WWDC24 무대에 선 팀 쿡 애플 최고경영자",
+   "topic": "팀 ?쿡|Tim Cook|CEO|최고경영자|WWDC|기조연설|키노트",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2024/06/wwdc24-highlights/",
+   "company": "apple"
+  },
+  {
+   "url": "https://www.apple.com/newsroom/images/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/article/Apple-Fifth-Avenue-New-York-store-exterior-260918_big.jpg.large_2x.jpg",
+   "desc": "미국 뉴욕 애플 피프스 애비뉴 매장 앞에 늘어선 줄",
+   "topic": "애플 ?스토어|Apple Store|매장|출시|판매량|품귀",
+   "default": false,
+   "page": "https://www.apple.com/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+   "company": "apple"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Bay_View_1-Iwan_Baan.max-1000x1000.format-webp.webp",
+   "desc": "미국 마운틴뷰 구글 베이뷰 캠퍼스",
+   "topic": "",
+   "default": true,
+   "page": "https://blog.google/image-library/",
+   "credit": "구글 제공(Source: Google · 사진 Iwan Baan)",
+   "company": "google"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Wide-view-of-Google-campus.original.jpg",
+   "desc": "마운틴뷰 구글 본사 구글플렉스 캠퍼스 전경",
+   "topic": "구글플렉스|Googleplex|본사|캠퍼스|마운틴뷰|실적|매출|주가|시가총액",
+   "default": false,
+   "page": "https://blog.google/image-library/",
+   "company": "google"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Bay_View_3-Iwan_Baan.max-1000x1000.format-webp.webp",
+   "desc": "구글 베이뷰 사옥 내부 업무 공간",
+   "topic": "사무실|직원|근무|채용|감원|해고|구조조정",
+   "default": false,
+   "page": "https://blog.google/image-library/",
+   "credit": "구글 제공(Source: Google · 사진 Iwan Baan)",
+   "company": "google"
+  },
+  {
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Japan_with_Tokyo_Tower.original.jpg",
+   "desc": "도쿄 타워가 내다보이는 구글 일본 사무실",
+   "topic": "일본|도쿄|Japan|Tokyo",
+   "default": false,
+   "page": "https://blog.google/image-library/",
+   "company": "google"
+  },
+  {
+   "url": "https://msftstories.thesourcemediaassets.com/sites/696/2024/12/Wisconsin_aerial_1-scaled.jpg",
+   "desc": "미국 위스콘신주 마이크로소프트 AI 데이터센터 항공 사진",
+   "topic": "",
+   "default": true,
+   "page": "https://news.microsoft.com/datacenters/",
+   "company": "microsoft"
+  },
+  {
+   "url": "https://msftstories.thesourcemediaassets.com/sites/696/2024/12/DJI_20250912085829_0012_D-copy-scaled.jpg",
+   "desc": "아침 안개 속 위스콘신 마이크로소프트 데이터센터 단지",
+   "topic": "데이터 ?센터|AI 인프라|클라우드|애저|Azure|전력",
+   "default": false,
+   "page": "https://news.microsoft.com/datacenters/",
+   "company": "microsoft"
+  },
+  {
+   "url": "https://msftstories.thesourcemediaassets.com/sites/696/2024/11/MDC19_hotAisleGreen_002.jpg",
+   "desc": "마이크로소프트 데이터센터 서버 랙 통로",
+   "topic": "서버|GPU|칩|반도체|인프라",
+   "default": false,
+   "page": "https://news.microsoft.com/datacenters/",
+   "company": "microsoft"
+  },
+  {
+   "url": "https://msftstories.thesourcemediaassets.com/sites/753/2026/06/8C7A5773-scaled.jpg",
+   "desc": "마이크로소프트 빌드 2026에서 연설하는 사티아 나델라 최고경영자",
+   "topic": "나델라|Nadella|CEO|최고경영자|빌드|Build|기조연설|키노트",
+   "default": false,
+   "page": "https://news.microsoft.com/build-2026/",
+   "credit": "마이크로소프트 제공(Used with permission from Microsoft · 사진 Dan DeLong)",
+   "company": "microsoft"
+  },
+  {
+   "url": "https://images.ctfassets.net/kftzwdyauwt9/1Egn0XEq01L17iRIbOqvdN/99dc37042872ee901a16ce7efa89a07c/abilene-still4.jpg?w=1920&q=85&fm=jpg",
+   "desc": "미국 텍사스주 애빌린 오픈AI 스타게이트 데이터센터 항공 전경",
+   "topic": "",
+   "default": true,
+   "page": "https://openai.com/index/mrc-supercomputer-networking/",
+   "company": "openai"
+  },
+  {
+   "url": "https://lookaside.fbsbx.com/elementpath/media/?media_id=352256307337533&version=1778680142&transcode_extension=jpg",
+   "desc": "미국 멘로파크 메타 본사 MPK 21 건물 야경",
+   "topic": "",
+   "default": true,
+   "page": "https://www.meta.com/media-gallery/",
+   "company": "meta"
+  },
+  {
+   "url": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1490418288465949&version=1778680142&transcode_extension=jpg",
+   "desc": "아일랜드 클로니 메타 데이터센터 항공 전경",
+   "topic": "데이터\\s?센터|인프라|전력|에너지|하이페리온|Hyperion|프로메테우스|Prometheus",
+   "default": false,
+   "page": "https://www.meta.com/media-gallery/",
+   "company": "meta"
+  },
+  {
+   "url": "https://lookaside.fbsbx.com/elementpath/media/?media_id=370450828649403&version=1778680142&transcode_extension=jpg",
+   "desc": "멘로파크 메타 본사 MPK 20 건물 야경",
+   "topic": "직원|채용|해고|감원|[Ll]ayoff",
+   "default": false,
+   "page": "https://www.meta.com/media-gallery/",
+   "company": "meta"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/dims4/default/30e7922/2147483647/strip/true/crop/1600x900+0+0/resize/1320x743!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F1f%2F9f%2F75d404c9438999db2e2f8b7c7ea6%2Famazon-seattle-office-headquarters.jpeg",
+   "desc": "미국 시애틀 아마존 본사 '스피어스'와 데이 1 타워",
+   "topic": "",
+   "default": true,
+   "page": "https://www.aboutamazon.com/news/amazon-offices/amazon-headquarters-seattle-photo-tour",
+   "company": "amazon"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/dims4/default/6cbd42d/2147483647/strip/true/crop/2550x1433+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F50%2F19%2F309b104648e1b00c5c7dec3fdc54%2Fprojectrainier-exterior.png",
+   "desc": "AWS '프로젝트 레이니어' AI 데이터센터 캠퍼스 항공 전경",
+   "topic": "데이터\\s?센터|레이니어|Rainier|인디애나|전력|원전|에너지",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+   "company": "amazon"
+  },
+  {
+   "url": "https://assets.aboutamazon.com/dims4/default/7d20b79/2147483647/strip/true/crop/2550x1434+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2Ff3%2F9b%2F960ee2e04df2b6fad88f898b67a8%2Ftrainium2chip.png",
+   "desc": "AWS 자체 설계 AI 칩 '트레이니엄2'",
+   "topic": "트레이니엄|Trainium|인퍼런시아|Inferentia|칩|반도체",
+   "default": false,
+   "page": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+   "company": "amazon"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyNTA3MjhfMjYy/MDAxNzUzNjgyMzc4MDgz.ICeU3NwxwyHl2GV8ODfWWErmkSj-BoRbQVpLT2EihaYg.3RzoxRe5gEzE1aBU4yUdJ1ZIsBvPGNg3Y-cwqK8Pc58g.JPEG/01.%EC%A0%84%EA%B2%BD.jpg?type=w1920",
+   "desc": "네이버 데이터센터 '각 세종' 전경(해 질 녘 항공사진)",
+   "topic": "데이터센터|IDC|각 ?세종|AI ?인프라",
+   "default": true,
+   "page": "https://www.navercorp.com/company/gallery",
+   "company": "naver"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyNTA3MjhfMTAg/MDAxNzUzNjgyMzc4Mjgx.0TlfT3fNIvMci3YswQaoJaOr9irY8VbXgIZTEypZ5RUg.qFf-buidx59m436CwvarNTg542BS7XhirJQd6VgyExsg.JPEG/02.%EC%A0%84%EA%B2%BD.jpg?type=w1920",
+   "desc": "네이버 데이터센터 '각 세종' 야경(항공사진)",
+   "topic": "세종",
+   "default": false,
+   "page": "https://www.navercorp.com/company/gallery",
+   "company": "naver"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyNTA3MjhfMjQ0/MDAxNzUzNjgyMzc5MTM0.0Bocb_SGQ__lXVhkHv0G2wxnEDOt9CU4XR0-o9qshrMg.kmYbj-Z29OtRcO3l7SyiTbph6koVL4UJUEnDM_oCBpAg.JPEG/07.%EC%84%9C%EB%B2%84%EC%8B%A4.jpg?type=w1920",
+   "desc": "네이버 데이터센터 '각 세종' 서버실",
+   "topic": "서버|클라우드|[Cc]loud|하이퍼클로바|HyperCLOVA",
+   "default": false,
+   "page": "https://www.navercorp.com/company/gallery",
+   "company": "naver"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyMzExMzBfMjI3/MDAxNzAxMzEwMDU3ODkw.WUXbCPEDaLQmBRau2C2VFjUcDRGOa3WqBHg-G-gVvpQg.zHnz5IlX46Su6ylUtlQ2yEgvEzZg_yFS1r35Mzrd2I8g.JPEG/20231115100618.jpg",
+   "desc": "네이버 데이터센터 각 세종의 GPU 서버 랙",
+   "topic": "GPU|엔비디아|NVIDIA|AI ?팩토리|슈퍼컴퓨터|소버린",
+   "default": false,
+   "page": "https://www.navercorp.com/service/datacenterGak",
+   "company": "naver"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyNTA3MjVfMjc0/MDAxNzUzNDQyMjEyMTQ5._jOeWjFAN3lv9nJqRALAVdeTrtaZkcGx8j8G0yYFHf4g.CkkC_7FXxI2zvWiJxn0qC4tZZ0CrK1AIMuHpFH-2ltAg.JPEG/02._%EC%A1%B0%EA%B0%90%EB%8F%84.jpg?type=w1920",
+   "desc": "네이버 데이터센터 '각 춘천' 전경(항공사진)",
+   "topic": "춘천",
+   "default": false,
+   "page": "https://www.navercorp.com/company/gallery",
+   "company": "naver"
+  },
+  {
+   "url": "https://corp-homepage-phinf.pstatic.net/MjAyNTA4MTNfMTQw/MDAxNzU1MDczNTgxNDk2.6QaPPo49XDg1fxlvqeuC4kjfVIkHQnLO3QQUDUzYTlog.-O03G5qOhLr6viVMy8aVSFrDtQepAIbRszmRccrvcNQg.JPEG/01._%EC%99%B8%EA%B4%80.jpg?type=w1920",
+   "desc": "경기 성남 네이버 그린팩토리 외관(저녁)",
+   "topic": "본사|사옥|그린팩토리|정자동",
+   "default": false,
+   "page": "https://www.navercorp.com/company/gallery",
+   "company": "naver"
+  },
+  {
+   "url": "https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/mediakit/48bf6988019300001.jpg",
+   "desc": "경기 성남 판교의 카카오 본사 '카카오 판교 아지트' 전경",
+   "topic": "",
+   "default": true,
+   "page": "https://www.kakaocorp.com/page/detail/11342",
+   "company": "kakao"
+  },
+  {
+   "url": "https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/mediakit/48bf226f019300001.jpg",
+   "desc": "카카오 판교 아지트 건물 상단의 카카오 로고 사인",
+   "topic": "본사|판교|아지트|브랜드|로고",
+   "default": false,
+   "page": "https://www.kakaocorp.com/page/detail/11342",
+   "company": "kakao"
+  },
+  {
+   "url": "https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/mediakit/48f69c21019300001.jpg",
+   "desc": "경기 안산의 '카카오 데이터센터 안산' 전경",
+   "topic": "데이터센터|IDC|안산|서버|장애|먹통",
+   "default": false,
+   "page": "https://www.kakaocorp.com/page/detail/11344",
+   "company": "kakao"
+  },
+  {
+   "url": "https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/mediakit/48f6f359019300001.jpg",
+   "desc": "해 질 녘의 카카오 데이터센터 안산",
+   "topic": "AI ?인프라|GPU|클라우드",
+   "default": false,
+   "page": "https://www.kakaocorp.com/page/detail/11344",
+   "company": "kakao"
+  },
+  {
+   "url": "https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/mediakit/48f4d823019300001.jpg",
+   "desc": "카카오 데이터센터 안산 정면(저녁)",
+   "topic": "데이터센터",
+   "default": false,
+   "page": "https://www.kakaocorp.com/page/detail/11344",
+   "company": "kakao"
+  },
+  {
+   "url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/newsroom/news-image/2025/03/0327/gallery/gallery-0327-7.jpg",
+   "desc": "미국 조지아주 현대차그룹 메타플랜트 아메리카(HMGMA) 항공 전경",
+   "topic": "HMGMA|메타플랜트|조지아|미국 ?공장|관세|현지 ?생산|공장",
+   "default": true,
+   "page": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000920",
+   "company": "hyundai"
+  },
+  {
+   "url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/newsroom/news-image/2025/04/0421-1/gallery/gallery-0421-2.jpg",
+   "desc": "현대차 디 올 뉴 팰리세이드",
+   "topic": "팰리세이드|PALISADE|Palisade|SUV",
+   "default": false,
+   "page": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000944",
+   "company": "hyundai"
+  },
+  {
+   "url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/newsroom/news-image/2025/12/1223/gallery-1223-2.jpg",
+   "desc": "해안 도로를 달리는 현대차 팰리세이드",
+   "topic": "판매|수출|실적|신차",
+   "default": false,
+   "page": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001094",
+   "company": "hyundai"
+  },
+  {
+   "url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/newsroom/news-image/2024/11/1121/gallery/gallery-1120-1.jpg",
+   "desc": "현대차 전기 SUV 아이오닉 9",
+   "topic": "아이오닉|IONIQ|전기차|EV|배터리",
+   "default": false,
+   "page": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000870",
+   "company": "hyundai"
+  },
+  {
+   "url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/newsroom/news-image/2026/01/0107/gallery/gallery-01-260107.jpg",
+   "desc": "CES 2026에서 부품 상자를 옮기는 보스턴 다이내믹스 휴머노이드 '아틀라스'",
+   "topic": "로봇|아틀라스|Atlas|보스턴 ?다이내믹스|Boston Dynamics|휴머노이드|피지컬 ?AI",
+   "default": false,
+   "page": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001099",
+   "company": "hyundai"
   }
  ]
 }

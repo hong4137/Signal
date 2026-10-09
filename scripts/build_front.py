@@ -209,6 +209,8 @@ def pick_newsroom(nr, text, used):
     회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다)."""
     comps, photos = nr
     for cid, c in comps.items():
+        if c.get("permitted") is False:            # 이용 조건 불명확 — 사람이 확인하고 켠다
+            continue
         if not re.search(c["match"], text.get("title", "")):
             continue
         cand = [x for x in photos if x["company"] == cid and x["url"] not in used]
@@ -217,8 +219,9 @@ def pick_newsroom(nr, text, used):
         ph = (hit or [x for x in cand if x.get("default")] or cand or [None])[0]
         if ph:
             used.add(ph["url"])
-            return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": c["credit"],
-                    "credit": c["credit"], "credit_url": ph.get("page", "")}
+            cr = ph.get("credit") or c["credit"]
+            return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": cr,
+                    "credit": cr, "credit_url": ph.get("page", "")}
     return None
 
 
