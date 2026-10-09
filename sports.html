@@ -114,6 +114,52 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
   .ttl{font-size:17px}
   .grid2{grid-template-columns:1fr}
 }
+
+/* ── 언제인지 한눈에: 주간 띠 · 날짜 묶음 · 남은 시간 ── */
+.week{position:sticky;top:0;z-index:5;background:var(--sheet);border-bottom:1px solid var(--hair);display:grid;grid-template-columns:repeat(7,1fr);gap:0}
+.wd{all:unset;cursor:pointer;text-align:center;padding:9px 2px 8px;border-right:1px solid var(--hair);min-width:0}
+.wd:last-child{border-right:0}
+.wd .rel{display:block;font-size:11px;font-weight:800;color:var(--muted);height:14px}
+.wd .dt{display:block;font-family:var(--mono);font-size:15px;font-weight:700}
+.wd .dt small{display:block;font-family:var(--ko);font-size:11.5px;font-weight:600;color:var(--ink-2)}
+.wd .ems{display:block;font-size:13px;line-height:1.2;min-height:16px;margin-top:3px;letter-spacing:-1px;white-space:nowrap;overflow:hidden}
+.wd.today{background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box;border-bottom:3px solid transparent}
+.wd.today .rel{color:var(--heat)}
+.wd.tmr .rel{color:var(--weight)}
+.wd.none{opacity:.45}
+.wd.sun .dt small{color:var(--heat)} .wd.sat .dt small{color:var(--weight)}
+.dayh{display:flex;align-items:baseline;gap:10px;margin:22px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink);scroll-margin-top:70px}
+.dayh:first-child{margin-top:4px}
+.dayh .r{font-size:20px;font-weight:900}
+.dayh.today .r{color:var(--heat)} .dayh.tmr .r{color:var(--weight)}
+.dayh .d{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--ink-2)}
+.dayh .n{margin-left:auto;font-size:12px;color:var(--muted)}
+.relb{display:inline-block;margin-top:4px;font-family:var(--ko);font-size:11.5px;font-weight:800;border-radius:6px;padding:1px 7px;background:var(--soft);color:var(--ink-2);border:1px solid var(--hair)}
+.relb.live{background:var(--heat);color:#fff;border-color:var(--heat)}
+.relb.soon{background:#FFF1D6;color:#9A5B00;border-color:#F5C46B}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .relb.soon{background:#3A2A07;color:#FFC860;border-color:#6B4D10}}
+.night{display:block;font-size:11.5px;font-weight:700;color:var(--violet,#8B5CF6);font-family:var(--ko);margin-top:2px}
+.tn .big{font-size:13px;font-weight:800;color:var(--sc);margin-bottom:2px}
+/* ── 문화: 개봉 · 공연 · 예매 오픈 (자리만 — 로직은 차근차근) ── */
+.cul{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cbox{border:1px solid var(--hair);border-top:4px solid var(--sc);border-radius:12px;padding:12px 14px;background:var(--soft);min-height:120px}
+.cbox h3{margin:0 0 8px;font-size:15px}
+.cbox h3 small{font-size:12px;color:var(--muted);font-weight:500;margin-left:6px}
+.cbox ul{list-style:none;margin:0;padding:0}
+.cbox li{padding:7px 0;border-top:1px dashed var(--hair);font-size:14px;line-height:1.5}
+.cbox li:first-child{border-top:0}
+.cbox li b{display:block}
+.cbox li span{font-size:12px;color:var(--muted)}
+.cbox .ph0{font-size:13px;color:var(--muted);line-height:1.6}
+.pick.cul-card .ph{cursor:default}
+.tk{display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:var(--heat);border-radius:6px;padding:1px 7px;margin-left:6px}
+@media (max-width:700px){
+  .week{grid-template-columns:repeat(7,minmax(46px,1fr));overflow-x:auto}
+  .wd .dt{font-size:14px}
+  .cul{grid-template-columns:1fr}
+  .tonight{grid-template-columns:1fr 1fr;gap:8px}
+  .tn{padding:9px 10px} .tn .t{font-size:18px} .tn .t small{display:block;margin:0} .tn .n{font-size:13.5px} .tn .l{font-size:11px}
+}
 </style>
 <div class="wrap">
   <div class="topbar"><span id="upd">불러오는 중…</span><a href="/front.html">Daily UptoDate ›</a></div>
@@ -124,8 +170,10 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
     </div>
     <a class="sub" id="cal" href="webcal://signal.sharktalk.co.kr/data/sports.ics">📅 캘린더로 구독하기</a>
   </header>
-  <section><h2>곧 시작 <span>앞으로 36시간 안에 고른 경기</span></h2><div class="tonight" id="tonight"></div></section>
-  <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div class="filters" id="filters"></div><div id="picks"></div></section>
+  <nav class="week" id="week" aria-label="이번 주"></nav>
+  <section><h2>지금부터 36시간 <span>예매 오픈·F1 예선도 함께</span></h2><div class="tonight" id="tonight"></div></section>
+  <section><h2>이번 주 볼 경기 <span>날짜별 · 한국 시간 · 눌러서 자세히</span></h2><div class="filters" id="filters"></div><div id="picks"></div></section>
+  <section><h2>이번 주 문화 <span>개봉 대작 · 중요한 공연 · 예매 오픈</span></h2><div class="cul" id="culture"></div></section>
   <section><h2>지난 경기 결과 <span>스포일러 가림 — 눌러야 보입니다</span></h2><div id="results"></div></section>
   <section class="quiet"><h2>KBO · LCK</h2><ul id="manual"></ul></section>
   <footer>경기 데이터 ESPN · 국내 중계처는 시즌 편성 기준(바뀔 수 있음) · 시각은 모두 한국 시간.<br>
@@ -134,18 +182,39 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
 <script>
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const WD = ['일','월','화','수','목','금','토'];
-/* 종목: 이모지 · 이름 · 색 (카드 왼쪽 띠·꼬리표·'곧 시작' 윗줄) */
-const SP = {soccer:['⚽','축구','#16A35F'], f1:['🏎️','F1','#E10600'], tennis:['🎾','테니스','#B7C400'], baseball:['⚾','야구','#2563EB'],
-  basketball:['🏀','농구','#F97316'], golf:['⛳','골프','#0D9488'], mma:['🥊','격투기','#B91C1C'], nfl:['🏈','미식축구','#8B5E34'],
-  kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
-const sportOf = p => p.sport || ({soccer:'soccer',racing:'f1',tennis:'tennis',baseball:'baseball',basketball:'basketball',golf:'golf',mma:'mma',football:'nfl'})[(p.path||'').split('/')[0]] || 'etc';
-const spTag = p => { const s = SP[sportOf(p)]; return `<span class="sp"><i>${s[0]}</i>${s[1]}</span>`; };
-const scVar = p => `--sc:${SP[sportOf(p)][2]}`;
-const SESS = {FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'};
-const T = s => { const [d, h] = s.split(' '); const dt = new Date(d + 'T' + h + ':00+09:00'); return {dt, d: `${dt.getMonth()+1}/${dt.getDate()}(${WD[dt.getDay()]})`, h}; };
+/* 시각은 데이터에 KST 문자열('YYYY-MM-DD HH:MM')로 온다. 날짜 계산도 KST 기준으로 한다(보는 사람 기기 시간대와 무관하게). */
+const T = s => { const [d, h] = s.split(' '); const dt = new Date(d + 'T' + h + ':00+09:00'); const wd = WD[new Date(d + 'T12:00:00+09:00').getUTCDay()];
+  return {dt, key: d, d: `${+d.slice(5,7)}/${+d.slice(8,10)}(${wd})`, h, wd}; };
+const kstKey = ms => new Date(ms + 9*3600e3).toISOString().slice(0,10);
+const NOW = Date.now(), TODAY = kstKey(NOW);
+const dayDiff = key => Math.round((Date.parse(key + 'T00:00:00Z') - Date.parse(TODAY + 'T00:00:00Z')) / 864e5);
+const groupKey = kst => +kst.slice(11,13) < 6 ? kstKey(Date.parse(kst.slice(0,10) + 'T12:00:00+09:00') - 864e5) : kst.slice(0,10);
+const dayRel = key => { const n = dayDiff(key); return n === 0 ? '오늘' : n === 1 ? '내일' : n === 2 ? '모레' : n < 0 ? (n === -1 ? '어제' : `${-n}일 전`) : `D-${n}`; };
+/* 남은 시간 꼬리표 — 진행 중 / 곧 / N시간 후 / 내일 밤 / D-n */
+const partOf = h => h < 6 ? '새벽' : h < 12 ? '오전' : h < 18 ? '오후' : h < 22 ? '저녁' : '밤';
+function relBadge(kst, durH = 2.5, withDay = false){
+  const t = T(kst).dt.getTime(), m = (t - NOW) / 6e4, h = +kst.slice(11,13), gk = groupKey(kst);
+  if (m < 0 && m > -durH * 60) return '<span class="relb live">● 진행 중</span>';
+  if (m < 0) return '';
+  if (m < 60) return `<span class="relb soon">${Math.max(1, Math.round(m))}분 후</span>`;
+  if (m < 12 * 60) return `<span class="relb soon">${Math.round(m / 60)}시간 후</span>`;
+  const part = h < 6 ? '밤(새벽)' : partOf(h);
+  return `<span class="relb">${withDay ? dayRel(gk) + ' ' : ''}${part}</span>`;
+}
+/* 자정 넘은 경기: 00:30 은 날짜로는 일요일이지만 사람에겐 '토요일 밤'이다 */
+const nightHint = kst => +kst.slice(11,13) >= 6 ? '' : `<span class="night">↪ ${T(kst).wd} 새벽 ${kst.slice(11,16)}</span>`;
 const alarm = h => { const x = +h.slice(0,2); return x >= 1 && x <= 6 ? '<span class="alarm">⏰ 알람 필요</span>' : ''; };
 const form = f => f ? `<span class="form">${[...f].map(c => `<i class="${c}">${c}</i>`).join('')}</span>` : '';
 const teamLine = t => t ? `<b>${esc(t.ko)}</b>${t.rank ? ` ${esc(t.rank)}위` : ''}${t.pts ? ` · 승점 ${esc(t.pts)}` : ''}${!t.pts && t.record ? ` · ${esc(t.record)}` : ''}${form(t.form)}` : '';
+/* 종목: 이모지 · 이름 · 색. 문화(영화·공연·예매)도 같은 띠·필터·달력에 들어간다 */
+const SP = {soccer:['⚽','축구','#16A35F'], f1:['🏎️','F1','#E10600'], tennis:['🎾','테니스','#B7C400'], baseball:['⚾','야구','#2563EB'],
+  basketball:['🏀','농구','#F97316'], golf:['⛳','골프','#0D9488'], mma:['🥊','격투기','#B91C1C'], nfl:['🏈','미식축구','#8B5E34'],
+  movie:['🎬','개봉','#9333EA'], show:['🎤','공연','#DB2777'], ticket:['🎟️','예매 오픈','#E11D48'],
+  kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
+const sportOf = p => p.sport || p.type || ({soccer:'soccer',racing:'f1',tennis:'tennis',baseball:'baseball',basketball:'basketball',golf:'golf',mma:'mma',football:'nfl'})[(p.path||'').split('/')[0]] || 'etc';
+const spTag = p => { const s = SP[sportOf(p)] || SP.etc; return `<span class="sp"><i>${s[0]}</i>${s[1]}</span>`; };
+const scVar = p => `--sc:${(SP[sportOf(p)] || SP.etc)[2]}`;
+const SESS = {FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'};
 
 function detail(p){
   const d = p.detail || {}, out = [];
@@ -155,20 +224,34 @@ function detail(p){
   if (d.h2h) out.push(`<div class="box"><h4>상대 전적</h4><p>${esc(d.h2h.summary)}</p><ul>${(d.h2h.last||[]).map(x => `<li>${esc(x.date)} · ${esc(x.score)}</li>`).join('')}</ul></div>`);
   if ((d.leaders||[]).length) out.push(`<div class="box"><h4>주요 선수</h4><ul>${d.leaders.map(x => `<li>${esc(x.team)} · ${esc(x.who)} <span style="color:var(--muted)">${esc(x.val)}</span></li>`).join('')}</ul></div>`);
   if ((d.injuries||[]).length) out.push(`<div class="box"><h4>결장·부상</h4><ul>${d.injuries.map(x => `<li>${esc(x.team)} · ${esc(x.who)} (${esc(x.status)})</li>`).join('')}</ul></div>`);
-  if (p.sessions) out.push(`<div class="box"><h4>주말 일정</h4><ul>${p.sessions.map(x => `<li>${esc({FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'}[x.name] || x.name)} · ${esc(x.kst)}</li>`).join('')}</ul></div>`);
+  if (p.sessions) out.push(`<div class="box"><h4>주말 일정</h4><ul>${p.sessions.map(x => { const s = T(x.kst); return `<li>${esc(SESS[x.name] || x.name)} · ${dayRel(s.key)} ${s.d} ${s.h}</li>`; }).join('')}</ul></div>`);
+  if (p.series) out.push(`<div class="box"><h4>시리즈 일정</h4><ul>${p.series.map(x => { const s = T(x.kst); return `<li>${dayRel(s.key)} ${s.d} ${s.h}${x.note ? ' · ' + esc(x.note) : ''}</li>`; }).join('')}</ul></div>`);
   const meta = [p.venue && `경기장 ${esc(p.venue)}`, p.tv && `중계 ${esc(p.tv)}`].filter(Boolean).join(' · ');
   const pv = (d.preview||[]).filter(x => x.url).map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></li>`).join('');
   return `<div class="grid2">${out.join('')}</div>${pv ? `<div class="box" style="margin-top:12px"><h4>미리 보기 (ESPN)</h4><ul>${pv}</ul></div>` : ''}${meta ? `<p class="more">${meta}</p>` : ''}`;
 }
 
 function card(p){
+  if (p.kind === 'culture') return cultureCard(p);
   const t = T(p.kst), why = (p.why||[]).map(w => `<span class="${/출전/.test(w) ? 'k' : ''}">${esc(w)}</span>`).join('');
-  const sess = (p.sessions||[]).filter(x => ['SR','Qual','Race'].includes(x.name)).map(x => { const s = T(x.kst); return `<b>${SESS[x.name]}</b> ${s.d} ${s.h}`; }).join(' · ');
+  const sess = (p.sessions||[]).filter(x => ['SR','Qual','Race'].includes(x.name)).map(x => { const s = T(x.kst); return `<b>${SESS[x.name]}</b> ${s.wd} ${s.h}`; }).join(' · ');
   return `<div class="pick${p.stars >= 3 ? ' top' : ''}" data-id="${esc(p.id)}" data-sp="${sportOf(p)}" style="${scVar(p)}">
-    <div class="ph"><div class="when"><div class="d">${t.d}</div><div class="h">${t.h}</div>${p.time_tbc ? '<span class="tbc">예정 · 앞 경기 따라 변동</span>' : ''}${alarm(t.h)}</div>
-      <div><div class="lg">${spTag(p)}${p.league === SP[sportOf(p)][1] ? '' : esc(p.league)}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div><div class="ttl">${esc(p.title || p.name)}</div><div class="why">${why}</div>${sess ? `<div class="sess">${sess}</div>` : ''}</div>
+    <div class="ph"><div class="when"><div class="h">${t.h}</div>${relBadge(p.kst)}${nightHint(p.kst)}${p.time_tbc ? '<span class="tbc">예정 · 앞 경기 따라 변동</span>' : ''}${alarm(t.h)}</div>
+      <div><div class="lg">${spTag(p)}${p.league === (SP[sportOf(p)] || SP.etc)[1] ? '' : esc(p.league)}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div><div class="ttl">${esc(p.title || p.name)}</div><div class="why">${why}</div>${sess ? `<div class="sess">${sess}</div>` : ''}</div>
       <div class="side"><div class="stars">${'★'.repeat(p.stars||1)}${'☆'.repeat(3-(p.stars||1))}</div><div class="tv">📺 ${esc(p.tv || '중계 미확인')}</div><div class="more">자세히 ▾</div></div></div>
     <div class="det">${detail(p)}</div></div>`;
+}
+
+/* 문화 카드 — 개봉·공연·예매 오픈. 예매 오픈은 '공연 날짜'를 같이 보여 준다(공연은 몇 달 뒤여도 예매는 이번 주) */
+function cultureCard(c){
+  const t = T(c.kst), ty = c.type;
+  const sub = ty === 'ticket' ? `공연 ${esc(c.show_date || '날짜 미정')}${c.where ? ' · 예매 ' + esc(c.where) : ''}`
+    : [c.venue, c.where].filter(Boolean).map(esc).join(' · ');
+  return `<div class="pick cul-card${c.stars >= 3 ? ' top' : ''}" data-sp="${ty}" style="${scVar(c)}">
+    <div class="ph"><div class="when"><div class="h">${t.h}</div>${relBadge(c.kst, 0.5)}</div>
+      <div><div class="lg">${spTag(c)}${ty === 'ticket' ? '<span class="tk">놓치면 끝</span>' : ''}</div><div class="ttl">${esc(c.title)}</div>
+        <div class="why">${sub ? `<span>${sub}</span>` : ''}${c.note ? `<span>${esc(c.note)}</span>` : ''}</div></div>
+      <div class="side">${c.url ? `<a class="more" href="${esc(c.url)}" target="_blank" rel="noopener">${ty === 'ticket' ? '예매처 ›' : '자세히 ›'}</a>` : ''}</div></div></div>`;
 }
 
 function resultCard(p){
@@ -180,36 +263,73 @@ function resultCard(p){
   }).join('');
   const goals = (r.goals||[]).map(g => `<li>${esc(g.min)} ${esc(g.text)}</li>`).join('');
   const pod = (r.podium||[]).map((n, i) => `${['🥇','🥈','🥉'][i]} ${esc(n)}`).join('  ');
-  return `<div class="res" data-sp="${sportOf(p)}" style="${scVar(p)}"><div class="top"><div><div class="lg">${spTag(p)}${esc(p.league)} <em>${t.d} ${t.h}</em></div><div class="ttl">${esc(p.title || p.name)}</div></div>
+  return `<div class="res" data-sp="${sportOf(p)}" style="${scVar(p)}"><div class="top"><div><div class="lg">${spTag(p)}${esc(p.league)} <em>${dayRel(t.key)} ${t.d} ${t.h}</em></div><div class="ttl">${esc(p.title || p.name)}</div></div>
     <button class="reveal">결과 보기</button></div>
     <div class="spoil"><div class="score">${pod || esc(r.score || p.status || '')}</div>${(r.top10||[]).length > 3 ? `<p class="more">4~10위 ${esc(r.top10.slice(3).join(' · '))}</p>` : ''}${kp}${goals ? `<ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.6">${goals}</ul>` : ''}
     ${r.video && r.video.url ? `<p class="more"><a href="${esc(r.video.url)}" target="_blank" rel="noopener">▶ ${esc(r.video.title)}</a></p>` : ''}</div></div>`;
 }
 
-fetch('data/sports.json?t=' + Date.now()).then(r => r.json()).then(D => {
-  document.getElementById('upd').textContent = '갱신 ' + D.updated;
-  const now = Date.now(), inWin = k => { const t = T(k).dt.getTime(); return t > now - 2*3600e3 && t < now + 36*3600e3; };
+const get = u => fetch(u + '?t=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) => {
+  document.getElementById('upd').textContent = '갱신 ' + (D.updated || '-');
+  const culture = (C.events || []).filter(c => c.kst && c.verified !== false).map(c => ({...c, kind: 'culture', sport: c.type}));
+  const all = [...(D.picks || []), ...culture].sort((a, b) => a.kst < b.kst ? -1 : 1);
+
+  // 주간 띠 — 오늘부터 7일, 날마다 그날 일정의 종목 이모지
+  const days = [...Array(7)].map((_, i) => kstKey(NOW + i * 864e5));
+  const byDay = {}; for (const p of all) (byDay[groupKey(p.kst)] ||= []).push(p);
+  for (const p of D.picks || []) for (const x of p.sessions || []) if (['SR','Qual'].includes(x.name)) (byDay[groupKey(x.kst)] ||= []).push({...p, kst: x.kst, _sess: true});
+  document.getElementById('week').innerHTML = days.map(k => { const t = T(k + ' 12:00'), n = dayDiff(k), list = byDay[k] || [];
+    const ems = [...new Set(list.map(p => (SP[sportOf(p)] || SP.etc)[0]))].join('');
+    return `<button class="wd${n === 0 ? ' today' : n === 1 ? ' tmr' : ''}${list.length ? '' : ' none'}${t.wd === '일' ? ' sun' : t.wd === '토' ? ' sat' : ''}" data-k="${k}">
+      <span class="rel">${n <= 1 ? dayRel(k) : '&nbsp;'}</span><span class="dt">${+k.slice(8,10)}<small>${t.wd}요일</small></span><span class="ems">${ems || '·'}</span></button>`; }).join('');
+  document.getElementById('week').addEventListener('click', e => { const b = e.target.closest('.wd'); if (!b) return;
+    const h = document.getElementById('day-' + b.dataset.k); if (h) h.scrollIntoView({behavior: 'smooth', block: 'start'}); });
+
+  // 지금부터 36시간 — 경기 + F1 예선·스프린트 + 예매 오픈
+  const inWin = k => { const t = T(k).dt.getTime(); return t > NOW - 2.5*3600e3 && t < NOW + 36*3600e3; };
   const soon = [];
-  for (const p of D.picks||[]) {
+  for (const p of all) {
     if (p.sessions) { for (const x of p.sessions) if (['SR','Qual','Race'].includes(x.name) && inWin(x.kst)) soon.push({...p, kst: x.kst, sessName: SESS[x.name]}); }
     else if (inWin(p.kst)) soon.push(p);
   }
   soon.sort((a, b) => a.kst < b.kst ? -1 : 1);
-  document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst), s = SP[sportOf(p)];
-    return `<div class="tn" style="${scVar(p)}"><div class="t">${t.h}<small>${t.d}</small></div><div class="n">${s[0]} ${esc(p.title || p.name)}${p.sessName ? ` <span style="color:var(--sc)">${p.sessName}</span>` : ''}</div><div class="l">${esc(p.league)}${p.note ? ' ' + esc(p.note) : ''} · 📺 ${esc(p.tv || '미확인')}</div></div>`; }).join('')
-    : '<p class="empty">앞으로 36시간 안에 고른 경기가 없습니다. 아래 주간 목록을 보세요.</p>';
-  document.getElementById('picks').innerHTML = (D.picks||[]).map(card).join('') || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
+  document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst), s = SP[sportOf(p)] || SP.etc;
+    return `<div class="tn" style="${scVar(p)}"><div class="big">${dayRel(groupKey(p.kst))} ${relBadge(p.kst, 2.5, false)}</div><div class="t">${t.h}<small>${t.d}</small></div>${nightHint(p.kst)}
+      <div class="n">${s[0]} ${esc(p.title || p.name)}${p.sessName ? ` <span style="color:var(--sc)">${p.sessName}</span>` : ''}</div>
+      <div class="l">${esc(p.kind === 'culture' ? s[1] : p.league)}${p.note ? ' ' + esc(p.note) : ''}${p.tv ? ' · 📺 ' + esc(p.tv) : ''}</div></div>`; }).join('')
+    : '<p class="empty">앞으로 36시간 안에 고른 일정이 없습니다. 아래 날짜별 목록을 보세요.</p>';
+
+  // 이번 주 — 날짜별 묶음
+  const keys = [...new Set(all.map(p => groupKey(p.kst)))].sort();
+  document.getElementById('picks').innerHTML = keys.map(k => { const t = T(k + ' 12:00'), n = dayDiff(k), list = all.filter(p => groupKey(p.kst) === k);
+    return `<h3 class="dayh${n === 0 ? ' today' : n === 1 ? ' tmr' : ''}" id="day-${k}"><span class="r">${dayRel(k)}</span><span class="d">${t.d}</span><span class="n">${list.length}개</span></h3>${list.map(card).join('')}`; }).join('')
+    || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
+
+  // 이번 주 문화 — 개봉 대작 · 중요한 공연 · 예매 오픈 (데이터가 생기기 전까지는 자리만)
+  const box = (ty, label, hint) => { const list = culture.filter(c => c.type === ty), s = SP[ty];
+    return `<div class="cbox" style="--sc:${s[2]}"><h3>${s[0]} ${label}<small>${list.length ? list.length + '건' : ''}</small></h3>${list.length
+      ? `<ul>${list.map(c => { const t = T(c.kst); return `<li><b>${esc(c.title)}</b><span>${dayRel(t.key)} ${t.d} ${t.h}${ty === 'ticket' && c.show_date ? ' · 공연 ' + esc(c.show_date) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span></li>`; }).join('')}</ul>`
+      : `<p class="ph0">${hint}</p>`}</div>`; };
+  document.getElementById('culture').innerHTML =
+    box('movie', '이번 주 개봉 대작', '아무 영화나 싣지 않습니다. 많은 사람이 기다리던 큰 영화만 — 기준을 다듬는 중입니다.') +
+    box('show', '이번 주 중요한 공연', '이번 주에 열리는, 놓치면 아쉬운 공연을 모읍니다 — 준비 중입니다.') +
+    box('ticket', '이번 주 예매 오픈', '공연은 몇 달 뒤라도 예매가 이번 주에 열리면 여기에 띄웁니다. 오픈 시각은 달력·캘린더에도 들어갑니다 — 준비 중입니다.');
+
   document.getElementById('results').innerHTML = (D.results||[]).map(resultCard).join('') || '<p class="empty">아직 끝난 픽이 없습니다.</p>';
   const m = D.manual || [];
   document.getElementById('manual').innerHTML = m.length ? m.map(x => `<li>${esc(x.kst)} · <b>${esc(x.league)}</b> ${esc(x.title)}${x.tv ? ` · 📺 ${esc(x.tv)}` : ''}${x.result ? ` · <span style="color:var(--muted)">결과: ${esc(x.result)}</span>` : ''}</li>`).join('')
     : '<li>확정된 일정이 들어오면 여기에 표시합니다.</li>';
-  const present = [...new Set((D.picks||[]).map(sportOf))];
+
+  // 필터 — 종목·문화 공통
+  const present = [...new Set(all.map(sportOf))];
   const fl = document.getElementById('filters');
-  fl.innerHTML = `<button class="on" data-f="all">전체</button>` + present.map(k => `<button data-f="${k}">${SP[k][0]} ${SP[k][1]}</button>`).join('');
+  fl.innerHTML = `<button class="on" data-f="all">전체</button>` + present.map(k => `<button data-f="${k}">${(SP[k] || SP.etc)[0]} ${(SP[k] || SP.etc)[1]}</button>`).join('');
   fl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
     fl.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
-    document.querySelectorAll('.pick,.res').forEach(c => c.classList.toggle('hide', b.dataset.f !== 'all' && c.dataset.sp !== b.dataset.f)); });
-  document.querySelectorAll('.ph').forEach(h => h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
+    document.querySelectorAll('.pick,.res').forEach(c => c.classList.toggle('hide', b.dataset.f !== 'all' && c.dataset.sp !== b.dataset.f));
+    document.querySelectorAll('.dayh').forEach(h => { let n = h.nextElementSibling, any = false; while (n && !n.classList.contains('dayh')) { if (!n.classList.contains('hide')) any = true; n = n.nextElementSibling; } h.classList.toggle('hide', !any); }); });
+  document.querySelectorAll('.pick:not(.cul-card) .ph').forEach(h => h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
   document.querySelectorAll('.reveal').forEach(b => b.addEventListener('click', () => b.closest('.res').classList.add('shown')));
-}).catch(() => { document.getElementById('upd').textContent = '데이터를 불러오지 못했습니다'; });
+});
 </script>
