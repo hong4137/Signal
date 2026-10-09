@@ -231,8 +231,10 @@ def pick_person(pp, title, used):
         x = cand[sum(map(ord, title)) % len(cand)]
         url = pp["base"] + x["id"] + ".webp"
         used.add(url)
-        cr = "%s · %s" % (x["artist"], x["license"]) if x.get("artist") else x["license"]
-        return {"src": url, "sm": url, "alt": p["name"], "nr": cr, "credit": cr, "credit_url": x.get("page", ""), "person": k}
+        full = "%s · %s" % (x["artist"], x["license"]) if x.get("artist") else x["license"]
+        short = "%s · %s" % (re.sub(r"\s*\(잘라냄\)", "", x["artist"]), x["license"]) if x.get("artist") else x["license"]
+        # 사진 위 꼬리표는 한 줄(작가 · 라이선스), 원본 표기(잘라냄 포함)는 마우스를 올리면·사진 설명에
+        return {"src": url, "sm": url, "alt": p["name"], "nr": short, "credit": full, "credit_url": x.get("page", ""), "person": k}
     return None
 
 

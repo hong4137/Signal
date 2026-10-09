@@ -140,7 +140,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .story .sb{display:block;font-size:14px;font-weight:600;color:var(--ink-2);margin-top:4px;line-height:1.45}
 .story p{margin:7px 0 0;font-size:14px;color:var(--ink-2);line-height:1.6;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.ph .file{position:absolute;right:5px;bottom:4px;font-size:10px;color:#E8E6E1;background:#05070BB3;padding:0 5px;border-radius:2px}
+.ph .file{position:absolute;right:5px;bottom:4px;font-size:10px;color:#E8E6E1;background:#05070BB3;padding:0 5px;border-radius:2px;max-width:calc(100% - 10px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-style:normal}
 .echo{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--heat);border:1px solid currentColor;
   border-radius:999px;padding:1px 10px}
 
@@ -522,7 +522,7 @@ const KIND = { foreign: 'f', domestic: 'd', community: 'c' };
 const TOPIC = { '안전·거버넌스': 'AI 안전·규제', '모델릴리스': '새 AI 모델 출시', '에이전트': 'AI 에이전트',
   '인프라·칩': '인프라·반도체', '보안·사고': '보안 사고', '개발도구': '개발 도구' };
 /* 사진 귀퉁이 꼬리표 — 기업 뉴스룸 사진은 '<회사> 제공', 검수 자료사진은 '자료사진' */
-const badge = img => img.nr ? `<i class="file">${esc(img.nr)}</i>` : img.file ? '<i class="file">자료사진</i>' : '';
+const badge = img => img.nr ? `<i class="file" title="${esc(img.credit || img.nr)}">${esc(img.nr)}</i>` : img.file ? '<i class="file">자료사진</i>' : '';
 const ph = (img, cls = 'ph') => img ? `<span class="${cls}"><img src="${esc(img.sm || img.src)}" alt="${esc(img.alt)}" loading="lazy">${badge(img)}</span>` : '';
 
 /* 국내 기사 첫머리 — sharktalk.co.kr 포털이 언론사 공개 요약(og:description)을 받아 준다 */
