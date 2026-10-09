@@ -151,6 +151,7 @@ def photo(url, w, h):
 # (기사에 이런 말이 있으면 → 이 태그의 사진)  위에서부터 우선
 PHOTO_TOPIC = [
     (r"트럼프|Trump", "trump"),
+    (r"스마트폰|휴대폰|폴더블|트리폴드|폴드폰|플립폰|아이폰|iPhone|갤럭시|Galaxy|[Ss]martphone|phone", "phone"),
     (r"구글|Google", "google"),
     (r"테슬라|Tesla", "tesla"),
     (r"스페이스X|SpaceX", "spacex"),
@@ -191,8 +192,10 @@ def photo_pool(_B=None):
 
 def pick_photo(pool, it, sec, used):
     """기사 → 주제 태그가 맞는 자료사진 한 장. 같은 면에서 겹치지 않게 고른다."""
-    text = " ".join((it.get("head", ""), it.get("sub", ""), it.get("en", ""), it.get("deck", "")))
-    wants = [t for pat, t in PHOTO_TOPIC if re.search(pat, text, re.I)]
+    # 제목에서 잡힌 주제가 먼저다 — 요약에 스친 단어('전기차 판매 둔화')로 트리폴드폰 기사에 자동차 사진이 붙었다
+    title = " ".join((it.get("head", ""), it.get("sub", ""), it.get("en", "")))
+    wants = [t for pat, t in PHOTO_TOPIC if re.search(pat, title, re.I)]
+    wants += [t for pat, t in PHOTO_TOPIC if t not in wants and re.search(pat, it.get("deck", ""), re.I)]
     wants += [PHOTO_SEC.get(sec, "ai")] + PHOTO_ANY
     seed = sum(ord(ch) for ch in (it.get("en") or it.get("head") or ""))
     for want in wants:
