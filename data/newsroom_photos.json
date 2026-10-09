@@ -1,0 +1,58 @@
+{
+ "about": "기업 뉴스룸 공식 사진 — 기사가 그 회사를 다루면 Unsplash 자료사진보다 먼저 쓴다(build_front.py pick_newsroom). 회사마다 이용 조건을 확인하고 넣는다. 사진은 자르거나 고치지 않는다(16:9 원본만), 출처는 '<회사> 제공'.",
+ "companies": [
+  {
+   "id": "samsung",
+   "name": "삼성전자",
+   "credit": "삼성전자 제공",
+   "match": "삼성전자|삼성\\s?반도체|갤럭시|Samsung(?!\\s(Biologics|SDI|C&T|Heavy|Life|Fire|Securities|SDS|Electro-Mechanics))|삼성(?!바이오|SDI|물산|생명|화재|증권|중공업|SDS|전기|카드|E&A|웰스토리|에스원)",
+   "terms": "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-%eb%89%b4%ec%8a%a4%eb%a3%b8-%ec%bd%98%ed%85%90%ec%b8%a0-%ec%9d%b4%ec%9a%a9%ec%97%90-%eb%8c%80%ed%95%9c-%ec%95%88%eb%82%b4",
+   "terms_note": "뉴스룸 자체 제작 기사·이미지는 자유 이용, 워터마크·외부 제공 이미지는 제외, 변형·가공 금지 (2026-10-09 확인)"
+  }
+ ],
+ "photos": [
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29162451/thumbnail-8.jpg",
+   "desc": "삼성전자 수원 디지털시티 본사 타워",
+   "topic": "실적|영업이익|영업익|매출|시가총액|시총|주가|잠정|배당|자사주|경영|CEO|회장|사상 최대|earnings|profit|revenue",
+   "default": true,
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29162047/thumbnail-7.jpg",
+   "desc": "삼성전자 평택 나노시티 반도체 공장",
+   "topic": "HBM|메모리|D램|DRAM|낸드|파운드리|반도체|칩|팹|평택|memory|foundry|chip",
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29161602/thumbnail-5.jpg",
+   "desc": "삼성전자 화성 나노시티 반도체 캠퍼스",
+   "topic": "파운드리|화성|공정|2나노|3나노|GAA|EUV|foundry",
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29161759/thumbnail-6.jpg",
+   "desc": "삼성전자 기흥 나노시티 반도체 연구·생산 단지",
+   "topic": "기흥|차세대|연구개발|R&D|NRD",
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29160502/thumbnail-4.jpg",
+   "desc": "삼성전자 우면 서울R&D캠퍼스",
+   "topic": "연구소|디자인|소프트웨어|AI 연구|리서치|Research",
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  },
+  {
+   "company": "samsung",
+   "url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/09/29160246/thumbnail-3.jpg",
+   "desc": "삼성전자 구미 스마트시티",
+   "topic": "갤럭시|스마트폰|모바일|폴더블|Galaxy|구미",
+   "page": "https://news.samsung.com/kr/%ec%82%ac%ec%97%85%ec%9e%a5-%ec%82%ac%ec%a7%84"
+  }
+ ]
+}

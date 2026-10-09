@@ -521,7 +521,9 @@ const KIND = { foreign: 'f', domestic: 'd', community: 'c' };
 /* 수집기의 주제 묶음 이름 → 독자용 이름 */
 const TOPIC = { '안전·거버넌스': 'AI 안전·규제', '모델릴리스': '새 AI 모델 출시', '에이전트': 'AI 에이전트',
   '인프라·칩': '인프라·반도체', '보안·사고': '보안 사고', '개발도구': '개발 도구' };
-const ph = (img, cls = 'ph') => img ? `<span class="${cls}"><img src="${esc(img.sm || img.src)}" alt="${esc(img.alt)}" loading="lazy">${img.file ? '<i class="file">자료사진</i>' : ''}</span>` : '';
+/* 사진 귀퉁이 꼬리표 — 기업 뉴스룸 사진은 '<회사> 제공', 검수 자료사진은 '자료사진' */
+const badge = img => img.nr ? `<i class="file">${esc(img.nr)}</i>` : img.file ? '<i class="file">자료사진</i>' : '';
+const ph = (img, cls = 'ph') => img ? `<span class="${cls}"><img src="${esc(img.sm || img.src)}" alt="${esc(img.alt)}" loading="lazy">${badge(img)}</span>` : '';
 
 /* 국내 기사 첫머리 — sharktalk.co.kr 포털이 언론사 공개 요약(og:description)을 받아 준다 */
 const mustLede = (id, idx) => /^\d{8}_\d{4}$/.test(id || '') && Number.isInteger(idx)
@@ -556,7 +558,8 @@ function photo(L, R){
       <img src="${esc(I.src)}" srcset="${esc(I.sm)} 640w, ${esc(I.src)} 1200w" sizes="(max-width:700px) 100vw, 640px" alt="${esc(I.alt)}">
       ${L.sub ? `<span class="shade"></span><span class="q">${hd(L.sub)}</span>` : ''}
     </a>
-    <figcaption>${I.credit ? `사진 <a href="${esc(I.credit_url)}">${esc(I.credit)}</a> / Unsplash` : (I.file ? '자료사진 · Unsplash' : '사진 · Unsplash')} · 외신 브리핑 선정</figcaption>
+    <figcaption>${I.nr ? `사진 <a href="${esc(I.credit_url)}" target="_blank" rel="noopener">${esc(I.nr)}</a> · ${esc(I.alt)}`
+      : `${I.credit ? `사진 <a href="${esc(I.credit_url)}">${esc(I.credit)}</a> / Unsplash` : (I.file ? '자료사진 · Unsplash' : '사진 · Unsplash')} · 외신 브리핑 선정`}</figcaption>
   </figure>`;
 }
 function issueBox(R){           // 쟁점 박스 — 커뮤니티 반응을 찬반으로
@@ -761,7 +764,7 @@ function render(F){
     <div class="secthd"><h2>외신<small>JFNB 외신 브리핑 · ${esc(S.briefing || '')}</small></h2><a href="${esc((F.links || {}).briefing || '#')}">브리핑 전체 →</a></div>
     <div class="fxcols">${FS.map(sec => `<div class="fxsec"><div class="fxname">${esc(sec.name === 'TOP' ? '주요' : sec.name)}</div>
       ${sec.items.map(x => `<a class="fxi${x.img ? ' has-' + (x.img.size || 'lead') : ''}" href="${esc(x.url)}">
-        ${x.img ? `<span class="ph"><img src="${esc(x.img.sm || x.img.src)}" alt="${esc(x.img.alt)}" loading="lazy">${x.img.file ? '<i class="file">자료사진</i>' : ''}</span>` : ''}
+        ${x.img ? `<span class="ph"><img src="${esc(x.img.sm || x.img.src)}" alt="${esc(x.img.alt)}" loading="lazy">${badge(x.img)}</span>` : ''}
         <span class="t hl">${hd(x.head)}</span>${x.sub ? `<span class="u">${hd(x.sub)}</span>` : ''}
         <span class="d">${esc(x.deck)}</span>
         <span class="src">${esc(shortSrc(x.source))}${x.echo ? ` · <span class="h">커뮤니티 댓글 ${fmt(x.echo.comments)}</span>` : ''}</span>
@@ -776,7 +779,7 @@ function render(F){
       <div class="domlead">
         <span class="lab d">${D.picked ? '국내 톱 · 편집국 선정' : '국내 톱 · Must News 1위'}</span>
         ${D.picked && D.pick_note ? `<p class="picknote">${esc(D.pick_note)}</p>` : ''}
-        ${D.lead.img ? `<a class="domph ph" href="${esc(D.lead.url)}"><img src="${esc(D.lead.img.src)}" alt="${esc(D.lead.img.alt)}" loading="lazy"><i class="file">자료사진</i></a>` : ''}
+        ${D.lead.img ? `<a class="domph ph" href="${esc(D.lead.url)}"><img src="${esc(D.lead.img.src)}" alt="${esc(D.lead.img.alt)}" loading="lazy">${badge(D.lead.img)}</a>` : ''}
         <div class="domtop"><h3><a class="hl" href="${esc(D.lead.url)}">${hd(D.lead.title)}</a></h3>
           <div class="reach"><b>${fmt(D.lead.outlets)}</b><span>개 매체 보도</span></div></div>
         <p class="domlede" id="domlede"${D.lead.lede ? '' : ' hidden'}>${esc(D.lead.lede || '')}</p>

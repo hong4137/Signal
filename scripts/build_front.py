@@ -198,6 +198,30 @@ def pick_photo(pool, it, sec, used):
     return None
 
 
+def newsroom_pool():
+    nr = load(os.path.join(DATA, "newsroom_photos.json"), {}) or {}
+    comps = {c["id"]: c for c in nr.get("companies") or []}
+    return comps, nr.get("photos") or []
+
+
+def pick_newsroom(nr, text, used):
+    """기사가 뉴스룸 사진이 있는 회사를 다루면 그 회사 공식 사진 — 주제가 맞는 것 먼저, 없으면 대표 사진.
+    회사 이름이 제목·부제에 있어야 한다(요약에만 스치는 회사는 주인공이 아니다)."""
+    comps, photos = nr
+    for cid, c in comps.items():
+        if not re.search(c["match"], text.get("title", "")):
+            continue
+        cand = [x for x in photos if x["company"] == cid and x["url"] not in used]
+        body = " ".join(text.values())
+        hit = [x for x in cand if x.get("topic") and re.search(x["topic"], body, re.I)]
+        ph = (hit or [x for x in cand if x.get("default")] or cand or [None])[0]
+        if ph:
+            used.add(ph["url"])
+            return {"src": ph["url"], "sm": ph["url"], "alt": ph["desc"], "nr": c["credit"],
+                    "credit": c["credit"], "credit_url": ph.get("page", "")}
+    return None
+
+
 def _grab(pat, body):
     m = re.search(pat, body, re.S)
     return _txt(m.group(1)) if m else ""
@@ -743,6 +767,27 @@ def main():
     no = None
     if first:
         no = (now.date() - datetime.strptime(first, "%Y-%m-%d").date()).days + 1
+
+    # ── 기업 뉴스룸 공식 사진 — 회사가 주인공인 기사엔 Unsplash 대신 그 회사 사진 ('<회사> 제공') ──
+    # 편집국이 drop_photo·no_photo 로 막은 기사는 건드리지 않는다. 같은 사진은 한 면에 한 번.
+    nrp, nr_used = newsroom_pool(), set()
+    def nr_swap(it, title, sub="", deck="", key=None):
+        if not it or (dx.get(key) or {}).get("drop_photo") or (dx.get(key) or {}).get("no_photo") or it.get("no_photo"):
+            return
+        ph = pick_newsroom(nrp, {"title": " ".join((title or "", sub or "")), "deck": deck or ""}, nr_used)
+        if ph:
+            size = (it.get("img") or {}).get("size")
+            it["img"] = dict(ph, **({"size": size} if size else {}))
+    if lead:
+        nr_swap(lead, lead.get("headline"), lead.get("sub"), lead.get("deck"), lead.get("key"))
+    for it in (slots.get("side") or []) + (slots.get("row") or []):
+        nr_swap(it, it.get("head"), it.get("sub"), it.get("deck"), it.get("key"))
+    if domestic.get("lead"):
+        nr_swap(domestic["lead"], domestic["lead"].get("title"), "", domestic["lead"].get("lede"), None)
+    for sec in foreign:
+        for it in sec["items"]:
+            if it.get("img"):
+                nr_swap(it, it.get("head"), it.get("sub"), it.get("deck"), it.get("key"))
 
     # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json 에서 오늘~2일 뒤(3일치) ──
     # 확정(verified)된 것만 싣는다. 편집국이 desk.json "calendar_drop": [제목…] 으로 뺄 수 있다.
