@@ -71,6 +71,17 @@
    "w": 24,
    "tv": "국내 중계 미확인"
   },
+  "soccer/fifa.olympics": {
+   "ko": "올림픽 남자축구",
+   "w": 20,
+   "tv": "지상파(추정)"
+  },
+  "soccer/kor.u23": {
+   "ko": "U-23 대표",
+   "w": 20,
+   "tv": "국내 중계 미확인",
+   "src": "lst"
+  },
   "baseball/mlb": {
    "ko": "MLB",
    "w": 14,
@@ -369,7 +380,8 @@
   "Feyenoord": "페예노르트",
   "Como": "코모",
   "Slavia Prague": "슬라비아 프라하",
-  "RC Lens": "랑스"
+  "RC Lens": "랑스",
+  "South Korea": "대한민국"
  },
  "_tv": "국내 중계처는 2026-10-09 조사(쿠팡플레이·SPOTV 편성표와 2025~26 보도). 시즌마다 바뀐다 — 매 시즌 시작 때 다시 확인. KBO=지상파 3사·티빙, LCK=치지직·SOOP",
  "must": {
@@ -388,12 +400,24 @@
    "name": "Golden State Warriors",
    "ko": "골든스테이트",
    "w": 22
+  },
+  {
+   "kind": "team",
+   "name": "South Korea",
+   "ko": "대한민국 대표팀",
+   "w": 60
+  },
+  {
+   "kind": "team",
+   "name": "Korea Republic U23",
+   "ko": "U-23 대표팀",
+   "w": 45
   }
  ],
  "sport_cap": {
   "soccer": 5
  },
- "_follow": "follow = 사용자가 챙기는 대상(대시보드에서 보던 것). F1·알카라스는 축구만큼 중요하다고 사용자가 못박음(2026-10-10). sport_cap = 한 종목이 주간 픽을 독차지하지 않게.",
+ "_follow": "follow = 사용자가 챙기는 대상(대시보드에서 보던 것). F1·알카라스는 축구만큼 중요하다고 사용자가 못박음(2026-10-10). sport_cap = 한 종목이 주간 픽을 독차지하지 않게. 대한민국 A대표(ESPN South Korea)·U-23 대표(올림픽·아시안게임, LiveSoccerTV — scripts/korea_u23.py)는 사용자 2026-10-11 추가.",
  "tennis_names": {
   "Sinner": "신네르",
   "Djokovic": "조코비치",

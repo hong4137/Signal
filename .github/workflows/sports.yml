@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name  "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git add data/sports.json data/sports.ics data/world_tv_cache.json 2>/dev/null || git add data/sports.json data/sports.ics
+          git add data/sports.json data/sports.ics data/world_tv_cache.json data/korea_u23_cache.json 2>/dev/null || git add data/sports.json data/sports.ics
           git diff --cached --quiet && { echo "변경 없음"; exit 0; }
           git commit -m "스포츠 $(TZ=Asia/Seoul date '+%F %H:%M')"
           for i in 1 2 3; do

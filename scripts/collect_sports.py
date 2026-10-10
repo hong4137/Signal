@@ -246,6 +246,8 @@ def table_rows(summary):
 
 
 def detail(ev):
+    if ev.get("src"):                             # ESPN 밖 출처(U-23 대표)는 요약 API 가 없다
+        return
     s = get(API + ev["path"] + "/summary?event=" + ev["id"])
     if not s:
         return
@@ -392,7 +394,10 @@ def main():
     days = [(now + timedelta(days=d)).strftime("%Y%m%d") for d in range(-2, 8)]
     prev = load(os.path.join(DATA, "sports.json"), {}) or {}
     cand = []
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     for path in CFG["leagues"]:
+        if CFG["leagues"][path].get("src") == "lst":   # ESPN 에 없는 대회(U-23 대표) — 아래에서 따로
+            continue
         if path.startswith("tennis/"):
             for ev in tennis_events(path, days):
                 ev["score"], ev["why"] = first_score(ev)
@@ -409,6 +414,15 @@ def main():
             sc, why = first_score(ev)
             ev["score"], ev["why"] = sc, why
             cand.append(ev)
+    try:                                          # 올림픽·아시안게임 대표(U-23) — 사용자 2026-10-11
+        import korea_u23
+        u23 = korea_u23.events(days)
+        for ev in u23:
+            ev["score"], ev["why"] = first_score(ev)
+            cand.append(ev)
+        print("%-24s %d" % ("U-23 대표(LiveSoccerTV)", len(u23)))
+    except Exception as x:
+        print("  ! U-23 대표 건너뜀", x, file=sys.stderr)
     # 주 = 오늘 0시 ~ 7일 뒤, 결과 = 지난 48시간
     start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     upcoming = [e for e in cand if e["state"] != "post" and start <= kst(e["date"]) < start + timedelta(days=7)]
