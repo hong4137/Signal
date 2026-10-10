@@ -457,6 +457,12 @@ def main():
     if unknown:
         print("  한국어 이름 없음 →", ", ".join(unknown))
     picks.sort(key=lambda e: e["date"])
+    try:                                          # 축구는 해외 현지 채널로(사용자 2026-10-11) — 실패하면 리그 기본 문구
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import world_tv
+        print("현지 중계 %d건" % world_tv.attach(picks))
+    except Exception as x:
+        print("  ! 현지 중계 건너뜀", x, file=sys.stderr)
     # 지난 픽의 결과 — 직전 실행에서 골랐던 경기 중 끝난 것
     done = []
     old = {p["id"]: p for p in (prev.get("picks") or []) + (prev.get("results") or [])}
