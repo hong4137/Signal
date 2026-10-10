@@ -223,6 +223,20 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
 .btog:hover{border-color:var(--ink-2)}
 .btog:focus-visible{outline:2px solid var(--weight);outline-offset:2px}
 @media (max-width:700px){.boardbar{padding:8px 16px 0}}
+
+/* F1 은 이모지(자동차)가 작으면 안 보인다 — 빨간 이탤릭 'F1' 글자 표지로 */
+.f1i{display:inline-block;font-family:var(--mono);font-style:italic;font-weight:900;font-size:.78em;line-height:1.25;letter-spacing:-.04em;color:#fff;background:#E10600;border-radius:4px;padding:0 .32em .02em .26em;vertical-align:.08em}
+.spb .f1i{font-size:11px;padding:1px 4px}
+.sph .e .f1i{font-size:15px}
+/* 보기 전환: 시간순 / 종목순 */
+.viewbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:-4px 0 14px}
+.viewbar .filters{margin:0}
+.seg{display:inline-flex;border:1px solid var(--hair);border-radius:999px;overflow:hidden}
+.seg button{font:inherit;font-size:13px;font-weight:700;border:0;background:var(--sheet);color:var(--ink-2);padding:6px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+.seg button:focus-visible{outline:2px solid var(--weight);outline-offset:-2px}
+#picks.by-time .when .day{display:none}
+.when .allday{font-family:var(--ko);font-size:18px;font-weight:800}
 </style>
 <div class="wrap">
   <div class="topbar"><span id="upd">불러오는 중…</span><a href="/front.html">Daily UptoDate ›</a></div>
@@ -237,7 +251,7 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
   <div class="boardbar"><button class="btog" id="btog" type="button" aria-expanded="true" aria-controls="board">📅 주간 판 접기</button></div>
   <div class="board" id="board" aria-label="이번 주 판"></div>
   <section><h2>지금부터 36시간 <span>예매 오픈·F1 예선도 함께</span></h2><div class="tonight" id="tonight"></div></section>
-  <section><h2>이번 주 볼 경기 <span>종목별 · 한국 시간 · 눌러서 자세히</span></h2><div class="filters" id="filters"></div><div id="picks"></div></section>
+  <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div class="viewbar"><div class="filters" id="filters"></div><div class="seg" role="group" aria-label="정렬"><button type="button" data-v="time" aria-pressed="true">시간순</button><button type="button" data-v="sport" aria-pressed="false">종목순</button></div></div><div id="picks"></div></section>
   <section><h2>이번 주 문화 <span>개봉 대작 · 중요한 공연 · 예매 오픈</span></h2><div class="cul" id="culture"></div></section>
   <section><h2>지난 경기 결과 <span>스포일러 가림 — 눌러야 보입니다</span></h2><div id="results"></div></section>
   <section class="quiet"><h2>KBO · LCK</h2><ul id="manual"></ul></section>
@@ -274,12 +288,13 @@ const teamLine = t => t ? `<b>${esc(t.ko)}</b>${t.rank ? ` ${esc(t.rank)}위` : 
 /* 종목: 이모지 · 이름 · 색. 문화(영화·공연·예매)도 같은 띠·필터·달력에 들어간다 */
 const SP = {soccer:['⚽','축구','#16A35F'], f1:['🏎️','F1','#E10600'], tennis:['🎾','테니스','#B7C400'], baseball:['⚾','야구','#2563EB'],
   basketball:['🏀','NBA','#F97316'], golf:['⛳','골프','#0D9488'], mma:['🥊','격투기','#B91C1C'], nfl:['🏈','미식축구','#8B5E34'],
-  movie:['🎬','개봉','#9333EA'], show:['🎤','공연','#DB2777'], ticket:['🎟️','예매 오픈','#E11D48'],
+  movie:['🎬','개봉','#9333EA'], show:['🎤','공연','#DB2777'], exhibit:['🖼️','전시','#0EA5E9'], ticket:['🎟️','예매 오픈','#E11D48'],
   kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
 const sportOf = p => p.sport || p.type || ({soccer:'soccer',racing:'f1',tennis:'tennis',baseball:'baseball',basketball:'basketball',golf:'golf',mma:'mma',football:'nfl'})[(p.path||'').split('/')[0]] || 'etc';
-const SP_ORDER = ['soccer','f1','tennis','basketball','baseball','golf','mma','nfl','etc','movie','show','ticket'];
+const SP_ORDER = ['soccer','f1','tennis','basketball','baseball','golf','mma','nfl','etc','movie','show','exhibit','ticket'];
+const spIcon = k => k === 'f1' ? '<b class="f1i">F1</b>' : (SP[k] || SP.etc)[0];
 const spRank = k => { const i = SP_ORDER.indexOf(k); return i < 0 ? 99 : i; };
-const spBadge = p => `<span class="spb" aria-hidden="true">${(SP[sportOf(p)] || SP.etc)[0]}</span>`;
+const spBadge = p => `<span class="spb" aria-hidden="true">${spIcon(sportOf(p))}</span>`;
 const spTag = p => { const s = SP[sportOf(p)] || SP.etc; return `<span class="sp"><i>${s[0]}</i>${s[1]}</span>`; };
 const scVar = p => `--sc:${(SP[sportOf(p)] || SP.etc)[2]}`;
 const SESS = {FP1:'연습1',FP2:'연습2',FP3:'연습3',SS:'스프린트 예선',SR:'스프린트',Qual:'예선',Race:'결승'};
@@ -314,10 +329,10 @@ function card(p){
 /* 문화 카드 — 개봉·공연·예매 오픈. 예매 오픈은 '공연 날짜'를 같이 보여 준다(공연은 몇 달 뒤여도 예매는 이번 주) */
 function cultureCard(c){
   const t = T(c.kst), ty = c.type;
-  const sub = ty === 'ticket' ? `공연 ${esc(c.show_date || '날짜 미정')}${c.where ? ' · 예매 ' + esc(c.where) : ''}`
+  const sub = ty === 'ticket' ? `공연 ${esc(c.show_date || '날짜 미정')}${c.venue ? ' · ' + esc(c.venue) : ''}${c.where ? ' · 예매 ' + esc(c.where) : ''}`
     : [c.venue, c.where].filter(Boolean).map(esc).join(' · ');
   return `<div class="pick cul-card${c.stars >= 3 ? ' top' : ''}" data-sp="${ty}" data-day="${groupKey(c.kst)}" style="${scVar(c)}">${spBadge(c)}
-    <div class="ph"><div class="when"><div class="day">${dayRel(groupKey(c.kst))} ${T(groupKey(c.kst) + ' 12:00').d}</div><div class="h">${t.h}</div>${relBadge(c.kst, 0.5)}</div>
+    <div class="ph"><div class="when"><div class="day">${dayRel(groupKey(c.kst))} ${T(groupKey(c.kst) + ' 12:00').d}</div>${c.allday ? `<div class="allday">${ty === 'movie' ? '개봉' : '종일'}</div>` : `<div class="h">${t.h}</div>${relBadge(c.kst, 0.5)}`}</div>
       <div><div class="lg">${spTag(c)}${ty === 'ticket' ? '<span class="tk">놓치면 끝</span>' : ''}</div><div class="ttl">${esc(c.title)}</div>
         <div class="why">${sub ? `<span>${sub}</span>` : ''}${c.note ? `<span>${esc(c.note)}</span>` : ''}</div></div>
       <div class="side">${c.url ? `<a class="more" href="${esc(c.url)}" target="_blank" rel="noopener">${ty === 'ticket' ? '예매처 ›' : '자세히 ›'}</a>` : ''}</div></div></div>`;
@@ -381,7 +396,7 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
       const n = dayDiff(k), cell = items.filter(p => groupKey(p.kst) === k && hh(p.kst) >= a0 && hh(p.kst) < b0).sort((x, y) => x.kst < y.kst ? -1 : 1);
       const past = n === 0 && nowHH >= b0, isNow = n === 0 && nowHH >= a0 && nowHH < b0;
       html += `<div class="bc${past ? ' past' : ''}${isNow ? ' nowc' : ''}${n === 0 ? ' todaycol' : ''}">${cell.map(p =>
-        `<button class="chip s${p.stars || 1}" style="${scVar(p)}" data-go="${esc(p.id || '')}" title="${esc((p.title || p.name) + (p.sessName ? ' ' + p.sessName : ''))}"><span class="t">${p.kst.slice(11,16)}</span>${(SP[sportOf(p)] || SP.etc)[0]} ${esc(shortName(p))}</button>`).join('')}</div>`;
+        `<button class="chip s${p.stars || 1}" style="${scVar(p)}" data-go="${esc(p.id || '')}" title="${esc((p.title || p.name) + (p.sessName ? ' ' + p.sessName : ''))}"><span class="t">${p.allday ? '종일' : p.kst.slice(11,16)}</span>${spIcon(sportOf(p))} ${esc(shortName(p))}</button>`).join('')}</div>`;
     }
   }
   document.getElementById('board').innerHTML = html + '</div>';
@@ -391,10 +406,10 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
     else if (h && h.dataset.k) { const d = [...document.querySelectorAll(`.pick[data-day="${h.dataset.k}"]`)].filter(x => !x.classList.contains('hide')).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top)[0]; if (d) { d.scrollIntoView({behavior: 'smooth', block: 'center'}); d.classList.remove('flash'); void d.offsetWidth; d.classList.add('flash'); } }
   });
   // 지금 줄: 지금이 '사람의 하루'로 언제인지 + 다음 큰 경기
-  const upcomingBig = items.filter(p => T(p.kst).dt.getTime() > NOW && (p.stars >= 3 || p.type === 'ticket')).sort((x, y) => x.kst < y.kst ? -1 : 1)[0];
+  const upcomingBig = items.filter(p => !p.allday && T(p.kst).dt.getTime() > NOW && (p.stars >= 3 || p.type === 'ticket')).sort((x, y) => x.kst < y.kst ? -1 : 1)[0];
   const leftToday = items.filter(p => groupKey(p.kst) === TODAY && T(p.kst).dt.getTime() > NOW - 2.5 * 3600e3).length;
   document.getElementById('nowbar').innerHTML = `<span class="now">지금 <span class="t">${WD[nowK.getUTCDay()]} ${String(nh).padStart(2,'0')}:${nm}</span>${nh < 6 ? `<em>아직 ${humanWd}요일 밤</em>` : ''}</span>
-    <span class="next">오늘 남은 일정 <b>${leftToday}개</b></span>${upcomingBig ? `<span class="next">다음 큰 경기 <b>${(SP[sportOf(upcomingBig)] || SP.etc)[0]} ${esc(shortName(upcomingBig))}</b> · ${dayRel(groupKey(upcomingBig.kst))} ${upcomingBig.kst.slice(11,16)} ${relBadge(upcomingBig.kst, 2.5)}</span>` : ''}`;
+    <span class="next">오늘 남은 일정 <b>${leftToday}개</b></span>${upcomingBig ? `<span class="next">다음 큰 경기 <b>${spIcon(sportOf(upcomingBig))} ${esc(shortName(upcomingBig))}</b> · ${dayRel(groupKey(upcomingBig.kst))} ${upcomingBig.kst.slice(11,16)} ${relBadge(upcomingBig.kst, 2.5)}</span>` : ''}`;
 
   // 지금부터 36시간 — 경기 + F1 예선·스프린트 + 예매 오픈
   const inWin = k => { const t = T(k).dt.getTime(); return t > NOW - 2.5*3600e3 && t < NOW + 36*3600e3; };
@@ -405,25 +420,43 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
   }
   soon.sort((a, b) => a.kst < b.kst ? -1 : 1);
   document.getElementById('tonight').innerHTML = soon.length ? soon.map(p => { const t = T(p.kst), s = SP[sportOf(p)] || SP.etc;
-    return `<div class="tn" style="${scVar(p)}">${spBadge(p)}<div class="big">${dayRel(groupKey(p.kst))} ${relBadge(p.kst, 2.5, false)}</div><div class="t">${t.h}<small>${t.d}</small></div>${nightHint(p.kst)}
+    return `<div class="tn" style="${scVar(p)}">${spBadge(p)}<div class="big">${dayRel(groupKey(p.kst))} ${relBadge(p.kst, 2.5, false)}</div><div class="t">${p.allday ? (p.type === 'movie' ? '개봉' : '종일') : t.h}<small>${t.d}</small></div>${p.allday ? '' : nightHint(p.kst)}
       <div class="n">${esc(p.title || p.name)}${p.sessName ? ` <span style="color:var(--sc)">${p.sessName}</span>` : ''}</div>
       <div class="l">${esc(p.kind === 'culture' ? s[1] : p.league)}${p.note ? ' ' + esc(p.note) : ''}${p.tv ? ' · 📺 ' + esc(p.tv) : ''}</div></div>`; }).join('')
     : '<p class="empty">앞으로 36시간 안에 고른 일정이 없습니다. 아래 날짜별 목록을 보세요.</p>';
 
-  // 이번 주 — 종목별 묶음 (축구 · F1 · 테니스 · NBA · 야구 순, 그 안은 시간순)
-  const sps = [...new Set(all.map(sportOf))].sort((a, b) => spRank(a) - spRank(b));
-  document.getElementById('picks').innerHTML = sps.map(k => { const s = SP[k] || SP.etc, list = all.filter(p => sportOf(p) === k);
-    return `<h3 class="sph" data-sp="${k}" style="--sc:${s[2]}"><span class="e">${s[0]}</span><span class="r">${s[1]}</span><span class="n">${list.length}개</span></h3>${list.map(card).join('')}`; }).join('')
-    || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
+  // 이번 주 — 시간순(날짜 묶음) / 종목순(축구 · F1 · 테니스 · NBA · 야구) 두 가지 보기
+  const picksEl = document.getElementById('picks');
+  const byTime = () => { const keys = [...new Set(all.map(p => groupKey(p.kst)))].sort();
+    return keys.map(k => { const t = T(k + ' 12:00'), n = dayDiff(k), list = all.filter(p => groupKey(p.kst) === k);
+      return `<h3 class="dayh${n === 0 ? ' today' : n === 1 ? ' tmr' : ''}" id="day-${k}"><span class="r">${dayRel(k)}</span><span class="d">${t.d}</span><span class="n">${list.length}개</span></h3>${list.map(card).join('')}`; }).join(''); };
+  const bySport = () => { const sps = [...new Set(all.map(sportOf))].sort((a, b) => spRank(a) - spRank(b));
+    return sps.map(k => { const s = SP[k] || SP.etc, list = all.filter(p => sportOf(p) === k);
+      return `<h3 class="sph" data-sp="${k}" style="--sc:${s[2]}"><span class="e">${spIcon(k)}</span>${k === 'f1' ? '<span class="r">포뮬러 1</span>' : `<span class="r">${s[1]}</span>`}<span class="n">${list.length}개</span></h3>${list.map(card).join('')}`; }).join(''); };
+  let view = 'time'; try { view = localStorage.getItem('sports.view') === 'sport' ? 'sport' : 'time'; } catch (e) {}
+  let curF = 'all';
+  const applyFilter = () => {
+    document.querySelectorAll('.pick,.res').forEach(c => c.classList.toggle('hide', curF !== 'all' && c.dataset.sp !== curF));
+    document.querySelectorAll('.sph').forEach(h => h.classList.toggle('hide', curF !== 'all' && h.dataset.sp !== curF));
+    document.querySelectorAll('.dayh').forEach(h => { let n = h.nextElementSibling, any = false; while (n && !n.classList.contains('dayh')) { if (!n.classList.contains('hide')) any = true; n = n.nextElementSibling; } h.classList.toggle('hide', !any); }); };
+  const renderPicks = () => {
+    picksEl.innerHTML = (view === 'sport' ? bySport() : byTime()) || '<p class="empty">이번 주 픽이 아직 없습니다.</p>';
+    picksEl.classList.toggle('by-time', view === 'time');
+    document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
+    applyFilter(); };
+  renderPicks();
+  document.querySelector('.seg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b || b.dataset.v === view) return;
+    view = b.dataset.v; try { localStorage.setItem('sports.view', view); } catch (e) {} renderPicks(); });
+  picksEl.addEventListener('click', e => { const h = e.target.closest('.ph'); if (h && !h.parentElement.classList.contains('cul-card')) h.parentElement.classList.toggle('open'); });
 
   // 이번 주 문화 — 개봉 대작 · 중요한 공연 · 예매 오픈 (데이터가 생기기 전까지는 자리만)
-  const box = (ty, label, hint) => { const list = culture.filter(c => c.type === ty), s = SP[ty];
+  const box = (ty, label, hint) => { const list = culture.filter(c => ty === 'show' ? ['show', 'exhibit'].includes(c.type) : c.type === ty), s = SP[ty];
     return `<div class="cbox" style="--sc:${s[2]}"><h3>${s[0]} ${label}<small>${list.length ? list.length + '건' : ''}</small></h3>${list.length
-      ? `<ul>${list.map(c => { const t = T(c.kst); return `<li><b>${esc(c.title)}</b><span>${dayRel(t.key)} ${t.d} ${t.h}${ty === 'ticket' && c.show_date ? ' · 공연 ' + esc(c.show_date) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span></li>`; }).join('')}</ul>`
+      ? `<ul>${list.map(c => { const t = T(c.kst); return `<li><b>${c.type === 'exhibit' ? '🖼️ ' : ''}${esc(c.title)}</b><span>${dayRel(t.key)} ${t.d} ${c.allday ? (c.type === 'movie' ? '개봉' : '') : t.h}${ty === 'ticket' && c.show_date ? ' · 공연 ' + esc(c.show_date) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span></li>`; }).join('')}</ul>`
       : `<p class="ph0">${hint}</p>`}</div>`; };
   document.getElementById('culture').innerHTML =
     box('movie', '이번 주 개봉 대작', '아무 영화나 싣지 않습니다. 많은 사람이 기다리던 큰 영화만 — 기준을 다듬는 중입니다.') +
-    box('show', '이번 주 중요한 공연', '이번 주에 열리는, 놓치면 아쉬운 공연을 모읍니다 — 준비 중입니다.') +
+    box('show', '이번 주 공연·전시', '이번 주에 열리거나 끝나는, 놓치면 아쉬운 공연·전시를 모읍니다 — 준비 중입니다.') +
     box('ticket', '이번 주 예매 오픈', '공연은 몇 달 뒤라도 예매가 이번 주에 열리면 여기에 띄웁니다. 오픈 시각은 달력·캘린더에도 들어갑니다 — 준비 중입니다.');
 
   document.getElementById('results').innerHTML = (D.results||[]).map(resultCard).join('') || '<p class="empty">아직 끝난 픽이 없습니다.</p>';
@@ -434,12 +467,10 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
   // 필터 — 종목·문화 공통
   const present = [...new Set(all.map(sportOf))].sort((a, b) => spRank(a) - spRank(b));
   const fl = document.getElementById('filters');
-  fl.innerHTML = `<button class="on" data-f="all">전체</button>` + present.map(k => `<button data-f="${k}">${(SP[k] || SP.etc)[0]} ${(SP[k] || SP.etc)[1]}</button>`).join('');
+  fl.innerHTML = `<button class="on" data-f="all">전체</button>` + present.map(k => `<button data-f="${k}">${spIcon(k)}${k === 'f1' ? '' : ' ' + (SP[k] || SP.etc)[1]}</button>`).join('');
   fl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
     fl.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
-    document.querySelectorAll('.pick,.res').forEach(c => c.classList.toggle('hide', b.dataset.f !== 'all' && c.dataset.sp !== b.dataset.f));
-    document.querySelectorAll('.sph').forEach(h => h.classList.toggle('hide', b.dataset.f !== 'all' && h.dataset.sp !== b.dataset.f)); });
-  document.querySelectorAll('.pick:not(.cul-card) .ph').forEach(h => h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
+    curF = b.dataset.f; applyFilter(); });
   document.querySelectorAll('.reveal').forEach(b => b.addEventListener('click', () => b.closest('.res').classList.add('shown')));
 });
 </script>

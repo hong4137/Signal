@@ -1,7 +1,27 @@
 {
- "_note": "Sports UptoDate '이번 주 문화' 칸 — 개봉 대작(movie) · 중요한 공연(show) · 예매 오픈(ticket). 로직은 아직 없다(2026-10-10 사용자: 차근차근 만든다, UI 만 먼저). 아무 영화·공연이나 싣지 않는다 — '아주 유명한' 것만. 예매 오픈은 공연이 몇 달 뒤여도 예매가 이번 주면 싣는다.",
- "_schema": {"id": "고유 ID", "type": "movie | show | ticket", "title": "제목", "kst": "YYYY-MM-DD HH:MM (개봉일·공연 시작·예매 오픈 시각)",
-             "show_date": "ticket 일 때 실제 공연 날짜(예: 2027-02-14)", "venue": "극장·공연장", "where": "예매처(인터파크·멜론티켓 등)",
+ "_note": "Sports UptoDate '이번 주 문화' 칸 — 개봉 대작(movie) · 공연(show)·전시(exhibit) · 예매 오픈(ticket). 자동 수집 로직은 아직 없다. 2026-10-10 첫 묶음은 트렌드세터 위키 회차 001 후보(loop/회차/001_후보.md)에서 기준 v0.1 ★★ 이상·개봉 주 유명작 칸·화제 상위만 손으로 옮김. 시각을 모르는 개봉·전시는 allday:true(시각을 지어내지 않는다).",
+ "_schema": {"id": "고유 ID", "type": "movie | show | exhibit | ticket", "title": "제목", "kst": "YYYY-MM-DD HH:MM (개봉일·공연 시작·예매 오픈 시각; allday 면 12:00 자리표시)",
+             "allday": "시각 미정·하루 종일(개봉·전시)이면 true", "show_date": "ticket 일 때 실제 공연 날짜", "venue": "극장·공연장", "where": "예매처",
              "note": "한 줄 이유", "url": "공식 안내·예매 링크", "stars": "1~3", "verified": "true 만 싣는다"},
- "events": []
+ "events": [
+  {"id": "c-sweeney-1", "type": "ticket", "title": "뮤지컬 스위니토드 10주년 1차 예매", "kst": "2026-10-13 11:00",
+   "show_date": "2026-12-04 ~ 2027-05-02", "venue": "디큐브 링크아트센터", "where": "NOL·티켓링크",
+   "note": "4년 만의 재연, 조승우 복귀 — 2019 시즌 조승우 회차는 2분 만에 매진", "url": "https://nol.yanolja.com/ticket/products/26014509", "stars": 3, "verified": true},
+  {"id": "c-cdf-2026", "type": "ticket", "title": "카운트다운 판타지 2026-2027 티켓 오픈", "kst": "2026-10-13 18:00",
+   "show_date": "2026-12-31", "venue": "킨텍스 제2전시장", "where": "NOL·YES24",
+   "note": "1차 라인업 혁오·실리카겔·FTISLAND 등 12팀, 올해 무대 3개로 확대", "url": "https://nol.yanolja.com/ticket/products/26014480", "stars": 1, "verified": true},
+  {"id": "c-beabadoobee", "type": "ticket", "title": "beabadoobee 첫 단독 내한 아티스트 선예매", "kst": "2026-10-14 12:00",
+   "show_date": "2027-03-23", "venue": "올림픽홀", "where": "NOL 단독 (일반 예매 10/16 12:00)",
+   "note": "데뷔 후 첫 단독 내한, 1회 공연", "url": "https://www.slist.kr/news/articleView.html?idxno=771673", "stars": 2, "verified": true},
+  {"id": "c-elisabeth-yes24day", "type": "ticket", "title": "뮤지컬 엘리자벳 YES24DAY (김준수 회차)", "kst": "2026-10-14 15:00",
+   "show_date": "2026-11-10", "venue": "블루스퀘어 우리은행홀", "where": "YES24 단독",
+   "note": "단 1회 — 시즌 1차 예매 때 예매율 1위", "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18655", "stars": 2, "verified": true},
+  {"id": "c-streetfighter", "type": "movie", "title": "스트리트 파이터", "kst": "2026-10-14 12:00", "allday": true,
+   "venue": "극장 3사", "note": "할리우드 실사판, 북미보다 이틀 먼저 개봉 · 15세", "url": "https://tvreport.co.kr/movie/article/1074111/", "stars": 2, "verified": true},
+  {"id": "c-martinparr-close", "type": "exhibit", "title": "마틴 파: We Are Martin Parr 폐막", "kst": "2026-10-18 12:00", "allday": true,
+   "venue": "서울시립 사진미술관(도봉)", "note": "작가 별세 뒤 아시아 첫 대규모 회고전, 무료 — 이번 주 일요일까지", "url": "https://www.newsis.com/view/NISX20260715_0003710449", "stars": 1, "verified": true},
+  {"id": "c-mma2026-1st", "type": "ticket", "title": "MMA2026 1차 예매 (멜론 GOLD 이상)", "kst": "2026-10-19 20:00",
+   "show_date": "2026-11-14 ~ 15", "venue": "고척스카이돔", "where": "멜론티켓 (2차 이용권 보유자 10/22 20:00)",
+   "note": "MMA 사상 첫 이틀 개최 — 날짜별 출연진은 아직 미확정", "url": "https://ticket.melon.com/csoon/detail.htm?csoonId=13005", "stars": 1, "verified": true}
+ ]
 }
