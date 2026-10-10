@@ -144,10 +144,146 @@ def src_popply(state):
             "venue": place(ev)[:160],
             "created_at": rsc_field(h, "createdAt"),
             "prereg": {k: rsc_field(h, k) for k in ("preRegister", "preRegisterStartDate", "preRegisterEndDate", "reservationExposureAt")},
-            "signals": {k: rsc_field(h, k) for k in ("totalFavorites", "eventViewCount", "views")},
+            "region": rsc_field(h, "topLevelAddress"),
+            "signals": popply_signals(h),
         })
     state["popply_max"] = max(ids)
     return out
+
+
+def popply_signals(h):
+    """관심 지표 — totalUserLike 가 실제 찜(좋아요). totalFavorites 는 늘 0 이라 쓰지 않는다(2026-10-11 조사, 471건 전부 0)."""
+    out = {}
+    for k, name in (("views", "views"), ("eventViewCount", "eventViewCount"), ("totalUserLike", "likes")):
+        v = rsc_field(h, k)
+        try:
+            out[name] = int(float(v))
+        except (TypeError, ValueError):
+            out[name] = None
+    return out
+
+
+REFRESH_MAX = 60   # 하루 다시 재는 팝플리 상세 수(× GAP 0.6초)
+
+
+def refresh_popply(items, state):
+    """시작이 오늘-7일 ~ +21일인 팝플리 후보를 하루 한 번 다시 읽어 관심 지표 시계열(series)을 쌓는다.
+    대란 팝업은 등록→행동 리드 9일 사이에 조회가 쌓인다 — 처음 본 값 하나로는 속도를 못 본다."""
+    today = NOW.strftime("%Y-%m-%d")
+    lo, hi = (NOW - timedelta(days=7)).strftime("%Y-%m-%d"), (NOW + timedelta(days=21)).strftime("%Y-%m-%d")
+    due = [c for c in items.values() if c.get("source") == "popply" and c.get("start") and lo <= c["start"] <= hi
+           and not any(s[0] == today for s in c.get("series", []))]
+    due.sort(key=lambda c: c["start"])
+    n = 0
+    for c in due[:REFRESH_MAX]:
+        h = fetch(c["url"])
+        if not h:
+            continue
+        sig = popply_signals(h)
+        if sig.get("views") is None:
+            continue
+        c["signals"] = sig
+        c.setdefault("region", rsc_field(h, "topLevelAddress"))
+        c.setdefault("series", []).append([today, sig["views"], sig.get("eventViewCount"), sig.get("likes")])
+        c["series"] = c["series"][-40:]
+        n += 1
+    return n
+
+
+def popply_hints(items):
+    """S1 조회 속도의 '같은 주 등록분' 백분위 + S2 좋아요/조회 비율 → hint (채점자에게 숫자로 준다).
+    원값 순위는 쓰지 않는다(광고성 팝업이 조회 1위였다). 비율 < 0.05% 면 조회 근거에서 뺀다(ad_suspect)."""
+    def week(c):
+        d = (c.get("created_at") or c.get("first_seen") or "")[:10]
+        try:
+            y, w, _ = datetime.strptime(d, "%Y-%m-%d").isocalendar()
+            return f"{y}-W{w:02d}"
+        except ValueError:
+            return None
+
+    def speed(c):
+        ser = [s for s in c.get("series", []) if s[1] is not None]
+        if len(ser) >= 2:
+            d0, d1 = datetime.strptime(ser[0][0], "%Y-%m-%d"), datetime.strptime(ser[-1][0], "%Y-%m-%d")
+            return (ser[-1][1] - ser[0][1]) / max(1, (d1 - d0).days)
+        v = (c.get("signals") or {}).get("views")
+        try:
+            age = (NOW.replace(tzinfo=None) - datetime.strptime((c.get("created_at") or "")[:10], "%Y-%m-%d")).days
+        except ValueError:
+            return None
+        return v / max(1, age) if isinstance(v, (int, float)) else None
+
+    pops = [c for c in items.values() if c.get("source") == "popply"]
+    groups = {}
+    for c in pops:
+        sp = speed(c)
+        if sp is not None and week(c):
+            groups.setdefault(week(c), []).append((sp, c))
+    allv = sorted(sp for g in groups.values() for sp, _ in g)
+    for wk, g in groups.items():
+        base = sorted(sp for sp, _ in g) if len(g) >= 8 else allv   # 코호트가 작으면 전체로
+        for sp, c in g:
+            pct = round(100 * sum(1 for x in base if x <= sp) / len(base))
+            sig = c.get("signals") or {}
+            v, lk = sig.get("views"), sig.get("likes")
+            ratio = round(lk / v, 5) if isinstance(v, int) and v > 0 and isinstance(lk, int) else None
+            c["hint"] = {"s1_pct": pct, "s1_speed": round(sp, 1), "cohort": wk if len(g) >= 8 else "전체", "cohort_n": len(base),
+                         "s2_ratio": ratio, "ad_suspect": bool(ratio is not None and v >= 1000 and ratio < 0.0005)}
+
+
+def nol_ranking(state):
+    """NOL 장르 랭킹(예매율·순위 변화) — 하루 4번까지. data/trend/nol_rank.json 에 지금 순위 + 10일 이력(S5)."""
+    last = state.get("nol_rank_at")
+    if last and NOW - datetime.fromisoformat(last) < timedelta(hours=6):
+        return None
+    path = os.path.join(OUT, "nol_rank.json")
+    old = load(path, {"genres": {}, "history": {}})
+    genres, hist = {}, old.get("history", {})
+    stamp = NOW.strftime("%Y-%m-%d %H:%M")
+    for g in ("concert", "musical", "play", "classic", "exhibit"):
+        h = fetch(f"https://nol.yanolja.com/ticket/display/ranking/{g}")
+        if not h:
+            continue
+        rows, seen = [], set()
+        for o in rsc_objects(h, r'\{"id":"\d+_\d+_\d+","action"'):
+            code = o.get("goodsCode")
+            if not code or code in seen:
+                continue
+            seen.add(code)
+            rk, ch = o.get("ranking") or {}, o.get("rankingChange") or {}
+            rows.append({"rank": o.get("rank"), "code": code, "name": o.get("goodsName"), "rate": rk.get("bookingRate"),
+                         "prev": rk.get("prevRankingNo"), "change": ch.get("status"), "new": ch.get("isNew"),
+                         "place": o.get("placeName"), "period": o.get("playPeriod"), "seat": o.get("seatTypeName"),
+                         "url": (o.get("action") or {}).get("web")})
+            hist.setdefault(code, {"name": o.get("goodsName"), "genre": g, "s": []})["s"].append([stamp, o.get("rank"), rk.get("bookingRate")])
+        if rows:
+            genres[g] = rows
+    cut = (NOW - timedelta(days=10)).strftime("%Y-%m-%d")
+    for code in list(hist):
+        hist[code]["s"] = [x for x in hist[code]["s"] if x[0] >= cut]
+        if not hist[code]["s"]:
+            del hist[code]
+    save(path, {"updated": stamp, "genres": genres or old.get("genres", {}), "history": hist})
+    state["nol_rank_at"] = NOW.isoformat()
+    return sum(len(v) for v in genres.values())
+
+
+def rsc_objects(h, start_pat):
+    """Next.js RSC 페이로드를 이어 붙여 start_pat 로 시작하는 JSON 객체들을 꺼낸다."""
+    chunks = []
+    for m in re.finditer(r"self\.__next_f\.push\((\[.*?\])\)</script>", h or "", re.S):
+        try:
+            a = json.loads(m.group(1))
+        except Exception:
+            continue
+        if len(a) > 1 and isinstance(a[1], str):
+            chunks.append(a[1])
+    s, dec = "".join(chunks), json.JSONDecoder()
+    for m in re.finditer(start_pat, s):
+        try:
+            yield dec.raw_decode(s, m.start())[0]
+        except Exception:
+            continue
 
 
 def src_popga(state):
@@ -451,6 +587,30 @@ def main():
                 new += 1
         stats[name] = {"got": len(got), "new": new}
         log(f"  {len(got)}건 · 새 {new}")
+    # 관심 지표 — 팝플리 재측정(하루 1회)·S1/S2 힌트, NOL 랭킹(하루 4회) → 예매 오픈 후보에 순위 붙이기
+    if not only or "popply" in only:
+        try:
+            log("▶ 팝플리 재측정", refresh_popply(items, state), "건")
+            popply_hints(items)
+        except Exception as e:
+            log("  ! 팝플리 재측정 오류", type(e).__name__, str(e)[:120])
+    if not only or "nol" in only:
+        try:
+            n = nol_ranking(state)
+            log("▶ NOL 랭킹", "건너뜀(6시간 안)" if n is None else f"{n}건")
+        except Exception as e:
+            log("  ! NOL 랭킹 오류", type(e).__name__, str(e)[:120])
+    rank = {}
+    for g, rows in load(os.path.join(OUT, "nol_rank.json"), {}).get("genres", {}).items():
+        for r in rows:
+            rank[r["code"]] = {"genre": g, "rank": r["rank"], "rate": r["rate"], "change": r["change"], "new": r["new"]}
+    for c in items.values():
+        m = re.search(r"/ticket/products/(\d+)", c.get("url") or "")
+        if c.get("source") == "nol" and m:
+            if m.group(1) in rank:
+                c["nol_rank"] = rank[m.group(1)]
+            else:
+                c.pop("nol_rank", None)
     # 오래된 것 정리: 끝난 지 KEEP_DAYS 지났거나, 날짜 없는 것은 처음 본 지 KEEP_DAYS 지난 것
     cutoff = (NOW - timedelta(days=KEEP_DAYS)).strftime("%Y-%m-%d")
     keep = [c for c in items.values() if (c.get("end") or c.get("first_seen", "")[:10]) >= cutoff]
