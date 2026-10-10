@@ -1,0 +1,39 @@
+name: Trend collect
+
+# 트렌드세터 수집 층 1 — 팝업·기업 이벤트·보도자료 후보 (LLM 없음). 3시간마다.
+# 설계: 트렌드세터_LLM위키/wiki/운영/수집-파이프라인.md. 채점·선별은 매일 Claude 루틴(층 2).
+on:
+  schedule:
+    - cron: '41 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: signal-trend
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect
+        run: python scripts/collect_trend.py
+      - name: Commit
+        run: |
+          git config user.name  "signal-bot"
+          git config user.email "signal-bot@users.noreply.github.com"
+          git add data/trend/
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "트렌드 후보 $(TZ=Asia/Seoul date '+%F %H:%M')"
+          for i in 1 2 3; do
+            git pull --rebase -q && git push && exit 0
+            sleep 5
+          done
+          exit 1
