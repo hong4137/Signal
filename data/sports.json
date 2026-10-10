@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11 02:03 KST",
+ "updated": "2026-10-11 04:15 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
   {
@@ -12,8 +12,13 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "ALDS - Game 5",
+   "season": "post-season",
+   "us_tv": [
+    "TBS",
+    "truTV"
+   ],
    "venue": "Progressive Field",
-   "tv": "SPOTV · SPOTV NOW",
+   "tv": "국내 SPOTV · 영국 TNT Sports · 미국 TBS",
    "sport": "baseball",
    "home": {
     "name": "Cleveland Guardians",
@@ -138,7 +143,160 @@
      }
     ]
    },
-   "stars": 1
+   "stars": 1,
+   "tv_kr": "SPOTV · SPOTV NOW",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "SPOTV"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "TNT Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "TBS"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "Sportsnet"
+    }
+   ]
+  },
+  {
+   "id": "401898399",
+   "path": "basketball/nba",
+   "league": "NBA",
+   "name": "Sacramento Kings at Golden State Warriors",
+   "date": "2026-10-11T00:30Z",
+   "kst": "2026-10-11 09:30",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "preseason",
+   "us_tv": [],
+   "venue": "Chase Center",
+   "tv": "영국 Sky Sports(일부 경기) · 아랍 beIN SPORTS(일부 경기)",
+   "sport": "basketball",
+   "home": {
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "abbr": "GS",
+    "id": "9",
+    "score": "0",
+    "winner": null,
+    "record": "1-2",
+    "form": "승패패승패"
+   },
+   "away": {
+    "name": "Sacramento Kings",
+    "ko": "Sacramento Kings",
+    "abbr": "SAC",
+    "id": "23",
+    "score": "0",
+    "winner": null,
+    "record": "0-2",
+    "form": "패승패패패"
+   },
+   "title": "골든스테이트 vs Sacramento Kings",
+   "follow": {
+    "kind": "team",
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "w": 22
+   },
+   "score": 20,
+   "why": [
+    "골든스테이트 경기",
+    "프리시즌"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "Series starts 11/25",
+     "last": [
+      {
+       "date": "2026-11-26",
+       "score": "골든스테이트 0 Sacramento Kings 0"
+      },
+      {
+       "date": "2027-01-13",
+       "score": "골든스테이트 0 Sacramento Kings 0"
+      },
+      {
+       "date": "2027-03-11",
+       "score": "Sacramento Kings 0 골든스테이트 0"
+      }
+     ]
+    },
+    "leaders": [],
+    "injuries": [
+     {
+      "team": "골든스테이트",
+      "who": "Brandin Podziemski",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Gui Santos",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Gary Payton II",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Georges Niang",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Sacramento Kings",
+      "who": "Leaky Black",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Sacramento Kings",
+      "who": "Domantas Sabonis",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Sacramento Kings",
+      "who": "Keegan Murray",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Sacramento Kings",
+      "who": "Malik Monk",
+      "status": "Day-To-Day"
+     }
+    ],
+    "preview": [
+     {
+      "title": "Warriors give Brandin Podziemski 5-year, $110M extension",
+      "url": "https://www.espn.com/nba/story/_/id/50148027/warriors-give-brandin-podziemski-5-year-110m-extension"
+     }
+    ]
+   },
+   "stars": 1,
+   "tv_kr": "쿠팡플레이(스포츠패스)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports(일부 경기)"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS(일부 경기)"
+    }
+   ]
   },
   {
    "id": "761858",
@@ -150,6 +308,8 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "regular-season",
+   "us_tv": [],
    "venue": "BMO Stadium",
    "tv": "캐나다 TSN5",
    "sport": "soccer",
@@ -256,8 +416,10 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "regular-season",
+   "us_tv": [],
    "venue": "",
-   "tv": "쿠팡플레이(스포츠패스)",
+   "tv": "영국 Sky Sports F1 · 캐나다 TSN",
    "sport": "f1",
    "sessions": [
     {
@@ -292,7 +454,25 @@
     "그랑프리 결승",
     "한국 저녁 시간"
    ],
-   "stars": 3
+   "stars": 3,
+   "tv_kr": "쿠팡플레이(스포츠패스)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports F1"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "TSN"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS"
+    }
+   ]
   },
   {
    "id": "401908030",
@@ -304,8 +484,13 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "NLCS - Game 1",
+   "season": "post-season",
+   "us_tv": [
+    "Fox",
+    "FS1"
+   ],
    "venue": "American Family Field",
-   "tv": "SPOTV · SPOTV NOW",
+   "tv": "국내 SPOTV · 영국 TNT Sports · 미국 Fox",
    "sport": "baseball",
    "home": {
     "name": "Milwaukee Brewers",
@@ -452,7 +637,30 @@
      "note": "NLCS - Game 5 If Necessary"
     }
    ],
-   "stars": 3
+   "stars": 3,
+   "tv_kr": "SPOTV · SPOTV NOW",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "SPOTV"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "TNT Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "Fox"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "Sportsnet"
+    }
+   ]
   },
   {
    "id": "ten-184941",
@@ -467,7 +675,7 @@
    "status": "Scheduled",
    "note": "3회전",
    "venue": "",
-   "tv": "티빙 · tvN SPORTS(추정)",
+   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
    "time_tbc": true,
    "follow": {
     "kind": "athlete",
@@ -480,7 +688,35 @@
    "why": [
     "알카라스 경기"
    ],
-   "stars": 3
+   "stars": 3,
+   "tv_kr": "티빙 · tvN SPORTS(추정)",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "tvN SPORTS(추정)"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "Tennis Channel"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "TSN"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS"
+    }
+   ]
   },
   {
    "id": "401915412",
@@ -492,6 +728,8 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "league-phase",
+   "us_tv": [],
    "venue": "Riyadh Air Metropolitano",
    "tv": "미국 UniMás · 스페인 Movistar Liga de Campeones",
    "sport": "soccer",
@@ -611,6 +849,8 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "league-phase",
+   "us_tv": [],
    "venue": "Viking Stadion",
    "tv": "영국 TNT Sports 4 · 아랍 beIN Sports HD 7",
    "sport": "soccer",
@@ -703,8 +943,10 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "2026-27-german-bundesliga",
+   "us_tv": [],
    "venue": "Veltins Arena",
-   "tv": "미국 Fandango",
+   "tv": "쿠팡플레이(스포츠패스)",
    "sport": "soccer",
    "home": {
     "name": "Schalke 04",
@@ -714,7 +956,7 @@
     "score": "0",
     "winner": false,
     "record": "1-2-1",
-    "rank": "13",
+    "rank": "12",
     "pts": "5",
     "form": "무승무승승"
    },
@@ -726,7 +968,7 @@
     "score": "0",
     "winner": false,
     "record": "2-1-2",
-    "rank": "7",
+    "rank": "8",
     "pts": "7",
     "form": "무승패승승"
    },
@@ -788,15 +1030,7 @@
     "preview": []
    },
    "stars": 2,
-   "tv_kr": "쿠팡플레이(스포츠패스)",
-   "tv_world": [
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Fandango"
-    }
-   ],
-   "tv_src": "https://www.livesoccertv.com/match/mainz-05-vs-schalke-04/19e0n"
+   "tv_kr": "쿠팡플레이(스포츠패스)"
   },
   {
    "id": "401880212",
@@ -808,6 +1042,8 @@
    "state": "pre",
    "status": "Scheduled",
    "note": "",
+   "season": "regular-season",
+   "us_tv": [],
    "venue": "Swansea.com Stadium",
    "tv": "미국 CBS Sports Network",
    "sport": "soccer",
@@ -917,6 +1153,10 @@
    "state": "post",
    "status": "Full Time",
    "note": "",
+   "season": "2026-27-laliga",
+   "us_tv": [
+    "ESPN Deportes"
+   ],
    "venue": "Mendizorrotza",
    "tv": "쿠팡플레이(스포츠패스)",
    "sport": "soccer",
@@ -1055,6 +1295,8 @@
    "state": "post",
    "status": "Full Time",
    "note": "",
+   "season": "2026-27-german-bundesliga",
+   "us_tv": [],
    "venue": "WWK Arena",
    "tv": "쿠팡플레이(스포츠패스)",
    "sport": "soccer",
@@ -1066,7 +1308,7 @@
     "score": "2",
     "winner": false,
     "record": "2-2-1",
-    "rank": "5",
+    "rank": "6",
     "pts": "8",
     "form": "승승무패무"
    },
