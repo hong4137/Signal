@@ -24,6 +24,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Collect
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}   # 한국 인기 차트(파급 신호). 없으면 건너뜀
         run: python scripts/collect_trend.py
       - name: Commit
         run: |

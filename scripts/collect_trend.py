@@ -268,6 +268,58 @@ def nol_ranking(state):
     return sum(len(v) for v in genres.values())
 
 
+YT_CATS = {"all": None, "music": "10", "entertainment": "24"}   # 전체·음악·엔터 — 각 1 단위(무료 할당 하루 10,000)
+
+
+def youtube_popular(state):
+    """YouTube Data API 한국 인기 차트 — '파급' 신호(S 조사 2026-10-11 TOP 3). 6시간 간격, data/trend/yt_popular.json.
+    키는 환경변수 YOUTUBE_API_KEY(GitHub Secrets) — 주소가 아니라 헤더로 보내 로그·오류 문구에 남지 않게 한다.
+    YouTube API 약관: 저장한 API 데이터는 30일 안에 갱신·삭제 → 이력은 7일만 둔다."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        return None
+    last = state.get("yt_at")
+    if last and NOW - datetime.fromisoformat(last) < timedelta(hours=6):
+        return None
+    path = os.path.join(OUT, "yt_popular.json")
+    old = load(path, {"charts": {}, "history": {}})
+    charts, hist = {}, old.get("history", {})
+    stamp = NOW.strftime("%Y-%m-%d %H:%M")
+    for name, cat in YT_CATS.items():
+        q = {"part": "snippet,statistics", "chart": "mostPopular", "regionCode": "KR", "hl": "ko", "maxResults": "50"}
+        if cat:
+            q["videoCategoryId"] = cat
+        url = "https://www.googleapis.com/youtube/v3/videos?" + urllib.parse.urlencode(q)
+        try:
+            time.sleep(GAP)
+            req = urllib.request.Request(url, headers={"X-Goog-Api-Key": key, "User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                data = json.loads(r.read().decode("utf-8"))
+        except Exception as e:
+            log("  ! YouTube", name, type(e).__name__, str(getattr(e, "code", "")))   # 키·주소는 남기지 않는다
+            continue
+        rows = []
+        for i, v in enumerate(data.get("items", []), 1):
+            sn, st = v.get("snippet") or {}, v.get("statistics") or {}
+            rows.append({"rank": i, "id": v.get("id"), "title": sn.get("title"), "channel": sn.get("channelTitle"),
+                         "published": sn.get("publishedAt"), "cat": sn.get("categoryId"),
+                         "views": num(st.get("viewCount")), "likes": num(st.get("likeCount")),
+                         "url": f"https://www.youtube.com/watch?v={v.get('id')}"})
+            h = hist.setdefault(v.get("id"), {"title": sn.get("title"), "channel": sn.get("channelTitle"), "s": []})
+            h["s"].append([stamp, name, i, num(st.get("viewCount"))])
+        charts[name] = rows
+    if not charts:
+        return 0
+    cut = (NOW - timedelta(days=7)).strftime("%Y-%m-%d")
+    for vid in list(hist):
+        hist[vid]["s"] = [x for x in hist[vid]["s"] if x[0] >= cut]
+        if not hist[vid]["s"]:
+            del hist[vid]
+    save(path, {"updated": stamp, "charts": {**old.get("charts", {}), **charts}, "history": hist})
+    state["yt_at"] = NOW.isoformat()
+    return sum(len(v) for v in charts.values())
+
+
 def rsc_objects(h, start_pat):
     """Next.js RSC 페이로드를 이어 붙여 start_pat 로 시작하는 JSON 객체들을 꺼낸다."""
     chunks = []
@@ -600,6 +652,12 @@ def main():
             log("▶ NOL 랭킹", "건너뜀(6시간 안)" if n is None else f"{n}건")
         except Exception as e:
             log("  ! NOL 랭킹 오류", type(e).__name__, str(e)[:120])
+    if not only or "youtube" in only:
+        try:
+            n = youtube_popular(state)
+            log("▶ YouTube 인기", "건너뜀(키 없음·6시간 안)" if n is None else f"{n}건")
+        except Exception as e:
+            log("  ! YouTube 오류", type(e).__name__)
     rank = {}
     for g, rows in load(os.path.join(OUT, "nol_rank.json"), {}).get("genres", {}).items():
         for r in rows:
