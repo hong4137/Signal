@@ -45,6 +45,13 @@ TEAM_SLUG = {
     "RB Leipzig": "germany/rb-leipzig", "Eintracht Frankfurt": "germany/eintracht-frankfurt", "VfB Stuttgart": "germany/vfb-stuttgart",
 }
 
+# 시즌 단위 중계권 — 경기마다 안 바뀌어 고정표로(매 시즌 확인). 나라 순서·OTT 제외 규칙은 축구와 같다.
+# F1 2026(확인 2026-10-11): 영국 Sky Sports F1 · 미국 Apple TV(OTT → 제외) · 캐나다 TSN/RDS(Bell 독점 보도자료 2026-03-04)
+#                          · MENA beIN SPORTS(2024~2033 10년 계약)
+SEASON = {
+    "racing/f1": [("Great Britain", "영국", "Sky Sports F1"), ("Canada", "캐나다", "TSN"), ("MENA", "아랍", "beIN SPORTS")],
+}
+
 # 보여 줄 나라 순서(라리가·분데스리가는 스페인·독일을 beIN 앞에)
 ORDER = [("Great Britain", "영국"), ("USA", "미국"), ("Canada", "캐나다")]   # 국기 이모지는 윈도 크롬에서 글자로 깨진다
 LOCAL = {"soccer/esp.1": [("Spain", "스페인")], "soccer/ger.1": [("Germany", "독일")]}
@@ -159,6 +166,12 @@ def attach(picks, show=2):
     now = datetime.now(timezone.utc)
     comp_html, done = {}, 0
     for ev in picks:
+        if ev.get("path") in SEASON:              # 경기마다 안 바뀌는 시즌 중계권(F1 등)
+            chosen = [{"country": c, "label": l, "ch": ch} for c, l, ch in SEASON[ev["path"]]]
+            ev["tv_kr"], ev["tv_world"] = ev.get("tv", ""), chosen
+            ev["tv"] = " · ".join(f"{x['label']} {x['ch']}" for x in chosen[:show])
+            done += 1
+            continue
         if ev.get("path") not in COMP or not ev.get("home") or not ev.get("away"):
             continue
         c = cache.get(ev["id"])
