@@ -48,8 +48,20 @@ TEAM_SLUG = {
 # 시즌 단위 중계권 — 경기마다 안 바뀌어 고정표로(매 시즌 확인). 나라 순서·OTT 제외 규칙은 축구와 같다.
 # F1 2026(확인 2026-10-11): 영국 Sky Sports F1 · 미국 Apple TV(OTT → 제외) · 캐나다 TSN/RDS(Bell 독점 보도자료 2026-03-04)
 #                          · MENA beIN SPORTS(2024~2033 10년 계약)
+US_ = "@espn"   # '미국은 ESPN 경기별 전국 TV' 자리 표시. '@espn|Golf Channel' = ESPN 에 없으면 뒤의 채널
 SEASON = {
     "racing/f1": [("Great Britain", "영국", "Sky Sports F1"), ("Canada", "캐나다", "TSN"), ("MENA", "아랍", "beIN SPORTS")],
+    # 아래는 2026-10-11 조사(근거 URL 은 위키 raw/조사/2026-10-11_종목별-TV-중계사.md). 확인된 것만, 약한 칸은 (추정) 또는 뺌.
+    # 4번째 칸이 있으면 그 팀이 나올 때만(예: 캐나다 NBA 는 랩터스 경기).
+    "baseball/mlb": [("Great Britain", "영국", "TNT Sports"), ("USA", "미국", US_), ("Canada", "캐나다", "Sportsnet")],
+    "basketball/nba": [("Great Britain", "영국", "Sky Sports(일부 경기)"), ("USA", "미국", US_),
+                       ("Canada", "캐나다", "TSN·Sportsnet", {"Toronto Raptors"}), ("MENA", "아랍", "beIN SPORTS(일부 경기)")],
+    "football/nfl": [("Great Britain", "영국", "Sky Sports NFL"), ("USA", "미국", US_), ("Canada", "캐나다", "CTV·TSN")],
+    "tennis/atp": [("Great Britain", "영국", "Sky Sports"), ("USA", "미국", US_ + "|Tennis Channel"), ("Canada", "캐나다", "TSN"),
+                   ("MENA", "아랍", "beIN SPORTS")],
+    "golf/pga": [("Great Britain", "영국", "Sky Sports Golf"), ("USA", "미국", US_ + "|Golf Channel"), ("Canada", "캐나다", "TSN")],
+    "golf/lpga": [("USA", "미국", US_ + "|Golf Channel")],
+    "mma/ufc": [("Great Britain", "영국", "TNT Sports"), ("USA", "미국", US_), ("Canada", "캐나다", "Sportsnet")],
 }
 
 # 보여 줄 나라 순서(라리가·분데스리가는 스페인·독일을 beIN 앞에)
@@ -58,7 +70,8 @@ LOCAL = {"soccer/esp.1": [("Spain", "스페인")], "soccer/ger.1": [("Germany", 
 LOCAL_BY_TEAM = {"spain": ("Spain", "스페인"), "germany": ("Germany", "독일")}   # 유럽대항전에 스페인·독일 팀이 나오면
 ARAB = ["Qatar", "Saudi Arabia", "United Arab Emirates"]          # beIN 은 아랍권 표에서 찾는다
 # OTT·앱·라디오·업소용은 뺀다(사용자: OTT 제외). 이름에 이 조각이 있으면 제외.
-SKIP = re.compile(r"fubo|peacock|paramount|espn\+|tsn\+|sportsnet\+|dazn canada|hbo max|prime video|amazon|apple tv|"
+SKIP = re.compile(r"fubo|peacock|paramount|espn\+|tsn\+|sportsnet\+|hbo max|prime video|amazon|apple tv|"
+                  r"dazn (canada|germany|deutschland|spain|espa|italia|italy|usa|japan|france)\b|fandango|shahid|starzplay|"
                   r"sky go|\bnow\b|now tv|now player|wow\b|\btod\b|connect|siriusxm|radio|talksport|"
                   r"en vivo|universo now|vix|stream|\bapp\b|youtube|bar\b|\bgo\b|golazo|onesoccer|ea sports|\.com\b", re.I)
 # 같은 나라 안 우선순위(앞일수록 먼저). 목록에 없으면 표에 나온 순서.
@@ -157,8 +170,43 @@ def pick_channels(path, table, teams=()):
     return out
 
 
+NATIONAL = {"South Korea", "Korea Republic U23"}     # 대표팀 경기는 국내 채널(OTT 포함) 그대로 — 사용자 2026-10-11
+# 한국 OTT(국내 칸에서 뺀다) — TV 채널(케이블·지상파·종편)만 '국내'로 함께 보여 준다
+KR_SKIP = re.compile(r"coupang|쿠팡|tving|티빙|spotv now|disney|wavve|웨이브|chzzk|치지직|soop|afreeca|naver|네이버|"
+                     r"apple|youtube|watcha|netflix|\bnow\b|\bapp\b|ea sports|daum|kakao", re.I)
+# 종목별 국내 TV(OTT 제외) 시즌 기본값 — 축구는 경기별 표(Korea Republic 줄)를 쓴다
+KR_TV = {"baseball/mlb": ["SPOTV"], "golf/lpga": ["SPOTV"], "golf/pga": ["SPOTV"], "mma/ufc": ["tvN SPORTS"],
+         "tennis/atp": ["tvN SPORTS(추정)"]}   # NBA·NFL·F1 은 쿠팡플레이(OTT)뿐이라 국내 TV 없음
+US = US_
+
+
+def _kr_from_table(table):
+    return [c for c in table.get("Korea Republic", []) if not KR_SKIP.search(c)]
+
+
+def _compose(ev, foreign, kr, show, src=None):
+    ev["tv_kr"] = ev.get("tv_kr") or ev.get("tv", "")
+    world = ([{"country": "Korea Republic", "label": "국내", "ch": kr[0]}] if kr else []) + foreign
+    if not world:
+        return False
+    ev["tv_world"] = world
+    ev["tv"] = " · ".join(f"{x['label']} {x['ch']}" for x in (world[:1] + foreign[:show] if kr else foreign[:show]))
+    if src:
+        ev["tv_src"] = src
+    return True
+
+
+def _us(ev):
+    """ESPN 이 준 미국 전국 TV 중 OTT 가 아닌 첫 채널."""
+    for ch in ev.get("us_tv") or []:
+        if not SKIP.search(ch) and not re.search(r"\+|tv app|league pass|mlb\.tv|nba tv app", ch, re.I):
+            return ch
+    return None
+
+
 def attach(picks, show=2):
-    """축구 픽에 tv_world(전체)와 tv(앞의 show 개 한 줄, 예: '영국 Sky Sports Main Event · 미국 NBC')를 붙인다. 반환: 붙인 개수."""
+    """모든 종목 픽에 해외 TV(OTT 제외)와 국내 TV(OTT 제외)를 붙인다 — tv_world(전체), tv(카드 한 줄), tv_kr(원래 국내 문구).
+    축구: LiveSoccerTV 경기표 / 그 밖: SEASON 시즌 고정표 + 미국은 ESPN 경기별 전국 TV. 대표팀은 건드리지 않는다. 반환: 붙인 개수."""
     try:
         cache = json.load(io.open(CACHE, encoding="utf-8"))
     except Exception:
@@ -166,13 +214,21 @@ def attach(picks, show=2):
     now = datetime.now(timezone.utc)
     comp_html, done = {}, 0
     for ev in picks:
-        if ev.get("path") in SEASON:              # 경기마다 안 바뀌는 시즌 중계권(F1 등)
-            chosen = [{"country": c, "label": l, "ch": ch} for c, l, ch in SEASON[ev["path"]]]
-            ev["tv_kr"], ev["tv_world"] = ev.get("tv", ""), chosen
-            ev["tv"] = " · ".join(f"{x['label']} {x['ch']}" for x in chosen[:show])
-            done += 1
-            continue
+        teams = {(ev.get("home") or {}).get("name"), (ev.get("away") or {}).get("name")}
+        if teams & NATIONAL or ev.get("src") == "lst" or ev.get("path", "").startswith(("soccer/fifa.", "soccer/afc.")):
+            continue                               # 대표팀·A매치·아시아 대회는 국내 중계 그대로
         if ev.get("path") not in COMP or not ev.get("home") or not ev.get("away"):
+            foreign = []
+            for item in SEASON.get(ev.get("path"), [("USA", "미국", US)]):
+                c, l, ch = item[:3]
+                if len(item) > 3 and not (teams & item[3]):
+                    continue
+                if ch.startswith(US):
+                    ch = _us(ev) or (ch.split("|", 1)[1] if "|" in ch else None)
+                if ch:
+                    foreign.append({"country": c, "label": l, "ch": ch})
+            if _compose(ev, foreign, KR_TV.get(ev.get("path"), []), show):
+                done += 1
             continue
         c = cache.get(ev["id"])
         fresh = c and now - datetime.fromisoformat(c["at"]) < TTL
@@ -193,17 +249,14 @@ def attach(picks, show=2):
                 href = _find(ev, [(comp_html[comp], False)])
             table = _channels(_get(BASE + href)) if href else {}
             c = {"at": now.isoformat(), "url": BASE + href if href else None,
-                 "table": {k: v for k, v in table.items() if k in {o[0] for o in ORDER} | {"Spain", "Germany"} | set(ARAB)}}
+                 "table": {k: v for k, v in table.items()
+                           if k in {o[0] for o in ORDER} | {"Spain", "Germany", "Korea Republic"} | set(ARAB)}}
             if href or not cache.get(ev["id"]):
                 cache[ev["id"]] = c
             else:
                 c = cache[ev["id"]]
-        chosen = pick_channels(ev["path"], c.get("table") or {}, (ev["home"]["name"], ev["away"]["name"]))
-        if chosen:
-            ev["tv_kr"] = ev.get("tv", "")
-            ev["tv_world"] = chosen
-            ev["tv"] = " · ".join(f"{x['label']} {x['ch']}" for x in chosen[:show])
-            ev["tv_src"] = c.get("url")
+        table = c.get("table") or {}
+        if _compose(ev, pick_channels(ev["path"], table, (ev["home"]["name"], ev["away"]["name"])), _kr_from_table(table), show, c.get("url")):
             done += 1
     # 오래된 캐시(2주) 정리
     cut = now - timedelta(days=14)

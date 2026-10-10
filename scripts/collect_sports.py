@@ -82,6 +82,11 @@ def base_event(path, e):
     ev = {"id": e["id"], "path": path, "league": lg["ko"], "name": e.get("name"), "date": e["date"],
           "kst": kst(e["date"]).strftime("%Y-%m-%d %H:%M"), "state": st.get("state"), "status": st.get("description"),
           "note": " / ".join(n.get("headline", "") for n in comp.get("notes", []) if n.get("headline")),
+          "season": (e.get("season") or {}).get("slug"),
+          # 미국 전국 중계 — ESPN 이 TV/STREAMING 을 구분해 준다(해외 채널 표시용, world_tv 가 OTT 를 거른다)
+          "us_tv": [g["media"]["shortName"] for g in comp.get("geoBroadcasts", []) or []
+                    if (g.get("type") or {}).get("shortName") == "TV" and (g.get("market") or {}).get("type") == "National"
+                    and (g.get("media") or {}).get("shortName")],
           "venue": (comp.get("venue") or {}).get("fullName", ""), "tv": lg.get("tv", ""), "sport": sport_of(path)}
     if path == "racing/f1":                      # 결승 세션 시각이 이벤트 시각이다
         race = [c for c in e.get("competitions", []) if (c.get("type") or {}).get("abbreviation") == "Race"]
@@ -223,6 +228,8 @@ def first_score(ev):
         s += 18; why.append("라이벌전")
     if ev["path"] == "racing/f1":
         s += 12; why.append("그랑프리 결승")
+    if ev.get("season") == "preseason":           # 시범 경기 — 개막 전에도 종목이 보이게 싣되 정규 경기보다 낮게
+        s -= 10; why.append("프리시즌")
     h = int(ev["kst"][11:13])
     if 19 <= h <= 23:
         s += 8; why.append("한국 저녁 시간")
@@ -427,7 +434,15 @@ def main():
     start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     upcoming = [e for e in cand if e["state"] != "post" and start <= kst(e["date"]) < start + timedelta(days=7)]
     upcoming.sort(key=lambda e: -e["score"])
+    # 후보 = 점수 상위 30 + 챙기는 대상 전부 + 종목마다 상위 2 (축구·야구가 30칸을 다 차지해 NBA 가 사라졌던 문제 — 2026-10-11)
     pool = upcoming[:30]
+    for e in upcoming:
+        if e not in pool and (e.get("follow") or e["path"] in CFG.get("must", {})):
+            pool.append(e)
+    for sp in {e.get("sport") for e in upcoming}:
+        for e in [x for x in upcoming if x.get("sport") == sp][:2]:
+            if e not in pool:
+                pool.append(e)
     for ev in pool:
         if ev.get("home"):
             detail(ev)
@@ -449,6 +464,8 @@ def main():
         if key in seen or per.get(ev["path"], 0) >= pcap or any(per_player.get(k, 0) >= 1 for k in ks) \
                 or (cap and per_sport.get(ev.get("sport"), 0) >= cap):
             continue
+        if ev.get("season") == "preseason" and any(p.get("season") == "preseason" and p["path"] == ev["path"] for p in picks):
+            continue                              # 프리시즌은 종목당 한 경기만 — 개막 전 '이 종목도 있다'는 표시
         if ev.get("home"):
             games = series.get(key, [ev])
             ev = games[0] if games[0] is not ev and games[0] in pool else ev
