@@ -3,6 +3,8 @@
 설계: 트렌드세터_LLM위키/wiki/운영/수집-파이프라인.md · 출처: 위키 출처-등록부 '기업 이벤트 출처' 절(2026-10-10 실측).
 원칙: 자체 UA, robots `*` 규칙 준수, 요청 사이 간격, 목록·사실(제목·일시·장소·링크)만 보관, 예약·결제·대기열 경로는 건드리지 않는다.
 
+출처: 예매처 오픈 공지(NOL·YES24·멜론 — open/presale/조회수) · 팝업(팝플리·팝가) · 기업 원천(롯데월드몰·라인프렌즈·스타벅스·포켓몬)
+      · 보도자료(뉴스와이어) · 큐레이션(헤이팝·디에디트).
 흐름: 출처별 새 항목 감지(id diff·피드) → 후보 정규화 → data/trend/candidates.json (최근 120일 유지)
       상태(본 id·최대 id)는 data/trend/state.json. 채점·선별은 매일 Claude 루틴이 한다(층 2).
 """
@@ -297,7 +299,112 @@ def src_newswire(state):
     return out
 
 
+# ───────── 예매처 오픈 공지 — '언제 열리나'(open = 일반 예매 KST, presale = 선예매) ─────────
+# 목록 페이지만 읽는다. 예매·대기열·좌석 경로(/reserve, NetFunnel 등)는 절대 호출하지 않는다.
+
+def dt16(s):
+    """'2026.10.14(수) 15:00' · '2026-10-13T11:00:00' → '2026-10-14 15:00'."""
+    m = re.search(r"(\d{4})[.\-](\d{1,2})[.\-](\d{1,2})\D{0,6}?(\d{1,2}):(\d{2})", s or "")
+    return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d} {int(m.group(4)):02d}:{m.group(5)}" if m else None
+
+
+def num(s):
+    try:
+        return int(re.sub(r"[^\d]", "", str(s)))
+    except ValueError:
+        return None
+
+
+def src_yes24(state):
+    out = []
+    for page in (1, 2):
+        h = fetch("https://ticket.yes24.com/New/Notice/Ajax/axList.aspx",
+                  data={"page": str(page), "size": "20", "genre": "", "province": "", "order": "1", "searchType": "All", "searchText": ""},
+                  ctype="application/x-www-form-urlencoded; charset=UTF-8")
+        if not h:
+            break
+        for tr in re.findall(r"<tr>(.*?)</tr>", h, re.S):
+            tds = re.findall(r"<td>(.*?)</td>", tr, re.S)
+            a = re.search(r'href="#id=(\d+)"', tr)
+            if len(tds) < 4 or not a or "티켓오픈" not in tds[0]:
+                continue
+            # 제목 안의 〈부제〉가 이스케이프 없이 '<…>' 로 오므로 아는 태그만 벗긴다
+            tag = lambda x: re.sub(r"</?(?:span|em|a|b|strong|br|font)\b[^>]*>", "", x, flags=re.I)
+            ems = [tag(e).strip() for e in re.findall(r"<em>(.*?)</em>", tds[1], re.S)]
+            title = re.sub(r"\s+", " ", unescape(ems[-1] if ems else tag(tds[1]))).strip()
+            pre = [{"name": unescape(n), "at": dt16(t)} for n, t in
+                   re.findall(r"presaleTit\d='([^']+)'[^>]*?presaleTime\d='([^']+)'", tds[2]) if dt16(t)]
+            out.append({"source": "yes24", "kind": "ticket", "id": f"yes24:{a.group(1)}",
+                        "url": f"https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id={a.group(1)}",
+                        "title": title[:200], "open": dt16(tds[2]), "presale": pre or None,
+                        "exclusive": any("단독" in e for e in ems[:-1]) or None,
+                        "signals": {"views": num(re.sub(r"<[^>]+>", "", tds[3]))}})
+    return out
+
+
+def src_melon(state):
+    out = []
+    for page in (1, 2):  # 페이지가 많이 겹친다 — 3시간마다 돌므로 두 쪽이면 충분
+        h = fetch(f"https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex={page}&schGcode=GENRE_ALL")
+        if not h:
+            break
+        for li in re.findall(r"<li>(.*?)</li>", h, re.S):
+            a = re.search(r'csoonId=(\d+)"\s+class="tit">(.*?)</a>', li, re.S)
+            if not a:
+                continue
+            d = re.search(r'class="date">(.*?)</span>', li, re.S)
+            v = re.search(r'class="txt_review">(.*?)</dd>', li, re.S)
+            reg = re.search(r'class="txt_date">(.*?)</dd>', li, re.S)
+            out.append({"source": "melon", "kind": "ticket", "id": f"melon:{a.group(1)}",
+                        "url": f"https://ticket.melon.com/csoon/detail.htm?csoonId={a.group(1)}",
+                        "title": re.sub(r"\s+", " ", unescape(a.group(2))).strip()[:200],
+                        "open": dt16(d.group(1) if d else ""), "exclusive": ("단독판매" in li) or None,
+                        "created_at": d10(reg.group(1)) if reg else None,
+                        "signals": {"views": num(v.group(1)) if v else None}})
+    return out
+
+
+def src_nol(state):
+    """NOL 티켓(구 인터파크) 오픈예정 — 페이지에 실린 Next.js RSC 페이로드의 공지 객체를 그대로 읽는다."""
+    h = fetch("https://nol.yanolja.com/ticket/display/upcoming")
+    if not h:
+        return []
+    chunks = []
+    for m in re.finditer(r"self\.__next_f\.push\((\[.*?\])\)</script>", h, re.S):
+        try:
+            a = json.loads(m.group(1))
+        except Exception:
+            continue
+        if len(a) > 1 and isinstance(a[1], str):
+            chunks.append(a[1])
+    s, dec, seen, out = "".join(chunks), json.JSONDecoder(), set(), []
+    for m in re.finditer(r'\{"ticket_dates":', s):
+        try:
+            o, _ = dec.raw_decode(s, m.start())
+        except Exception:
+            continue
+        if o.get("id") in seen:
+            continue
+        seen.add(o.get("id"))
+        dates = o.get("ticket_dates") or []
+        gen = [d for d in dates if d.get("ticket_open_type") == 1] or dates
+        code = o.get("goods_code")
+        out.append({"source": "nol", "kind": "ticket", "id": f"nol:{o.get('id')}",
+                    "url": f"https://nol.yanolja.com/ticket/products/{code}" if code else "https://nol.yanolja.com/ticket/display/upcoming",
+                    "title": str(o.get("title") or "")[:200], "open": dt16(gen[0].get("ticket_open_date")) if gen else None,
+                    "presale": [{"name": d.get("ticket_other_open_name") or d.get("ticket_open_type_name"), "at": dt16(d.get("ticket_open_date"))}
+                                for d in dates if d not in gen[:1]] or None,
+                    "open_type": o.get("open_type_name"), "genre": o.get("goods_genre_name"),
+                    "venue": str(o.get("venue_name") or "").strip()[:160],
+                    "start": o.get("goods_start_date"), "end": o.get("goods_end_date"),
+                    "created_at": o.get("created_at"), "signals": {"views": o.get("view_count")}})
+    return out
+
+
 SOURCES = [
+    ("nol", src_nol),
+    ("yes24", src_yes24),
+    ("melon", src_melon),
     ("popply", src_popply),
     ("popga", src_popga),
     ("lotteworldmall", src_lotteworldmall),
@@ -338,6 +445,8 @@ def main():
             else:
                 c["first_seen"] = stamp
                 c["last_seen"] = stamp
+                if c.get("signals"):
+                    c["signals_first"] = dict(c["signals"])  # 증가 속도를 보려고 처음 값을 남긴다
                 items[c["id"]] = c
                 new += 1
         stats[name] = {"got": len(got), "new": new}
