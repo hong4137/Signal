@@ -507,12 +507,24 @@ def main():
             done.append(e)
     done.sort(key=lambda e: e["date"], reverse=True)
     manual = load(os.path.join(DATA, "sports_manual.json"), {}) or {}
+    # 반자동 칸 중 pick=true(V리그 큰 경기 등 — 편집 루틴이 보도로 확정한 것)는 '이번 주 볼 경기' 카드로도 올린다
+    have = {p["id"] for p in picks}
+    for m in manual.get("events", []):
+        try:
+            t = kst(m["date"])
+        except Exception:
+            continue
+        if m.get("pick") and m.get("verified") and m.get("id") not in have and start <= t < start + timedelta(days=7):
+            ev = dict(m, src="manual", state="pre", kst=t.strftime("%Y-%m-%d %H:%M"))
+            ev.setdefault("why", []); ev.setdefault("stars", 2); ev.setdefault("path", "volleyball/kovo")
+            picks.append(ev)
+    picks.sort(key=lambda e: e["date"])
     out = {"updated": now.strftime("%Y-%m-%d %H:%M KST"), "source": "ESPN (비공식 공개 API)",
            "picks": picks, "results": done, "manual": manual.get("events", [])}
     if not picks and prev.get("picks"):
         print("! 픽 0건 — 지난 데이터 유지", file=sys.stderr); return
     io.open(os.path.join(DATA, "sports.json"), "w", encoding="utf-8").write(json.dumps(out, ensure_ascii=False, indent=1))
-    write_ics(picks + [m for m in manual.get("events", []) if m.get("verified")])
+    write_ics(picks + [m for m in manual.get("events", []) if m.get("verified") and m.get("id") not in {p["id"] for p in picks}])
     print("픽 %d · 결과 %d" % (len(picks), len(done)))
     for p in picks:
         print(" ", "★" * p["stars"], p["kst"], p["league"], p.get("title"), "|", " · ".join(p["why"]))

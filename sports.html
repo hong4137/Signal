@@ -254,7 +254,7 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
   <section><h2>이번 주 볼 경기 <span>한국 시간 · 눌러서 자세히</span></h2><div class="viewbar"><div class="filters" id="filters"></div><div class="seg" role="group" aria-label="정렬"><button type="button" data-v="time" aria-pressed="true">시간순</button><button type="button" data-v="sport" aria-pressed="false">종목순</button></div></div><div id="picks"></div></section>
   <section><h2>이번 주 문화 <span>개봉 대작 · 중요한 공연 · 예매 오픈</span></h2><div class="cul" id="culture"></div></section>
   <section><h2>지난 경기 결과 <span>스포일러 가림 — 눌러야 보입니다</span></h2><div id="results"></div></section>
-  <section class="quiet"><h2>KBO · LCK</h2><ul id="manual"></ul></section>
+  <section class="quiet"><h2>KBO · LCK · V리그</h2><ul id="manual"></ul></section>
   <footer>경기 데이터 ESPN · 국내 중계처는 시즌 편성 기준(바뀔 수 있음) · 시각은 모두 한국 시간.<br>
     캘린더 구독: 구글 캘린더 › 다른 캘린더 › URL로 추가 › <code>https://signal.sharktalk.co.kr/data/sports.ics</code></footer>
 </div>
@@ -289,9 +289,9 @@ const teamLine = t => t ? `<b>${esc(t.ko)}</b>${t.rank ? ` ${esc(t.rank)}위` : 
 const SP = {soccer:['⚽','축구','#16A35F'], f1:['🏎️','F1','#E10600'], tennis:['🎾','테니스','#B7C400'], baseball:['⚾','야구','#2563EB'],
   basketball:['🏀','NBA','#F97316'], golf:['⛳','골프','#0D9488'], mma:['🥊','격투기','#B91C1C'], nfl:['🏈','미식축구','#8B5E34'],
   movie:['🎬','개봉','#9333EA'], show:['🎤','공연','#DB2777'], exhibit:['🖼️','전시','#0EA5E9'], ticket:['🎟️','예매 오픈','#E11D48'],
-  kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
+  volleyball:['🏐','배구','#F59E0B'], kbo:['⚾','KBO','#2563EB'], lck:['🎮','LCK','#7C3AED'], etc:['🏅','기타','#6B7280']};
 const sportOf = p => p.sport || p.type || ({soccer:'soccer',racing:'f1',tennis:'tennis',baseball:'baseball',basketball:'basketball',golf:'golf',mma:'mma',football:'nfl'})[(p.path||'').split('/')[0]] || 'etc';
-const SP_ORDER = ['soccer','f1','tennis','basketball','baseball','golf','mma','nfl','etc','movie','show','exhibit','ticket'];
+const SP_ORDER = ['soccer','f1','tennis','basketball','baseball','volleyball','golf','mma','nfl','etc','movie','show','exhibit','ticket'];
 const spIcon = k => k === 'f1' ? '<b class="f1i">F1</b>' : (SP[k] || SP.etc)[0];
 const spRank = k => { const i = SP_ORDER.indexOf(k); return i < 0 ? 99 : i; };
 const spBadge = p => `<span class="spb" aria-hidden="true">${spIcon(sportOf(p))}</span>`;
