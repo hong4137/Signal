@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12 04:32 KST",
+ "updated": "2026-10-12 09:30 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
   {
@@ -9,13 +9,12 @@
    "name": "Los Angeles Dodgers at Milwaukee Brewers",
    "date": "2026-10-12T00:00Z",
    "kst": "2026-10-12 09:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "In Progress",
    "note": "NLCS - Game 1",
    "season": "post-season",
    "us_tv": [
-    "Fox",
-    "FS1"
+    "Fox"
    ],
    "venue": "American Family Field",
    "tv": "국내 SPOTV · 영국 TNT Sports · 미국 Fox",
@@ -27,8 +26,7 @@
     "id": "8",
     "score": "0",
     "winner": null,
-    "record": "103-59",
-    "form": "승승승패승"
+    "record": "103-59"
    },
    "away": {
     "name": "Los Angeles Dodgers",
@@ -37,8 +35,7 @@
     "id": "19",
     "score": "0",
     "winner": null,
-    "record": "100-62",
-    "form": "승승패승승"
+    "record": "100-62"
    },
    "title": "밀워키 vs LA 다저스",
    "kp": {
@@ -68,32 +65,7 @@
       }
      ]
     },
-    "leaders": [
-     {
-      "team": "밀워키",
-      "cat": "Batting Average",
-      "who": "Jackson Chourio",
-      "val": ".291"
-     },
-     {
-      "team": "밀워키",
-      "cat": "Home Runs",
-      "who": "Jake Bauers",
-      "val": "26"
-     },
-     {
-      "team": "LA 다저스",
-      "cat": "Batting Average",
-      "who": "Freddie Freeman",
-      "val": ".288"
-     },
-     {
-      "team": "LA 다저스",
-      "cat": "Home Runs",
-      "who": "Shohei Ohtani",
-      "val": "30"
-     }
-    ],
+    "leaders": [],
     "injuries": [
      {
       "team": "밀워키",
@@ -136,18 +108,14 @@
       "status": "60-Day-IL"
      }
     ],
-    "predictor": {
-     "home": "58.2",
-     "away": "41.8"
-    },
     "preview": [
+     {
+      "title": "2026 NLCS Game 1: Live updates, analysis from Dodgers-Brewers",
+      "url": "https://www.espn.com/mlb/story/_/id/50158797/mlb-2026-nlcs-game-1-dodgers-brewers-lineups-updates-analysis-takeaways"
+     },
      {
       "title": "Dodgers keep Miguel Rojas on NLCS roster; Brewers hold steady",
       "url": "https://www.espn.com/mlb/story/_/id/50158235/dodgers-keep-miguel-rojas-nlcs-roster-brewers-hold-steady"
-     },
-     {
-      "title": "Every team's odds to win the 2026 World Series: Dodgers still favorites",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
      }
     ]
    },
@@ -383,7 +351,12 @@
      "home": "59.5",
      "away": "40.5"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Guardians, after late night, to face rested Rays in ALCS",
+      "url": "https://www.espn.com/mlb/story/_/id/50162624/tampa-bay-rays-cleveland-guardians-take-contrasting-paths-alcs"
+     }
+    ]
    },
    "series": [
     {
@@ -619,17 +592,17 @@
     "injuries": [
      {
       "team": "LA 레이커스",
+      "who": "Walker Kessler",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "LA 레이커스",
       "who": "Ziaire Williams",
       "status": "Day-To-Day"
      },
      {
       "team": "LA 레이커스",
       "who": "Arthur Kaluma",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "LA 레이커스",
-      "who": "Walker Kessler",
       "status": "Day-To-Day"
      },
      {
@@ -655,8 +628,8 @@
     ],
     "preview": [
      {
-      "title": "Sacramento Kings vs. Golden State Warriors: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50153993/game-highlights"
+      "title": "Lakers center Walker Kessler (finger) nears preseason debut",
+      "url": "https://www.espn.com/nba/story/_/id/50161378/lakers-center-walker-kessler-finger-nears-preseason-debut"
      }
     ]
    },
@@ -705,7 +678,7 @@
     "record": "1-0-0",
     "rank": "11",
     "pts": "3",
-    "form": "승승승승무"
+    "form": "승승승무승"
    },
    "away": {
     "name": "FC Porto",
@@ -792,7 +765,7 @@
     "record": "1-2-2",
     "rank": "13",
     "pts": "5",
-    "form": "무승무승승"
+    "form": "승무승승패"
    },
    "away": {
     "name": "Mainz",
@@ -1125,8 +1098,8 @@
     "id": "34",
     "score": "0",
     "winner": null,
-    "record": "0-4",
-    "form": "패패패패패"
+    "record": "1-4",
+    "form": "패패패패승"
    },
    "title": "Jacksonville Jaguars vs Houston Texans",
    "score": 12,
@@ -1183,8 +1156,13 @@
      },
      {
       "team": "Houston Texans",
+      "who": "Jalen Pitre",
+      "status": "Questionable"
+     },
+     {
+      "team": "Houston Texans",
       "who": "David Montgomery",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "team": "Houston Texans",
@@ -1195,27 +1173,13 @@
       "team": "Houston Texans",
       "who": "Collin Wright",
       "status": "Out"
-     },
-     {
-      "team": "Houston Texans",
-      "who": "Nate Thomas",
-      "status": "Out"
      }
     ],
     "predictor": {
      "home": "63.9",
      "away": "35.8"
     },
-    "preview": [
-     {
-      "title": "Sirianni's call leads to dramatic winning kick by Jaguars' Little",
-      "url": "https://www.espn.com/nfl/story/_/id/50159690/sirianni-call-leads-dramatic-winning-kick-jaguars-little"
-     },
-     {
-      "title": "Texans RB David Montgomery ruled out with groin injury",
-      "url": "https://www.espn.com/nfl/story/_/id/50159624/texans-rb-david-montgomery-ruled-groin-injury"
-     }
-    ]
+    "preview": []
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(추정)",
@@ -1335,12 +1299,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Andy Burnham to publish Man City mayoral dealings after intervention draws criticism",
-      "url": "https://www.espn.com/soccer/story/_/id/50159720/andy-burnham-publish-man-city-mayoral-dealings"
+      "title": "City trounce Liverpool in first game since guilty verdict",
+      "url": "https://www.espn.com/video/clip/_/id/50161470/city-trounce-liverpool-first-game-guilty-verdict"
      },
      {
-      "title": "Erling Haaland: 'I'm so proud' of Man City after win at Liverpool",
-      "url": "https://www.espn.com/soccer/story/_/id/50159637/erling-haaland-proud-man-city-win-liverpool"
+      "title": "Transfer rumors, news: Arsenal, Chelsea, Liverpool want Roma youngster",
+      "url": "https://www.espn.com/soccer/story/_/id/50155123/transfer-rumors-news-manchester-city-tottenham-hotspur-eye-atletico-madrid-giuliano-simeone"
      }
     ],
     "result": {
@@ -1621,10 +1585,6 @@
      {
       "title": "Kings C Maxime Raynaud (knee) to be reevaluated in 2 weeks",
       "url": "https://www.espn.com/nba/story/_/id/50159419/kings-c-maxime-raynaud-knee-reevaluated-2-weeks"
-     },
-     {
-      "title": "Sacramento Kings vs. Golden State Warriors: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50153993/game-highlights"
      }
     ],
     "result": {
