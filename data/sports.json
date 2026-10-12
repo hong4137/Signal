@@ -1,64 +1,7 @@
 {
- "updated": "2026-10-12 19:41 KST",
+ "updated": "2026-10-13 06:14 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "ten-184941",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP 상하이 마스터스",
-   "name": "Carlos Alcaraz vs Zizou Bergs",
-   "title": "알카라스 vs Zizou Bergs",
-   "date": "2026-10-12T10:10Z",
-   "kst": "2026-10-12 19:10",
-   "state": "in",
-   "status": "In Progress",
-   "note": "3회전",
-   "venue": "",
-   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "score": 73,
-   "why": [
-    "알카라스 경기",
-    "한국 저녁 시간"
-   ],
-   "stars": 3,
-   "tv_kr": "티빙 · tvN SPORTS(추정)",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "tvN SPORTS(추정)"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Tennis Channel"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
-  },
   {
    "id": "401908031",
    "path": "baseball/mlb",
@@ -66,8 +9,8 @@
    "name": "Los Angeles Dodgers at Milwaukee Brewers",
    "date": "2026-10-12T21:00Z",
    "kst": "2026-10-13 06:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "In Progress",
    "note": "NLCS - Game 2",
    "season": "post-season",
    "us_tv": [
@@ -84,29 +27,26 @@
     "id": "8",
     "score": "0",
     "winner": null,
-    "record": "103-59",
-    "form": "승승패승승"
+    "record": "103-59"
    },
    "away": {
     "name": "Los Angeles Dodgers",
     "ko": "LA 다저스",
     "abbr": "LAD",
     "id": "19",
-    "score": "0",
+    "score": "1",
     "winner": null,
-    "record": "100-62",
-    "form": "승패승승패"
+    "record": "100-62"
    },
    "title": "밀워키 vs LA 다저스",
    "kp": {
     "ko": "김혜성",
     "opp": "밀워키"
    },
-   "score": 89,
+   "score": 84,
    "why": [
     "김혜성 출전 팀",
-    "리그 챔피언십시리즈",
-    "박빙 예상"
+    "리그 챔피언십시리즈"
    ],
    "detail": {
     "h2h": {
@@ -126,32 +66,7 @@
       }
      ]
     },
-    "leaders": [
-     {
-      "team": "밀워키",
-      "cat": "Batting Average",
-      "who": "Jackson Chourio",
-      "val": ".291"
-     },
-     {
-      "team": "밀워키",
-      "cat": "Home Runs",
-      "who": "Jake Bauers",
-      "val": "26"
-     },
-     {
-      "team": "LA 다저스",
-      "cat": "Batting Average",
-      "who": "Freddie Freeman",
-      "val": ".288"
-     },
-     {
-      "team": "LA 다저스",
-      "cat": "Home Runs",
-      "who": "Shohei Ohtani",
-      "val": "30"
-     }
-    ],
+    "leaders": [],
     "injuries": [
      {
       "team": "밀워키",
@@ -194,18 +109,14 @@
       "status": "60-Day-IL"
      }
     ],
-    "predictor": {
-     "home": "49.6",
-     "away": "50.4"
-    },
     "preview": [
      {
-      "title": "Turang homers and Milwaukee's bullpen delivers as the Brewers beat the Dodgers 2-1 in NLCS opener",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908030"
+      "title": "LCS Day 2: Lineups, updates from Dodgers-Brewers, Guardians-Rays",
+      "url": "https://www.espn.com/mlb/story/_/id/50166341/mlb-2026-nlcs-game-2-alcs-game-1-dodgers-brewers-rays-guardians-lineups-updates-analysis-takeaways"
      },
      {
-      "title": "Brewers lead Dodgers 1-0 ahead of NLCS Game 2",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908031"
+      "title": "The Dodgers need to find offensive balance",
+      "url": "https://www.espn.com/video/clip/_/id/50167688/the-dodgers-need-find-offensive-balance"
      }
     ]
    },
@@ -225,6 +136,10 @@
     {
      "kst": "2026-10-17 10:00",
      "note": "NLCS - Game 5 If Necessary"
+    },
+    {
+     "kst": "2026-10-19 09:00",
+     "note": "NLCS - Game 6 If Necessary"
     }
    ],
    "stars": 3,
@@ -377,13 +292,17 @@
      }
     ],
     "predictor": {
-     "home": "59.5",
-     "away": "40.5"
+     "home": "63.8",
+     "away": "36.2"
     },
     "preview": [
      {
-      "title": "Rays and Guardians play in ALCS Game 1",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908023"
+      "title": "LCS Day 2: Lineups, updates from Dodgers-Brewers, Guardians-Rays",
+      "url": "https://www.espn.com/mlb/story/_/id/50166341/mlb-2026-nlcs-game-2-alcs-game-1-dodgers-brewers-rays-guardians-lineups-updates-analysis-takeaways"
+     },
+     {
+      "title": "Guardians, Rays make changes to AL Championship Series rosters",
+      "url": "https://www.espn.com/mlb/story/_/id/50166616/guardians-rays-make-changes-al-championship-series-rosters"
      }
     ]
    },
@@ -409,7 +328,7 @@
      "note": "ALCS - Game 5 If Necessary"
     }
    ],
-   "stars": 1,
+   "stars": 2,
    "tv_kr": "SPOTV · SPOTV NOW",
    "tv_world": [
     {
@@ -527,9 +446,18 @@
      }
     ],
     "injuries": [],
-    "preview": []
+    "preview": [
+     {
+      "title": "Carrick backs Man United for UCL rebound amid challenging spell",
+      "url": "https://www.espn.com/soccer/story/_/id/50167880/carrick-backs-man-united-ucl-rebound-tough-spell"
+     },
+     {
+      "title": "Simeone: Manchester United are a strong team despite recent results",
+      "url": "https://www.espn.com/video/clip/_/id/50165977/manchester-united-strong-team-recent-results"
+     }
+    ]
    },
-   "stars": 2,
+   "stars": 3,
    "tv_kr": "SPOTV · SPOTV NOW",
    "tv_world": [
     {
@@ -646,6 +574,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Al Horford",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Kristaps Porzingis",
       "status": "Day-To-Day"
      },
@@ -660,12 +593,7 @@
       "status": "Out"
      }
     ],
-    "preview": [
-     {
-      "title": "Lakers center Walker Kessler (finger) nears preseason debut",
-      "url": "https://www.espn.com/nba/story/_/id/50161378/lakers-center-walker-kessler-finger-nears-preseason-debut"
-     }
-    ]
+    "preview": []
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -688,91 +616,51 @@
    ]
   },
   {
-   "id": "401915408",
-   "path": "soccer/uefa.champions",
-   "league": "챔피언스리그",
-   "name": "FC Porto at Real Betis",
-   "date": "2026-10-14T19:00Z",
-   "kst": "2026-10-15 04:00",
+   "id": "ten-184945",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP 상하이 마스터스",
+   "name": "TBD vs TBD",
+   "title": "TBD vs TBD",
+   "date": "2026-10-17T04:00Z",
+   "kst": "2026-10-17 13:00",
    "state": "pre",
    "status": "Scheduled",
-   "note": "",
-   "season": "league-phase",
-   "us_tv": [],
-   "venue": "Estadio La Cartuja",
-   "tv": "영국 TNT Sports 6 · 스페인 Movistar+",
-   "sport": "soccer",
-   "home": {
-    "name": "Real Betis",
-    "ko": "레알 베티스",
-    "abbr": "BET",
-    "id": "244",
-    "score": "0",
-    "winner": false,
-    "record": "1-0-0",
-    "rank": "11",
-    "pts": "3",
-    "form": "승승승무승"
-   },
-   "away": {
-    "name": "FC Porto",
-    "ko": "포르투",
-    "abbr": "FCP",
-    "id": "437",
-    "score": "0",
-    "winner": false,
-    "record": "0-0-1",
-    "rank": "31",
-    "pts": "0",
-    "form": "승패승승승"
-   },
-   "title": "레알 베티스 vs 포르투",
-   "kp": {
-    "ko": "황인범",
-    "opp": "레알 베티스"
-   },
-   "score": 48,
-   "why": [
-    "황인범 출전 팀"
-   ],
-   "detail": {
-    "leaders": [
-     {
-      "team": "레알 베티스",
-      "cat": "Goals",
-      "who": "Marc Bartra",
-      "val": "1경기 · 2골"
-     },
-     {
-      "team": "레알 베티스",
-      "cat": "Assists",
-      "who": "Pablo Fornals",
-      "val": "1경기 · 1도움"
-     }
-    ],
-    "injuries": [],
-    "preview": []
-   },
-   "stars": 2,
-   "tv_kr": "SPOTV · SPOTV NOW",
+   "note": "4강",
+   "venue": "",
+   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
+   "time_tbc": true,
+   "score": 10,
+   "why": [],
+   "stars": 1,
+   "tv_kr": "티빙 · tvN SPORTS(추정)",
    "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "tvN SPORTS(추정)"
+    },
     {
      "country": "Great Britain",
      "label": "영국",
-     "ch": "TNT Sports 6"
+     "ch": "Sky Sports"
     },
     {
-     "country": "Spain",
-     "label": "스페인",
-     "ch": "Movistar+"
+     "country": "USA",
+     "label": "미국",
+     "ch": "Tennis Channel"
     },
     {
-     "country": "Qatar",
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "TSN"
+    },
+    {
+     "country": "MENA",
      "label": "아랍",
-     "ch": "beIN Sports HD 5"
+     "ch": "beIN SPORTS"
     }
-   ],
-   "tv_src": "https://www.livesoccertv.com/match/porto-vs-real-betis/2e0oj"
+   ]
   },
   {
    "id": "401884765",
@@ -818,9 +706,9 @@
     "ko": "황희찬",
     "opp": "마인츠"
    },
-   "score": 54,
+   "score": 60,
    "why": [
-    "황희찬 · 이재성 출전 팀",
+    "황희찬 · 이재성 · 홍현석 출전 팀",
     "한국 저녁 시간"
    ],
    "detail": {
@@ -989,6 +877,105 @@
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/west-ham-united-vs-swansea-city/1ez84"
+  },
+  {
+   "id": "401879262",
+   "path": "soccer/eng.1",
+   "league": "EPL",
+   "name": "Liverpool at Brentford",
+   "date": "2026-10-17T14:00Z",
+   "kst": "2026-10-17 23:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "2026-27-english-premier-league",
+   "us_tv": [],
+   "venue": "Gtech Community Stadium",
+   "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "soccer",
+   "home": {
+    "name": "Brentford",
+    "ko": "브렌트퍼드",
+    "abbr": "BRE",
+    "id": "337",
+    "score": "0",
+    "winner": false,
+    "record": "2-4-0",
+    "rank": "4",
+    "pts": "10",
+    "form": "무무승승무"
+   },
+   "away": {
+    "name": "Liverpool",
+    "ko": "리버풀",
+    "abbr": "LIV",
+    "id": "364",
+    "score": "0",
+    "winner": false,
+    "record": "2-3-1",
+    "rank": "9",
+    "pts": "9",
+    "form": "승무승승패"
+   },
+   "title": "브렌트퍼드 vs 리버풀",
+   "kp": {
+    "ko": "김지수",
+    "opp": "리버풀"
+   },
+   "score": 58,
+   "why": [
+    "김지수 출전 팀",
+    "한국 저녁 시간"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "리버풀 우세 (3승 1무 1패)",
+     "last": [
+      {
+       "date": "2026-05-24",
+       "score": "리버풀 1 브렌트퍼드 1"
+      },
+      {
+       "date": "2025-10-25",
+       "score": "브렌트퍼드 3 리버풀 2"
+      },
+      {
+       "date": "2025-01-18",
+       "score": "브렌트퍼드 0 리버풀 2"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "브렌트퍼드",
+      "cat": "Goals",
+      "who": "Kevin Schade",
+      "val": "6경기 · 3골"
+     },
+     {
+      "team": "브렌트퍼드",
+      "cat": "Assists",
+      "who": "Keane Lewis-Potter",
+      "val": "6경기 · 1도움"
+     },
+     {
+      "team": "리버풀",
+      "cat": "Goals",
+      "who": "Alexander Isak",
+      "val": "5경기 · 4골"
+     },
+     {
+      "team": "리버풀",
+      "cat": "Assists",
+      "who": "Cody Gakpo",
+      "val": "5경기 · 3도움"
+     }
+    ],
+    "injuries": [],
+    "preview": []
+   },
+   "stars": 2,
+   "tv_kr": "쿠팡플레이(스포츠패스)"
   },
   {
    "id": "401884772",
@@ -1183,6 +1170,11 @@
     "injuries": [
      {
       "team": "Jacksonville Jaguars",
+      "who": "Eric Murray",
+      "status": "Out"
+     },
+     {
+      "team": "Jacksonville Jaguars",
       "who": "Anton Harrison",
       "status": "Questionable"
      },
@@ -1197,29 +1189,24 @@
       "status": "Questionable"
      },
      {
-      "team": "Jacksonville Jaguars",
-      "who": "Eric Murray",
-      "status": "Out"
-     },
-     {
       "team": "Houston Texans",
       "who": "Jalen Pitre",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "team": "Houston Texans",
       "who": "David Montgomery",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "team": "Houston Texans",
-      "who": "Marlin Klein",
-      "status": "Out"
+      "who": "Braden Smith",
+      "status": "Injured Reserve"
      },
      {
       "team": "Houston Texans",
-      "who": "Collin Wright",
-      "status": "Out"
+      "who": "Tank Dell",
+      "status": "Injured Reserve"
      }
     ],
     "predictor": {
@@ -1250,6 +1237,40 @@
   }
  ],
  "results": [
+  {
+   "id": "ten-184941",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP 상하이 마스터스",
+   "name": "Carlos Alcaraz vs Zizou Bergs",
+   "title": "알카라스 vs Zizou Bergs",
+   "date": "2026-10-12T10:10Z",
+   "kst": "2026-10-12 19:10",
+   "state": "post",
+   "status": "Final",
+   "note": "3회전",
+   "venue": "",
+   "tv": "티빙 · tvN SPORTS(추정)",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "detail": {
+    "result": {
+     "score": "Zizou Bergs 승 7-5 7-6"
+    }
+   },
+   "score": 73,
+   "why": [
+    "알카라스 경기",
+    "한국 저녁 시간"
+   ],
+   "stars": 3
+  },
   {
    "id": "401908030",
    "path": "baseball/mlb",
@@ -1359,12 +1380,12 @@
     ],
     "preview": [
      {
-      "title": "Turang homers and Milwaukee's bullpen delivers as the Brewers beat the Dodgers 2-1 in NLCS opener",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908030"
+      "title": "LCS Day 2: Lineups, updates from Dodgers-Brewers, Guardians-Rays",
+      "url": "https://www.espn.com/mlb/story/_/id/50166341/mlb-2026-nlcs-game-2-alcs-game-1-dodgers-brewers-rays-guardians-lineups-updates-analysis-takeaways"
      },
      {
-      "title": "Brewers lead Dodgers 1-0 ahead of NLCS Game 2",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908031"
+      "title": "The Dodgers need to find offensive balance",
+      "url": "https://www.espn.com/video/clip/_/id/50167688/the-dodgers-need-find-offensive-balance"
      }
     ],
     "result": {
@@ -1474,12 +1495,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Man City 'more together than ever' after chants about charges - Elliot Anderson",
-      "url": "https://www.espn.com/soccer/story/_/id/50164848/man-city-more-together-ever-chants-charges-elliot-anderson"
+      "title": "Steven Gerrard says Man City must be stripped of titles after guilty verdict: 'Make them suffer'",
+      "url": "https://www.espn.com/soccer/story/_/id/50166551/steven-gerrard-says-man-city-stripped-titles-guilty-verdict-make-suffer"
      },
      {
-      "title": "Liverpool must drop Florian Wirtz - Jamie Carragher",
-      "url": "https://www.espn.com/soccer/story/_/id/50164725/liverpool-drop-florian-wirtz-jamie-carragher"
+      "title": "Man City win at angry Anfield; Mourinho overshadows ugly Madrid win",
+      "url": "https://www.espn.com/soccer/story/_/id/50163474/manchester-city-liverpool-premier-league-charges-jose-mourinho-real-madrid-vinicius-junior-analysis"
      }
     ],
     "result": {
@@ -1722,6 +1743,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Al Horford",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Kristaps Porzingis",
       "status": "Day-To-Day"
      },
@@ -1737,12 +1763,7 @@
      },
      {
       "team": "Sacramento Kings",
-      "who": "Maxime Raynaud",
-      "status": "Out"
-     },
-     {
-      "team": "Sacramento Kings",
-      "who": "Dylan Cardwell",
+      "who": "Malik Monk",
       "status": "Day-To-Day"
      },
      {
@@ -1752,16 +1773,16 @@
      },
      {
       "team": "Sacramento Kings",
-      "who": "Malik Monk",
+      "who": "Dylan Cardwell",
       "status": "Day-To-Day"
-     }
-    ],
-    "preview": [
+     },
      {
-      "title": "Kings C Maxime Raynaud (knee) to be reevaluated in 2 weeks",
-      "url": "https://www.espn.com/nba/story/_/id/50159419/kings-c-maxime-raynaud-knee-reevaluated-2-weeks"
+      "team": "Sacramento Kings",
+      "who": "Maxime Raynaud",
+      "status": "Out"
      }
     ],
+    "preview": [],
     "result": {
      "score": "골든스테이트 111 : 106 Sacramento Kings",
      "goals": [],
@@ -1772,314 +1793,61 @@
      }
     }
    }
-  },
-  {
-   "id": "401882856",
-   "path": "soccer/esp.1",
-   "league": "라리가",
-   "name": "Atlético Madrid at Alavés",
-   "date": "2026-10-10T14:15Z",
-   "kst": "2026-10-10 23:15",
-   "state": "post",
-   "status": "Full Time",
-   "note": "",
-   "season": "2026-27-laliga",
-   "us_tv": [
-    "ESPN Deportes"
-   ],
-   "venue": "Mendizorrotza",
-   "tv": "쿠팡플레이(스포츠패스)",
-   "sport": "soccer",
-   "home": {
-    "name": "Alavés",
-    "ko": "알라베스",
-    "abbr": "ALA",
-    "id": "96",
-    "score": "1",
-    "winner": false,
-    "record": "3-2-3",
-    "rank": "7",
-    "pts": "11",
-    "form": "승승패패무"
-   },
-   "away": {
-    "name": "Atlético Madrid",
-    "ko": "아틀레티코 마드리드",
-    "abbr": "ATM",
-    "id": "1068",
-    "score": "2",
-    "winner": true,
-    "record": "6-1-1",
-    "rank": "2",
-    "pts": "19",
-    "form": "패패승승승"
-   },
-   "title": "알라베스 vs 아틀레티코 마드리드",
-   "kp": {
-    "ko": "이강인",
-    "opp": "알라베스"
-   },
-   "score": 74,
-   "why": [
-    "이강인 출전 팀",
-    "한국 저녁 시간",
-    "상위권 맞대결"
-   ],
-   "stars": 3,
-   "detail": {
-    "h2h": {
-     "summary": "아틀레티코 마드리드 우세 (2승 1무 2패)",
-     "last": [
-      {
-       "date": "2026-01-18",
-       "score": "아틀레티코 마드리드 1 알라베스 0"
-      },
-      {
-       "date": "2025-08-30",
-       "score": "알라베스 1 아틀레티코 마드리드 1"
-      },
-      {
-       "date": "2025-05-03",
-       "score": "알라베스 0 아틀레티코 마드리드 0"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "알라베스",
-      "cat": "Total Shots",
-      "who": "Ángel Pérez",
-      "val": "3"
-     },
-     {
-      "team": "알라베스",
-      "cat": "Accurate Passes",
-      "who": "Jonny",
-      "val": "42"
-     },
-     {
-      "team": "아틀레티코 마드리드",
-      "cat": "Total Shots",
-      "who": "Marcos Llorente",
-      "val": "3"
-     },
-     {
-      "team": "아틀레티코 마드리드",
-      "cat": "Accurate Passes",
-      "who": "Koke",
-      "val": "113"
-     }
-    ],
-    "injuries": [],
-    "preview": [],
-    "result": {
-     "score": "알라베스 1 : 2 아틀레티코 마드리드",
-     "goals": [
-      {
-       "min": "33'",
-       "text": "Goal! Alaves 0, Atletico Madrid 1. Alejandro Grimaldo (Atletico Madrid) left footed shot from the left side of the box to the centre of the "
-      },
-      {
-       "min": "45'+6'",
-       "text": "Goal! Alaves 1, Atletico Madrid 1. Lucas Boyé (Alaves) converts the penalty with a right footed shot to the centre of the goal."
-      },
-      {
-       "min": "87'",
-       "text": "Goal! Alaves 1, Atletico Madrid 2. Cristian Romero (Atletico Madrid) header from the right side of the six yard box to the bottom right corn"
-      }
-     ],
-     "korean": [
-      {
-       "ko": "이강인",
-       "starter": false,
-       "sub_in": true,
-       "goals": "0",
-       "assists": "0",
-       "shots": "0",
-       "played": true
-      }
-     ],
-     "video": {
-      "title": "Alavés vs. Atletico Madrid - Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50148452/alaves-vs-atletico-madrid-game-highlights"
-     }
-    }
-   }
-  },
-  {
-   "id": "401884777",
-   "path": "soccer/ger.1",
-   "league": "분데스리가",
-   "name": "Bayern Munich at FC Augsburg",
-   "date": "2026-10-10T13:30Z",
-   "kst": "2026-10-10 22:30",
-   "state": "post",
-   "status": "Full Time",
-   "note": "",
-   "season": "2026-27-german-bundesliga",
-   "us_tv": [],
-   "venue": "WWK Arena",
-   "tv": "쿠팡플레이(스포츠패스)",
-   "sport": "soccer",
-   "home": {
-    "name": "FC Augsburg",
-    "ko": "아우크스부르크",
-    "abbr": "FCA",
-    "id": "3841",
-    "score": "2",
-    "winner": false,
-    "record": "2-2-1",
-    "rank": "6",
-    "pts": "8",
-    "form": "승승무패무"
-   },
-   "away": {
-    "name": "Bayern Munich",
-    "ko": "바이에른 뮌헨",
-    "abbr": "MUN",
-    "id": "132",
-    "score": "2",
-    "winner": false,
-    "record": "3-2-0",
-    "rank": "3",
-    "pts": "11",
-    "form": "승무승승승"
-   },
-   "title": "아우크스부르크 vs 바이에른 뮌헨",
-   "kp": {
-    "ko": "김민재",
-    "opp": "아우크스부르크"
-   },
-   "score": 74,
-   "why": [
-    "김민재 출전 팀",
-    "한국 저녁 시간",
-    "상위권 맞대결"
-   ],
-   "stars": 3,
-   "detail": {
-    "h2h": {
-     "summary": "바이에른 뮌헨 우세 (4승 1패)",
-     "last": [
-      {
-       "date": "2026-01-24",
-       "score": "바이에른 뮌헨 1 아우크스부르크 2"
-      },
-      {
-       "date": "2025-08-30",
-       "score": "아우크스부르크 2 바이에른 뮌헨 3"
-      },
-      {
-       "date": "2025-04-04",
-       "score": "아우크스부르크 1 바이에른 뮌헨 3"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "아우크스부르크",
-      "cat": "Total Shots",
-      "who": "Robin Fellhauer",
-      "val": "3"
-     },
-     {
-      "team": "아우크스부르크",
-      "cat": "Accurate Passes",
-      "who": "Hennes Behrens",
-      "val": "25"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Total Shots",
-      "who": "Harry Kane",
-      "val": "8"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Accurate Passes",
-      "who": "Joshua Kimmich",
-      "val": "109"
-     }
-    ],
-    "injuries": [],
-    "preview": [
-     {
-      "title": "Bayern Munich salvage point at Augbsurg after conceding fastest ever Bundesliga goal",
-      "url": "http://www.espn.com/soccer/report/_/gameId/401884777"
-     },
-     {
-      "title": "Transfer rumors, news: Man United youngster Gabriel has Bayern Munich talks",
-      "url": "https://www.espn.com/soccer/story/_/id/50145785/transfer-rumors-news-manchester-united-youngster-jj-gabriel-bayern-munich-talks"
-     }
-    ],
-    "result": {
-     "score": "아우크스부르크 2 : 2 바이에른 뮌헨",
-     "goals": [
-      {
-       "min": "1'",
-       "text": "Goal! Augsburg 1, Bayern Munich 0. Robin Fellhauer (Augsburg) right footed shot from the centre of the box to the centre of the goal."
-      },
-      {
-       "min": "55'",
-       "text": "Goal! Augsburg 1, Bayern Munich 1. Ismael Saibari (Bayern Munich) right footed shot from the centre of the box to the bottom left corner. As"
-      },
-      {
-       "min": "64'",
-       "text": "Goal! Augsburg 2, Bayern Munich 1. Rodrigo Ribeiro (Augsburg) left footed shot from the centre of the box to the high centre of the goal."
-      },
-      {
-       "min": "80'",
-       "text": "Goal! Augsburg 2, Bayern Munich 2. Nathaniel Brown (Bayern Munich) left footed shot from very close range to the centre of the goal. Assiste"
-      }
-     ],
-     "korean": [
-      {
-       "ko": "김민재",
-       "starter": false,
-       "sub_in": false,
-       "goals": "0",
-       "assists": "0",
-       "shots": "0",
-       "played": false
-      }
-     ]
-    }
-   }
-  },
-  {
-   "id": "ten-184903",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP 상하이 마스터스",
-   "name": "Carlos Alcaraz vs Juan Manuel Cerundolo",
-   "title": "알카라스 vs 세룬돌로",
-   "date": "2026-10-10T11:15Z",
-   "kst": "2026-10-10 20:15",
-   "state": "post",
-   "status": "Final",
-   "note": "2회전",
-   "venue": "",
-   "tv": "티빙 · tvN SPORTS(추정)",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "detail": {
-    "result": {
-     "score": "알카라스 승 6-3 6-3"
-    }
-   },
-   "score": 73,
-   "why": [
-    "알카라스 경기",
-    "한국 저녁 시간"
-   ],
-   "stars": 2
   }
  ],
- "manual": []
+ "manual": [
+  {
+   "id": "kovo-2026-1031-m",
+   "sport": "volleyball",
+   "league": "V리그 남자부",
+   "title": "대한항공 vs 현대캐피탈",
+   "date": "2026-10-31T05:00:00Z",
+   "kst": "2026-10-31 14:00",
+   "venue": "인천 계양체육관",
+   "tv": "중계 편성 미발표",
+   "why": [
+    "개막전",
+    "지난 시즌 챔피언결정전 재대결"
+   ],
+   "stars": 3,
+   "pick": true,
+   "verified": true,
+   "source": "https://m.news.nate.com/view/20260818n27653"
+  },
+  {
+   "id": "kovo-2026-1031-w",
+   "sport": "volleyball",
+   "league": "V리그 여자부",
+   "title": "GS칼텍스 vs 한국도로공사",
+   "date": "2026-10-31T08:00:00Z",
+   "kst": "2026-10-31 17:00",
+   "venue": "서울 장충체육관",
+   "tv": "중계 편성 미발표",
+   "why": [
+    "개막전",
+    "지난 시즌 챔피언결정전 재대결"
+   ],
+   "stars": 3,
+   "pick": true,
+   "verified": true,
+   "source": "https://m.news.nate.com/view/20260818n27653"
+  },
+  {
+   "id": "kovo-2026-1101-w",
+   "sport": "volleyball",
+   "league": "V리그 여자부",
+   "title": "흥국생명 vs SOOP",
+   "date": "2026-11-01T07:00:00Z",
+   "kst": "2026-11-01 16:00",
+   "venue": "인천 삼산월드체육관",
+   "tv": "중계 편성 미발표",
+   "why": [
+    "신생팀 SOOP 창단 첫 경기"
+   ],
+   "stars": 2,
+   "pick": true,
+   "verified": true,
+   "source": "https://sports.news.nate.com/view/20260818n23466"
+  }
+ ]
 }
