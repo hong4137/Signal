@@ -128,85 +128,113 @@
    "ko": "손흥민",
    "en": "Son Heung-Min",
    "team": "LAFC",
-   "tier": 1
+   "tier": 1,
+   "team_id": "18966",
+   "path": "soccer/usa.1"
   },
   {
    "ko": "이강인",
    "en": "Lee Kang-In",
    "team": "Atlético Madrid",
-   "tier": 1
+   "tier": 1,
+   "team_id": "1068",
+   "path": "soccer/esp.1"
   },
   {
    "ko": "김민재",
    "en": "Kim Min-Jae",
    "team": "Bayern Munich",
-   "tier": 1
+   "tier": 1,
+   "team_id": "132",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "황희찬",
    "en": "Hwang Hee-Chan",
    "team": "Schalke 04",
-   "tier": 2
+   "tier": 2,
+   "team_id": "133",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "이재성",
    "en": "Lee Jae-Sung",
    "team": "Mainz",
-   "tier": 2
+   "tier": 2,
+   "team_id": "2950",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "설영우",
    "en": "Seol Young-Woo",
    "team": "FC Augsburg",
-   "tier": 2
+   "tier": 2,
+   "team_id": "3841",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "정우영",
    "en": "Jeong Woo-Yeong",
    "team": "Union Berlin",
-   "tier": 2
+   "tier": 2,
+   "team_id": "598",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "옌스 카스트로프",
    "en": "Jens Castrop",
    "team": "Borussia Mönchengladbach",
-   "tier": 2
+   "tier": 2,
+   "team_id": "268",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "황인범",
    "en": "Hwang In-Beom",
    "team": "FC Porto",
-   "tier": 2
+   "tier": 2,
+   "team_id": "437",
+   "path": "soccer/por.1"
   },
   {
    "ko": "오현규",
    "en": "Oh Hyeon-Gyu",
    "team": "Besiktas",
-   "tier": 2
+   "tier": 2,
+   "team_id": "1895",
+   "path": "soccer/tur.1"
   },
   {
    "ko": "배준호",
    "en": "Bae Jun-Ho",
    "team": "Stoke City",
-   "tier": 2
+   "tier": 2,
+   "team_id": "336",
+   "path": "soccer/eng.2"
   },
   {
    "ko": "엄지성",
    "en": "Eom Ji-Sung",
    "team": "Swansea City",
-   "tier": 2
+   "tier": 2,
+   "team_id": "318",
+   "path": "soccer/eng.2"
   },
   {
    "ko": "백승호",
    "en": "Paik Seung-Ho",
    "team": "Birmingham City",
-   "tier": 2
+   "tier": 2,
+   "team_id": "392",
+   "path": "soccer/eng.2"
   },
   {
    "ko": "조규성",
    "en": "Cho Gue-Sung",
    "team": "FC Midtjylland",
-   "tier": 2
+   "tier": 2,
+   "team_id": "572",
+   "path": "soccer/den.1"
   },
   {
    "ko": "이정후",
@@ -218,7 +246,9 @@
    "ko": "김하성",
    "en": "Ha-Seong Kim",
    "team": "Atlanta Braves",
-   "tier": 2
+   "tier": 2,
+   "team_id": "15",
+   "path": "baseball/mlb"
   },
   {
    "ko": "김혜성",
@@ -233,43 +263,57 @@
    "tier": 2,
    "aka": [
     "Sung-Mun Song"
-   ]
+   ],
+   "team_id": "25",
+   "path": "baseball/mlb"
   },
   {
    "ko": "김지수",
    "en": "Kim Ji-Soo",
    "team": "Brentford",
-   "tier": 2
+   "tier": 2,
+   "team_id": "337",
+   "path": "soccer/eng.1"
   },
   {
    "ko": "홍현석",
    "en": "Hong Hyun-Seok",
    "team": "Mainz",
-   "tier": 2
+   "tier": 2,
+   "team_id": "2950",
+   "path": "soccer/ger.1"
   },
   {
    "ko": "양현준",
    "en": "Yang Hyun-Jun",
    "team": "Celtic",
-   "tier": 2
+   "tier": 2,
+   "team_id": "256",
+   "path": "soccer/sco.1"
   },
   {
    "ko": "송민규",
    "en": "Song Min-Kyu",
    "team": "C.D. Nacional",
-   "tier": 2
+   "tier": 2,
+   "team_id": "3472",
+   "path": "soccer/por.1"
   },
   {
    "ko": "황의조",
    "en": "Hwang Ui-Jo",
    "team": "Alanyaspor",
-   "tier": 2
+   "tier": 2,
+   "team_id": "9078",
+   "path": "soccer/tur.1"
   },
   {
    "ko": "김기희",
    "en": "Kim Kee-Hee",
    "team": "Seattle Sounders FC",
-   "tier": 2
+   "tier": 2,
+   "team_id": "9726",
+   "path": "soccer/usa.1"
   }
  ],
  "derbies": [
@@ -525,5 +569,5 @@
  "path_cap": {
   "baseball/mlb": 2
  },
- "_players": "players = 챙기는 한국 선수(설정이 기본). 매주 ESPN 명단(국적·MLB 는 출생지)으로 팀 번호·이적을 맞추고, 설정에 없는 한국 국적 선수는 자동으로 더한다(data/korean_players.json). aka = ESPN 의 다른 표기."
+ "_players": "players = 챙기는 한국 선수. 2026-10-12 ESPN 팀 명단(국적·MLB 출생지)으로 한 번 조사해 팀 번호(team_id)·리그(path)를 적어 둠 — 팀 이름 표기가 ESPN 안에서도 달라 번호로도 맞춘다. 이적은 사용자 지적·편집 때 고친다. aka = ESPN 의 다른 표기."
 }

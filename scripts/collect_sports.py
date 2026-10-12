@@ -196,67 +196,6 @@ def tennis_events(path, days):
     return out
 
 
-# ── 한국 선수 자동 찾기 — 주 1회 ESPN 팀 명단에서 국적 South Korea 를 훑는다(이적·새 선수를 놓치지 않게, 2026-10-12 설영우 누락) ──
-ROSTER_LEAGUES = ["soccer/eng.1", "soccer/eng.2", "soccer/esp.1", "soccer/ger.1", "soccer/ita.1", "soccer/fra.1",
-                  "soccer/por.1", "soccer/tur.1", "soccer/usa.1", "soccer/ned.1", "soccer/sco.1", "soccer/den.1",
-                  "baseball/mlb", "basketball/nba"]
-KP = os.path.join(DATA, "korean_players.json")
-
-
-def refresh_korean(now):
-    """data/korean_players.json — 7일마다 다시 훑는다. 설정(sports_ko.json players)의 한국어 이름·tier 는 그대로 두고
-    팀만 명단 기준으로 고친다(이적). 설정에 없는 한국 국적 선수는 tier 2 로 더한다(한국어 이름은 영문 그대로 → 편집 때 채움)."""
-    global PLAYERS
-    old = load(KP, {}) or {}
-    found = old.get("players", [])
-    stale = not old.get("updated") or now - datetime.fromisoformat(old["updated"]) > timedelta(days=7)
-    if stale:
-        found = []
-        for path in ROSTER_LEAGUES:
-            d = get(API + path + "/teams")
-            teams = [t["team"] for t in ((((d or {}).get("sports") or [{}])[0].get("leagues") or [{}])[0].get("teams") or [])]
-            for t in teams:
-                r = get(API + path + "/teams/%s/roster" % t["id"]) or {}
-                aths = r.get("athletes", [])
-                if aths and isinstance(aths[0], dict) and "items" in aths[0]:      # 야구·농구는 포지션별 묶음
-                    aths = [x for g in aths for x in g.get("items", [])]
-                for a in aths:
-                    nat = " ".join(str(v) for v in (a.get("citizenship"), (a.get("flag") or {}).get("alt"),
-                                                    (a.get("citizenshipCountry") or {}).get("name") if isinstance(a.get("citizenshipCountry"), dict) else None,
-                                                    (a.get("birthPlace") or {}).get("country")) if v)   # MLB 는 국적 없이 출생지만
-                    if "Korea" in nat and "North" not in nat and "DPR" not in nat:
-                        found.append({"en": a.get("displayName"), "team": t.get("displayName"), "team_id": t.get("id"), "path": path})
-        if found:
-            io.open(KP, "w", encoding="utf-8").write(json.dumps({"updated": now.isoformat(), "players": found}, ensure_ascii=False, indent=1))
-            print("한국 선수 명단 갱신 %d명" % len(found))
-        else:
-            found = old.get("players", [])
-    norm = lambda n: re.sub(r"[^a-z]", "", (n or "").lower())
-    norm_w = lambda n: [w for w in re.split(r"[^a-z0-9]+", (n or "").lower()) if len(w) > 2 and w not in ("fc", "cf", "afc", "club")]
-    by = {}
-    for f in found:
-        by.setdefault(norm(f["en"]), []).append(f)
-    merged, seen = [], set()
-    for p in CFG.get("players", []):
-        q = dict(p)
-        cands = [f for n in [p["en"]] + p.get("aka", []) for f in by.get(norm(n), [])]
-        # 두 팀 명단에 다 있으면(임대 등) 설정한 팀과 같은 쪽을 쓴다
-        f = next((f for f in cands if set(norm_w(f["team"])) & set(norm_w(p["team"]))), cands[0] if cands else None)
-        for n in p.get("aka", []):
-            seen.add(norm(n))
-        if f:                                       # 팀 표기가 ESPN 안에서도 달라('Union Berlin'/'1. FC Union Berlin') 번호로 맞춘다
-            q["team_id"], q["path"] = f.get("team_id"), f.get("path")
-            if not (set(norm_w(f["team"])) & set(norm_w(p["team"]))):
-                print("  이적 반영: %s %s → %s" % (p["ko"], p["team"], f["team"]))
-                q["team"] = f["team"]
-        merged.append(q); seen.add(norm(p["en"]))
-    for f in found:
-        if norm(f["en"]) not in seen:
-            merged.append({"ko": f["en"], "en": f["en"], "team": f["team"], "team_id": f.get("team_id"), "path": f.get("path"), "tier": 2, "auto": True})
-            seen.add(norm(f["en"]))
-    PLAYERS = merged
-
-
 def korean_in(ev):
     names = {(ev.get("home") or {}).get("name"), (ev.get("away") or {}).get("name")}
     ids = {(ev.get("home") or {}).get("id"), (ev.get("away") or {}).get("id")} - {None}
@@ -462,10 +401,6 @@ def stars(score):
 
 def main():
     now = datetime.now(KST)
-    try:
-        refresh_korean(now)
-    except Exception as x:
-        print("  ! 한국 선수 명단 건너뜀", x, file=sys.stderr)
     days = [(now + timedelta(days=d)).strftime("%Y%m%d") for d in range(-2, 8)]
     prev = load(os.path.join(DATA, "sports.json"), {}) or {}
     cand = []
