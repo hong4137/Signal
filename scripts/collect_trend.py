@@ -3,7 +3,7 @@
 설계: 트렌드세터_LLM위키/wiki/운영/수집-파이프라인.md · 출처: 위키 출처-등록부 '기업 이벤트 출처' 절(2026-10-10 실측).
 원칙: 자체 UA, robots `*` 규칙 준수, 요청 사이 간격, 목록·사실(제목·일시·장소·링크)만 보관, 예약·결제·대기열 경로는 건드리지 않는다.
 
-출처: 예매처 오픈 공지(NOL·YES24·멜론 — open/presale/조회수) · 팝업(팝플리·팝가) · 기업 원천(롯데월드몰·라인프렌즈·스타벅스·포켓몬)
+출처: 예매처 오픈 공지(NOL·YES24·멜론·티켓링크·세종문화회관·LG아트센터 — open/presale/조회수) · 현대카드 DIVE · 나이키 SNKRS(drop) · 넷플릭스 뉴스룸(screen) · 팝업(팝플리·팝가) · 기업 원천(롯데월드몰·라인프렌즈·스타벅스·포켓몬)
       · 보도자료(뉴스와이어) · 큐레이션(헤이팝·디에디트).
 흐름: 출처별 새 항목 감지(id diff·피드) → 후보 정규화 → data/trend/candidates.json (최근 120일 유지)
       상태(본 id·최대 id)는 data/trend/state.json. 채점·선별은 매일 Claude 루틴이 한다(층 2).
@@ -589,8 +589,207 @@ def src_nol(state):
     return out
 
 
+# ───────── 2026-10-13 추가 출처(실측 보고: 위키 log 2026-10-13) — 개인정보 필드(직원 이름·ID·홍보 담당 연락처)는 저장하지 않는다 ─────────
+
+def ko_dt(s, ref=None):
+    """'2026년 10월 16일(금) 오후 7시' · '9/30(수) 오후 2시' · '10월 15일 14:00' → 'YYYY-MM-DD HH:MM' (연도 없으면 가까운 미래로)."""
+    s = s or ""
+    m = re.search(r"(?:(\d{4})\s*[년.\-/]\s*)?(\d{1,2})\s*(?:월|[./])\s*(\d{1,2})\s*일?[^0-9]{0,12}?(오전|오후|낮|밤|저녁)?\s*(\d{1,2})\s*(?:시|:)\s*(\d{1,2})?", s)
+    if not m:
+        return None
+    y, mo, d, ap, h, mi = m.groups()
+    h = int(h) + (12 if ap in ("오후", "저녁", "밤") and int(h) < 12 else 0)
+    ref = ref or NOW
+    y = int(y) if y else (ref.year + (1 if int(mo) < ref.month - 6 else 0))
+    try:
+        return datetime(y, int(mo), int(d), h % 24, int(mi or 0)).strftime("%Y-%m-%d %H:%M")
+    except ValueError:
+        return None
+
+
+def src_ticketlink(state):
+    """티켓링크 티켓오픈 공지 — 공개 JSON(/help 는 robots 허용). /reserve·대기열은 부르지 않는다."""
+    out = []
+    for page in (1, 2):
+        j = fetch(f"https://www.ticketlink.co.kr/help/getNoticeList?page={page}&noticeCategoryCode=TICKET_OPEN&sortCode=REGISTE_DATE")
+        try:
+            rows = ((json.loads(j or "{}").get("result") or {}).get("result")) or []
+        except Exception:
+            break
+        for r in rows:
+            nid = r.get("noticeId")
+            if not nid:
+                continue
+            reg = r.get("registerDatetime")
+            out.append({"source": "ticketlink", "kind": "ticket", "id": f"ticketlink:{nid}",
+                        "url": f"https://www.ticketlink.co.kr/help/notice/{nid}",
+                        "title": re.sub(r"\s+", " ", unescape(re.sub(r"</?b>", "", r.get("title") or ""))).strip()[:200],
+                        "open": dt16(r.get("ticketOpenDatetime")), "venue": (r.get("placeName") or "")[:160],
+                        "exclusive": ("단독" in (r.get("title") or "")) or None,
+                        "created_at": datetime.fromtimestamp(reg / 1000, KST).strftime("%Y-%m-%d %H:%M") if isinstance(reg, (int, float)) else None,
+                        "product": f"https://www.ticketlink.co.kr/product/{r['productId']}" if r.get("productId") else None,
+                        "signals": {"views": r.get("viewCount")}})
+    return out
+
+
+def src_sejong(state):
+    """세종문화회관 티켓오픈안내 — 정적 표(등록일·오픈일시·조회)."""
+    h = fetch("https://www.sejongpac.or.kr/portal/bbs/B0000049/list.do?menuNo=200440")
+    out = []
+    for tr in re.findall(r"<tr>(.*?)</tr>", h or "", re.S):
+        a = re.search(r'nttId=(\d+)[^"]*">(.*?)</a>', tr, re.S)
+        tds = [re.sub(r"<[^>]+>", "", x).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+        if not a or len(tds) < 6:
+            continue
+        out.append({"source": "sejong", "kind": "ticket", "id": f"sejong:{a.group(1)}",
+                    "url": f"https://www.sejongpac.or.kr/portal/bbs/B0000049/view.do?nttId={a.group(1)}&menuNo=200440",
+                    "title": re.sub(r"\s+", " ", unescape(a.group(2))).strip()[:200], "venue": "세종문화회관",
+                    "created_at": d10(tds[2]), "open": dt16(tds[3]), "signals": {"views": num(tds[5])}})
+    return out
+
+
+def src_dive(state):
+    """현대카드 DIVE 컬처 캘린더(슈퍼콘서트·Curated·언더스테이지) — 목록 JSON + 새 항목만 상세의 '티켓 오픈'·'예매처'."""
+    j = fetch("https://dive.hyundaicard.com/web/culture/getCultureOnePaging.hdc",
+              data={"isNotPast": "Y", "pageCount": "30", "pageNo": "1"}, ctype="application/x-www-form-urlencoded; charset=UTF-8")
+    try:
+        d = json.loads(j or "{}")
+    except Exception:
+        return []
+
+    def find(o):
+        if isinstance(o, list) and o and isinstance(o[0], dict) and "contentId" in o[0]:
+            return o
+        if isinstance(o, dict):
+            for v in o.values():
+                r = find(v)
+                if r:
+                    return r
+        return None
+
+    seen = state.setdefault("dive_detail", {})
+    out = []
+    for r in find(d) or []:
+        cid = str(r.get("contentId"))
+        lib = r.get("libraryName") or ""
+        if lib in ("COOKING LIBRARY", "고메위크", "호텔위크"):   # 쿠킹·식당·호텔 할인 주간은 문화 이벤트가 아니다(N5)
+            continue
+        if cid not in seen:
+            h = fetch(f"https://dive.hyundaicard.com/web/content/contentView.hdc?contentId={cid}") or ""
+            info = dict((t, v) for v, t in re.findall(r'"text":"([^"]{0,120})","title":"([^"]{0,20})"', urllib.parse.unquote(h)))
+            seen[cid] = {"open": ko_dt(info.get("티켓 오픈") or info.get("티켓오픈") or ""), "where": info.get("예매처") or info.get("예매"),
+                         "when": info.get("일시"), "venue": info.get("장소")}
+        x = seen[cid]
+        st, en = r.get("contentEventStartDate") or "", r.get("contentEventEndDate") or ""
+        out.append({"source": "dive", "kind": "ticket" if x.get("open") else "event", "id": f"dive:{cid}",
+                    "url": f"https://dive.hyundaicard.com/web/content/contentView.hdc?contentId={cid}",
+                    "title": re.sub(r"<br\s*/?>", " ", unescape(r.get("contentTitle") or "")).strip()[:200],
+                    "category": lib, "open": x.get("open"), "booking": x.get("where"), "venue": (x.get("venue") or "")[:160],
+                    "start": d10(st), "end": d10(en), "created_at": (r.get("insertDate") or "")[:16] or None})
+    return out
+
+
+def src_netflix(state):
+    """넷플릭스 코리아 뉴스룸(about.netflix.com — www 와 다른 호스트, robots 허용). 한국 기사만, 제목의 'n월 n일 공개'를 행사일로."""
+    h = fetch("https://about.netflix.com/ko/newsroom")
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h or "", re.S)
+    if not m:
+        return []
+    try:
+        d = json.loads(m.group(1))
+    except Exception:
+        return []
+
+    def walk(o):
+        if isinstance(o, dict):
+            if "slug" in o and "title" in o and "locations" in o:
+                yield o
+            for v in o.values():
+                yield from walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                yield from walk(v)
+
+    out, seen = [], set()
+    for a in walk(d):
+        if a["slug"] in seen or not any((l or {}).get("value") == "south-korea" for l in a.get("locations") or []):
+            continue
+        seen.add(a["slug"])
+        t = re.sub(r"\s+", " ", a.get("title") or "").strip()
+        rel = re.search(r"(\d{1,2})월\s*(\d{1,2})일[^,.!]{0,8}?(?:공개|첫 공개)", t)
+        pub = a.get("rawPublishedDate") or a.get("publishedDate")
+        out.append({"source": "netflix", "kind": "screen", "id": f"netflix:{a['slug'][:80]}",
+                    "url": f"https://about.netflix.com/ko/news/{a['slug']}", "title": t[:200],
+                    "start": ko_dt(f"{rel.group(1)}월 {rel.group(2)}일 0시")[:10] if rel and ko_dt(f"{rel.group(1)}월 {rel.group(2)}일 0시") else None,
+                    "created_at": str(pub)[:16] if pub else None})
+    return out[:30]
+
+
+def src_lgart(state):
+    """LG아트센터 공지 — 목록의 JSON(티켓 분류만) + 새 글만 상세에서 '티켓오픈' 일시."""
+    h = fetch("https://www.lgart.com/community/ko/notice")
+    seen = state.setdefault("lgart_detail", {})
+    out = []
+    for blk in re.findall(r'\{"ArticleID":\d+.*?"DetailsUrl":"[^"]*"\}', h or ""):
+        try:
+            a = json.loads(blk)
+        except Exception:
+            continue
+        if a.get("CategoryName") != "티켓" and "티켓" not in (a.get("Title") or ""):
+            continue
+        aid = str(a["ArticleID"])
+        if aid not in seen:
+            dh = fetch(f"https://www.lgart.com/community/ko/notice/{aid}") or ""
+            cm = re.search(r'"Contents":("(?:[^"\\]|\\.)*")', dh)          # 본문은 JSON 문자열(<…) 안에 있다
+            try:
+                body = json.loads(cm.group(1)) if cm else ""
+            except Exception:
+                body = ""
+            txt = re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", body)))
+            mm = re.search(r"티켓\s*오픈[^0-9※]{0,14}?((?:20\d\d\s*[.\-/년]\s*)?\d{1,2}\s*[월./]\s*\d{1,2}[^※]{0,25})", txt)
+            ref = datetime.strptime(a.get("CreateDate") or NOW.strftime("%Y-%m-%d"), "%Y-%m-%d")
+            got = ko_dt(mm.group(1), ref) if mm else None
+            if got:                                   # 못 찾은 글은 다음 실행 때 다시 읽는다
+                seen[aid] = got
+        out.append({"source": "lgart", "kind": "ticket", "id": f"lgart:{aid}", "url": f"https://www.lgart.com/community/ko/notice/{aid}",
+                    "title": unescape(a.get("Title") or "")[:200], "venue": "LG아트센터 서울", "open": seen.get(aid),
+                    "created_at": a.get("CreateTime"), "signals": {"views": a.get("ViewCount")}})
+    return out
+
+
+def src_snkrs(state):
+    """나이키 SNKRS 출시 캘린더 — SSR 안의 launchViews(LINE 선착순 / DRAW 응모, 시작·마감 UTC)."""
+    h = fetch("https://www.nike.com/kr/launch/upcoming?s=upcoming")
+    if not h:
+        return []
+    u = h.replace('\\"', '"')
+    i = u.find('"launchViews":{"status"')
+    j = u.find('"data":{"items":', i) if i >= 0 else -1
+    try:
+        views = json.JSONDecoder().raw_decode(u, j + len('"data":{"items":'))[0] if j >= 0 else {}
+    except Exception:
+        return []
+    out = []
+    for pid, v in views.items():
+        t = re.search(r'"%s":\{"title":"([^"]*)","subtitle":"([^"]*)"' % re.escape(pid), u)
+        p = re.search(r'"%s":\{"commerceStartDate":[^{}]*?"currentPrice":(\d+)' % re.escape(pid), u)
+        to_kst = lambda s: datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(KST).strftime("%Y-%m-%d %H:%M") if s else None
+        title = " ".join(x for x in (t.group(1), t.group(2)) if x) if t else pid
+        out.append({"source": "snkrs", "kind": "drop", "id": f"snkrs:{pid}", "url": "https://www.nike.com/kr/launch/upcoming",
+                    "title": unescape(title)[:200], "method": v.get("method"),   # LINE=선착순, DRAW=응모
+                    "open": to_kst(v.get("startEntryDate")), "close": to_kst(v.get("stopEntryDate")),
+                    "price": int(p.group(1)) if p else None})
+    return out
+
+
 SOURCES = [
     ("nol", src_nol),
+    ("ticketlink", src_ticketlink),
+    ("sejong", src_sejong),
+    ("lgart", src_lgart),
+    ("dive", src_dive),
+    ("snkrs", src_snkrs),
+    ("netflix", src_netflix),
     ("yes24", src_yes24),
     ("melon", src_melon),
     ("popply", src_popply),
