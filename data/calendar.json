@@ -1,65 +1,37 @@
 {
- "generated_at": "2026-10-13T06:30:00+09:00",
+ "generated_at": "2026-10-14T06:30:00+09:00",
  "window": {
-  "from": "2026-10-13",
-  "to": "2026-10-16"
+  "from": "2026-10-14",
+  "to": "2026-10-17"
  },
  "events": [
   {
-   "date": "2026-10-13",
+   "date": "2026-10-14",
    "time": "20:00",
    "region": "US",
    "category": "실적",
-   "title": "미국 대형은행 3분기 실적(JP모건·골드만삭스·씨티·웰스파고)",
+   "title": "뱅크오브아메리카 3분기 실적",
    "importance": 4,
-   "why": "미국 금융주 실적 시즌 개막. 투자은행·대출 수익이 관전 포인트.",
-   "consensus": "EPS: JP모건 5.92달러·골드만 15.05달러(Finnhub)",
+   "why": "미 대형은행 실적 이어짐. 순이자수익 흐름이 관전 포인트.",
+   "consensus": "EPS 1.16달러·매출 313.2억달러(Finnhub)",
    "previous": null,
-   "source": "https://finnhub.io/",
+   "source": "https://investor.bankofamerica.com",
    "verified": true,
-   "note": "장 시작 전 발표 관행 시각 기준(미 동부 07시대). 골드만 EPS는 소스마다 달라 확인 필요"
-  },
-  {
-   "date": "2026-10-13",
-   "time": "22:00",
-   "region": "US",
-   "category": "기업 행사",
-   "title": "애플 'Welcome Home' 행사(뉴욕 트라이베카)",
-   "importance": 4,
-   "why": "애플 공식 초청 행사. 스마트홈 기기 공개가 거론되나 미확정.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.macstories.net/news/apple-announces-october-2026-event/",
-   "verified": true,
-   "note": "미 동부 10월 13일 09:00 = 한국 22:00. 제품 라인업은 보도·루머 단계"
-  },
-  {
-   "date": "2026-10-13",
-   "time": null,
-   "region": "KR",
-   "category": "기업 행사",
-   "title": "if(kakao)26 컨퍼런스(용인 카카오 AI 캠퍼스, 13~14일)",
-   "importance": 3,
-   "why": "카카오 AI 전략과 카나나 모델 현황 발표. 이틀간 기술 세션 50여 개.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.kakaocorp.com/page/detail/12131",
-   "verified": true,
-   "note": "13~14일 이틀간. 키노트 시각은 확인 못 함"
+   "note": "장 시작 전 발표 관행 시각 기준(미 동부 오전 7시 안팎). 소스마다 시각 차이 있음"
   },
   {
    "date": "2026-10-14",
    "time": "20:00",
    "region": "US",
    "category": "실적",
-   "title": "미국 대형은행 3분기 실적(뱅크오브아메리카·모건스탠리)",
+   "title": "모건스탠리 3분기 실적",
    "importance": 4,
-   "why": "13일 발표 대형은행과 함께 금융주 실적 흐름을 가늠하는 날.",
-   "consensus": "EPS: BAC 1.16달러·MS 3.17달러(Finnhub)",
+   "why": "투자은행·자산관리 수익 흐름을 가늠하는 실적.",
+   "consensus": "EPS 3.17달러·매출 208.7억달러(Finnhub)",
    "previous": null,
    "source": "https://finnhub.io/",
    "verified": true,
-   "note": "장 시작 전 발표 관행 시각 기준. 소스별 날짜 차이가 있어 Finnhub 기준"
+   "note": "장 시작 전 발표 관행 시각 기준"
   },
   {
    "date": "2026-10-14",
@@ -68,40 +40,40 @@
    "category": "경제지표",
    "title": "미국 9월 소비자물가(CPI)",
    "importance": 5,
-   "why": "10월 FOMC(27~28일) 전 마지막 물가 지표. 금리 경로의 핵심.",
-   "consensus": "전년비 3.6%·전월비 0.6% 전망(프리뷰 기준, 공식 컨센서스 미확인)",
-   "previous": "전년비 3.4%·전월비 0.4%(8월)",
-   "source": "https://fred.stlouisfed.org/release?rid=10",
+   "why": "연준 추가 금리 인상 논쟁에 직결되는 물가 지표.",
+   "consensus": "헤드라인 전월비 +0.6%, 근원 전월비 +0.2%(블룸버그 설문 인용)",
+   "previous": "헤드라인 전월비 +0.4%(8월)",
+   "source": "https://www.bls.gov/cpi/",
    "verified": true,
-   "note": "미 동부 10월 14일 08:30 관행 시각 = 한국 21:30. 전망치는 참고용"
+   "note": "미 동부 08:30 관행 시각. 전망치는 1개 매체 인용, 근원 전년비 2.5% 전망도 같은 기사"
+  },
+  {
+   "date": "2026-10-14",
+   "time": null,
+   "region": "GLOBAL",
+   "category": "정책",
+   "title": "IMF·세계은행 연차총회(방콕)",
+   "importance": 3,
+   "why": "10월 12~18일 방콕 개최. 각국 재무장관·중앙은행 총재 회의.",
+   "consensus": null,
+   "previous": null,
+   "source": "https://meetings.imf.org/en",
+   "verified": true,
+   "note": "10월 12일 개막, 18일까지. 행사 기간 중이라 날짜는 2일차 기준으로 표기"
   },
   {
    "date": "2026-10-14",
    "time": null,
    "region": "KR",
    "category": "기업 행사",
-   "title": "반도체대전 SEDEX 2026 개막(코엑스, 14~16일)",
+   "title": "카카오 'if(kakao)26' 2일차",
    "importance": 3,
-   "why": "국내 반도체 장비·소재 전시회. 3일간 코엑스에서 열림.",
+   "why": "용인 카카오 AI 캠퍼스 개최, 13~14일 이틀. AI 전략 공개 무대.",
    "consensus": null,
    "previous": null,
-   "source": "https://www.oxinst.com/events/sedex-2026",
+   "source": "https://www.kakaocorp.com/page/detail/12131",
    "verified": true,
-   "note": "전시 2곳 공지에서 14~16일 일치. 개막 행사 시간표는 확인 못 함. 2025년은 10월 22~24일"
-  },
-  {
-   "date": "2026-10-15",
-   "time": "03:00",
-   "region": "US",
-   "category": "경제지표",
-   "title": "연준 베이지북(지역 경기 보고서)",
-   "importance": 3,
-   "why": "FOMC 2주 전 지역 경기 동향. 숫자 없는 정성 보고서.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.federalreserve.gov/newsevents/2026-october.htm",
-   "verified": true,
-   "note": "미 동부 10월 14일 14:00 발표 = 한국 10월 15일 03:00"
+   "note": "13일 첫날 기조연설, 14일 세션 이어짐. 온·오프라인 병행"
   },
   {
    "date": "2026-10-15",
@@ -110,12 +82,12 @@
    "category": "실적",
    "title": "TSMC 3분기 실적 발표",
    "importance": 4,
-   "why": "3분기 가이던스(매출 446~458억달러) 대비 실적과 다음 전망을 본다.",
+   "why": "AI 반도체 파운드리 1위 실적. 국내 반도체주 참고점.",
    "consensus": null,
    "previous": null,
    "source": "https://investor.tsmc.com/quarterly-results",
    "verified": true,
-   "note": "TSMC IR 공식 날짜 15일. 원문 시각 표기가 엇갈려 대만 14시 기준 한국 15시로 적음"
+   "note": "회사 IR 페이지 기준 대만시간 14:00 컨퍼런스 → 한국시간 15:00"
   },
   {
    "date": "2026-10-15",
@@ -124,12 +96,12 @@
    "category": "경제지표",
    "title": "미국 9월 생산자물가(PPI)",
    "importance": 4,
-   "why": "CPI 다음 날 발표. 도매 물가 흐름이 금리 기대를 바꾼다.",
+   "why": "CPI 다음 날 나오는 도매물가. 물가 경로 재확인 지표.",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=46",
    "verified": true,
-   "note": "미 동부 08:30 관행 시각 기준"
+   "note": "미 동부 08:30 관행 시각. 전망치 확인 안 됨"
   },
   {
    "date": "2026-10-15",
@@ -138,12 +110,12 @@
    "category": "경제지표",
    "title": "미국 9월 소매판매",
    "importance": 4,
-   "why": "소비 강도를 보여 주는 지표. 연준 판단 재료.",
-   "consensus": null,
-   "previous": null,
+   "why": "소비 지출의 핵심 지표. 금리 경로 판단 재료.",
+   "consensus": "전월비 약 +0.65% 전망(1개 매체 인용)",
+   "previous": "전월비 +1.2%(8월, 1개 매체)",
    "source": "https://fred.stlouisfed.org/release?rid=9",
    "verified": true,
-   "note": "미 동부 08:30 관행 시각 기준"
+   "note": "미 동부 08:30 관행 시각. 전망치는 단일 매체 기준"
   },
   {
    "date": "2026-10-15",
@@ -152,40 +124,26 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "매주 목요일 나오는 고용 지표. 노동시장 냉각 여부를 본다.",
+   "why": "매주 목요일 발표되는 고용 지표. 노동시장 냉각 여부 확인.",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "매주 목요일 정기 발표"
+   "note": "규칙 일정(매주 목요일 08:30 ET)과 FRED 일정 일치"
   },
   {
    "date": "2026-10-15",
    "time": null,
    "region": "KR",
-   "category": "시장",
-   "title": "진코스텍·멜콘 코스닥 상장",
+   "category": "기업 행사",
+   "title": "HLB그룹 통합 IR데이",
    "importance": 3,
-   "why": "반도체 장비(멜콘)·화장품 ODM(진코스텍) 동반 상장. 공모 시장 흐름.",
+   "why": "상장 계열사 10곳 참여 통합 IR. 사업 성장 전략 공개.",
    "consensus": null,
    "previous": null,
-   "source": "https://www.cbci.co.kr/news/articleView.html?idxno=614029",
+   "source": "https://www.ebn.co.kr/news/articleView.html?idxno=1727483",
    "verified": true,
-   "note": "두 매체에서 15일 상장 일치. 상장 일정은 바뀔 수 있음"
-  },
-  {
-   "date": "2026-10-16",
-   "time": "12:30",
-   "region": "GLOBAL",
-   "category": "통화정책",
-   "title": "워시 연준 의장, IMF 연차총회 대담(방콕)",
-   "importance": 4,
-   "why": "10월 FOMC 직전 공개 발언. 금리 방향 힌트를 본다.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.newsquawk.com/headlines/calendar-update-wsjs-timiraos-posts-fed-chairman-kevin-warsh-is-scheduled-to-appear-in-a-moderated-conversation-at-the-fall-meetings-of-the-international-monetary-fund-on-oct-16-in-bangkok-1130-pm-us-eastern-time-on-oct-15",
-   "verified": true,
-   "note": "방콕 10시 30분 = 한국 12시 30분. 사회자 대담 형식으로 보도. 정책 결정 아님"
+   "note": "여러 매체가 같은 날짜로 보도. 시각 미확인"
   },
   {
    "date": "2026-10-16",
@@ -194,24 +152,42 @@
    "category": "경제지표",
    "title": "미국 9월 산업생산",
    "importance": 3,
-   "why": "제조업 생산 흐름. 설비가동률도 함께 나온다.",
+   "why": "제조업 생산과 설비가동률. 경기 방향 확인용.",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=13",
    "verified": true,
-   "note": "미 동부 09:15 관행 시각 기준"
+   "note": "미 동부 09:15 관행 시각"
+  },
+  {
+   "date": "2026-10-16",
+   "time": null,
+   "region": "KR",
+   "category": "기업 행사",
+   "title": "대구콘텐츠페어 개막(16~17일)",
+   "importance": 3,
+   "why": "게임·웹툰·캐릭터 기업 160곳, 부스 433곳 참여.",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.yna.co.kr/view/AKR20261012058200053?input=1195m",
+   "verified": true,
+   "note": "엑스코 개최, 16~17일 이틀"
   }
  ],
  "notes": [
-  "원자료(calendar_raw.json) generated_at 2026-10-12 06:44 KST — 오늘 03시 이전이라 '원자료 지연'. 그대로 쓰되 FRED·Finnhub 날짜만 확정으로 봄",
-  "DART 키 없음 — 국내 잠정실적·IR 일정은 공시 확인 못 함. 삼성전자 3분기 잠정실적은 10월 8일 발표 보도 다수, 컨퍼런스콜 일정은 보도 1건뿐이라 뺌",
-  "미확정으로 뺌: ASML 3분기 실적일(10-14 보도 1건, 검색으로 확인 실패)",
-  "미확정으로 뺌: 국정감사 상임위 일정(검색 결과 모두 과거 연도)",
-  "미확정으로 뺌: 한은 금통위 10월 일정(검색 결과 2025년 기사뿐), 국가데이터처 10월 고용·물가·산업활동 발표일(확인 실패), SK하이닉스 3분기 발표일(확인 실패)",
-  "제외: 한국 9월 무역수지 '10월 14일' 보도 — 산업통상부 보도자료 기준 10월 1일 발표 확인되어 제외",
-  "제외: IMF·세계은행 연차총회(방콕, 10-12~18)는 시작일이 범위 전이라 뺌. 워시 대담만 실음",
-  "CPI 전망치는 프리뷰 1건 수치뿐 — 공식 컨센서스 미확인. Finnhub 실적 EPS는 소스별 차이 있음(골드만 15.05 vs 16.94)",
-  "2026-10-13~16 기준 3일 뒤 범위 적용. 미 동부 → KST는 10월 1일 이후 +13시간"
+  "원자료(calendar_raw.json) 생성 시각이 10/13 09:28 KST, 어제 것이라 원자료 지연. FRED·Finnhub 공식 API 날짜라 그대로 사용",
+  "DART 키 없음(DART_API_KEY 없음): 국내 3분기 잠정실적·IR 일정을 공시로 확인 못 함. 삼성전자 잠정실적은 10/8 발표 완료로 범위 밖",
+  "ASML 3분기 실적: Newsquawk는 10/14, 다른 집계는 10/15로 엇갈려 미확정으로 뺌",
+  "한은 금통위 10/23은 한 매체 기사뿐이고 날짜 표기도 엇갈려 미확정. 범위 밖이라 싣지 않음",
+  "미국 9월 CPI 전망치는 블룸버그 설문 인용 1곳뿐. 헤드라인 전년비 전망은 확인 못 함",
+  "연준: 워시 의장 10/14 연설 여부 미확인, 9월 FOMC 의사록 공표일 미확인. 다음 FOMC 10/27~28은 범위 밖",
+  "중국 9월 CPI 10/14(현지 09:30) 일정은 금융캘린더 1곳뿐이라 미확정으로 뺌",
+  "관세청 10월 1~15일 수출 잠정치 발표일은 검색으로 확인 안 됨(보도자료로만 확인 가능). 추정이라 싣지 않음",
+  "국감 2026 상임위 일정(과방위·산자위·정무위)과 국가데이터처 2026년 10월 고용·산업활동 발표일 미확인",
+  "개발자 회의·기업 신제품 행사: 범위 내 확정 행사 없음. Apple 'Welcome Home'은 10/13(범위 밖), OpenAI DevDay 9/29, Google Pixel 8/12는 지남",
+  "US Bancorp 10/15는 단일 출처, 찰스슈왑 10/15는 미확정, 진코스텍 코스닥 상장 15일은 출처 1곳이라 뺌",
+  "반도체·AI 정부 발표(10/14·19)와 국회 반도체 상임위 일정은 확인 못 함",
+  "10/17(금)에 확정된 일정은 찾지 못함. 대만(10/9)·일본(10/12) 휴장은 지난 일이라 싣지 않음"
  ],
- "searches": 31
+ "searches": 33
 }
