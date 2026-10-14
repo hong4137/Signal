@@ -1,8 +1,8 @@
 {
- "at": "2026-10-15 02:36",
+ "at": "2026-10-15 06:56",
  "stats": {
   "nol": {
-   "got": 25,
+   "got": 24,
    "new": 0
   },
   "ticketlink": {
@@ -22,8 +22,8 @@
    "new": 0
   },
   "snkrs": {
-   "got": 0,
-   "new": 0
+   "got": 10,
+   "new": 2
   },
   "netflix": {
    "got": 18,
@@ -80,7 +80,7 @@
  },
  "log": [
   "▶ nol",
-  "  25건 · 새 0",
+  "  24건 · 새 0",
   "▶ ticketlink",
   "  30건 · 새 0",
   "▶ sejong",
@@ -91,8 +91,7 @@
   "  ! 실패 https://dive.hyundaicard.com/web/culture/getCultureOnePaging.hdc URLError <urlopen error timed out>",
   "  0건 · 새 0",
   "▶ snkrs",
-  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
-  "  0건 · 새 0",
+  "  10건 · 새 2",
   "▶ netflix",
   "  18건 · 새 0",
   "▶ yes24",
@@ -119,8 +118,9 @@
   "  10건 · 새 0",
   "▶ theedit",
   "  10건 · 새 0",
-  "▶ 팝플리 재측정 60 건",
-  "▶ NOL 랭킹 건너뜀(6시간 안)",
-  "▶ YouTube 인기 건너뜀(키 없음·6시간 안)"
+  "  ! 실패 https://popply.co.kr/popup/6312 HTTPError HTTP Error 404: Not Found",
+  "▶ 팝플리 재측정 15 건",
+  "▶ NOL 랭킹 50건",
+  "▶ YouTube 인기 130건"
  ]
 }
