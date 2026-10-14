@@ -1,80 +1,10 @@
 {
- "generated_at": "2026-10-14T06:30:00+09:00",
+ "generated_at": "2026-10-15T06:30:00+09:00",
  "window": {
-  "from": "2026-10-14",
-  "to": "2026-10-17"
+  "from": "2026-10-15",
+  "to": "2026-10-18"
  },
  "events": [
-  {
-   "date": "2026-10-14",
-   "time": "20:00",
-   "region": "US",
-   "category": "실적",
-   "title": "뱅크오브아메리카 3분기 실적",
-   "importance": 4,
-   "why": "미 대형은행 실적 이어짐. 순이자수익 흐름이 관전 포인트.",
-   "consensus": "EPS 1.16달러·매출 313.2억달러(Finnhub)",
-   "previous": null,
-   "source": "https://investor.bankofamerica.com",
-   "verified": true,
-   "note": "장 시작 전 발표 관행 시각 기준(미 동부 오전 7시 안팎). 소스마다 시각 차이 있음"
-  },
-  {
-   "date": "2026-10-14",
-   "time": "20:00",
-   "region": "US",
-   "category": "실적",
-   "title": "모건스탠리 3분기 실적",
-   "importance": 4,
-   "why": "투자은행·자산관리 수익 흐름을 가늠하는 실적.",
-   "consensus": "EPS 3.17달러·매출 208.7억달러(Finnhub)",
-   "previous": null,
-   "source": "https://finnhub.io/",
-   "verified": true,
-   "note": "장 시작 전 발표 관행 시각 기준"
-  },
-  {
-   "date": "2026-10-14",
-   "time": "21:30",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 9월 소비자물가(CPI)",
-   "importance": 5,
-   "why": "연준 추가 금리 인상 논쟁에 직결되는 물가 지표.",
-   "consensus": "헤드라인 전월비 +0.6%, 근원 전월비 +0.2%(블룸버그 설문 인용)",
-   "previous": "헤드라인 전월비 +0.4%(8월)",
-   "source": "https://www.bls.gov/cpi/",
-   "verified": true,
-   "note": "미 동부 08:30 관행 시각. 전망치는 1개 매체 인용, 근원 전년비 2.5% 전망도 같은 기사"
-  },
-  {
-   "date": "2026-10-14",
-   "time": null,
-   "region": "GLOBAL",
-   "category": "정책",
-   "title": "IMF·세계은행 연차총회(방콕)",
-   "importance": 3,
-   "why": "10월 12~18일 방콕 개최. 각국 재무장관·중앙은행 총재 회의.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://meetings.imf.org/en",
-   "verified": true,
-   "note": "10월 12일 개막, 18일까지. 행사 기간 중이라 날짜는 2일차 기준으로 표기"
-  },
-  {
-   "date": "2026-10-14",
-   "time": null,
-   "region": "KR",
-   "category": "기업 행사",
-   "title": "카카오 'if(kakao)26' 2일차",
-   "importance": 3,
-   "why": "용인 카카오 AI 캠퍼스 개최, 13~14일 이틀. AI 전략 공개 무대.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.kakaocorp.com/page/detail/12131",
-   "verified": true,
-   "note": "13일 첫날 기조연설, 14일 세션 이어짐. 온·오프라인 병행"
-  },
   {
    "date": "2026-10-15",
    "time": "15:00",
@@ -82,12 +12,12 @@
    "category": "실적",
    "title": "TSMC 3분기 실적 발표",
    "importance": 4,
-   "why": "AI 반도체 파운드리 1위 실적. 국내 반도체주 참고점.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://investor.tsmc.com/quarterly-results",
+   "why": "AI 반도체 수요와 4분기 가이던스가 관전 포인트",
+   "consensus": "LSEG 3분기 순이익 7408억 대만달러 전망(전년 대비 +64%)",
+   "previous": "7월 제시 3분기 매출 가이던스 446~458억 달러",
+   "source": "https://investor.tsmc.com/",
    "verified": true,
-   "note": "회사 IR 페이지 기준 대만시간 14:00 컨퍼런스 → 한국시간 15:00"
+   "note": "대만 14시 = 한국 15시. 복수 매체의 15일 발표 보도 교차 확인. 발표 당일 IR 페이지 재확인 권장"
   },
   {
    "date": "2026-10-15",
@@ -96,12 +26,12 @@
    "category": "경제지표",
    "title": "미국 9월 생산자물가(PPI)",
    "importance": 4,
-   "why": "CPI 다음 날 나오는 도매물가. 물가 경로 재확인 지표.",
+   "why": "도매 단계 물가로 소비자물가 이후 인플레 흐름을 가늠",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=46",
    "verified": true,
-   "note": "미 동부 08:30 관행 시각. 전망치 확인 안 됨"
+   "note": "미 동부 08:30 관행 시각 기준(FRED 원자료)"
   },
   {
    "date": "2026-10-15",
@@ -110,12 +40,12 @@
    "category": "경제지표",
    "title": "미국 9월 소매판매",
    "importance": 4,
-   "why": "소비 지출의 핵심 지표. 금리 경로 판단 재료.",
-   "consensus": "전월비 약 +0.65% 전망(1개 매체 인용)",
-   "previous": "전월비 +1.2%(8월, 1개 매체)",
+   "why": "가계 소비 흐름, 경기 체감의 대표 지표",
+   "consensus": null,
+   "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=9",
    "verified": true,
-   "note": "미 동부 08:30 관행 시각. 전망치는 단일 매체 기준"
+   "note": "미 동부 08:30 관행 시각 기준(FRED 원자료)"
   },
   {
    "date": "2026-10-15",
@@ -124,26 +54,26 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "매주 목요일 발표되는 고용 지표. 노동시장 냉각 여부 확인.",
+   "why": "매주 나오는 고용 시장 체온 점검",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "규칙 일정(매주 목요일 08:30 ET)과 FRED 일정 일치"
+   "note": "매주 목요일 발표(FRED 원자료)"
   },
   {
    "date": "2026-10-15",
    "time": null,
-   "region": "KR",
-   "category": "기업 행사",
-   "title": "HLB그룹 통합 IR데이",
+   "region": "GLOBAL",
+   "category": "정책",
+   "title": "IMF·세계은행 연차총회(방콕)",
    "importance": 3,
-   "why": "상장 계열사 10곳 참여 통합 IR. 사업 성장 전략 공개.",
+   "why": "세계 성장·금리·무역 논의가 몰리는 연차총회(18일까지)",
    "consensus": null,
    "previous": null,
-   "source": "https://www.ebn.co.kr/news/articleView.html?idxno=1727483",
+   "source": "https://meetings.imf.org/en",
    "verified": true,
-   "note": "여러 매체가 같은 날짜로 보도. 시각 미확인"
+   "note": "10월 12~18일 방콕 퀸시릿 국립컨벤션센터 개최. 날짜는 기간 중 표기, 시각 미정"
   },
   {
    "date": "2026-10-16",
@@ -152,42 +82,22 @@
    "category": "경제지표",
    "title": "미국 9월 산업생산",
    "importance": 3,
-   "why": "제조업 생산과 설비가동률. 경기 방향 확인용.",
+   "why": "제조·광공업 생산 흐름, 경기 사이클 확인용",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=13",
    "verified": true,
-   "note": "미 동부 09:15 관행 시각"
-  },
-  {
-   "date": "2026-10-16",
-   "time": null,
-   "region": "KR",
-   "category": "기업 행사",
-   "title": "대구콘텐츠페어 개막(16~17일)",
-   "importance": 3,
-   "why": "게임·웹툰·캐릭터 기업 160곳, 부스 433곳 참여.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.yna.co.kr/view/AKR20261012058200053?input=1195m",
-   "verified": true,
-   "note": "엑스코 개최, 16~17일 이틀"
+   "note": "미 동부 09:15 관행 시각 기준(FRED 원자료)"
   }
  ],
  "notes": [
-  "원자료(calendar_raw.json) 생성 시각이 10/13 09:28 KST, 어제 것이라 원자료 지연. FRED·Finnhub 공식 API 날짜라 그대로 사용",
-  "DART 키 없음(DART_API_KEY 없음): 국내 3분기 잠정실적·IR 일정을 공시로 확인 못 함. 삼성전자 잠정실적은 10/8 발표 완료로 범위 밖",
-  "ASML 3분기 실적: Newsquawk는 10/14, 다른 집계는 10/15로 엇갈려 미확정으로 뺌",
-  "한은 금통위 10/23은 한 매체 기사뿐이고 날짜 표기도 엇갈려 미확정. 범위 밖이라 싣지 않음",
-  "미국 9월 CPI 전망치는 블룸버그 설문 인용 1곳뿐. 헤드라인 전년비 전망은 확인 못 함",
-  "연준: 워시 의장 10/14 연설 여부 미확인, 9월 FOMC 의사록 공표일 미확인. 다음 FOMC 10/27~28은 범위 밖",
-  "중국 9월 CPI 10/14(현지 09:30) 일정은 금융캘린더 1곳뿐이라 미확정으로 뺌",
-  "관세청 10월 1~15일 수출 잠정치 발표일은 검색으로 확인 안 됨(보도자료로만 확인 가능). 추정이라 싣지 않음",
-  "국감 2026 상임위 일정(과방위·산자위·정무위)과 국가데이터처 2026년 10월 고용·산업활동 발표일 미확인",
-  "개발자 회의·기업 신제품 행사: 범위 내 확정 행사 없음. Apple 'Welcome Home'은 10/13(범위 밖), OpenAI DevDay 9/29, Google Pixel 8/12는 지남",
-  "US Bancorp 10/15는 단일 출처, 찰스슈왑 10/15는 미확정, 진코스텍 코스닥 상장 15일은 출처 1곳이라 뺌",
-  "반도체·AI 정부 발표(10/14·19)와 국회 반도체 상임위 일정은 확인 못 함",
-  "10/17(금)에 확정된 일정은 찾지 못함. 대만(10/9)·일본(10/12) 휴장은 지난 일이라 싣지 않음"
+  "원자료 지연: calendar_raw.json 생성 2026-10-14 07:31 KST(오늘 03시 수집분 없음). FRED 공식 일정은 그대로 사용",
+  "DART 키 없음(공시 0건): 국내 기업 IR·잠정실적 일정은 검색으로만 확인했고 대부분 못 건짐",
+  "범위 안 확정 일정이 6건뿐: 미확정·단일 매체라 뺀 것 — 케빈 워시 15일 연설(보도 1건), 10-15 과방위·정무위 국감(단일 매체), 10-15 BNY 실적(집계 사이트 단독), 10-16 관세청 1~15일 수출(발표 기사 미확인), 중국 9월 지표(날짜 미확인)",
+  "10월 15일 이후 정식 일정은 범위 밖: 한은 금통위 10-23, 미시간 소비자심리 확정치 10-23, FOMC 10-28, SK하이닉스 실적 10-27(보도), 삼성전자 컨퍼런스콜 10-29(보도), ECB 10-29, 넷플릭스·테슬라 10-21(한국 시각)",
+  "오늘 확인 결과: 9월 CPI는 10-14 발표(어제 기준 완료), 미시간 10월 예비치는 10-9 발표 — 지면 범위 밖",
+  "지난 실행 메모 반영: 미 은행 실적 날짜는 Finnhub 기준으로 보려 했으나 범위 안 은행 실적이 확인되지 않음",
+  "WebSearch 34회(계획 검색 25 + 추가 확인 9)"
  ],
- "searches": 33
+ "searches": 34
 }
