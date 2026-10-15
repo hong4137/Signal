@@ -1,13 +1,13 @@
 {
- "at": "2026-10-15 06:56",
+ "at": "2026-10-15 14:11",
  "stats": {
   "nol": {
-   "got": 24,
-   "new": 0
+   "got": 22,
+   "new": 13
   },
   "ticketlink": {
    "got": 30,
-   "new": 0
+   "new": 7
   },
   "sejong": {
    "got": 10,
@@ -18,12 +18,12 @@
    "new": 0
   },
   "dive": {
-   "got": 0,
-   "new": 0
+   "got": 5,
+   "new": 1
   },
   "snkrs": {
-   "got": 10,
-   "new": 2
+   "got": 0,
+   "new": 0
   },
   "netflix": {
    "got": 18,
@@ -31,19 +31,19 @@
   },
   "yes24": {
    "got": 39,
-   "new": 0
+   "new": 5
   },
   "melon": {
-   "got": 20,
+   "got": 0,
    "new": 0
   },
   "popply": {
-   "got": 0,
-   "new": 0
+   "got": 5,
+   "new": 5
   },
   "popga": {
-   "got": 0,
-   "new": 0
+   "got": 78,
+   "new": 78
   },
   "lotteworldmall": {
    "got": 20,
@@ -55,19 +55,19 @@
   },
   "linefriends_drop": {
    "got": 30,
-   "new": 0
+   "new": 1
   },
   "starbucks": {
    "got": 10,
-   "new": 0
+   "new": 1
   },
   "pokemon": {
    "got": 19,
    "new": 0
   },
   "newswire": {
-   "got": 66,
-   "new": 0
+   "got": 62,
+   "new": 15
   },
   "heypop": {
    "got": 10,
@@ -75,52 +75,54 @@
   },
   "theedit": {
    "got": 10,
-   "new": 0
+   "new": 1
   }
  },
  "log": [
   "▶ nol",
-  "  24건 · 새 0",
+  "  22건 · 새 13",
   "▶ ticketlink",
-  "  30건 · 새 0",
+  "  30건 · 새 7",
   "▶ sejong",
   "  10건 · 새 0",
   "▶ lgart",
   "  5건 · 새 0",
   "▶ dive",
-  "  ! 실패 https://dive.hyundaicard.com/web/culture/getCultureOnePaging.hdc URLError <urlopen error timed out>",
-  "  0건 · 새 0",
+  "  5건 · 새 1",
   "▶ snkrs",
-  "  10건 · 새 2",
+  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
+  "  0건 · 새 0",
   "▶ netflix",
   "  18건 · 새 0",
   "▶ yes24",
-  "  39건 · 새 0",
+  "  39건 · 새 5",
   "▶ melon",
-  "  20건 · 새 0",
+  "  ! 실패 https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex=1&schGcode=GE HTTPError HTTP Error 423: Locked",
+  "  0건 · 새 0",
   "▶ popply",
-  "  0건 · 새 0",
+  "  5건 · 새 5",
   "▶ popga",
-  "  0건 · 새 0",
+  "  ! 실패 https://popga.co.kr/popup/14011 HTTPError HTTP Error 429: Too Many Requests",
+  "  ! 실패 https://popga.co.kr/popup/14012 HTTPError HTTP Error 429: Too Many Requests",
+  "  78건 · 새 78",
   "▶ lotteworldmall",
   "  20건 · 새 0",
   "▶ linefriends_event",
   "  30건 · 새 0",
   "▶ linefriends_drop",
-  "  30건 · 새 0",
+  "  30건 · 새 1",
   "▶ starbucks",
-  "  10건 · 새 0",
+  "  10건 · 새 1",
   "▶ pokemon",
   "  19건 · 새 0",
   "▶ newswire",
-  "  66건 · 새 0",
+  "  62건 · 새 15",
   "▶ heypop",
   "  10건 · 새 0",
   "▶ theedit",
-  "  10건 · 새 0",
-  "  ! 실패 https://popply.co.kr/popup/6312 HTTPError HTTP Error 404: Not Found",
-  "▶ 팝플리 재측정 15 건",
-  "▶ NOL 랭킹 50건",
+  "  10건 · 새 1",
+  "▶ 팝플리 재측정 5 건",
+  "▶ NOL 랭킹 49건",
   "▶ YouTube 인기 130건"
  ]
 }
