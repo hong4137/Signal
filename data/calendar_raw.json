@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-16T06:11:46+09:00",
+ "generated_at": "2026-10-17T05:50:39+09:00",
  "window": {
-  "from": "2026-10-16",
-  "to": "2026-10-23"
+  "from": "2026-10-17",
+  "to": "2026-10-24"
  },
  "sources": {
   "FRED": {
-   "ok": true,
-   "count": 4
+   "ok": false,
+   "error": "TimeoutError: The read operation timed out"
   },
   "Finnhub": {
    "ok": true,
@@ -19,26 +19,26 @@
   },
   "네이버뉴스": {
    "ok": true,
-   "count": 343,
+   "count": 346,
    "per_query": {
-    "nv-nextweek": 3,
+    "nv-nextweek": 4,
     "nv-thisweek": 13,
     "nv-weekly": 0,
     "nv-prelim": 30,
     "nv-earnings": 27,
     "nv-ir": 30,
-    "nv-bok": 10,
+    "nv-bok": 12,
     "nv-stats": 0,
     "nv-export": 30,
-    "nv-audit": 1,
+    "nv-audit": 2,
     "nv-policy": 29,
     "nv-ipo": 30,
-    "nv-us": 30,
-    "nv-fomc": 28,
-    "nv-event": 21,
+    "nv-us": 29,
+    "nv-fomc": 27,
+    "nv-event": 20,
     "nv-devconf": 30,
-    "nv-keynote": 29,
-    "nv-unpacked": 2
+    "nv-keynote": 30,
+    "nv-unpacked": 3
    }
   },
   "FOMC": {
@@ -54,31 +54,17 @@
    "title": "10월 1~20일 수출입 잠정치(관세청)",
    "importance": 4,
    "rule": "매월 21일 — 휴일이면 다음 평일일 수 있음"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "21:30",
+   "region": "US",
+   "title": "미국 주간 신규 실업수당 청구",
+   "importance": 3,
+   "rule": "매주 목요일 08:30 ET"
   }
  ],
  "events": [
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-16",
-   "time": "22:15",
-   "region": "US",
-   "title": "미국 산업생산",
-   "importance": 3,
-   "detail": "G.17 Industrial Production and Capacity Utilization (미 동부 2026-10-16 09:15 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=13"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-20",
-   "time": "21:30",
-   "region": "US",
-   "title": "미국 주택착공",
-   "importance": 3,
-   "detail": "New Residential Construction (미 동부 2026-10-20 08:30 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=27"
-  },
   {
    "src": "Finnhub",
    "kind": "event",
@@ -126,32 +112,21 @@
    "detail": "TSLA · 장 마감 후 · EPS 예상 0.45달러 · 매출 예상 284.2억달러",
    "consensus": "EPS 예상 0.45달러 · 매출 예상 284.2억달러",
    "url": "https://finnhub.io/"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-22",
-   "time": "21:30",
-   "region": "US",
-   "title": "미국 주간 신규 실업수당 청구",
-   "importance": 3,
-   "detail": "Unemployment Insurance Weekly Claims Report (미 동부 2026-10-22 08:30 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=180"
-  },
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-10-23",
-   "time": "23:00",
-   "region": "US",
-   "title": "미국 미시간대 소비자심리",
-   "importance": 3,
-   "detail": "Surveys of Consumers (미 동부 2026-10-23 10:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=91"
   }
  ],
  "filings": [],
  "news": [
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-nextweek",
+   "date": null,
+   "published": "2026-10-16 09:38",
+   "region": "KR",
+   "title": "NH투자 \"다음주 코스피 5100~6100 전망, 반도체 비중 확대 전략 유효\"",
+   "detail": "중간선거 일정 등을 고려할 때 방향성 모색의 시간이 필요하다\"며 \"포트폴리오 관점에서는 이번 급락의 중심이 된 반도체 비중 확대 전략이 유효하다\"고 바라봤다. 다음주 코스피가 5100~6100포인트 사이에서 움직일...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449500"
+  },
   {
    "src": "네이버뉴스",
    "kind": "news",
@@ -184,6 +159,28 @@
    "title": "[글로벌 경제지표] 美 어닝시즌 개막…美 9월 인플레이션 지표 관건",
    "detail": "뉴욕증시 개장 전 JP모건과 골드만삭스, 웰스파고·씨티 등 대형 금융사들이 일제히 분기 성적을... <다음주 주요 경제 일정> 12일(월) -IMF·세계은행 연차총회(~18일) -한국 1~10일 수출 -일본 휴장(체육의 날) 13일(화)...",
    "url": "https://biz.sbs.co.kr/article_hub/20000338907?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-thisweek",
+   "date": null,
+   "published": "2026-10-17 00:01",
+   "region": "KR",
+   "title": "폭락장 개미 피눈물…3일 만에 강제청산 2000억",
+   "detail": "이번주 국내증시가 폭락장을 관통한 가운데 강제청산 규모가 3일 만에 2000억원가량 발생한 것으로... 반대매매란 투자자가 신용융자로 매수한 주식의 담보 가치가 일정 수준 이하로 떨어질 경우, 증권사가 해당...",
+   "url": "https://www.dailian.co.kr/news/view/1702606/?sc=Naver"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-thisweek",
+   "date": null,
+   "published": "2026-10-16 15:05",
+   "region": "KR",
+   "title": "워시 의장 \"AI, 엄청난 이점\"...코어위브發 위기 넘기나 [딥시그널]",
+   "detail": "인플레이션 충격과 인공지능 산업의 부채 위기로 조정을 받던 국내 증시가 8거래일 만에 반등에... 내놓으면서, 이번주 내내 시장을 괴롭힌 AI 부채 위기에 대한 불안을 덜어냈습니다. 케빈 워시 의장은 인공지능 수요...",
+   "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610160104&t=NNv"
   },
   {
    "src": "네이버뉴스",
@@ -309,24 +306,145 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-thisweek",
+   "query_id": "nv-prelim",
    "date": null,
-   "published": "2026-10-09 15:26",
+   "published": "2026-10-17 05:22",
    "region": "KR",
-   "title": "HLB바이오스텝·예선테크 119% 급등…주간 상승률 상위권은",
-   "detail": "07%…동반 강세 -상승률 30% 이상 23개…코스닥 38개로 76% 차지 국내 증시에서 이번 주 사흘간 주가가 두 배... 주간 상승률은 일정 기간 주가가 얼마나 올랐는지를 보여주는 지표다. 다만 누적 상승률만으로는 기간...",
-   "url": "http://www.kjdaily.com/article.php?aid=1791527057688652276"
+   "title": "상위 제약사, 영업익 32% 늘었지만 기술료 빼면 '미미'",
+   "detail": "2026년 2분기 잠정 실적을 발표한 상위 제약사 10곳의 합산 매출은 3조7928억원으로 전년 동기보다 7.8... GC녹십자웰빙이 연결 대상에서 빠진 데다 2분기에 반영될 예정이던 독감백신 원액 매출이 3분기로 이연된...",
+   "url": "https://www.dailymedi.com/news/news_view.php?wr_id=941456"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-thisweek",
+   "query_id": "nv-prelim",
    "date": null,
-   "published": "2026-10-09 15:02",
+   "published": "2026-10-17 05:20",
    "region": "KR",
-   "title": "라온시큐어 166%·국제약품 99%…사흘간 회전율 급등",
-   "detail": "34% 상승 -거래 집중 속 주가 엇갈려…높은 회전율이 상승 보장하지 않아 국내 증시에서 최근 사흘간... 9일 한국거래소(KRX)의 이번주(6~8일) 일별 회전율 상위 50개 종목 자료를 분석한 결과, 거래가 활발했던 종목들...",
-   "url": "http://www.kjdaily.com/article.php?aid=1791525609688651276"
+   "title": "뉴욕증시 급락 마감…AI 투자 부채 우려·유가 급등 나스닥 2.15%↓",
+   "detail": "해당 수치는 로이터가 보도한 잠정 집계 기준이다. 이날 증시 하락을 주도한 것은 AI 관련 기업들의 자금... 실적 발표로 이동하고 있다. 테슬라와 메타플랫폼스, 프록터앤드갬블 등 주요 기업의 실적이 예정된 가운데 AI...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90977"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 21:36",
+   "region": "KR",
+   "title": "삼전닉스 반도체 등에 업은 ‘경기도 9월 수출’ 179.7% 증가",
+   "detail": "앞서 삼성전자는 지난 8일 올해 3분기 잠정실적을 발표(10월12일자 12면보도)했다. 매출은 195조원... 삼성전자는 오는 29일 오전 10시 컨퍼런스콜을 통해 부문별 상세 실적, 반도체 업황 전망을 발표할 예정이다....",
+   "url": "https://www.kyeongin.com/article/1772767"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 17:06",
+   "region": "KR",
+   "title": "[데일리픽] 금리 올라도 BTC↑…테슬라 로드스터 \"진짜 날았다\"",
+   "detail": "크리스토프 푸케 ASML 최고경영자(CEO)는 최근 실적 발표에서 \"AI 반도체 투자 확대로 고객사들의 장비 수요... 중국 정부는 지난 9월부터 리튬이온 배터리에 소비세 2%를 부과했으며, 2027년 9월에는 4%로 인상할 예정이다....",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=707768"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 16:02",
+   "region": "KR",
+   "title": "수도권 주택착공, 올해 목표치 37% 그쳐… 연말 최대 5만호 미달 전망",
+   "detail": "당초 목표를 달성하려면 현재까지 발표된 실적보다 약 16만9000호를 더 착공해야 한다. 이날 정부가... 정부는 향후 입주 예정 물량의 잠정 추계는 보유하고 있지만, 아파트는 입주까지 3~4년이 소요되는 만큼 향후...",
+   "url": "https://www.ajunews.com/view/20261016145629014"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 15:26",
+   "region": "KR",
+   "title": "삼성전자 노조와 닮았네…대만서 벌어진 '뜻밖의 사태' [김대영의 노무...",
+   "detail": "파업 예정일을 하루 앞두고 나온 이 발언은 노조에 '타협이 필요하다'는 메시지로 해석됐다. 인공지능(AI)발... 마이크론은 지난달 30일 실적발표에서 성과급과 신규 생산시설 초기 가동 비용 등으로 2027회계연도 1분기(9...",
+   "url": "https://www.hankyung.com/article/202610165150g"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 12:32",
+   "region": "KR",
+   "title": "우리금융, 견조한 실적에 자본여력 확대…주주환원 속도 낸다",
+   "detail": "우리금융의 지난 6월 말 CET1 비율은 잠정 13.71%로 집계됐다. 증권업계에서는 3분기 이익 증가와 환율 하락... 증권가에선 오는 23일 예정된 3분기 실적 발표에서는 순이익 규모와 함께 CET1 비율의 개선 폭이 주요 관심사가...",
+   "url": "http://www.techholic.co.kr/news/articleView.html?idxno=223273"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 11:30",
+   "region": "KR",
+   "title": "\"영익 100조원 넘는데도 금융위기 수준\"…삼전닉스 주가 급락에도 '반전...",
+   "detail": "향후 주가 흐름을 좌우할 변수로는 이달 말 예정된 삼성전자와 SK하이닉스의 실적 발표와 주주환원 정책이... 한편 삼성전자는 지난 8일 올해 3분기 연결 기준 잠정 매출 195조원, 영업이익 107조4,000억원을 발표했다....",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610160046&t=NN"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 11:26",
+   "region": "KR",
+   "title": "한온시스템, 3분기 잠정 실적 발표 11월 5일 예정",
+   "detail": "한온시스템은 2026년 3분기 영업(잠정)실적을 오는 11월 5일 공시할 예정이라고 16일 공시했다. 이번 공시는... 한온시스템 측은 \"공시되는 실적은 외부감사인의 검토 결과에 따라 변동될 수 있다\"며 \"실적발표 자료는...",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=395449"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 10:06",
+   "region": "KR",
+   "title": "한온시스템, 3Q 잠정실적 발표 예고",
+   "detail": "공시할 예정이라고 16일 밝혔다. 구분 내용 대상 기간은 올해 1월 1일부터 9월 30일까지다. 내부결산에 따른 잠정실적으로 외부감사인의 회계감사 결과에 따라 수치가 달라질 수 있다. 실적발표 자료는 공정공시 이후 회사...",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=873460"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 08:06",
+   "region": "KR",
+   "title": "대한항공, 3분기 최대 매출에도 수익성 '주춤'…통합 효과 주목[애널리...",
+   "detail": "16일 금융투자업계에 따르면 대한항공의 3분기 별도 기준 잠정 매출액은 5조448억원, 영업이익은... 실제 영업이익은 실적 발표 전 증권사 전망치에도 미치지 못했다. 한화투자증권은 지난 12일 대한항공의 3분기 별도...",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026101607480145897"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 07:30",
+   "region": "KR",
+   "title": "'동탄 GPU' 통했을까?…삼성SDS 3분기 실적에 쏠린 시선",
+   "detail": "말 발표되는 3분기 실적에서 확인될 예정이다. 기존 사업의 성장이 정체된 만큼 데이터센터에 집중해온... GPU 가동 본격화…2031년 800MW 목표 16일 업계에 따르면 삼성SDS는 오는 29일 올해 3분기 잠정실적을 발표한...",
+   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205185"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-prelim",
+   "date": null,
+   "published": "2026-10-16 07:10",
+   "region": "KR",
+   "title": "K배터리 3사, 실적 방어전…보상금·ESS가 갈랐다",
+   "detail": "앞서 잠정실적을 발표한 LG에너지솔루션은 분기 기준 사상 최대 실적을 갈아치웠다. 3분기 연결 기준 잠정... 반영될 예정이다. 다만 이 같은 일회성 이익을 걷어내더라도 무정전전원장치(UPS)와 배터리백업유닛(BBU)...",
+   "url": "https://news.bizwatch.co.kr/article/industry/2026/10/15/0029"
   },
   {
    "src": "네이버뉴스",
@@ -518,145 +636,167 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 14:46",
+   "published": "2026-10-16 17:42",
    "region": "KR",
-   "title": "GS건설, 미청구공사 절반 줄이고 PF 부담 축소…3분기 실적 반등 기대",
-   "detail": "총 2406가구 규모의 '북한산 자이 더 프레스티지'가 들어설 예정이다. 이주를 마치고 철거 단계에... GS건설은 10월 14일 현재 3분기 잠정실적을 발표하지 않았다. 신한투자증권은 지난 13일 GS건설의 3분기 연결 매출을...",
-   "url": "https://sateconomy.co.kr/news/view/1065590665089743"
+   "title": "TSMC, 머스크의 '테라팹' 협의 확인...\"운영권은 반드시 우리가 가져야\"",
+   "detail": "CC 웨이 TSMC 회장 겸 CEO는 15일(현지시간) 3분기 실적 발표 컨퍼런스콜에서 미국 내 생산능력을 애리조나주... 시작할 예정이다. 애리조나 외 지역까지 생산 거점을 넓히면 미국 내 AI 반도체 수요에 대응할 여지가...",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216330"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 13:28",
+   "published": "2026-10-16 15:34",
    "region": "KR",
-   "title": "LG전자 17만8000원 보합…3분기 세부 실적 발표 대기",
-   "detail": "LG전자는 10월 7일 3분기 잠정 매출 23조8270억원, 영업이익 7818억원을 발표했다. 전년 동기보다 각각 8.9%, 13.5% 증가했으며 구체적인 사업본부별 실적은 이달 말 공개할 예정이다. 회사는 10월 1일 미국 버지니아주...",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=232217"
+   "title": "카카오게임즈, 미투온·아부다비 업고 해외 공략",
+   "detail": "취득 예정일은 11월 16일이다. 거래가 끝나면 카카오게임즈는 미투온 최대 주주에 올라 경영권을 확보한다.... 신권호 카카오게임즈 최고재무책임자(CFO)는 2분기 실적 발표 컨퍼런스콜에서 \"2분기와 3분기를 매출...",
+   "url": "https://www.sidae.com/article/2026101611172243409"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 10:43",
+   "published": "2026-10-16 13:36",
    "region": "KR",
-   "title": "\"14년 만에 최악 상황\"…세계 1위 왕좌 지킨 삼성도 '직격탄' [테크로그...",
-   "detail": "것으로 잠정 집계됐다. 3분기 기준으로 2012년 이후 14년 만에 최저 수준이다. 제조사가 유통망에 공급한... 구체적인 실적은 이달 말로 예정된 확정 실적 발표에서 확인될 예정이다. MX·네트워크 사업은 지난 2분기에도...",
-   "url": "https://www.hankyung.com/article/202610140514g"
+   "title": "과도한 우려가 부른 급락…KB증권 \"삼성전자·SK하이닉스, W자 반등 꾀할...",
+   "detail": "특히 이달 말로 나란히 예정된 두 회사의 3분기 실적 발표가 얼어붙은 투자 심리를 돌려세울 중대한... SK하이닉스는 오는 28일, 삼성전자는 바로 다음 날인 29일에 각각 실적 컨퍼런스콜을 앞두고 있다. 시장은 이번...",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=302037"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 09:50",
+   "published": "2026-10-16 13:17",
    "region": "KR",
-   "title": "셀트리온, 美 대형 PBM 추가 등재 협상 막바지…4분기 계약 목표",
-   "detail": "환급 적용은 4분기부터 이뤄질 예정이다. 미국에서 판매 중인 기존 제품과 후속 제품의 점유율도 확대되고... 셀트리온은 지난 12일 3분기 연결 기준 매출 1조5000억원, 영업이익 5100억원의 잠정 실적을 발표했다. 전년...",
-   "url": "https://sateconomy.co.kr/news/view/1065572838751728"
+   "title": "'도깨비의세계'로 반등 시동 건 카카오게임즈…신작 릴레이 연착륙할까",
+   "detail": "특히 내년 1월 출시 예정인 차세대 플래그십 '오딘Q' 마케팅비 증가가 예상됨에 따라 4분기 이익 개선 폭이 제한될 수 있다. 카카오게임즈 역시 2분기 실적발표 컨퍼런스콜에서 2·3분기를 매출 저점으로 보고, 4분기 신작...",
+   "url": "https://www.dailian.co.kr/news/view/1702369/?sc=Naver"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 09:48",
+   "published": "2026-10-16 11:34",
    "region": "KR",
-   "title": "홍라희 관장, 이재용 회장에 삼성전자 지분 증여, 규모는?",
-   "detail": "금융감독원 전자공시시스템에 공개된 거래계획보고서에 따르면 주식 이전 예정일은 오는 11월... 4조 원의 2026년 3분기 잠정 실적을 발표했다. 3분기 실적은 전 분기 대비 매출이 13.70%, 영업이익이 20.01% 증가했다....",
-   "url": "https://www.wikitree.co.kr/articles/1166026"
+   "title": "크래프톤에 매출1위 내준 넥슨, 아크·메이플로 자존심 되찾나",
+   "detail": "실제 정식 도입 여부는 이용자 반응과 데이터를 토대로 판단할 예정이다. 출시 초기 대규모 이용자를... 우에무라 시로 넥슨 최고재무책임자(CFO)는 지난 2분기 실적발표 컨퍼런스콜에서 \"던전앤파이터 등 일부 기존...",
+   "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424355"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 09:40",
+   "published": "2026-10-16 11:18",
    "region": "KR",
-   "title": "전영현은 메모리, 노태문은 MX까지...삼성전자 연말 인사, 겸직 체제 이...",
-   "detail": "삼성전자는 오는 29일 오전 10시 3분기 실적발표 콘퍼런스콜을 연다. 지난 8일 발표한 잠정실적에는 포함되지 않았던 DS·DX 등 부문별 성적과 사업 현황을 공개할 예정이다.",
-   "url": "https://www.insight.co.kr/news/577647"
+   "title": "KB증권 “삼전·닉스 과도한 급락 심리 탓, 추가 하락보다 상승에 무게...",
+   "detail": "실적 발표에서 내놓을 주주환원 정책이 향후 주가 반등의 트리거(방아쇠)가 될 것으로 내다봤다. SK하이닉스는 오는 28일, 삼성전자는 29일에 각각 실적 컨퍼런스콜을 진행할 예정이다. 김 본부장은 “컨퍼런스콜에서...",
+   "url": "https://www.kukinews.com/article/view/kuk202610160059"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 08:00",
+   "published": "2026-10-16 11:02",
    "region": "KR",
-   "title": "메리츠화재, 상반기 계열사 투자 확대…K-ICS 하락 속 자본 축적 '속도 ...",
-   "detail": "메리츠증권 영구채 9천700억…대출채권도 4천307억 양수 올해 상반기 말 잠정 K-ICS 230%…6개월 새 10%p 하락... 김종민 메리츠증권 대표는 지난 8월 실적발표에서 부동산 익스포저에 대한 순자본비율(NCR) 위험값 차등화...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=228277"
+   "title": "네이버, 데이터 가치 주목…수익성 부담에도 C2C 투자 지속",
+   "detail": "김희철 네이버 최고재무책임자(CFO)는 지난 8월 7일 열린 2분기 실적발표 컨퍼런스콜에서 “인공지능(AI)... 한편 포시마크는 인수한 전문시설의 기존 재고를 정리한 뒤 판매자를 위한 위탁판매 공간으로 전환할 예정이...",
+   "url": "https://dealsite.co.kr/articles/170690"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 07:42",
+   "published": "2026-10-16 10:02",
    "region": "KR",
-   "title": "한화오션, 27일 3분기 실적 발표",
-   "detail": "회사는 3분기 경영실적과 질의응답을 설명회 주요 내용으로 제시했다. 같은 날 공시된 결산실적 공시 예정일 안내에는 발표 실적이 잠정치이며 회사 사정에 따라 일정이 변경될 수 있다고 적혔다.",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=392495"
+   "title": "\"삼전닉스, 'W자형 반등' 위한 두번 째 저점\"...KB증권, 코스피 PER 8배로...",
+   "detail": "특히 이달 말 예정된 실적 발표가 투자심리를 되돌릴 계기가 될 수 있을 것으로 봤다. SK하이닉스는 오는 28일, 삼성전자는 29일 실적 컨퍼런스콜을 진행할 예정이다. 이성구 전문위원",
+   "url": "http://www.beyondpost.co.kr/view.php?ud=2026101609575022632aaae0046f_30"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 07:00",
+   "published": "2026-10-16 10:00",
    "region": "KR",
-   "title": "[인더컴퍼니] LG에너지솔루션, ESS가 살린 3분기…4분기엔 보조금 없이 ...",
-   "detail": "지난 8일 LG에너지솔루션의 3분기 잠정실적 발표 전후 ▲메리츠증권 ▲다올투자증권 ▲대신증권 ▲iM증권... 2027년에는 10GWh 이상의 각형 리튬인산철(LFP) 배터리 생산라인도 추가될 예정이라고 설명했습니다. 물론 ESS...",
-   "url": "https://www.inthenews.co.kr/news/article.html?no=92993"
+   "title": "잘나가는 TSMC 2나노… 삼성전자 파운드리 묘수는",
+   "detail": "해당 제품은 내년부터 대규모로 도입될 예정이다. 브로드컴도 지난 2월 TSMC의 2nm 공정을 활용한 맞춤형... 삼성전자는 오는 29일 올해 3분기 실적발표 컨퍼런스콜을 연다. 투자자와 증권가를 중심으로 2nm 공정의...",
+   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=729365"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-14 06:00",
+   "published": "2026-10-16 09:55",
    "region": "KR",
-   "title": "中 반도체 쇼크보다 걱정되는 것들…美 물가지표·삼전닉스 실적 전망",
-   "detail": "최근 삼성전자가 3분기 107조 원의 잠정 영업이익을 발표하며 글로벌 1위에 오르는 등 실적이 역대급으로... 이달 말 예정된 삼성전자와 SK하이닉스의 실적발표에서 내년 이익률 증가 전망치를 어떻게 전망할지가...",
-   "url": "https://www.news1.kr/finance/general-stock/6318944"
+   "title": "\"실적 멀쩡한데 주가만 패닉\"… KB증권 \"삼성·SK 급락은 과도한 공포\"",
+   "detail": "시장에서는 이달 말 예정된 양사의 3분기 확정 실적 발표와 콘퍼런스콜이 주가 반등의 분수령이 될... SK하이닉스는 오는 28일 삼성전자는 29일 실적 발표를 진행한다. 업계에서는 컨퍼런스콜을 통해 공개될 메모리...",
+   "url": "https://www.ddaily.co.kr/page/view/2026101609144723437"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-13 18:50",
+   "published": "2026-10-16 09:08",
    "region": "KR",
-   "title": "[인터뷰] 양향자 \"당협위원장 경선 전수조사해야…신뢰회복 차원\"",
-   "detail": "말씀하신 것처럼 뭐 3분기 잠정 영업이익이 107조 4000억 원 결국 전분기 대비 20%나 증가를 했어요. 네 근데... 그리고 삼성전자는 2분기 실적 발표에서 AI 서버 수요 강세를 얘기했어요. 그리고 HBM4 공급 확대를 설명했다는...",
-   "url": "https://www.news1.kr/politics/general-politics/6318429"
+   "title": "[증권사 인사 전망] 강성묵號 하나증권, 반년 만에 작년 실적 추월",
+   "detail": "추천할 예정이다. 상반기 충당금전입액은 541억원으로 전년 동기(13억원) 대비 증가했다. IB부문은 충당금... 김동식 하나증권 최고재무책임자(CFO)는 지난 7월 24일 하나금융그룹 실적발표 컨퍼런스콜에서 상반기...",
+   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=666330"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-13 17:52",
+   "published": "2026-10-16 08:40",
    "region": "KR",
-   "title": "삼성전자 SK하이닉스 자사주 매입 끝나고 외국인 이탈하고, '추가 주주환...",
-   "detail": "8일 삼성전자가 3분기 잠정실적 발표에서 100조 원이 넘는 영업이익을 공개했음에도 반도체주 투자심리가... SK하이닉스는 27일 3분기 실적발표에서 추가 환원 규모와 방식을 밝힐 예정이다. 김운호 IBK투자증권...",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449230"
+   "title": "KB증권 \"삼성·SK하이닉스 주가 급락은 수급 탓…매수 적기\"",
+   "detail": "김동원 KB증권 리서치본부장은 16일 발표한 반도체 산업 보고서에서 \"삼성전자와 SK하이닉스의 최근 주가... 김 본부장은 \"10월 말 예정된 실적 컨퍼런스콜(28일 SK하이닉스, 29일 삼성전자)에서 구체화될 주주환원...",
+   "url": "https://www.jasm.co.kr/news/view/321753/?sc=Naver"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-prelim",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-10-13 17:35",
+   "published": "2026-10-16 08:34",
    "region": "KR",
-   "title": "AI 데이터센터 전력난에 수주 폭증…전력기기·ESS 주가 엇갈린 까닭",
-   "detail": "890MW의 신규 발전용량 가운데 첫 물량은 2028년부터 공급될 예정이다. 미국 정부도 기존 원전의 발전능력... 3분기 실적 발표가 분수령 증권가에서는 이달 말부터 발표되는 3분기 실적이 수주 확대에 따른 이익...",
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/112617"
+   "title": "삼성전기, 3분기 분기 최대 실적 '유력'...MLCC·FCBGA '쌍끌이'",
+   "detail": "삼성전기는 오는 28일 실적발표 및 컨퍼런스콜을 진행할 예정이다. 삼성전기는 인공지능(AI) 수혜 업체 중 하나다. 지난 3분기에도 분기 매출과 영업이익 신기록 달성이 유력하다. 16일 업계에 따르면 지난 3분기...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=156160"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-10-16 08:05",
+   "region": "KR",
+   "title": "KB증권 \"W자 반등 가능\"…삼전·SK닉스 급락에도 \"실적은 탄탄\"",
+   "detail": "특히 이달 말 예정된 실적 발표가 투자심리를 되돌릴 계기가 될 수 있을 것으로 봤다. SK하이닉스는 오는 28일, 삼성전자는 29일 실적 컨퍼런스콜을 진행할 예정이다. 김 연구원은 \"실적 컨퍼런스콜에서 구체화될 것으로...",
+   "url": "https://www.newsis.com/view/NISX20261016_0003828318"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-10-16 06:32",
+   "region": "KR",
+   "title": "KFC, 코카콜라와 계약…30년 협력 펩시와 결별",
+   "detail": "KFC와 함께 얌브랜즈 산하에 있는 타코벨도 펩시코와의 공급 관계를 유지할 예정이다. 이번 계약으로 KFC와... 라몬 라구아르타 펩시코 최고경영자(CEO)는 지난주 실적발표 컨퍼런스콜에서 음료 사업의 성과에 만족하지...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02302566645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
@@ -773,6 +913,17 @@
    "kind": "news",
    "query_id": "nv-earnings",
    "date": null,
+   "published": "2026-10-14 07:42",
+   "region": "KR",
+   "title": "한화오션, 27일 3분기 실적 발표",
+   "detail": "오후 2시 컨퍼런스콜·웹캐스팅 진행 한화오션이 오는 27일 2026년 3분기 경영실적을 발표한다. 발표와... 같은 날 공시된 결산실적 공시 예정일 안내에는 발표 실적이 잠정치이며 회사 사정에 따라 일정이 변경될 수...",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=392495"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
    "published": "2026-10-14 06:02",
    "region": "KR",
    "title": "‘검은 화요일’ 속절없이 무너진 코스피…“반등 여력 약해, 10월 횡보...",
@@ -782,508 +933,376 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-earnings",
+   "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-13 17:22",
+   "published": "2026-10-16 19:46",
    "region": "KR",
-   "title": "실적 발표 앞둔 한화오션, 임원진 대거 지분 변동 포착",
-   "detail": "| 서울=한스경제 김종효 기자 | 한화오션은 오는 27일 컨퍼런스콜과 웹캐스팅 방식을 통해 2026년 3분기 경영실적을 발표하는 기업설명회(IR)를 개최할 예정이라고 13일 공시했다. 이와 함께 한화오션은 같은 날 2026년...",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=872363"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 16:28",
-   "region": "KR",
-   "title": "케이뱅크, 3분기 순익 늘린다···사업자대출 급증 효과",
-   "detail": "이준형 케이뱅크 전략실장은 지난 7월 상반기 실적 컨퍼런스콜에서 분기 후반에 자산이 늘어 이익... 중단했던 마이너스통장 신규 개설은 10월 1일 재개했다. 케이뱅크는 이달 말 3분기 실적을 발표할 예정이다.",
-   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=713625"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 16:01",
-   "region": "KR",
-   "title": "'4.5조' 또 던진 외국인…삼전닉스 흔들리자, 코스피 장중 6000선 붕괴",
-   "detail": "14~15일 ASML·TSMC 실적 발표와 27일 SK하이닉스 실적 발표, 29일 삼성전자 컨퍼런스콜이 예정돼있다. 실적이 좋더라도 향후 미래 성장률에 대한 불확실성으로 증시 변동성이 커질 가능성이 있다. 한지영 키움증권...",
-   "url": "https://www.etnews.com/20261013000360"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 15:40",
-   "region": "KR",
-   "title": "크래프톤, '채용 동결' 선언 후 역대 최대 신입 공채…AI 인재 100명 이상...",
-   "detail": "크래프톤은 지난해 10월 AI First 기업 전환을 선언한 데 이어 같은 해 11월 3분기 실적발표 컨퍼런스콜에서... 11~12월 테스트와 면접을 거쳐 오는 2027년 1월 최종 합격자를 발표할 예정이다. 합격자는 2027년 2월 입사해...",
-   "url": "http://www.popcornnews.net/news/articleView.html?idxno=135819"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 08:36",
-   "region": "KR",
-   "title": "SK하이닉스, 3분기 역대 최대 실적 전망 불구 주가 부진...이유는?",
-   "detail": "최태원 SK 회장(사진 왼쪽)은 지난 9일 전남광주 반도체 특화단지 예정지를 찾았다/사진=SK 제공... SK하이닉스는 이달 말 실적발표 및 컨퍼런스콜을 진행할 계획이다. 감용건 미래에셋증권 애널리스트는 \"일부 6세대...",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=156009"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 08:10",
-   "region": "KR",
-   "title": "한화시스템 27일 3분기 실적 발표 IR 개최",
-   "detail": "진행 방식은 컨퍼런스콜과 웹캐스팅이며, 주요 내용은 3분기 경영실적 발표와 질의응답이다. 관련 자료는 발표 당일 한화시스템 홈페이지 실적발표 게시판에 게시될 예정이다.",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=392363"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 08:00",
-   "region": "KR",
-   "title": "일 잘하는 메모리 부장은 14억?…삼성 성과급 잔치 뒤 받을 청구서",
-   "detail": "최고 소득세율인 49.5%(지방소득세를 포함)의 세율이 적용되며, 보험료는 4.967%가 공제될 예정이다. 실제... 마이크론은 지난달 30일 2026년 회계연도 4분기 실적발표 컨퍼런스콜에서 \"성과급 보상을 위해 다음 분기 약...",
-   "url": "https://www.mt.co.kr/industry/2026/10/13/2026101223012392108"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 06:58",
-   "region": "KR",
-   "title": "삼성생명, 해외 신종자본증권 2조원 발행…K-ICS 208%에도 자본 보강",
-   "detail": "삼성생명 이완삼 CFO는 지난해 2월 실적발표 컨퍼런스콜에서 주주환원 기조 유지에 필요한 K-ICS 수준을 150... 표면이자율, 최초 콜 가능일, 스프레드는 해외 수요예측 이후 확정되며 정정공시가 나올 예정이다. 이자는...",
-   "url": "https://www.news2day.co.kr/article/20261012500282"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 06:25",
-   "region": "KR",
-   "title": "코스피 3.7% 급락…반등 활로 찾을까",
-   "detail": "[김동원/KB증권 리서치본부장 : 10월 말에 삼성전자와 SK하이닉스의 실적 컨퍼런스콜이 예정이 있고 미국의 빅테크 기업들도 분기 실적 발표가 예정이 돼 있기 때문에 그때까지 좀 기다려 보자는….] 반도체 등의 수출...",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008794142&plink=ORI&cooper=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-13 00:48",
-   "region": "KR",
-   "title": "코스피, 한 달 만에 최대 하락률…반등 활로 찾을까",
-   "detail": "[김동원/KB증권 리서치본부장 : 10월 말에 삼성전자와 SK하이닉스의 실적 컨퍼런스콜이 예정이 있고 미국의 빅테크 기업들도 분기 실적 발표가 예정이 돼 있기 때문에 그때까지 좀 기다려 보자는….] 반도체 등의 수출...",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008794026&plink=ORI&cooper=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 21:00",
-   "region": "KR",
-   "title": "코스피, 연휴 후 3% 급락…두달만 6,300선 후퇴",
-   "detail": "이달 말 예정된 SK하이닉스의 실적 발표와 삼성전자 컨퍼런스콜에서 향후 실적 전망과 주주환원 계획이 구체화하는지가 향후 주가 흐름의 변수가 될 전망입니다. 코스닥 지수도 4% 넘게 급락해 850선 아래로...",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261012210003A1h"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 20:25",
-   "region": "KR",
-   "title": "코스피 오늘만 3.7% 급락…반등 활로 찾을까",
-   "detail": "[김동원/KB증권 리서치본부장 : 10월 말에 삼성전자와 SK하이닉스의 실적 컨퍼런스콜이 예정이 있고 미국의 빅테크 기업들도 분기 실적 발표가 예정이 돼 있기 때문에 그때까지 좀 기다려 보자는….] 반도체 등의 수출...",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008793835&plink=ORI&cooper=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 19:12",
-   "region": "KR",
-   "title": "삼성전자 4.39%↓·SK하이닉스 4.52%↓…주식 급락 마감",
-   "detail": "이어 27일 SK하이닉스 실적 발표, 29일 삼성전자 컨퍼런스콜이 예정돼 있다. 이들 기업이 제시할 반도체 수요 전망과 투자 계획, 실적 개선 지속 여부에 따라 시장의 평가도 달라질 수 있다. 미국 물가지표도 주요...",
-   "url": "http://www.kjdaily.com/article.php?aid=1791799873688818276"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 18:38",
-   "region": "KR",
-   "title": "코스피 3.7% 급락…두 달 만에 6300대로",
-   "detail": "한국 시간으로 오는 14일 ASML, 15일 TSMC 실적 발표에 이어 27일 SK하이닉스 실적 발표, 29일 삼성전자 컨퍼런스콜이 예정돼 있다. 14일 밤 발표되는 미국의 9월 소비자물가지수(CPI)와 이후 시장금리 움직임도 증시에...",
-   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53577"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 17:28",
-   "region": "KR",
-   "title": "코스피, 6300대로 '풀썩'...외인 팔자에 한달 만에 최대 하락률",
-   "detail": "SK하이닉스 실적발표, 29일 삼성전자 컨퍼런스콜 등 국내외 반도체 기업의 실적과 전망 등이 구체적으로... 김대준 한국투자증권 연구원은 \"이번 주 예정된 미국 9월 CPI와 생산자물가지수(PPI)가 시장 예상치를...",
-   "url": "https://www.livebiz.today/news/articleView.html?idxno=205524"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-10-12 16:42",
-   "region": "KR",
-   "title": "'오픈AI 거품론' 여파…코스피 6400선 무너졌다",
-   "detail": "한국시간으로 오는 14~15일로 예정된 네덜란드 반도체장비 기업 ASML, 대만 반도체 위탁생산 기업 TSMC 실적... SK하이닉스 실적 발표, 삼성전자 컨퍼런스콜(전화회의) 등이 지수 반등의 계기로 작용할지 주목된다....",
-   "url": "https://www.imaeil.com/page/view/2026101216335465894"
+   "title": "부산진해경제자유구역청, 입주기업 2,442곳 AI 혁신 지원",
+   "detail": "부산진해경제자유구역청이 16일 신라스테이 서부산에서 개최한 '디지털전환(DX) 성장 설명회'에서 입주기업 임직원 등 참석자들이 인공지능(AI) 기반 제조혁신과 미래 경쟁력 강화를 다짐하며 기념촬영을 하고 있다. (사진...",
+   "url": "http://www.newstown.co.kr/news/articleView.html?idxno=718798"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-16 05:04",
+   "published": "2026-10-16 19:12",
    "region": "KR",
-   "title": "익산서 동물 헬스케어 박람회 개막",
-   "detail": "전북도와 익산시는 15~18일 익산 웨스턴라이프호텔에서 ‘2026 동물헬스케어 산업박람회’를 개최한다. 이번... 16일에는 기업설명회(IR) 시연회와 컨설팅 프로그램이 진행돼 동물 헬스케어 투자유치 전략 수립을 지원하고...",
-   "url": "https://www.seoul.co.kr/news/publicnews/local_govern/enjoy_local/2026/10/16/20261016019006?wlog_tag3=naver"
+   "title": "용인시산업진흥원, 화장품 수출기업 해외 인증 대응 지원",
+   "detail": "설명회'를 개최했다고 16일 밝혔다. 이번 설명회에는 용인시를 비롯한 경기도 내 화장품 관련 기업 임직원들이 참석했으며, 미국과 유럽, 중국 등 주요 수출시장뿐 아니라 베트남과 아랍에미리트(UAE), 일본 등 시장...",
+   "url": "https://www.cfnews.kr/news/article.html?no=112908"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-16 00:02",
+   "published": "2026-10-16 18:52",
    "region": "KR",
-   "title": "수원시, 기업 8개사 투자상담 진행…누적 투자유치액 250억원 기록",
-   "detail": "수원시는 지난 14일 시청 중회의실에서 '2026 수원기업 투자설명회(IR) 데이 수원.판(PANN) 10기'를 개최했다고 15일 밝혔다. 심사를 거쳐 선정된 일렉필드퓨처, 위에이드, 비씨모빌리티, 킨사이트, 몰드...",
-   "url": "https://www.etnews.com/20261016000001"
+   "title": "[HIT알공] 바티젠, 글로벌제약사와 135억 위탁생산 계약",
+   "detail": "⑧ 한미약품, 27일 3분기 실적 기업설명회 개최 = 오는 27일 오후 4시 30분 국내외 주요 증권사 애널리스트 및 기관투자자를 대상으로 기업설명회(IR) 개최. 컨퍼런스 콜 방식으로 2026년 3분기 경영실적을...",
+   "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=79946"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-16 00:01",
+   "published": "2026-10-16 18:18",
    "region": "KR",
-   "title": "중기대출 270조 시대 연 기업은행…생산적금융 영토 넓힌다",
-   "detail": "기업은행은 지난 3월 'IBK 코스닥 활성화 태스크포스(TF)'를 구성하고 코스닥 상장기업에 대한 분석 보고서 발간과 기업설명회(IR) 지원, 투자자 연계 등을 추진하고 있다. 지난 5월에는 'IBK 코스닥 붐업 데이'를 개최해 우량...",
-   "url": "https://news.tf.co.kr/read/economy/2376604.htm"
+   "title": "강진군, 농어촌 기본소득 대비 사회연대경제 역할 확대 논의",
+   "detail": "강진군은 지난 14일 종합운동장 내 웰니스푸소센터에서 관내 사회적경제기업과 마을공동체 대표 등 30여 명이 참석한 가운데 '농어촌 기본소득 시범사업 대비 사회연대경제 활성화 설명회'를 개최했다고 밝혔다. 이번...",
+   "url": "http://www.newsmaker.or.kr/news/articleView.html?idxno=184215"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 23:12",
+   "published": "2026-10-16 17:46",
    "region": "KR",
-   "title": "인천시, '2026 인천스타트업위크' 성황리 폐막…미래 산업 생태계 확장",
-   "detail": "이어 스타트업의 실질적인 투자를 끌어내기 위한 '인천 Next Plus+ 기업설명회(IR)', '청년 소셜벤처기업 설명회(IR) 피칭데이', '창업도약패키지 기업설명회(IR) 데모데이'가 연이어 개최됐다. 아울러 대·중견기업과의...",
-   "url": "http://www.bizwnews.com/news/articleView.html?idxno=149010"
+   "title": "한국투자액셀러레이터, 올해 스타트업 지원 막차",
+   "detail": "사전 설명회도 개최한다. 한국금융지주 자회사인 한국투자액셀러레이터는 바른동행 4차 참가 기업을 모집한다고 16일 밝혔다. 이번 모집은 올해 마지막으로 진행하는 스타트업 발굴 사업이다. 지원 대상은 법인 설립일...",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313323"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 22:48",
+   "published": "2026-10-16 17:44",
    "region": "KR",
-   "title": "베트남 진출기업 부산진해 오세요... 경자청 '유턴' 유치",
-   "detail": "부산진해경제자유구역청은 지난 14일 베트남 호찌민에서 현지 진출기업을 대상으로 '국내복귀기업 투자유치 설명회'를 개최했다고 15일 밝혔다. 설명회에는 베트남 부산·경남 투자기업 연합회 회원사를 비롯해 현지에...",
-   "url": "http://www.gnmaeil.com/news/articleView.html?idxno=596626"
+   "title": "부산진해경자청, 경제자유구역 경쟁력 강화 속도…창원시 협력·기업 AX...",
+   "detail": "■ 입주기업 2442개사…디지털전환 통한 질적 성장 추진 경자청은 16일 신라스테이 서부산에서 입주기업 임직원 60여 명을 대상으로 ‘디지털전환(DX) 성장 설명회’도 개최했다. 이번 설명회는 입주기업들이 제조 현장의...",
+   "url": "https://www.viva100.com/article/20261016500761"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 19:42",
+   "published": "2026-10-16 17:40",
    "region": "KR",
-   "title": "인천시, '인천스타트업위크'·'인천 대학연합 창업경진대회' 성황리 마...",
-   "detail": "'인천 Next Plus+ 기업설명회(IR)'와 '청년 소셜벤처기업 설명회(IR) 피칭데이', '창업도약패키지 기업설명회(IR)... □ '인천 대학연합 창업경진대회' 개최…청년 창업가 24개 팀 경연 인천시와 인천테크노파크가 관내 13개...",
-   "url": "https://www.cstimes.com/news/articleView.html?idxno=724130"
+   "title": "지역 경제계, 대전산단 입주규제 '업종코드'→'오염물질' 전환돼야",
+   "detail": "정책토론회'를 개최했다. 김기흥 시의원이 좌장을 맡아 진행된 이날 토론회에는 최윤호 대전산단관리공단... 왔다\"면서 \"설명회나 공청회 등 기업과 주민, 관계기관의 의견을 충분히 수렴해 향후 5년 안에 가시적인 변화가...",
+   "url": "https://www.joongdo.co.kr/web/view.php?key=20261016010004472"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 18:38",
+   "published": "2026-10-16 17:20",
    "region": "KR",
-   "title": "\"베트남 진출기업, 부산진해로 모십니다\"",
-   "detail": "부산진해경제자유구역청은 지난 14일 베트남 호치민에서 현지에 진출한 우리 기업을 대상으로 '국내복귀기업 투자유치 설명회'를 개최했다고 15일 밝혔다. 이번 설명회는 베트남 현지에서 사업을 운영 중인 제조기업...",
-   "url": "https://www.fnnews.com/news/202610151836498793"
+   "title": "경남TP, 미래자동차 핵심부품 기술 세미나·기업지원 설명회 개최",
+   "detail": "경남테크노파크(경남TP)는 16일 롯데호텔앤리조트 김해에서 도내 자동차 부품기업을 대상으로 '2026년 미래자동차 핵심부품 기술 및 개발동향 세미나'를 개최했다고 밝혔다. 이번 세미나는 급변하는 글로벌 미래차 시장에...",
+   "url": "https://www.cnbnews.com/news/articleView.html?idxno=1019754"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 18:35",
+   "published": "2026-10-16 17:12",
    "region": "KR",
-   "title": "수원특례시, '수원.판' 10기 기업 투자유치 지원",
-   "detail": "수원특례시는 14일 시청 중회의실에서 '2026 수원기업 아이알(IR)데이 수원.판(PANN) 10기'를 개최했다. 이날... 2024년 시작한 '수원.판'은 기술력과 성장 잠재력을 갖춘 수원 기업을 발굴해 기업설명회 발표 역량을 높이고...",
-   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480753"
+   "title": "[UP! START] 씨엔티테크, 테크브릿지 데모데이 성료…덴티버스·이루비 ...",
+   "detail": "데모데이'를 개최했다. 행사는 공공·대학 보유 기술을 기반으로 창업한 예비·초기 기업들의 사업화 성과를... 식지피티와 블랙후즈, 덴티버스, 한국금융투자 등 참가 기업들은 투자설명회(IR)를 통해 핵심 기술과 사업모델...",
+   "url": "https://www.nbntv.co.kr/news/articleView.html?idxno=4026157"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 18:04",
+   "published": "2026-10-16 17:00",
    "region": "KR",
-   "title": "강진군, 농어촌 기본소득 사회연대경제 활성화 설명회",
-   "detail": "강진군이 지난 14일 종합운동장 내 웰니스푸소센터에서 관내 사회적경제기업과 마을공동체 대표 등 30여 명이 참석한 가운데 ‘농어촌 기본소득 시범사업 대비 사회연대경제 활성화 설명회’를 개최했다고 15일 밝혔다....",
-   "url": "http://www.jndn.com/article.php?aid=1792054808441258109"
+   "title": "[금융권 이모저모]미래에셋자산운용, 전주사무소 열고 국민연금 협력 강...",
+   "detail": "오는 20일 오후 3시 서울 강남구 한국투자액셀러레이터 사옥에서 '더 라이트 세션: 바른동행 인포데이'를 개최한다. 설명회에서는 투자자가 초기 기업을 검토할 때 중점적으로 살펴보는 지표와 스타트업이 지원서·IR...",
+   "url": "https://www.businessplus.kr/news/articleView.html?idxno=118310"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 18:02",
+   "published": "2026-10-16 16:36",
    "region": "KR",
-   "title": "[HIT알공] 네이처셀·안국약품, 나란히 과천 부동산 취득 계약",
-   "detail": "④ 부광약품, 23일 기업설명회 개최 = 오는 23일 오전 10시 30분 애널리스트와 기관투자자, 기자 등을 대상으로 기업설명회(IR) 개최. 화상회의 방식으로 2026년 3분기 경영실적 및 연구개발(R&D) 현황을 설명할...",
-   "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=79927"
+   "title": "줄기세포·바늘 없는 주사…반려동물 치료 연구 최신 기술 소개",
+   "detail": "포럼’을 개최했다고 밝혔다. 한국동물용의약품평가연구원이 주관한 행사에는 국내외 대학과 연구기관... 행사는 연구 발표에 그치지 않고 기업 투자유치 설명회와 상담 프로그램으로 이어졌다. 연구 성과를 실제 제품과...",
+   "url": "https://www.mk.co.kr/article/12177937"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:58",
+   "published": "2026-10-16 16:35",
    "region": "KR",
-   "title": "경남도, 스마트공장 구축 지원사업 설명회 개최",
-   "detail": "기술기업 등 관계자들이 참석한 가운데 '2026년 경남 스마트공장 구축 지원사업 설명회'를 개최한다고 밝혔다. 이번 설명회는 10월 14일부터 16일까지 창원컨벤션센터에서 열리는 '2026 The Next AI×SMATOF' 전시회와...",
-   "url": "http://www.gndomin.com/news/articleView.html?idxno=492920"
+   "title": "광주창조경제혁신센터, '모두의 창업(1차) 프로젝트' 3라운드 광주지역...",
+   "detail": "광주창조경제혁신센터는 지난 14일 광주 L7 충장 바이 롯데호텔에서'2026년 모두의 창업 프로젝트(1차) 광주지역 오디션'을 개최했다. 이번 행사는'모두의 창업 프로젝트'2라운드 진출자 22명이 참여하는 공개 기업설명회(IR)...",
+   "url": "https://www.etnews.com/20261016000292"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:56",
+   "published": "2026-10-16 15:46",
    "region": "KR",
-   "title": "부산진해경제구역청, 베트남서 국내복귀기업 투자유치 설명회 개최",
-   "detail": "▲ 부산진해경제자유구역청은 지난 14일 베트남 호치민에서 현지에 진출한 우리 기업을 대상으로 '국내복귀기업 투자유치 설명회'를 개최했다. /부산진해경제자유구역청 부산진해경제자유구역청(청장 박성호, 이하 경자청)...",
-   "url": "http://www.gndomin.com/news/articleView.html?idxno=492978"
+   "title": "'2026 충북 창업페스티벌' 28일 청주 동부창고서 개최",
+   "detail": "'2026 충북 창업페스티벌'이 오는 28일 오전 10시부터 오후 7시까지 청주시 청원구 동부창고 일원에서 개최된... 동부창고 38동에서는 초격차·투자이음·유관기관 분야 IR(기업설명회) 데모데이가 진행된다. 34동에서는...",
+   "url": "https://www.jbnews.com/news/articleView.html?idxno=1513672"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:56",
+   "published": "2026-10-16 15:44",
    "region": "KR",
-   "title": "\"배움이 취업으로 이어지게\" 서정대 호텔관광과, 산업체 연계 교육 본격...",
-   "detail": "날’을 개최했다고 밝혔다. 이번 행사는 학과 구성원 간 소통과 교류를 활성화하고 학생들의 소속감과... 호텔관광과와 StayNeo 간 취업 업무협약 체결과 기업설명회가 진행되면서 학생들이 실제 기업의 업무환경과 채용...",
-   "url": "https://www.wikitree.co.kr/articles/1166576"
+   "title": "프로지니어, 한국보건산업진흥원 ‘8월 투자유치 기술설명회’ 최우수...",
+   "detail": "기술설명회(K-BIC STAR DAY)’에서 참가 기업 중 최우수기업으로 선정됐다. 프로지니어 관계자가 지난 8월... [사진=프로지니어]이번 K-BIC STAR DAY는 지난 8월 27일 서울 보건산업혁신창업센터에서 개최됐으며, 보건...",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=202418"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:51",
+   "published": "2026-10-16 15:44",
    "region": "KR",
-   "title": "경기도의회 미래과학협력위원회 “경기도 게임산업이 대한민국 미래 먹...",
-   "detail": "경기창조경제혁신센터에서 개최된 ‘제21회 경기게임오디션 + IR＆FGT’ 행사에 참석해 게임 개발자들의... 투자유치 기업설명회(IR), 이용자 반응평가(FGT) 등 다채로운 프로그램으로 꾸며졌다. 특히 올해 오디션에는 총...",
-   "url": "https://www.seoul.co.kr/news/publicnews/local_govern/kyungki_do/2026/10/15/20261015500314?wlog_tag3=naver"
+   "title": "충청권 4개 시·도, 일자리 협력 확대… 공동 취업박람회 개최",
+   "detail": "충북지방중소벤처기업청은 이날 청주오스코 제3전시장에서 '2026 내일이음 취업박람회'를 공동 개최했다.... 행사장에는 110개 기업채용관이 마련돼 현장 면접과 채용상담, 기업별 채용설명회가 진행됐다. 구직자를 위한...",
+   "url": "https://www.joongdo.co.kr/web/view.php?key=20261016010004435"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:27",
+   "published": "2026-10-16 15:40",
    "region": "KR",
-   "title": "진양곤 HLB 의장 \"리픽투 美 상업화 본격화…간암 신약 4번째 도전 자신...",
-   "detail": "리픽투의 미국 판매를 통해 상업화 역량을 확보하고, 리보세라닙과 CAR-T 등 후속 파이프라인의 성과를 더해 글로벌 제약·바이오 기업으로 도약하겠다는 구상이다.",
-   "url": "https://www.news1.kr/bio/pharmaceutical-bio/6321606"
+   "title": "한국투자액셀러레이터, 초기 스타트업 지원 '바른동행' 참가사 모집",
+   "detail": "인포데이’를 개최합니다. 설명회에서는 투자자가 기업을 최초로 검토할때 집중적으로 확인하는 핵심지표와 스타트업들이 지원서 및 IR자료 작성때 놓치기 쉬운 주요 오류사례를 집중분석해 실질적인 피드백을 제공할...",
+   "url": "https://www.inthenews.co.kr/news/article.html?no=93165"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:24",
+   "published": "2026-10-16 15:35",
    "region": "KR",
-   "title": "[현장] 진양곤 HLB 의장 \"간암 신약 리보세라닙 FDA 통과\" 자신",
-   "detail": "간암 신약은 세 번이나 허가 문턱에서 좌절했지만 결국 허가를 받게 될 것이라고 확신하고 있습니다.\" 진양곤 HLB그룹 의장은 15일 서울 여의도 하나증권에서 HLB그룹 상장 계열사 10곳이 함께한 기업설명회(IR)에서...",
-   "url": "http://www.inews24.com/view/2015544"
+   "title": "제주창조경제혁신센터, 바이오·라이프테크 스타트업 투자유치 지원…...",
+   "detail": "JEJU #2’를 개최한다. 제주창조경제혁신센터가 바이오·라이프테크 투자유치... 바이오·라이프테크 등 제주 미래성장산업 분야의 유망기업을 발굴하고, 기업설명회(IR)...",
+   "url": "https://www.venturesquare.net/1120432/"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:18",
+   "published": "2026-10-16 15:32",
    "region": "KR",
-   "title": "논산시, 회전익기 MRO 특화 산업단지 조성 속도…기업 설명회 개최",
-   "detail": "14일 논산시는 시청 회의실에서 국내 회전익기 관련 6개 기업을 대상으로 '충남 논산 회전익기 MRO 특화 산업단지 조성사업 설명회'를 개최했다. 이번 설명회는 민선 9기 공약인 '헬기 MRO 중간거점센터 조성'을...",
-   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1415344"
+   "title": "한국투자액셀러레이터, 유망 스타트업 발굴 확대…기업당 최대 5억 투자",
+   "detail": "한투AC는 오는 20일 오후 3시 서울 강남구 사옥에서 바른동행 사전 설명회도 개최한다. 설명회에서는 투자자가 초기 기업을 검토할 때 중점적으로 살펴보는 핵심 지표와 스타트업이 지원서 및 IR 자료 작성 과정에서...",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=753884"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 17:06",
+   "published": "2026-10-16 15:24",
    "region": "KR",
-   "title": "카카오, 인적분할 앞두고 소액주주 설득 '안간힘'",
-   "detail": "지난 13일 개최한 '이프 카카오(if(kakao)26)'에서는 증권사 애널리스트 등을 대상으로 주요 계열사 최고경영자(CEO)들이 참여하는 그룹 공동 기업설명회(IR)도 열었습니다. 하지만 시장 반응은 냉담합니다. IR이 열린 당일...",
-   "url": "http://www.newstomato.com/ReadNews.aspx?no=1316888&inflow=N"
+   "title": "한국투자액셀러레이터, 초기 스타트업 지원 참가사 모집...27일부터",
+   "detail": "사진=한국투자액셀러레이터  한국투자액셀러레이터(한투AC)는 스타트업 육성 프로그램 '바른동행' 4차 참가 기업을 모집하고 사전 설명회 '더 라이트 세션: 한국투자액셀러레이터 바른동행 인포데이'를 개최한다고 16일...",
+   "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7189339"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:46",
+   "published": "2026-10-16 15:20",
    "region": "KR",
-   "title": "[기업정책] 경기도, 콘텐츠 스타트업 투자 471억원…경콘진 지원 성과 어...",
-   "detail": "경기콘텐츠진흥원은 11월 4일 '2026 경기 레벨업 데모데이'를 개최한다. 올해 상·하반기 지원기업 가운데 12개사가 기업설명회(IR)를 통해 투자자들에게 사업과 성장 전략을 소개할 예정이다. 이번 사업의 다음 과제는...",
-   "url": "https://www.joongdo.co.kr/web/view.php?key=20261015010004036"
+   "title": "\"일본 경제계에 안동의 백신 저력 알린다\"… 안동시·경북도, '주한 일본...",
+   "detail": "이번 행사는 지난 6월 개최된 중국 기업 대상 투자유치 설명회의 성공에 힘입어, 글로벌 기업과의 네트워크를 다변화하고 안동의 미래 신성장동력인 바이오·백신 산업에 해외 자본과 기술 협력을 적극 끌어들이기 위해...",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480825"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:38",
+   "published": "2026-10-16 15:10",
    "region": "KR",
-   "title": "부산창조경제혁신센터, '모두의 스타트업 데이' 개최…3R 진출자 12명 선...",
-   "detail": "데이'를 개최했다고 밝혔다.이번 행사는 모두의 창업 부산지역 2라운드 진출자 29명을 대상으로 공개 기업설명회(IR)를 진행해 최종 3라운드에 진출할 우수 도전자 12명을 선발하기 위해 마련됐다. 지역오디션은 IT·교육...",
-   "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=193311"
+   "title": "안동시, 일본 경제단체에 바이오·백신 투자환경 홍보…기업 유치 접점...",
+   "detail": "안동시는 지난 15일 경상북도와 함께 주한 일본공관과 일본 경제단체·기업 관계자를 초청해 투자환경 현장포럼을 개최했다고 16일 밝혔다. 이번 포럼은 지난 6월 중국 투자유치 설명회에 이어 해외 기업과의 교류를...",
+   "url": "https://www.eroun.net/news/articleView.html?idxno=92621"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:32",
+   "published": "2026-10-16 15:06",
    "region": "KR",
-   "title": "“GPS 없이 무인기 위치 파악”…대한항공, 대덕특구 딥테크 기업과 공...",
-   "detail": "오픈이노베이션 설명회’를 개최했다고 밝혔다. 이번 행사는 높은 기술 신뢰성과 실증 경험이 요구되는 항공우주·방산 분야에서 대덕특구 딥테크 기업들의 시장 진입을 지원하기 위해 마련됐다. 특히 대한항공이 실제...",
-   "url": "https://biz.heraldcorp.com/article/10904090?ref=naver"
+   "title": "이재준, 싱가포르서 1,518억 투자 의향 확보… 수원경제자유구역 지정 ...",
+   "detail": "앞서 수원시는 이날 오후 싱가포르 아마라 호텔에서 현지 첨단기업 관계자들을 대상으로 '경제자유구역 후보지 수원지구 투자유치설명회'를 개최했다. 행사에는 싱가포르 24개 기업 관계자와 싱가포르과학기술청...",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003275925&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:28",
+   "published": "2026-10-16 14:56",
    "region": "KR",
-   "title": "안성시, 반도체 소재·부품·장비 관련 기업 유치에 '사활'",
-   "detail": "이와 함께 시는 안성시 반도체 특화단지와 테스트베드 투자·실증 설명회도 개최해 기업 입주 여건과 테스트베드 활용 방안, 기업 지원 정책 등을 안내했다. 이를 통해 기업의 투자 검토부터 기술 실증, 사업화로...",
-   "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3037749"
+   "title": "부산진해경제자유구역청-창원시, 입주기업 디지털 전환도 지원",
+   "detail": "경자청은 16일 신라스테이 서부산에서 입주기업 임직원 60여 명이 참석한 가운데 ‘디지털전환(DX) 성장 설명회’를 개최했다. 이날 설명회에서는 제조기업의 실제 인공지능 전환(AX) 사례와 대기업의 추진 방향이...",
+   "url": "https://www.g-enews.com/view.php?ud=20261016145010443037f21df127_1"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:24",
+   "published": "2026-10-16 14:44",
    "region": "KR",
-   "title": "인천시 스타트업 2000명 송도 집결… AI·바이오 창업 생태계 판 키웠다",
-   "detail": "‘인천 Next Plus+ 기업설명회’와 청년 소셜벤처 피칭데이, 창업도약패키지 데모데이에서는 창업기업들이... AI 기반 지식재산권(IP)과 특허 전략을 공유하는 포럼도 개최돼 기술 경쟁력 확보와 지식재산 보호 방안을...",
-   "url": "https://www.viva100.com/article/20261015501125"
+   "title": "고마오벤처스·N15, 민간 주도 스타트업 투자·사업화 플랫폼 구축 본격...",
+   "detail": "특히 단순한 기업설명회(IR)나 네트워킹을 넘어 기술검증(PoC), 공동개발, 제품 상용화, 공급계약, 유통채널... 행사를 개최했다. 이번 행사에는 전기차 충전 인프라, 에너지 인공지능(AI), 친환경 소비재, 패션·뷰티, 펫...",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=209331"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:20",
+   "published": "2026-10-16 14:41",
    "region": "KR",
-   "title": "경남도, 스마트공장 구축 지원사업 설명회 개최",
-   "detail": "설명회'를 개최한다고 밝혔다. 이번 설명회는 2026년 경남 스마트공장 기초구축 지원사업 도입기업에 사업 추진 절차와 사업비 집행·정산 방법을 안내하고, 스마트공장 도입·고도화에 관심 있는 도내 제조기업에...",
-   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=322476"
+   "title": "카카오, 소액주주 간담회 '질의응답' 집중…장소도 FKI타워로 변경",
+   "detail": "카카오그룹이 지난 13일 경기도 용인시 카카오 AI캠퍼스에서 개최한 첫 그룹 공동 애널리스트 간담회에서 김도영 카카오X 대표 내정자가 발언하고 있다.(사진=카카오) 카카오는 16일 기업설명회(IR) 개최 정정공시를 통해...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03913046645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:18",
+   "published": "2026-10-16 14:40",
    "region": "KR",
-   "title": "KIMCo재단, 바이오벤처 IPO·투자 연계 지원",
-   "detail": "바이오벤처의 기업공개(IPO) 준비와 투자 유치를 지원하는 행사를 개최했다고 15일 밝혔다. 지난 14일... 참여 벤처들은 기업설명회(IR)에서 핵심 기술과 주요 파이프라인을 소개하고 제약사·투자사와 투자 유치 및...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495709"
+   "title": "[더밸류 브리핑] 오늘의 한국투자금융 소식...한국투자증권·한국투자액...",
+   "detail": "참가 기업을 모집하고 사전 설명회 ‘더 라이트 세션: 한국투자액셀러레이터 바른동행 인포데이(THE RIGHT SESSION: 바른동행 Info-Day)’를 개최한다. 이번 4차 모집은 올해 마지막으로 진행하는 스타트업 발굴 사업이다....",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=202411"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:14",
+   "published": "2026-10-16 14:30",
    "region": "KR",
-   "title": "법 바뀔 때마다 커지는 기업 부담…대한상의, 현장 맞춤형 지원",
-   "detail": "대한상의는 15일 대한상의회관에서 김·장 법률사무소와 공동으로 '중소·중견기업 법무역량 강화 설명회'를 개최했다고 밝혔다. 이번 설명회는 서울을 시작으로 내년 1월까지 부산·대구·인천·광주·대전 등 주요 광역시를...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1728015"
+   "title": "ITS Korea, 강릉 세계총회서 국내 ITS 산업 성장기회 모색",
+   "detail": "오는 21일에는 수출기업 지원사업 설명회가 개최돼 수출바우처와 수출자금 등 주요 지원제도를 소개하고 해외진출 애로사항을 공유할 예정입니다. 또한 국제 차량-도로 자동화 태스크포스와 미국 주정부 도로...",
+   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4112791"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:12",
+   "published": "2026-10-16 14:30",
    "region": "KR",
-   "title": "특구재단, 대한항공과 항공우주 딥테크 오픈이노베이션 설명회",
-   "detail": "딥테크 기업과의 공동 실증 협력에 나섰다. 15일 특구재단에 따르면 대덕특구본부는 이날 '2026년 항공우주 딥테크 오픈이노베이션 설명회'를 개최했다. 이번 행사는 반세기 동안 축적된 대덕특구의 기술사업화 역량과...",
-   "url": "http://www.ccnnews.co.kr/news/articleView.html?idxno=416296"
+   "title": "한국투자액셀러레이터, 초기기업 최대 5억원 투자...바른동행 4차 모집",
+   "detail": "한투AC는 본격적인 접수에 앞서 10월 20일 오후 3시 서울 강남구 소재 사옥에서 사전 설명회 '더 라이트 세션: 바른동행 인포데이(THE RIGHT SESSION: 바른동행 Info-Day)'를 개최한다. 설명회에서는 투자자가 초기 기업을...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495929"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 16:04",
+   "published": "2026-10-16 14:14",
    "region": "KR",
-   "title": "아이디어를 사업으로, 인천 스타트업 세계로 뛴다",
-   "detail": "송도서 스타트업위크 개최…투자자·대기업·글로벌 시장 연결 AI·바이오 미래 전략부터 IR·판로 상담까지... 기업설명회(IR)와 데모데이에서는 스타트업들이 사업 모델과 성장 가능성을 투자자에게 소개했다. 대...",
-   "url": "https://www.kgnews.co.kr/news/article.html?no=915342"
+   "title": "부산진해경자청, 기업 지원 박차…'AX·데이터 인프라' 강화",
+   "detail": "부산진해경제자유구역청이 10월 16일 신라스테이 서부산에서 입주기업의 디지털 역량 강화와 미래 경쟁력 확보를 위한 '디지털전환(DX) 성장 설명회'를 개최하고 있다. 부산진해경제자유구역청은 16일 신라스테이...",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3723703"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-10-15 15:48",
+   "published": "2026-10-16 14:02",
    "region": "KR",
-   "title": "강진군, 사회연대경제 활성화 설명회 개최",
-   "detail": "군은 지난 14일 종합운동장 내 웰니스푸소센터에서 관내 사회적경제기업과 마을공동체 대표 등 30여 명이 참석한 가운데 '농어촌 기본소득 시범사업 대비 사회연대경제 활성화 설명회'를 개최했다고 15일 밝혔다. 이번...",
-   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072352"
+   "title": "수원시, 싱가포르서 경제자유구역 투자유치 설명회…6개 기업서 1,518억...",
+   "detail": "투자유치설명회를 개최했다고 16일 밝혔다. 이날 행사에는 이재준 수원시장을 비롯해 싱가포르과학기술청, 싱가포르창업진흥협회, 재싱가포르한인과학기술자협회 관계자와 현지 24개 기업 관계자들이 참석했다....",
+   "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=92791"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ir",
+   "query_id": "nv-bok",
    "date": null,
-   "published": "2026-10-15 15:34",
+   "published": "2026-10-16 16:57",
    "region": "KR",
-   "title": "부산진해경자청, 베트남 호치민서 ‘국내복귀기업’ 투자유치 설명회 개...",
-   "detail": "단순 현지 설명회 개최에 그치지 않고, 기업별 맞춤형 인센티브와 인허가 원스톱 지원을 통해 유망 기업의 실제 복귀 및 투자 이행이라는 결실로 이어지기를 기대한다. 박성호 청장이 BJFEZ 국내복귀기업 투자유치 설명회 를...",
-   "url": "https://www.geconomy.co.kr/news/article.html?no=324371"
+   "title": "[투자 노하우] 美 9월 PPI 전년비 6.3%↑…전월비 1.3%↑",
+   "detail": "10월 FOMC를 앞두고 현지시간으로 17일부터 연준은 블랙아웃 기간에 들어가는데요. 미국의 물가지표를... 10월 FOMC 전, 22일 한국은행의 금통위가 있습니다. 지난 7, 8월에 기준금리를 인상했고, 10월에도 인상할지 유지...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000340468?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-bok",
+   "date": null,
+   "published": "2026-10-16 16:26",
+   "region": "KR",
+   "title": "은행권 주담대 변동금리 상승세…금리 향배 '촉각'",
+   "detail": "오는 22일 한국은행 금융통화위원회(이하 '금통위)가 기준금리를 결정하는 통화정책방향 결정회의를 앞두고 있어 향후 금리 향배에 이목이 쏠리고 있다. 16일 은행연합회에 따르면 지난달 중 신규취급액기준...",
+   "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=193351"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-bok",
+   "date": null,
+   "published": "2026-10-16 08:55",
+   "region": "KR",
+   "title": "\"반도체 호조에도 물가·금리 부담 여전… 한은 금통위 주목\"-키움",
+   "detail": "오는 22일 예정된 한국은행 금융통화위원회에서 기준금리 결정뿐만 아니라 국내 경기 회복과 물가... 미 연준은 이달 말 연방공개시장위원회(FOMC)를 앞두고 있다. 일본 소비자물가 결과에 따른 일본은행의 추가 금리...",
+   "url": "https://www.mt.co.kr/stock/2026/10/16/2026101608193617738"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-bok",
+   "date": null,
+   "published": "2026-10-16 08:00",
+   "region": "KR",
+   "title": "치솟는 정기예금 금리···기준금리 인상 신호탄?",
+   "detail": "은행 예금금리는 한국은행 기준금리뿐 아니라 은행채 금리와 은행별 자금 조달 여건 등에 따라 결정된다.... 8월 기준금리를 각각 0.25%포인트 인상해 현재 연 3.00%를 유지하고 있다. 오는 22일 금통위를 앞두고 추가...",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480711"
   },
   {
    "src": "네이버뉴스",
@@ -1372,28 +1391,6 @@
    "title": "한·미 기준금리 10월 동결 전망…\"긴축 기조는 지속될 것\"",
    "detail": "금융통화위원회(금통위)와 27~28일 미국 연방공개시장위원회(FOMC) 회의를 앞두고 양국 중앙은행이... 속도를 결정하겠다'고 밝힌 점에 주목했다. 또 금통위원들의 6개월 후 기준금리 전망 중간값이 3.25%로 나타나 향후...",
    "url": "https://sports.hankooki.com/news/articleView.html?idxno=6941397"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-bok",
-   "date": null,
-   "published": "2026-10-09 16:46",
-   "region": "KR",
-   "title": "10월 기준금리 매파적 동결?…변수는 '美 추가 긴축'",
-   "detail": "| 서울=한스경제 신연수 기자 | 오는 22일 한국은행 금융통화위원회를 앞두고 기준금리를 유지하면서도 추가... 남기는 결정이다. 이번 금통위에서도 금리 수준 자체와 함께 향후 정책 방향에 대한 한은의 설명이 중요한...",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=871448"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-bok",
-   "date": null,
-   "published": "2026-10-09 15:39",
-   "region": "KR",
-   "title": "한국은행 10월 기준금리 ‘매파적 동결’ 전망…美 추가 긴축은 변수",
-   "detail": "오는 22일 한국은행 금융통화위원회를 앞두고 기준금리를 유지하면서도 추가 인상 가능성을 열어둘... 매파적 동결은 현재 금리를 유지하되 물가와 경기 흐름에 따라 다시 올릴 여지를 남기는 결정이다. 이번 금통위에서...",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000021300&cp=nv"
   },
   {
    "src": "네이버뉴스",
@@ -1730,11 +1727,231 @@
    "kind": "news",
    "query_id": "nv-audit",
    "date": null,
+   "published": "2026-10-13 18:50",
+   "region": "KR",
+   "title": "[인터뷰] 양향자 \"당협위원장 경선 전수조사해야…신뢰회복 차원\"",
+   "detail": "▷신성철: 국정감사 시즌이라서 국감 얘기도 잠깐 해보려고 하는데요. 어떤 기관 국감에 주목하고 계세요? 지금 남아 있는 곳들 중에서. ▶양향자: 저는 이제 산업을 했던 사람으로서 주로 산자위 그리고 과방위, 기재위...",
+   "url": "https://www.news1.kr/politics/general-politics/6318429"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-audit",
+   "date": null,
    "published": "2026-10-13 08:08",
    "region": "KR",
    "title": "국민의힘 장동혁·정점식, 당정 쇄신 및 사법부 압박 규탄",
    "detail": "양향자 최고위원은 “이번 산자위 국감에서 호남 반도체 팹의 성공을 좌우할 전력, 용수... 과방위원 일동은 “오늘 민주당은 국정감사 도중 의사일정에도 없던 이진숙 의원 제척안을...",
    "url": "http://www.breaknews.com/1242497"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-17 01:44",
+   "region": "KR",
+   "title": "정부 “바이 코리아” 외친 3주간, 외국인 韓주식 26조 팔아치웠다",
+   "detail": "개선 대책과 성과를 발표했다. 이런 노력에도 미 국채 금리가 뛰고 빅테크의 AI 투자 지속성을 둘러싼... 빅테크가 메모리 반도체에 투자할 수 있는 재무적 여력이 증명돼야 삼성전자와 SK하이닉스 등 국내 대형주가...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261016/134857708/2"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-17 01:42",
+   "region": "KR",
+   "title": "‘닥공’ 한다더니 올 수도권 착공 37% 그쳐… “최대 5만채 미달 전망...",
+   "detail": "올해 말까지로 예정돼 있는 토지거래허가제 연장 여부에 대해서도 국토부는 “연말까지 시장 상황을 살펴보며 결정해야 할 것 같다”며 “최근 반도체 기업 사내대출 등의 영향을 종합해서 시장을 모니터링하고...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261016/134857689/2"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 18:45",
+   "region": "KR",
+   "title": "올해 수도권 26만채 착공한다더니…10월인데 10만채도 안돼",
+   "detail": "올해 말까지로 예정돼 있는 토지거래허가제 연장 여부에 대해서도 국토부는 “연말까지 시장 상황을 살펴보며 결정해야 할 것 같다”며 “최근 반도체 기업 사내대출 등의 영향을 종합해서 시장 모니터링을 하고...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261016/134856089/1"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 18:24",
+   "region": "KR",
+   "title": "파병은 없는데 군은 강화? 청해부대 파병 현실되나",
+   "detail": "두 조직은 고 김충현 노동자 사망사고 대책위원회와 함께 16일 국회 소통관에서 회견을 열어 회사의 협의체 구성 공고 철회와 정부의 지도·감독을 촉구하는 자리를 만들었다. 금속노조는 「반도체 대기업은 메가 특혜...",
+   "url": "https://newscham.net/130058/"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 17:25",
+   "region": "KR",
+   "title": "국토부 \"정비사업 이주비 한도 확대·인허가 지원 강화…민간공급 속도...",
+   "detail": "지원 대책을 운영할 예정\"이라고 말했다. ◆ 중장기 입주주택 산정 어려워…수도권 7만3천가구 택지 선정... 것\"이라면서도 \"다만 반도체 사내 대출 등으로 경기 지역 집값 불안 요소가 여전히 있는 점을 감안해야한다\"고...",
+   "url": "https://www.newspim.com/news/view/20261016001327"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 17:14",
+   "region": "KR",
+   "title": "정부 \"토허제 연장, 시장 보며 판단\"…신규택지 7.3만호 조만간 발표(종...",
+   "detail": "있다\"면서 \"최근에는 반도체 산업을 비롯해 복합적인 요인이 시장에 영향을 미치고 있어 그런 부분까지 고려하고 있다\"고 설명했다. 정부는 지난 8월13일 공급대책을 통해 예고한 7만3000호 규모 신규택지를 연내 발표할...",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829542"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 16:56",
+   "region": "KR",
+   "title": "정부 “바이 코리아” 행사 3주간, 외국인 26조원 주식 팔아치워",
+   "detail": "개선 대책과 성과를 발표했다. 이런 노력에도 미 국채 금리가 뛰고 빅테크의 AI 투자 지속성을 둘러싼... 빅테크가 메모리 반도체에 투자할 수 있는 재무적 여력이 증명돼야 삼성전자와 SK하이닉스 등 국내 대형주가...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261016/134855025/1"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 15:58",
+   "region": "KR",
+   "title": "이진숙 국감 제척, 코스피 꺾이고, 집값 오르고[노컷한컷]",
+   "detail": "황진환 기자 반도체주 급락에 코스피 6천선 붕괴 13일 코스피 지수가 5%대로 하락하며 매도 사이드카가... 묶은 '10·15 대책'을 발표한 지 1년이 지난 가운데 15일 한국부동산원 10월 둘째주 주간 아파트 가격 동향에 따르면...",
+   "url": "https://www.nocutnews.co.kr/news/6592692?utm_source=naver&utm_medium=article&utm_campaign=20261016035812"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 15:44",
+   "region": "KR",
+   "title": "세종 접근성 개선과 AI 미래산업까지... 잇단 개발에 '천안아산역 그랑...",
+   "detail": "자동차와 반도체, 디스플레이 산업 기반을 갖춘 아산에 미래 모빌리티 산업을 추가해 산업 생태계를... 당첨자 발표일은 오는 27일이며, 계약은 11월 9일부터 11일까지 3일간이다. 입주는 2029년 8월 예정이다.",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=883806"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 14:33",
+   "region": "KR",
+   "title": "안성 고삼 주민들, SK하이닉스 처리수 방류 반발…19일 100인 기자회견",
+   "detail": "'SK하이닉스 반도체 오폐수 고삼저수지 직방류 반대 고삼면 주민대책위원회'는 19일 오전 10시 안성시청 앞에서 주민 100여명이 참여하는 기자회견을 열고 방류계획 철회를 촉구할 예정이다. 대책위는 이날 지난 2021년...",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829108"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 14:09",
+   "region": "KR",
+   "title": "[재무추적] 이마트의 자사주 조기 전량소각...주주환원 강화 배경은?",
+   "detail": "내달 2일 처음 발표되는 한국거래소의 '망신주기 명단'에 포함될 가능성이 매우 높다. 모두 기업 순자산 등에 비해 주가가 너무 부진해져 생기는 일이다. 일부 만성 저PBR기업들은 이에 대비해 각종 주가 올리기 대책이...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7342"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 13:06",
+   "region": "KR",
+   "title": "9월 고용 시장, 제조업 상승에도 청년층 취업난 심화",
+   "detail": "반면, 수출 업종인 반도체는 고용 증가에 미치는 영향이 비교적 적었다. 건설업에서도 4만 8천 명이... 부진이 지속되는 분야에 대한 대책을 마련하기로 했다. 내년에는 청년 일자리 회복 방안을 실행할 예정이라고 밝혔다.",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=881659"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 12:07",
+   "region": "KR",
+   "title": "청년통계 바꿔도 실업악화 못 감췄다",
+   "detail": "국가데이터처가 16일 발표한 ‘9월 고용동향’을 보면 지난달 15세 이상 취업자는 2926만6000명으로 전년... 3%를 넘을 것으로 전망되는 올해 경제 성장률 배경인 반도체는 장비산업 중심으로 고용 유발 효과가 크지...",
+   "url": "https://www.munhwa.com/article/11624057?ref=naver"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 10:24",
+   "region": "KR",
+   "title": "데이터분석가들 “송전선 설치 ‘전제’ 설득력 잃어…호남 잉여 전기 ...",
+   "detail": "16일 데이터 분석가들과 송전선로 설치를 반대하는 대책위원회 등에 따르면 서남부권의 반도체 생산시설 4기와 AI 데이터센터 등 발표된 주요 시설의 신규 상시부하는 총 7.6GW, 연간 전력수요는 약 59.7TWh로 추정됐다....",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261016010005180"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 10:01",
+   "region": "KR",
+   "title": "동탄 20% 뛰자 인접 비규제 급등…반도체 벨트 ‘신고가 속출’",
+   "detail": "계획을 발표하면서 9월 아파트 매매가 전월 대비 56.6% 급증했다. 전세 심리지수는 125.0으로 서울(122.8)을 제치고 전국 1위를 기록했으며, 내년에만 27개 기관·2995명이 이전할 예정이어서 수요 유입이 이어질 것으로...",
+   "url": "https://www.sedaily.com/article/20102343?ref=naver"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 09:24",
+   "region": "KR",
+   "title": "청년·건설업 고용 부진 지속…정부, ‘국민일자리 프로젝트’ 추진 [종...",
+   "detail": "국가데이터처가 16일 발표한 ‘2026년 9월 고용동향’에 따르면 지난달 15세 이상 취업자는... 9월 일평균 수출 증가율은 전년 동월보다 104.9% 높았고, 반도체 수출 증가율은 262.8%를 기록했다. 제조업 업황...",
+   "url": "https://www.etoday.co.kr/news/view/2636538"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 09:08",
+   "region": "KR",
+   "title": "국민의힘 장동혁·정점식, 이재명 정부·민주당 규탄",
+   "detail": "재선거부터 발표하는 건 아닌 것 같다”며, “전체 선거 전수조사 및 전면 재선거를 해야 한다”고... 도입하며 반도체를 비롯한 특정 종목과 주식시장 상승에 힘을 실어 와 마치 정권이 작전주 다루듯...",
+   "url": "http://www.breaknews.com/1243443"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 09:04",
+   "region": "KR",
+   "title": "'63조 초과세수' 전망에도 건강보험 국고지원은 법정 기준 못 채워",
+   "detail": "특히 비상진료 지원 3조7000억원, 상급종합병원 구조전환 2조1000억원, 필수의료 대책 2조7000억원 등 8조6000억원이 넘는 정책사업 비용이 건강보험 재정에서 지출됐다고 지적했다. 내년에 시행 예정인 상병수당...",
+   "url": "https://www.rapportian.com/news/articleView.html?idxno=241321"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-10-16 08:50",
+   "region": "KR",
+   "title": "광주 반도체 국가산단 조성 속도전 돌입",
+   "detail": "지난 6월 29일 발표된 기업의 800조원 규모 반도체 팹 투자계획에 따라 조성이 결정됐다. 지난 7월 말 국가산단... 수급 대책도 함께 마련돼야 한다\"고 말했다. 인근 지역에서 자영업을 하는 박모 씨(52)는 \"공항 주변 개발...",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=881575"
   },
   {
    "src": "네이버뉴스",
@@ -1849,211 +2066,46 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-10-14 11:36",
+   "published": "2026-10-16 23:36",
    "region": "KR",
-   "title": "이 시각 주요 뉴스",
-   "detail": "금융위원회는 오늘 점검 회의를 열고, 대책을 논의할 예정입니다. ◇ 임광현 \"가상자산 과세 고시 다음 달로 준비\" 가상자산 과세의 기준이 다음달 발표됩니다. 국세청은 내년 시행을 재확인한 가운데, 거래 유형별 과세...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000339854?division=NAVER"
+   "title": "[주요공시] 에코앤드림, TS트릴리온, 동운아나텍, 대양금속, 대우건설 외",
+   "detail": "납입 일정을 진행했다. 발행예정주식은 보통주 207만9002주이며 일반공모 청약주식수는 216만3000주로 청약률은 104.04%다. 유상증자 신주 상장 예정일은 11월 3일이다. 최대주주·대량보유·주요주주 지분변동...",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=209343"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-10-14 11:10",
+   "published": "2026-10-16 16:38",
    "region": "KR",
-   "title": "이형일 부총리 \"서비스산업 육성해 제2·제3 성장동력 키운다\"",
-   "detail": "인더스트리뉴스 이주엽 기자  이형일 부총리 겸 재정경제부 장관이 반도체에 이어 한국 경제 성장을 이끌... 제공할 예정이다. 세부 내용은 관계부처 논의를 거쳐 이달 중 발표한다. 정부는 중동전쟁에 따른 유가 충격을...",
-   "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=87497"
+   "title": "“AI 기업도 흑자 낼 수 있다”…인텔리빅스, 13년 연속 흑자로 코스닥...",
+   "detail": "열고 상장 일정과 주요 재무성과, 기술 경쟁력 및 성장 전략을 공개했다. 이날... 최종 공모가를 확정한다. 일반청약은 10월 21~22일, 코스닥 상장 예정일은 10월 30일이다. 상장...",
+   "url": "https://www.venturesquare.net/1120497/"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-10-14 11:04",
+   "published": "2026-10-16 14:24",
    "region": "KR",
-   "title": "이형일 \"반도체 다음은 서비스산업…성장·민생 두 토끼 잡겠다\"",
-   "detail": "/연합뉴스  이형일 부총리 겸 재정경제부 장관은 14일 반도체에 이어 한국 경제를 견인하도록 서비스산업을... 위해 시행 중인 석유 최고가격제에 따라 17일 0시부터 적용할 11차 최고가격은 16일 오후 6시에 발표할 예정이다.",
-   "url": "http://www.seouleconews.com/news/articleView.html?idxno=94321"
+   "title": "티앤이코리아 공모가 1만5300원 확정…20~21일 일반청약",
+   "detail": "상장 후 주가는 공모가보다 하락할 수 있다. 청약자격과 일정은 변경될 수 있어 신청 전 최신 투자설명서와 주관사 공지를 확인해야 한다. 기업공개와 공모주 청약을 표현한 설명용 이미지. 실제 티앤이코리아의...",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=392953"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-10-14 10:01",
+   "published": "2026-10-16 13:20",
    "region": "KR",
-   "title": "이형일 \"반도체 다음은 서비스산업…성장·민생 두 토끼 잡겠다\"",
-   "detail": "양극화 대책도 마련 제11차 석유 최고가격, 오는 16일 오후 6시 발표 예정 이형일 부총리 겸 재정경제부 장관이 반도체를 이을 새로운 성장동력으로 서비스산업 육성을 제시했다. 서비스산업의 일자리 창출과 지역경제...",
-   "url": "https://www.nocutnews.co.kr/news/6591085?utm_source=naver&utm_medium=article&utm_campaign=20261014100045"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:58",
-   "region": "KR",
-   "title": "정부, 서비스산업 집중 육성…지역관광·K뷰티로 성장동력 확충",
-   "detail": "정부가 반도체에 이은 새로운 성장동력으로 서비스산업을 집중 육성하고, 지역관광과 전시산업, K-뷰티... 변동과 국민 부담 등을 종합적으로 검토해 오는 16일 오후 6시 제11차 석유 최고가격을 발표할 예정입니다.",
-   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4112063"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:56",
-   "region": "KR",
-   "title": "이형일 “반도체 다음은 서비스산업”…지방공항 5대 관광권 육성에 41...",
-   "detail": "정부는 반도체에 이어 우리 경제를 견인하도록 서비스산업을 집중적으로 육성키로 했다. 이를 위해 내년... 세부 내용은 관계부처 논의를 거쳐 이달 중 발표할 예정이다. 중동전쟁에 따른 유가 충격을 완화하기 위해...",
-   "url": "https://biz.heraldcorp.com/article/10901950?ref=naver"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:30",
-   "region": "KR",
-   "title": "이형일 \"반도체 다음은 서비스산업… 연내 입법 요청드린다\"",
-   "detail": "하면서, \"반도체와 함께 달려나갈, 성장을 이끌 제2, 제3의 주자가 필요하고, 그 중 하나가 서비스산업... 세부사항은 이날 논의를 거쳐 이달 중 발표할 예정이라고 했다. 한편, 이날 회의에서는 11차 석유 최고가격...",
-   "url": "http://www.efnews.co.kr/news/articleView.html?idxno=133096"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:20",
-   "region": "KR",
-   "title": "이형일 “성장·민생 두 마리 토끼”...서비스산업 집중 육성",
-   "detail": "이형일 부총리 겸 재정경제부 장관이 반도체에 이은 새로운 성장동력으로 서비스산업을 집중 육성하겠다는... 있는 대책을 마련하겠다”고 전했다. 이날 회의에서는 수도권에 집중된 외국인 관광객을 지방으로...",
-   "url": "https://www.sedaily.com/article/20101319?ref=naver"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:16",
-   "region": "KR",
-   "title": "이형일 \"반도체 다음은 서비스 산업…입법 협조 요청\"",
-   "detail": "이형일 부총리 겸 재정경제부 장관은 반도체에 이어 한국 경제를 견인하도록 서비스산업을 집중적으로... 그는 정부가 주거·일자리·서민금융 등 3대 핵심 사회정책 마련 중이며 국민이 체감할 수 있는 양극화 대책...",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008796525&plink=ORI&cooper=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:16",
-   "region": "KR",
-   "title": "이형일 \"반도체 다음은 서비스산업\"…성장·민생 두 마리 토끼 잡는다",
-   "detail": "이형일 부총리 겸 재정경제부 장관/ 사진=연합뉴스 정부가 반도체에 이어 한국 경제의 성장을 이끌 차세대... 완화 대책을 마련하겠다고 밝혔다. 이 부총리 현재 수도권에 편중된 외국인 방한 관광객이 지방공항으로...",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=80582"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:12",
-   "region": "KR",
-   "title": "이형일 “제2·제3 성장동력 필요”…서비스산업 육성 속도",
-   "detail": "정부가 반도체에 이어 경제 성장을 이끌 제2·제3의 주자로 서비스산업을 지목했다. 지방관광과 전시산업... 검토한 뒤 10월 16일 오후 6시 최고가격을 발표할 예정이다. 11차 석유 최고가격은 10월 17일 0시부터 적용된다.",
-   "url": "https://www.dailian.co.kr/news/view/1701224/?sc=Naver"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:08",
-   "region": "KR",
-   "title": "이형일 \"반도체 이을 제2·제3 성장 주자 필요\" … 서비스 산업 육성",
-   "detail": "(TF)'에서 \"반도체와 함께 달려나갈, 성장을 이끌 제2, 제3의 주자가 필요하다. 그 중 하나가 서비스산업... 양극화 대책 마련을 위해 모든 부처와 국책연구기관이 함께 지혜와 힘을 모으겠다\"고 했다. 정부는 이날...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/14/2026101400040.html"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:02",
-   "region": "KR",
-   "title": "IMF, 한국 성장률 전망 3.3%로 상향…정부, 서비스산업 육성 속도",
-   "detail": "지원할 예정이다. 정부는 성장동력 확충과 함께 주거·일자리·서민금융 등 3대 분야의 양극화 완화 대책도... 6시 발표할 계획이다. 정부의 이번 대책은 반도체 중심의 성장세를 관광·뷰티·전시 등 서비스산업으로...",
-   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=65733"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 09:00",
-   "region": "KR",
-   "title": "이형일 \"韓 성장세, 중동전쟁 영향 압도한다는 국제적 평가 받아\"",
-   "detail": "이어 \"반도체 수출 호조를 포함한 우리 경제의 탄탄한 성장세가 중동전쟁의 부정적 영향을 압도한다는... 6시에 발표할 예정이다. 이 부총리는 \"정부는 서비스산업 육성을 통해 성장과 민생의 두 마리 토끼를 함께...",
-   "url": "https://www.news1.kr/economy/trend/6319152"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 08:58",
-   "region": "KR",
-   "title": "이형일 \"넥스트 반도체는 서비스 산업…서발법 연내 제정 협조 요청\"",
-   "detail": "이형일 부총리 겸 재정경제부 장관이 '넥스트 반도체' 중 하나로 일자리 창출 효과가 큰 서비스 산업을... 이 부총리는 주거·일자리·서민금융 등 3대 핵심 사회정책 마련 중이며 국민이 체감할 수 있는 양극화 대책을...",
-   "url": "https://view.asiae.co.kr/article/2026101408582828191"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 08:55",
-   "region": "KR",
-   "title": "반도체 다음 주자는 서비스산업…정부, 성장·민생 두 토끼 잡는다",
-   "detail": "정부가 관광·전시·K뷰티 등 서비스산업을 반도체와 함께 경제 성장을 이끌 새 동력으로 육성한다. 청년... 적용할 11차 석유 최고가격은 국제유가와 국민 부담 등을 종합적으로 검토해 16일 오후 6시 발표할 예정이다.",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02725686645612920&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 08:49",
-   "region": "KR",
-   "title": "이형일 부총리 \"반도체 이을 주자 필요…서비스산업 육성 박차\"",
-   "detail": "이형일 부총리 겸 재정경제부 장관은 14일 \"반도체와 함께 달려나갈, 성장을 이끌 제2·3의 주자가 필요하다... 양극화 대책 마련도 강조했다. 그는 \"주거·일자리·서민금융 등 3대 핵심 사회정책 마련에 이미...",
-   "url": "https://www.newspim.com/news/view/20261014000198"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 08:48",
-   "region": "KR",
-   "title": "이형일 \"서비스산업 육성해 성장·민생 두마리 토끼 함께 잡을 것\"",
-   "detail": "6시 발표\" 비상경제본부 회의 주재하는 이형일 부총리(서울=연합뉴스) 안정원 기자 = 이형일 부총리 겸... 7%포인트(p) 대폭 상향 조정했다\"며 \"반도체 수출 호조를 포함한 우리 경제의 탄탄한 성장세가 중동전쟁의 부정적...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439101"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-policy",
-   "date": null,
-   "published": "2026-10-14 08:46",
-   "region": "KR",
-   "title": "이형일 \"반도체 이을 제2·제3 성장동력 필요\"…서비스산업 집중 육성 선...",
-   "detail": "[사진=연합]  정부가 반도체에 이어 한국 경제의 성장을 이끌 차세대 동력으로 서비스산업을 집중 육성한다.... 구체적인 행사 내용과 적용 조건은 관계부처 협의를 거쳐 이달 중 발표할 예정이다. 중동전쟁에 따른 에너지...",
-   "url": "https://www.joongangenews.com/news/articleView.html?idxno=554715"
+   "title": "모르면 손해…'에스케이증권 제14호 기업인수목적' 청약, 오늘까지",
+   "detail": "에스케이증권 제14호 기업인수목적 상장 예비 심사 승인을 거쳐 공모주 청약 일정에 돌입했다. 상장 준비... 총 공모금액은 130억 원 규모다.발행 예정 총주식 수 6,500만 주 가운데 일반 투자자에게 배정되는 공모 주식...",
+   "url": "https://www.wikitree.co.kr/articles/1166413"
   },
   {
    "src": "네이버뉴스",
@@ -2344,46 +2396,288 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ipo",
+   "query_id": "nv-us",
    "date": null,
-   "published": "2026-10-11 09:00",
+   "published": "2026-10-17 05:36",
    "region": "KR",
-   "title": "[공모주달력]공모가 상단 확정, 멜콘·진코스텍 코스닥 입성",
-   "detail": "이번주에도 공모일정이 빼곡해요. 크리에이츠, 인텔리빅스, 티앤이코리아가 수요예측을 마무리하는 등... 달해서 상장 후 가격변동이 클 수 있어요. 엠에스바이오, 디티에스 청약 지난주 수요예측을 마치고 공모가...",
-   "url": "https://news.bizwatch.co.kr/article/market/2026/10/08/0024"
+   "title": "나스닥 2.1%↓…AI 열풍에 \"그래서 돈은 언제 버나\"[월스트리트in]",
+   "detail": "사진=로이터 16일(현지시간) 뉴욕증시에서 나스닥종합지수는 2.15% 하락한 2만6140.03에 마감했다.... 반면 다우지수는 주간 기준 0.7% 상승했다. 반도체주가 매도세의 중심에 섰다. 필라델피아반도체지수는 8거래일 연속...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01430086645613904&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ipo",
+   "query_id": "nv-us",
    "date": null,
-   "published": "2026-10-11 00:11",
+   "published": "2026-10-17 05:17",
    "region": "KR",
-   "title": "이번주 공모주 청약, 엠에스바이오·디티에스 2개사",
-   "detail": "대상으로 공모 청약에 나선다. 지난 2015년 설립된 엠에스바이오는 인체조직과 생체소재를 가공해 손상된... 상장을 통해 확보한 자금은 오창공장 신축에 주로 투입될 전망이다. 리스크 요인으로는 인허가 일정...",
-   "url": "https://www.dailian.co.kr/news/view/1699626/?sc=Naver"
+   "title": "뉴욕증시, AI 부채 우려에 하락 마감…나스닥 7월 이후 최대 낙폭",
+   "detail": "김민정 특파원 = 16일(현지시간) 미국 뉴욕증시에서 주요 지수가 일제히 내렸다. 인공지능(AI) 관련주에... 주간으로는 S&P500이 1.95%, 나스닥이 4.48% 내렸다. 두 지수 모두 6월 26일로 끝난 주 이후 최대 주간...",
+   "url": "https://www.newspim.com/news/view/20261017000011"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ipo",
+   "query_id": "nv-us",
    "date": null,
-   "published": "2026-10-11 00:00",
+   "published": "2026-10-17 05:06",
    "region": "KR",
-   "title": "[올 IPO] 연휴 끝나자 IPO 큰 장…진코스텍·멜콘 15일 코스닥 입성",
-   "detail": "NH투자증권이 상장을 주관한다. 영광의 희망 공모가는 14,000원에서 17,000원이다. 이에스티(14∼20일), 에이엘로봇(15∼21일), 엠비디(16∼22일)도 기관 수요예측 일정을 갖는다. 엠비디는 3D 세포배양 기반 정밀의료...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=614029"
+   "title": "[속보]AI 투자 불안·유가 급등에 美증시 급락…나스닥 2.1%↓",
+   "detail": "뉴욕증시 3대 지수가 16일(현지시간) 일제히 하락했다. 인공지능(AI) 인프라 기업들의 막대한 차입과 투자... 나스닥지수는 이번 주 4% 넘게 떨어지며 6월 이후 최대 주간 낙폭을 기록할 전망이다. 국제유가 급등도...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01334966645613904&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ipo",
+   "query_id": "nv-us",
    "date": null,
-   "published": "2026-10-10 19:00",
+   "published": "2026-10-16 23:08",
    "region": "KR",
-   "title": "한글날 연휴 끝나자 IPO 일정 '빼곡'…10개사 수요예측",
-   "detail": "이 가운데 7곳이 새롭게 수요예측을 시작하며 나머지 3곳은 앞서 시작한 일정을 마무리한다. 가장 먼저... 일반투자자 대상 공모주 청약도 이어진다. 재생의료 전문기업 엠에스바이오는 오는 12일부터 13일까지...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026101018503967133"
+   "title": "뉴욕증시 혼조 출발…다우 0.6% 상승, 나스닥 0.4% 하락",
+   "detail": "뉴욕증시는 AI 산업의 장기 성장 기대에도 불구하고 금리 상승과 국제유가 강세라는 부담을 동시에 안고 있다. 특히 반도체주를 중심으로 한 기술주 약세가 이어지면서 주간 기준 주요 지수의 하락 가능성에도...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90976"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 22:44",
+   "region": "KR",
+   "title": "뉴욕증시 혼조…코어위브 4.7%↓, 테슬라 주가는 로드스터 공개에 3%↑",
+   "detail": "이번 주 뉴욕증시는 AI 관련주 급락과 대형 은행들의 엇갈린 실적, 예상보다 높은 물가 지표가 겹치며 부진했다. S&P500지수는 이번 주 0.9%, 나스닥지수는 2.4% 하락했다. 반면 다우지수는 상대적으로 버티며 주간...",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3724096"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 22:37",
+   "region": "KR",
+   "title": "[속보] 뉴욕증시 혼조 출발…다우·S&P↑·나스닥↓",
+   "detail": "후속기사가 이어집니다",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829789"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 21:52",
+   "region": "KR",
+   "title": "미국증시 전망, AI 기업 부채 불안에 반도체 약세…워시 발언이 반등 변...",
+   "detail": "주간 흐름에서도 차별화가 뚜렷하다. 15일까지 다우지수는 이번 주 약 1% 상승했지만 S&P500지수는 0.9... ○ 뉴욕증시 전망…반등 지속보다 AI 신용위험 진정 여부가 관건 16일 뉴욕증시의 기본 시나리오는 업종별 차별화를...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249310"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 21:16",
+   "region": "KR",
+   "title": "뉴욕증시 프리뷰, 주가 선물 혼조... AI 투자 불안에 기술주 약세, 테슬...",
+   "detail": "이에 힘입어 뉴욕 증시의 주요 지수는 소폭 상승 마감했다. ◆ \"AI 기업 상장하면 불안 완화\"…비상장 시장 정보 부족 지적 시장에서는 AI 산업의 성장 전망 자체보다 기업들의 실제 수익성과 투자 규모를 확인하기...",
+   "url": "https://www.newspim.com/news/view/20261016001413"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 17:37",
+   "region": "KR",
+   "title": "반도체 투톱 반등에도 'AI 빚' 그늘…가격 왜곡 가능성은",
+   "detail": "AI(인공지능) 투자를 위한 빚 부담이 금리 상승으로 확대될 것이란 전망이 제기되면서 투자심리가 위축된... 뉴욕증시에서는 지난 14일까지 그간 증시 상승을 주도했던 AI 관련주의 매도세가 집중됐다. 금리 인상...",
+   "url": "https://www.mt.co.kr/stock/2026/10/16/2026101616570227023"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 17:22",
+   "region": "KR",
+   "title": "코스피 2% 반등·코스닥 4% 급등…외국인 돌아왔다",
+   "detail": "따라서 단순히 뉴욕증시 상승에 따라 코스피가 갭 상승한 것이 아니라 장중 수급 자체가 바뀐 것이 오후... 서울 외환시장에서 원·달러 환율은 전 거래일보다 13.2원 내린 1331.4원에 주간 거래를 마쳤다. 2024년 10월...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249106"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 16:37",
+   "region": "KR",
+   "title": "[증시 프리즘] 코스피, 8거래일 만에 2.05% 반등…외국인 9거래일 만에 ...",
+   "detail": "이번 반등은 과매도 국면에서의 저가 매수세와 간밤 뉴욕증시의 상승 흐름이 맞물린 결과로 풀이된다. AI... 4원에 주간 거래를 마쳤다. ◇\"반도체 급락은 과도\"…실적 전망과 주가 괴리 주목 증권가에서는 최근...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7358"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 10:31",
+   "region": "KR",
+   "title": "[글로벌 마켓 리포트 10월 16일]",
+   "detail": "15일(현지시간) 미국 뉴욕증시 주요 지수는 일제히 상승 마감했다. 이날 다우존스30산업평균지수는 전... 농화학 기업 FMC는 3분기 전망을 큰 폭으로 낮추면서 30.53% 급락했다. 로켓랩은 새 중형 로켓 뉴트론의 첫...",
+   "url": "https://www.newspim.com/news/view/20261016000330"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 10:04",
+   "region": "KR",
+   "title": "환율, 1340원대 등락…美 국채금리·달러 약세에 하락 압력",
+   "detail": "이날 오전 6시 기준 환율은 전장 주간거래 기준가 대비 2.6원 내린 1342.0원에 거래됐다. 밤사이 미... 뉴욕증시 주요 지수는 일제히 상승했다. 다우존스30 산업평균지수는 전장보다 556.21포인트(1.08%) 뛴 5만2177....",
+   "url": "https://www.ajunews.com/view/20261016100107183"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 09:06",
+   "region": "KR",
+   "title": "[속보] ‘전날 7%대 급락’ 코스피, 1%대 상승 출발…코스닥도 상승",
+   "detail": "이는 간밤 뉴욕증시 상승세와 코스피 야간선물 3.9%대 강세 속 역대급 과매도에 따른 저가 매수세 유입... 9%대 강세 속 역대급 과매도에 따른 저가 매수세 유입 등으로 반등을 시도할 전망”이라고 말했다....",
+   "url": "https://www.mk.co.kr/article/12177449"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 08:54",
+   "region": "KR",
+   "title": "국내증시 전망, 코스피 5500선 방어 시험…미국증시 반등에도 반도체 불...",
+   "detail": "○ 미국증시 반등했지만 반도체는 7거래일 연속 약세 15일(현지시간) 미국 뉴욕증시에서는... 6원에 주간거래를 마쳤다. 원화 약세는 외국인 투자자의 환차손 우려와 연결될 수 있다. 다만 환율 상승만으로 외국인...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16248616"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 08:52",
+   "region": "KR",
+   "title": "[원자재 시황] 반도체 투매에 금값 반등…WTI 98달러 육박",
+   "detail": "미국 물가와 금리 전망이 위험자산 전반의 투자심리를 좌우하는 가운데, 대규모 강제 청산과 파생상품 포지션 축소가 이어지면서 가상자산 시장의 변동성이 확대되고 있다. ◆뉴욕증시 반등…다우 1.08% 상승...",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1728061"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 08:22",
+   "region": "KR",
+   "title": "[AI MY 증시전망] 코스피, 7거래일 급락 딛고 반등 시도…美 증시 회복·...",
+   "detail": "주간종가 대비 6.3원 오른 1344.6원에 마감했다. 이날 오후 서울 중구 하나은행 딜링룸에서 딜러들이 업무를 보고 있다. 2026.10.15 starbean@newspim.com ◆ 美 증시 반등 성공…PPI 급등에도 국채금리 하락 간밤 미국 뉴욕증시...",
+   "url": "https://www.newspim.com/news/view/20261016000053"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:56",
+   "region": "KR",
+   "title": "美증시 반등에도 반도체 7일째 하락…코스피 운명은[뉴스새벽배송]",
+   "detail": "미국 뉴욕증시가 국채금리 하락에 힘입어 일제히 반등했다. 다우존스30산업평균지수는 1% 넘게 올랐지만... TSMC가 6개 분기 연속 사상 최대 분기 순이익을 기록했지만 2027년 전망에 신중한 태도를 보인 점이 부담....",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02587926645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:47",
+   "region": "KR",
+   "title": "MSCI, 비영업기업 주가지수서 배제…스트래티지 퇴출 위기",
+   "detail": "제외될 전망이다. 마이클 세일러 스트래티지 이사회 의장 실제 주가지수에서 퇴출이 이뤄질 경우 이... 이 같은 발표 이후 스트래티지 주가는 뉴욕 증시 시간외 거래에서 2% 하락했다. 스트래티지가 실제로 MSCI...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02568246645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:30",
+   "region": "KR",
+   "title": "[넥스트-샷] AI 대신 운동화?···물가 1.3% 급등에도 뉴욕증시 반등한...",
+   "detail": "[편집자주] 15일 뉴욕증시는 미국 국채금리가 하락하면서 일제히 상승했습니다. 다만 상승을 주도한... 그러나 자동차와 휘발유, 건축자재, 외식 등을 제외한 핵심 소매판매는 0.1% 증가하는 데 그쳐 전망치 0.3%를...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=259800"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:30",
+   "region": "KR",
+   "title": "[KFT 모닝 브리프] 2026.10.16 — 오늘 꼭 알아야 할 국내외 경제뉴스",
+   "detail": "▲인사이트: 수요는 확인됐지만 2027년 투자 전망이 신중해 ‘AI 수요는 강하나 확장 속도는 미정'이라는 신호가 나왔다. 판단 기준은 내년 설비투자 컨센서스가 상향되는지다. ④ [금융·시장] 뉴욕증시...",
+   "url": "https://www.fntimes.com/html/view.php?ud=20261016070956411141825007d_18"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:30",
+   "region": "KR",
+   "title": "[마켓 프리뷰] 실적은 '하늘' 주가는 '바닥'…더 깊은 낙폭 있을까?",
+   "detail": "달러·원, 주간거래 6.3원 상승…1344.6원 기록 - 주가 급락 속에 한때 1350원대로…9거래일만에 최고 Q. 밤사이 미국 생산자물가에 또 인플레이션 우려가 커졌습니다. 다만, 뉴욕증시가 크게 비중을 두지 않으면서...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000340306?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:30",
+   "region": "KR",
+   "title": "[연합뉴스 이 시각 헤드라인] - 07:30",
+   "detail": "벌일 전망이다. 국회는 이날 ▲ 법제사법위원회 ▲ 정무위원회 ▲ 재정경제기획위원회 ▲ 교육위원회... 전문보기: https://www.yna.co.kr/view/AKR20261015163700001 ■ 뉴욕증시, AI 투자 우려에도 국채금리 하락에 반등...",
+   "url": "https://www.yna.co.kr/view/AKR20261016013700011?input=1195m"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:23",
+   "region": "KR",
+   "title": "[채권/외환] 美 국채금리 9월 이후 최저·달러도 급락…AI 부채 우려에 ...",
+   "detail": "경기 전망 악화에 더 민감하게 반응한 것으로 풀이된다. ◆ AI 기업 부채 우려에 국채 매수…10년물 금리 10bp 급락 최근 몇 년간 뉴욕 증시 상승을 주도했던 AI 관련 기업들의 자금 조달 부담이 커지면서 기술주 매도세가...",
+   "url": "https://www.newspim.com/news/view/20261016000040"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 07:20",
+   "region": "KR",
+   "title": "[오늘의 이슈]코스피 폭락 다음 날, 숨 돌릴 수 있나",
+   "detail": "밤사이 뉴욕 증시는 3대 지수가 모두 올랐고 미국 국채 금리도 내렸다. 숨을 돌릴 만한 재료다. 하지만... 뉴욕의 업종 이동은 국내 반도체주에 반가운 신호가 아니다. 금융위원회는 오늘 오전 10시 주간업무회의를...",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=107200"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-us",
+   "date": null,
+   "published": "2026-10-16 06:36",
+   "region": "KR",
+   "title": "뉴욕증시, AI 투자 우려에도 국채금리 하락에 상승 [종합]",
+   "detail": "이투데이=고대영 기자 | 뉴욕증시는 AI 투자 과열 우려에도 상승했다. 15일(현지시간)... 앞서 미국 에너지정보청(EIA)은 9일로 끝난 주간 원유 재고가 800만 배럴 이상 급감했다고 발표했다. 시장이 전망했던...",
+   "url": "https://www.etoday.co.kr/news/view/2636437"
   },
   {
    "src": "네이버뉴스",
@@ -2421,607 +2715,310 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-us",
+   "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:45",
+   "published": "2026-10-17 05:30",
    "region": "KR",
-   "title": "21만전자·128만닉스...미국발 물가 한파에 얼어붙은 증시",
-   "detail": "미국 물가지표가 예상치를 웃돌며 기준금리 인상 전망이 커진 데다 AI 투자 부채 우려로 뉴욕증시에서 AI... 이날 서울외환시장에서 원/달러환율은 전거래일 주간 종가에 비해 1.2원 오른 1339.5원에 거래됐다.",
-   "url": "https://www.mt.co.kr/stock/2026/10/15/2026101509033586011"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:44",
-   "region": "KR",
-   "title": "[신윤우의 외환분석] 원화가 물가를 만났을 때",
-   "detail": "INFLATION-SEPTEMBER-RISE 15일 달러-원 환율은 1,340원선 부근에서 조심스럽게 상단을 바라볼 전망이다. 미국의... 강해진 금리 인상 베팅에 간밤 뉴욕증시는 내리막을 걸었다. 미국 클라우드 서비스 기업 코어위브의...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439343"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:31",
-   "region": "KR",
-   "title": "원·달러 환율, 1.2원 오른 1339.5원",
-   "detail": "직전 거래일 주간 종가보다 1.2원(0.08%) 오른 것이다. 이날 환율은 1340원 안팎을 기록할 것이란 전망이... 국제 유가도 올라 간밤 뉴욕 증시도 하락 마감했다. 스탠더드앤드푸어스(S&P)500 지수는 1.11%, 나스닥종합지수는 1....",
-   "url": "https://biz.chosun.com/policy/policy_sub/2026/10/15/GY5G2CKKGVGM3BCGFHUOU47PHI/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:28",
-   "region": "KR",
-   "title": "[원자재 시황] 美 물가 충격에 얼어붙은 투심",
-   "detail": "한편 미국 에너지정보청(EIA)의 주간 원유 재고 통계는 지난 12일 연방 공휴일인 콜럼버스의 날 영향으로... 것으로 전망된다. 뉴욕증시 3대 지수 하락…나스닥 1.88% 급락 뉴욕증시 3대 주요 지수는 인플레이션 우려와...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1727912"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:28",
-   "region": "KR",
-   "title": "[개장시황] 코스피·코스닥 6%대 급락…매도 사이드카 잇따라 발동",
-   "detail": "서울 외환시장에서 달러/원 환율은 전 거래일 주간종가 대비 6.8원 내린 1338.3원에 마감했다. 이날 오후... 이에 따라 뉴욕증시에서 나스닥지수는 1.88% 하락했고 스탠더드앤드푸어스(S&P)500지수도 1.11% 내렸다....",
-   "url": "https://www.newspim.com/news/view/20261015000255"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:22",
-   "region": "KR",
-   "title": "환율, 소폭 상승한 1340원대…美 물가 충격에 달러 강세",
-   "detail": "이는 전문가 전망치(3.6%)를 웃도는 수치다. 예상을 웃돈 9월 CPI에 연방준비제도(Fed·연준)의 기준금리 추가 인상 압박이 확대되면서 미 뉴욕증시도 일제히 하락했다. 다우존스30산업평균지수는 전장 대비 48....",
-   "url": "https://www.ajunews.com/view/20261015091447287"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 09:04",
-   "region": "KR",
-   "title": "[속보] 코스피, 5.6% 급락한 5673 개장…코스닥도 4.8% 내려",
-   "detail": "지난 14일(현지시간) 미국 뉴욕 증시는 예상을 웃돈 미 9월 CPI 상승률에 인플레이션 우려가... 축소할 전망”이라며 “단기적으로 외국인 수급 여건이 녹록지 않은 상황 속, 반도체를 포함한 코스피가...",
-   "url": "https://www.mk.co.kr/article/12176419"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 08:32",
-   "region": "KR",
-   "title": "[국제금융 브리핑] 미국 근원 CPI 2.6%로 예상 상회...호르무즈 공격에 ...",
-   "detail": "이란의 호르무즈 상선 공격과 중동 무력 충돌은 원유 수송 차질 우려를 키웠고, 뉴욕증시는 물가 충격과... 다만 이번 물가 결과는 향후 수개월 동안 추가 금리 인상 전망을 강화할 것으로 예상됐다(블룸버그...",
-   "url": "https://www.tokenpost.kr/news/economy/422551"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 08:24",
-   "region": "KR",
-   "title": "美 국채금리 CPI 충격에도 반락…연내 인상 확률 90%",
-   "detail": "그러나 뉴욕증시가 약세를 확대하면서 방향을 바꿨다. 30년물 미 국채금리도 4bp 넘게 하락한 5.517%를 나타냈다. 반면 연준의 기준금리 전망에 민감하게 반응하는 2년물 국채금리는 1bp 넘게 오른 4.808%를 기록했다....",
-   "url": "https://www.g-enews.com/view.php?ud=2026101508211095949a1f309431_1"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 07:32",
-   "region": "KR",
-   "title": "[마켓 프리뷰] 코스피 엿새째 하락 '한숨'…ASML 호실적도 '실망'",
-   "detail": "21%↓ - 달러·원, 주간거래 6.8원 하락…1338.3원 마감 Q. 미국 9월 CPI를 본 시장의 우려가 또 커졌습니다.... 전망과 함께 투자 전략 부탁드립니다. - 뉴욕증시, CPI 충격·반도체 약세에 일제히 하락 - 휘발유 가격 상승...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340033?division=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 06:56",
-   "region": "KR",
-   "title": "미국증시 나스닥 1.88% 급락…물가 충격에 AI·반도체 투매, SK하이닉스...",
-   "detail": "○ 미국증시 나스닥 1.88% 하락…물가 충격에 성장주 매도 집중 미국 뉴욕증시는 14일(현지시간) 9월... 연준의 정책금리 전망에 민감한 2년물 국채수익률도 물가 발표 직후 4.9%대로 상승했다. 그러나 주식시장의 매도...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16247466"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-15 05:12",
-   "region": "KR",
-   "title": "美 국채금리, 물가 충격에도 하락 반전…10년물 5.19%",
-   "detail": "미국 국채금리가 예상보다 높은 소비자물가 상승률에도 뉴욕증시 급락에 따른 안전자산 선호로 하락... 다만 채권시장의 반등에도 연준의 긴축 전망은 오히려 강화됐다. 시카고상품거래소(CME) 페드워치에 따르면...",
-   "url": "https://www.news1.kr/world/international-economy/6320470"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 13:52",
-   "region": "KR",
-   "title": "비트코인, ETF 6억7,900만 달러 유출 충격…美 국채금리 5.64% 넘으면 더...",
-   "detail": "미국 비트코인 현물 상장지수펀드(ETF)에서 지난주 약 6억7,900만 달러가 순유출된 가운데, 뉴욕증시는 기업... 통화정책 전망과 국채금리 상승이 암호화폐 시장의 투자자금 이탈을 촉발했다고 분석했다. 지난주...",
-   "url": "http://coinreaders.com/263090"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 11:31",
-   "region": "KR",
-   "title": "AI 거품 경고에도 美개미들 반도체주 집중 매수…15주만에 최대",
-   "detail": "최근 1년간 주간 기준으로 세 번째로 많다. 러브너는 현재 추세가 이어질 경우 10월 반도체주 순매수 규모가... 실제로 AI 거품에 대한 경고가 잇따르는 가운데서도 뉴욕 증시는 지난주 사상 최고치를 경신했다. 기술주...",
-   "url": "https://www.news1.kr/world/international-economy/6319477"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 09:30",
-   "region": "KR",
-   "title": "원·달러 환율, 3.6원 내린 1341.5원",
-   "detail": "직전 거래일 주간 종가보다 3.6원(0.26%) 내린 것이다. 이날 환율은 1340원대 중반을 기록할 수 있다는 전망이 나온다. 뉴욕 증시가 이틀 연속 약세를 보이면서 국내 유가증권시장에서 외국인 순매도가 지속될 가능성이...",
-   "url": "https://biz.chosun.com/policy/policy_sub/2026/10/14/FECITTBMSVB3JPYJOI44F6F57U/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 09:26",
-   "region": "KR",
-   "title": "환율, 연준 추가 긴축 신중론에 1330원대 후반서 등락",
-   "detail": "환율은 이날 오전 6시 기준 전날 주간거래 기준가 대비 3.6원 내린 1341.5원에 거래됐다. 밤사이 위험회피... 미국 뉴욕증시 3대 지수는 하락했다. 다우존스30 산업평균지수는 전장보다 180.45포인트(0.35%) 내린 51,670....",
-   "url": "https://www.ajunews.com/view/20261014092144397"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 07:32",
-   "region": "KR",
-   "title": "[마켓 프리뷰] '검은 화요일' 中 반도체 뉴스에 '매도 사이드카' 발동",
-   "detail": "53 '껑충' - 달러·원, 주간거래 10.0원 상승…1345.1원 기록 - 외국인 4.5조 매도 우위…6거래일 연속 '팔자' 행렬... - 뉴욕증시 일제히 하락…반도체주 전반 급락 영향 - 中 반도체 기술 진전에 AI 관련주 경쟁 강화 우려...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000339791?division=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-14 07:28",
-   "region": "KR",
-   "title": "[KFT 모닝 브리프] 2026.10.14 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-   "detail": "9% 하락했고, 이익 전망이 오르는 가운데 주가만 빠진다는 점에서 이번 하락은 실적이 아니라... ⑥ [금융·시장] 뉴욕증시 3대 지수 하락…반도체지수 5일 연속 내리막, JP모건 실적 하회·골드만삭스 호실적...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202610140710069087141825007d_18"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 17:39",
-   "region": "KR",
-   "title": "중동전쟁·100달러 유가에도 美개미 상승 베팅…옵션 거래 '밈주식 광풍...",
-   "detail": "미국개인투자자협회(AAII)가 10월7일까지 실시한 주간 조사에서 향후 6개월간 주가가 오를 것으로 예상한... 12일 뉴욕증시에서 다우존스30산업평균지수는 약 196포인트(0.4%) 올랐지만 S&P500지수는 0.1% 미만 하락했고...",
-   "url": "https://www.newsis.com/view/NISX20261013_0003824428"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 14:54",
-   "region": "KR",
-   "title": "[26.10.13 증시 인싸잇] 코스피 6000선 붕괴에도… IMF, 한국 성장률 3.3%...",
-   "detail": "경제성장률 전망치를 3.3%로 대폭 상향했다. 금융시장의 불안과 실물경제에 대한 낙관론이 엇갈리는... 미국 뉴욕증시에서도 필라델피아 반도체지수가 2.7% 하락했으며, 마이크론과 샌디스크 등 주요 반도체주도 약세를...",
-   "url": "https://www.mediawatch.kr/news/article.html?no=261336"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 11:56",
-   "region": "KR",
-   "title": "HBM 수요 폭증 속 삼성전자·SK하이닉스 주가는 왜 추락하나",
-   "detail": "늘어날 전망이다. 한데 이 수요를 대부분 떠안아야 할 삼성전자와 SK하이닉스의 주가는 12일에 이어... 엔비디아보다 더 빠진 메모리주 하락폭은 뉴욕 증시의 AI 기술주와 비교해도 두드러진다. 12일(현지시각)...",
-   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=713541"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 11:52",
-   "region": "KR",
-   "title": "[개장 시황] 코스피 6,000선 마저 붕괴...국내 증시 개장 직후 패닉",
-   "detail": "전일 미국 뉴욕증시에서 필라델피아 반도체지수가 약세를 보인 데 이어, 국내 반도체 투톱을 향한... 오전 10시 30분 현재 원·달러 환율은 전 거래일 주간 종가(1,335.1원) 대비 소폭 상승 혹은 보합권 혼조세를 오가며 1...",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=278668"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 09:31",
-   "region": "KR",
-   "title": "원·달러 환율, 0.3원 오른 1336.1원",
-   "detail": "직전 거래일 주간 종가보다 0.3원(0.07%) 오른 것이다. 이날 환율은 소폭 상승할 수 있다는 전망이 나온다.... 간밤 뉴욕증시에 반도체 주가가 약세를 보인 것도 환율에 부담이 되고 있다. 12일(현지 시각)...",
-   "url": "https://biz.chosun.com/policy/policy_sub/2026/10/13/SDGDJBY3ZFE7BBQW3AZP4A3K7Y/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 09:30",
-   "region": "KR",
-   "title": "환율, 1330원대 지속…\"글로벌 강달러에 상승 압력\"",
-   "detail": "이날 환율은 오전 6시 기준 전장 주간거래 기준가 대비 0.7원 오른 1335.8원에 거래됐다. 달러 강세에... 미국 뉴욕증시는 혼조세를 보였다. 다우존스30산업평균지수는 전 거래일 대비 195.60포인트(0.38%) 상승한...",
-   "url": "https://www.ajunews.com/view/20261013092509467"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 09:10",
-   "region": "KR",
-   "title": "중동 불안에 달러 강세…환율 저점 찍고 반등하나",
-   "detail": "원·달러 환율이 13일 장 초반 하락 출발한 뒤 반등 압력을 받을 것으로 전망된다. 중동 지역의 지정학적... 간밤 뉴욕증시에서 반도체주가 약세를 보인 점도 환율 상승 요인으로 꼽힌다. 중국 반도체 자립의 핵심...",
-   "url": "https://www.econovill.com/news/articleView.html?idxno=753360"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 08:36",
-   "region": "KR",
-   "title": "[모닝 리포트] 중동 불안·강달러에 환율 상승 압력…\"1330~1345원 전망\"",
-   "detail": "달러/원 환율이 중동 불안과 국제유가 상승에 따른 달러 강세로 상승 압력을 받을 전망이다. 외국인 주식... 뉴욕증시에서 반도체 관련 주가가 하락한 가운데 반도체 비중이 높은 국내 증시에서도 외국인 매도세가...",
-   "url": "https://www.newspim.com/news/view/20261013000084"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-us",
-   "date": null,
-   "published": "2026-10-13 08:32",
-   "region": "KR",
-   "title": "[원자재 시황] 다시 치솟는 유가에 금·코인 하락",
-   "detail": "뉴욕증시는 중동 긴장과 주요 경제지표 발표를 앞두고 투심이 위축된 가운데 혼조세로 마감했다. 금값... 공휴일로 주간 수출검사 및 작황 보고서 발표가 13일로 연기되면서 시장의 관심은 USDA의 공급 전망 상향...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1727524"
+   "title": "[뉴욕증시] AI 거품론·유가 폭등 '쌍악재'에 나스닥 572P '와르르'",
+   "detail": "시장은 오는 10월 27~28일 예정된 연방공개시장위원회(FOMC) 회의를 앞두고 연준의 정책 경로에 촉각을 곤두세우고 있다. 방콕 IMF 행사에서 발언한 케빈 워시 연준 의장이 구체적인 금리 인상 신호를 주지 않으면서...",
+   "url": "https://www.g-enews.com/view.php?ud=202610170523539946e250e8e188_1"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-16 06:09",
+   "published": "2026-10-16 17:14",
    "region": "KR",
-   "title": "美 금리 전망 안갯속…워시 16일 발언에 쏠리는 눈",
-   "detail": "이번 대담이 주목받는 이유는 연준이 오는 27~28일 열리는 연방공개시장위원회(FOMC)를 앞두고 17일부터 이른바 ‘블랙아웃’에 들어가기 때문이다. 블랙아웃은 통화정책 결정에 영향을 줄 수 있는 연준 관계자들의 공개...",
-   "url": "https://www.sedaily.com/article/20102228?ref=naver"
+   "title": "[마감 시황] 코스피, '7거래일' 연속 하락 끊어내며 5,600선 회복…원/달...",
+   "detail": "다만 오는 22일 한국은행 금융통화위원회와 이달 말 예정된 미국 FOMC 등 거시경제 분기점을 앞두고 있는 만큼, 무리한 레버리지 투자보다는 대외 경제 지표의 추이를 면밀히 살피는 신중한 투자 전략이 요구되는...",
+   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279010"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-16 06:01",
+   "published": "2026-10-16 17:06",
    "region": "KR",
-   "title": "앤트로픽, 한강 작가 책까지 불법 다운...커지는 AI 저작권 침해 우려 [...",
-   "detail": "27~28일 FOMC를 앞두고 CME 페드워치상 금리 인상 확률은 22.1%에서 CPI 발표 직후 50% 이상으로 뛰었다가 27.1%로 낮아졌습니다. IMF는 올해 세계 물가 상승률을 4.7%로 전망했고, 미국·유럽의 근원 인플레이션이 2028년...",
-   "url": "https://www.sedaily.com/article/20102258?ref=naver"
+   "title": "워시, 추가 금리 인상 여부 언급 회피…\"회의 결과 예단 안해\"",
+   "detail": "해당 발언도 오는 27∼28일 FOMC 회의를 앞두고 위원들의 발언이 제한되는 '블랙아웃' 기간 직전에 나온 것입니다. 연준은 지난달 기준금리를 0.25%포인트 올려 3.75∼4.00%로 높였는데, 이는 3년 만의 인상이었습니다. 이번...",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005940561"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-16 05:56",
+   "published": "2026-10-16 16:32",
    "region": "KR",
-   "title": "AI 투자 불안에 달러도 흔들렸다…1개월여 만에 최대 하락",
-   "detail": "연준이 오는 10월 연방공개시장위원회(FOMC)를 앞두고 17일부터 통화정책 관련 공개 발언을 제한하는 블랙아웃 기간에 들어가는 만큼, 이번 발언은 추가 금리 인상 가능성을 가늠할 중요한 계기가 될 전망이다. 블룸버그...",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02086086645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+   "title": "[매그로 인사이트] 이춘광 대표 “코어위브 CDS 1050bp 폭등은 과도한 공...",
+   "detail": "“중간선거를 앞두고 정치적 부담이 있지만 케빈 워시 연준 의장이 물가 안정에 방점을 찍고 있는 만큼 10월 FOMC에서 기준금리를 인상할 확률이 50% 이상으로 높으며, 10월에 올린다면 12월 추가 인상 부담은 대폭...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610160140&t=NN"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-16 01:02",
+   "published": "2026-10-16 16:14",
    "region": "KR",
-   "title": "美 물가 급등에도 금값 1%대 반등…AI 주식 급락에 안전자산 선호",
-   "detail": "연준은 오는 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 17일부터 통화정책 관련 공개 발언을 자제하는 블랙아웃 기간에 들어간다. 이에 따라 워시 의장의 발언은 이번 회의에서의 금리 결정 방향을 가늠할 중요한...",
-   "url": "https://www.g-enews.com/view.php?ud=2026101523294873989a1f309431_1"
+   "title": "美 물가 다시 뛰는데…워시, \"금리 인상 예고 없다\"",
+   "detail": "워시 의장은 오는 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 이같이 발언했다. 연준 인사들이 통화정책에 관한 공개 발언을 삼가는 '블랙아웃' 기간에 들어가기 직전이다. 연준은 지난달 기준금리를 0.25%포인트...",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026101616114576404"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 22:14",
+   "published": "2026-10-16 16:11",
    "region": "KR",
-   "title": "[종합] 美 생산자물가 1.3% 급등, 4년여 만에 최대…금리 인상 압박 커졌...",
-   "detail": "시장에서는 이번 물가 지표가 오는 27~28일 열리는 연방공개시장위원회(FOMC) 회의에서 추가 금리 인상을... 오는 11월 3일 미국 중간선거를 앞두고 물가 문제는 도널드 트럼프 대통령과 공화당에도 정치적 부담으로...",
-   "url": "https://www.newspim.com/news/view/20261015001325"
+   "title": "금리 인상 언급 피한 워시…“AI가 美 실물 경제 활성화”",
+   "detail": "워시 의장은 오는 27~28일 FOMC 회의를 앞두고 연준 인사들의 발언이 제한되는 블랙아웃 기간에 들어가기 직전 이 같은 입장을 밝혔다. 연준은 지난달 기준금리를 0.25%포인트 인상해 연 3.75~4.00%로 조정했다. 3년 만의 금리...",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000023238&cp=nv"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 15:57",
+   "published": "2026-10-16 15:40",
    "region": "KR",
-   "title": "美 9월 CPI 물가, 아시아 증시 '직격'…케빈 워시 입에 쏠린 눈",
-   "detail": "오는 27~28일 FOMC 회의를 앞두고 연준 관계자들이 공개 발언을 자제하는 '블랙아웃' 기간에 들어가기 직전 마지막 주요 일정이다. 그간 포워드 가이던스(선제적 지침) 축소를 지향해 온 워시 의장이 언급할 내용들은...",
-   "url": "https://www.mt.co.kr/world/2026/10/15/2026101511122089763"
+   "title": "코스피 8일 만에 상승…5700선 탈환",
+   "detail": "워시 의장은 국제통화기금(IMF) 연차총회 대담에서 오는 10월과 12월 연방공개시장위원회(FOMC) 금리 결정을 앞두고 신중한 입장을 밝혔는데요. 시장은 추가 긴축을 서두르지 않겠다는 의미로 해석했습니다....",
+   "url": "https://biz.sbs.co.kr/article_hub/20000340442?division=NAVER"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 15:43",
+   "published": "2026-10-16 15:30",
    "region": "KR",
-   "title": "[셀럽의 한 수] '불안 거시환경' 코스피 바닥인가? \"5300~5600선 바닥\"",
-   "detail": "10월 FOMC에서 금리를 인상할 거라는 확률이 더 커졌습니다. 연내 1회 이상 금리 인상 가능성은 90% 넘게... 중간선거 앞두고 고유가 유지 안간힘 - 트럼프 \"석유수송 회복\" 자랑하자 이란 바로 반격 Q. 트럼프 대통령도 이번...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340166?division=NAVER"
+   "title": "FOMC 위원 \"물가상승 압력 지속 기대심리 우려\"",
+   "detail": "이번 발언은 오는 27~28일 열리는 연방공개시장위원회, FOMC 회의를 앞두고 위원들의 대외 발언이 금지되기 직전에 나왔습니다. FOMC 투표권이 있는 해맥 총재는 인플레이션에 대응하기 위한 적극적인 금리 인상을 가장...",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610161530101975"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 15:36",
+   "published": "2026-10-16 15:26",
    "region": "KR",
-   "title": "‘CXMT’ 쇼크의 진실…“제품 사양·출시일조차 미공개”",
-   "detail": "■ 美 9월 CPI 3.7%…FOMC 앞두고 긴축 우려 재점화: 미국 9월 소비자물가가 시장 예상치(3.6%)를 웃돌며 10월 금리인상 확률이 한 주 만에 17%에서 35%로 두 배 이상 뛰었다. 오는 27~28일 FOMC를 앞두고 추가 긴축...",
-   "url": "https://www.sedaily.com/article/20102048?ref=naver"
+   "title": "美 물가 불안에도 입 닫은 워시 의장…\"금리 결정 미리 예고 안 해\"",
+   "detail": "미국 연방준비제도(Fed·연준)의 케빈 워시 의장이 이달 말 예정된 연방공개시장위원회(FOMC) 회의를 앞두고 기준금리 향방에 대한 구체적인 언급을 피하며 극도로 신중한 태도를 보였다. 최근 가파른 물가 상승세에도...",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=302052"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 15:12",
+   "published": "2026-10-16 15:00",
    "region": "KR",
-   "title": "美연준 데일리 “추가 금리인상 필요하지만 서두를 이유 없어”",
-   "detail": "이는 오는 27~28일 열리는 연방공개시장위원회(FOMC) 정례회의에서 금리를 동결하고 물가와 경기 흐름을... 데일리 총재 역시 추가 긴축 가능성을 배제하지 않으면서도 이달 FOMC에서 즉각적인 인상에 나서기보다는...",
-   "url": "https://biz.heraldcorp.com/article/10903945?ref=naver"
+   "title": "FOMC 위원 “인플레이션 기대 심리 악화 시 더 큰 대응 필요”…금리 인...",
+   "detail": "이번 발언은 오는 27~28일 열리는 연방공개시장위원회(FOMC) 회의를 앞두고 위원들의 대외 발언이 금지되는 이른바 ‘블랙아웃 기간’ 직전에 나왔습니다. FOMC에서 금리 결정에 참여하는 해맥 총재는 인플레이션에...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687718&ref=A"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 14:30",
+   "published": "2026-10-16 14:52",
    "region": "KR",
-   "title": "“기름값 때문이라지만”… 미국 물가 3.7% 반등, 더 복잡해진 연준 셈...",
-   "detail": "연준은 27~28일(현지시간) 연방공개시장위원회(FOMC) 회의를 앞두고 있다. 이번 CPI는 물가 안정이 아직 확실하지 않다는 점을 보여줬지만, 동시에 에너지 가격 급등이 전체 상승률을 크게 끌어올렸다는 점도 확인시켰다....",
-   "url": "https://m.skyedaily.com/news_view.html?ID=313022"
+   "title": "워시 Fed 의장 \"금리결정 예단 안해…AI가 세계경제 상방요인\"",
+   "detail": "이날 발언도 오는 27∼28일 FOMC 회의를 앞두고 위원들의 발언이 제한되는 '블랙아웃' 기간 직전에 나왔다. 워시 의장은 인공지능(AI)이 주도하는 투자 급증에 대해 \"세계 경제의 가장 중요한 상방 요인\"으로 꼽았다....",
+   "url": "https://www.jasm.co.kr/news/view/321843/?sc=Naver"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 14:22",
+   "published": "2026-10-16 14:50",
    "region": "KR",
-   "title": "전쟁·관세·AI가 만든 ‘3중 물가 파고’… 사면초가 빠진 美 장바구니",
-   "detail": "연준은 이달 27일부터 연방공개시장위원회(FOMC) 정례회의를 연다. 당장 10월 말 회의는 11월 중간선거를 엿새 앞두고 열려 금리 인상을 단행하기에는 정치적 부담이 상대적으로 크다. 조 라보그나 SMBC닛코증권 수석...",
-   "url": "https://biz.chosun.com/international/international_economy/2026/10/15/7ZVAQRE3AJB6HM5ERKGZZD73HE/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+   "title": "금리 언급 피한 워시…\"AI, 세계경제 상방 요인\"",
+   "detail": "회의를 앞두고 추가 금리 인상 여부에 대한 언급을 피했습니다. 로이터 통신과 월스트리트저널(WSJ)에... 연방공개시장위원회(FOMC) 위원들이 다음 결정을 미리 시사하던 '포워드 가이던스'(선제적 지침) 관행과 결별을...",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801160&plink=ORI&cooper=NAVER"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 13:35",
+   "published": "2026-10-16 14:48",
    "region": "KR",
-   "title": "[직설] 中 반도체 공습·외국인 매도…코스피 '휘청'",
-   "detail": "CPI 결과를 받아본 연준이 이달 말 FOMC를 앞두고 있는데요. 9월 FOMC 회의록에 이어서 뉴욕 연은 총재까지 올해 한 차례 추가 금리인상이 필요하다는 입장을 내놨습니다. 그러면서도 시점에 대한 언급은 없었는데요....",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340069?division=NAVER"
+   "title": "워시, 美 물가 급등에도 말 아껴…\"금리 결정, 예고 안 해\"",
+   "detail": "이번 발언은 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 연준 관계자들이 통화정책 관련 공개 발언을 자제하는 '블랙아웃' 기간에 들어가기 직전에 나왔다. 연준은 지난달 기준금리를 0.25%p(포인트) 인상해 연 3.75~4....",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829027"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 11:38",
+   "published": "2026-10-16 14:47",
    "region": "KR",
-   "title": "美 9월 근원물가 0.3%…국내 증권가 “2차 파급 시작” vs \"재가속 판단...",
-   "detail": "FOMC를 앞두고 연준 인사들이 외부 발언을 삼가는 블랙아웃 기간에 들어가기 전 마지막 공개 발언이다. 하 연구원은 이번 발언이 10월 인상 여부를 가르는 분기점이 될 것으로 예상했다. 미국 9월 소비자물가 상승을...",
-   "url": "https://www.raonnews.com/news/article.html?no=61904"
+   "title": "FOMC 위원 \"우려하는 건 물가상승 압력 지속 기대심리\"",
+   "detail": "이번 발언은 오는 27~28일 열리는 연방공개시장위원회(FOMC) 회의를 앞두고 위원들의 대외 발언이 금지되는 블랙아웃 기간 직전에 나왔다. FOMC 투표권이 있는 해맥 총재는 인플레이션에 대응하기 위한 적극적인 금리...",
+   "url": "https://www.yna.co.kr/view/AKR20261016107000009?input=1195m"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 11:36",
+   "published": "2026-10-16 14:47",
    "region": "KR",
-   "title": "‘고유가發 물가충격’ 금리인상론 재점화…워시 ‘입’에 쏠린 눈",
-   "detail": "오는 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 연준 관계자들이 공개 발언을 자제하는 ‘블랙아웃’ 기간에 들어가기 전 마지막 주요 일정이다. 이번 대담에서는 워시 의장이 이달 금리 동결과 인상 가운데 어느...",
-   "url": "https://biz.heraldcorp.com/article/10903633?ref=naver"
+   "title": "추가 금리 인상 '촉각'…美 연준의장 \"예단 안해\"",
+   "detail": "케빈 워시 미국 연방준비제도(연준·Fed) 의장이 이번 달 말 통화정책 회의를 앞두고 추가 금리 인상... 연방공개시장위원회(FOMC) 위원들이 다음 결정을 미리 시사하던 '포워드 가이던스'(선제적 지침) 관행과의...",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261016144642crH"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 11:16",
+   "published": "2026-10-16 14:41",
    "region": "KR",
-   "title": "'D-1' 워시 등판에 시선 집중…\"이달 동결하면 12월에 50bp 직면\" 경고도",
-   "detail": "금리 동결이 유력했던 10월 연방공개시장위원회(FOMC, 27~28일) 베팅이 크게 요동치는 가운데 워시 의장이... 티미라오스 기자는 워시 의장의 IMF 대담은 \"연준 당국자들이 10월 회의를 앞두고 침묵하기 전에 예정된...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439387"
+   "title": "워시 “금리결정 예단 안 해…인공지능이 세계경제 상방 요인”",
+   "detail": "이날 발언도 오는 27∼28일 FOMC 회의를 앞두고 위원들의 발언이 제한되는 ‘블랙아웃’ 기간 직전에 나왔습니다. 연준은 지난달 기준금리를 0.25%포인트 올려 3.75∼4.00%로 높였습니다. 3년 만의 인상이었습니다. 이번 주...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687710&ref=A"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 10:30",
+   "published": "2026-10-16 14:36",
    "region": "KR",
-   "title": "美 물가 3.7% 쇼크에 인플레 우려 재점화…트럼프 중간선거 비상",
-   "detail": "11월 3일 중간선거를 앞두고 생활비 부담이 핵심 쟁점으로 떠오른 가운데, 물가 안정 성과를 강조해 온... 연준은 이달 27~28일 열리는 연방공개시장위원회(FOMC)에서 기준금리를 결정한다. 시카고상업거래소(CME) 그룹...",
-   "url": "https://www.ajunews.com/view/20261015100703583"
+   "title": "워시 \"금리결정 예단 안해…AI가 세계경제 상방요인\"",
+   "detail": "이날 발언도 오는 27∼28일 FOMC 회의를 앞두고 위원들의 발언이 제한되는 '블랙아웃' 기간 직전에 나왔다. 연준은 지난달 기준금리를 0.25%포인트 올려 3.75∼4.00%로 높였다. 3년 만의 인상이었다. 이번 주 발표된 9월...",
+   "url": "https://www.yna.co.kr/view/AKR20261016105300009?input=1195m"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 10:23",
+   "published": "2026-10-16 14:24",
    "region": "KR",
-   "title": "美 12개 지역 모두 물가 상승…고유가에 공급망 전반 비용 부담",
-   "detail": "오는 27∼28일 연방공개시장위원회(FOMC)를 앞두고 9월 소비자물가지수(CPI)가 전년보다 3.7% 올라 시장 전망을 웃돌았다. CME 페드워치에 따르면 금리선물시장은 이달 기준금리 인상 가능성을 약 35%로 반영했다.",
-   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000073576"
+   "title": "美 물가 들썩에도 워시 '금리 힌트' 없었다.. 10월 금리 동결 '무게'",
+   "detail": "워시, IMF 총재와 대담서 \"금리 결정 언급 부적절\" 10월 27~28일 FOMC 앞두고 '금리 인상' 여부 관심 시장은 10월 동결 우세 속 12월 인상 가능성 무게 아주경제=배인선 기자 baeinsun@ajunews.com 케빈 워시 미국 연준 의장 [사진...",
+   "url": "https://www.ajunews.com/view/20261016140249839"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:50",
+   "published": "2026-10-16 14:12",
    "region": "KR",
-   "title": "美 CPI 예상상회에도…연은 총재들 \"금리인상 서두를 필요 없어\"",
-   "detail": "오는 27~28일 FOMC를 앞두고 추가 인상 여부에 관심이 쏠리고 있다. 시카고상품거래소(CME) 페드워치에 따르면 9월 CPI 발표 이후 10월 금리인상 확률은 한때 크게 높아졌지만 이후 상승분 일부를 반납했다. 물가 상승...",
-   "url": "https://www.news1.kr/world/international-economy/6320711"
+   "title": "워시 연준 의장 \"AI 전환기 험난하지만 국부 증진에 기여할 것\"",
+   "detail": "다만 오는 10월 27~28일로 예정된 연방공개시장위원회(FOMC) 회의를 앞두고 구체적인 정책 결정에 대해서는 \"차기 회의를 미리 예단하지 않겠다\"며 말을 아꼈다. 연준 위원들은 이번 주 미국 동부시간 기준 16일부터...",
+   "url": "https://www.g-enews.com/view.php?ud=202610161410011067e250e8e188_1"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:48",
+   "published": "2026-10-16 14:09",
    "region": "KR",
-   "title": "9월 美 CPI '3.7%↑' 예상 상회…10월 연준 추가 인상 '불씨'",
-   "detail": "이에 10월 연준의 금리 결정을 앞두고 인상 확률이 높아지고 있다. 연준은 지난 9월 정책금리를 3.50~3.75... 시카고상품거래소(CME) 페드워치툴을 보면 이날 기준 연준이 10월 연방공개시장위원회(FOMC)에서 금리를 올릴...",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=856546"
+   "title": "워시 의장 금리발언 침묵 속 \"연준 신뢰 높여야\"…AI 청문회 예고",
+   "detail": "이날 연설은 오는 27~28일 FOMC 회의를 앞두고 연준 관계자들이 공개 발언을 자제하는 '블랙아웃' 기간에 들어가기 직전 워시 의장의 마지막 주요 일정이다. 그간 포워드 가이던스(선제적 지침) 축소를 지향해 온 워시...",
+   "url": "https://www.mt.co.kr/world/2026/10/16/2026101613342817430"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:40",
+   "published": "2026-10-16 13:52",
    "region": "KR",
-   "title": "[트럼프 스톡커] 투표 전 통화팽창에 부실 덮친 AI·선진국 채무",
-   "detail": "오는 27~28일(현지 시간) 연방준비제도(Fed·연준)의 연방공개시장위원회(FOMC) 정례회의를 앞두고 마지막 분수령으로 꼽혔던 9월 소비자물가지수(CPI) 상승률이 시장의 예상보다 높은 것으로 집계됐다. 지난달 15~16일...",
-   "url": "https://www.sedaily.com/article/20101813?ref=naver"
+   "title": "코스닥, 장중 5%대 급반등…워시 발언에 매수 사이드카·800선 탈환",
+   "detail": "워시 의장은 국제통화기금(IMF) 연차총회 대담에서 오는 10월과 12월 연방공개시장위원회(FOMC) 금리 결정을 앞두고 신중한 입장을 밝혔다. 워시 의장은 \"9월 FOMC 이후 글로벌 상황 대체로 우리 예상대로 흘러왔다\"라며...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439650"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:38",
+   "published": "2026-10-16 13:46",
    "region": "KR",
-   "title": "‘검은 목요일’ 공포 덮친 증시…코스피 5600선 붕괴·사이드카 발동 ...",
-   "detail": "선거를 앞두고 불확실성을 미리 줄이는 포지션 정리”라고 진단했다. 이어 “27∼28일 연방공개시장위원회(FOMC)와 미국 중간선거까지 지나고 AI 산업의 기업간거래(B2B) 수요가 본격적으로 확인되는 10월 말...",
-   "url": "https://biz.heraldcorp.com/article/10903268?ref=naver"
+   "title": "Fed 케빈 워시 \"AI, 생산성 높일 것\"…10월 금리 인상엔 함구",
+   "detail": "오는 27~28일 열리는 연방공개시장위원회(FOMC) 회의에서의 금리 결정에 대해서는 \"회의 결과를 미리... 이번 FOMC는 11월 미국 중간선거를 일주일도 채 남기지 않고 개최된다. 이에 따라 Fed가 기준금리를 인상하거나...",
+   "url": "https://view.asiae.co.kr/article/2026101613434569289"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 09:24",
+   "published": "2026-10-16 13:03",
    "region": "KR",
-   "title": "[오늘 금시세] 금 한돈 66만원대로 하락…美 물가 충격에 국제 금값 급락",
-   "detail": "오는 27~28일 예정된 FOMC 회의를 앞두고 연준의 정책 방향에 대한 불확실성이 높아진 상황이다. 금값이 단기적으로 반등하려면 달러와 국채금리 상승세가 진정되거나 추가 긴축에 대한 시장의 우려가 완화되는 변화가...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16247645"
+   "title": "워시 연준의장 \"AI, 생산성 앞서 수요 자극…금리결정 예단 안해\"",
+   "detail": "연준은 지난달 기준금리를 0.25%포인트 인상했으며 오는 27~28일 연방공개시장위원회(FOMC)를 앞두고 있다. 워시는 금융안정 위험을 고려해야 한다고 강조하면서 정책당국이 대응할 수 있는 부정적인 꼬리위험이...",
+   "url": "https://www.news1.kr/world/international-economy/6322417"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 08:44",
+   "published": "2026-10-16 11:47",
    "region": "KR",
-   "title": "[국내증시 전망] 코스피 6000선 위태…미국 CPI 충격에 삼성전자·SK하이...",
-   "detail": "발표를 앞두고 투자심리가 안정되는지에 있다. ○ 국내증시 주요 일정과 확인할 변수 10월 15일 목요일 오전... 10월 29일 목요일 미국 연방공개시장위원회(FOMC) 기준금리 결정. 미국 물가 상승 이후 연준의 통화정책...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16247594"
+   "title": "美 인플레 부추기는 AI·이란 전쟁…연준, 10월 금리 인상하나",
+   "detail": "이번 발언은 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 연준 관계자들이 통화정책 관련 공개 발언을 자제하는 '블랙아웃' 기간에 들어가기 전 마지막 연설이다. 시장에서는 연준이 11월3일 중간선거 이전에 추가...",
+   "url": "https://www.newsis.com/view/NISX20261016_0003828759"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 08:18",
+   "published": "2026-10-16 10:29",
    "region": "KR",
-   "title": "美 10월 금리 인상 확률 한때 55%…워시 발언에 시장 촉각",
-   "detail": "연준은 오는 27~28일(이하 현지시각) 통화정책 결정 회의를 앞두고 17일부터 대외 발언을 제한하는 '블랙아웃... 11월 중간선거가 10월 FOMC 회의 직후 예정돼 있다는 점도 연준이 신중한 태도를 유지할 수 있는 요인으로...",
-   "url": "https://www.g-enews.com/view.php?ud=202610150813472569a1f309431_1"
+   "title": "증권가 \"11월엔 회복된다...지금이 저가 매수 기회\"",
+   "detail": "연방공개시장위원회(FOMC)와 다음 달 초 미국 중간선거다\"라며 \"미국의 9월 물가가 예상치를 웃돌면서 금리... 선거를 앞두고 정책 불확실성에 관망하던 투자자들이 결과를 확인한 뒤 시장에 복귀할 수 있다는...",
+   "url": "https://www.fnnews.com/news/202610161017486821"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 08:14",
+   "published": "2026-10-16 10:08",
    "region": "KR",
-   "title": "[증시전망대] AI 인프라 7조 달러 쏟아붓는데…\"매출은 절반도 못 건진...",
-   "detail": "그는 \"CPI는 계기였을 뿐\"이라며 \"어제의 매도는 금리 때문이 아니라 실적과 선거를 앞두고 불확실성을 미리 줄이기 위한 포지션 정리였다\"고 분석했다. 이어 \"27∼28일 연방공개시장위원회(FOMC)와 미국 중간선거를...",
-   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=65805"
+   "title": "오늘(16일) 금시세 상승…순금 1돈 금값 78만7000원",
+   "detail": "이달 말 연방공개시장위원회(FOMC)를 앞두고 기준금리 조정 시점과 향후 통화정책 방향을 가늠할 단서가 나올지 관심이 쏠린다. 중동 지역의 지정학적 긴장도 금값의 주요 변수로 꼽힌다. 군사적 충돌이 확대될 경우...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90896"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-10-15 08:13",
+   "published": "2026-10-16 10:01",
    "region": "KR",
-   "title": "코스피 폭락, 바닥인가? \"저가 매수? 두드릴 돌다리 많다\"",
-   "detail": "\"외부에서 자금 조달하는 기업\" - 코어위브 일부 회사채 수익률 15% 넘어..투자 규모보다 ROI·재무 건전성이 잣대 - 10월 FOMC 금리 인상? 11월 중간 선거 앞두고 \"정치적인 판단\" 들어갈 듯 - 美 금리 인상, 12월이나 내년으로...",
-   "url": "https://www.ytn.co.kr/_ln/0102_202610150813177730"
+   "title": "‘美 CPI 쇼크+AI 수익성 경고’ 동시 폭격…증시 패닉",
+   "detail": "이달 FOMC를 앞두고 금리 인상 가능성이 한때 50% 이상으로 치솟는 등 시장 불확실성이 급격히 커졌다. [주식투자자 관심 뉴스] 1. ‘검은 목요일’ 코스피, 하루에만 410조 증발 핵심 요약: 코스피가 전...",
+   "url": "https://www.sedaily.com/article/20102342?ref=naver"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-fomc",
+   "query_id": "nv-event",
    "date": null,
-   "published": "2026-10-15 08:04",
+   "published": "2026-10-16 19:22",
    "region": "KR",
-   "title": "美 물가 3.7%로 급등…고유가에 다시 고개 든 인플레, 연준 금리인상 압...",
-   "detail": "연준은 지난 9월 기준금리를 연 3.75~4.00%로 인상한 데 이어 오는 27~28일 연방공개시장위원회(FOMC) 회의를 앞두고 있다. 시장에서는 그동안 연준이 추가 경제지표를 확인하며 금리인상 시점을 조절할 가능성에 무게를 뒀지만...",
-   "url": "https://www.geconomy.co.kr/news/article.html?no=324361"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-10-15 07:57",
-   "region": "KR",
-   "title": "[마켓뷰] 또 고개 든 AI 수익성 논란…설상가상 반도체주",
-   "detail": "어제의 매도는 금리 때문이 아니라 실적과 선거를 앞두고 불확실성을 미리 줄이는 포지션 정리였다\"고 말했다. 그는 \"27∼28일 연방공개시장위원회(FOMC)와 미국 중간선거까지 지나고 (AI 산업의) 기업간거래(B2B)...",
-   "url": "https://www.yna.co.kr/view/AKR20261015018100008?input=1195m"
+   "title": "中광저우서 '제140회 캔톤페어' 개막…신제품·녹색 제품 비중 '역대 최...",
+   "detail": "행사에는 총 3만여개 기업이 참가했으며, 약 34만명의 역외 바이어가 현장을 찾아 제품을 구매할 예정이... 신제품 최초 공개 행사는 700회 이상, 최초 공개 제품 수는 15% 늘어날 것으로 전망된다. 상품·서비스 융합...",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=91875"
   },
   {
    "src": "네이버뉴스",
@@ -3235,24 +3232,90 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-event",
+   "query_id": "nv-devconf",
    "date": null,
-   "published": "2026-10-09 18:16",
+   "published": "2026-10-16 15:42",
    "region": "KR",
-   "title": "저커버그의 이미지는 추락하는데, 메타는 왜 잘나갈까?",
-   "detail": "지난달 열린 메타의 연례 제품 공개 행사 '메타 커넥트'에서 기조연설에 나선 마크 저커버그 최고경영자(CEO)... 한편 저커버그는 꾸준히 신제품이 출시되는 자사의 AI 스마트 안경 라인업과 뮤즈가 연동되어 사용자는 손을...",
-   "url": "https://www.bbc.com/korean/articles/c6z98g8wjwj7o?xtor=AL-73-%5Bpartner%5D-%5Bnaver%5D-%5Bheadline%5D-%5Bkorean%5D-%5Bbizdev%5D-%5Bisapi%5D"
+   "title": "카카오, 임직원 대상 인적분할 설명회 실시",
+   "detail": "카카오는 지난 13일 개발자 콘퍼런스 '이프카카오 2026'에서 주요 계열사 최고경영자(CEO)가 참석한 공동 애널리스트 간담회를 개최했다. 오는 20일에는 두 번째 소액주주 간담회를 열 예정이다. 한편 카카오는 올해 2분기...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495894"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-event",
+   "query_id": "nv-devconf",
    "date": null,
-   "published": "2026-10-09 17:50",
+   "published": "2026-10-16 14:35",
    "region": "KR",
-   "title": "애플, 10월 말 첫 터치스크린 맥북 공개...M6 칩으로 전문가 시장 공략",
-   "detail": "아이패드 신제품 공개 행사를 개최할 예정이라고 보도했다. 행사는 온라인 영상 발표와 언론 대상... 실내용 카메라 등 관련 기기를 선보일 가능성도 제기된다. 이들 제품은 시리 AI를 중심으로 연결될 전망이다.",
-   "url": "https://www.aitimes.com/news/articleView.html?idxno=216094"
+   "title": "[경기 24시] 경기게임오디션 '역대 최고 경쟁률'…길드스튜디오 '남모' ...",
+   "detail": "404팀 지원, 일반부문 34대 1 경쟁률…학생부문 신설, 청년 개발자 발굴 투자유치 설명회·심층유저테스트 연계…게임 개발부터 시장 진출 지원 경기도와 경기콘텐츠진흥원이 개최한 '2026 경기게임오디션'에서...",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=390546"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 14:00",
+   "region": "KR",
+   "title": "카카오, 인적분할 앞두고 사내 설명회… \"고용·복지 전면 승계\"",
+   "detail": "지난 9월 첫 소액주주 간담회를 진행한 데 이어, 지난 13일에는 개발자 콘퍼런스 'if(kakao)26' 현장에서 주요 계열사 대표들이 참석한 애널리스트 간담회를 열었다. 오는 20일에는 2차 소액주주 간담회를 개최해 주주들의...",
+   "url": "http://www.newsdream.kr/news/articleView.html?idxno=120180"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 13:06",
+   "region": "KR",
+   "title": "CJ올리브네트웍스·동국제약·풀무원 등 글로벌 사업 확장부터 상생·브...",
+   "detail": "보안 콘퍼런스 '가디언즈 26'을 개최한다. 토스와 토스뱅크, 토스증권 등 6개 계열사 보안 전문가들이 AI... 올해는 발표 세션 외에 전시·체험 공간과 네트워킹 장소를 마련했으며, 보안 전문가와 개발자 1000여 명의...",
+   "url": "http://www.dailypop.kr/news/articleView.html?idxno=103455"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 11:34",
+   "region": "KR",
+   "title": "'내년 1월 물적 분할' 카카오, 사내 오픈톡 진행… \"고용·복지 100% 승계...",
+   "detail": "지난 9월 첫 소액주주 간담회를 연 데 이어, 이달 13일 경기도 용인시에서 개최한 연례 개발자 콘퍼런스 'if(kakao)26' 현장에서 주요 계열사 최고 경영자(CEO)들이 참석한 가운데 공동 애널리스트 간담회를 진행했다. 오는...",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=280836"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 10:57",
+   "region": "KR",
+   "title": "정신아 카카오 대표 “인적분할은 회사 구조·기준 재설계하는 것”",
+   "detail": "지난달 소액주주 간담회를 개최했다. 지난 13일 열린 연례 개발자 콘퍼런스 ‘이프 카카오 26’에서 주요 계열사 CEO들이 참석한 가운데 공동 애널리스트 간담회를 진행했다. 참석자들은 분할 이후 카카오AI와 카카오X의...",
+   "url": "https://www.munhwa.com/article/11623963?ref=naver"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 10:13",
+   "region": "KR",
+   "title": "카카오 \"인적분할 TF 운영 중…고용·근로조건 그대로 승계\"",
+   "detail": "지난 9월 소액주주 간담회를 개최했고, 이달 13일 열린 개발자 콘퍼런스 'if(kakao)26'에서 주요 계열사 CEO(최고경영자)들이 참석한 가운데 공동 애널리스트 간담회를 진행했다. 오는 20일에는 두 번째 소액주주 간담회를...",
+   "url": "https://www.mt.co.kr/tech/2026/10/16/2026101609525389815"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-10-16 09:34",
+   "region": "KR",
+   "title": "카카오, 인적분할 앞두고 임직원 '오픈톡' 개최 … 준비 현황 공유",
+   "detail": "지난 9월 소액주주 간담회를 개최한 데 이어 이달 13일 열린 개발자 콘퍼런스 'if(kakao)26'에서는 주요 계열사 최고경영자(CEO)들이 참석한 공동 애널리스트 간담회를 진행했다. 오는 20일에는 두 번째 소액주주 간담회를...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/16/2026101600060.html"
   },
   {
    "src": "네이버뉴스",
@@ -3382,9 +3445,9 @@
    "date": null,
    "published": "2026-10-15 10:16",
    "region": "KR",
-   "title": "토스 6개 계열사 보안 전문가 한자리에…‘가디언즈 26’ 개최",
-   "detail": "26’을 개최한다고 15일 밝혔다. 가디언즈는 토스가 매년 운영하는 보안 전문 콘퍼런스로, 보안 기술과 실제 운영 과정에서 발생한 문제와 대응 방안을 공유하는 자리다. 올해 행사에는 약 1000명의 보안 전문가와 개발자가...",
-   "url": "https://www.thepowernews.co.kr/view.php?ud=202610151014168247de3f0aa1be_7"
+   "title": "토스, 금융·통신 현장서 쌓은 보안 기술 나눈다...6개사 참여",
+   "detail": "보안 콘퍼런스 '가디언즈(GUARDIANS) 26'을 개최한다고 밝혔다.올해 행사에는 토스와 토스뱅크, 토스증권... 토스는 이번 행사에 보안 전문가와 개발자 약 1000명이 참가할 것으로 예상하고 있다. 참가 신청은 오는 21일까지...",
+   "url": "https://www.insight.co.kr/news/577818"
   },
   {
    "src": "네이버뉴스",
@@ -3393,9 +3456,9 @@
    "date": null,
    "published": "2026-10-15 10:16",
    "region": "KR",
-   "title": "토스, 금융·통신 현장서 쌓은 보안 기술 나눈다...6개사 참여",
-   "detail": "보안 콘퍼런스 '가디언즈(GUARDIANS) 26'을 개최한다고 밝혔다.올해 행사에는 토스와 토스뱅크, 토스증권... 토스는 이번 행사에 보안 전문가와 개발자 약 1000명이 참가할 것으로 예상하고 있다. 참가 신청은 오는 21일까지...",
-   "url": "https://www.insight.co.kr/news/577818"
+   "title": "토스 6개 계열사 보안 전문가 한자리에…‘가디언즈 26’ 개최",
+   "detail": "26’을 개최한다고 15일 밝혔다. 가디언즈는 토스가 매년 운영하는 보안 전문 콘퍼런스로, 보안 기술과 실제 운영 과정에서 발생한 문제와 대응 방안을 공유하는 자리다. 올해 행사에는 약 1000명의 보안 전문가와 개발자가...",
+   "url": "https://www.thepowernews.co.kr/view.php?ud=202610151014168247de3f0aa1be_7"
   },
   {
    "src": "네이버뉴스",
@@ -3481,17 +3544,6 @@
    "date": null,
    "published": "2026-10-15 08:36",
    "region": "KR",
-   "title": "토스, 내달 6일 보안 콘퍼런스 개최…AI 보안 기술·대응 전략 공유",
-   "detail": "토스가 인공지능(AI) 기반 위협 탐지와 정보보호 기술을 공유하는 보안 콘퍼런스를 개최한다. 올해는... 올해 행사에는 보안 전문가와 개발자 등 약 1000명이 참석할 전망이다. 이번 행사에는 토스를 비롯해 토스뱅크...",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=149418"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-15 08:36",
-   "region": "KR",
    "title": "보안 전문가 한자리에…토스, 보안 콘퍼런스 '가디언즈 26' 개최",
    "detail": "가디언즈는 토스가 매년 개최하는 보안 전문 콘퍼런스로, 최신 보안 기술과 관련 업계의 경험을 공유하는 행사다. 올해는 보안 전문가와 개발자 등 약 1000명이 참석할 것으로 예상된다. 참가 신청은 오는 21일까지 공식...",
    "url": "https://www.ajunews.com/view/20261015082317971"
@@ -3501,88 +3553,11 @@
    "kind": "news",
    "query_id": "nv-devconf",
    "date": null,
-   "published": "2026-10-15 08:10",
+   "published": "2026-10-15 08:36",
    "region": "KR",
-   "title": "토스, 보안 콘퍼런스 '가디언즈 26' 개최···AI 보안·제로트러스트 다...",
-   "detail": "가디언즈는 토스가 매년 개최하는 보안 특화 콘퍼런스로 보안 분야의 기술과 현장 과제를 공유하는 행사다. 올해는 약 1000명의 보안 전문가와 개발자가 참가할 것으로 예상된다. 금융·결제에서 통신 등으로 토스의...",
-   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=713984"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-14 17:42",
-   "region": "KR",
-   "title": "[GWDC 2026]Verona 제 아탈라야 “AI 시대, 인터넷의 ‘진짜’를 검증해야...",
-   "detail": "웹3 개발자 콘퍼런스다. 지난 9월 29일부터 30일까지 서울 aT센터에서 '빌더를 위한, 빌더에 의한(For Builders, By Builders)'을 주제로 개최됐으며, AI와 블록체인, 디지털자산, 실물자산(RWA), 스테이블코인, 온체인 금융 등 주요...",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/421895"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-14 17:06",
-   "region": "KR",
-   "title": "카카오, 다시 소액주주 설득 나선다…AI 성장 청사진 통할까",
-   "detail": "지난 13일 개발자 콘퍼런스 '이프카카오(if kakao26)'에서 카카오톡 기반 인공지능(AI) 사업의 구체적인... 간담회를 개최한다. 지배구조 개편 관련 주요 내용을 설명하고 주주들의 질문에 답하는 자리다. 카카오는 지난...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026101412260114859"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-14 15:34",
-   "region": "KR",
-   "title": "카카오, 인적분할 청사진 제시…\"AI·신사업 확장 본격화\"",
-   "detail": "카카오는 지난 13일 경기도 용인시 카카오 AI캠퍼스에서 애널리스트 간담회를 개최했다고 14일 밝혔다.이번... 이는 전날 열린 개발자 콘퍼런스 ‘IF 카카오’에서 공개한 AI 전략과도 맞닿아 있다.카카오X는 테크핀...",
-   "url": "https://news.mtn.co.kr/article/2026101414322295325"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-14 12:27",
-   "region": "KR",
-   "title": "카카오, 인적분할 앞두고 계열사 성장 전략 공개…시너지 확보 관건",
-   "detail": "첫 애널리스트 간담회 개최…노조는 소통 부족 비판 개발자 콘퍼런스 '이프카카오'서 AI 서비스·기술 공개 카카오가 인적분할을 앞두고 그룹 차원의 사업 재편과 성장 전략을 구체화하고 있다. 주요 계열사의 성장...",
-   "url": "https://news.tf.co.kr/read/economy/2376131.htm"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-14 00:12",
-   "region": "KR",
-   "title": "카카오, 카카오톡에 AI 에이전트 심는다 … '말 한마디로 주문·예약' 추...",
-   "detail": "카카오는 13일부터 이틀간 경기도 용인시 카카오 AI 캠퍼스에서 개발자 콘퍼런스 '이프 카카오(if(kakao)26)'를 개최한다고 밝혔다. '모든 연결에 지능을'을 슬로건으로 내건 이번 행사에서 카카오는 AI 어시스턴트와 자율형...",
-   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=90374"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-13 21:04",
-   "region": "KR",
-   "title": "게임·출판·웹툰…지역 콘텐츠 산업 '총망라'",
-   "detail": "게임개발자 콘퍼런스, 웹툰 작가 초청 및 북 토크쇼, 출판·인쇄 트렌드 세미나, 유명 크리에이터 토크쇼... 또 테일즈런너 및 브롤스타즈 e스포츠 페스티벌과 대구·경북 대학 게임 동아리 게임잼 대회도 동시에 개최...",
-   "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=562161"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-10-13 18:10",
-   "region": "KR",
-   "title": "\"라이언, 메시지 정리해줘\"…카카오, '통합 에이전틱 AI' 시대 연다",
-   "detail": "카카오는 13일 경기도 용인시 카카오 AI 캠퍼스에서 '모든 연결에 지능을'을 주제로 개발자 콘퍼런스 '이프 카카오(if(kakao)26)'를 개최하고 통합 에이전틱 AI 인터페이스 구축 전략을 발표했다. 에이전틱 AI는 이용자의...",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=750792"
+   "title": "토스, 내달 6일 보안 콘퍼런스 개최…AI 보안 기술·대응 전략 공유",
+   "detail": "토스가 인공지능(AI) 기반 위협 탐지와 정보보호 기술을 공유하는 보안 콘퍼런스를 개최한다. 올해는... 올해 행사에는 보안 전문가와 개발자 등 약 1000명이 참석할 전망이다. 이번 행사에는 토스를 비롯해 토스뱅크...",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=149418"
   },
   {
    "src": "네이버뉴스",
@@ -3646,6 +3621,17 @@
    "date": null,
    "published": "2026-10-14 07:02",
    "region": "KR",
+   "title": "[더벨]카카오, '캐펙스 라이트' 받칠 경량 AI에 집중",
+   "detail": "노병석 카카오 파운데이션모델 성과리더가 13일 '이프 카카오26'에서 키노트 발표 중인 모습 노병석 카카오... 카카오 CAPEX·EBITDA 예정·전망치 (출처: 카카오) 이 같은 방향은 설비투자 계획에서도 확인된다. 카카오는...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610131527550040104729"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-keynote",
+   "date": null,
+   "published": "2026-10-14 07:02",
+   "region": "KR",
    "title": "[더벨]카카오, '에이전트 플랫폼' 전환 청사진 공개",
    "detail": "내년 1월 인적분할로 출범할 예정인 신설법인 카카오AI의 핵심 사업인 카카오톡과 AI를 어떻게 결합할지... 정 대표는 첫날 키노트 발표에서 \"카카오는 에이전트들을 이용자의 일상에 연결하는 공통의 접점이 되고자 한다...",
    "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610131308483440103631"
@@ -3655,11 +3641,11 @@
    "kind": "news",
    "query_id": "nv-keynote",
    "date": null,
-   "published": "2026-10-14 07:02",
+   "published": "2026-10-14 00:12",
    "region": "KR",
-   "title": "[더벨]카카오, '캐펙스 라이트' 받칠 경량 AI에 집중",
-   "detail": "노병석 카카오 파운데이션모델 성과리더가 13일 '이프 카카오26'에서 키노트 발표 중인 모습 노병석 카카오... 카카오 CAPEX·EBITDA 예정·전망치 (출처: 카카오) 이 같은 방향은 설비투자 계획에서도 확인된다. 카카오는...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610131527550040104729"
+   "title": "카카오, 카카오톡에 AI 에이전트 심는다 … '말 한마디로 주문·예약' 추...",
+   "detail": "성과리더가 발표하고 있다. 카나나 스페이스는 친숙한 캐릭터와 자연스럽게 대화하는 방식으로 AI 활용의 진입장벽을 낮추는 데 초점을 맞췄다. 향후 다양한 지식재산권(IP)을 활용한 캐릭터도 추가할 예정이다....",
+   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=90374"
   },
   {
    "src": "네이버뉴스",
@@ -3723,9 +3709,9 @@
    "date": null,
    "published": "2026-10-13 16:02",
    "region": "KR",
-   "title": "카카오톡에 '나만의 에이전트 팀'…카카오, ‘칸바스’ 공개",
-   "detail": "(kakao)26)’ 키노트에서 에이전트 생태계 확장 방향과 이를 뒷받침할 기술·안전 체계를 설명했다. 정 대표는... 발표에서는 사내 테스트 중인 칸바스로 에이전트를 만드는 모습을 공개했다. 정 대표는 세금 신고와...",
-   "url": "https://dealsite.co.kr/articles/170548"
+   "title": "카카오, '이프 카카오'서 에이전틱 AI 비전 공개",
+   "detail": "정신아 카카오 대표는 첫 키노트 연설을 통해 이용자의 일상과 선호, 맥락을 바탕으로 적합한 응답을 제공하는 개인화 AI 경험을 구축하겠다고 발표했습니다. 이를 위해 카카오톡 기반 AI 어시스턴트인 '카나나 스페이스...",
+   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4111942"
   },
   {
    "src": "네이버뉴스",
@@ -3734,9 +3720,9 @@
    "date": null,
    "published": "2026-10-13 16:02",
    "region": "KR",
-   "title": "카카오, '이프 카카오'서 에이전틱 AI 비전 공개",
-   "detail": "정신아 카카오 대표는 첫 키노트 연설을 통해 이용자의 일상과 선호, 맥락을 바탕으로 적합한 응답을 제공하는 개인화 AI 경험을 구축하겠다고 발표했습니다. 이를 위해 카카오톡 기반 AI 어시스턴트인 '카나나 스페이스...",
-   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4111942"
+   "title": "카카오톡에 '나만의 에이전트 팀'…카카오, ‘칸바스’ 공개",
+   "detail": "(kakao)26)’ 키노트에서 에이전트 생태계 확장 방향과 이를 뒷받침할 기술·안전 체계를 설명했다. 정 대표는... 발표에서는 사내 테스트 중인 칸바스로 에이전트를 만드는 모습을 공개했다. 정 대표는 세금 신고와...",
+   "url": "https://dealsite.co.kr/articles/170548"
   },
   {
    "src": "네이버뉴스",
@@ -3902,6 +3888,17 @@
    "title": "메타브랜딩, AI 브랜딩 오픈세미나 개최",
    "detail": "행사에서는 박항기 메타브랜딩 대표가 키노트 스피치와 'AI 시대 브랜딩과 프레임웍' 강연을 맡아 브랜드... 기업 정보가 사람을 넘어 AI에 정확히 전달·인용되도록 언어와 기준을 정립하는 방안을 설명할 예정이다....",
    "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=871682"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-unpacked",
+   "date": null,
+   "published": "2026-10-16 18:48",
+   "region": "KR",
+   "title": "글로벌 여행 플랫폼 트렌드 발표 경쟁…검색 데이터로 본 여행시장 변화",
+   "detail": "데이터를 공개했다. 오는 20일에는 호텔스닷컴이 '언팩 27(Unpack '27)' 미디어 행사를 열고 새로운 여행자 행동과 소비 변화를 소개할 예정이다. 글로벌 여행 플랫폼들의 발표에서 공통으로 나타난 것은 여행 시기의...",
+   "url": "http://www.financialreview.co.kr/news/articleView.html?idxno=45586"
   },
   {
    "src": "네이버뉴스",
