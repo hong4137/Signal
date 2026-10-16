@@ -1,52 +1,10 @@
 {
- "generated_at": "2026-10-16T06:30:00+09:00",
+ "generated_at": "2026-10-17T06:30:00+09:00",
  "window": {
-  "from": "2026-10-16",
-  "to": "2026-10-19"
+  "from": "2026-10-17",
+  "to": "2026-10-20"
  },
  "events": [
-  {
-   "date": "2026-10-16",
-   "time": "18:00",
-   "region": "KR",
-   "category": "정책",
-   "title": "석유 최고가격 11차 발표",
-   "importance": 3,
-   "why": "10차 동결(휘발유 1,784원) 뒤 가격 조정 여부가 관건",
-   "consensus": null,
-   "previous": "10차 휘발유 1,784원·경유 1,773원(동결)",
-   "source": "https://news.bbsi.co.kr/news/articleView.html?idxno=4112063",
-   "verified": true,
-   "note": "산업통상부 발표 예정 시각(복수 매체 보도). 10차 적용 기간 4주 종료 시점에 맞춘 일정"
-  },
-  {
-   "date": "2026-10-16",
-   "time": "22:15",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 9월 산업생산",
-   "importance": 3,
-   "why": "제조·광공업 생산 흐름으로 경기 사이클을 확인",
-   "consensus": null,
-   "previous": null,
-   "source": "https://fred.stlouisfed.org/release?rid=13",
-   "verified": true,
-   "note": "미 동부 09:15 관행 시각 기준(FRED 원자료)"
-  },
-  {
-   "date": "2026-10-16",
-   "time": null,
-   "region": "GLOBAL",
-   "category": "정책",
-   "title": "IMF·세계은행 연차총회(방콕, 18일까지)",
-   "importance": 3,
-   "why": "세계 성장·금리·무역 논의가 몰리는 연차총회",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.imf.org/en/meetings/2026/annual",
-   "verified": true,
-   "note": "10월 12~18일 방콕 퀸시릿 국립컨벤션센터. 세부 시각은 공식 페이지 확인"
-  },
   {
    "date": "2026-10-17",
    "time": null,
@@ -54,24 +12,41 @@
    "category": "통화정책",
    "title": "연준 블랙아웃 시작(FOMC 대비)",
    "importance": 3,
-   "why": "17일부터 연준 위원의 통화정책 관련 공개 발언이 제한됨",
+   "why": "17일부터 연준 위원의 금리 관련 공개 발언이 제한돼 발언 공백이 생김",
    "consensus": null,
    "previous": null,
-   "source": "https://www.federalreserve.gov/monetarypolicy/files/fomc-blackout-period-calendar.pdf",
+   "source": "https://www.atlantafed.org/news-and-events/press-room/blackout-periods",
    "verified": true,
-   "note": "블랙아웃 10/17~10/29, FOMC 10/27~28(연준 공식 달력 검색 결과 기준)"
+   "note": "애틀랜타·시카고·세인트루이스 연은 달력 공통: 10/17~10/29. FOMC는 10/27~28"
+  },
+  {
+   "date": "2026-10-18",
+   "time": null,
+   "region": "GLOBAL",
+   "category": "정책",
+   "title": "IMF·세계은행 연차총회 폐막(방콕)",
+   "importance": 3,
+   "why": "세계 성장·무역·금리 논의가 몰린 연차총회, 18일까지 열림",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.imf.org/en/meetings/2026/annual",
+   "verified": true,
+   "note": "10/12~18 방콕 퀸시릭 국립컨벤션센터(IMF·세계은행 공식 일정). 세부 시각은 공식 페이지 확인"
   }
  ],
  "notes": [
-  "범위 안 확정 일정이 4건뿐: 원자료 events 중 10/16 FRED 산업생산만 범위 안이고, 나머지 Finnhub·FRED 일정은 10/20 이후",
-  "원자료 뉴스 대조: 10/22 한은 금통위(보도 3건, 일부 기사 10/23으로 엇갈림)는 범위 밖",
-  "미확정으로 뺌: 관세청 10월 1~15일 수출입 잠정치(16일 전후 발표 기사 미확인), 10년물 국채 입찰 10/19(공식 공고 미확인), 워시 연준 의장 16일 발언(보도 1건)",
-  "미확정으로 뺌: 국내 기업 3분기 잠정실적 — DART 키 없음(공시 0건)이고 검색으로 10/16~19 일정 확인 안 됨",
-  "미확정으로 뺌: 국감 과방위·산자위·정무위 10월 16~19일 일정(검색 결과가 과거 연도뿐)",
-  "미확정으로 뺌: 일본 9월 CPI 10/23(제3자 달력만, 범위 밖), 중국 9월 지표(날짜 미확인)",
-  "행사 점검: if(kakao)26은 10/13~14, Apple Welcome Home은 10/13, OpenAI DevDay 2026은 9/29로 모두 지남. 범위 안 개발자 회의·신제품 행사는 확인 안 됨",
-  "원자료 지연 아님: calendar_raw.json 생성 2026-10-16 06:11 KST(당일 03시 이후). 범위 밖 Finnhub 일정(넷플릭스·IBM·메타·테슬라 10/21~22)은 싣지 않음",
-  "WebSearch 36회(계획 검색 25 + 추가 확인 11)"
+  "원자료(생성 10/17 05:50 KST) 점검: Finnhub 4건 전부 10/21~22로 범위 밖. 규칙 후보 2건(관세청 10/21, 실업수당 10/22)도 범위 밖.",
+  "원자료 실패 출처: FRED(시간 초과), DART(키 없음, 공시 0건). 미국 지표 날짜는 검색으로 확인해야 했음.",
+  "범위 안 확정 일정이 2건뿐. 10/17~18은 주말이라 국내 증시·발표가 적고, 10/19~20 일정은 검색으로 확정하지 못함.",
+  "미확정으로 뺌: 한은 금통위 — 매체마다 10/22·10/23로 엇갈리고 한은 공식 확인 안 됨(범위 밖일 가능성도 있음).",
+  "미확정으로 뺌: 10/19 Wintrust Financial 3분기 실적(단일 출처), 10/20 Bank OZK 실적(단일 출처).",
+  "미확정으로 뺌: 중국 2분기 GDP 10/19(달력 사이트 1곳, 컨센서스 없음). 중국 PMI는 검색 결과 없음.",
+  "미확정으로 뺌: 10/19~20 주간 미국 주택착공·구매관리자지수 — 'thriveinmarkets' 주간표에만 항목명이 있고 날짜·시각 없음.",
+  "미확정으로 뺌: 국내 기업 3분기 잠정실적 — DART 키 없어 공시 확인 불가, 검색으로도 10/17~20 일정 안 잡힘.",
+  "미확정으로 뺌: 2026년 국정감사 상임위(과방위·산자위·정무위) 10/17~20 일정 — 검색 결과가 과거 연도뿐. 한은 국감은 10/12 실시 확인.",
+  "미확정으로 뺌: 정부 반도체·AI 대책 발표 일정 — 검색 결과 없음. 관세·정부 예산 마감 시한 — 10/19 관련 2026년 기사 없음.",
+  "행사 점검: 개발자·신제품 행사는 범위 안 확정 없음. Apple 'Welcome Home' 10/13, if(kakao)26 10/13~14, OpenAI DevDay 9/29는 이미 지남. Oracle AI World 10/25~28, NVIDIA GTC DC 11/30~12/3은 범위 밖.",
+  "지난 실행 메모 점검: 집계 사이트 날짜 혼선(BLS CPI 10/14 발표 확인, 지난 일정). 워시 의장 발언은 보도 1건이라 뺌."
  ],
- "searches": 36
+ "searches": 35
 }
