@@ -1,68 +1,54 @@
 {
- "_note": "Sports UptoDate '이번 주 문화' 칸 — 개봉 대작(movie) · 공연(show)·전시(exhibit) · 예매 오픈(ticket). 자동 수집 로직은 아직 없다. 2026-10-10 첫 묶음은 트렌드세터 위키 회차 001 후보(loop/회차/001_후보.md)에서 기준 v0.1 ★★ 이상·개봉 주 유명작 칸·화제 상위만 손으로 옮김. 시각을 모르는 개봉·전시는 allday:true(시각을 지어내지 않는다).",
- "_schema": {
-  "id": "고유 ID",
-  "type": "movie | show | exhibit | ticket",
-  "title": "제목",
-  "kst": "YYYY-MM-DD HH:MM (개봉일·공연 시작·예매 오픈 시각; allday 면 12:00 자리표시)",
-  "allday": "시각 미정·하루 종일(개봉·전시)이면 true",
-  "show_date": "ticket 일 때 실제 공연 날짜",
-  "venue": "극장·공연장",
-  "where": "예매처",
-  "note": "한 줄 이유",
-  "url": "공식 안내·예매 링크",
-  "stars": "1~3",
-  "verified": "true 만 싣는다"
- },
- "events": [
-  {
-   "id": "c-martinparr-close",
-   "type": "exhibit",
-   "title": "마틴 파: We Are Martin Parr 폐막",
-   "kst": "2026-10-18 12:00",
-   "allday": true,
-   "venue": "서울시립 사진미술관(도봉)",
-   "note": "작가 별세 뒤 아시아 첫 대규모 회고전, 무료 — 이번 주 일요일까지",
-   "url": "https://www.newsis.com/view/NISX20260715_0003710449",
-   "stars": 1,
-   "verified": true
+  "_note": "Sports UptoDate '이번 주 문화' 칸 — 개봉 대작(movie) · 공연(show)·전시(exhibit) · 예매 오픈(ticket). 자동 수집 로직은 아직 없다. 2026-10-10 첫 묶음은 트렌드세터 위키 회차 001 후보(loop/회차/001_후보.md)에서 기준 v0.1 ★★ 이상·개봉 주 유명작 칸·화제 상위만 손으로 옮김. 시각을 모르는 개봉·전시는 allday:true(시각을 지어내지 않는다).",
+  "_schema": {
+    "id": "고유 ID",
+    "type": "movie | show | exhibit | ticket",
+    "title": "제목",
+    "kst": "YYYY-MM-DD HH:MM (개봉일·공연 시작·예매 오픈 시각; allday 면 12:00 자리표시)",
+    "allday": "시각 미정·하루 종일(개봉·전시)이면 true",
+    "show_date": "ticket 일 때 실제 공연 날짜",
+    "venue": "극장·공연장",
+    "where": "예매처",
+    "note": "한 줄 이유",
+    "url": "공식 안내·예매 링크",
+    "stars": "1~3",
+    "verified": "true 만 싣는다"
   },
-  {
-   "id": "c-mma2026-1st",
-   "type": "ticket",
-   "title": "MMA2026 1차 예매 (멜론 GOLD 이상)",
-   "kst": "2026-10-19 20:00",
-   "show_date": "2026-11-14 ~ 15",
-   "venue": "고척스카이돔",
-   "where": "멜론티켓 (2차 이용권 보유자 10/22 20:00)",
-   "note": "MMA 사상 첫 이틀 개최 — 날짜별 출연진은 아직 미확정",
-   "url": "https://ticket.melon.com/csoon/detail.htm?csoonId=13005",
-   "stars": 1,
-   "verified": true
-  },
-  {
-   "id": "r001-45",
-   "type": "exhibit",
-   "title": "김천김밥축제 3년차",
-   "kst": "2026-10-23 12:00",
-   "allday": true,
-   "venue": "김천",
-   "note": "2025년 10만 명분 품절 보도(세계일보) — 3년차, 10/23~25 사흘",
-   "url": "https://www.segye.com/newsView/20251026508570",
-   "stars": 3,
-   "verified": true
-  },
-  {
-   "id": "r261016-12",
-   "type": "ticket",
-   "title": "나이키 × 니고 × 제이홉 에어포스1 '01 협업 SNKRS 글로벌 발매",
-   "kst": "2026-10-22 12:00",
-   "allday": true,
-   "where": "나이키 SNKRS (10/17 휴먼메이드 웹스토어 단독 선발매)",
-   "note": "해외 매체 보도 기준 일정 — 한국 응모·선착순 방식과 시각은 미확인",
-   "url": "https://hypebae.com/kr/2026/10/nike-nigo-j-hope-bts-air-force-1-collab-release-date-where-to-buy",
-   "stars": 2,
-   "verified": true
-  }
- ]
+  "events": [
+    {
+      "id": "r261016-12",
+      "type": "ticket",
+      "title": "나이키 × 니고 × 제이홉 에어포스1 '01 협업 SNKRS 글로벌 발매",
+      "kst": "2026-10-22 12:00",
+      "allday": true,
+      "where": "나이키 SNKRS (10/17 휴먼메이드 웹스토어 단독 선발매)",
+      "note": "해외 매체 보도 기준 일정 — 한국 응모·선착순 방식과 시각은 미확인",
+      "url": "https://hypebae.com/kr/2026/10/nike-nigo-j-hope-bts-air-force-1-collab-release-date-where-to-buy",
+      "stars": 2,
+      "verified": true
+    },
+    {
+      "id": "r001-45",
+      "type": "exhibit",
+      "title": "김천김밥축제 3년차",
+      "kst": "2026-10-23 12:00",
+      "allday": true,
+      "venue": "김천",
+      "note": "2025년 10만 명분 품절 보도(세계일보) — 3년차, 10/23~25 사흘",
+      "url": "https://www.segye.com/newsView/20251026508570",
+      "stars": 3,
+      "verified": true
+    },
+    {
+      "id": "r001-41",
+      "type": "exhibit",
+      "title": "유영국 탄생 110주년 회고전 폐막",
+      "kst": "2026-10-25 12:00",
+      "allday": true,
+      "note": "5/19 개막, 누적 관람 30만 보도 — 폐막 임박, 무료",
+      "url": "https://bizhankook.com/articles/yoo-young-kuk-exhibition-popularity.html",
+      "stars": 2,
+      "verified": true
+    }
+  ]
 }
