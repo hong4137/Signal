@@ -1,9 +1,9 @@
 {
- "at": "2026-10-17 06:42",
+ "at": "2026-10-17 13:59",
  "stats": {
   "nol": {
    "got": 25,
-   "new": 0
+   "new": 1
   },
   "ticketlink": {
    "got": 30,
@@ -22,8 +22,8 @@
    "new": 0
   },
   "snkrs": {
-   "got": 7,
-   "new": 2
+   "got": 0,
+   "new": 0
   },
   "netflix": {
    "got": 18,
@@ -34,7 +34,7 @@
    "new": 0
   },
   "melon": {
-   "got": 20,
+   "got": 0,
    "new": 0
   },
   "popply": {
@@ -42,8 +42,8 @@
    "new": 0
   },
   "popga": {
-   "got": 0,
-   "new": 0
+   "got": 79,
+   "new": 79
   },
   "lotteworldmall": {
    "got": 22,
@@ -66,7 +66,7 @@
    "new": 0
   },
   "newswire": {
-   "got": 49,
+   "got": 34,
    "new": 0
   },
   "heypop": {
@@ -80,7 +80,7 @@
  },
  "log": [
   "▶ nol",
-  "  25건 · 새 0",
+  "  25건 · 새 1",
   "▶ ticketlink",
   "  30건 · 새 0",
   "▶ sejong",
@@ -90,17 +90,20 @@
   "▶ dive",
   "  6건 · 새 0",
   "▶ snkrs",
-  "  7건 · 새 2",
+  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
+  "  0건 · 새 0",
   "▶ netflix",
   "  18건 · 새 0",
   "▶ yes24",
   "  38건 · 새 0",
   "▶ melon",
-  "  20건 · 새 0",
+  "  ! 실패 https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex=1&schGcode=GE HTTPError HTTP Error 423: Locked",
+  "  0건 · 새 0",
   "▶ popply",
   "  0건 · 새 0",
   "▶ popga",
-  "  0건 · 새 0",
+  "  ! 실패 https://popga.co.kr/popup/14310 HTTPError HTTP Error 429: Too Many Requests",
+  "  79건 · 새 79",
   "▶ lotteworldmall",
   "  22건 · 새 0",
   "▶ linefriends_event",
@@ -112,12 +115,12 @@
   "▶ pokemon",
   "  19건 · 새 0",
   "▶ newswire",
-  "  49건 · 새 0",
+  "  34건 · 새 0",
   "▶ heypop",
   "  10건 · 새 0",
   "▶ theedit",
   "  10건 · 새 0",
-  "▶ 팝플리 재측정 8 건",
+  "▶ 팝플리 재측정 0 건",
   "▶ NOL 랭킹 48건",
   "▶ YouTube 인기 130건"
  ]
