@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-17 02:13",
+ "updated": "2026-10-17 10:11",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 11,
-  "reddit": 18,
+  "hn": 13,
+  "reddit": 30,
   "hf": 15,
   "github": 12,
   "trust": 100
@@ -16,8 +16,8 @@
    "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
    "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
    "discussion": "https://news.ycombinator.com/item?id=50091788",
-   "points": 945,
-   "comments": 618,
+   "points": 946,
+   "comments": 619,
    "r": 0.65,
    "at": "2026-10-14",
    "topics": [],
@@ -29,50 +29,28 @@
   },
   {
    "layer": "hn",
-   "title": "OpenAI engineer arrested in bugging of executive conference room",
-   "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-   "discussion": "https://news.ycombinator.com/item?id=50078141",
-   "points": 653,
-   "comments": 542,
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "discussion": "https://news.ycombinator.com/item?id=50121179",
+   "points": 393,
+   "comments": 326,
    "r": 0.83,
-   "at": "2026-10-13",
+   "at": "2026-10-16",
    "topics": [],
-   "story_key": "url:sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
-   "summary_ko": "오픈AI 임원 회의실에 도청 장치를 설치한 혐의로 엔지니어가 체포된 사건을 두고, 챗GPT를 범행 계획에 사용하는 등 보안 의식이 터무니없이 허술했다는 비판이 이어졌다. 한편에서는 챗GPT 사용 기록 때문에 잡힌 것이 아니라 회의실 내 물리적 장치가 먼저 발각되어 카메라 감시로 덜미를 잡힌 뒤 계정이 조회된 것이라는 분석과 함께 배후 세력 여부를 추측하는 의견도 나왔다.",
-   "is_event": true,
-   "kr_query": "오픈AI 엔지니어 도청 체포",
-   "kr": [
-    {
-     "t": "오픈AI 임원 회의실에 도청기 숨겼다…내부 엔지니어 체포",
-     "u": "https://www.donga.com/news/Economy/article/all/20261014/134838579/1",
-     "d": "Wed, 14 Oct 2026",
-     "why": [
-      "엔지니어",
-      "오픈",
-      "체포"
-     ]
-    },
-    {
-     "t": "사우디 국적 오픈AI 엔지니어, 임원 회의실 도청 혐의로 체포",
-     "u": "https://www.joongang.co.kr/article/25469568",
-     "d": "Wed, 14 Oct 2026",
-     "why": [
-      "도청",
-      "엔지니어",
-      "오픈",
-      "체포"
-     ]
-    }
-   ]
+   "story_key": "url:mercor.com/research/labor-index/benchmark-map",
+   "summary_ko": "단순 업무 자동화가 직무의 본질을 대체할 수 없다는 이른바 '문지기 오류(Doorman Fallacy)'를 두고 논쟁이 벌어졌다. AI가 지식 노동과 코딩 영역에서 빠르게 효율성을 높이고 있으나, 인간의 직접적인 개입과 현장 대응이 필요한 업무 영역은 여전히 AI로 대체되기 어렵다는 의견이 지배적이다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 776,
-   "comments": 306,
-   "r": 0.39,
+   "points": 798,
+   "comments": 324,
+   "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:already-clean.goodfire.com/",
@@ -90,9 +68,9 @@
    "title": "Banks are now trying to offload the AI data center debt they just underwrote",
    "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
    "discussion": "https://news.ycombinator.com/item?id=50092664",
-   "points": 382,
+   "points": 383,
    "comments": 277,
-   "r": 0.73,
+   "r": 0.72,
    "at": "2026-10-14",
    "topics": [
     "인프라·칩"
@@ -105,12 +83,30 @@
   },
   {
    "layer": "hn",
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "discussion": "https://news.ycombinator.com/item?id=50122800",
+   "points": 656,
+   "comments": 264,
+   "r": 0.4,
+   "at": "2026-10-16",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:anthropic.com/research/ecdsa-curve-origins",
+   "summary_ko": "클로드(Claude)를 활용해 ECDSA 곡선의 기원을 밝혀낸 것을 두고 AI의 학습 데이터 활용과 할루시네이션 가능성에 대한 의문이 제기되었다. 과거 NSA 관련 암호화 논란을 상기하며 보안 취약점 가능성에 회의적인 시각이 나오는 한편, 결과물의 신빙성과 기여를 긍정적으로 평가하는 반응도 있었다.",
+   "is_event": true,
+   "kr_query": "클로드 ECDSA 곡선 기원 규명",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Using AI to reverse engineer hardware",
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "discussion": "https://news.ycombinator.com/item?id=50104299",
-   "points": 238,
-   "comments": 221,
-   "r": 0.93,
+   "points": 243,
+   "comments": 236,
+   "r": 0.97,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
@@ -121,12 +117,50 @@
   },
   {
    "layer": "hn",
+   "title": "How the Claude Code team does code review",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "discussion": "https://news.ycombinator.com/item?id=50122951",
+   "points": 228,
+   "comments": 208,
+   "r": 0.91,
+   "at": "2026-10-16",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/solving-code-review-at-anthropic",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "앤트로픽의 개발 관행 공유에 대해 일각에서는 과장되었고 소프트웨어 현업의 현실과 동떨어져 있다고 비판했다. 반면 LLM을 활용한 코드 리뷰와 문서화가 실무에 유용하다는 의견도 존재하며, AI가 생성하는 방대한 코드가 오히려 역효과를 낸다는 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Why We're Banning AI",
+   "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+   "discussion": "https://news.ycombinator.com/item?id=50108131",
+   "points": 254,
+   "comments": 201,
+   "r": 0.79,
+   "at": "2026-10-15",
+   "topics": [],
+   "story_key": "url:currentaffairs.org/news/why-were-banning-ai",
+   "summary_ko": "댓글에서는 인공지능이 생성한 콘텐츠의 품질 저하와 피로감을 지적하며 AI 사용을 금지하는 입장을 지지하는 목소리가 컸다. 반면, AI는 단순한 문법 교정이나 아이디어 구상 보조 도구로 유용하게 쓸 수 있으며 무조건적인 거부보다는 어떻게 활용하느냐가 중요하다는 반론도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
    "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50104654",
-   "points": 244,
-   "comments": 197,
-   "r": 0.81,
+   "points": 247,
+   "comments": 198,
+   "r": 0.8,
    "at": "2026-10-15",
    "topics": [
     "모델릴리스"
@@ -135,22 +169,6 @@
    "summary_ko": "인공지능이 수학 연구에 깊숙이 파고들면서 인간 수학자의 역할과 향후 연구 방식이 완전히 바뀔 것이라는 전망이 지배적이었다. 일각에서는 이러한 지원금이 결국 AI 기업들이 인간의 노력을 무력화하고 수학을 자동화하는 데 일조할 뿐이라는 우려를 제기하기도 했다.",
    "is_event": true,
    "kr_query": "사이먼스 재단 수학자 인공지능 지원",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Why We're Banning AI",
-   "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
-   "discussion": "https://news.ycombinator.com/item?id=50108131",
-   "points": 247,
-   "comments": 196,
-   "r": 0.79,
-   "at": "2026-10-15",
-   "topics": [],
-   "story_key": "url:currentaffairs.org/news/why-were-banning-ai",
-   "summary_ko": "댓글에서는 인공지능이 생성한 콘텐츠의 품질 저하와 피로감을 지적하며 AI 사용을 금지하는 입장을 지지하는 목소리가 컸다. 반면, AI는 단순한 문법 교정이나 아이디어 구상 보조 도구로 유용하게 쓸 수 있으며 무조건적인 거부보다는 어떻게 활용하느냐가 중요하다는 반론도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
    "kr": []
   },
   {
@@ -175,8 +193,8 @@
    "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
    "discussion": "https://news.ycombinator.com/item?id=50088534",
    "points": 109,
-   "comments": 167,
-   "r": 1.53,
+   "comments": 169,
+   "r": 1.55,
    "at": "2026-10-14",
    "topics": [],
    "story_key": "url:popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary",
@@ -194,7 +212,7 @@
    "title": "Anthropic's Scion is heavily inspired by Mononoke",
    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
    "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 423,
+   "points": 425,
    "comments": 161,
    "r": 0.38,
    "at": "2026-10-14",
@@ -235,8 +253,8 @@
    "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
    "discussion": "https://news.ycombinator.com/item?id=50088534",
    "points": 109,
-   "comments": 167,
-   "r": 1.53,
+   "comments": 169,
+   "r": 1.55,
    "at": "2026-10-14",
    "topics": [],
    "story_key": "url:popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary",
@@ -270,13 +288,49 @@
    "title": "Using AI to reverse engineer hardware",
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "discussion": "https://news.ycombinator.com/item?id=50104299",
-   "points": 238,
-   "comments": 221,
-   "r": 0.93,
+   "points": 243,
+   "comments": 236,
+   "r": 0.97,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
    "summary_ko": "댓글에서는 AI를 활용한 하드웨어 및 소프트웨어 리버스 엔지니어링의 실효성과 저작권 침해 우려를 두고 갑론을박이 이어졌다. 대기업들의 지식재산권(IP) 보호 조치와 법적 대응이 거세질 것이라는 시각과, 이미 오픈 웨이트 모델과 개인용 코드로 대체재를 쉽게 만들 수 있어 무력화될 것이라는 의견이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "How the Claude Code team does code review",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "discussion": "https://news.ycombinator.com/item?id=50122951",
+   "points": 228,
+   "comments": 208,
+   "r": 0.91,
+   "at": "2026-10-16",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/solving-code-review-at-anthropic",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "_comments": [
+    "Anthropic has amazing models. But they should really stop commenting on software practices. Most of what they say seem out of touch with what's happening in software shops. A lot of it seems hype driven. And the entire message looks to be written by AI.",
+    "Sure, I'd you want the exact same code created every time, I can automate that with cp. It's perfectly reliable, and checksums can catch the few times it fails.Verification means nothing for industrial processes when the desired outcome is a moving target, so the first part of an industrial process is to develop a fixed target and aggressively remove variation.Moving the target around is a research problem, before you feed the result into an industrial process.Software solved industrialization so well we even forgot that we go from research to industrial with `npm` deployments or whatever your package manager of choice is.",
+    "It makes sense for Anthropic to pitch \"more code = more better\" but as anyone who's been in this game long enough knows, \"less is more\" often enough. And good luck coercing an AI coding agent to solve a problem by removing things.Personally, I find Claude's degenerate urge to just spew uncontrollable amounts of code quite counterproductive. Yes I get it, you get paid by the token. I'd like to see more reasoning, more understanding, and less generating.Truth is, we are still very very far from actual AI software engineering. Some people are working on useful tooling, and (predictably, like anything good and useful) it is taking a long time. LLMs are great, and hopefully they will help us acce",
+    "One thing I do is ask the LLM to write me a walkthrough of the code. LLMs are pretty good at generating documentation like HTML slideshows or whatever else.I mean, I've had useful software that I don't understand how it works where I am stuck hoping some small company continues to maintain it. And I've had some of those companies go out of business and leave me with useless software that I eventually have to replace once it no longer works on my machine.Having the code that I can dump into an LLM to understand myself or have it alter it seems better than that.",
+    "I'm guessing you've only ever worked at startups?Large company codebases are very much not like that. I've worked on systems (e.g., banking) that have accreted still-running code for as much as 60 years. Nobody understands how it works. Nobody ever understood how the whole worked, and many of the parts were never actually intended to work together.",
+    "> you know it's at least coherent enough that someone understood it30 years working in this industry and I'd say that's the exception rather than the rule. When it comes to large systems.",
+    "I’m sure it’s not compliant. We have the same requirement for soc2. However the audits are pretty light and a company big enough can afford to have an auditor who looks past those things.",
+    "> anyone who's a decently skilled software engineer and who's using LLMs to write code is going to be thoughtful.Is this a definitional argument? As in, if you’re not thoughtful, you must not be a decently skilled engineer? Because I see no reason to believe that people are going to be thoughtful about LLM-generated code. Just the opposite. It’s incredibly tempting to LGTM it.",
+    "this: gh actions using an opencode harness (so we can use cheap models through OpenCode Zen). With the right model, and the right, scoped access, it's just a prompt away.bugbot was costing us $1k per month for a small team. EVEN IF we decide to go with a paid or say something like GPT Sol for our custom harness it'll cost us maybe $100. We've already implemented all of bugbot's interesting features like cross-PR memory.the cool thing is we can leverage this for things that bugbot cannot do. Just today I added a security-reviewer action reusing almost all of the code that we wrote for the code reviewer.",
+    "Genuine question I’ve been wanting to ask folks working on different types of things: how are your teams doing agent-assisted code reviews? Not automated reviews, but what techniques and tools are humans using to keep up with the larger volume of PRs that seem to trend larger and larger?I think a lot of people like myself still want to feel in the loop but I don’t have the right tools to stay on top of the (generally good, productive, and still thoughtful) contributions from peers anymore.",
+    "As a non-native, I see how susceptible I am to absorbing such style. There's no way at all for me to perceive anything wrong with the examples you present",
+    "still waiting for a better result than \"a anon-optimizing compiler where progress is impossible\": https://www.anthropic.com/engineering/building-c-compilerFunnily enough, the models learned from GGC and LLVM, yet, cannot produce something half-decent."
+   ],
+   "summary_ko": "앤트로픽의 개발 관행 공유에 대해 일각에서는 과장되었고 소프트웨어 현업의 현실과 동떨어져 있다고 비판했다. 반면 LLM을 활용한 코드 리뷰와 문서화가 실무에 유용하다는 의견도 존재하며, AI가 생성하는 방대한 코드가 오히려 역효과를 낸다는 우려도 제기되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -301,50 +355,42 @@
   },
   {
    "layer": "hn",
-   "title": "OpenAI engineer arrested in bugging of executive conference room",
-   "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-   "discussion": "https://news.ycombinator.com/item?id=50078141",
-   "points": 653,
-   "comments": 542,
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "discussion": "https://news.ycombinator.com/item?id=50121179",
+   "points": 393,
+   "comments": 326,
    "r": 0.83,
-   "at": "2026-10-13",
+   "at": "2026-10-16",
    "topics": [],
-   "story_key": "url:sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
-   "summary_ko": "오픈AI 임원 회의실에 도청 장치를 설치한 혐의로 엔지니어가 체포된 사건을 두고, 챗GPT를 범행 계획에 사용하는 등 보안 의식이 터무니없이 허술했다는 비판이 이어졌다. 한편에서는 챗GPT 사용 기록 때문에 잡힌 것이 아니라 회의실 내 물리적 장치가 먼저 발각되어 카메라 감시로 덜미를 잡힌 뒤 계정이 조회된 것이라는 분석과 함께 배후 세력 여부를 추측하는 의견도 나왔다.",
-   "is_event": true,
-   "kr_query": "오픈AI 엔지니어 도청 체포",
-   "kr": [
-    {
-     "t": "오픈AI 임원 회의실에 도청기 숨겼다…내부 엔지니어 체포",
-     "u": "https://www.donga.com/news/Economy/article/all/20261014/134838579/1",
-     "d": "Wed, 14 Oct 2026",
-     "why": [
-      "엔지니어",
-      "오픈",
-      "체포"
-     ]
-    },
-    {
-     "t": "사우디 국적 오픈AI 엔지니어, 임원 회의실 도청 혐의로 체포",
-     "u": "https://www.joongang.co.kr/article/25469568",
-     "d": "Wed, 14 Oct 2026",
-     "why": [
-      "도청",
-      "엔지니어",
-      "오픈",
-      "체포"
-     ]
-    }
-   ]
+   "story_key": "url:mercor.com/research/labor-index/benchmark-map",
+   "_comments": [
+    "Around here they replaced the police stations with intercoms. If you need help you're better off going to a hotel.",
+    "My programming cohort in the '90s were predominantly ex-trades and service and the pay was initially a cut. The work environment and the people were almost a middle finger to everyone I couldn't stand in the real world, and they paid me to solve logic problems.A large part of the trades is learning how to deal with toxic coworkers or shops, or understanding that you're being worked like a rented mule for no real reason. And I was able to leave all that behind for a moment.",
+    "The point of the fallacy is that you don't know what value they bring or when they bring it.Real estate agents are a good example. They might be the only people involved aware of the processes everyone's engaged in and moving things forward. Having helped build tools for a local shop I can tell you that their checklists and flowcharts can't and won't be built with AI because hoarding and sharing information has always been part of their competitive advantage.A corollary might be that the value of human involvement is unknowable because human beings aren't rational. The Doorman is a buffer against chaos.",
+    "I just watched a Japanese movie where a character stopped in for some gas. A man comes out, she tells him what type, he fills the gas tank for her (using a cloth to handle the car parts of course!). While it’s pumping, he wipes down her windows. He gets her money and runs to get her change. He steps a bit into the road to aid her leaving. He waves as she leaves.Is it more efficient in America? Yeah. Is part of that scene her being bored while waiting? Yeah. Are gas prices there probably a bit higher? Yeah.But there really was something appetizing about it. I’m not sure I could put my finger on exactly what.",
+    "One of many ways this could all play out from an incentive based perspective is that it starts with knowledge workers and coding. A next token prediction machine seems to excel at code generation for this reason. This has already begun causing problems in India with recent youth protests. It's not the entire reason for the protests but it is part of it. The indian grad to software developer pipeline is well established and under threat. The owner class wants to create the \"value\" from software without having to pay the high wages associated with development costs.As AI advances, this spreads to other knowledge work that AI is capable of doing, which we might be seeing in mathematics if the O",
+    "> what can be done by an intercomThe Doorman Fallacy is exactly this—thinking that one function of a job is the whole job. The doorman doesn't just open doors nor relay messages. They're eyes and ears, security, friendliness, an extra hand with bags, local knowledge, emergency response... The list goes on and on. Almost none of their functions can be replaced with an intercom.",
+    "> Companies have been building machines to do that long before the advent of AI.I've been very optimistic about AI. Wow, your comment just gave me pang of terror thinking about the outcome for humans due to Whitney and his cotton gin.",
+    "It seems like you're breezing past the concept of the fallacy entirely.The value of the doorman isn't the intercom functionality.People like doorman buildings because the building has a real person with eyes on the premises at all times.An intercom or automatic door opening system can't deal with delivery people who can't figure out the intercom system, don't follow delivery instructions, leave your package/food somewhere random, etc. And that's only a fraction of the value a doorman provides.An intercom system won't deter trespassers, petty crime, etc.As long as the building is large enough, the cost is negligible.I randomly picked a listing in NYC, 219 East 69th Street. 145 apartments on 1",
+    "so what? people still keep using the service and you make more money. the point of a company is to make money not to be as efficient as possible.when a market is saturated you differentiate by being nicer than the competitors but most markets are not saturated customers have literally no choice.",
+    "because you're too poor to afford anything else? why does anyone goto mcdonalds?it's certainly not service that hasn't been good for a decade now. it's a consistent product not abysmal not great.if a robot could reduce the chance of me getting soggy french fries and non crispy nuggies that's fine bring in the robot.also lol plates and tables, how long has it been since you ate fast food? people eat in their car to avoid dealing with the shouting staff,dirty floor and sticky tables.",
+    "Airplane automation has shown to be rather bad at diagnosing what is wrong and coming up with a workaround.For example, engine falls off. The automation doesn't know that happened, it just sees various problems like the hydraulic pressure falls, and for some reason the engine thrust went to zero.When I was at Boeing, an incident was recounted to me where the autopilot glitched and rolled the plane over into a vertical dive. It was going so fast it entered \"separation\", where the airflow no longer flows over the flight controls. In other words, the pilots were just along for the ride.But the pilot figures, since we're dead anyway, let's try lowering the landing gear and see if it slows the je",
+    "There’s probably some double fallacy here, like “x is valuable in this specific situation so it must be valuable in all situations” - I think that’s actually a named fallacy but anyway.I’m sure it’s similarly true for travel agents, real estate agents, probably lawyers, etc. Just because there are circumstances when someone values them doesn’t automatically justify them everywhere or refute that many of them basically don’t do anything."
+   ],
+   "summary_ko": "단순 업무 자동화가 직무의 본질을 대체할 수 없다는 이른바 '문지기 오류(Doorman Fallacy)'를 두고 논쟁이 벌어졌다. AI가 지식 노동과 코딩 영역에서 빠르게 효율성을 높이고 있으나, 인간의 직접적인 개입과 현장 대응이 필요한 업무 영역은 여전히 AI로 대체되기 어렵다는 의견이 지배적이다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
    "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50104654",
-   "points": 244,
-   "comments": 197,
-   "r": 0.81,
+   "points": 247,
+   "comments": 198,
+   "r": 0.8,
    "at": "2026-10-15",
    "topics": [
     "모델릴리스"
@@ -360,8 +406,8 @@
    "title": "Why We're Banning AI",
    "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
    "discussion": "https://news.ycombinator.com/item?id=50108131",
-   "points": 247,
-   "comments": 196,
+   "points": 254,
+   "comments": 201,
    "r": 0.79,
    "at": "2026-10-15",
    "topics": [],
@@ -376,9 +422,9 @@
    "title": "Banks are now trying to offload the AI data center debt they just underwrote",
    "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
    "discussion": "https://news.ycombinator.com/item?id=50092664",
-   "points": 382,
+   "points": 383,
    "comments": 277,
-   "r": 0.73,
+   "r": 0.72,
    "at": "2026-10-14",
    "topics": [
     "인프라·칩"
@@ -394,8 +440,8 @@
    "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
    "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
    "discussion": "https://news.ycombinator.com/item?id=50091788",
-   "points": 945,
-   "comments": 618,
+   "points": 946,
+   "comments": 619,
    "r": 0.65,
    "at": "2026-10-14",
    "topics": [],
@@ -410,9 +456,9 @@
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 776,
-   "comments": 306,
-   "r": 0.39,
+   "points": 798,
+   "comments": 324,
+   "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:already-clean.goodfire.com/",
@@ -427,10 +473,42 @@
   },
   {
    "layer": "hn",
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "discussion": "https://news.ycombinator.com/item?id=50122800",
+   "points": 656,
+   "comments": 264,
+   "r": 0.4,
+   "at": "2026-10-16",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:anthropic.com/research/ecdsa-curve-origins",
+   "_comments": [
+    "> That's an argument that must be infuriating to all researchers who ever published a paper on that topic, because most likely Claude was trained with all of them.When do we call it the right time to stop with the pitchforks, torches and selfish tendencies and accept that many papers published were used to help train a tool that brings discoveries to light for the entirety of humanity to benefit?Now?",
+    "They'd be trading the seed constants for the timestamp constants, more annoying than cute honestly.",
+    "I didn't know that Jerry Solinas had died. I knew him slightly. He wasn't all that old. RIP regardless of whatever minor controversies he might have gotten into.",
+    "For me, it was news that showed the cleverness of chacha's choice to use the \"expand 32-byte k\" ASCII byte sequence as a constants.",
+    "I disagree on K4. People are claiming they solved it every day using AI but it doesn't pass the verifier. I would be shocked if it was ever solved by AI.I personally think it is a weird OTP (effectively). We have the book but the algorithm is so unclear it could be anything.",
+    "Almost all of the smaller values of n are not valid curve values, so they were searching \"harder\" but just for valid seeds. If you look at the generator output in [1], you'll see that:1. Only a very small number of valid seeds were discarded when compared to the number of n values. It seems we don't yet know why about half of the valid seeds were discarded but the explanation of a buggy curve validity checker doesn't seem implausible to me.2. Directly to your point, most of the prime192 and prime239 curves required larger n values to find a valid seed and they are both smaller and used an earlier timestamp.[1]: https://words.filippo.io/seeds-solved/",
+    "German speaker, the Downfall memes strangely still work fine even if you understand the audio because he's doing inane angry rambling either way.",
+    "I find it slightly less weird because I see potential for indirect attacks on the not-quite-so-ECC parts of actual implementations. Wherever a network client can ask many times for each of the different, but somehow not entirely uncorrelated curves, it might be able to expose previously not deemed critical side channels. Following in the general direction of the discoveries that so far resulted in IV and padding determinism/randomness being considered as important as the \"actual crypto\" itself. In that case the structures that would need to somehow interact would not be ECC and LCG, but merely LCG and key derivation..",
+    "After Dual_EC_DRBG, there is no longer justification for any attitude towards the NSA other than suspicion and skepticism. Everything should be assumed a potential attack vector and thoroughly explored. I thank the community for carrying this torch for so many years.",
+    "What proof is it that it is really the origin of the curves? That looks credible like most hallucinated output of LLM but it might easily be a coincidence similar to a collision attack, no?Especially finding the solution that is based on using a random number generator.It's like people seeing proof that the future was written in Harry Potter books by reading the first letter of the top of the page of a weird set of pages.",
+    "Yeah, there's not nearly enough iterations here for a practical nobus vulnerability.",
+    "Kudos to Anthropic for choosing the higher bounty and donating it to ISRG, that is a very nice gesture."
+   ],
+   "summary_ko": "클로드(Claude)를 활용해 ECDSA 곡선의 기원을 밝혀낸 것을 두고 AI의 학습 데이터 활용과 할루시네이션 가능성에 대한 의문이 제기되었다. 과거 NSA 관련 암호화 논란을 상기하며 보안 취약점 가능성에 회의적인 시각이 나오는 한편, 결과물의 신빙성과 기여를 긍정적으로 평가하는 반응도 있었다.",
+   "is_event": true,
+   "kr_query": "클로드 ECDSA 곡선 기원 규명",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic's Scion is heavily inspired by Mononoke",
    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
    "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 423,
+   "points": 425,
    "comments": 161,
    "r": 0.38,
    "at": "2026-10-14",
@@ -480,30 +558,19 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Flux.3 Image Klein is now out",
-   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6s7el/flux3_image_klein_is_now_out/",
+   "title": "The actual state of open-weight models vs. frontier models",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:black-forest-labs/flux-3-image-klein"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "128GB RTX Spark laptop for $3832.",
-   "url": "https://www.hp.com/us-en/shop/pdp/hp-omnibook-x-laptop-next-gen-ai-14-ks000-14-cb1l6av-1",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6trqq/128gb_rtx_spark_laptop_for_3832/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:hp.com/us-en/shop/pdp/hp-omnibook-x-laptop-next-gen-ai-14-ks000-14-cb1l6av-1"
+   "topics": [
+    "안전·거버넌스",
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier"
   },
   {
    "layer": "reddit",
@@ -511,7 +578,7 @@
    "title": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer.",
    "url": "https://arxiv.org/abs/2610.18861",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7a8i8/new_paper_from_stanford_together_ai_uiuc_and_meta/",
-   "rank": 5,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -524,52 +591,62 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Ternary Bonsai 2 (2B, 4B, and 9B) just released on Hugging Face. The 2B can run entirely locally in the browser at up to 500 tok/s on an M4 Max with custom WebGPU kernels.",
-   "url": "https://huggingface.co/collections/prism-ml/bonsai-2-small",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6w658/ternary_bonsai_2_2b_4b_and_9b_just_released_on/",
+   "title": "Show me your rack",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack/",
+   "rank": 5,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "10 Things you maybe didn't know you can do with Qwen 3.6 27B right now. (For Noobs)",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with/",
    "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "인프라·칩"
+    "모델릴리스"
    ],
-   "story_key": "hf:collections/prism-ml"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "FP4 QAD quant of Qwen3.8-Flash-Next from Nvidia",
-   "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6vqft/fp4_qad_quant_of_qwen38flashnext_from_nvidia/",
+   "title": "reflection/Beam-1.0-501B-A23B · Hugging Face",
+   "url": "https://github.com/ggml-org/llama.cpp/pull/30670",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g4k3/reflectionbeam10501ba23b_hugging_face/",
    "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "인프라·칩"
-   ],
-   "story_key": "hf:nvidia/qwen3.8-flash-next-fp4-local"
+   "topics": [],
+   "story_key": "gh:ggml-org/llama.cpp"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "The actual state of open-weight models vs. frontier models",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier/",
+   "title": "OpenMOSS releases MOSS-Image",
+   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7ey7i/openmoss_releases_mossimage/",
    "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "안전·거버넌스",
     "모델릴리스"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7bmel/the_actual_state_of_openweight_models_vs_frontier"
+   "story_key": "hf:openmoss-team/moss-image-sft"
   },
   {
    "layer": "reddit",
@@ -590,38 +667,26 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "What a £300, 35W Snapdragon mini PC can actually do 👀: 35B coder at ~30 tok/s, and an 80B model that doesnt even fit in RAM running at 17 tok/s",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6stod/what_a_300_35w_snapdragon_mini_pc_can_actually_do/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6stod/what_a_300_35w_snapdragon_mini_pc_can_actually_do/",
+   "title": "Dario: “With open source you can see the source code. Here we can’t see inside the model.” My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: “Yeah, well, that’s just, like, your opinion, man.”",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
    "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x6stod/what_a_300_35w_snapdragon_mini_pc_can_actually_do"
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "ibm-granite/granite-switch-4.1 30B/8B",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x6wwx2/ibmgranitegraniteswitch41_30b8b/",
+   "title": "[Research] 2,788 tokens/s on a single RTX 5090 with a diffusion LLM — Introducing ORL (fully open source)",
+   "url": "https://arxiv.org/abs/2610.20687",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7polk/research_2788_tokenss_on_a_single_rtx_5090_with_a/",
    "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:blog/ibm-granite"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "OpenMOSS releases MOSS-Image",
-   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7ey7i/openmoss_releases_mossimage/",
-   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -629,14 +694,28 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:openmoss-team/moss-image-sft"
+   "story_key": "arxiv:2610.20687"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "**DeepSeek-V4-Flash-0731 on 4x Radeon AI PRO R9700 with affinity: the \"refused\" 4-card config works, ~79 tok/s on real cards**",
-   "url": "https://codeberg.org/StillDeadcode/affinity",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x70e5r/deepseekv4flash0731_on_4x_radeon_ai_pro_r9700/",
+   "title": "Why do we have models under 15b so rarely anymore?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g8cc/why_do_we_have_models_under_15b_so_rarely_anymore/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g8cc/why_do_we_have_models_under_15b_so_rarely_anymore/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7g8cc/why_do_we_have_models_under_15b_so_rarely_anymore"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen Flash Next potential SOTA Q2 nobody talks about",
+   "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bboy/qwen_flash_next_potential_sota_q2_nobody_talks/",
    "rank": 13,
    "points": 0,
    "comments": 0,
@@ -645,29 +724,15 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:codeberg.org/StillDeadcode/affinity"
+   "story_key": "hf:agentionai/qwen3.8-flash-next-gyro-gguf"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "reflection/Beam-1.0-501B-A23B · Hugging Face",
-   "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g4k3/reflectionbeam10501ba23b_hugging_face/",
+   "title": "It really just needs some encouragement (Qwen3.8-27B-UD-IQ4_XS)",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7i49v/it_really_just_needs_some_encouragement/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7i49v/it_really_just_needs_some_encouragement/",
    "rank": 14,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:reflection/beam-1.0-501b-a23b"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Qwen Flash Next potential SOTA Q2 nobody talks about",
-   "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bboy/qwen_flash_next_potential_sota_q2_nobody_talks/",
-   "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -675,7 +740,21 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:agentionai/qwen3.8-flash-next-gyro-gguf"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7i49v/it_really_just_needs_some_encouragement"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "The debt-fueled AI boom is cracking",
+   "url": "https://www.axios.com/2026/10/16/wall-street-limit-ai-spending-debt",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lcdu/the_debtfueled_ai_boom_is_cracking/",
+   "rank": 15,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:axios.com/2026/10/16/wall-street-limit-ai-spending-debt"
   }
  ],
  "quiet_important": [
@@ -684,9 +763,9 @@
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 776,
-   "comments": 306,
-   "r": 0.39,
+   "points": 798,
+   "comments": 324,
+   "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:already-clean.goodfire.com/",
@@ -701,12 +780,34 @@
   },
   {
    "layer": "hn",
+   "title": "How the Claude Code team does code review",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "discussion": "https://news.ycombinator.com/item?id=50122951",
+   "points": 228,
+   "comments": 208,
+   "r": 0.91,
+   "at": "2026-10-16",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/solving-code-review-at-anthropic",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "앤트로픽의 개발 관행 공유에 대해 일각에서는 과장되었고 소프트웨어 현업의 현실과 동떨어져 있다고 비판했다. 반면 LLM을 활용한 코드 리뷰와 문서화가 실무에 유용하다는 의견도 존재하며, AI가 생성하는 방대한 코드가 오히려 역효과를 낸다는 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "AI is mass decompiling games. That's both awesome and scary",
    "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
    "discussion": "https://news.ycombinator.com/item?id=50088534",
    "points": 109,
-   "comments": 167,
-   "r": 1.53,
+   "comments": 169,
+   "r": 1.55,
    "at": "2026-10-14",
    "topics": [],
    "story_key": "url:popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary",
@@ -724,7 +825,7 @@
    "title": "Anthropic's Scion is heavily inspired by Mononoke",
    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
    "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 423,
+   "points": 425,
    "comments": 161,
    "r": 0.38,
    "at": "2026-10-14",
@@ -745,8 +846,8 @@
    "layer": "hf",
    "title": "google/embeddinggemma-2",
    "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 975,
-   "likes": 2492,
+   "trending": 952,
+   "likes": 2513,
    "downloads": 151258,
    "topics": [
     "모델릴리스"
@@ -757,8 +858,8 @@
    "layer": "hf",
    "title": "jialinyyzz/humanizer",
    "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 856,
-   "likes": 1804,
+   "trending": 849,
+   "likes": 1827,
    "downloads": 85612,
    "topics": [
     "모델릴리스"
@@ -769,8 +870,8 @@
    "layer": "hf",
    "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-   "trending": 673,
-   "likes": 830,
+   "trending": 687,
+   "likes": 848,
    "downloads": 17553,
    "topics": [
     "모델릴리스"
@@ -779,22 +880,10 @@
   },
   {
    "layer": "hf",
-   "title": "Qwen/Qwen-Image-2.1-Turbo",
-   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-   "trending": 594,
-   "likes": 925,
-   "downloads": 17421,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:qwen/qwen-image-2.1-turbo"
-  },
-  {
-   "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 514,
-   "likes": 532,
+   "trending": 536,
+   "likes": 556,
    "downloads": 6158,
    "topics": [
     "모델릴리스"
@@ -803,22 +892,22 @@
   },
   {
    "layer": "hf",
-   "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "trending": 461,
-   "likes": 4419,
-   "downloads": 2477554,
+   "title": "Qwen/Qwen-Image-2.1-Turbo",
+   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+   "trending": 508,
+   "likes": 944,
+   "downloads": 17421,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:abenzerps/qwen-image-2.1-uncensored-quantized"
+   "story_key": "hf:qwen/qwen-image-2.1-turbo"
   },
   {
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 459,
-   "likes": 8040,
+   "trending": 457,
+   "likes": 8092,
    "downloads": 1920611,
    "topics": [
     "모델릴리스"
@@ -827,22 +916,34 @@
   },
   {
    "layer": "hf",
-   "title": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-   "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-   "trending": 416,
-   "likes": 509,
-   "downloads": 327786,
+   "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "trending": 453,
+   "likes": 4437,
+   "downloads": 2477554,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:atomicchat/qwen-image-2.1-turbo-uncensored-gguf"
+   "story_key": "hf:abenzerps/qwen-image-2.1-uncensored-quantized"
+  },
+  {
+   "layer": "hf",
+   "title": "meta-models/Muse-Spark-Open-816B-A42B",
+   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+   "trending": 418,
+   "likes": 440,
+   "downloads": 815,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
   },
   {
    "layer": "hf",
    "title": "LiquidAI/LFM2.5-24B-A2B",
    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-   "trending": 407,
-   "likes": 416,
+   "trending": 418,
+   "likes": 428,
    "downloads": 9356,
    "topics": [
     "모델릴리스"
@@ -851,15 +952,15 @@
   },
   {
    "layer": "hf",
-   "title": "meta-models/Muse-Spark-Open-816B-A42B",
-   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 384,
-   "likes": 405,
-   "downloads": 815,
+   "title": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+   "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+   "trending": 404,
+   "likes": 516,
+   "downloads": 327786,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
+   "story_key": "hf:atomicchat/qwen-image-2.1-turbo-uncensored-gguf"
   }
  ],
  "new_repos": [
@@ -868,7 +969,7 @@
    "title": "onehumanbeing/esp32-iphone-agent",
    "desc": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
    "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
-   "stars": 2816,
+   "stars": 2861,
    "topics": [
     "에이전트",
     "보안·사고"
@@ -880,7 +981,7 @@
    "title": "Arekejoker/qwen21-nsfw-pose-skill",
    "desc": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
    "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
-   "stars": 2459,
+   "stars": 2520,
    "topics": [
     "모델릴리스"
    ],
@@ -891,7 +992,7 @@
    "title": "chenglou/handwired",
    "desc": "Turn your regular JavaScript code into a neural net.",
    "url": "https://github.com/chenglou/handwired",
-   "stars": 1464,
+   "stars": 1561,
    "topics": [],
    "story_key": "gh:chenglou/handwired"
   },
@@ -900,36 +1001,16 @@
    "title": "deeplethe/solid-glass",
    "desc": "A design system for AI applications. Material, physical, tactile, technical.",
    "url": "https://github.com/deeplethe/solid-glass",
-   "stars": 1339,
+   "stars": 1390,
    "topics": [],
    "story_key": "gh:deeplethe/solid-glass"
-  },
-  {
-   "layer": "github",
-   "title": "rociiu/talorys",
-   "desc": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest.",
-   "url": "https://github.com/rociiu/talorys",
-   "stars": 1241,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:rociiu/talorys"
-  },
-  {
-   "layer": "github",
-   "title": "marclou/mailcheap",
-   "desc": "Newsletters where you pay for the emails you send, not for dormant subscribers, at a fraction of the price of beehiiv and the like. Open source: self-host it, o",
-   "url": "https://github.com/marclou/mailcheap",
-   "stars": 1123,
-   "topics": [],
-   "story_key": "gh:marclou/mailcheap"
   },
   {
    "layer": "github",
    "title": "zhuyansen/new-term-radar",
    "desc": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
    "url": "https://github.com/zhuyansen/new-term-radar",
-   "stars": 1062,
+   "stars": 1066,
    "topics": [],
    "story_key": "gh:zhuyansen/new-term-radar"
   },
@@ -938,7 +1019,7 @@
    "title": "feder-cr/git-ai",
    "desc": "Git designed for AI agents.",
    "url": "https://github.com/feder-cr/git-ai",
-   "stars": 1040,
+   "stars": 1060,
    "topics": [
     "에이전트",
     "개발도구"
@@ -947,10 +1028,21 @@
   },
   {
    "layer": "github",
+   "title": "Caho1/open-claude-ui",
+   "desc": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
+   "url": "https://github.com/Caho1/open-claude-ui",
+   "stars": 1011,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:caho1/open-claude-ui"
+  },
+  {
+   "layer": "github",
    "title": "chenwei810/Semiconductor_Manufacturing_Introduction",
    "desc": "Introduction to Semiconductor Manufacturing",
    "url": "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction",
-   "stars": 990,
+   "stars": 1000,
    "topics": [
     "인프라·칩"
    ],
@@ -958,17 +1050,39 @@
   },
   {
    "layer": "github",
-   "title": "Caho1/open-claude-ui",
-   "desc": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
-   "url": "https://github.com/Caho1/open-claude-ui",
-   "stars": 981,
+   "title": "outcrawlai/scout",
+   "desc": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+   "url": "https://github.com/outcrawlai/scout",
+   "stars": 895,
    "topics": [
-    "모델릴리스"
+    "에이전트"
    ],
-   "story_key": "gh:caho1/open-claude-ui"
+   "story_key": "gh:outcrawlai/scout"
+  },
+  {
+   "layer": "github",
+   "title": "jwuthri-cloud/Tracely-ai",
+   "desc": "",
+   "url": "https://github.com/jwuthri-cloud/Tracely-ai",
+   "stars": 829,
+   "topics": [],
+   "story_key": "gh:jwuthri-cloud/tracely-ai"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+   "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+   "at": "2026-10-16T22:06",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Oct/16/code-review",
+   "link_keys": [
+    "url:claude.dev/blog/solving-code-review-at-anthropic"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -993,6 +1107,29 @@
    "story_key": "url:simonwillison.net/2026/Oct/15/anthropic-tells-investors",
    "link_keys": [
     "url:ft.com/content/11632d03-358c-454b-af95-d06d4072932b"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "LaTeX renderer",
+   "url": "https://simonwillison.net/2026/Oct/15/latex/",
+   "at": "2026-10-15T02:07",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Oct/15/latex",
+   "link_keys": [
+    "gh:arena-ai/faster-latex",
+    "gh:cure53/dompurify",
+    "gh:mathjax/mathjax",
+    "gh:nodeca/pako",
+    "gh:simonw/tools",
+    "url:claude.ai/code/session_017KJrPqqWVHLqr4E7TLPnpt",
+    "url:claude.ai/share/239301ff-edde-420e-b433-b9c16fe40a6c",
+    "url:tinylittleoffice.com/",
+    "url:tinylittleoffice.com/llms.txt",
+    "url:tools.simonwillison.net/latex",
+    "url:tools.simonwillison.net/markdown-svg-renderer"
    ],
    "is_roundup": false
   },
@@ -1273,42 +1410,8 @@
     "url:quantamagazine.org/which-computational-universe-do-we-live-in-20220418"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "A new feature for my blog, built using my voice",
-   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
-   "at": "2026-10-09T12:54",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/9/built-using-my-voice",
-   "link_keys": [
-    "gh:simonw/a65a22204f6f7228cc59b4bc34d7c7c8",
-    "gh:simonw/monthly-newsletter-archive",
-    "gh:simonw/simonwillisonblog",
-    "gh:sponsors/simonw",
-    "url:en.wikipedia.org/wiki/Speech_disfluency",
-    "url:simonw.substack.com/",
-    "url:wonderingaboutai.substack.com/p/i-connected-my-newsletter-archive"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "ttok 1.0",
-   "url": "https://simonwillison.net/2026/Oct/9/ttok/",
-   "at": "2026-10-09T00:34",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/9/ttok",
-   "link_keys": [
-    "gh:openai/tiktoken",
-    "gh:simonw/ttok",
-    "gh:williamliu-ai/token-count-compare"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-16 17:14"
+ "enriched_at": "2026-10-17 01:11"
 }
