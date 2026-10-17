@@ -1,24 +1,10 @@
 {
- "generated_at": "2026-10-17T06:30:00+09:00",
+ "generated_at": "2026-10-18T06:30:00+09:00",
  "window": {
-  "from": "2026-10-17",
-  "to": "2026-10-20"
+  "from": "2026-10-18",
+  "to": "2026-10-21"
  },
  "events": [
-  {
-   "date": "2026-10-17",
-   "time": null,
-   "region": "US",
-   "category": "통화정책",
-   "title": "연준 블랙아웃 시작(FOMC 대비)",
-   "importance": 3,
-   "why": "17일부터 연준 위원의 금리 관련 공개 발언이 제한돼 발언 공백이 생김",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.atlantafed.org/news-and-events/press-room/blackout-periods",
-   "verified": true,
-   "note": "애틀랜타·시카고·세인트루이스 연은 달력 공통: 10/17~10/29. FOMC는 10/27~28"
-  },
   {
    "date": "2026-10-18",
    "time": null,
@@ -26,27 +12,82 @@
    "category": "정책",
    "title": "IMF·세계은행 연차총회 폐막(방콕)",
    "importance": 3,
-   "why": "세계 성장·무역·금리 논의가 몰린 연차총회, 18일까지 열림",
+   "why": "1991년 이후 첫 방콕 개최, 각국 재무·중앙은행 수장 집결",
    "consensus": null,
    "previous": null,
-   "source": "https://www.imf.org/en/meetings/2026/annual",
+   "source": "https://asianews.network/?p=306004",
    "verified": true,
-   "note": "10/12~18 방콕 퀸시릭 국립컨벤션센터(IMF·세계은행 공식 일정). 세부 시각은 공식 페이지 확인"
+   "note": "총회 일정은 10/12~18. 여러 매체가 같은 기간을 보도함"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "21:30",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 주택착공",
+   "importance": 3,
+   "why": "금리에 민감한 주택 경기 선행 지표, 건설·금융 업종 참고",
+   "consensus": null,
+   "previous": null,
+   "source": "https://fred.stlouisfed.org/release?rid=27",
+   "verified": true,
+   "note": "미 동부 08:30 발표 기준 관행 시각. 발표 시각은 FRED 원자료 기준"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "01:00",
+   "region": "US",
+   "category": "기업 행사",
+   "title": "마이크로소프트 OneDrive·Copilot 디지털 이벤트",
+   "importance": 3,
+   "why": "OneDrive·Copilot 기능 시연이 예고된 온라인 행사, 무료 참여",
+   "consensus": null,
+   "previous": null,
+   "source": "https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/save-the-date-join-us-october-20-for-the-onedrive-copilot/ba-p/4556814",
+   "verified": true,
+   "note": "현지 10/20 오전 9시(태평양) 시작. 온라인 등록 필요"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "05:01",
+   "region": "US",
+   "category": "실적",
+   "title": "넷플릭스 3분기 실적",
+   "importance": 4,
+   "why": "스트리밍 업황 바로미터, 다음 분기 전망도 함께 발표",
+   "consensus": "EPS 0.84달러 · 매출 131.4억달러 (Finnhub 기준)",
+   "previous": null,
+   "source": "https://s22.q4cdn.com/959853165/files/doc_news/Netflix-to-Announce-Third-Quarter-2026-Financial-Results-2026.pdf",
+   "verified": true,
+   "note": "회사 발표는 현지 10/20 오후 4시 1분(동부). 다른 집계는 EPS 0.82달러·매출 128.7억달러로 차이 있음"
+  },
+  {
+   "date": "2026-10-21",
+   "time": null,
+   "region": "EU",
+   "category": "기업 행사",
+   "title": "엔비디아 GTC 베를린 기조연설(젠슨 황)",
+   "importance": 4,
+   "why": "에이전트 AI·AI 인프라·로봇 주제 예고, 무료 생중계",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.nvidia.com/en-eu/gtc/faq/",
+   "verified": true,
+   "note": "베를린 Tempodrom, 10/21 기조연설. 시각은 공식 확인 못 해 비움(파트너 페이지는 현지 11시 안팎)"
   }
  ],
  "notes": [
-  "원자료(생성 10/17 05:50 KST) 점검: Finnhub 4건 전부 10/21~22로 범위 밖. 규칙 후보 2건(관세청 10/21, 실업수당 10/22)도 범위 밖.",
-  "원자료 실패 출처: FRED(시간 초과), DART(키 없음, 공시 0건). 미국 지표 날짜는 검색으로 확인해야 했음.",
-  "범위 안 확정 일정이 2건뿐. 10/17~18은 주말이라 국내 증시·발표가 적고, 10/19~20 일정은 검색으로 확정하지 못함.",
-  "미확정으로 뺌: 한은 금통위 — 매체마다 10/22·10/23로 엇갈리고 한은 공식 확인 안 됨(범위 밖일 가능성도 있음).",
-  "미확정으로 뺌: 10/19 Wintrust Financial 3분기 실적(단일 출처), 10/20 Bank OZK 실적(단일 출처).",
-  "미확정으로 뺌: 중국 2분기 GDP 10/19(달력 사이트 1곳, 컨센서스 없음). 중국 PMI는 검색 결과 없음.",
-  "미확정으로 뺌: 10/19~20 주간 미국 주택착공·구매관리자지수 — 'thriveinmarkets' 주간표에만 항목명이 있고 날짜·시각 없음.",
-  "미확정으로 뺌: 국내 기업 3분기 잠정실적 — DART 키 없어 공시 확인 불가, 검색으로도 10/17~20 일정 안 잡힘.",
-  "미확정으로 뺌: 2026년 국정감사 상임위(과방위·산자위·정무위) 10/17~20 일정 — 검색 결과가 과거 연도뿐. 한은 국감은 10/12 실시 확인.",
-  "미확정으로 뺌: 정부 반도체·AI 대책 발표 일정 — 검색 결과 없음. 관세·정부 예산 마감 시한 — 10/19 관련 2026년 기사 없음.",
-  "행사 점검: 개발자·신제품 행사는 범위 안 확정 없음. Apple 'Welcome Home' 10/13, if(kakao)26 10/13~14, OpenAI DevDay 9/29는 이미 지남. Oracle AI World 10/25~28, NVIDIA GTC DC 11/30~12/3은 범위 밖.",
-  "지난 실행 메모 점검: 집계 사이트 날짜 혼선(BLS CPI 10/14 발표 확인, 지난 일정). 워시 의장 발언은 보도 1건이라 뺌."
+  "원자료(생성 10/18 05:25 KST) 점검: 범위 안 공식 일정은 넷플릭스·미국 주택착공 2건. Finnhub 나머지 3건(IBM·메타·테슬라)은 10/22 — 범위 밖.",
+  "원자료 실패 출처: DART(키 없음, 공시 0건). 국내 기업 IR 일정은 검색으로만 봤고 확정 못 함.",
+  "규칙 후보 관세청 10월 1~20일 수출입 잠정치(10/21 09:00): 2026년 발표 확인 못 함. 2025년 10/21 발표 선례만 있어 미확정으로 뺌.",
+  "미확정으로 뺌: 현대로템 10/19 3분기 IR, 쿠콘 10/20 실적 설명회, 한국콜마 10/19 컨퍼런스콜 — 뉴스 1건씩, 공시 확인 못 함.",
+  "미확정으로 뺌: 캐피털원 10/20 실적 — 달력 사이트 1곳뿐이고 회사 발표 미확인. 다른 사이트는 10/22로 표기.",
+  "미확정으로 뺌: 중국 3분기 GDP 10/19 — 2026년 발표 일정 확인 못 함.",
+  "미확정으로 뺌: 국정감사 상임위(과방위·산자위·정무위) 일정, 정부 반도체·AI 대책 발표, 10/19 관세·예산 마감 — 2026년 자료 검색 안 잡힘.",
+  "미확정으로 뺌: 연준 블랙아웃 시작·종료일 — 공식 달력 확인 못 함.",
+  "범위 밖 확인: 한은 금통위(매체마다 10/22·10/23로 엇갈림), FOMC 10/28, ECB 10/29, 인텔 실적 10/29(회사 발표), BOJ 10/30, 미국 실업수당 10/22.",
+  "행사 점검: 범위 안 확정 행사는 MS 이벤트·GTC 베를린뿐. Apple Welcome Home(10/13)·if(kakao)26(10/13~14)은 이미 지남.",
+  "건수 미달: 8건 기준에 못 미치는 5건. 검증되지 않은 일정으로 채우지 않음."
  ],
- "searches": 35
+ "searches": 31
 }
