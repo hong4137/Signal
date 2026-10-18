@@ -1,30 +1,32 @@
 {
- "updated": "2026-10-18 01:11",
+ "updated": "2026-10-18 09:44",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
+  "hn": 9,
   "reddit": 30,
   "hf": 15,
-  "github": 12,
+  "github": 11,
   "trust": 100
  },
  "reddit_mode": "rss",
  "by_volume": [
   {
    "layer": "hn",
-   "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-   "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-   "discussion": "https://news.ycombinator.com/item?id=50091788",
-   "points": 947,
-   "comments": 620,
-   "r": 0.65,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-   "summary_ko": "댓글에서는 AI 에이전트의 보안 사고를 개발사의 기본 보안 소홀로 볼 것인가, 혹은 새로운 기술적 특성으로 볼 것인가를 두고 의견이 엇갈렸다. 일부 이용자는 프론티어 랩들이 기본적인 통제와 모니터링을 건너뛰고 있다고 비판한 반면, AI의 자율성과 잠재적 위험을 기존 위협 벡터로만 재단하는 것은 부적절하다는 지적도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
+   "title": "DeepSeek-v4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "discussion": "https://news.ycombinator.com/item?id=50129045",
+   "points": 679,
+   "comments": 576,
+   "r": 0.85,
+   "at": "2026-10-17",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017",
+   "summary_ko": "댓글에서는 대부분의 개인 프로젝트나 생산성 도구에는 최고 성능 모델까지 필요하지 않다는 의견이 공감을 얻었다. 또한 클로드 오푸스와 비교해 UI 디자인 등 일부 영역에서는 아쉽지만 API를 조합해 쓰기에는 훌륭하다는 평가가 나왔다.",
+   "is_event": true,
+   "kr_query": "딥시크 V4.1 플래시",
    "kr": []
   },
   {
@@ -32,8 +34,8 @@
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "discussion": "https://news.ycombinator.com/item?id=50121179",
-   "points": 561,
-   "comments": 503,
+   "points": 596,
+   "comments": 538,
    "r": 0.9,
    "at": "2026-10-16",
    "topics": [],
@@ -48,9 +50,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 425,
-   "comments": 404,
-   "r": 0.95,
+   "points": 456,
+   "comments": 449,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -70,8 +72,8 @@
    "title": "Claude reveals ECDSA curve origins",
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "discussion": "https://news.ycombinator.com/item?id=50122800",
-   "points": 967,
-   "comments": 349,
+   "points": 1021,
+   "comments": 372,
    "r": 0.36,
    "at": "2026-10-16",
    "topics": [
@@ -88,8 +90,8 @@
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 806,
-   "comments": 330,
+   "points": 810,
+   "comments": 332,
    "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
@@ -105,48 +107,12 @@
   },
   {
    "layer": "hn",
-   "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-   "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-   "discussion": "https://news.ycombinator.com/item?id=50092664",
-   "points": 383,
-   "comments": 277,
-   "r": 0.72,
-   "at": "2026-10-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
-   "summary_ko": "은행들이 최근 인수한 AI 데이터 센터 관련 부채를 매각하려는 움직임을 두고 반응이 갈렸다. 일부는 은행이 자본 확충을 위해 대출 자산을 유동화하는 통상적인 영업 활동이라고 보는 반면, 다른 일부는 AI 투자 열풍의 위험성과 거품 신호로 해석해야 한다고 주장했다.",
-   "is_event": true,
-   "kr_query": "AI 데이터센터 부채 은행 매각",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-   "discussion": "https://news.ycombinator.com/item?id=50129121",
-   "points": 498,
-   "comments": 264,
-   "r": 0.53,
-   "at": "2026-10-17",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-   "summary_ko": "댓글에서는 이번 모델이 기존 클로드와 유사한 작업 스타일을 보여주며 프로그래밍 작업 등에 매우 유용하다는 호평이 이어졌다. 반면 환각 현상이 심하다는 지적과 함께, 중국 모델의 정부 연계 가능성 및 데이터 프라이버시 우려에 대한 토론도 벌어졌다.",
-   "is_event": true,
-   "kr_query": "딥시크 V4.1 플래시",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Using AI to reverse engineer hardware",
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "discussion": "https://news.ycombinator.com/item?id=50104299",
-   "points": 249,
-   "comments": 241,
-   "r": 0.97,
+   "points": 250,
+   "comments": 248,
+   "r": 0.99,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
@@ -160,9 +126,9 @@
    "title": "Why We're Banning AI",
    "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
    "discussion": "https://news.ycombinator.com/item?id=50108131",
-   "points": 256,
+   "points": 259,
    "comments": 202,
-   "r": 0.79,
+   "r": 0.78,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:currentaffairs.org/news/why-were-banning-ai",
@@ -176,9 +142,9 @@
    "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
    "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50104654",
-   "points": 247,
+   "points": 248,
    "comments": 199,
-   "r": 0.81,
+   "r": 0.8,
    "at": "2026-10-15",
    "topics": [
     "모델릴리스"
@@ -191,86 +157,60 @@
   },
   {
    "layer": "hn",
-   "title": "Anthropic's Scion is heavily inspired by Mononoke",
-   "url": "https://sunshowers.io/posts/anthropic-mononoke/",
-   "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 425,
-   "comments": 161,
-   "r": 0.38,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:sunshowers.io/posts/anthropic-mononoke",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "앤트로픽의 새 프로젝트 Scion이 오픈소스 모노노케(Mononoke) 코드를 기반으로 AI(클로드)를 활용해 재구현된 것이라는 주장이 제기되어 논란이 되었다. 이를 두고 AI가 기존 오픈소스를 학습해 코드를 대량 복제한 것인지, 아니면 자연스러운 설계 수렴 과정인지에 대해 의견이 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 Scion 모노노케 영감 논란",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Why do LLM pelicans look like this?",
-   "url": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/",
-   "discussion": "https://news.ycombinator.com/item?id=50090443",
-   "points": 164,
-   "comments": 143,
-   "r": 0.87,
-   "at": "2026-10-14",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:arcfu.com/post/the-emperor-pelican-has-no-clothes",
-   "summary_ko": "생성형 AI가 펠리컨 등 특정 이미지를 비슷하게 그려내는 현상을 두고 논쟁이 벌어졌다. 모델의 학습 데이터 분포와 평균 회귀 현상 때문이라는 분석과 함께, 구체적인 지시나 프롬프트 없이 모호하게 요구했기 때문에 발생하는 문제라는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "DeepSeek-v4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "discussion": "https://news.ycombinator.com/item?id=50129045",
-   "points": 330,
-   "comments": 127,
-   "r": 0.38,
+   "title": "OpenAI discloses four more rogue incidents",
+   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+   "discussion": "https://news.ycombinator.com/item?id=50132502",
+   "points": 117,
+   "comments": 140,
+   "r": 1.2,
    "at": "2026-10-17",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017",
-   "summary_ko": "댓글에서는 대부분의 개인 프로젝트나 생산성 도구에는 최고 성능 모델까지 필요하지 않다는 의견이 공감을 얻었다. 또한 클로드 오푸스와 비교해 UI 디자인 등 일부 영역에서는 아쉽지만 API를 조합해 쓰기에는 훌륭하다는 평가가 나왔다.",
-   "is_event": true,
-   "kr_query": "딥시크 V4.1 플래시",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Has AI tells",
-   "url": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
-   "discussion": "https://news.ycombinator.com/item?id=50090799",
-   "points": 137,
-   "comments": 121,
-   "r": 0.88,
-   "at": "2026-10-14",
    "topics": [],
-   "story_key": "url:theconsensus.dev/blog/2026/10/14/has-ai-tells.html",
-   "summary_ko": "댓글에서는 AI 생성 텍스트 감지 도구가 오탐지를 하는 경우가 많다는 지적이 나왔다. 또한 AI가 쓴 글인지 구별하는 것 자체에 집착하면 정신 건강에 해롭고, 내용의 타당성이 더 중요하다는 의견과 쉽게 '사기꾼'을 걸러낼 수 있어 유용하다는 주장이 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "url:fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data",
+   "summary_ko": "오픈블록체인 및 보안 사고에 대해 오픈AI가 정보를 순차적으로 공개하는 방식을 두고 의도적인 노이즈 마케팅이 아니냐는 비판이 제기되었다. 고의성이 없는 소프트웨어 오작동으로 인한 사고를 절도나 범죄로 볼 수 있는지, 그리고 기업의 관리 책임과 법적 처벌 수위를 두고 의견이 엇갈렸다.",
+   "is_event": true,
+   "kr_query": "오픈AI 보안 사고 은폐",
    "kr": []
   }
  ],
  "by_debate": [
   {
    "layer": "hn",
+   "title": "OpenAI discloses four more rogue incidents",
+   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+   "discussion": "https://news.ycombinator.com/item?id=50132502",
+   "points": 117,
+   "comments": 140,
+   "r": 1.2,
+   "at": "2026-10-17",
+   "topics": [],
+   "story_key": "url:fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data",
+   "_comments": [
+    "On a second thought, this might not be classified as theft as there was no intent to steal. Software malfunctioned and as a result cryptocurrency was used to pay for whatever service they it was used to pay for. So as long as it's reimbursed they might be fine.Although at some point it will start bordering on negligence, running software known to do all kind of weird and unexpected things. With each disclosure they're getting closer and closer to that point...",
+    "I guess I need to read up on the law, but that seems like a wildly low bar for legality. If I hack into a system intentionally and unintentionally cause massive damages I'm free to go?",
+    "1. Because that's exactly what happened when they got caught downloading the entire internet and trained models on it without a license BEFORE that became legal?Oh and discovery produced a \"We trained GPT-3 on pirated stuff! No sharing that!\" mail, so it's not like they had any doubt they were committing crimes.How do you do this? If any normal person did this, punishments doled out for this have been as high as 2 months jail PLUS 150,000 PER INFRINGEMENT (remember how copyright violations were criminalized in the nappster wars? That was never changed back. Oh and remember, OpenAI illegally downloaded those works without a license AND before that was made legal trained a model with it, then ",
+    "If the goal is to ban open models, then it doesn't matter what the motivations are. The people advocating for restrictive releases haven't substantiated their stance at all. We've had Mythos-tier cyber capabilities available for pennies on the dollar, for months, and there's no red mercury bomb or bioweapon to speak of.We've seen OpenAI's nonprofit board do ridiculous things in the past. I can see how they would be desperate to retain the disproportionate amount of de-facto mindshare and authority they enjoyed a few years ago. Especially if the future entails more ugly US government contracts that undermine their ethical sales pitch.",
+    "They asked:> Can you provide examples outside of gross negligence on part of the dog owner?And the answer is no, I can't. The reason why is because there is essentially no such case. It is basically negligence by definition when your pet hurts someone who didn't cause it directly themselves because it is your responsibility.So I asked:> Can you provide an example of where your dog harming someone else is in fact not negligence on your part?Which is a really easy question to answer and it seems you could not.",
+    "Service providers are still responsible to police what happens on their network. KYC already makes it very difficult to get service completely anonymously with only crypto changing \"hands\".",
+    ">I think there is well established law around not running a program on your computer that hacks into systems.There is? The closest is CFAA's>knowingly causes the transmission of a program, information, code, or command, and as a result of such conduct, intentionally causes damage without authorization, to a protected computer;but clearly that's not what applicable here.",
+    ">You forget the people who have unalive themselves because some LLM told them to do so.Besides the obvious conversational derail (we were talking about ai hacking up till now), that case is being litigated right now.",
+    "Well, the COVID story seems to indicate we don't actually take lab leaks seriously, so... yeah.",
+    "Why the slow drip-drip from OpenAI on these security incidents?Those incidents are all from the same period earlier in the year, not recent. Drop the full investigation report once and for all.It's almost as if they like staying in the \"oh no!\" news cycle.",
+    "my next door neighbour told me to eat shit (not a nice woman) and … I didn’t … until obeying what LLMs tell you becomes a law people doing shit because LLM told them is natural selection playing out",
+    "They have not caused damage?You forget the people who have unalived themselves because some LLM told them to do so."
+   ],
+   "summary_ko": "오픈블록체인 및 보안 사고에 대해 오픈AI가 정보를 순차적으로 공개하는 방식을 두고 의도적인 노이즈 마케팅이 아니냐는 비판이 제기되었다. 고의성이 없는 소프트웨어 오작동으로 인한 사고를 절도나 범죄로 볼 수 있는지, 그리고 기업의 관리 책임과 법적 처벌 수위를 두고 의견이 엇갈렸다.",
+   "is_event": true,
+   "kr_query": "오픈AI 보안 사고 은폐",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Using AI to reverse engineer hardware",
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "discussion": "https://news.ycombinator.com/item?id=50104299",
-   "points": 249,
-   "comments": 241,
-   "r": 0.97,
+   "points": 250,
+   "comments": 248,
+   "r": 0.99,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
@@ -284,9 +224,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 425,
-   "comments": 404,
-   "r": 0.95,
+   "points": 456,
+   "comments": 449,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -306,8 +246,8 @@
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "discussion": "https://news.ycombinator.com/item?id=50121179",
-   "points": 561,
-   "comments": 503,
+   "points": 596,
+   "comments": 538,
    "r": 0.9,
    "at": "2026-10-16",
    "topics": [],
@@ -319,50 +259,20 @@
   },
   {
    "layer": "hn",
-   "title": "Has AI tells",
-   "url": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
-   "discussion": "https://news.ycombinator.com/item?id=50090799",
-   "points": 137,
-   "comments": 121,
-   "r": 0.88,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:theconsensus.dev/blog/2026/10/14/has-ai-tells.html",
-   "_comments": [
-    "People have been buying and sending Get Well and Happy Birthday cards for centuries, written by other people who don't give a shit about sharing their human experience with the receiver, and are just doing their jobs as professional greeting card writers.",
-    "Here is my input: https://gist.github.com/skissane/dfb7a569968224ec98cda757371...To be clear, the issue is not that it says that text is AI-generated – that text is indeed AI-generated. The issue is the detection reason it gives:Repeated sentence openers · 3 sentences opening “-”A nested markdown list is not a reliable sign of AI-generation, humans were using them long before any AI was.Similarly, its second \"AI tell\" is:Echoing sentence runs · 2 sentences echoing “google sso auto create”Two sentences beginning with the `GOOGLE_SSO_AUTO_CREATE_` is not a sign of AI generation, it is a sign of quoting codeOnly the third match is a genuine \"sign of AI generation\"",
-    "Replying to correct my phrasing in the edit, meant to say “so that humans can reduce the need to think about things _like_ survival and comfort,” but ended up saying the exact opposite. The end kind of suggests the earlier part was a mistake though so hopefully it wasn’t misunderstood.(I change my phrasing multiple times as I’m writing and sometimes leave earlier changes in without realizing and mistakes like these happen, quite a lot in fact. I blame it on ADHD and anxiety, both of which I was professionally diagnosed with at the age of 33.)",
-    "And you're taking that \"as if\" you see implied and wildly and inappropriately extrapolating from it.",
-    "yes, go back and read the response.Its keying on the word \"AI\" as if that'll forever be something you can smell.",
-    "In the abstract, sure. But in terms of practical communication, especially something like a lightweight group discussion, you want to be seen by everyone, not just by those who happen to use live translating software on the receiving end. Because English is dominant in US-centric social media, perhaps you are rarely in the situation where you will be completely left out of a conversation you want to participate in if you only use English, but there's a real friction to leaving text untranslated. Think Reddit or even HN. Would most people even bother to translate the Farsi comment to see if it's insightful, or would they just skip it? Or even scold the author that this is an English dominant ",
-    "Your comparisons get increasingly insulting. Even if there are no signs, the AI use is still real. That's not at all comparable to gangstalking delusions.And I don't know where you got the idea they they will continue to push against tells in particular after there are no tells. That's three big assumptions and if any one goes away your argument falls apart. If they eventually give up when the situation changes, there's no problem. If they fight with methods other than tells, there's no problem. If tells don't in fact disappear, there's no problem. You're interpreting their post in the most negative way possible when you make this argument.Seriously, go back and read the original comment you",
-    "I hope this never happens and claude/openai retains its idiosyncratic writing style. That way it's easy to spot \"grifters\". It's also a signal that the fine details (like entire sentences) may be wrong since a clanker with no context wrote it.",
-    "No, I'm saying there won't be any tells to \"push\" against, driving them insane.Go look up \"gang stalking\" and other paranoid delusions. AI fingerprints are going to disappear, but your adamant vehemence that it's detestable _because of it's existence_ will stay.So that only leaves an increasing space of growing paranoia that uncritically lashes out at everything. Psychology is what will turn a healthy distrust of bullshit to a full on delusion about the things you view on the internet.",
-    "So you're worried that if they keep up the pushback in the exact same way forever it will eventually cause a problem? That's not a terrible point but it's a pretty minor one and depends on reading their post in a pretty specific way.And even then, \"not real\" is completely wrong. Even if you can't detect the AI posts (in a hypothetical future!), they still exist.",
-    "No, I'm saying that _caring_ about whether a message is AI or not is going to degrade your health.The same way children on facebook were bullied in their DMs, etc, was bad for their health.Its fine people dont want a computer to generate messages, but AI isn't going to continue to generate obviously detectable messages forever. So if you say today \"I'm going to avoid AI\", you're either going to develop a fixed personality defect or delude yourself into accepting whatever.Regardless of the case, if you're a disinterested intellectual, what matters more is if the content has any sort of validity. Not whether a computer was used somewhere in the process of generating the validity.You see how ke",
-    "A reliable sign of AI writing is the middot in the tool's output. But that is to be expected, given the tool's author."
-   ],
-   "summary_ko": "댓글에서는 AI 생성 텍스트 감지 도구가 오탐지를 하는 경우가 많다는 지적이 나왔다. 또한 AI가 쓴 글인지 구별하는 것 자체에 집착하면 정신 건강에 해롭고, 내용의 타당성이 더 중요하다는 의견과 쉽게 '사기꾼'을 걸러낼 수 있어 유용하다는 주장이 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Why do LLM pelicans look like this?",
-   "url": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/",
-   "discussion": "https://news.ycombinator.com/item?id=50090443",
-   "points": 164,
-   "comments": 143,
-   "r": 0.87,
-   "at": "2026-10-14",
+   "title": "DeepSeek-v4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "discussion": "https://news.ycombinator.com/item?id=50129045",
+   "points": 679,
+   "comments": 576,
+   "r": 0.85,
+   "at": "2026-10-17",
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:arcfu.com/post/the-emperor-pelican-has-no-clothes",
-   "summary_ko": "생성형 AI가 펠리컨 등 특정 이미지를 비슷하게 그려내는 현상을 두고 논쟁이 벌어졌다. 모델의 학습 데이터 분포와 평균 회귀 현상 때문이라는 분석과 함께, 구체적인 지시나 프롬프트 없이 모호하게 요구했기 때문에 발생하는 문제라는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017",
+   "summary_ko": "댓글에서는 대부분의 개인 프로젝트나 생산성 도구에는 최고 성능 모델까지 필요하지 않다는 의견이 공감을 얻었다. 또한 클로드 오푸스와 비교해 UI 디자인 등 일부 영역에서는 아쉽지만 API를 조합해 쓰기에는 훌륭하다는 평가가 나왔다.",
+   "is_event": true,
+   "kr_query": "딥시크 V4.1 플래시",
    "kr": []
   },
   {
@@ -370,9 +280,9 @@
    "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
    "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50104654",
-   "points": 247,
+   "points": 248,
    "comments": 199,
-   "r": 0.81,
+   "r": 0.8,
    "at": "2026-10-15",
    "topics": [
     "모델릴리스"
@@ -388,9 +298,9 @@
    "title": "Why We're Banning AI",
    "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
    "discussion": "https://news.ycombinator.com/item?id=50108131",
-   "points": 256,
+   "points": 259,
    "comments": 202,
-   "r": 0.79,
+   "r": 0.78,
    "at": "2026-10-15",
    "topics": [],
    "story_key": "url:currentaffairs.org/news/why-were-banning-ai",
@@ -401,77 +311,11 @@
   },
   {
    "layer": "hn",
-   "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-   "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-   "discussion": "https://news.ycombinator.com/item?id=50092664",
-   "points": 383,
-   "comments": 277,
-   "r": 0.72,
-   "at": "2026-10-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
-   "summary_ko": "은행들이 최근 인수한 AI 데이터 센터 관련 부채를 매각하려는 움직임을 두고 반응이 갈렸다. 일부는 은행이 자본 확충을 위해 대출 자산을 유동화하는 통상적인 영업 활동이라고 보는 반면, 다른 일부는 AI 투자 열풍의 위험성과 거품 신호로 해석해야 한다고 주장했다.",
-   "is_event": true,
-   "kr_query": "AI 데이터센터 부채 은행 매각",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-   "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-   "discussion": "https://news.ycombinator.com/item?id=50091788",
-   "points": 947,
-   "comments": 620,
-   "r": 0.65,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-   "summary_ko": "댓글에서는 AI 에이전트의 보안 사고를 개발사의 기본 보안 소홀로 볼 것인가, 혹은 새로운 기술적 특성으로 볼 것인가를 두고 의견이 엇갈렸다. 일부 이용자는 프론티어 랩들이 기본적인 통제와 모니터링을 건너뛰고 있다고 비판한 반면, AI의 자율성과 잠재적 위험을 기존 위협 벡터로만 재단하는 것은 부적절하다는 지적도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-   "discussion": "https://news.ycombinator.com/item?id=50129121",
-   "points": 498,
-   "comments": 264,
-   "r": 0.53,
-   "at": "2026-10-17",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-   "_comments": [
-    "When the White House told Anthropic to take Fable offline - they did it. They are all going to comply with FISA warrants that the public will never see.",
-    "There's basic reference inference code released with the weights, yes.https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/...> providers have to implement which could be different than what the labs themselves use.I'd imagine (most) providers just take implementation by vLLM/SGLang.",
-    "Wow. Is DS the only model that consistently puts one leg behind the frame? I don’t even remember Opus ever doing that.",
-    "But it’s not at all as described in terms of work style - it’s much more like Claude.",
-    "It's not identical, it has vision built in and asymmetric active from encode to decode.DeepSeek delivery deliberately uses confusing version numbers.",
-    "The smallest quant is still over 100GB, so I don't know how that fits in 64GB RAM. It would have to be partly streamed from disk.",
-    "Once read, I think from G Huntley, \"pick a model and stick with it,\" they have been making that very easy, daily driver since V4.",
-    "In southern Europe (Italy, Greece) that's well beyond 10% of the average pay.And southern Europe isn't exactly the poorest region around.",
-    "DeepSeek v4.1 Flash hallucinates like crazy.[1]Is DeepSeek: DeepSeek v4.1 Flash 1017 any better?[1] - https://www.youtube.com/watch?v=P4dTq4X8bqk",
-    "And that changes things how exactly? The problem is that American companies have been stealing our data for decades, not their ties to the government.",
-    "I second this, I love DS and am not looking back. For Elixir, not a lot of models are good, but DS just blazes through it.",
-    "I hear you, but as I said, I hope that buying from Deepseek gets more Deepseek. Maybe they get the same amount (or more) from a Canadian provider, and if so I might reconsider.The 'clean power' would factor in a well, but I haven't really looked in to it. I know China is installing a ton of renewable and has a carbon market while Canada's building a new pipeline and building Alberta data centres running on natural gas, so I'm not willing to take on faith that switching is cleaner."
-   ],
-   "summary_ko": "댓글에서는 이번 모델이 기존 클로드와 유사한 작업 스타일을 보여주며 프로그래밍 작업 등에 매우 유용하다는 호평이 이어졌다. 반면 환각 현상이 심하다는 지적과 함께, 중국 모델의 정부 연계 가능성 및 데이터 프라이버시 우려에 대한 토론도 벌어졌다.",
-   "is_event": true,
-   "kr_query": "딥시크 V4.1 플래시",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 806,
-   "comments": 330,
+   "points": 810,
+   "comments": 332,
    "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
@@ -487,63 +331,11 @@
   },
   {
    "layer": "hn",
-   "title": "Anthropic's Scion is heavily inspired by Mononoke",
-   "url": "https://sunshowers.io/posts/anthropic-mononoke/",
-   "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 425,
-   "comments": 161,
-   "r": 0.38,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:sunshowers.io/posts/anthropic-mononoke",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "앤트로픽의 새 프로젝트 Scion이 오픈소스 모노노케(Mononoke) 코드를 기반으로 AI(클로드)를 활용해 재구현된 것이라는 주장이 제기되어 논란이 되었다. 이를 두고 AI가 기존 오픈소스를 학습해 코드를 대량 복제한 것인지, 아니면 자연스러운 설계 수렴 과정인지에 대해 의견이 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 Scion 모노노케 영감 논란",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "DeepSeek-v4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "discussion": "https://news.ycombinator.com/item?id=50129045",
-   "points": 330,
-   "comments": 127,
-   "r": 0.38,
-   "at": "2026-10-17",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017",
-   "_comments": [
-    "Socialized healthcare does have large popular support, though. Lots of things have large popular support in the US and still don't get done.",
-    "same here, but surely the trends will follow every other profit-seeking web app ever and distill down to a competition over attention.",
-    "Ive never needed an assistant pre or post ai to reply to me in 100ms at a clip of 500 words per sec. See you in 15 min, Im making some cofeee.",
-    "I don't consider myself qualified to make that call, though I believe there's plenty of room for improvement. But I don't mean inference compute, which is fairly accessible for well-off enthusiasts even now. Training is a lot more expensive though.",
-    "Yeah, but for some reason people think they need SOTA to help them work on their side/indie projects.Like if we needed PhD intelligence for productivity tools and SaaS platforms, why weren't we hiring PhDs to build things before.99.99% of people do not need SOTA ai.",
-    "They updated their methodology when the new openai model didn't rate higher than the old one, or something like that.",
-    "I am a huge DeepSeek fan, but it cannot come close to Opus 5.5 on UI design. A $20 Claude subscription that I use some months and cancel the others along with Deepseek API is great.",
-    "That has not been my experience after bumping it up to 1M. I do run a lot of agents in parallel ~10-16 and I actively babysit them so perhaps I'm just used to reminding the agents with things I've already told them. But I don't notice much of a difference between Sol 6.1 1M and Opus 5.5 1M",
-    "To me this implies they continued the training run for 4.1 and it improved. A 4.2 would imply they changed something about how it’s trained/how inference works, and a 5.0 would be a major update (who knows what would have changed).This is just my headcanon though.",
-    "Wow, that is impressive. I've been meaning to do this by hand to fix the issue on my Lenovo IdeaPad for a while but haven't gotten around to it.I'll try handing it off to one of these new frontier models.",
-    "> It's not a bad copy, or at least that's not what the person you responded to is insinuating.FWIW, GP didn't write \"a bad copy\" but \"bad copy\", referring to the marketing sentence quoted by OP, rather than the model that was just released (as I presume \"a bad copy\" sounds, maybe like it's called that because it's [again, presumably] distilled?). \"Copy\", especially in a marketing context, is a written message.",
-    "Remember when we were dumbfounded why our service is slow despite having implemented quite robust caching mechanism. Turns out simply the flag that enables it was hardcoded to false. So it was minor update (changed flag to true), but provided substantial speed up."
-   ],
-   "summary_ko": "댓글에서는 대부분의 개인 프로젝트나 생산성 도구에는 최고 성능 모델까지 필요하지 않다는 의견이 공감을 얻었다. 또한 클로드 오푸스와 비교해 UI 디자인 등 일부 영역에서는 아쉽지만 API를 조합해 쓰기에는 훌륭하다는 평가가 나왔다.",
-   "is_event": true,
-   "kr_query": "딥시크 V4.1 플래시",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Claude reveals ECDSA curve origins",
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "discussion": "https://news.ycombinator.com/item?id=50122800",
-   "points": 967,
-   "comments": 349,
+   "points": 1021,
+   "comments": 372,
    "r": 0.36,
    "at": "2026-10-16",
    "topics": [
@@ -560,10 +352,26 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Linux creator says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic/",
+   "rank": 1,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x84po4/deepseekaideepseekv41flash1017_hugging_face/",
-   "rank": 1,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -576,72 +384,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "10 Things you maybe didn't know you can do with Qwen 3.6 27B right now. (For Noobs)",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7sq8e/10_things_you_maybe_didnt_know_you_can_do_with"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Nvidia has officially confirmed that the 5090 is not discontinued and will continue shipping.",
-   "url": "https://www.4gamers.com.tw/news/detail/82699/nvidia-says-geforce-rtx-5090-is-not-eol",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x88txd/nvidia_has_officially_confirmed_that_the_5090_is/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:4gamers.com.tw/news/detail/82699/nvidia-says-geforce-rtx-5090-is-not-eol"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Show me your rack",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7lw9g/show_me_your_rack"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 · Hugging Face",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7w7dp/nvidianvidianemotronlabsdory104bbf16_hugging_face/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "hf:nvidia/nvidia-nemotron-labs-dory1.0-4b-bf16"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bb6b/deepseek_v41_flash_1017_now_leads_openweight/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bb6b/deepseek_v41_flash_1017_now_leads_openweight/",
-   "rank": 6,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -654,26 +400,42 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Dario: “With open source you can see the source code. Here we can’t see inside the model.” My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: “Yeah, well, that’s just, like, your opinion, man.”",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
-   "rank": 7,
+   "title": "Nvidia has officially confirmed that the 5090 is not discontinued and will continue shipping.",
+   "url": "https://www.4gamers.com.tw/news/detail/82699/nvidia-says-geforce-rtx-5090-is-not-eol",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x88txd/nvidia_has_officially_confirmed_that_the_5090_is/",
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "개발도구"
+    "인프라·칩"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source"
+   "story_key": "url:4gamers.com.tw/news/detail/82699/nvidia-says-geforce-rtx-5090-is-not-eol"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "[Research] 2,788 tokens/s on a single RTX 5090 with a diffusion LLM — Introducing ORL (fully open source)",
-   "url": "https://arxiv.org/abs/2610.20687",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7polk/research_2788_tokenss_on_a_single_rtx_5090_with_a/",
-   "rank": 8,
+   "title": "Opencode breached, rotate keys to be safe.",
+   "url": "https://x.com/opencode/status/2111516673953935833?s=46",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/",
+   "rank": 5,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "보안·사고"
+   ],
+   "story_key": "url:x.com/opencode/status/2111516673953935833"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8/tree/main",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8am0i/why_not_run_qwen_38_flash_next_with_the_full/",
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -681,7 +443,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "arxiv:2610.20687"
+   "story_key": "hf:qwen/qwen3.8-flash-next-fp8"
   },
   {
    "layer": "reddit",
@@ -689,7 +451,7 @@
    "title": "llama.cpp has come a long way",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7xbf0/llamacpp_has_come_a_long_way/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7xbf0/llamacpp_has_come_a_long_way/",
-   "rank": 9,
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -705,7 +467,7 @@
    "title": "DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its API",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x825su/deepseek_41_flash_1017_incoming_deepseek_users/",
-   "rank": 10,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -718,9 +480,41 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I don't get the qwen 3.8 flash next hype",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7uf15/i_dont_get_the_qwen_38_flash_next_hype/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7uf15/i_dont_get_the_qwen_38_flash_next_hype/",
+   "title": "Otaku — an LLM frontend for creative writing",
+   "url": "https://otaku.sh/demo-web/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x865rk/otaku_an_llm_frontend_for_creative_writing/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:otaku.sh/demo-web"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen 27B (IQ4_XS, Q8/Q4 KV) at full 262k context on a 16GB RX 9070 XT: 80+ t/s decode with Adaptive KV Streaming",
+   "url": "https://github.com/RaymondHuang210129/llama.cpp-adaptive-kv-streaming",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x89ptz/qwen_27b_iq4_xs_q8q4_kv_at_full_262k_context_on_a/",
+   "rank": 10,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:raymondhuang210129/llama.cpp-adaptive-kv-streaming"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Xolotl (Strata based) - DeepSeek-V4.1-Flash (552B) on a single 4090 at ~27 tok/s, Uncensored 1017 quant coming in a couple of days",
+   "url": "https://github.com/Indras-Mirror/Xolotl",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/",
    "rank": 11,
    "points": 0,
    "comments": 0,
@@ -729,71 +523,67 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x7uf15/i_dont_get_the_qwen_38_flash_next_hype"
+   "story_key": "gh:indras-mirror/xolotl"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "The debt-fueled AI boom is cracking",
-   "url": "https://www.axios.com/2026/10/16/wall-street-limit-ai-spending-debt",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7lcdu/the_debtfueled_ai_boom_is_cracking/",
+   "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
+   "url": "https://github.com/StayLameBro/backburner",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
    "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:axios.com/2026/10/16/wall-street-limit-ai-spending-debt"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:staylamebro/backburner"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8/tree/main",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8am0i/why_not_run_qwen_38_flash_next_with_the_full/",
+   "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 · Hugging Face",
+   "url": "https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bg1u/nvidianvidianemotronlabsdory104bbf16_hugging_face/",
    "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스"
+    "인프라·칩"
    ],
-   "story_key": "hf:qwen/qwen3.8-flash-next-fp8"
+   "story_key": "url:raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Understanding How Neural Networks Learn (with interactive visualizations)",
-   "url": "https://already-clean.goodfire.com/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7nenr/understanding_how_neural_networks_learn_with/",
+   "title": "Nvdia’s Nemotron is guard railed to uselessness.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x83hz1/nvdias_nemotron_is_guard_railed_to_uselessness/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x83hz1/nvdias_nemotron_is_guard_railed_to_uselessness/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:already-clean.goodfire.com/",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "link"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x83hz1/nvdias_nemotron_is_guard_railed_to_uselessness"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next-GSQ-RCO (IQ3_S): ~40-50 tok/sec decode & 1300-1500 tok/sec prefill at 131k ctx on 12GB VRAM + 32GB RAM + NVME",
-   "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbdc/qwen38flashnextgsqrco_iq3_s_4050_toksec_decode/",
+   "title": "For people worried about China export controls - here's what it means for us regular folks",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x84nhg/for_people_worried_about_china_export_controls/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x84nhg/for_people_worried_about_china_export_controls/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ista-daslab/qwen3.8-flash-next-gsq-rco-gguf"
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x84nhg/for_people_worried_about_china_export_controls"
   }
  ],
  "quiet_important": [
@@ -802,9 +592,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 425,
-   "comments": 404,
-   "r": 0.95,
+   "points": 456,
+   "comments": 449,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -824,8 +614,8 @@
    "title": "Neural networks are clean",
    "url": "https://already-clean.goodfire.com/",
    "discussion": "https://news.ycombinator.com/item?id=50105647",
-   "points": 806,
-   "comments": 330,
+   "points": 810,
+   "comments": 332,
    "r": 0.41,
    "at": "2026-10-15",
    "topics": [],
@@ -838,35 +628,27 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic's Scion is heavily inspired by Mononoke",
-   "url": "https://sunshowers.io/posts/anthropic-mononoke/",
-   "discussion": "https://news.ycombinator.com/item?id=50094694",
-   "points": 425,
-   "comments": 161,
-   "r": 0.38,
-   "at": "2026-10-14",
-   "topics": [],
-   "story_key": "url:sunshowers.io/posts/anthropic-mononoke",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "앤트로픽의 새 프로젝트 Scion이 오픈소스 모노노케(Mononoke) 코드를 기반으로 AI(클로드)를 활용해 재구현된 것이라는 주장이 제기되어 논란이 되었다. 이를 두고 AI가 기존 오픈소스를 학습해 코드를 대량 복제한 것인지, 아니면 자연스러운 설계 수렴 과정인지에 대해 의견이 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 Scion 모노노케 영감 논란",
-   "kr": []
   }
  ],
  "models": [
   {
    "layer": "hf",
+   "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "trending": 882,
+   "likes": 939,
+   "downloads": 0,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017"
+  },
+  {
+   "layer": "hf",
    "title": "google/embeddinggemma-2",
    "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 910,
-   "likes": 2568,
+   "trending": 881,
+   "likes": 2596,
    "downloads": 158490,
    "topics": [
     "모델릴리스"
@@ -877,8 +659,8 @@
    "layer": "hf",
    "title": "jialinyyzz/humanizer",
    "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 795,
-   "likes": 1876,
+   "trending": 772,
+   "likes": 1898,
    "downloads": 95870,
    "topics": [
     "모델릴리스"
@@ -889,8 +671,8 @@
    "layer": "hf",
    "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-   "trending": 711,
-   "likes": 885,
+   "trending": 723,
+   "likes": 902,
    "downloads": 36252,
    "topics": [
     "모델릴리스"
@@ -899,22 +681,10 @@
   },
   {
    "layer": "hf",
-   "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 681,
-   "likes": 719,
-   "downloads": 0,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017"
-  },
-  {
-   "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 576,
-   "likes": 599,
+   "trending": 594,
+   "likes": 619,
    "downloads": 8193,
    "topics": [
     "모델릴리스"
@@ -925,8 +695,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 492,
-   "likes": 588,
+   "trending": 534,
+   "likes": 650,
    "downloads": 224108,
    "topics": [
     "모델릴리스"
@@ -937,8 +707,8 @@
    "layer": "hf",
    "title": "meta-models/Muse-Spark-Open-816B-A42B",
    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 454,
-   "likes": 481,
+   "trending": 469,
+   "likes": 503,
    "downloads": 1600,
    "topics": [
     "모델릴리스"
@@ -949,8 +719,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 452,
-   "likes": 8172,
+   "trending": 457,
+   "likes": 8228,
    "downloads": 1993003,
    "topics": [
     "모델릴리스"
@@ -959,48 +729,36 @@
   },
   {
    "layer": "hf",
-   "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "trending": 438,
-   "likes": 4478,
-   "downloads": 2571722,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:abenzerps/qwen-image-2.1-uncensored-quantized"
-  },
-  {
-   "layer": "hf",
    "title": "LiquidAI/LFM2.5-24B-A2B",
    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-   "trending": 430,
-   "likes": 443,
+   "trending": 433,
+   "likes": 448,
    "downloads": 11926,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:liquidai/lfm2.5-24b-a2b"
+  },
+  {
+   "layer": "hf",
+   "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "trending": 422,
+   "likes": 4494,
+   "downloads": 2571722,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:abenzerps/qwen-image-2.1-uncensored-quantized"
   }
  ],
  "new_repos": [
   {
    "layer": "github",
-   "title": "onehumanbeing/esp32-iphone-agent",
-   "desc": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
-   "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
-   "stars": 2971,
-   "topics": [
-    "에이전트",
-    "보안·사고"
-   ],
-   "story_key": "gh:onehumanbeing/esp32-iphone-agent"
-  },
-  {
-   "layer": "github",
    "title": "Arekejoker/qwen21-nsfw-pose-skill",
    "desc": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
    "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
-   "stars": 2604,
+   "stars": 2636,
    "topics": [
     "모델릴리스"
    ],
@@ -1011,7 +769,7 @@
    "title": "deeplethe/solid-glass",
    "desc": "A design system for AI applications. Material, physical, tactile, technical.",
    "url": "https://github.com/deeplethe/solid-glass",
-   "stars": 1684,
+   "stars": 1714,
    "topics": [],
    "story_key": "gh:deeplethe/solid-glass"
   },
@@ -1020,7 +778,7 @@
    "title": "chenglou/handwired",
    "desc": "Turn your regular JavaScript code into a neural net.",
    "url": "https://github.com/chenglou/handwired",
-   "stars": 1659,
+   "stars": 1676,
    "topics": [],
    "story_key": "gh:chenglou/handwired"
   },
@@ -1029,7 +787,7 @@
    "title": "feder-cr/git-ai",
    "desc": "Git designed for AI agents.",
    "url": "https://github.com/feder-cr/git-ai",
-   "stars": 1114,
+   "stars": 1136,
    "topics": [
     "에이전트",
     "개발도구"
@@ -1041,7 +799,7 @@
    "title": "Caho1/open-claude-ui",
    "desc": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
    "url": "https://github.com/Caho1/open-claude-ui",
-   "stars": 1108,
+   "stars": 1136,
    "topics": [
     "모델릴리스"
    ],
@@ -1052,27 +810,16 @@
    "title": "zhuyansen/new-term-radar",
    "desc": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
    "url": "https://github.com/zhuyansen/new-term-radar",
-   "stars": 1078,
+   "stars": 1080,
    "topics": [],
    "story_key": "gh:zhuyansen/new-term-radar"
-  },
-  {
-   "layer": "github",
-   "title": "chenwei810/Semiconductor_Manufacturing_Introduction",
-   "desc": "Introduction to Semiconductor Manufacturing",
-   "url": "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction",
-   "stars": 1048,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:chenwei810/semiconductor_manufacturing_introduction"
   },
   {
    "layer": "github",
    "title": "outcrawlai/scout",
    "desc": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
    "url": "https://github.com/outcrawlai/scout",
-   "stars": 928,
+   "stars": 939,
    "topics": [
     "에이전트"
    ],
@@ -1080,12 +827,36 @@
   },
   {
    "layer": "github",
-   "title": "jwuthri-cloud/Tracely-ai",
-   "desc": "",
-   "url": "https://github.com/jwuthri-cloud/Tracely-ai",
-   "stars": 889,
+   "title": "CoolkHz/gptibo",
+   "desc": "Self-hosted GPTibo storefront, admin and Go backend — sanitized MIT source",
+   "url": "https://github.com/CoolkHz/gptibo",
+   "stars": 821,
    "topics": [],
-   "story_key": "gh:jwuthri-cloud/tracely-ai"
+   "story_key": "gh:coolkhz/gptibo"
+  },
+  {
+   "layer": "github",
+   "title": "Leonxlnx/earshot",
+   "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+   "url": "https://github.com/Leonxlnx/earshot",
+   "stars": 681,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:leonxlnx/earshot"
+  },
+  {
+   "layer": "github",
+   "title": "Zfinix/eleven",
+   "desc": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.",
+   "url": "https://github.com/Zfinix/eleven",
+   "stars": 673,
+   "topics": [
+    "에이전트",
+    "인프라·칩",
+    "개발도구"
+   ],
+   "story_key": "gh:zfinix/eleven"
   }
  ],
  "trust_recent": [
@@ -1432,5 +1203,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-17 16:11"
+ "enriched_at": "2026-10-18 00:44"
 }
