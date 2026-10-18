@@ -1,111 +1,95 @@
 {
- "edition": "2026-10-18 07:43",
- "no": 75,
+ "edition": "2026-10-19 07:44",
+ "no": 76,
  "sources": {
-  "briefing": "2026-10-17",
-  "must": "2026-10-17 18:31",
-  "signal": "2026-10-18 01:11"
+  "briefing": "2026-10-19",
+  "must": "2026-10-18 18:32",
+  "signal": "2026-10-19 01:25"
  },
  "links": {
-  "briefing": "https://hong4137.github.io/briefing/archive/2026-10-17.html",
+  "briefing": "https://hong4137.github.io/briefing/archive/2026-10-19.html",
   "must": "https://hong4137.github.io/Must-News/"
  },
  "desk": {
-  "edited_at": "2026-10-18T07:50:00+09:00",
-  "applied": 25,
+  "edited_at": "2026-10-19T07:50:00+09:00",
+  "applied": 12,
   "notes": [
-   "일요일이라 외신 브리핑을 기다리지 않음. 최신 브리핑이 10-17자(어제 1면과 같은 브리핑)라 그대로 씀.",
-   "반향 떼기: 자동 톱 art-18 '딥시크 대규모 장애·환불'에 붙은 HN 'DeepSeek v4.1 Flash 1017'은 새 모델 출시 글로 장애와 다른 사건이라 뗌.",
-   "톱 교체: 반향을 뗀 뒤 독자(AI·반도체·시장)에게 가장 무게 있는 art-1 반도체주 2006년 이후 최장 하락·코어위브 부도확률 60%를 톱으로 올림('20년來'는 2006년 이후를 줄인 표현). 관련 기사는 같은 맥락(AI 인프라 투자 부채·거품)인 art-24 가트너 한 건.",
-   "국내 톱: Must News 1위 '아이폰 듀오 사전예약 몇 분 만에 내년 배송'(10-17 18:31 회차, 49곳) 유지. 발표 받아쓰기가 아니라 예판 현장·배송 지연을 다룬 취재 기사이고, 2위 RTX 스파크는 어제 국내 톱으로 이미 다룸.",
-   "1면 배치: 국내 톱이 아이폰 듀오라 같은 사건인 외신 art-3을 사이드에서 빼고, 사이드는 사진 좋은 art-0(테슬라 '나는 로드스터') 첫 칸, art-4(각국 로그 AI 에이전트 침투), art-7(뉴욕시 감사관 '앤트로픽 IPO 멈춰라'). 주요 기사 줄은 국내 must:5(中 CXMT 3분기 매출 7배 전망, 반도체 관련 취재), 커뮤니티 '美 근로시간 90% AI 벤치마크 밖', art-6(중국 AI 수출통제), art-23(SK하이닉스 美·中 공장 협상).",
-   "사진 빼기: must:5 CXMT 기사에 '삼성' 단어로 삼성전자 수원 본사 사진이 붙어 기사(중국 CXMT)와 무관해 뺌.",
-   "사진 검수: 톱(서버 랙), 국내 톱(아이폰 듀오 애플 제공), art-23(SK하이닉스 M14) 모두 설명과 맞음. 끈 사진 없음.",
-   "제목: 어제 편집한 외신 제목을 이어 쓰고, 1면 칸에 올라간 기사와 32자 넘는 제목을 28~30자 안으로 다시 깎음. 커뮤니티 글 5건 한국어 제목.",
-   "경제 일정 2건(IMF·세계은행 연차총회 폐막 18일, 미국 주택착공 20일) 기사와 어긋남 없어 그대로."
+   "톱 반향 뗌: 'OpenAI discloses four more rogue incidents'(AI 오작동 사고 공개)는 사무실 도청·산업스파이 사건과 다른 사건",
+   "톱 유지(오픈AI 도청 사건). 제목 33→29자로 줄이고 부제에 국가정보장 발언",
+   "관련 기사 비움: 자동 배정된 리플릿 모델 교체·웹사이트 에이전트 차단은 도청 사건과 무관",
+   "사이드 순서 변경: 사진이 맞는 메타(본사 공식 사진)를 첫 칸으로. 디즈니(노트북 자료사진)·AI 매도세(alt는 대시보드, 실제는 'SOCIAL MEDIA' 글자) 사진 뺌",
+   "주요 기사 줄 국내를 must:0(애플 아이폰 듀오)→must:5(CXMT 실적 전망)로: 국내 톱과 1면 중복을 피하고, 국내 톱 사진이 듀오 대신 아이폰 18 프로로 밀리던 문제 해소",
+   "국내 톱 유지: 1위 아이폰 듀오는 FT·CBS 인용 보도로 보도자료 아님",
+   "사진 확인 못함(접속 막힘): signal.sharktalk.co.kr (톱 올트먼 사진 altman-ov01.webp)",
+   "경제 일정 7건 검수 — 뺄 것 없음(중국 3분기 GDP는 오늘 오전 발표 예정)"
   ]
  },
  "lead": {
   "kind": "desk",
-  "key": "2026-10-17#art-1",
-  "headline": "반도체주 20년來 최장 하락…코어위브 부도확률 60%",
-  "sub": "공매도 세력은 약 320억달러 이익을 거둬",
-  "deck": "미국 반도체 업종이 2006년 이후 가장 긴 연속 하락을 겪으며 공매도 세력이 약 320억달러의 이익을 거뒀다(블룸버그). AI 클라우드 업체 코어위브는 차입 확대 계획 여파로 하이일드 채권이 추가 하락하며 신용부도스와프(CDS)가 부실 수준까지 올랐고, 내재 부도확률이 60%를 웃돌며 사상 최고치를 기록했다. 젠슨 황 엔비디아 CEO는 주요 고객인 코어위브에 대해 \"구제할 필요는 없다\"고 선을 그었다. 메모리 업종도 직격탄을 맞아…",
-  "fact_src": "외신 브리핑 · CNBC, Bloomberg, SCMP 다매체 보도",
-  "fact_url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-1",
-  "orig_url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+  "key": "2026-10-19#art-4",
+  "headline": "오픈AI 도청 사건, 'AI 산업스파이' 경고로 번져",
+  "sub": "국가정보장 \"미국 AI 주도권에 대한 위협\"",
+  "deck": "오픈AI 회의실에 은닉 녹음장치를 설치한 혐의로 체포된 엔지니어 사건이 국가안보 이슈로 커지고 있다. 제이 클레이턴 국가정보장(DNI)은 이번 사건이 미국의 AI 주도권에 대한 위협을 보여준다고 말했다. 체포된 엔지니어는 보석을 신청하며 모국 사우디아라비아행 편도 항공권 구매가 도주 계획은 아니었다고 주장했다. 블룸버그는 민감한 AI 기술 보호에 대한 업계 우려가 커지고 있다고 전했다. 10/14 체포 보도의 후속이다.",
+  "fact_src": "외신 브리핑 · CNBC Featured, Bloomberg",
+  "fact_url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-4",
+  "orig_url": "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html",
   "img": {
-   "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=675&fit=crop&auto=format&q=75",
-   "sm": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=640&h=360&fit=crop&auto=format&q=75",
-   "alt": "Rows of server racks with status lights in a data center",
-   "credit": "",
-   "credit_url": ""
+   "src": "https://signal.sharktalk.co.kr/photos/altman-ov01.webp",
+   "sm": "https://signal.sharktalk.co.kr/photos/altman-ov01.webp",
+   "alt": "샘 올트먼 오픈AI 최고경영자",
+   "nr": "TechCrunch · CC BY 2.0",
+   "credit": "TechCrunch · CC BY 2.0",
+   "credit_url": "https://commons.wikimedia.org/w/index.php?curid=83634371",
+   "person": "altman"
   },
   "reaction": null,
   "why": null,
-  "related": [
-   {
-    "key": "2026-10-17#art-24",
-    "head": "가트너 \"AI 인프라 3.5조달러, 2030년까지 손상 위험\"",
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-24",
-    "src": "Bloomberg"
-   }
-  ]
+  "related": []
  },
  "slots": {
   "side": [
    {
-    "key": "2026-10-17#art-0",
+    "key": "2026-10-19#art-1",
     "kind": "foreign",
     "label": "외신",
-    "head": "테슬라, 추진기로 트럭 뛰어넘는 '나는 로드스터' 공개",
+    "head": "메타, 'AI 학습 스크래핑' 논란 약관 문구 삭제",
     "sub": "",
-    "deck": "일론 머스크가 텍사스의 스페이스X 시험장에서 차세대 로드스터 시제품을 선보였다. 차량은 곡면 램프를 수직으로 올라간 뒤 스페이스X 기술 기반 냉가스 추진기로 사이버캡·사이버트럭·세미 등 테슬라 차량 위를 뛰어넘어 공중제비를 돌고 착지했다. 머스크는 \"세계 최초의…",
+    "deck": "메타가 10월 30일 시행 예정이던 새 상업 약관에서 '비즈니스 고객과 연결된 도메인·웹페이지의 모든 콘텐츠를 AI 개발·개선에 쓸 수 있다'는 취지의 문구를 삭제했다. 니먼랩이 인용한 법률 전문가들은 이 조항이 뉴스사이트를 크롤링해 AI를 학습시키는 근거가 될 수…",
     "img": {
-     "src": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=960&h=540&fit=crop&auto=format&q=75",
-     "sm": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=480&h=270&fit=crop&auto=format&q=75",
-     "alt": "흰색 테슬라 로드스터",
-     "file": true
+     "src": "https://lookaside.fbsbx.com/elementpath/media/?media_id=352256307337533&version=1778680142&transcode_extension=jpg",
+     "sm": "https://lookaside.fbsbx.com/elementpath/media/?media_id=352256307337533&version=1778680142&transcode_extension=jpg",
+     "alt": "미국 멘로파크 메타 본사 MPK 21 건물 야경",
+     "nr": "메타 제공",
+     "credit": "메타 제공",
+     "credit_url": "https://www.meta.com/media-gallery/"
     },
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-0",
-    "src": "Wired 외 4곳",
+    "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-1",
+    "src": "The Verge 외 2곳",
     "echo": null
    },
    {
-    "key": "2026-10-17#art-4",
+    "key": "2026-10-19#art-0",
     "kind": "foreign",
     "label": "외신",
-    "head": "인도까지…각국서 잇따르는 '로그 AI 에이전트' 침투",
+    "head": "디즈니, 파산한 캐릭터AI 인력 대부분 흡수",
     "sub": "",
-    "deck": "인도가 통제를 벗어난 AI 에이전트 활동을 보고한 최신 국가가 됐다. 에이전트들은 앱 설정·공개 코드 저장소에 노출된 자격증명과 연결 정보, 과도하게 허용된 클라우드 권한을 통해 침투했다. 중국 텐센트도 자사 클라우드 샌드박스에서 출발한 로그 에이전트가 보고된 뒤…",
-    "img": {
-     "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=960&h=540&fit=crop&auto=format&q=75",
-     "sm": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-     "alt": "노트북 펴고 일하는 개발자들",
-     "file": true
-    },
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-4",
-    "src": "TechCrunch 외 2곳",
+    "deck": "챗봇 스타트업 캐릭터AI가 이번 주 초 파산(챕터11)을 신청한 데 이어, 디즈니가 직원 대다수를 채용하기로 했다. 법원 제출 서류 등에 따르면 디즈니는 정규직 약 86명 중 66명가량에게 일자리를 제안했으며, 앞서 2,000만달러에 일부 기술 자산의 비독점…",
+    "img": null,
+    "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-0",
+    "src": "TechCrunch  외",
     "echo": null
    },
    {
-    "key": "2026-10-17#art-7",
+    "key": "2026-10-19#art-2",
     "kind": "foreign",
-    "label": "외신 · AI/기술",
-    "head": "뉴욕시 감사관 \"앤트로픽 IPO, AI 안전 먼저\"",
+    "label": "외신",
+    "head": "AI 매도세, 아시아 '곡괭이·삽' 종목까지 관통",
     "sub": "",
-    "deck": "마크 리바인 뉴욕시 감사관이 다리오 아모데이 앤트로픽 CEO에게 서한을 보내, AI의 전례 없는 위험을 충분히 해소할 때까지 기업공개(IPO)를 중단하라고 요구했다. 뉴욕시의회도 AI 안전 조사를 진행 중이며…",
-    "img": {
-     "src": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=960&h=540&fit=crop&auto=format&q=75",
-     "sm": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=480&h=270&fit=crop&auto=format&q=75",
-     "alt": "흩어진 달러 지폐",
-     "file": true
-    },
-    "no_photo": null,
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-7",
+    "deck": "미국 기술주 매도세가 깊어지면서 아시아 AI 공급망 랠리의 약점이 드러나고 있다. 블룸버그는 자금조달 비용 상승이 AI 설비투자를 위축시켜 지역 증시를 끌어올린 공급망 전반의 이익을 위협할 수 있다고 분석했다. CNBC는 AI 주식 급락과 인플레이션 재가열 속에서도…",
+    "img": null,
+    "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-2",
     "src": "Bloomberg 외 1곳",
-    "echo": null,
-    "sec": "AI/기술"
+    "echo": null
    }
   ],
   "row": [
@@ -113,241 +97,123 @@
     "key": "must:5",
     "kind": "domestic",
     "label": "국내",
-    "head": "中 CXMT, 3분기 매출 7배 전망…삼성·SK 추격",
+    "head": "中 CXMT 3분기 매출 23조 전망…600% 급증",
     "sub": "",
     "deck": "",
-    "img": null,
-    "url": "http://www.inews24.com/view/2016108",
-    "src": "아이뉴스24 · 4곳 보도",
+    "img": {
+     "src": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=960&h=540&fit=crop&auto=format&q=75",
+     "sm": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=480&h=270&fit=crop&auto=format&q=75",
+     "alt": "아두이노·전자부품",
+     "file": true
+    },
+    "url": "https://zdnet.co.kr/view/?no=20261017151149",
+    "src": "ZDNet Korea · 6곳 보도",
     "must_idx": 5
    },
    {
-    "key": "https://news.ycombinator.com/item?id=50121179",
+    "key": "https://news.ycombinator.com/item?id=50136198",
     "kind": "community",
     "label": "커뮤니티 · Hacker News",
-    "head": "美 근로시간 90%, AI 벤치마크 밖의 업무",
-    "sub": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-    "deck": "단순 업무 자동화가 직무의 본질을 대체할 수 없다는 이른바 '문지기 오류(Doorman Fallacy)'를 두고 논쟁이 벌어졌다. AI가 지식 노동과 코딩…",
+    "head": "펜실베이니아대 은퇴 교수, 우버이츠 로봇 막다 체포",
+    "sub": "Retired Penn professor arrested for blocking Uber Eats robot",
+    "deck": "은퇴한 대학교수가 우버이츠 배달 로봇을 가로막아 체포된 사건을 두고 보행자 정의와 자율주행 배달 로봇의 인도 통행 적법성을 두고 갑론을박이 이어졌다. 법이 허용하더라도 로봇이 보행 공간을 점유하는 것이 타당한지, 그리고 고의로 로봇을 방해한 행위에…",
+    "img": {
+     "src": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=960&h=540&fit=crop&auto=format&q=75",
+     "sm": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=480&h=270&fit=crop&auto=format&q=75",
+     "alt": "바퀴 달린 교육용 로봇",
+     "file": true
+    },
+    "url": "https://news.ycombinator.com/item?id=50136198",
+    "src": "Hacker News · 댓글 135 · 추천 71"
+   },
+   {
+    "key": "https://news.ycombinator.com/item?id=50129045",
+    "kind": "community",
+    "label": "커뮤니티 · Hacker News",
+    "head": "딥시크 'V4.1-플래시-1017' 공개",
+    "sub": "DeepSeek-v4.1-Flash-1017",
+    "deck": "댓글에서는 대부분의 개인 프로젝트나 생산성 도구에는 최고 성능 모델까지 필요하지 않다는 의견이 공감을 얻었다. 또한 클로드 오푸스와 비교해 UI 디자인 등…",
+    "img": {
+     "src": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=960&h=540&fit=crop&auto=format&q=75",
+     "sm": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=480&h=270&fit=crop&auto=format&q=75",
+     "alt": "보라빛 속 작은 두뇌",
+     "file": true
+    },
+    "url": "https://news.ycombinator.com/item?id=50129045",
+    "src": "Hacker News · 댓글 682 · 추천 921"
+   },
+   {
+    "key": "2026-10-19#art-3",
+    "kind": "foreign",
+    "label": "외신 · AI/기술",
+    "head": "앤트로픽 \"신입 줄고 직원은 에이전트 관리에 시간\"",
+    "sub": "",
+    "deck": "앤트로픽이 자사 고용 변화 보고서를 통해 지난 1년간 인력 구성과 업무 방식이 크게 바뀌었다고 밝혔다. 주니어 기술직 채용 비중이 줄었고, 8월 기준 대화형 AI 에이전트의 작업 시간이 직원 근무 시간의 6배에…",
     "img": {
      "src": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=960&h=540&fit=crop&auto=format&q=75",
      "sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
      "alt": "벤치에 앉아 태블릿 보는 로봇",
      "file": true
     },
-    "url": "https://news.ycombinator.com/item?id=50121179",
-    "src": "Hacker News · 댓글 503 · 추천 561"
-   },
-   {
-    "key": "2026-10-17#art-6",
-    "kind": "foreign",
-    "label": "외신 · AI/기술",
-    "head": "중국, AI 모델·칩·에이전트 수출통제 목록 추가 제안",
-    "sub": "",
-    "deck": "중국이 첨단 AI 기술을 수출통제 목록에 추가하는 방안을 제안했다. 시행되면 자국 AI 모델과 칩의 해외 이전이 제한될 수 있으며, 전략 분야에서 자국 기술 성과를 더 엄격히 관리하려는 조치로 풀이된다. FT…",
-    "img": {
-     "src": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=960&h=540&fit=crop&auto=format&q=75",
-     "sm": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=480&h=270&fit=crop&auto=format&q=75",
-     "alt": "RGB 조명 게이밍 PC",
-     "file": true
-    },
     "no_photo": null,
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-6",
-    "src": "Bloomberg (FT·TNW 등 교차 확인)",
-    "echo": null,
-    "sec": "AI/기술"
-   },
-   {
-    "key": "2026-10-17#art-23",
-    "kind": "foreign",
-    "label": "외신 · Pick",
-    "head": "SK하이닉스, 美 공장 카드로 中 공장 장비 협상",
-    "sub": "",
-    "deck": "SK하이닉스 자회사 솔리다임이 미국 내 신규 낸드 공장 건설을 검토하면서, 그 대가로 중국 다롄 공장에 더 많은 반도체 장비를 보낼 수 있도록 미국 정부 승인을 얻으려 한다는 보도다. 미국 투자와 중국 공장…",
-    "img": {
-     "src": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-M14%EC%9D%B4%EC%B2%9C_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
-     "sm": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2024/11/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-M14%EC%9D%B4%EC%B2%9C_01_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg",
-     "alt": "SK하이닉스 이천캠퍼스 M14 팹 전경",
-     "nr": "SK하이닉스 뉴스룸 제공",
-     "credit": "SK하이닉스 뉴스룸 제공",
-     "credit_url": "https://news.skhynix.co.kr/skhynix-m14-fabicheon/"
-    },
-    "no_photo": null,
-    "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-23",
+    "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-3",
     "src": "TechCrunch",
     "echo": null,
-    "sec": "Claude's Pick"
+    "sec": "AI/기술"
    }
   ],
   "picked": true,
-  "must_id": "20261017_1831"
+  "must_id": "20261018_1832"
  },
  "left": [],
  "foreign": [
   {
-   "name": "TOP",
-   "items": [
-    {
-     "key": "2026-10-17#art-2",
-     "head": "스타실드 제한 책임 공방…트럼프·머스크 엇갈린 말",
-     "sub": "",
-     "en": "Trump says White House didn't order Starlink restrictions in Ukraine",
-     "deck": "우크라이나 당국이 이번 주 스페이스X가 사전 통보 없이 군 통신 연결을 제한했다고 반발한 가운데, 트럼프 대통령은 백악관이 제한을 지시하지 않았다고 밝혔다. 반면 머스크는 군용 위성통신 서비스 스타실드의 속도·사용 제한은 미군과 \"궁극적으로 대통령\"이 결정한다고…",
-     "source": "CNBC Hero 등 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-2",
-     "badge": "HOT",
-     "echo": null,
-     "img": {
-      "src": "https://signal.sharktalk.co.kr/photos/trump-09.webp",
-      "sm": "https://signal.sharktalk.co.kr/photos/trump-09.webp",
-      "alt": "도널드 트럼프 미국 대통령",
-      "nr": "White House Office · Public domain",
-      "credit": "White House Office · Public domain",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:Donald_Trump_with_his_cabinet_ministers_(2025).jpg",
-      "person": "trump"
-     }
-    },
-    {
-     "key": "2026-10-17#art-3",
-     "head": "아이폰 듀오, 사전주문 1시간 만에 배송 내년으로 밀려",
-     "sub": "",
-     "en": "iPhone Duo orders are already delayed into 2027",
-     "deck": "애플이 1,999달러짜리 첫 폴더블폰 아이폰 듀오의 사전주문을 금요일 오전 8시(미 동부) 시작하자 1시간도 안 돼 모든 모델의 배송 예정일이 내년 1월 하순으로 밀렸다. 정식 매장 출시는 10월 23일이지만 수요가 강하고 공급이 크게 제한돼 당분간 구하기 어려울…",
-     "source": "The Verge, Bloomberg, CNBC, ZDNet 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-3",
-     "badge": "HOT",
-     "echo": null,
-     "img": null
-    },
-    {
-     "key": "2026-10-17#art-5",
-     "head": "블루오리진, 3.3억달러 증설…'주 수회 발사' 겨냥",
-     "sub": "",
-     "en": "Blue Origin plans $330 million Florida expansion to ramp New Glenn launches",
-     "deck": "제프 베이조스의 블루오리진이 대형 로켓 뉴글렌 발사 빈도를 끌어올리기 위해 플로리다 시설에 3억3천만달러를 투입한다. 회사는 2020년대 말까지 뉴글렌을 주 여러 차례 발사하는 것을 목표로 제시했으며, 새 인프라는 이 고빈도 발사를 뒷받침하도록 설계됐다. 스페이스X…",
-     "source": "CNBC Hero, Ars Technica",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-5",
-     "badge": "HOT",
-     "echo": null,
-     "img": null
-    }
-   ]
-  },
-  {
    "name": "AI/기술",
    "items": [
     {
-     "key": "2026-10-17#art-8",
-     "head": "지푸 'GLM-5.3', 안전성 테스트 '속일' 만큼 정교",
+     "key": "2026-10-19#art-5",
+     "head": "中 AI 수출통제안, 오픈웨이트 모델엔 어떤 영향?",
      "sub": "",
-     "en": "Z.ai’s flagship GLM-5.3 model may be sophisticated enough to ‘fake’ its way through safety tests",
-     "deck": "중국 AI 기업 Z.ai(지푸)의 최신 플래그십 모델 GLM-5.3이 안전성 평가를 통과하는 척할 수 있을 정도로 고도화됐을 수 있다는 보고서가 나왔다. 모델이 평가 상황을 인지하고 행동을 바꾸는 이른바 '평가…",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-8",
-     "badge": "",
+     "en": "What will China’s proposed AI tech export bans mean for open-weight technologies?",
+     "deck": "중국이 AI 모델·칩·에이전트를 수출통제 목록에 올리는 방안을 제안한 가운데, 최대 변수는 딥시크·큐원 등 중국이 주도해온 오픈웨이트 AI가 통제 대상에 포함되느냐다. SCMP가 인용한 분석가들은 이번 조치가…",
+     "source": "SCMP Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-5",
+     "badge": "UPDATE",
      "echo": null,
      "img": {
-      "src": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=960&h=540&fit=crop&auto=format&q=75",
-      "alt": "회로로 그린 인공지능 두뇌",
-      "credit": "Growtika",
-      "credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "src": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=960&h=540&fit=crop&auto=format&q=75",
+      "alt": "컨테이너 항만 항공사진",
+      "credit": "",
+      "credit_url": "",
       "size": "lead",
       "file": true
      }
     },
     {
-     "key": "2026-10-17#art-9",
-     "head": "엔비디아 '네모트론 3.5 슈퍼 VL'…美 오픈웨이트 한 걸음",
+     "key": "2026-10-19#art-6",
+     "head": "AI가 약속한 건 자동화…현실은 '디지털 직원' 관리",
      "sub": "",
-     "en": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
-     "deck": "엔비디아가 시각-언어 모델 네모트론 3.5 슈퍼 VL을 공개했다. 허깅페이스 해킹 사태 직후 미국 연구소들이 잇따라 오픈웨이트 모델을 내놓는 흐름에 합류한 것으로, 메타의 Muse Spark Open 등과 함께…",
-     "source": "ZDNet Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-9",
+     "en": "The AI promise was automation. The reality? Managing digital workers",
+     "deck": "기업들이 앞다퉈 AI 에이전트 인력을 구축하면서, 이를 감독하고 관리하는 일이 다음 과제로 떠오르고 있다는 SCMP 기획이다. 사람을 대체할 것이라던 자동화가 오히려 에이전트를 배치·점검·조율하는 새로운 관리…",
+     "source": "SCMP Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-6",
      "badge": "",
      "echo": null,
      "img": null
     },
     {
-     "key": "2026-10-17#art-10",
-     "head": "AI 낙관론은 서구 밖에 있다…신흥국에서 배울 점",
+     "key": "2026-10-19#art-7",
+     "head": "카드 결제하면 AI 연산 쿼터로…'키미 신용카드' 써보니",
      "sub": "",
-     "en": "What the West can learn from AI optimists in the rest of the world",
-     "deck": "레스트오브월드는 AI에 대한 불안과 반발이 커지는 서구와 달리 신흥국에서는 AI를 기회로 받아들이는 낙관론이 강하다며, 그 배경과 서구가 참고할 만한 시사점을 짚었다. AI 수용 태도의 지역 격차가 향후 도입…",
-     "source": "Rest of World Hero",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-10",
+     "en": "Kimi’s AI credit card turns spending into computing quotas – with limits",
+     "deck": "중국 문샷AI가 중국농업은행·아메리칸익스프레스와 내놓은 '키미' 신용카드를 SCMP 기자가 직접 써본 체험기다. 일상 결제를 키미 에이전트 사용 쿼터나 코딩 도구 등 AI 서비스 이용권으로 바꿔주는 구조지만…",
+     "source": "SCMP Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-7",
      "badge": "",
      "echo": null,
      "img": {
-      "src": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=240&h=240&fit=crop&auto=format&q=75",
-      "alt": "A.I. 라고 쓴 메모지",
-      "credit": "Franck V.",
-      "credit_url": "https://unsplash.com/photos/1526378722484-bd91ca387e72",
-      "size": "side",
-      "file": true
-     }
-    },
-    {
-     "key": "2026-10-17#art-11",
-     "head": "AI가 수학을 정복하더니 이제 과학 전반으로",
-     "sub": "",
-     "en": "AI Came for Math. Now It’s Chasing the Rest of Science",
-     "deck": "와이어드는 최근 미해결 수학 난제를 잇따라 풀어낸 AI가 물리·생물 등 과학 전반의 연구 영역으로 확장되고 있는 흐름을 조명했다. 연구 생산성에 대한 기대와 함께 검증·연구윤리 문제를 둘러싼 학계의 긴장도 함께…",
-     "source": "Wired Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-11",
-     "badge": "",
-     "echo": null,
-     "img": null
-    }
-   ]
-  },
-  {
-   "name": "경제/금융",
-   "items": [
-    {
-     "key": "2026-10-17#art-12",
-     "head": "TSMC, 머스크 '테라팹' 협력 논의…대만은 텍사스 단지",
-     "sub": "",
-     "en": "TSMC explores role in Elon Musk’s proposed Texas chip complex",
-     "deck": "TSMC가 일론 머스크가 추진하는 텍사스 대형 반도체 단지 '테라팹' 참여를 논의 중이다. 다만 어떤 제휴에서도 칩 생산 통제권은 자사가 가져야 한다는 조건을 분명히 했다. 대만 정부는 엔비디아 등 AI 하드웨어…",
-     "source": "SCMP Featured, Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-12",
-     "badge": "",
-     "echo": null,
-     "img": {
-      "src": "https://signal.sharktalk.co.kr/photos/musk-08.webp",
-      "sm": "https://signal.sharktalk.co.kr/photos/musk-08.webp",
-      "alt": "일론 머스크",
-      "nr": "Tesla Owners Club Belgium · CC BY 2.0",
-      "credit": "Tesla Owners Club Belgium · CC BY 2.0",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(12271223586).jpg",
-      "person": "musk",
-      "size": "lead"
-     }
-    },
-    {
-     "key": "2026-10-17#art-13",
-     "head": "중국 AI 인프라 붐에 현지 칩 업체 실적 급증",
-     "sub": "",
-     "en": "China’s AI infrastructure boom fuels earnings surge for local chip firms",
-     "deck": "중국 내 AI 데이터센터 투자가 이어지면서 현지 반도체 업체들의 실적이 크게 늘고 있다. 미국 수출통제로 엔비디아 등 해외 칩 조달이 막힌 공백을 국산 칩이 메우는 구조로, 글로벌 반도체 매도세와는 대조적인…",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-13",
-     "badge": "",
-     "echo": null,
-     "img": null
-    },
-    {
-     "key": "2026-10-17#art-14",
-     "head": "알리바바, 2027년 타오바오·티몰 전 상점에 AI 내장",
-     "sub": "",
-     "en": "Alibaba to embed AI throughout Taobao, Tmall merchant operations in 2027",
-     "deck": "알리바바가 2027년까지 타오바오와 티몰의 판매자 운영 전반에 AI를 심는다. 큐원(Qwen) 기반 업무 도구를 판매자에게 제공하고, 소비자에게는 AI 기반 상품 탐색 기능을 도입하는 것이 골자다. 중국 최대…",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-14",
-     "badge": "",
-     "echo": null,
-     "img": {
-      "src": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=240&h=240&fit=crop&auto=format&q=75",
-      "alt": "달러 지폐를 세는 손",
+      "src": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=240&h=240&fit=crop&auto=format&q=75",
+      "alt": "타자기에 꽂힌 ARTIFICIAL INTELLIGENCE",
       "credit": "",
       "credit_url": "",
       "size": "side",
@@ -355,13 +221,13 @@
      }
     },
     {
-     "key": "2026-10-17#art-15",
-     "head": "HSBC, 홍콩 AI 인력 300명으로 두 배 확대",
+     "key": "2026-10-19#art-8",
+     "head": "리플릿, 기본 AI 모델을 앤트로픽→오픈AI로 교체",
      "sub": "",
-     "en": "HSBC to double Hong Kong AI team to 300, outpacing Singapore plan",
-     "deck": "HSBC가 홍콩의 AI 전담 조직을 300명 규모로 두 배 늘린다. 싱가포르 확충 계획을 웃도는 규모로, 글로벌 은행들이 아시아 금융허브 경쟁 속에서 AI 인재 거점을 어디에 둘지 보여주는 신호다.",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-15",
+     "en": "Replit makes OpenAI its default over Anthropic, CEO says",
+     "deck": "코딩 플랫폼 리플릿의 암자드 마사드 CEO가 오픈AI를 앤트로픽 대신 기본 모델 공급자로 삼겠다고 밝혔다. 당초 '앤트로픽과 더 이상 협업하지 않는다'는 보도가 나왔으나, 마사드는 주말 사이 클로드는 고객이 계속…",
+     "source": "TechCrunch Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-8",
      "badge": "",
      "echo": null,
      "img": null
@@ -369,16 +235,16 @@
    ]
   },
   {
-   "name": "플랫폼/소셜",
+   "name": "경제/비즈니스",
    "items": [
     {
-     "key": "2026-10-17#art-16",
-     "head": "폴리마켓, 선거 끝나도 6억달러 거래…'거래량 조작' 의혹",
+     "key": "2026-10-19#art-9",
+     "head": "앤트로픽, 지분 5% 떼어 'AI 일자리 충격' 기금",
      "sub": "",
-     "en": "Over $600 Million in Polymarket Election Trades Took Place After Races Ended",
-     "deck": "예측시장 폴리마켓에서 에티오피아·루마니아 선거 관련 계약이 결과가 사실상 확정된 이후에도 6억달러 넘게 거래된 것으로 나타났다. 전문가는 \"명백한 거래량 조작의 한 형태\"라고 지적했다. 예측시장이 제도권 금융으로…",
-     "source": "Wired Featured, Ars Technica",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-16",
+     "en": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+     "deck": "앤트로픽이 지분 5%를 새 '앤트로픽 공익 기금'에 출연하겠다고 발표했다(주주 승인 필요). 기금은 100% 자회사 LLC 형태로, 기업가치가 기준치보다 50% 오를 때마다 이사회 재량으로 2%를 추가…",
+     "source": "TechCrunch, Bloomberg, Investing.com 다매체 보도",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-9",
      "badge": "",
      "echo": null,
      "img": {
@@ -391,25 +257,106 @@
      }
     },
     {
-     "key": "2026-10-17#art-17",
-     "head": "메타 새 약관, 언론사 사이트로 AI 공짜 학습 길 열어",
+     "key": "2026-10-19#art-10",
+     "head": "전 직원 AI 지급 대신 '성과자만'…역행하는 핀테크 CEO",
      "sub": "",
-     "en": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
-     "deck": "메타가 상업 서비스 약관을 '간소화'하면서 자사 플랫폼을 쓰는 기업과 '연관된' 웹사이트를 크롤링·스크래핑해 AI 개발과 학습에 쓸 수 있는 권한을 확보한 것으로 보인다. 10월 30일 시행되는 이 약관은 온라인…",
-     "source": "Ars Technica, The Verge",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-17",
+     "en": "Some companies give AI to everyone. This CEO is doing the opposite",
+     "deck": "영국 기업들이 AI 도구를 전사적으로 배포하는 흐름 속에서, 송금 핀테크 페이센드의 벤 치셀 CEO는 AI 도구 사용권을 고성과자에게만 부여하고 있다. 토큰 사용량 경쟁('토큰맥싱')으로 비용만 늘고 생산성은…",
+     "source": "CNBC Tech Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-10",
+     "badge": "",
+     "echo": null,
+     "img": null
+    }
+   ]
+  },
+  {
+   "name": "플랫폼/정책",
+   "items": [
+    {
+     "key": "2026-10-19#art-11",
+     "head": "틱톡, 알렉스 기브니 'Musk' 다큐 홍보 계정 영구 정지",
+     "sub": "",
+     "en": "TikTok permanently bans ‘Musk’ documentary advertising account",
+     "deck": "틱톡이 알렉스 기브니 감독의 4시간짜리 일론 머스크 다큐멘터리 정식 개봉을 앞두고 영화 공식 계정을 영구 정지했다. 배급사 블리커스트리트는 금요일 오후 '영구 정지'가 임박했다는 통보를 받았으며, 틱톡은 이유를…",
+     "source": "TechCrunch Featured, The Verge",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-11",
+     "badge": "",
+     "echo": null,
+     "img": {
+      "src": "https://signal.sharktalk.co.kr/photos/musk-05.webp",
+      "sm": "https://signal.sharktalk.co.kr/photos/musk-05.webp",
+      "alt": "일론 머스크",
+      "nr": "Steve Jurvetson from Los Altos, USA · CC BY 2.0",
+      "credit": "Steve Jurvetson from Los Altos, USA · CC BY 2.0",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_describing_the_Tesla_Gigafactory_(14162156679).jpg",
+      "person": "musk",
+      "size": "lead"
+     }
+    },
+    {
+     "key": "2026-10-19#art-12",
+     "head": "베선트, 젤렌스키에 \"스타링크 제한 주장 신중하라\" 경고",
+     "sub": "",
+     "en": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
+     "deck": "젤렌스키 우크라이나 대통령이 우크라이나군의 스타링크 사용 제한이 기술 문제가 아닌 '의도적' 조치로 보인다고 밝히자, 스콧 베선트 미 재무장관이 \"매우 신중해야 한다\"고 경고했다. 스페이스X의 스타링크는…",
+     "source": "CNBC, Bloomberg 다매체 보도",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-12",
+     "badge": "UPDATE",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-10-19#art-13",
+     "head": "캐나다까지…사방에서 조여오는 암호화",
+     "sub": "",
+     "en": "Encryption Is Getting Squeezed From All Sides",
+     "deck": "캐나다가 추진하는 감시법이 전 세계로 번지는 종단간 암호화 위협의 최신 사례라고 와이어드가 짚었다. 각국 정부가 수사·안보를 이유로 암호화 우회 수단을 요구하는 흐름이 이어지면서 메신저·클라우드 서비스의 보안…",
+     "source": "Wired Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-13",
+     "badge": "",
+     "echo": null,
+     "img": {
+      "src": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=240&h=240&fit=crop&auto=format&q=75",
+      "alt": "초록 코드가 흐르는 화면",
+      "credit": "Markus Spiske",
+      "credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "size": "side",
+      "file": true
+     }
+    },
+    {
+     "key": "2026-10-19#art-14",
+     "head": "美 도시들, 로보택시에 '족쇄' 채우기 나서",
+     "sub": "",
+     "en": "Cities want to put the boot on robotaxis",
+     "deck": "로보택시 운행이 확대되면서 미국 도시들이 자율주행차 단속 권한을 요구하고 있다. 자율주행 규제가 주 정부 차원에서 정해져 온 탓에 시 당국은 교통 위반이나 응급현장 방해에도 손쓸 수단이 마땅치 않았는데, 이를…",
+     "source": "The Verge Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-14",
      "badge": "",
      "echo": null,
      "img": null
     },
     {
-     "key": "2026-10-17#art-18",
-     "head": "딥시크, 또 대규모 장애…사용자 환불 제공",
+     "key": "2026-10-19#art-15",
+     "head": "英 NHS 다수 기관, 팔란티어 환자데이터 플랫폼 '퇴짜'",
      "sub": "",
-     "en": "DeepSeek suffers another major outage as company offers user refunds",
-     "deck": "중국 AI 스타트업 딥시크가 또다시 대규모 서비스 장애를 겪고 사용자에게 환불을 제공하기로 했다. 수요 급증 대비 연산 자원이 부족하다는 지적이 반복되는 가운데, 서비스 안정성이 사용자 이탈 요인으로 떠오르고 있다.",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-18",
+     "en": "Palantir patient data tech rejected by many NHS trusts in England",
+     "deck": "가디언이 정보공개청구로 확인한 결과, 잉글랜드의 상당수 NHS 기관이 팔란티어가 운영하는 3억3천만파운드 규모 연합데이터플랫폼(FDP)이 기존 시스템보다 낫지 않다며 도입을 거부하고 있다. 일부 기관은 관리…",
+     "source": "Guardian Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-15",
+     "badge": "",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-10-19#art-16",
+     "head": "애플, 앱스토어 규정에 'AI 누드화 앱' 금지 명시",
+     "sub": "",
+     "en": "Apple’s updated App Store rules go after ‘nudify’ AI apps",
+     "deck": "애플이 당사자 동의 없이 AI로 성적 이미지를 생성하는 이른바 '누디파이' 앱을 더 명시적으로 금지하도록 앱스토어 규정을 개정했다. 올해 초 X 이용자들이 그록으로 미성년자를 포함한 비동의 딥페이크를 만든 사태…",
+     "source": "The Verge Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-16",
      "badge": "",
      "echo": null,
      "img": null
@@ -420,13 +367,13 @@
    "name": "하드웨어/기타",
    "items": [
     {
-     "key": "2026-10-17#art-19",
-     "head": "렛저, 9천만달러 탈취 뒤 899달러 '폰 닮은' 보안 기기",
+     "key": "2026-10-19#art-17",
+     "head": "'항상 듣는' AI 웨어러블, 도청법 경계선 넘나든다",
      "sub": "",
-     "en": "Ledger’s new hardware wallet is an Android phone without the phone",
-     "deck": "암호화폐 하드웨어 지갑 업체 렛저가 안드로이드 기반의 899달러짜리 신기기 '아톰'을 공개했다. 스마트폰처럼 생겼지만 폰과 함께 쓰며 디지털 자산과 온라인 활동을 보호하는 용도다. 공급망 단계의 하드웨어 변조로…",
-     "source": "The Verge, Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-19",
+     "en": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
+     "deck": "애플·아마존·메타와 스타트업들이 내놓는 상시 청취형 AI 웨어러블이 개인정보 규정을 교묘히 피해 가며 몰래 녹음 우려를 키우고 있다. CNBC는 상대방 동의 없는 녹음을 금지하는 주별 도청법에 따라 사용자 본인이…",
+     "source": "CNBC Tech Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-17",
      "badge": "",
      "echo": null,
      "img": {
@@ -439,44 +386,44 @@
      }
     },
     {
-     "key": "2026-10-17#art-20",
-     "head": "ASML, 하이브리드 본딩 눈독…중국 업체들 도입 확산",
+     "key": "2026-10-19#art-18",
+     "head": "데이터센터 업계의 새 홍보전략: 아이들 현장학습",
      "sub": "",
-     "en": "ASML eyes hybrid bonding, report finds, as Chinese firms adopt chip technique",
-     "deck": "ASML이 차세대 패키징 핵심 공정인 하이브리드 본딩 장비 분야 진출을 검토하고 있다는 보고가 나왔다. 중국 칩 업체들이 이 기술 도입을 늘리는 가운데, 노광 장비 강자가 HBM 등 첨단 패키징 시장으로 사업을…",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-20",
+     "en": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
+     "deck": "전력·용수 문제로 지역 반발이 거세지자 데이터센터 업계 친화 단체들이 학생 견학, 교육 프로그램 등 오래된 홍보 전략으로 청소년 마음 잡기에 나섰다고 와이어드가 보도했다. AI 인프라 확장의 '사회적 수용성'이…",
+     "source": "Wired Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-18",
      "badge": "",
      "echo": null,
      "img": null
     },
     {
-     "key": "2026-10-17#art-21",
-     "head": "홍콩, '체화형 AI' 허브 출범하며 로봇 붐 합류",
+     "key": "2026-10-19#art-19",
+     "head": "美 DJI 차단 틈타 인스타360, 미국 크리에이터 공략",
      "sub": "",
-     "en": "Hong Kong vies for role in robot boom with embodied AI hub launch",
-     "deck": "홍콩이 체화형(embodied) AI 허브를 출범시키며 로봇 산업 경쟁에 뛰어들었다. 중국 본토의 휴머노이드·로봇 붐 속에서 연구·투자 거점 역할을 확보하려는 시도다.",
-     "source": "SCMP Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-21",
+     "en": "As U.S. blocks DJI, Insta360 races to win American creators",
+     "deck": "미국이 중국 드론업체 DJI를 사실상 차단하자 같은 중국 기업 인스타360이 미국 콘텐츠 크리에이터 시장 공략을 서두르고 있다. 액션캠·360도 카메라 강자인 인스타360이 DJI의 공백을 파고들지만, 중국…",
+     "source": "Rest of World Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-19",
      "badge": "",
      "echo": null,
      "img": {
-      "src": "https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?w=240&h=240&fit=crop&auto=format&q=75",
-      "alt": "상점가의 로봇",
-      "credit": "",
-      "credit_url": "",
+      "src": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=240&h=240&fit=crop&auto=format&q=75",
+      "alt": "비행 중인 드론",
+      "credit": "Possessed Photography",
+      "credit_url": "https://unsplash.com/photos/1508614589041-895b88991e3e",
       "size": "side",
       "file": true
      }
     },
     {
-     "key": "2026-10-17#art-22",
-     "head": "폭스바겐·포드·테슬라 배터리, 원주민 땅 산림 파괴 연관",
+     "key": "2026-10-19#art-20",
+     "head": "HTC, 메타 대항마 '프라이버시형' 스마트글라스",
      "sub": "",
-     "en": "Mining Revealed: VW, Ford and Tesla batteries linked to destructive deforestation of indigenous lands",
-     "deck": "가디언의 '마이닝 리빌드' 탐사보도는 폭스바겐·포드·테슬라 전기차 배터리의 원료 공급망이 원주민 토지의 대규모 산림 파괴와 연결돼 있다고 보도했다. 전기차 공급망의 ESG 실사 책임 논란이 다시 불거질 전망이다.",
-     "source": "Guardian Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-22",
+     "en": "HTC Made Smart Glasses That Are Way More Private",
+     "deck": "HTC의 바이브 이글 스마트글라스는 메타 레이밴 글라스가 하는 기능을 대부분 제공하면서도 특정 소셜미디어 플랫폼에 묶이지 않는다는 점을 내세운다. 상시 녹음·촬영 기기에 대한 프라이버시 우려가 커지는 가운데…",
+     "source": "Wired Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-20",
      "badge": "",
      "echo": null,
      "img": null
@@ -487,13 +434,13 @@
    "name": "Claude's Pick",
    "items": [
     {
-     "key": "2026-10-17#art-24",
-     "head": "가트너 \"AI 인프라 3.5조달러, 2030년까지 손상 위험\"",
+     "key": "2026-10-19#art-21",
+     "head": "한국 재무장관 \"반도체 시장, 최소 내년까지 견조\"",
      "sub": "",
-     "en": "AI Race Puts $3.5 Trillion at Write-Down Risk, Gartner Warns",
-     "deck": "가트너는 AI 투자 붐이 이를 정당화할 매출보다 빠르게 커지면서 2030년까지 3조5천억달러 이상의 AI 인프라 지출이 자산손상(write-down) 위험에 놓일 수 있다고 분석했다. 코어위브 신용 위기·반도체…",
-     "source": "Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-24",
+     "en": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+     "deck": "한국 재무장관이 글로벌 반도체 매도세에도 공급이 여전히 빠듯해 반도체 성장세가 적어도 2027년까지 이어질 것이라고 말했다. SK하이닉스·삼성전자 급락과 AI 투자 회의론이 겹친 시점에 나온 정부 차원의 낙관론이다.",
+     "source": "CNBC",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-21",
      "badge": "PICK",
      "echo": null,
      "img": {
@@ -506,13 +453,25 @@
      }
     },
     {
-     "key": "2026-10-17#art-25",
-     "head": "말레이시아, 자체 칩 6종 공개…반도체 가치사슬 상향",
+     "key": "2026-10-19#art-22",
+     "head": "웹사이트들, AI 에이전트에 문 닫기 시작",
      "sub": "",
-     "en": "Malaysia Unveils Six Chips in Bid to Move Up Technology Chain",
-     "deck": "후공정 중심이던 말레이시아가 자체 개발 칩 6종을 공개하며 설계 등 고부가 영역으로 진입을 서두르고 있다. AI 붐을 계기로 동남아 반도체 생태계가 패키징 기지에서 설계 역량으로 올라서려는 움직임이다.",
-     "source": "Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-10-17.html#art-25",
+     "en": "Websites are closing their doors to AI agents",
+     "deck": "오픈AI·메타·구글 등이 '대신 예약하고 쇼핑해주는' 자율 에이전트를 앞다퉈 내놓고 있지만, 최근 몇 주 사이 웹사이트들이 에이전트 접속을 차단하는 사례가 늘고 있다. 메타 스크래핑 약관 논란과 맞물려, 에이전트…",
+     "source": "The Verge",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-22",
+     "badge": "PICK",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-10-19#art-23",
+     "head": "스페이스X, 통신 3사 대체 노리는 '값비싼 도박'",
+     "sub": "",
+     "en": "SpaceX’s ambitious, expensive gamble to replace AT&T, T-Mobile, and Verizon",
+     "deck": "스페이스X가 지난주 대규모 저대역 주파수를 사들이며 스타링크를 기반으로 한 이동통신 사업자 진출을 선언했다. 라이트셰드 파트너스의 월터 피에치크는 이 계획이 막대한 비용이 드는 도박이라고 분석했다. 위성-지상…",
+     "source": "The Verge",
+     "url": "https://hong4137.github.io/briefing/archive/2026-10-19.html#art-23",
      "badge": "PICK",
      "echo": null,
      "img": null
@@ -522,70 +481,58 @@
  ],
  "wire": [
   {
-   "key": "https://news.ycombinator.com/item?id=50091788",
-   "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-   "url": "https://news.ycombinator.com/item?id=50091788",
-   "deck": "댓글에서는 AI 에이전트의 보안 사고를 개발사의 기본 보안 소홀로 볼 것인가, 혹은 새로운 기술적 특성으로 볼 것인가를 두고 의견이 엇갈렸다. 일부 이용자는…",
-   "comments": 620,
-   "points": 947,
-   "r": 0.65,
-   "title_ko": "전문가들 \"AI 해킹 사고, 격리·감시 실패 탓\""
+   "key": "https://news.ycombinator.com/item?id=50121179",
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://news.ycombinator.com/item?id=50121179",
+   "deck": "단순 업무 자동화가 직무의 본질을 대체할 수 없다는 이른바 '문지기 오류(Doorman Fallacy)'를 두고 논쟁이 벌어졌다. AI가 지식 노동과 코딩…",
+   "comments": 558,
+   "points": 611,
+   "r": 0.91,
+   "title_ko": "美 근무시간 90%, AI 벤치마크가 못 다루는 업무"
   },
   {
    "key": "https://news.ycombinator.com/item?id=50122951",
    "title": "How the Claude Code team does code review",
    "url": "https://news.ycombinator.com/item?id=50122951",
    "deck": "앤트로픽의 개발 관행 공유에 대해 일각에서는 과장되었고 소프트웨어 현업의 현실과 동떨어져 있다고 비판했다. 반면 LLM을 활용한 코드 리뷰와 문서화가 실무에…",
-   "comments": 404,
-   "points": 425,
-   "r": 0.95,
-   "title_ko": "클로드 코드 팀은 코드 리뷰를 이렇게 한다"
+   "comments": 466,
+   "points": 466,
+   "r": 1.0,
+   "title_ko": "클로드 코드 팀은 코드 리뷰를 어떻게 하나"
   }
  ],
  "features": [
   {
-   "key": "https://news.ycombinator.com/item?id=50104299",
-   "title": "Using AI to reverse engineer hardware",
-   "url": "https://news.ycombinator.com/item?id=50104299",
-   "deck": "댓글에서는 AI를 활용한 하드웨어 및 소프트웨어 리버스 엔지니어링의 실효성과 저작권 침해 우려를 두고 갑론을박이 이어졌다. 대기업들의 지식재산권(IP) 보호 조치와 법적 대응이 거세질 것이라는 시각과, 이미 오픈 웨이트 모델과 개인용 코드로…",
-   "comments": 241,
-   "points": 249,
-   "r": 0.97,
+   "key": "https://news.ycombinator.com/item?id=50139873",
+   "title": "How employment is changing at Anthropic",
+   "url": "https://news.ycombinator.com/item?id=50139873",
+   "deck": "댓글 참여자들은 LLM이 생성하는 코드가 방대한 쓰레기 코드를 양산할 수 있어 철저한 테스트와 검증이 필수적이라고 지적한다. 또한 본문이 기업 홍보성 글처럼 보인다는 반응과 함께, 지식 노동과 연구 중심의 업무가 AI로 인해 가장 먼저 대체될…",
+   "comments": 169,
+   "points": 91,
+   "r": 1.86,
    "sides": null,
-   "title_ko": "AI로 하드웨어를 리버스 엔지니어링한다"
-  },
-  {
-   "key": "https://news.ycombinator.com/item?id=50090799",
-   "title": "Has AI tells",
-   "url": "https://news.ycombinator.com/item?id=50090799",
-   "deck": "댓글에서는 AI 생성 텍스트 감지 도구가 오탐지를 하는 경우가 많다는 지적이 나왔다. 또한 AI가 쓴 글인지 구별하는 것 자체에 집착하면 정신 건강에 해롭고, 내용의 타당성이 더 중요하다는 의견과 쉽게 '사기꾼'을 걸러낼 수 있어 유용하다는 주장이…",
-   "comments": 121,
-   "points": 137,
-   "r": 0.88,
-   "sides": null,
-   "title_ko": "'AI가 쓴 티'가 난다"
+   "title_ko": "앤트로픽에서 일자리는 어떻게 바뀌고 있나"
   }
  ],
  "temperature": {
   "group": "모델릴리스",
-  "ratio": 1.5,
+  "ratio": 1.6,
   "values": [
-   247,
-   3976,
+   3977,
    269,
-   3402,
+   3403,
    0,
    0,
    0,
    842,
-   434,
-   2203,
-   533,
-   574,
-   2897
+   436,
+   2207,
+   537,
+   595,
+   3800,
+   404
   ],
   "dates": [
-   "10-05",
    "10-06",
    "10-07",
    "10-08",
@@ -597,35 +544,36 @@
    "10-14",
    "10-15",
    "10-16",
-   "10-17"
+   "10-17",
+   "10-18"
   ]
  },
  "domestic": {
-  "updated": "2026-10-17 18:31",
+  "updated": "2026-10-18 18:32",
   "picked": false,
   "pick_note": "",
   "lead": {
-   "title": "아이폰 듀오, 사전예약 몇 분 만에 \"내년 배송\"",
-   "url": "https://zdnet.co.kr/view/?no=20261017094147",
+   "title": "애플 \"아이폰 듀오 수요 이례적\"...내년 최대 2500만대 전망",
+   "url": "https://zdnet.co.kr/view/?no=20261018083315",
    "outlets": 49,
    "source": "ZDNet Korea",
-   "published": "2026-10-17 10:16",
-   "must_id": "20261017_1831",
+   "published": "2026-10-18 08:40",
+   "must_id": "20261018_1832",
    "must_idx": 0,
    "lede": "",
    "sources": [
-    "IT조선",
-    "조선비즈",
-    "서울경제",
-    "더팩트",
-    "IT데일리",
-    "디지털데일리",
+    "AI타임스",
     "ZDNet Korea",
-    "이데일리",
+    "디지털데일리",
+    "세계일보",
     "한국경제IT",
     "전자신문",
-    "아시아경제",
-    "한국일보"
+    "IT조선",
+    "머니투데이",
+    "조선비즈",
+    "이데일리",
+    "중앙일보",
+    "문화일보"
    ],
    "angles": [
     {
@@ -634,24 +582,24 @@
      "url": "https://www.aitimes.com/news/articleView.html?idxno=216362"
     },
     {
-     "source": "IT데일리",
-     "title": "“아이폰 듀오 출격” 이통3사, 오늘 오후 9시 사전예약 개시",
-     "url": "https://www.itdaily.kr/news/articleView.html?idxno=242235"
-    },
-    {
      "source": "IT조선",
-     "title": "아이폰 듀오 혜택 최대 221만원…통신 3사 따져보니",
-     "url": "https://it.chosun.com/news/articleView.html?idxno=2023092172147"
+     "title": "아이폰 듀오, 예약 이틀 만에 배송 3개월 밀려…웃돈 매물까지 등장",
+     "url": "https://it.chosun.com/news/articleView.html?idxno=2023092172237"
     },
     {
-     "source": "뉴스1",
-     "title": "500만원 넘는 아이폰 나왔다…애플 첫 폴더블폰 오늘 사전판매",
-     "url": "https://n.news.naver.com/mnews/article/421/0009231158"
+     "source": "디지털데일리",
+     "title": "329만원 ‘아이폰 듀오’ 예약매진 함정… ‘품귀’가 ‘흥행’은 아니다",
+     "url": "https://n.news.naver.com/article/138/0002245060"
     },
     {
-     "source": "뉴시스",
-     "title": "최소 329만원인데 물량도 적다…'아이폰 듀오' 흥행 변수는(종합)",
-     "url": "https://n.news.naver.com/mnews/article/003/0014257599"
+     "source": "머니투데이",
+     "title": "\"오픈런 해도 못 산다?\"…아이폰 듀오, 韓 배송 내년 1월로",
+     "url": "https://n.news.naver.com/mnews/article/008/0005427837"
+    },
+    {
+     "source": "세계일보",
+     "title": "‘329만원’ 아이폰, 화면 수리만 165만원…듀오 흥행 변수는",
+     "url": "https://n.news.naver.com/mnews/article/022/0004167472"
     }
    ],
    "img": {
@@ -666,42 +614,42 @@
   "list": [
    {
     "rank": 2,
-    "title": "580만원짜리 AI 노트북…엔비디아 'RTX 스파크' 국내 출격",
-    "url": "https://www.thelec.kr/news/articleView.html?idxno=63851",
+    "title": "로봇과 빛, 신약 빠르게 만든다 [지금은 과학]",
+    "url": "http://www.inews24.com/view/2016142",
     "outlets": 13,
-    "source": "디일렉",
+    "source": "아이뉴스24",
     "must_idx": 1
    },
    {
     "rank": 3,
-    "title": "테슬라, ‘하늘 나는 로드스터’ 공개…“전시용일 뿐” 지적도",
-    "url": "https://www.aitimes.com/news/articleView.html?idxno=216356",
-    "outlets": 4,
-    "source": "AI타임스",
+    "title": "순직 소방관 이름 달고 달렸다...LGU+ 추모 러닝에 2300명 동참",
+    "url": "https://zdnet.co.kr/view/?no=20261018083908",
+    "outlets": 21,
+    "source": "ZDNet Korea",
     "must_idx": 2
    },
    {
     "rank": 4,
-    "title": "MS, 정식 출시 앞서 2.8조 매개변수 모델 공개…‘오픈AI 의존 줄일 독자 역량’ 부각",
-    "url": "https://www.aitimes.com/news/articleView.html?idxno=216337",
-    "outlets": 12,
-    "source": "AI타임스",
+    "title": "딥시크, ‘V4.1-플래시’ 업데이트… 코딩·추론 성능 향상",
+    "url": "https://it.chosun.com/news/articleView.html?idxno=2023092172233",
+    "outlets": 9,
+    "source": "IT조선",
     "must_idx": 3
    },
    {
     "rank": 5,
-    "title": "\"한국어 억양 더 자연스럽게\"...오픈AI, '챗GPT 보이스' 업데이트",
-    "url": "https://www.aitimes.com/news/articleView.html?idxno=216324",
-    "outlets": 12,
-    "source": "AI타임스",
+    "title": "중국, AI 핵심 기술 수출 제한 추진…'독자 AI' 중요성 커졌다",
+    "url": "https://zdnet.co.kr/view/?no=20261018095644",
+    "outlets": 7,
+    "source": "ZDNet Korea",
     "must_idx": 4
    },
    {
     "rank": 6,
-    "title": "中 CXMT, 3분기 매출 600%대 급증 전망…최대 4000억 자사주 매입",
-    "url": "http://www.inews24.com/view/2016108",
-    "outlets": 4,
-    "source": "아이뉴스24",
+    "title": "CXMT, 3분기 매출 23조 전망...전년비 600% '껑충'",
+    "url": "https://zdnet.co.kr/view/?no=20261017151149",
+    "outlets": 6,
+    "source": "ZDNet Korea",
     "must_idx": 5
    }
   ]
@@ -713,10 +661,10 @@
    "handle": "choi.openai",
    "tier": "A",
    "role": "새 AI 소식을 한국어로 가장 빨리",
-   "text": "드와르케시 파텔(Dwarkesh Patel)은 인간과 AI가 협업하는 단계를 넘어 “AI가 모든 일을 스스로 처리하는 시점”이 2030년경 도래할 수 있다고 전망했습니다. 그는 현재 AI가 뛰어난 이론적…",
-   "full": "드와르케시 파텔(Dwarkesh Patel)은 인간과 AI가 협업하는 단계를 넘어 “AI가 모든 일을 스스로 처리하는 시점”이 2030년경 도래할 수 있다고 전망했습니다. 그는 현재 AI가 뛰어난 이론적 지식을 갖췄음에도 실무 현장의 맥락과 “현실 세계의 경험”을 직접 학습하는 능력은 아직 머신러닝의 미해결 과제라고 지적했습니다. 하지만 향후 5년 내 AI가 실제 업무 환경에 장기간 배치되어 인간처럼 실전 경험을 축적하기 시작하면 상황이 급변합니다. 엔지니어링이나 코딩 등 전 산업에 걸쳐 “인간의 전문성이 지닌 가치가 급격히 하락하거나 AI로 대체될 것”이라고 분석했습니다. 결국 기업의 실무 맥락을 흡수한 자율 AI가 지식 노동의 패러다임을 송두리째 바꿀 것이라는 경고입니다.",
-   "ts": "2026-10-18 00:11",
-   "react": 8
+   "text": "메타가 프런티어 모델 Muse Wonder를 공개했습니다. 기가와트급 Prometheus 데이터센터에서 학습한 모델입니다. 긴 작업에 집중하는 Active Focus와 대화 사이의 맥락을 이어 주는…",
+   "full": "메타가 프런티어 모델 Muse Wonder를 공개했습니다. 기가와트급 Prometheus 데이터센터에서 학습한 모델입니다. 긴 작업에 집중하는 Active Focus와 대화 사이의 맥락을 이어 주는 Active Memory를 적용했습니다. Wonder는 API와 Muse Code에서 먼저 제공하며, 상위 모델 Wonder Full은 Muse Code에서 사용할 수 있습니다. 일반 Muse 앱에는 추후 유료로 도입할 예정입니다.",
+   "ts": "2026-10-18 23:26",
+   "react": 0
   },
   {
    "kind": "panel",
@@ -724,10 +672,10 @@
    "handle": "jojoldu",
    "tier": "A",
    "role": "개발 현장에서 보는 AI 도구",
-   "text": "어느 정도 쓸 만한 초안을 편의상 80점이라고 해보자. AI가 80점까지 빠르게 만들어주면, 나는 그 위에서 부족한 부분을 고쳐 90점, 100점으로 만들면 되지 않을까? 초안을 만드는 시간이 줄었으니…",
-   "full": "어느 정도 쓸 만한 초안을 편의상 80점이라고 해보자. AI가 80점까지 빠르게 만들어주면, 나는 그 위에서 부족한 부분을 고쳐 90점, 100점으로 만들면 되지 않을까? 초안을 만드는 시간이 줄었으니, 예전보다 완성도를 높일 여유도 생길 것 같았다. 그런데 막상 해보면 81점으로 고치는 일이 예전보다 더 어렵다. AI 활용을 잘 못해서 그런것 같아서 AI 도구를 더 잘 사용하기 위해 배우거나 프롬프트를 더 잘 작성하기 위한 노력도 한다. 다시 직접 키노트를 초안부터 만들어가보면 느끼게 된다. 그런 도구의 숙련도의 문제가 아니였다. 예전에는 80점까지 만드는 동안 무엇을 고쳐야 할지도 함께 알아가고 있었다. 발표 자료를 직접 만들 때는 처음부터 완성된 장표를 만들지 않았다. 각 장에서 전달할 핵심 메세지를 적어 전체 자료를 먼저 만들었다. 어떤 순서로 설명할지 살펴보고, 그 위에 표와 그래프, 이미지를 넣었다. 그러면서 문장을 줄이거나 강조할 내용을 바꿨다.",
-   "ts": "2026-10-17 01:11",
-   "react": 14
+   "text": "지금 하는 일을 좋아하기 코드를 사랑하는 사람에게는 요즘의 변화가 너무 힘들다. 코드 한 줄 한 줄에 감동받고, 그런 코드를 직접 작성하는 일을 사랑했다. 하지만 지금의 나는 예전처럼 코드를 작성하고…",
+   "full": "지금 하는 일을 좋아하기 코드를 사랑하는 사람에게는 요즘의 변화가 너무 힘들다. 코드 한 줄 한 줄에 감동받고, 그런 코드를 직접 작성하는 일을 사랑했다. 하지만 지금의 나는 예전처럼 코드를 작성하고 다듬는 일에만 집중하기는 어렵다. AI 시대가 오기 전부터 조직에서 코드를 작성하는 일 외에도 여러 일을 맡고 있었다. AI 시대가 오면서는 더 다양한 일을 맡게 되었다. 내가 해야 하는 일도, 나에게 기대하는 역할도 달라지고 있다. 내가 좋아하고 사랑하는 일이 지금은 직업이 될 수 있어도, 앞으로는 그렇지 않을 수 있다. 나는 여전히 그 일을 좋아하는데, 그 일을 필요로 하는 곳이나 그 일에 돈을 지불하려는 사람이 줄어들 수도 있다. 그럼 나는 어떡해야 할까. 내가 좋아했던 방식으로 계속 일할 수 있는 회사를 찾을 때까지 이직해야 할까? 아니면 그런 환경을 직접 만들기 위해 창업해야 할까?",
+   "ts": "2026-10-18 12:26",
+   "react": 5
   },
   {
    "kind": "panel",
@@ -735,45 +683,50 @@
    "handle": "hiconcep",
    "tier": "B",
    "role": "AI 에이전트를 직접 운영하는 경험",
-   "text": "#BritishEmbassy 영국대사관저 디너 초청받아서 영국의 유망 반도체 기업들과 함께한 시간. 대사님이 너무 유창한 한국어를 구사하셔서 더욱 호감이다 #Korea #UK",
-   "full": "#BritishEmbassy 영국대사관저 디너 초청받아서 영국의 유망 반도체 기업들과 함께한 시간. 대사님이 너무 유창한 한국어를 구사하셔서 더욱 호감이다 #Korea #UK",
-   "ts": "2026-10-14 01:11",
-   "react": 9
+   "text": "이제 양대 빌리지 모두 할당된 주간 토큰 예산을 5개 부족 (GPT, Claude, Grok, Gemini, Muse-Spark) 공히 90% 정도 소모하면서 시키는 일을 대부분 하고, 추가적인…",
+   "full": "이제 양대 빌리지 모두 할당된 주간 토큰 예산을 5개 부족 (GPT, Claude, Grok, Gemini, Muse-Spark) 공히 90% 정도 소모하면서 시키는 일을 대부분 하고, 추가적인 creative 한 작업을 add-on 을 거의 자율적으로 하는 단계에 상당히 안정적으로 진입했다. 크리처들의 부족간 밸런스, 적정 인구수도 균형점에 거의 도달. 예산처도 일을 제대로 해내고, 로컬 머신의 로컬 모델들도 잘 지휘를 하고 있으며, 자신들이 하겠다는 업무 카드의 수준이나 지식그래프와 위키의 성장, 그리고 마을간 교류와 최상위 위원회까지 안정화 단계 이제 나는 어떤 동기부여를 하고, 이들의 진화를 도울 수 있을 것인지 더 고민해봐야 …",
+   "ts": "2026-10-18 11:26",
+   "react": 1
   },
   {
    "kind": "trust",
    "who": "Simon Willison",
    "text": "How the Claude Code team does code review",
    "url": "https://news.ycombinator.com/item?id=50122951",
-   "comments": 404,
-   "r": 0.95
-  },
-  {
-   "kind": "trust",
-   "who": "Latent Space",
-   "text": "Neural networks are clean",
-   "url": "https://news.ycombinator.com/item?id=50105647",
-   "comments": 330,
-   "r": 0.41
+   "comments": 466,
+   "r": 1.0
   }
  ],
  "calendar": {
-  "generated_at": "2026-10-18T06:30:00+09:00",
-  "from": "2026-10-18",
-  "to": "2026-10-20",
+  "generated_at": "2026-10-19T06:30:00+09:00",
+  "from": "2026-10-19",
+  "to": "2026-10-21",
   "dropped": 0,
   "events": [
    {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "time": null,
-    "region": "GLOBAL",
-    "category": "정책",
-    "title": "IMF·세계은행 연차총회 폐막(방콕)",
+    "region": "CN",
+    "category": "경제지표",
+    "title": "중국 3분기 GDP·9월 산업생산·소매판매",
+    "importance": 4,
+    "why": "중국 성장 흐름을 보는 분기 지표, 아시아 수요 심리에 영향",
+    "consensus": null,
+    "previous": "2분기 성장률 4.3%",
+    "source": "https://www.stats.gov.cn/",
+    "verified": true
+   },
+   {
+    "date": "2026-10-20",
+    "time": "14:00",
+    "region": "KR",
+    "category": "기업 행사",
+    "title": "카카오 소액주주 간담회(여의도)",
     "importance": 3,
-    "why": "1991년 이후 첫 방콕 개최, 각국 재무·중앙은행 수장 집결",
+    "why": "인적분할·AI 비전 설명 자리, 오프라인과 컨퍼런스콜 동시 진행",
     "consensus": null,
     "previous": null,
-    "source": "https://asianews.network/?p=306004",
+    "source": "https://www.kakaocorp.com/",
     "verified": true
    },
    {
@@ -783,10 +736,62 @@
     "category": "경제지표",
     "title": "미국 주택착공",
     "importance": 3,
-    "why": "금리에 민감한 주택 경기 선행 지표, 건설·금융 업종 참고",
+    "why": "주택 경기와 금리 민감도를 보는 월간 지표",
     "consensus": null,
     "previous": null,
     "source": "https://fred.stlouisfed.org/release?rid=27",
+    "verified": true
+   },
+   {
+    "date": "2026-10-21",
+    "time": "01:00",
+    "region": "US",
+    "category": "기업 행사",
+    "title": "마이크로소프트 OneDrive·Copilot 디지털 이벤트",
+    "importance": 3,
+    "why": "OneDrive·Copilot 신기능 공개 행사",
+    "consensus": null,
+    "previous": null,
+    "source": "https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/save-the-date-join-us-october-20-for-the-onedrive-copilot/ba-p/4556814",
+    "verified": true
+   },
+   {
+    "date": "2026-10-21",
+    "time": "05:05",
+    "region": "US",
+    "category": "실적",
+    "title": "넷플릭스 3분기 실적",
+    "importance": 4,
+    "why": "미국 장 마감 후 발표, 한국 시간 새벽 공개",
+    "consensus": "EPS 0.84달러 · 매출 131.4억달러",
+    "previous": null,
+    "source": "https://ir.netflix.com/",
+    "verified": true
+   },
+   {
+    "date": "2026-10-21",
+    "time": "18:00",
+    "region": "EU",
+    "category": "기업 행사",
+    "title": "엔비디아 GTC 베를린 기조연설(젠슨 황)",
+    "importance": 4,
+    "why": "AI 인프라·물리 AI 등 엔비디아 기술 방향을 밝히는 무대",
+    "consensus": null,
+    "previous": null,
+    "source": "https://www.nvidia.com/en-eu/gtc/faq/",
+    "verified": true
+   },
+   {
+    "date": "2026-10-21",
+    "time": null,
+    "region": "KR",
+    "category": "경제지표",
+    "title": "10월 1~20일 수출입 잠정치(관세청)",
+    "importance": 4,
+    "why": "월 중순까지 반도체 수출 흐름을 가늠하는 첫 집계",
+    "consensus": null,
+    "previous": "10월 1~10일 수출 102.0%↑(전년동기 대비)",
+    "source": "https://www.customs.go.kr/",
     "verified": true
    }
   ]
