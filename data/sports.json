@@ -1,48 +1,49 @@
 {
- "updated": "2026-10-19 08:08 KST",
+ "updated": "2026-10-19 13:34 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
   {
-   "id": "401930515",
+   "id": "401908028",
    "path": "baseball/mlb",
    "league": "MLB",
-   "name": "Tampa Bay Rays at Cleveland Guardians",
-   "date": "2026-10-18T21:00Z",
-   "kst": "2026-10-19 06:00",
-   "state": "in",
-   "status": "In Progress",
-   "note": "ALCS - Game 5",
+   "name": "Cleveland Guardians at Tampa Bay Rays",
+   "date": "2026-10-20T00:00Z",
+   "kst": "2026-10-20 09:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "ALCS - Game 6",
    "season": "post-season",
    "us_tv": [
     "TBS",
     "truTV"
    ],
-   "venue": "Progressive Field",
+   "venue": "Tropicana Field",
    "tv": "국내 SPOTV · 영국 TNT Sports · 미국 TBS",
    "sport": "baseball",
    "home": {
-    "name": "Cleveland Guardians",
-    "ko": "클리블랜드",
-    "abbr": "CLE",
-    "id": "5",
-    "score": "1",
-    "winner": null,
-    "record": "85-77"
-   },
-   "away": {
     "name": "Tampa Bay Rays",
     "ko": "탬파베이",
     "abbr": "TB",
     "id": "30",
-    "score": "3",
+    "score": "0",
     "winner": null,
-    "record": "98-64"
+    "record": "98-64",
+    "form": "패승패승승"
    },
-   "title": "클리블랜드 vs 탬파베이",
-   "score": 50,
+   "away": {
+    "name": "Cleveland Guardians",
+    "ko": "클리블랜드",
+    "abbr": "CLE",
+    "id": "5",
+    "score": "0",
+    "winner": null,
+    "record": "85-77",
+    "form": "승패승패패"
+   },
+   "title": "탬파베이 vs 클리블랜드",
+   "score": 46,
    "why": [
-    "리그 챔피언십시리즈",
-    "시리즈 분수령"
+    "리그 챔피언십시리즈"
    ],
    "detail": {
     "h2h": {
@@ -62,23 +63,33 @@
       }
      ]
     },
-    "leaders": [],
+    "leaders": [
+     {
+      "team": "탬파베이",
+      "cat": "Batting Average",
+      "who": "Chandler Simpson",
+      "val": ".306"
+     },
+     {
+      "team": "탬파베이",
+      "cat": "Home Runs",
+      "who": "Junior Caminero",
+      "val": "42"
+     },
+     {
+      "team": "클리블랜드",
+      "cat": "Batting Average",
+      "who": "Chase DeLauter",
+      "val": ".287"
+     },
+     {
+      "team": "클리블랜드",
+      "cat": "Home Runs",
+      "who": "Angel Martinez",
+      "val": "18"
+     }
+    ],
     "injuries": [
-     {
-      "team": "클리블랜드",
-      "who": "Rhys Hoskins",
-      "status": "10-Day-IL"
-     },
-     {
-      "team": "클리블랜드",
-      "who": "Colin Holderman",
-      "status": "15-Day-IL"
-     },
-     {
-      "team": "클리블랜드",
-      "who": "Andrew Walters",
-      "status": "Out"
-     },
      {
       "team": "탬파베이",
       "who": "Gavin Lux",
@@ -98,24 +109,39 @@
       "team": "탬파베이",
       "who": "Shane McClanahan",
       "status": "Out"
-     }
-    ],
-    "preview": [
-     {
-      "title": "Live updates, analysis for Rays-Guardians ALCS Game 5",
-      "url": "https://www.espn.com/mlb/story/_/id/50198161/playoff-guardians-rays-alcs-game-5-live-takeaways"
      },
      {
-      "title": "Every team's odds to win the 2026 World Series: Brewers win NLCS, Rays even ALCS",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
+      "team": "클리블랜드",
+      "who": "Rhys Hoskins",
+      "status": "10-Day-IL"
+     },
+     {
+      "team": "클리블랜드",
+      "who": "Colin Holderman",
+      "status": "15-Day-IL"
+     },
+     {
+      "team": "클리블랜드",
+      "who": "Andrew Walters",
+      "status": "Out"
+     }
+    ],
+    "predictor": {
+     "home": "59.5",
+     "away": "40.5"
+    },
+    "preview": [
+     {
+      "title": "Facing elimination on road, Cleveland Guardians back on familiar ground",
+      "url": "https://www.espn.com/mlb/story/_/id/50216130/facing-elimination-road-again-guardians-keep-spirits-up"
+     },
+     {
+      "title": "Game 5 win has Rays on World Series cusp after wild weekend",
+      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead"
      }
     ]
    },
    "series": [
-    {
-     "kst": "2026-10-19 06:00",
-     "note": "ALCS - Game 5"
-    },
     {
      "kst": "2026-10-20 09:00",
      "note": "ALCS - Game 6"
@@ -163,7 +189,7 @@
    "season": "league-phase",
    "us_tv": [],
    "venue": "MHPArena",
-   "tv": "영국 TNT Sports 6 · 스페인 Movistar+",
+   "tv": "국내 SPOTV Prime · 영국 TNT Sports 6 · 스페인 Movistar+",
    "sport": "soccer",
    "home": {
     "name": "VfB Stuttgart",
@@ -232,6 +258,11 @@
    "tv_kr": "SPOTV · SPOTV NOW",
    "tv_world": [
     {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "SPOTV Prime"
+    },
+    {
      "country": "Great Britain",
      "label": "영국",
      "ch": "TNT Sports 6"
@@ -286,7 +317,7 @@
     "record": "2-0-0",
     "rank": "7",
     "pts": "6",
-    "form": "승승패승승"
+    "form": "승패승승승"
    },
    "title": "바이에른 뮌헨 vs 아스널",
    "kp": {
@@ -460,6 +491,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Stephen Curry",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Moses Moody",
       "status": "Out"
      },
@@ -480,8 +516,8 @@
     },
     "preview": [
      {
-      "title": "Denver Nuggets vs. Los Angeles Lakers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50199875/game-highlights"
+      "title": "Warriors' Stephen Curry 'fine' after tweaking right ankle in practice",
+      "url": "https://www.espn.com/nba/story/_/id/50214211/stephen-curry-fine-tweaking-right-ankle-practice"
      }
     ]
    },
@@ -584,12 +620,7 @@
       "status": "60-Day-IL"
      }
     ],
-    "preview": [
-     {
-      "title": "Every team's odds to win the 2026 World Series: Brewers win NLCS, Rays even ALCS",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
-     }
-    ]
+    "preview": []
    },
    "series": [
     {
@@ -694,6 +725,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Stephen Curry",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Moses Moody",
       "status": "Out"
      },
@@ -732,7 +768,12 @@
      "home": "66.9",
      "away": "33.1"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Warriors' Stephen Curry 'fine' after tweaking right ankle in practice",
+      "url": "https://www.espn.com/nba/story/_/id/50214211/stephen-curry-fine-tweaking-right-ankle-practice"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -1048,6 +1089,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Stephen Curry",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Moses Moody",
       "status": "Out"
      },
@@ -1066,7 +1112,12 @@
      "home": "61.5",
      "away": "38.5"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Warriors' Stephen Curry 'fine' after tweaking right ankle in practice",
+      "url": "https://www.espn.com/nba/story/_/id/50214211/stephen-curry-fine-tweaking-right-ankle-practice"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -1198,6 +1249,126 @@
  ],
  "results": [
   {
+   "id": "401930515",
+   "path": "baseball/mlb",
+   "league": "MLB",
+   "name": "Tampa Bay Rays at Cleveland Guardians",
+   "date": "2026-10-18T21:00Z",
+   "kst": "2026-10-19 06:00",
+   "state": "post",
+   "status": "Final",
+   "note": "ALCS - Game 5",
+   "season": "post-season",
+   "us_tv": [
+    "TBS",
+    "truTV"
+   ],
+   "venue": "Progressive Field",
+   "tv": "SPOTV · SPOTV NOW",
+   "sport": "baseball",
+   "home": {
+    "name": "Cleveland Guardians",
+    "ko": "클리블랜드",
+    "abbr": "CLE",
+    "id": "5",
+    "score": "1",
+    "winner": false,
+    "record": "85-77"
+   },
+   "away": {
+    "name": "Tampa Bay Rays",
+    "ko": "탬파베이",
+    "abbr": "TB",
+    "id": "30",
+    "score": "3",
+    "winner": true,
+    "record": "98-64"
+   },
+   "title": "클리블랜드 vs 탬파베이",
+   "score": 50,
+   "why": [
+    "리그 챔피언십시리즈",
+    "시리즈 분수령"
+   ],
+   "stars": 2,
+   "detail": {
+    "h2h": {
+     "summary": "TB wins series 5-1",
+     "last": [
+      {
+       "date": "2026-04-27",
+       "score": "클리블랜드 2 탬파베이 3"
+      },
+      {
+       "date": "2026-04-28",
+       "score": "클리블랜드 0 탬파베이 1"
+      },
+      {
+       "date": "2026-04-29",
+       "score": "클리블랜드 3 탬파베이 1"
+      }
+     ]
+    },
+    "leaders": [],
+    "injuries": [
+     {
+      "team": "클리블랜드",
+      "who": "Rhys Hoskins",
+      "status": "10-Day-IL"
+     },
+     {
+      "team": "클리블랜드",
+      "who": "Colin Holderman",
+      "status": "15-Day-IL"
+     },
+     {
+      "team": "클리블랜드",
+      "who": "Andrew Walters",
+      "status": "Out"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Gavin Lux",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Edwin Uceta",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Jonathan Heasley",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Shane McClanahan",
+      "status": "Out"
+     }
+    ],
+    "preview": [
+     {
+      "title": "Facing elimination on road, Cleveland Guardians back on familiar ground",
+      "url": "https://www.espn.com/mlb/story/_/id/50216130/facing-elimination-road-again-guardians-keep-spirits-up"
+     },
+     {
+      "title": "Game 5 win has Rays on World Series cusp after wild weekend",
+      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead"
+     }
+    ],
+    "result": {
+     "score": "클리블랜드 1 : 3 탬파베이",
+     "goals": [],
+     "korean": [],
+     "video": {
+      "title": "Rays win Game 5 to take 3-2 lead in ALCS",
+      "url": "https://www.espn.com/video/clip/_/id/50214937/rays-win-game-5-take-3-2-lead-alcs"
+     }
+    }
+   }
+  },
+  {
    "id": "401908027",
    "path": "baseball/mlb",
    "league": "MLB",
@@ -1298,12 +1469,12 @@
     ],
     "preview": [
      {
-      "title": "Live updates, analysis for Rays-Guardians ALCS Game 5",
-      "url": "https://www.espn.com/mlb/story/_/id/50198161/playoff-guardians-rays-alcs-game-5-live-takeaways"
+      "title": "Facing elimination on road, Cleveland Guardians back on familiar ground",
+      "url": "https://www.espn.com/mlb/story/_/id/50216130/facing-elimination-road-again-guardians-keep-spirits-up"
      },
      {
-      "title": "Every team's odds to win the 2026 World Series: Brewers win NLCS, Rays even ALCS",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
+      "title": "Game 5 win has Rays on World Series cusp after wild weekend",
+      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead"
      }
     ],
     "result": {
@@ -1716,6 +1887,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Stephen Curry",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Moses Moody",
       "status": "Out"
      },
@@ -1750,7 +1926,12 @@
       "status": "Out"
      }
     ],
-    "preview": [],
+    "preview": [
+     {
+      "title": "Warriors' Stephen Curry 'fine' after tweaking right ankle in practice",
+      "url": "https://www.espn.com/nba/story/_/id/50214211/stephen-curry-fine-tweaking-right-ankle-practice"
+     }
+    ],
     "result": {
      "score": "골든스테이트 128 : 118 Portland Trail Blazers",
      "goals": [],
@@ -1862,12 +2043,12 @@
     ],
     "preview": [
      {
-      "title": "Live updates, analysis for Rays-Guardians ALCS Game 5",
-      "url": "https://www.espn.com/mlb/story/_/id/50198161/playoff-guardians-rays-alcs-game-5-live-takeaways"
+      "title": "Facing elimination on road, Cleveland Guardians back on familiar ground",
+      "url": "https://www.espn.com/mlb/story/_/id/50216130/facing-elimination-road-again-guardians-keep-spirits-up"
      },
      {
-      "title": "Every team's odds to win the 2026 World Series: Brewers win NLCS, Rays even ALCS",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league"
+      "title": "Game 5 win has Rays on World Series cusp after wild weekend",
+      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead"
      }
     ],
     "result": {
