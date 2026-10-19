@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-19 09:57",
+ "updated": "2026-10-19 19:25",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 11,
-  "reddit": 16,
+  "hn": 13,
+  "reddit": 30,
   "hf": 15,
-  "github": 12,
+  "github": 11,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,8 +16,8 @@
    "title": "DeepSeek-v4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "discussion": "https://news.ycombinator.com/item?id=50129045",
-   "points": 936,
-   "comments": 704,
+   "points": 947,
+   "comments": 707,
    "r": 0.75,
    "at": "2026-10-17",
    "topics": [
@@ -34,8 +34,8 @@
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "discussion": "https://news.ycombinator.com/item?id=50121179",
-   "points": 616,
-   "comments": 568,
+   "points": 622,
+   "comments": 570,
    "r": 0.92,
    "at": "2026-10-16",
    "topics": [],
@@ -50,9 +50,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 472,
-   "comments": 468,
-   "r": 0.99,
+   "points": 479,
+   "comments": 469,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -72,7 +72,7 @@
    "title": "Claude reveals ECDSA curve origins",
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "discussion": "https://news.ycombinator.com/item?id=50122800",
-   "points": 1050,
+   "points": 1054,
    "comments": 388,
    "r": 0.37,
    "at": "2026-10-16",
@@ -90,8 +90,8 @@
    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
    "url": "https://api-docs.deepseek.com/guides/search/",
    "discussion": "https://news.ycombinator.com/item?id=50138531",
-   "points": 543,
-   "comments": 257,
+   "points": 573,
+   "comments": 269,
    "r": 0.47,
    "at": "2026-10-18",
    "topics": [
@@ -119,9 +119,9 @@
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 107,
-   "comments": 190,
-   "r": 1.78,
+   "points": 119,
+   "comments": 213,
+   "r": 1.79,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:anthropic.com/research/employment-at-anthropic",
@@ -132,12 +132,31 @@
   },
   {
    "layer": "hn",
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
+   "discussion": "https://news.ycombinator.com/item?id=50145337",
+   "points": 400,
+   "comments": 194,
+   "r": 0.48,
+   "at": "2026-10-18",
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "arxiv:2610.18861",
+   "summary_ko": "댓글에서는 확률적 과정인 언어모델이 진정한 '추론'을 할 수 있는지에 대해 의견이 갈렸다. 일각에서는 내부 텍스트 생성을 줄이는 것 외에 무엇이 새로운지 의문을 제기한 반면, 잠재 공간에서의 처리 방식과 토큰 간 반복 루프가 기존 방식과 질적으로 다르다는 반박도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "discussion": "https://news.ycombinator.com/item?id=50141429",
-   "points": 155,
-   "comments": 162,
-   "r": 1.05,
+   "points": 164,
+   "comments": 165,
+   "r": 1.01,
    "at": "2026-10-18",
    "topics": [
     "안전·거버넌스"
@@ -177,12 +196,28 @@
   },
   {
    "layer": "hn",
+   "title": "I built a programming language that LLMs can't use",
+   "url": "https://blog.picheta.me/post/killswitch-lang/",
+   "discussion": "https://news.ycombinator.com/item?id=50135762",
+   "points": 195,
+   "comments": 153,
+   "r": 0.78,
+   "at": "2026-10-17",
+   "topics": [],
+   "story_key": "url:blog.picheta.me/post/killswitch-lang",
+   "summary_ko": "댓글에서는 LLM이 인터프리터 바이너리를 역설계해 결국 학습 데이터에 포함될 수 있다는 지적과 함께, 언어를 지속적으로 진화시켜 이를 회피할 수 있다는 의견이 오갔다. 일부 사용자는 프론티어 모델들이 약간 생소한 언어도 문서만 참고하면 큰 문제 없이 다룬다며 실효성에 의문을 제기했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "You could have invented transformers from memory",
    "url": "https://alexwang.ai/posts/associative-memory/",
    "discussion": "https://news.ycombinator.com/item?id=50122878",
-   "points": 622,
-   "comments": 141,
-   "r": 0.23,
+   "points": 636,
+   "comments": 142,
+   "r": 0.22,
    "at": "2026-10-16",
    "topics": [],
    "story_key": "url:alexwang.ai/posts/associative-memory",
@@ -197,8 +232,8 @@
    "url": "https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/?l",
    "discussion": "https://news.ycombinator.com/item?id=50136198",
    "points": 74,
-   "comments": 137,
-   "r": 1.85,
+   "comments": 140,
+   "r": 1.89,
    "at": "2026-10-17",
    "topics": [],
    "story_key": "url:phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest",
@@ -212,9 +247,9 @@
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 133,
-   "comments": 126,
-   "r": 0.95,
+   "points": 143,
+   "comments": 138,
+   "r": 0.97,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
@@ -233,8 +268,8 @@
    "url": "https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/?l",
    "discussion": "https://news.ycombinator.com/item?id=50136198",
    "points": 74,
-   "comments": 137,
-   "r": 1.85,
+   "comments": 140,
+   "r": 1.89,
    "at": "2026-10-17",
    "topics": [],
    "story_key": "url:phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest",
@@ -248,9 +283,9 @@
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 107,
-   "comments": 190,
-   "r": 1.78,
+   "points": 119,
+   "comments": 213,
+   "r": 1.79,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:anthropic.com/research/employment-at-anthropic",
@@ -280,28 +315,14 @@
    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "discussion": "https://news.ycombinator.com/item?id=50141429",
-   "points": 155,
-   "comments": 162,
-   "r": 1.05,
+   "points": 164,
+   "comments": 165,
+   "r": 1.01,
    "at": "2026-10-18",
    "topics": [
     "안전·거버넌스"
    ],
    "story_key": "url:tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-   "_comments": [
-    "You mean like this, from last week? Featuring Qwen, GLM, Gemma.https://www.anthropic.com/research/self-replicating-ai (https://news.ycombinator.com/item?id=50061603)That's still making the rounds in mainstream news media.",
-    "50 remind me of bikes law that require a driving license for motorbike that have 50cc engine or more, most smaller bikes use a 49cc engine.",
-    "> \"What we have now is that for government to act the model has to cause enough damage to cause Congress to pass a new law to try to stop the model after it’s been already released.\"If the LLM causes extreme danger to the public or national security, it's covered.Selling an LLM, knowing that it will materially support terrorism: material support for terrorism. Up to life in prison.",
-    "the CEO is a good start, and it would profoundly change the ethics of running a company, so obvious I fail to see why it wouldn't be the case. \"No BS excuse they did things behind my back\", if that's the case then they all fall together that's it.",
-    "Not everything can be undone. Can you revert language? Maybe? But you can't take away the will to communicate which drives the creation of language.",
-    "At least in the states it was not without. But in the case of AI the side that didn't want AI would presumably not be using it in war if it did come to violence. That seems like it would put that side at a disadvantage.",
-    "Those countries, like the UK, didn't have much slave ownership to begin with. They just had slave trade, so much fewer stakeholders to complain about abolishing it, and even those had a more profitable replacement: colonialism.",
-    "But we still require cars to have seatbelts, turn signals, ABS, etc, etc. AI companies have a responsibility to build AI which is safe for normal purposes; users are responsible for not misusing them.",
-    "Well, the whole story about stealing half of the world's IP is definitely worth orders of magnitude more than measly 1bil in damages. So, shut down releases, I guess? :) Oh, it's only rich people damages that count, I get it.",
-    "Hasn't either openai or anthropic already explicitly said open models are dangerous?You'll find aviation politics is not too far off. But basically all pilots train single engine first abd America invented the plane.",
-    "Through open conversations, demonstrations, promote education and awareness to the relevant stakeholders.Not all countries abolished slavery in the same way as the States. Violence is not always the answer.",
-    "Yeah, I haven't seen too many convincing arguments that the law needs reform. I am very convinced that lots of proposed reforms are self-serving and bad for society at large."
-   ],
    "summary_ko": "앤트로픽이 제안한 AI 안전 법안이 인명 피해 50명 또는 10억 달러 이상의 손실이 발생할 때만 적용된다는 점을 두고 댓글창에서 실효성과 기준의 적절성을 두고 논쟁이 벌어졌다. 일각에서는 사후약방문식 규제라고 비판하는 반면, 실질적인 테러 지원이나 명확한 대형 사고에만 책임을 묻는 적절한 선이라는 의견도 맞섰다.",
    "is_event": true,
    "kr_query": "앤트로픽 AI 안전 법안 규제",
@@ -323,9 +344,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 472,
-   "comments": 468,
-   "r": 0.99,
+   "points": 479,
+   "comments": 469,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -345,28 +366,14 @@
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 133,
-   "comments": 126,
-   "r": 0.95,
+   "points": 143,
+   "comments": 138,
+   "r": 0.97,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
    ],
    "story_key": "url:theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-   "_comments": [
-    "Huh. I would expect even a nominal time or monetary cost would prevent spambots from being able to scale. That seems like a net good.",
-    "Everyone focuses on Amazon here, but there is an entire industry of e-commerce tools and products and platforms and services designed around optimizing e-commerce sites for sales and other uses.Agents invalidate a lot of that and so it is an existential threat to many of them. I expect the near future will result in a lot of different results tailored to agents that may actually result in higher priced products for agents browsing versus humans.",
-    "Saying this to a group of people who hold ad-blocking in the highest regard is near peak irony.",
-    "I've also experienced Datadome I also doubt that these websites know that Datadome is messing up legit traffic to their sites",
-    "It's not that hard. Make an iOS app and use the remote attestation features to verify the client. In theory Android has similar mechanisms available, not sure how secure they are but Apple's is pretty good.Now whether you want to restrict your shop to only being accessed via a mobile app is a totally different proposition.",
-    "Depends on the small business obviously. I've been in IT for 40+ years and enjoy torturing clankers; I ran a bot motel 20 years ago. These things are so badly written, and obviously they don't care because they're not truly conscious, but the meat in charge is ignorant or doesn't care. So web scraping, and the point cloud of nearly indistiguishable abuse it travels with, is pretty easily tripped by some simple technical tests and salting of content. At least mostly.[0]I've been wondering to myself \"how can I get people to go through a login process without going through a login process?\" for a few months, and I've come up with a simple solution which I'll be implementing in the next few week",
-    "For this reason I created an overview with sites that don't block bots but let them shop without getting blocked.https://shopsforbots.com/",
-    "I am not disagreeing on any of those points. Just pointing it out that tech disruption only happens when someone else finds a way to steal that cut. It is never about the common good. That is why true open solutions and markets are hard to find.",
-    "Agents cannot provide free 2-day delivery or easy returnsEven if they could, it will be a _long_ time before the average person uses an agent for personal tasks like this",
-    "Right now Claude/Codex are pretty good at following a websites TOS and refusing to solve captchas.I expect that will no longer be the case in the next year.",
-    "Small businesses should be the people happiest about AI scraping. It's a new venue opening up for them to sell their products and services. And it's easy and free to use Cloudflare so that you don't have to worry about excess traffic, if you don't want to use a different solution.",
-    "Sheesh, that's hell of a plan. Insert yourself as the middleman for almost all internet traffic, push for a payment standard and then take a measly 1% as a fee. Boom, infinite money."
-   ],
    "summary_ko": "웹사이트들이 AI 에이전트와 봇의 접근을 차단하는 움직임에 대해, 스팸과 무단 스크래핑을 막기 위한 당연한 조치라는 찬성 의견과 이커머스 생태계 및 기존 비즈니스 모델에 큰 위협이 될 수 있다는 우려가 교차했다. 또한 광고 차단을 옹호해 온 개발자 커뮤니티가 웹사이트의 봇 차단을 비판하는 것은 아이러니하다는 지적도 나왔다.",
    "is_event": false,
    "kr_query": "",
@@ -377,8 +384,8 @@
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "discussion": "https://news.ycombinator.com/item?id=50121179",
-   "points": 616,
-   "comments": 568,
+   "points": 622,
+   "comments": 570,
    "r": 0.92,
    "at": "2026-10-16",
    "topics": [],
@@ -390,11 +397,41 @@
   },
   {
    "layer": "hn",
+   "title": "I built a programming language that LLMs can't use",
+   "url": "https://blog.picheta.me/post/killswitch-lang/",
+   "discussion": "https://news.ycombinator.com/item?id=50135762",
+   "points": 195,
+   "comments": 153,
+   "r": 0.78,
+   "at": "2026-10-17",
+   "topics": [],
+   "story_key": "url:blog.picheta.me/post/killswitch-lang",
+   "_comments": [
+    "There is a reference implementation: https://github.com/dom96/KillSwitch.In the benchmarks the models/coding agents get a binary of the interpreter and indeed some of them do reverse engineer it. Over time this will get into their training data. But we can evolve the language and evade their training as we go.",
+    "On simple tasks, sure. Once a model reaches 100% I'll build a harder benchmark task set.",
+    "There is code in the GitHub repo[1] as well, though not as nice, nor syntax highlighted.1 - https://github.com/dom96/KillSwitch/tree/main/tests",
+    "KillSwitch allows you to write stories/arbitrary text in between the real language instructions. So we could give this a try, even without making it a part of the language spec. I might add this as a task for a new version of the benchmark.",
+    "Indeed, and an interpreter has been written[1]. As part of the benchmarks, in some cases the models receive a binary of the interpreter and indeed some of them attempt to reverse engineer it. So that already helps the models a bunch.I do think this will also eventually make it into the training data, but that will in itself be interesting to see. It's also possible for KillSwitch to evolve and gain/remove features over time to constantly evade the LLMs.1 - https://github.com/dom96/KillSwitch",
+    "Not all humans have the will or ability to help an LLM get around the anti-LLM features.",
+    "Does the language actually challenge LLMs, or does it mostly challenge them when they can't use tools to test and verify their code?",
+    "Most tasks receive the interpreter binary which the coding agent can run to test their code (though the binary itself is adversarial too, there is a fun easter egg in there if anyone wants to give it a try). Some tasks just get the spec and a piece of code to understand. Some models interpret the code/spec incorrectly so fail that one.",
+    "That’s not the case anymore. I’ve have completed projects in several slightly obscure languages (including ones I created) and frontier models have almost no trouble at all, other than having to reference documentation very often.",
+    "Thanks! Glad you like it. I'd love to evolve this if there is interest, the best way to make that happen is to get involved, I'd love pull requests from humans on this. Maybe your suggestion could be the first one? :)",
+    "Safety filters aren't a panacea as I have found. Many models do a fair job of ignoring them.Graphical languages will ultimately have a file system representation which LLMs could easily manipulate. Though incorporating a language feature that is a graphical representation might be different enough to be worth it.",
+    "I think they mean proof-by-existence, by just trying it. Invent a language and give it to the LLM and see if they can do things with it.Here's an example of an experiment I did. When drawing pelicans with SVGs was the hotness, I thought I'd like a local inferencing TTY drawing harness [1].At first, I gave it a poking canvas where it could just plot letters. But then it had to keep figuring out the idea of drawing lines and circles; too complex and error prone.So, I thought to build out a little DSL. The LLM had no problem adopting the language and using it to reach its goal (of creating a scene with primitives).[1] https://github.com/NimbleMarkets/ds4go-apps#glyphpad"
+   ],
+   "summary_ko": "댓글에서는 LLM이 인터프리터 바이너리를 역설계해 결국 학습 데이터에 포함될 수 있다는 지적과 함께, 언어를 지속적으로 진화시켜 이를 회피할 수 있다는 의견이 오갔다. 일부 사용자는 프론티어 모델들이 약간 생소한 언어도 문서만 참고하면 큰 문제 없이 다룬다며 실효성에 의문을 제기했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "DeepSeek-v4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "discussion": "https://news.ycombinator.com/item?id=50129045",
-   "points": 936,
-   "comments": 704,
+   "points": 947,
+   "comments": 707,
    "r": 0.75,
    "at": "2026-10-17",
    "topics": [
@@ -408,11 +445,44 @@
   },
   {
    "layer": "hn",
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
+   "discussion": "https://news.ycombinator.com/item?id=50145337",
+   "points": 400,
+   "comments": 194,
+   "r": 0.48,
+   "at": "2026-10-18",
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "arxiv:2610.18861",
+   "_comments": [
+    "May anyone explain me what else is new, as one of them is to reducing the internal text generation. Anything else.",
+    "To describe this as reasoning is incredibly misleading.The technology is amazing, but stochastic processes can't reason, its simply not how they work. The output may have the appearance of a reasoned response, but that is not even synthetic reasoning, amazing though it is.",
+    "Your comment makes little sense - is it about free will? That has no relation to the quality of comments.This used to be a place for intelligent commentary, learning new things, not just participation, rants or funny remarks.",
+    "They have published the inference code [1], you can’t just throw their model at llama and expect it to work.[1] https://github.com/togethercomputer/HybridAgent",
+    "I hear this kind of comment a lot, but is there is any proof of it?People used to come to comment on HN (sub for Reddit or any other forum) because they want to and find it enjoyable/useful. Assuming you are human, YOU came to this site to comment because you wanted to and find it enjoyable/useful.What makes you think that this is not true for other people? At the very least, such comments add nothing to the discussion.",
+    "I don't think this is true. The way I understand is that there's1. coarse grained processing2. fine grained processingTokens are coarse grained processing. While I agree that during a token generation, that processing is fine grained.But Looping is fine grained processing or reasoning and it is not limited to discrete tokens within passes. This is qualitatively different because a lot more \"stuff\" happens between tokens. You are right that it is similar to a larger model but then even COT is similar to using a larger model.",
+    "> There is genuine research into latent space monitoring and interpretationThat's great but the sentiment that CoT isn't useful for monitoring doesn't seem to be shared by mech interp researchers like Nanda.Also: https://arxiv.org/abs/2507.11473",
+    "Defining \"agent\" as just the harness makes about as much sense as defining \"human\" as just the rest of the body without a brain.",
+    "There is ample evidence that CoT is not an accurate gauge of a model's 'intent' anyhow. It's a lossy and imperfect mapping and using it in the way you describe is just about guaranteed to make it more so.There is genuine research into latent space monitoring and interpretation - that's the only real way forward. CoT monitoring is a mirage and won't be useful for long, if it ever was",
+    "Have you tried increasing the repetition penalty? Needing to do this is already a red flag, but I'm curious if it helps at all.Running LLMs locally on outdated hardware, I've come to the realisation that sub-10b models are broadly speaking kind of stupid. They can answer simple questions, but can't really solve problems.The effect is so strong that with an 8GB GPU a 27b model can sometimes finish the task earlier than a 9b model, despite residing largely in RAM. If it's a MoE model, then it isn't even a competition.",
+    "They do, there was a paper that claimed a major breakthrough in that field just a few days ago. See the \"Neural networks are clean\" discussion:https://news.ycombinator.com/item?id=50105647",
+    "Well, for some value of modern. Kimi K3 does a form of 2D attention where each layer can attend to the outputs of earlier layers, not just earlier tokens. So in that model the embeddings or a very early transform of them can get added back into the residual stream very deep in the stack."
+   ],
+   "summary_ko": "댓글에서는 확률적 과정인 언어모델이 진정한 '추론'을 할 수 있는지에 대해 의견이 갈렸다. 일각에서는 내부 텍스트 생성을 줄이는 것 외에 무엇이 새로운지 의문을 제기한 반면, 잠재 공간에서의 처리 방식과 토큰 간 반복 루프가 기존 방식과 질적으로 다르다는 반박도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
    "url": "https://api-docs.deepseek.com/guides/search/",
    "discussion": "https://news.ycombinator.com/item?id=50138531",
-   "points": 543,
-   "comments": 257,
+   "points": 573,
+   "comments": 269,
    "r": 0.47,
    "at": "2026-10-18",
    "topics": [
@@ -440,7 +510,7 @@
    "title": "Claude reveals ECDSA curve origins",
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "discussion": "https://news.ycombinator.com/item?id=50122800",
-   "points": 1050,
+   "points": 1054,
    "comments": 388,
    "r": 0.37,
    "at": "2026-10-16",
@@ -458,9 +528,9 @@
    "title": "You could have invented transformers from memory",
    "url": "https://alexwang.ai/posts/associative-memory/",
    "discussion": "https://news.ycombinator.com/item?id=50122878",
-   "points": 622,
-   "comments": 141,
-   "r": 0.23,
+   "points": 636,
+   "comments": 142,
+   "r": 0.22,
    "at": "2026-10-16",
    "topics": [],
    "story_key": "url:alexwang.ai/posts/associative-memory",
@@ -474,56 +544,72 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "You don’t need that expensive of a build for local llms.",
-   "url": "https://github.com/achyudh/llama.cpp",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8s73i/you_dont_need_that_expensive_of_a_build_for_local/",
+   "title": "Google Open Sources Harness2 for Self Improving AI Agents",
+   "url": "https://github.com/google-research/harness2",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9gfnb/google_open_sources_harness2_for_self_improving/",
    "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:achyudh/llama.cpp"
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:google-research/harness2"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "DeepSeek v4.1 Flash 1017 for Dwarfstar (ds4)",
-   "url": "https://github.com/antirez/ds4/pull/1225",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8tr2c/deepseek_v41_flash_1017_for_dwarfstar_ds4/",
+   "title": "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
+   "url": "https://videocardz.com/newz/two-pallets-of-zotac-rtx-5090-graphics-cards-worth-470000-disappear-at-brazilian-airport",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x91svd/two_pallets_of_zotac_rtx_5090_graphics_cards/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:antirez/ds4"
+   "topics": [],
+   "story_key": "url:videocardz.com/newz/two-pallets-of-zotac-rtx-5090-graphics-cards-worth-470000-disappear-at-brazilian-airport"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "told Qwen3.8 27b to hack my router",
-   "url": "https://openwrt.org/toh/xiaomi/ax3000t",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8wmbp/told_qwen38_27b_to_hack_my_router/",
+   "title": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스"
+    "인프라·칩"
    ],
-   "story_key": "url:openwrt.org/toh/xiaomi/ax3000t"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "AutoTrust's HF models are trending thanks to thousands of farmed likes",
-   "url": "https://huggingface.co/spaces/prithivMLmods/who-liked-it#autotrust",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8sq4z/autotrusts_hf_models_are_trending_thanks_to/",
+   "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF · Hugging Face",
+   "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x95491/unslothdeepseekv41flash1017gguf_hugging_face/",
    "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:unsloth/deepseek-v4.1-flash-1017-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Embedding model can be used to search text inside image",
+   "url": "https://gist.github.com/jupiterbjy/0adf1c59c6185e1ac966c49a0ce3e870",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9acj4/embedding_model_can_be_used_to_search_text_inside/",
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -531,30 +617,14 @@
    "topics": [
     "개발도구"
    ],
-   "story_key": "hf:spaces/prithivmlmods"
+   "story_key": "gh:jupiterbjy/0adf1c59c6185e1ac966c49a0ce3e870"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "What are the odds Qwen 4 models are going to think less?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8uqig/what_are_the_odds_qwen_4_models_are_going_to/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8uqig/what_are_the_odds_qwen_4_models_are_going_to/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8uqig/what_are_the_odds_qwen_4_models_are_going_to"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Ling 3.1 Flash (560B MoE) loaded across 4 DGX Sparks using llama.cpp RPC",
-   "url": "https://huggingface.co/AtomicChat/Ling-3.1-flash-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v7cp/ling_31_flash_560b_moe_loaded_across_4_dgx_sparks/",
+   "title": "AuroraASR-1M Releases!",
+   "url": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x92ejs/auroraasr1m_releases/",
    "rank": 6,
    "points": 0,
    "comments": 0,
@@ -563,46 +633,42 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:atomicchat/ling-3.1-flash-gguf"
+   "story_key": "hf:auroraai-research/auroraasr-1m"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Nine models, five coding tasks, one 16GB GPU",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8qlvw/nine_models_five_coding_tasks_one_16gb_gpu/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8qlvw/nine_models_five_coding_tasks_one_16gb_gpu/",
+   "title": "PSA: Power limit your 5090s!",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x98bby/psa_power_limit_your_5090s/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x98bby/psa_power_limit_your_5090s/",
    "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8qlvw/nine_models_five_coding_tasks_one_16gb_gpu"
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x98bby/psa_power_limit_your_5090s"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "We all joke about our rigs being space heaters, so I had Qwen vibecode it",
-   "url": "https://github.com/PraxisOG/gpu-furnace-v2",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v97a/we_all_joke_about_our_rigs_being_space_heaters_so/",
+   "title": "Don't sleep on Nemotron 3.5 Super VL",
+   "url": "https://github.com/ggml-org/llama.cpp/releases?page=4#release-b11669",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9mwmz/dont_sleep_on_nemotron_35_super_vl/",
    "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:praxisog/gpu-furnace-v2"
+   "topics": [],
+   "story_key": "gh:ggml-org/llama.cpp"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "DeepSeek V4.1 Flash 1017 on 2x DGX Spark: 57 tok/s text, 92 tok/s code with TensorFold (2.1-2.3x the vLLM kit)",
-   "url": "https://github.com/Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8q6t6/deepseek_v41_flash_1017_on_2x_dgx_spark_57_toks/",
+   "title": "incoai/Qwen3.8-Flash-Next-DFlash2",
+   "url": "https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9rq3r/incoaiqwen38flashnextdflash2/",
    "rank": 9,
    "points": 0,
    "comments": 0,
@@ -611,93 +677,101 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "gh:elevatormusic/deepseek-v4.1-flash-1017-exl3-tensorfold-2x-dgx-spark"
+   "story_key": "hf:incoai/qwen3.8-flash-next-dflash2"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Made sum crap that beats Jev",
-   "url": "http://huggingface.co/spaces/e12ex2/herbert-demo",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8vl4i/made_sum_crap_that_beats_jev/",
+   "title": "Hybrid Reasoning Agents",
+   "url": "https://github.com/togethercomputer/HybridAgent",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9fc1x/hybrid_reasoning_agents/",
    "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:spaces/e12ex2"
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:togethercomputer/hybridagent"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Muse Spark on M3U 256 GB",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8qvaj/muse_spark_on_m3u_256_gb/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8qvaj/muse_spark_on_m3u_256_gb/",
+   "title": "DeepSeek-V4.1-Flash-1017 on AA & Vals index",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index/",
    "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8qvaj/muse_spark_on_m3u_256_gb"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "My 5070 ti/3070 Chimera build.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8u6eg/my_5070_ti3070_chimera_build/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8u6eg/my_5070_ti3070_chimera_build/",
+   "title": "Little Sweet Room Challenge | Strata Fork | Qwen 3.8 FN NVFP4 | DeepSeek Harness",
+   "url": "https://github.com/sergqwer/strata-nvfp4",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9hpb3/little_sweet_room_challenge_strata_fork_qwen_38/",
    "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8u6eg/my_5070_ti3070_chimera_build"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:sergqwer/strata-nvfp4"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "3xrtx8000 48gb... what to do?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8st56/3xrtx8000_48gb_what_to_do/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x8st56/3xrtx8000_48gb_what_to_do/",
+   "title": "Nemotron 3.5 Bolt is okayish for small multiuser setups",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9lkh5/nemotron_35_bolt_is_okayish_for_small_multiuser/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9lkh5/nemotron_35_bolt_is_okayish_for_small_multiuser/",
    "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x8st56/3xrtx8000_48gb_what_to_do"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x9lkh5/nemotron_35_bolt_is_okayish_for_small_multiuser"
   },
   {
    "layer": "reddit",
-   "sub": "singularity",
-   "title": "Researchers connected a simulated fruit fly brain to Odyssey-3, an AI that generates entire virtual worlds. The fly is now navigating these imagined environments completely on its own. A biological brain recreated in software is exploring worlds that have never existed.",
-   "url": "https://www.reddit.com/r/singularity/comments/1x8qyc7/researchers_connected_a_simulated_fruit_fly_brain/",
-   "discussion": "https://www.reddit.com/r/singularity/comments/1x8qyc7/researchers_connected_a_simulated_fruit_fly_brain/",
-   "rank": 1,
+   "sub": "LocalLLaMA",
+   "title": "AI labs report benchmark scores 6.4% higher than independent testers, on average",
+   "url": "http://whatmodel.sh",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9skrx/ai_labs_report_benchmark_scores_64_higher_than/",
+   "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/singularity/comments/1x8qyc7/researchers_connected_a_simulated_fruit_fly_brain"
+   "story_key": "url:whatmodel.sh/"
   },
   {
    "layer": "reddit",
-   "sub": "singularity",
-   "title": "Linux creator, Linus Torvalds, says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
-   "url": "https://www.reddit.com/r/singularity/comments/1x8r2wc/linux_creator_linus_torvalds_says_antiai_rules/",
-   "discussion": "https://www.reddit.com/r/singularity/comments/1x8r2wc/linux_creator_linus_torvalds_says_antiai_rules/",
-   "rank": 2,
+   "sub": "LocalLLaMA",
+   "title": "Calling all GPUs: help us benchmark SonicBoom v0.0.3 — a compiler-first AI runtime that beats llama.cpp on decode",
+   "url": "https://github.com/hardenedlinux/SonicBoom/issues/2",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9mitw/calling_all_gpus_help_us_benchmark_sonicboom_v003/",
+   "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
+    "모델릴리스",
+    "인프라·칩",
     "개발도구"
    ],
-   "story_key": "url:reddit.com/r/singularity/comments/1x8r2wc/linux_creator_linus_torvalds_says_antiai_rules"
+   "story_key": "gh:hardenedlinux/sonicboom"
   }
  ],
  "quiet_important": [
@@ -706,9 +780,9 @@
    "title": "How the Claude Code team does code review",
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "discussion": "https://news.ycombinator.com/item?id=50122951",
-   "points": 472,
-   "comments": 468,
-   "r": 0.99,
+   "points": 479,
+   "comments": 469,
+   "r": 0.98,
    "at": "2026-10-16",
    "topics": [
     "모델릴리스"
@@ -729,9 +803,9 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 1240,
-   "likes": 1338,
-   "downloads": 10233,
+   "trending": 1399,
+   "likes": 1522,
+   "downloads": 17924,
    "topics": [
     "모델릴리스"
    ],
@@ -741,9 +815,9 @@
    "layer": "hf",
    "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-   "trending": 826,
-   "likes": 1008,
-   "downloads": 57935,
+   "trending": 839,
+   "likes": 1025,
+   "downloads": 76410,
    "topics": [
     "모델릴리스"
    ],
@@ -751,35 +825,11 @@
   },
   {
    "layer": "hf",
-   "title": "google/embeddinggemma-2",
-   "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 780,
-   "likes": 2662,
-   "downloads": 164339,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:google/embeddinggemma-2"
-  },
-  {
-   "layer": "hf",
-   "title": "jialinyyzz/humanizer",
-   "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 704,
-   "likes": 1947,
-   "downloads": 103709,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:jialinyyzz/humanizer"
-  },
-  {
-   "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 669,
-   "likes": 693,
-   "downloads": 9620,
+   "trending": 697,
+   "likes": 724,
+   "downloads": 11795,
    "topics": [
     "모델릴리스"
    ],
@@ -787,11 +837,23 @@
   },
   {
    "layer": "hf",
+   "title": "google/embeddinggemma-2",
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "trending": 695,
+   "likes": 2684,
+   "downloads": 167750,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:google/embeddinggemma-2"
+  },
+  {
+   "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 638,
-   "likes": 811,
-   "downloads": 338036,
+   "trending": 676,
+   "likes": 862,
+   "downloads": 393062,
    "topics": [
     "모델릴리스"
    ],
@@ -799,11 +861,23 @@
   },
   {
    "layer": "hf",
+   "title": "jialinyyzz/humanizer",
+   "url": "https://huggingface.co/jialinyyzz/humanizer",
+   "trending": 650,
+   "likes": 1966,
+   "downloads": 109937,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:jialinyyzz/humanizer"
+  },
+  {
+   "layer": "hf",
    "title": "meta-models/Muse-Spark-Open-816B-A42B",
    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 503,
-   "likes": 545,
-   "downloads": 1809,
+   "trending": 520,
+   "likes": 565,
+   "downloads": 2109,
    "topics": [
     "모델릴리스"
    ],
@@ -811,23 +885,23 @@
   },
   {
    "layer": "hf",
-   "title": "Lightricks/LTX-2.5",
-   "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 459,
-   "likes": 8377,
-   "downloads": 2012496,
+   "title": "black-forest-labs/flux-3-image-klein",
+   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+   "trending": 466,
+   "likes": 508,
+   "downloads": 62006,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:lightricks/ltx-2.5"
+   "story_key": "hf:black-forest-labs/flux-3-image-klein"
   },
   {
    "layer": "hf",
    "title": "LiquidAI/LFM2.5-24B-A2B",
    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-   "trending": 454,
-   "likes": 470,
-   "downloads": 13007,
+   "trending": 463,
+   "likes": 479,
+   "downloads": 14151,
    "topics": [
     "모델릴리스"
    ],
@@ -835,15 +909,15 @@
   },
   {
    "layer": "hf",
-   "title": "black-forest-labs/flux-3-image-klein",
-   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 448,
-   "likes": 487,
-   "downloads": 52315,
+   "title": "Lightricks/LTX-2.5",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5",
+   "trending": 458,
+   "likes": 8419,
+   "downloads": 2019834,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:black-forest-labs/flux-3-image-klein"
+   "story_key": "hf:lightricks/ltx-2.5"
   }
  ],
  "new_repos": [
@@ -852,7 +926,7 @@
    "title": "Arekejoker/qwen21-nsfw-pose-skill",
    "desc": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
    "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
-   "stars": 2780,
+   "stars": 3259,
    "topics": [
     "모델릴리스"
    ],
@@ -863,7 +937,7 @@
    "title": "feder-cr/git-ai",
    "desc": "Git designed for AI agents.",
    "url": "https://github.com/feder-cr/git-ai",
-   "stars": 2297,
+   "stars": 2359,
    "topics": [
     "에이전트",
     "개발도구"
@@ -872,21 +946,10 @@
   },
   {
    "layer": "github",
-   "title": "Gathin23/tv-vibehack",
-   "desc": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
-   "url": "https://github.com/Gathin23/tv-vibehack",
-   "stars": 1996,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:gathin23/tv-vibehack"
-  },
-  {
-   "layer": "github",
    "title": "chenglou/handwired",
    "desc": "Turn your regular JavaScript code into a neural net.",
    "url": "https://github.com/chenglou/handwired",
-   "stars": 1730,
+   "stars": 1767,
    "topics": [],
    "story_key": "gh:chenglou/handwired"
   },
@@ -895,7 +958,7 @@
    "title": "Caho1/open-claude-ui",
    "desc": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
    "url": "https://github.com/Caho1/open-claude-ui",
-   "stars": 1207,
+   "stars": 1227,
    "topics": [
     "모델릴리스"
    ],
@@ -903,10 +966,21 @@
   },
   {
    "layer": "github",
+   "title": "Leonxlnx/earshot",
+   "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+   "url": "https://github.com/Leonxlnx/earshot",
+   "stars": 1106,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:leonxlnx/earshot"
+  },
+  {
+   "layer": "github",
    "title": "outcrawlai/scout",
    "desc": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
    "url": "https://github.com/outcrawlai/scout",
-   "stars": 945,
+   "stars": 947,
    "topics": [
     "에이전트"
    ],
@@ -917,27 +991,25 @@
    "title": "CoolkHz/gptibo",
    "desc": "Self-hosted GPTibo storefront, admin and Go backend — sanitized MIT source",
    "url": "https://github.com/CoolkHz/gptibo",
-   "stars": 827,
+   "stars": 829,
    "topics": [],
    "story_key": "gh:coolkhz/gptibo"
   },
   {
    "layer": "github",
-   "title": "Leonxlnx/earshot",
-   "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
-   "url": "https://github.com/Leonxlnx/earshot",
-   "stars": 810,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:leonxlnx/earshot"
+   "title": "OpenMOSS/MOSS-Image",
+   "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
+   "url": "https://github.com/OpenMOSS/MOSS-Image",
+   "stars": 826,
+   "topics": [],
+   "story_key": "gh:openmoss/moss-image"
   },
   {
    "layer": "github",
    "title": "LiCinCan/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender ",
    "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-   "stars": 787,
+   "stars": 798,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -950,7 +1022,7 @@
    "title": "Zfinix/eleven",
    "desc": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.",
    "url": "https://github.com/Zfinix/eleven",
-   "stars": 756,
+   "stars": 774,
    "topics": [
     "에이전트",
     "인프라·칩",
@@ -1300,5 +1372,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-19 00:57"
+ "enriched_at": "2026-10-19 10:25"
 }
