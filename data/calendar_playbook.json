@@ -181,7 +181,7 @@
    "id": "t-20261009-1",
    "q": "{m} 미국 소비자물가 발표일 BLS 8:30 ET",
    "when": "always",
-   "status": "trial",
+   "status": "retired",
    "why": "BLS 발표일·시각을 공식 달력 기준으로 교차 확인",
    "added": "2026-10-09"
   },
@@ -242,7 +242,7 @@
    "id": "t-20261011-1",
    "q": "카카오 if(kakao) 2026 10월 컨퍼런스 일정",
    "when": "always",
-   "status": "trial",
+   "status": "retired",
    "why": "국내 테크 행사 확인. 공식 페이지와 다수 매체로 일정 확정에 효과",
    "added": "2026-10-11"
   },
@@ -258,7 +258,7 @@
    "id": "t-20261011-3",
    "q": "September CPI October 14 2026 consensus forecast economists expect",
    "when": "always",
-   "status": "trial",
+   "status": "retired",
    "why": "미국 지표 컨센서스 확인. 단일 프리뷰라도 숫자 맥락 확보",
    "added": "2026-10-11"
   },
@@ -285,14 +285,30 @@
    "status": "trial",
    "why": "GTC 베를린 기조연설 날짜·시각을 엔비디아 행사 페이지로 바로 확인하게 해 줌",
    "added": "2026-10-20"
+  },
+  {
+   "id": "t-20261021-1",
+   "q": "bls.gov schedule {y} {m} release calendar list",
+   "when": "always",
+   "status": "trial",
+   "why": "BLS 공식 발표 일정 페이지가 검색에 나와 미국 지표 날짜를 공식 출처로 교차 확인",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "t-20261021-2",
+   "q": "SK하이닉스 {y}년 3분기 실적 발표일 {m}월",
+   "when": "days:15-31",
+   "status": "trial",
+   "why": "SK하이닉스 3분기 실적일(10-27 보도)을 찾아 국내 대형주 실적 날짜 확인",
+   "added": "2026-10-21"
   }
  ],
  "stats": {
   "kr-week": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "kr-nextweek": {
    "runs": 8,
@@ -301,38 +317,38 @@
    "last_run": "2026-10-18"
   },
   "us-week": {
-   "runs": 13,
+   "runs": 14,
    "hits": 18,
-   "zero_streak": 6,
-   "last_run": "2026-10-20",
+   "zero_streak": 7,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-14"
   },
   "us-earnings-week": {
-   "runs": 13,
-   "hits": 16,
-   "zero_streak": 6,
-   "last_run": "2026-10-20",
-   "last_hit": "2026-10-14"
+   "runs": 14,
+   "hits": 21,
+   "zero_streak": 0,
+   "last_run": "2026-10-21",
+   "last_hit": "2026-10-21"
   },
   "fed-speak": {
-   "runs": 13,
+   "runs": 14,
    "hits": 4,
-   "zero_streak": 7,
-   "last_run": "2026-10-20",
+   "zero_streak": 8,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-13"
   },
   "kr-bok": {
-   "runs": 13,
-   "hits": 2,
+   "runs": 14,
+   "hits": 3,
    "zero_streak": 0,
-   "last_run": "2026-10-20",
-   "last_hit": "2026-10-20"
+   "last_run": "2026-10-21",
+   "last_hit": "2026-10-21"
   },
   "kr-stats": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "kr-prelim": {
    "runs": 7,
@@ -341,29 +357,29 @@
    "last_run": "2026-10-14"
   },
   "kr-earnings": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "us-earnings-watch": {
-   "runs": 13,
+   "runs": 14,
    "hits": 4,
-   "zero_streak": 1,
-   "last_run": "2026-10-20",
+   "zero_streak": 2,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-19"
   },
   "kr-policy": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "kr-audit": {
-   "runs": 13,
+   "runs": 14,
    "hits": 2,
-   "zero_streak": 5,
-   "last_run": "2026-10-20",
+   "zero_streak": 6,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-15"
   },
   "tech-events": {
@@ -373,56 +389,56 @@
    "last_run": "2026-10-09"
   },
   "global-cb": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "china-data": {
-   "runs": 13,
+   "runs": 14,
    "hits": 1,
-   "zero_streak": 12,
-   "last_run": "2026-10-20",
+   "zero_streak": 13,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-09"
   },
   "us-policy": {
-   "runs": 13,
+   "runs": 14,
    "hits": 0,
-   "zero_streak": 13,
-   "last_run": "2026-10-20"
+   "zero_streak": 14,
+   "last_run": "2026-10-21"
   },
   "t-20261009-1": {
-   "runs": 12,
+   "runs": 13,
    "hits": 4,
-   "zero_streak": 6,
-   "last_run": "2026-10-20",
+   "zero_streak": 7,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-14"
   },
   "t-20261009-2": {
-   "runs": 12,
+   "runs": 13,
    "hits": 16,
-   "zero_streak": 1,
-   "last_run": "2026-10-20",
+   "zero_streak": 2,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-19"
   },
   "dev-conf": {
-   "runs": 12,
+   "runs": 13,
    "hits": 0,
-   "zero_streak": 12,
-   "last_run": "2026-10-20"
+   "zero_streak": 13,
+   "last_run": "2026-10-21"
   },
   "launch-event": {
-   "runs": 12,
+   "runs": 13,
    "hits": 2,
-   "zero_streak": 7,
-   "last_run": "2026-10-20",
+   "zero_streak": 8,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-13"
   },
   "kr-dev-conf": {
-   "runs": 12,
+   "runs": 13,
    "hits": 1,
-   "zero_streak": 10,
-   "last_run": "2026-10-20",
+   "zero_streak": 11,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-10"
   },
   "t-20261009-3": {
@@ -432,10 +448,10 @@
    "last_run": "2026-10-16"
   },
   "t-20261010-1": {
-   "runs": 10,
+   "runs": 11,
    "hits": 7,
-   "zero_streak": 2,
-   "last_run": "2026-10-20",
+   "zero_streak": 3,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-18"
   },
   "t-20261010-2": {
@@ -446,10 +462,10 @@
    "last_hit": "2026-10-12"
   },
   "t-20261011-1": {
-   "runs": 9,
+   "runs": 10,
    "hits": 3,
-   "zero_streak": 6,
-   "last_run": "2026-10-20",
+   "zero_streak": 7,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-14"
   },
   "t-20261011-2": {
@@ -460,40 +476,34 @@
    "last_hit": "2026-10-13"
   },
   "t-20261011-3": {
-   "runs": 9,
+   "runs": 10,
    "hits": 2,
-   "zero_streak": 6,
-   "last_run": "2026-10-20",
+   "zero_streak": 7,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-14"
   },
   "t-20261016-1": {
-   "runs": 4,
+   "runs": 5,
    "hits": 1,
-   "zero_streak": 3,
-   "last_run": "2026-10-20",
+   "zero_streak": 4,
+   "last_run": "2026-10-21",
    "last_hit": "2026-10-17"
   },
   "t-20261019-1": {
-   "runs": 1,
-   "hits": 1,
+   "runs": 2,
+   "hits": 2,
    "zero_streak": 0,
-   "last_run": "2026-10-20",
-   "last_hit": "2026-10-20"
+   "last_run": "2026-10-21",
+   "last_hit": "2026-10-21"
+  },
+  "t-20261020-1": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-21"
   }
  },
  "learned": [
-  {
-   "date": "2026-10-11",
-   "note": "관세청 10월 1~10일 잠정치는 검색으로 날짜 확인 안 됨. 보도자료(customs.go.kr)로만 확인 가능"
-  },
-  {
-   "date": "2026-10-11",
-   "note": "국내 3분기 잠정실적 일정은 DART 공시 없이는 검색으로 확인 어려움. DART 키가 필요"
-  },
-  {
-   "date": "2026-10-11",
-   "note": "미 대형은행 실적일은 Finnhub 원자료가 가장 확실. 날짜와 EPS 컨센서스를 함께 확보"
-  },
   {
    "date": "2026-10-12",
    "note": "10-12 실행: 한은 금통위·국감 2026 일정은 검색으로 확정 실패, 공식 일정표 기사화가 늦다"
@@ -601,6 +611,18 @@
   {
    "date": "2026-10-20",
    "note": "2026년 검색은 과거 연도 자료가 많이 섞인다. 날짜 질의에는 연도와 월을 함께 넣어야 한다"
+  },
+  {
+   "date": "2026-10-21",
+   "note": "관세청 잠정치 2026 선례: 9월 1~20일은 9-21, 10월 1~10일은 10-12 발표. 21일 규칙은 보도계획 확인 전까지 미확정으로 둔다."
+  },
+  {
+   "date": "2026-10-21",
+   "note": "한은 금통위 날짜는 2026년 근거 기사가 없고 2025년 기사가 섞인다. bok.or.kr 또는 '금통위 {m}월 {y}' 질의로 확인."
+  },
+  {
+   "date": "2026-10-21",
+   "note": "FRED·Finnhub 공식 API 일정이 미국 지표·실적의 가장 믿을 만한 원천. 웹 검색으로는 확정 건이 거의 안 나온다."
   }
  ],
  "naver_help": "네이버 뉴스 검색(수집기 03:00) — 짧은 헤드라인형 검색어를 최신순으로, 최근 7일 기사만 남긴다. 길고 구체적인 검색어는 옛 기사만 걸린다.",
