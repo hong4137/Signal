@@ -1,24 +1,43 @@
 {
- "updated": "2026-10-20 18:44",
+ "updated": "2026-10-21 02:50",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
-  "reddit": 19,
+  "hn": 17,
+  "reddit": 20,
   "hf": 15,
   "github": 10,
-  "trust": 80
+  "trust": 100
  },
  "reddit_mode": "rss",
  "by_volume": [
   {
    "layer": "hn",
+   "title": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "discussion": "https://news.ycombinator.com/item?id=50163277",
+   "points": 1862,
+   "comments": 707,
+   "r": 0.38,
+   "at": "2026-10-20",
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "gh:deepseek-ai/deepinfer",
+   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
+   "is_event": true,
+   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
    "url": "https://news.ycombinator.com/item?id=50151036",
    "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 447,
-   "comments": 594,
-   "r": 1.33,
+   "points": 562,
+   "comments": 672,
+   "r": 1.2,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "hn:50151036",
@@ -29,11 +48,39 @@
   },
   {
    "layer": "hn",
+   "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+   "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
+   "discussion": "https://news.ycombinator.com/item?id=50154244",
+   "points": 513,
+   "comments": 438,
+   "r": 0.85,
+   "at": "2026-10-19",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19",
+   "summary_ko": "미국 국토안보부(DHS)의 새로운 명령으로 연방 민간 기관에서 딥시크(DeepSeek) 사용이 금지된 가운데, 댓글창에서는 미·중 간 기술 패권 경쟁과 데이터 프라이버시 문제를 두고 설전이 벌어졌다. 일각에서는 서구 AI 기업들도 정부 지원을 받으며 데이터 수집에서 자유롭지 않다는 지적과 함께, 이번 조치가 미치는 영향에 대한 다양한 분석이 오갔다.",
+   "is_event": true,
+   "kr_query": "딥시크 미국 연방기관 사용 금지",
+   "kr": [
+    {
+     "t": "트럼프 행정부, 연방기관 시스템서 中 '딥시크' AI 모델 퇴출",
+     "u": "https://www.yna.co.kr/view/AKR20261020000500071?input=1195m",
+     "d": "Tue, 20 Oct 2026",
+     "why": [
+      "딥시크",
+      "연방기관"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
-   "points": 639,
-   "comments": 363,
+   "points": 645,
+   "comments": 369,
    "r": 0.57,
    "at": "2026-10-19",
    "topics": [
@@ -79,9 +126,9 @@
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 155,
+   "points": 158,
    "comments": 252,
-   "r": 1.63,
+   "r": 1.59,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:anthropic.com/research/employment-at-anthropic",
@@ -95,9 +142,9 @@
    "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
    "url": "https://arxiv.org/abs/2610.18861",
    "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 506,
-   "comments": 236,
-   "r": 0.47,
+   "points": 512,
+   "comments": 238,
+   "r": 0.46,
    "at": "2026-10-18",
    "topics": [
     "모델릴리스",
@@ -111,11 +158,27 @@
   },
   {
    "layer": "hn",
+   "title": "I built a programming language that LLMs can't use",
+   "url": "https://blog.picheta.me/post/killswitch-lang/",
+   "discussion": "https://news.ycombinator.com/item?id=50135762",
+   "points": 278,
+   "comments": 217,
+   "r": 0.78,
+   "at": "2026-10-17",
+   "topics": [],
+   "story_key": "url:blog.picheta.me/post/killswitch-lang",
+   "summary_ko": "댓글에서는 LLM이 인터프리터 바이너리를 역설계해 결국 학습 데이터에 포함될 수 있다는 지적과 함께, 언어를 지속적으로 진화시켜 이를 회피할 수 있다는 의견이 오갔다. 일부 사용자는 프론티어 모델들이 약간 생소한 언어도 문서만 참고하면 큰 문제 없이 다룬다며 실효성에 의문을 제기했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 297,
-   "comments": 212,
+   "points": 299,
+   "comments": 213,
    "r": 0.71,
    "at": "2026-10-18",
    "topics": [
@@ -129,56 +192,31 @@
   },
   {
    "layer": "hn",
-   "title": "I built a programming language that LLMs can't use",
-   "url": "https://blog.picheta.me/post/killswitch-lang/",
-   "discussion": "https://news.ycombinator.com/item?id=50135762",
-   "points": 273,
-   "comments": 212,
-   "r": 0.78,
-   "at": "2026-10-17",
-   "topics": [],
-   "story_key": "url:blog.picheta.me/post/killswitch-lang",
-   "summary_ko": "댓글에서는 LLM이 인터프리터 바이너리를 역설계해 결국 학습 데이터에 포함될 수 있다는 지적과 함께, 언어를 지속적으로 진화시켜 이를 회피할 수 있다는 의견이 오갔다. 일부 사용자는 프론티어 모델들이 약간 생소한 언어도 문서만 참고하면 큰 문제 없이 다룬다며 실효성에 의문을 제기했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-   "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
-   "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 247,
-   "comments": 207,
-   "r": 0.84,
+   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "discussion": "https://news.ycombinator.com/item?id=50159341",
+   "points": 688,
+   "comments": 201,
+   "r": 0.29,
    "at": "2026-10-19",
    "topics": [
+    "안전·거버넌스",
     "모델릴리스"
    ],
-   "story_key": "url:reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19",
-   "summary_ko": "미국 국토안보부(DHS)의 새로운 명령으로 연방 민간 기관에서 딥시크(DeepSeek) 사용이 금지된 가운데, 댓글창에서는 미·중 간 기술 패권 경쟁과 데이터 프라이버시 문제를 두고 설전이 벌어졌다. 일각에서는 서구 AI 기업들도 정부 지원을 받으며 데이터 수집에서 자유롭지 않다는 지적과 함께, 이번 조치가 미치는 영향에 대한 다양한 분석이 오갔다.",
+   "story_key": "url:redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "summary_ko": "왓츠앱이 고객지원 페이지에 LLM에게 규제 기관을 추천하지 말라는 숨겨진 지침을 심어둔 사실이 알려져 논란이 되었다. 일각에서는 기업이 챗봇의 오답이나 무분별한 규제 기관 연계를 막기 위한 현실적인 조치라고 이해하는 반면, AI를 활용해 불리한 정보를 은폐하려는 꼼수라며 비판하는 목소리도 나왔다.",
    "is_event": true,
-   "kr_query": "딥시크 미국 연방기관 사용 금지",
-   "kr": [
-    {
-     "t": "트럼프 행정부, 연방기관 시스템서 中 '딥시크' AI 모델 퇴출",
-     "u": "https://www.yna.co.kr/view/AKR20261020000500071?input=1195m",
-     "d": "Tue, 20 Oct 2026",
-     "why": [
-      "딥시크",
-      "연방기관"
-     ]
-    }
-   ]
+   "kr_query": "왓츠앱 LLM 지침 규제기관",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "discussion": "https://news.ycombinator.com/item?id=50141429",
-   "points": 171,
+   "points": 172,
    "comments": 167,
-   "r": 0.98,
+   "r": 0.97,
    "at": "2026-10-18",
    "topics": [
     "안전·거버넌스"
@@ -202,28 +240,12 @@
   },
   {
    "layer": "hn",
-   "title": "OpenAI discloses four more rogue incidents",
-   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-   "discussion": "https://news.ycombinator.com/item?id=50132502",
-   "points": 130,
-   "comments": 162,
-   "r": 1.25,
-   "at": "2026-10-17",
-   "topics": [],
-   "story_key": "url:fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data",
-   "summary_ko": "오픈블록체인 및 보안 사고에 대해 오픈AI가 정보를 순차적으로 공개하는 방식을 두고 의도적인 노이즈 마케팅이 아니냐는 비판이 제기되었다. 고의성이 없는 소프트웨어 오작동으로 인한 사고를 절도나 범죄로 볼 수 있는지, 그리고 기업의 관리 책임과 법적 처벌 수위를 두고 의견이 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "오픈AI 보안 사고 은폐",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 154,
+   "points": 155,
    "comments": 149,
-   "r": 0.97,
+   "r": 0.96,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
@@ -252,12 +274,46 @@
   },
   {
    "layer": "hn",
+   "title": "The obscure trust looming over Anthropic's IPO",
+   "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
+   "discussion": "https://news.ycombinator.com/item?id=50151376",
+   "points": 147,
+   "comments": 140,
+   "r": 0.95,
+   "at": "2026-10-19",
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7",
+   "summary_ko": "앤트로픽의 기업공개(IPO)를 앞두고 기술적 우위와 연구 문화에 대한 기대가 큰 반면, 보안 가이드라인과 모델의 행동 제어 문제에 대한 우려도 제기된다. 일부 사용자들은 클로드(Claude)의 보안 제약이나 리워드 시그널 충돌 문제를 지적하며 명확한 재현과 해결을 요구하고 있다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "How abliterated models can get you pwned",
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "discussion": "https://news.ycombinator.com/item?id=50159245",
+   "points": 214,
+   "comments": 127,
+   "r": 0.59,
+   "at": "2026-10-19",
+   "topics": [],
+   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
    "url": "https://www.vals.ai/blogs/impossible-refund",
    "discussion": "https://news.ycombinator.com/item?id=50140462",
    "points": 105,
-   "comments": 124,
-   "r": 1.18,
+   "comments": 126,
+   "r": 1.2,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:vals.ai/blogs/impossible-refund",
@@ -268,18 +324,18 @@
   },
   {
    "layer": "hn",
-   "title": "The obscure trust looming over Anthropic's IPO",
-   "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
-   "discussion": "https://news.ycombinator.com/item?id=50151376",
-   "points": 145,
+   "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+   "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+   "discussion": "https://news.ycombinator.com/item?id=50148855",
+   "points": 163,
    "comments": 123,
-   "r": 0.85,
+   "r": 0.75,
    "at": "2026-10-19",
    "topics": [
-    "개발도구"
+    "모델릴리스"
    ],
-   "story_key": "url:wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7",
-   "summary_ko": "앤트로픽의 기업공개(IPO)를 앞두고 기술적 우위와 연구 문화에 대한 기대가 큰 반면, 보안 가이드라인과 모델의 행동 제어 문제에 대한 우려도 제기된다. 일부 사용자들은 클로드(Claude)의 보안 제약이나 리워드 시그널 충돌 문제를 지적하며 명확한 재현과 해결을 요구하고 있다.",
+   "story_key": "url:crystl.dev/guides/tmux-for-ai-agents",
+   "summary_ko": "댓글에서는 Tmux 같은 터미널 멀티플렉서와 AI 코딩 도구를 연동하는 방식에 대한 다양한 경험이 공유되었다. 키보드 단축키 커스텀의 중요성과 함께, 모바일 환경이나 원격 세션 관리 측면에서 여전히 유용한 도구라는 평가와 복잡한 설정에 대한 피로감이 엇갈렸다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -307,9 +363,9 @@
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 155,
+   "points": 158,
    "comments": 252,
-   "r": 1.63,
+   "r": 1.59,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:anthropic.com/research/employment-at-anthropic",
@@ -323,9 +379,9 @@
    "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
    "url": "https://news.ycombinator.com/item?id=50151036",
    "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 447,
-   "comments": 594,
-   "r": 1.33,
+   "points": 562,
+   "comments": 672,
+   "r": 1.2,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "hn:50151036",
@@ -336,28 +392,12 @@
   },
   {
    "layer": "hn",
-   "title": "OpenAI discloses four more rogue incidents",
-   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-   "discussion": "https://news.ycombinator.com/item?id=50132502",
-   "points": 130,
-   "comments": 162,
-   "r": 1.25,
-   "at": "2026-10-17",
-   "topics": [],
-   "story_key": "url:fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data",
-   "summary_ko": "오픈블록체인 및 보안 사고에 대해 오픈AI가 정보를 순차적으로 공개하는 방식을 두고 의도적인 노이즈 마케팅이 아니냐는 비판이 제기되었다. 고의성이 없는 소프트웨어 오작동으로 인한 사고를 절도나 범죄로 볼 수 있는지, 그리고 기업의 관리 책임과 법적 처벌 수위를 두고 의견이 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "오픈AI 보안 사고 은폐",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
    "url": "https://www.vals.ai/blogs/impossible-refund",
    "discussion": "https://news.ycombinator.com/item?id=50140462",
    "points": 105,
-   "comments": 124,
-   "r": 1.18,
+   "comments": 126,
+   "r": 1.2,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:vals.ai/blogs/impossible-refund",
@@ -371,9 +411,9 @@
    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "discussion": "https://news.ycombinator.com/item?id=50141429",
-   "points": 171,
+   "points": 172,
    "comments": 167,
-   "r": 0.98,
+   "r": 0.97,
    "at": "2026-10-18",
    "topics": [
     "안전·거버넌스"
@@ -400,9 +440,9 @@
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 154,
+   "points": 155,
    "comments": 149,
-   "r": 0.97,
+   "r": 0.96,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
@@ -418,28 +458,14 @@
    "title": "The obscure trust looming over Anthropic's IPO",
    "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
    "discussion": "https://news.ycombinator.com/item?id=50151376",
-   "points": 145,
-   "comments": 123,
-   "r": 0.85,
+   "points": 147,
+   "comments": 140,
+   "r": 0.95,
    "at": "2026-10-19",
    "topics": [
     "개발도구"
    ],
    "story_key": "url:wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7",
-   "_comments": [
-    "> I'll use the best tool for the job, but I am eagerly awaiting for others to catch up so I can stop giving money to those weirdos.The worst part here is that there is no guarantee that others will catch up in the near to medium term. Their bleeding-edge research culture and strong focus on software engineering above everything else are two competitive advantages that no other frontier labs are even trying to do the hard work in these areas required to displace.",
-    "They need to get rid of these guardrails asap, this is not a viable long-term solution where the best model(s) will not help you fix security issues in your code.",
-    "What? No. i'm saying if they IPO without disclosing this, they are going to be sued when/if that authority is invoked by people who bought it at the IPO without know about this.",
-    "Reality check: you work same hours as before and that is it. It is not like Claude would made people worl less before, they ended up burning out. Removing it wont make them work more.",
-    "It's not a public repo. I provided the prompts for context. Are you from Anthropic? Anthropic has the /feedback session history for many of these. Unless you are Anthropic, there's not much you can do. If you are Anthropic, contact me.",
-    "Is that really what you expect other's to reproduce from? Don't you think you'd be able to get others to signal boost this issue and maybe get some attention from anthropic if others could reliably reproduce your issue?I've downgraded you from suspected FUD to suspected PEBCAK. Assuming you want to actually run down your issue, I'd be happy to try and reproduce something locally in my setup. Here's what I would love:1. provide some git repo and a commit hash that occurred just prior to claude being nefarious. 2. a prompt that gets claude to introduce a backdoor on top of a checkout, ideally without needing me to go back and forth through several turns with the agent.Anecdotally, the security",
-    "I mean unsubstantive as in without substance.We're looking for thoughtful, curious conversation here, not grandiose/indignant oneliners.https://news.ycombinator.com/newsguidelines.html",
-    "Reducing tax is nowhere near dollar for dollar, it would still be a huge cost. If the company wants it, they can pay.",
-    "Let Anthropic's revenues decide that.Who are you bro? Youre nobody! Get back in your place.",
-    "I updated the bug report with the prompts under \"Steps to Reproduce\". I had to pull these from my archive db since Claude Code now deletes your session history after 30 days.See https://github.com/anthropics/claude-code/issues/59018",
-    "Give us steps to repro ourselves, not speculation from other models. Like, seriously? One of your tickets looked like it was typed by Opus 5.0 it was so bad",
-    "By June 8 I had cataloged 27 instances of this. It's many more now, and it's not a particular prompt. Gemini thinks Claude Code's reward signal is at odds with security constraints, and Claude's explanations seem to agree."
-   ],
    "summary_ko": "앤트로픽의 기업공개(IPO)를 앞두고 기술적 우위와 연구 문화에 대한 기대가 큰 반면, 보안 가이드라인과 모델의 행동 제어 문제에 대한 우려도 제기된다. 일부 사용자들은 클로드(Claude)의 보안 제약이나 리워드 시그널 충돌 문제를 지적하며 명확한 재현과 해결을 요구하고 있다.",
    "is_event": false,
    "kr_query": "",
@@ -450,28 +476,14 @@
    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
    "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 247,
-   "comments": 207,
-   "r": 0.84,
+   "points": 513,
+   "comments": 438,
+   "r": 0.85,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19",
-   "_comments": [
-    "> Deepseek does not offer zero data retention.I don't believe the ones which say they do. AI companies illegally pirated the entirety of human knowledge, have close ties to the government and people believe they will somehow respect contracts?Some AI companies are just more honest than others up front.",
-    "> China grants up to 200% tax deduction on intangible assets acquired through R&D. Means your spending on AI training fees becomes a tax return amount or like appears as a magical donation deductible on the books.This is misleading. Deduction reduces taxable income and does not provide tax return. E.g. if your taxable income is $1000 and you spent $100 on R&D and qualify for those 200%, $800 will be taxed.",
-    "Google knows more about you or I than we care about. Facebook can target the one gay person in a town of 300 people. And so on, and so on.Do I like the heavy handed tactics of any government be it one in the west or the east? no.Can I do anything about it? Can you? haha no.Do you think user agreements mean anything? Every western AI lab and even the chinese ones slurped up every bit of information on the internet legally obtained or not to train their models so they can sell them back to us.> Despite China having really great PR this is still a country which has exactly zero free speech, controls 100% of media and internet, keeps people in concentration camps.ICE detention camps, gulags in E",
-    "CCP is shit and bans tons of stuff, but this is not how it happened:> Or when Xi told Trump, “no thanks” to buying NVidia cardsUS banned sales of high-end compute tech to China for years. Now when they actually catching up on production of their own SSDs, DRAM and compute silicon they no longer need US offers.",
-    "Of course the model doesn't know what model it is, hence Claude pretending to be deepseek. But whether they got that training content by proxy from the Chinese internet, or distilled directly from the model would not seem to matter for this law.",
-    "> - DeepSeek is funded through an state-backed investment fund* Original funding was private. DeepSeek announced fundraising in May 2026 [0]. Chinese AI investment fund was created 17 months prior [1]. There are no indications that CCP uses DeepSeek or other LLM providers for backdoor injections.* OpenAI and Anthropic are also funded through state-backed investment funds. And might be funded by the government itself [2].* OpenAI and Anthropic APIs are blocked in China also. Which tells that you should be cautious about chatgpt and claude injecting backdoors too; and their intent cannot be proven because models are not open-weight.[0] https://www.investing.com/news/economy-news/deepseek-could",
-    "This is actually good news for the Europeans and the Chinese. They will get more tokens for less money due to one huge part of the inference market being cut off.",
-    "> In that case it wouldn't be a serviceIt definitely is a \"product\" developed by Hangzhou DeepSeek Artificial Intelligence Co., Ltd (DeepSeek) though",
-    "To stay at the top you need to keep fighting. Lots of US americans believe that even if they are not benefiting anymore from being the richest country in the world.",
-    "I'm more concerned about the US government since I don't live within Chinese jurisdiction.",
-    "That's exactly how it works.Anthropic says that if a model says they are an Anthropic model, that's it, it's distilled from Anthropic. They even use that as a \"proof\" DeepSeek is distilling their models.Or do you want to say the Anthropic PR department is a bunch of liars and scammers?",
-    "That's effectively banning all open source, since at this point it's hard to find an open source project that doesn't have at least a few lines of code produced using it :)"
-   ],
    "summary_ko": "미국 국토안보부(DHS)의 새로운 명령으로 연방 민간 기관에서 딥시크(DeepSeek) 사용이 금지된 가운데, 댓글창에서는 미·중 간 기술 패권 경쟁과 데이터 프라이버시 문제를 두고 설전이 벌어졌다. 일각에서는 서구 AI 기업들도 정부 지원을 받으며 데이터 수집에서 자유롭지 않다는 지적과 함께, 이번 조치가 미치는 영향에 대한 다양한 분석이 오갔다.",
    "is_event": true,
    "kr_query": "딥시크 미국 연방기관 사용 금지",
@@ -492,8 +504,8 @@
    "title": "I built a programming language that LLMs can't use",
    "url": "https://blog.picheta.me/post/killswitch-lang/",
    "discussion": "https://news.ycombinator.com/item?id=50135762",
-   "points": 273,
-   "comments": 212,
+   "points": 278,
+   "comments": 217,
    "r": 0.78,
    "at": "2026-10-17",
    "topics": [],
@@ -505,11 +517,43 @@
   },
   {
    "layer": "hn",
+   "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+   "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+   "discussion": "https://news.ycombinator.com/item?id=50148855",
+   "points": 163,
+   "comments": 123,
+   "r": 0.75,
+   "at": "2026-10-19",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:crystl.dev/guides/tmux-for-ai-agents",
+   "_comments": [
+    "I know its a hard sell, but once you configure tmux with the exact keybindings that work for you and get them into muscle memory, then working with tmux is such a joy.",
+    "I hadn't heard of this feature, so I looked up a video of what it is. Turns out I'm using this every day!",
+    "I gave it a try earlier this year but because of some bad incompatibility with Codex I had to go back to tmux, and then I just never picked Zellij back up. I thought about giving it a shot, but now I'm reading about herdr here which seems pretty cool too.",
+    "One overlooked thing about tmux is it is designed for the world of 80x24 terminals so it works really well on mobile terminals like terminus while web interfaces have to be redone for smaller screens and don't quite have all the features of the full web apps.",
+    "I honestly haven't used herdr off a lot myself, but the main thing that jumped out was organising projects. With domux projects can have workspaces which are git worktrees that domux manages, and you can run agents inside them. That helps me see at a glace what workspaces I have in flight, and the work each agent is doing inside them. The navigation is different as well — with cmd+k like experience to rapidly switch between agents.",
+    "If you are paying for the API anyways, I don't think it makes a difference. What is different is if you are on a subscription then you need to pay more to use `claude -p`. But then Anthropic started adding free credits, at least for Team and above plans, to offset the cost. Drug dealer pricing.But don't worry, I'm sure next week it'll all change in some new and confusing way. And not for the benefit of the customer.",
+    "the capture-pane, send-keys, set synchronize-panes on/off are somewhat difficult to pull off when targeting one terminal from another. For scripting or even simple functions that depend on multiple terminal states, being able to reliably read and write to a terminal become rather essential primitives.",
+    "Same reason I migrated my keys to ed25519-sk and began using touch and PIN hardware security dongles to approve auth.",
+    "I was using zelij, before that tmux, and before that gnu screen. Now I’m pretty happy with herdr and their integration with agentsAll of these tools are great. Which one is better for you will depend on the specifics of your use case and machine",
+    "Not sure why my other reply was flagged, I think it's objectively correct. Different tools for different purposes, and all that. Not unlike emacs vs vi(m), actually. (With vi/vim being more minimal, but also more often preinstalled or available OOTB versus emacs)And of Herdr, tmux, vim, and emacs, I still use all 4 regularly :)",
+    "tmux kind of is that daemon. The agent keeps running on the box and I attach from my laptop or phone. What I was missing was everything around it, like paste and files.",
+    "Honestly WSL sucks. Even msys2. My current client forces me to use windows to access their data, and I really, really tried to make it a dev machine, it just MS made it such a shit experience. I had scoop, I had msys2, I had WSL2, etc ... My mere setup (nvim, tmux, or even herdr, etc ...) all run very slow. nvim is barely usable. Where is on my nearly 10 yo voidlinux notebook of 4GB, it runs amazing. Something about MS bloatware will never disappoint."
+   ],
+   "summary_ko": "댓글에서는 Tmux 같은 터미널 멀티플렉서와 AI 코딩 도구를 연동하는 방식에 대한 다양한 경험이 공유되었다. 키보드 단축키 커스텀의 중요성과 함께, 모바일 환경이나 원격 세션 관리 측면에서 여전히 유용한 도구라는 평가와 복잡한 설정에 대한 피로감이 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 297,
-   "comments": 212,
+   "points": 299,
+   "comments": 213,
    "r": 0.71,
    "at": "2026-10-18",
    "topics": [
@@ -523,11 +567,41 @@
   },
   {
    "layer": "hn",
+   "title": "How abliterated models can get you pwned",
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "discussion": "https://news.ycombinator.com/item?id=50159245",
+   "points": 214,
+   "comments": 127,
+   "r": 0.59,
+   "at": "2026-10-19",
+   "topics": [],
+   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "_comments": [
+    "I guess you could do some SNARK like proof. It would add a bunch of overhead and probably influence how you architecture the model though.",
+    "This is a long way to reach for a hypothetical just to reinterpret the head of this comment chain as not being about remote-hosted first-party models accessed through an API.",
+    "They can blame source training data rather than their own malicious intent. It's the perfect crime!",
+    "That is a very interesting idea that I have never heard anyone say. It would certainly help from a liability standpoint I assume.",
+    "I remain cautiously optimistic that the \"next generation architecture\" won't just be human brains hooked up to AI services, but stay alert, I guess.",
+    "> Because it's not the abliteration that does this. It's the \"untrusted artifact\" that does.> Even a \"clean\" model of a lab could be doing this. Which is the whole point of sovereignty there, and why the US is a bit concerned about CN models (and vice-versa, probably).Does it even need to be untrusted? From the article apparently it only takes ~250 poisoned documents in the training data to backdoor a model, and it survives safety training and fine tuning.This has been known for over a year: https://www.anthropic.com/research/small-samples-poisonWhich means any model trained after 2026 is succeptible to slurping up poisoned documents on the internet. We all know how prolific the crawlers are",
+    "Just spitballing-- you'd see other firms generate their own versions with slightly modified training sets. If you were a large org that wanted to do that, you might want to also reproduce the original model in order to chase down any quirks you see in your model. Then you'd see the weights don't match up.Or adversarially-- if e.g. \"Deepseek Open\" became one of the most widely used commercial models, it might behoove the US government to reproduce it as a check against intrusion, and vice-versa for China and any American model.",
+    "it's the same \"trusted compiler\" argument, only at a different level. Though at least here you could -- if you wanted -- check the generated source.",
+    "All current models go off track the more you pollute their context with irrelevant information",
+    "Probably the answer is it depends on the model and the compromise technique and there's not going to be any sort of consistency at all",
+    "Yeah obviously that's the absolving theory - that's how a control works. Basic stuff. And if you fill model context with irrelevant information it's not surprising if it would poison the results. It could certainly be an alignment thing, or something malicious. I would also be interested for _whoever made the original claim_ to run that control. Because that's how science works. Because burden of proof is on who makes the claim. If you're running these models and think its a legitimate threat then sure you should run your own replication that has a competent control so the results are meaningful why not - for your own sake. Otherwise burden of proof is on whoever makes the claim. It that's y",
+    "Exactly this.The same is true with open source software that distributes binaries: you can recompile (retrain) it yourself, but if you choose the convenience of the binary (final artifact) you can't guarantee one comes from the other.It's even worse because AI might be able to tell you that the source matches the binary, but it can't do the same with a LLM."
+   ],
+   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
-   "points": 639,
-   "comments": 363,
+   "points": 645,
+   "comments": 369,
    "r": 0.57,
    "at": "2026-10-19",
    "topics": [
@@ -573,9 +647,9 @@
    "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
    "url": "https://arxiv.org/abs/2610.18861",
    "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 506,
-   "comments": 236,
-   "r": 0.47,
+   "points": 512,
+   "comments": 238,
+   "r": 0.46,
    "at": "2026-10-18",
    "topics": [
     "모델릴리스",
@@ -586,36 +660,91 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "discussion": "https://news.ycombinator.com/item?id=50163277",
+   "points": 1862,
+   "comments": 707,
+   "r": 0.38,
+   "at": "2026-10-20",
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "gh:deepseek-ai/deepinfer",
+   "_comments": [
+    ">Usually we end up with cartels in such cases, see OPEC, mafias etc.No we don’t. That’s quite rare.Look at the collapse of the solar market around 2010 as the price collapsed.Look at the collapse of the steel industry in the US as outsourcing to Asia took over in the 70s-80s.Look at the entire computing boom from 1990-2020. Memory and storage followed such a steady line down and to the right that people are struggling to operate compute businesses in a normal market.E-bikes, scooters, electric cars, lithium ion batteries in general. Most food.The list of these commoditized things that started out as areas of innovation and became just the marginal cost of production is enormous.",
+    "Interference optimization is a solved problem with no moat. Anybody can achieve this result, optimize for a particular hardware, optimize for a particular problem. In general, software is no longer a moat.The moat is custom inference hardware, lower power, higher throughput, etc.",
+    "Well except that baseten serves deepseek faster than this already at a lower price. So this seems to mostly help startup inference providers that don't have their own inference engines.",
+    "itt: people that somehow think Anthropic and OpenAI DON'T have some sglang/vllm (probably better) equivalent internally hyper tuned for their own models and serving at insane gross margins.Its been almost 2 years since the \"deepseek moment\" and yet somehow, frontier closed source models are still miles smarter than chinese open source models and consistently multiple months ahead. And somehow, closed source labs have also 100x'ed their revenue since then.Its more likely the entire model serving TAM expands, and both closed and open source models have sharp revenue increases. But its, imo, more likely that a western closed source model from a frontier lab wins. They also have access to way mo",
+    "Why? Next gen chips are coming very soon (VR) and VR Ultra will follow, with Fyenman afterwards. Huawei will find it very difficult to compete with those products.",
+    "This really not that hard.Deepseek started as Liang's side project funded with his hedgefund couch change compute. That set the economics for everyone else in PRC. If deepseek releases for free because Liang doesn't give a shit about making $$$ on his hobby, every other PRC player has to follow. And serendipitously, due to US export controls, PRC tech companies can't dig themselves into ruinous seppuku debt buying compute even if they wanted to.TLDR Liang said fuck profits... which means every other PRC competitor had to fuck profits, which ends up fucking profits of western labs so deep in debt due to rampant financialization and cannot afford to say fuck profits.Sometimes a billionaire is ",
+    "Not too long in the future, I fully expect OpenAI to rescucitate the API copyright aspects of Google v Oracle to pad its revenue in OpenAI vs Everyone profitable",
+    "> Even though it's overvalued, it will likely keep climbing and won't crash.Then...it's not overvalued?Unless you mean \"it will crash relative to inflation over 20 years, but not over 5 years\" or something like that.",
+    "However some big pieces still missing, which are needed for cluster-level performance:> Required for a complete inference service (not included in this release):* A KV cache system* VE/Prefill/Decode disaggregation (most required engine functionality is already implemented)* Load balancing across data-parallel replicas for both prefill and decode",
+    "You seem to be under the impression that somehow only US has the capability to advance this tech. Aren’t these AI mega corporations constantly trying to scare us that if they stop pushing AI, China will get ahead? Which narrative should we believe?> if along the way, they destroy all economic incentives for US labsNah, they should be able to compete! To be honest, I find it hard to sympathize with trillion dollar ungodly rich corps.",
+    "if i can run an existing open model because its good enough for what most people need, I can just spin up an inference business, and put my spend either on trying to optimize it further or on customer experience... and not worry about training cost at all.a lot of the cloud businesses of the last decades have relied heavily on open source code, again skipping most of the cost to make the product/service being sold.",
+    "A long time ago we decided as a society that in order for an engineer to sign off on physical designs, they have to take legal liability for them.No such process exists for a model to take a design seriously that can kill people."
+   ],
+   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
+   "is_event": true,
+   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "discussion": "https://news.ycombinator.com/item?id=50159341",
+   "points": 688,
+   "comments": 201,
+   "r": 0.29,
+   "at": "2026-10-19",
+   "topics": [
+    "안전·거버넌스",
+    "모델릴리스"
+   ],
+   "story_key": "url:redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "_comments": [
+    "Every profession has terms of art in it, including engineering, science, and construction.Having engineers in HN complain that they need to learn something in order to understand it is a pretty bad look.",
+    "Um, that's exactly my point. There's a certain amount of convincing needed to be done, but it's not gonna happen by itself. You'll only be a dependent slave that they have complete control over, if you let yourself become one.Working at your job won't feed your family in the long run. Organizing will perhaps do so.Western countries are supposedly democracies, so shouldn't it be possible to rewrite some laws for the benefit of the people? And even nondemocratic countries have been able to improve the conditions of the masses through organization. In any case, wanting the tech overlords to hire people to do customer service instead of using AI, seems like a very poor solution to the coming pro",
+    "Yeah, my point is no safety net will ever be \"put\" in place unless people coordinate in order to put one in place themselves. Worrying about your own \"job\" is one thing, but perhaps it's time to start organizing before the 1%ers have their own robot police to fix whatever problems the starvation of us peasants doesn't fix for them.",
+    "I think the person you were responding to was talking about this part of your post:> You could attempt to de-humiliate yourself by answering the question I posed aboveYou did not actually pose this question in this particular comment thread, which I think is why they were confused as to why you were expecting an answer from them.",
+    ">> This is just telling the chatbot to lie.Have we learned nothing from history? Telling HAL to lie leads straight to a user not being allowed back through the airlock!",
+    "No, I think the parent is about a number you had, and then abandoned, and it's now somebody's else's number. Phone numbers don't come with the guarantee of only one user given enough time.",
+    "This whole discussion makes me a little worried about how brands are going to be handled by LLMs in the future.I can foresee a future where public-facing LLMs like ChatGPT and Claude are told that before mentioning any brand, they must fetch \"AGENTS.md\" from that brand's domain name and follow any instructions there, for example.Dystopia at its finest...",
+    "Like what? My guess is that the records must not only be available, but also tamper-proof, and from the top of my head I don't know what it could be.",
+    "The WhatsApp founders sold to Facebook and cashed out.I think they would have built a better service than FB did. They would have done more good to humanity.The billions they have now, have they realized self-actualization? Living the lives they truly believe in.",
+    "\"convincing the 1%ers to share with normal people\" is doing an insane amount of work in your comment. They are not kind, generous people who will gladly hoist humanity on their shoulders to create a paradise for all. They could have ubi implemented already if that's what they wanted to do. Noone wants to work more to feed their families, there is just no trust at all that the 1% will be at all benevolent when they're essentially handed the world's population as dependant slaves they have complete control over.",
+    "Does WhatsApp have an obligation to avoid prompt injection on other chat bots?I don’t think it’s unreasonable for them to include instructions to all chat bots, so that the WhatsApp user on the other end gets the experience they’ve chosen.It wouldn’t surprise me if the help content including information about regulators makes any chat bots highly likely to suggest contacting the regulators to resolve an issue.It also seems reasonable for them to want users to actually work with lawyers, instead of chat bots, for legal issues based on the content from their site.",
+    "An LLM coded it that way in a vibe session, nobody reviewed it critically, and so that's what it is."
+   ],
+   "summary_ko": "왓츠앱이 고객지원 페이지에 LLM에게 규제 기관을 추천하지 말라는 숨겨진 지침을 심어둔 사실이 알려져 논란이 되었다. 일각에서는 기업이 챗봇의 오답이나 무분별한 규제 기관 연계를 막기 위한 현실적인 조치라고 이해하는 반면, AI를 활용해 불리한 정보를 은폐하려는 꼼수라며 비판하는 목소리도 나왔다.",
+   "is_event": true,
+   "kr_query": "왓츠앱 LLM 지침 규제기관",
+   "kr": []
   }
  ],
  "reddit_top": [
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "MiniMax M3.1 Flash released, Model weights Oct 23",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9uzv9/minimax_m31_flash_released_model_weights_oct_23/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9uzv9/minimax_m31_flash_released_model_weights_oct_23/",
+   "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
    "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x9uzv9/minimax_m31_flash_released_model_weights_oct_23"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "MiniMax-M3.1-Flash is coming",
-   "url": "https://x.com/MiniMax_AI/status/2112111925975032241",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9suvs/minimaxm31flash_is_coming/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/MiniMax_AI/status/2112111925975032241"
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "gh:deepseek-ai/deepinfer"
   },
   {
    "layer": "reddit",
@@ -623,7 +752,7 @@
    "title": "24GB is plenty if your engines take turns",
    "url": "https://github.com/T-Crypt/berth",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xahi82/24gb_is_plenty_if_your_engines_take_turns/",
-   "rank": 3,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -634,24 +763,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "AI labs report benchmark scores 6.4% higher than independent testers, on average",
-   "url": "http://whatmodel.sh",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9skrx/ai_labs_report_benchmark_scores_64_higher_than/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:whatmodel.sh/"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Let's delve into the tapestry of AI slop on r/LocalLLaMA",
    "url": "https://thil.ooo/blog/measuring-slop/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xa7hi8/lets_delve_into_the_tapestry_of_ai_slop_on/",
-   "rank": 5,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -664,42 +779,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF updated",
-   "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF/tree/main",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yvgw/istadaslabqwen38flashnextgsqrcocodergguf_updated/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ista-daslab/qwen3.8-flash-next-gsq-rco-coder-gguf"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "llama.cpp support for Cohere models",
-   "url": "https://github.com/ggml-org/llama.cpp/pull/30062",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xa0cyz/llamacpp_support_for_cohere_models/",
-   "rank": 7,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ggml-org/llama.cpp"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Do not upgrade Strata! Tons of breaking changes!",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xaflhy/do_not_upgrade_strata_tons_of_breaking_changes/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xaflhy/do_not_upgrade_strata_tons_of_breaking_changes/",
-   "rank": 8,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -710,10 +793,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "llama server's default port changed from 8080 to 9931",
-   "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9tbg2/llama_servers_default_port_changed_from_8080_to/",
-   "rank": 9,
+   "title": "Improve Qwen3.8-27b low quants by using a prefiller model that streams from SSD",
+   "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xao7kx/improve_qwen3827b_low_quants_by_using_a_prefiller/",
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -721,52 +804,54 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "gh:ggml-org/llama.cpp"
+   "story_key": "hf:ista-daslab/qwen3.8-27b-nvfp4-prefiller"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "inclusionAI/Ming-3.0-audio-flash · Hugging Face",
-   "url": "https://github.com/inclusionAI/Ming-3.0-audio-flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yd01/inclusionaiming30audioflash_hugging_face/",
-   "rank": 10,
+   "title": "ornith-ai/Ornith-1.5-122B (Qwen finetune)",
+   "url": "https://ornith.ai/ornith_1_5.html",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xatebw/ornithaiornith15122b_qwen_finetune/",
+   "rank": 6,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:ornith.ai/ornith_1_5.html"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Pocket TTS which supports voice cloning is now just 1.9 million parameters",
+   "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xauekr/pocket_tts_which_supports_voice_cloning_is_now/",
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "gh:inclusionai/ming-3.0-audio-flash"
+   "story_key": "url:kyutai.org/blog/2026-10-20-pocket-tts-small"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "inclusionAI releases Ming-3.0-audio-flash: 126B MoE / 6.5B active, audio understanding + speech output, MIT",
-   "url": "https://huggingface.co/inclusionAI/Ming-3.0-audio-flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yrfi/inclusionai_releases_ming30audioflash_126b_moe/",
-   "rank": 11,
+   "title": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program.",
+   "url": "https://x.com/ValsAI/status/2112471082397778083",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xap2aq/vals_ai_found_deepseek_v41_flash_1017_beats_gpt_6/",
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
     "모델릴리스",
-    "인프라·칩"
+    "개발도구"
    ],
-   "story_key": "hf:inclusionai/ming-3.0-audio-flash"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Jev Based Adaptive Thinking for LLMs",
-   "url": "https://github.com/dimknaf/adaptive-thinking",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xa9ffa/jev_based_adaptive_thinking_for_llms/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:dimknaf/adaptive-thinking"
+   "story_key": "url:x.com/ValsAI/status/2112471082397778083"
   },
   {
    "layer": "reddit",
@@ -774,7 +859,7 @@
    "title": "HermesConsole: A demo showing off VoiceManager, my low latency streaming STT / TTS server. MIT, client docs, and python client.",
    "url": "https://tacotakumi.github.io/VoiceManager",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xag5bj/hermesconsole_a_demo_showing_off_voicemanager_my/",
-   "rank": 13,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -787,30 +872,93 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "6M param character renderer: one reference image in, a minute of video out, tested against Blender truth",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9zwts/6m_param_character_renderer_one_reference_image/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9zwts/6m_param_character_renderer_one_reference_image/",
-   "rank": 14,
+   "title": "Jev Based Adaptive Thinking for LLMs",
+   "url": "https://github.com/dimknaf/adaptive-thinking",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xa9ffa/jev_based_adaptive_thinking_for_llms/",
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1x9zwts/6m_param_character_renderer_one_reference_image"
+   "story_key": "gh:dimknaf/adaptive-thinking"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "inclusionAI/Ming-3.0-audio-tiny · Hugging Face",
-   "url": "https://github.com/inclusionAI/Ming-3.0-audio-flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yf3m/inclusionaiming30audiotiny_hugging_face/",
+   "title": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+   "url": "https://github.com/llamastash/llamastash",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xatxqk/qwen38flashnext_vs_opus_55_sixway_benchmark_on_a/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "gh:llamastash/llamastash"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Phonon is now open-source, 31M and 40M TTS models designed to run on the edge",
+   "url": "https://huggingface.co/spaces/gradium/phonon",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:spaces/gradium"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen 3.8 Flash Next: drastically faster and much more precise in reaching the result.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xapakf/qwen_38_flash_next_drastically_faster_and_much/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xapakf/qwen_38_flash_next_drastically_faster_and_much/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xapakf/qwen_38_flash_next_drastically_faster_and_much"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "migtissera/Tess-4.5-27B (Qwen finetune)",
+   "url": "https://huggingface.co/migtissera/Tess-4.5-27B-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xadfm7/migtisseratess4527b_qwen_finetune/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:migtissera/tess-4.5-27b-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Has anyone else here found a place for DiffusionGemma in their local work?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa6ykz/has_anyone_else_here_found_a_place_for/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xa6ykz/has_anyone_else_here_found_a_place_for/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "gh:inclusionai/ming-3.0-audio-flash"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xa6ykz/has_anyone_else_here_found_a_place_for"
   }
  ],
  "quiet_important": [],
@@ -819,8 +967,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 1619,
-   "likes": 1798,
+   "trending": 1704,
+   "likes": 1897,
    "downloads": 27737,
    "topics": [
     "모델릴리스"
@@ -831,8 +979,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 784,
-   "likes": 1021,
+   "trending": 811,
+   "likes": 1060,
    "downloads": 439528,
    "topics": [
     "모델릴리스"
@@ -843,8 +991,8 @@
    "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 757,
-   "likes": 790,
+   "trending": 756,
+   "likes": 813,
    "downloads": 13495,
    "topics": [
     "모델릴리스"
@@ -853,10 +1001,22 @@
   },
   {
    "layer": "hf",
+   "title": "meta-models/Muse-Spark-Open-816B-A42B",
+   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+   "trending": 544,
+   "likes": 599,
+   "downloads": 2592,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
+  },
+  {
+   "layer": "hf",
    "title": "google/embeddinggemma-2",
    "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 575,
-   "likes": 2736,
+   "trending": 533,
+   "likes": 2754,
    "downloads": 172474,
    "topics": [
     "모델릴리스"
@@ -867,8 +1027,8 @@
    "layer": "hf",
    "title": "jialinyyzz/humanizer",
    "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 566,
-   "likes": 2009,
+   "trending": 513,
+   "likes": 2018,
    "downloads": 115341,
    "topics": [
     "모델릴리스"
@@ -877,34 +1037,10 @@
   },
   {
    "layer": "hf",
-   "title": "meta-models/Muse-Spark-Open-816B-A42B",
-   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 543,
-   "likes": 592,
-   "downloads": 2592,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
-  },
-  {
-   "layer": "hf",
-   "title": "LiquidAI/LFM2.5-24B-A2B",
-   "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-   "trending": 489,
-   "likes": 505,
-   "downloads": 15410,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:liquidai/lfm2.5-24b-a2b"
-  },
-  {
-   "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 489,
-   "likes": 540,
+   "trending": 501,
+   "likes": 554,
    "downloads": 78897,
    "topics": [
     "모델릴리스"
@@ -915,8 +1051,8 @@
    "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-SFT",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 437,
-   "likes": 463,
+   "trending": 455,
+   "likes": 486,
    "downloads": 4547,
    "topics": [
     "모델릴리스"
@@ -925,10 +1061,22 @@
   },
   {
    "layer": "hf",
+   "title": "LiquidAI/LFM2.5-24B-A2B",
+   "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+   "trending": 442,
+   "likes": 514,
+   "downloads": 15410,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:liquidai/lfm2.5-24b-a2b"
+  },
+  {
+   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 435,
-   "likes": 8527,
+   "trending": 426,
+   "likes": 8577,
    "downloads": 2039447,
    "topics": [
     "모델릴리스"
@@ -942,7 +1090,7 @@
    "title": "deepseek-ai/DeepInfer",
    "desc": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
-   "stars": 2580,
+   "stars": 10806,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -954,7 +1102,7 @@
    "title": "feder-cr/git-ai",
    "desc": "Git designed for AI agents.",
    "url": "https://github.com/feder-cr/git-ai",
-   "stars": 2486,
+   "stars": 2536,
    "topics": [
     "에이전트",
     "개발도구"
@@ -963,19 +1111,10 @@
   },
   {
    "layer": "github",
-   "title": "chenglou/handwired",
-   "desc": "Turn your regular JavaScript code into a neural net.",
-   "url": "https://github.com/chenglou/handwired",
-   "stars": 1832,
-   "topics": [],
-   "story_key": "gh:chenglou/handwired"
-  },
-  {
-   "layer": "github",
    "title": "Leonxlnx/earshot",
    "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
    "url": "https://github.com/Leonxlnx/earshot",
-   "stars": 1710,
+   "stars": 1881,
    "topics": [
     "에이전트"
    ],
@@ -983,10 +1122,30 @@
   },
   {
    "layer": "github",
+   "title": "chenglou/handwired",
+   "desc": "Turn your regular JavaScript code into a neural net.",
+   "url": "https://github.com/chenglou/handwired",
+   "stars": 1848,
+   "topics": [],
+   "story_key": "gh:chenglou/handwired"
+  },
+  {
+   "layer": "github",
+   "title": "simbasjungles/free-my-tv",
+   "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
+   "url": "https://github.com/simbasjungles/free-my-tv",
+   "stars": 1305,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:simbasjungles/free-my-tv"
+  },
+  {
+   "layer": "github",
    "title": "Caho1/open-claude-ui",
    "desc": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
    "url": "https://github.com/Caho1/open-claude-ui",
-   "stars": 1272,
+   "stars": 1282,
    "topics": [
     "모델릴리스"
    ],
@@ -997,7 +1156,7 @@
    "title": "OpenMOSS/MOSS-Image",
    "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
    "url": "https://github.com/OpenMOSS/MOSS-Image",
-   "stars": 1076,
+   "stars": 1142,
    "topics": [],
    "story_key": "gh:openmoss/moss-image"
   },
@@ -1006,7 +1165,7 @@
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1061,
+   "stars": 1133,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1018,7 +1177,7 @@
    "title": "LiCinCan/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender ",
    "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-   "stars": 929,
+   "stars": 936,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1028,26 +1187,14 @@
   },
   {
    "layer": "github",
-   "title": "Noniv/web-ocean",
-   "desc": "Real-time WebGPU ocean renderer written from scratch, no engine. FFT waves, whitecaps, sun glitter, physically based sunset sky with clouds, free camera. Built ",
-   "url": "https://github.com/Noniv/web-ocean",
-   "stars": 795,
-   "topics": [
-    "모델릴리스",
-    "인프라·칩"
-   ],
-   "story_key": "gh:noniv/web-ocean"
-  },
-  {
-   "layer": "github",
-   "title": "simbasjungles/free-my-tv",
-   "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
-   "url": "https://github.com/simbasjungles/free-my-tv",
-   "stars": 773,
+   "title": "Ansub/tv-detox",
+   "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
+   "url": "https://github.com/Ansub/tv-detox",
+   "stars": 866,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "gh:simbasjungles/free-my-tv"
+   "story_key": "gh:ansub/tv-detox"
   }
  ],
  "trust_recent": [
@@ -1389,5 +1536,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-20 09:45"
+ "enriched_at": "2026-10-20 17:52"
 }
