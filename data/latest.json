@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-21 10:24",
+ "updated": "2026-10-21 18:45",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 17,
-  "reddit": 17,
+  "hn": 16,
+  "reddit": 18,
   "hf": 15,
-  "github": 12,
+  "github": 11,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,15 +16,19 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2132,
-   "comments": 830,
-   "r": 0.39,
+   "points": 2249,
+   "comments": 856,
+   "r": 0.38,
    "at": "2026-10-20",
    "topics": [
     "모델릴리스",
     "개발도구"
    ],
    "story_key": "gh:deepseek-ai/deepinfer",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "title",
    "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
    "is_event": true,
    "kr_query": "딥인퍼러 딥식 추론 프레임워크",
@@ -35,9 +39,9 @@
    "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
    "url": "https://news.ycombinator.com/item?id=50151036",
    "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 586,
-   "comments": 691,
-   "r": 1.18,
+   "points": 592,
+   "comments": 713,
+   "r": 1.2,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "hn:50151036",
@@ -51,9 +55,9 @@
    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
    "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 553,
-   "comments": 504,
-   "r": 0.91,
+   "points": 565,
+   "comments": 519,
+   "r": 0.92,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -80,8 +84,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
    "points": 647,
-   "comments": 372,
-   "r": 0.57,
+   "comments": 373,
+   "r": 0.58,
    "at": "2026-10-19",
    "topics": [
     "에이전트"
@@ -94,40 +98,11 @@
   },
   {
    "layer": "hn",
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "discussion": "https://news.ycombinator.com/item?id=50138531",
-   "points": 601,
-   "comments": 282,
-   "r": 0.47,
-   "at": "2026-10-18",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:api-docs.deepseek.com/guides/search",
-   "summary_ko": "댓글에서는 에이전트가 리서치 등의 작업을 수행할 때 인터넷 검색 기능이 기본적으로 매끄럽게 연동되어야 한다는 의견이 지배적이다. 일부 사용자들은 딥시크가 제공하는 검색 및 수집 API의 비용 효율성과 렉시컬 매칭 방식에 주목하며, LLM이 이를 어떻게 활용할 수 있는지에 대해 토론한다.",
-   "is_event": true,
-   "kr_query": "딥시크 검색 API 출시",
-   "kr": [
-    {
-     "t": "딥시크, 코딩 성능 높인 'V4.1 플래시' 업데이트…검색 API도 공개",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216370",
-     "d": "Sun, 18 Oct 2026",
-     "why": [
-      "api",
-      "검색",
-      "딥시크"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 159,
-   "comments": 253,
+   "points": 160,
+   "comments": 254,
    "r": 1.59,
    "at": "2026-10-18",
    "topics": [],
@@ -142,7 +117,7 @@
    "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
    "url": "https://arxiv.org/abs/2610.18861",
    "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 515,
+   "points": 516,
    "comments": 238,
    "r": 0.46,
    "at": "2026-10-18",
@@ -161,8 +136,8 @@
    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 300,
-   "comments": 215,
+   "points": 301,
+   "comments": 216,
    "r": 0.72,
    "at": "2026-10-18",
    "topics": [
@@ -176,10 +151,26 @@
   },
   {
    "layer": "hn",
+   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "discussion": "https://news.ycombinator.com/item?id=50168190",
+   "points": 177,
+   "comments": 209,
+   "r": 1.18,
+   "at": "2026-10-20",
+   "topics": [],
+   "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "summary_ko": "댓글에서는 스팀 넥스트 페스트에 AI 생성 게임이 범람하면서 품질 낮은 게임을 걸러낼 'AI 없음' 필터가 필요하다는 목소리가 높다. 일각에서는 거의 모든 개발자가 코딩이나 디버깅에 AI를 쓰기 때문에 실효성이 없고 거짓 신고만 늘어날 것이라는 회의적인 반응도 보이고 있다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 714,
+   "points": 727,
    "comments": 208,
    "r": 0.29,
    "at": "2026-10-19",
@@ -195,27 +186,11 @@
   },
   {
    "layer": "hn",
-   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
-   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-   "discussion": "https://news.ycombinator.com/item?id=50168190",
-   "points": 168,
-   "comments": 195,
-   "r": 1.16,
-   "at": "2026-10-20",
-   "topics": [],
-   "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-   "summary_ko": "댓글에서는 스팀 넥스트 페스트에 AI 생성 게임이 범람하면서 품질 낮은 게임을 걸러낼 'AI 없음' 필터가 필요하다는 목소리가 높다. 일각에서는 거의 모든 개발자가 코딩이나 디버깅에 AI를 쓰기 때문에 실효성이 없고 거짓 신고만 늘어날 것이라는 회의적인 반응도 보이고 있다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 322,
-   "comments": 184,
+   "points": 343,
+   "comments": 197,
    "r": 0.57,
    "at": "2026-10-20",
    "topics": [],
@@ -259,9 +234,9 @@
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 156,
+   "points": 157,
    "comments": 149,
-   "r": 0.96,
+   "r": 0.95,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
@@ -277,9 +252,9 @@
    "title": "The obscure trust looming over Anthropic's IPO",
    "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
    "discussion": "https://news.ycombinator.com/item?id=50151376",
-   "points": 149,
+   "points": 151,
    "comments": 142,
-   "r": 0.95,
+   "r": 0.94,
    "at": "2026-10-19",
    "topics": [
     "개발도구"
@@ -295,9 +270,9 @@
    "title": "How abliterated models can get you pwned",
    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
    "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 229,
-   "comments": 133,
-   "r": 0.58,
+   "points": 239,
+   "comments": 136,
+   "r": 0.57,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
@@ -312,8 +287,8 @@
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50148855",
    "points": 168,
-   "comments": 126,
-   "r": 0.75,
+   "comments": 127,
+   "r": 0.76,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -347,13 +322,29 @@
    "title": "How employment is changing at Anthropic",
    "url": "https://www.anthropic.com/research/employment-at-anthropic",
    "discussion": "https://news.ycombinator.com/item?id=50139873",
-   "points": 159,
-   "comments": 253,
+   "points": 160,
+   "comments": 254,
    "r": 1.59,
    "at": "2026-10-18",
    "topics": [],
    "story_key": "url:anthropic.com/research/employment-at-anthropic",
    "summary_ko": "댓글 참여자들은 LLM이 생성하는 코드가 방대한 쓰레기 코드를 양산할 수 있어 철저한 테스트와 검증이 필수적이라고 지적한다. 또한 본문이 기업 홍보성 글처럼 보인다는 반응과 함께, 지식 노동과 연구 중심의 업무가 AI로 인해 가장 먼저 대체될 것이라는 의견이 나온다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "url": "https://news.ycombinator.com/item?id=50151036",
+   "discussion": "https://news.ycombinator.com/item?id=50151036",
+   "points": 592,
+   "comments": 713,
+   "r": 1.2,
+   "at": "2026-10-19",
+   "topics": [],
+   "story_key": "hn:50151036",
+   "summary_ko": "AI가 작성한 코드를 이해하지 못한 채 배포하는 문제를 두고 의견이 엇갈리고 있습니다. 핵심 로직과 자동화된 테스트만 확실히 검증하면 충분하다는 현실론과, 개발자의 전문성 저하 및 기술 부채를 우려하는 목소리가 맞부딪쳤습니다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -376,45 +367,15 @@
   },
   {
    "layer": "hn",
-   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
-   "url": "https://news.ycombinator.com/item?id=50151036",
-   "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 586,
-   "comments": 691,
-   "r": 1.18,
-   "at": "2026-10-19",
-   "topics": [],
-   "story_key": "hn:50151036",
-   "summary_ko": "AI가 작성한 코드를 이해하지 못한 채 배포하는 문제를 두고 의견이 엇갈리고 있습니다. 핵심 로직과 자동화된 테스트만 확실히 검증하면 충분하다는 현실론과, 개발자의 전문성 저하 및 기술 부채를 우려하는 목소리가 맞부딪쳤습니다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
    "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
    "discussion": "https://news.ycombinator.com/item?id=50168190",
-   "points": 168,
-   "comments": 195,
-   "r": 1.16,
+   "points": 177,
+   "comments": 209,
+   "r": 1.18,
    "at": "2026-10-20",
    "topics": [],
    "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-   "_comments": [
-    "> why should consumers care that a poor business loses business? Not seeing the downside hereIt's okay to disagree with what I'm saying but please acknowledge that you are arguing against a statement different from what I'm saying. I'm claiming that they would not lose business at all. Not that they shouldn't lose business.",
-    "A lot = most?I agree with \"alot\", but i doubt most \"hate\". Hate is a strong word/emotion that gets thrown around easily for sensationalist or propaganda purposes. Is this an \"appeal to hate\" argument?Most people have more going on in their lives than to have chance to hate abstract things.For most people AI are search results in \"human\" speech presentation. Or slightly more sophisticated customer service bot. Or the latest form of personalized clipart generator for their group chats.For most people experiencing AI is not (yet) beyond the experience clash of going from nokia 3310 to a multicamera, ig/fb/doomscroll filled iPhone. Are they seeing much more \"slop\" in their doomscroll than in 202",
-    "So if you use a binary flag to let people filter, it immediately becomes entirely useless. You'd have probably less than a single percent of people with the \"no AI flag\" actually have 0 contact with AI, and the rest would be straight liars.It's even worse if you include AI via libraries, frameworks, or modules. If you write your game in Epic or Unreal engines, do you need to disclose that you used AI?",
-    "Steam Next Fest is unique in that the first two days of it have the default view for the page be random. This is intended to give more games exposure, and then two days into the Fest they have enough data to start personalizing recommendations. So the event format's design makes slop particularly bad compared to most other places in the storefront.",
-    "Ratings are indeed being gamed now, yes. Not sure how long this has been going on, I've started to see it be obvious in the last 6 months.It's very obvious when looking at the reviews for certain new indie games. All LLM written comments, most short, most low playtime.Then actual customers come along and buy the game and over the next few weeks the game craters from Mostly Positive to Mostly Negative.",
-    "That's not what that is, nor does Steam have an affiliate program that would enable the parent commenter to make money from referral links.",
-    "> Because if I use an LLM to debug a crash report, then that’s the same category as creating a slop gameSteam has clear guidelines on what requires an AI disclosure, and all that people are asking for is that they can filter based on this. It's a tiny change.> AI-assisted coding describes every software project everywhere in the worldThat is simply not true.> and then just… lieI'm not a lawyer, but lying about something that influences the customer's purchase decision sounds a bit like fraud and not something I would advise to \"just\" do. If using AI is so normal then why lie about it?",
-    "People need to understand that AI is dominating the corporate world; all areas, not just software development, take advantage of AI. Denying AI in the corporate world means losing competitiveness. You can't fight against the modernization of tools. And game development is no different; it will accelerate and improve games, but it will also cause a flood of flop games. Game design, good ideas, creativity, common sense, care/attention, make a good game. AI only accelerates, for better or for worse.",
-    "At some point, the \"No AI\" filter should just block anything released after 2021. Games made before this are the low background steel.",
-    "Slop makes it harder to find good games, both in terms of discoverability and customers being less willing to take a chance on purchasing an indie game, resulting in fewer purchases and less income to Valve. Slop games also mean an increase in customers asking for game refunds.",
-    "It’s really to the interest of nobody, because obviously there’s an incentive to be dishonest.It’s also not particularly helpful, right? Because if I use an LLM to debug a crash report, then that’s the same category as creating a slop game.So what you would do, realistically, is use the AI to write code, debug, you know typical software development stuff and then just… lie. Your game is closed-source anyway, so nobody is reading the code.There’s levels to this. AI generated slop assets is one thing. AI-assisted coding describes every software project everywhere in the world.",
-    "The problem is that literally zero percent of new games will be valid as “no AI” then. Not a low percent, zero percent.When it comes to software development, LLMs are present somewhere in the pipeline. Even if it’s a simple google search, you have AI overview. Even if I only use an LLM to debug or read code. Even if I only use an LLM to do web searches.There would legitimately be no software left that’s AI-free.Look, many domains can do just fine without LLMs and LLMs don’t enhance them too much. Software is the exception. Every software engineer, everywhere on Earth, is using LLMs to some extent in their workflow. The only exceptions are where it’s literally illegal to do so."
-   ],
    "summary_ko": "댓글에서는 스팀 넥스트 페스트에 AI 생성 게임이 범람하면서 품질 낮은 게임을 걸러낼 'AI 없음' 필터가 필요하다는 목소리가 높다. 일각에서는 거의 모든 개발자가 코딩이나 디버깅에 AI를 쓰기 때문에 실효성이 없고 거짓 신고만 늘어날 것이라는 회의적인 반응도 보이고 있다.",
    "is_event": false,
    "kr_query": "",
@@ -454,9 +415,9 @@
    "title": "Websites are closing their doors to AI agents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "discussion": "https://news.ycombinator.com/item?id=50141657",
-   "points": 156,
+   "points": 157,
    "comments": 149,
-   "r": 0.96,
+   "r": 0.95,
    "at": "2026-10-18",
    "topics": [
     "에이전트"
@@ -472,9 +433,9 @@
    "title": "The obscure trust looming over Anthropic's IPO",
    "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
    "discussion": "https://news.ycombinator.com/item?id=50151376",
-   "points": 149,
+   "points": 151,
    "comments": 142,
-   "r": 0.95,
+   "r": 0.94,
    "at": "2026-10-19",
    "topics": [
     "개발도구"
@@ -490,9 +451,9 @@
    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
    "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 553,
-   "comments": 504,
-   "r": 0.91,
+   "points": 565,
+   "comments": 519,
+   "r": 0.92,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -519,8 +480,8 @@
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50148855",
    "points": 168,
-   "comments": 126,
-   "r": 0.75,
+   "comments": 127,
+   "r": 0.76,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -536,8 +497,8 @@
    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 300,
-   "comments": 215,
+   "points": 301,
+   "comments": 216,
    "r": 0.72,
    "at": "2026-10-18",
    "topics": [
@@ -551,28 +512,12 @@
   },
   {
    "layer": "hn",
-   "title": "How abliterated models can get you pwned",
-   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 229,
-   "comments": 133,
-   "r": 0.58,
-   "at": "2026-10-19",
-   "topics": [],
-   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
    "points": 647,
-   "comments": 372,
-   "r": 0.57,
+   "comments": 373,
+   "r": 0.58,
    "at": "2026-10-19",
    "topics": [
     "에이전트"
@@ -588,26 +533,12 @@
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 322,
-   "comments": 184,
+   "points": 343,
+   "comments": 197,
    "r": 0.57,
    "at": "2026-10-20",
    "topics": [],
    "story_key": "url:peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-   "_comments": [
-    "I'm a bit confused. Someone posted fake stats online and see ChatGPT visit the page. Then they immediately assume that ChatGPT is falling for those fake stats and using it as chat responses or analysis input? Where's the proof?The author then sees their stats in a paper and other sites and assumes ChatGPT put it there?Did I miss the evidence that shows ChatGPT is actually using the fake stats? Serious question.",
-    "I'm assuming that google takes backlink data to factor in how much the data is credible where as other LLMs won't have this knowledge and years of experience.",
-    "Only in the context of something like RAG - there, you can attach provenance information to data included in the prompt.With training data, however, no such annotation is possible.",
-    ">> because semantics is not involvedAnd there, in five words, is the problem/feature/definition of AI.",
-    "What does the FDA do when someone gets caught selling a fake medication? Do we wrap truth in scare quotes and try to make the sugar pills a philosophical issue?Why is it so unconscionable to hold tech corporations accountable? We know (maybe I should say knew at this point?) how to enforce fraud and consumer protection. I fail to see how this shouldn't fall under commercial liability that's really all that different than run of the mill false advertising or product defects.If we fail to do this we subsidize the operators and externalize the cost of fraud onto the general public.",
-    "\"your honor, I only commited the crime to prove that society is vulnerable to these kinds of attacks! I'm actually a hero\"",
-    "You’re talking to the guy that invented next word and phrase token prediction at Google.Gullible is an appropriate colloquialism here. As in they don’t check countervailing narratives naturally and fall into a recency sink on last context. Long walk context construction is hard, time consuming and most Importantly significantly more expensive.",
-    "So when this will inevitably result in a paid web emerging with higher trust information for an additional fee, a fee that these companies will happily offload and/or partner away, will you be there to cash in as a mighty coincidence, or is this realization still awaiting you? Among the many other hilariously fucked realizations.",
-    "hey hey author here. huge thanks to robtherobber. I didn't expect this on the frontpage.It's all scary. I only spent 50$ in total. Everything is \"made-up\". Then they showed up in an academic paper, bank reports",
-    "So far as I've seen, the laws don't apply to AI companies. They do what they want.",
-    "The company I work for disappeared from Google as well and it is totally a legit business.After dozens of requests to check we finally received a message saying they were going to roll back changes.Well. We received that at the same time they published a post saying they would do that.",
-    "We have laws against undisclosed and misleading advertising, because consumers can't make informed purchases otherwise. What makes you think LLMs will have a fundamentally different pattern than everything else?"
-   ],
    "summary_ko": "댓글에서는 허위 통계를 온라인에 유포해 LLM이 이를 인용하게 만들었다는 주장과 관련하여 실제 LLM이 그 데이터를 사용했다는 명확한 증거가 부족하다는 지적이 나온다. 반면 이러한 환각이나 조작된 정보가 학술 논문이나 보고서에 그대로 인용되는 현상에 대해 AI 기업의 책임을 물어야 한다는 의견도 제기된다.",
    "is_event": false,
    "kr_query": "",
@@ -615,39 +546,26 @@
   },
   {
    "layer": "hn",
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "discussion": "https://news.ycombinator.com/item?id=50138531",
-   "points": 601,
-   "comments": 282,
-   "r": 0.47,
-   "at": "2026-10-18",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:api-docs.deepseek.com/guides/search",
-   "summary_ko": "댓글에서는 에이전트가 리서치 등의 작업을 수행할 때 인터넷 검색 기능이 기본적으로 매끄럽게 연동되어야 한다는 의견이 지배적이다. 일부 사용자들은 딥시크가 제공하는 검색 및 수집 API의 비용 효율성과 렉시컬 매칭 방식에 주목하며, LLM이 이를 어떻게 활용할 수 있는지에 대해 토론한다.",
-   "is_event": true,
-   "kr_query": "딥시크 검색 API 출시",
-   "kr": [
-    {
-     "t": "딥시크, 코딩 성능 높인 'V4.1 플래시' 업데이트…검색 API도 공개",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216370",
-     "d": "Sun, 18 Oct 2026",
-     "why": [
-      "api",
-      "검색",
-      "딥시크"
-     ]
-    }
-   ]
+   "title": "How abliterated models can get you pwned",
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "discussion": "https://news.ycombinator.com/item?id=50159245",
+   "points": 239,
+   "comments": 136,
+   "r": 0.57,
+   "at": "2026-10-19",
+   "topics": [],
+   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
    "url": "https://arxiv.org/abs/2610.18861",
    "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 515,
+   "points": 516,
    "comments": 238,
    "r": 0.46,
    "at": "2026-10-18",
@@ -666,15 +584,19 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2132,
-   "comments": 830,
-   "r": 0.39,
+   "points": 2249,
+   "comments": 856,
+   "r": 0.38,
    "at": "2026-10-20",
    "topics": [
     "모델릴리스",
     "개발도구"
    ],
    "story_key": "gh:deepseek-ai/deepinfer",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "title",
    "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
    "is_event": true,
    "kr_query": "딥인퍼러 딥식 추론 프레임워크",
@@ -685,7 +607,7 @@
    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 714,
+   "points": 727,
    "comments": 208,
    "r": 0.29,
    "at": "2026-10-19",
@@ -704,33 +626,18 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
+   "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
+   "url": "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/",
    "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스",
-    "개발도구"
+    "인프라·칩"
    ],
-   "story_key": "gh:deepseek-ai/deepinfer"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "24GB is plenty if your engines take turns",
-   "url": "https://github.com/T-Crypt/berth",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xahi82/24gb_is_plenty_if_your_engines_take_turns/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:t-crypt/berth"
+   "story_key": "url:reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20"
   },
   {
    "layer": "reddit",
@@ -738,7 +645,7 @@
    "title": "Pocket TTS which supports voice cloning is now just 1.9 million parameters",
    "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xauekr/pocket_tts_which_supports_voice_cloning_is_now/",
-   "rank": 3,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -749,24 +656,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Do not upgrade Strata! Tons of breaking changes!",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xaflhy/do_not_upgrade_strata_tons_of_breaking_changes/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xaflhy/do_not_upgrade_strata_tons_of_breaking_changes/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xaflhy/do_not_upgrade_strata_tons_of_breaking_changes"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "ornith-ai/Ornith-1.5-122B (Qwen finetune)",
    "url": "https://ornith.ai/ornith_1_5.html",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xatebw/ornithaiornith15122b_qwen_finetune/",
-   "rank": 5,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -782,7 +675,7 @@
    "title": "Improve Qwen3.8-27b low quants by using a prefiller model that streams from SSD",
    "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xao7kx/improve_qwen3827b_low_quants_by_using_a_prefiller/",
-   "rank": 6,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -795,10 +688,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Eagle-4 Released: Faster than DFlash2 & DSpark",
+   "url": "https://github.com/eagle-hq/EAGLE-4",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/",
+   "rank": 5,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "gh:eagle-hq/eagle-4"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program.",
    "url": "https://x.com/ValsAI/status/2112471082397778083",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xap2aq/vals_ai_found_deepseek_v41_flash_1017_beats_gpt_6/",
-   "rank": 7,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -808,6 +715,22 @@
     "개발도구"
    ],
    "story_key": "url:x.com/ValsAI/status/2112471082397778083"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Be prepared, GPU price increase incoming --> Samsung sells out 100% of all 2027 HBM capacity - HBM prices expected to jump 200% next year, DRAM prices expected to see a double-digit price increase",
+   "url": "https://m.gsmarena.com/samsung_signs_huge_dram_and_hbm_contracts-news-75124.php",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbfhxp/be_prepared_gpu_price_increase_incoming_samsung/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:m.gsmarena.com/samsung_signs_huge_dram_and_hbm_contracts-news-75124.php"
   },
   {
    "layer": "reddit",
@@ -826,43 +749,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
-   "url": "https://github.com/llamastash/llamastash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xatxqk/qwen38flashnext_vs_opus_55_sixway_benchmark_on_a/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:llamastash/llamastash"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "HermesConsole: A demo showing off VoiceManager, my low latency streaming STT / TTS server. MIT, client docs, and python client.",
-   "url": "https://tacotakumi.github.io/VoiceManager",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xag5bj/hermesconsole_a_demo_showing_off_voicemanager_my/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "url:tacotakumi.github.io/VoiceManager"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "XHToken/Spark-X2.6-4B · Hugging Face",
    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb0nr9/xhtokensparkx264b_hugging_face/",
-   "rank": 11,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -873,24 +763,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Eagle-4 Released: Faster than DFlash2 & DSpark",
-   "url": "https://github.com/eagle-hq/EAGLE-4",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:eagle-hq/eagle-4"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Qwen 3.8 Flash Next: drastically faster and much more precise in reaching the result.",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xapakf/qwen_38_flash_next_drastically_faster_and_much/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xapakf/qwen_38_flash_next_drastically_faster_and_much/",
-   "rank": 13,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -903,10 +779,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "qev-0.8b · New SOTA tiny local decision model",
+   "url": "https://app.labqoat.com/e/qev/qev/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xazrvd/qev08b_new_sota_tiny_local_decision_model/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:app.labqoat.com/e/qev/qev"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "[Paper] The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
    "url": "https://arxiv.org/abs/2610.20456",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xat6o7/paper_the_count_counting_ngrams_unlocks_scaling/",
-   "rank": 14,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -917,26 +807,78 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "qev-0.8b · New SOTA tiny local decision model",
-   "url": "https://app.labqoat.com/e/qev/qev/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xazrvd/qev08b_new_sota_tiny_local_decision_model/",
+   "title": "Hardly any benchmarks for Intel B65, so I got 4x and tested them. Long Context Sweeps for Flash-Next and other models",
+   "url": "https://b65.thekaiser.us/matrices/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xavy8t/hardly_any_benchmarks_for_intel_b65_so_i_got_4x/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:b65.thekaiser.us/matrices"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "I use local AI to generate personal value on my massive NAS-based archive / library",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "[Paper] REMORY: Learning Residual Memory for Context Compaction",
+   "url": "https://arxiv.org/abs/2610.11287",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xasp90/paper_remory_learning_residual_memory_for_context/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:app.labqoat.com/e/qev/qev"
+   "story_key": "arxiv:2610.11287"
   }
  ],
- "quiet_important": [],
+ "quiet_important": [
+  {
+   "layer": "hn",
+   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "discussion": "https://news.ycombinator.com/item?id=50163277",
+   "points": 2249,
+   "comments": 856,
+   "r": 0.38,
+   "at": "2026-10-20",
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "gh:deepseek-ai/deepinfer",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "title",
+   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
+   "is_event": true,
+   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
+   "kr": []
+  }
+ ],
  "models": [
   {
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 1756,
-   "likes": 1961,
+   "trending": 1832,
+   "likes": 2050,
    "downloads": 27737,
    "topics": [
     "모델릴리스"
@@ -947,8 +889,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 828,
-   "likes": 1096,
+   "trending": 844,
+   "likes": 1119,
    "downloads": 439528,
    "topics": [
     "모델릴리스"
@@ -959,8 +901,8 @@
    "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 697,
-   "likes": 836,
+   "trending": 628,
+   "likes": 856,
    "downloads": 13495,
    "topics": [
     "모델릴리스"
@@ -971,8 +913,8 @@
    "layer": "hf",
    "title": "meta-models/Muse-Spark-Open-816B-A42B",
    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 553,
-   "likes": 610,
+   "trending": 557,
+   "likes": 615,
    "downloads": 2592,
    "topics": [
     "모델릴리스"
@@ -981,22 +923,10 @@
   },
   {
    "layer": "hf",
-   "title": "google/embeddinggemma-2",
-   "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 509,
-   "likes": 2770,
-   "downloads": 172474,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:google/embeddinggemma-2"
-  },
-  {
-   "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 506,
-   "likes": 566,
+   "trending": 514,
+   "likes": 577,
    "downloads": 78897,
    "topics": [
     "모델릴리스"
@@ -1005,10 +935,22 @@
   },
   {
    "layer": "hf",
+   "title": "google/embeddinggemma-2",
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "trending": 482,
+   "likes": 2784,
+   "downloads": 172474,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:google/embeddinggemma-2"
+  },
+  {
+   "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-SFT",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 464,
-   "likes": 496,
+   "trending": 474,
+   "likes": 509,
    "downloads": 4547,
    "topics": [
     "모델릴리스"
@@ -1017,23 +959,11 @@
   },
   {
    "layer": "hf",
-   "title": "jialinyyzz/humanizer",
-   "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 446,
-   "likes": 2023,
-   "downloads": 115341,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:jialinyyzz/humanizer"
-  },
-  {
-   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 431,
-   "likes": 8627,
-   "downloads": 2039447,
+   "trending": 435,
+   "likes": 8665,
+   "downloads": 2057942,
    "topics": [
     "모델릴리스"
    ],
@@ -1043,13 +973,25 @@
    "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-Base",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-   "trending": 412,
-   "likes": 435,
+   "trending": 420,
+   "likes": 445,
    "downloads": 3558,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:openmoss-team/moss-image-base"
+  },
+  {
+   "layer": "hf",
+   "title": "jialinyyzz/humanizer",
+   "url": "https://huggingface.co/jialinyyzz/humanizer",
+   "trending": 412,
+   "likes": 2038,
+   "downloads": 115341,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:jialinyyzz/humanizer"
   }
  ],
  "new_repos": [
@@ -1058,7 +1000,7 @@
    "title": "deepseek-ai/DeepInfer",
    "desc": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
-   "stars": 12646,
+   "stars": 16254,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1067,10 +1009,21 @@
   },
   {
    "layer": "github",
+   "title": "simbasjungles/free-my-tv",
+   "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
+   "url": "https://github.com/simbasjungles/free-my-tv",
+   "stars": 2185,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:simbasjungles/free-my-tv"
+  },
+  {
+   "layer": "github",
    "title": "Leonxlnx/earshot",
    "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
    "url": "https://github.com/Leonxlnx/earshot",
-   "stars": 1954,
+   "stars": 2020,
    "topics": [
     "에이전트"
    ],
@@ -1081,48 +1034,16 @@
    "title": "chenglou/handwired",
    "desc": "Turn your regular JavaScript code into a neural net.",
    "url": "https://github.com/chenglou/handwired",
-   "stars": 1853,
+   "stars": 1865,
    "topics": [],
    "story_key": "gh:chenglou/handwired"
-  },
-  {
-   "layer": "github",
-   "title": "simbasjungles/free-my-tv",
-   "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
-   "url": "https://github.com/simbasjungles/free-my-tv",
-   "stars": 1831,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:simbasjungles/free-my-tv"
-  },
-  {
-   "layer": "github",
-   "title": "feder-cr/git-ai",
-   "desc": "Git designed for AI agents.",
-   "url": "https://github.com/feder-cr/git-ai",
-   "stars": 1271,
-   "topics": [
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "gh:feder-cr/git-ai"
-  },
-  {
-   "layer": "github",
-   "title": "OpenMOSS/MOSS-Image",
-   "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
-   "url": "https://github.com/OpenMOSS/MOSS-Image",
-   "stars": 1168,
-   "topics": [],
-   "story_key": "gh:openmoss/moss-image"
   },
   {
    "layer": "github",
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1153,
+   "stars": 1216,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1131,10 +1052,19 @@
   },
   {
    "layer": "github",
+   "title": "OpenMOSS/MOSS-Image",
+   "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
+   "url": "https://github.com/OpenMOSS/MOSS-Image",
+   "stars": 1209,
+   "topics": [],
+   "story_key": "gh:openmoss/moss-image"
+  },
+  {
+   "layer": "github",
    "title": "JoasASantos/REA-Prompts",
    "desc": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
    "url": "https://github.com/JoasASantos/REA-Prompts",
-   "stars": 976,
+   "stars": 1178,
    "topics": [],
    "story_key": "gh:joasasantos/rea-prompts"
   },
@@ -1143,7 +1073,7 @@
    "title": "Ansub/tv-detox",
    "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
    "url": "https://github.com/Ansub/tv-detox",
-   "stars": 959,
+   "stars": 1037,
    "topics": [
     "모델릴리스"
    ],
@@ -1154,13 +1084,25 @@
    "title": "LiCinCan/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender ",
    "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-   "stars": 936,
+   "stars": 955,
    "topics": [
     "모델릴리스",
     "에이전트",
     "개발도구"
    ],
    "story_key": "gh:licincan/blender-ai-mcp-addon"
+  },
+  {
+   "layer": "github",
+   "title": "feder-cr/git-ai",
+   "desc": "Git designed for AI agents.",
+   "url": "https://github.com/feder-cr/git-ai",
+   "stars": 906,
+   "topics": [
+    "에이전트",
+    "개발도구"
+   ],
+   "story_key": "gh:feder-cr/git-ai"
   }
  ],
  "trust_recent": [
@@ -1531,5 +1473,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-21 01:24"
+ "enriched_at": "2026-10-21 09:45"
 }
