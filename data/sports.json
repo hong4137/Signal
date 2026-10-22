@@ -1,139 +1,7 @@
 {
- "updated": "2026-10-22 13:37 KST",
+ "updated": "2026-10-22 20:45 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "401909092",
-   "path": "basketball/nba",
-   "league": "NBA",
-   "name": "Golden State Warriors at Los Angeles Lakers",
-   "date": "2026-10-22T02:00Z",
-   "kst": "2026-10-22 11:00",
-   "state": "in",
-   "status": "In Progress",
-   "note": "",
-   "season": "regular-season",
-   "us_tv": [
-    "ESPN"
-   ],
-   "venue": "crypto.com Arena",
-   "tv": "영국 Sky Sports(일부 경기) · 미국 ESPN",
-   "sport": "basketball",
-   "home": {
-    "name": "Los Angeles Lakers",
-    "ko": "LA 레이커스",
-    "abbr": "LAL",
-    "id": "13",
-    "score": "125",
-    "winner": null,
-    "record": "0-0"
-   },
-   "away": {
-    "name": "Golden State Warriors",
-    "ko": "골든스테이트",
-    "abbr": "GS",
-    "id": "9",
-    "score": "98",
-    "winner": null,
-    "record": "0-0"
-   },
-   "title": "LA 레이커스 vs 골든스테이트",
-   "follow": {
-    "kind": "team",
-    "name": "Golden State Warriors",
-    "ko": "골든스테이트",
-    "w": 22
-   },
-   "score": 30,
-   "why": [
-    "골든스테이트 경기"
-   ],
-   "detail": {
-    "leaders": [
-     {
-      "team": "LA 레이커스",
-      "cat": "Points",
-      "who": "Luka Doncic",
-      "val": "28"
-     },
-     {
-      "team": "LA 레이커스",
-      "cat": "Assists",
-      "who": "Luka Doncic",
-      "val": "7"
-     },
-     {
-      "team": "골든스테이트",
-      "cat": "Points",
-      "who": "Stephen Curry",
-      "val": "23"
-     },
-     {
-      "team": "골든스테이트",
-      "cat": "Assists",
-      "who": "Draymond Green",
-      "val": "8"
-     }
-    ],
-    "injuries": [
-     {
-      "team": "LA 레이커스",
-      "who": "Adou Thiero",
-      "status": "Out"
-     },
-     {
-      "team": "LA 레이커스",
-      "who": "Collin Sexton",
-      "status": "Out"
-     },
-     {
-      "team": "LA 레이커스",
-      "who": "Cameron Carr",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Kristaps Porzingis",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Charles Bassey",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Brandin Podziemski",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Moses Moody",
-      "status": "Out"
-     }
-    ],
-    "preview": []
-   },
-   "stars": 1,
-   "tv_kr": "쿠팡플레이(스포츠패스)",
-   "tv_world": [
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports(일부 경기)"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "ESPN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS(일부 경기)"
-    }
-   ]
-  },
   {
    "id": "401908042",
    "path": "baseball/mlb",
@@ -263,13 +131,17 @@
      }
     ],
     "predictor": {
-     "home": "62.8",
-     "away": "37.2"
+     "home": "71.9",
+     "away": "28.1"
     },
     "preview": [
      {
-      "title": "Uecker's family says he'd be 'incredibly proud' of Brewers",
-      "url": "https://www.espn.com/mlb/story/_/id/50240296/uecker-family-says-incredibly-proud-brewers"
+      "title": "Ranking top players in Brewers-Rays World Series",
+      "url": "https://www.espn.com/mlb/story/_/id/50238330/ranking-world-series-players-rays-brewers"
+     },
+     {
+      "title": "A first-time World Series champion? What Brewers-Rays means",
+      "url": "https://www.espn.com/mlb/story/_/id/50237852/world-series-brewers-rays-first-champions"
      }
     ]
    },
@@ -338,8 +210,8 @@
     "id": "9",
     "score": "0",
     "winner": null,
-    "record": "0-0",
-    "form": "승패승승승"
+    "record": "0-1",
+    "form": "패승승승패"
    },
    "away": {
     "name": "Memphis Grizzlies",
@@ -380,21 +252,46 @@
       }
      ]
     },
-    "leaders": [],
+    "leaders": [
+     {
+      "team": "골든스테이트",
+      "cat": "Points",
+      "who": "Stephen Curry",
+      "val": "23.0"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Assists",
+      "who": "Draymond Green",
+      "val": "8.0"
+     },
+     {
+      "team": "Memphis Grizzlies",
+      "cat": "Points",
+      "who": "Ty Jerome",
+      "val": "45.0"
+     },
+     {
+      "team": "Memphis Grizzlies",
+      "cat": "Assists",
+      "who": "Ty Jerome",
+      "val": "6.0"
+     }
+    ],
     "injuries": [
      {
       "team": "골든스테이트",
-      "who": "Kristaps Porzingis",
-      "status": "Out"
+      "who": "Brandin Podziemski",
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
       "who": "Charles Bassey",
-      "status": "Out"
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
-      "who": "Brandin Podziemski",
+      "who": "Kristaps Porzingis",
       "status": "Out"
      },
      {
@@ -409,13 +306,13 @@
      }
     ],
     "predictor": {
-     "home": "57.2",
-     "away": "42.8"
+     "home": "58.1",
+     "away": "41.9"
     },
     "preview": [
      {
-      "title": "Ty Jerome breaks Grizzlies' opening-night record with 45 points",
-      "url": "https://www.espn.com/video/clip/_/id/50244825/ty-jerome-breaks-grizzlies-opening-night-record-45-points"
+      "title": "Luka Doncic embraces lead role, pairs with Kessler to dominate Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/50247063/luka-doncic-embraces-being-new-face-lakers"
      }
     ]
    },
@@ -638,12 +535,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
-      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
+      "title": "José Mourinho complains Real Madrid have 24 hours less rest than Barcelona ahead of El Clásico",
+      "url": "https://www.espn.com/soccer/story/_/id/50247061/jose-mourinho-real-madrid-barcelona-el-clasico-less-rest"
      },
      {
-      "title": "Sevilla lodge official complaint to LaLiga over Real Madrid defeat",
-      "url": "https://www.espn.com/soccer/story/_/id/50236214/sevilla-lodge-complaint-real-madrid-defeat-laliga"
+      "title": "Mourinho made Real Madrid-Barcelona Clásico rivalry unmissable. Now, he's back for more",
+      "url": "https://www.espn.com/soccer/story/_/id/50245408/jose-mourinho-el-clasico-unmissable-real-madrid-barcelona-guardiola-messi-ronaldo"
      }
     ]
    },
@@ -712,8 +609,8 @@
     "id": "9",
     "score": "0",
     "winner": null,
-    "record": "0-0",
-    "form": "승패승승승"
+    "record": "0-1",
+    "form": "패승승승패"
    },
    "title": "Phoenix Suns vs 골든스테이트",
    "follow": {
@@ -744,12 +641,42 @@
       }
      ]
     },
-    "leaders": [],
+    "leaders": [
+     {
+      "team": "Phoenix Suns",
+      "cat": "Points",
+      "who": "Devin Booker",
+      "val": "23.0"
+     },
+     {
+      "team": "Phoenix Suns",
+      "cat": "Assists",
+      "who": "Jalen Green",
+      "val": "3.0"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Points",
+      "who": "Stephen Curry",
+      "val": "23.0"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Assists",
+      "who": "Draymond Green",
+      "val": "8.0"
+     }
+    ],
     "injuries": [
      {
       "team": "Phoenix Suns",
       "who": "Luke Kennard",
-      "status": "Out"
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Phoenix Suns",
+      "who": "Oso Ighodaro",
+      "status": "Day-To-Day"
      },
      {
       "team": "Phoenix Suns",
@@ -758,17 +685,17 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Kristaps Porzingis",
-      "status": "Out"
+      "who": "Brandin Podziemski",
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
       "who": "Charles Bassey",
-      "status": "Out"
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
-      "who": "Brandin Podziemski",
+      "who": "Kristaps Porzingis",
       "status": "Out"
      },
      {
@@ -778,10 +705,15 @@
      }
     ],
     "predictor": {
-     "home": "68.9",
-     "away": "31.1"
+     "home": "67",
+     "away": "33"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Luka Doncic embraces lead role, pairs with Kessler to dominate Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/50247063/luka-doncic-embraces-being-new-face-lakers"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -816,7 +748,7 @@
    "season": "2026-27-english-premier-league",
    "us_tv": [],
    "venue": "The MKM Stadium",
-   "tv": "영국 Sky Sports Golf · 아랍 beIN Sports HD 4",
+   "tv": "영국 Sky Sports Golf · 미국 NBCSN",
    "sport": "soccer",
    "home": {
     "name": "Hull City",
@@ -906,6 +838,11 @@
      "country": "Great Britain",
      "label": "영국",
      "ch": "Sky Sports Golf"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "NBCSN"
     },
     {
      "country": "Qatar",
@@ -1200,12 +1137,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
-      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
+      "title": "José Mourinho complains Real Madrid have 24 hours less rest than Barcelona ahead of El Clásico",
+      "url": "https://www.espn.com/soccer/story/_/id/50247061/jose-mourinho-real-madrid-barcelona-el-clasico-less-rest"
      },
      {
-      "title": "Barcelona confirm Dani Olmo adductor injury, could miss one month",
-      "url": "https://www.espn.com/soccer/story/_/id/50237026/barcelona-dani-olmo-adductor-injury-one-month-out"
+      "title": "Mourinho made Real Madrid-Barcelona Clásico rivalry unmissable. Now, he's back for more",
+      "url": "https://www.espn.com/soccer/story/_/id/50245408/jose-mourinho-el-clasico-unmissable-real-madrid-barcelona-guardiola-messi-ronaldo"
      }
     ]
    },
@@ -1239,9 +1176,297 @@
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/barcelona-vs-real-madrid/1b1at"
+  },
+  {
+   "id": "401909876",
+   "path": "basketball/nba",
+   "league": "NBA",
+   "name": "Golden State Warriors at Denver Nuggets",
+   "date": "2026-10-27T02:00Z",
+   "kst": "2026-10-27 11:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "regular-season",
+   "us_tv": [
+    "NBCSN"
+   ],
+   "venue": "Ball Arena",
+   "tv": "영국 Sky Sports(일부 경기) · 미국 NBCSN",
+   "sport": "basketball",
+   "home": {
+    "name": "Denver Nuggets",
+    "ko": "Denver Nuggets",
+    "abbr": "DEN",
+    "id": "7",
+    "score": "0",
+    "winner": null,
+    "record": "0-0",
+    "form": "패승승패승"
+   },
+   "away": {
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "abbr": "GS",
+    "id": "9",
+    "score": "0",
+    "winner": null,
+    "record": "0-1",
+    "form": "패승승승패"
+   },
+   "title": "Denver Nuggets vs 골든스테이트",
+   "follow": {
+    "kind": "team",
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "w": 22
+   },
+   "score": 30,
+   "why": [
+    "골든스테이트 경기"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "Series starts 10/26",
+     "last": [
+      {
+       "date": "2026-10-27",
+       "score": "Denver Nuggets 0 골든스테이트 0"
+      },
+      {
+       "date": "2026-12-26",
+       "score": "골든스테이트 0 Denver Nuggets 0"
+      },
+      {
+       "date": "2027-03-13",
+       "score": "Denver Nuggets 0 골든스테이트 0"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "골든스테이트",
+      "cat": "Points",
+      "who": "Stephen Curry",
+      "val": "23.0"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Assists",
+      "who": "Draymond Green",
+      "val": "8.0"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "Denver Nuggets",
+      "who": "Spencer Jones",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Denver Nuggets",
+      "who": "Julian Strawther",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Brandin Podziemski",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Charles Bassey",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Kristaps Porzingis",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
+     }
+    ],
+    "predictor": {
+     "home": "73.2",
+     "away": "26.8"
+    },
+    "preview": [
+     {
+      "title": "Luka Doncic embraces lead role, pairs with Kessler to dominate Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/50247063/luka-doncic-embraces-being-new-face-lakers"
+     }
+    ]
+   },
+   "stars": 1,
+   "tv_kr": "쿠팡플레이(스포츠패스)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports(일부 경기)"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "NBCSN"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS(일부 경기)"
+    }
+   ]
   }
  ],
  "results": [
+  {
+   "id": "401909092",
+   "path": "basketball/nba",
+   "league": "NBA",
+   "name": "Golden State Warriors at Los Angeles Lakers",
+   "date": "2026-10-22T02:00Z",
+   "kst": "2026-10-22 11:00",
+   "state": "post",
+   "status": "Final",
+   "note": "",
+   "season": "regular-season",
+   "us_tv": [
+    "ESPN"
+   ],
+   "venue": "crypto.com Arena",
+   "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "basketball",
+   "home": {
+    "name": "Los Angeles Lakers",
+    "ko": "LA 레이커스",
+    "abbr": "LAL",
+    "id": "13",
+    "score": "127",
+    "winner": true,
+    "record": "1-0"
+   },
+   "away": {
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "abbr": "GS",
+    "id": "9",
+    "score": "105",
+    "winner": false,
+    "record": "0-1"
+   },
+   "title": "LA 레이커스 vs 골든스테이트",
+   "follow": {
+    "kind": "team",
+    "name": "Golden State Warriors",
+    "ko": "골든스테이트",
+    "w": 22
+   },
+   "score": 30,
+   "why": [
+    "골든스테이트 경기"
+   ],
+   "stars": 1,
+   "detail": {
+    "h2h": {
+     "summary": "LAL lead series 1-0",
+     "last": [
+      {
+       "date": "2026-10-22",
+       "score": "LA 레이커스 127 골든스테이트 105"
+      },
+      {
+       "date": "2026-10-31",
+       "score": "골든스테이트 0 LA 레이커스 0"
+      },
+      {
+       "date": "2027-01-22",
+       "score": "골든스테이트 0 LA 레이커스 0"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "LA 레이커스",
+      "cat": "Points",
+      "who": "Luka Doncic",
+      "val": "28"
+     },
+     {
+      "team": "LA 레이커스",
+      "cat": "Assists",
+      "who": "Luka Doncic",
+      "val": "7"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Points",
+      "who": "Stephen Curry",
+      "val": "23"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Assists",
+      "who": "Draymond Green",
+      "val": "8"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "LA 레이커스",
+      "who": "Adou Thiero",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "LA 레이커스",
+      "who": "Collin Sexton",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "LA 레이커스",
+      "who": "Cameron Carr",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Brandin Podziemski",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Charles Bassey",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Kristaps Porzingis",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
+     }
+    ],
+    "preview": [
+     {
+      "title": "Luka Doncic embraces lead role, pairs with Kessler to dominate Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/50247063/luka-doncic-embraces-being-new-face-lakers"
+     }
+    ],
+    "result": {
+     "score": "LA 레이커스 127 : 105 골든스테이트",
+     "goals": [],
+     "korean": [],
+     "video": {
+      "title": "Lakers thrash Warriors to open the season",
+      "url": "https://www.espn.com/video/clip/_/id/50245265/lakers-thrash-warriors-open-season"
+     }
+    }
+   }
+  },
   {
    "id": "401915392",
    "path": "soccer/uefa.champions",
@@ -1321,8 +1546,8 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
-      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
+      "title": "José Mourinho, Kylian Mbappé defend Vinícius Júnior after whistles from Real Madrid fans",
+      "url": "https://www.espn.com/soccer/story/_/id/50246766/jose-mourinho-kylian-mbappe-defend-vinicius-junior-whistles-real-madrid-fans"
      }
     ],
     "result": {
