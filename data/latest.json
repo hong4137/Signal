@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-22 02:57",
+ "updated": "2026-10-22 10:22",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
-  "reddit": 30,
+  "hn": 15,
+  "reddit": 17,
   "hf": 15,
   "github": 11,
-  "trust": 100
+  "trust": 80
  },
  "reddit_mode": "rss",
  "by_volume": [
@@ -16,8 +16,8 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2288,
-   "comments": 876,
+   "points": 2302,
+   "comments": 882,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -39,8 +39,8 @@
    "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
    "url": "https://news.ycombinator.com/item?id=50151036",
    "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 599,
-   "comments": 726,
+   "points": 604,
+   "comments": 733,
    "r": 1.21,
    "at": "2026-10-19",
    "topics": [],
@@ -55,8 +55,8 @@
    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
    "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 575,
-   "comments": 534,
+   "points": 578,
+   "comments": 538,
    "r": 0.93,
    "at": "2026-10-19",
    "topics": [
@@ -84,8 +84,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
    "points": 647,
-   "comments": 373,
-   "r": 0.58,
+   "comments": 372,
+   "r": 0.57,
    "at": "2026-10-19",
    "topics": [
     "에이전트"
@@ -98,19 +98,18 @@
   },
   {
    "layer": "hn",
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
-   "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 517,
-   "comments": 238,
-   "r": 0.46,
-   "at": "2026-10-18",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "discussion": "https://news.ycombinator.com/item?id=50186037",
+   "points": 310,
+   "comments": 270,
+   "r": 0.87,
+   "at": "2026-10-21",
    "topics": [
-    "모델릴리스",
-    "에이전트"
+    "모델릴리스"
    ],
-   "story_key": "arxiv:2610.18861",
-   "summary_ko": "댓글에서는 확률적 과정인 언어모델이 진정한 '추론'을 할 수 있는지에 대해 의견이 갈렸다. 일각에서는 내부 텍스트 생성을 줄이는 것 외에 무엇이 새로운지 의문을 제기한 반면, 잠재 공간에서의 처리 방식과 토큰 간 반복 루프가 기존 방식과 질적으로 다르다는 반박도 나왔다.",
+   "story_key": "url:claude.com/product/claude-duet",
+   "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -121,8 +120,8 @@
    "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
    "discussion": "https://news.ycombinator.com/item?id=50168190",
    "points": 183,
-   "comments": 220,
-   "r": 1.2,
+   "comments": 228,
+   "r": 1.25,
    "at": "2026-10-20",
    "topics": [],
    "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
@@ -133,29 +132,11 @@
   },
   {
    "layer": "hn",
-   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
-   "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 302,
-   "comments": 217,
-   "r": 0.72,
-   "at": "2026-10-18",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on",
-   "summary_ko": "댓글에서는 LLM 프록시가 클라이언트 신뢰도가 낮거나 리소스 접근을 모니터링할 때 유용하다는 의견과, 대신 오픈텔레메트리(OTEL) 같은 표준화된 방식을 쓰는 것이 장애 격리 측면에서 더 안전하다는 의견이 맞섰다. 또한 LiteLLM이나 Pharos 같은 오픈소스 도구 개발자들이 직접 참여해 활용 팁을 공유하고 피드백을 주고받았다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 736,
-   "comments": 215,
+   "points": 738,
+   "comments": 216,
    "r": 0.29,
    "at": "2026-10-19",
    "topics": [
@@ -173,13 +154,62 @@
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 354,
+   "points": 362,
    "comments": 202,
-   "r": 0.57,
+   "r": 0.56,
    "at": "2026-10-20",
    "topics": [],
    "story_key": "url:peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "summary_ko": "댓글에서는 허위 통계를 온라인에 유포해 LLM이 이를 인용하게 만들었다는 주장과 관련하여 실제 LLM이 그 데이터를 사용했다는 명확한 증거가 부족하다는 지적이 나온다. 반면 이러한 환각이나 조작된 정보가 학술 논문이나 보고서에 그대로 인용되는 현상에 대해 AI 기업의 책임을 물어야 한다는 의견도 제기된다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "discussion": "https://news.ycombinator.com/item?id=50180836",
+   "points": 432,
+   "comments": 172,
+   "r": 0.4,
+   "at": "2026-10-21",
+   "topics": [],
+   "story_key": "url:wiz.io/blog/php2shell-php-rce",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "PHP 취약점 AI 원격 코드 실행",
+   "kr": [
+    {
+     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
+     "u": "https://www.news1.kr/world/usa-canada/6327871",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "php",
+      "취약점"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "discussion": "https://news.ycombinator.com/item?id=50181175",
+   "points": 232,
+   "comments": 160,
+   "r": 0.69,
+   "at": "2026-10-21",
+   "topics": [
+    "에이전트",
+    "보안·사고"
+   ],
+   "story_key": "url:openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "summary_ko": "AI 에이전트가 취약점을 대거 발견하는 시대의 보안 대응과 속도전에 대해 우려와 비판이 제기되었다. 수익을 좇는 AI 기업들의 안전 불감증을 지적하며, 개발사와 경영진에게 더 강력한 법적 책임을 물어야 한다는 의견이 지지를 얻었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -204,38 +234,12 @@
   },
   {
    "layer": "hn",
-   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-   "url": "https://www.wiz.io/blog/php2shell-php-rce",
-   "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 393,
-   "comments": 146,
-   "r": 0.37,
-   "at": "2026-10-21",
-   "topics": [],
-   "story_key": "url:wiz.io/blog/php2shell-php-rce",
-   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
-   "is_event": true,
-   "kr_query": "PHP 취약점 AI 원격 코드 실행",
-   "kr": [
-    {
-     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
-     "u": "https://www.news1.kr/world/usa-canada/6327871",
-     "d": "Thu, 22 Oct 2026",
-     "why": [
-      "php",
-      "취약점"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "How abliterated models can get you pwned",
    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
    "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 244,
+   "points": 248,
    "comments": 137,
-   "r": 0.56,
+   "r": 0.55,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
@@ -246,12 +250,30 @@
   },
   {
    "layer": "hn",
+   "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+   "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+   "discussion": "https://news.ycombinator.com/item?id=50181114",
+   "points": 433,
+   "comments": 136,
+   "r": 0.31,
+   "at": "2026-10-21",
+   "topics": [
+    "보안·사고"
+   ],
+   "story_key": "url:safedep.io/litellm-pypi-compromise-credential-stealer-backdoor",
+   "summary_ko": "파이썬 패키지 저장소 PyPI에 등록된 라이트LLM(LiteLLM) 특정 버전에서 탈취기와 백도어가 발견되어 충격을 주었다. 개발자들은 뛰어난 사용성과 별개로 공급망 보안의 취약성을 지적하며 패키지 설치 시 일정 기간 대기하는 등의 방어 조치를 논의했다.",
+   "is_event": true,
+   "kr_query": "라이트LLM 백도어 PyPI 해킹",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50148855",
-   "points": 169,
+   "points": 170,
    "comments": 128,
-   "r": 0.76,
+   "r": 0.75,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -267,8 +289,8 @@
    "title": "Timestral: Mistral's time-series foundation models",
    "url": "https://mistral.ai/news/timestral/",
    "discussion": "https://news.ycombinator.com/item?id=50150434",
-   "points": 618,
-   "comments": 122,
+   "points": 620,
+   "comments": 124,
    "r": 0.2,
    "at": "2026-10-19",
    "topics": [
@@ -284,32 +306,32 @@
  "by_debate": [
   {
    "layer": "hn",
-   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
-   "url": "https://news.ycombinator.com/item?id=50151036",
-   "discussion": "https://news.ycombinator.com/item?id=50151036",
-   "points": 599,
-   "comments": 726,
-   "r": 1.21,
-   "at": "2026-10-19",
+   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "discussion": "https://news.ycombinator.com/item?id=50168190",
+   "points": 183,
+   "comments": 228,
+   "r": 1.25,
+   "at": "2026-10-20",
    "topics": [],
-   "story_key": "hn:50151036",
-   "summary_ko": "AI가 작성한 코드를 이해하지 못한 채 배포하는 문제를 두고 의견이 엇갈리고 있습니다. 핵심 로직과 자동화된 테스트만 확실히 검증하면 충분하다는 현실론과, 개발자의 전문성 저하 및 기술 부채를 우려하는 목소리가 맞부딪쳤습니다.",
+   "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "summary_ko": "댓글에서는 스팀 넥스트 페스트에 AI 생성 게임이 범람하면서 품질 낮은 게임을 걸러낼 'AI 없음' 필터가 필요하다는 목소리가 높다. 일각에서는 거의 모든 개발자가 코딩이나 디버깅에 AI를 쓰기 때문에 실효성이 없고 거짓 신고만 늘어날 것이라는 회의적인 반응도 보이고 있다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
   },
   {
    "layer": "hn",
-   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
-   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-   "discussion": "https://news.ycombinator.com/item?id=50168190",
-   "points": 183,
-   "comments": 220,
-   "r": 1.2,
-   "at": "2026-10-20",
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "url": "https://news.ycombinator.com/item?id=50151036",
+   "discussion": "https://news.ycombinator.com/item?id=50151036",
+   "points": 604,
+   "comments": 733,
+   "r": 1.21,
+   "at": "2026-10-19",
    "topics": [],
-   "story_key": "url:ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-   "summary_ko": "댓글에서는 스팀 넥스트 페스트에 AI 생성 게임이 범람하면서 품질 낮은 게임을 걸러낼 'AI 없음' 필터가 필요하다는 목소리가 높다. 일각에서는 거의 모든 개발자가 코딩이나 디버깅에 AI를 쓰기 때문에 실효성이 없고 거짓 신고만 늘어날 것이라는 회의적인 반응도 보이고 있다.",
+   "story_key": "hn:50151036",
+   "summary_ko": "AI가 작성한 코드를 이해하지 못한 채 배포하는 문제를 두고 의견이 엇갈리고 있습니다. 핵심 로직과 자동화된 테스트만 확실히 검증하면 충분하다는 현실론과, 개발자의 전문성 저하 및 기술 부채를 우려하는 목소리가 맞부딪쳤습니다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -337,8 +359,8 @@
    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
    "discussion": "https://news.ycombinator.com/item?id=50154244",
-   "points": 575,
-   "comments": 534,
+   "points": 578,
+   "comments": 538,
    "r": 0.93,
    "at": "2026-10-19",
    "topics": [
@@ -362,12 +384,44 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "discussion": "https://news.ycombinator.com/item?id=50186037",
+   "points": 310,
+   "comments": 270,
+   "r": 0.87,
+   "at": "2026-10-21",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.com/product/claude-duet",
+   "_comments": [
+    "Just ask it to build you one. The era of hyper-focused personal software is just beginning.",
+    "How? I only use pi with local models, so I'm curious what that flow looks like. Browser integration?",
+    "> intrigued by the idea of collaborating with Wick on transcribing historical dataYes, if this isn't a good faith intentional collaboration with a human behind it, then you've tricked these researchers and you're absolutely wasting their time. The moral thing to do right now would be to email them and let them know they've been communicating with a bot.",
+    ">I think profilic exposure to AI chatbots can rub off on a person and affect their conversation style.Ya think. This is how language transfer has happened in humanity for like ever. Or were kids saying things like 6/7 forever and I just missed it.Anything you hear and see commonly will become part of your lexicon, things you don't see commonly are apt to drop out of your usage.This is why things like panagram will just eventually be useless. We'll talk like the bots and the bots will talk like us. That and a number of HN'ers will bitch about every post being AI regardless of its origination.",
+    "Not sure what city you're looking in but we do the whole full cycle apartment hunting for you, controlled through your agent. Search, outreach, tour booking / scheduling and bunch of services after you've signed a lease.We work with whatever agent you use - just point it at https://fless.io/ai-agents and it should be able to interact with our system or do it as a human at https://fless.ioIf we don't service the city you're looking in tell your agent to request it (or submit the form yourself) and we'll add it usually within 48 hours or so, following up with you if you give us an email.",
+    "I run some of my own tasks with Claude Code on a schedule. When a task involves looking into websites, I'd want it to check with me first if it might put load on someone else's site.",
+    "what app do you use on your phone to communicate with yoir server? just a terminal emulator?",
+    "Have you been forthcoming that your email was AI-generated?If you have, then I'd say no. They know what it's about and what to expect. If you haven't, then yes, it's a waste of their time.",
+    "It sounds like yes, you've already wasted their time, and you will waste more of it when they try to analyze the slop you send over the wall at them.",
+    "yeah moats are bad for everyone who isn't a shareholder or employee so i don't get the concern for whether or not there's a moat, its like watching shark tank",
+    "> in Kyoto, in a language I don't speak at all, coordinating with an obscene amount of moving parts and logistics, flawlessly handled entirely by DotI wonder if the folks in Japan would agree with that assessment. They would absolutely not tell you to your face if it were less flawless than you think: that would be rude!",
+    "It's crazy how bad Dot has been with stuff like this. You'd think it would be able to (and need to be able to) edit a lot of environment settings, tunnels, plugins, etc., but I keep running into issues. For example, I wanted to make a Codex plugin to give it the ability to steer Codex agents running within my own infrastructure, tunneling in via Tailscale. Ended up just giving up and going with a different approach. Because, for example, every time I'd add a new tool to the plugin, I'd have to manually restart Dot (something that wasn't even obvious that it was possible until you fumble around menu dropdowns) and wait because it can't just refresh tools.Everything I'm describing is more powe"
+   ],
+   "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50148855",
-   "points": 169,
+   "points": 170,
    "comments": 128,
-   "r": 0.76,
+   "r": 0.75,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
@@ -380,18 +434,33 @@
   },
   {
    "layer": "hn",
-   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
-   "discussion": "https://news.ycombinator.com/item?id=50145507",
-   "points": 302,
-   "comments": 217,
-   "r": 0.72,
-   "at": "2026-10-18",
+   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "discussion": "https://news.ycombinator.com/item?id=50181175",
+   "points": 232,
+   "comments": 160,
+   "r": 0.69,
+   "at": "2026-10-21",
    "topics": [
-    "모델릴리스"
+    "에이전트",
+    "보안·사고"
    ],
-   "story_key": "url:jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on",
-   "summary_ko": "댓글에서는 LLM 프록시가 클라이언트 신뢰도가 낮거나 리소스 접근을 모니터링할 때 유용하다는 의견과, 대신 오픈텔레메트리(OTEL) 같은 표준화된 방식을 쓰는 것이 장애 격리 측면에서 더 안전하다는 의견이 맞섰다. 또한 LiteLLM이나 Pharos 같은 오픈소스 도구 개발자들이 직접 참여해 활용 팁을 공유하고 피드백을 주고받았다.",
+   "story_key": "url:openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "_comments": [
+    "Just because it can happen, and may be inevitable, doesn’t justify speed running with deliberate disregard for safety.",
+    "It turns out the true \"pick axes and shovels\" of the AI revolution won't be RAM and graphics cards, it's probably going to be cybersecurity.",
+    "I would update it for the modern era: the thief starts a security and transportation company to haul the treasure away.",
+    "openai is a joke, they can't even keep their servers running.Google used to be the laughingstock but now it's openai.last place by far.",
+    "I wish I could permanently disable it, I've accidentally read incorrect information on it in the past. I usually just try to skim past it.",
+    "So they were the cause we had systems that were vulnerable for more than a month and only the Chosen Ones had access to patches.At this point I'm all for having zero coordination and just disclosing bugs, at least it doesn't create special class of priviledged people that get the patches first",
+    "This is a false binary. There are a range of other options. They could voluntarily log every action with a clear warning that users are financially and criminally liable for use of AI. The company could convert to a partnership like law firms and investment banks used to be so that the executives are personally liable for harm their products cause. Hard to imagine they would be as flippant with risk if they would lose everything in the event of a Cyber attack. We could set up a parallel internet for AI that is physically separate from human internet and limit ai to text messages with all tool execution on the sandboxed internet.I could give 15 more examples of things that could be done other",
+    "I don’t think it’s marketing but the fact that all the labs don’t immediately agree to stop further release until security is more established shows the profit motive is inappropriate for this industry and needs to be removed from them. You don’t get to threaten humanity while cashing in stock to buy a San Francisco mansion.",
+    "The goal post moves so far in this comment that it’s several light years from earth",
+    "I’d like to dialogue/debate you on a video call if you’re interested. I don’t think I agree with you but you’re thoughtful and I may have something to learn. Let me know if you’re interested",
+    "If I build a fence out of wood, knowing its flammable, but the only risk is natural forest fire and then some sells flame throwers to teenagers along with drones equipped with fence seeking vision and then tells me I need to pay for their proactive defense drone equipped with a flamethrower and drone seeking vision then maybe you’d understand the situation here.OpenAI released the tool that FINDs the exploits. They don’t need to publish them to be complicit.",
+    "And you have the Google AI Overview disabled too? Or you never read what it says about the docs you're looking for?"
+   ],
+   "summary_ko": "AI 에이전트가 취약점을 대거 발견하는 시대의 보안 대응과 속도전에 대해 우려와 비판이 제기되었다. 수익을 좇는 AI 기업들의 안전 불감증을 지적하며, 개발사와 경영진에게 더 강력한 법적 책임을 물어야 한다는 의견이 지지를 얻었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -402,8 +471,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "discussion": "https://news.ycombinator.com/item?id=50150750",
    "points": 647,
-   "comments": 373,
-   "r": 0.58,
+   "comments": 372,
+   "r": 0.57,
    "at": "2026-10-19",
    "topics": [
     "에이전트"
@@ -419,9 +488,9 @@
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 354,
+   "points": 362,
    "comments": 202,
-   "r": 0.57,
+   "r": 0.56,
    "at": "2026-10-20",
    "topics": [],
    "story_key": "url:peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
@@ -435,9 +504,9 @@
    "title": "How abliterated models can get you pwned",
    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
    "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 244,
+   "points": 248,
    "comments": 137,
-   "r": 0.56,
+   "r": 0.55,
    "at": "2026-10-19",
    "topics": [],
    "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
@@ -448,30 +517,41 @@
   },
   {
    "layer": "hn",
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
-   "discussion": "https://news.ycombinator.com/item?id=50145337",
-   "points": 517,
-   "comments": 238,
-   "r": 0.46,
-   "at": "2026-10-18",
-   "topics": [
-    "모델릴리스",
-    "에이전트"
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "discussion": "https://news.ycombinator.com/item?id=50180836",
+   "points": 432,
+   "comments": 172,
+   "r": 0.4,
+   "at": "2026-10-21",
+   "topics": [],
+   "story_key": "url:wiz.io/blog/php2shell-php-rce",
+   "trust": [
+    "Simon Willison"
    ],
-   "story_key": "arxiv:2610.18861",
-   "summary_ko": "댓글에서는 확률적 과정인 언어모델이 진정한 '추론'을 할 수 있는지에 대해 의견이 갈렸다. 일각에서는 내부 텍스트 생성을 줄이는 것 외에 무엇이 새로운지 의문을 제기한 반면, 잠재 공간에서의 처리 방식과 토큰 간 반복 루프가 기존 방식과 질적으로 다르다는 반박도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
+   "trust_match": "link",
+   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "PHP 취약점 AI 원격 코드 실행",
+   "kr": [
+    {
+     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
+     "u": "https://www.news1.kr/world/usa-canada/6327871",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "php",
+      "취약점"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2288,
-   "comments": 876,
+   "points": 2302,
+   "comments": 882,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -490,51 +570,43 @@
   },
   {
    "layer": "hn",
-   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-   "url": "https://www.wiz.io/blog/php2shell-php-rce",
-   "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 393,
-   "comments": 146,
-   "r": 0.37,
+   "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+   "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+   "discussion": "https://news.ycombinator.com/item?id=50181114",
+   "points": 433,
+   "comments": 136,
+   "r": 0.31,
    "at": "2026-10-21",
-   "topics": [],
-   "story_key": "url:wiz.io/blog/php2shell-php-rce",
-   "_comments": [
-    "So with that logic, AI won't find a vulnerability in my newly written code, since that particular vulnerability wasn't in its training data?",
-    "wordpress is about 40% out of allhttps://w3techs.com/technologies/overview/programming_langua...https://w3techs.com/technologies/overview/content_management",
-    "To be honest nobody should be surprised. PHP is a wormhole of sorts.. can of worms.",
-    "> The PHP Foundation got the PHP project into the Patch the Planet program, as part of which security firm Calif began an audit of PHP on July 30th, 2026. On August 11th researcher Ryan A at Calif reported an unconditional remote code execution with the same root cause as the OOM problem we had found in 2024. OpenAI independently reported the same root cause on the same dayHow does this work? Calif works with OAI on Patch the Planet program. Calif reports the finding to PHP. OAI ‘independently’ reports it too, on the same day. I suppose Calif did communicate with OAI about said findings, or is this not how Patch the Planet operates? It seems extremely coincidental.",
-    "I wish. As the defender, I have a model that just barks at me that I hit a guardrail. The attacker has no such constraints.",
-    "It was assumed the private keys were private, not easily figureoutable, so they were most likely never tested.",
-    "\"Writing secure C code requires discipline\"Ah the old, you're using the tool wrong.Yes, perhaps, although a tool that no one seems to be able to use correctly, see kernel bugs, zero days everywhere, bugs in cURL by people who seem very rigorous and thorough, in google and microsoft products, etc. I'm not sure the tool is innocent in this. If the highest paid C developers in the world can't use it, who can?",
-    "Why is that depressing? PHP is just as capable as everything else out there. It may not be our first choice but its use is not depressing.",
-    "How reliably exploitable is it, if you know? EternalBlue was fairly close to a point-and-click exploit iirc, the early PoCs I’ve seen for this so far pin things for specific builds/images/configs, one consuming asan output, etc.",
-    "C was adequate for its era, though it had major problems from day one: like array pointer decay, lack of counted strings, aliasing just about anywhere and everywhere, and a legacy of squishy types it inherited from BCPL which was about as well-typed as Forth. Even so, it did yeomans work, but it's now long past its use-by date.I still want C to burn in a fire, but I suppose it's at least earned an honorable Viking funeral (yeah I know that's ahistorical but you get the idea).",
-    "Why even bother, though? I have +- 8 hours a day to write code. I can spend 7.5 hours writing business logic and .5 hours getting the thing to compile (Rust/Python/Java/C#/whatever), or .5 hours writing business logic and 7.5 hours convincing myself I haven't added an RCE. I just don't see a valid use case for writing non-trivial C programs today. Maintaining existing programs, sure. That stuff isn't going away. Writing anything new in it today, though, seems like engineering malpractice.",
-    "Thanks for the reminder. I should probably switch my homelab to something like openCloud which is more lightweight and memory efficient anyways."
+   "topics": [
+    "보안·사고"
    ],
-   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
+   "story_key": "url:safedep.io/litellm-pypi-compromise-credential-stealer-backdoor",
+   "_comments": [
+    "Hi everyone, this has been contained. The attack was novel, and I'd love feedback on how we can improve from this.Here's what we know so far: https://docs.litellm.ai/blog/security-incident-oct-21-2026#h...- Krrish",
+    "I setup 8 day age gates on everything back in May. This is inobtrusive and pretty safe.",
+    "And if it ever detects that you briefly used a browser with any kind of privacy-preserving features on any website, you will be logged out from all devices and forced to revalidate your email and gene sequences.Discord does this with Firefox: It doesn't even tell you that a captcha failed or anything, just poof logged out and you must re reverify the same email you verified 10 minutes ago.",
+    "there's another one this summer that didn't get as much attention (or any at all) which allowed exfiltrating master provider keys with any authenticated user/virtual keyhttps://nvd.nist.gov/vuln/detail/cve-2026-84377",
+    "Oof.LiteLLM has one of the nicest programmer UX to use but this is not good at all.",
+    "Obligatory \"package managers are evil:\"https://www.gingerbill.org/article/2025/09/08/package-manage...",
+    "And buried under the lede is that one of the compromised people was one of the organization owners. So it seems like the culture of insecurity comes from the top, which is unfortunate especially bc they keep acting like \"this could've happened to anyone guys\"",
+    "Crazy day - but seems like this was contained fairly quickly: https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+    "Yeah it's not totally unlike people who consider learning that they've been hacked is worth more than $x and so, even if they're not into cryptocurrencies, they leave the equivalent of $x on their computer in a \"software wallet\", in an obvious place.It's not a guaranteed you'll know you've been hacked, but it's still quite a flag to leave. And there are services doing the equivalent of what you posted, but for cryptocurrencies: they contact you through email, SMS, snail mail even, if they detect that \"coins at address ...\" ever move.",
+    "In this thread: people who would blame the inventors of the computer for the impact of computer viruses.",
+    "It would be like having a one day quarantine for a deadly and rapidly spreading disease known to have a very long asymptomatic period.I mean okay, it probably helps in some random cases, but the disease will not care at all. Easy to route around and we just wasted a lot of developer energy treating symptoms and ignoring the actual problems.People are running around acting like cooldowns fix supply chain attacks. This is completely absurd. Imagine an antivirus that just makes you wait one day to install any new software or updates. Should we do that too? We should question what problem are we actually solving before this type of thinking gets even more out of hand.What we need is actually rev",
+    "It's kind of the opposite. The more typical Unix nehavior is to just assume you knew what you were doing and meant it, and not ask for confirmation in the first place. -y is just the reversion of an abberation."
+   ],
+   "summary_ko": "파이썬 패키지 저장소 PyPI에 등록된 라이트LLM(LiteLLM) 특정 버전에서 탈취기와 백도어가 발견되어 충격을 주었다. 개발자들은 뛰어난 사용성과 별개로 공급망 보안의 취약성을 지적하며 패키지 설치 시 일정 기간 대기하는 등의 방어 조치를 논의했다.",
    "is_event": true,
-   "kr_query": "PHP 취약점 AI 원격 코드 실행",
-   "kr": [
-    {
-     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
-     "u": "https://www.news1.kr/world/usa-canada/6327871",
-     "d": "Thu, 22 Oct 2026",
-     "why": [
-      "php",
-      "취약점"
-     ]
-    }
-   ]
+   "kr_query": "라이트LLM 백도어 PyPI 해킹",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 736,
-   "comments": 215,
+   "points": 738,
+   "comments": 216,
    "r": 0.29,
    "at": "2026-10-19",
    "topics": [
@@ -552,28 +624,14 @@
    "title": "Timestral: Mistral's time-series foundation models",
    "url": "https://mistral.ai/news/timestral/",
    "discussion": "https://news.ycombinator.com/item?id=50150434",
-   "points": 618,
-   "comments": 122,
+   "points": 620,
+   "comments": 124,
    "r": 0.2,
    "at": "2026-10-19",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:mistral.ai/news/timestral",
-   "_comments": [
-    "The link doesn't work.I would be interested in such guide. Do you have alternatives?",
-    "As an SRE, I am seeing the following use case:We keep struggling with disk capacity on servers being filled, which will then need cleaning. Currently, we got an alert when it's reaching 80%. It's reactive, we need to work on an unplanned task, and it disrupt our sprint and delivery commitments.Instead, we could pipe the disk capacity data points to Timestral, and we could approximate the date when we will need to work on it, way earlier, so that we can plan our work accordingly.I guess it might be integrated later directly in tools like Datadog, or Cloudflare straight away, rather than being used by corporates as it is.",
-    "While not fully tested in court, I am kf the opinion the mkdel wieghts are nkt copywritabke, thus I am lersonally at leave to ignore their stupid not open license and use the wieghts as I see fit. Anyone else doing this should be advised to consult with an attoruney and be prepared to defend themselves in court.",
-    "You can't easily evaluate the success of any single forecast, but as soon as you have a collection of forecasts there are a lot of ways to evaluate which forecasters are more accurate and which are well calibrated in their predictions.For example you can look at the calibration of the forecasts: Take all the outcomes where you estimated ~10% probability. How many of them actually happened? If you are an well-calibrated forecaster, the actual number should be fairly close to 10%.Brier Score:",
-    "100% agree. Time series forecasting is really bad and there are some theorems that say it is *impossible for large class of series to be forecasted by more than a small number of steps..turning into a straight-line, meanwhile if you have say a handful of important day indicators of the same signal that are proxies, you can recover pretty much exact curve. Better to spend compute in my opinion or variable learning approximate Xt -> yt mapping than the X_t-4..n -> X_t mapping...",
-    "Cool!I'm looking forward to the weights release as well, has anything about the architecture and possibly quantization resilience been shared publicly so far?",
-    "yes, that's why i mentioned *for many domains which don't generate new data super quickly* ...",
-    "Did some on our internal datasets. It did not beat our AutoARIMA baselines, they are pretty noisy series though. Custom ML models only do a little better.",
-    "exactly, a $100B public company can have new business units that are low revenue but are treated differently than VC funded seed startups with the same revenue.",
-    "backtest on data collected after the day of release. Unless they have a time machine, or are themselves consuming the power you are measuring, it won't leak any data.",
-    "What troubles me about time series foundation models is that it's impossible to get a quick answer of whether these models work out of sample for many domains which don't generate new data super quickly. So, yeah, they gave an example of power price forecasting (my domain), so I would love to built a nice model with fancy covariates and all and backtest over the last couple of years -- but I have no way of knowing whether Mistral would be leaking data form its training into my backtest, no?",
-    "Forecasting is just trying to identify recurring and long-time trends in data, and you're absolutely right that with a narrow observation window it is more difficult to do so, however if you have enough historical data (i.e. several years), these models are remarkably good at picking up on patterns leading up to e.g. bank holidays, the information is contained in the data.That being said, more information is of course better, assuming it doesn't introduce bias, like focusing on specific events like holidays too much, when the information is already contained in the historical data, without having to make assumptions about what an upcoming holiday means.The biggest challenge last time I worke"
-   ],
    "summary_ko": "미스트랄의 시계열 기초 모델인 타임스트랄(Timestral) 발표에 대해, SRE 엔지니어들은 서버 디스크 용량 예측 등 사전 대응이 필요한 영역에서의 활용 기대감을 드러냈다. 반면 일각에서는 시계열 예측의 본질적인 한계와 모델의 훈련 데이터 오염(데이터 유출) 가능성 및 기존 AutoARIMA 모델 대비 실효성에 대한 회의적인 시각도 공존했다.",
    "is_event": true,
    "kr_query": "미스트랄 시계열 기초 모델 타임스트랄",
@@ -616,24 +674,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Eagle-4 Released: Faster than DFlash2 & DSpark",
-   "url": "https://github.com/eagle-hq/EAGLE-4",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:eagle-hq/eagle-4"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "RecursiveSI/flint (40B A2.5B) · Hugging Face",
    "url": "https://huggingface.co/RecursiveSI/flint",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbqik0/recursivesiflint_40b_a25b_hugging_face/",
-   "rank": 4,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -644,24 +688,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "XHToken/Spark-X2.6-4B · Hugging Face",
-   "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xb0nr9/xhtokensparkx264b_hugging_face/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:xhtoken/spark-x2.6-4b-gguf"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "OK, fine, Qwen 3.8 Flash Next is nice",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbqxh5/ok_fine_qwen_38_flash_next_is_nice/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbqxh5/ok_fine_qwen_38_flash_next_is_nice/",
-   "rank": 6,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -670,6 +700,34 @@
     "모델릴리스"
    ],
    "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xbqxh5/ok_fine_qwen_38_flash_next_is_nice"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "When will we see these changes? --> China Is Doubling RAM Production to Keep Everyday Gadget Prices from Skyrocketing",
+   "url": "https://www.androidheadlines.com/2026/10/china-cxmt-expands-dram-production-capacity.html",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbrh0s/when_will_we_see_these_changes_china_is_doubling/",
+   "rank": 5,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:androidheadlines.com/2026/10/china-cxmt-expands-dram-production-capacity.html"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Now that 3090 frenzy warning post makes sense.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense/",
+   "rank": 6,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense"
   },
   {
    "layer": "reddit",
@@ -688,44 +746,30 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "When will we see these changes? --> China Is Doubling RAM Production to Keep Everyday Gadget Prices from Skyrocketing",
-   "url": "https://www.androidheadlines.com/2026/10/china-cxmt-expands-dram-production-capacity.html",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbrh0s/when_will_we_see_these_changes_china_is_doubling/",
+   "title": "Amazing free 3090 speedup hack, verified works 15% PP, 5% TG for free",
+   "url": "https://github.com/Zagitta/gpu-unlock",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbuzj5/amazing_free_3090_speedup_hack_verified_works_15/",
    "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:androidheadlines.com/2026/10/china-cxmt-expands-dram-production-capacity.html"
+   "story_key": "gh:zagitta/gpu-unlock"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Now that 3090 frenzy warning post makes sense.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense/",
+   "title": "IBM Granite Speech 5.0 2B",
+   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbr2yg/ibm_granite_speech_50_2b/",
    "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xbr3u1/now_that_3090_frenzy_warning_post_makes_sense"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "qev-0.8b · New SOTA tiny local decision model",
-   "url": "https://app.labqoat.com/e/qev/qev/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xazrvd/qev08b_new_sota_tiny_local_decision_model/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:app.labqoat.com/e/qev/qev"
+   "story_key": "hf:ibm-granite/granite-speech-5.0-2b"
   },
   {
    "layer": "reddit",
@@ -733,13 +777,29 @@
    "title": "KRAFTON/Raon-1-mini-preview · Hugging Face",
    "url": "https://krafton.ai/en/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbh0ev/kraftonraon1minipreview_hugging_face/",
-   "rank": 11,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
    "story_key": "url:krafton.ai/en"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Tried running 748B DeepSeek-V4.1-Flash on a €2k PC",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc"
   },
   {
    "layer": "reddit",
@@ -758,10 +818,26 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Recursive Flint - the \"Qwen3.8 35B\" we've all been waiting for?",
+   "url": "https://recursive.com/updates/introducing-recursive-flint",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc23iq/recursive_flint_the_qwen38_35b_weve_all_been/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:recursive.com/updates/introducing-recursive-flint"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "I use local AI to generate personal value on my massive NAS-based archive / library",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my/",
-   "rank": 13,
+   "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -775,30 +851,13 @@
    "title": "[Paper] MemT-1.0: Towards Memory-Native Evolution",
    "url": "https://arxiv.org/abs/2610.26825",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbl751/paper_memt10_towards_memorynative_evolution/",
-   "rank": 14,
+   "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
    "story_key": "arxiv:2610.26825"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
-   "url": "https://github.com/llamastash/llamastash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbipsl/qwen38flashnext_vs_opus_55_sixway_benchmark_on_a/",
-   "rank": 15,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:llamastash/llamastash"
   }
  ],
  "quiet_important": [
@@ -807,8 +866,8 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2288,
-   "comments": 876,
+   "points": 2302,
+   "comments": 882,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -824,6 +883,36 @@
    "is_event": true,
    "kr_query": "딥인퍼러 딥식 추론 프레임워크",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "discussion": "https://news.ycombinator.com/item?id=50180836",
+   "points": 432,
+   "comments": 172,
+   "r": 0.4,
+   "at": "2026-10-21",
+   "topics": [],
+   "story_key": "url:wiz.io/blog/php2shell-php-rce",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "PHP 취약점 AI 원격 코드 실행",
+   "kr": [
+    {
+     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
+     "u": "https://www.news1.kr/world/usa-canada/6327871",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "php",
+      "취약점"
+     ]
+    }
+   ]
   }
  ],
  "models": [
@@ -831,8 +920,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 1889,
-   "likes": 2126,
+   "trending": 1914,
+   "likes": 2169,
    "downloads": 42122,
    "topics": [
     "모델릴리스"
@@ -843,8 +932,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 870,
-   "likes": 1161,
+   "trending": 891,
+   "likes": 1190,
    "downloads": 490447,
    "topics": [
     "모델릴리스"
@@ -855,8 +944,8 @@
    "layer": "hf",
    "title": "meta-models/Muse-Spark-Open-816B-A42B",
    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 570,
-   "likes": 629,
+   "trending": 577,
+   "likes": 637,
    "downloads": 2891,
    "topics": [
     "모델릴리스"
@@ -865,22 +954,10 @@
   },
   {
    "layer": "hf",
-   "title": "fishaudio/drama-3",
-   "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 560,
-   "likes": 877,
-   "downloads": 15274,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:fishaudio/drama-3"
-  },
-  {
-   "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 528,
-   "likes": 595,
+   "trending": 533,
+   "likes": 601,
    "downloads": 92604,
    "topics": [
     "모델릴리스"
@@ -889,10 +966,22 @@
   },
   {
    "layer": "hf",
+   "title": "fishaudio/drama-3",
+   "url": "https://huggingface.co/fishaudio/drama-3",
+   "trending": 532,
+   "likes": 888,
+   "downloads": 15274,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:fishaudio/drama-3"
+  },
+  {
+   "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-SFT",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 486,
-   "likes": 524,
+   "trending": 497,
+   "likes": 535,
    "downloads": 5840,
    "topics": [
     "모델릴리스"
@@ -901,22 +990,10 @@
   },
   {
    "layer": "hf",
-   "title": "google/embeddinggemma-2",
-   "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 441,
-   "likes": 2796,
-   "downloads": 179734,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:google/embeddinggemma-2"
-  },
-  {
-   "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-Base",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-   "trending": 433,
-   "likes": 458,
+   "trending": 439,
+   "likes": 466,
    "downloads": 4344,
    "topics": [
     "모델릴리스"
@@ -927,8 +1004,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 424,
-   "likes": 8709,
+   "trending": 427,
+   "likes": 8759,
    "downloads": 2057942,
    "topics": [
     "모델릴리스"
@@ -937,10 +1014,22 @@
   },
   {
    "layer": "hf",
+   "title": "google/embeddinggemma-2",
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "trending": 415,
+   "likes": 2807,
+   "downloads": 179734,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:google/embeddinggemma-2"
+  },
+  {
+   "layer": "hf",
    "title": "jialinyyzz/humanizer",
    "url": "https://huggingface.co/jialinyyzz/humanizer",
-   "trending": 392,
-   "likes": 2053,
+   "trending": 371,
+   "likes": 2065,
    "downloads": 120930,
    "topics": [
     "모델릴리스"
@@ -954,7 +1043,7 @@
    "title": "deepseek-ai/DeepInfer",
    "desc": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
-   "stars": 17493,
+   "stars": 17953,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -966,7 +1055,7 @@
    "title": "simbasjungles/free-my-tv",
    "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
    "url": "https://github.com/simbasjungles/free-my-tv",
-   "stars": 2479,
+   "stars": 2747,
    "topics": [
     "모델릴리스"
    ],
@@ -974,30 +1063,10 @@
   },
   {
    "layer": "github",
-   "title": "Leonxlnx/earshot",
-   "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
-   "url": "https://github.com/Leonxlnx/earshot",
-   "stars": 2044,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:leonxlnx/earshot"
-  },
-  {
-   "layer": "github",
-   "title": "chenglou/handwired",
-   "desc": "Turn your regular JavaScript code into a neural net.",
-   "url": "https://github.com/chenglou/handwired",
-   "stars": 1867,
-   "topics": [],
-   "story_key": "gh:chenglou/handwired"
-  },
-  {
-   "layer": "github",
    "title": "JoasASantos/REA-Prompts",
    "desc": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
    "url": "https://github.com/JoasASantos/REA-Prompts",
-   "stars": 1296,
+   "stars": 1344,
    "topics": [],
    "story_key": "gh:joasasantos/rea-prompts"
   },
@@ -1006,7 +1075,7 @@
    "title": "OpenMOSS/MOSS-Image",
    "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
    "url": "https://github.com/OpenMOSS/MOSS-Image",
-   "stars": 1262,
+   "stars": 1293,
    "topics": [],
    "story_key": "gh:openmoss/moss-image"
   },
@@ -1015,7 +1084,7 @@
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1251,
+   "stars": 1279,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1027,7 +1096,7 @@
    "title": "Ansub/tv-detox",
    "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
    "url": "https://github.com/Ansub/tv-detox",
-   "stars": 1116,
+   "stars": 1171,
    "topics": [
     "모델릴리스"
    ],
@@ -1035,31 +1104,67 @@
   },
   {
    "layer": "github",
-   "title": "LiCinCan/blender-ai-mcp-addon",
-   "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender ",
-   "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-   "stars": 969,
+   "title": "reason-machines/reason-network",
+   "desc": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
+   "url": "https://github.com/reason-machines/reason-network",
+   "stars": 915,
    "topics": [
-    "모델릴리스",
-    "에이전트",
-    "개발도구"
+    "에이전트"
    ],
-   "story_key": "gh:licincan/blender-ai-mcp-addon"
+   "story_key": "gh:reason-machines/reason-network"
   },
   {
    "layer": "github",
-   "title": "feder-cr/git-ai",
-   "desc": "Git designed for AI agents.",
-   "url": "https://github.com/feder-cr/git-ai",
-   "stars": 909,
+   "title": "Noniv/web-ocean",
+   "desc": "Real-time WebGPU ocean renderer written from scratch, no engine. FFT waves, whitecaps, sun glitter, physically based sunset sky with clouds, free camera. Built ",
+   "url": "https://github.com/Noniv/web-ocean",
+   "stars": 846,
    "topics": [
-    "에이전트",
-    "개발도구"
+    "모델릴리스",
+    "인프라·칩"
    ],
-   "story_key": "gh:feder-cr/git-ai"
+   "story_key": "gh:noniv/web-ocean"
+  },
+  {
+   "layer": "github",
+   "title": "cranebeaker/coop-anything",
+   "desc": "Co-op Anything: point your AI agent at any single-player game and play it with friends (online and/or splitscreen!). MCP server and playbook to let you reverse ",
+   "url": "https://github.com/cranebeaker/coop-anything",
+   "stars": 795,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:cranebeaker/coop-anything"
+  },
+  {
+   "layer": "github",
+   "title": "eagle-hq/EAGLE-4",
+   "desc": "Official Inference Code of EAGLE-4",
+   "url": "https://github.com/eagle-hq/EAGLE-4",
+   "stars": 732,
+   "topics": [],
+   "story_key": "gh:eagle-hq/eagle-4"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+   "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+   "at": "2026-10-21T18:41",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Oct/21/php-security-release",
+   "link_keys": [
+    "hn:50182987",
+    "url:php.net/archive/2026.php",
+    "url:thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security",
+    "url:wiz.io/blog/php2shell-php-rce"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1380,28 +1485,8 @@
     "url:claude.ai/code/session_01LE2R4P74P9GGUbE6yQ5YBt"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm-meta-ai 0.2",
-   "url": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
-   "at": "2026-10-12T23:58",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Oct/12/llm-meta-ai",
-   "link_keys": [
-    "gh:simonw/185cff7ff0b11379725abf7f78d5d2b2",
-    "gh:simonw/1f8c25686971da82077e34c088d408db",
-    "gh:simonw/llm-meta-ai",
-    "url:artificialanalysis.ai/models/muse-wonder",
-    "url:research.meta.ai/blog/muse-wonder",
-    "url:tools.simonwillison.net/markdown-svg-renderer"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-21 17:57"
+ "enriched_at": "2026-10-22 01:22"
 }
