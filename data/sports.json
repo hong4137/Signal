@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 06:38 KST",
+ "updated": "2026-10-22 13:37 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
   {
@@ -9,8 +9,8 @@
    "name": "Golden State Warriors at Los Angeles Lakers",
    "date": "2026-10-22T02:00Z",
    "kst": "2026-10-22 11:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "In Progress",
    "note": "",
    "season": "regular-season",
    "us_tv": [
@@ -24,20 +24,18 @@
     "ko": "LA 레이커스",
     "abbr": "LAL",
     "id": "13",
-    "score": "0",
+    "score": "125",
     "winner": null,
-    "record": "0-0",
-    "form": "승패승패패"
+    "record": "0-0"
    },
    "away": {
     "name": "Golden State Warriors",
     "ko": "골든스테이트",
     "abbr": "GS",
     "id": "9",
-    "score": "0",
+    "score": "98",
     "winner": null,
-    "record": "0-0",
-    "form": "승패승승승"
+    "record": "0-0"
    },
    "title": "LA 레이커스 vs 골든스테이트",
    "follow": {
@@ -51,8 +49,38 @@
     "골든스테이트 경기"
    ],
    "detail": {
-    "leaders": [],
+    "leaders": [
+     {
+      "team": "LA 레이커스",
+      "cat": "Points",
+      "who": "Luka Doncic",
+      "val": "28"
+     },
+     {
+      "team": "LA 레이커스",
+      "cat": "Assists",
+      "who": "Luka Doncic",
+      "val": "7"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Points",
+      "who": "Stephen Curry",
+      "val": "23"
+     },
+     {
+      "team": "골든스테이트",
+      "cat": "Assists",
+      "who": "Draymond Green",
+      "val": "8"
+     }
+    ],
     "injuries": [
+     {
+      "team": "LA 레이커스",
+      "who": "Adou Thiero",
+      "status": "Out"
+     },
      {
       "team": "LA 레이커스",
       "who": "Collin Sexton",
@@ -61,11 +89,6 @@
      {
       "team": "LA 레이커스",
       "who": "Cameron Carr",
-      "status": "Out"
-     },
-     {
-      "team": "LA 레이커스",
-      "who": "Adou Thiero",
       "status": "Out"
      },
      {
@@ -80,29 +103,16 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Stephen Curry",
-      "status": "Day-To-Day"
+      "who": "Brandin Podziemski",
+      "status": "Out"
      },
      {
       "team": "골든스테이트",
-      "who": "Brandin Podziemski",
+      "who": "Moses Moody",
       "status": "Out"
      }
     ],
-    "predictor": {
-     "home": "77.5",
-     "away": "22.5"
-    },
-    "preview": [
-     {
-      "title": "Shams: Warriors 'exploring trade routes' for Kristaps Porzingis",
-      "url": "https://www.espn.com/video/clip/_/id/50240111/warriors-exploring-trade-routes-kristaps-porzingis"
-     },
-     {
-      "title": "Sources: Warriors exploring options to trade center Kristaps Porzingis",
-      "url": "https://www.espn.com/nba/story/_/id/50239169/sources-warriors-exploring-trade-options-kristaps-porzingis"
-     }
-    ]
+    "preview": []
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -260,10 +270,6 @@
      {
       "title": "Uecker's family says he'd be 'incredibly proud' of Brewers",
       "url": "https://www.espn.com/mlb/story/_/id/50240296/uecker-family-says-incredibly-proud-brewers"
-     },
-     {
-      "title": "'A dream come true': Misiorowski looks ahead to Brewers' World Series trip",
-      "url": "https://www.espn.com/video/clip/_/id/50240023/misiorowski-looks-ahead-brewers-world-series-trip"
      }
     ]
    },
@@ -342,8 +348,8 @@
     "id": "29",
     "score": "0",
     "winner": null,
-    "record": "0-0",
-    "form": "패승패승승"
+    "record": "1-0",
+    "form": "승패승승승"
    },
    "title": "골든스테이트 vs Memphis Grizzlies",
    "follow": {
@@ -388,12 +394,12 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Stephen Curry",
-      "status": "Day-To-Day"
+      "who": "Brandin Podziemski",
+      "status": "Out"
      },
      {
       "team": "골든스테이트",
-      "who": "Brandin Podziemski",
+      "who": "Moses Moody",
       "status": "Out"
      },
      {
@@ -408,12 +414,8 @@
     },
     "preview": [
      {
-      "title": "Shams: Warriors 'exploring trade routes' for Kristaps Porzingis",
-      "url": "https://www.espn.com/video/clip/_/id/50240111/warriors-exploring-trade-routes-kristaps-porzingis"
-     },
-     {
-      "title": "Sources: Warriors exploring options to trade center Kristaps Porzingis",
-      "url": "https://www.espn.com/nba/story/_/id/50239169/sources-warriors-exploring-trade-options-kristaps-porzingis"
+      "title": "Ty Jerome breaks Grizzlies' opening-night record with 45 points",
+      "url": "https://www.espn.com/video/clip/_/id/50244825/ty-jerome-breaks-grizzlies-opening-night-record-45-points"
      }
     ]
    },
@@ -636,6 +638,10 @@
     "injuries": [],
     "preview": [
      {
+      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
+      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
+     },
+     {
       "title": "Sevilla lodge official complaint to LaLiga over Real Madrid defeat",
       "url": "https://www.espn.com/soccer/story/_/id/50236214/sevilla-lodge-complaint-real-madrid-defeat-laliga"
      }
@@ -696,8 +702,8 @@
     "id": "21",
     "score": "0",
     "winner": null,
-    "record": "0-0",
-    "form": "패패승패패"
+    "record": "0-1",
+    "form": "패승패패패"
    },
    "away": {
     "name": "Golden State Warriors",
@@ -743,7 +749,7 @@
      {
       "team": "Phoenix Suns",
       "who": "Luke Kennard",
-      "status": "Day-To-Day"
+      "status": "Out"
      },
      {
       "team": "Phoenix Suns",
@@ -762,29 +768,20 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Stephen Curry",
-      "status": "Day-To-Day"
+      "who": "Brandin Podziemski",
+      "status": "Out"
      },
      {
       "team": "골든스테이트",
-      "who": "Brandin Podziemski",
+      "who": "Moses Moody",
       "status": "Out"
      }
     ],
     "predictor": {
-     "home": "68.8",
-     "away": "31.2"
+     "home": "68.9",
+     "away": "31.1"
     },
-    "preview": [
-     {
-      "title": "Shams: Warriors 'exploring trade routes' for Kristaps Porzingis",
-      "url": "https://www.espn.com/video/clip/_/id/50240111/warriors-exploring-trade-routes-kristaps-porzingis"
-     },
-     {
-      "title": "Sources: Warriors exploring options to trade center Kristaps Porzingis",
-      "url": "https://www.espn.com/nba/story/_/id/50239169/sources-warriors-exploring-trade-options-kristaps-porzingis"
-     }
-    ]
+    "preview": []
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -955,7 +952,7 @@
     "record": "4-2-0",
     "rank": "1",
     "pts": "14",
-    "form": "승승무무승"
+    "form": "승무무승무"
    },
    "title": "프라이부르크 vs 바이에른 뮌헨",
    "kp": {
@@ -1147,7 +1144,7 @@
     "record": "7-0-2",
     "rank": "3",
     "pts": "21",
-    "form": "승패승승승"
+    "form": "패승승승승"
    },
    "title": "바르셀로나 vs 레알 마드리드",
    "score": 58,
@@ -1203,12 +1200,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Barcelona confirm Dani Olmo adductor injury, could miss one month",
-      "url": "https://www.espn.com/soccer/story/_/id/50237026/barcelona-dani-olmo-adductor-injury-one-month-out"
+      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
+      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
      },
      {
-      "title": "Sevilla lodge official complaint to LaLiga over Real Madrid defeat",
-      "url": "https://www.espn.com/soccer/story/_/id/50236214/sevilla-lodge-complaint-real-madrid-defeat-laliga"
+      "title": "Barcelona confirm Dani Olmo adductor injury, could miss one month",
+      "url": "https://www.espn.com/soccer/story/_/id/50237026/barcelona-dani-olmo-adductor-injury-one-month-out"
      }
     ]
    },
@@ -1324,8 +1321,8 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Diomande stunner caps Madrid win against former club Leipzig",
-      "url": "http://www.espn.com/soccer/report/_/gameId/401915313"
+      "title": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
+      "url": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico"
      }
     ],
     "result": {
