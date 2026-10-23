@@ -1,17 +1,17 @@
 {
- "at": "2026-10-23 06:55",
+ "at": "2026-10-23 14:22",
  "stats": {
   "nol": {
    "got": 24,
-   "new": 1
+   "new": 7
   },
   "ticketlink": {
    "got": 30,
-   "new": 0
+   "new": 5
   },
   "sejong": {
    "got": 10,
-   "new": 0
+   "new": 1
   },
   "lgart": {
    "got": 4,
@@ -22,7 +22,7 @@
    "new": 0
   },
   "snkrs": {
-   "got": 4,
+   "got": 0,
    "new": 0
   },
   "netflix": {
@@ -31,19 +31,19 @@
   },
   "yes24": {
    "got": 38,
-   "new": 0
+   "new": 4
   },
   "melon": {
    "got": 0,
    "new": 0
   },
   "popply": {
-   "got": 0,
-   "new": 0
+   "got": 21,
+   "new": 21
   },
   "popga": {
-   "got": 0,
-   "new": 0
+   "got": 79,
+   "new": 79
   },
   "lotteworldmall": {
    "got": 27,
@@ -63,11 +63,11 @@
   },
   "pokemon": {
    "got": 19,
-   "new": 0
+   "new": 2
   },
   "newswire": {
-   "got": 52,
-   "new": 0
+   "got": 53,
+   "new": 20
   },
   "heypop": {
    "got": 10,
@@ -80,28 +80,30 @@
  },
  "log": [
   "▶ nol",
-  "  24건 · 새 1",
+  "  24건 · 새 7",
   "▶ ticketlink",
-  "  30건 · 새 0",
+  "  30건 · 새 5",
   "▶ sejong",
-  "  10건 · 새 0",
+  "  10건 · 새 1",
   "▶ lgart",
   "  4건 · 새 0",
   "▶ dive",
   "  6건 · 새 0",
   "▶ snkrs",
-  "  4건 · 새 0",
+  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
+  "  0건 · 새 0",
   "▶ netflix",
   "  18건 · 새 0",
   "▶ yes24",
-  "  38건 · 새 0",
+  "  38건 · 새 4",
   "▶ melon",
   "  ! 실패 https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex=1&schGcode=GE HTTPError HTTP Error 423: Locked",
   "  0건 · 새 0",
   "▶ popply",
-  "  0건 · 새 0",
+  "  21건 · 새 21",
   "▶ popga",
-  "  0건 · 새 0",
+  "  ! 실패 https://popga.co.kr/popup/14856 HTTPError HTTP Error 429: Too Many Requests",
+  "  79건 · 새 79",
   "▶ lotteworldmall",
   "  27건 · 새 0",
   "▶ linefriends_event",
@@ -111,15 +113,15 @@
   "▶ starbucks",
   "  10건 · 새 0",
   "▶ pokemon",
-  "  19건 · 새 0",
+  "  19건 · 새 2",
   "▶ newswire",
-  "  52건 · 새 0",
+  "  53건 · 새 20",
   "▶ heypop",
   "  10건 · 새 0",
   "▶ theedit",
   "  10건 · 새 0",
-  "▶ 팝플리 재측정 46 건",
-  "▶ NOL 랭킹 49건",
+  "▶ 팝플리 재측정 21 건",
+  "▶ NOL 랭킹 47건",
   "▶ YouTube 인기 130건"
  ]
 }
