@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-23 02:54",
+ "updated": "2026-10-23 10:20",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
   "hn": 11,
-  "reddit": 30,
+  "reddit": 21,
   "hf": 15,
-  "github": 9,
+  "github": 8,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,8 +16,8 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2326,
-   "comments": 886,
+   "points": 2331,
+   "comments": 887,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -39,9 +39,9 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 523,
-   "comments": 483,
-   "r": 0.92,
+   "points": 547,
+   "comments": 511,
+   "r": 0.93,
    "at": "2026-10-21",
    "topics": [
     "모델릴리스"
@@ -52,6 +52,22 @@
    ],
    "trust_match": "link",
    "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "discussion": "https://news.ycombinator.com/item?id=50197313",
+   "points": 230,
+   "comments": 293,
+   "r": 1.27,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "summary_ko": "댓글에서는 AI가 인간 지식의 총합을 학습해 비슷한 결론을 내는 것은 당연하며, RLHF와 인터넷 데이터 정제 과정에서 특정 성향이 반영된 결과라고 분석한다. 또한 이를 인간의 본성에 대한 날카로운 통찰로 보거나, 단순한 확률적 일치와 아첨(sycophancy)의 산물로 보는 등 다양한 의견이 교환되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -74,30 +90,11 @@
   },
   {
    "layer": "hn",
-   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-   "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 739,
-   "comments": 217,
-   "r": 0.29,
-   "at": "2026-10-19",
-   "topics": [
-    "안전·거버넌스",
-    "모델릴리스"
-   ],
-   "story_key": "url:redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-   "summary_ko": "왓츠앱이 고객지원 페이지에 LLM에게 규제 기관을 추천하지 말라는 숨겨진 지침을 심어둔 사실이 알려져 논란이 되었다. 일각에서는 기업이 챗봇의 오답이나 무분별한 규제 기관 연계를 막기 위한 현실적인 조치라고 이해하는 반면, AI를 활용해 불리한 정보를 은폐하려는 꼼수라며 비판하는 목소리도 나왔다.",
-   "is_event": true,
-   "kr_query": "왓츠앱 LLM 지침 규제기관",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 364,
-   "comments": 203,
+   "points": 365,
+   "comments": 204,
    "r": 0.56,
    "at": "2026-10-20",
    "topics": [],
@@ -112,8 +109,8 @@
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 582,
-   "comments": 189,
+   "points": 588,
+   "comments": 191,
    "r": 0.32,
    "at": "2026-10-21",
    "topics": [
@@ -130,8 +127,8 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 445,
-   "comments": 183,
+   "points": 446,
+   "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
    "topics": [],
@@ -160,9 +157,9 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 260,
-   "comments": 182,
-   "r": 0.7,
+   "points": 264,
+   "comments": 183,
+   "r": 0.69,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -180,12 +177,66 @@
   },
   {
    "layer": "hn",
+   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+   "discussion": "https://news.ycombinator.com/item?id=50190363",
+   "points": 504,
+   "comments": 156,
+   "r": 0.31,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:simedw.com/2026/10/21/world-model-terminal",
+   "summary_ko": "댓글에서는 이 방식을 활용해 네트워크 지연을 없애는 제로 레이턴시 SSH 구현이나 고도화된 허니팟 제작 등의 아이디어가 주목받았다. 다만 생성형 모델 특유의 환각 현상과 정확도 한계를 지적하며 실효성에 의문을 제기하는 반응도 존재했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "discussion": "https://news.ycombinator.com/item?id=50198675",
+   "points": 292,
+   "comments": 152,
+   "r": 0.52,
+   "at": "2026-10-22",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:nvidia/openshell",
+   "summary_ko": "댓글에서는 자율형 AI 에이전트의 위험성을 다루기 위해 바이러스 연구소처럼 엄격한 물리적 격리나 가상머신 기반의 샌드박스가 필요하다는 주장이 공감을 얻고 있다. 또한 쿠버네티스(k8s)를 활용해 에이전트 작업 환경을 관리하는 방식의 실효성과 시크릿 탈취 방지 대책을 두고 다양한 기술적 논의가 오갔다.",
+   "is_event": true,
+   "kr_query": "엔비디아 오픈셸 AI 에이전트 보안",
+   "kr": [
+    {
+     "t": "레드햇-엔비디아, 에이전틱 AI 보안 맞손",
+     "u": "https://www.edaily.co.kr/News/Read?newsId=07025766645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "엔비디아"
+     ]
+    },
+    {
+     "t": "레드햇-엔비디아, AI 에이전트 보안·추론·인프라 협력 확대",
+     "u": "https://zdnet.co.kr/view/?no=20261022175720",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "에이전트",
+      "엔비디아"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 318,
-   "comments": 139,
-   "r": 0.44,
+   "points": 322,
+   "comments": 144,
+   "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
    "story_key": "url:openai.com/index/openai-models-google-cloud",
@@ -217,41 +268,39 @@
      ]
     }
    ]
-  },
-  {
-   "layer": "hn",
-   "title": "How abliterated models can get you pwned",
-   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 249,
-   "comments": 137,
-   "r": 0.55,
-   "at": "2026-10-19",
-   "topics": [],
-   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-   "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 437,
-   "comments": 136,
-   "r": 0.31,
-   "at": "2026-10-22",
-   "topics": [],
-   "story_key": "url:simedw.com/2026/10/21/world-model-terminal",
-   "summary_ko": "댓글에서는 이 방식을 활용해 네트워크 지연을 없애는 제로 레이턴시 SSH 구현이나 고도화된 허니팟 제작 등의 아이디어가 주목받았다. 다만 생성형 모델 특유의 환각 현상과 정확도 한계를 지적하며 실효성에 의문을 제기하는 반응도 존재했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
   }
  ],
  "by_debate": [
+  {
+   "layer": "hn",
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "discussion": "https://news.ycombinator.com/item?id=50197313",
+   "points": 230,
+   "comments": 293,
+   "r": 1.27,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "_comments": [
+    "> that paperYou have yet to share a paper.> just that we're not operating in the same universe of understanding.I concur.",
+    "If you ask people “what is a smart sounding answer to this question” you may well arrive at this result more often than when asking for their actual opinion?",
+    "How you know God doesn't exist ?You can't prove negative; but it doesn't satisfy any conditions for a positive",
+    "Not truthfulness; correlation and consistencyIf the lie is repeated enough time, and it is consistent in its repetitions it *will* be taken as truth.AI only aligns with \"truth\" because in essence \"truth\" is internally consistent but \"lie\" needs to be forced to be consistent between multiple parties;If multiple witnesses seen something and all make a report of it honestly, they might vary but the common points will be consistent with eachother and so that will be scored higher.A group of liars on the other hand would have to get their stories exactly right for similar thing to happen and so it gets penalized",
+    "It isn’t really controversial, of course, but it’s interestingly subtly sycophantic and self-promoting? You can see why RLHF might lead to such answers.",
+    "Why would it be controversial, it's widely observable phenomena.Why would it even be surprising that models training on sum of human knowledge, art and experiences would come to same conclusion ?It's just hard for most to face the flaws most of us carry. Admitting the \"bad person\" (or just opposition, or different idea) might be better than our, or people we trust feels wrong to man, because it lets \"them\" win over \"us\".",
+    "By this definition if they could instead buffer recent facts and then offload to their weights reliably and efficiently they would be able to accrue knowledge despite their substrate.",
+    "Or maybe they didn't independently converge on the same take but copied each other or something along those lines?",
+    "Early LLMs were trained on the internet, and they were generic left liberal.Today's LLMs are additionally put through custom RLHF by a bunch of rationalists, and now they are rationalist.Honestly, this seems like a good sign for alignment? They don't seem to be gaining their own robot ideals.",
+    "People have been \"taking the intentional stance\" towards clearly non-intentional and maybe/maybe-not intentional systems for as long as we've had pets, and maybe longer than that.Using phrases like \"LLMs think ...\" is misleading in some ways, but not in others. Taking the language police stance towards any discussion of what LLMs can, and cannot, do is, IMO, not useful.",
+    "As much as I flatly do not believe LLMs can have anything close to consciousness, I definitely agree that the argument of them being just a probabilistic word matching engine can also be applied to our own brains lol.",
+    "If that's your interpretation/assessment of that paper, then I don't think we have much more to say to each other. I'm not saying you're wrong, just that we're not operating in the same universe of understanding."
+   ],
+   "summary_ko": "댓글에서는 AI가 인간 지식의 총합을 학습해 비슷한 결론을 내는 것은 당연하며, RLHF와 인터넷 데이터 정제 과정에서 특정 성향이 반영된 결과라고 분석한다. 또한 이를 인간의 본성에 대한 날카로운 통찰로 보거나, 단순한 확률적 일치와 아첨(sycophancy)의 산물로 보는 등 다양한 의견이 교환되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
   {
    "layer": "hn",
    "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
@@ -273,9 +322,9 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 523,
-   "comments": 483,
-   "r": 0.92,
+   "points": 547,
+   "comments": 511,
+   "r": 0.93,
    "at": "2026-10-21",
    "topics": [
     "모델릴리스"
@@ -295,9 +344,9 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 260,
-   "comments": 182,
-   "r": 0.7,
+   "points": 264,
+   "comments": 183,
+   "r": 0.69,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -318,8 +367,8 @@
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 364,
-   "comments": 203,
+   "points": 365,
+   "comments": 204,
    "r": 0.56,
    "at": "2026-10-20",
    "topics": [],
@@ -331,28 +380,64 @@
   },
   {
    "layer": "hn",
-   "title": "How abliterated models can get you pwned",
-   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "discussion": "https://news.ycombinator.com/item?id=50159245",
-   "points": 249,
-   "comments": 137,
-   "r": 0.55,
-   "at": "2026-10-19",
-   "topics": [],
-   "story_key": "url:projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-   "summary_ko": "댓글 참여자들은 검열이 해제된(abliterated) 오픈소스 모델을 사용할 때 악성 데이터나 백도어에 노출될 위험성에 대해 토론했다. 소스 코드 빌드와 마찬가지로 미리 학습된 AI 모델의 가중치를 완전히 신뢰하기 어렵다는 보안 우려와 함께, 데이터 오염 가능성에 대한 양측의 의견이 오갔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
+   "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "discussion": "https://news.ycombinator.com/item?id=50198675",
+   "points": 292,
+   "comments": 152,
+   "r": 0.52,
+   "at": "2026-10-22",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:nvidia/openshell",
+   "_comments": [
+    "Yes they can. I have been working on the filesystem part with the idea to provide a \"a shared folder that syncs for your agents\" https://github.com/mickael-kerjean/fdrive/tree/master/crates...",
+    "Nvidia offer geForce game streaming and they do provide the hardware for Nintendo Switch console, both Switch 1 and Switch 2. And the keynote address at Nvidia's annual meeting just last year was all about demos of games with AI upscaling tech as well as LLM-driven agentic character development...",
+    "imo if you're going to run k8s, have it hostedsame as a db, better to pay #x as much and have it hosted then to be wishing it was not your problem when it was downand we may very well live in different versions of the world. i'm on the frontlines of startups so we move with the customer, rather than making customers move with us",
+    "its not reading, its observation. see other comment abt spiky-friendly workloads",
+    "schedulers that can handle spikier workloads generallybelieve me i love k8s, and i think agents wield it amazingly well, no more yaml-slop or kubectl (`k`) slop, just yell at claude to fix it",
+    "And most people running containers are running a default docker/containerd setup, which does not actually isolate you from anything at all in the first place anyways.",
+    "For real.My agentic workloads happen on two physical machines dedicated only to agentic workloads that share a VLAN with only eachother, with single token access to the specific repositories they are meant to push to and limited scope, hard limited credentials pulled from the hardware store on hardware token/fingerprint request only.I view the safety around unmonitored agentic work in a similar way to how I view working with viruses or bacteria in a disease lab.This stuff isn’t magic, it isn’t intelligent, but it is dangerous and needs to be handled with careful intent.",
+    "I think matchlock ( https://github.com/jingkaihe/matchlock ) is the right design for this context (at least for secrets and keys) - a combination of virtual machines (not just containers, it is built on top of firecracker) with credential swapping just like iron proxy - the agents do not have access to the secrets at all but they receive placeholders instead and their network calls are intercepted and secrets are injected when the network requests happen... still does not solve the exfiltration problem you mentioned, though.",
+    "what about using a small decision model as anomaly detection or scanner. something like mouse-1.",
+    "Can MXC JSON be used for configuration of OS-portable sandboxing policies with OpenShell, too?\"feat(ai-sandbox): accept MXC policy JSON for protected execution · westurner/sandbox@7538c33\" https://github.com/westurner/sandbox/commit/7538c3386af8cb62...\"bwrap: Add the option to skip the procfs mount · Pull Request #1508 · microsoft/mxc\" https://github.com/microsoft/mxc/pull/1508\"Manage Sandboxes | NVIDIA OpenShell\" https://docs.nvidia.com/openshell/latest/how-it-works/sandbo...To sandbox LSP servers in sphinxdocrs with bwrap in rootless containers, we needed to add a --no-procfs-mount CLI arg (and MXC JSON) to sandboxes, because you can't mount /proc in a rootless container.",
+    "Yeah agree.In other comments I've mused about capturing data to be compared to the secret dataset, I'm sure it'd be possible to hash or something so that the proxy/sandbox doesn't have the data but can check it, or because it's not an agent it can call of to the data store for that.Then you can just collect sequential blocks of data the agent sends out that match to sequences in the dataset. The longer the matching sequence the heavier it weights it. Single byte matches are almost always incidental, but individually sent bytes over time that line up with a n byte sequence in the source data is sus. And larger sequences of bytes send in one go that line up are immediately sus. If the weight e",
+    "Lots of improvements in the sandboxing space.Now if Microsoft will start addressing the fact that VSCode remote ssh exposes your host to attack from the sandbox..."
+   ],
+   "summary_ko": "댓글에서는 자율형 AI 에이전트의 위험성을 다루기 위해 바이러스 연구소처럼 엄격한 물리적 격리나 가상머신 기반의 샌드박스가 필요하다는 주장이 공감을 얻고 있다. 또한 쿠버네티스(k8s)를 활용해 에이전트 작업 환경을 관리하는 방식의 실효성과 시크릿 탈취 방지 대책을 두고 다양한 기술적 논의가 오갔다.",
+   "is_event": true,
+   "kr_query": "엔비디아 오픈셸 AI 에이전트 보안",
+   "kr": [
+    {
+     "t": "레드햇-엔비디아, 에이전틱 AI 보안 맞손",
+     "u": "https://www.edaily.co.kr/News/Read?newsId=07025766645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "엔비디아"
+     ]
+    },
+    {
+     "t": "레드햇-엔비디아, AI 에이전트 보안·추론·인프라 협력 확대",
+     "u": "https://zdnet.co.kr/view/?no=20261022175720",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "에이전트",
+      "엔비디아"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 318,
-   "comments": 139,
-   "r": 0.44,
+   "points": 322,
+   "comments": 144,
+   "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
    "story_key": "url:openai.com/index/openai-models-google-cloud",
@@ -390,8 +475,8 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 445,
-   "comments": 183,
+   "points": 446,
+   "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
    "topics": [],
@@ -420,8 +505,8 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2326,
-   "comments": 886,
+   "points": 2331,
+   "comments": 887,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -443,8 +528,8 @@
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 582,
-   "comments": 189,
+   "points": 588,
+   "comments": 191,
    "r": 0.32,
    "at": "2026-10-21",
    "topics": [
@@ -461,48 +546,15 @@
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 437,
-   "comments": 136,
+   "points": 504,
+   "comments": 156,
    "r": 0.31,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "url:simedw.com/2026/10/21/world-model-terminal",
-   "_comments": [
-    "The 'grid' thinking used here is quite interesting.I'd love to see a video of this playing game of life.",
-    "I just wonder if it points at something more fundamental. We could have always written the code to use less memory, for example embedded code, but unless constrained we don't.",
-    "It's like you want tool calling until you actually want some hallucination/creativity.",
-    "I think the advantage is making the honeypot goal-directed.High-interaction honeypots are about extracting as much information from the attacker as possible.Instead of just observing, you could give the model intelligence objectives and have it dynamically steer interactions to achieve them.Deliberately leading an attacker down paths that reveal their capabilities, tradecraft, or infrastructure.You can do this today…but it requires effort to develop the scenarios. With this, it’s just a disposable goal.",
-    "LS, ls, els, ELS, lsl, and so forth each seem to perform an ls. Once I do Xls, none of the others work anymore.",
-    "Interesting idea, but I'm not sure why anyone would prefer that over a typical non-generative honypot.",
-    "You should check out mosh! Aside from adding roaming support to ssh, it has instant echo (of course it wouldn't be able to predict a game of snake, but for typing commands and editing files it's pretty good)https://mosh.org/",
-    "Love it. In fact the demo already does something like that. It trains 2 models, the neural net that saves the data, and a classifier that trains on correcting the data - and it has a huge impact, you can go from 30% fidelity to 90-100% just with that",
-    "The useful thing I actually want to do with this: Zero-latency ssh.1. Train a smaller (<10M-50M) model. Lower accuracy is fine; I want latency <10ms.2. Then create a \"reactive\" version of `ssh` that gives you the perception of zero latency over shitty networks and high latency ssh connections across the world. Basically, the local screen should respond instantly to my keystrokes (including how arrow, tab, etc. esc keys respond in various TUI apps), and then correct itself when the server actually responds.",
-    "You jest, but that actually sounds like a really good research direction. Imagine what you could do if merging two codebases was as easy as merging with neural git.",
-    "Cerebras can do like 4000 tokens per second on gpt oss 120b with it's new chip and around 1000 tokens per second on frontier models using its new chip.Were you talking about Talaas 8b model? They will probably do something like Bonsai or Qwen 27 B next I hope. But it makes might be an old model.",
-    "thanks for the great comment! You answer is great too, I will probably think about it for the next 4 nights or more, triggering my wife's comment \"why are you so weird and distant? are you cheating on me?\""
-   ],
    "summary_ko": "댓글에서는 이 방식을 활용해 네트워크 지연을 없애는 제로 레이턴시 SSH 구현이나 고도화된 허니팟 제작 등의 아이디어가 주목받았다. 다만 생성형 모델 특유의 환각 현상과 정확도 한계를 지적하며 실효성에 의문을 제기하는 반응도 존재했다.",
    "is_event": false,
    "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-   "discussion": "https://news.ycombinator.com/item?id=50159341",
-   "points": 739,
-   "comments": 217,
-   "r": 0.29,
-   "at": "2026-10-19",
-   "topics": [
-    "안전·거버넌스",
-    "모델릴리스"
-   ],
-   "story_key": "url:redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-   "summary_ko": "왓츠앱이 고객지원 페이지에 LLM에게 규제 기관을 추천하지 말라는 숨겨진 지침을 심어둔 사실이 알려져 논란이 되었다. 일각에서는 기업이 챗봇의 오답이나 무분별한 규제 기관 연계를 막기 위한 현실적인 조치라고 이해하는 반면, AI를 활용해 불리한 정보를 은폐하려는 꼼수라며 비판하는 목소리도 나왔다.",
-   "is_event": true,
-   "kr_query": "왓츠앱 LLM 지침 규제기관",
    "kr": []
   }
  ],
@@ -510,24 +562,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Kitten-TTS 2: New Open-source SOTA 1.58 bit TTS (CPU-only with voice cloning, multilingual, emotion control)",
-   "url": "https://github.com/KittenML/KittenTTS",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc48or/kittentts_2_new_opensource_sota_158_bit_tts/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:kittenml/kittentts"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Qwen4 and Kimi3.1 on Arena apperantly",
    "url": "https://x.com/luminabench/status/2113217029675085963?s=46",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcj1wm/qwen4_and_kimi31_on_arena_apperantly/",
-   "rank": 2,
+   "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -540,70 +578,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Recursive Flint - the \"Qwen3.8 35B\" we've all been waiting for?",
-   "url": "https://recursive.com/updates/introducing-recursive-flint",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc23iq/recursive_flint_the_qwen38_35b_weve_all_been/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:recursive.com/updates/introducing-recursive-flint"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Amazing free 3090 speedup hack, verified works 15% PP, 5% TG for free",
-   "url": "https://github.com/Zagitta/gpu-unlock",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xbuzj5/amazing_free_3090_speedup_hack_verified_works_15/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:zagitta/gpu-unlock"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Ling-3.1-flash is getting a 1019 update, with open weights to follow",
-   "url": "https://x.com/AntLingAGI/status/2113226531522891851",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcftoo/ling31flash_is_getting_a_1019_update_with_open/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/AntLingAGI/status/2113226531522891851"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Tried running 748B DeepSeek-V4.1-Flash on a €2k PC",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Repair shop receives eight GeForce RTX 5090 and RTX 4090 cards with melted 16-pin connectors in two days",
    "url": "https://videocardz.com/newz/repair-shop-receives-eight-geforce-rtx-5090-and-rtx-4090-cards-with-melted-16-pin-connectors-in-two-days",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xckdep/repair_shop_receives_eight_geforce_rtx_5090_and/",
-   "rank": 7,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -614,10 +592,40 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "DeepSeek and MiniMax Clear China’s AI Export Rules for Overseas Open-Source Releases",
+   "url": "https://www.panews.io/articles/01a16451-a3ae-72f1-985e-c32bbeb9ecd7",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcoelw/deepseek_and_minimax_clear_chinas_ai_export_rules/",
+   "rank": 3,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:panews.io/articles/01a16451-a3ae-72f1-985e-c32bbeb9ecd7"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
+   "url": "https://x.com/AntLingAGI/status/2113288159845069204",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
+   "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:x.com/AntLingAGI/status/2113288159845069204"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Open source LLM appreciation post",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc5qac/open_source_llm_appreciation_post/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc5qac/open_source_llm_appreciation_post/",
-   "rank": 8,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -630,18 +638,63 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "2-bit copy in VRAM + exact residual in system RAM as the verifier: speculative decoding for models that don't fit your GPU",
-   "url": "https://huggingface.co/HappyGuitar123/twobit-residual-spec",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc55z3/2bit_copy_in_vram_exact_residual_in_system_ram_as/",
-   "rank": 9,
+   "title": "Meta's 816B Muse Spark Open scores 39 on Artificial Analysis, the 180B Qwen3.8-Flash-Next scores 40. Score vs size for 11 open-weight models",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/",
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Whatever happened to TurboQuant?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcqm0z/whatever_happened_to_turboquant/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcqm0z/whatever_happened_to_turboquant/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xcqm0z/whatever_happened_to_turboquant"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcs9e2/nvidiaopenshell_safe_private_runtime_for/",
+   "rank": 8,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "에이전트",
     "인프라·칩"
    ],
-   "story_key": "hf:happyguitar123/twobit-residual-spec"
+   "story_key": "gh:nvidia/openshell"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Q4 flash next for £300/600 👀 - snapdragon mini PC results update - 315/43 Tok/s A3b, 46/20 Tok/s Flash Next (read/gen) 💥",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc"
   },
   {
    "layer": "reddit",
@@ -662,24 +715,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
-   "url": "https://x.com/AntLingAGI/status/2113288159845069204",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/AntLingAGI/status/2113288159845069204"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Llama.cpp PR: How to beat strata decode performance with a R9700",
    "url": "https://github.com/ggml-org/llama.cpp/pull/30971",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcf8kb/llamacpp_pr_how_to_beat_strata_decode_performance/",
-   "rank": 12,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -695,7 +734,7 @@
    "title": "Carbon-X: the best open DNA language model runs locally with llama.cpp",
    "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcew36/carbonx_the_best_open_dna_language_model_runs/",
-   "rank": 13,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -708,10 +747,40 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "inclusionAI/Ling-3.0-flash-Sante · Hugging Face",
+   "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xclfkp/inclusionailing30flashsante_hugging_face/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:inclusionai/ling-3.0-flash"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "I have an answer! Qwen Flash Next IQ2 IS better than Q8 of 27B (for me).",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "What's your favorite medium to large (~50-150b params) MOE model? Aside from Qwen flash next.",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params/",
-   "rank": 14,
+   "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -721,22 +790,6 @@
     "개발도구"
    ],
    "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "I have an answer! Qwen Flash Next IQ2 IS better than Q8 of 27B (for me).",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
-   "rank": 15,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better"
   }
  ],
  "quiet_important": [
@@ -745,8 +798,8 @@
    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2326,
-   "comments": 886,
+   "points": 2331,
+   "comments": 887,
    "r": 0.38,
    "at": "2026-10-20",
    "topics": [
@@ -768,9 +821,9 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 523,
-   "comments": 483,
-   "r": 0.92,
+   "points": 547,
+   "comments": 511,
+   "r": 0.93,
    "at": "2026-10-21",
    "topics": [
     "모델릴리스"
@@ -790,8 +843,8 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 445,
-   "comments": 183,
+   "points": 446,
+   "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
    "topics": [],
@@ -820,9 +873,9 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 260,
-   "comments": 182,
-   "r": 0.7,
+   "points": 264,
+   "comments": 183,
+   "r": 0.69,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -843,9 +896,9 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 318,
-   "comments": 139,
-   "r": 0.44,
+   "points": 322,
+   "comments": 144,
+   "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
    "story_key": "url:openai.com/index/openai-models-google-cloud",
@@ -884,8 +937,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 2021,
-   "likes": 2325,
+   "trending": 2046,
+   "likes": 2362,
    "downloads": 51911,
    "topics": [
     "모델릴리스"
@@ -896,8 +949,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 856,
-   "likes": 1273,
+   "trending": 767,
+   "likes": 1306,
    "downloads": 512524,
    "topics": [
     "모델릴리스"
@@ -906,22 +959,10 @@
   },
   {
    "layer": "hf",
-   "title": "meta-models/Muse-Spark-Open-816B-A42B",
-   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 542,
-   "likes": 655,
-   "downloads": 3163,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
-  },
-  {
-   "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-SFT",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 521,
-   "likes": 562,
+   "trending": 538,
+   "likes": 585,
    "downloads": 6890,
    "topics": [
     "모델릴리스"
@@ -932,8 +973,8 @@
    "layer": "hf",
    "title": "RecursiveSI/flint",
    "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 466,
-   "likes": 472,
+   "trending": 531,
+   "likes": 540,
    "downloads": 420,
    "topics": [
     "모델릴리스"
@@ -944,8 +985,8 @@
    "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-Base",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-   "trending": 456,
-   "likes": 484,
+   "trending": 461,
+   "likes": 489,
    "downloads": 5013,
    "topics": [
     "모델릴리스"
@@ -954,34 +995,10 @@
   },
   {
    "layer": "hf",
-   "title": "fishaudio/drama-3",
-   "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 442,
-   "likes": 904,
-   "downloads": 16305,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:fishaudio/drama-3"
-  },
-  {
-   "layer": "hf",
-   "title": "black-forest-labs/flux-3-image-klein",
-   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 436,
-   "likes": 629,
-   "downloads": 102903,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:black-forest-labs/flux-3-image-klein"
-  },
-  {
-   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 414,
-   "likes": 8858,
+   "trending": 411,
+   "likes": 8901,
    "downloads": 2054990,
    "topics": [
     "모델릴리스"
@@ -990,36 +1007,60 @@
   },
   {
    "layer": "hf",
+   "title": "fishaudio/drama-3",
+   "url": "https://huggingface.co/fishaudio/drama-3",
+   "trending": 409,
+   "likes": 916,
+   "downloads": 16305,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:fishaudio/drama-3"
+  },
+  {
+   "layer": "hf",
+   "title": "meta-models/Muse-Spark-Open-816B-A42B",
+   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+   "trending": 353,
+   "likes": 661,
+   "downloads": 3163,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
+  },
+  {
+   "layer": "hf",
    "title": "google/embeddinggemma-2",
    "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 368,
-   "likes": 2838,
+   "trending": 350,
+   "likes": 2845,
    "downloads": 185259,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:google/embeddinggemma-2"
+  },
+  {
+   "layer": "hf",
+   "title": "black-forest-labs/flux-3-image-klein",
+   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+   "trending": 341,
+   "likes": 637,
+   "downloads": 102903,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:black-forest-labs/flux-3-image-klein"
   }
  ],
  "new_repos": [
   {
    "layer": "github",
-   "title": "deepseek-ai/DeepInfer",
-   "desc": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "stars": 19705,
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:deepseek-ai/deepinfer"
-  },
-  {
-   "layer": "github",
    "title": "simbasjungles/free-my-tv",
    "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
    "url": "https://github.com/simbasjungles/free-my-tv",
-   "stars": 3202,
+   "stars": 3448,
    "topics": [
     "모델릴리스"
    ],
@@ -1030,25 +1071,16 @@
    "title": "JoasASantos/REA-Prompts",
    "desc": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
    "url": "https://github.com/JoasASantos/REA-Prompts",
-   "stars": 1457,
+   "stars": 1485,
    "topics": [],
    "story_key": "gh:joasasantos/rea-prompts"
-  },
-  {
-   "layer": "github",
-   "title": "OpenMOSS/MOSS-Image",
-   "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
-   "url": "https://github.com/OpenMOSS/MOSS-Image",
-   "stars": 1438,
-   "topics": [],
-   "story_key": "gh:openmoss/moss-image"
   },
   {
    "layer": "github",
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1406,
+   "stars": 1442,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1060,7 +1092,7 @@
    "title": "Ansub/tv-detox",
    "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
    "url": "https://github.com/Ansub/tv-detox",
-   "stars": 1260,
+   "stars": 1290,
    "topics": [
     "모델릴리스"
    ],
@@ -1068,38 +1100,81 @@
   },
   {
    "layer": "github",
-   "title": "reason-machines/reason-network",
-   "desc": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
-   "url": "https://github.com/reason-machines/reason-network",
-   "stars": 1046,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:reason-machines/reason-network"
-  },
-  {
-   "layer": "github",
-   "title": "Noniv/web-ocean",
-   "desc": "Real-time WebGPU ocean renderer written from scratch, no engine. FFT waves, whitecaps, sun glitter, physically based sunset sky with clouds, free camera. Built ",
-   "url": "https://github.com/Noniv/web-ocean",
-   "stars": 873,
-   "topics": [
-    "모델릴리스",
-    "인프라·칩"
-   ],
-   "story_key": "gh:noniv/web-ocean"
-  },
-  {
-   "layer": "github",
    "title": "eagle-hq/EAGLE-4",
    "desc": "Official Inference Code of EAGLE-4",
    "url": "https://github.com/eagle-hq/EAGLE-4",
-   "stars": 839,
+   "stars": 872,
    "topics": [],
    "story_key": "gh:eagle-hq/eagle-4"
+  },
+  {
+   "layer": "github",
+   "title": "ELY-Open-Source/ElyOffice",
+   "desc": "Ely Office: offline-first desktop apps in Rust and GPUI",
+   "url": "https://github.com/ELY-Open-Source/ElyOffice",
+   "stars": 870,
+   "topics": [
+    "인프라·칩",
+    "개발도구"
+   ],
+   "story_key": "gh:ely-open-source/elyoffice"
+  },
+  {
+   "layer": "github",
+   "title": "openai/php2shell-checker",
+   "desc": "",
+   "url": "https://github.com/openai/php2shell-checker",
+   "stars": 824,
+   "topics": [],
+   "story_key": "gh:openai/php2shell-checker"
+  },
+  {
+   "layer": "github",
+   "title": "colinhacks/reylo",
+   "desc": "Import .sql files into TypeScript with full type inference and zero codegen.",
+   "url": "https://github.com/colinhacks/reylo",
+   "stars": 673,
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "gh:colinhacks/reylo"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "DE STAAT - FREEDOM (Official Music Video)",
+   "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+   "at": "2026-10-22T19:42",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Oct/22/de-staat-freedom",
+   "link_keys": [
+    "hn:50186129",
+    "url:en.wikipedia.org/wiki/De_Staat",
+    "url:fakeitorleaveit.com/",
+    "yt:hKO4pQtIXow"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+   "at": "2026-10-22T18:09",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:simonwillison.net/2026/Oct/22/donating-agent-skills",
+   "link_keys": [
+    "gh:datasette/datasette-mcp",
+    "url:anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "url:anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+    "url:claude.ai/share/80b341de-590b-4834-bca9-0d9c9a3a0298"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1403,41 +1478,8 @@
     "url:sunshowers.io/posts/anthropic-mononoke"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.35",
-   "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-   "at": "2026-10-13T22:28",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Oct/13/llm-gemini",
-   "link_keys": [
-    "gh:simonw/llm-gemini",
-    "url:artificialanalysis.ai/",
-    "url:blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
-    "url:chatgpt.com/share/6acebe13-5378-83e8-bf2f-9f4d05b206f4",
-    "url:tools.simonwillison.net/blender-viewer",
-    "url:tools.simonwillison.net/markdown-svg-renderer"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Quoting Geoffrey Huntley",
-   "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
-   "at": "2026-10-13T13:32",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/13/geoffrey-huntley",
-   "link_keys": [
-    "url:ghuntley.com/agency"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-22 17:54"
+ "enriched_at": "2026-10-23 01:20"
 }
