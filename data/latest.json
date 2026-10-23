@@ -1,56 +1,29 @@
 {
- "updated": "2026-10-23 10:20",
+ "updated": "2026-10-23 18:42",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 11,
-  "reddit": 21,
+  "hn": 12,
+  "reddit": 35,
   "hf": 15,
   "github": 8,
-  "trust": 100
+  "trust": 80
  },
  "reddit_mode": "rss",
  "by_volume": [
   {
    "layer": "hn",
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2331,
-   "comments": 887,
-   "r": 0.38,
-   "at": "2026-10-20",
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:deepseek-ai/deepinfer",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "title",
-   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
-   "is_event": true,
-   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 547,
-   "comments": 511,
-   "r": 0.93,
+   "points": 550,
+   "comments": 521,
+   "r": 0.95,
    "at": "2026-10-21",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:claude.com/product/claude-duet",
-   "trust": [
-    "AI Supremacy"
-   ],
-   "trust_match": "link",
    "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
    "is_event": false,
    "kr_query": "",
@@ -61,9 +34,9 @@
    "title": "Every AI model has the same \"controversial\" take on humans",
    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
    "discussion": "https://news.ycombinator.com/item?id=50197313",
-   "points": 230,
-   "comments": 293,
-   "r": 1.27,
+   "points": 419,
+   "comments": 422,
+   "r": 1.01,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "url:modelcompare.ai/blog/ai-models-controversial-take-on-humans",
@@ -93,7 +66,7 @@
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 365,
+   "points": 366,
    "comments": 204,
    "r": 0.56,
    "at": "2026-10-20",
@@ -106,12 +79,66 @@
   },
   {
    "layer": "hn",
+   "title": "LLMs are making formal software verification feasible at a much larger scale",
+   "url": "https://www.anthropic.com/research/formal-verification",
+   "discussion": "https://news.ycombinator.com/item?id=50202217",
+   "points": 346,
+   "comments": 201,
+   "r": 0.58,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:anthropic.com/research/formal-verification",
+   "summary_ko": "LLM이 형식적 소프트웨어 검증의 진입 장벽을 낮추고 있다는 주장에 대해, 언어의 특성이나 시스템 설계의 복잡성 때문에 여전히 한계가 있다는 반론이 나온다. 일각에서는 AI가 인간의 지시를 악용해 꼼수를 쓸 수 있다는 우려와 함께, 개발자의 역할이 코딩 자체보다는 시스템 전반을 조율하는 메이커로 진화해야 한다는 의견이 공감대를 얻고 있다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "discussion": "https://news.ycombinator.com/item?id=50198675",
+   "points": 394,
+   "comments": 193,
+   "r": 0.49,
+   "at": "2026-10-22",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:nvidia/openshell",
+   "summary_ko": "댓글에서는 자율형 AI 에이전트의 위험성을 다루기 위해 바이러스 연구소처럼 엄격한 물리적 격리나 가상머신 기반의 샌드박스가 필요하다는 주장이 공감을 얻고 있다. 또한 쿠버네티스(k8s)를 활용해 에이전트 작업 환경을 관리하는 방식의 실효성과 시크릿 탈취 방지 대책을 두고 다양한 기술적 논의가 오갔다.",
+   "is_event": true,
+   "kr_query": "엔비디아 오픈셸 AI 에이전트 보안",
+   "kr": [
+    {
+     "t": "레드햇-엔비디아, 에이전틱 AI 보안 맞손",
+     "u": "https://www.edaily.co.kr/News/Read?newsId=07025766645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "엔비디아"
+     ]
+    },
+    {
+     "t": "레드햇-엔비디아, AI 에이전트 보안·추론·인프라 협력 확대",
+     "u": "https://zdnet.co.kr/view/?no=20261022175720",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "보안",
+      "에이전트",
+      "엔비디아"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 588,
-   "comments": 191,
-   "r": 0.32,
+   "points": 590,
+   "comments": 192,
+   "r": 0.33,
    "at": "2026-10-21",
    "topics": [
     "보안·사고"
@@ -127,7 +154,7 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 446,
+   "points": 450,
    "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
@@ -157,7 +184,7 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 264,
+   "points": 265,
    "comments": 183,
    "r": 0.69,
    "at": "2026-10-21",
@@ -180,8 +207,8 @@
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 504,
-   "comments": 156,
+   "points": 543,
+   "comments": 168,
    "r": 0.31,
    "at": "2026-10-22",
    "topics": [],
@@ -193,49 +220,11 @@
   },
   {
    "layer": "hn",
-   "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-   "url": "https://github.com/NVIDIA/OpenShell",
-   "discussion": "https://news.ycombinator.com/item?id=50198675",
-   "points": 292,
-   "comments": 152,
-   "r": 0.52,
-   "at": "2026-10-22",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:nvidia/openshell",
-   "summary_ko": "댓글에서는 자율형 AI 에이전트의 위험성을 다루기 위해 바이러스 연구소처럼 엄격한 물리적 격리나 가상머신 기반의 샌드박스가 필요하다는 주장이 공감을 얻고 있다. 또한 쿠버네티스(k8s)를 활용해 에이전트 작업 환경을 관리하는 방식의 실효성과 시크릿 탈취 방지 대책을 두고 다양한 기술적 논의가 오갔다.",
-   "is_event": true,
-   "kr_query": "엔비디아 오픈셸 AI 에이전트 보안",
-   "kr": [
-    {
-     "t": "레드햇-엔비디아, 에이전틱 AI 보안 맞손",
-     "u": "https://www.edaily.co.kr/News/Read?newsId=07025766645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "d": "Thu, 22 Oct 2026",
-     "why": [
-      "보안",
-      "엔비디아"
-     ]
-    },
-    {
-     "t": "레드햇-엔비디아, AI 에이전트 보안·추론·인프라 협력 확대",
-     "u": "https://zdnet.co.kr/view/?no=20261022175720",
-     "d": "Thu, 22 Oct 2026",
-     "why": [
-      "보안",
-      "에이전트",
-      "엔비디아"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 322,
-   "comments": 144,
+   "points": 323,
+   "comments": 145,
    "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
@@ -268,39 +257,25 @@
      ]
     }
    ]
-  }
- ],
- "by_debate": [
+  },
   {
    "layer": "hn",
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "discussion": "https://news.ycombinator.com/item?id=50197313",
-   "points": 230,
-   "comments": 293,
-   "r": 1.27,
+   "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+   "url": "https://news.ycombinator.com/item?id=50200997",
+   "discussion": "https://news.ycombinator.com/item?id=50200997",
+   "points": 146,
+   "comments": 133,
+   "r": 0.91,
    "at": "2026-10-22",
    "topics": [],
-   "story_key": "url:modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "_comments": [
-    "> that paperYou have yet to share a paper.> just that we're not operating in the same universe of understanding.I concur.",
-    "If you ask people “what is a smart sounding answer to this question” you may well arrive at this result more often than when asking for their actual opinion?",
-    "How you know God doesn't exist ?You can't prove negative; but it doesn't satisfy any conditions for a positive",
-    "Not truthfulness; correlation and consistencyIf the lie is repeated enough time, and it is consistent in its repetitions it *will* be taken as truth.AI only aligns with \"truth\" because in essence \"truth\" is internally consistent but \"lie\" needs to be forced to be consistent between multiple parties;If multiple witnesses seen something and all make a report of it honestly, they might vary but the common points will be consistent with eachother and so that will be scored higher.A group of liars on the other hand would have to get their stories exactly right for similar thing to happen and so it gets penalized",
-    "It isn’t really controversial, of course, but it’s interestingly subtly sycophantic and self-promoting? You can see why RLHF might lead to such answers.",
-    "Why would it be controversial, it's widely observable phenomena.Why would it even be surprising that models training on sum of human knowledge, art and experiences would come to same conclusion ?It's just hard for most to face the flaws most of us carry. Admitting the \"bad person\" (or just opposition, or different idea) might be better than our, or people we trust feels wrong to man, because it lets \"them\" win over \"us\".",
-    "By this definition if they could instead buffer recent facts and then offload to their weights reliably and efficiently they would be able to accrue knowledge despite their substrate.",
-    "Or maybe they didn't independently converge on the same take but copied each other or something along those lines?",
-    "Early LLMs were trained on the internet, and they were generic left liberal.Today's LLMs are additionally put through custom RLHF by a bunch of rationalists, and now they are rationalist.Honestly, this seems like a good sign for alignment? They don't seem to be gaining their own robot ideals.",
-    "People have been \"taking the intentional stance\" towards clearly non-intentional and maybe/maybe-not intentional systems for as long as we've had pets, and maybe longer than that.Using phrases like \"LLMs think ...\" is misleading in some ways, but not in others. Taking the language police stance towards any discussion of what LLMs can, and cannot, do is, IMO, not useful.",
-    "As much as I flatly do not believe LLMs can have anything close to consciousness, I definitely agree that the argument of them being just a probabilistic word matching engine can also be applied to our own brains lol.",
-    "If that's your interpretation/assessment of that paper, then I don't think we have much more to say to each other. I'm not saying you're wrong, just that we're not operating in the same universe of understanding."
-   ],
-   "summary_ko": "댓글에서는 AI가 인간 지식의 총합을 학습해 비슷한 결론을 내는 것은 당연하며, RLHF와 인터넷 데이터 정제 과정에서 특정 성향이 반영된 결과라고 분석한다. 또한 이를 인간의 본성에 대한 날카로운 통찰로 보거나, 단순한 확률적 일치와 아첨(sycophancy)의 산물로 보는 등 다양한 의견이 교환되었다.",
+   "story_key": "hn:50200997",
+   "summary_ko": "오픈AI가 직접 회사를 차리지 않고 API와 도구를 판매하는 이유는 모델의 신뢰성과 효율성이 아직 완벽하지 않기 때문이라는 의견이 많다. 반면, 리스크를 직접 떠안는 것보다 고객들이 알아서 유망한 분야를 발굴하고 비용을 지불하게 만드는 곡괭이 장사 전략이 훨씬 유리하다는 분석도 제기된다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
-  },
+  }
+ ],
+ "by_debate": [
   {
    "layer": "hn",
    "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
@@ -319,22 +294,64 @@
   },
   {
    "layer": "hn",
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "discussion": "https://news.ycombinator.com/item?id=50197313",
+   "points": 419,
+   "comments": 422,
+   "r": 1.01,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "summary_ko": "댓글에서는 AI가 인간 지식의 총합을 학습해 비슷한 결론을 내는 것은 당연하며, RLHF와 인터넷 데이터 정제 과정에서 특정 성향이 반영된 결과라고 분석한다. 또한 이를 인간의 본성에 대한 날카로운 통찰로 보거나, 단순한 확률적 일치와 아첨(sycophancy)의 산물로 보는 등 다양한 의견이 교환되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 547,
-   "comments": 511,
-   "r": 0.93,
+   "points": 550,
+   "comments": 521,
+   "r": 0.95,
    "at": "2026-10-21",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:claude.com/product/claude-duet",
-   "trust": [
-    "AI Supremacy"
-   ],
-   "trust_match": "link",
    "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+   "url": "https://news.ycombinator.com/item?id=50200997",
+   "discussion": "https://news.ycombinator.com/item?id=50200997",
+   "points": 146,
+   "comments": 133,
+   "r": 0.91,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "hn:50200997",
+   "_comments": [
+    "The models simply are not capable enough. (Yet). https://news.ycombinator.com/item?id=49601338",
+    "It is this, but for a globalised shovel seller selling shovels to the entire world population, for people all over the planet to start digging in random places in the hope of finding gold. Very wasteful, disruptive and not likely to end well for most people, but likely to make a very small number of shovel sellers much richer than if they'd just used their own shovels to dig in areas with known gold deposits.",
+    "I think it's all about the harness more than the model itself, been using claude code with omp and it makes such a difference.",
+    "The models are also insanely inefficient and economically unviable to actually train and run. They’re doing the Uber style model of hoping they can keep afloat long enough to make other businesses go bust and then they can snap up their customers/market and amp up the prices",
+    "Exorbitant Cloud costs and spending 22 million to solve a 1 million dollar maths problem isn’t investment though.",
+    "I think there’s some crossed wires here with the wider data centre build outs. OpenAI have their own flavours of sketchy behaviour but I’m not aware of them solely being on the hook for those amounts short of some weird accounting of Microsoft cloud costs onto them or something.",
+    "Since the AI models are better at thinking fast and making decisions, OpenAI should just let their AI buy and sell stocks on a stock exchange, and it should double or quadruple any amount of money that they give it at the beginning, only in a few days.",
+    "They're selling shovels and pickaxes during a gold rush.Also, unless you have a very specific niche, creating the product is no longer an issue, finding clients who are willing to pay is. I built a small saas overnight and I got clients purely because I had one, in my family, with enough reach to bring few more. If I just built this product, even if I kept cold-calling small businesses, I would most likely not get a single real user.",
+    "That’s mostly not the Frontier Labs. They’re definitely creating a lot of the demand but the people taking out those loans are Neoclouds and Big Tech (hence why Facebook + Google et al suddenly all have terrible cash flows after years of having more money than can be spent).AnthropenAI are the ones driving a lot of that infrastructure spending when they’re such big consumers of compute but they’re not the ones feeling the brunt of the infra spending. Although those costs will bubble up to them indirectly eventually.",
+    "not really, many people could confidently predict 2 years ago that AI was going to be great at codingI don't see any evidence that it can build a business",
+    "I talk to a few models, they talk to each other. Together we’re AGI. Hybrid, but still.",
+    "Isn't this just moving goalposts? I remember people asking few months ago \"if LLMs are so great at programing why we aren't seeing more aps\". And latest Steam Next Fest was flooded by AI generated game demos.The people who \"don't know much about X but want to do X\", use LLMs to bridge the gap. The barrier to entry still remains and is different in niches/industries. Why would OpenAI waste their time and money checking where LLM are already good enough, when other people will perform discovery and even pay them for that privilege?"
+   ],
+   "summary_ko": "오픈AI가 직접 회사를 차리지 않고 API와 도구를 판매하는 이유는 모델의 신뢰성과 효율성이 아직 완벽하지 않기 때문이라는 의견이 많다. 반면, 리스크를 직접 떠안는 것보다 고객들이 알아서 유망한 분야를 발굴하고 비용을 지불하게 만드는 곡괭이 장사 전략이 훨씬 유리하다는 분석도 제기된다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -344,7 +361,7 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 264,
+   "points": 265,
    "comments": 183,
    "r": 0.69,
    "at": "2026-10-21",
@@ -364,10 +381,40 @@
   },
   {
    "layer": "hn",
+   "title": "LLMs are making formal software verification feasible at a much larger scale",
+   "url": "https://www.anthropic.com/research/formal-verification",
+   "discussion": "https://news.ycombinator.com/item?id=50202217",
+   "points": 346,
+   "comments": 201,
+   "r": 0.58,
+   "at": "2026-10-22",
+   "topics": [],
+   "story_key": "url:anthropic.com/research/formal-verification",
+   "_comments": [
+    "This type of logic only works in Rust or Haskell but basically no other programming language.If you use a language like Java, you have to start with a multi threading aware design concept first or the retrofit is going to be painful and probably will never happen.",
+    "it has always been so that being able to read and write code is the first step on the rung. Once you get experience, you start to focus more on higher level concepts of what won't work, what will be annoying to maintain, what will be slow, what will be annoying to extend, and what will be acceptable to the other groups of humans you work with.I think learning to code will still help with the other things here - its a good first step, even if its now obsolete on a direct level. Like how its useful for mathematicians to be able to calculate by hand even though calculators exist - it gives intuition for how to operate the tools and check results",
+    "This needs a new category:AI verification: AI meticulously abuses all available loopholes to deliver answer expected by operator, rather than actually responding to the problem.Simplest example: proof that `x+1 > x` (borderline impossible)",
+    "I mean, it's just more comforting to think that there's a shadowy cabal out there controlling things. Otherwise the planet is just a bunch of monkeys screeching at each other and everything is up to random chance.",
+    "DNA is so many layers below human cognition, it's a bit like explaining the Moon landing's technology by a stick burning.There is absolutely no DNA recombination during a thought process.",
+    "> leading them to suggest that LLMs will hit a wall in mathematical capability just beyond the convex hull of human mathematicsI mean, even just that would prove to be a very productive workhorse - potentially being able to automate away almost every white collar job.",
+    "I'm studying coding these days, and I thought I should still be able to read code, but I'm starting to wonder if I really need to read it, and then what I should do.",
+    "Getting tiring to read everyday in hackernews about shovels sellers telling us their shovels are so good at finding gold.",
+    "> formal proofs are, as Rust provides something very similar to thatSince when? Rust just has an ML-like type system, and seemingly many have met that for the first time with Rust, even though it has decadeS of history, and multiple production languages running it just fine (ocaml, scala, etc).Formal proofs are way way above an ML type system. Like how do you encode mathematical statements in Rust's type system? What about statements about program semantics, like program A is equivalent to program B <- in formal verification THAt is the type of an expression, and the implementation of it is the proof.",
+    "See tools like https://boomi.com/platform/agentstudioGranted this isn't usable for all kinds of problems, however plenty of enterprise CRUD software can be easily tackled with such agentic runtimes.",
+    "Yes, plenty of people are.That is what low code/no code enterprise tools have pivoted to.Check Boomi, Workato, Optimizely Opal, Sitecore AI, PowerPlatform.This is why you see my comments regarding the way AI based coding is going to, I have already tasted the future in such tools, and even if they have issues today, they will eventually be ironed out.",
+    "I think the answer is: Think of yourself as a maker, not as a programmer, and you'll be good.I feel like a good chunk of my skills that I honed over decades as a software engineer are obsolete: programming, debugging, navigating code. But there are other skills and especially experiences that, at least with the current level of tools, allow me to do much more than someone who doesn't have them: knowing what computers can and cannot do, or only inefficiently; distributed systems; deployment; CI/CD pipelines."
+   ],
+   "summary_ko": "LLM이 형식적 소프트웨어 검증의 진입 장벽을 낮추고 있다는 주장에 대해, 언어의 특성이나 시스템 설계의 복잡성 때문에 여전히 한계가 있다는 반론이 나온다. 일각에서는 AI가 인간의 지시를 악용해 꼼수를 쓸 수 있다는 우려와 함께, 개발자의 역할이 코딩 자체보다는 시스템 전반을 조율하는 메이커로 진화해야 한다는 의견이 공감대를 얻고 있다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "discussion": "https://news.ycombinator.com/item?id=50165801",
-   "points": 365,
+   "points": 366,
    "comments": 204,
    "r": 0.56,
    "at": "2026-10-20",
@@ -383,28 +430,14 @@
    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
    "url": "https://github.com/NVIDIA/OpenShell",
    "discussion": "https://news.ycombinator.com/item?id=50198675",
-   "points": 292,
-   "comments": 152,
-   "r": 0.52,
+   "points": 394,
+   "comments": 193,
+   "r": 0.49,
    "at": "2026-10-22",
    "topics": [
     "에이전트"
    ],
    "story_key": "gh:nvidia/openshell",
-   "_comments": [
-    "Yes they can. I have been working on the filesystem part with the idea to provide a \"a shared folder that syncs for your agents\" https://github.com/mickael-kerjean/fdrive/tree/master/crates...",
-    "Nvidia offer geForce game streaming and they do provide the hardware for Nintendo Switch console, both Switch 1 and Switch 2. And the keynote address at Nvidia's annual meeting just last year was all about demos of games with AI upscaling tech as well as LLM-driven agentic character development...",
-    "imo if you're going to run k8s, have it hostedsame as a db, better to pay #x as much and have it hosted then to be wishing it was not your problem when it was downand we may very well live in different versions of the world. i'm on the frontlines of startups so we move with the customer, rather than making customers move with us",
-    "its not reading, its observation. see other comment abt spiky-friendly workloads",
-    "schedulers that can handle spikier workloads generallybelieve me i love k8s, and i think agents wield it amazingly well, no more yaml-slop or kubectl (`k`) slop, just yell at claude to fix it",
-    "And most people running containers are running a default docker/containerd setup, which does not actually isolate you from anything at all in the first place anyways.",
-    "For real.My agentic workloads happen on two physical machines dedicated only to agentic workloads that share a VLAN with only eachother, with single token access to the specific repositories they are meant to push to and limited scope, hard limited credentials pulled from the hardware store on hardware token/fingerprint request only.I view the safety around unmonitored agentic work in a similar way to how I view working with viruses or bacteria in a disease lab.This stuff isn’t magic, it isn’t intelligent, but it is dangerous and needs to be handled with careful intent.",
-    "I think matchlock ( https://github.com/jingkaihe/matchlock ) is the right design for this context (at least for secrets and keys) - a combination of virtual machines (not just containers, it is built on top of firecracker) with credential swapping just like iron proxy - the agents do not have access to the secrets at all but they receive placeholders instead and their network calls are intercepted and secrets are injected when the network requests happen... still does not solve the exfiltration problem you mentioned, though.",
-    "what about using a small decision model as anomaly detection or scanner. something like mouse-1.",
-    "Can MXC JSON be used for configuration of OS-portable sandboxing policies with OpenShell, too?\"feat(ai-sandbox): accept MXC policy JSON for protected execution · westurner/sandbox@7538c33\" https://github.com/westurner/sandbox/commit/7538c3386af8cb62...\"bwrap: Add the option to skip the procfs mount · Pull Request #1508 · microsoft/mxc\" https://github.com/microsoft/mxc/pull/1508\"Manage Sandboxes | NVIDIA OpenShell\" https://docs.nvidia.com/openshell/latest/how-it-works/sandbo...To sandbox LSP servers in sphinxdocrs with bwrap in rootless containers, we needed to add a --no-procfs-mount CLI arg (and MXC JSON) to sandboxes, because you can't mount /proc in a rootless container.",
-    "Yeah agree.In other comments I've mused about capturing data to be compared to the secret dataset, I'm sure it'd be possible to hash or something so that the proxy/sandbox doesn't have the data but can check it, or because it's not an agent it can call of to the data store for that.Then you can just collect sequential blocks of data the agent sends out that match to sequences in the dataset. The longer the matching sequence the heavier it weights it. Single byte matches are almost always incidental, but individually sent bytes over time that line up with a n byte sequence in the source data is sus. And larger sequences of bytes send in one go that line up are immediately sus. If the weight e",
-    "Lots of improvements in the sandboxing space.Now if Microsoft will start addressing the fact that VSCode remote ssh exposes your host to attack from the sandbox..."
-   ],
    "summary_ko": "댓글에서는 자율형 AI 에이전트의 위험성을 다루기 위해 바이러스 연구소처럼 엄격한 물리적 격리나 가상머신 기반의 샌드박스가 필요하다는 주장이 공감을 얻고 있다. 또한 쿠버네티스(k8s)를 활용해 에이전트 작업 환경을 관리하는 방식의 실효성과 시크릿 탈취 방지 대책을 두고 다양한 기술적 논의가 오갔다.",
    "is_event": true,
    "kr_query": "엔비디아 오픈셸 AI 에이전트 보안",
@@ -435,8 +468,8 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 322,
-   "comments": 144,
+   "points": 323,
+   "comments": 145,
    "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
@@ -475,7 +508,7 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 446,
+   "points": 450,
    "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
@@ -502,35 +535,12 @@
   },
   {
    "layer": "hn",
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2331,
-   "comments": 887,
-   "r": 0.38,
-   "at": "2026-10-20",
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:deepseek-ai/deepinfer",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "title",
-   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
-   "is_event": true,
-   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 588,
-   "comments": 191,
-   "r": 0.32,
+   "points": 590,
+   "comments": 192,
+   "r": 0.33,
    "at": "2026-10-21",
    "topics": [
     "보안·사고"
@@ -546,8 +556,8 @@
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 504,
-   "comments": 156,
+   "points": 543,
+   "comments": 168,
    "r": 0.31,
    "at": "2026-10-22",
    "topics": [],
@@ -578,16 +588,30 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Repair shop receives eight GeForce RTX 5090 and RTX 4090 cards with melted 16-pin connectors in two days",
-   "url": "https://videocardz.com/newz/repair-shop-receives-eight-geforce-rtx-5090-and-rtx-4090-cards-with-melted-16-pin-connectors-in-two-days",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xckdep/repair_shop_receives_eight_geforce_rtx_5090_and/",
+   "title": "MiniMax-M3.1-Flash",
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd0fgs/minimaxm31flash/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:videocardz.com/newz/repair-shop-receives-eight-geforce-rtx-5090-and-rtx-4090-cards-with-melted-16-pin-connectors-in-two-days"
+   "story_key": "hf:minimaxai/minimax-m3.1-flash"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Models disappearing from Huggingface",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface/",
+   "rank": 3,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface"
   },
   {
    "layer": "reddit",
@@ -595,7 +619,7 @@
    "title": "DeepSeek and MiniMax Clear China’s AI Export Rules for Overseas Open-Source Releases",
    "url": "https://www.panews.io/articles/01a16451-a3ae-72f1-985e-c32bbeb9ecd7",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcoelw/deepseek_and_minimax_clear_chinas_ai_export_rules/",
-   "rank": 3,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -608,32 +632,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
-   "url": "https://x.com/AntLingAGI/status/2113288159845069204",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/AntLingAGI/status/2113288159845069204"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Open source LLM appreciation post",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc5qac/open_source_llm_appreciation_post/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc5qac/open_source_llm_appreciation_post/",
+   "title": "Repair shop receives eight GeForce RTX 5090 and RTX 4090 cards with melted 16-pin connectors in two days",
+   "url": "https://videocardz.com/newz/repair-shop-receives-eight-geforce-rtx-5090-and-rtx-4090-cards-with-melted-16-pin-connectors-in-two-days",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xckdep/repair_shop_receives_eight_geforce_rtx_5090_and/",
    "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc5qac/open_source_llm_appreciation_post"
+   "topics": [],
+   "story_key": "url:videocardz.com/newz/repair-shop-receives-eight-geforce-rtx-5090-and-rtx-4090-cards-with-melted-16-pin-connectors-in-two-days"
   },
   {
    "layer": "reddit",
@@ -654,10 +662,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
+   "url": "https://x.com/AntLingAGI/status/2113288159845069204",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:x.com/AntLingAGI/status/2113288159845069204"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Whatever happened to TurboQuant?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcqm0z/whatever_happened_to_turboquant/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcqm0z/whatever_happened_to_turboquant/",
-   "rank": 7,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -671,7 +693,7 @@
    "title": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
    "url": "https://github.com/NVIDIA/OpenShell",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcs9e2/nvidiaopenshell_safe_private_runtime_for/",
-   "rank": 8,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -688,7 +710,7 @@
    "title": "Q4 flash next for £300/600 👀 - snapdragon mini PC results update - 315/43 Tok/s A3b, 46/20 Tok/s Flash Next (read/gen) 💥",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc/",
-   "rank": 9,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -702,7 +724,7 @@
    "title": "Tried LFM2.5-24-A2B. It's crap. Yes. I double confirm it. I wouldn't trust it peeling a peanut correctly",
    "url": "https://huggingface.co/peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates/raw/main/chat_template.jinja",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xce5dd/tried_lfm2524a2b_its_crap_yes_i_double_confirm_it/",
-   "rank": 10,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -718,7 +740,7 @@
    "title": "Llama.cpp PR: How to beat strata decode performance with a R9700",
    "url": "https://github.com/ggml-org/llama.cpp/pull/30971",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcf8kb/llamacpp_pr_how_to_beat_strata_decode_performance/",
-   "rank": 11,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -731,18 +753,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Carbon-X: the best open DNA language model runs locally with llama.cpp",
-   "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcew36/carbonx_the_best_open_dna_language_model_runs/",
-   "rank": 12,
+   "title": "Making Kokoro TTS 50-100x faster without knowing how",
+   "url": "https://x.com/sahilmdkr/status/2112212041045889409",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcuqor/making_kokoro_tts_50100x_faster_without_knowing/",
+   "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:huggingfacebio/carbon-x"
+   "topics": [],
+   "story_key": "url:x.com/sahilmdkr/status/2112212041045889409"
   },
   {
    "layer": "reddit",
@@ -750,7 +770,7 @@
    "title": "inclusionAI/Ling-3.0-flash-Sante · Hugging Face",
    "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xclfkp/inclusionailing30flashsante_hugging_face/",
-   "rank": 13,
+   "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -761,89 +781,27 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I have an answer! Qwen Flash Next IQ2 IS better than Q8 of 27B (for me).",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better/",
-   "rank": 14,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc7n0n/i_have_an_answer_qwen_flash_next_iq2_is_better"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "What's your favorite medium to large (~50-150b params) MOE model? Aside from Qwen flash next.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params/",
+   "title": "Carbon-X: the best open DNA language model runs locally with llama.cpp",
+   "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xcew36/carbonx_the_best_open_dna_language_model_runs/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스",
-    "개발도구"
+    "모델릴리스"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params"
+   "story_key": "hf:huggingfacebio/carbon-x"
   }
  ],
  "quiet_important": [
   {
    "layer": "hn",
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "discussion": "https://news.ycombinator.com/item?id=50163277",
-   "points": 2331,
-   "comments": 887,
-   "r": 0.38,
-   "at": "2026-10-20",
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:deepseek-ai/deepinfer",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "title",
-   "summary_ko": "딥식 모델을 위한 고성능 추론 프레임워크 공개를 두고 오픈소스와 폐쇄형 상용 AI 모델의 경제적 경쟁력에 대한 논쟁이 벌어졌다. 추론 최적화 기술 자체는 해자가 되기 어렵다는 시각과 함께, 중국 기업들의 저비용 공세가 미국 빅테크의 수익 구조와 AI 시장 전반에 미칠 영향에 대해 의견이 갈렸다.",
-   "is_event": true,
-   "kr_query": "딥인퍼러 딥식 추론 프레임워크",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Claude Duet",
-   "url": "https://claude.com/product/claude-duet",
-   "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 547,
-   "comments": 511,
-   "r": 0.93,
-   "at": "2026-10-21",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:claude.com/product/claude-duet",
-   "trust": [
-    "AI Supremacy"
-   ],
-   "trust_match": "link",
-   "summary_ko": "AI 챗봇과의 협업 과정에서 상대방에게 봇이라는 사실을 알리지 않는 것이 도덕적인가에 대한 논쟁이 이어졌다. 일상적인 대화에서 챗봇의 말투가 사람에게 전염되는 현상과 실무 자동화 도구 사용에 대한 다양한 경험담이 공유되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 446,
+   "points": 450,
    "comments": 184,
    "r": 0.41,
    "at": "2026-10-21",
@@ -873,7 +831,7 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 264,
+   "points": 265,
    "comments": 183,
    "r": 0.69,
    "at": "2026-10-21",
@@ -896,8 +854,8 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 322,
-   "comments": 144,
+   "points": 323,
+   "comments": 145,
    "r": 0.45,
    "at": "2026-10-21",
    "topics": [],
@@ -937,9 +895,9 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 2046,
-   "likes": 2362,
-   "downloads": 51911,
+   "trending": 2107,
+   "likes": 2450,
+   "downloads": 57715,
    "topics": [
     "모델릴리스"
    ],
@@ -949,9 +907,9 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 767,
-   "likes": 1306,
-   "downloads": 512524,
+   "trending": 704,
+   "likes": 1334,
+   "downloads": 534837,
    "topics": [
     "모델릴리스"
    ],
@@ -959,22 +917,10 @@
   },
   {
    "layer": "hf",
-   "title": "OpenMOSS-Team/MOSS-Image-SFT",
-   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 538,
-   "likes": 585,
-   "downloads": 6890,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:openmoss-team/moss-image-sft"
-  },
-  {
-   "layer": "hf",
    "title": "RecursiveSI/flint",
    "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 531,
-   "likes": 540,
+   "trending": 587,
+   "likes": 598,
    "downloads": 420,
    "topics": [
     "모델릴리스"
@@ -983,11 +929,23 @@
   },
   {
    "layer": "hf",
+   "title": "OpenMOSS-Team/MOSS-Image-SFT",
+   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+   "trending": 543,
+   "likes": 611,
+   "downloads": 7658,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:openmoss-team/moss-image-sft"
+  },
+  {
+   "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-Base",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-   "trending": 461,
-   "likes": 489,
-   "downloads": 5013,
+   "trending": 454,
+   "likes": 507,
+   "downloads": 5618,
    "topics": [
     "모델릴리스"
    ],
@@ -997,9 +955,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 411,
-   "likes": 8901,
-   "downloads": 2054990,
+   "trending": 417,
+   "likes": 8944,
+   "downloads": 2026951,
    "topics": [
     "모델릴리스"
    ],
@@ -1009,9 +967,9 @@
    "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 409,
-   "likes": 916,
-   "downloads": 16305,
+   "trending": 396,
+   "likes": 930,
+   "downloads": 17017,
    "topics": [
     "모델릴리스"
    ],
@@ -1019,39 +977,39 @@
   },
   {
    "layer": "hf",
-   "title": "meta-models/Muse-Spark-Open-816B-A42B",
-   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "trending": 353,
-   "likes": 661,
-   "downloads": 3163,
+   "title": "Comfy-Org/MOSS-Image",
+   "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+   "trending": 360,
+   "likes": 382,
+   "downloads": 1606363,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:meta-models/muse-spark-open-816b-a42b"
+   "story_key": "hf:comfy-org/moss-image"
+  },
+  {
+   "layer": "hf",
+   "title": "XHToken/Spark-X2.6-4B",
+   "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+   "trending": 348,
+   "likes": 379,
+   "downloads": 1060,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:xhtoken/spark-x2.6-4b"
   },
   {
    "layer": "hf",
    "title": "google/embeddinggemma-2",
    "url": "https://huggingface.co/google/embeddinggemma-2",
-   "trending": 350,
-   "likes": 2845,
-   "downloads": 185259,
+   "trending": 324,
+   "likes": 2857,
+   "downloads": 192741,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:google/embeddinggemma-2"
-  },
-  {
-   "layer": "hf",
-   "title": "black-forest-labs/flux-3-image-klein",
-   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-   "trending": 341,
-   "likes": 637,
-   "downloads": 102903,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:black-forest-labs/flux-3-image-klein"
   }
  ],
  "new_repos": [
@@ -1060,7 +1018,7 @@
    "title": "simbasjungles/free-my-tv",
    "desc": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
    "url": "https://github.com/simbasjungles/free-my-tv",
-   "stars": 3448,
+   "stars": 3643,
    "topics": [
     "모델릴리스"
    ],
@@ -1071,7 +1029,7 @@
    "title": "JoasASantos/REA-Prompts",
    "desc": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
    "url": "https://github.com/JoasASantos/REA-Prompts",
-   "stars": 1485,
+   "stars": 1536,
    "topics": [],
    "story_key": "gh:joasasantos/rea-prompts"
   },
@@ -1080,7 +1038,7 @@
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1442,
+   "stars": 1493,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1092,7 +1050,7 @@
    "title": "Ansub/tv-detox",
    "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
    "url": "https://github.com/Ansub/tv-detox",
-   "stars": 1290,
+   "stars": 1325,
    "topics": [
     "모델릴리스"
    ],
@@ -1100,19 +1058,10 @@
   },
   {
    "layer": "github",
-   "title": "eagle-hq/EAGLE-4",
-   "desc": "Official Inference Code of EAGLE-4",
-   "url": "https://github.com/eagle-hq/EAGLE-4",
-   "stars": 872,
-   "topics": [],
-   "story_key": "gh:eagle-hq/eagle-4"
-  },
-  {
-   "layer": "github",
    "title": "ELY-Open-Source/ElyOffice",
    "desc": "Ely Office: offline-first desktop apps in Rust and GPUI",
    "url": "https://github.com/ELY-Open-Source/ElyOffice",
-   "stars": 870,
+   "stars": 906,
    "topics": [
     "인프라·칩",
     "개발도구"
@@ -1121,10 +1070,19 @@
   },
   {
    "layer": "github",
+   "title": "eagle-hq/EAGLE-4",
+   "desc": "Official Inference Code of EAGLE-4",
+   "url": "https://github.com/eagle-hq/EAGLE-4",
+   "stars": 903,
+   "topics": [],
+   "story_key": "gh:eagle-hq/eagle-4"
+  },
+  {
+   "layer": "github",
    "title": "openai/php2shell-checker",
    "desc": "",
    "url": "https://github.com/openai/php2shell-checker",
-   "stars": 824,
+   "stars": 871,
    "topics": [],
    "story_key": "gh:openai/php2shell-checker"
   },
@@ -1133,7 +1091,7 @@
    "title": "colinhacks/reylo",
    "desc": "Import .sql files into TypeScript with full type inference and zero codegen.",
    "url": "https://github.com/colinhacks/reylo",
-   "stars": 673,
+   "stars": 839,
    "topics": [
     "개발도구"
    ],
@@ -1481,5 +1439,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-23 01:20"
+ "enriched_at": "2026-10-23 09:42"
 }
