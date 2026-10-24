@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-24 10:26",
+ "updated": "2026-10-24 18:14",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 11,
+  "hn": 12,
   "reddit": 30,
   "hf": 15,
-  "github": 9,
+  "github": 10,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,9 +16,9 @@
    "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
    "url": "https://news.ycombinator.com/item?id=50200997",
    "discussion": "https://news.ycombinator.com/item?id=50200997",
-   "points": 593,
-   "comments": 660,
-   "r": 1.11,
+   "points": 617,
+   "comments": 689,
+   "r": 1.12,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "hn:50200997",
@@ -32,8 +32,8 @@
    "title": "Every AI model has the same \"controversial\" take on humans",
    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
    "discussion": "https://news.ycombinator.com/item?id=50197313",
-   "points": 616,
-   "comments": 593,
+   "points": 630,
+   "comments": 603,
    "r": 0.96,
    "at": "2026-10-22",
    "topics": [],
@@ -48,8 +48,8 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 561,
-   "comments": 528,
+   "points": 564,
+   "comments": 532,
    "r": 0.94,
    "at": "2026-10-21",
    "topics": [
@@ -70,9 +70,9 @@
    "title": "LLMs are making formal software verification feasible at a much larger scale",
    "url": "https://www.anthropic.com/research/formal-verification",
    "discussion": "https://news.ycombinator.com/item?id=50202217",
-   "points": 440,
-   "comments": 284,
-   "r": 0.65,
+   "points": 450,
+   "comments": 288,
+   "r": 0.64,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "url:anthropic.com/research/formal-verification",
@@ -86,9 +86,9 @@
    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
    "url": "https://github.com/NVIDIA/OpenShell",
    "discussion": "https://news.ycombinator.com/item?id=50198675",
-   "points": 489,
+   "points": 495,
    "comments": 213,
-   "r": 0.44,
+   "r": 0.43,
    "at": "2026-10-22",
    "topics": [
     "에이전트"
@@ -124,7 +124,7 @@
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 592,
+   "points": 594,
    "comments": 196,
    "r": 0.33,
    "at": "2026-10-21",
@@ -139,41 +139,11 @@
   },
   {
    "layer": "hn",
-   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-   "url": "https://www.wiz.io/blog/php2shell-php-rce",
-   "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 452,
-   "comments": 185,
-   "r": 0.41,
-   "at": "2026-10-21",
-   "topics": [],
-   "story_key": "url:wiz.io/blog/php2shell-php-rce",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
-   "is_event": true,
-   "kr_query": "PHP 취약점 AI 원격 코드 실행",
-   "kr": [
-    {
-     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
-     "u": "https://www.news1.kr/world/usa-canada/6327871",
-     "d": "Thu, 22 Oct 2026",
-     "why": [
-      "php",
-      "취약점"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 612,
-   "comments": 183,
+   "points": 624,
+   "comments": 186,
    "r": 0.3,
    "at": "2026-10-22",
    "topics": [],
@@ -185,12 +155,42 @@
   },
   {
    "layer": "hn",
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "discussion": "https://news.ycombinator.com/item?id=50180836",
+   "points": 453,
+   "comments": 185,
+   "r": 0.41,
+   "at": "2026-10-21",
+   "topics": [],
+   "story_key": "url:wiz.io/blog/php2shell-php-rce",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "AI가 PHP의 치명적인 원격 코드 실행(RCE) 취약점을 찾아낸 것을 두고, C 언어의 구조적 보안 한계를 지적하는 목소리가 높다. 일각에서는 최고 수준의 개발자조차 C 언어로 안전한 코드를 작성하기 어렵다며 언어 자체의 책임을 묻는 한편, AI의 취약점 탐지 방식과 보안 감사 프로세스의 우연성에 의문을 표하는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "PHP 취약점 AI 원격 코드 실행",
+   "kr": [
+    {
+     "t": "AI로 찾은 PHP 취약점, 해킹에 악용될라…전세계 웹사이트 보안 비상",
+     "u": "https://www.news1.kr/world/usa-canada/6327871",
+     "d": "Thu, 22 Oct 2026",
+     "why": [
+      "php",
+      "취약점"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 265,
-   "comments": 183,
-   "r": 0.69,
+   "points": 266,
+   "comments": 182,
+   "r": 0.68,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -212,8 +212,8 @@
    "url": "https://berget.ai/en/blog/per-request-co2-press-release",
    "discussion": "https://news.ycombinator.com/item?id=50205229",
    "points": 140,
-   "comments": 154,
-   "r": 1.1,
+   "comments": 155,
+   "r": 1.11,
    "at": "2026-10-23",
    "topics": [],
    "story_key": "url:berget.ai/en/blog/per-request-co2-press-release",
@@ -227,7 +227,7 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 323,
+   "points": 325,
    "comments": 146,
    "r": 0.45,
    "at": "2026-10-21",
@@ -261,6 +261,22 @@
      ]
     }
    ]
+  },
+  {
+   "layer": "hn",
+   "title": "Dessa: Conversation Model trained only on speech",
+   "url": "https://block.xyz/dessa",
+   "discussion": "https://news.ycombinator.com/item?id=50213925",
+   "points": 383,
+   "comments": 137,
+   "r": 0.36,
+   "at": "2026-10-23",
+   "topics": [],
+   "story_key": "url:block.xyz/dessa",
+   "summary_ko": "음성만으로 학습된 대화 모델이라는 점에 큰 관심이 쏠렸으나, 시연 영상에 등장하는 대화 톤이나 예시 때문에 'AI 여자친구' 시장을 겨냥한 것이냐는 반응과 거부감이 교차했다. 또한 높은 하드웨어 요구 사양과 전통적인 텍스트 기반 LLM과의 차이점, 오디오북이나 스토리텔링 분야에서의 활용 가능성에 대한 토론이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   }
  ],
  "by_debate": [
@@ -269,9 +285,9 @@
    "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
    "url": "https://news.ycombinator.com/item?id=50200997",
    "discussion": "https://news.ycombinator.com/item?id=50200997",
-   "points": 593,
-   "comments": 660,
-   "r": 1.11,
+   "points": 617,
+   "comments": 689,
+   "r": 1.12,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "hn:50200997",
@@ -286,8 +302,8 @@
    "url": "https://berget.ai/en/blog/per-request-co2-press-release",
    "discussion": "https://news.ycombinator.com/item?id=50205229",
    "points": 140,
-   "comments": 154,
-   "r": 1.1,
+   "comments": 155,
+   "r": 1.11,
    "at": "2026-10-23",
    "topics": [],
    "story_key": "url:berget.ai/en/blog/per-request-co2-press-release",
@@ -301,8 +317,8 @@
    "title": "Every AI model has the same \"controversial\" take on humans",
    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
    "discussion": "https://news.ycombinator.com/item?id=50197313",
-   "points": 616,
-   "comments": 593,
+   "points": 630,
+   "comments": 603,
    "r": 0.96,
    "at": "2026-10-22",
    "topics": [],
@@ -317,8 +333,8 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 561,
-   "comments": 528,
+   "points": 564,
+   "comments": 532,
    "r": 0.94,
    "at": "2026-10-21",
    "topics": [
@@ -339,9 +355,9 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 265,
-   "comments": 183,
-   "r": 0.69,
+   "points": 266,
+   "comments": 182,
+   "r": 0.68,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -362,9 +378,9 @@
    "title": "LLMs are making formal software verification feasible at a much larger scale",
    "url": "https://www.anthropic.com/research/formal-verification",
    "discussion": "https://news.ycombinator.com/item?id=50202217",
-   "points": 440,
-   "comments": 284,
-   "r": 0.65,
+   "points": 450,
+   "comments": 288,
+   "r": 0.64,
    "at": "2026-10-22",
    "topics": [],
    "story_key": "url:anthropic.com/research/formal-verification",
@@ -378,7 +394,7 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 323,
+   "points": 325,
    "comments": 146,
    "r": 0.45,
    "at": "2026-10-21",
@@ -418,9 +434,9 @@
    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
    "url": "https://github.com/NVIDIA/OpenShell",
    "discussion": "https://news.ycombinator.com/item?id=50198675",
-   "points": 489,
+   "points": 495,
    "comments": 213,
-   "r": 0.44,
+   "r": 0.43,
    "at": "2026-10-22",
    "topics": [
     "에이전트"
@@ -456,7 +472,7 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 452,
+   "points": 453,
    "comments": 185,
    "r": 0.41,
    "at": "2026-10-21",
@@ -483,10 +499,40 @@
   },
   {
    "layer": "hn",
+   "title": "Dessa: Conversation Model trained only on speech",
+   "url": "https://block.xyz/dessa",
+   "discussion": "https://news.ycombinator.com/item?id=50213925",
+   "points": 383,
+   "comments": 137,
+   "r": 0.36,
+   "at": "2026-10-23",
+   "topics": [],
+   "story_key": "url:block.xyz/dessa",
+   "_comments": [
+    "Will run on \"MacBook Pro M4 Max or better\" https://x.com/jack/status/2113792333238161547",
+    "This would be amazing for making audiobooks more expressive and like real storytelling. I kept telling Audible they needed to invest more into premium audio experiences, kind of the way you had the old radio plays that people used to tune into. The War of the Worlds! We are seeing some of that with full casts of actors doing readings more.At the same time, imagine if every book was like a living thing you could interact with and buying the book partially bought you access to the model that would tell you the story. The only way you would interact with that particular model, is if you bought the book.It reads the book to you and you could chime in or it would know when to pause if there's an ",
+    "> Nvidia GB200 does not refer to a single gpu, Nvidia’s naming scheme is very confusing. Considering past gpus were called H100, H200 etc, I thought GB200 would just be a newer GPU, but it does actually refer to their 30+ gpu rack scale systems.It's even more confusing than that :) GB200 = 1 CPU + 2 B200 GPUs (packaged together) NV72 = A rack of 72 B200 GPUs (or 32 GB200 superchips) Think of GB200 as something like Apple's 'Ultra' chip. Not exactly, but similar. They fuse the chips together with a very fast interconnect (connection).",
+    "> they didn’t have to worry about hosting/billing/subscriptions or any of that yetOr marketing, which they kinda get for free. So much research goes unseen, there’s huge competition for attention, and most research is very limited in that regardI would say that’s the biggest factor that makes the team “not indie”At the same time, like you said, still amazing accomplishment, very cool model, and great work",
+    "The voice seems insanely immersive and uncanny. One issue that the full duplex models always have is tool calling. This is where GPT-Live [1] shines in the sense that you can use it as a fully practical agent. Looking forward to seeing how Dessa folks implement this.[1] https://openai.com/index/introducing-gpt-live/",
+    "Wondering what kind of tokenization they use after the model referred to the movie Memento as The Mento the first time before being corrected.",
+    "No most of us are keen on developing human relationships and intimacy, but it sounds like you view women as a warm fleshlight so I hope that you and your genetic line wind up as dead ends with dry humping a robot as your greatest life accomplishment. Good job lil fella. Give that Claude session your 3.5 inches of American steel.",
+    "Likewise; I feel exhausted after trying it for a short time, because it doesn't give any space.",
+    "Third example at 0:02:>Dessa: Hey, baby.Block is in the AI girlfriend market? Ew.",
+    "The real question is, does it actually understand sound?Conventional LLMs are just running speech to text and then working on the text, so they can’t understand music or humming or any sort of sound.",
+    "Close enough, welcome back Google Duplex!https://www.youtube.com/watch?v=D5VN56jQMWMFor real though, it's been bothering me, how did they do this in 2018? (Some kind of symbolic logic based AI?)Also props to the people at Block, Dessa is very cool :)",
+    "Wanted to joke \"AI girlfriend just dropped\" but they explicitly have an AI girlfriend as the 3rd example.Modern problems..."
+   ],
+   "summary_ko": "음성만으로 학습된 대화 모델이라는 점에 큰 관심이 쏠렸으나, 시연 영상에 등장하는 대화 톤이나 예시 때문에 'AI 여자친구' 시장을 겨냥한 것이냐는 반응과 거부감이 교차했다. 또한 높은 하드웨어 요구 사양과 전통적인 텍스트 기반 LLM과의 차이점, 오디오북이나 스토리텔링 분야에서의 활용 가능성에 대한 토론이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
    "discussion": "https://news.ycombinator.com/item?id=50181114",
-   "points": 592,
+   "points": 594,
    "comments": 196,
    "r": 0.33,
    "at": "2026-10-21",
@@ -504,8 +550,8 @@
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "discussion": "https://news.ycombinator.com/item?id=50190363",
-   "points": 612,
-   "comments": 183,
+   "points": 624,
+   "comments": 186,
    "r": 0.3,
    "at": "2026-10-22",
    "topics": [],
@@ -520,30 +566,32 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Models disappearing from Huggingface",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface/",
+   "title": "Vibecoding your own inference engine is easy they said",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
    "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xd7ptj/models_disappearing_from_huggingface"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Vibecoding your own inference engine is easy they said",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
+   "title": "Qwen4-27B PR found",
+   "url": "https://github.com/analytics-zoo/vllm-xpu-kernels/pull/22",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdwrak/qwen427b_pr_found/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:analytics-zoo/vllm-xpu-kernels"
   },
   {
    "layer": "reddit",
@@ -562,10 +610,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Here's where the last RTX 5090 cards are going: Massive AI conversion factory exposed in China, Founders Edition included",
+   "url": "https://videocardz.com/newz/heres-where-the-last-rtx-5090-cards-are-going-massive-ai-conversion-factory-exposed-in-china-founders-edition-included",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdlj42/heres_where_the_last_rtx_5090_cards_are_going/",
+   "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:videocardz.com/newz/heres-where-the-last-rtx-5090-cards-are-going-massive-ai-conversion-factory-exposed-in-china-founders-edition-included"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB · Hugging Face",
    "url": "https://huggingface.co/google/gemma-4-E4B-it",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdiecx/nvidianvidianemotron35bolte4b4gb_hugging_face/",
-   "rank": 4,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -574,20 +636,6 @@
     "인프라·칩"
    ],
    "story_key": "hf:google/gemma-4-e4b-it"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Here's where the last RTX 5090 cards are going: Massive AI conversion factory exposed in China, Founders Edition included",
-   "url": "https://videocardz.com/newz/heres-where-the-last-rtx-5090-cards-are-going-massive-ai-conversion-factory-exposed-in-china-founders-edition-included",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdlj42/heres_where_the_last_rtx_5090_cards_are_going/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:videocardz.com/newz/heres-where-the-last-rtx-5090-cards-are-going-massive-ai-conversion-factory-exposed-in-china-founders-edition-included"
   },
   {
    "layer": "reddit",
@@ -624,9 +672,9 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen3-0.6B model converted into MoE",
-   "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd87wu/qwen306b_model_converted_into_moe/",
+   "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO",
+   "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdtk7m/istadaslabdeepseekv41flash1017gsqrco/",
    "rank": 8,
    "points": 0,
    "comments": 0,
@@ -635,7 +683,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:qwen/qwen3-0.6b"
+   "story_key": "hf:ista-daslab/deepseek-v4.1-flash-1017-gsq-rco-gguf"
   },
   {
    "layer": "reddit",
@@ -657,42 +705,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "qwen4exp : build the QSA selection without the kq_mask by sanmai · Pull Request #30965 · ggml-org/llama.cpp",
-   "url": "https://github.com/ggml-org/llama.cpp/pull/30965",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdmek0/qwen4exp_build_the_qsa_selection_without_the_kq/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ggml-org/llama.cpp"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Anyone checked gpu unlock for rtx 30-40 cards?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xd8al3/anyone_checked_gpu_unlock_for_rtx_3040_cards/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd8al3/anyone_checked_gpu_unlock_for_rtx_3040_cards/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xd8al3/anyone_checked_gpu_unlock_for_rtx_3040_cards"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "I ran all the popular Qwen 3.8 FN engines on a single 5090 + 128GB of RAM, here are the numbers",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdlunp/i_ran_all_the_popular_qwen_38_fn_engines_on_a/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdlunp/i_ran_all_the_popular_qwen_38_fn_engines_on_a/",
-   "rank": 12,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -708,7 +724,7 @@
    "title": "Strata now supports Qwen 3.6 35B",
    "url": "https://github.com/Niko1221/Strata/blob/main/docs/QWEN36.md",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdktmz/strata_now_supports_qwen_36_35b/",
-   "rank": 13,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -717,6 +733,36 @@
     "모델릴리스"
    ],
    "story_key": "gh:niko1221/strata"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "qwen4exp : build the QSA selection without the kq_mask by sanmai · Pull Request #30965 · ggml-org/llama.cpp",
+   "url": "https://github.com/ggml-org/llama.cpp/pull/30965",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdmek0/qwen4exp_build_the_qsa_selection_without_the_kq/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:ggml-org/llama.cpp"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Been tracking intel b60 b65 b70 prices, they jumped 30% today.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdoirp/been_tracking_intel_b60_b65_b70_prices_they/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xdoirp/been_tracking_intel_b60_b65_b70_prices_they/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xdoirp/been_tracking_intel_b60_b65_b70_prices_they"
   },
   {
    "layer": "reddit",
@@ -737,16 +783,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Nemotron-3.5-Embed, Parse, and Rerank",
-   "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xd4mlk/nemotron35embed_parse_and_rerank/",
+   "title": "Sam Altman: OpenAI's best model \"can't responsibly be open-sourced\" until the world builds better cyberdefense and bio-security",
+   "url": "https://www.youtube.com/watch?v=anAmTGcewX8",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xe0ioz/sam_altman_openais_best_model_cant_responsibly_be/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "hf:nvidia/nemotron-3.5-parse"
+   "story_key": "yt:anAmTGcewX8"
   }
  ],
  "quiet_important": [
@@ -755,8 +801,8 @@
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "discussion": "https://news.ycombinator.com/item?id=50186037",
-   "points": 561,
-   "comments": 528,
+   "points": 564,
+   "comments": 532,
    "r": 0.94,
    "at": "2026-10-21",
    "topics": [
@@ -777,7 +823,7 @@
    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "discussion": "https://news.ycombinator.com/item?id=50180836",
-   "points": 452,
+   "points": 453,
    "comments": 185,
    "r": 0.41,
    "at": "2026-10-21",
@@ -807,9 +853,9 @@
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "discussion": "https://news.ycombinator.com/item?id=50181175",
-   "points": 265,
-   "comments": 183,
-   "r": 0.69,
+   "points": 266,
+   "comments": 182,
+   "r": 0.68,
    "at": "2026-10-21",
    "topics": [
     "에이전트",
@@ -830,7 +876,7 @@
    "title": "OpenAI models are coming to Google Cloud",
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "discussion": "https://news.ycombinator.com/item?id=50180079",
-   "points": 323,
+   "points": 325,
    "comments": 146,
    "r": 0.45,
    "at": "2026-10-21",
@@ -871,8 +917,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 2201,
-   "likes": 2589,
+   "trending": 2038,
+   "likes": 2639,
    "downloads": 57715,
    "topics": [
     "모델릴리스"
@@ -883,8 +929,8 @@
    "layer": "hf",
    "title": "RecursiveSI/flint",
    "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 669,
-   "likes": 689,
+   "trending": 691,
+   "likes": 712,
    "downloads": 1904,
    "topics": [
     "모델릴리스"
@@ -895,8 +941,8 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 633,
-   "likes": 1406,
+   "trending": 603,
+   "likes": 1437,
    "downloads": 534837,
    "topics": [
     "모델릴리스"
@@ -907,8 +953,8 @@
    "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-SFT",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 466,
-   "likes": 653,
+   "trending": 437,
+   "likes": 664,
    "downloads": 7658,
    "topics": [
     "모델릴리스"
@@ -919,8 +965,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 405,
-   "likes": 9035,
+   "trending": 409,
+   "likes": 9081,
    "downloads": 2026951,
    "topics": [
     "모델릴리스"
@@ -931,8 +977,8 @@
    "layer": "hf",
    "title": "XHToken/Spark-X2.6-4B",
    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-   "trending": 379,
-   "likes": 413,
+   "trending": 390,
+   "likes": 425,
    "downloads": 1060,
    "topics": [
     "모델릴리스"
@@ -943,8 +989,8 @@
    "layer": "hf",
    "title": "fishaudio/drama-3",
    "url": "https://huggingface.co/fishaudio/drama-3",
-   "trending": 364,
-   "likes": 947,
+   "trending": 359,
+   "likes": 958,
    "downloads": 17017,
    "topics": [
     "모델릴리스"
@@ -955,8 +1001,8 @@
    "layer": "hf",
    "title": "OpenMOSS-Team/MOSS-Image-Base",
    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-   "trending": 358,
-   "likes": 520,
+   "trending": 321,
+   "likes": 525,
    "downloads": 5618,
    "topics": [
     "모델릴리스"
@@ -967,8 +1013,8 @@
    "layer": "hf",
    "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
    "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "trending": 324,
-   "likes": 4908,
+   "trending": 314,
+   "likes": 4922,
    "downloads": 2398071,
    "topics": [
     "모델릴리스"
@@ -977,15 +1023,15 @@
   },
   {
    "layer": "hf",
-   "title": "Comfy-Org/MOSS-Image",
-   "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
-   "trending": 324,
-   "likes": 395,
-   "downloads": 1606363,
+   "title": "Qwen/Qwen3.8-27B",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "trending": 312,
+   "likes": 18303,
+   "downloads": 7710011,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:comfy-org/moss-image"
+   "story_key": "hf:qwen/qwen3.8-27b"
   }
  ],
  "new_repos": [
@@ -994,7 +1040,7 @@
    "title": "JoasASantos/REA-Prompts",
    "desc": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
    "url": "https://github.com/JoasASantos/REA-Prompts",
-   "stars": 1746,
+   "stars": 1841,
    "topics": [],
    "story_key": "gh:joasasantos/rea-prompts"
   },
@@ -1003,7 +1049,7 @@
    "title": "alchaincyf/huashu-motion",
    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "url": "https://github.com/alchaincyf/huashu-motion",
-   "stars": 1539,
+   "stars": 1562,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1015,7 +1061,7 @@
    "title": "Ansub/tv-detox",
    "desc": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
    "url": "https://github.com/Ansub/tv-detox",
-   "stars": 1383,
+   "stars": 1413,
    "topics": [
     "모델릴리스"
    ],
@@ -1026,7 +1072,7 @@
    "title": "openai/php2shell-checker",
    "desc": "",
    "url": "https://github.com/openai/php2shell-checker",
-   "stars": 1189,
+   "stars": 1315,
    "topics": [],
    "story_key": "gh:openai/php2shell-checker"
   },
@@ -1035,7 +1081,7 @@
    "title": "wesbos/3d-model-anything",
    "desc": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
    "url": "https://github.com/wesbos/3d-model-anything",
-   "stars": 1114,
+   "stars": 1311,
    "topics": [],
    "story_key": "gh:wesbos/3d-model-anything"
   },
@@ -1044,7 +1090,7 @@
    "title": "colinhacks/reylo",
    "desc": "Import .sql files into TypeScript with full type inference and zero codegen.",
    "url": "https://github.com/colinhacks/reylo",
-   "stars": 1061,
+   "stars": 1108,
    "topics": [
     "개발도구"
    ],
@@ -1055,7 +1101,7 @@
    "title": "eagle-hq/EAGLE-4",
    "desc": "Official Inference Code of EAGLE-4",
    "url": "https://github.com/eagle-hq/EAGLE-4",
-   "stars": 953,
+   "stars": 959,
    "topics": [],
    "story_key": "gh:eagle-hq/eagle-4"
   },
@@ -1064,7 +1110,7 @@
    "title": "ELY-Open-Source/ElyOffice",
    "desc": "Ely Office: offline-first desktop apps in Rust and GPUI",
    "url": "https://github.com/ELY-Open-Source/ElyOffice",
-   "stars": 929,
+   "stars": 952,
    "topics": [
     "인프라·칩",
     "개발도구"
@@ -1076,11 +1122,22 @@
    "title": "Jakeschincariol/day-trader-skill",
    "desc": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
    "url": "https://github.com/Jakeschincariol/day-trader-skill",
-   "stars": 860,
+   "stars": 921,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "gh:jakeschincariol/day-trader-skill"
+  },
+  {
+   "layer": "github",
+   "title": "Zagitta/gpu-unlock",
+   "desc": "Unlock FP/BF16 instruction issue rate on Nvidia 3000's cards to their professional equivalents",
+   "url": "https://github.com/Zagitta/gpu-unlock",
+   "stars": 874,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "gh:zagitta/gpu-unlock"
   }
  ],
  "trust_recent": [
@@ -1426,5 +1483,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-24 01:26"
+ "enriched_at": "2026-10-24 09:14"
 }
