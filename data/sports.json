@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26 01:11 KST",
+ "updated": "2026-10-26 05:46 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
   {
@@ -9,8 +9,8 @@
    "name": "MSC Cruises United States Grand Prix",
    "date": "2026-10-25T20:00Z",
    "kst": "2026-10-26 05:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "In Progress",
    "note": "",
    "season": "regular-season",
    "us_tv": [],
@@ -76,8 +76,8 @@
    "name": "Real Madrid at Barcelona",
    "date": "2026-10-25T20:00Z",
    "kst": "2026-10-26 05:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "First Half",
    "note": "",
    "season": "2026-27-laliga",
    "us_tv": [
@@ -104,7 +104,7 @@
     "ko": "레알 마드리드",
     "abbr": "RMA",
     "id": "86",
-    "score": "0",
+    "score": "1",
     "winner": false,
     "record": "7-0-2",
     "rank": "3",
@@ -139,27 +139,27 @@
     "leaders": [
      {
       "team": "바르셀로나",
-      "cat": "Goals",
-      "who": "Raphinha",
-      "val": "8경기 · 12골"
+      "cat": "Total Shots",
+      "who": "Anthony Gordon",
+      "val": "3"
      },
      {
       "team": "바르셀로나",
-      "cat": "Assists",
-      "who": "Lamine Yamal",
-      "val": "9경기 · 6도움"
+      "cat": "Accurate Passes",
+      "who": "Rodri",
+      "val": "39"
      },
      {
       "team": "레알 마드리드",
-      "cat": "Goals",
-      "who": "Kylian Mbappé",
-      "val": "9경기 · 9골"
+      "cat": "Total Shots",
+      "who": "Arda Güler",
+      "val": "3"
      },
      {
       "team": "레알 마드리드",
-      "cat": "Assists",
-      "who": "Jude Bellingham",
-      "val": "9경기 · 3도움"
+      "cat": "Accurate Passes",
+      "who": "Federico Valverde",
+      "val": "26"
      }
     ],
     "injuries": [],
@@ -167,10 +167,6 @@
      {
       "title": "Real Madrid goalkeeper Thibaut Courtois out of Clasico with flu",
       "url": "https://www.espn.com/soccer/story/_/id/50275230/real-madrid-goalkeeper-thibaut-courtois-clasico-vs-barcelona-flu"
-     },
-     {
-      "title": "Barcelona making final preparations for Real Madrid",
-      "url": "https://www.espn.com/video/clip/_/id/50271519/barcelona-making-final-preparations-real-madrid"
      }
     ]
    },
@@ -204,62 +200,6 @@
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/barcelona-vs-real-madrid/1b1at"
-  },
-  {
-   "id": "ten-185181",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP Erste Bank Open",
-   "name": "Carlos Alcaraz vs Karen Khachanov",
-   "title": "알카라스 vs 하차노프",
-   "date": "2026-10-26T04:00Z",
-   "kst": "2026-10-26 13:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "1회전",
-   "venue": "",
-   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "score": 65,
-   "why": [
-    "알카라스 경기"
-   ],
-   "stars": 3,
-   "tv_kr": "티빙 · tvN SPORTS(추정)",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "tvN SPORTS(추정)"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Tennis Channel"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
   },
   {
    "id": "401908044",
@@ -608,6 +548,62 @@
    ]
   },
   {
+   "id": "ten-185181",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP Erste Bank Open",
+   "name": "Carlos Alcaraz vs Karen Khachanov",
+   "title": "알카라스 vs 하차노프",
+   "date": "2026-10-27T04:00Z",
+   "kst": "2026-10-27 13:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "1회전",
+   "venue": "",
+   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "score": 65,
+   "why": [
+    "알카라스 경기"
+   ],
+   "stars": 3,
+   "tv_kr": "티빙 · tvN SPORTS(추정)",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "tvN SPORTS(추정)"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "Tennis Channel"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "TSN"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS"
+    }
+   ]
+  },
+  {
    "id": "401909888",
    "path": "basketball/nba",
    "league": "NBA",
@@ -868,8 +864,8 @@
      }
     ],
     "predictor": {
-     "home": "34.3",
-     "away": "65.7"
+     "home": "33.8",
+     "away": "66.2"
     },
     "preview": []
    },
@@ -954,7 +950,7 @@
     "id": "1538",
     "score": "0",
     "winner": false,
-    "record": "2-4-3",
+    "record": "2-4-4",
     "rank": "14",
     "pts": "10",
     "form": "패패무무승"
@@ -1032,8 +1028,8 @@
       "url": "https://www.espn.com/soccer/story/_/id/50275230/real-madrid-goalkeeper-thibaut-courtois-clasico-vs-barcelona-flu"
      },
      {
-      "title": "Barcelona making final preparations for Real Madrid",
-      "url": "https://www.espn.com/video/clip/_/id/50271519/barcelona-making-final-preparations-real-madrid"
+      "title": "Real Sociedad vs. Levante - Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50279148/real-sociedad-vs-levante-game-highlights"
      }
     ]
    },
@@ -1059,6 +1055,11 @@
      "country": "Spain",
      "label": "스페인",
      "ch": "Movistar+"
+    },
+    {
+     "country": "Qatar",
+     "label": "아랍",
+     "ch": "beIN Sports HD 5"
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/atletico-madrid-vs-levante/2cmm5"
@@ -1193,9 +1194,9 @@
     "id": "132",
     "score": "0",
     "winner": false,
-    "record": "4-2-0",
-    "rank": "2",
-    "pts": "14",
+    "record": "5-2-0",
+    "rank": "1",
+    "pts": "17",
     "form": "승무무승무"
    },
    "away": {
@@ -1206,7 +1207,7 @@
     "score": "0",
     "winner": false,
     "record": "5-2-0",
-    "rank": "1",
+    "rank": "2",
     "pts": "17",
     "form": "무패무승승"
    },
@@ -1219,7 +1220,7 @@
    "why": [
     "김민재 출전 팀",
     "라이벌전",
-    "2위·1위 상위권 맞대결",
+    "1위·2위 상위권 맞대결",
     "선두 경기"
    ],
    "detail": {
@@ -1269,12 +1270,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Bayern Munich's Vincent Kompany 'stable,' could be away for weeks after collapse",
-      "url": "https://www.espn.com/soccer/story/_/id/50265094/bayern-munich-vincent-kompany-stable-away-weeks-collapsing"
+      "title": "Bayern Munich hold off Freiburg in first game without Kompany",
+      "url": "http://www.espn.com/soccer/report/_/gameId/401884759"
      },
      {
-      "title": "Bayern Munich coach Vincent Kompany hospitalized after collapsing at training",
-      "url": "https://www.espn.com/soccer/story/_/id/50258850/bayern-munich-coach-vincent-kompany-hospital-training"
+      "title": "Bayern Munich's Vincent Kompany 'stable,' could be away for weeks after collapse",
+      "url": "https://www.espn.com/soccer/story/_/id/50265094/bayern-munich-vincent-kompany-stable-away-weeks-collapsing"
      }
     ]
    },
@@ -1416,12 +1417,7 @@
      }
     ],
     "injuries": [],
-    "preview": [
-     {
-      "title": "Hull unbeaten run remains, Brentford snatch draw",
-      "url": "http://www.espn.com/soccer/report/_/gameId/401878766"
-     }
-    ],
+    "preview": [],
     "result": {
      "score": "헐 시티 1 : 1 브렌트퍼드",
      "goals": [
@@ -1799,6 +1795,11 @@
      {
       "team": "골든스테이트",
       "who": "Stephen Curry",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "Memphis Grizzlies",
+      "who": "Karim Lopez",
       "status": "Day-To-Day"
      },
      {
