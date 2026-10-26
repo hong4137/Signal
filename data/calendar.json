@@ -1,24 +1,10 @@
 {
- "generated_at": "2026-10-26T06:30:00+09:00",
+ "generated_at": "2026-10-26T07:30:00+09:00",
  "window": {
   "from": "2026-10-26",
   "to": "2026-10-29"
  },
  "events": [
-  {
-   "date": "2026-10-26",
-   "time": null,
-   "region": "KR",
-   "category": "기업 행사",
-   "title": "서울 핀테크 위크 2026 개막",
-   "importance": 3,
-   "why": "AI 금융을 주제로 한 행사. 28일까지 열린다.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.news1.kr/local/moi/6330480",
-   "verified": true,
-   "note": "시작일은 여러 매체 보도 기준. 시각 미정."
-  },
   {
    "date": "2026-10-27",
    "time": "21:30",
@@ -26,96 +12,82 @@
    "category": "경제지표",
    "title": "미국 주택착공 건수",
    "importance": 3,
-   "why": "주택 건설 착공 흐름. 미국 경기 선행 지표.",
+   "why": "금리에 민감한 지표, 주택시장과 경기 흐름 점검용",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=27",
    "verified": true,
-   "note": "시각은 미 동부 08:30 관행 시각 기준."
-  },
-  {
-   "date": "2026-10-27",
-   "time": null,
-   "region": "KR",
-   "category": "경제지표",
-   "title": "한국 3분기 GDP 속보치",
-   "importance": 4,
-   "why": "올해 3분기 실질 성장률 첫 추정치. 금리 경로 판단 재료.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.newsis.com/view/NISX20261023_0003838819",
-   "verified": true,
-   "note": "발표 시각은 확인 못 함. 한국은행 공식 일정은 미확인."
-  },
-  {
-   "date": "2026-10-27",
-   "time": null,
-   "region": "GLOBAL",
-   "category": "정책",
-   "title": "이스라엘 총선",
-   "importance": 3,
-   "why": "중동 긴장 속 치러지는 선거. 유가·위험회피 심리 변수.",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.munhwa.com/article/11626061?ref=naver",
-   "verified": true,
-   "note": "27일 날짜는 여러 매체 보도 기준. 개표 결과 발표 시각은 미확인."
+   "note": "FRED 공식 일정(미 동부 08:30 관행 시각 환산)"
   },
   {
    "date": "2026-10-28",
    "time": null,
    "region": "KR",
    "category": "실적",
-   "title": "SK하이닉스 3분기 실적 발표",
+   "title": "SK하이닉스 3분기 확정 실적",
    "importance": 5,
-   "why": "HBM 호조 속 역대급 실적 전망. 추가 주주환원 발표 예정.",
+   "why": "AI 메모리 실적 확인, 추가 주주환원 공개 예고",
    "consensus": null,
-   "previous": null,
-   "source": "https://www.topstarnews.net/news/articleView.html?idxno=16257497",
+   "previous": "2분기 영업이익 60조원대",
+   "source": "https://dart.fss.or.kr",
    "verified": true,
-   "note": "28일 날짜는 여러 매체 보도 기준. 컨퍼런스콜 시각은 미확인. 전망치는 보도마다 달라 싣지 않음."
+   "note": "뉴스1·매일투데이·토픽스타 등 복수 매체가 10/28 발표로 보도. 시각 미확인"
   },
   {
    "date": "2026-10-29",
    "time": "02:00",
    "region": "US",
    "category": "기업 행사",
-   "title": "애플 신제품 공개 행사 ('프로 앤 텔')",
+   "title": "애플 'Pro and Tell' 신제품 행사",
    "importance": 4,
-   "why": "애플 공식 예고 행사. 신제품 라인업은 보도 기준.",
+   "why": "현지 10/28 오전 10시(PT) 행사, 신제품 공개 보도 다수",
    "consensus": null,
    "previous": null,
-   "source": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=708325",
+   "source": "https://www.apple.com/apple-events/",
    "verified": true,
-   "note": "현지 28일 오전 10시(PT) 기준 한국 시각 환산. 행사 날짜는 공식 발표·보도 다수."
+   "note": "로이터(애플 발표 인용)와 복수 매체 일치. 라이브 스트림은 공식 확인 전"
   },
   {
    "date": "2026-10-29",
    "time": "03:00",
    "region": "US",
    "category": "통화정책",
-   "title": "미국 FOMC 기준금리 결정",
+   "title": "미국 FOMC 금리 결정",
    "importance": 5,
-   "why": "미 연준 금리 결정과 성명. 세계 자산시장 기준점.",
-   "consensus": null,
-   "previous": "연 3.75~4.00% (9월 인상 후, 보도 기준)",
+   "why": "연준 금리 결정과 성명, 시장 전반의 기준 이벤트",
+   "consensus": "동결 예상(국내 보도)",
+   "previous": null,
    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
    "verified": true,
-   "note": "회의 27~28일(현지). 성명 현지 28일 14:00 ET = 한국 시각 29일 03:00 환산. 금리 수준은 보도 기준."
+   "note": "회의 10/27~28(ET), 성명 14:00 ET = 한국 10/29 03:00"
   },
   {
    "date": "2026-10-29",
    "time": "21:30",
    "region": "US",
    "category": "경제지표",
-   "title": "미국 PCE 물가(개인소득·지출)",
+   "title": "미국 9월 개인소득·지출(PCE 물가)",
    "importance": 5,
-   "why": "연준이 중시하는 물가 지표. FOMC 직후 발표.",
+   "why": "연준 물가 목표 기준 지표, FOMC 직후 발표",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=54",
    "verified": true,
-   "note": "시각은 미 동부 08:30 관행 시각 기준."
+   "note": "FRED 공식 일정(08:30 ET). BEA 캘린더 10/29와 일치"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "21:30",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 3분기 GDP 속보치",
+   "importance": 4,
+   "why": "미국 3분기 성장률 첫 추정치, PCE와 같은 날",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.bea.gov/taxonomy/term/566?page=0",
+   "verified": true,
+   "note": "BEA 공식 일정(08:30 ET). BEA 사이트에 예산 공백으로 갱신 중단 공지 — 변경 여부 점검 필요"
   },
   {
    "date": "2026-10-29",
@@ -124,12 +96,26 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "매주 나오는 고용 지표. 노동시장 흐름 확인용.",
+   "why": "고용 시장 주간 흐름, 매주 목요일 발표",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "매주 목요일 미 동부 08:30 관행 시각 기준."
+   "note": "FRED 공식 일정(08:30 ET 관행 시각 환산)"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "22:15",
+   "region": "EU",
+   "category": "통화정책",
+   "title": "유럽중앙은행(ECB) 금리 결정",
+   "importance": 4,
+   "why": "유로존 금리 결정, 연준과 같은 주 통화정책 흐름",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+   "verified": true,
+   "note": "ECB 공식 일정(날짜). 시각은 달력 사이트 14:15 CET 기준 한국 시각 환산"
   },
   {
    "date": "2026-10-29",
@@ -138,23 +124,26 @@
    "category": "실적",
    "title": "삼성전자 3분기 확정 실적·컨퍼런스콜",
    "importance": 5,
-   "why": "잠정실적 이후 확정 실적. 추가 주주환원 발표에 관심.",
+   "why": "잠정 영업익 107조4000억원, 추가 배당 규모 주목",
    "consensus": null,
-   "previous": null,
-   "source": "https://www.ytn.co.kr/_ln/0102_202610252325354274",
+   "previous": "3분기 잠정 영업이익 107조4000억원(10/8 발표)",
+   "source": "https://dart.fss.or.kr",
    "verified": true,
-   "note": "29일 날짜는 여러 매체 보도 기준. 잠정실적은 10월 8일 발표. 시각 미확인."
+   "note": "뉴스1·매일투데이·부산일보 등 복수 매체 10/29 보도 일치. 시각 미확인"
   }
  ],
  "notes": [
-  "원자료 정상: calendar_raw.json 생성 2026-10-26 05:40 KST(오늘 03시 이후). FRED·Finnhub·네이버뉴스·FOMC 성공, DART는 키 없음이라 공시 0건.",
-  "범위 안 확정 10건. 목표 8~20건 충족.",
-  "범위 밖 정리: Finnhub 실적일(MSFT·GOOGL 10/29 현지 → 한국 10/30, AMZN·INTC 10/30 현지, PLTR·AAPL 11/2~3). 원자료 Finnhub 날짜는 미국 날짜이고 시각만 한국 기준이라 창 밖으로 뺌.",
-  "미확정으로 뺌: ECB 통화정책회의 10/29 — 예측 시장·달력 사이트 1곳뿐.",
-  "미확정으로 뺌: LG전자 3분기 확정실적 10/28 — 보도는 '이달 말'만 있고 날짜 확인 실패.",
-  "원자료 라벨 점검: FRED rid=263 항목이 '미국 GDP'로 들어왔으나 상세는 'Debt to GDP Ratios'. 미국 3분기 GDP 날짜를 확인하기 전까지 싣지 않음.",
-  "확인 실패(검색 결과 과거 연도·일정 없음): 국정감사, 정부 반도체·AI 대책, 중국 지표(10/31 PMI 추정), 연준 연설, 개발자 회의(국내외), 금통위(11/26 이후), 관세청(11/21 전후 추정), 대형은행 실적, NVIDIA GTC(12/1 워싱턴, 범위 밖).",
-  "중요도 낮아 뺌: 댈러스 연은 제조업지수(10/26), HD현대·한화오션 등 중후장대 실적, 구미 항공방위물류 박람회(10/28~30)."
+  "미확정으로 뺌: 한국 3분기 GDP 속보치(10/27) — 보도 1곳뿐, 한은 공식 일정 미확인",
+  "미확정으로 뺌: LG전자 확정 실적(10/28) — 보도 1곳뿐",
+  "미확정으로 뺌: 이스라엘 총선(10/27) — 보도 1곳뿐, 경제 일정 성격도 약함",
+  "범위 밖: Alphabet·Microsoft(미국 10/29 장 마감 후) — 한국 시각 10/30 새벽이라 창 밖",
+  "범위 밖: Amazon·Intel(10/30 현지), 일본은행(10/30), 11월 지표 — 창 밖",
+  "원자료 FRED rid=263 라벨이 'Debt to GDP'라 미국 GDP는 제외하고 BEA 공식 일정으로 대체",
+  "BEA 홈페이지 예산 공백 공지로 GDP 일정 변동 가능성 — 10/29 전 재확인 필요",
+  "시각 미확인: SK하이닉스·삼성전자 실적 발표 시각(KST 기준 관행 시각 미확인)",
+  "금통위: 10/22 회의 이미 지남, 기준금리 보도가 서로 달라 다루지 않음",
+  "검색 한계: 2026년 10월 한국 국감·정무위/산자위, 국회 반도체 대책, 중국 지표, 관세 마감은 확인된 2026 일정 없음",
+  "개발자 회의·신제품 행사: 범위 안 확정 행사는 Apple 'Pro and Tell' 1건. NVIDIA GTC 워싱턴은 11/30~12/3로 범위 밖"
  ],
- "searches": 26
+ "searches": 29
 }
