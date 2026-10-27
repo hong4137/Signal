@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-27 10:53",
+ "updated": "2026-10-27 19:08",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
   "hn": 14,
-  "reddit": 20,
+  "reddit": 21,
   "hf": 15,
-  "github": 11,
+  "github": 10,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,12 +16,16 @@
    "title": "Anthropic S-1",
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "discussion": "https://news.ycombinator.com/item?id=50242939",
-   "points": 1481,
-   "comments": 1449,
-   "r": 0.98,
+   "points": 1613,
+   "comments": 1547,
+   "r": 0.96,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
    "summary_ko": "앤트로픽의 기업공개(IPO)와 재무제표를 두고 오픈웨이트 모델과의 경쟁으로 인프라 수익성이 유지될지 의문이라는 시각과, 향후 AI가 노동 시장을 대체할 것이라는 기대감에 기반한 가치 평가는 정당하다는 주장이 대립했습니다.",
    "is_event": true,
    "kr_query": "앤트로픽 상장 IPO",
@@ -53,9 +57,9 @@
    "title": "No signs of AI payoff outside the tech sector",
    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
    "discussion": "https://news.ycombinator.com/item?id=50224463",
-   "points": 638,
+   "points": 641,
    "comments": 668,
-   "r": 1.05,
+   "r": 1.04,
    "at": "2026-10-24",
    "topics": [
     "개발도구"
@@ -91,8 +95,8 @@
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "discussion": "https://news.ycombinator.com/item?id=50236102",
-   "points": 416,
-   "comments": 424,
+   "points": 424,
+   "comments": 431,
    "r": 1.02,
    "at": "2026-10-25",
    "topics": [
@@ -102,6 +106,44 @@
    "summary_ko": "오픈AI와 앤트로픽의 대규모 LLM 가격 인하 원인을 두고, 일각에서는 하드웨어 감가상각과 추론 최적화 기술 발전으로 충분히 수익성이 확보된다고 분석했다. 반면 딥시크의 등장이나 마케팅을 위한 과장 광고일 뿐 여전히 대규모 적자를 내는 구조라는 회의론과 불신도 팽팽하게 맞섰다.",
    "is_event": true,
    "kr_query": "오픈AI 앤트로픽 LLM 가격 인하",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "discussion": "https://news.ycombinator.com/item?id=50248124",
+   "points": 590,
+   "comments": 377,
+   "r": 0.64,
+   "at": "2026-10-26",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:openai.com/index/introducing-gpt-6-1-terra",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "새로운 AI 모델 네이밍 체계의 직관성과 복잡성에 대한 불만이 제기되었으며, 벤치마크 점수와 실제 API 사용 비용 효율성을 두고 논쟁이 벌어졌다. 일부 사용자들은 공개된 벤치마크나 가격 차이가 실제 업무 환경에서의 성능을 온전히 대변하지 않는다고 지적했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "discussion": "https://news.ycombinator.com/item?id=50238088",
+   "points": 420,
+   "comments": 328,
+   "r": 0.78,
+   "at": "2026-10-26",
+   "topics": [],
+   "story_key": "url:theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "summary_ko": "댓글에서는 클라우드 기반 AI의 검열이나 서비스 중단 우려 때문에 비용 효율적인 로컬 오픈소스 모델을 선호하는 의견이 많았다. 반면 로컬 모델은 과도한 자유도로 인해 안전성 검증이나 규제 측면에서 부작용이 생길 수 있다는 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
    "kr": []
   },
   {
@@ -122,49 +164,11 @@
   },
   {
    "layer": "hn",
-   "title": "IBM CEO says open weight models are now good and cheap on-prem",
-   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "discussion": "https://news.ycombinator.com/item?id=50238088",
-   "points": 415,
-   "comments": 327,
-   "r": 0.79,
-   "at": "2026-10-26",
-   "topics": [],
-   "story_key": "url:theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "summary_ko": "댓글에서는 클라우드 기반 AI의 검열이나 서비스 중단 우려 때문에 비용 효율적인 로컬 오픈소스 모델을 선호하는 의견이 많았다. 반면 로컬 모델은 과도한 자유도로 인해 안전성 검증이나 규제 측면에서 부작용이 생길 수 있다는 우려도 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-   "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 501,
-   "comments": 320,
-   "r": 0.64,
-   "at": "2026-10-26",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:openai.com/index/introducing-gpt-6-1-terra",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "새로운 AI 모델 네이밍 체계의 직관성과 복잡성에 대한 불만이 제기되었으며, 벤치마크 점수와 실제 API 사용 비용 효율성을 두고 논쟁이 벌어졌다. 일부 사용자들은 공개된 벤치마크나 가격 차이가 실제 업무 환경에서의 성능을 온전히 대변하지 않는다고 지적했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
    "url": "https://lynchlab.net/llm-skin-cancer",
    "discussion": "https://news.ycombinator.com/item?id=50233779",
-   "points": 654,
-   "comments": 269,
+   "points": 659,
+   "comments": 271,
    "r": 0.41,
    "at": "2026-10-25",
    "topics": [
@@ -215,9 +219,9 @@
    "title": "Brown student maps the hidden global labor powering AI",
    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "discussion": "https://news.ycombinator.com/item?id=50242843",
-   "points": 175,
-   "comments": 167,
-   "r": 0.95,
+   "points": 179,
+   "comments": 171,
+   "r": 0.96,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:brown.edu/news/2026-10-26/ai-data-workers",
@@ -231,8 +235,8 @@
    "title": "Cerebras Deploys Trillion-Parameter AI Models",
    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
    "discussion": "https://news.ycombinator.com/item?id=50227356",
-   "points": 364,
-   "comments": 141,
+   "points": 366,
+   "comments": 142,
    "r": 0.39,
    "at": "2026-10-25",
    "topics": [],
@@ -248,8 +252,8 @@
    "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
    "discussion": "https://news.ycombinator.com/item?id=50231722",
    "points": 90,
-   "comments": 128,
-   "r": 1.42,
+   "comments": 129,
+   "r": 1.43,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
@@ -263,9 +267,9 @@
    "title": "A mathematician reads the AI future",
    "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
    "discussion": "https://news.ycombinator.com/item?id=50233347",
-   "points": 68,
+   "points": 70,
    "comments": 128,
-   "r": 1.88,
+   "r": 1.83,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
@@ -281,26 +285,12 @@
    "title": "A mathematician reads the AI future",
    "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
    "discussion": "https://news.ycombinator.com/item?id=50233347",
-   "points": 68,
+   "points": 70,
    "comments": 128,
-   "r": 1.88,
+   "r": 1.83,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
-   "_comments": [
-    "And a finite lookup table is also a valid isomorphism of a finite algorithm whose inputs / memory size is limited to that same range. Which is usually a set size for implementations of cryptosystems. I asked this analogy because you seem to think there is something magical or different in two equivalent functions implemented differently other than efficiency considerations etc.",
-    ">it will gladly write dialog as any character, from Skynet to the user themselveSo will a human writer or roleplayer. I still do not understand what it is you are trying to say about this extra magical thing. You are assuming something apriori to consciousness that is aphysical. Which is a very strange thing to do without evidence. An LLM like any other computer program or physical entity goes through physical states and makes changes in temperature, charge, chemical structure etc of course, I am not sure what you were trying to get at there. And I am saying, even if you do a very dumb statistical model of all known human text it will emit \"I\" by default, its absurd to think it will say its ",
-    "I work in industry, developing scientific measurement equipment. So I'm right in the thick of things.There are still plenty of problems in theoretical physics that are not quantum gravity. A better understanding of superconductors would be welcome right now. Likewise, nuclear fusion. Many interdisciplinary problems such as climate science and batteries.But in terms of sheer numbers, the life sciences dwarf physics, and have been racing to automate lab work for decades. There's real money involved, not puny government grants. Larger commercial bio labs have already centralized management of technicians and data. The vendors of products in that space have all announced AI features.In terms of ",
-    "I meant fail in the sense that asking a lookup table of first 10,000 primes would pass any tests within this range perfectly, but when you ask it for the 1,001st prime, it would return an error. Mathematically an infinite lookup table of every prime is just a perfectly valid model of a factorization algorithm, unless you're interested in how one actually works, just as an infinite perceptron might be a valid model of any function.",
-    "> I really am still failing to understand whats the big deal about our brains emitting language and thought and a LLM doing so.Our brains \"output\" language as a byproduct (or rather shadow?) of conscious experience. An LLM is a machine built to project similar shadows, but that doesn't necessarily imply there's an entire world like ours shrunk inside that box.Both brains and LLMs are physical, and both output language, but one is an appliance built to synthesize language and the other is a living being that merely uses it as a tool. LLMs are made out of pure language in a way people are simple not. Our minds undergo physical changes with every stimulus we process, we conceptualize ourselves ",
-    "Certainly, a factoring algorithm is an exact problem. Humans aren't, humans fail variously too. A lookup table won't fail, it would be an exact solution. I am not sure you are talking about computability or trying to think of my example in terms of current memory sizes. In computability, natural numbers of any arbitrary size are manageable and a fixed lookup table upto 2**1000, 2**10000000 or anything you wish is a valid program.",
-    "If your simulacra actually fails on certain inputs in a way, like say a lookup table would be, then I'd say it's not a factoring algorithm.",
-    "Another example, if I make a \"simulacra\" that is able to consistently factor large cryptographic composites is it \"real\" or is it just faking factorization.",
-    "So the only argument you can present is that you're too complex to understand and that makes you special.I have a particular saying for this kind of thinking.\"We will never prove machines are intelligent, we will only prove humans are not\"",
-    "I don't see any difference in a function that outputs y with input x regardless of how its implemented. I really am still failing to understand whats the big deal about our brains emitting language and thought and a LLM doing so, neither has some non physical magic inside it. Both need a minimum complexity and intelligence level to do so. If you made an explicit state table of the entire human brain I think it is conscious. So it not being biological is not any reason to dismiss potential consciousness. Another thing is models are trained on human texts, I feel its the opposite direction of what you think, so it may think of itself in human terms and have a human like consciousness. Obviousl",
-    "You can generalize intelligence to a lot of things. A* or minimax are algorithms that make intelligent decisions, often much better than a human. Consciousness is a very abstract notion, or maybe even a social construct, which we usually agree centers on human experiences, and progressively (not always, see historic religious scholars likening cats and dogs to automata lacking the free will granted to humans) expanded to animals, or generally all living things with complex enough brains.LLMs are by their nature dissimilar from any biological organism. Biological intelligence evolved in bodies to locomote away from threats and towards food/mates, over time growing to model the physical world ",
-    ">Neural nets can _approximate_ any function with enough layers (see XOR problem), but so can an infinite look-up table with enough entries. They are the best models we've got, but they are not magical.Yes, why is magic of any relevance to anything.You are not understanding my point. Neither human brains nor LLMs are simple. Even the Linux kernel which is not conscious is extremely complicated and nobody understands all of its states. SHA256 is much more predictable.I don't think being the exact equivalent of a human brain is the only possible way something could be conscious, after all what you call natural genetic searches already made lots of different brains like octopus brains. I am aski"
-   ],
    "summary_ko": "인간의 뇌와 대형 언어 모델(LLM)이 언어를 출력하는 방식이 본질적으로 다르지 않다는 주장과, 생물학적 의식과 기계의 단순한 텍스트 생성을 동일시할 수 없다는 반박이 맞섰다. 또한 기계가 복잡한 상태를 처리한다고 해서 그것을 인간과 같은 의식이나 지능으로 볼 수 있는지에 대해 의견이 갈렸다.",
    "is_event": false,
    "kr_query": "",
@@ -312,8 +302,8 @@
    "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
    "discussion": "https://news.ycombinator.com/item?id=50231722",
    "points": 90,
-   "comments": 128,
-   "r": 1.42,
+   "comments": 129,
+   "r": 1.43,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
@@ -363,9 +353,9 @@
    "title": "No signs of AI payoff outside the tech sector",
    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
    "discussion": "https://news.ycombinator.com/item?id=50224463",
-   "points": 638,
+   "points": 641,
    "comments": 668,
-   "r": 1.05,
+   "r": 1.04,
    "at": "2026-10-24",
    "topics": [
     "개발도구"
@@ -381,8 +371,8 @@
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "discussion": "https://news.ycombinator.com/item?id=50236102",
-   "points": 416,
-   "comments": 424,
+   "points": 424,
+   "comments": 431,
    "r": 1.02,
    "at": "2026-10-25",
    "topics": [
@@ -399,12 +389,16 @@
    "title": "Anthropic S-1",
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "discussion": "https://news.ycombinator.com/item?id=50242939",
-   "points": 1481,
-   "comments": 1449,
-   "r": 0.98,
+   "points": 1613,
+   "comments": 1547,
+   "r": 0.96,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
    "summary_ko": "앤트로픽의 기업공개(IPO)와 재무제표를 두고 오픈웨이트 모델과의 경쟁으로 인프라 수익성이 유지될지 의문이라는 시각과, 향후 AI가 노동 시장을 대체할 것이라는 기대감에 기반한 가치 평가는 정당하다는 주장이 대립했습니다.",
    "is_event": true,
    "kr_query": "앤트로픽 상장 IPO",
@@ -436,9 +430,9 @@
    "title": "Brown student maps the hidden global labor powering AI",
    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "discussion": "https://news.ycombinator.com/item?id=50242843",
-   "points": 175,
-   "comments": 167,
-   "r": 0.95,
+   "points": 179,
+   "comments": 171,
+   "r": 0.96,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:brown.edu/news/2026-10-26/ai-data-workers",
@@ -467,22 +461,6 @@
   },
   {
    "layer": "hn",
-   "title": "IBM CEO says open weight models are now good and cheap on-prem",
-   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "discussion": "https://news.ycombinator.com/item?id=50238088",
-   "points": 415,
-   "comments": 327,
-   "r": 0.79,
-   "at": "2026-10-26",
-   "topics": [],
-   "story_key": "url:theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "summary_ko": "댓글에서는 클라우드 기반 AI의 검열이나 서비스 중단 우려 때문에 비용 효율적인 로컬 오픈소스 모델을 선호하는 의견이 많았다. 반면 로컬 모델은 과도한 자유도로 인해 안전성 검증이나 규제 측면에서 부작용이 생길 수 있다는 우려도 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Why is AI generated language so hard to understand?",
    "url": "https://arxiv.org/abs/2610.29162",
    "discussion": "https://news.ycombinator.com/item?id=50223647",
@@ -499,11 +477,27 @@
   },
   {
    "layer": "hn",
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "discussion": "https://news.ycombinator.com/item?id=50238088",
+   "points": 420,
+   "comments": 328,
+   "r": 0.78,
+   "at": "2026-10-26",
+   "topics": [],
+   "story_key": "url:theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "summary_ko": "댓글에서는 클라우드 기반 AI의 검열이나 서비스 중단 우려 때문에 비용 효율적인 로컬 오픈소스 모델을 선호하는 의견이 많았다. 반면 로컬 모델은 과도한 자유도로 인해 안전성 검증이나 규제 측면에서 부작용이 생길 수 있다는 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "GPT-6.1 Terra",
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 501,
-   "comments": 320,
+   "points": 590,
+   "comments": 377,
    "r": 0.64,
    "at": "2026-10-26",
    "topics": [
@@ -514,20 +508,6 @@
     "Simon Willison"
    ],
    "trust_match": "link",
-   "_comments": [
-    "do people really use luna post 100k? small models generally seems to be hallucinating hard for me once you are over that threshold.",
-    "First of all, only the $200 plan got a cut.Second of all, barring more cuts, yes I do think the $20 and $100 plans do deliver more tasks because the models have gotten cheaper in the meanwhile (like this very announcement).> Are they delivering 50% more than Anthropic per token?So say the public benchmarks. Pull up artificial analysis, “Cost (USD) to run all evaluations in the Artificial Analysis Intelligence Index”:Sol 6.1 (max): $1,082 Opus 5.5 (max): $8,708 Sonnet 5.5 (max): $7,260>7x difference in cost for the same tasks.",
-    "How do you know? Have you done the A/B test yourself?> Do you really think that Opus uses 3x as many tokens as Sol per task? I don't.You don’t have to speculate. Pull up artificial analysis, pick either opus or sol and scroll down to total tokens and to total price. Opus (and sonnet) use 4x the tokens and 7x the dollars.That difference alone removes the difference that semi analysis found.",
-    "Unfortunately it suffers from the same problem as Luna: it will stop at an earliest excuse and no amount of prompting not to stop until X is done will convince it otherwise.",
-    "Artificial Analysis still has MiMo 2.6 Pro setting the Pareto frontier where it matters: it's as cheap as Terra High/Sol Low while being smarter than Terra Xhigh. Sol Medium beats MiMo in smarts but is priced a lot higher. Meanwhile Terra Max is dominated by Sol High in both price-per-task and smarts.",
-    "2019: We have no idea if computers will ever able to talk like a human in natural language. 2026: We have multiple magical know-everything oracles that can speak any language better than most humans and produce pages of output for fractions of a cent, but the model names are a bit confusing so let's just not bother.",
-    "I guess it never really occurred to me that people wouldn't immediately grok:* Luna (Moon)* Terra (Earth)* Sol (Sun)* Astra (Galaxy/Universe)The relative sizing seems dead simple.",
-    "World knowledge, factual recall without grounding, more complex instruction following, etc.Benchmarks don’t really tell you much. For API best will always be a model+effort sweep on your internal evals (and if you don’t have internal evals, do that first).For individual coding harnesses, honestly I just go with vibes. The best workflow is the one that works for you.",
-    "How are they cheap? Does your organization offer unlimited spend, or does your subscription not run into the same limits as mine?",
-    ">> If you have suggestions on how to name our products better, I'm all ears<version>-<size>Where <version>: 6.0, 6.1, etc., and <size>: xs | sm | md | lgE.g. 6.1 Terra = 6.1-smIf you eventually make specializations like \"math\" and \"jokes\" then I would call it something like 6.1-jokes-sm.",
-    "This is legally dangerous for the company because those words have generally well understood meanings, so a lawyer could argue that they promise a certain level of service. It’s safer to use vague words to describe the product variants.",
-    "I guess the question is whether you could have done the same using Haiku High/XHigh or Opus Low/Medium at roughly the same speed and cost."
-   ],
    "summary_ko": "새로운 AI 모델 네이밍 체계의 직관성과 복잡성에 대한 불만이 제기되었으며, 벤치마크 점수와 실제 API 사용 비용 효율성을 두고 논쟁이 벌어졌다. 일부 사용자들은 공개된 벤치마크나 가격 차이가 실제 업무 환경에서의 성능을 온전히 대변하지 않는다고 지적했다.",
    "is_event": false,
    "kr_query": "",
@@ -538,8 +518,8 @@
    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
    "url": "https://lynchlab.net/llm-skin-cancer",
    "discussion": "https://news.ycombinator.com/item?id=50233779",
-   "points": 654,
-   "comments": 269,
+   "points": 659,
+   "comments": 271,
    "r": 0.41,
    "at": "2026-10-25",
    "topics": [
@@ -556,8 +536,8 @@
    "title": "Cerebras Deploys Trillion-Parameter AI Models",
    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
    "discussion": "https://news.ycombinator.com/item?id=50227356",
-   "points": 364,
-   "comments": 141,
+   "points": 366,
+   "comments": 142,
    "r": 0.39,
    "at": "2026-10-25",
    "topics": [],
@@ -572,26 +552,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
-   "url": "https://pastebin.com/n3Z7CDPV",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xft2ae/have_8_gb_of_vram_and_32_gb_of_ram_you_can_run/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:pastebin.com/n3Z7CDPV"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg78oq/i_now_have_definitive_proofs_that_my_qwen_flash/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xg78oq/i_now_have_definitive_proofs_that_my_qwen_flash/",
-   "rank": 2,
+   "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -604,16 +568,34 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Researchers from Stanford and UC Berkeley Introduce TokenGate: Token-Gated Attention Makes Long-Context Prefill Up to 11.3x Faster",
-   "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfovxr/researchers_from_stanford_and_uc_berkeley/",
+   "title": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
+   "url": "https://pastebin.com/n3Z7CDPV",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xft2ae/have_8_gb_of_vram_and_32_gb_of_ram_you_can_run/",
+   "rank": 2,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:pastebin.com/n3Z7CDPV"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen investigation traces release",
+   "url": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgbm28/qwen_investigation_traces_release/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:datasets/coherelabs"
   },
   {
    "layer": "reddit",
@@ -634,42 +616,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen investigation traces release",
-   "url": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgbm28/qwen_investigation_traces_release/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:datasets/coherelabs"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Qwen4-27B's 4-way HC shift?",
-   "url": "https://udanax.org/blog/edward-j-yoon/qwen4-27b-trading-ffn-capacity-for-a-more-expressi",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xftcj0/qwen427bs_4way_hc_shift/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:udanax.org/blog/edward-j-yoon/qwen4-27b-trading-ffn-capacity-for-a-more-expressi"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Update: My 4B coding model is getting better at generating 3D scenes",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgc7uv/update_my_4b_coding_model_is_getting_better_at/",
-   "rank": 7,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -680,42 +630,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen4 expectations",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfrti9/qwen4_expectations/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfrti9/qwen4_expectations/",
-   "rank": 8,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xfrti9/qwen4_expectations"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Is the horror story about AI agent mass deleting your entire drive an old story or it still happen nowadays?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xflw1l/is_the_horror_story_about_ai_agent_mass_deleting/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xflw1l/is_the_horror_story_about_ai_agent_mass_deleting/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xflw1l/is_the_horror_story_about_ai_agent_mass_deleting"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "GPU unlocks (FP32 accumulation): Why can it be unlocked on Turing (RTX 20), Ampere (RTX 30) and Ada (RTX 40) but no consumer Blackwell (RTX 50) and some misconceptions.",
    "url": "https://github.com/haohervchb/Turing-unlock",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgaapw/gpu_unlocks_fp32_accumulation_why_can_it_be/",
-   "rank": 10,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -728,10 +646,26 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "PSA: Qwen-3.8-FN is about to win the 2026 ARC-AGI-3 challenge",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Oh nvidia… —>> NVIDIA reportedly not accepting RTX 5090 orders from board partners, even backorders are unavailable",
    "url": "https://videocardz.com/newz/nvidia-reportedly-not-accepting-rtx-5090-orders-from-board-partners-even-backorders-are-unavailable",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xg4s8y/oh_nvidia_nvidia_reportedly_not_accepting_rtx/",
-   "rank": 11,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -744,65 +678,155 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "tencent/Hy-SimulMT-30B-A3B · Hugging Face",
-   "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfrgt5/tencenthysimulmt30ba3b_hugging_face/",
+   "title": "Qwen4-27B's 4-way HC shift?",
+   "url": "https://udanax.org/blog/edward-j-yoon/qwen4-27b-trading-ffn-capacity-for-a-more-expressi",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xftcj0/qwen427bs_4way_hc_shift/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:udanax.org/blog/edward-j-yoon/qwen4-27b-trading-ffn-capacity-for-a-more-expressi"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Interactive neuron steering playground for Qwen3.5-4B that runs locally in the browser on WebGPU",
+   "url": "https://huggingface.co/spaces/webml-community/neuron-studio",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgbr9y/interactive_neuron_steering_playground_for/",
+   "rank": 10,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스",
+    "인프라·칩"
+   ],
+   "story_key": "hf:spaces/webml-community"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "I built an engine that runs Qwen-Flash-Next at nearly 400t/s on cheap(ish) hardware. 3x V100 32GB in an old R740. Originally forked from strata but the engine guts all built for the old Volta generation.",
+   "url": "https://github.com/johnfink8/sfnx",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xg9cr1/i_built_an_engine_that_runs_qwenflashnext_at/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:johnfink8/sfnx"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Fast voice agents with ConvFill",
+   "url": "https://huggingface.co/spaces/smolagents/convfill-speech-demo",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfzdqu/fast_voice_agents_with_convfill/",
    "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:tencent/hy-simulmt-30b-a3b-gguf"
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "hf:spaces/smolagents"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next vs Swift-1.5-Qwen3.8-Flash-Next",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfl3wo/qwen38flashnext_vs_swift15qwen38flashnext/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfl3wo/qwen38flashnext_vs_swift15qwen38flashnext/",
+   "title": "baidu/Unlimited-OCR-2 · Hugging Face",
+   "url": "https://github.com/baidu/Unlimited-OCR",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgnbtq/baiduunlimitedocr2_hugging_face/",
    "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xfl3wo/qwen38flashnext_vs_swift15qwen38flashnext"
+   "topics": [],
+   "story_key": "gh:baidu/unlimited-ocr"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "boro64/Ternary-Nemotron-3.5-Lightning-30B-A3B-GGUF · Hugging Face",
-   "url": "https://huggingface.co/deepgrove/maple-preview-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfqi2d/boro64ternarynemotron35lightning30ba3bgguf/",
+   "title": "Local beats cloud, Qwen 3.8 FN",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg3rms/local_beats_cloud_qwen_38_fn/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xg3rms/local_beats_cloud_qwen_38_fn/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:deepgrove/maple-preview-gguf"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xg3rms/local_beats_cloud_qwen_38_fn"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "PSA: Qwen-3.8-FN is about to win the 2026 ARC-AGI-3 challenge",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3/",
+   "title": "Is there any way for this community to take advantage of the neocloud collapse?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfv8a9/is_there_any_way_for_this_community_to_take/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xfv8a9/is_there_any_way_for_this_community_to_take/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xgdjy3/psa_qwen38fn_is_about_to_win_the_2026_arcagi3"
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xfv8a9/is_there_any_way_for_this_community_to_take"
   }
  ],
  "quiet_important": [
+  {
+   "layer": "hn",
+   "title": "Anthropic S-1",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "discussion": "https://news.ycombinator.com/item?id=50242939",
+   "points": 1613,
+   "comments": 1547,
+   "r": 0.96,
+   "at": "2026-10-26",
+   "topics": [],
+   "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
+   "summary_ko": "앤트로픽의 기업공개(IPO)와 재무제표를 두고 오픈웨이트 모델과의 경쟁으로 인프라 수익성이 유지될지 의문이라는 시각과, 향후 AI가 노동 시장을 대체할 것이라는 기대감에 기반한 가치 평가는 정당하다는 주장이 대립했습니다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 IPO",
+   "kr": [
+    {
+     "t": "[속보] 美 AI기업 앤트로픽, 나스닥 상장 위한 IPO 신청",
+     "u": "https://www.mk.co.kr/article/12186372",
+     "d": "Mon, 26 Oct 2026",
+     "why": [
+      "ipo",
+      "상장",
+      "앤트로픽"
+     ]
+    },
+    {
+     "t": "AI 거품 불안 속…앤트로픽, 나스닥 상장 위한 IPO 신청",
+     "u": "https://www.kmib.co.kr/article/20261026502237",
+     "d": "Mon, 26 Oct 2026",
+     "why": [
+      "ipo",
+      "상장",
+      "앤트로픽"
+     ]
+    }
+   ]
+  },
   {
    "layer": "hn",
    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
@@ -828,8 +852,8 @@
    "title": "GPT-6.1 Terra",
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 501,
-   "comments": 320,
+   "points": 590,
+   "comments": 377,
    "r": 0.64,
    "at": "2026-10-26",
    "topics": [
@@ -851,9 +875,9 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 1044,
-   "likes": 3196,
-   "downloads": 95889,
+   "trending": 1020,
+   "likes": 3278,
+   "downloads": 105667,
    "topics": [
     "모델릴리스"
    ],
@@ -863,9 +887,9 @@
    "layer": "hf",
    "title": "RecursiveSI/flint",
    "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 886,
-   "likes": 926,
-   "downloads": 8470,
+   "trending": 899,
+   "likes": 939,
+   "downloads": 10574,
    "topics": [
     "모델릴리스"
    ],
@@ -875,9 +899,9 @@
    "layer": "hf",
    "title": "Nanbeige/Nanbeige4.3-33B",
    "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-   "trending": 596,
-   "likes": 602,
-   "downloads": 2787,
+   "trending": 618,
+   "likes": 624,
+   "downloads": 4785,
    "topics": [
     "모델릴리스"
    ],
@@ -887,9 +911,9 @@
    "layer": "hf",
    "title": "XHToken/Spark-X2.6-4B",
    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-   "trending": 558,
-   "likes": 658,
-   "downloads": 4726,
+   "trending": 600,
+   "likes": 733,
+   "downloads": 6191,
    "topics": [
     "모델릴리스"
    ],
@@ -899,9 +923,9 @@
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 440,
-   "likes": 1704,
-   "downloads": 700652,
+   "trending": 424,
+   "likes": 1781,
+   "downloads": 750694,
    "topics": [
     "모델릴리스"
    ],
@@ -911,9 +935,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 408,
-   "likes": 9462,
-   "downloads": 2117147,
+   "trending": 405,
+   "likes": 9497,
+   "downloads": 2163739,
    "topics": [
     "모델릴리스"
    ],
@@ -923,9 +947,9 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-M3.1-Flash",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
-   "trending": 368,
-   "likes": 382,
-   "downloads": 8782,
+   "trending": 378,
+   "likes": 392,
+   "downloads": 11075,
    "topics": [
     "모델릴리스"
    ],
@@ -935,9 +959,9 @@
    "layer": "hf",
    "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
    "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "trending": 327,
-   "likes": 345,
-   "downloads": 891147,
+   "trending": 342,
+   "likes": 361,
+   "downloads": 1105751,
    "topics": [
     "모델릴리스"
    ],
@@ -947,9 +971,9 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 314,
-   "likes": 18464,
-   "downloads": 7608285,
+   "trending": 322,
+   "likes": 18495,
+   "downloads": 7522728,
    "topics": [
     "모델릴리스"
    ],
@@ -957,15 +981,15 @@
   },
   {
    "layer": "hf",
-   "title": "OpenMOSS-Team/MOSS-Image-SFT",
-   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-   "trending": 311,
-   "likes": 759,
-   "downloads": 12114,
+   "title": "InternScience/Sage-A1.5",
+   "url": "https://huggingface.co/InternScience/Sage-A1.5",
+   "trending": 312,
+   "likes": 322,
+   "downloads": 6613,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:openmoss-team/moss-image-sft"
+   "story_key": "hf:internscience/sage-a1.5"
   }
  ],
  "new_repos": [
@@ -974,7 +998,7 @@
    "title": "JustAResearcher/gpu-unlock-ada",
    "desc": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
    "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-   "stars": 3865,
+   "stars": 4056,
    "topics": [
     "인프라·칩"
    ],
@@ -982,28 +1006,28 @@
   },
   {
    "layer": "github",
-   "title": "wesbos/3d-model-anything",
-   "desc": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
-   "url": "https://github.com/wesbos/3d-model-anything",
-   "stars": 2078,
-   "topics": [],
-   "story_key": "gh:wesbos/3d-model-anything"
-  },
-  {
-   "layer": "github",
    "title": "rddmwmddr/android-ad-cleaner",
    "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
    "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-   "stars": 1984,
+   "stars": 2705,
    "topics": [],
    "story_key": "gh:rddmwmddr/android-ad-cleaner"
+  },
+  {
+   "layer": "github",
+   "title": "wesbos/3d-model-anything",
+   "desc": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
+   "url": "https://github.com/wesbos/3d-model-anything",
+   "stars": 2129,
+   "topics": [],
+   "story_key": "gh:wesbos/3d-model-anything"
   },
   {
    "layer": "github",
    "title": "t3dotgg/tstack",
    "desc": "The agent skills I use every day. Works with Claude Code and Codex.",
    "url": "https://github.com/t3dotgg/tstack",
-   "stars": 1588,
+   "stars": 1743,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1015,27 +1039,16 @@
    "title": "openai/php2shell-checker",
    "desc": "",
    "url": "https://github.com/openai/php2shell-checker",
-   "stars": 1423,
+   "stars": 1431,
    "topics": [],
    "story_key": "gh:openai/php2shell-checker"
-  },
-  {
-   "layer": "github",
-   "title": "colinhacks/reylo",
-   "desc": "Import .sql files into TypeScript with full type inference and zero codegen.",
-   "url": "https://github.com/colinhacks/reylo",
-   "stars": 1315,
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "gh:colinhacks/reylo"
   },
   {
    "layer": "github",
    "title": "lyramakesmusic/neuron-explorer",
    "desc": "Steering-first neuron explorer for Qwen3.5-4B: push every MLP neuron, keep every rollout, browse the results",
    "url": "https://github.com/lyramakesmusic/neuron-explorer",
-   "stars": 1266,
+   "stars": 1352,
    "topics": [
     "모델릴리스"
    ],
@@ -1043,10 +1056,21 @@
   },
   {
    "layer": "github",
+   "title": "colinhacks/reylo",
+   "desc": "Import .sql files into TypeScript with full type inference and zero codegen.",
+   "url": "https://github.com/colinhacks/reylo",
+   "stars": 1327,
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "gh:colinhacks/reylo"
+  },
+  {
+   "layer": "github",
    "title": "morganlinton/BeautifulRust",
    "desc": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, an",
    "url": "https://github.com/morganlinton/BeautifulRust",
-   "stars": 1222,
+   "stars": 1258,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1059,7 +1083,7 @@
    "title": "Snapintosh/Snapintosh",
    "desc": "EL2 hypervisor and toolchain that boots macOS on the ASUS A16 (Snapdragon X2 Elite), with an Adreno Metal/IOGPU stack",
    "url": "https://github.com/Snapintosh/Snapintosh",
-   "stars": 982,
+   "stars": 996,
    "topics": [
     "인프라·칩"
    ],
@@ -1067,15 +1091,15 @@
   },
   {
    "layer": "github",
-   "title": "DenisSergeevitch/ex-ussr-kinship-research",
-   "desc": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Rep",
-   "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-   "stars": 802,
+   "title": "andyhuo520/digital-human-koubo",
+   "desc": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude C",
+   "url": "https://github.com/andyhuo520/digital-human-koubo",
+   "stars": 931,
    "topics": [
     "모델릴리스",
     "에이전트"
    ],
-   "story_key": "gh:denissergeevitch/ex-ussr-kinship-research"
+   "story_key": "gh:andyhuo520/digital-human-koubo"
   }
  ],
  "trust_recent": [
@@ -1419,5 +1443,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-27 01:53"
+ "enriched_at": "2026-10-27 10:08"
 }
