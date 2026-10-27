@@ -274,7 +274,7 @@
    "id": "t-20261019-1",
    "q": "관세청 수출입 잠정치 발표 일정 이번 달 1~20일 21일",
    "when": "always",
-   "status": "trial",
+   "status": "retired",
    "why": "잠정치 발표일을 뉴스 2곳이 같은 날(21일)로 보도해 확정에 쓰임",
    "added": "2026-10-19"
   },
@@ -341,14 +341,22 @@
    "status": "trial",
    "why": "BEA 공식 일정 목록으로 미국 GDP 날짜를 확정하는 데 씀",
    "added": "2026-10-27"
+  },
+  {
+   "id": "t-20261028-1",
+   "q": "일본은행 금융정책결정회의 {d0} {d5} 금리 결정 일정",
+   "when": "always",
+   "status": "trial",
+   "why": "BOJ 발표일을 보도 2곳으로 확정하는 데 씀",
+   "added": "2026-10-28"
   }
  ],
  "stats": {
   "kr-week": {
-   "runs": 20,
+   "runs": 21,
    "hits": 0,
-   "zero_streak": 20,
-   "last_run": "2026-10-27"
+   "zero_streak": 21,
+   "last_run": "2026-10-28"
   },
   "kr-nextweek": {
    "runs": 12,
@@ -357,38 +365,39 @@
    "last_run": "2026-10-25"
   },
   "us-week": {
-   "runs": 20,
+   "runs": 21,
    "hits": 24,
-   "zero_streak": 0,
-   "last_run": "2026-10-27",
+   "zero_streak": 1,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-27"
   },
   "us-earnings-week": {
-   "runs": 20,
+   "runs": 21,
    "hits": 24,
-   "zero_streak": 2,
-   "last_run": "2026-10-27",
+   "zero_streak": 3,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-25"
   },
   "fed-speak": {
-   "runs": 20,
-   "hits": 4,
-   "zero_streak": 14,
-   "last_run": "2026-10-27",
-   "last_hit": "2026-10-13"
+   "runs": 21,
+   "hits": 5,
+   "zero_streak": 0,
+   "last_run": "2026-10-28",
+   "last_hit": "2026-10-28"
   },
   "kr-bok": {
-   "runs": 20,
+   "runs": 21,
    "hits": 4,
-   "zero_streak": 5,
-   "last_run": "2026-10-27",
+   "zero_streak": 6,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-22"
   },
   "kr-stats": {
-   "runs": 20,
-   "hits": 0,
-   "zero_streak": 20,
-   "last_run": "2026-10-27"
+   "runs": 21,
+   "hits": 1,
+   "zero_streak": 0,
+   "last_run": "2026-10-28",
+   "last_hit": "2026-10-28"
   },
   "kr-prelim": {
    "runs": 7,
@@ -397,29 +406,29 @@
    "last_run": "2026-10-14"
   },
   "kr-earnings": {
-   "runs": 20,
+   "runs": 21,
    "hits": 0,
-   "zero_streak": 20,
-   "last_run": "2026-10-27"
+   "zero_streak": 21,
+   "last_run": "2026-10-28"
   },
   "us-earnings-watch": {
-   "runs": 20,
+   "runs": 21,
    "hits": 4,
-   "zero_streak": 8,
-   "last_run": "2026-10-27",
+   "zero_streak": 9,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-19"
   },
   "kr-policy": {
-   "runs": 20,
+   "runs": 21,
    "hits": 0,
-   "zero_streak": 20,
-   "last_run": "2026-10-27"
+   "zero_streak": 21,
+   "last_run": "2026-10-28"
   },
   "kr-audit": {
-   "runs": 20,
+   "runs": 21,
    "hits": 2,
-   "zero_streak": 12,
-   "last_run": "2026-10-27",
+   "zero_streak": 13,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-15"
   },
   "tech-events": {
@@ -429,24 +438,24 @@
    "last_run": "2026-10-09"
   },
   "global-cb": {
-   "runs": 20,
-   "hits": 1,
+   "runs": 21,
+   "hits": 2,
    "zero_streak": 0,
-   "last_run": "2026-10-27",
-   "last_hit": "2026-10-27"
+   "last_run": "2026-10-28",
+   "last_hit": "2026-10-28"
   },
   "china-data": {
-   "runs": 20,
+   "runs": 21,
    "hits": 1,
-   "zero_streak": 19,
-   "last_run": "2026-10-27",
+   "zero_streak": 20,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-09"
   },
   "us-policy": {
-   "runs": 20,
+   "runs": 21,
    "hits": 0,
-   "zero_streak": 20,
-   "last_run": "2026-10-27"
+   "zero_streak": 21,
+   "last_run": "2026-10-28"
   },
   "t-20261009-1": {
    "runs": 13,
@@ -463,23 +472,23 @@
    "last_hit": "2026-10-19"
   },
   "dev-conf": {
-   "runs": 19,
+   "runs": 20,
    "hits": 0,
-   "zero_streak": 19,
-   "last_run": "2026-10-27"
+   "zero_streak": 20,
+   "last_run": "2026-10-28"
   },
   "launch-event": {
-   "runs": 19,
+   "runs": 20,
    "hits": 3,
-   "zero_streak": 0,
-   "last_run": "2026-10-27",
+   "zero_streak": 1,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-27"
   },
   "kr-dev-conf": {
-   "runs": 19,
+   "runs": 20,
    "hits": 1,
-   "zero_streak": 17,
-   "last_run": "2026-10-27",
+   "zero_streak": 18,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-10"
   },
   "t-20261009-3": {
@@ -531,10 +540,10 @@
    "last_hit": "2026-10-17"
   },
   "t-20261019-1": {
-   "runs": 8,
+   "runs": 9,
    "hits": 2,
-   "zero_streak": 6,
-   "last_run": "2026-10-27",
+   "zero_streak": 7,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-21"
   },
   "t-20261020-1": {
@@ -544,52 +553,53 @@
    "last_run": "2026-10-27"
   },
   "t-20261021-1": {
-   "runs": 6,
+   "runs": 7,
    "hits": 1,
-   "zero_streak": 0,
-   "last_run": "2026-10-27",
+   "zero_streak": 1,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-27"
   },
   "t-20261021-2": {
-   "runs": 6,
+   "runs": 7,
    "hits": 3,
-   "zero_streak": 0,
-   "last_run": "2026-10-27",
+   "zero_streak": 1,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-27"
   },
   "t-20261022-1": {
-   "runs": 5,
+   "runs": 6,
    "hits": 0,
-   "zero_streak": 5,
-   "last_run": "2026-10-27"
+   "zero_streak": 6,
+   "last_run": "2026-10-28"
   },
   "t-20261024-1": {
-   "runs": 3,
+   "runs": 4,
    "hits": 2,
-   "zero_streak": 0,
-   "last_run": "2026-10-27",
+   "zero_streak": 1,
+   "last_run": "2026-10-28",
    "last_hit": "2026-10-27"
   },
   "t-20261025-1": {
-   "runs": 2,
+   "runs": 3,
    "hits": 0,
-   "zero_streak": 2,
-   "last_run": "2026-10-27"
+   "zero_streak": 3,
+   "last_run": "2026-10-28"
+  },
+  "t-20261027-1": {
+   "runs": 1,
+   "hits": 0,
+   "zero_streak": 1,
+   "last_run": "2026-10-28"
+  },
+  "t-20261027-2": {
+   "runs": 1,
+   "hits": 1,
+   "zero_streak": 0,
+   "last_run": "2026-10-28",
+   "last_hit": "2026-10-28"
   }
  },
  "learned": [
-  {
-   "date": "2026-10-18",
-   "note": "회사 IR 공지 문구로 검색하면 실적 발표일을 공식 발표로 확인 가능. 증권사 달력 날짜는 자주 어긋남"
-  },
-  {
-   "date": "2026-10-18",
-   "note": "뉴스의 'O일 실적 설명회' 기사는 공시 확인 없이는 확정 못 함. 검색으로 교차 확인이 안 되는 경우가 많음"
-  },
-  {
-   "date": "2026-10-18",
-   "note": "관세청 1~20일 잠정치는 2025년 10/21 발표 선례가 있으나 2026년 발표 공식 확인은 없음"
-  },
   {
    "date": "2026-10-19",
    "note": "금통위 날짜는 '한은에 따르면' 같은 한은 인용 기사로 확인, 일부 매체의 다른 날짜 표기는 오기일 수 있음"
@@ -697,6 +707,18 @@
   {
    "date": "2026-10-27",
    "note": "BEA 홈페이지에 예산 공백으로 갱신 중단 공지가 떠 있어 미국 공식 일정이 바뀔 수 있다 — 발표 전날 재확인이 필요하다."
+  },
+  {
+   "date": "2026-10-28",
+   "note": "국내 대형주 실적일은 웹검색보다 원자료 뉴스 본문의 '28일·29일 발표' 문장에서 나왔다(복수 매체 확인 가능)"
+  },
+  {
+   "date": "2026-10-28",
+   "note": "미국 실적 날짜는 Finnhub 현지 날짜라 KST 변환 시 하루 뒤로 넘어간다(장 마감 후 발표는 한국 새벽 05:05)"
+  },
+  {
+   "date": "2026-10-28",
+   "note": "BEA·BOJ·MNI 같은 기관 일정 쪽 검색이 확정 근거로 잘 나왔다. 국감·현대차·ECB는 2026 근거를 못 찾았다"
   }
  ],
  "naver_help": "네이버 뉴스 검색(수집기 03:00) — 짧은 헤드라인형 검색어를 최신순으로, 최근 7일 기사만 남긴다. 길고 구체적인 검색어는 옛 기사만 걸린다.",

@@ -1,37 +1,23 @@
 {
- "generated_at": "2026-10-26T07:30:00+09:00",
+ "generated_at": "2026-10-28T06:25:00+09:00",
  "window": {
-  "from": "2026-10-26",
-  "to": "2026-10-29"
+  "from": "2026-10-28",
+  "to": "2026-10-31"
  },
  "events": [
-  {
-   "date": "2026-10-27",
-   "time": "21:30",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 주택착공 건수",
-   "importance": 3,
-   "why": "금리에 민감한 지표, 주택시장과 경기 흐름 점검용",
-   "consensus": null,
-   "previous": null,
-   "source": "https://fred.stlouisfed.org/release?rid=27",
-   "verified": true,
-   "note": "FRED 공식 일정(미 동부 08:30 관행 시각 환산)"
-  },
   {
    "date": "2026-10-28",
    "time": null,
    "region": "KR",
    "category": "실적",
-   "title": "SK하이닉스 3분기 확정 실적",
+   "title": "SK하이닉스 3분기 실적·컨퍼런스콜",
    "importance": 5,
-   "why": "AI 메모리 실적 확인, 추가 주주환원 공개 예고",
+   "why": "메모리 실적과 추가 주주환원책이 같은 날 공개된다",
    "consensus": null,
-   "previous": "2분기 영업이익 60조원대",
-   "source": "https://dart.fss.or.kr",
+   "previous": null,
+   "source": "https://www.skhynix.com/ir/",
    "verified": true,
-   "note": "뉴스1·매일투데이·토픽스타 등 복수 매체가 10/28 발표로 보도. 시각 미확인"
+   "note": "시각 미확인. 일부 실적 캘린더 사이트는 10/27로 표기해 보도 다수(10/28)를 따름"
   },
   {
    "date": "2026-10-29",
@@ -40,12 +26,12 @@
    "category": "기업 행사",
    "title": "애플 'Pro and Tell' 신제품 행사",
    "importance": 4,
-   "why": "현지 10/28 오전 10시(PT) 행사, 신제품 공개 보도 다수",
+   "why": "터치스크린 맥북 프로 등 신제품 공개가 예고됐다",
    "consensus": null,
    "previous": null,
-   "source": "https://www.apple.com/apple-events/",
+   "source": "https://www.apple.com/newsroom/",
    "verified": true,
-   "note": "로이터(애플 발표 인용)와 복수 매체 일치. 라이브 스트림은 공식 확인 전"
+   "note": "미국 현지 10/28 오전 10시 기준. 제품 목록은 보도 기준 예상"
   },
   {
    "date": "2026-10-29",
@@ -54,12 +40,12 @@
    "category": "통화정책",
    "title": "미국 FOMC 금리 결정",
    "importance": 5,
-   "why": "연준 금리 결정과 성명, 시장 전반의 기준 이벤트",
-   "consensus": "동결 예상(국내 보도)",
+   "why": "10월 27~28일 회의 결과와 연준 성명이 나온다",
+   "consensus": null,
    "previous": null,
    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
    "verified": true,
-   "note": "회의 10/27~28(ET), 성명 14:00 ET = 한국 10/29 03:00"
+   "note": "미국 현지 10/28 14:00 ET 성명"
   },
   {
    "date": "2026-10-29",
@@ -68,12 +54,12 @@
    "category": "경제지표",
    "title": "미국 9월 개인소득·지출(PCE 물가)",
    "importance": 5,
-   "why": "연준 물가 목표 기준 지표, FOMC 직후 발표",
+   "why": "연준이 가장 중시하는 물가 지표(개인소비지출)",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=54",
    "verified": true,
-   "note": "FRED 공식 일정(08:30 ET). BEA 캘린더 10/29와 일치"
+   "note": "미 동부 08:30 관행 시각 기준"
   },
   {
    "date": "2026-10-29",
@@ -82,12 +68,12 @@
    "category": "경제지표",
    "title": "미국 3분기 GDP 속보치",
    "importance": 4,
-   "why": "미국 3분기 성장률 첫 추정치, PCE와 같은 날",
+   "why": "3분기 성장률 첫 발표(속보치)",
    "consensus": null,
    "previous": null,
-   "source": "https://www.bea.gov/taxonomy/term/566?page=0",
+   "source": "https://www.bea.gov/news/schedule",
    "verified": true,
-   "note": "BEA 공식 일정(08:30 ET). BEA 사이트에 예산 공백으로 갱신 중단 공지 — 변경 여부 점검 필요"
+   "note": "BEA 릴리스 일정 기준. BEA 예산 공백 공지가 있어 발표 전 재확인"
   },
   {
    "date": "2026-10-29",
@@ -96,26 +82,12 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "고용 시장 주간 흐름, 매주 목요일 발표",
+   "why": "매주 목요일 발표되는 노동시장 주간 지표",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "FRED 공식 일정(08:30 ET 관행 시각 환산)"
-  },
-  {
-   "date": "2026-10-29",
-   "time": "22:15",
-   "region": "EU",
-   "category": "통화정책",
-   "title": "유럽중앙은행(ECB) 금리 결정",
-   "importance": 4,
-   "why": "유로존 금리 결정, 연준과 같은 주 통화정책 흐름",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-   "verified": true,
-   "note": "ECB 공식 일정(날짜). 시각은 달력 사이트 14:15 CET 기준 한국 시각 환산"
+   "note": "미 동부 08:30 관행 시각 기준"
   },
   {
    "date": "2026-10-29",
@@ -124,26 +96,124 @@
    "category": "실적",
    "title": "삼성전자 3분기 확정 실적·컨퍼런스콜",
    "importance": 5,
-   "why": "잠정 영업익 107조4000억원, 추가 배당 규모 주목",
+   "why": "추가 주주환원 계획 발표 여부가 관심사로 보도됐다",
    "consensus": null,
-   "previous": "3분기 잠정 영업이익 107조4000억원(10/8 발표)",
-   "source": "https://dart.fss.or.kr",
+   "previous": "잠정실적 10/8 발표(매출 195조·영업이익 107.4조)",
+   "source": "https://www.samsung.com/sec/ir/",
    "verified": true,
-   "note": "뉴스1·매일투데이·부산일보 등 복수 매체 10/29 보도 일치. 시각 미확인"
+   "note": "시각 미확인. 10/8 잠정실적 이후 확정 실적 발표"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "05:05",
+   "region": "US",
+   "category": "실적",
+   "title": "알파벳(구글) 3분기 실적",
+   "importance": 4,
+   "why": "빅테크 AI 투자 흐름을 가늠할 실적",
+   "consensus": "EPS 3.11달러 · 매출 1320.2억달러",
+   "previous": null,
+   "source": "https://abc.xyz/investor/",
+   "verified": true,
+   "note": "미국 현지 10/29 장 마감 후 발표(한국 날짜 10/30)"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "05:05",
+   "region": "US",
+   "category": "실적",
+   "title": "마이크로소프트 1분기 실적",
+   "importance": 4,
+   "why": "클라우드·AI 수요 흐름을 가늠할 실적",
+   "consensus": "EPS 4.82달러 · 매출 924.9억달러",
+   "previous": null,
+   "source": "https://www.microsoft.com/en-us/investor",
+   "verified": true,
+   "note": "미국 현지 10/29 장 마감 후 발표(한국 날짜 10/30)"
+  },
+  {
+   "date": "2026-10-30",
+   "time": null,
+   "region": "JP",
+   "category": "통화정책",
+   "title": "일본은행(BOJ) 금융정책결정회의 결과",
+   "importance": 4,
+   "why": "동결 전망이 우세하다는 보도, 엔화·금리 흐름 영향",
+   "consensus": null,
+   "previous": "기준금리 1.25%(9월 인상)",
+   "source": "https://www.boj.or.jp/",
+   "verified": true,
+   "note": "10/29~30 회의, 결정은 10/30. 발표 시각 미확인"
+  },
+  {
+   "date": "2026-10-30",
+   "time": null,
+   "region": "KR",
+   "category": "경제지표",
+   "title": "9월 산업활동동향(국가데이터처)",
+   "importance": 3,
+   "why": "생산·소비·투자 등 국내 실물경기 흐름 확인",
+   "consensus": null,
+   "previous": null,
+   "source": "https://mods.go.kr/lcofNewsPln.es?mid=a60303000000",
+   "verified": true,
+   "note": "발표 시각 미확인. 통계공표일정 기준"
+  },
+  {
+   "date": "2026-10-30",
+   "time": null,
+   "region": "KR",
+   "category": "시장",
+   "title": "인텔리빅스 코스닥 상장",
+   "importance": 3,
+   "why": "국방·피지컬 AI 사업을 하는 기업의 코스닥 신규 상장일",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.hankyung.com/",
+   "verified": true,
+   "note": "상장 시각 미확인. 청약 경쟁률 1,400대 1 보도"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "05:05",
+   "region": "US",
+   "category": "실적",
+   "title": "아마존 3분기 실적",
+   "importance": 4,
+   "why": "클라우드(AWS)와 AI 투자 규모를 확인할 실적",
+   "consensus": "EPS 2.00달러 · 매출 2062.9억달러",
+   "previous": null,
+   "source": "https://ir.aboutamazon.com/",
+   "verified": true,
+   "note": "미국 현지 10/30 장 마감 후 발표(한국 날짜 10/31)"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "05:05",
+   "region": "US",
+   "category": "실적",
+   "title": "인텔 3분기 실적",
+   "importance": 4,
+   "why": "파운드리·반도체 사업 실적 흐름 확인",
+   "consensus": "EPS 0.40달러 · 매출 167.8억달러",
+   "previous": null,
+   "source": "https://www.intc.com/",
+   "verified": true,
+   "note": "미국 현지 10/30 장 마감 후 발표(한국 날짜 10/31)"
   }
  ],
  "notes": [
-  "미확정으로 뺌: 한국 3분기 GDP 속보치(10/27) — 보도 1곳뿐, 한은 공식 일정 미확인",
-  "미확정으로 뺌: LG전자 확정 실적(10/28) — 보도 1곳뿐",
-  "미확정으로 뺌: 이스라엘 총선(10/27) — 보도 1곳뿐, 경제 일정 성격도 약함",
-  "범위 밖: Alphabet·Microsoft(미국 10/29 장 마감 후) — 한국 시각 10/30 새벽이라 창 밖",
-  "범위 밖: Amazon·Intel(10/30 현지), 일본은행(10/30), 11월 지표 — 창 밖",
-  "원자료 FRED rid=263 라벨이 'Debt to GDP'라 미국 GDP는 제외하고 BEA 공식 일정으로 대체",
-  "BEA 홈페이지 예산 공백 공지로 GDP 일정 변동 가능성 — 10/29 전 재확인 필요",
-  "시각 미확인: SK하이닉스·삼성전자 실적 발표 시각(KST 기준 관행 시각 미확인)",
-  "금통위: 10/22 회의 이미 지남, 기준금리 보도가 서로 달라 다루지 않음",
-  "검색 한계: 2026년 10월 한국 국감·정무위/산자위, 국회 반도체 대책, 중국 지표, 관세 마감은 확인된 2026 일정 없음",
-  "개발자 회의·신제품 행사: 범위 안 확정 행사는 Apple 'Pro and Tell' 1건. NVIDIA GTC 워싱턴은 11/30~12/3로 범위 밖"
+  "원자료 지연: calendar_raw.json 이 10/27 07:32 KST 것(오늘 03시 수집분 아님) — 그대로 쓰고 날짜는 검색으로 교차확인",
+  "미확정으로 뺌: ECB 통화정책회의(10/29) — 2026년 일정 확인 못함, MNI 달력 1곳뿐",
+  "미확정으로 뺌: 현대차 3분기 실적(10/29) — 보도 1곳뿐, 공식 확인 못함",
+  "미확정으로 뺌: LG전자 확정 실적(10/28) — 이번 실행에서 재확인 못함(어제 보도 1곳)",
+  "미확정으로 뺌: 2026 국정감사 상임위(10/28~30) — 검색 결과가 모두 과거 연도",
+  "미확정으로 뺌: 반도체·AI 정부 대책·국회 일정, 관세·셧다운 마감, 중국 지표 — 2026 근거 없음",
+  "시각 미확인: 삼성전자·SK하이닉스 컨퍼런스콜, BOJ 결정, 산업활동동향, 인텔리빅스 상장 — 시각은 비워 둠",
+  "원자료 Finnhub 실적일은 미국 현지 날짜라 한국 날짜를 하루 뒤로 옮김(알파벳·마이크로소프트·아마존·인텔)",
+  "원자료 FRED rid=263 라벨이 'Debt to GDP'라 GDP는 BEA 일정으로 확인해 사용",
+  "BEA 홈페이지에 예산 공백 공지가 있어 GDP·PCE 일정은 10/28 전 재확인 필요",
+  "범위 밖: 11/1 수출입 동향, 11/3 JOLTS·ISM, 11/10 CPI, 팔란티어·AMD 등 11/2 이후 실적"
  ],
- "searches": 29
+ "searches": 30
 }
