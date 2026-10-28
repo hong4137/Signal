@@ -1,189 +1,7 @@
 {
- "updated": "2026-10-28 07:09 KST",
+ "updated": "2026-10-28 14:34 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "401908045",
-   "path": "baseball/mlb",
-   "league": "MLB",
-   "name": "Milwaukee Brewers at Tampa Bay Rays",
-   "date": "2026-10-28T00:00Z",
-   "kst": "2026-10-28 09:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "World Series - Game 4",
-   "season": "post-season",
-   "us_tv": [
-    "Fox"
-   ],
-   "venue": "Tropicana Field",
-   "tv": "국내 SPOTV · 영국 TNT Sports · 미국 Fox",
-   "sport": "baseball",
-   "home": {
-    "name": "Tampa Bay Rays",
-    "ko": "탬파베이",
-    "abbr": "TB",
-    "id": "30",
-    "score": "0",
-    "winner": null,
-    "record": "98-64",
-    "form": "승승패패패"
-   },
-   "away": {
-    "name": "Milwaukee Brewers",
-    "ko": "밀워키",
-    "abbr": "MIL",
-    "id": "8",
-    "score": "0",
-    "winner": null,
-    "record": "103-59",
-    "form": "승승승승승"
-   },
-   "title": "탬파베이 vs 밀워키",
-   "score": 64,
-   "why": [
-    "월드시리즈",
-    "박빙 예상"
-   ],
-   "detail": {
-    "h2h": {
-     "summary": "MIL wins series 2-1",
-     "last": [
-      {
-       "date": "2026-03-30",
-       "score": "밀워키 2 탬파베이 3"
-      },
-      {
-       "date": "2026-03-31",
-       "score": "밀워키 6 탬파베이 2"
-      },
-      {
-       "date": "2026-04-01",
-       "score": "밀워키 8 탬파베이 2"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "탬파베이",
-      "cat": "Batting Average",
-      "who": "Chandler Simpson",
-      "val": ".306"
-     },
-     {
-      "team": "탬파베이",
-      "cat": "Home Runs",
-      "who": "Junior Caminero",
-      "val": "42"
-     },
-     {
-      "team": "밀워키",
-      "cat": "Batting Average",
-      "who": "Jackson Chourio",
-      "val": ".291"
-     },
-     {
-      "team": "밀워키",
-      "cat": "Home Runs",
-      "who": "Jake Bauers",
-      "val": "26"
-     }
-    ],
-    "injuries": [
-     {
-      "team": "탬파베이",
-      "who": "Gavin Lux",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "탬파베이",
-      "who": "Shane McClanahan",
-      "status": "Out"
-     },
-     {
-      "team": "탬파베이",
-      "who": "Jacob Melton",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "탬파베이",
-      "who": "Edwin Uceta",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "밀워키",
-      "who": "Quinn Priester",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "밀워키",
-      "who": "Angel Zerpa",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "밀워키",
-      "who": "Brian Fitzpatrick",
-      "status": "60-Day-IL"
-     }
-    ],
-    "predictor": {
-     "home": "47.7",
-     "away": "52.3"
-    },
-    "preview": [
-     {
-      "title": "World Series Game 4: Lineups, keys for Brewers-Rays",
-      "url": "https://www.espn.com/mlb/story/_/id/50241025/world-series-game-4-brewers-rays-live-updates-takeaways"
-     },
-     {
-      "title": "Brewers to start Dustin May in possible World Series clincher",
-      "url": "https://www.espn.com/mlb/story/_/id/50300459/brewers-start-dustin-possible-world-series-clincher"
-     }
-    ]
-   },
-   "series": [
-    {
-     "kst": "2026-10-28 09:00",
-     "note": "World Series - Game 4"
-    },
-    {
-     "kst": "2026-10-29 09:00",
-     "note": "World Series - Game 5 If Necessary"
-    },
-    {
-     "kst": "2026-10-31 09:00",
-     "note": "World Series - Game 6 If Necessary"
-    },
-    {
-     "kst": "2026-11-01 09:00",
-     "note": "World Series - Game 7 If Necessary"
-    }
-   ],
-   "stars": 3,
-   "tv_kr": "SPOTV · SPOTV NOW",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "SPOTV"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "TNT Sports"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Fox"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "Sportsnet"
-    }
-   ]
-  },
   {
    "id": "401909888",
    "path": "basketball/nba",
@@ -277,6 +95,11 @@
     "injuries": [
      {
       "team": "Minnesota Timberwolves",
+      "who": "Anthony Edwards",
+      "status": "Out"
+     },
+     {
+      "team": "Minnesota Timberwolves",
       "who": "Donte DiVincenzo",
       "status": "Out"
      },
@@ -302,8 +125,8 @@
      }
     ],
     "predictor": {
-     "home": "79.3",
-     "away": "20.7"
+     "home": "74",
+     "away": "26"
     },
     "preview": []
    },
@@ -319,6 +142,185 @@
      "country": "MENA",
      "label": "아랍",
      "ch": "beIN SPORTS(일부 경기)"
+    }
+   ]
+  },
+  {
+   "id": "401908046",
+   "path": "baseball/mlb",
+   "league": "MLB",
+   "name": "Milwaukee Brewers at Tampa Bay Rays",
+   "date": "2026-10-29T00:00Z",
+   "kst": "2026-10-29 09:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "World Series - Game 5",
+   "season": "post-season",
+   "us_tv": [
+    "Fox"
+   ],
+   "venue": "Tropicana Field",
+   "tv": "국내 SPOTV · 영국 TNT Sports · 미국 Fox",
+   "sport": "baseball",
+   "home": {
+    "name": "Tampa Bay Rays",
+    "ko": "탬파베이",
+    "abbr": "TB",
+    "id": "30",
+    "score": "0",
+    "winner": null,
+    "record": "98-64",
+    "form": "승패패패승"
+   },
+   "away": {
+    "name": "Milwaukee Brewers",
+    "ko": "밀워키",
+    "abbr": "MIL",
+    "id": "8",
+    "score": "0",
+    "winner": null,
+    "record": "103-59",
+    "form": "승승승승패"
+   },
+   "title": "탬파베이 vs 밀워키",
+   "score": 70,
+   "why": [
+    "월드시리즈",
+    "시리즈 분수령",
+    "박빙 예상"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "MIL wins series 2-1",
+     "last": [
+      {
+       "date": "2026-03-30",
+       "score": "밀워키 2 탬파베이 3"
+      },
+      {
+       "date": "2026-03-31",
+       "score": "밀워키 6 탬파베이 2"
+      },
+      {
+       "date": "2026-04-01",
+       "score": "밀워키 8 탬파베이 2"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "탬파베이",
+      "cat": "Batting Average",
+      "who": "Chandler Simpson",
+      "val": ".306"
+     },
+     {
+      "team": "탬파베이",
+      "cat": "Home Runs",
+      "who": "Junior Caminero",
+      "val": "42"
+     },
+     {
+      "team": "밀워키",
+      "cat": "Batting Average",
+      "who": "Jackson Chourio",
+      "val": ".291"
+     },
+     {
+      "team": "밀워키",
+      "cat": "Home Runs",
+      "who": "Jake Bauers",
+      "val": "26"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "탬파베이",
+      "who": "Gavin Lux",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Junior Caminero",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Shane McClanahan",
+      "status": "Out"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Jacob Melton",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Quinn Priester",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Angel Zerpa",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Brian Fitzpatrick",
+      "status": "60-Day-IL"
+     }
+    ],
+    "predictor": {
+     "home": "46.7",
+     "away": "53.3"
+    },
+    "preview": [
+     {
+      "title": "Brewers' Ashby sets record for scoreless innings by a reliever in a postseason",
+      "url": "https://www.espn.com/mlb/story/_/id/50304654/brewers-aaron-ashby-record-scoreless-innings-reliever"
+     },
+     {
+      "title": "World Series Game 4: Takeaways from Rays' walk-off win",
+      "url": "https://www.espn.com/mlb/story/_/id/50241025/world-series-game-4-brewers-rays-live-updates-takeaways"
+     }
+    ]
+   },
+   "series": [
+    {
+     "kst": "2026-10-29 09:00",
+     "note": "World Series - Game 5"
+    },
+    {
+     "kst": "2026-10-31 09:00",
+     "note": "World Series - Game 6 If Necessary"
+    },
+    {
+     "kst": "2026-11-01 09:00",
+     "note": "World Series - Game 7 If Necessary"
+    }
+   ],
+   "stars": 3,
+   "tv_kr": "SPOTV · SPOTV NOW",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "SPOTV"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "TNT Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "Fox"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "Sportsnet"
     }
    ]
   },
@@ -491,13 +493,18 @@
      },
      {
       "team": "LA 레이커스",
+      "who": "Cameron Carr",
+      "status": "Out"
+     },
+     {
+      "team": "LA 레이커스",
       "who": "Adou Thiero",
       "status": "Out"
      }
     ],
     "predictor": {
-     "home": "37.8",
-     "away": "62.2"
+     "home": "38.4",
+     "away": "61.6"
     },
     "preview": []
    },
@@ -815,7 +822,9 @@
    "status": "Scheduled",
    "note": "",
    "season": "2026-27-english-premier-league",
-   "us_tv": [],
+   "us_tv": [
+    "USA Net"
+   ],
    "venue": "Gtech Community Stadium",
    "tv": "미국 USA Network · 아랍 beIN Sports HD 2",
    "sport": "soccer",
@@ -926,7 +935,9 @@
    "status": "Scheduled",
    "note": "",
    "season": "2026-27-german-bundesliga",
-   "us_tv": [],
+   "us_tv": [
+    "USA Net"
+   ],
    "venue": "Allianz Arena",
    "tv": "영국 Sky Sports Football · 미국 Telemundo",
    "sport": "soccer",
@@ -952,7 +963,7 @@
     "record": "5-2-0",
     "rank": "2",
     "pts": "17",
-    "form": "무패무승승"
+    "form": "패무승승승"
    },
    "title": "바이에른 뮌헨 vs 도르트문트",
    "kp": {
@@ -1254,8 +1265,8 @@
      }
     ],
     "predictor": {
-     "home": "49",
-     "away": "51"
+     "home": "50",
+     "away": "50"
     },
     "preview": []
    },
@@ -1276,6 +1287,125 @@
   }
  ],
  "results": [
+  {
+   "id": "401908045",
+   "path": "baseball/mlb",
+   "league": "MLB",
+   "name": "Milwaukee Brewers at Tampa Bay Rays",
+   "date": "2026-10-28T00:00Z",
+   "kst": "2026-10-28 09:00",
+   "state": "post",
+   "status": "Final",
+   "note": "World Series - Game 4",
+   "season": "post-season",
+   "us_tv": [
+    "Fox"
+   ],
+   "venue": "Tropicana Field",
+   "tv": "SPOTV · SPOTV NOW",
+   "sport": "baseball",
+   "home": {
+    "name": "Tampa Bay Rays",
+    "ko": "탬파베이",
+    "abbr": "TB",
+    "id": "30",
+    "score": "4",
+    "winner": true,
+    "record": "98-64"
+   },
+   "away": {
+    "name": "Milwaukee Brewers",
+    "ko": "밀워키",
+    "abbr": "MIL",
+    "id": "8",
+    "score": "3",
+    "winner": false,
+    "record": "103-59"
+   },
+   "title": "탬파베이 vs 밀워키",
+   "score": 64,
+   "why": [
+    "월드시리즈",
+    "박빙 예상"
+   ],
+   "stars": 3,
+   "detail": {
+    "h2h": {
+     "summary": "MIL wins series 2-1",
+     "last": [
+      {
+       "date": "2026-03-30",
+       "score": "밀워키 2 탬파베이 3"
+      },
+      {
+       "date": "2026-03-31",
+       "score": "밀워키 6 탬파베이 2"
+      },
+      {
+       "date": "2026-04-01",
+       "score": "밀워키 8 탬파베이 2"
+      }
+     ]
+    },
+    "leaders": [],
+    "injuries": [
+     {
+      "team": "탬파베이",
+      "who": "Gavin Lux",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Junior Caminero",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Shane McClanahan",
+      "status": "Out"
+     },
+     {
+      "team": "탬파베이",
+      "who": "Jacob Melton",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Quinn Priester",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Angel Zerpa",
+      "status": "60-Day-IL"
+     },
+     {
+      "team": "밀워키",
+      "who": "Brian Fitzpatrick",
+      "status": "60-Day-IL"
+     }
+    ],
+    "preview": [
+     {
+      "title": "Brewers' Ashby sets record for scoreless innings by a reliever in a postseason",
+      "url": "https://www.espn.com/mlb/story/_/id/50304654/brewers-aaron-ashby-record-scoreless-innings-reliever"
+     },
+     {
+      "title": "World Series Game 4: Takeaways from Rays' walk-off win",
+      "url": "https://www.espn.com/mlb/story/_/id/50241025/world-series-game-4-brewers-rays-live-updates-takeaways"
+     }
+    ],
+    "result": {
+     "score": "탬파베이 4 : 3 밀워키",
+     "goals": [],
+     "korean": [],
+     "video": {
+      "title": "Rays pull off improbable rally in extras to take Game 4 vs. Brewers",
+      "url": "https://www.espn.com/video/clip/_/id/50304465/rays-pull-improbable-rally-extras-take-game-4-vs-brewers"
+     }
+    }
+   }
+  },
   {
    "id": "401909876",
    "path": "basketball/nba",
@@ -1370,17 +1500,17 @@
     "injuries": [
      {
       "team": "Denver Nuggets",
+      "who": "Spencer Jones",
+      "status": "Out"
+     },
+     {
+      "team": "Denver Nuggets",
       "who": "Cameron Johnson",
       "status": "Day-To-Day"
      },
      {
       "team": "Denver Nuggets",
       "who": "Alpha Diallo",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "Denver Nuggets",
-      "who": "Spencer Jones",
       "status": "Out"
      },
      {
@@ -1489,17 +1619,17 @@
      },
      {
       "team": "탬파베이",
+      "who": "Junior Caminero",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "탬파베이",
       "who": "Shane McClanahan",
       "status": "Out"
      },
      {
       "team": "탬파베이",
       "who": "Jacob Melton",
-      "status": "60-Day-IL"
-     },
-     {
-      "team": "탬파베이",
-      "who": "Edwin Uceta",
       "status": "60-Day-IL"
      },
      {
@@ -1520,12 +1650,12 @@
     ],
     "preview": [
      {
-      "title": "World Series Game 4: Lineups, keys for Brewers-Rays",
-      "url": "https://www.espn.com/mlb/story/_/id/50241025/world-series-game-4-brewers-rays-live-updates-takeaways"
+      "title": "Brewers' Ashby sets record for scoreless innings by a reliever in a postseason",
+      "url": "https://www.espn.com/mlb/story/_/id/50304654/brewers-aaron-ashby-record-scoreless-innings-reliever"
      },
      {
-      "title": "Brewers to start Dustin May in possible World Series clincher",
-      "url": "https://www.espn.com/mlb/story/_/id/50300459/brewers-start-dustin-possible-world-series-clincher"
+      "title": "World Series Game 4: Takeaways from Rays' walk-off win",
+      "url": "https://www.espn.com/mlb/story/_/id/50241025/world-series-game-4-brewers-rays-live-updates-takeaways"
      }
     ],
     "result": {
