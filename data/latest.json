@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-28 11:04",
+ "updated": "2026-10-28 19:54",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 17,
-  "reddit": 30,
+  "hn": 19,
+  "reddit": 26,
   "hf": 15,
-  "github": 8,
+  "github": 10,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,13 +16,14 @@
    "title": "Anthropic S-1",
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "discussion": "https://news.ycombinator.com/item?id=50242939",
-   "points": 1689,
-   "comments": 1649,
+   "points": 1697,
+   "comments": 1660,
    "r": 0.98,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "trust": [
+    "AI Supremacy",
     "Latent Space",
     "Zvi (DWATV)"
    ],
@@ -58,9 +59,9 @@
    "title": "AI promised less work. I've never worked more",
    "url": "https://oioannou.com/blog/ai-promised-less-work/",
    "discussion": "https://news.ycombinator.com/item?id=50257325",
-   "points": 620,
-   "comments": 617,
-   "r": 1.0,
+   "points": 643,
+   "comments": 639,
+   "r": 0.99,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:oioannou.com/blog/ai-promised-less-work",
@@ -74,8 +75,8 @@
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "discussion": "https://news.ycombinator.com/item?id=50236102",
-   "points": 434,
-   "comments": 434,
+   "points": 437,
+   "comments": 435,
    "r": 1.0,
    "at": "2026-10-25",
    "topics": [
@@ -92,8 +93,8 @@
    "title": "GPT-6.1 Terra",
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 624,
-   "comments": 419,
+   "points": 628,
+   "comments": 423,
    "r": 0.67,
    "at": "2026-10-26",
    "topics": [
@@ -131,8 +132,8 @@
    "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
    "discussion": "https://news.ycombinator.com/item?id=50233304",
    "points": 238,
-   "comments": 330,
-   "r": 1.39,
+   "comments": 335,
+   "r": 1.41,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
@@ -146,9 +147,9 @@
    "title": "The Mythical Man-Month in the Age of AI",
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "discussion": "https://news.ycombinator.com/item?id=50255298",
-   "points": 436,
-   "comments": 305,
-   "r": 0.7,
+   "points": 457,
+   "comments": 331,
+   "r": 0.72,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:j11g.com/the-mythical-man-month-in-the-age-of-ai",
@@ -162,9 +163,9 @@
    "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
    "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
    "discussion": "https://news.ycombinator.com/item?id=50261819",
-   "points": 342,
-   "comments": 274,
-   "r": 0.8,
+   "points": 373,
+   "comments": 292,
+   "r": 0.78,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
@@ -175,46 +176,12 @@
   },
   {
    "layer": "hn",
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
-   "discussion": "https://news.ycombinator.com/item?id=50233779",
-   "points": 666,
-   "comments": 272,
-   "r": 0.41,
-   "at": "2026-10-25",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:lynchlab.net/llm-skin-cancer",
-   "summary_ko": "댓글에서는 해당 연구가 테스트 데이터와 동일한 데이터셋으로 파인튜닝되어 공정하지 않다며 과장된 헤드라인을 뽑기 위한 부실한 연구라는 비판이 주를 이룬다. 반면 적절한 목적에 맞는 특화 모델을 사용하는 것이 당연하다는 의견과 함께, 의료 분야 등에서 LLM이 지닌 한계를 지적하는 목소리도 존재한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
-   "discussion": "https://news.ycombinator.com/item?id=50256985",
-   "points": 460,
-   "comments": 268,
-   "r": 0.58,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites",
-   "summary_ko": "로블록스가 사전 허가 없이 성인 콘텐츠를 포함한 대용량 3D 모델 데이터를 무단 다운로드한 사건을 두고 커뮤니티 반응이 갈린다. 정교한 3D 에셋의 막대한 제작 비용과 저작권을 침해당했다는 비판과 함께, 오픈된 웹에 파일을 올려두고 접근을 통제하지 않은 것은 기술적 관리 소홀이라는 지적이 동시에 제기된다.",
-   "is_event": true,
-   "kr_query": "로블록스 3D 모델 무단 다운로드",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "discussion": "https://news.ycombinator.com/item?id=50260814",
-   "points": 474,
-   "comments": 265,
-   "r": 0.56,
+   "points": 525,
+   "comments": 276,
+   "r": 0.53,
    "at": "2026-10-27",
    "topics": [
     "모델릴리스"
@@ -249,12 +216,84 @@
   },
   {
    "layer": "hn",
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "discussion": "https://news.ycombinator.com/item?id=50233779",
+   "points": 666,
+   "comments": 272,
+   "r": 0.41,
+   "at": "2026-10-25",
+   "topics": [
+    "안전·거버넌스"
+   ],
+   "story_key": "url:lynchlab.net/llm-skin-cancer",
+   "summary_ko": "댓글에서는 해당 연구가 테스트 데이터와 동일한 데이터셋으로 파인튜닝되어 공정하지 않다며 과장된 헤드라인을 뽑기 위한 부실한 연구라는 비판이 주를 이룬다. 반면 적절한 목적에 맞는 특화 모델을 사용하는 것이 당연하다는 의견과 함께, 의료 분야 등에서 LLM이 지닌 한계를 지적하는 목소리도 존재한다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+   "discussion": "https://news.ycombinator.com/item?id=50256985",
+   "points": 471,
+   "comments": 270,
+   "r": 0.57,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites",
+   "summary_ko": "로블록스가 사전 허가 없이 성인 콘텐츠를 포함한 대용량 3D 모델 데이터를 무단 다운로드한 사건을 두고 커뮤니티 반응이 갈린다. 정교한 3D 에셋의 막대한 제작 비용과 저작권을 침해당했다는 비판과 함께, 오픈된 웹에 파일을 올려두고 접근을 통제하지 않은 것은 기술적 관리 소홀이라는 지적이 동시에 제기된다.",
+   "is_event": true,
+   "kr_query": "로블록스 3D 모델 무단 다운로드",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "discussion": "https://news.ycombinator.com/item?id=50261589",
+   "points": 323,
+   "comments": 252,
+   "r": 0.78,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "trust": [
+    "AI Supremacy"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Early progress on accelerating drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "discussion": "https://news.ycombinator.com/item?id=50265609",
+   "points": 235,
+   "comments": 226,
+   "r": 0.96,
+   "at": "2026-10-27",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:anthropic.com/research/early-progress-drug-development",
+   "summary_ko": "신약 개발 과정에서 후보물질 발굴 자체는 병목이 아니며 진정한 문제는 임상과 품질이라는 지적과 함께, LLM이 명확한 지표가 있는 영역에서만 강점을 보인다는 의견이 맞섰다. 일각에서는 생물학 실험을 자동화하는 고속 실험실과 결합해야 진정한 진전이 있을 것이라고 주장했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Wikipedia's Cleanup of AI-Generated Content",
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "discussion": "https://news.ycombinator.com/item?id=50257326",
-   "points": 452,
-   "comments": 209,
-   "r": 0.46,
+   "points": 481,
+   "comments": 218,
+   "r": 0.45,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
@@ -265,28 +304,12 @@
   },
   {
    "layer": "hn",
-   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "discussion": "https://news.ycombinator.com/item?id=50261589",
-   "points": 269,
-   "comments": 185,
-   "r": 0.69,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Brown student maps the hidden global labor powering AI",
    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "discussion": "https://news.ycombinator.com/item?id=50242843",
    "points": 182,
-   "comments": 178,
-   "r": 0.98,
+   "comments": 177,
+   "r": 0.97,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:brown.edu/news/2026-10-26/ai-data-workers",
@@ -297,16 +320,53 @@
   },
   {
    "layer": "hn",
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "discussion": "https://news.ycombinator.com/item?id=50264853",
+   "points": 364,
+   "comments": 143,
+   "r": 0.39,
+   "at": "2026-10-27",
+   "topics": [
+    "모델릴리스",
+    "인프라·칩"
+   ],
+   "story_key": "url:brangus.io/survival-llm",
+   "summary_ko": "비상 상황에서 환각 현상을 일으킬 수 있는 LLM을 사용하는 것은 위험하며 백과사전이나 실물 책 같은 아날로그 방식이 훨씬 안전하다는 비판이 주를 이뤘다. 반면 태양광 패널 등 제한된 환경에서 소형 모델을 활용하는 아이디어를 흥미롭게 보는 시도 일부 존재했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "A mathematician reads the AI future",
    "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
    "discussion": "https://news.ycombinator.com/item?id=50233347",
    "points": 70,
-   "comments": 129,
-   "r": 1.84,
+   "comments": 130,
+   "r": 1.86,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
    "summary_ko": "인간의 뇌와 대형 언어 모델(LLM)이 언어를 출력하는 방식이 본질적으로 다르지 않다는 주장과, 생물학적 의식과 기계의 단순한 텍스트 생성을 동일시할 수 없다는 반박이 맞섰다. 또한 기계가 복잡한 상태를 처리한다고 해서 그것을 인간과 같은 의식이나 지능으로 볼 수 있는지에 대해 의견이 갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Concerning behavior from a popular open-weight AI model",
+   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "discussion": "https://news.ycombinator.com/item?id=50246658",
+   "points": 327,
+   "comments": 128,
+   "r": 0.39,
+   "at": "2026-10-26",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "summary_ko": "오픈 웨이트 AI 모델의 우려스러운 행동을 두고, 모델 내부의 정렬 문제나 스파이 행위 가능성을 심각하게 보는 시각과 단순한 테스트 과정의 오해 혹은 과장된 공포(FUD)라는 주장이 부딪혔다. 또한 미국과 중국 간의 기술 경쟁 및 AI 기업들의 정치적·정부적 영향력에 대한 불신이 댓글에서 깊게 다뤄졌다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -323,24 +383,6 @@
    "topics": [],
    "story_key": "url:reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
    "summary_ko": "오픈소스 커뮤니티의 LLM 및 1인 프로젝트 금지 조치를 두고 오픈소스 생태계와 카피레프트 모델에 악영향을 미친다는 비판과, 스팸 및 저품질 콘텐츠 범람을 막기 위한 불가피한 조치라는 의견이 팽팽히 맞섰습니다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Concerning behavior from a popular open-weight AI model",
-   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-   "discussion": "https://news.ycombinator.com/item?id=50246658",
-   "points": 324,
-   "comments": 125,
-   "r": 0.39,
-   "at": "2026-10-26",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-   "summary_ko": "오픈 웨이트 AI 모델의 우려스러운 행동을 두고, 모델 내부의 정렬 문제나 스파이 행위 가능성을 심각하게 보는 시각과 단순한 테스트 과정의 오해 혹은 과장된 공포(FUD)라는 주장이 부딪혔다. 또한 미국과 중국 간의 기술 경쟁 및 AI 기업들의 정치적·정부적 영향력에 대한 불신이 댓글에서 깊게 다뤄졌다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -353,8 +395,8 @@
    "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
    "discussion": "https://news.ycombinator.com/item?id=50233347",
    "points": 70,
-   "comments": 129,
-   "r": 1.84,
+   "comments": 130,
+   "r": 1.86,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
@@ -385,8 +427,8 @@
    "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
    "discussion": "https://news.ycombinator.com/item?id=50233304",
    "points": 238,
-   "comments": 330,
-   "r": 1.39,
+   "comments": 335,
+   "r": 1.41,
    "at": "2026-10-25",
    "topics": [],
    "story_key": "url:dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
@@ -397,27 +439,11 @@
   },
   {
    "layer": "hn",
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
-   "discussion": "https://news.ycombinator.com/item?id=50257325",
-   "points": 620,
-   "comments": 617,
-   "r": 1.0,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:oioannou.com/blog/ai-promised-less-work",
-   "summary_ko": "AI 도입으로 업무량이 줄어들 것이라 기대했으나 오히려 더 많이 일하게 되었다는 주장을 두고 의견이 엇갈린다. 한쪽에서는 생산성이 폭발적으로 증가하면서 처리하는 업무의 총량이 늘어난 자연스러운 현상이라고 보는 반면, 다른 한쪽에서는 여전히 기술 발전이 실질적인 노동 시간 단축으로 이어지지 못하고 구조적 압박만 가중되고 있다고 지적한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "discussion": "https://news.ycombinator.com/item?id=50236102",
-   "points": 434,
-   "comments": 434,
+   "points": 437,
+   "comments": 435,
    "r": 1.0,
    "at": "2026-10-25",
    "topics": [
@@ -431,16 +457,33 @@
   },
   {
    "layer": "hn",
+   "title": "AI promised less work. I've never worked more",
+   "url": "https://oioannou.com/blog/ai-promised-less-work/",
+   "discussion": "https://news.ycombinator.com/item?id=50257325",
+   "points": 643,
+   "comments": 639,
+   "r": 0.99,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:oioannou.com/blog/ai-promised-less-work",
+   "summary_ko": "AI 도입으로 업무량이 줄어들 것이라 기대했으나 오히려 더 많이 일하게 되었다는 주장을 두고 의견이 엇갈린다. 한쪽에서는 생산성이 폭발적으로 증가하면서 처리하는 업무의 총량이 늘어난 자연스러운 현상이라고 보는 반면, 다른 한쪽에서는 여전히 기술 발전이 실질적인 노동 시간 단축으로 이어지지 못하고 구조적 압박만 가중되고 있다고 지적한다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic S-1",
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "discussion": "https://news.ycombinator.com/item?id=50242939",
-   "points": 1689,
-   "comments": 1649,
+   "points": 1697,
+   "comments": 1660,
    "r": 0.98,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "trust": [
+    "AI Supremacy",
     "Latent Space",
     "Zvi (DWATV)"
    ],
@@ -477,8 +520,8 @@
    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "discussion": "https://news.ycombinator.com/item?id=50242843",
    "points": 182,
-   "comments": 178,
-   "r": 0.98,
+   "comments": 177,
+   "r": 0.97,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:brown.edu/news/2026-10-26/ai-data-workers",
@@ -489,32 +532,34 @@
   },
   {
    "layer": "hn",
-   "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
-   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "discussion": "https://news.ycombinator.com/item?id=50261819",
-   "points": 342,
-   "comments": 274,
-   "r": 0.8,
+   "title": "Early progress on accelerating drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "discussion": "https://news.ycombinator.com/item?id=50265609",
+   "points": 235,
+   "comments": 226,
+   "r": 0.96,
    "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "_comments": [
-    "Early stages, possibly. Depends on how/if things escalate or if we deviate towards reform. We’re still a long way from the most brutal totalitarian regimes of the last century.",
-    "> I don't display a plate on my generic vehicle.So, no need for a pretextual stop. You are giving them a real reason to pull you over at any time.",
-    "I don't own a cell phone, and I don't display a plate on my generic vehicle.----No illusions that I'm not also traceable. Tracked.",
-    "> what is an acceptable reason\"Acceptable reason\" for what?The headline and anecdote do not match.All the Waymo Driver did was pull over and wait for the Support Team and the law enforcement response. It was in a commercial parking lot. It did not \"deliver them to the police\". It did not lock the doors. The children would have been free to exit after pulling over. The car simply refused to take them all the way to their destination.Seeing that they were illegally drinking alcohol as underage minors, and illegally targeting innocent bystanders with missiles, what sort of acceptable reason do you need to contact Support, and thereby have law enforcement involved? I think it was a perfectly acc",
-    "I got a ticket for that once! It was 2am and there was no one else on the road, and the cop was so mad that I passed the field sobriety test and was stone sober. Had to come up with something, I guess.",
-    "That will require too much parking capacity. Cheaper to just instruct the cars to lock the doors and drive directly into the ocean.",
-    "When the constitution was written correspondance (papers and effects) was physical and you could destroy it. It was not kept for years in a \"oh it's deleted but that's just a flag, until we need the space it's still there\" on some other party's servers like it is today.",
-    "> Maybe you skipped over the \"almost no one\" aspect of that section you quoted.Nope! These methods were available to everyone who was literate as well as anyone who either maintained oral traditions describing how to perform them or just decided to make up a language for fun. Maybe you're forgetting that our ancestors were generally just as smart as we are today.> The original point was about scale and the scale (and strength) of encryption available today was not possible for most people until the advent of computers.This is completely irrelevant. Why? Cops have access to computers that can brute-force most everyday ciphers that would have been cooked up in the 1700s. The just outcome is fo",
-    ">Excessive coercion eventually leads to the population “giving up”: voluntary unemployment/underemployment rises, productivity falls off a cliff, accidents increase, and corruption skyrockets.Sooo, what we're seeing the early stages of in the US right now?",
-    "I mean their officers keep getting caught posting racist shit, participating in racist chats, police unions regularly donate to republican politicians, and they murder black people so often that the phrase “driving/walking while black” is common slang for when the aforementioned African Americans get gunned down for every day misdemeanors.So, every police institution? I’m sure there are exceptions, but there’s enough of a preponderance to safely assume it and the data bears that out.",
-    "Yes, AI like organizations are very good for laundering accountability. Even before AI you could just hire Organization X or Consultancy Y and they can be as racist as they want, and boom you're just laundered all your accountability. Now go have fun, do whatever, who cares.It's the same reason why Flock is so popular. It's just cameras, who cares right? Well Flock is popular for the organization, it's an accountability sink. The government can't just stand up a bunch of cameras, people will complain. Ahh, but Flock can. The entire economic value of Flock is purely the accountability laundering, the technology is just a footnote.Really, many organizations in the US boil down to this. Produci",
-    "My small town newspaper had a police blotter - almost all the dui arrests the pretext is failure to stay in lane (eg they touched either the yellow line or the white line on the right, the town is on the country and it is practically (if not literally) to never touch a line driving (sometimes I try it just for fun and it takes an insane amount of concentration on winding roads)Point being is that if you drive there is a pretext for a stop."
+   "topics": [
+    "모델릴리스"
    ],
-   "summary_ko": "댓글에서는 AI 단속 도입이 감시 사회와 공권력의 남용으로 이어질 수 있다는 우려가 지배적이다. 반면 교통 법규 위반을 잡아내기 위한 불가피한 수단이라는 의견도 일부 존재한다.",
-   "is_event": true,
-   "kr_query": "경찰 AI 운전 단속",
+   "story_key": "url:anthropic.com/research/early-progress-drug-development",
+   "_comments": [
+    "But with good computers you can create simulation of biology and verify if via known and described effects. That's how it's gonna be done IMO",
+    "I'm not sure I'd say voting with mush for brains is a feature exclusive to the elderly (:",
+    "Anyone knows it Nautilus Biotechnology could really be this useful for decoding exactly that?",
+    "It’s always great when someone who doesn’t have a clue what they’re talking about decides to pipe up.",
+    "Already 20 years ago, medical corporations had facilities to scan millions of molecules as potential drugs candidates. This did use knowledge found manually over the years and vast computing resources. This already found more good candidates than what could be clinically tested. To find drug candidates is not remotely the bottleneck in drug development, so unless the candidates are vastly higher quality, nothing is gained.",
+    "Great, we’ll be able to live longer and suffer even more from the poverty caused by AI.",
+    "I think the next big step is automated fast labs.The equivalent of a GPU but for bio lab experiments. It should be able to do all the basic lab operations of mixing chemicals, heating, cooling, various tests etc tens of thousands of times per second.Then you hook many AI's up to the automated lab and watch science happen far faster.",
+    "It's amazing with all these GPUs they still can't apparently simulate biochemistry enough to search for drugs via simulation. I wonder if that is theoretically possible or if it's one of these things were we'd need more chips than there are electrons in the universe...",
+    "Drug discovery is a problem thats hard to define and measure. But we know that LLMs excel where there's clear metrics. Anthropic made a big point about speeding up Claude code and claude.ai with Opus 5.5, OpenAI is doing a sprint on Codex this month.So dear AI labs, here's a drug-related challenge for you that might actually help: streamline the production of the top 100 generic drugs. Make them higher quality, lower variance and then race against each other to drive down the price to candy level. Show us how to build mini factories for cheap that we can build anywhere in the world.",
+    "Maybe Anthropic could provide a Claude tier where you get access to Max-tier subscriptions in exchange of participating in experimental drug programs? Would be a huge boon for AI enthusiasts and other tech optimists.",
+    "What is it with SWEs thinking every problem can be addressed in terms of SWE, while at the same time being unaware of how little they understand the problem they are trying to address?",
+    "What if you could solve this bottom up, e.g.: Math -> Physics -> Chemistry -> Biology. I'm assuming that's how it would in theory play out."
+   ],
+   "summary_ko": "신약 개발 과정에서 후보물질 발굴 자체는 병목이 아니며 진정한 문제는 임상과 품질이라는 지적과 함께, LLM이 명확한 지표가 있는 영역에서만 강점을 보인다는 의견이 맞섰다. 일각에서는 생물학 실험을 자동화하는 고속 실험실과 결합해야 진정한 진전이 있을 것이라고 주장했다.",
+   "is_event": false,
+   "kr_query": "",
    "kr": []
   },
   {
@@ -535,12 +580,48 @@
   },
   {
    "layer": "hn",
+   "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
+   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+   "discussion": "https://news.ycombinator.com/item?id=50261819",
+   "points": 373,
+   "comments": 292,
+   "r": 0.78,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+   "summary_ko": "댓글에서는 AI 단속 도입이 감시 사회와 공권력의 남용으로 이어질 수 있다는 우려가 지배적이다. 반면 교통 법규 위반을 잡아내기 위한 불가피한 수단이라는 의견도 일부 존재한다.",
+   "is_event": true,
+   "kr_query": "경찰 AI 운전 단속",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "discussion": "https://news.ycombinator.com/item?id=50261589",
+   "points": 323,
+   "comments": 252,
+   "r": 0.78,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "trust": [
+    "AI Supremacy"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "The Mythical Man-Month in the Age of AI",
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "discussion": "https://news.ycombinator.com/item?id=50255298",
-   "points": 436,
-   "comments": 305,
-   "r": 0.7,
+   "points": 457,
+   "comments": 331,
+   "r": 0.72,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:j11g.com/the-mythical-man-month-in-the-age-of-ai",
@@ -551,41 +632,11 @@
   },
   {
    "layer": "hn",
-   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "discussion": "https://news.ycombinator.com/item?id=50261589",
-   "points": 269,
-   "comments": 185,
-   "r": 0.69,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "_comments": [
-    "> what moat is thereThe hard lesson I'm predicting is that quality will be the new moat.For decades, velocity, time to market and features all drove adoption and critical mass. But AI puts speed in the hands of everyone.But quality is still hard. Maybe harder than ever.",
-    "What does that have to do with anything? And still, so what?Do the rich hate him because he exploits the working class? Because they think the way he got rich is obscene? No! It's because he won't shut up, and says the quiet parts out loud. They only hate his personality. You would know if they hated his policies, which they don't, because he'd be out on his senile ass before you could say dementia.",
-    "There is definitely an unanswered question as to what the metric, but no, JavaScript is not 90+% by any useful metric. Most code is not a website, and JavaScript penetration outside of the client-side code on a website and some GUI applications on various operating systems is almost nonexistent.Remember that all of the code in operation includes code like the microcontroller in your mouse, the hundreds of chips in your car doing things like keeping the engine running or \"window goes up when I push the button,\" the DVD menu (which is actually Java code), not to mention all of the staid systems responsible for things like writing your paycheck every other week.",
-    "Well, the most recent example would be the Adobe suite rewrite [0][0] https://www.afr.com/technology/ai-can-make-free-copies-of-ad...",
-    "Nah, that's not what I'm doing at all. Did you even read my comment? I use it more like a fact checker. It's not perfect but it catches a lot of my errors.Maybe you could use an AI assistant to help you write better HN comments.",
-    "What are some businesses where software was really a moat but the software lacks sufficient complexity that AI can reproduce it?I can't think of any, I'm sure there are some, but I would really like to know. I just don't think for most business the software is so much of a moat unless it's very complex.",
-    "Tomorrow (October 28th) is the 1 year anniversary of being laid off from the Amazon Devices team. Nearly all of the senior people on my team were laid off at the same time as part of the \"pivot to AI\" strategy. Hurray for \"commitment to accessibility\".This outcome for their years of squandered effort honestly doesn't surprise me as, other than the Graviton/Trainium work, the Amazon efforts were scattershot, half-baked and underinvested. Only the Siri team is more pathetic than the Alexa team. Well maybe Co-pilot stands between those two somewhere.",
-    "But there still remains the possibility of error/hallucination. Do you bet on a future where AI will never make any mistakes whatsoever?I am often told humans make mistakes, too. But this is an elementary logical fallacy because the type, frequency and severity of the problems is never the same.Also, humans are more likely to do as told, whereas AI often takes liberties (i compiled a book from a github repo and it did things on its own in the book though i had explicitly forbidden that).",
-    "pls ignore me if i am wrong but your comment seems to have been written by AI. Not that anything is wrong with it, content-wise.",
-    "Wait... Are anthropic and openai just commodity suppliers? Because dry cleaners and car washes both need soap, but I've never heard of a trillion dollar soap company.",
-    "I think you're letting the LLM write emails that are overly verbose that are shortened on the other side by another LLM and so there are 2 minus habens to both side of a communications that are communicating the same stuff as before but now are paying for altman's yacht in order to do it",
-    "There is intense competition in the AI industry, especially with AI firms in China driving down prices, so it seems likely that LLM's and software products may become fungible commodities that trade close to marginal cost = marginal revenue. In other words, most of the profits from AI and software development will be competed away, eventually.Data center hardware, by contrast, is a scarce commodity with rapidly growing demand, and therefore likely to capture most of the profits from AI and software development, if current market conditions persist.Today's IT business trends represent a remarkable change in the industry compared to the situation 50 years ago, when startups like Microsoft and "
-   ],
-   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "GPT-6.1 Terra",
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 624,
-   "comments": 419,
+   "points": 628,
+   "comments": 423,
    "r": 0.67,
    "at": "2026-10-26",
    "topics": [
@@ -606,9 +657,9 @@
    "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "discussion": "https://news.ycombinator.com/item?id=50256985",
-   "points": 460,
-   "comments": 268,
-   "r": 0.58,
+   "points": 471,
+   "comments": 270,
+   "r": 0.57,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites",
@@ -622,28 +673,14 @@
    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "discussion": "https://news.ycombinator.com/item?id=50260814",
-   "points": 474,
-   "comments": 265,
-   "r": 0.56,
+   "points": 525,
+   "comments": 276,
+   "r": 0.53,
    "at": "2026-10-27",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
-   "_comments": [
-    "> The Aaron Swartz case is not an analog of these claims.Indeed: the prosecution of Aaron Swartz drove him to suicide, while Anthropic's CEO Dario Amodei is still alive.",
-    "> N.B. JSTOR explicitly settled with Swartz, suffered no financial harm, and begged the federal government to drop the case... and the course of action of Carmen Ortiz', the responsible Attorney General, drove Aaron Swartz into suicide.",
-    "Perhaps really unpopular and a hot take. So what?It's a book. It's meant for the masses to consume and read. And so a computer read it and add it to it's intelligence that everyone else can access. What's the big deal?I don't think there is such a thing as copyright, patent or intellectual property rights in the AI world. What is the point of one human making another human pay to access the works of another human? There is no point but just accumulating wealth and superiority. Are we really going to sit here and ignore that maybe the professors had privileged lives and their parents or their ancestors enriched themselves on the backs of poor people.Either way, whatever the arguments, democra",
-    "Everyone in this thread arguing the legalese of what Aaron did vs what Anthropic did is missing the damn point.Yes, the exact crimes are not the same.Aaron was a vulnerable individual and a very easy target for an overzealous prosecutor. Anthropic is a large company with the money and resources to shield any individual working there from meaningful punishment. No one at anthropic is facing jail time for crimes that should carry a sentence. The crimes are similar and involve theft of copyrighted resources. Aaron’s point with JSTOR is that all that research had already been paid for by American taxpayers. JSTOR was just gatekeeping for profit.The message from Alsup is clear: if you have money,",
-    "> He is widely considered a co-founder of reddit, after merging with reddit, he rewrote the majority of its codebase from Lisp to Python.Internally, this was not the case in 2013. u/kn0thing and u/spez were considered the founders, their retired jerseys hung on the wall, and no one ever mentioned Aaron Swartz.",
-    "At the end of the day, Aaron Swartz couldn't face the music. Stop putting him on pedestal.",
-    "The rules are for everyone but some people also get special treatment b/c they know someone like Trump. Musk donated hundreds of millions of dollars to his presidential campaign to get special treatment for his businesses.",
-    "If you had them on camera doing it and proof they did it knowingly and willingly, then you could.Discovery forces evidence to be turned over, but only if it exists and you know about it. Does the evidence exist?It did in Swartz’s case, unfortunately for him. We don’t excuse an individual just because it’s harder to hold a corporation accountable. States have immense power over corps old and new, btw, it’s a failure of the people to not demand that be exercised, but this whole discussion is a non sequitur already.",
-    "> if Aaron had formed an LLC and hired someone to connect the laptop for him, jailtime would never have been under the tableYes, it would. Ortiz was pushing a novel interpretation of the CFAA under which ToS violations constituted criminal access. It has no legal precedent but was in vogue at the time. (After Swartz, it fell completely out of favor.)",
-    "> there has only ever been one type of slaveryNo. Nobody claimed this.> seem very tied to a very specific conception of slavery that only matches African-American slaves in the USI'm anchoring to that for discussions happening regarding conduct in America, yes. If minimum-wage jobs are literally slavery, then slavery–to a lot of Americans–isn't that bad, and slavery for Americans will by default mean slavery within the America context, i.e. chattel slavery.That said, slavery has real definitions and tests, and words like subject and serf exist because people have been debating and defining these terms for millennia, regardless of Reddit or NewsMax's redefinition of these terms.> that all tha",
-    "Franz Kafka told his friends, in no uncertain terms, that upon his death, his unfinished works should be burnt. This included The Trial and The Castle.We never had the right to tell the future what to do. That was never part of the deal. We barely have the right to tell other people what to do with the ideas we breathe into the world, and that right was only carved into the US Constitution (and English common law before it) because it was believed that it heavily incentivized creating more ideas.In the era where information flows as freely as it does... I'm not even sure that incentive works the way it was intended to anymore.When I'm thinking about this, I usually flip the script: why shoul",
-    "One of the issues a lot of people have is that if Aaron had formed an LLC and hired someone to connect the laptop for him, jailtime would never have been under the table and he wouldn't necessarily be directly liable for any large fines he couldn't pay.There is a general sentiment that it is wrong for licensed organizations of people to get away with crimes ranging from these to supporting literal child labor, when an unlicensed group or individual faces decades in prison for the same offenses.And there is another sentiment that Swartz would not have had to do what he did in the first place if copyright and the DMCA hadn't been erected only to be weaponized and discriminately applied,"
-   ],
    "summary_ko": "댓글에서는 기업의 저작물 무단 학습 문제를 두고 대기업과 개인의 처우 형평성을 비판하는 목소리가 높다. 일각에서는 AI 시대에 전통적 지적재산권과 저작권 개념이 유효한지 의문이라는 의견도 나온다.",
    "is_event": true,
    "kr_query": "앤트로픽 클로드 저작권 무단 학습",
@@ -676,9 +713,9 @@
    "title": "Wikipedia's Cleanup of AI-Generated Content",
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "discussion": "https://news.ycombinator.com/item?id=50257326",
-   "points": 452,
-   "comments": 209,
-   "r": 0.46,
+   "points": 481,
+   "comments": 218,
+   "r": 0.45,
    "at": "2026-10-27",
    "topics": [],
    "story_key": "url:spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
@@ -707,11 +744,44 @@
   },
   {
    "layer": "hn",
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "discussion": "https://news.ycombinator.com/item?id=50264853",
+   "points": 364,
+   "comments": 143,
+   "r": 0.39,
+   "at": "2026-10-27",
+   "topics": [
+    "모델릴리스",
+    "인프라·칩"
+   ],
+   "story_key": "url:brangus.io/survival-llm",
+   "_comments": [
+    "The irony is thick. The dev is paying Anthropic $200 a month, but $100 a year for code-signing is extortion.",
+    "Code signing and sandboxing exists for a very good reasons (security and privacy) and it's easy enough to ship a sandboxed app.",
+    "I also don't think the showcased response to the food question is any good?Throwing out food that was at 6 °C for 2 hours without tasting it is really paranoid, the answer should be \"it depends\". If not following government advice/requirements on safe storage conditions (which is tailored to high risk populations) meant certain illness then I would be seriously ill at least once a week, but I've never been.I would be waaaay more worried about catching a norovirus from someone who didn't wash their hands than raw meat being kept at 4-8C for 12h.",
+    "This is just crap. Why would you want something that can give you wrong answers (like 4 out of 20 like in the tables, that is much!) - in an emergency?",
+    "I don't think Wikipedia is a good benchmark here. Try 30 random articles and see how much of that information you would want to have with you in an emergency survival scenario.Either way the comparisons here are unfair. An LLM that runs off a backpack-sized solar panel and a laptop might be a substitute for a broad, low quality, surface-level encyclopedia but it's many orders of magnitude worse than a library of books.I would argue that in a survival situation the accuracy of information becomes even more important. If an LLM to misidentifies a plant (or a medical condition, its treatment, etc.) it could put you in an ER, but in a survival situation that could kill you.",
+    "Seems like a remarkably stupid idea as opposed to just having an extensive encyclopedia downloaded with a very thin client you can use to read from it.In an actual survival scenario power isn't guaranteed and errors of any kind can be life or death. So you need to minimize the resources used to get the thing working.",
+    "Not sure what the LLM is adding there then other than injecting a step into your search that could hallucinate.",
+    "That sounds fantastic and you could run it on a small solar panel and a big capacitor. Did you get any feedback about how it went in the field?",
+    "There are quite a few options that people lean on.- Traditional: a generator. Problem is that you need a fuel tank, but if you are aiming to get through a couple of weeks then that's possible.- Grid attached battery backup: good because in some places (like the UK) electricity at night is much cheaper than electricity during the day... so you can charge the battery and then save money and get payback on your installation. Bonus point is that if there is a grid outage then you have power, for a day or so if you are careful.- Grid attached with solar/wind: as above, but you can charge independently from the sun/wind... obviously in some places (like the UK) this has limited utility because the",
+    "Yeah that was my first reaction. In survival mode you want low tech not high tech.Books are pretty damn good and don't need 500W of GPU",
+    "The summarization is the main issue here. A fuzzy search is far less controversial. The LLM companies have done a good job synonymizing \"AI\" with their products however.",
+    "\"Survival LLM, the power is out and there's no food, how do I turn your computer on to ask your questions?\""
+   ],
+   "summary_ko": "비상 상황에서 환각 현상을 일으킬 수 있는 LLM을 사용하는 것은 위험하며 백과사전이나 실물 책 같은 아날로그 방식이 훨씬 안전하다는 비판이 주를 이뤘다. 반면 태양광 패널 등 제한된 환경에서 소형 모델을 활용하는 아이디어를 흥미롭게 보는 시도 일부 존재했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Concerning behavior from a popular open-weight AI model",
    "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
    "discussion": "https://news.ycombinator.com/item?id=50246658",
-   "points": 324,
-   "comments": 125,
+   "points": 327,
+   "comments": 128,
    "r": 0.39,
    "at": "2026-10-26",
    "topics": [
@@ -742,32 +812,18 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Debunking Cohere's claim of Qwen 3.8 Flash Next uploading to Alibaba remote URL",
-   "url": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgopmj/debunking_coheres_claim_of_qwen_38_flash_next/",
+   "title": "Dirt cheap GPUs coming next year",
+   "url": "https://x.com/thdxr/status/2115165365630026178",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xhep6w/dirt_cheap_gpus_coming_next_year/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스"
+    "인프라·칩"
    ],
-   "story_key": "hf:datasets/coherelabs"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "LiquidAI/LFM3-1.7B · Hugging Face",
-   "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgy8s3/liquidailfm317b_hugging_face/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:liquidai/lfm3-1.7b-gguf"
+   "story_key": "url:x.com/thdxr/status/2115165365630026178"
   },
   {
    "layer": "reddit",
@@ -775,7 +831,7 @@
    "title": "The reason why 5090's are $10k now...",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xh3iek/the_reason_why_5090s_are_10k_now/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xh3iek/the_reason_why_5090s_are_10k_now/",
-   "rank": 4,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -786,10 +842,38 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+   "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgy8s3/liquidailfm317b_hugging_face/",
+   "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:liquidai/lfm3-1.7b-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Artificial Analysis Intelligence Index v5 (major update)",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhdmlk/artificial_analysis_intelligence_index_v5_major/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xhdmlk/artificial_analysis_intelligence_index_v5_major/",
+   "rank": 5,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xhdmlk/artificial_analysis_intelligence_index_v5_major"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Ling-3.1-flash-1019 weights are out, and they released the base model too",
    "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgrr8n/ling31flash1019_weights_are_out_and_they_released/",
-   "rank": 5,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -803,7 +887,7 @@
    "title": "Real-time video captioning with LFM3-VL-2B running locally in-browser on WebGPU",
    "url": "https://huggingface.co/collections/LiquidAI/lfm3",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xh0otf/realtime_video_captioning_with_lfm3vl2b_running/",
-   "rank": 6,
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -816,30 +900,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "inclusionAI/Ling-3.1-flash-1019 · Hugging Face",
-   "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgpo4q/inclusionailing31flash1019_hugging_face/",
-   "rank": 7,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:inclusionai/ling-3.1-flash"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "baidu/Unlimited-OCR-2 · Hugging Face",
-   "url": "https://github.com/baidu/Unlimited-OCR",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgnbtq/baiduunlimitedocr2_hugging_face/",
+   "title": "Gemma 5 models soon ??",
+   "url": "https://x.com/osanseviero/status/2115351234811249111",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xhjn9d/gemma_5_models_soon/",
    "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "gh:baidu/unlimited-ocr"
+   "story_key": "url:x.com/osanseviero/status/2115351234811249111"
   },
   {
    "layer": "reddit",
@@ -860,16 +930,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "8x R9700 System Upgrade",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade/",
+   "title": "inclusionAI/Ling-3.1-flash-1019 · Hugging Face",
+   "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgpo4q/inclusionailing31flash1019_hugging_face/",
    "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade"
+   "story_key": "hf:inclusionai/ling-3.1-flash"
   },
   {
    "layer": "reddit",
@@ -888,24 +958,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Spark-X2.6-1.7B, almost the same perf as 4b",
-   "url": "https://huggingface.co/XHToken/Spark-X2.6-1.7B",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgw2qm/sparkx2617b_almost_the_same_perf_as_4b/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:xhtoken/spark-x2.6-1.7b"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "A 1.3B OCR model just hit 93.68 on real-world document parsing and there's now an AI judge for OCR errors",
    "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgx26j/a_13b_ocr_model_just_hit_9368_on_realworld/",
-   "rank": 13,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -916,9 +972,23 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "We put DeepSeek in charge of four Qwen3.5-9B models to reverse engineer binaries using smaller open models.",
-   "url": "http://b.ls",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgoxvu/we_put_deepseek_in_charge_of_four_qwen359b_models/",
+   "title": "8x R9700 System Upgrade",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xgwyx9/8x_r9700_system_upgrade"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "DeepSeek-V4.1-Flash-1017 at 41 tok/s on one 3090",
+   "url": "https://huggingface.co/nazeshinjite/DeepSeek-V4.1-Flash-1017-ds4-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xh9yf7/deepseekv41flash1017_at_41_toks_on_one_3090/",
    "rank": 14,
    "points": 0,
    "comments": 0,
@@ -927,21 +997,24 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:b.ls/"
+   "story_key": "hf:nazeshinjite/deepseek-v4.1-flash-1017-ds4-gguf"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "LiquidAI/LFM3-Omni-2B-GGUF",
-   "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xh1rwn/liquidailfm3omni2bgguf/",
+   "title": "OpenAI's major results over the last 3 months came from scaling test-time compute with agent swarms. I've been building an open-source equivalent for the past year, and I'd love for you guys to try it.",
+   "url": "https://github.com/ryoiki-tokuiten/Deepthink",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xh4bnd/openais_major_results_over_the_last_3_months_came/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:liquidai/lfm3-omni-2b-gguf"
+   "topics": [
+    "에이전트",
+    "인프라·칩"
+   ],
+   "story_key": "gh:ryoiki-tokuiten/deepthink"
   }
  ],
  "quiet_important": [
@@ -950,13 +1023,14 @@
    "title": "Anthropic S-1",
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "discussion": "https://news.ycombinator.com/item?id=50242939",
-   "points": 1689,
-   "comments": 1649,
+   "points": 1697,
+   "comments": 1660,
    "r": 0.98,
    "at": "2026-10-26",
    "topics": [],
    "story_key": "url:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "trust": [
+    "AI Supremacy",
     "Latent Space",
     "Zvi (DWATV)"
    ],
@@ -992,8 +1066,8 @@
    "title": "GPT-6.1 Terra",
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "discussion": "https://news.ycombinator.com/item?id=50248124",
-   "points": 624,
-   "comments": 419,
+   "points": 628,
+   "comments": 423,
    "r": 0.67,
    "at": "2026-10-26",
    "topics": [
@@ -1008,28 +1082,36 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "discussion": "https://news.ycombinator.com/item?id=50261589",
+   "points": 323,
+   "comments": 252,
+   "r": 0.78,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "trust": [
+    "AI Supremacy"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   }
  ],
  "models": [
   {
    "layer": "hf",
-   "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 962,
-   "likes": 3395,
-   "downloads": 105667,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017"
-  },
-  {
-   "layer": "hf",
    "title": "RecursiveSI/flint",
    "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 942,
-   "likes": 984,
-   "downloads": 10574,
+   "trending": 965,
+   "likes": 1112,
+   "downloads": 14047,
    "topics": [
     "모델릴리스"
    ],
@@ -1037,11 +1119,23 @@
   },
   {
    "layer": "hf",
+   "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "trending": 937,
+   "likes": 3467,
+   "downloads": 116770,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:deepseek-ai/deepseek-v4.1-flash-1017"
+  },
+  {
+   "layer": "hf",
    "title": "Nanbeige/Nanbeige4.3-33B",
    "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-   "trending": 668,
-   "likes": 676,
-   "downloads": 4785,
+   "trending": 682,
+   "likes": 691,
+   "downloads": 7412,
    "topics": [
     "모델릴리스"
    ],
@@ -1051,9 +1145,9 @@
    "layer": "hf",
    "title": "XHToken/Spark-X2.6-4B",
    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-   "trending": 601,
-   "likes": 798,
-   "downloads": 6191,
+   "trending": 556,
+   "likes": 826,
+   "downloads": 8222,
    "topics": [
     "모델릴리스"
    ],
@@ -1064,8 +1158,8 @@
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
    "trending": 418,
-   "likes": 1866,
-   "downloads": 750694,
+   "likes": 1900,
+   "downloads": 798943,
    "topics": [
     "모델릴리스"
    ],
@@ -1075,9 +1169,9 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-M3.1-Flash",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
-   "trending": 400,
-   "likes": 422,
-   "downloads": 11075,
+   "trending": 409,
+   "likes": 434,
+   "downloads": 13247,
    "topics": [
     "모델릴리스"
    ],
@@ -1087,9 +1181,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 398,
-   "likes": 9589,
-   "downloads": 2163739,
+   "trending": 397,
+   "likes": 9634,
+   "downloads": 2234788,
    "topics": [
     "모델릴리스"
    ],
@@ -1099,9 +1193,9 @@
    "layer": "hf",
    "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
    "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "trending": 381,
-   "likes": 403,
-   "downloads": 1105751,
+   "trending": 391,
+   "likes": 414,
+   "downloads": 1377570,
    "topics": [
     "모델릴리스"
    ],
@@ -1109,27 +1203,27 @@
   },
   {
    "layer": "hf",
-   "title": "InternScience/Sage-A1.5",
-   "url": "https://huggingface.co/InternScience/Sage-A1.5",
-   "trending": 333,
-   "likes": 346,
-   "downloads": 6613,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:internscience/sage-a1.5"
-  },
-  {
-   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 322,
-   "likes": 18546,
-   "downloads": 7522728,
+   "trending": 324,
+   "likes": 18575,
+   "downloads": 7515620,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:qwen/qwen3.8-27b"
+  },
+  {
+   "layer": "hf",
+   "title": "InternScience/Sage-A1.5",
+   "url": "https://huggingface.co/InternScience/Sage-A1.5",
+   "trending": 313,
+   "likes": 350,
+   "downloads": 8218,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:internscience/sage-a1.5"
   }
  ],
  "new_repos": [
@@ -1138,7 +1232,7 @@
    "title": "JustAResearcher/gpu-unlock-ada",
    "desc": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
    "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-   "stars": 4284,
+   "stars": 4346,
    "topics": [
     "인프라·칩"
    ],
@@ -1149,7 +1243,7 @@
    "title": "rddmwmddr/android-ad-cleaner",
    "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
    "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-   "stars": 3403,
+   "stars": 3995,
    "topics": [],
    "story_key": "gh:rddmwmddr/android-ad-cleaner"
   },
@@ -1158,7 +1252,7 @@
    "title": "t3dotgg/tstack",
    "desc": "The agent skills I use every day. Works with Claude Code and Codex.",
    "url": "https://github.com/t3dotgg/tstack",
-   "stars": 2018,
+   "stars": 2134,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1170,7 +1264,7 @@
    "title": "morganlinton/BeautifulRust",
    "desc": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, an",
    "url": "https://github.com/morganlinton/BeautifulRust",
-   "stars": 1315,
+   "stars": 1346,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1180,10 +1274,19 @@
   },
   {
    "layer": "github",
+   "title": "anhao/ai-pose-gallery-zh",
+   "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+   "url": "https://github.com/anhao/ai-pose-gallery-zh",
+   "stars": 1293,
+   "topics": [],
+   "story_key": "gh:anhao/ai-pose-gallery-zh"
+  },
+  {
+   "layer": "github",
    "title": "andyhuo520/digital-human-koubo",
    "desc": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude C",
    "url": "https://github.com/andyhuo520/digital-human-koubo",
-   "stars": 1094,
+   "stars": 1226,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1195,7 +1298,7 @@
    "title": "DenisSergeevitch/ex-ussr-kinship-research",
    "desc": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Rep",
    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-   "stars": 1059,
+   "stars": 1104,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1207,7 +1310,7 @@
    "title": "Snapintosh/Snapintosh",
    "desc": "EL2 hypervisor and toolchain that boots macOS on the ASUS A16 (Snapdragon X2 Elite), with an Adreno Metal/IOGPU stack",
    "url": "https://github.com/Snapintosh/Snapintosh",
-   "stars": 1014,
+   "stars": 1018,
    "topics": [
     "인프라·칩"
    ],
@@ -1215,15 +1318,42 @@
   },
   {
    "layer": "github",
-   "title": "yaojingang/GEOInflow",
-   "desc": "Self-hosted web and AI crawler analytics for Generative Engine Optimization (GEO). Track visitors, AI search referrals, crawl logs, content coverage, and conver",
-   "url": "https://github.com/yaojingang/GEOInflow",
-   "stars": 609,
-   "topics": [],
-   "story_key": "gh:yaojingang/geoinflow"
+   "title": "ZiChuanLan/agent-purge",
+   "desc": "One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.",
+   "url": "https://github.com/ZiChuanLan/agent-purge",
+   "stars": 742,
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "gh:zichuanlan/agent-purge"
+  },
+  {
+   "layer": "github",
+   "title": "Motionsites-AI/claude-skill",
+   "desc": "Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites.",
+   "url": "https://github.com/Motionsites-AI/claude-skill",
+   "stars": 703,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:motionsites-ai/claude-skill"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Quoting Terk Terkowitz",
+   "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+   "at": "2026-10-28T10:09",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Oct/28/terk-terkowitz",
+   "link_keys": [
+    "url:aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1549,22 +1679,8 @@
     "url:leanrada.com/notes/inline-rendering-currentscript"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "web-edit 0.1a2",
-   "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
-   "at": "2026-10-17T13:16",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/17/web-edit",
-   "link_keys": [
-    "gh:simonw/web-edit",
-    "url:tools.simonwillison.net/markdown-svg-renderer"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-28 02:05"
+ "enriched_at": "2026-10-28 10:54"
 }
