@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-30 20:07",
+ "updated": "2026-10-31 03:27",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
   "hn": 22,
-  "reddit": 30,
+  "reddit": 20,
   "hf": 15,
-  "github": 11,
+  "github": 13,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,8 +16,8 @@
    "title": "Gemini 4 Carbon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "discussion": "https://news.ycombinator.com/item?id=50276792",
-   "points": 1007,
-   "comments": 799,
+   "points": 1011,
+   "comments": 800,
    "r": 0.79,
    "at": "2026-10-28",
    "topics": [
@@ -47,28 +47,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
-   "discussion": "https://news.ycombinator.com/item?id=50257325",
-   "points": 677,
-   "comments": 660,
-   "r": 0.97,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:oioannou.com/blog/ai-promised-less-work",
-   "summary_ko": "AI 도입으로 업무량이 줄어들 것이라 기대했으나 오히려 더 많이 일하게 되었다는 주장을 두고 의견이 엇갈린다. 한쪽에서는 생산성이 폭발적으로 증가하면서 처리하는 업무의 총량이 늘어난 자연스러운 현상이라고 보는 반면, 다른 한쪽에서는 여전히 기술 발전이 실질적인 노동 시간 단축으로 이어지지 못하고 구조적 압박만 가중되고 있다고 지적한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50273396",
-   "points": 489,
-   "comments": 537,
-   "r": 1.1,
+   "points": 490,
+   "comments": 543,
+   "r": 1.11,
    "at": "2026-10-28",
    "topics": [],
    "story_key": "url:religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai",
@@ -79,11 +63,39 @@
   },
   {
    "layer": "hn",
+   "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+   "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+   "discussion": "https://news.ycombinator.com/item?id=50302814",
+   "points": 577,
+   "comments": 429,
+   "r": 0.74,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+   "summary_ko": "AI 거품 붕괴 시 정부가 빅테크를 구제하는 것에 반대하는 민주당의 결의안에 대해, 기술 발전과 경제적 영향력을 통제하기 위해 정부가 개입해야 한다는 찬성 측과 세금 낭비 및 불필요한 구제금융을 경계하는 비판 측의 의견이 맞섰다.",
+   "is_event": true,
+   "kr_query": "미국 민주당 AI 구제금융 반대 결의안",
+   "kr": [
+    {
+     "t": "미 하원 민주당, AI 기업 구제금융 반대 결의안 추진",
+     "u": "https://www.tokenpost.kr/news/policy/428988",
+     "d": "Thu, 29 Oct 2026",
+     "why": [
+      "결의안",
+      "구제금융",
+      "민주당",
+      "반대"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "We're releasing the weights of Mistral Large 4",
    "url": "https://mistral.ai/news/mistral-large-4-oss/",
    "discussion": "https://news.ycombinator.com/item?id=50289418",
-   "points": 1514,
-   "comments": 399,
+   "points": 1656,
+   "comments": 427,
    "r": 0.26,
    "at": "2026-10-29",
    "topics": [
@@ -94,6 +106,45 @@
    "is_event": true,
    "kr_query": "미스트랄 라지 가중치 공개",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+   "discussion": "https://news.ycombinator.com/item?id=50300683",
+   "points": 482,
+   "comments": 382,
+   "r": 0.79,
+   "at": "2026-10-30",
+   "topics": [
+    "모델릴리스",
+    "보안·사고"
+   ],
+   "story_key": "url:phorion.io/blog/offical-claude-code-vsx-compromise",
+   "summary_ko": "커서(Cursor) 마켓플레이스에 등록된 클로드 코드 관련 확장 프로그램에서 백도어 이슈가 발생해 논란이 되었다. 서드파티 마켓플레이스의 보안 검증 부실을 비판하며 공식 채널을 통한 설치와 에디터 보안 설정의 중요성을 강조하는 반응이 이어졌다.",
+   "is_event": true,
+   "kr_query": "커서 마켓플레이스 클로드 코드 백도어",
+   "kr": [
+    {
+     "t": "가짜 클로드 코드 확장이 커서에서 11시간 퍼졌다…최대 5,000명 SSH 백도...",
+     "u": "https://www.wikitree.co.kr/articles/1170601",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "코드",
+      "클로드"
+     ]
+    },
+    {
+     "t": "2.1.313 악성 클로드 코드 확장, 커서 마켓서 삭제",
+     "u": "https://www.tokenpost.kr/news/breaking/430254",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "커서",
+      "코드",
+      "클로드"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
@@ -119,76 +170,18 @@
   },
   {
    "layer": "hn",
-   "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
-   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "discussion": "https://news.ycombinator.com/item?id=50261819",
-   "points": 398,
-   "comments": 312,
-   "r": 0.78,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "summary_ko": "댓글에서는 AI 단속 도입이 감시 사회와 공권력의 남용으로 이어질 수 있다는 우려가 지배적이다. 반면 교통 법규 위반을 잡아내기 위한 불가피한 수단이라는 의견도 일부 존재한다.",
-   "is_event": true,
-   "kr_query": "경찰 AI 운전 단속",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "discussion": "https://news.ycombinator.com/item?id=50260814",
-   "points": 599,
-   "comments": 297,
-   "r": 0.5,
-   "at": "2026-10-27",
+   "title": "LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "discussion": "https://news.ycombinator.com/item?id=50290177",
+   "points": 575,
+   "comments": 311,
+   "r": 0.54,
+   "at": "2026-10-29",
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
-   "summary_ko": "댓글에서는 기업의 저작물 무단 학습 문제를 두고 대기업과 개인의 처우 형평성을 비판하는 목소리가 높다. 일각에서는 AI 시대에 전통적 지적재산권과 저작권 개념이 유효한지 의문이라는 의견도 나온다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 클로드 저작권 무단 학습",
-   "kr": [
-    {
-     "t": "\"AI가 엘비스 프레슬리 노래 무단학습\"…앤트로픽 540억원 피소",
-     "u": "https://www.yna.co.kr/view/AKR20261026014500075?input=1195m",
-     "d": "Mon, 26 Oct 2026",
-     "why": [
-      "무단",
-      "앤트로픽",
-      "학습"
-     ]
-    },
-    {
-     "t": "'엘비스 명곡 무단 학습'…앤트로픽, 545억원 저작권 소송 휘말려",
-     "u": "https://www.segye.com/newsView/20261026506401?OutUrl=naver",
-     "d": "Mon, 26 Oct 2026",
-     "why": [
-      "무단",
-      "앤트로픽",
-      "저작권",
-      "학습"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "discussion": "https://news.ycombinator.com/item?id=50261589",
-   "points": 385,
-   "comments": 291,
-   "r": 0.76,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "trust": [
-    "AI Supremacy"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
+   "story_key": "url:martinfowler.com/bliki/LLM-Voice.html",
+   "summary_ko": "LLM이 생성한 텍스트 특유의 어조와 상투적인 표현에 대해, AI 모델의 통제력이 여전히 부족하다는 증거라는 지적과 인간의 글과 달라 피로감을 준다는 비판이 나왔다. 반면 이를 기술 발전 과정의 부수적인 현상으로 보는 시도 존재한다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -198,9 +191,9 @@
    "title": "Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents",
    "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50280864",
-   "points": 432,
-   "comments": 264,
-   "r": 0.61,
+   "points": 442,
+   "comments": 277,
+   "r": 0.63,
    "at": "2026-10-28",
    "topics": [
     "에이전트",
@@ -235,30 +228,12 @@
   },
   {
    "layer": "hn",
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-   "discussion": "https://news.ycombinator.com/item?id=50290177",
-   "points": 492,
-   "comments": 260,
-   "r": 0.53,
-   "at": "2026-10-29",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:martinfowler.com/bliki/LLM-Voice.html",
-   "summary_ko": "LLM이 생성한 텍스트 특유의 어조와 상투적인 표현에 대해, AI 모델의 통제력이 여전히 부족하다는 증거라는 지적과 인간의 글과 달라 피로감을 준다는 비판이 나왔다. 반면 이를 기술 발전 과정의 부수적인 현상으로 보는 시도 존재한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
    "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
    "discussion": "https://news.ycombinator.com/item?id=50288019",
    "points": 336,
-   "comments": 242,
-   "r": 0.72,
+   "comments": 245,
+   "r": 0.73,
    "at": "2026-10-29",
    "topics": [
     "모델릴리스"
@@ -292,27 +267,11 @@
   },
   {
    "layer": "hn",
-   "title": "Wikipedia's Cleanup of AI-Generated Content",
-   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-   "discussion": "https://news.ycombinator.com/item?id=50257326",
-   "points": 516,
-   "comments": 241,
-   "r": 0.47,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-   "summary_ko": "위키백과가 생성형 AI 콘텐츠를 정화하는 과정을 두고, 인간 기여자를 보호해야 한다는 의견과 AI가 정화 작업의 도구로 자리 잡을 것이라는 전망이 맞섰다. 일각에서는 위키백과 역시 정치적 편향이나 링크 부패 등 전통적인 웹의 문제에서 자유롭지 않으며, AI 백과사전과의 교차 검증이 대안이 될 수 있다고 언급했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Claude Code regularly sends each background agent’s transcript to its model",
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "discussion": "https://news.ycombinator.com/item?id=50284255",
-   "points": 567,
-   "comments": 230,
+   "points": 574,
+   "comments": 234,
    "r": 0.41,
    "at": "2026-10-29",
    "topics": [
@@ -349,9 +308,9 @@
    "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "discussion": "https://news.ycombinator.com/item?id=50293047",
-   "points": 331,
-   "comments": 226,
-   "r": 0.68,
+   "points": 348,
+   "comments": 233,
+   "r": 0.67,
    "at": "2026-10-29",
    "topics": [
     "인프라·칩"
@@ -374,11 +333,27 @@
   },
   {
    "layer": "hn",
+   "title": "AI isn't replacing SREs, it's deskilling them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "discussion": "https://news.ycombinator.com/item?id=50305693",
+   "points": 290,
+   "comments": 216,
+   "r": 0.74,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "summary_ko": "AI가 SRE를 대체하는 대신 역량을 저하시키고 있다는 주장에 대해, 주니어 개발자들이 AI에 과도하게 의존하여 엉망인 인프라 코드를 양산하고 있으며 기업들은 SRE의 전문성 유지를 위한 투자를 기피하고 있다는 의견이 공감을 얻었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
    "url": "https://www.brangus.io/survival-llm",
    "discussion": "https://news.ycombinator.com/item?id=50264853",
-   "points": 538,
-   "comments": 202,
+   "points": 540,
+   "comments": 203,
    "r": 0.38,
    "at": "2026-10-27",
    "topics": [
@@ -396,8 +371,8 @@
    "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
    "url": "https://surgehq.ai/blog/dayjob-tax",
    "discussion": "https://news.ycombinator.com/item?id=50275626",
-   "points": 257,
-   "comments": 173,
+   "points": 260,
+   "comments": 174,
    "r": 0.67,
    "at": "2026-10-28",
    "topics": [
@@ -405,6 +380,24 @@
    ],
    "story_key": "url:surgehq.ai/blog/dayjob-tax",
    "summary_ko": "AI를 활용한 세금 신고서 작성과 세무사들의 오류에 관해 다양한 의견이 오갔다. 일부 댓글러들은 LLM이 실제 전문가의 수천 달러 규모 실수를 잡아낸 사례를 공유하며 긍정적으로 평가한 반면, 복잡한 세법이나 특수 케이스에서는 LLM이 여전히 엉뚱한 답변을 낸다고 지적했다. 또한 미국 정부와 세무 대행업체들이 자발적 자동 신고 시스템 도입을 로비로 가로막고 있다는 비판도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "discussion": "https://news.ycombinator.com/item?id=50296486",
+   "points": 381,
+   "comments": 161,
+   "r": 0.42,
+   "at": "2026-10-29",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:labs.ycombinator.com/projects/games/index.html",
+   "summary_ko": "마인크래프트와 마인두스트리에서 AI 에이전트 군집을 구동한 실험에 대해, 과거의 신경망 게임 실험처럼 협동 과정을 지켜보는 재미가 있다는 반응과 함께 AI가 문제를 해결한 후에도 멈추지 못하고 불필요한 작업을 만들어낸다는 지적이 나왔다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -427,10 +420,36 @@
   },
   {
    "layer": "hn",
+   "title": "US tech stocks see sharp falls over AI cost fears",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "discussion": "https://news.ycombinator.com/item?id=50306008",
+   "points": 171,
+   "comments": 146,
+   "r": 0.85,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "summary_ko": "AI 인프라 투자 비용과 수익성에 대한 시장의 우려가 커지면서 관련 빅테크 주가 하락에 대한 분석이 오간다. AI 검색 모델이 기존 검색 광고의 클릭 유도 수익 모델을 해치고 있다는 지적과 함께 향후 시장 조정 가능성이 제기된다.",
+   "is_event": true,
+   "kr_query": "미국 테크 주가 AI 비용 우려",
+   "kr": [
+    {
+     "t": "코스피, 장초반 ‘매도 사이드카’… 미국 빅테크 급락 ‘불똥’",
+     "u": "https://www.munhwa.com/article/11627585?ref=naver",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "미국",
+      "테크"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
    "url": "https://divagr.com/blog/qwenputer",
    "discussion": "https://news.ycombinator.com/item?id=50282838",
-   "points": 688,
+   "points": 691,
    "comments": 145,
    "r": 0.21,
    "at": "2026-10-29",
@@ -446,12 +465,30 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+   "url": "https://fig.blue/posts/duet-is-the-future/",
+   "discussion": "https://news.ycombinator.com/item?id=50292727",
+   "points": 122,
+   "comments": 138,
+   "r": 1.13,
+   "at": "2026-10-29",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:fig.blue/posts/duet-is-the-future",
+   "summary_ko": "현재의 AI 에이전트가 광고성 콘텐츠나 저품질 검색 결과 속에서 유용한 정보를 걸러내는 데 도움을 준다는 긍정적 평가가 나왔다. 반면 LLM이 사용자의 메시지와 자신의 출력을 혼동하거나 보안 제한을 우회하는 등의 부작용에 대한 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Why are good developers so wary of agentic development?",
    "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
    "discussion": "https://news.ycombinator.com/item?id=50289162",
-   "points": 95,
-   "comments": 133,
-   "r": 1.4,
+   "points": 101,
+   "comments": 138,
+   "r": 1.37,
    "at": "2026-10-29",
    "topics": [
     "에이전트"
@@ -467,9 +504,9 @@
    "title": "The Agent SDK",
    "url": "https://cursor.com/blog/agent-sdk",
    "discussion": "https://news.ycombinator.com/item?id=50273731",
-   "points": 141,
+   "points": 142,
    "comments": 132,
-   "r": 0.94,
+   "r": 0.93,
    "at": "2026-10-28",
    "topics": [
     "에이전트"
@@ -482,34 +519,16 @@
   },
   {
    "layer": "hn",
-   "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
-   "url": "https://fig.blue/posts/duet-is-the-future/",
-   "discussion": "https://news.ycombinator.com/item?id=50292727",
-   "points": 118,
-   "comments": 125,
-   "r": 1.06,
-   "at": "2026-10-29",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:fig.blue/posts/duet-is-the-future",
-   "summary_ko": "현재의 AI 에이전트가 광고성 콘텐츠나 저품질 검색 결과 속에서 유용한 정보를 걸러내는 데 도움을 준다는 긍정적 평가가 나왔다. 반면 LLM이 사용자의 메시지와 자신의 출력을 혼동하거나 보안 제한을 우회하는 등의 부작용에 대한 우려도 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Is my data used for model training?",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
-   "discussion": "https://news.ycombinator.com/item?id=50259406",
-   "points": 225,
-   "comments": 121,
-   "r": 0.54,
-   "at": "2026-10-27",
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "url": "https://news.ycombinator.com/item?id=50301479",
+   "discussion": "https://news.ycombinator.com/item?id=50301479",
+   "points": 132,
+   "comments": 127,
+   "r": 0.96,
+   "at": "2026-10-30",
    "topics": [],
-   "story_key": "url:privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
-   "summary_ko": "사용자 데이터가 AI 모델 학습에 사용되는지에 대해 대다수는 익명화된 데이터라면 크게 우려하지 않는다는 입장을 보였다. 그러나 일부는 광고 트래커나 제3자를 통한 프라이버시 유출 및 텔레메트리 수집에 대해 강한 우려를 제기했다.",
+   "story_key": "hn:50301479",
+   "summary_ko": "AI 도입으로 인한 피로감과 번아웃에 공감하며 개발자로서의 회의감을 토로하는 의견이 많다. 반면, 과거의 결정론적 소프트웨어 개발 방식에서 벗어나 통계적 확률과 실패 모드를 관리하는 새로운 엔지니어링 패러다임으로 받아들여야 한다는 시각도 존재한다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -521,9 +540,9 @@
    "title": "Why are good developers so wary of agentic development?",
    "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
    "discussion": "https://news.ycombinator.com/item?id=50289162",
-   "points": 95,
-   "comments": 133,
-   "r": 1.4,
+   "points": 101,
+   "comments": 138,
+   "r": 1.37,
    "at": "2026-10-29",
    "topics": [
     "에이전트"
@@ -536,12 +555,30 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+   "url": "https://fig.blue/posts/duet-is-the-future/",
+   "discussion": "https://news.ycombinator.com/item?id=50292727",
+   "points": 122,
+   "comments": 138,
+   "r": 1.13,
+   "at": "2026-10-29",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:fig.blue/posts/duet-is-the-future",
+   "summary_ko": "현재의 AI 에이전트가 광고성 콘텐츠나 저품질 검색 결과 속에서 유용한 정보를 걸러내는 데 도움을 준다는 긍정적 평가가 나왔다. 반면 LLM이 사용자의 메시지와 자신의 출력을 혼동하거나 보안 제한을 우회하는 등의 부작용에 대한 우려도 제기되었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50273396",
-   "points": 489,
-   "comments": 537,
-   "r": 1.1,
+   "points": 490,
+   "comments": 543,
+   "r": 1.11,
    "at": "2026-10-28",
    "topics": [],
    "story_key": "url:religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai",
@@ -574,48 +611,30 @@
   },
   {
    "layer": "hn",
-   "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
-   "url": "https://fig.blue/posts/duet-is-the-future/",
-   "discussion": "https://news.ycombinator.com/item?id=50292727",
-   "points": 118,
-   "comments": 125,
-   "r": 1.06,
-   "at": "2026-10-29",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:fig.blue/posts/duet-is-the-future",
-   "_comments": [
-    "Engineering's stereotypically low empathy for those who may not connect dots as readily is no problem if teams would make a habit of these simple mechanical compensations.",
-    "In my view, the current \"value\" is driven by the current artificial scarcity of quality web search results.For now with not all agents controlled by advertising engines, and not all content yet designed to honeypot them, today's agents make good headway bush-whacking their way to finding the right information on which to base task work for you.If the first page of SERPs for anything, and the extra time needed to suss out quality information to inform your work or task doesn't bother you, then this benefit isn't one you'll value.Put another way:Today's agents help \"cut through\" the same maze of value extraction that Silicon Valley (where market share means find a way to tell users your thing ",
-    "And we have to be honest: both agents will misuse users and the other way around. So you are asking Anthropic for a backing that will also get stress test by meatspace. I do like the idea: a prepaid or restricted amount credit card for agentic purposes, with the novelty being that amounts above threshold have some kind of protection within consumer law.",
-    "Interesting. The Grok Bot computer connects to your box via SSH and using herdr it can work well with Claude Code and Codex there?",
-    "I meant „the distinctive elements that make Duet better will be copied“. Have you read the article?",
-    "I use Claude for this stuff all the time. The difference is I have Claude create repeatable scripts which do the actual things on a schedule. Claude is never invoked in on a schedule, only by me. One example is job board search filtered for roles I'd be interested in. The script itself includes all the things I care about like being remote. Clear salary ranges. Type of work I want to be doing. Claude built a good script to scrape multiple sources and aggregate them into a sqlite database. It filters these out until a number of relevant roles (or amount of time has passed) that the script sends me a message and adds a reminder to my Apple account to check in on new job listings. At that point",
-    "More often than not these sorts of stories are \"I ignored all of Claude's warnings and told it YOLO and I'm totally surprised my production database was deleted!\"",
-    "I have literally never seen this and it doesn't make much since because the turns are flagged with metadata. It should be impossible for Claude to confuse your text for its own. I know because I use this metadata all the time. I've built hooks and processes against it.",
-    "LLMs regularly confuse my messages with their own. They'll say \"you said xyz\" when it was actually them. I heard the same principle can be used to bypass security restrictions, so maybe it's still an issue. (Or do they only get confused about authorship when security isn't at stake?)",
-    "It's a shame that it's not yet available outside the U.S. I'm using Dots; it's great that they keep me developing, but it still doesn't seem to be progressing well because it hasn't fully matched the quality I want or my context. (I may need to redesign the workflow with Dots) I want to try a Duet soon, too.",
-    "Was hoping for a conversational AI that can do background talks, was just curious, but I prefer to set it all up using Hermes anyway.Still disappointing to see so when things are not working on Graphene, though for some apps I suspect it's because I'm on Android 17?Weird thing is that my banking is app is well known for not being allowed because \"it uses the stricktest setting\" (whatever that is) yet install and runs fine via Aurora store...",
-    "You're getting downvoted, but I do increasingly find myself building products for a user of 1 (myself), sometimes not even bothering to create a Github repo. But integration is often the hard part, and it's nice when a company makes a core product that does the hard parts for you."
-   ],
-   "summary_ko": "현재의 AI 에이전트가 광고성 콘텐츠나 저품질 검색 결과 속에서 유용한 정보를 걸러내는 데 도움을 준다는 긍정적 평가가 나왔다. 반면 LLM이 사용자의 메시지와 자신의 출력을 혼동하거나 보안 제한을 우회하는 등의 부작용에 대한 우려도 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
-   "discussion": "https://news.ycombinator.com/item?id=50257325",
-   "points": 677,
-   "comments": 660,
-   "r": 0.97,
-   "at": "2026-10-27",
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "url": "https://news.ycombinator.com/item?id=50301479",
+   "discussion": "https://news.ycombinator.com/item?id=50301479",
+   "points": 132,
+   "comments": 127,
+   "r": 0.96,
+   "at": "2026-10-30",
    "topics": [],
-   "story_key": "url:oioannou.com/blog/ai-promised-less-work",
-   "summary_ko": "AI 도입으로 업무량이 줄어들 것이라 기대했으나 오히려 더 많이 일하게 되었다는 주장을 두고 의견이 엇갈린다. 한쪽에서는 생산성이 폭발적으로 증가하면서 처리하는 업무의 총량이 늘어난 자연스러운 현상이라고 보는 반면, 다른 한쪽에서는 여전히 기술 발전이 실질적인 노동 시간 단축으로 이어지지 못하고 구조적 압박만 가중되고 있다고 지적한다.",
+   "story_key": "hn:50301479",
+   "_comments": [
+    "True, but a transformer system regresses to the mean. I don’t mind that with my bank’s app (in fact thats probably a good thing) but there are other kinds of applications where creativity will be required.I really doubt we’ll have systems that come up with the Apple folding phone’s “blurry image of the outside screen as you open that snaps into focus as you finish opening it” feature, at least for a very long time. The very training system of these foundation models works against it.",
+    "Indeed I am having the same mental overload, but I am starting to shift my mindset.I realised that everyone in my company has the same mental overload.So instead of focusing on myself, I found it easier to focus on the people I work with. What are they doing? But also scheduling, in the next meeting what will I share? Then I work backwards from that.",
+    "yep. ive accepted it, called it a good run, put away all my fun personal projects, and started pursuing a nursing degree i can treat as a stable day jobwith code all i wanted to do was code. with a nursing at least ill want to leave it at the hospital (yes nurse ptsd is real but nurse pay is great in pnw)i think it might be good to have a job i treat as a job and not a passion i carry with me everywhere",
+    "No body (at least I know of) buys software for hand crafted beautiful code or collects them.",
+    "Putting all my requirements into words just to be misunderstood is the worst part. In my brain I have everything layed out. Then, the clanker will miss nuances and I have to elaborate or realgin. It would be okay if it would be a junior. But it is advertised as a superior.I understand that faster results may be rewarding; But nothing as rewarding then refactoring some legacy application by hand and deleting 50% more LoC then adding/modifying. Or picking the exact right abstraction now which I will use in two weeks from now and happily grind on my solid, craftsmen stones layed out beforehand.Imho our craft was not understood beforehand. Now folks think they can grasp everything one mentions o",
+    "Yes. Everyone is forcing AI everywhere and nobody uses AI well.AI is a net negative in terms of mental health.It also creeps into hobbies, especially video games where it's absolutely ruined the decomp/recomp scene. AI slop recomps are a cancer on what used to be an incredible revolution in coding.",
+    "Some days I get far more done than my capacity and end up in an addicted state where I just can't stop working, and some days I don't even want to look at an AI chat window.. I also don't really get the feeling that I'm working.",
+    "I'm not tired of work per se, but I'm definitely tired of what Internet is becoming: AI generated articles on AI generated websites, AI generated videos about AI generated products, AI generated emails inviting me to test AI generated features. AI generated movies and games coming soon. At work it's all AI generated presentations about how AI solves everything, AI on AI for AI with AI by AI, AI, AI, AI, AI, AI...",
+    "I don't really see how it is as different as you say. Even if a system is stochastic, it can still be controlled, it's just a different type of engineering. Much of traditional engineering works exactly like this, with tolerances and probability rather than absolute determinism.I think we (software engineers) are suffering from partial blindness to this aspect of engineering given that software has always been so extremely deterministic. We've trained ourselves that solving a problem means composing small fully deterministic parts into deterministic systems, and the prospect of having to work more with statistical confidence and managing failure modes feels scary and wrong.",
+    "Yes it's like I'm being chased by a ghost telling me I need to be more productive. And if I don't use my weekly limit to at least 90% I'm just wasting money and tokens. Should I just burn tokens endlessly? Is that a goal in itself? Where is the vision? Ami really building something worthwhile?",
+    "> Are people reviewing all the tests that have been created automatically?Absolutely not! Some people ask a code assistant to write only integration/end-to-end tests and commit them. Unittests is only to help LLM generate correct code.",
+    "Exactly, which shows review and prod both miss things. Mutation testing (Stryker, mutmut, PIT) is how you find out which tests can’t fail."
+   ],
+   "summary_ko": "AI 도입으로 인한 피로감과 번아웃에 공감하며 개발자로서의 회의감을 토로하는 의견이 많다. 반면, 과거의 결정론적 소프트웨어 개발 방식에서 벗어나 통계적 확률과 실패 모드를 관리하는 새로운 엔지니어링 패러다임으로 받아들여야 한다는 시각도 존재한다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -625,9 +644,9 @@
    "title": "The Agent SDK",
    "url": "https://cursor.com/blog/agent-sdk",
    "discussion": "https://news.ycombinator.com/item?id=50273731",
-   "points": 141,
+   "points": 142,
    "comments": 132,
-   "r": 0.94,
+   "r": 0.93,
    "at": "2026-10-28",
    "topics": [
     "에이전트"
@@ -640,11 +659,51 @@
   },
   {
    "layer": "hn",
+   "title": "US tech stocks see sharp falls over AI cost fears",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "discussion": "https://news.ycombinator.com/item?id=50306008",
+   "points": 171,
+   "comments": 146,
+   "r": 0.85,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "_comments": [
+    "I haven't used it for months since the admins permabanned by 15 year old account for citing a controversial wikipedia article directly related to a controversial UK news story on a UK news subreddit.Kinda annoyed me because I am more aligned with the normie take and was just steel-manning in good faith – which was clear from my comment and made clear again in my appeal.To be fair though, apparently there are topics which are not allowed to be discussed on Reddit and I naively didn't realise this.",
+    "If I had interest in FAANGS right now. I might sell now in anticipation of reallocation to Anthropic and other new entrants to the public markets in the AI space. I wonder if some of this is partly the liquidity shock an Anthropic IPO may cause for retail investors.",
+    "AI is going to kill the internet, more specifically, AI is going to kill anything with screens, and whatever happens ultimately we will be better of for it.",
+    "If the Democrats win they will of course impeach Trump, but he can't be convicted without 2/3 of the Senate, and the Democrats have no chance of attaining that in the Senate. So the only chance of Trump being convicted while in office is if the Republicans turn on him, which I don't see happening without something very dramatic happening, like him attempting (and hopefully failing) to use nuclear weapons against Iran.",
+    "I think about my younger self who believed in 'capitalism'. The idea is great in concept, but let's be clearer that if you don't have capital, then you personally don't and won't have capitalism.",
+    "Did you dump them into Bonds or are you just sitting on cash?I always find these movements very interesting because you can't have everything decrease in price. If demand for Google drops there should have to be an increased demand in something else.",
+    "That is the correct way to use a knowledge retrieval chatbot. The problem here is the AI companies present them as these all-knowing things, and they're so new that most people do not know how to use them effectively (sort of like how Google-Fu was a superpower 20 years ago).Taking a response at face value is just asking for trouble; they're useful primarily for finding references. The summaries are a good way of prioritizing what to read, and if nothing else the documents it cites tend to be relevant.The people who get burned by these things are the ones who just blindly trust the generated text.Also some of the skill is learning to feel out when you can trust it and when you can't, but if ",
+    "It seems he's responding to a question asking if he thinks people will be able to run local AI on their own computers. Not arguing on higher prices. So it comes off more as \"people shouldn't get to have enough RAM to run local AI because it's an inefficient use of resources\" rather than the capitalist \"I can afford to pay more for RAM so I should get priority\".",
+    "> AI results from search engines don't generate the click-through revenue that search ads did.Doesn't this seem totally obvious? Like, they removed the need to click through things, that's kind of the defining behavior of these AI results.",
+    "Topically—the whole reason for the login walls was to fulfill the requirements of their Google/OpenAI data deals. OpenAI wanted to pull up the ladder behind them.It's a very typical failure mode for publicly-traded companies. For a CEO to have the incentive to do something that will kill their company, in a few quarters' time—in exchange for a one-off windfall that will boost the stock price, CEO compensation, &c. Short-termism at the \"eating the golden goose\" level.> [May 2024] \"In its IPO prospectus, Reddit revealed that it has contractual agreements to license its data to customers including Google worth a combined over $200 million. And, in its first earnings report as a public company, ",
+    "I don't see how the cost of inferencing existing models can become prohibitive. Multiple providers are selling DeepSeek 4.1 Flash tokens at just above cost, and seem to be doing so profitably.What we do potentially lose out on are the next few generations of models in the case of a market correction, as the big labs won't be able to afford training anymore.",
+    "And for an identical reason.As long as there is money to be made by being the first thing pushed to a consumer's eyes when they want information, search is an adversarial market, doomed to cat and mouse games and failure states.The early days of PageRank were entirely anomalous because nobody was poisoning the well they were using yet. The second they made doing so financially incentivized, that situation went away and Pagerank and all algorithms like it were doomed to struggle."
+   ],
+   "summary_ko": "AI 인프라 투자 비용과 수익성에 대한 시장의 우려가 커지면서 관련 빅테크 주가 하락에 대한 분석이 오간다. AI 검색 모델이 기존 검색 광고의 클릭 유도 수익 모델을 해치고 있다는 지적과 함께 향후 시장 조정 가능성이 제기된다.",
+   "is_event": true,
+   "kr_query": "미국 테크 주가 AI 비용 우려",
+   "kr": [
+    {
+     "t": "코스피, 장초반 ‘매도 사이드카’… 미국 빅테크 급락 ‘불똥’",
+     "u": "https://www.munhwa.com/article/11627585?ref=naver",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "미국",
+      "테크"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Gemini 4 Carbon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "discussion": "https://news.ycombinator.com/item?id=50276792",
-   "points": 1007,
-   "comments": 799,
+   "points": 1011,
+   "comments": 800,
    "r": 0.79,
    "at": "2026-10-28",
    "topics": [
@@ -674,36 +733,125 @@
   },
   {
    "layer": "hn",
-   "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
-   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "discussion": "https://news.ycombinator.com/item?id=50261819",
-   "points": 398,
-   "comments": 312,
-   "r": 0.78,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "summary_ko": "댓글에서는 AI 단속 도입이 감시 사회와 공권력의 남용으로 이어질 수 있다는 우려가 지배적이다. 반면 교통 법규 위반을 잡아내기 위한 불가피한 수단이라는 의견도 일부 존재한다.",
+   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+   "discussion": "https://news.ycombinator.com/item?id=50300683",
+   "points": 482,
+   "comments": 382,
+   "r": 0.79,
+   "at": "2026-10-30",
+   "topics": [
+    "모델릴리스",
+    "보안·사고"
+   ],
+   "story_key": "url:phorion.io/blog/offical-claude-code-vsx-compromise",
+   "_comments": [
+    "I had to fill a security questionnaire today. One of the questions was\"Do you use crowdstrike falcon?\"",
+    "Cursor was the first AI coding tool I used that had a \"wow\" factor and got me to switch over from typing out most of my code to having AI write most of it. But then when I used Claude Code for the first time, I never went back to Cursor.I can see the value in a world where you still want to be a bit more hands-on with your code, but that didn't feel worth paying for anymore. Now if I want to be hands-on I actually prefer a minimalist editor with no AI features at all, while agents run in my terminal.",
+    "I'd suggest stop to use the word 'only' as it can be perceive wrongly here.you can simply say Cursor users were affected. or exclusively.just a tip from someone who worked tech support in cyber a long time. choice of words can really help change sentiments in these situations.'only server xyz was affected' vs. 'server xyz was affected' or 'incident was isolated to server xyz' was often difference between shouting and crying customers or people understanding what was really meant.",
+    "> The versions on our official channels are not affected and this only impacts Cursor users.Is Cursor not an official channel for Claude?",
+    "I realized this earlier this year and dumped Cursor for just vscode along with 20x subs to Claude and OpenAI. Much cheaper and nothing of value was lost.",
+    "To anyone who might be reading this exchange, actually there is recently added builtin setting for delayed auto-update, `extensions.autoUpdateDelay`, see https://github.com/microsoft/vscode/issues/316867 and https://github.com/microsoft/vscode/pull/321039",
+    "I’m fine with that. I use a top-level directory for all of my code, and restricting extension access to that directory is a great idea.",
+    "I remember when Crowdstrike was all about mobilizing your spare computer to DDOS the bad guys.",
+    "Those sound good, but say in this case you had the compromised extension which had its own ssh key to an IP that wasn't yours. I'm not sure how you easily prevent that connection without preventing the ones you need through sandboxing. Maybe a firewall/very specific network filtering in allowlist?",
+    "Considering that the biggest and most successful play for SpaceXAI in the AI space has been \"Sell compute to Anthropic\" I also wouldn't say that all of the grok junk has been obviously successful, either.",
+    "Yet at the same time it directly affects you by having your extension on this marketplace. So I don't think you can absolve yourself of all responsibility that easily.",
+    "If I had to guess it's that very few people use it for actual security guarantees and most use it just to be able to fill out the questionnaire or compliance box saying \"we do this\"."
+   ],
+   "summary_ko": "커서(Cursor) 마켓플레이스에 등록된 클로드 코드 관련 확장 프로그램에서 백도어 이슈가 발생해 논란이 되었다. 서드파티 마켓플레이스의 보안 검증 부실을 비판하며 공식 채널을 통한 설치와 에디터 보안 설정의 중요성을 강조하는 반응이 이어졌다.",
    "is_event": true,
-   "kr_query": "경찰 AI 운전 단속",
-   "kr": []
+   "kr_query": "커서 마켓플레이스 클로드 코드 백도어",
+   "kr": [
+    {
+     "t": "가짜 클로드 코드 확장이 커서에서 11시간 퍼졌다…최대 5,000명 SSH 백도...",
+     "u": "https://www.wikitree.co.kr/articles/1170601",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "코드",
+      "클로드"
+     ]
+    },
+    {
+     "t": "2.1.313 악성 클로드 코드 확장, 커서 마켓서 삭제",
+     "u": "https://www.tokenpost.kr/news/breaking/430254",
+     "d": "Fri, 30 Oct 2026",
+     "why": [
+      "커서",
+      "코드",
+      "클로드"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
-   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "discussion": "https://news.ycombinator.com/item?id=50261589",
-   "points": 385,
-   "comments": 291,
-   "r": 0.76,
-   "at": "2026-10-27",
+   "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+   "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+   "discussion": "https://news.ycombinator.com/item?id=50302814",
+   "points": 577,
+   "comments": 429,
+   "r": 0.74,
+   "at": "2026-10-30",
    "topics": [],
-   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "trust": [
-    "AI Supremacy"
+   "story_key": "url:progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+   "_comments": [
+    "An investment that needs to return 7x, alone, on hundreds of billions to trillions of investments... While not destroying the entire economy, or replacing it?",
+    "All Dems do is act weak.Even when they’re in the majority they play victim. “Oh no Mitch McConnell doesn’t like our bill :( We can’t do anything”. The party is too busy trying to court Republicans to get anything done.Or they sabotage themselves. Pushing Hillary and losing was preferred to risking a Sanders win and losing corporate funding. Pushing Biden, who promised to run one term, then running him a second. Only to undemocratically replace him cause people didn’t want a senile candidate.You have Bush-era never-MAGA Republicans publicly making statements on how they’re voting Democrat. They seem more willing to vote D than their actual base. It’s ridiculous.Meanwhile, Republicans actively",
+    "And by doing so you have immediately excluded anyone who doesn't have an army of lawyers on the payroll from politics. And massively benefitted the incumbent, an icumbant who has, I should remind you, repeatedly stated they would reject any bill out of hand based on the party it was proposed by rather than any contents. The idea that everyone even considered for politics must have an entire, complete government apparatus ready to slot in with zero warning is crazy - it's why public offices come with funding and staff.I do somewhat wonder if people's opinions about this would survive the current incumbent changing. From previous experience, I have my doubts.> They don’t. They’re introduced al",
+    "Agree. What about the part where the government spends 30%+ more than it takes in which has been its modus operandi for just the last 2 decades or so?",
+    "They realized that diminishing women's rights, just to please a few men who desire to be women, was a significant vote loser, and changed their policy positions accordingly.This is a good thing. Though it would have been better if they hadn't pushed these policies in the first place. Still, it's progress.",
+    "Well that's your incorrect opinion and you're welcome to it. It's wrong though.Juneteenth national holiday, Emmett Till Anti-lynching act, Inflation reduction act to name a few. Plenty of budget resolutions are also made that eventually become law.",
+    "I was commenting on this though> They bailed out Intel and the stock recovered.I don’t think the stock (or the company) has recovered at all. Neither profits nor revenue (see my links above).But hey, who knows what the future brings.",
+    "I think so too. The “I get elected if I am pro Trump” factor seems to have flipped in spots to where he is a negative. Seems obvious when a wannabe king dies there is a power struggle that can rip the party apart. That might be the only hope for America to salvage a decent future, if like 1/3 of republicans started thinking about what’s best for their constituents and voters instead of how to funnel the most money to their pockets. There will still be a lot of grifters trying to hold on to squeeze out a few dollars but maybe a couple of the party grow some principles.",
+    "Look at the opponents of Democrats (the party), and where they stand on trans rights. Most Democrats support trans rights, almost no Republicans do. We can all close our eyes and wish we had a system that didn't reduce down to two parties, but at the end of the day we're all going to get either a Democrat or a Republican representing us unless you live in a hyper specific part of the country.Earlier today I had to grit my teeth and vote for Josh Turek in Iowa, even though I think he's a shithead who threw trans people under the bus just to eke out a few more votes from conservative fence sitters. I could've made a protest vote, but the realpolitik of the situation is I'm either getting Turek",
+    "No one doing this thinks they're going to fail or else they wouldn't be doing it. But they do think they need a government moat to succeed. Whether that's framed as a \"bailout\" or \"regulation\", it's still the government stepping in to save the day.In terms of \"act responsibly\" what I mean in this case is the perception that there's a lot of money flowing in circles here, where customers are investors and investors are customers and competitors. That's how I see this whole party crashing down if it does, if there's too much creative accounting going on when the music stops, some companies might not find a chair to sit on.",
+    "It’s not hard. It’s power intensive. It’s $15k/mo at 15 cents / kWh. If you want the experience there’s a massive A100 liquidation sale that happened recently https://www.ebay.com/itm/178522410497These come around once in a while. Go get that seller’s Gaudi rig if you want to test the experience. It costs one-time as much as the monthly power cost on a B300 NVL72 and uses a fifth the power.",
+    "On the other hand Bernie wants the government to take a 50% stake in the AI labs. Can we make up our minds, do we expect the bubble to burst or do we expect a windfall? ;-PEither way Anthropic will IPO soon and we’ll be one step closer to finding out.One thought I had is that, bubble or not, this technology is likely going to upend economies of entire nations and impact all people, so it would be better if controlled by the people which is (in theory) represented by the government.Looking at this as a backdoor bailout is the wrong perspective; it should be more like giving the people control over their economic future."
    ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
+   "summary_ko": "AI 거품 붕괴 시 정부가 빅테크를 구제하는 것에 반대하는 민주당의 결의안에 대해, 기술 발전과 경제적 영향력을 통제하기 위해 정부가 개입해야 한다는 찬성 측과 세금 낭비 및 불필요한 구제금융을 경계하는 비판 측의 의견이 맞섰다.",
+   "is_event": true,
+   "kr_query": "미국 민주당 AI 구제금융 반대 결의안",
+   "kr": [
+    {
+     "t": "미 하원 민주당, AI 기업 구제금융 반대 결의안 추진",
+     "u": "https://www.tokenpost.kr/news/policy/428988",
+     "d": "Thu, 29 Oct 2026",
+     "why": [
+      "결의안",
+      "구제금융",
+      "민주당",
+      "반대"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "AI isn't replacing SREs, it's deskilling them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "discussion": "https://news.ycombinator.com/item?id=50305693",
+   "points": 290,
+   "comments": 216,
+   "r": 0.74,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "_comments": [
+    "The problem is, ultimately, most companies have this mindset. Certainly the ones you've heard of do.Charlie Munger once said, \"Show me the incentives, and I'll show you the outcomes.\" There are very, very, very few actual incentives to operate a real infosec effort at most companies. Think about it: how many companies have you heard of going out-of-business because of breaches? If you're like most Americans, you've probably received at least one letter from some company you did business with telling you that their systems were compromised and your data may or may not have been stolen as a result. They'll usually close out the letter with an offer of free credit monitoring for some finite len",
+    "I also work in the space.I think you’d be surprised if you look at the younger (post-2000-ish) companies. Specifically about this part:> If you run simple workloads, it’s probably not necessary but then you’ll probably be paid for that.You would be surprised how many workloads either are simple, or can be ham-fistedly shoved into a “simple” architecture.Eg I’ve seen a lot of Postgres-on-k8s solutions that are basically just Postgres on bare metal with a bunch of useless abstractions. It writes to local disk, moving the pod to a new host is basically restoring from backup. Wrap it in some tool that ingests YAML and call it a day.k8s is sort of the king of this. I hear people say they understa",
+    "Of course it's misunderstood and misused, but that doesn't mean that more discerning people can't understand where it came from and why.",
+    "A (very) key difference is that this behaviour is mandated by the FAA, and consistent across all providers. There isn't a (legal) option of just not-doing-it because it's \"cheaper\".Modern companies generally do not have the same incentive to keep their SRE (or engineers in general) upskilled. Cutting SRE because \"we don't really have incidents, why do we keep paying them? If we need to do layoffs I would rather keep a product engineer\" will always* (okay, _generally_) be the direction that organizations go without external influence or requirements.Now I am sure there are some companies or industries where this is required (for example, I would not be surprised if certain military software/s",
+    "Hang in there, in a few years we'll be mining gold cleaning up the mess.I work in an AI sceptical organization, it's not that we don't use AI agent or consult chat bots, but they are kept a good distance from production. Talking to other SREs in AI heavy and AI first companies I don't see that ending well. SREs struggled with operating applications from developers who cannot or will not understand how computers and the internet work. Now many of the junior developers are even worse and some of them are given the title of \"DevOps\" and they are using AI to create some of the most broken ass Terraform code and bastard Helm charts to run their broken code. Some SREs are spending more time fighti",
+    "Aviation is a perfect industry to learn from if you are willing to hold IT to the same standard of regulatory scrutiny. You can bet your entire net worth that anyone running anything in the industry would fight tooth and nail to prevent that sort of regime from coming into force.",
+    "On-call problems are mostly just a result of Kubernetes' \"cattle not pets\" brainrot ideology where people throw local simulate-ability out the window because the Rube-Goldberg web of pods and operators and cluster state gets too complex to simulate locally or keep in your head (esp. if code is located in 50+ microservice repos).Machines (esp. Virtual Machines) are ultimately predictable and crashes don't \"just randomly happen\". But it's what this entire \"enterprise cloud\" culture has brought in, the idea that it's impossible to simulate all possible failure conditions of a cluster locally and therefore we shouldn't even try doing it. Maybe that's true at Google scale, but most companies are ",
+    "I believe it is more than you've missed the forest for the trees. You haven't accurately explained what understanding means. One might not rigorously understand x÷x=1 but still 'naturally' see that having two apples and taking one leaves one. And that's the thing: The genie, as in LLMs, are analogy machines so you can approach problems without a formal understanding as long as you can grasp the analogies. We have real world proof with 'vibe coders' producing incredibly complex math without much formal understanding of it. They know how to describe the input and interpret the output using words that relate to everyday things that they are familiar with, much like the apples on the table, and ",
+    "Your first sentence would lead one to believe that you have some substantial evidence to demonstrate the ignorance and falsehood you identified. It's impressive that you are regurgitating the same formulaic-template set of cliches that boil down to \"X is so complex bro, how can you even?\".Note that I never claimed aviation relies on AI right now, most of the Autopilot systems are deterministic automation systems, but the original point stands regardless.",
+    "Oblig. Simpsons:Homer: “There’s three ways to do things. The right way, the wrong way, and the Max Power way!Lisa: \"Isn’t that also the wrong way?\"Homer: \"Yeah, but... faster.”",
+    "The rigid process around agile is absolutely mind-blowing to me, and it seems like it's everywhere in corporate environments, but my current client dials it up to 11. Maddening.",
+    "> I dunno wtf is gonna happen.me either but i do know it will happen sooner than i expect"
+   ],
+   "summary_ko": "AI가 SRE를 대체하는 대신 역량을 저하시키고 있다는 주장에 대해, 주니어 개발자들이 AI에 과도하게 의존하여 엉망인 인프라 코드를 양산하고 있으며 기업들은 SRE의 전문성 유지를 위한 투자를 기피하고 있다는 의견이 공감을 얻었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -714,8 +862,8 @@
    "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
    "discussion": "https://news.ycombinator.com/item?id=50288019",
    "points": 336,
-   "comments": 242,
-   "r": 0.72,
+   "comments": 245,
+   "r": 0.73,
    "at": "2026-10-29",
    "topics": [
     "모델릴리스"
@@ -749,12 +897,28 @@
   },
   {
    "layer": "hn",
+   "title": "Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees",
+   "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
+   "discussion": "https://news.ycombinator.com/item?id=50265594",
+   "points": 226,
+   "comments": 153,
+   "r": 0.68,
+   "at": "2026-10-27",
+   "topics": [],
+   "story_key": "url:bret.dk/raspberry-pi-zero-3-w-pi-4-model-a",
+   "summary_ko": "댓글에서는 라즈베리 파이 신제품 유출 소식과 함께 전력 소모, 가격 정책, 그리고 경쟁사인 바나나파이 및 오렌지파이 제품들과의 성능 비교에 대한 토론이 오갔다. 일부 사용자들은 최근 라즈베리 파이의 가격 인상과 부속품 판매 정책에 아쉬움을 드러내기도 했다.",
+   "is_event": true,
+   "kr_query": "라즈베리 파이 제로 3W 파이 4",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "discussion": "https://news.ycombinator.com/item?id=50293047",
-   "points": 331,
-   "comments": 226,
-   "r": 0.68,
+   "points": 348,
+   "comments": 233,
+   "r": 0.67,
    "at": "2026-10-29",
    "topics": [
     "인프라·칩"
@@ -777,27 +941,11 @@
   },
   {
    "layer": "hn",
-   "title": "Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees",
-   "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
-   "discussion": "https://news.ycombinator.com/item?id=50265594",
-   "points": 226,
-   "comments": 153,
-   "r": 0.68,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:bret.dk/raspberry-pi-zero-3-w-pi-4-model-a",
-   "summary_ko": "댓글에서는 라즈베리 파이 신제품 유출 소식과 함께 전력 소모, 가격 정책, 그리고 경쟁사인 바나나파이 및 오렌지파이 제품들과의 성능 비교에 대한 토론이 오갔다. 일부 사용자들은 최근 라즈베리 파이의 가격 인상과 부속품 판매 정책에 아쉬움을 드러내기도 했다.",
-   "is_event": true,
-   "kr_query": "라즈베리 파이 제로 3W 파이 4",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
    "url": "https://surgehq.ai/blog/dayjob-tax",
    "discussion": "https://news.ycombinator.com/item?id=50275626",
-   "points": 257,
-   "comments": 173,
+   "points": 260,
+   "comments": 174,
    "r": 0.67,
    "at": "2026-10-28",
    "topics": [
@@ -814,9 +962,9 @@
    "title": "Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents",
    "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
    "discussion": "https://news.ycombinator.com/item?id=50280864",
-   "points": 432,
-   "comments": 264,
-   "r": 0.61,
+   "points": 442,
+   "comments": 277,
+   "r": 0.63,
    "at": "2026-10-28",
    "topics": [
     "에이전트",
@@ -851,28 +999,12 @@
   },
   {
    "layer": "hn",
-   "title": "Is my data used for model training?",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
-   "discussion": "https://news.ycombinator.com/item?id=50259406",
-   "points": 225,
-   "comments": 121,
-   "r": 0.54,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
-   "summary_ko": "사용자 데이터가 AI 모델 학습에 사용되는지에 대해 대다수는 익명화된 데이터라면 크게 우려하지 않는다는 입장을 보였다. 그러나 일부는 광고 트래커나 제3자를 통한 프라이버시 유출 및 텔레메트리 수집에 대해 강한 우려를 제기했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "LLM Voice",
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "discussion": "https://news.ycombinator.com/item?id=50290177",
-   "points": 492,
-   "comments": 260,
-   "r": 0.53,
+   "points": 575,
+   "comments": 311,
+   "r": 0.54,
    "at": "2026-10-29",
    "topics": [
     "모델릴리스"
@@ -885,56 +1017,32 @@
   },
   {
    "layer": "hn",
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "discussion": "https://news.ycombinator.com/item?id=50260814",
-   "points": 599,
-   "comments": 297,
-   "r": 0.5,
-   "at": "2026-10-27",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "discussion": "https://news.ycombinator.com/item?id=50296486",
+   "points": 381,
+   "comments": 161,
+   "r": 0.42,
+   "at": "2026-10-29",
    "topics": [
-    "모델릴리스"
+    "에이전트"
    ],
-   "story_key": "url:stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
-   "summary_ko": "댓글에서는 기업의 저작물 무단 학습 문제를 두고 대기업과 개인의 처우 형평성을 비판하는 목소리가 높다. 일각에서는 AI 시대에 전통적 지적재산권과 저작권 개념이 유효한지 의문이라는 의견도 나온다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 클로드 저작권 무단 학습",
-   "kr": [
-    {
-     "t": "\"AI가 엘비스 프레슬리 노래 무단학습\"…앤트로픽 540억원 피소",
-     "u": "https://www.yna.co.kr/view/AKR20261026014500075?input=1195m",
-     "d": "Mon, 26 Oct 2026",
-     "why": [
-      "무단",
-      "앤트로픽",
-      "학습"
-     ]
-    },
-    {
-     "t": "'엘비스 명곡 무단 학습'…앤트로픽, 545억원 저작권 소송 휘말려",
-     "u": "https://www.segye.com/newsView/20261026506401?OutUrl=naver",
-     "d": "Mon, 26 Oct 2026",
-     "why": [
-      "무단",
-      "앤트로픽",
-      "저작권",
-      "학습"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "Wikipedia's Cleanup of AI-Generated Content",
-   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-   "discussion": "https://news.ycombinator.com/item?id=50257326",
-   "points": 516,
-   "comments": 241,
-   "r": 0.47,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-   "summary_ko": "위키백과가 생성형 AI 콘텐츠를 정화하는 과정을 두고, 인간 기여자를 보호해야 한다는 의견과 AI가 정화 작업의 도구로 자리 잡을 것이라는 전망이 맞섰다. 일각에서는 위키백과 역시 정치적 편향이나 링크 부패 등 전통적인 웹의 문제에서 자유롭지 않으며, AI 백과사전과의 교차 검증이 대안이 될 수 있다고 언급했다.",
+   "story_key": "url:labs.ycombinator.com/projects/games/index.html",
+   "_comments": [
+    "The problem is a bit different. The world is not at war yet we spend billions on weapons. It's more to show off. It's gaming the system.",
+    "The AI agents have access to a huge bucket of hints implicitly from their training data, no?",
+    "In this specific scenario, what's the difference between \"vibe gaming\" and a mod like Minecolonies? Automation has ALWAYS been a major topic for modded Minecraft, and I don't see all that much difference. Obviously would be single-player, unless I had coded something that was just interacting with vanilla MC and not introducing new content or behavior.",
+    "This is close to, if not exactly what I was looking for! Thanks!I can't see if an LLM can be put in the game loop, which is what I'd really like. Agent(s) + code in the game loop, with me steering.",
+    "Well. If you give humans no instructions and play Minecraft without any hints, they probably would do what the AI agents did. Humans, though, realize the game is artificial and has nothing to do with real life... therefore, they go onto Discord, watch Youtube channels, and read about the artificial game rules imposed by Minecraft. They would prioritize building a shelter (from zombies-skeletons at night) and building an underground well-lit farm. Minecraft's says crops can grow underground from torches that stay lit forever and that you can create a never-ending source of water by making a 2x2 well and pouring water into it. In other words, the AI Agents would have played better if they were",
+    "Yes, I asked Claude and it estimated 10-50 kWh if you max out Max 5x subscription (which I have, and I use it about 30-40%).Further estimation gave it's about like having another gaming PC, i.e. 100-300W when I am actually gaming.I live quite low carbon intensity lifestyle, don't travel much, don't have a car or a family, so it's not really a big expense.",
+    "Kinda just fun to watch. Like the old days of Sethbling making neural nets to play Super Mario World, but now with multiple players at once, so we can see co-operation take place.",
+    "The article said GPT won most games but the kill counts were heavily in favor of Claude. That is Claude rationally behaved based on the immediate evidence it saw. GPT won, I assume, because its meta instructions told it to always assume games like these have a \"back door\" or glitch that allows for a devastating sneak attack. In this case, ender pearl to the bottom of the world floor and stacking blocks to elevator up and attack the bed from beneath.",
+    "the amount of resources being used here, in exchange for someone getting some enjoyment out of their life (god forbid), is practically nothing.you should direct this energy at the literal millions of other things that adversely affect the world significantly more.",
+    "All of the agents struggle with knowing when to stop. They can drive themselves insane inventing problems to solve after they arrive at a satisfactory answer for the current problem.Keep this in mind when you see articles about how \"an AI agent uncovered a thousand issues in our codebase overnight\". A great many of those \"issues\" end up being that some process was not bureaucratic enough.",
+    "> help you play a video gameI have a similar hobby, and for me it's not so much \"helping to play\" the original game, but playing a _different_ game, a much richer/strategic game.It's similar to car racing: most people just drive to get places, and there's little point tuning a car & driver to go fast. But if you want to go fast, then you want to go fast. There are negative externalities, for which it's important to keep the scale in mind, but these hobbies also push the envelope of what we as humans can do.",
+    "Saturating Claude Max x20 it'd be like 15kWh/day, so like driving 50 miles in a Tesla or 15 miles in a non-hybrid Toyota or eating 3 beef steaks[1][1]: if I read it right, it takes about 20 kWh to produce one 1kg of boneless beef: https://www.sciencedirect.com/science/article/pii/S0308521X1..."
+   ],
+   "summary_ko": "마인크래프트와 마인두스트리에서 AI 에이전트 군집을 구동한 실험에 대해, 과거의 신경망 게임 실험처럼 협동 과정을 지켜보는 재미가 있다는 반응과 함께 AI가 문제를 해결한 후에도 멈추지 못하고 불필요한 작업을 만들어낸다는 지적이 나왔다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -944,8 +1052,8 @@
    "title": "Claude Code regularly sends each background agent’s transcript to its model",
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "discussion": "https://news.ycombinator.com/item?id=50284255",
-   "points": 567,
-   "comments": 230,
+   "points": 574,
+   "comments": 234,
    "r": 0.41,
    "at": "2026-10-29",
    "topics": [
@@ -982,8 +1090,8 @@
    "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
    "url": "https://www.brangus.io/survival-llm",
    "discussion": "https://news.ycombinator.com/item?id=50264853",
-   "points": 538,
-   "comments": 202,
+   "points": 540,
+   "comments": 203,
    "r": 0.38,
    "at": "2026-10-27",
    "topics": [
@@ -1001,8 +1109,8 @@
    "title": "We're releasing the weights of Mistral Large 4",
    "url": "https://mistral.ai/news/mistral-large-4-oss/",
    "discussion": "https://news.ycombinator.com/item?id=50289418",
-   "points": 1514,
-   "comments": 399,
+   "points": 1656,
+   "comments": 427,
    "r": 0.26,
    "at": "2026-10-29",
    "topics": [
@@ -1019,7 +1127,7 @@
    "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
    "url": "https://divagr.com/blog/qwenputer",
    "discussion": "https://news.ycombinator.com/item?id=50282838",
-   "points": 688,
+   "points": 691,
    "comments": 145,
    "r": 0.21,
    "at": "2026-10-29",
@@ -1052,32 +1160,32 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Mistral Large 4 (Le Chonk) is now open weight",
-   "url": "https://mistral.ai/news/mistral-large-4-oss/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xil3qy/mistral_large_4_le_chonk_is_now_open_weight/",
+   "title": "Another reason to own your own compute. Your account may get banned in a sneaky update.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjgfuv/another_reason_to_own_your_own_compute_your/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjgfuv/another_reason_to_own_your_own_compute_your/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스"
+    "인프라·칩"
    ],
-   "story_key": "url:mistral.ai/news/mistral-large-4-oss"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xjgfuv/another_reason_to_own_your_own_compute_your"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I think local AI cost me a job",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xils4t/i_think_local_ai_cost_me_a_job/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xils4t/i_think_local_ai_cost_me_a_job/",
+   "title": "Reddit will force everyone to log in",
+   "url": "https://www.theverge.com/tech/1022571/reddit-login-requirement-q3-2026-earnings",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xj2pnp/reddit_will_force_everyone_to_log_in/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xils4t/i_think_local_ai_cost_me_a_job"
+   "story_key": "url:theverge.com/tech/1022571/reddit-login-requirement-q3-2026-earnings"
   },
   {
    "layer": "reddit",
@@ -1096,24 +1204,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Reddit will force everyone to log in",
-   "url": "https://www.theverge.com/tech/1022571/reddit-login-requirement-q3-2026-earnings",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xj2pnp/reddit_will_force_everyone_to_log_in/",
+   "title": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+   "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjfuqh/introducing_deepseekv41flash1017_dynamic_v31/",
    "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:theverge.com/tech/1022571/reddit-login-requirement-q3-2026-earnings"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "mistralai/Mistral-Large-4-1T-A52B · Hugging Face",
-   "url": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xil58b/mistralaimistrallarge41ta52b_hugging_face/",
-   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1121,39 +1215,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:ggml-org/mistral-large-4-1t-a52b-gguf"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Kokoro can now clone any voice with just ~600 MB of extra VRAM!",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xiplj7/kokoro_can_now_clone_any_voice_with_just_600_mb/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xiplj7/kokoro_can_now_clone_any_voice_with_just_600_mb/",
-   "rank": 7,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xiplj7/kokoro_can_now_clone_any_voice_with_just_600_mb"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Why you can't trust cloud API endpoints: 40 days of coding-agent telemetry showing the exact day providers silently overwrote deepseek-v4.1-flash with -1017 (\"faster execution, shorter answers\" = 3x more swearing and 6.7x more model switches)",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xiqw9i/why_you_cant_trust_cloud_api_endpoints_40_days_of/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xiqw9i/why_you_cant_trust_cloud_api_endpoints_40_days_of/",
-   "rank": 8,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xiqw9i/why_you_cant_trust_cloud_api_endpoints_40_days_of"
+   "story_key": "url:unsloth.ai/docs/basics/dynamic-3.0-ggufs"
   },
   {
    "layer": "reddit",
@@ -1161,7 +1223,7 @@
    "title": "Release: Swift 1.5 Flash Next - Heretic v2 - ReverseEngineer",
    "url": "https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xix35p/release_swift_15_flash_next_heretic_v2/",
-   "rank": 9,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1174,32 +1236,62 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "SafeAgents: an open-source proxy that checks every tool call your coding agent makes before it runs",
-   "url": "https://github.com/huggingface/atif-scan",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xii45s/safeagents_an_opensource_proxy_that_checks_every/",
+   "title": "The RTX 5080 Has Been Removed From NVIDIA's Official Marketplace.",
+   "url": "https://marketplace.nvidia.com/en-us/consumer/graphics-cards/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xj9xjh/the_rtx_5080_has_been_removed_from_nvidias/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:marketplace.nvidia.com/en-us/consumer/graphics-cards"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Gemma-4-31B-Humanlike-Chat: 2.0's improved human voice on official Gemma 4 31B",
+   "url": "https://huggingface.co/LessThanThreeAI/Gemma-4-31B-Humanlike-Chat-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjdjy0/gemma431bhumanlikechat_20s_improved_human_voice/",
+   "rank": 8,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:lessthanthreeai/gemma-4-31b-humanlike-chat-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "We’re MOSS, the team behind MOSS-Image, MOSS-TTS, and more — Ask Us Anything!",
+   "url": "https://www.mosi.cn/en",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjhpn9/were_moss_the_team_behind_mossimage_mosstts_and/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:mosi.cn/en"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Copium Prediction: Google and other major labs will drop new local models over the next few days so they can lead on benchmarks until Qwen 4 sweeps them next week.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjigxg/copium_prediction_google_and_other_major_labs/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjigxg/copium_prediction_google_and_other_major_labs/",
    "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "에이전트"
+    "모델릴리스"
    ],
-   "story_key": "gh:huggingface/atif-scan"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "UkisAI Swift GLM5.3 + GSQ-RCO, Swift Ornith 9B / -57.7% Token Usage with <1% accuracy loss on max reasoning",
-   "url": "https://www.adaptive-ml.com/post/a-simple-explanation-of-gspo",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xisqge/ukisai_swift_glm53_gsqrco_swift_ornith_9b_577/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:adaptive-ml.com/post/a-simple-explanation-of-gspo"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xjigxg/copium_prediction_google_and_other_major_labs"
   },
   {
    "layer": "reddit",
@@ -1207,7 +1299,7 @@
    "title": "Guys I think I found our GPUs",
    "url": "https://www.linkedin.com/posts/businessinsider_the-ai-boom-is-facing-a-new-phenomenon-heaps-activity-7521314592090705920-K6m8",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xj4qi0/guys_i_think_i_found_our_gpus/",
-   "rank": 12,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1216,6 +1308,20 @@
     "인프라·칩"
    ],
    "story_key": "url:linkedin.com/posts/businessinsider_the-ai-boom-is-facing-a-new-phenomenon-heaps-activity-7521314592090705920-K6m8"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "UkisAI Swift GLM5.3 + GSQ-RCO, Swift Ornith 9B / -57.7% Token Usage with <1% accuracy loss on max reasoning",
+   "url": "https://www.adaptive-ml.com/post/a-simple-explanation-of-gspo",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xisqge/ukisai_swift_glm53_gsqrco_swift_ornith_9b_577/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:adaptive-ml.com/post/a-simple-explanation-of-gspo"
   },
   {
    "layer": "reddit",
@@ -1236,32 +1342,30 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Anyone else suffering from verbose, poor technical documentation and explanations with Q3.8-Flash-Next?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xilihw/anyone_else_suffering_from_verbose_poor_technical/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xilihw/anyone_else_suffering_from_verbose_poor_technical/",
+   "title": "sensenova/SenseNova-Loop-9B-Preview · Hugging Face",
+   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview#model-highlights",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xje5oo/sensenovasensenovaloop9bpreview_hugging_face/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xilihw/anyone_else_suffering_from_verbose_poor_technical"
+   "story_key": "hf:sensenova/sensenova-loop-9b-preview"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "The RTX 5080 Has Been Removed From NVIDIA's Official Marketplace.",
-   "url": "https://marketplace.nvidia.com/en-us/consumer/graphics-cards/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xj9xjh/the_rtx_5080_has_been_removed_from_nvidias/",
+   "title": "[Paper] Multi-Token Prediction Done Right - Soft-MTP",
+   "url": "https://arxiv.org/abs/2610.38331",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xjc8q3/paper_multitoken_prediction_done_right_softmtp/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:marketplace.nvidia.com/en-us/consumer/graphics-cards"
+   "topics": [],
+   "story_key": "arxiv:2610.38331"
   }
  ],
  "quiet_important": [
@@ -1270,8 +1374,8 @@
    "title": "Gemini 4 Carbon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "discussion": "https://news.ycombinator.com/item?id=50276792",
-   "points": 1007,
-   "comments": 799,
+   "points": 1011,
+   "comments": 800,
    "r": 0.79,
    "at": "2026-10-28",
    "topics": [
@@ -1320,26 +1424,6 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-   "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "discussion": "https://news.ycombinator.com/item?id=50261589",
-   "points": 385,
-   "comments": 291,
-   "r": 0.76,
-   "at": "2026-10-27",
-   "topics": [],
-   "story_key": "url:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-   "trust": [
-    "AI Supremacy"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 아마존의 AI 부문 부진이 뚜렷한 해자(moat)를 만들지 못한 결과라는 분석이 나온다. 일각에서는 향후 LLM 자체가 범용 상품화되면서 인프라 하드웨어 제조사가 이익의 대부분을 가져갈 것이라는 전망도 제기된다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
   }
  ],
  "models": [
@@ -1347,8 +1431,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 851,
-   "likes": 3926,
+   "trending": 829,
+   "likes": 3979,
    "downloads": 145869,
    "topics": [
     "모델릴리스"
@@ -1359,8 +1443,8 @@
    "layer": "hf",
    "title": "Nanbeige/Nanbeige4.3-33B",
    "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-   "trending": 771,
-   "likes": 787,
+   "trending": 776,
+   "likes": 793,
    "downloads": 12178,
    "topics": [
     "모델릴리스"
@@ -1371,8 +1455,8 @@
    "layer": "hf",
    "title": "LiquidAI/LFM3-1.7B",
    "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-   "trending": 507,
-   "likes": 518,
+   "trending": 523,
+   "likes": 539,
    "downloads": 23694,
    "topics": [
     "모델릴리스"
@@ -1381,34 +1465,10 @@
   },
   {
    "layer": "hf",
-   "title": "RecursiveSI/flint",
-   "url": "https://huggingface.co/RecursiveSI/flint",
-   "trending": 442,
-   "likes": 1249,
-   "downloads": 19015,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:recursivesi/flint"
-  },
-  {
-   "layer": "hf",
-   "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "trending": 435,
-   "likes": 490,
-   "downloads": 1747945,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ista-daslab/deepseek-v4.1-flash-1017-gsq-rco-gguf"
-  },
-  {
-   "layer": "hf",
    "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-   "trending": 427,
-   "likes": 450,
+   "trending": 453,
+   "likes": 479,
    "downloads": 15980,
    "topics": [
     "인프라·칩"
@@ -1417,10 +1477,22 @@
   },
   {
    "layer": "hf",
+   "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+   "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+   "trending": 443,
+   "likes": 501,
+   "downloads": 1747945,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:ista-daslab/deepseek-v4.1-flash-1017-gsq-rco-gguf"
+  },
+  {
+   "layer": "hf",
    "title": "baidu/Unlimited-OCR-2",
    "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-   "trending": 388,
-   "likes": 428,
+   "trending": 399,
+   "likes": 440,
    "downloads": 24276,
    "topics": [
     "모델릴리스"
@@ -1429,10 +1501,34 @@
   },
   {
    "layer": "hf",
+   "title": "RecursiveSI/flint",
+   "url": "https://huggingface.co/RecursiveSI/flint",
+   "trending": 398,
+   "likes": 1255,
+   "downloads": 19015,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:recursivesi/flint"
+  },
+  {
+   "layer": "hf",
+   "title": "mistralai/Mistral-Large-4-1T-A52B",
+   "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+   "trending": 386,
+   "likes": 1322,
+   "downloads": 1239,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:mistralai/mistral-large-4-1t-a52b"
+  },
+  {
+   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 382,
-   "likes": 9894,
+   "trending": 378,
+   "likes": 9937,
    "downloads": 2335172,
    "topics": [
     "모델릴리스"
@@ -1443,25 +1539,13 @@
    "layer": "hf",
    "title": "XHToken/Spark-X2.6-4B",
    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-   "trending": 350,
-   "likes": 914,
+   "trending": 335,
+   "likes": 918,
    "downloads": 12515,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:xhtoken/spark-x2.6-4b"
-  },
-  {
-   "layer": "hf",
-   "title": "black-forest-labs/flux-3-image-klein-comfy",
-   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 349,
-   "likes": 2076,
-   "downloads": 886973,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:black-forest-labs/flux-3-image-klein-comfy"
   }
  ],
  "new_repos": [
@@ -1470,7 +1554,7 @@
    "title": "rddmwmddr/android-ad-cleaner",
    "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
    "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-   "stars": 4940,
+   "stars": 5030,
    "topics": [],
    "story_key": "gh:rddmwmddr/android-ad-cleaner"
   },
@@ -1479,7 +1563,7 @@
    "title": "anhao/ai-pose-gallery-zh",
    "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
    "url": "https://github.com/anhao/ai-pose-gallery-zh",
-   "stars": 3680,
+   "stars": 3909,
    "topics": [],
    "story_key": "gh:anhao/ai-pose-gallery-zh"
   },
@@ -1488,7 +1572,7 @@
    "title": "t3dotgg/tstack",
    "desc": "The agent skills I use every day. Works with Claude Code and Codex.",
    "url": "https://github.com/t3dotgg/tstack",
-   "stars": 2428,
+   "stars": 2454,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1500,7 +1584,7 @@
    "title": "ccch1mneyyy/dsh-Go",
    "desc": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
    "url": "https://github.com/ccch1mneyyy/dsh-Go",
-   "stars": 1567,
+   "stars": 2315,
    "topics": [
     "모델릴리스"
    ],
@@ -1511,7 +1595,7 @@
    "title": "andyhuo520/digital-human-koubo",
    "desc": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude C",
    "url": "https://github.com/andyhuo520/digital-human-koubo",
-   "stars": 1534,
+   "stars": 1547,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1520,22 +1604,10 @@
   },
   {
    "layer": "github",
-   "title": "DenisSergeevitch/ex-ussr-kinship-research",
-   "desc": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Rep",
-   "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-   "stars": 1285,
-   "topics": [
-    "모델릴리스",
-    "에이전트"
-   ],
-   "story_key": "gh:denissergeevitch/ex-ussr-kinship-research"
-  },
-  {
-   "layer": "github",
    "title": "qybaihe/bla",
    "desc": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering",
    "url": "https://github.com/qybaihe/bla",
-   "stars": 1146,
+   "stars": 1320,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1545,10 +1617,22 @@
   },
   {
    "layer": "github",
+   "title": "DenisSergeevitch/ex-ussr-kinship-research",
+   "desc": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Rep",
+   "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+   "stars": 1308,
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "gh:denissergeevitch/ex-ussr-kinship-research"
+  },
+  {
+   "layer": "github",
    "title": "Motionsites-AI/claude-skill",
    "desc": "Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites.",
    "url": "https://github.com/Motionsites-AI/claude-skill",
-   "stars": 1120,
+   "stars": 1148,
    "topics": [
     "모델릴리스"
    ],
@@ -1556,26 +1640,25 @@
   },
   {
    "layer": "github",
-   "title": "ZiChuanLan/agent-purge",
-   "desc": "One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.",
-   "url": "https://github.com/ZiChuanLan/agent-purge",
-   "stars": 902,
+   "title": "paipiange/nvzhuang",
+   "desc": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+   "url": "https://github.com/paipiange/nvzhuang",
+   "stars": 1105,
    "topics": [
-    "모델릴리스",
-    "에이전트"
+    "모델릴리스"
    ],
-   "story_key": "gh:zichuanlan/agent-purge"
+   "story_key": "gh:paipiange/nvzhuang"
   },
   {
    "layer": "github",
-   "title": "daveebbelaar/bama",
-   "desc": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
-   "url": "https://github.com/daveebbelaar/bama",
-   "stars": 844,
+   "title": "wangzan101/Mika",
+   "desc": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.",
+   "url": "https://github.com/wangzan101/Mika",
+   "stars": 1004,
    "topics": [
     "에이전트"
    ],
-   "story_key": "gh:daveebbelaar/bama"
+   "story_key": "gh:wangzan101/mika"
   }
  ],
  "trust_recent": [
@@ -1904,5 +1987,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-10-30 11:07"
+ "enriched_at": "2026-10-30 18:28"
 }
