@@ -1,9 +1,9 @@
 {
- "at": "2026-10-31 07:38",
+ "at": "2026-10-31 15:17",
  "stats": {
   "nol": {
    "got": 26,
-   "new": 3
+   "new": 1
   },
   "ticketlink": {
    "got": 30,
@@ -22,8 +22,8 @@
    "new": 0
   },
   "snkrs": {
-   "got": 20,
-   "new": 8
+   "got": 0,
+   "new": 0
   },
   "netflix": {
    "got": 19,
@@ -34,8 +34,8 @@
    "new": 0
   },
   "melon": {
-   "got": 0,
-   "new": 0
+   "got": 20,
+   "new": 10
   },
   "popply": {
    "got": 0,
@@ -66,7 +66,7 @@
    "new": 0
   },
   "newswire": {
-   "got": 40,
+   "got": 25,
    "new": 0
   },
   "heypop": {
@@ -80,7 +80,7 @@
  },
  "log": [
   "▶ nol",
-  "  26건 · 새 3",
+  "  26건 · 새 1",
   "▶ ticketlink",
   "  30건 · 새 0",
   "▶ sejong",
@@ -90,14 +90,14 @@
   "▶ dive",
   "  6건 · 새 0",
   "▶ snkrs",
-  "  20건 · 새 8",
+  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
+  "  0건 · 새 0",
   "▶ netflix",
   "  19건 · 새 0",
   "▶ yes24",
   "  39건 · 새 0",
   "▶ melon",
-  "  ! 실패 https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex=1&schGcode=GE HTTPError HTTP Error 423: Locked",
-  "  0건 · 새 0",
+  "  20건 · 새 10",
   "▶ popply",
   "  0건 · 새 0",
   "▶ popga",
@@ -113,14 +113,14 @@
   "▶ pokemon",
   "  19건 · 새 0",
   "▶ newswire",
-  "  40건 · 새 0",
+  "  25건 · 새 0",
   "▶ heypop",
   "  10건 · 새 0",
   "▶ theedit",
   "  10건 · 새 0",
   "  ! 실패 https://popply.co.kr/popup/6477 HTTPError HTTP Error 404: Not Found",
-  "▶ 팝플리 재측정 28 건",
-  "▶ NOL 랭킹 건너뜀(6시간 안)",
-  "▶ YouTube 인기 건너뜀(키 없음·6시간 안)"
+  "▶ 팝플리 재측정 0 건",
+  "▶ NOL 랭킹 48건",
+  "▶ YouTube 인기 130건"
  ]
 }
