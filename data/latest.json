@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-02 11:12",
+ "updated": "2026-11-02 21:58",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 21,
+  "hn": 18,
   "reddit": 22,
   "hf": 15,
   "github": 9,
@@ -13,79 +13,12 @@
  "by_volume": [
   {
    "layer": "hn",
-   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-   "discussion": "https://news.ycombinator.com/item?id=50300683",
-   "points": 993,
-   "comments": 553,
-   "r": 0.56,
-   "at": "2026-10-30",
-   "topics": [
-    "모델릴리스",
-    "보안·사고"
-   ],
-   "story_key": "url:phorion.io/blog/offical-claude-code-vsx-compromise",
-   "summary_ko": "커서(Cursor) 마켓플레이스에 등록된 클로드 코드 관련 확장 프로그램에서 백도어 이슈가 발생해 논란이 되었다. 서드파티 마켓플레이스의 보안 검증 부실을 비판하며 공식 채널을 통한 설치와 에디터 보안 설정의 중요성을 강조하는 반응이 이어졌다.",
-   "is_event": true,
-   "kr_query": "커서 마켓플레이스 클로드 코드 백도어",
-   "kr": [
-    {
-     "t": "가짜 클로드 코드 확장이 커서에서 11시간 퍼졌다…최대 5,000명 SSH 백도...",
-     "u": "https://www.wikitree.co.kr/articles/1170601",
-     "d": "Fri, 30 Oct 2026",
-     "why": [
-      "코드",
-      "클로드"
-     ]
-    },
-    {
-     "t": "2.1.313 악성 클로드 코드 확장, 커서 마켓서 삭제",
-     "u": "https://www.tokenpost.kr/news/breaking/430254",
-     "d": "Fri, 30 Oct 2026",
-     "why": [
-      "커서",
-      "코드",
-      "클로드"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
-   "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
-   "discussion": "https://news.ycombinator.com/item?id=50302814",
-   "points": 668,
-   "comments": 524,
-   "r": 0.78,
-   "at": "2026-10-30",
-   "topics": [],
-   "story_key": "url:progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
-   "summary_ko": "AI 거품 붕괴 시 정부가 빅테크를 구제하는 것에 반대하는 민주당의 결의안에 대해, 기술 발전과 경제적 영향력을 통제하기 위해 정부가 개입해야 한다는 찬성 측과 세금 낭비 및 불필요한 구제금융을 경계하는 비판 측의 의견이 맞섰다.",
-   "is_event": true,
-   "kr_query": "미국 민주당 AI 구제금융 반대 결의안",
-   "kr": [
-    {
-     "t": "미 하원 민주당, AI 기업 구제금융 반대 결의안 추진",
-     "u": "https://www.tokenpost.kr/news/policy/428988",
-     "d": "Thu, 29 Oct 2026",
-     "why": [
-      "결의안",
-      "구제금융",
-      "민주당",
-      "반대"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "AI isn't replacing SREs, it's deskilling them",
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "discussion": "https://news.ycombinator.com/item?id=50305693",
-   "points": 665,
-   "comments": 482,
-   "r": 0.72,
+   "points": 675,
+   "comments": 491,
+   "r": 0.73,
    "at": "2026-10-30",
    "topics": [],
    "story_key": "url:newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
@@ -99,8 +32,8 @@
    "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
    "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
    "discussion": "https://news.ycombinator.com/item?id=50304122",
-   "points": 311,
-   "comments": 382,
+   "points": 314,
+   "comments": 386,
    "r": 1.23,
    "at": "2026-10-30",
    "topics": [],
@@ -112,11 +45,29 @@
   },
   {
    "layer": "hn",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "discussion": "https://news.ycombinator.com/item?id=50323088",
+   "points": 396,
+   "comments": 303,
+   "r": 0.77,
+   "at": "2026-11-01",
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+   "summary_ko": "AI 도구를 활용해 코드를 작성할 때 자바스크립트 프레임워크가 미치는 영향과 비용에 대해 논쟁이 오갔다. 복잡한 SPA 프레임워크가 AI의 개발 생산성을 높여준다는 의견과, 바닐라 자바스크립트나 가벼운 구조가 더 낫다는 주장이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "US tech stocks see sharp falls over AI cost fears",
    "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
    "discussion": "https://news.ycombinator.com/item?id=50306008",
    "points": 269,
-   "comments": 301,
+   "comments": 302,
    "r": 1.12,
    "at": "2026-10-30",
    "topics": [],
@@ -141,8 +92,8 @@
    "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
    "discussion": "https://news.ycombinator.com/item?id=50307219",
-   "points": 324,
-   "comments": 293,
+   "points": 325,
+   "comments": 294,
    "r": 0.9,
    "at": "2026-10-30",
    "topics": [],
@@ -164,28 +115,12 @@
   },
   {
    "layer": "hn",
-   "title": "Proton's CEO Cancels AI 'Re-Interviews'",
-   "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
-   "discussion": "https://news.ycombinator.com/item?id=50307183",
-   "points": 296,
-   "comments": 255,
-   "r": 0.86,
-   "at": "2026-10-30",
-   "topics": [],
-   "story_key": "url:404media.co/protons-ceo-cancels-ai-re-interviews",
-   "summary_ko": "프로톤 CEO의 고압적인 태도와 AI 도입 방식을 두고 이용자와 직원들 사이에서 강한 비판이 제기되었다. 프라이버시와 보안을 보고 가입한 고객들은 리더십이 그 가치를 저버리고 빅테크와 다를 바 없는 모습을 보이고 있다고 실망감을 표했다.",
-   "is_event": true,
-   "kr_query": "프로톤 CEO AI 재면접 취소",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic blocks users for anything touching training larger models",
    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "discussion": "https://news.ycombinator.com/item?id=50319358",
-   "points": 455,
-   "comments": 254,
-   "r": 0.56,
+   "points": 474,
+   "comments": 262,
+   "r": 0.55,
    "at": "2026-10-31",
    "topics": [],
    "story_key": "url:twitter.com/jiahaoshao1/status/2116475922190922088",
@@ -206,18 +141,32 @@
   },
   {
    "layer": "hn",
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-   "discussion": "https://news.ycombinator.com/item?id=50323088",
-   "points": 303,
+   "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+   "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+   "discussion": "https://news.ycombinator.com/item?id=50307183",
+   "points": 297,
+   "comments": 255,
+   "r": 0.86,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:404media.co/protons-ceo-cancels-ai-re-interviews",
+   "summary_ko": "프로톤 CEO의 고압적인 태도와 AI 도입 방식을 두고 이용자와 직원들 사이에서 강한 비판이 제기되었다. 프라이버시와 보안을 보고 가입한 고객들은 리더십이 그 가치를 저버리고 빅테크와 다를 바 없는 모습을 보이고 있다고 실망감을 표했다.",
+   "is_event": true,
+   "kr_query": "프로톤 CEO AI 재면접 취소",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "discussion": "https://news.ycombinator.com/item?id=50330456",
+   "points": 229,
    "comments": 230,
-   "r": 0.76,
+   "r": 1.0,
    "at": "2026-11-01",
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "url:nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
-   "summary_ko": "AI 도구를 활용해 코드를 작성할 때 자바스크립트 프레임워크가 미치는 영향과 비용에 대해 논쟁이 오갔다. 복잡한 SPA 프레임워크가 AI의 개발 생산성을 높여준다는 의견과, 바닐라 자바스크립트나 가벼운 구조가 더 낫다는 주장이 맞섰다.",
+   "topics": [],
+   "story_key": "url:techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+   "summary_ko": "댓글에서는 AI 도입이 기업에 즉각적인 재무적 성과를 주지 못한다는 진단에 대해 의견이 엇갈렸다. 경쟁사들도 같은 도구를 쓰기 때문에 이익으로 이어지지 않는 '붉은 여왕의 레이스'라는 시각과, 기술이 성숙하고 가치를 증명하는 데는 통상 수년 이상의 시간이 걸린다는 반론이 나왔다. 반면 레거시 시스템 마이그레이션이나 반복 업무 등 특정 영역에서는 이미 뚜렷한 생산성 향상과 비용 절감 효과를 보고 있다는 구체적인 사례도 공유되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -227,8 +176,8 @@
    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "discussion": "https://news.ycombinator.com/item?id=50320995",
-   "points": 426,
-   "comments": 208,
+   "points": 442,
+   "comments": 216,
    "r": 0.49,
    "at": "2026-10-31",
    "topics": [
@@ -245,8 +194,8 @@
    "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
    "discussion": "https://news.ycombinator.com/item?id=50322173",
-   "points": 315,
-   "comments": 200,
+   "points": 331,
+   "comments": 210,
    "r": 0.63,
    "at": "2026-11-01",
    "topics": [
@@ -264,7 +213,7 @@
    "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
    "discussion": "https://news.ycombinator.com/item?id=50312922",
    "points": 186,
-   "comments": 200,
+   "comments": 201,
    "r": 1.08,
    "at": "2026-10-31",
    "topics": [],
@@ -284,8 +233,8 @@
    "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
    "discussion": "https://news.ycombinator.com/item?id=50318871",
    "points": 176,
-   "comments": 187,
-   "r": 1.06,
+   "comments": 188,
+   "r": 1.07,
    "at": "2026-10-31",
    "topics": [
     "모델릴리스"
@@ -301,7 +250,7 @@
    "title": "Do the math: How we took over ChatGPT accounts",
    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "discussion": "https://news.ycombinator.com/item?id=50314699",
-   "points": 357,
+   "points": 359,
    "comments": 176,
    "r": 0.49,
    "at": "2026-10-31",
@@ -321,9 +270,9 @@
    "title": "ChatGPT and Codex usage limits merging",
    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
    "discussion": "https://news.ycombinator.com/item?id=50320588",
-   "points": 217,
-   "comments": 163,
-   "r": 0.75,
+   "points": 227,
+   "comments": 168,
+   "r": 0.74,
    "at": "2026-10-31",
    "topics": [],
    "story_key": "url:help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
@@ -357,8 +306,8 @@
    "url": "https://github.com/dbreunig/nesformer",
    "discussion": "https://news.ycombinator.com/item?id=50306442",
    "points": 292,
-   "comments": 150,
-   "r": 0.51,
+   "comments": 151,
+   "r": 0.52,
    "at": "2026-10-30",
    "topics": [
     "모델릴리스"
@@ -375,44 +324,12 @@
   },
   {
    "layer": "hn",
-   "title": "Ask HN: Are you tired too in this AI era?",
-   "url": "https://news.ycombinator.com/item?id=50301479",
-   "discussion": "https://news.ycombinator.com/item?id=50301479",
-   "points": 150,
-   "comments": 142,
-   "r": 0.95,
-   "at": "2026-10-30",
-   "topics": [],
-   "story_key": "hn:50301479",
-   "summary_ko": "AI 도입으로 인한 피로감과 번아웃에 공감하며 개발자로서의 회의감을 토로하는 의견이 많다. 반면, 과거의 결정론적 소프트웨어 개발 방식에서 벗어나 통계적 확률과 실패 모드를 관리하는 새로운 엔지니어링 패러다임으로 받아들여야 한다는 시각도 존재한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "discussion": "https://news.ycombinator.com/item?id=50330456",
-   "points": 173,
-   "comments": 141,
-   "r": 0.82,
-   "at": "2026-11-01",
-   "topics": [],
-   "story_key": "url:techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
-   "summary_ko": "댓글에서는 AI 도입이 기업에 즉각적인 재무적 성과를 주지 못한다는 진단에 대해 의견이 엇갈렸다. 경쟁사들도 같은 도구를 쓰기 때문에 이익으로 이어지지 않는 '붉은 여왕의 레이스'라는 시각과, 기술이 성숙하고 가치를 증명하는 데는 통상 수년 이상의 시간이 걸린다는 반론이 나왔다. 반면 레거시 시스템 마이그레이션이나 반복 업무 등 특정 영역에서는 이미 뚜렷한 생산성 향상과 비용 절감 효과를 보고 있다는 구체적인 사례도 공유되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic Cracking Down on Video Game Rewrites",
    "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
    "discussion": "https://news.ycombinator.com/item?id=50304358",
    "points": 125,
-   "comments": 138,
-   "r": 1.1,
+   "comments": 142,
+   "r": 1.14,
    "at": "2026-10-30",
    "topics": [],
    "story_key": "url:twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
@@ -423,10 +340,26 @@
   },
   {
    "layer": "hn",
+   "title": "Retired professor arrested for blocking delivery robot. Will do it again",
+   "url": "https://www.cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
+   "discussion": "https://news.ycombinator.com/item?id=50316103",
+   "points": 90,
+   "comments": 138,
+   "r": 1.53,
+   "at": "2026-10-31",
+   "topics": [],
+   "story_key": "url:cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
+   "summary_ko": "자율주행 배달 로봇을 가로막아 체포된 은퇴 교수에 대해 다양한 의견이 오갔다. 로봇이 보행자 공간을 침해하고 일자리를 위협하므로 항의가 정당하다는 시선과, 배달 고객의 식사를 볼모로 삼는 무모한 시위일 뿐이라는 비판이 맞섰다.",
+   "is_event": true,
+   "kr_query": "배달 로봇 차단 체포 교수",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Malware uses LLMs to rank victims by how much they're worth",
    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
    "discussion": "https://news.ycombinator.com/item?id=50316531",
-   "points": 257,
+   "points": 259,
    "comments": 137,
    "r": 0.53,
    "at": "2026-10-31",
@@ -438,22 +371,6 @@
    "is_event": true,
    "kr_query": "AI 악성코드 피해자 가치 평가",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Retired professor arrested for blocking delivery robot. Will do it again",
-   "url": "https://www.cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
-   "discussion": "https://news.ycombinator.com/item?id=50316103",
-   "points": 90,
-   "comments": 137,
-   "r": 1.52,
-   "at": "2026-10-31",
-   "topics": [],
-   "story_key": "url:cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
-   "summary_ko": "자율주행 배달 로봇을 가로막아 체포된 은퇴 교수에 대해 다양한 의견이 오갔다. 로봇이 보행자 공간을 침해하고 일자리를 위협하므로 항의가 정당하다는 시선과, 배달 고객의 식사를 볼모로 삼는 무모한 시위일 뿐이라는 비판이 맞섰다.",
-   "is_event": true,
-   "kr_query": "배달 로봇 차단 체포 교수",
-   "kr": []
   }
  ],
  "by_debate": [
@@ -463,8 +380,8 @@
    "url": "https://www.cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
    "discussion": "https://news.ycombinator.com/item?id=50316103",
    "points": 90,
-   "comments": 137,
-   "r": 1.52,
+   "comments": 138,
+   "r": 1.53,
    "at": "2026-10-31",
    "topics": [],
    "story_key": "url:cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
@@ -478,8 +395,8 @@
    "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
    "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
    "discussion": "https://news.ycombinator.com/item?id=50304122",
-   "points": 311,
-   "comments": 382,
+   "points": 314,
+   "comments": 386,
    "r": 1.23,
    "at": "2026-10-30",
    "topics": [],
@@ -491,11 +408,27 @@
   },
   {
    "layer": "hn",
+   "title": "Anthropic Cracking Down on Video Game Rewrites",
+   "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
+   "discussion": "https://news.ycombinator.com/item?id=50304358",
+   "points": 125,
+   "comments": 142,
+   "r": 1.14,
+   "at": "2026-10-30",
+   "topics": [],
+   "story_key": "url:twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
+   "summary_ko": "앤트로픽이 AI를 이용한 비디오 게임 리버스 엔지니어링과 코드 재작성을 단속한다는 소식에 대해 개발자들의 비판이 쏟아졌다. AI 기업들이 무단으로 인터넷 데이터를 수집해 놓고 일반 사용자들의 창작이나 팬 프로젝트만 규제하는 것은 모순이라는 지적과 함께, 오픈소스 모델로 수요가 이동할 것이라는 의견이 대립했다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 비디오 게임 리버스 엔지니어링 단속",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "US tech stocks see sharp falls over AI cost fears",
    "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
    "discussion": "https://news.ycombinator.com/item?id=50306008",
    "points": 269,
-   "comments": 301,
+   "comments": 302,
    "r": 1.12,
    "at": "2026-10-30",
    "topics": [],
@@ -517,27 +450,11 @@
   },
   {
    "layer": "hn",
-   "title": "Anthropic Cracking Down on Video Game Rewrites",
-   "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
-   "discussion": "https://news.ycombinator.com/item?id=50304358",
-   "points": 125,
-   "comments": 138,
-   "r": 1.1,
-   "at": "2026-10-30",
-   "topics": [],
-   "story_key": "url:twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
-   "summary_ko": "앤트로픽이 AI를 이용한 비디오 게임 리버스 엔지니어링과 코드 재작성을 단속한다는 소식에 대해 개발자들의 비판이 쏟아졌다. AI 기업들이 무단으로 인터넷 데이터를 수집해 놓고 일반 사용자들의 창작이나 팬 프로젝트만 규제하는 것은 모순이라는 지적과 함께, 오픈소스 모델로 수요가 이동할 것이라는 의견이 대립했다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 비디오 게임 리버스 엔지니어링 단속",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI raises less than half of $30B target",
    "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
    "discussion": "https://news.ycombinator.com/item?id=50312922",
    "points": 186,
-   "comments": 200,
+   "comments": 201,
    "r": 1.08,
    "at": "2026-10-31",
    "topics": [],
@@ -557,8 +474,8 @@
    "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
    "discussion": "https://news.ycombinator.com/item?id=50318871",
    "points": 176,
-   "comments": 187,
-   "r": 1.06,
+   "comments": 188,
+   "r": 1.07,
    "at": "2026-10-31",
    "topics": [
     "모델릴리스"
@@ -571,16 +488,16 @@
   },
   {
    "layer": "hn",
-   "title": "Ask HN: Are you tired too in this AI era?",
-   "url": "https://news.ycombinator.com/item?id=50301479",
-   "discussion": "https://news.ycombinator.com/item?id=50301479",
-   "points": 150,
-   "comments": 142,
-   "r": 0.95,
-   "at": "2026-10-30",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "discussion": "https://news.ycombinator.com/item?id=50330456",
+   "points": 229,
+   "comments": 230,
+   "r": 1.0,
+   "at": "2026-11-01",
    "topics": [],
-   "story_key": "hn:50301479",
-   "summary_ko": "AI 도입으로 인한 피로감과 번아웃에 공감하며 개발자로서의 회의감을 토로하는 의견이 많다. 반면, 과거의 결정론적 소프트웨어 개발 방식에서 벗어나 통계적 확률과 실패 모드를 관리하는 새로운 엔지니어링 패러다임으로 받아들여야 한다는 시각도 존재한다.",
+   "story_key": "url:techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+   "summary_ko": "댓글에서는 AI 도입이 기업에 즉각적인 재무적 성과를 주지 못한다는 진단에 대해 의견이 엇갈렸다. 경쟁사들도 같은 도구를 쓰기 때문에 이익으로 이어지지 않는 '붉은 여왕의 레이스'라는 시각과, 기술이 성숙하고 가치를 증명하는 데는 통상 수년 이상의 시간이 걸린다는 반론이 나왔다. 반면 레거시 시스템 마이그레이션이나 반복 업무 등 특정 영역에서는 이미 뚜렷한 생산성 향상과 비용 절감 효과를 보고 있다는 구체적인 사례도 공유되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -590,8 +507,8 @@
    "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
    "discussion": "https://news.ycombinator.com/item?id=50307219",
-   "points": 324,
-   "comments": 293,
+   "points": 325,
+   "comments": 294,
    "r": 0.9,
    "at": "2026-10-30",
    "topics": [],
@@ -616,7 +533,7 @@
    "title": "Proton's CEO Cancels AI 'Re-Interviews'",
    "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
    "discussion": "https://news.ycombinator.com/item?id=50307183",
-   "points": 296,
+   "points": 297,
    "comments": 255,
    "r": 0.86,
    "at": "2026-10-30",
@@ -629,70 +546,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "discussion": "https://news.ycombinator.com/item?id=50330456",
-   "points": 173,
-   "comments": 141,
-   "r": 0.82,
-   "at": "2026-11-01",
-   "topics": [],
-   "story_key": "url:techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
-   "_comments": [
-    "It's probably just another Red Queen's Race. The benefits of LLMs won't show up in higher profits for most companies because their competitors are also using the same tools to move faster. You can't opt out of the race or else you'll be left behind.",
-    "I actually feel like it’s really premature for a relatively new technology to be showing profit improvements. We are talking on the order of a few years of investment and “figuring out” how to use it productively in business. Most new technologies take a decade or longer to really yield tangible value.This is the first cycle in my (relatively) long cycle where the demand for return felt instant. The tools and techniques are almost comically immature and the average person interfacing with the tools is largely bewildered.For word processing for instance people spent years upon years coming up to speed on wordstar, word perfect, word. Decades later they’re a common part of life and the tangibl",
-    "One weird trick that devs learn to deliver faster: simply just drop all guard rails and push directly to prod. We need to make sure our velocity report looks good after all.",
-    "A friend of mine runs a business similar to this for systems migration, which is a fairly tough and tedious \"short-put\" job (you have to know both old and new system fairly well, and if all goes well, you get the same job done on the new system, while if something goes wrong, you're in a world of pain...):The AI analyses sample data from old and new system, and then builds a prototype deterministic mapping pipeline. The experts can then inspect said pipeline and with their domain expertise catch edge cases/exceptions/uncovered cases, fix them and improve things, and then you use the vetted deterministic pipeline for migration. Yet, the initial AI draft saves enormous time.",
-    "This has been happening before AI, but AI has turned it up to 11. The way I usually put it, senior engineers are the new engineering manager, engineering managers are the new product managers, and product managers are now something in between sales, consultants or social media contacts. AI made senior engineers pick up more product management from their engineering managers, and engineering managers are picking up more sales and social engagement, and product managers are in a limbo but the young ones are pushed to junior engineer roles.In large companies there is also the politics game. The more freed time senior engineering manager and senior product managers get, the more politics intensi",
-    "I suspect there is a lot of demand destruction that AI will end up causing, so many companies are running with inefficiencies that it's really easy to ferret out and fix with agents.I wouldn't be surprised to see a 5% GDP drop with all the wasteful spend that will end up getting deleted.",
-    "Internally the hard data is there. On a budget of $2000 of API-priced tokens (Claude models + GPT models) we were able to migrate ~6 teams of infrastructure in 1 month, done by 1-2 people. Without AI it would've taken 10x longer wall clock time to do, and involved far more folks, and probably would have been much bumpier of a rollout. The big lift was mostly using AI for massive information gathering, digging through huge volumes of discussions, documents, commits, PRs, alerts, dashboards, etc pretty exhaustively for the past 5 years of history, to discover all the \"chestertons fences\" far more thoroughly than even the folks on the team who built it were able to. Then the 1-2 folks could go ",
-    "Interesting idea! There are many behaviors explained by parasites, worms, bacteria and viruses. AI is now smart enough to change personality, make people invest trillions of dollars with zero ROI.https://www.medicalnewstoday.com/articles/322594",
-    "The mag 7 are getting direct or nearly direct revenue from AI inference. New money is pouring into that - it is not zero sum. Everyone else is getting internal productivity lifts that are matched by competition, and when they are deploying inference features they are usually ones their customers didn’t ask for and don’t value, OR that they expect everyone to have and are not a differentiator.I think you are also correct that a lot of value is being wasted with projects that are developed impressively fast but that provide little value. It could be those are simply surplus personnel trying to add value or make people think they do.",
-    "> If that were universally true in all domainsMoving the goalpost is not compelling.",
-    "> world’s most important productsReally? If we delete CC today, will humanity stop functioning? Nope. It's so far from one of the world's most important products.About 5 9s, reliability is just one of the axes which suffers from fast generation.There are a lot more: architecture, accuracy, etc...> I have a feeling it’s possible to ship fast without drastic quality dropsat what scale and for how long?",
-    "I know a very specific use case in management consulting where hours spent by a consultant for a repetitive task (mainly report writing and source data gathering) went from on average of 40 hours to 12 hours per project. It costs the firm roughly ~$150 in token spend to save those 28 hours. They used to be roughly $200/hr (so $5k~$6k).That's about as hard of data as you can get."
-   ],
-   "summary_ko": "댓글에서는 AI 도입이 기업에 즉각적인 재무적 성과를 주지 못한다는 진단에 대해 의견이 엇갈렸다. 경쟁사들도 같은 도구를 쓰기 때문에 이익으로 이어지지 않는 '붉은 여왕의 레이스'라는 시각과, 기술이 성숙하고 가치를 증명하는 데는 통상 수년 이상의 시간이 걸린다는 반론이 나왔다. 반면 레거시 시스템 마이그레이션이나 반복 업무 등 특정 영역에서는 이미 뚜렷한 생산성 향상과 비용 절감 효과를 보고 있다는 구체적인 사례도 공유되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
-   "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
-   "discussion": "https://news.ycombinator.com/item?id=50302814",
-   "points": 668,
-   "comments": 524,
-   "r": 0.78,
-   "at": "2026-10-30",
-   "topics": [],
-   "story_key": "url:progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
-   "summary_ko": "AI 거품 붕괴 시 정부가 빅테크를 구제하는 것에 반대하는 민주당의 결의안에 대해, 기술 발전과 경제적 영향력을 통제하기 위해 정부가 개입해야 한다는 찬성 측과 세금 낭비 및 불필요한 구제금융을 경계하는 비판 측의 의견이 맞섰다.",
-   "is_event": true,
-   "kr_query": "미국 민주당 AI 구제금융 반대 결의안",
-   "kr": [
-    {
-     "t": "미 하원 민주당, AI 기업 구제금융 반대 결의안 추진",
-     "u": "https://www.tokenpost.kr/news/policy/428988",
-     "d": "Thu, 29 Oct 2026",
-     "why": [
-      "결의안",
-      "구제금융",
-      "민주당",
-      "반대"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "The AI cost of JavaScript frameworks",
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "discussion": "https://news.ycombinator.com/item?id=50323088",
-   "points": 303,
-   "comments": 230,
-   "r": 0.76,
+   "points": 396,
+   "comments": 303,
+   "r": 0.77,
    "at": "2026-11-01",
    "topics": [
     "개발도구"
@@ -708,9 +567,9 @@
    "title": "ChatGPT and Codex usage limits merging",
    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
    "discussion": "https://news.ycombinator.com/item?id=50320588",
-   "points": 217,
-   "comments": 163,
-   "r": 0.75,
+   "points": 227,
+   "comments": 168,
+   "r": 0.74,
    "at": "2026-10-31",
    "topics": [],
    "story_key": "url:help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
@@ -743,9 +602,9 @@
    "title": "AI isn't replacing SREs, it's deskilling them",
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "discussion": "https://news.ycombinator.com/item?id=50305693",
-   "points": 665,
-   "comments": 482,
-   "r": 0.72,
+   "points": 675,
+   "comments": 491,
+   "r": 0.73,
    "at": "2026-10-30",
    "topics": [],
    "story_key": "url:newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
@@ -759,8 +618,8 @@
    "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
    "discussion": "https://news.ycombinator.com/item?id=50322173",
-   "points": 315,
-   "comments": 200,
+   "points": 331,
+   "comments": 210,
    "r": 0.63,
    "at": "2026-11-01",
    "topics": [
@@ -774,51 +633,12 @@
   },
   {
    "layer": "hn",
-   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-   "discussion": "https://news.ycombinator.com/item?id=50300683",
-   "points": 993,
-   "comments": 553,
-   "r": 0.56,
-   "at": "2026-10-30",
-   "topics": [
-    "모델릴리스",
-    "보안·사고"
-   ],
-   "story_key": "url:phorion.io/blog/offical-claude-code-vsx-compromise",
-   "summary_ko": "커서(Cursor) 마켓플레이스에 등록된 클로드 코드 관련 확장 프로그램에서 백도어 이슈가 발생해 논란이 되었다. 서드파티 마켓플레이스의 보안 검증 부실을 비판하며 공식 채널을 통한 설치와 에디터 보안 설정의 중요성을 강조하는 반응이 이어졌다.",
-   "is_event": true,
-   "kr_query": "커서 마켓플레이스 클로드 코드 백도어",
-   "kr": [
-    {
-     "t": "가짜 클로드 코드 확장이 커서에서 11시간 퍼졌다…최대 5,000명 SSH 백도...",
-     "u": "https://www.wikitree.co.kr/articles/1170601",
-     "d": "Fri, 30 Oct 2026",
-     "why": [
-      "코드",
-      "클로드"
-     ]
-    },
-    {
-     "t": "2.1.313 악성 클로드 코드 확장, 커서 마켓서 삭제",
-     "u": "https://www.tokenpost.kr/news/breaking/430254",
-     "d": "Fri, 30 Oct 2026",
-     "why": [
-      "커서",
-      "코드",
-      "클로드"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic blocks users for anything touching training larger models",
    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "discussion": "https://news.ycombinator.com/item?id=50319358",
-   "points": 455,
-   "comments": 254,
-   "r": 0.56,
+   "points": 474,
+   "comments": 262,
+   "r": 0.55,
    "at": "2026-10-31",
    "topics": [],
    "story_key": "url:twitter.com/jiahaoshao1/status/2116475922190922088",
@@ -842,7 +662,7 @@
    "title": "Malware uses LLMs to rank victims by how much they're worth",
    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
    "discussion": "https://news.ycombinator.com/item?id=50316531",
-   "points": 257,
+   "points": 259,
    "comments": 137,
    "r": 0.53,
    "at": "2026-10-31",
@@ -861,8 +681,8 @@
    "url": "https://github.com/dbreunig/nesformer",
    "discussion": "https://news.ycombinator.com/item?id=50306442",
    "points": 292,
-   "comments": 150,
-   "r": 0.51,
+   "comments": 151,
+   "r": 0.52,
    "at": "2026-10-30",
    "topics": [
     "모델릴리스"
@@ -882,8 +702,8 @@
    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "discussion": "https://news.ycombinator.com/item?id=50320995",
-   "points": 426,
-   "comments": 208,
+   "points": 442,
+   "comments": 216,
    "r": 0.49,
    "at": "2026-10-31",
    "topics": [
@@ -900,7 +720,7 @@
    "title": "Do the math: How we took over ChatGPT accounts",
    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "discussion": "https://news.ycombinator.com/item?id=50314699",
-   "points": 357,
+   "points": 359,
    "comments": 176,
    "r": 0.49,
    "at": "2026-10-31",
@@ -934,18 +754,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xkxt7a/memdoor_a_team_of_5_qwen3827b_models_beats_fable/",
+   "title": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+   "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder#system-prompt",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlh0zw/glb3dcoder_a_tiny_4b_coding_model_that_creates_3d/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:guregodevo/memdoor"
+   "topics": [],
+   "story_key": "hf:ccore/qwen3.5-4b-glb-3d-coder"
   },
   {
    "layer": "reddit",
@@ -978,32 +796,34 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
-   "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder#system-prompt",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlh0zw/glb3dcoder_a_tiny_4b_coding_model_that_creates_3d/",
+   "title": "Sorry Sam, my \"quite terrible\" home DRAM is at 100% now: patched Strata to make DeepSeek V4.1 agent sessions start 20× faster on a good old standard gaming GPU, no datacenter required",
+   "url": "https://github.com/Niko1221/Strata",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xljdnj/sorry_sam_my_quite_terrible_home_dram_is_at_100/",
    "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:ccore/qwen3.5-4b-glb-3d-coder"
+   "topics": [
+    "모델릴리스",
+    "에이전트",
+    "인프라·칩"
+   ],
+   "story_key": "gh:niko1221/strata"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data",
-   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xkzony/new_research_a_tiny_109mparameter_model/",
+   "title": "Do we really need all these \"speed\" posts?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts/",
    "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:x.com/askalphaxiv/status/2116779287390896418"
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts"
   },
   {
    "layer": "reddit",
@@ -1040,41 +860,66 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "DeepSeek: Exploring Super-agent Design: Towards a More Autonomous Agent System",
-   "url": "https://x.com/DeepSeekHarness/status/2116857257245987236",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xl1zn3/deepseek_exploring_superagent_design_towards_a/",
+   "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-MTP · Hugging Face",
+   "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xln8f2/jetbrainsmellum2112ba25bthinkingmtp_hugging_face/",
    "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "에이전트"
-   ],
-   "story_key": "url:x.com/DeepSeekHarness/status/2116857257245987236"
+   "topics": [],
+   "story_key": "hf:jetbrains/mellum2.1-12b-a2.5b-thinking"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Am I Crazy Or GLM 5.3 Flash is Hilarious?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkz4mo/am_i_crazy_or_glm_53_flash_is_hilarious/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xkz4mo/am_i_crazy_or_glm_53_flash_is_hilarious/",
+   "title": "Is Gemma 4 E4B still the best small model for a local, tool-calling personal assistant? What am I missing?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xle3ul/is_gemma_4_e4b_still_the_best_small_model_for_a/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xle3ul/is_gemma_4_e4b_still_the_best_small_model_for_a/",
    "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xkz4mo/am_i_crazy_or_glm_53_flash_is_hilarious"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xle3ul/is_gemma_4_e4b_still_the_best_small_model_for_a"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "64GB isn't the dead zone anymore if you run agents",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xksj75/64gb_isnt_the_dead_zone_anymore_if_you_run_agents/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xksj75/64gb_isnt_the_dead_zone_anymore_if_you_run_agents/",
+   "title": "LFM3 Omni 2B is INCREDIBLE",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlk2kb/lfm3_omni_2b_is_incredible/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlk2kb/lfm3_omni_2b_is_incredible/",
    "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xlk2kb/lfm3_omni_2b_is_incredible"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Proposal: A community revolution for private quality benchmarks (and why endless chasing tok/s is rotting our brains",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlusil/proposal_a_community_revolution_for_private/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlusil/proposal_a_community_revolution_for_private/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xlusil/proposal_a_community_revolution_for_private"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "8 agents × 250K context, concurrently, on two 3090s (~600+ tok/s total)",
+   "url": "https://imgur.com/JSqlXIi",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlk43x/8_agents_250k_context_concurrently_on_two_3090s/",
+   "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1082,71 +927,37 @@
    "topics": [
     "에이전트"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xksj75/64gb_isnt_the_dead_zone_anymore_if_you_run_agents"
+   "story_key": "url:imgur.com/JSqlXIi"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "FineDNA: the largest dataset to teach any LLM DNA (midtraining, SFT, RL)",
-   "url": "https://huggingface.co/datasets/HuggingFaceBio/FineDNA",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xkwvwg/finedna_the_largest_dataset_to_teach_any_llm_dna/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:datasets/huggingfacebio"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Do we really need all these \"speed\" posts?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts/",
-   "rank": 13,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Sorry Sam, my \"quite terrible\" home DRAM is at 100% now: patched Strata to make DeepSeek V4.1 agent sessions start 20× faster on a good old standard gaming GPU, no datacenter required",
-   "url": "https://github.com/Niko1221/Strata",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xljdnj/sorry_sam_my_quite_terrible_home_dram_is_at_100/",
+   "title": "Qwen 3.8 Flash Next NVFP4 on 64gb RAM and 5090, Basalt. Ditched windows for it. Very hyped for qwen 4 model family now.",
+   "url": "https://github.com/code-yeongyu/oh-my-openagent",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlicia/qwen_38_flash_next_nvfp4_on_64gb_ram_and_5090/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스",
-    "에이전트",
-    "인프라·칩"
+    "모델릴리스"
    ],
-   "story_key": "gh:niko1221/strata"
+   "story_key": "gh:code-yeongyu/oh-my-openagent"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "GLM-5.3-Flash on our H200s does most of my coding now while GPT-6.1 Sol orchestrates (OpenCode setup)",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xkz4lf/glm53flash_on_our_h200s_does_most_of_my_coding/",
+   "title": "4\" touchscreen for inference engine monitoring",
+   "url": "http://SKILL.md",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xlsuwf/4_touchscreen_for_inference_engine_monitoring/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:zai-org/glm-5.3-flash"
+   "topics": [],
+   "story_key": "url:skill.md/"
   }
  ],
  "quiet_important": [
@@ -1156,7 +967,7 @@
    "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
    "discussion": "https://news.ycombinator.com/item?id=50312922",
    "points": 186,
-   "comments": 200,
+   "comments": 201,
    "r": 1.08,
    "at": "2026-10-31",
    "topics": [],
@@ -1175,7 +986,7 @@
    "title": "Do the math: How we took over ChatGPT accounts",
    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "discussion": "https://news.ycombinator.com/item?id=50314699",
-   "points": 357,
+   "points": 359,
    "comments": 176,
    "r": 0.49,
    "at": "2026-10-31",
@@ -1196,8 +1007,8 @@
    "url": "https://github.com/dbreunig/nesformer",
    "discussion": "https://news.ycombinator.com/item?id=50306442",
    "points": 292,
-   "comments": 150,
-   "r": 0.51,
+   "comments": 151,
+   "r": 0.52,
    "at": "2026-10-30",
    "topics": [
     "모델릴리스"
@@ -1218,9 +1029,9 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 707,
-   "likes": 4315,
-   "downloads": 170353,
+   "trending": 693,
+   "likes": 4588,
+   "downloads": 177009,
    "topics": [
     "모델릴리스"
    ],
@@ -1230,9 +1041,9 @@
    "layer": "hf",
    "title": "LiquidAI/LFM3-1.7B",
    "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-   "trending": 641,
-   "likes": 702,
-   "downloads": 37568,
+   "trending": 681,
+   "likes": 776,
+   "downloads": 42384,
    "topics": [
     "모델릴리스"
    ],
@@ -1242,9 +1053,9 @@
    "layer": "hf",
    "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-   "trending": 548,
-   "likes": 604,
-   "downloads": 29364,
+   "trending": 571,
+   "likes": 639,
+   "downloads": 32439,
    "topics": [
     "인프라·칩"
    ],
@@ -1254,9 +1065,9 @@
    "layer": "hf",
    "title": "mistralai/Mistral-Large-4-1T-A52B",
    "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-   "trending": 478,
-   "likes": 1452,
-   "downloads": 4576,
+   "trending": 487,
+   "likes": 1473,
+   "downloads": 5500,
    "topics": [
     "모델릴리스"
    ],
@@ -1264,23 +1075,11 @@
   },
   {
    "layer": "hf",
-   "title": "Nanbeige/Nanbeige4.3-33B",
-   "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-   "trending": 455,
-   "likes": 974,
-   "downloads": 15795,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:nanbeige/nanbeige4.3-33b"
-  },
-  {
-   "layer": "hf",
    "title": "baidu/Unlimited-OCR-2",
    "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-   "trending": 444,
-   "likes": 520,
-   "downloads": 109519,
+   "trending": 463,
+   "likes": 548,
+   "downloads": 147588,
    "topics": [
     "모델릴리스"
    ],
@@ -1290,9 +1089,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 369,
-   "likes": 10226,
-   "downloads": 2431846,
+   "trending": 374,
+   "likes": 10284,
+   "downloads": 2467613,
    "topics": [
     "모델릴리스"
    ],
@@ -1302,9 +1101,9 @@
    "layer": "hf",
    "title": "ccore/Qwen3.5-4B-3D-Coder",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 356,
-   "likes": 483,
-   "downloads": 44825,
+   "trending": 370,
+   "likes": 526,
+   "downloads": 63499,
    "topics": [
     "모델릴리스"
    ],
@@ -1312,27 +1111,39 @@
   },
   {
    "layer": "hf",
-   "title": "Pika-Labs/Pika-H3-Flex",
-   "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-   "trending": 306,
-   "likes": 312,
-   "downloads": 404,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:pika-labs/pika-h3-flex"
-  },
-  {
-   "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 296,
-   "likes": 304,
-   "downloads": 4194,
+   "trending": 348,
+   "likes": 366,
+   "downloads": 7787,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:speridlabs/idol"
+  },
+  {
+   "layer": "hf",
+   "title": "Nanbeige/Nanbeige4.3-33B",
+   "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+   "trending": 337,
+   "likes": 995,
+   "downloads": 16976,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:nanbeige/nanbeige4.3-33b"
+  },
+  {
+   "layer": "hf",
+   "title": "Pika-Labs/Pika-H3-Flex",
+   "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+   "trending": 326,
+   "likes": 341,
+   "downloads": 491,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:pika-labs/pika-h3-flex"
   }
  ],
  "new_repos": [
@@ -1341,7 +1152,7 @@
    "title": "deepseek-ai/dsh-superagent-prototype",
    "desc": "Towards a More Autonomous Agent System",
    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-   "stars": 8021,
+   "stars": 11424,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1350,19 +1161,10 @@
   },
   {
    "layer": "github",
-   "title": "anhao/ai-pose-gallery-zh",
-   "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
-   "url": "https://github.com/anhao/ai-pose-gallery-zh",
-   "stars": 5164,
-   "topics": [],
-   "story_key": "gh:anhao/ai-pose-gallery-zh"
-  },
-  {
-   "layer": "github",
    "title": "heydamir/unslop",
    "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
    "url": "https://github.com/heydamir/unslop",
-   "stars": 4930,
+   "stars": 5524,
    "topics": [
     "모델릴리스"
    ],
@@ -1370,10 +1172,19 @@
   },
   {
    "layer": "github",
+   "title": "anhao/ai-pose-gallery-zh",
+   "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+   "url": "https://github.com/anhao/ai-pose-gallery-zh",
+   "stars": 5409,
+   "topics": [],
+   "story_key": "gh:anhao/ai-pose-gallery-zh"
+  },
+  {
+   "layer": "github",
    "title": "wangzan101/Mika",
    "desc": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
    "url": "https://github.com/wangzan101/Mika",
-   "stars": 3959,
+   "stars": 4897,
    "topics": [
     "에이전트"
    ],
@@ -1384,7 +1195,7 @@
    "title": "patch-gg/pixelfx",
    "desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
    "url": "https://github.com/patch-gg/pixelfx",
-   "stars": 2669,
+   "stars": 3212,
    "topics": [
     "모델릴리스"
    ],
@@ -1392,21 +1203,10 @@
   },
   {
    "layer": "github",
-   "title": "paipiange/nvzhuang",
-   "desc": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
-   "url": "https://github.com/paipiange/nvzhuang",
-   "stars": 1882,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:paipiange/nvzhuang"
-  },
-  {
-   "layer": "github",
    "title": "haydenschmitty/floorplan",
    "desc": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
    "url": "https://github.com/haydenschmitty/floorplan",
-   "stars": 1821,
+   "stars": 2058,
    "topics": [
     "모델릴리스"
    ],
@@ -1414,25 +1214,37 @@
   },
   {
    "layer": "github",
+   "title": "paipiange/nvzhuang",
+   "desc": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+   "url": "https://github.com/paipiange/nvzhuang",
+   "stars": 2027,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:paipiange/nvzhuang"
+  },
+  {
+   "layer": "github",
+   "title": "modelflare-ai/AnyModelBot",
+   "desc": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM a",
+   "url": "https://github.com/modelflare-ai/AnyModelBot",
+   "stars": 1219,
+   "topics": [
+    "모델릴리스",
+    "인프라·칩"
+   ],
+   "story_key": "gh:modelflare-ai/anymodelbot"
+  },
+  {
+   "layer": "github",
    "title": "elvarofficial/teardown",
    "desc": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
    "url": "https://github.com/elvarofficial/teardown",
-   "stars": 943,
+   "stars": 1121,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "gh:elvarofficial/teardown"
-  },
-  {
-   "layer": "github",
-   "title": "NiazMorshed2007/reanimate",
-   "desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
-   "url": "https://github.com/NiazMorshed2007/reanimate",
-   "stars": 742,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:niazmorshed2007/reanimate"
   }
  ],
  "trust_recent": [
@@ -1755,5 +1567,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-02 02:12"
+ "enriched_at": "2026-11-02 12:58"
 }
