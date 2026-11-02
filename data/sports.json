@@ -1,74 +1,7 @@
 {
- "updated": "2026-11-02 04:37 KST",
+ "updated": "2026-11-02 09:39 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "600057447",
-   "path": "racing/f1",
-   "league": "F1",
-   "name": "Mexico City Grand Prix",
-   "date": "2026-11-01T20:00Z",
-   "kst": "2026-11-02 05:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "season": "regular-season",
-   "us_tv": [],
-   "venue": "",
-   "tv": "영국 Sky Sports F1 · 캐나다 TSN",
-   "sport": "f1",
-   "sessions": [
-    {
-     "name": "FP1",
-     "date": "2026-10-30T18:30Z",
-     "kst": "2026-10-31 03:30"
-    },
-    {
-     "name": "FP2",
-     "date": "2026-10-30T22:00Z",
-     "kst": "2026-10-31 07:00"
-    },
-    {
-     "name": "FP3",
-     "date": "2026-10-31T17:30Z",
-     "kst": "2026-11-01 02:30"
-    },
-    {
-     "name": "Qual",
-     "date": "2026-10-31T21:00Z",
-     "kst": "2026-11-01 06:00"
-    },
-    {
-     "name": "Race",
-     "date": "2026-11-01T20:00Z",
-     "kst": "2026-11-02 05:00"
-    }
-   ],
-   "title": "멕시코시티 그랑프리",
-   "score": 40,
-   "why": [
-    "그랑프리 결승"
-   ],
-   "stars": 3,
-   "tv_kr": "쿠팡플레이(스포츠패스)",
-   "tv_world": [
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports F1"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
-  },
   {
    "id": "401909919",
    "path": "basketball/nba",
@@ -163,11 +96,6 @@
     "injuries": [
      {
       "team": "골든스테이트",
-      "who": "Gui Santos",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Out"
      },
@@ -182,6 +110,11 @@
       "status": "Out"
      },
      {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
+     },
+     {
       "team": "Phoenix Suns",
       "who": "Mark Williams",
       "status": "Out"
@@ -193,7 +126,7 @@
     },
     "preview": []
    },
-   "stars": 1,
+   "stars": 2,
    "tv_kr": "쿠팡플레이(스포츠패스)",
    "tv_world": [
     {
@@ -301,7 +234,7 @@
     "record": "1-0-2",
     "rank": "22",
     "pts": "3",
-    "form": "패패승무승"
+    "form": "패승무승패"
    },
    "title": "포르투 vs 나폴리",
    "kp": {
@@ -468,11 +401,6 @@
     "injuries": [
      {
       "team": "골든스테이트",
-      "who": "Gui Santos",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Out"
      },
@@ -485,6 +413,16 @@
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
       "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
+     },
+     {
+      "team": "Miami Heat",
+      "who": "Tim Hardaway Jr.",
+      "status": "Day-To-Day"
      }
     ],
     "predictor": {
@@ -764,10 +702,10 @@
     "id": "9726",
     "score": "0",
     "winner": false,
-    "record": "11-10-11",
+    "record": "11-10-12",
     "rank": "9",
     "pts": "43",
-    "form": "승패무무패"
+    "form": "패무무패패"
    },
    "away": {
     "name": "LAFC",
@@ -881,8 +819,8 @@
     "id": "19",
     "score": "0",
     "winner": null,
-    "record": "2-3",
-    "form": "패패승패승"
+    "record": "2-4",
+    "form": "패승패승패"
    },
    "title": "골든스테이트 vs Orlando Magic",
    "follow": {
@@ -982,7 +920,12 @@
      "home": "54",
      "away": "46"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Boston Celtics vs. Orlando Magic: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50352414/game-highlights"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -1106,9 +1049,221 @@
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/brentford-vs-brighton-hove-albion/3f5oi"
+  },
+  {
+   "id": "401873038",
+   "path": "football/nfl",
+   "league": "NFL",
+   "name": "Cincinnati Bengals at Atlanta Falcons",
+   "date": "2026-11-08T14:30Z",
+   "kst": "2026-11-08 23:30",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "NFL Madrid Game",
+   "season": "regular-season",
+   "us_tv": [
+    "NFL Net"
+   ],
+   "venue": "Santiago Bernabéu",
+   "tv": "영국 Sky Sports NFL · 미국 NFL Net",
+   "sport": "nfl",
+   "home": {
+    "name": "Atlanta Falcons",
+    "ko": "Atlanta Falcons",
+    "abbr": "ATL",
+    "id": "1",
+    "score": "0",
+    "winner": null,
+    "record": "3-5",
+    "form": "승패패승패"
+   },
+   "away": {
+    "name": "Cincinnati Bengals",
+    "ko": "Cincinnati Bengals",
+    "abbr": "CIN",
+    "id": "4",
+    "score": "0",
+    "winner": null,
+    "record": "5-2",
+    "form": "패패승승승"
+   },
+   "title": "Atlanta Falcons vs Cincinnati Bengals",
+   "score": 12,
+   "why": [
+    "한국 저녁 시간"
+   ],
+   "detail": {
+    "leaders": [
+     {
+      "team": "Atlanta Falcons",
+      "cat": "Passing Yards",
+      "who": "Michael Penix Jr.",
+      "val": "96/144 · 1 ·157 YDS · 9 TD · 1 INT"
+     },
+     {
+      "team": "Atlanta Falcons",
+      "cat": "Rushing Yards",
+      "who": "Bijan Robinson",
+      "val": "131 CAR · 704 YDS · 4 TD"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "cat": "Passing Yards",
+      "who": "Joe Burrow",
+      "val": "157/219 · 1 ·653 YDS · 15 TD · 3 INT"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "cat": "Rushing Yards",
+      "who": "Chase Brown",
+      "val": "82 CAR · 285 YDS · 1 TD"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "Atlanta Falcons",
+      "who": "Zachariah Branch",
+      "status": "Questionable"
+     },
+     {
+      "team": "Atlanta Falcons",
+      "who": "Samson Ebukam",
+      "status": "Questionable"
+     },
+     {
+      "team": "Atlanta Falcons",
+      "who": "Andy Dalton",
+      "status": "Out"
+     },
+     {
+      "team": "Atlanta Falcons",
+      "who": "Jack Strand",
+      "status": "Out"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "who": "Cashius Howell",
+      "status": "Questionable"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "who": "Cedric Johnson",
+      "status": "Questionable"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "who": "DJ Turner II",
+      "status": "Questionable"
+     },
+     {
+      "team": "Cincinnati Bengals",
+      "who": "Mitchell Tinsley",
+      "status": "Out"
+     }
+    ],
+    "predictor": {
+     "home": "26",
+     "away": "73.8"
+    },
+    "preview": [
+     {
+      "title": "Ja'Marr Chase's 'competitiveness' comes out at right time in Bengals' OT win",
+      "url": "https://www.espn.com/nfl/story/_/id/50353331/frustrated-chase-spikes-helmet-helping-bengals-win"
+     }
+    ]
+   },
+   "stars": 1,
+   "tv_kr": "쿠팡플레이(추정)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports NFL"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "NFL Net"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "CTV·TSN"
+    }
+   ]
   }
  ],
  "results": [
+  {
+   "id": "600057447",
+   "path": "racing/f1",
+   "league": "F1",
+   "name": "Mexico City Grand Prix",
+   "date": "2026-11-01T20:00Z",
+   "kst": "2026-11-02 05:00",
+   "state": "post",
+   "status": "Final",
+   "note": "",
+   "season": "regular-season",
+   "us_tv": [],
+   "venue": "",
+   "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "f1",
+   "sessions": [
+    {
+     "name": "FP1",
+     "date": "2026-10-30T18:30Z",
+     "kst": "2026-10-31 03:30"
+    },
+    {
+     "name": "FP2",
+     "date": "2026-10-30T22:00Z",
+     "kst": "2026-10-31 07:00"
+    },
+    {
+     "name": "FP3",
+     "date": "2026-10-31T17:30Z",
+     "kst": "2026-11-01 02:30"
+    },
+    {
+     "name": "Qual",
+     "date": "2026-10-31T21:00Z",
+     "kst": "2026-11-01 06:00"
+    },
+    {
+     "name": "Race",
+     "date": "2026-11-01T20:00Z",
+     "kst": "2026-11-02 05:00"
+    }
+   ],
+   "detail": {
+    "result": {
+     "podium": [
+      "Max Verstappen",
+      "Lewis Hamilton",
+      "Kimi Antonelli"
+     ],
+     "top10": [
+      "Max Verstappen",
+      "Lewis Hamilton",
+      "Kimi Antonelli",
+      "Charles Leclerc",
+      "Lando Norris",
+      "George Russell",
+      "Oscar Piastri",
+      "Franco Colapinto",
+      "Liam Lawson",
+      "Pierre Gasly"
+     ]
+    }
+   },
+   "title": "멕시코시티 그랑프리",
+   "score": 40,
+   "why": [
+    "그랑프리 결승"
+   ],
+   "stars": 3
+  },
   {
    "id": "401884750",
    "path": "soccer/ger.1",
@@ -1499,7 +1654,12 @@
      }
     ],
     "injuries": [],
-    "preview": [],
+    "preview": [
+     {
+      "title": "Ex-Liverpool, Man City star Milner runs NYC Marathon in just over three hours",
+      "url": "https://www.espn.com/soccer/story/_/id/50350050/james-milner-liverpool-man-city-england-runs-nyc-new-york-marathon-three-hours"
+     }
+    ],
     "result": {
      "score": "맨시티 0 : 1 브라이턴",
      "goals": [
@@ -1892,11 +2052,6 @@
     "injuries": [
      {
       "team": "골든스테이트",
-      "who": "Gui Santos",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Out"
      },
@@ -1911,14 +2066,19 @@
       "status": "Out"
      },
      {
-      "team": "LA 레이커스",
-      "who": "Adou Thiero",
+      "team": "골든스테이트",
+      "who": "Moses Moody",
       "status": "Out"
      },
      {
       "team": "LA 레이커스",
       "who": "Ziaire Williams",
-      "status": "Day-To-Day"
+      "status": "Out"
+     },
+     {
+      "team": "LA 레이커스",
+      "who": "Adou Thiero",
+      "status": "Out"
      }
     ],
     "preview": [],
@@ -1987,6 +2147,23 @@
    "pick": true,
    "verified": true,
    "source": "https://sports.news.nate.com/view/20260818n23466"
+  },
+  {
+   "id": "kovo-2026-1105-w",
+   "sport": "volleyball",
+   "league": "V리그 여자부",
+   "title": "SOOP vs 한국도로공사",
+   "date": "",
+   "kst": "2026-11-05 시각 미정",
+   "venue": "광주 염주체육관",
+   "tv": "중계 편성 미발표",
+   "why": [
+    "신생팀 SOOP의 첫 홈경기"
+   ],
+   "stars": 2,
+   "pick": false,
+   "verified": false,
+   "source": "https://wikidocs.net/blog/@mythos/29227"
   }
  ]
 }
