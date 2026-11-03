@@ -195,16 +195,17 @@ def pick_photo(pool, it, sec, used):
     # 제목에서 잡힌 주제가 먼저다 — 요약에 스친 단어('전기차 판매 둔화')로 트리폴드폰 기사에 자동차 사진이 붙었다
     title = " ".join((it.get("head", ""), it.get("sub", ""), it.get("en", "")))
     wants = [t for pat, t in PHOTO_TOPIC if re.search(pat, title, re.I)]
+    n_title = len(wants)
     wants += [t for pat, t in PHOTO_TOPIC if t not in wants and re.search(pat, it.get("deck", ""), re.I)]
     wants += [PHOTO_SEC.get(sec, "ai")] + PHOTO_ANY
     seed = sum(ord(ch) for ch in (it.get("en") or it.get("head") or ""))
-    for want in wants:
+    for i, want in enumerate(wants):
         cand = [x for x in pool if x["url"] not in used and want in x["tags"]]
         if cand:
             ph = cand[seed % len(cand)]
             used.add(ph["url"])
             return {"url": ph["url"], "alt": ph["desc"], "credit": ph.get("credit", ""),
-                    "credit_url": ph.get("credit_url", ""), "tag": want}
+                    "credit_url": ph.get("credit_url", ""), "tag": want, "from": "title" if i < n_title else "rest"}
     return None
 
 
@@ -245,12 +246,116 @@ def pick_face(nr, pp, title, used):
     """회사에 대표 얼굴(face)이 정해져 있으면 — 제품 이름이 없는 그 회사 기사엔 그 사람 사진.
     사용자 지시(2026-10-09): 오픈AI 기사는 웬만하면 샘 올트먼."""
     comps, _ = nr
-    for c in comps.values():
-        if c.get("face") and re.search(c["match"], title or ""):
-            p = (pp.get("people") or {}).get(c["face"])
-            if p:
-                return pick_person({"base": pp["base"], "people": {c["face"]: dict(p, match=".")}}, title, used)
+    # 제목에서 먼저 나온 회사가 주인공 — '삼성 60조 투자 시동, 다음은 오픈AI' 에 올트먼 얼굴이 붙었다(2026-11-04)
+    c = first_company(comps, title)
+    if c and c.get("face"):
+        p = (pp.get("people") or {}).get(c["face"])
+        if p:
+            return pick_person({"base": pp["base"], "people": {c["face"]: dict(p, match=".")}}, title, used)
     return None
+
+
+def first_company(comps, title):
+    """제목에 나온 뉴스룸 회사 중 가장 앞에 나온 것"""
+    hits = [(m.start(), i, c) for i, c in enumerate(comps.values()) for m in [re.search(c["match"], title or "")] if m]
+    return min(hits, key=lambda h: h[:2])[2] if hits else None
+
+
+def library_pool():
+    """우리 사진 라이브러리 — sharktalk-mirror 가 내보낸 data/library_photos.json (카드뉴스·브리핑 사이트와 같은 이름 규칙·사진).
+    정규식은 JS 문법이라 re.ASCII 로 읽는다 (\b 가 한글 앞뒤에서 JS 처럼 끊기게: 'FTC가')."""
+    L = load(os.path.join(DATA, "library_photos.json"), {}) or {}
+    fl = lambda e: re.ASCII | (re.I if e.get("i") else 0)
+    for e in L.get("entities") or []:
+        e["rx"] = re.compile(e["re"], fl(e))
+    for e in L.get("topics") or []:
+        e["rx"] = re.compile(e["re"], fl(e))
+    L["cue_rx"] = {k: re.compile(v["re"], fl(v)) for k, v in (L.get("cue") or {}).items()}
+    return L
+
+
+def names_company(nr, lib, title):
+    """제목에 회사·기관(넓은 나라·기관 말고)이 하나라도 나오는가"""
+    comps, _ = nr
+    if any(re.search(c["match"], title or "") for c in comps.values()):
+        return True
+    return any(not e["broad"] and e["rx"].search(title or "") for e in lib.get("entities") or [])
+
+
+def pick_library(lib, title, text, used, broad=False):
+    """제목에 나온 회사·기관의 우리 위키미디어 CC 사진 (사옥·인물·제품·행사). 제목에서 먼저 나온 주체가 주인공.
+    broad=True 면 나라·도시·기관(중국·월가·펜타곤 등) 사진 — 주제 자료사진이 약할 때만 쓴다.
+    다른 주체가 찍힌 사진(shows)은 그 주체가 기사에 나올 때만, 특정 사건 사진(ctx)은 그 단어가 있을 때만."""
+    ents = lib.get("entities") or []
+    if not ents:
+        return None
+    body = " ".join(text.values())
+    present, broad_keys = set(), {e["k"] for e in ents if e["broad"]}
+    for e in ents:
+        if e["rx"].search(body):
+            present.update([e["k"], e["photo"]])
+    hits = sorted((m.start(), i, e) for i, e in enumerate(ents) for m in [e["rx"].search(title or "")] if m)
+    cue = lib.get("cue_rx") or {}
+    want = [f for f in ("leader", "product", "event") if f in cue and cue[f].search(title or "")]
+    off = photo_off()
+    for _, _, e in hits:
+        if e["broad"] != broad or not e["photo"]:
+            continue
+        cand = []
+        for x in (lib.get("pools") or {}).get(e["photo"]) or []:
+            url = lib["base_photo"] + x["id"] + ".webp"
+            if url in used or url in off:
+                continue
+            if any(k not in present and k not in broad_keys for k in x.get("shows") or []):
+                continue
+            if x.get("ctx") and not any(w.lower() in body.lower() for w in x["ctx"]):
+                continue
+            cand.append(x)
+        if not cand:
+            continue
+        # 장면: 사람 기사·발언 기사는 얼굴, 출시는 제품, 행사·공장은 행사, 그 밖엔 사옥·장소 — 회사 기사에 사람 얼굴은 맨 뒤
+        order = (["leader"] if e["person"] else []) + want + ["hq", "place", "product", "event", "dc", "generic", ""] + ([] if e["person"] else ["leader"])
+        rank = lambda x: order.index(x["facet"]) if x["facet"] in order else len(order)
+        best = min(map(rank, cand))
+        top = [x for x in cand if rank(x) == best]
+        x = top[sum(map(ord, title or "")) % len(top)]
+        url = lib["base_photo"] + x["id"] + ".webp"
+        used.add(url)
+        art = x.get("artist") or ""
+        short = "%s · %s" % (re.sub(r"\s*\((잘라냄|배경 채움)\)", "", art), x["license"]) if art else x["license"]
+        full = "%s · %s" % (art, x["license"]) if art else x["license"]
+        return {"src": url, "sm": url, "alt": x.get("alt", ""), "nr": short, "credit": full,
+                "credit_url": x.get("page", ""), "lib": e["k"]}
+    return None
+
+
+def pick_topic_art(lib, title, deck, day, used):
+    """제목의 주제(로봇·칩·주식·소송 등)를 그린 SharkTalk 주제 그림 — 그 판은 한 화풍으로 (카드뉴스와 같은 해시)."""
+    arts = lib.get("topic_art") or {}
+    best = None
+    for e in lib.get("topics") or []:
+        if e["t"] not in arts or not e["rx"].search(title or ""):
+            continue
+        w = (3 + (1 if e["rx"].search(deck or "") else 0)) * e.get("k", 1)
+        if e["t"] == "ai":
+            w *= 0.5                                   # 'AI' 는 거의 모든 기사에 — 더 구체적인 주제가 있으면 그쪽
+        if not best or w > best[0]:
+            best = (w, e["t"])
+    if not best:
+        return None
+    styles = ["flat", "iso", "paper", "riso", "ink"]
+    h = 2166136261
+    for ch in "style|" + day:                          # FNV-1a (sharktalk-mirror match.js 와 같은 방식)
+        h = ((h ^ ord(ch)) * 16777619) & 0xFFFFFFFF
+    st = styles[h % len(styles)]
+    cand = [a for a in arts[best[1]] if lib["base_art"] + a["id"] + ".webp" not in used]
+    cand.sort(key=lambda a: a["style"] != st)
+    if not cand:
+        return None
+    url = lib["base_art"] + cand[0]["id"] + ".webp"
+    used.add(url)
+    return {"src": url, "sm": url, "alt": cand[0].get("alt", ""), "nr": "SharkTalk 일러스트",
+            "credit": "SharkTalk 일러스트", "credit_url": "", "art": best[1]}
 
 
 def pick_newsroom(nr, text, used, product_only=False):
@@ -276,7 +381,9 @@ def pick_newsroom(nr, text, used, product_only=False):
         return out(best[1], best[2])
     if product_only:
         return None
-    for cid, c in comps.items():
+    # 제목에서 먼저 나온 회사부터
+    order = sorted(comps.items(), key=lambda kv: (lambda m: m.start() if m else 1e9)(re.search(kv[1]["match"], text.get("title", ""))))
+    for cid, c in order:
         if c.get("permitted") is False:            # 이용 조건 불명확 — 사람이 확인하고 켠다
             continue
         if not re.search(c["match"], text.get("title", "")):
@@ -638,7 +745,8 @@ def main():
         if ph:
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=80"
             lead["img"] = {"src": photo(src, 1200, 675), "sm": photo(src, 640, 360), "alt": ph["alt"],
-                           "credit": ph["credit"], "credit_url": ph["credit_url"], "file": True}
+                           "credit": ph["credit"], "credit_url": ph["credit_url"], "file": True,
+                           "weak": ph["from"] != "title"}
     used_ph = {re.sub(r"\?.*$", "", x["img"]["src"]) for x in [lead or {}] + left if x.get("img")}
 
     # 외신이 다루지 않은 해외 반향 — 규모 상위 (요약 있는 것만)
@@ -720,7 +828,7 @@ def main():
         if ph:
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
             domestic["lead"]["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270),
-                                       "alt": ph["alt"], "file": True}
+                                       "alt": ph["alt"], "file": True, "weak": ph["from"] != "title"}
 
     # ── 1면 배치 ──
     # 신문 1면 블록: 톱 + 사이드 2~3건 + 하단 주요기사 줄 3~4건. 외신·국내·커뮤니티를 섞는다.
@@ -789,7 +897,8 @@ def main():
                         it.get("sec") or ("AI/기술" if it["kind"] != "domestic" else "반도체/인프라"), used_ph)
         if ph:
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
-            it["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270), "alt": ph["alt"], "file": True}
+            it["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270), "alt": ph["alt"], "file": True,
+                         "weak": ph["from"] != "title"}
 
     placed = set(side + row)
     rest_top = [it for it in left if it["key"] not in placed]
@@ -816,7 +925,7 @@ def main():
                 w, h = (960, 540) if size == "lead" else (240, 240)
                 it["img"] = {"src": photo(ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75", w, h),
                              "alt": ph["alt"], "credit": ph["credit"], "credit_url": ph["credit_url"],
-                             "size": size, "file": True}
+                             "size": size, "file": True, "weak": ph["from"] != "title"}
 
     # ── 해석 레일: 패널 + 신뢰층 ──
     voices = []
@@ -844,12 +953,24 @@ def main():
     # ── 기업 뉴스룸 공식 사진 — 회사가 주인공인 기사엔 Unsplash 대신 그 회사 사진 ('<회사> 제공') ──
     # 편집국이 drop_photo·no_photo 로 막은 기사는 건드리지 않는다. 같은 사진은 한 면에 한 번.
     nrp, ppl, nr_used = newsroom_pool(), people_pool(), set()
+    lib, edition_day = library_pool(), now.date().isoformat()
     def nr_swap(it, title, sub="", deck="", key=None):
         if not it or (dx.get(key) or {}).get("drop_photo") or (dx.get(key) or {}).get("no_photo") or it.get("no_photo"):
             return
         tt = {"title": " ".join((title or "", sub or "")), "deck": deck or ""}
-        # 제품 이름(1대1) → 제목에 나온 사람 얼굴 → 회사 대표 얼굴(face) → 회사 사진 순
-        ph = pick_newsroom(nrp, tt, nr_used, product_only=True) or pick_person(ppl, tt["title"], nr_used)             or pick_face(nrp, ppl, tt["title"], nr_used) or pick_newsroom(nrp, tt, nr_used)
+        # 회사는 제목(headline)에 나온 것만 주인공 — 부제는 제목에 회사가 하나도 없을 때만 본다
+        # (2026-10-23 '딥시크, 150억달러 조달' 톱이 부제 'OpenAI와 겨루겠다' 때문에 올트먼 얼굴을 달았다)
+        ct = {"title": title or "", "deck": deck or ""} if names_company(nrp, lib, title) else tt
+        cur = it.get("img") or {}
+        swappable = not cur.get("src") or "unsplash.com" in cur.get("src", "")
+        # 제품 이름(1대1) → 제목에 나온 사람 얼굴 → 회사 대표 얼굴(face) → 회사 사진 → 우리 위키미디어 사진(회사·기관)
+        ph = pick_newsroom(nrp, tt, nr_used, product_only=True) or pick_person(ppl, tt["title"], nr_used) \
+            or pick_face(nrp, ppl, ct["title"], nr_used) or pick_newsroom(nrp, ct, nr_used) \
+            or (swappable and pick_library(lib, title, tt, nr_used))
+        # 자료사진이 제목 주제가 아니라 섹션 기본값으로 붙었으면 → 주제 그림 → 나라·도시 사진
+        # (중국 D램 업체 기사엔 상하이 야경보다 칩 그림)
+        if not ph and cur.get("weak"):
+            ph = pick_topic_art(lib, title, deck, edition_day, nr_used) or pick_library(lib, title, tt, nr_used, broad=True)
         if ph:
             size = (it.get("img") or {}).get("size")
             it["img"] = dict(ph, **({"size": size} if size else {}))
