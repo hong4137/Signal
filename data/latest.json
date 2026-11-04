@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-04 05:00",
+ "updated": "2026-11-04 11:57",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 22,
-  "reddit": 30,
+  "hn": 24,
+  "reddit": 22,
   "hf": 15,
-  "github": 10,
+  "github": 12,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,8 +16,8 @@
    "title": "Astra can read and write weights to improve Qwen",
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
    "discussion": "https://news.ycombinator.com/item?id=50341174",
-   "points": 2911,
-   "comments": 877,
+   "points": 2924,
+   "comments": 879,
    "r": 0.3,
    "at": "2026-11-02",
    "topics": [
@@ -35,46 +35,12 @@
   },
   {
    "layer": "hn",
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-   "discussion": "https://news.ycombinator.com/item?id=50323088",
-   "points": 474,
-   "comments": 389,
-   "r": 0.82,
-   "at": "2026-11-01",
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "url:nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
-   "summary_ko": "AI 도구를 활용해 코드를 작성할 때 자바스크립트 프레임워크가 미치는 영향과 비용에 대해 논쟁이 오갔다. 복잡한 SPA 프레임워크가 AI의 개발 생산성을 높여준다는 의견과, 바닐라 자바스크립트나 가벼운 구조가 더 낫다는 주장이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
-   "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
-   "discussion": "https://news.ycombinator.com/item?id=50344919",
-   "points": 390,
-   "comments": 308,
-   "r": 0.79,
-   "at": "2026-11-02",
-   "topics": [],
-   "story_key": "url:techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
-   "summary_ko": "앤트로픽의 IPO를 SEC가 막아야 한다는 주장에 대해, S-1 서류가 정직하다면 SEC는 본연의 임무를 다하는 것이라는 반박과 함께 일반 대중이 이해하기 어려운 복잡한 재무 구조가 문제라는 지적이 맞섰다. 또한 과거 SPAC 열풍과 비교하며 상장 이후 주요 지수 편입으로 인해 펀드들이 울며 겨자 먹기로 매수하게 되는 구조적 위험성이 거론됐다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Google will turn off search for schools that reject AI",
    "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
    "discussion": "https://news.ycombinator.com/item?id=50353192",
-   "points": 367,
-   "comments": 284,
-   "r": 0.77,
+   "points": 565,
+   "comments": 413,
+   "r": 0.73,
    "at": "2026-11-03",
    "topics": [],
    "story_key": "url:nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
@@ -95,12 +61,62 @@
   },
   {
    "layer": "hn",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "discussion": "https://news.ycombinator.com/item?id=50323088",
+   "points": 474,
+   "comments": 393,
+   "r": 0.83,
+   "at": "2026-11-01",
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+   "summary_ko": "AI 도구를 활용해 코드를 작성할 때 자바스크립트 프레임워크가 미치는 영향과 비용에 대해 논쟁이 오갔다. 복잡한 SPA 프레임워크가 AI의 개발 생산성을 높여준다는 의견과, 바닐라 자바스크립트나 가벼운 구조가 더 낫다는 주장이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+   "discussion": "https://news.ycombinator.com/item?id=50354960",
+   "points": 1066,
+   "comments": 352,
+   "r": 0.33,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "gh:postmanlabs/postman-app-support",
+   "summary_ko": "개발자들은 포스트맨이 로그인 강제와 대규모 투자 이후 과도한 수익화 과정에서 전형적인 앤시티피케이션(Enshittification)을 겪고 있다고 비판했다. 사용자 동의 없는 AI 플러그인 설치와 데이터 공유 논란으로 인해 브루노(Bruno)나 에피독(Apidog) 등 대안 도구로 이탈하려는 움직임이 두드러졌다.",
+   "is_event": true,
+   "kr_query": "포스트맨 AI 플러그인 자동 설치 논란",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+   "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+   "discussion": "https://news.ycombinator.com/item?id=50344919",
+   "points": 397,
+   "comments": 313,
+   "r": 0.79,
+   "at": "2026-11-02",
+   "topics": [],
+   "story_key": "url:techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
+   "summary_ko": "앤트로픽의 IPO를 SEC가 막아야 한다는 주장에 대해, S-1 서류가 정직하다면 SEC는 본연의 임무를 다하는 것이라는 반박과 함께 일반 대중이 이해하기 어려운 복잡한 재무 구조가 문제라는 지적이 맞섰다. 또한 과거 SPAC 열풍과 비교하며 상장 이후 주요 지수 편입으로 인해 펀드들이 울며 겨자 먹기로 매수하게 되는 구조적 위험성이 거론됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
    "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
    "discussion": "https://news.ycombinator.com/item?id=50337439",
    "points": 236,
-   "comments": 283,
-   "r": 1.2,
+   "comments": 285,
+   "r": 1.21,
    "at": "2026-11-02",
    "topics": [],
    "story_key": "url:cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
@@ -133,8 +149,8 @@
    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
    "discussion": "https://news.ycombinator.com/item?id=50339494",
-   "points": 346,
-   "comments": 267,
+   "points": 349,
+   "comments": 268,
    "r": 0.77,
    "at": "2026-11-02",
    "topics": [],
@@ -150,30 +166,14 @@
    "url": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
    "discussion": "https://news.ycombinator.com/item?id=50344958",
    "points": 227,
-   "comments": 256,
-   "r": 1.13,
+   "comments": 268,
+   "r": 1.18,
    "at": "2026-11-02",
    "topics": [],
    "story_key": "url:regenerator1.com/p/anthropics-growth-just-flattened",
    "summary_ko": "앤트로픽의 성장세 둔화 여부를 두고 거대 기업의 매출 및 부채 구조와 단순 비교할 수 없다는 의견과 함께, 대기업들이 비용 절감을 위해 저렴한 모델로 갈아타고 있다는 주장이 맞섰다. 또한 AI가 생성한 PR이 늘어나면서 코드 리뷰가 실질적인 검토 없이 단순 승인으로 변질되었다는 지적도 나왔다.",
    "is_event": false,
    "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Jobless tech workers are being left out of San Francisco's AI boom",
-   "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
-   "discussion": "https://news.ycombinator.com/item?id=50337454",
-   "points": 186,
-   "comments": 256,
-   "r": 1.38,
-   "at": "2026-11-02",
-   "topics": [],
-   "story_key": "url:bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
-   "summary_ko": "샌프란시스코의 AI 호황 속에서도 실직한 기존 테크 노동자들이 소외되는 현상을 두고, 고용 시장의 변화와 구조조정의 원인 및 지역 경제에 미치는 영향을 놓고 다양한 의견이 오갔다.",
-   "is_event": true,
-   "kr_query": "샌프란시스코 AI 호황 테크 해고",
    "kr": []
   },
   {
@@ -194,38 +194,18 @@
   },
   {
    "layer": "hn",
-   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-   "discussion": "https://news.ycombinator.com/item?id=50320995",
-   "points": 458,
-   "comments": 230,
-   "r": 0.5,
-   "at": "2026-10-31",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:guregodevo/memdoor",
-   "summary_ko": "소규모 모델 여러 개를 병렬로 사용하는 방식이 대형 모델 하나보다 더 낫다는 의견과, 근본적인 모델 지능의 한계는 병렬화로 극복할 수 없다는 회의론이 맞섰다. 로컬 모델로 코딩 작업을 원활하게 수행할 수 있다는 긍정적 평가가 나온 반면, 작은 오류가 누적되거나 컨텍스트 제약으로 한계가 명확하다는 지적도 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-   "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-   "discussion": "https://news.ycombinator.com/item?id=50322173",
-   "points": 343,
-   "comments": 218,
-   "r": 0.64,
-   "at": "2026-11-01",
-   "topics": [
-    "보안·사고"
-   ],
-   "story_key": "url:jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing",
-   "summary_ko": "브라질 법원이 법원 제출 서류에 프롬프트 인젝션을 사용한 변호사들에게 제재를 가한 사건을 두고 커뮤니티에서 다양한 해석이 나왔다. AI의 판결문 및 서류 검토 과정에서 발생할 수 있는 보안 허점과 변호사의 책임 문제를 두고 논쟁이 벌어졌다.",
+   "title": "Jobless tech workers are being left out of San Francisco's AI boom",
+   "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+   "discussion": "https://news.ycombinator.com/item?id=50337454",
+   "points": 188,
+   "comments": 253,
+   "r": 1.35,
+   "at": "2026-11-02",
+   "topics": [],
+   "story_key": "url:bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+   "summary_ko": "샌프란시스코의 AI 호황 속에서도 실직한 기존 테크 노동자들이 소외되는 현상을 두고, 고용 시장의 변화와 구조조정의 원인 및 지역 경제에 미치는 영향을 놓고 다양한 의견이 오갔다.",
    "is_event": true,
-   "kr_query": "브라질 법원 프롬프트 인젝션 변호사 제재",
+   "kr_query": "샌프란시스코 AI 호황 테크 해고",
    "kr": []
   },
   {
@@ -233,9 +213,9 @@
    "title": "Intel stock collapse worsens as $3.5T chip rout spreads",
    "url": "https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html",
    "discussion": "https://news.ycombinator.com/item?id=50346153",
-   "points": 224,
-   "comments": 213,
-   "r": 0.95,
+   "points": 229,
+   "comments": 221,
+   "r": 0.97,
    "at": "2026-11-03",
    "topics": [
     "인프라·칩"
@@ -258,28 +238,12 @@
   },
   {
    "layer": "hn",
-   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
-   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
-   "discussion": "https://news.ycombinator.com/item?id=50354960",
-   "points": 622,
-   "comments": 199,
-   "r": 0.32,
-   "at": "2026-11-03",
-   "topics": [],
-   "story_key": "gh:postmanlabs/postman-app-support",
-   "summary_ko": "개발자들은 포스트맨이 로그인 강제와 대규모 투자 이후 과도한 수익화 과정에서 전형적인 앤시티피케이션(Enshittification)을 겪고 있다고 비판했다. 사용자 동의 없는 AI 플러그인 설치와 데이터 공유 논란으로 인해 브루노(Bruno)나 에피독(Apidog) 등 대안 도구로 이탈하려는 움직임이 두드러졌다.",
-   "is_event": true,
-   "kr_query": "포스트맨 AI 플러그인 자동 설치 논란",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "discussion": "https://news.ycombinator.com/item?id=50351111",
-   "points": 778,
-   "comments": 180,
-   "r": 0.23,
+   "points": 914,
+   "comments": 192,
+   "r": 0.21,
    "at": "2026-11-03",
    "topics": [
     "모델릴리스"
@@ -299,8 +263,8 @@
    "title": "Scaling Git at OpenAI",
    "url": "https://openai.com/index/scaling-git-at-openai/",
    "discussion": "https://news.ycombinator.com/item?id=50345924",
-   "points": 259,
-   "comments": 175,
+   "points": 264,
+   "comments": 179,
    "r": 0.68,
    "at": "2026-11-02",
    "topics": [
@@ -311,6 +275,33 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+   "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+   "discussion": "https://news.ycombinator.com/item?id=50336918",
+   "points": 394,
+   "comments": 174,
+   "r": 0.44,
+   "at": "2026-11-02",
+   "topics": [],
+   "story_key": "url:arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand",
+   "summary_ko": "AI로 인한 데이터 아카이빙 수요 증가로 후지필름이 테이프 생산량을 5배 늘린다는 소식에 대해, 테이프 저장 방식의 비용 효율성과 장기 보존의 신뢰성을 두고 실사용자들 간에 열띤 토론이 벌어졌습니다.",
+   "is_event": true,
+   "kr_query": "후지필름 테이프 생산 AI 아카이빙",
+   "kr": [
+    {
+     "t": "\"레트로의 대반격\"… 후지필름, AI發 수요에 '자기 테이프' 생산 5배로 ...",
+     "u": "https://www.g-enews.com/view.php?ud=2026102814414285610c8c1c064d_1",
+     "d": "Thu, 29 Oct 2026",
+     "why": [
+      "생산",
+      "테이프",
+      "후지필름"
+     ]
+    }
+   ]
   },
   {
    "layer": "hn",
@@ -350,46 +341,33 @@
   },
   {
    "layer": "hn",
-   "title": "ChatGPT and Codex usage limits merging",
-   "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-   "discussion": "https://news.ycombinator.com/item?id=50320588",
-   "points": 233,
-   "comments": 172,
-   "r": 0.74,
-   "at": "2026-10-31",
-   "topics": [],
-   "story_key": "url:help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-   "summary_ko": "챗GPT와 코덱스(Codex)의 사용량 한도가 통합되는 방안을 두고 이용자들 사이에서 의견이 엇갈리고 있다. 일각에서는 대규모 가격 인상이나 토큰 계산 방식의 불투명성을 우려하는 반면, API와 연동해 유연하게 활용할 수 있다는 반응도 나온다.",
-   "is_event": true,
-   "kr_query": "챗GPT 코덱스 사용량 통합",
-   "kr": [
-    {
-     "t": "챗GPT·코덱스 한도 12월부터 공유…즉시 채팅은 제외",
-     "u": "https://www.tokenpost.kr/news/ai/430731",
-     "d": "Sun, 01 Nov 2026",
-     "why": [
-      "gpt",
-      "코덱스"
-     ]
-    },
-    {
-     "t": "오픈AI, 연내 '챗GPT' 대화·업무 기능 통합…별도 모드 전환 없앤다",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216804",
-     "d": "Thu, 29 Oct 2026",
-     "why": [
-      "gpt",
-      "통합"
-     ]
-    }
-   ]
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "discussion": "https://news.ycombinator.com/item?id=50355251",
+   "points": 505,
+   "comments": 157,
+   "r": 0.31,
+   "at": "2026-11-03",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "key",
+   "summary_ko": "로컬 환경에서 큐원 모델을 구동해본 경험과 성능에 대한 평가가 공유되었다. 복잡한 작업에서 프롬프트 조율이 필요하다는 지적이 있었지만, 하드웨어 사양 대비 뛰어난 속도와 유연성 덕분에 실무에 충분히 유용하다는 긍정적인 반응도 많았다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Egoless Mathematics in the AI Era",
    "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50341736",
-   "points": 180,
-   "comments": 151,
+   "points": 182,
+   "comments": 153,
    "r": 0.84,
    "at": "2026-11-02",
    "topics": [],
@@ -401,12 +379,28 @@
   },
   {
    "layer": "hn",
+   "title": "Stringman, an $800 open-source room scale gripper robot",
+   "url": "https://neufangled.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50354358",
+   "points": 412,
+   "comments": 151,
+   "r": 0.37,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "url:neufangled.com/",
+   "summary_ko": "오픈소스 그리퍼 로봇의 안전성과 위험성을 두고 의견이 갈렸다. 일부 사용자는 가정 내 사고나 악용 가능성을 경고하며 제조사의 책임을 강조한 반면, 장치 규격상 치명적인 상해를 입히기 어렵다며 과도한 우려라는 반박도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "America on Data Centers: listen to 10,000+ city council comments",
    "url": "https://www.americansentiment.com/datacenters",
    "discussion": "https://news.ycombinator.com/item?id=50331404",
    "points": 36,
-   "comments": 140,
-   "r": 3.89,
+   "comments": 142,
+   "r": 3.94,
    "at": "2026-11-02",
    "topics": [
     "인프라·칩"
@@ -415,6 +409,22 @@
    "summary_ko": "데이터센터 설립을 둘러싼 공청회와 주민 의견 수렴 절차를 비판하는 목소리가 나온 한편, 지역 사회의 정당한 권리 행사이자 대규모 인프라에 대한 필수적 반발로 봐야 한다는 반론이 팽팽히 맞섰다.",
    "is_event": false,
    "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
+   "discussion": "https://news.ycombinator.com/item?id=50352757",
+   "points": 438,
+   "comments": 138,
+   "r": 0.32,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "hn:50352757",
+   "summary_ko": "오픈에이아이의 코덱스 채팅 데이터 학습 재개 의혹에 대해 비판의 목소리가 높았다. 이용자 데이터 보호와 프라이버시 침해를 지적하는 의견이 우세한 가운데, 자체 추론이나 비즈니스 계정 사용 외에는 대안이 없다는 반응도 있었다.",
+   "is_event": true,
+   "kr_query": "오픈에이아이 코덱스 모델 학습",
    "kr": []
   },
   {
@@ -435,10 +445,44 @@
   },
   {
    "layer": "hn",
+   "title": "Nvidia – open-source auto-ontology",
+   "url": "https://github.com/NVIDIA/auto-ontology",
+   "discussion": "https://news.ycombinator.com/item?id=50348962",
+   "points": 263,
+   "comments": 127,
+   "r": 0.48,
+   "at": "2026-11-03",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "gh:nvidia/auto-ontology",
+   "summary_ko": "엔비디아의 오픈소스 자동 온톨로지 공개를 두고 기업용 에이전트 도입의 마지막 퍼즐 조각이 될 것이라는 기대와 함께, 대규모 언어 모델(LLM)의 한계와 데이터의 의미적 간극을 지적하는 회의적인 의견이 맞섰습니다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "discussion": "https://news.ycombinator.com/item?id=50358422",
+   "points": 282,
+   "comments": 124,
+   "r": 0.44,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "url:asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "summary_ko": "미국 빅테크 기업들의 숨겨진 AI 부채가 급증한 것을 두고, 2008년 금융위기 당시와 유사한 시스템 리스크를 우려하는 시각과 초거대 기업들의 확실한 수익성과 자산 구조를 근거로 과도한 우려라는 반박이 엇갈렸습니다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
    "url": "https://momentic.ai/",
    "discussion": "https://news.ycombinator.com/item?id=50339913",
-   "points": 158,
+   "points": 159,
    "comments": 124,
    "r": 0.78,
    "at": "2026-11-02",
@@ -451,44 +495,6 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "discussion": "https://news.ycombinator.com/item?id=50320255",
-   "points": 196,
-   "comments": 123,
-   "r": 0.63,
-   "at": "2026-10-31",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "summary_ko": "앤트로픽이 클로드의 비디오 게임 리버스 엔지니어링을 차단하는 조치를 취한 것에 대해, 댓글에서는 저작권 및 안전 장치 강화가 정당하다는 의견과 지나친 통제가 경쟁력 약화로 이어진다는 비판이 엇갈렸다. 또한 대중의 반발보다는 소수 주요 기업의 요구와 법적 리스크 관리가 AI 기업에 더 중요하다는 분석도 제기되었다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 클로드 게임 리버스 엔지니어링 차단",
-   "kr": [
-    {
-     "t": "클로드 'AI로 게임 베끼기' 금지, 챗GPT도 관련 사례 포착",
-     "u": "https://www.gamemeca.com/mv.php?inflow=naver_s&gid=1782759",
-     "d": "Mon, 02 Nov 2026",
-     "why": [
-      "게임",
-      "클로드"
-     ]
-    },
-    {
-     "t": "앤트로픽, 클로드로 기존 게임 복제 금지…정상 작업까지 차단 논란",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216862",
-     "d": "Sun, 01 Nov 2026",
-     "why": [
-      "게임",
-      "앤트로픽",
-      "차단"
-     ]
-    }
-   ]
   }
  ],
  "by_debate": [
@@ -498,8 +504,8 @@
    "url": "https://www.americansentiment.com/datacenters",
    "discussion": "https://news.ycombinator.com/item?id=50331404",
    "points": 36,
-   "comments": 140,
-   "r": 3.89,
+   "comments": 142,
+   "r": 3.94,
    "at": "2026-11-02",
    "topics": [
     "인프라·칩"
@@ -531,9 +537,9 @@
    "title": "Jobless tech workers are being left out of San Francisco's AI boom",
    "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
    "discussion": "https://news.ycombinator.com/item?id=50337454",
-   "points": 186,
-   "comments": 256,
-   "r": 1.38,
+   "points": 188,
+   "comments": 253,
+   "r": 1.35,
    "at": "2026-11-02",
    "topics": [],
    "story_key": "url:bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
@@ -548,8 +554,8 @@
    "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
    "discussion": "https://news.ycombinator.com/item?id=50337439",
    "points": 236,
-   "comments": 283,
-   "r": 1.2,
+   "comments": 285,
+   "r": 1.21,
    "at": "2026-11-02",
    "topics": [],
    "story_key": "url:cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
@@ -583,8 +589,8 @@
    "url": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
    "discussion": "https://news.ycombinator.com/item?id=50344958",
    "points": 227,
-   "comments": 256,
-   "r": 1.13,
+   "comments": 268,
+   "r": 1.18,
    "at": "2026-11-02",
    "topics": [],
    "story_key": "url:regenerator1.com/p/anthropics-growth-just-flattened",
@@ -614,9 +620,9 @@
    "title": "Intel stock collapse worsens as $3.5T chip rout spreads",
    "url": "https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html",
    "discussion": "https://news.ycombinator.com/item?id=50346153",
-   "points": 224,
-   "comments": 213,
-   "r": 0.95,
+   "points": 229,
+   "comments": 221,
+   "r": 0.97,
    "at": "2026-11-03",
    "topics": [
     "인프라·칩"
@@ -678,8 +684,8 @@
    "title": "Egoless Mathematics in the AI Era",
    "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
    "discussion": "https://news.ycombinator.com/item?id=50341736",
-   "points": 180,
-   "comments": 151,
+   "points": 182,
+   "comments": 153,
    "r": 0.84,
    "at": "2026-11-02",
    "topics": [],
@@ -695,8 +701,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "discussion": "https://news.ycombinator.com/item?id=50323088",
    "points": 474,
-   "comments": 389,
-   "r": 0.82,
+   "comments": 393,
+   "r": 0.83,
    "at": "2026-11-01",
    "topics": [
     "개발도구"
@@ -712,8 +718,8 @@
    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
    "discussion": "https://news.ycombinator.com/item?id=50344919",
-   "points": 390,
-   "comments": 308,
+   "points": 397,
+   "comments": 313,
    "r": 0.79,
    "at": "2026-11-02",
    "topics": [],
@@ -728,7 +734,7 @@
    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
    "url": "https://momentic.ai/",
    "discussion": "https://news.ycombinator.com/item?id=50339913",
-   "points": 158,
+   "points": 159,
    "comments": 124,
    "r": 0.78,
    "at": "2026-11-02",
@@ -737,21 +743,23 @@
     "에이전트"
    ],
    "story_key": "url:momentic.ai/",
-   "_comments": [
-    "The recording and steps part is what caught my eye. A bug report with just a description usually turns into a bunch of back and forth before anyone can reproduce it, so having the actual steps there sounds like it would save a lot of that. I am curious how that holds up on the borderline ones though. When a report is not clearly a bug, does that same evidence make it faster to close out, or does someone still have to go dig through it to decide? And does flagging the invalid ones actually change what you get next time, or does it mostly just clean up that one run?",
-    "I drive a real browser against websites as my job, so I've been on the buyer side of this. What decides whether I keep an agent in the loop isn't how many bugs it finds, it's whether I trust the red result without redoing the check myself.Two things bit me early. Agent written assertions drift to whatever is stable to assert: page copy, a fixed config value, an element existing. Those stay green through a redesign that breaks the flow, so the suite told me nothing. And one noisy finding per run is enough for me to stop reading the report at all (after that the tool is dead for me, even when the real findings are in there).What fixed my scoring was planting known defects in a staging copy: a ",
-    "Nice! Let us know if we can help. Just to save you some time, I will say that in order to speed up data labelling, we pinned a commit a little bit behind latest main, since some of the bugs would already be documented in fixes or GitHub issues. So some of the bugs may have already been fixed!",
-    "Hey there! It's not strictly find a bug, as it's also getting the skill for the respective browser tools, but this is fair criticism. I think the current bench shows that if you don't have the time and money to build you're own harness, you're much better off using Mo. However, we do want to start including some of the harnesses that customers/users built before switching to Mo for comparison.Have you built your own? Would love to see your results and add them to our site!",
-    "Thanks for putting Saleor in. We're going through the voucher ones now, starting with the editor crashes, will fix what's real, and can report back.",
-    "Currently it's only simulators and emulators, but we'll be rolling out real devices in the next few weeks.",
-    "Yes! We create a knowledge base entry so that Mo learns from its mistakes. This is especially helpful for stuff that's actually intended behavior, because at the end of the day, some things just come down to taste.",
-    "Hey there! This is coming soon! Although I will say, when we did an earlier run of this, Codex and Claude actually figured out how to look up the source code for the fixture in the public GitHub repo, and while it improved recall a bit, it also caused them to hallucinate more issues due to assuming that their reading of the source code was correct.",
-    "Mo is mostly looking for user-facing failures, or at least things that impact the user in some way. So if the app was super slow due to this, or was timing out, it would likely find it. However, if this is purely a backend cost issue, it currently wouldn't be likely to flag it.",
-    "Mo is able to inspect the network traffic, although I'm curious how many bugs you see that truly have zero observable impact, and if they do indeed have no impact, do they matter?",
-    "That's fair, and I think also something we've seen while creating this benchmark: it's incredibly difficult, if not impossible, to annotate every single bug in an app. This is actually sort of what we were trying to capture with severity-weighted score: the agent should get way more credit if it finds really bad bugs than if it finds a bunch of minor UI quirks, although this could definitely be improved upon when we release a v2 of the benchmark.",
-    "Hey there! Definitely good points here. I think some of these are covered in the benchmark, for example, false positives requiring investigation is equivalent to (1-precision), bugs that still escape into production is (1-recall), and real defects is recall.Our goal with Mo is to make maintenance effort as low as possible while still maintaining quality. One thing we've been talking about separately is running a benchmark where all of the agents have virtually unlimited time (or something really high like 24h) and they need to find as many bugs as possible. Is that more similar to what you're looking for?"
-   ],
    "summary_ko": "테스터들은 에이전트가 버그 재현 단계를 기록해 주는 점을 긍정적으로 평가하면서도, 오탐지로 인한 피로감과 테스트 대상의 유지보수 문제를 지적했다. 또한 AI가 불안정한 UI 요소에만 집착해 실제 흐름 고장을 놓칠 수 있다는 우려와 함께 시뮬레이터 한계에 대한 토론이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+   "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+   "discussion": "https://news.ycombinator.com/item?id=50339494",
+   "points": 349,
+   "comments": 268,
+   "r": 0.77,
+   "at": "2026-11-02",
+   "topics": [],
+   "story_key": "url:businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+   "summary_ko": "댓글에서는 사내 AI 사용 비용이 직원 급여를 넘어섰다는 점에 대해 AI 도구 도입에 따른 당연한 수순이라는 의견과 함께, 토큰 소모량이 지나치게 많아 효율성 개선이 필요하다는 지적이 나왔다. 또한 대규모 에이전트 구동이나 복잡한 코드베이스 관리가 엄청난 토큰 비용을 유발한다는 경험담이 공유되었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -761,26 +769,12 @@
    "title": "Google will turn off search for schools that reject AI",
    "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
    "discussion": "https://news.ycombinator.com/item?id=50353192",
-   "points": 367,
-   "comments": 284,
-   "r": 0.77,
+   "points": 565,
+   "comments": 413,
+   "r": 0.73,
    "at": "2026-11-03",
    "topics": [],
    "story_key": "url:nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
-   "_comments": [
-    "Given their recent stock hit due to Search and Ads taking a hit from the AI mode stuff, I'm a bit surprised they're doubling down more on making their core business inaccessible unless people opt into AI. Particularly since these are for children, where their ad data is probably (?) not as monetizeable, it doesn't make sense.",
-    "> They can artificially inflate the number of users who use their AI by including everyone who uses their search engineYup I could see that being plausible. It’s like Microsoft and Copilot. Project managers got to boast how they got AI “adoption” numbers up just by shoving it into people’s faces.",
-    "Kids already use ChatGPT as their search engine. Which is precisely the reason Google doesn't want to compete with one hand tied behind their back.",
-    "On a similar note, I recently had to enable GenAI in my Photos app just to be able to search my photos, and the photo search is now worse than I remember it being before! I need to move off Google entirely for backups but I find the cross-device compatibility and convenience of the ecosystem really hard to give up. Lately, I've started using other LLM plans than Gemini just to have some of my personal details separate from the rest of Google, which has all my documents and email, etc.I hope that enshitification calms down a bit whenever the dust has settled on frontier AI companies and we no longer have to force this into every product imaginable. Google used to be pretty good relative to th",
-    "> Search is easily Google's least-sticky and most replaceable product. The only reason it gets more usage that other engines like DuckDuckGo and the swathes of other Bing frontends is because it's the default and has the brand appeal for people who don't know better.This is a wild take, and ignores decades of evidence to the contrary.",
-    "Tangentially related:Google is willing to sacrifice children to push engagement. In family link they refuse to let me restrict the Google app. In what world do I want my 1st or 2nd grader opening the Google app and reading the news about murder, rape, and all the other horrendous things that are common in the Google apps news summary? Give us parents actual control in androids parental control app!",
-    "CI. Conversational interface. That's the difference. Simply a way to interact with a computer through the same mechanisms that you would use to interact with a person, through that computer's calculating a probable human reaction to a stimulus, after looking at millions of them and counting the likelihood of all possible reactions.The real problem is pretending like there's any thought there at all. It's not programming because it knows how a computer works, it's programming because it can calculate what a person could likely write - which is why it writes source code rather than machine language. The value comes from the fact that it can chain a bunch of these reactions together, and react ",
-    "I did this (disabled AI features) and lost smart inbox and it honestly improved the experience: it made me realise how much rubbish I was subscribed to that I never read, so I unsubbed and blocked tons of stuff, and now my inbox is clear again",
-    "And what, pray tell, will this search engine search?If nobody is visiting anything on the internet, because every search engine response is an AI output, then where will any information for this AI output come from?This paradox was clear from day one, pretty sure I posted on here about it years ago. AI search will kill the dataset that AI itself relies upon.",
-    "No, because the post-settlement era was actually the era of consolidated IE dominance. Chrome only started because MS, in their (unbroken by the FTC) dominance had sat around doing nothing for the web, which was bad for a web-based company like Google. Chrome also avoided using platform APIs because they wanted to be cross-platform.",
-    "So that's why search got broken lately.I used to be able to search for parts of names. Or a word that is part of a word in a message. Doesn't work anymore. Only exact matches now, or you don't get anything.",
-    "Spoiler: regular search ranking doesn't see very many results, either. I mean, have you seen the results for a crowded query like this? They are trash."
-   ],
    "summary_ko": "댓글 참여자들은 구글이 AI 도입을 거부하는 학교의 검색 기능을 차단하는 조치에 대해 기업의 일방적인 AI 강요 행위라고 강하게 비판했다. 일각에서는 마이크로소프트의 코파일럿처럼 AI 사용 지표를 인위적으로 부풀리려는 꼼수라는 분석과 함께, 어린이 사용자 보호와 데이터 수집 측면에서 부적절하다는 의견이 지배적이었다.",
    "is_event": true,
    "kr_query": "구글 검색 AI 학교 거부 차단",
@@ -798,62 +792,11 @@
   },
   {
    "layer": "hn",
-   "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-   "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-   "discussion": "https://news.ycombinator.com/item?id=50339494",
-   "points": 346,
-   "comments": 267,
-   "r": 0.77,
-   "at": "2026-11-02",
-   "topics": [],
-   "story_key": "url:businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-   "summary_ko": "댓글에서는 사내 AI 사용 비용이 직원 급여를 넘어섰다는 점에 대해 AI 도구 도입에 따른 당연한 수순이라는 의견과 함께, 토큰 소모량이 지나치게 많아 효율성 개선이 필요하다는 지적이 나왔다. 또한 대규모 에이전트 구동이나 복잡한 코드베이스 관리가 엄청난 토큰 비용을 유발한다는 경험담이 공유되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "ChatGPT and Codex usage limits merging",
-   "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-   "discussion": "https://news.ycombinator.com/item?id=50320588",
-   "points": 233,
-   "comments": 172,
-   "r": 0.74,
-   "at": "2026-10-31",
-   "topics": [],
-   "story_key": "url:help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-   "summary_ko": "챗GPT와 코덱스(Codex)의 사용량 한도가 통합되는 방안을 두고 이용자들 사이에서 의견이 엇갈리고 있다. 일각에서는 대규모 가격 인상이나 토큰 계산 방식의 불투명성을 우려하는 반면, API와 연동해 유연하게 활용할 수 있다는 반응도 나온다.",
-   "is_event": true,
-   "kr_query": "챗GPT 코덱스 사용량 통합",
-   "kr": [
-    {
-     "t": "챗GPT·코덱스 한도 12월부터 공유…즉시 채팅은 제외",
-     "u": "https://www.tokenpost.kr/news/ai/430731",
-     "d": "Sun, 01 Nov 2026",
-     "why": [
-      "gpt",
-      "코덱스"
-     ]
-    },
-    {
-     "t": "오픈AI, 연내 '챗GPT' 대화·업무 기능 통합…별도 모드 전환 없앤다",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216804",
-     "d": "Thu, 29 Oct 2026",
-     "why": [
-      "gpt",
-      "통합"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "Scaling Git at OpenAI",
    "url": "https://openai.com/index/scaling-git-at-openai/",
    "discussion": "https://news.ycombinator.com/item?id=50345924",
-   "points": 259,
-   "comments": 175,
+   "points": 264,
+   "comments": 179,
    "r": 0.68,
    "at": "2026-11-02",
    "topics": [
@@ -867,74 +810,133 @@
   },
   {
    "layer": "hn",
-   "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-   "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-   "discussion": "https://news.ycombinator.com/item?id=50322173",
-   "points": 343,
-   "comments": 218,
-   "r": 0.64,
-   "at": "2026-11-01",
+   "title": "Nvidia – open-source auto-ontology",
+   "url": "https://github.com/NVIDIA/auto-ontology",
+   "discussion": "https://news.ycombinator.com/item?id=50348962",
+   "points": 263,
+   "comments": 127,
+   "r": 0.48,
+   "at": "2026-11-03",
    "topics": [
-    "보안·사고"
+    "인프라·칩"
    ],
-   "story_key": "url:jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing",
-   "summary_ko": "브라질 법원이 법원 제출 서류에 프롬프트 인젝션을 사용한 변호사들에게 제재를 가한 사건을 두고 커뮤니티에서 다양한 해석이 나왔다. AI의 판결문 및 서류 검토 과정에서 발생할 수 있는 보안 허점과 변호사의 책임 문제를 두고 논쟁이 벌어졌다.",
-   "is_event": true,
-   "kr_query": "브라질 법원 프롬프트 인젝션 변호사 제재",
+   "story_key": "gh:nvidia/auto-ontology",
+   "_comments": [
+    "just ask your agent to install it, i think you will need an NVIDIA key, but i think you can bring your own model too.",
+    "This looks super promising, NVIDIA is going all in with Agents for enterprise, this was the last piece of the puzzle to let enterprises the confidence to use agentic AI, love it.",
+    "Maturity of the storage and query engines:SQL > Cypher > SPARQLYou can do RDF/SHACL/OWL with LPG/Cypher based databases.Ontolite (sqlite) and ontobug (ladybug) are examples.",
+    "> what I meant was the current iteration of LLMs cannot do thatI saw this same mentality from a lot of people every year for the last 4 years. All the limitations they clung to keep falling. We're not limited to LLMs either, and LLMs themselves aren't as limited as people have been imagining.I think 2027 is the last year where \"but AI can't do X!\" is a viable mentality. Like, yes, as a casual user there are limitations that affect us in day to day use and the surface level concerns are what impact people most today. But at some point there must be a threshold at which even the casual users start to get a little curious what's likely to be possible in the limit.",
+    "Probably, but that's not what I meant.I intended to share Wikidata as an example of an ontology that can be reviewed and maintained, rather than an example of an LLM maintained ontology.I did not do a good job of communicating this, so appreciate the clarification!",
+    "The line follows: \"...a revenue metric answered faster is worth nothing if the number is wrong.\". Are you seriously suggesting a human wrote this?",
+    "Sorry, yeah, I completely failed to say in my message what I was originally aiming to say. Lost sight of the message part way through writing, after I got pinged at work for something.The fact that I had to throw an LLM at it to cut down the slop and turn it into something more succinct and comprehensible is nuts. For myself, I'd be embarrassed if I released something with that kind of README on it.",
+    "Funnily enough, I commented earlier in the thread, but this benchmark is a collaboration between $DAYJOB and the university =)",
+    "This is the key issue. I call it a semantic gap.Example is a transaction application with a backing database: The users conduct information interactions with the application. The application stores relatively sparse data into the transactional database. The database has just enough metadata to route data from transactions but doesn't have the full meaning.Example database column \"updated_date\" with type timestamp: Without looking at the data, how do you know if this column is populated when the application first stores data in a row? How do you know the timezone of the timestamp as a user would see it?Real world example: Patient height in app and api is SI and both note the units. Patient he",
+    "In the product I work on, there's a Metadata layer that maps user-supplied definitions, notes and commentary onto the raw table descriptionsThese are optional but it allows manual override when schema design is poor",
+    "> write in a human languageIt's written in english. And probably written better than the average human would do.If you don't like it, explain why. Otherwise you all just sound like divas.",
+    "Since agents are more often right than they are wrong, combining them can increase reliability."
+   ],
+   "summary_ko": "엔비디아의 오픈소스 자동 온톨로지 공개를 두고 기업용 에이전트 도입의 마지막 퍼즐 조각이 될 것이라는 기대와 함께, 대규모 언어 모델(LLM)의 한계와 데이터의 의미적 간극을 지적하는 회의적인 의견이 맞섰습니다.",
+   "is_event": false,
+   "kr_query": "",
    "kr": []
   },
   {
    "layer": "hn",
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "discussion": "https://news.ycombinator.com/item?id=50320255",
-   "points": 196,
-   "comments": 123,
-   "r": 0.63,
-   "at": "2026-10-31",
-   "topics": [
-    "모델릴리스"
+   "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+   "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+   "discussion": "https://news.ycombinator.com/item?id=50336918",
+   "points": 394,
+   "comments": 174,
+   "r": 0.44,
+   "at": "2026-11-02",
+   "topics": [],
+   "story_key": "url:arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand",
+   "_comments": [
+    "Do you mean the encryption might be broken in 20 years, or how do you keep the key for 20 years?",
+    "Yes, indeed. This was so common that in studios that for playback of imported stuff on stereo tape you'd switch polarity on one output and then tweak the head for the null. This is more important for wider tapes. For multi-track (not stereo) tape this would be more difficult, picking the track with the highest frequencies on it was usually a good bet. Then you'd aim for maximum output.We also had special head alignment tapes that would be used just prior to an important recording. Usually this was a single screw, one side of the head would be held fixed in place and the other could be adjusted up or down against a spring, the head would tilt relative to the tape running direction. On very fa",
+    "This. Environmental is everything with tape. If you don't know your temps (operational, transport, storage), RH and particulate counts then you probably shouldn't be using tape at all.Understanding why this is as important as it is requires some visualization of the bit densities of modern tape drives, the capacity is enormous, the tape is ridiculously thin and the bits are small enough that it doesn't take much to make a part of a tape unreadable beyond what the error recovery logic can deal with. And that's before we get into longer term effects such as layer-to-layer copy and demagnetization.",
+    "If it could write 10TB in 5 hours and the tapes cost $10 each, it would probably become popular among consumers.50GB? Is that a joke?",
+    "Are there any online cloud storage services that cost less than $1 per TB per month?I have several thousand video files totaling several TB that I store as a hobby.This is purely for backup purposes, so I almost never need to retrieve the files. That said, I'd hesitate to use a service that charges something like $100 to retrieve a 1 GB file.My understanding is that with AWS S3, you can retrieve up to 1 TB of data almost for free by using CloudFront.I'm currently storing my files in the us-east-1 region.",
+    "I'm not twisting anything on purpose. That was only a question for one line and I wasn't sure.And if that's twisting intent, then you twisted mine much harder with \"500 shoots die with it\", because I explicitly suggested multiple copies instead of just treating it as assumed. What's with this one-sided accusation?And if you're buying three drives per client that's an extra $200 per photoshoot in this scenario if we're talking hard drives. It's a massive cost. And it would need to be hard drives, since the client certainly can't read tapes, probably can't read a bluray, and a USB stick wouldn't be reliable unplugged. Also the idea of handing over a whole drive depends on them having a full li",
+    "If you follow the advice to have it read immediately after written, then 100% of tapes have data retrieved.",
+    "Ha! Where do I go to file a restore request with the NSA? Surely they have a online portal to make these requests easy for people, right?",
+    "Now you're twisting my intent. Commingling client content is something I avoid. I prefer the ability to just give a client a copy of a device rather than digging out content. Multiple copies of the same data is just expected to be understood at this stage of the discussion, and the implication that I'd only have one is just bad intent on your part.",
+    "It's a total loss only for people that were too cheap to pay for multi-regional data storage. Most people balk at monthly S3 fees, so willingly paying double the cost is a non-starter for those led by the bean counters. Disaster recovery is a known thing that should not be blamed on the loss of a single data center in a stupid war. AWS even has automation of duplicating selected data to another region.",
+    "> And if that drive dies, 500 shoots die with it.Sure, if you ignore my last line saying it's easy to have 2-3 copies.> For proper archival, each project gets its own backup device not shared with other projects\"its own backup device\" implies only 1 copy? That's so much worse than 3 copies on shared drives.And who isn't using shared drives? Companies use shared drives. Amazon uses shared drives. And you could double it to 6 copies for ridiculous levels of reliability and it would still be under $10 per shoot.",
+    "I've never used tape drive hardware compression. It would not have done anything as the vast majority of data was large video assets. It was my understanding that using the built-in hardware compression was universal between devices."
    ],
-   "story_key": "url:mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "summary_ko": "앤트로픽이 클로드의 비디오 게임 리버스 엔지니어링을 차단하는 조치를 취한 것에 대해, 댓글에서는 저작권 및 안전 장치 강화가 정당하다는 의견과 지나친 통제가 경쟁력 약화로 이어진다는 비판이 엇갈렸다. 또한 대중의 반발보다는 소수 주요 기업의 요구와 법적 리스크 관리가 AI 기업에 더 중요하다는 분석도 제기되었다.",
+   "summary_ko": "AI로 인한 데이터 아카이빙 수요 증가로 후지필름이 테이프 생산량을 5배 늘린다는 소식에 대해, 테이프 저장 방식의 비용 효율성과 장기 보존의 신뢰성을 두고 실사용자들 간에 열띤 토론이 벌어졌습니다.",
    "is_event": true,
-   "kr_query": "앤트로픽 클로드 게임 리버스 엔지니어링 차단",
+   "kr_query": "후지필름 테이프 생산 AI 아카이빙",
    "kr": [
     {
-     "t": "클로드 'AI로 게임 베끼기' 금지, 챗GPT도 관련 사례 포착",
-     "u": "https://www.gamemeca.com/mv.php?inflow=naver_s&gid=1782759",
-     "d": "Mon, 02 Nov 2026",
+     "t": "\"레트로의 대반격\"… 후지필름, AI發 수요에 '자기 테이프' 생산 5배로 ...",
+     "u": "https://www.g-enews.com/view.php?ud=2026102814414285610c8c1c064d_1",
+     "d": "Thu, 29 Oct 2026",
      "why": [
-      "게임",
-      "클로드"
-     ]
-    },
-    {
-     "t": "앤트로픽, 클로드로 기존 게임 복제 금지…정상 작업까지 차단 논란",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=216862",
-     "d": "Sun, 01 Nov 2026",
-     "why": [
-      "게임",
-      "앤트로픽",
-      "차단"
+      "생산",
+      "테이프",
+      "후지필름"
      ]
     }
    ]
   },
   {
    "layer": "hn",
-   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-   "discussion": "https://news.ycombinator.com/item?id=50320995",
-   "points": 458,
-   "comments": 230,
-   "r": 0.5,
-   "at": "2026-10-31",
-   "topics": [
-    "모델릴리스"
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "discussion": "https://news.ycombinator.com/item?id=50358422",
+   "points": 282,
+   "comments": 124,
+   "r": 0.44,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "url:asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "_comments": [
+    "Sure but that’s besides the point. I’m not suggesting one can’t make bad decisions. I’m suggesting that framing the investments in a negative light has no meaning precisely because of this hindsight. Will everyone who said Tesla would crash (I have no direct ownership) happy they sold their shares? Don’t invest in what you want to happen. That’s a fool’s game and that’s the one that is being played here by suggesting the outcome of these investments will be bad instead of good. Nobody knows.",
+    "Your perspective made sense until 2007.We don't live in that world anymore. The bailouts changed the world forever. Since 2007 there is no such things as \"with their own money\" when it involves a big company risking bankruptcy. It's no longer private money.Chancellor on the brink",
+    "A company with over a trillion dollar in market cap is extremely unlikely to be a high growth business. Big tech are (or at least were, before their recent splurge on AI) very profitable businesses, often trading at reasonable P/E. Not quite the value stocks, but regular, good investments. There is nothing wrong with staying in this model.",
+    "I think your 2008 comparison breaks down here- Many underlying obligations are backed by insanely profitable companies.- Financing involves long-term leases rather than short-term funding.- Rating agencies analyze these off-balance-sheet obligations.",
+    "debt means you owe money. There is no requirement you get anything in return for taking on that debt. The definition, since you wont look it up, is \"Debt is an amount of money, goods, or services that one party (the debtor) owes to another party\"If I commit to buying some future goods, and sign that I will hand over that money, that's debt. It's money I legally owe someone else. Counting that as debt is totally fair, not counting it is shady as fuck.If I rent a house, I receive no money, in fact I receive no tangible goods at all really. Just the right to occupy a space under some pre-agreed rules. Yet, I now have debt.",
+    "> Shareholders are pricing companies as if being a winner in the AI boom is the most important thingWell yeah, that's the most obvious way this plays out",
+    "I don't think so. If AI gets really expensive and/or proves to be useless, those requirements will go away. And it's not the knowledge workers paying for those tokens either.",
+    "What do you want? Some oversight board voting on what companies are allowed to do with their own money?Wtf are the downvotes. It's a question.",
+    "Ai datacenters are quite different from traditional datacenters. For example, a massive cost for ai DCs is power and the grid to support it. Regular DCs don’t need anything like the same power.",
+    "Here's the question, if the big labs go bust some how, can all of the excess capacity be deployed for full on inference profitably?",
+    "\"But why be concerned about this? If people are really so confident in their takes, they can exclude these companies from their investments, or bet against them. If you truly believe these bets are going to fail, it's not hard to get rich off of it.\"Is this comment satire? Do you just sit in that weird ass Apple donut building, drifting further and further out of touch with real humans? Or do you leave it some times and interact with your average citizen now and then?",
+    "> The generation that was coming of age at the time is the first in American history to have a lower quality of living than their parents.I hate this way of thinking. The parents, at the same stage in life, didn’t have magical devices they could hold in their hands that would answer any question ever asked in human history, for example.Progress matters. Just because the average 20 year old at that time could rent a 10% smaller apartment than their parents could, doesn’t mean they would necissarily trade what they have access to in 2007 for what their parents could access in the eighties.People in 2007 are vastly better off than in 1984."
    ],
-   "story_key": "gh:guregodevo/memdoor",
-   "summary_ko": "소규모 모델 여러 개를 병렬로 사용하는 방식이 대형 모델 하나보다 더 낫다는 의견과, 근본적인 모델 지능의 한계는 병렬화로 극복할 수 없다는 회의론이 맞섰다. 로컬 모델로 코딩 작업을 원활하게 수행할 수 있다는 긍정적 평가가 나온 반면, 작은 오류가 누적되거나 컨텍스트 제약으로 한계가 명확하다는 지적도 제기되었다.",
+   "summary_ko": "미국 빅테크 기업들의 숨겨진 AI 부채가 급증한 것을 두고, 2008년 금융위기 당시와 유사한 시스템 리스크를 우려하는 시각과 초거대 기업들의 확실한 수익성과 자산 구조를 근거로 과도한 우려라는 반박이 엇갈렸습니다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Stringman, an $800 open-source room scale gripper robot",
+   "url": "https://neufangled.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50354358",
+   "points": 412,
+   "comments": 151,
+   "r": 0.37,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "url:neufangled.com/",
+   "_comments": [
+    "\"Just let people be responsible for themselves\" would work if we hadn't built a society that neutered everyone's ability to take care of themselves by gutting education systems and disconnecting people from political participation and social responsibility.Tldr have you met people? There's a reason seat belt laws exist. If we're going to let companies sell things to this population we've fostered and not take our own responsibility, we have to put it on the companies.A quick browse through any of the shock content subreddits will reveal a lot in terms of average people's understanding of risk.",
+    "So it probably can't kill you with blunt force trauma but it could drop something toxic into your drink while you're in the other room. Which, you know, assumes some sort of hostile intent that a robot can't have on its own lol. So it can kill you but probably not accidentally.",
+    "the discourse in hacker news is turning into a neurodivergent, overdramatized concern trolling competition.",
+    "I was thinking about one of these to find the best cellphone reception in a room.",
+    "If that's the official stance, then this robot will kill people. You can't expect people to never leave a toddler in the same room with the robot, unless they fully realize the implications of having a killer robot at home. Otherwise the consumers are being deceivedProducts in the real world need to be better than that",
+    "Well if your legs trunnions were coffee cup lids, than stairs would pose an issue too.https://www.youtube.com/watch?v=dFMJ514lz5wThe ED 209 is still cool, and only outclassed on screen by the T-800. =3",
+    "https://youtu.be/AWig98GVIno?t=155 might be worth looking into with regards to the descending rod, to make its length controllable without taking up much space",
+    "Why? If you're dead, then it stops getting food and pets. If you're dead, it'll eat your face off if your neighbors don't break in first because of the smell.",
+    "Ish. Millions of years of evolution and other than snakes and their ilk, land-faring animals have legs. So bipedal with wheels on the feet is maybe optimal. The optimal number of arms I think is three. No \"head\" is strictly necessary. The interesting question is how do you train a three armed robot when there are few three armed people?",
+    "A small spinning blade? Sounds like the type 1 robots from Screamers https://www.imdb.com/title/tt0114367/",
+    "FYI they said the tension limit is 28 newtons.It takes about 38 newtons to lift a 4 litre bottle of milk.It'll be okay.",
+    "> Humans are def not designed optimally to live and work in a modern house or officeAgreed, those were designed by humans (mostly) for humans. I don't think we as a species \"adapt to things\" so much anymore, and instead we adapt our environment to us."
+   ],
+   "summary_ko": "오픈소스 그리퍼 로봇의 안전성과 위험성을 두고 의견이 갈렸다. 일부 사용자는 가정 내 사고나 악용 가능성을 경고하며 제조사의 책임을 강조한 반면, 장치 규격상 치명적인 상해를 입히기 어렵다며 과도한 우려라는 반박도 나왔다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -944,26 +946,12 @@
    "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "discussion": "https://news.ycombinator.com/item?id=50354960",
-   "points": 622,
-   "comments": 199,
-   "r": 0.32,
+   "points": 1066,
+   "comments": 352,
+   "r": 0.33,
    "at": "2026-11-03",
    "topics": [],
    "story_key": "gh:postmanlabs/postman-app-support",
-   "_comments": [
-    "I know lot of bits with curl. But I find it always a pain to use. Fine for when you do scripting but I find command line pretty painful overall. So I understand want to use some other tool with better ergonomics.",
-    "Well, I guess if people need things to do, and others are willing to pay, then what’s the problem?",
-    "If Bruno turns to shit, I hope that thanks to AI it's going to be easier for a new maintainer to step in and work on a fork",
-    "bruno is really great used it for a while but the 5 API syncs a month on the free tier is a pain, had to switch to Apidog never been so happy with unlimited syncs",
-    "I'm glad to find out from this comment section that I'm not the only one who has noticed Postman is the poster-child of Enshittification.",
-    "Thankfully we are finally after all these years getting regulation on that sort of stuff. It seems EU was 20 something years late... And no I really think that regulation in case like this is really reasonable idea.",
-    "Many, many years ago, I used Postman for the first time, way back when it was a Chrome plugin. As an iOS dev, it was amazing to be able to validate the requests I needed to make outside the context of my code to validate things worked. Until, one day, I wasn't seeing something iterate in the responses I was getting as I expected to. Many cmd+R presses later, I talked to the API team to check logs, and we found that Postman was caching what should have been independent requests. Easily blamed on Chrome at the time, but it was an undocumented and unexpected behavior by Postman, who really should have better handled making each request unique.I didn't need another reason not to use Postman, but",
-    ">It's a shame what happened to Postman. It started as an excellent little developer tool for testing APIs. Then for some reason they raised over $400M in funding and hired 1,500+ employees, for what should have been a tiny OSS/passion project like curl or little snitch. Instead they now have to justify their valuation by forcing logins, collecting data, monthly subscriptions, AI features, etc.The good thing is that now takes about 2 days to replicate with an agent the parts that matter from their whole offering and tell them to go f themselves.",
-    "I'm not really a vibe-coder but it seems like the easiest possible tool to vibe-codeOr just give your agent JSON and tell it to use curl",
-    "Postman was my curl with a gui. Used it everywhere, recommended it everywhere. But one day out of the blue it asks me to login, and it all went downhill from there. Imagine you had to login to use curl?Anyway, I'm sure somewhere in some terms and conditions I agreed to, it says \"we own the glass\".",
-    "postman has been malware since the day they added accounts many years ago. luckily only low skill cli fearing developers mostly gravitated to it, esp anytime in the past decade",
-    "With AI agents at our disposal, can we not just have them code up something we need to use instead of using such sketchy apps like Postman?It'd be a personal dev app where only features we need are implemented, including features only we (and no one else) need."
-   ],
    "summary_ko": "개발자들은 포스트맨이 로그인 강제와 대규모 투자 이후 과도한 수익화 과정에서 전형적인 앤시티피케이션(Enshittification)을 겪고 있다고 비판했다. 사용자 동의 없는 AI 플러그인 설치와 데이터 공유 논란으로 인해 브루노(Bruno)나 에피독(Apidog) 등 대안 도구로 이탈하려는 움직임이 두드러졌다.",
    "is_event": true,
    "kr_query": "포스트맨 AI 플러그인 자동 설치 논란",
@@ -971,11 +959,77 @@
   },
   {
    "layer": "hn",
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
+   "discussion": "https://news.ycombinator.com/item?id=50352757",
+   "points": 438,
+   "comments": 138,
+   "r": 0.32,
+   "at": "2026-11-03",
+   "topics": [],
+   "story_key": "hn:50352757",
+   "_comments": [
+    "If the IP in question is software code then a lot of companies are overvaluing that at this point.",
+    "Is that the same thing that let's them use it for ads targeting and measurement like connected apps with the android assistant switch they did? I basically have stopped using it.",
+    "There's also a case of accusation by a murdered ex-open ai employee who was set to testify against copyright in a openai case. That poor soul's mom has been hateful against Sam since.",
+    "If you want chat privacy, you should probably not craft a situation that initiates a human-led investigation into those chats.Laser focused self-sabotage isn't a strategy most people recommend.Unless of course, your dream is to break out of prison. But you need to get in one first.",
+    "Oh, for sure.But you can't trust any LLM, or any output from any LLM. You need to protect against stuff like this regardless. They could all do it, and quite accidentally. Even an LLM you trained yourself could do this to you, based on the training data and based on RAG.But if you want to avoid the specific case we are talking about where your inference provider sees everything you do, and ignores your preferences, then running someone's LLM on your own inference is the only way forward.",
+    "Yep, this is one of the the darkest patterns that I've seen in a Google product. No paid tier can help you get rid of it.The only way out is to stop being a 'consumer', and opt for a business account.",
+    "Why so aggressive? Other people have shared the same thing https://news.ycombinator.com/item?id=49643556",
+    "Not defending it, but training on books gave them a better product that people were willing to pay billions for.Training on customer data will give them a product that nobody will pay for.",
+    "> \"whoever has the most money to throw at lawyers wins\".100%. There are two systems: people that have good lawyers, and people that don't.",
+    "just do the tradeoff - learn a lot of stuff vs the risk of <what exactly? - see related examples in the industry;>",
+    "Seems like it will be impossible to know either way. Unfortunate situation no matter the truth",
+    "I agree, the LLM market has a shady notion in the root of its story. It's like when you go to a circus, and you realize how much of it is built around suffering of tamed animalsSome of LLM-shops have higher standards, and maybe because of that their progress is slower (example: Google)"
+   ],
+   "summary_ko": "오픈에이아이의 코덱스 채팅 데이터 학습 재개 의혹에 대해 비판의 목소리가 높았다. 이용자 데이터 보호와 프라이버시 침해를 지적하는 의견이 우세한 가운데, 자체 추론이나 비즈니스 계정 사용 외에는 대안이 없다는 반응도 있었다.",
+   "is_event": true,
+   "kr_query": "오픈에이아이 코덱스 모델 학습",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "discussion": "https://news.ycombinator.com/item?id=50355251",
+   "points": 505,
+   "comments": 157,
+   "r": 0.31,
+   "at": "2026-11-03",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "key",
+   "_comments": [
+    "To be honest I think the experiment would be insanely impressive even if you prompted explicitly that the game is one of 4 options.",
+    "FWIW that doesn't match my experience with Qwen 3.8 27B. After giving it some instructions on what to do (usually i start with what i want to achieve, followed by how i want things to do, then asking it for comments/questions/suggestions - all three - where it gives a bunch and i adjust/correct some of those until a plan is made and written down to a file that it can reference), it does things just fine and has done stuff more complex than basic CLIs - web apps, desktop GUI apps (i have several GUI utilities i'm using daily made with it), etc.I did had it forget some stuff over long runs that went through several context compactions and i'd expect a larger model to be able to handle more vag",
+    "I run QFN I2 XS on my 3060ti + 48GB RAM for it. Get around 2x token with 200k Context window. Good enough for me.",
+    "> Suggest a name for a neighbourhood coffee shop.Or someone could have 50 grams of creativity and explain what they want the name to evoke. So your system throws in sufficient randomness so that even the laziest of prompts have output diversity.",
+    "the freeway miss is the tell imo. the one obscure game of the four and it just called it pac-man, which looks like pattern matching toward famous games, not reading what the network computes",
+    "Strata manages MoE expert offloading completely differently, which for QFN means ludicrous speed.",
+    "QFN is obscene. It runs faster than 27B on all my setups, and it always outdoes it in my uses (from coding to translation to vision-related): from somewhat to a lot.",
+    "I had the same trouble but I also had some success. I did a little write up on what I got to work.https://joeldare.com/a-local-open-weight-model-builds-its-fi...I think it can be made to work if you’re willing to tweak the prompts.But, to be honest, I find my time to be worth more than the $20 I spend on a light weight frontier plan that can do this without the hand holding.I want local to succeed, however, because of things like Anthropic stopping games based on other games.",
+    "Violent agreement here, especially if the ostensible difference is entirely dependent on reciting the correct legal incantation ( \"fair use\" vs \"violates TOS\")",
+    "Same experience, the 4bit quantized xlarge flash next runs at around 70t/s across 3 radeon v620s. Still have to retry the MTP version with full resolution.",
+    "That's the one I'm running using a fork of the gufo inference engine as gufo upstream doesn't support that quant.",
+    "> Unless you are trying to prove some hard math, or writing extremely complex code, for general coding tasks (which represent 90% of code out there) 27B-Q6_K is more than enough. Q4 does it well too, but might need a few more iterations.99% of the time, I'm not. But if it cannot reasonably write a basic CLI for transforming data without properly following a ~1K token long system prompt to the letter, then waste my time on it?\"Ah yes, I forgot about part X\" or \"I misunderstood the intent of Y\" are so frequent compared to SOTA models, that it's hard to justify relying on it, even though I'm able to run it pretty much 24/7 at home, if it just was intelligent enough to actually make sense to do "
+   ],
+   "summary_ko": "로컬 환경에서 큐원 모델을 구동해본 경험과 성능에 대한 평가가 공유되었다. 복잡한 작업에서 프롬프트 조율이 필요하다는 지적이 있었지만, 하드웨어 사양 대비 뛰어난 속도와 유연성 덕분에 실무에 충분히 유용하다는 긍정적인 반응도 많았다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Astra can read and write weights to improve Qwen",
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
    "discussion": "https://news.ycombinator.com/item?id=50341174",
-   "points": 2911,
-   "comments": 877,
+   "points": 2924,
+   "comments": 879,
    "r": 0.3,
    "at": "2026-11-02",
    "topics": [
@@ -996,9 +1050,9 @@
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "discussion": "https://news.ycombinator.com/item?id=50351111",
-   "points": 778,
-   "comments": 180,
-   "r": 0.23,
+   "points": 914,
+   "comments": 192,
+   "r": 0.21,
    "at": "2026-11-03",
    "topics": [
     "모델릴리스"
@@ -1008,20 +1062,6 @@
     "Simon Willison"
    ],
    "trust_match": "link",
-   "_comments": [
-    "You don’t think the authors sort of misrepresented these findings in a way such that they sort of hooked readers in with enticing promises while glossing over major details that demonstrate they are over selling their research….? In this day and age the second I detect that kind of shit I have to discredit the paper and or take it with nothing more than a grain of salt or two. They should be more upfront and clear with what they did from the first paragraph. Instead they made you dive into details to read their stuff only to find out their headline wasn’t exactly telling the full story here.",
-    "Here is a measured take from Neel Nanda, who is quite publicly involved in serious interpretability research:> This is a cool paper, but I think it's best thought of as Astra is surprisingly capable of doing old school mechanistic interpretability research rather than anything spooky. The things it's doing are clever, but typically exploiting structure in the data and using known method mechanistic interpretability techniques (which Astra was surely pretrained on), though it is better at this than I would have predicted!> This is an exciting development for the prospects of ambitiously scaling interpretability or doing very laborious analysis like this, on more real models. However, I'm not ",
-    "Thank god someone finally brought attention to this. It’s amazing how I see this paper everywhere like it did some Herculean task but the paper is honesty misrepresenting (intentionally or not) the findings and making their write ups seem like they did something that it simply did not. We need more of this kind of critical thinking calling out bullshit papers and experiments..",
-    "I'm even more clueless about the the field.Those two types of reasoning, are those well definitely in the field generally, or are they mini-personal evals you run?It has been frustrating trying to quantify why one pseudo-frontier model seems better at some non-coding tasks than another pseudo-frontier one.",
-    "There are a 1000 papers published on arXiv in ML every single day. It's hard to keep abreast of everything that's going on in this space.",
-    "ablation is not manual, and comes after evaluating which parts to turn off against given desired result.",
-    "Model tuning is like a black box.To put it simply, it's like pressing the first button and the second one pops up, pressing the second button and the third one pops up, then pressing the third button and both the first and second ones pop up.Nobody knows why, but it just happens.And when doing post-training, problems like overfitting, catastrophic forgetting, output loops, and so on will all appear.To achieve balanced results, you can only aim for general performance rather than bringing out the model's full capabilities.Also, it's very possible that they really didn't notice these problems, because model evaluation is really difficult, teams and resources are limited, and many finer details",
-    "Agreed theres a lot between \"editing raw weights\" via LLM and a bunch of code/programming. But in my case, the technique itself was new to me, and worked for a small ASR model I've been training based on moonshine + claude being able to actually reason about what was causing loops. This is something I sure couldn't/wouldn't do manually.https://quickthoughts.ca/projects/welsh-asr/ (scroll down to the project updates to read how much impact it had)",
-    "The distinction here is the equivalent of Astra passing the pelican test by prompting an image generation model versus emitting the SVG.The former will likely produce a much higher quality image, but claiming it as a demonstration of Astra's capabilities would be a lie.",
-    "> These results show sparks of Weight-Space Programming, which may extend beyond what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability. […]> Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights.How is that not misleading when the in the Qwen case “natively editing” refers to a mere directional ablation, a well-known technique that has been used a ton by both academics and hobbyists over the past few years?",
-    "Besides the whole point of peer review is to try to poke holes in presented work.",
-    "> It does just the same sort of thing a machine learning researcher would do to solve the problem. [...] It doesn't \"look\" at the weights in these tasks any more than you or I would look at the weights.Ok. Thanks for making that more clear!> two unrelated types of experiments ...The first type of experiment (small nets that seem to fit in context) are enough to make me impressed actually :-)But yes then maybe the previous article could have been split in two, or two sections or something."
-   ],
    "summary_ko": "해커스 뉴스 댓글 참여자들은 아스트라(Astra)가 직접 가중치를 읽고 수정해 큐원(Qwen)을 개선했다는 연구 결과가 과장되었거나 오해를 불러일으킨다고 지적했다. 전문가인 닐 난다(Neel Nanda)의 의견을 인용하며, 이는 새로운 초능력 같은 기능이 아니라 기존의 기계적 해석 가능성(mechanistic interpretability) 기법을 활용한 것에 불과하다고 평가했다. 반면 일부 사용자들은 소형 모델이나 특정 루프 현상을 해결하는 데 실질적인 도움을 받았다는 의견을 내놓기도 했다.",
    "is_event": false,
    "kr_query": "",
@@ -1032,18 +1072,18 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Amazon Is Allegedly Canceling GPU Orders And, In Rare Cases, Closing Accounts For Purchasing Compute Hardware; Tim Sweeney Also A Victim Of This Practice",
-   "url": "https://wccftech.com/amazon-allegedly-canceling-gpu-orders-closing-accounts-compute-hardware-tim-sweeney/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xm8o8g/amazon_is_allegedly_canceling_gpu_orders_and_in/",
+   "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
    "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "인프라·칩"
+    "모델릴리스"
    ],
-   "story_key": "url:wccftech.com/amazon-allegedly-canceling-gpu-orders-closing-accounts-compute-hardware-tim-sweeney"
+   "story_key": "url:theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345"
   },
   {
    "layer": "reddit",
@@ -1065,26 +1105,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "GPT-6 Astra Edits Qwen Weights: MATH-500 7.9% to 48.1%",
-   "url": "https://explainx.ai/blog/weight-space-programming-gpt-6-astra-edits-qwen3-5-0-8b-weights-math-7-9-to-48-1-mit-csail-2026",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xma0tw/gpt6_astra_edits_qwen_weights_math500_79_to_481/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:explainx.ai/blog/weight-space-programming-gpt-6-astra-edits-qwen3-5-0-8b-weights-math-7-9-to-48-1-mit-csail-2026"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "RTX 5090 with 64GB and 96GB VRAM 'confirmed' by US GPU repair tech",
    "url": "https://www.tweaktown.com/news/114444/rtx-5090-with-64gb-and-96gb-vram-confirmed-by-us-gpu-repair-tech/index.html",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmqq2a/rtx_5090_with_64gb_and_96gb_vram_confirmed_by_us/",
-   "rank": 4,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1097,40 +1121,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen 3.8 27b is sometimes so smart it scares me...",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmbym0/qwen_38_27b_is_sometimes_so_smart_it_scares_me/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmbym0/qwen_38_27b_is_sometimes_so_smart_it_scares_me/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xmbym0/qwen_38_27b_is_sometimes_so_smart_it_scares_me"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "New sparse attention method for ultra-long context",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmbj0v/new_sparse_attention_method_for_ultralong_context/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmbj0v/new_sparse_attention_method_for_ultralong_context/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xmbj0v/new_sparse_attention_method_for_ultralong_context"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmz9ca/like_gpt6_astra_qwen_38_27b_can_interpret_model/",
-   "rank": 7,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1147,16 +1141,32 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I found another niche use case for local LLMs, but need some advice",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmfbam/i_found_another_niche_use_case_for_local_llms_but/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmfbam/i_found_another_niche_use_case_for_local_llms_but/",
-   "rank": 8,
+   "title": "What do people with normal hardware : 32GB ram 16GB VRAM run?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn2jyz/what_do_people_with_normal_hardware_32gb_ram_16gb/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn2jyz/what_do_people_with_normal_hardware_32gb_ram_16gb/",
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xmfbam/i_found_another_niche_use_case_for_local_llms_but"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xn2jyz/what_do_people_with_normal_hardware_32gb_ram_16gb"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
+   "url": "https://github.com/ValerioDolci/frontier-weight-edit",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+   "rank": 6,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:valeriodolci/frontier-weight-edit"
   },
   {
    "layer": "reddit",
@@ -1164,7 +1174,7 @@
    "title": "DeepSeek V5 is planned to be pre-trained on Huawei Ascend chips.",
    "url": "https://mp.weixin.qq.com/s/R-1u2exLwZMOu7AITyU5kg",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmmadn/deepseek_v5_is_planned_to_be_pretrained_on_huawei/",
-   "rank": 9,
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1174,6 +1184,38 @@
     "인프라·칩"
    ],
    "story_key": "url:mp.weixin.qq.com/s/R-1u2exLwZMOu7AITyU5kg"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "What Qwen is thinking when it gets stuck saying \"Wait\"",
+   "url": "https://github.com/alisorcorp/inside-a-reasoning-loop/tree/main/code",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xms9ii/what_qwen_is_thinking_when_it_gets_stuck_saying/",
+   "rank": 8,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:alisorcorp/inside-a-reasoning-loop"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "[llama.cpp fork]: QFN + [specific quant] + [ultra specific hardware config] = [incredible and irreproducible pp and tg]",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn7rfh/llamacpp_fork_qfn_specific_quant_ultra_specific/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn7rfh/llamacpp_fork_qfn_specific_quant_ultra_specific/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xn7rfh/llamacpp_fork_qfn_specific_quant_ultra_specific"
   },
   {
    "layer": "reddit",
@@ -1192,23 +1234,25 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Rtx 8000 48gb prices have decreased over the last two years while 3090 doubled.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmgmd8/rtx_8000_48gb_prices_have_decreased_over_the_last/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmgmd8/rtx_8000_48gb_prices_have_decreased_over_the_last/",
+   "title": "Is Qwen 3.8 27B still the king",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
    "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xmgmd8/rtx_8000_48gb_prices_have_decreased_over_the_last"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "What Qwen is thinking when it gets stuck saying \"Wait\"",
-   "url": "https://github.com/alisorcorp/inside-a-reasoning-loop/tree/main/code",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xms9ii/what_qwen_is_thinking_when_it_gets_stuck_saying/",
+   "title": "gemma4: graph optimizations (massive gains on pp for E2B and E4B) by max-krasnyansky · Pull Request #31356 · ggml-org/llama.cpp",
+   "url": "https://github.com/ggml-org/llama.cpp/pull/31356",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn6mm0/gemma4_graph_optimizations_massive_gains_on_pp/",
    "rank": 12,
    "points": 0,
    "comments": 0,
@@ -1217,21 +1261,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "gh:alisorcorp/inside-a-reasoning-loop"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Kind of enjoying the ISTA (GSQ-RCO) vs Unsloth beef",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm8xhn/kind_of_enjoying_the_ista_gsqrco_vs_unsloth_beef/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xm8xhn/kind_of_enjoying_the_ista_gsqrco_vs_unsloth_beef/",
-   "rank": 13,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xm8xhn/kind_of_enjoying_the_ista_gsqrco_vs_unsloth_beef"
+   "story_key": "gh:ggml-org/llama.cpp"
   },
   {
    "layer": "reddit",
@@ -1239,7 +1269,7 @@
    "title": "[Paper] Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
    "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/README.md#L856",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmo5xu/paper_sparks_of_weightspace_programming_llms_can/",
-   "rank": 14,
+   "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1254,9 +1284,25 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Is Qwen 3.8 27B still the king",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
+   "title": "Tokens/s? \"World's biggest PCIe graphics card\" discovered, prototype AMD Radeon RX 470 board with four GPUs has been pictured",
+   "url": "https://videocardz.com/newz/worlds-biggest-pcie-graphics-card-discovered-prototype-amd-radeon-rx-470-board-with-four-gpus-has-been-pictured",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xn40w7/tokenss_worlds_biggest_pcie_graphics_card/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:videocardz.com/newz/worlds-biggest-pcie-graphics-card-discovered-prototype-amd-radeon-rx-470-board-with-four-gpus-has-been-pictured"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen3.8-Flash-Next (local) vs Claude",
+   "url": "https://github.com/leok7v/ChatOKF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xmolk6/qwen38flashnext_local_vs_claude/",
    "rank": 15,
    "points": 0,
    "comments": 0,
@@ -1265,7 +1311,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king"
+   "story_key": "gh:leok7v/chatokf"
   }
  ],
  "quiet_important": [
@@ -1274,8 +1320,8 @@
    "title": "Astra can read and write weights to improve Qwen",
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
    "discussion": "https://news.ycombinator.com/item?id=50341174",
-   "points": 2911,
-   "comments": 877,
+   "points": 2924,
+   "comments": 879,
    "r": 0.3,
    "at": "2026-11-02",
    "topics": [
@@ -1296,9 +1342,9 @@
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "discussion": "https://news.ycombinator.com/item?id=50351111",
-   "points": 778,
-   "comments": 180,
-   "r": 0.23,
+   "points": 914,
+   "comments": 192,
+   "r": 0.21,
    "at": "2026-11-03",
    "topics": [
     "모델릴리스"
@@ -1312,6 +1358,28 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "discussion": "https://news.ycombinator.com/item?id=50355251",
+   "points": 505,
+   "comments": 157,
+   "r": 0.31,
+   "at": "2026-11-03",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "key",
+   "summary_ko": "로컬 환경에서 큐원 모델을 구동해본 경험과 성능에 대한 평가가 공유되었다. 복잡한 작업에서 프롬프트 조율이 필요하다는 지적이 있었지만, 하드웨어 사양 대비 뛰어난 속도와 유연성 덕분에 실무에 충분히 유용하다는 긍정적인 반응도 많았다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   }
  ],
  "models": [
@@ -1319,8 +1387,8 @@
    "layer": "hf",
    "title": "LiquidAI/LFM3-1.7B",
    "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-   "trending": 749,
-   "likes": 1387,
+   "trending": 686,
+   "likes": 1408,
    "downloads": 47817,
    "topics": [
     "모델릴리스"
@@ -1331,8 +1399,8 @@
    "layer": "hf",
    "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-   "trending": 643,
-   "likes": 726,
+   "trending": 657,
+   "likes": 741,
    "downloads": 38942,
    "topics": [
     "인프라·칩"
@@ -1343,8 +1411,8 @@
    "layer": "hf",
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "trending": 635,
-   "likes": 4835,
+   "trending": 613,
+   "likes": 4862,
    "downloads": 187260,
    "topics": [
     "모델릴리스"
@@ -1355,8 +1423,8 @@
    "layer": "hf",
    "title": "mistralai/Mistral-Large-4-1T-A52B",
    "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-   "trending": 524,
-   "likes": 1534,
+   "trending": 535,
+   "likes": 1550,
    "downloads": 6556,
    "topics": [
     "모델릴리스"
@@ -1367,8 +1435,8 @@
    "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 471,
-   "likes": 496,
+   "trending": 496,
+   "likes": 521,
    "downloads": 10742,
    "topics": [
     "모델릴리스"
@@ -1379,8 +1447,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 375,
-   "likes": 10467,
+   "trending": 383,
+   "likes": 10501,
    "downloads": 2488128,
    "topics": [
     "모델릴리스"
@@ -1389,22 +1457,10 @@
   },
   {
    "layer": "hf",
-   "title": "ccore/Qwen3.5-4B-3D-Coder",
-   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 370,
-   "likes": 598,
-   "downloads": 91123,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
-  },
-  {
-   "layer": "hf",
    "title": "Pika-Labs/Pika-H3-Flex",
    "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-   "trending": 364,
-   "likes": 386,
+   "trending": 374,
+   "likes": 396,
    "downloads": 633,
    "topics": [
     "모델릴리스"
@@ -1413,27 +1469,39 @@
   },
   {
    "layer": "hf",
-   "title": "baidu/Unlimited-OCR-2",
-   "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-   "trending": 297,
-   "likes": 584,
-   "downloads": 189897,
+   "title": "ccore/Qwen3.5-4B-3D-Coder",
+   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+   "trending": 369,
+   "likes": 609,
+   "downloads": 91123,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:baidu/unlimited-ocr-2"
+   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
   },
   {
    "layer": "hf",
-   "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-   "trending": 291,
-   "likes": 5612,
-   "downloads": 2508590,
+   "title": "burner22/numbat",
+   "url": "https://huggingface.co/burner22/numbat",
+   "trending": 292,
+   "likes": 322,
+   "downloads": 7461,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:abenzerps/qwen-image-2.1-uncensored-quantized"
+   "story_key": "hf:burner22/numbat"
+  },
+  {
+   "layer": "hf",
+   "title": "Qwen/Qwen3.8-27B",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "trending": 289,
+   "likes": 19084,
+   "downloads": 8014877,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:qwen/qwen3.8-27b"
   }
  ],
  "new_repos": [
@@ -1442,7 +1510,7 @@
    "title": "deepseek-ai/dsh-superagent-prototype",
    "desc": "Towards a More Autonomous Agent System",
    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-   "stars": 16426,
+   "stars": 17099,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1454,7 +1522,7 @@
    "title": "heydamir/unslop",
    "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
    "url": "https://github.com/heydamir/unslop",
-   "stars": 7345,
+   "stars": 7618,
    "topics": [
     "모델릴리스"
    ],
@@ -1465,7 +1533,7 @@
    "title": "wangzan101/Mika",
    "desc": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
    "url": "https://github.com/wangzan101/Mika",
-   "stars": 6013,
+   "stars": 6132,
    "topics": [
     "에이전트"
    ],
@@ -1476,7 +1544,7 @@
    "title": "patch-gg/pixelfx",
    "desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
    "url": "https://github.com/patch-gg/pixelfx",
-   "stars": 4059,
+   "stars": 4191,
    "topics": [
     "모델릴리스"
    ],
@@ -1487,7 +1555,7 @@
    "title": "paipiange/nvzhuang",
    "desc": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
    "url": "https://github.com/paipiange/nvzhuang",
-   "stars": 2119,
+   "stars": 2134,
    "topics": [
     "모델릴리스"
    ],
@@ -1498,7 +1566,7 @@
    "title": "elvarofficial/teardown",
    "desc": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
    "url": "https://github.com/elvarofficial/teardown",
-   "stars": 1589,
+   "stars": 1679,
    "topics": [
     "모델릴리스"
    ],
@@ -1509,7 +1577,7 @@
    "title": "caru-ini/stack-diagram",
    "desc": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
    "url": "https://github.com/caru-ini/stack-diagram",
-   "stars": 1487,
+   "stars": 1575,
    "topics": [
     "에이전트"
    ],
@@ -1520,7 +1588,7 @@
    "title": "Pika-Labs/Pika-H3-Flex",
    "desc": "Pika H3 Flex: video and audio generation inference",
    "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
-   "stars": 1162,
+   "stars": 1329,
    "topics": [],
    "story_key": "gh:pika-labs/pika-h3-flex"
   },
@@ -1529,7 +1597,7 @@
    "title": "mromidev/claude-animated-shorts",
    "desc": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
    "url": "https://github.com/mromidev/claude-animated-shorts",
-   "stars": 1142,
+   "stars": 1254,
    "topics": [
     "모델릴리스"
    ],
@@ -1540,7 +1608,7 @@
    "title": "NiazMorshed2007/reanimate",
    "desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
    "url": "https://github.com/NiazMorshed2007/reanimate",
-   "stars": 1075,
+   "stars": 1108,
    "topics": [
     "모델릴리스"
    ],
@@ -1895,5 +1963,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-03 20:01"
+ "enriched_at": "2026-11-04 02:58"
 }
