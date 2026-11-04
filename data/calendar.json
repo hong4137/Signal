@@ -1,79 +1,51 @@
 {
- "generated_at": "2026-11-04T05:30:00+09:00",
+ "generated_at": "2026-11-05T06:30:00+09:00",
  "window": {
-  "from": "2026-11-04",
-  "to": "2026-11-07"
+  "from": "2026-11-05",
+  "to": "2026-11-08"
  },
  "events": [
   {
-   "date": "2026-11-04",
-   "time": "00:00",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 9월 구인·이직(JOLTS)",
-   "importance": 4,
-   "why": "구인 건수·이직률로 노동시장 온도 확인, 고용보고서 전 참고",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
-   "verified": true,
-   "note": "11/3(화) 미 동부 10:00 발표분. 한국 시각 오늘 00:00에 이미 공개됨"
-  },
-  {
-   "date": "2026-11-04",
-   "time": "22:30",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 9월 무역수지",
-   "importance": 3,
-   "why": "상품·서비스 수출입 격차와 무역 정책 흐름 확인",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.bea.gov/news/schedule/full",
-   "verified": true,
-   "note": "미 동부 11/4 08:30 발표(BEA·센서스 공동). 2025년엔 일정이 밀린 적 있어 발표 전 재확인"
-  },
-  {
    "date": "2026-11-05",
-   "time": "00:00",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 10월 ISM 서비스업 PMI",
-   "importance": 3,
-   "why": "서비스업 경기 확장·위축 가늠, 고용·물가 판단에 참고",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/",
-   "verified": true,
-   "note": "미 동부 11/4 10:00 발표(3번째 영업일 규칙). 비공식 캘린더 2곳 일치, ISM 공식 표는 미확인"
-  },
-  {
-   "date": "2026-11-05",
-   "time": "06:05",
+   "time": "06:45",
    "region": "US",
    "category": "실적",
-   "title": "퀄컴 회계 2026년 4분기 실적",
+   "title": "퀄컴 회계연도 4분기·연간 실적",
    "importance": 4,
-   "why": "온디바이스 AI·모바일 칩 매출 흐름, 반도체 업황 체감 지표",
-   "consensus": "EPS 2.20달러·매출 103.2억달러",
+   "why": "AI·모바일 칩 수요를 가늠하는 대표 팹리스 반도체 실적",
+   "consensus": null,
    "previous": null,
-   "source": "https://investingnews.com/qualcomm-schedules-fourth-quarter-and-fiscal-2026-earnings-release-and-conference-call/",
+   "source": "https://www.qualcomm.com/news/releases/2026/10/qualcomm-schedules-fourth-quarter-and-fiscal-2026-earnings-relea",
    "verified": true,
-   "note": "퀄컴 발표(10/22): 미 동부 11/4 장 마감 후. 한국 시각 06:05은 관행 환산"
+   "note": "회사 발표: 미 동부 11/4(수) 장 마감 후, 13:45 PT 콜 기준 한국 시각"
   },
   {
    "date": "2026-11-05",
-   "time": "22:30",
+   "time": "07:00",
    "region": "US",
+   "category": "실적",
+   "title": "Arm 2분기 실적 (회계 2027년)",
+   "importance": 4,
+   "why": "스마트폰·데이터센터 칩 설계 로열티 흐름을 보는 반도체 IP 실적",
+   "consensus": "EPS 예상 0.48달러 · 매출 예상 13.9억달러",
+   "previous": null,
+   "source": "https://newsroom.arm.com/news/arm-announces-earnings-release-date-for-second-quarter-fiscal-year-ending-2027",
+   "verified": true,
+   "note": "회사 발표: 미 동부 11/4(수) 장 마감 후, PT 14:00 콜 기준 한국 시각. 컨센서스는 Finnhub 기준이며 일부 캘린더는 11/5로 표기"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "08:00",
+   "region": "KR",
    "category": "경제지표",
-   "title": "미국 3분기 생산성·단위노동비용(잠정)",
+   "title": "한국은행 9월 국제수지(잠정)",
    "importance": 3,
-   "why": "노동생산성과 임금 압력 확인, 물가 흐름 판단에 참고",
+   "why": "경상수지 흑자 규모와 상품·서비스·소득 구성을 확인하는 지표",
    "consensus": null,
    "previous": null,
-   "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+   "source": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?menuNo=200775",
    "verified": true,
-   "note": null
+   "note": "한국은행 발표 일정표 기준"
   },
   {
    "date": "2026-11-05",
@@ -82,40 +54,26 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "주간 해고 지표, 노동시장 둔화 여부 확인",
+   "why": "해고 흐름을 매주 보는 노동시장 지표, 고용보고서 전 참고",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": null
+   "note": "미 동부 08:30(관행 시각)을 한국 시각으로 환산"
   },
   {
    "date": "2026-11-05",
-   "time": null,
+   "time": "22:30",
    "region": "US",
-   "category": "실적",
-   "title": "Arm 실적(회계 2027년 2분기)",
-   "importance": 4,
-   "why": "CPU 설계 IP 로열티로 AI 서버·모바일 칩 수요 가늠",
-   "consensus": "EPS 0.48달러·매출 13.9억달러",
-   "previous": null,
-   "source": "https://investors.arm.com",
-   "verified": true,
-   "note": "미 동부 11/4 장 마감 후로 다수 캘린더 일치, 시각 미정. 컨센서스 집계 불일치(EPS 0.22달러 집계도 있음)"
-  },
-  {
-   "date": "2026-11-05",
-   "time": null,
-   "region": "KR",
    "category": "경제지표",
-   "title": "한국 9월 국제수지",
-   "importance": 4,
-   "why": "반도체 가격·수출 물량으로 상품수지 흑자 확대 흐름 확인",
+   "title": "미국 3분기 노동생산성(잠정)",
+   "importance": 3,
+   "why": "생산성과 단위노동비용으로 인건비·기업 이익 압력을 확인",
    "consensus": null,
-   "previous": "1~8월 누적 경상흑자 2,792억달러",
-   "source": "https://www.yna.co.kr/view/AKR20261031012200002?input=1195m",
+   "previous": null,
+   "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
    "verified": true,
-   "note": "발표 시각 미확인. 여러 매체가 11/5 발표로 일치"
+   "note": "BLS 11월 발표 목록 기준(미 동부 08:30). 목록 페이지 수정일 2026-02-18이라 발표 전 재확인"
   },
   {
    "date": "2026-11-06",
@@ -124,24 +82,28 @@
    "category": "경제지표",
    "title": "미국 10월 고용보고서(비농업 고용·실업률)",
    "importance": 5,
-   "why": "시장 금리 기대를 크게 움직이는 핵심 노동 지표",
+   "why": "노동시장 온도와 연준 금리 경로를 가르는 시장 전체 핵심 지표",
    "consensus": null,
    "previous": null,
-   "source": "https://www.bls.gov/schedule/news_release/empsit.htm",
+   "source": "https://www.bls.gov/news.release/empsit.htm",
    "verified": true,
-   "note": "미 동부 11/6 08:30 발표(BLS 공식 일정). 원자료 FRED와 일치"
+   "note": "미 동부 11/6(금) 08:30 기준. BLS 11월 발표 목록과 FRED 일정이 일치"
   }
  ],
  "notes": [
-  "원자료 지연: calendar_raw.json 생성 시각 2026-11-03 09:49 KST(어제 것). 그대로 쓰되 날짜는 검색으로 재확인.",
-  "DART 키 없음(DART_API_KEY 없음) → 공시 수집 0건. 실적 일정은 검색으로 메움.",
-  "미확정으로 뺌: 카카오 3분기 실적(11/5 09:00 보도 1건, 회사 IR 공식 확인 실패).",
-  "미확정으로 뺌: SK바이오팜 3분기 잠정실적(11월 발표만 확인, 날짜 미확인).",
-  "미확정으로 뺌: 삼양식품 11/6 15:30 IR, 신성이엔지 11/6 온라인 설명회(각 보도 1건).",
-  "미확정으로 뺌: 중국 RatingDog 서비스 PMI 11/4(출처 1곳).",
-  "범위 밖 참고: 미국 10월 CPI 11/10, 중국 CPI 11/9, 네이버 3분기 11/11 16:00(캘린더 1건), G-CON 2026 11/19~20, 한은 금통위 11/26, 미중 관세 휴전 11/10 만료(보도).",
-  "확인 실패: 이번 주 연준 발언 일정, 11/4~7 대형 개발자 회의·신제품 발표 행사(찾지 못함). ECB·BOJ 다음 결정은 12/17·12/18 보도 기준.",
-  "한국 10월 소비자물가 11/3 발표는 어제라 제외. 원자료 FRED·BLS 날짜는 11/4~6 범위와 일치."
+  "원자료 지연: calendar_raw.json 생성 시각이 11-04 08:06 KST(어제 것). 공식 API 일정(FRED·Finnhub)은 쓰고, 검색으로 재확인했다.",
+  "날짜 기준: 계획표 기준 오늘은 2026-11-05(KST). 시스템 날짜 11-04는 UTC 기준이라 KST로 정했다.",
+  "범위 안 확정 일정은 6건으로 8건 목표에 못 미쳤다. 공식 확인이 안 된 것은 싣지 않았다(아래 미확정 목록).",
+  "미확정으로 뺌: 미국 ISM 서비스 PMI(10월). 캘린더 사이트 2곳이 미 동부 11/4 10:00(한국 11/5 00:00)로 보지만 ISM 공식 목록 본문은 확인 못 했다.",
+  "미확정으로 뺌: CoreWeave 3분기 실적. 회사 발표(10/27)는 있으나 날짜 확인 실패. AJ Bell 11/10과 days.to 11/16이 엇갈린다.",
+  "미확정으로 뺌: Anthropic IPO. 11월 상장 목표 보도만 있고 확정 날짜가 없다.",
+  "미확정으로 뺌: 한미반도체 11/6 해외 기관 실적 설명회. 원자료 뉴스 1곳뿐이고 공식 IR 공지는 확인 못 했다.",
+  "국내 실적 일정: DART_API_KEY가 없어 공시 수집 0건. 삼성전자·SK하이닉스 3분기는 이미 발표됐다(SK하이닉스 10/28). LG전자·네이버·카카오·삼성바이오로직스 날짜는 못 찾았다. 카카오 11/9 실적·지배구조 설명회와 KT 11/10 실적 설명회는 범위 밖이다.",
+  "한은 11월 금통위 날짜는 확인 못 했다(검색은 10월 22일 동결 기사만). ECB(10/29)·BOJ(10/30)는 지났고 다음 회의는 12월이다.",
+  "범위 밖이라 뺌: 미국 CPI(11/10)·PPI(11/13), 국내 고용동향(11/11), 미·중 관세 제외 품목 기한(11/9)과 미·중 관세 휴전 기한(11/10).",
+  "기업 행사: events_annual 목록 중 11/5~8에 열리는 행사는 확인 못 했다. SK AI Summit 2026·삼성 개발자 콘퍼런스·네이버 DAN·카카오 if 2026 일정은 검색에 안 나왔다. OpenAI DevDay(9/29)·Apple Pro and Tell(10/28)은 지났다.",
+  "이미 지나서 뺌: 미국 9월 무역수지(11/4), 국내 10월 소비자물가(11/3), 10월 수출(11/1), Arista·Super Micro 실적(11/3), 미국 3분기 GDP(10/29), 애플 10월 행사(10/28).",
+  "검색: 계획표 23회 + 추가 13회 = 총 36회(추가 한도 15회 이내)."
  ],
- "searches": 31
+ "searches": 36
 }
