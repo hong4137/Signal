@@ -1,63 +1,7 @@
 {
- "updated": "2026-11-08 02:43 KST",
+ "updated": "2026-11-08 06:45 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "ten-186505",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP 파리 마스터스",
-   "name": "Carlos Alcaraz vs Casper Ruud",
-   "title": "알카라스 vs 루드",
-   "date": "2026-11-07T16:25Z",
-   "kst": "2026-11-08 01:25",
-   "state": "in",
-   "status": "In Progress",
-   "note": "4강",
-   "venue": "",
-   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "score": 69,
-   "why": [
-    "알카라스 경기"
-   ],
-   "stars": 3,
-   "tv_kr": "티빙 · tvN SPORTS(추정)",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "tvN SPORTS(추정)"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Tennis Channel"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
-  },
   {
    "id": "761948",
    "path": "soccer/usa.1",
@@ -278,6 +222,11 @@
      },
      {
       "team": "Orlando Magic",
+      "who": "Desmond Bane",
+      "status": "Out"
+     },
+     {
+      "team": "Orlando Magic",
       "who": "Jonathan Isaac",
       "status": "Out"
      },
@@ -289,11 +238,6 @@
      {
       "team": "Orlando Magic",
       "who": "Paolo Banchero",
-      "status": "Out"
-     },
-     {
-      "team": "Orlando Magic",
-      "who": "Noah Penda",
       "status": "Out"
      }
     ],
@@ -315,6 +259,63 @@
      "country": "MENA",
      "label": "아랍",
      "ch": "beIN SPORTS(일부 경기)"
+    }
+   ]
+  },
+  {
+   "id": "ten-186507",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP 파리 마스터스",
+   "name": "Carlos Alcaraz vs Ben Shelton",
+   "title": "알카라스 vs 셸턴",
+   "date": "2026-11-08T14:00Z",
+   "kst": "2026-11-08 23:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "결승",
+   "venue": "",
+   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "score": 73,
+   "why": [
+    "알카라스 경기",
+    "한국 저녁 시간"
+   ],
+   "stars": 3,
+   "tv_kr": "티빙 · tvN SPORTS(추정)",
+   "tv_world": [
+    {
+     "country": "Korea Republic",
+     "label": "국내",
+     "ch": "tvN SPORTS(추정)"
+    },
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "Tennis Channel"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "TSN"
+    },
+    {
+     "country": "MENA",
+     "label": "아랍",
+     "ch": "beIN SPORTS"
     }
    ]
   },
@@ -1135,6 +1136,39 @@
  ],
  "results": [
   {
+   "id": "ten-186505",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP 파리 마스터스",
+   "name": "Carlos Alcaraz vs Casper Ruud",
+   "title": "알카라스 vs 루드",
+   "date": "2026-11-07T16:25Z",
+   "kst": "2026-11-08 01:25",
+   "state": "post",
+   "status": "Final",
+   "note": "4강",
+   "venue": "",
+   "tv": "티빙 · tvN SPORTS(추정)",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "detail": {
+    "result": {
+     "score": "알카라스 승 6-4 6-4"
+    }
+   },
+   "score": 69,
+   "why": [
+    "알카라스 경기"
+   ],
+   "stars": 3
+  },
+  {
    "id": "401884740",
    "path": "soccer/ger.1",
    "league": "분데스리가",
@@ -1157,7 +1191,7 @@
     "score": "1",
     "winner": false,
     "record": "3-1-5",
-    "rank": "10",
+    "rank": "11",
     "pts": "10",
     "form": "패승패패패"
    },
