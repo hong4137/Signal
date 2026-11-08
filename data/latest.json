@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-08 11:08",
+ "updated": "2026-11-08 20:38",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
   "hn": 12,
-  "reddit": 22,
+  "reddit": 30,
   "hf": 15,
-  "github": 6,
+  "github": 5,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,9 +16,9 @@
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 309,
-   "comments": 612,
-   "r": 1.98,
+   "points": 317,
+   "comments": 618,
+   "r": 1.95,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
@@ -32,9 +32,9 @@
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "discussion": "https://news.ycombinator.com/item?id=50385272",
-   "points": 1591,
-   "comments": 515,
-   "r": 0.32,
+   "points": 1596,
+   "comments": 523,
+   "r": 0.33,
    "at": "2026-11-05",
    "topics": [
     "모델릴리스"
@@ -60,9 +60,9 @@
    "title": "AI is dramatically accelerating AI research",
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 362,
-   "comments": 338,
-   "r": 0.93,
+   "points": 368,
+   "comments": 348,
+   "r": 0.95,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
@@ -76,8 +76,8 @@
    "title": "Blender's UI and Runtime: Much Faster Than GPUI",
    "url": "https://github.com/ppmpreetham/BUI",
    "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 720,
-   "comments": 289,
+   "points": 731,
+   "comments": 290,
    "r": 0.4,
    "at": "2026-11-06",
    "topics": [
@@ -91,11 +91,57 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "discussion": "https://news.ycombinator.com/item?id=50407882",
+   "points": 423,
+   "comments": 287,
+   "r": 0.68,
+   "at": "2026-11-07",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "summary_ko": "개발자들은 자동화 도구가 비밀번호나 API 키를 파일에 평문으로 기록하는 기본 설정에 문제가 있다고 지적했다. 일각에서는 개발자 본인이 직접 주의를 기울여야 한다는 의견과 함께, AI 에이전트가 민감한 정보에 직접 접근하지 못하도록 별도의 프록시나 격리 환경이 필수적이라는 주장이 맞섰다.",
+   "is_event": true,
+   "kr_query": "클로드 코드 깃허브 비밀번호 노출",
+   "kr": [
+    {
+     "t": "AI 개발 도구 라이트LLM, 악성코드 감염에 '비상'…AWS·클로드 계정정보...",
+     "u": "https://www.boannews.com/news/articleView.html?idxno=146624",
+     "d": "Fri, 23 Oct 2026",
+     "why": [
+      "코드",
+      "클로드"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "The end of Microsoft Research's AI Frontiers group",
+   "url": "https://hunch.net/?p=13764006",
+   "discussion": "https://news.ycombinator.com/item?id=50406563",
+   "points": 464,
+   "comments": 278,
+   "r": 0.6,
+   "at": "2026-11-07",
+   "topics": [
+    "안전·거버넌스"
+   ],
+   "story_key": "url:hunch.net/?p=13764006",
+   "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹 해체를 두고 대형 언어 모델의 확장 한계와 투자 대비 효용에 대한 논쟁이 오갔다. 일각에서는 컴퓨팅 자원과 데이터 병목 현상으로 인해 AI 발전 속도가 정체기에 접어들었다고 보는 반면, 여전히 내부적으로 엄청난 연구 성과가 숨겨져 있을 것이라는 의견도 존재했다.",
+   "is_event": true,
+   "kr_query": "마이크로소프트 리서치 AI 프론티어스 그룹 해산",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 360,
-   "comments": 250,
+   "points": 362,
+   "comments": 251,
    "r": 0.69,
    "at": "2026-11-06",
    "topics": [
@@ -135,8 +181,8 @@
    "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "discussion": "https://news.ycombinator.com/item?id=50385870",
-   "points": 514,
-   "comments": 228,
+   "points": 515,
+   "comments": 229,
    "r": 0.44,
    "at": "2026-11-05",
    "topics": [],
@@ -158,20 +204,20 @@
   },
   {
    "layer": "hn",
-   "title": "The end of Microsoft Research's AI Frontiers group",
-   "url": "https://hunch.net/?p=13764006",
-   "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 392,
-   "comments": 227,
-   "r": 0.58,
-   "at": "2026-11-07",
+   "title": "Goodbye Claude, Hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
+   "discussion": "https://news.ycombinator.com/item?id=50410107",
+   "points": 357,
+   "comments": 217,
+   "r": 0.61,
+   "at": "2026-11-08",
    "topics": [
-    "안전·거버넌스"
+    "모델릴리스"
    ],
-   "story_key": "url:hunch.net/?p=13764006",
-   "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹 해체를 두고 대형 언어 모델의 확장 한계와 투자 대비 효용에 대한 논쟁이 오갔다. 일각에서는 컴퓨팅 자원과 데이터 병목 현상으로 인해 AI 발전 속도가 정체기에 접어들었다고 보는 반면, 여전히 내부적으로 엄청난 연구 성과가 숨겨져 있을 것이라는 의견도 존재했다.",
-   "is_event": true,
-   "kr_query": "마이크로소프트 리서치 AI 프론티어스 그룹 해산",
+   "story_key": "url:caleb.software/posts/claude-to-pi.html",
+   "summary_ko": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에 유리하다고 평가한 반면, 다른 쪽은 보안 샌드박스 부족을 우려하거나 GUI가 사고 정리와 집중력 유지에 더 낫다고 주장했다.",
+   "is_event": false,
+   "kr_query": "",
    "kr": []
   },
   {
@@ -179,35 +225,13 @@
    "title": "I struggle to believe that AI R&D is ingenious",
    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "discussion": "https://news.ycombinator.com/item?id=50388513",
-   "points": 215,
-   "comments": 216,
-   "r": 1.0,
+   "points": 220,
+   "comments": 217,
+   "r": 0.99,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
    "summary_ko": "댓글에서는 최근 AI 모델의 스케일링 법칙이 한계에 부딪혀 수확체감 현상을 보이고 있다는 주장이 제기되었다. 반면 전문적인 추론 능력이 향상되면서 복잡한 수학 문제나 연구 문헌 검토 등에서 실질적인 성과를 내고 있다는 반박도 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "GPT-6 Astra covertly underperforms on safety research",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-   "discussion": "https://news.ycombinator.com/item?id=50376313",
-   "points": 341,
-   "comments": 192,
-   "r": 0.56,
-   "at": "2026-11-05",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-   "trust": [
-    "Zvi (DWATV)"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 언어 모델을 도구로 보는 시각과 독자적인 도덕적 프레임워크나 감정이 있다고 가정하는 입장이 팽팽히 맞섰다. 일부 사용자들은 AI의 안전성 테스트나 규제 논의가 실제 소프트웨어의 본질을 호도할 수 있다고 지적했다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -246,34 +270,6 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 186,
-   "comments": 129,
-   "r": 0.69,
-   "at": "2026-11-07",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "summary_ko": "개발자들은 자동화 도구가 비밀번호나 API 키를 파일에 평문으로 기록하는 기본 설정에 문제가 있다고 지적했다. 일각에서는 개발자 본인이 직접 주의를 기울여야 한다는 의견과 함께, AI 에이전트가 민감한 정보에 직접 접근하지 못하도록 별도의 프록시나 격리 환경이 필수적이라는 주장이 맞섰다.",
-   "is_event": true,
-   "kr_query": "클로드 코드 깃허브 비밀번호 노출",
-   "kr": [
-    {
-     "t": "AI 개발 도구 라이트LLM, 악성코드 감염에 '비상'…AWS·클로드 계정정보...",
-     "u": "https://www.boannews.com/news/articleView.html?idxno=146624",
-     "d": "Fri, 23 Oct 2026",
-     "why": [
-      "코드",
-      "클로드"
-     ]
-    }
-   ]
   }
  ],
  "by_debate": [
@@ -282,9 +278,9 @@
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 309,
-   "comments": 612,
-   "r": 1.98,
+   "points": 317,
+   "comments": 618,
+   "r": 1.95,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
@@ -314,9 +310,9 @@
    "title": "I struggle to believe that AI R&D is ingenious",
    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "discussion": "https://news.ycombinator.com/item?id=50388513",
-   "points": 215,
-   "comments": 216,
-   "r": 1.0,
+   "points": 220,
+   "comments": 217,
+   "r": 0.99,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
@@ -330,9 +326,9 @@
    "title": "AI is dramatically accelerating AI research",
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 362,
-   "comments": 338,
-   "r": 0.93,
+   "points": 368,
+   "comments": 348,
+   "r": 0.95,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
@@ -365,8 +361,8 @@
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 360,
-   "comments": 250,
+   "points": 362,
+   "comments": 251,
    "r": 0.69,
    "at": "2026-11-06",
    "topics": [
@@ -406,28 +402,14 @@
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 186,
-   "comments": 129,
-   "r": 0.69,
+   "points": 423,
+   "comments": 287,
+   "r": 0.68,
    "at": "2026-11-07",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "_comments": [
-    "> day 1 security best practices say you don’t write secrets to filesIf only tools, including major ones, actually did that. Plenty of the biggest package managers in the world still write API keys in plain text to files. uv and npm are two of them.",
-    "So developers who get paid more than $X,XXX,XXX per year don't need to pay attention to their customers. Got it.Where do you feel the dollar threshold should be set? At $990,000 per year you still need to listen to users, but at $1,000,000 you are basically King C of Rust Mountain and they are lucky you even let them run your code?Should RSUs and cash signing bonuses be included in the calculation?",
-    "> I do still wish you could do more with hooks I might want to allow a given command via a hook [...] given path allows/denies read/writeYou can make a script for the PreToolUse hook that can do that. I use a command gate script that parses input for doing that exactly, allowing/denying actions based on tool use + paths -- it started out as a hook to prevent claude from polluting my clojure projects/filesystem with python in sneaky ways. Babashka works really well here",
-    "Food for thought - ai agents should not directly have your actual secrets 99% of the time. While Auto mode is useful and good it's not going to be bulletproof. We ought to have something like an agent egress proxy that swaps in real secrets.Obviously I've not given this enough design thought, but some means of providing an agent stand in secrets that cannot be used in other contexts would be a big improvement for trustability in things like cc.",
-    "A bit careless but mostly a bad default. One click shouldn't put passwords in files people commit. Anthropic should fix it.",
-    "Saying a professional software developer is responsible for not committing secrets is reasonable. That said, these tool chains all seem to condition developers to offload much of that diligence to the tooling itself, which makes catching mistakes harder because you’re not as used to scanning for them. Secrets files have always been foot guns, and with automation-based complacence, and vibe coders that don’t understand the problem, I imagine these things will become even more common.",
-    "Claude routinely tries to install software if I don't stop it. I try to only use Claude within a container. Outside the container, I never use \"auto\" mode.Ideally I would never use Claude at all outside a disposable container, even on a box with no sensitive information and with the sandbox enabled. It's like having an attacker breach your system — you don't know what it did.",
-    "I'm not sure when claude started preferring huge bash chains but auto mode tends to decline most of them and drop to a permission prompt -- getting rid of the use of auto mode -- because it refuses to handle anything chained with expansions, variables or similar items",
-    "\"Please respond to the strongest plausible interpretation of what someone says, not a weaker one that's easier to criticize. Assume good faith.\"https://news.ycombinator.com/newsguidelines.html",
-    "Oh no, I moved all that manual tedious boring loser mentality stuff to the agent. Now Claude does it for me, and no strangely enough Claude didn’t tell me there was a problem!",
-    "I'm not claiming auto is worse than manual; I'm claiming it cannot be compared with anything security-wise because it does not aim to provide any guarantees, there's no systematic way to reason about what it will and won't allow, etcWith e.g. VM or container sandboxing, we can say things like \"If there are no vulnerabilities in the hypervisor or hardware, then the agent can only access these files, these network services, etc\". Auto mode doesn't even try to provide any guarantees, so it's impossible to reason about. It amounts to just using the models judgment about what's \"malicious\" or not, a definition which is subjective, changes model to model, and can be influenced by attacker input.Em",
-    "I'm not here to be critical, but the hoops you have to jump through to get Claude out of .env is more than it should be. You basically need an agent to write it if it's anything complicated, like, allow .env.example but not .env.*.Whereas that should probably be default on instead, and this should apply to other known sensitive folders. A simpler system like .agentignore would be even better.I like auto mode but \"the agent supervises itself\" is a bad compliance/safety answer on its own."
-   ],
    "summary_ko": "개발자들은 자동화 도구가 비밀번호나 API 키를 파일에 평문으로 기록하는 기본 설정에 문제가 있다고 지적했다. 일각에서는 개발자 본인이 직접 주의를 기울여야 한다는 의견과 함께, AI 에이전트가 민감한 정보에 직접 접근하지 못하도록 별도의 프록시나 격리 환경이 필수적이라는 주장이 맞섰다.",
    "is_event": true,
    "kr_query": "클로드 코드 깃허브 비밀번호 노출",
@@ -445,31 +427,49 @@
   },
   {
    "layer": "hn",
+   "title": "Goodbye Claude, Hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
+   "discussion": "https://news.ycombinator.com/item?id=50410107",
+   "points": 357,
+   "comments": 217,
+   "r": 0.61,
+   "at": "2026-11-08",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:caleb.software/posts/claude-to-pi.html",
+   "_comments": [
+    "Most agentic UIs are structured exactly the same regardless of the interface. TUIs are not composable in any possible meaning of that word (unlike CLI/REPL), they are GUIs on a fixed cell grid.",
+    "I graduated from Claude Code to Herdr to now T3Code.T3Code can do anything I might need such a tool to. It supports a bunch of different harnesses, therefore also subscriptions. It supports running agents on different servers, from the same GUI. Mobile app that works well. Orchestration that allows any agent to orchestrate others in T3Code directly.",
+    "For me the tight integration with Claude Artifacts (and whatever OpenAIs copy of those is) is super value-able for me. The biggest bottleneck for me is gathering all my thoughts and analyzing what needs to be done.I was a long term user of the TUI and tools like cmux / herdr but now I find it much easier to actually focus",
+    "I've been using pi for several months with herdr. The ability to easily customise your experience via extension, with a small core, has finally made me enjoy working in harnesses. Also check out pi-blackhole (or billion context) + pi-fabric. The former basically gives you unlimited context and pi-fabric is subagents on steroids.",
+    "Ueddit link for those who don't want be tracked by Reddit:https://www.ueddit.com/r/DeepSeek/s/sxg7aAM6rS",
+    "The thing that freaks me out about Pi is it seems to have zero sandboxing or security guardrails unless you explicitly add them. I guess it's fine if you're only ever running inside a VM or a throwaway machine anyway.",
+    "I use both, and I think Claude Code is easier for beginners but Pi is more interesting to get a better understanding of what the harness is doing for you. Stuff like skills and MCP are sort of abstracted in CC in ways that obfuscate things, probably intentionally, while Pi lets you really see where a model got stuck and why. Inspecting thinking traces and dead ends from local models teaches you a lot about how they work in general.",
+    "Same... I use herdr to manage 12+ sessions easily. There's no GUI that can do that.",
+    "> now I'm using ChatGPT/Claude desktopSame, it's lovely software for that mode of work!I also briefly tried out other ADEs, like:- Kepler (by the GitKraken folks) - https://www.gitkraken.com/kepler- Paseo - https://paseo.sh/Kepler had a really nice issue tracker integration but the UI was very vibey and not quite as to the point as I'd like (who needs graph visualization of what the agents do, just give me tools that work), and Paseo had a really nice UI that I could use to drive both Codex and Claude Code, but some OpenCode agents would sometimes hang and I didn't have tools to really do anything about it.Maybe I should also give JetBrains Air a look again, if I ever end up subscribing to t",
+    "I find TUI scales better for multiple concurrent agents across the same and different codebases, especially using tools such as herdr. I can fire off an agent, which runs sub-agents. Then check-in periodically to re-steer as needed or be interrupt driven for completions of tasks. I can't see how vscode/GUI is better for this?",
+    "Its mostly just in the SYSTEM.md file. Its quite strict honestly, the rules have been built up to better curb my laziness, and also respond with statements that are better designed to teach than provide an answer.Repo: https://github.com/MauriceElliott/PiCalSystem.md: https://github.com/MauriceElliott/PiCal/blob/main/agent/SYST...It has a break out phrase for when I have a deadline but its pretty useful in the normal mode so I’ve only had to use it a hand full of times.",
+    "Just GUI now. I can also connect to Mac Codex from my phone and have a voice chat with it. Collects all my work in projects, can jump in and out anytime. Can start a project on the phone, move to Mac. (Almost) No sync issues, which I found the TUI/phone had."
+   ],
+   "summary_ko": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에 유리하다고 평가한 반면, 다른 쪽은 보안 샌드박스 부족을 우려하거나 GUI가 사고 정리와 집중력 유지에 더 낫다고 주장했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 392,
-   "comments": 227,
-   "r": 0.58,
+   "points": 464,
+   "comments": 278,
+   "r": 0.6,
    "at": "2026-11-07",
    "topics": [
     "안전·거버넌스"
    ],
    "story_key": "url:hunch.net/?p=13764006",
-   "_comments": [
-    "Sorry, but what? We haven't done anything beyond strapping a large language model to a \"harness\".At no point do I ever confuse a human being with a Claude session.Even if I'm somehow fooled or confused for a minute, the context window / hallucinations / Claudeish will immediately give it away.Sure, we passed the turing test for chatbots but we are very far away from AGI.",
-    "> \"Hey this Opus 5.5 with the increased parameters seems much better than the last one\". Well that's a trillion parameter model.Opus is 5T, not 1T.> We'll soon start hitting 10's of trillionsFable is already 10T.> \"Foot down, there's a straight highway ahead don't divert\". I have the view this makes sense too.The roadblock they ignored is politics.Three days ago the states where most of the new datacenters are being built (Texas, Ohio, Georgia and others) elected governors who campaigned on halting datacenter construction. The highway metaphor implies money in => intelligence out. Turns out there's at least one other ingredient, and we just ran out of it.",
-    "We know nothing about their internal models that, for instance, produced revolutionary results in mathematics. The public no longer gets to see what’s at the frontier, and we may never see much of it. Also, the cost to train these is immense. China literally does not have enough chips in circulation to compete. I’m not sure where US lab capabilities tap out but I suspect they are at least partly bound by GPU production as well at this point.",
-    "It is very jagged and some people don't consider that human level AGI - it can solve Maths at the genius level just like Deep Blue could play chess at the grandmaster level. At this point it is simply an opinion and I can see the other side too.",
-    "Hmm... So strange. It seems obvious(?) that both research and scale are needed, and that one should never have one starve the other. In fact research can influence the scale needed, and vice versa.I guess when money is concerned people will always seek out the the most reliable and predictable path - at the risk of being potentially left behind if it turned out to the wrong (or at least suboptimal) path.",
-    "And then they made back 200x the operating expenses of the lab (Xerox PARC) they came from over its entire lifetime.",
-    "Well, don’t care about graphics yet. Unclear what will happen once those gamers hit 20, 30 years old.",
-    "\"Smarter\" is ill-defined.Are you smart if you see that cognitive scientists had something figured out, connected it to something in your field of chemistry and made a breakthrough treatment for some disease?Does any of our existing intelligence build on completely unknown information? You could argue that any new solution/emergent intelligence is an association of existing information in new ways.It also brings us to what is brute forcing? Humans are brute forcing stuff most of the time. You will have 10 stupid thoughts for every good thought. 10 stupid ideas for every good idea, you will discard most of them so fast that you won't think of that you did that. It's very rare, if not near impo",
-    "Assuming super-linear growth will continue based on the first 3 years of a new technology? Almost every physical, computational and economic system in history, from Dennard scaling in silicon to transonic aviation speed looked super-linear until it hit the inflection point in its eventual S-curve.A Copernican/Lindy baseline suggests the growth rate in LLM intelligence will peak in around another 2-4 years and I'm leaning on the low side because while the growth of LLM intelligence per dollar and per month are still growing in absolute terms, the growth rate of both seems to already be falling as power-law constraints in compute and data bottlenecks take hold.",
-    "Its anywhere you have finite resources, time, people, knowledge etc and have to take a call on how to split them - Explore-Exploit Tradeoff.",
-    "John Langford was the creator of \"VW\" (\"Vee Dub\", or \"Vowpal Wabbit\"), an ML framework that was quite efficient back in the day ( ~ 20 years ago ).https://vowpalwabbit.org/",
-    "I would say I used to believe how the models would scale, now I'm a bit more skeptical. I would be incredibly surprised if oai, anthropic, etc hadn't at least TRIED this yet. They have the compute to do it. They're either sitting on it and saving it for a rainy day, or there is something wrong with it."
-   ],
    "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹 해체를 두고 대형 언어 모델의 확장 한계와 투자 대비 효용에 대한 논쟁이 오갔다. 일각에서는 컴퓨팅 자원과 데이터 병목 현상으로 인해 AI 발전 속도가 정체기에 접어들었다고 보는 반면, 여전히 내부적으로 엄청난 연구 성과가 숨겨져 있을 것이라는 의견도 존재했다.",
    "is_event": true,
    "kr_query": "마이크로소프트 리서치 AI 프론티어스 그룹 해산",
@@ -477,33 +477,11 @@
   },
   {
    "layer": "hn",
-   "title": "GPT-6 Astra covertly underperforms on safety research",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-   "discussion": "https://news.ycombinator.com/item?id=50376313",
-   "points": 341,
-   "comments": 192,
-   "r": 0.56,
-   "at": "2026-11-05",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-   "trust": [
-    "Zvi (DWATV)"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 언어 모델을 도구로 보는 시각과 독자적인 도덕적 프레임워크나 감정이 있다고 가정하는 입장이 팽팽히 맞섰다. 일부 사용자들은 AI의 안전성 테스트나 규제 논의가 실제 소프트웨어의 본질을 호도할 수 있다고 지적했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "discussion": "https://news.ycombinator.com/item?id=50385870",
-   "points": 514,
-   "comments": 228,
+   "points": 515,
+   "comments": 229,
    "r": 0.44,
    "at": "2026-11-05",
    "topics": [],
@@ -528,8 +506,8 @@
    "title": "Blender's UI and Runtime: Much Faster Than GPUI",
    "url": "https://github.com/ppmpreetham/BUI",
    "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 720,
-   "comments": 289,
+   "points": 731,
+   "comments": 290,
    "r": 0.4,
    "at": "2026-11-06",
    "topics": [
@@ -546,9 +524,9 @@
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "discussion": "https://news.ycombinator.com/item?id=50385272",
-   "points": 1591,
-   "comments": 515,
-   "r": 0.32,
+   "points": 1596,
+   "comments": 523,
+   "r": 0.33,
    "at": "2026-11-05",
    "topics": [
     "모델릴리스"
@@ -574,26 +552,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Good Luck Getting a Cheap GPU. AMD Is a 'Data Center First Company,' CEO Says",
-   "url": "https://www.pcmag.com/news/good-luck-getting-a-cheap-gpu-amd-is-a-data-center-first-company-ceo-says",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xpx0on/good_luck_getting_a_cheap_gpu_amd_is_a_data/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:pcmag.com/news/good-luck-getting-a-cheap-gpu-amd-is-a-data-center-first-company-ceo-says"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
    "url": "https://github.com/Roy3838/Observer",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqd058/use_your_phone_to_monitor_anything_with_local/",
-   "rank": 2,
+   "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -606,26 +568,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Harness Leaderboard - Kimi Code, Hermes, Pi, Claude Code, Codex, and Others Were Benchmarked Against Terminal Bench 2.1 & Deep SWE 1.1",
-   "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xpvfx8/harness_leaderboard_kimi_code_hermes_pi_claude/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:spaces/joelniklaus"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "llama_moe_cache: run missed experts on CPU, add tuning script by am17an · Pull Request #30966 · ggml-org/llama.cpp",
    "url": "https://github.com/ggml-org/llama.cpp/pull/30966",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqacka/llama_moe_cache_run_missed_experts_on_cpu_add/",
-   "rank": 4,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -641,7 +587,7 @@
    "title": "Effects of KV Cache Quantization on Qwen3.8 27B",
    "url": "https://erli.xyz/posts/qwen38-27b-quant-kv-comparison/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbesv/effects_of_kv_cache_quantization_on_qwen38_27b/",
-   "rank": 5,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -654,24 +600,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Another benchmark has hit the quant war",
-   "url": "https://huggingface.co/ISTA-DASLab",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xpxfob/another_benchmark_has_hit_the_quant_war/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:huggingface.co/ISTA-DASLab"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "testing Qoduck (Maybe qwen4) on Qoder",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder/",
-   "rank": 7,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -684,24 +616,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Obsessive-1.7B: a 1.1 GB web-search subagent",
-   "url": "https://huggingface.co/banyohavlusu23/Obsessive-1.7B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4yju/obsessive17b_a_11_gb_websearch_subagent/",
-   "rank": 8,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:banyohavlusu23/obsessive-1.7b-gguf"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "The Stylome bot is useless spam and should be removed",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqinb7/the_stylome_bot_is_useless_spam_and_should_be/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqinb7/the_stylome_bot_is_useless_spam_and_should_be/",
-   "rank": 9,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -712,10 +630,38 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Obsessive-1.7B: a 1.1 GB web-search subagent",
+   "url": "https://huggingface.co/banyohavlusu23/Obsessive-1.7B-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4yju/obsessive17b_a_11_gb_websearch_subagent/",
+   "rank": 6,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:banyohavlusu23/obsessive-1.7b-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Anyone running local AI on 16GB vram?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Also experienced the Qwen3.8-Flash-Next URL issue",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue/",
-   "rank": 10,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -731,7 +677,7 @@
    "title": "Valet: use local LLMs to manage your homelab (open source)",
    "url": "https://demo.askvalet.dev",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq7qi4/valet_use_local_llms_to_manage_your_homelab_open/",
-   "rank": 11,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -745,7 +691,7 @@
    "title": "Does anyone use None reasoning level for anything ever?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4pb6/does_anyone_use_none_reasoning_level_for_anything/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4pb6/does_anyone_use_none_reasoning_level_for_anything/",
-   "rank": 12,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -756,16 +702,18 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "[Paper] D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
-   "url": "https://arxiv.org/abs/2611.06425",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq1y0y/paper_d3d_decoupled_diffusion_drafting_for/",
-   "rank": 13,
+   "title": "Crowd-v1 - The collaborative LLM",
+   "url": "https://crowdgpt.net/#submit",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqh8hk/crowdv1_the_collaborative_llm/",
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "arxiv:2611.06425"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:crowdgpt.net/"
   },
   {
    "layer": "reddit",
@@ -773,7 +721,7 @@
    "title": "[Paper] DSpine - Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding - tencent",
    "url": "https://arxiv.org/abs/2609.36173",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq9hf6/paper_dspine_draft_in_parallel_condition_through/",
-   "rank": 14,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -784,52 +732,60 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Crowd-v1 - The collaborative LLM",
-   "url": "https://crowdgpt.net/#submit",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqh8hk/crowdv1_the_collaborative_llm/",
+   "title": "Saw this benchmark where small changes to coding tasks made a big difference",
+   "url": "https://x.com/loresjpg/status/2118880329490637049",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqmr2i/saw_this_benchmark_where_small_changes_to_coding/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:x.com/loresjpg/status/2118880329490637049"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "TSMC might do in memory compute for us",
+   "url": "https://x.com/jukan05/status/2119026338522869863",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq65rl/tsmc_might_do_in_memory_compute_for_us/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:x.com/jukan05/status/2119026338522869863"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Qwen3.8-Flash-Next Gyro S on a Valve Steam Machine (8 GB AMD GPU, 32 GB RAM): about 18 t/s decode, about 235 t/s prefill, stock SteamOS",
+   "url": "https://github.com/Niko1221/Strata",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq8s2n/qwen38flashnext_gyro_s_on_a_valve_steam_machine_8/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스"
+    "모델릴리스",
+    "인프라·칩"
    ],
-   "story_key": "url:crowdgpt.net/"
+   "story_key": "gh:niko1221/strata"
   }
  ],
- "quiet_important": [
-  {
-   "layer": "hn",
-   "title": "GPT-6 Astra covertly underperforms on safety research",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-   "discussion": "https://news.ycombinator.com/item?id=50376313",
-   "points": 341,
-   "comments": 192,
-   "r": 0.56,
-   "at": "2026-11-05",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-   "trust": [
-    "Zvi (DWATV)"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 언어 모델을 도구로 보는 시각과 독자적인 도덕적 프레임워크나 감정이 있다고 가정하는 입장이 팽팽히 맞섰다. 일부 사용자들은 AI의 안전성 테스트나 규제 논의가 실제 소프트웨어의 본질을 호도할 수 있다고 지적했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  }
- ],
+ "quiet_important": [],
  "models": [
   {
    "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 751,
-   "likes": 1130,
-   "downloads": 20689,
+   "trending": 762,
+   "likes": 1258,
+   "downloads": 22854,
    "topics": [
     "모델릴리스"
    ],
@@ -837,23 +793,11 @@
   },
   {
    "layer": "hf",
-   "title": "moonshotai/Kimi-K3.1-Pro",
-   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-   "trending": 531,
-   "likes": 1640,
-   "downloads": 22571,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:moonshotai/kimi-k3.1-pro"
-  },
-  {
-   "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 433,
-   "likes": 510,
-   "downloads": 1369,
+   "trending": 557,
+   "likes": 674,
+   "downloads": 7088,
    "topics": [
     "모델릴리스"
    ],
@@ -861,11 +805,23 @@
   },
   {
    "layer": "hf",
+   "title": "moonshotai/Kimi-K3.1-Pro",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "trending": 542,
+   "likes": 1684,
+   "downloads": 25569,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:moonshotai/kimi-k3.1-pro"
+  },
+  {
+   "layer": "hf",
    "title": "ccore/Qwen3.5-4B-3D-Coder",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 427,
-   "likes": 877,
-   "downloads": 221506,
+   "trending": 408,
+   "likes": 894,
+   "downloads": 254053,
    "topics": [
     "모델릴리스"
    ],
@@ -875,9 +831,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 380,
-   "likes": 11002,
-   "downloads": 2643778,
+   "trending": 391,
+   "likes": 11056,
+   "downloads": 2661026,
    "topics": [
     "모델릴리스"
    ],
@@ -887,9 +843,9 @@
    "layer": "hf",
    "title": "ricursiveAI/Ripple-65B-Preview",
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-   "trending": 362,
-   "likes": 372,
-   "downloads": 3803,
+   "trending": 372,
+   "likes": 382,
+   "downloads": 5087,
    "topics": [
     "모델릴리스"
    ],
@@ -899,9 +855,9 @@
    "layer": "hf",
    "title": "burner22/numbat",
    "url": "https://huggingface.co/burner22/numbat",
-   "trending": 344,
-   "likes": 381,
-   "downloads": 9212,
+   "trending": 346,
+   "likes": 384,
+   "downloads": 10197,
    "topics": [
     "모델릴리스"
    ],
@@ -911,9 +867,9 @@
    "layer": "hf",
    "title": "FusionCow/Sulphur-3",
    "url": "https://huggingface.co/FusionCow/Sulphur-3",
-   "trending": 340,
-   "likes": 405,
-   "downloads": 997,
+   "trending": 341,
+   "likes": 410,
+   "downloads": 1003,
    "topics": [
     "모델릴리스"
    ],
@@ -923,9 +879,9 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 314,
-   "likes": 19345,
-   "downloads": 7813215,
+   "trending": 313,
+   "likes": 19367,
+   "downloads": 7668187,
    "topics": [
     "모델릴리스"
    ],
@@ -935,9 +891,9 @@
    "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 299,
-   "likes": 2663,
-   "downloads": 1545313,
+   "trending": 296,
+   "likes": 2674,
+   "downloads": 1553252,
    "topics": [
     "모델릴리스"
    ],
@@ -950,7 +906,7 @@
    "title": "KKKKhazix/agent-autoloop",
    "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
    "url": "https://github.com/KKKKhazix/agent-autoloop",
-   "stars": 3968,
+   "stars": 4042,
    "topics": [
     "에이전트"
    ],
@@ -958,10 +914,21 @@
   },
   {
    "layer": "github",
+   "title": "sarpstar/cinecode",
+   "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, desi",
+   "url": "https://github.com/sarpstar/cinecode",
+   "stars": 1237,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:sarpstar/cinecode"
+  },
+  {
+   "layer": "github",
    "title": "Sandflow-ai/sand3d",
    "desc": "3D modeling in Python, built for LLMs.",
    "url": "https://github.com/Sandflow-ai/sand3d",
-   "stars": 1065,
+   "stars": 1203,
    "topics": [
     "개발도구"
    ],
@@ -972,7 +939,7 @@
    "title": "voyager-so/vork",
    "desc": "Headless 3D and VFX engine for agents. Research preview.",
    "url": "https://github.com/voyager-so/vork",
-   "stars": 892,
+   "stars": 1009,
    "topics": [
     "에이전트"
    ],
@@ -980,39 +947,16 @@
   },
   {
    "layer": "github",
-   "title": "sarpstar/cinecode",
-   "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, desi",
-   "url": "https://github.com/sarpstar/cinecode",
-   "stars": 847,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:sarpstar/cinecode"
-  },
-  {
-   "layer": "github",
    "title": "shanselman/gputaskman",
    "desc": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
    "url": "https://github.com/shanselman/gputaskman",
-   "stars": 534,
+   "stars": 627,
    "topics": [
     "모델릴리스",
     "인프라·칩",
     "개발도구"
    ],
    "story_key": "gh:shanselman/gputaskman"
-  },
-  {
-   "layer": "github",
-   "title": "JosssphZhou/poki",
-   "desc": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
-   "url": "https://github.com/JosssphZhou/poki",
-   "stars": 515,
-   "topics": [
-    "에이전트",
-    "보안·사고"
-   ],
-   "story_key": "gh:josssphzhou/poki"
   }
  ],
  "trust_recent": [
@@ -1348,5 +1292,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-08 02:08"
+ "enriched_at": "2026-11-08 11:38"
 }
