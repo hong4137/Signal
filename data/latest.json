@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-08 20:38",
+ "updated": "2026-11-09 03:16",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 12,
+  "hn": 13,
   "reddit": 30,
   "hf": 15,
   "github": 5,
@@ -16,8 +16,8 @@
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 317,
-   "comments": 618,
+   "points": 318,
+   "comments": 621,
    "r": 1.95,
    "at": "2026-11-06",
    "topics": [],
@@ -32,8 +32,8 @@
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "discussion": "https://news.ycombinator.com/item?id=50385272",
-   "points": 1596,
-   "comments": 523,
+   "points": 1597,
+   "comments": 530,
    "r": 0.33,
    "at": "2026-11-05",
    "topics": [
@@ -57,46 +57,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI is dramatically accelerating AI research",
-   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-   "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 368,
-   "comments": 348,
-   "r": 0.95,
-   "at": "2026-11-06",
-   "topics": [],
-   "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-   "summary_ko": "AI가 머신러닝 연구 속도를 높이고 있다는 주장에 대해 실무 연구자들은 코드 작성과 실험 생산성이 증가한 것은 맞지만 초지능 출현으로 직결되지는 않는다고 지적했습니다. 토론자들은 최근 비용 대비 성능 향상이 독점 해제와 오픈소스 모델 추격 같은 시장 요인 때문인지에 대해 논의했습니다. 또한 정부 차원의 규제 필요성과 향후 모델 발전의 한계선에 대해서도 다양한 의견이 오갔습니다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Blender's UI and Runtime: Much Faster Than GPUI",
-   "url": "https://github.com/ppmpreetham/BUI",
-   "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 731,
-   "comments": 290,
-   "r": 0.4,
-   "at": "2026-11-06",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:ppmpreetham/bui",
-   "summary_ko": "댓글에서는 블렌더의 독창적인 UI와 렌더링 성능에 대해 놀라움을 표하는 의견과 함께, 과거 오픈소스 UI 디자인의 한계나 단색 아이콘의 가독성 문제를 지적하는 목소리가 공존했다. 일부 개발자들은 자신만의 GUI 툴킷을 개발해온 경험을 공유하며 깊은 관심을 보였다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 423,
-   "comments": 287,
-   "r": 0.68,
+   "points": 511,
+   "comments": 371,
+   "r": 0.73,
    "at": "2026-11-07",
    "topics": [
     "모델릴리스"
@@ -119,12 +85,46 @@
   },
   {
    "layer": "hn",
+   "title": "Goodbye Claude, hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
+   "discussion": "https://news.ycombinator.com/item?id=50410107",
+   "points": 573,
+   "comments": 368,
+   "r": 0.64,
+   "at": "2026-11-08",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:caleb.software/posts/claude-to-pi.html",
+   "summary_ko": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에 유리하다고 평가한 반면, 다른 쪽은 보안 샌드박스 부족을 우려하거나 GUI가 사고 정리와 집중력 유지에 더 낫다고 주장했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "AI is dramatically accelerating AI research",
+   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "discussion": "https://news.ycombinator.com/item?id=50397994",
+   "points": 372,
+   "comments": 349,
+   "r": 0.94,
+   "at": "2026-11-06",
+   "topics": [],
+   "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "summary_ko": "AI가 머신러닝 연구 속도를 높이고 있다는 주장에 대해 실무 연구자들은 코드 작성과 실험 생산성이 증가한 것은 맞지만 초지능 출현으로 직결되지는 않는다고 지적했습니다. 토론자들은 최근 비용 대비 성능 향상이 독점 해제와 오픈소스 모델 추격 같은 시장 요인 때문인지에 대해 논의했습니다. 또한 정부 차원의 규제 필요성과 향후 모델 발전의 한계선에 대해서도 다양한 의견이 오갔습니다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 464,
-   "comments": 278,
-   "r": 0.6,
+   "points": 482,
+   "comments": 296,
+   "r": 0.61,
    "at": "2026-11-07",
    "topics": [
     "안전·거버넌스"
@@ -137,11 +137,29 @@
   },
   {
    "layer": "hn",
+   "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+   "url": "https://github.com/ppmpreetham/BUI",
+   "discussion": "https://news.ycombinator.com/item?id=50389333",
+   "points": 732,
+   "comments": 290,
+   "r": 0.4,
+   "at": "2026-11-06",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "gh:ppmpreetham/bui",
+   "summary_ko": "댓글에서는 블렌더의 독창적인 UI와 렌더링 성능에 대해 놀라움을 표하는 의견과 함께, 과거 오픈소스 UI 디자인의 한계나 단색 아이콘의 가독성 문제를 지적하는 목소리가 공존했다. 일부 개발자들은 자신만의 GUI 툴킷을 개발해온 경험을 공유하며 깊은 관심을 보였다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 362,
-   "comments": 251,
+   "points": 365,
+   "comments": 253,
    "r": 0.69,
    "at": "2026-11-06",
    "topics": [
@@ -204,30 +222,12 @@
   },
   {
    "layer": "hn",
-   "title": "Goodbye Claude, Hello Pi",
-   "url": "https://caleb.software/posts/claude-to-pi.html",
-   "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 357,
-   "comments": 217,
-   "r": 0.61,
-   "at": "2026-11-08",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:caleb.software/posts/claude-to-pi.html",
-   "summary_ko": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에 유리하다고 평가한 반면, 다른 쪽은 보안 샌드박스 부족을 우려하거나 GUI가 사고 정리와 집중력 유지에 더 낫다고 주장했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "I struggle to believe that AI R&D is ingenious",
    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "discussion": "https://news.ycombinator.com/item?id=50388513",
    "points": 220,
-   "comments": 217,
-   "r": 0.99,
+   "comments": 220,
+   "r": 1.0,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
@@ -238,18 +238,34 @@
   },
   {
    "layer": "hn",
-   "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-   "discussion": "https://news.ycombinator.com/item?id=50382179",
-   "points": 163,
-   "comments": 192,
-   "r": 1.18,
-   "at": "2026-11-05",
+   "title": "Why I will not be using LLMs in my coding",
+   "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+   "discussion": "https://news.ycombinator.com/item?id=50412591",
+   "points": 92,
+   "comments": 187,
+   "r": 2.03,
+   "at": "2026-11-08",
    "topics": [],
-   "story_key": "url:wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-   "summary_ko": "미 대선 후 나스닥 및 AI 관련주가 하락한 것을 두고 커뮤니티에서는 AI 거품 조정 여부에 대한 논쟁이 이어졌다. 일부는 닷컴 버블 당시처럼 기업 가치가 정상화되는 과도기적 과정으로 본 반면, 다른 이들은 하드웨어 독점력과 실제 산업 적용 사례를 들어 AI 기술의 실질적 가치를 옹호했다.",
+   "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
+   "summary_ko": "코딩에서 LLM을 배제하겠다는 주장을 두고 개발자들의 의견이 엇갈렸다. 일각에서는 LLM이 반복적인 보일러플레이트 코드를 줄여주고 생산성을 크게 높여준다고 옹호한 반면, 다른 쪽에서는 AI 코딩이 개발자의 문제 해결 능력을 퇴화시키고 소프트웨어 품질을 떨어뜨린다고 비판했다.",
    "is_event": false,
    "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "OpenAI raises $11B at a $1.25T valuation",
+   "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+   "discussion": "https://news.ycombinator.com/item?id=50413822",
+   "points": 148,
+   "comments": 166,
+   "r": 1.12,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought",
+   "summary_ko": "오픈AI의 대규모 투자 유치와 기업가치 평가를 두고 커뮤니티에서 갑론을박이 벌어졌다. AI 시장의 폭발적인 성장과 해자 부재에 따른 거품 우려가 맞서는 한편, 일반 소비자와 개발자 생태계의 수익성에 대한 다양한 전망이 오갔다.",
+   "is_event": true,
+   "kr_query": "오픈아이 1조달러 투자 유치 가치평가",
    "kr": []
   },
   {
@@ -258,8 +274,8 @@
    "url": "https://github.com/anomalyco/rune",
    "discussion": "https://news.ycombinator.com/item?id=50394569",
    "points": 177,
-   "comments": 130,
-   "r": 0.73,
+   "comments": 131,
+   "r": 0.74,
    "at": "2026-11-06",
    "topics": [
     "인프라·칩",
@@ -275,11 +291,41 @@
  "by_debate": [
   {
    "layer": "hn",
+   "title": "Why I will not be using LLMs in my coding",
+   "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+   "discussion": "https://news.ycombinator.com/item?id=50412591",
+   "points": 92,
+   "comments": 187,
+   "r": 2.03,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
+   "_comments": [
+    "One thing that stood out in that comment: You said \"you like\" the act of programming elegantly and understanding the problem.There's nothing wrong with that. Many of us do (or did) like programming and the problem-solving itch it scratched for us. But getting work done for pay is more than what we like. If an LLM can reliably solve a problem for me in a day that would have taken a project, a team of several people, and close to a month of work to build out manually, then I go with the tool that works.And that \"if\" is the reality I live in. About a decade ago, I wrote a program to do analysis of config files for a product our team uses. It took me weeks of side-work to implement the idea of p",
+    "Anecdotally, for small tools and projects, it can crank out functional tools that would take me days or weeks to remember how to do manually. Every time I ask LLM to write something, it also writes tests and validates its code against known values. I additionally spot-check the LLM's code against my own known values in prod, and have had to correct it on some functions. The code I write is mainly analysis of logs and configurations, and they seem well trained on the products that I am using.Testing. It's all about having unit tests, and known outcomes that the LLM can check against every time it makes changes. For my work, that is good enough. For safety-critical systems I would demand more ",
+    "The world at large does accept LLM-derived code as comparable. The same cannot be said for driving v. running 26 miles.",
+    "Writing the code absolutely was. Every character we had to type was accidental complexityYou are conflating designing the system and instantiating it with code. This is exactly what I’m talking about.Typing characters absolutely is cutting pipe and pouring concrete. It is not where the engineer was or is.",
+    "Who said anything about a wholesale reversal?All these things can be true simultaneously:* AI has wholly taken over the corporate world* Programmers can now generate massive amounts of code* This massive productivity boost is, oddly enough, not reflected in consumer products at all* In fact, most of this newfound productivity seems to be aimed at making AI widgets or infrastructure for maintaining AI widgets* LLM use hampers software development at its current level of complexity (because AI is incapable of independent abstraction and simplification)* Programmers are deskilling en masse and turning into managers (without admitting it to themselves)* The externalities of LLM use remain the sa",
+    "Ah, yes, because just like a rice cooker, the work takes the same amount of time, it's just using less space on the stove, and is more reliable.Wait, no, a rice cooker doesn't seem to fit.",
+    "I guess I don’t understand the motivation you have for perusing your hobbies.To me, the effort part only feels pointless if you want to accept LLM-derived code as comparable. Any marathon run is pointless, you go in a loop and we have cars. The point is to do the run yourself unaided.That a computer can play a virtual instrument better than me (and continuously better than anyone) has little bearing on whether or not I continue practicing on my piano.",
+    "There are frequent news stories about companies that want to go capture an asteroid for mining, because it's worth \"trillions\" in rare metals. The companies don't seem to grasp the fact that flooding the market with a new supply said metals will diminish those metals' value dramatically. They can pump billions of dollars chasing that dream, and if they succeed, their reward will be to flood the market, and diminish the market.LLMs feel like the same thing. They're spending billions of dollars on these machines that can flood the market with something once rare and valuable--human creativity. If they succeed, they'll just be ruining creativity and diminishing what humanity values.",
+    "Who cares about the theory? The fact is that the world is now worse due to LLM use.And it's not just restricted to software. Everything I care about is getting worse.Dribbling about how it could theoretically be better doesn't help undo the damage. \"Imagine how much fun we could have playing baseball\", says the man with the baseball bat, as he kneecaps you.",
+    "Yes, people care. Part of the job of management is not just to define what is to be done, but how it is to be done. Let's put to bed this notion of \"nobody cares how you do the job as long as it gets done\" because it's hogwash.In the early 20th century, Frederick Winslow Taylor came up with scientific management, a set of principles for determining the most efficient way to perform work tasks using systematic observation and measurement rather than tradition and \"rule of thumb\". The problem Taylor was trying to solve was that of soldiering, or as we call it more euphemistically today, \"quiet quitting\"—doing the bare minimum of work necessary to keep your job. If the best way of performing a ",
+    "Not to be a jerk, but what if I told you there was a raging debate about widgets vs wodgets in the last 6 months and, although it seems pretty clear that widgets were being adopted across the industry at large, there was an ever growing sentiment that wodgets were actually preferred and the market was going to reverse itself, any day now?I can’t really point to any evidence of this because the wodget people have stopped posting about it and every month the cost of widgets keeps going down while they simultaneously get better and there’s so much capital and talent being thrown at widgets that it’s impossible to think a wholesale reversal could even be possible. Would you tell me that, “trust ",
+    "Try requesting a feature from Opus 5.5 high that would take you a day or two to implement and test well. It'll work for 20-30 minutes or so. Then ask it to review the changes with a sub agent of itself and with Codex Sol 6.1 high. Then let it address the findings and iterate the review/fix cycle until the reviewers are happy."
+   ],
+   "summary_ko": "코딩에서 LLM을 배제하겠다는 주장을 두고 개발자들의 의견이 엇갈렸다. 일각에서는 LLM이 반복적인 보일러플레이트 코드를 줄여주고 생산성을 크게 높여준다고 옹호한 반면, 다른 쪽에서는 AI 코딩이 개발자의 문제 해결 능력을 퇴화시키고 소프트웨어 품질을 떨어뜨린다고 비판했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 317,
-   "comments": 618,
+   "points": 318,
+   "comments": 621,
    "r": 1.95,
    "at": "2026-11-06",
    "topics": [],
@@ -291,18 +337,32 @@
   },
   {
    "layer": "hn",
-   "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-   "discussion": "https://news.ycombinator.com/item?id=50382179",
-   "points": 163,
-   "comments": 192,
-   "r": 1.18,
-   "at": "2026-11-05",
+   "title": "OpenAI raises $11B at a $1.25T valuation",
+   "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+   "discussion": "https://news.ycombinator.com/item?id=50413822",
+   "points": 148,
+   "comments": 166,
+   "r": 1.12,
+   "at": "2026-11-08",
    "topics": [],
-   "story_key": "url:wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-   "summary_ko": "미 대선 후 나스닥 및 AI 관련주가 하락한 것을 두고 커뮤니티에서는 AI 거품 조정 여부에 대한 논쟁이 이어졌다. 일부는 닷컴 버블 당시처럼 기업 가치가 정상화되는 과도기적 과정으로 본 반면, 다른 이들은 하드웨어 독점력과 실제 산업 적용 사례를 들어 AI 기술의 실질적 가치를 옹호했다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "url:247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought",
+   "_comments": [
+    "UAE seems to like to diversify into money losing yet culturally relevant investments like man city.I guess if there's even a 1% chance that sama is right and money will have no value in the future (or that no company besides AI companies will have value), it's worth getting a stake in OpenAi etc at any price, especially if you have more cash than you can possibly use otherwise.",
+    "How much tokens can \"normies\" use? Use with regular chat or document processing is tiny compared to what coding can consume.",
+    "Maybe. The problem with the MCP economy is that it's not clear yet what shape it can take. If it takes the shape of API integration solutions, then it won't be 5x. If it takes the shape of an App Store, then yes.I think arguments for either direction are valid. On one hand, MCPs are essentially APIs used by developers. Developers will demand some form of open reusable standard, \"MCP gateways\" or hosts will spring up to host them, hyperscaleres will offer them, and ultimately it will be another cloud commodity.On the other hand, some of the target users of MCPs is the consumer market rather than the developer market. An App Store model makes sense there and the provider/platform can collect t",
+    "In theory though that’s the whole point of the prediction markets. If all analysts truly believe (with conviction) that the number should be <1.2T, then they can put their money where their mouth is in the prediction market that’s currently overshooting their predictions by 20-40%. If they don’t have much conviction, then maybe the stories in the media aren’t their true beliefs or they’re trying to push a narrative.",
+    "> Developer sentiment seems to be awarding Anthropic on quality and efficiency with more usageDeveloper sentiment is irrelevant in the eyes of the normies",
+    "Treating people like uninformed idiots for disagreeing with your choice of language. Cute. Executive order 14434 sure did a number on some of y’all.",
+    "> Deepseek could blow both out of the water unexpectedlyThis is tantamount to saying that the value proposition is unknown, if a supposed trillion dollar company could get upended overnight by a startupWhere's the moat, the unassailable first mover advantage, the enterprise lock intengrations that mean nobody could realistically move you out of the way even if they had slightly better tech ? If none of these exist, investors should be scared.",
+    "Normie consumers will probably not ever spend more than $15/mo on LLMs as they exist currently if they would spend money at all so their LTV will probably just turn into race to the bottom performance marketingDevs and the token-consuming services they create are probably a more valuable market than the entirety of the glorified search engine use cases that the average consumer is focused on",
+    "Even if it's restricted to a few companies there's still a fuckton of money to be made. 4 companies capturing ever-increasing slices of the world economy.",
+    "I have bought recently a 3d printer and I am mainly using AI to generate the products.With opus 5.5, it's quite good. Normally I just prompt that it will be 3d printed and it avoids floating objects, from time to time I see on the slicer that there are and it checks all geometry and fixes it.Most of the issues come from bad measurements or interactions with real world objects (margin for impurities, improving ergonomy, etc.).For easy changes I could be faster if I knew how to fix the STL file directly. For more complex designs, I think opus is faster. I would say that knowing what you actually need to create and the limitations and characteristics of 3d printing is more important than knowin",
+    ">>If they were accurate then no one would take a contrarian position.Sure, the price is the weighted average of expectations. People take either side for many reasons though. There would still be a lot of training in a perfectly efficient market because people and institutions have their own utility of money functions and other reasons to take bets (hedging their vesting stock for example).>>. I'd look at a prediction and say \"well obviously the favored side is going to win\" and put all my money there, over and over again, until I was the richest mortal in the universe.>>Polymarket has it at ~50% that their IPO value is between 1.25T and 1.5T. Do you think that is representative of reality? ",
+    ">OpenAI is a bit more scattered brained and spread across multiple products.I wonder what came of the Jony Ive acquisition that was supposed to yield a physical product"
+   ],
+   "summary_ko": "오픈AI의 대규모 투자 유치와 기업가치 평가를 두고 커뮤니티에서 갑론을박이 벌어졌다. AI 시장의 폭발적인 성장과 해자 부재에 따른 거품 우려가 맞서는 한편, 일반 소비자와 개발자 생태계의 수익성에 대한 다양한 전망이 오갔다.",
+   "is_event": true,
+   "kr_query": "오픈아이 1조달러 투자 유치 가치평가",
    "kr": []
   },
   {
@@ -311,8 +371,8 @@
    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "discussion": "https://news.ycombinator.com/item?id=50388513",
    "points": 220,
-   "comments": 217,
-   "r": 0.99,
+   "comments": 220,
+   "r": 1.0,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
@@ -326,9 +386,9 @@
    "title": "AI is dramatically accelerating AI research",
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 368,
-   "comments": 348,
-   "r": 0.95,
+   "points": 372,
+   "comments": 349,
+   "r": 0.94,
    "at": "2026-11-06",
    "topics": [],
    "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
@@ -343,8 +403,8 @@
    "url": "https://github.com/anomalyco/rune",
    "discussion": "https://news.ycombinator.com/item?id=50394569",
    "points": 177,
-   "comments": 130,
-   "r": 0.73,
+   "comments": 131,
+   "r": 0.74,
    "at": "2026-11-06",
    "topics": [
     "인프라·칩",
@@ -358,11 +418,39 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "discussion": "https://news.ycombinator.com/item?id=50407882",
+   "points": 511,
+   "comments": 371,
+   "r": 0.73,
+   "at": "2026-11-07",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "summary_ko": "개발자들은 자동화 도구가 비밀번호나 API 키를 파일에 평문으로 기록하는 기본 설정에 문제가 있다고 지적했다. 일각에서는 개발자 본인이 직접 주의를 기울여야 한다는 의견과 함께, AI 에이전트가 민감한 정보에 직접 접근하지 못하도록 별도의 프록시나 격리 환경이 필수적이라는 주장이 맞섰다.",
+   "is_event": true,
+   "kr_query": "클로드 코드 깃허브 비밀번호 노출",
+   "kr": [
+    {
+     "t": "AI 개발 도구 라이트LLM, 악성코드 감염에 '비상'…AWS·클로드 계정정보...",
+     "u": "https://www.boannews.com/news/articleView.html?idxno=146624",
+     "d": "Fri, 23 Oct 2026",
+     "why": [
+      "코드",
+      "클로드"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 362,
-   "comments": 251,
+   "points": 365,
+   "comments": 253,
    "r": 0.69,
    "at": "2026-11-06",
    "topics": [
@@ -399,59 +487,17 @@
   },
   {
    "layer": "hn",
-   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 423,
-   "comments": 287,
-   "r": 0.68,
-   "at": "2026-11-07",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "summary_ko": "개발자들은 자동화 도구가 비밀번호나 API 키를 파일에 평문으로 기록하는 기본 설정에 문제가 있다고 지적했다. 일각에서는 개발자 본인이 직접 주의를 기울여야 한다는 의견과 함께, AI 에이전트가 민감한 정보에 직접 접근하지 못하도록 별도의 프록시나 격리 환경이 필수적이라는 주장이 맞섰다.",
-   "is_event": true,
-   "kr_query": "클로드 코드 깃허브 비밀번호 노출",
-   "kr": [
-    {
-     "t": "AI 개발 도구 라이트LLM, 악성코드 감염에 '비상'…AWS·클로드 계정정보...",
-     "u": "https://www.boannews.com/news/articleView.html?idxno=146624",
-     "d": "Fri, 23 Oct 2026",
-     "why": [
-      "코드",
-      "클로드"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "Goodbye Claude, Hello Pi",
+   "title": "Goodbye Claude, hello Pi",
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 357,
-   "comments": 217,
-   "r": 0.61,
+   "points": 573,
+   "comments": 368,
+   "r": 0.64,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:caleb.software/posts/claude-to-pi.html",
-   "_comments": [
-    "Most agentic UIs are structured exactly the same regardless of the interface. TUIs are not composable in any possible meaning of that word (unlike CLI/REPL), they are GUIs on a fixed cell grid.",
-    "I graduated from Claude Code to Herdr to now T3Code.T3Code can do anything I might need such a tool to. It supports a bunch of different harnesses, therefore also subscriptions. It supports running agents on different servers, from the same GUI. Mobile app that works well. Orchestration that allows any agent to orchestrate others in T3Code directly.",
-    "For me the tight integration with Claude Artifacts (and whatever OpenAIs copy of those is) is super value-able for me. The biggest bottleneck for me is gathering all my thoughts and analyzing what needs to be done.I was a long term user of the TUI and tools like cmux / herdr but now I find it much easier to actually focus",
-    "I've been using pi for several months with herdr. The ability to easily customise your experience via extension, with a small core, has finally made me enjoy working in harnesses. Also check out pi-blackhole (or billion context) + pi-fabric. The former basically gives you unlimited context and pi-fabric is subagents on steroids.",
-    "Ueddit link for those who don't want be tracked by Reddit:https://www.ueddit.com/r/DeepSeek/s/sxg7aAM6rS",
-    "The thing that freaks me out about Pi is it seems to have zero sandboxing or security guardrails unless you explicitly add them. I guess it's fine if you're only ever running inside a VM or a throwaway machine anyway.",
-    "I use both, and I think Claude Code is easier for beginners but Pi is more interesting to get a better understanding of what the harness is doing for you. Stuff like skills and MCP are sort of abstracted in CC in ways that obfuscate things, probably intentionally, while Pi lets you really see where a model got stuck and why. Inspecting thinking traces and dead ends from local models teaches you a lot about how they work in general.",
-    "Same... I use herdr to manage 12+ sessions easily. There's no GUI that can do that.",
-    "> now I'm using ChatGPT/Claude desktopSame, it's lovely software for that mode of work!I also briefly tried out other ADEs, like:- Kepler (by the GitKraken folks) - https://www.gitkraken.com/kepler- Paseo - https://paseo.sh/Kepler had a really nice issue tracker integration but the UI was very vibey and not quite as to the point as I'd like (who needs graph visualization of what the agents do, just give me tools that work), and Paseo had a really nice UI that I could use to drive both Codex and Claude Code, but some OpenCode agents would sometimes hang and I didn't have tools to really do anything about it.Maybe I should also give JetBrains Air a look again, if I ever end up subscribing to t",
-    "I find TUI scales better for multiple concurrent agents across the same and different codebases, especially using tools such as herdr. I can fire off an agent, which runs sub-agents. Then check-in periodically to re-steer as needed or be interrupt driven for completions of tasks. I can't see how vscode/GUI is better for this?",
-    "Its mostly just in the SYSTEM.md file. Its quite strict honestly, the rules have been built up to better curb my laziness, and also respond with statements that are better designed to teach than provide an answer.Repo: https://github.com/MauriceElliott/PiCalSystem.md: https://github.com/MauriceElliott/PiCal/blob/main/agent/SYST...It has a break out phrase for when I have a deadline but its pretty useful in the normal mode so I’ve only had to use it a hand full of times.",
-    "Just GUI now. I can also connect to Mac Codex from my phone and have a voice chat with it. Collects all my work in projects, can jump in and out anytime. Can start a project on the phone, move to Mac. (Almost) No sync issues, which I found the TUI/phone had."
-   ],
    "summary_ko": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에 유리하다고 평가한 반면, 다른 쪽은 보안 샌드박스 부족을 우려하거나 GUI가 사고 정리와 집중력 유지에 더 낫다고 주장했다.",
    "is_event": false,
    "kr_query": "",
@@ -462,9 +508,9 @@
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 464,
-   "comments": 278,
-   "r": 0.6,
+   "points": 482,
+   "comments": 296,
+   "r": 0.61,
    "at": "2026-11-07",
    "topics": [
     "안전·거버넌스"
@@ -506,7 +552,7 @@
    "title": "Blender's UI and Runtime: Much Faster Than GPUI",
    "url": "https://github.com/ppmpreetham/BUI",
    "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 731,
+   "points": 732,
    "comments": 290,
    "r": 0.4,
    "at": "2026-11-06",
@@ -524,8 +570,8 @@
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "discussion": "https://news.ycombinator.com/item?id=50385272",
-   "points": 1596,
-   "comments": 523,
+   "points": 1597,
+   "comments": 530,
    "r": 0.33,
    "at": "2026-11-05",
    "topics": [
@@ -568,50 +614,30 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "llama_moe_cache: run missed experts on CPU, add tuning script by am17an · Pull Request #30966 · ggml-org/llama.cpp",
-   "url": "https://github.com/ggml-org/llama.cpp/pull/30966",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqacka/llama_moe_cache_run_missed_experts_on_cpu_add/",
+   "title": "\"Does censorship exist in [country]?\", according to various LLMs",
+   "url": "https://github.com/p-e-w/llm-beliefs",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr09nq/does_censorship_exist_in_country_according_to/",
    "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ggml-org/llama.cpp"
+   "topics": [],
+   "story_key": "gh:p-e-w/llm-beliefs"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Effects of KV Cache Quantization on Qwen3.8 27B",
-   "url": "https://erli.xyz/posts/qwen38-27b-quant-kv-comparison/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbesv/effects_of_kv_cache_quantization_on_qwen38_27b/",
+   "title": "Users have started buying RTX 5060 Ti 16GB graphics cards en masse for the sake of AI.",
+   "url": "https://en.gamegpu.com/news/zhelezo/polzovateli-nachali-massovo-skupat-videokarty-rtx-5060-ti-16gb-radi-ii",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr01bj/users_have_started_buying_rtx_5060_ti_16gb/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:erli.xyz/posts/qwen38-27b-quant-kv-comparison"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "testing Qoduck (Maybe qwen4) on Qoder",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder"
+   "topics": [],
+   "story_key": "url:en.gamegpu.com/news/zhelezo/polzovateli-nachali-massovo-skupat-videokarty-rtx-5060-ti-16gb-radi-ii"
   },
   {
    "layer": "reddit",
@@ -619,7 +645,7 @@
    "title": "The Stylome bot is useless spam and should be removed",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqinb7/the_stylome_bot_is_useless_spam_and_should_be/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqinb7/the_stylome_bot_is_useless_spam_and_should_be/",
-   "rank": 5,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -630,24 +656,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Obsessive-1.7B: a 1.1 GB web-search subagent",
-   "url": "https://huggingface.co/banyohavlusu23/Obsessive-1.7B-GGUF",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4yju/obsessive17b_a_11_gb_websearch_subagent/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:banyohavlusu23/obsessive-1.7b-gguf"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Anyone running local AI on 16GB vram?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram/",
-   "rank": 7,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -658,10 +670,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Also experienced the Qwen3.8-Flash-Next URL issue",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue/",
-   "rank": 8,
+   "title": "tencent/Qwen3.8-27B-DSpine-b16 · Hugging Face",
+   "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2aaa/tencentqwen3827bdspineb16_hugging_face/",
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -669,35 +681,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Valet: use local LLMs to manage your homelab (open source)",
-   "url": "https://demo.askvalet.dev",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq7qi4/valet_use_local_llms_to_manage_your_homelab_open/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:demo.askvalet.dev/"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Does anyone use None reasoning level for anything ever?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4pb6/does_anyone_use_none_reasoning_level_for_anything/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4pb6/does_anyone_use_none_reasoning_level_for_anything/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xq4pb6/does_anyone_use_none_reasoning_level_for_anything"
+   "story_key": "hf:tencent/qwen3.8-27b-dspine-b16"
   },
   {
    "layer": "reddit",
@@ -705,7 +689,7 @@
    "title": "Crowd-v1 - The collaborative LLM",
    "url": "https://crowdgpt.net/#submit",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqh8hk/crowdv1_the_collaborative_llm/",
-   "rank": 11,
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -718,16 +702,18 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "[Paper] DSpine - Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding - tencent",
-   "url": "https://arxiv.org/abs/2609.36173",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq9hf6/paper_dspine_draft_in_parallel_condition_through/",
-   "rank": 12,
+   "title": "GPT-5.5 dataset across my used 25 billion tokens!",
+   "url": "https://huggingface.co/datasets/israellaguan/codex-tool-use-trajectories",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3ymf/gpt55_dataset_across_my_used_25_billion_tokens/",
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "arxiv:2609.36173"
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:datasets/israellaguan"
   },
   {
    "layer": "reddit",
@@ -735,7 +721,7 @@
    "title": "Saw this benchmark where small changes to coding tasks made a big difference",
    "url": "https://x.com/loresjpg/status/2118880329490637049",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqmr2i/saw_this_benchmark_where_small_changes_to_coding/",
-   "rank": 13,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -746,9 +732,67 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "TSMC might do in memory compute for us",
-   "url": "https://x.com/jukan05/status/2119026338522869863",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq65rl/tsmc_might_do_in_memory_compute_for_us/",
+   "title": "OpenClaw Retrospective",
+   "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqs2sh/openclaw_retrospective/",
+   "rank": 10,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:spaces/joelniklaus"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "4x Radeon AI PRO R9700 + 2x RTX 3090 on one x16 slot, using a PCIe switch",
+   "url": "https://doug.sh/posts/six-gpus-one-x16-slot/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2a6y/4x_radeon_ai_pro_r9700_2x_rtx_3090_on_one_x16/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:doug.sh/posts/six-gpus-one-x16-slot"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Proposal: uncensoring LoRAs",
+   "url": "https://huggingface.co/ZeroWw/Qwen3.6-35B-A3B-Uncensored-LoRA-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqzt4r/proposal_uncensoring_loras/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "hf:zeroww/qwen3.6-35b-a3b-uncensored-lora-gguf"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "I fine-tuned Qwen3.5-0.8B to turn plain English into bash. What I learnt",
+   "url": "https://manuelgs.com/en/blog/dale-case-study/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr0ykk/i_finetuned_qwen3508b_to_turn_plain_english_into/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:manuelgs.com/en/blog/dale-case-study"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Huggingface - WOW.. 2 ZeroGPU Spaces for all free accounts?",
+   "url": "http://huggingface.co/docs/hub/en/spaces-zerogpu",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqvhua/huggingface_wow_2_zerogpu_spaces_for_all_free/",
    "rank": 14,
    "points": 0,
    "comments": 0,
@@ -757,24 +801,23 @@
    "topics": [
     "인프라·칩"
    ],
-   "story_key": "url:x.com/jukan05/status/2119026338522869863"
+   "story_key": "hf:docs/hub"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next Gyro S on a Valve Steam Machine (8 GB AMD GPU, 32 GB RAM): about 18 t/s decode, about 235 t/s prefill, stock SteamOS",
-   "url": "https://github.com/Niko1221/Strata",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xq8s2n/qwen38flashnext_gyro_s_on_a_valve_steam_machine_8/",
+   "title": "Artificial Analysis: multimodal decision model Drex Max ranks #1. Both achieving SOTA and Pareto frontier.",
+   "url": "https://huggingface.co/papers/2611.07854",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2rqk/artificial_analysis_multimodal_decision_model/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "모델릴리스",
-    "인프라·칩"
+    "안전·거버넌스"
    ],
-   "story_key": "gh:niko1221/strata"
+   "story_key": "hf:papers/2611.07854"
   }
  ],
  "quiet_important": [],
@@ -783,8 +826,8 @@
    "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 762,
-   "likes": 1258,
+   "trending": 782,
+   "likes": 1330,
    "downloads": 22854,
    "topics": [
     "모델릴리스"
@@ -795,8 +838,8 @@
    "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 557,
-   "likes": 674,
+   "trending": 636,
+   "likes": 784,
    "downloads": 7088,
    "topics": [
     "모델릴리스"
@@ -807,8 +850,8 @@
    "layer": "hf",
    "title": "moonshotai/Kimi-K3.1-Pro",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-   "trending": 542,
-   "likes": 1684,
+   "trending": 554,
+   "likes": 1709,
    "downloads": 25569,
    "topics": [
     "모델릴리스"
@@ -817,22 +860,10 @@
   },
   {
    "layer": "hf",
-   "title": "ccore/Qwen3.5-4B-3D-Coder",
-   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 408,
-   "likes": 894,
-   "downloads": 254053,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
-  },
-  {
-   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 391,
-   "likes": 11056,
+   "trending": 403,
+   "likes": 11103,
    "downloads": 2661026,
    "topics": [
     "모델릴리스"
@@ -841,10 +872,22 @@
   },
   {
    "layer": "hf",
+   "title": "ccore/Qwen3.5-4B-3D-Coder",
+   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+   "trending": 399,
+   "likes": 911,
+   "downloads": 254053,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
+  },
+  {
+   "layer": "hf",
    "title": "ricursiveAI/Ripple-65B-Preview",
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-   "trending": 372,
-   "likes": 382,
+   "trending": 380,
+   "likes": 390,
    "downloads": 5087,
    "topics": [
     "모델릴리스"
@@ -853,34 +896,10 @@
   },
   {
    "layer": "hf",
-   "title": "burner22/numbat",
-   "url": "https://huggingface.co/burner22/numbat",
-   "trending": 346,
-   "likes": 384,
-   "downloads": 10197,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:burner22/numbat"
-  },
-  {
-   "layer": "hf",
-   "title": "FusionCow/Sulphur-3",
-   "url": "https://huggingface.co/FusionCow/Sulphur-3",
-   "trending": 341,
-   "likes": 410,
-   "downloads": 1003,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:fusioncow/sulphur-3"
-  },
-  {
-   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 313,
-   "likes": 19367,
+   "trending": 324,
+   "likes": 19390,
    "downloads": 7668187,
    "topics": [
     "모델릴리스"
@@ -889,15 +908,39 @@
   },
   {
    "layer": "hf",
+   "title": "FusionCow/Sulphur-3",
+   "url": "https://huggingface.co/FusionCow/Sulphur-3",
+   "trending": 316,
+   "likes": 414,
+   "downloads": 1003,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:fusioncow/sulphur-3"
+  },
+  {
+   "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 296,
-   "likes": 2674,
+   "trending": 310,
+   "likes": 2694,
    "downloads": 1553252,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:davidau/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf"
+  },
+  {
+   "layer": "hf",
+   "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+   "trending": 281,
+   "likes": 3106,
+   "downloads": 67230,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "hf:nvidia/nvidia-nemotron-3.5-transcribe-30b-a4b"
   }
  ],
  "new_repos": [
@@ -906,7 +949,7 @@
    "title": "KKKKhazix/agent-autoloop",
    "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
    "url": "https://github.com/KKKKhazix/agent-autoloop",
-   "stars": 4042,
+   "stars": 4085,
    "topics": [
     "에이전트"
    ],
@@ -917,7 +960,7 @@
    "title": "sarpstar/cinecode",
    "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, desi",
    "url": "https://github.com/sarpstar/cinecode",
-   "stars": 1237,
+   "stars": 1482,
    "topics": [
     "에이전트"
    ],
@@ -928,7 +971,7 @@
    "title": "Sandflow-ai/sand3d",
    "desc": "3D modeling in Python, built for LLMs.",
    "url": "https://github.com/Sandflow-ai/sand3d",
-   "stars": 1203,
+   "stars": 1341,
    "topics": [
     "개발도구"
    ],
@@ -939,7 +982,7 @@
    "title": "voyager-so/vork",
    "desc": "Headless 3D and VFX engine for agents. Research preview.",
    "url": "https://github.com/voyager-so/vork",
-   "stars": 1009,
+   "stars": 1083,
    "topics": [
     "에이전트"
    ],
@@ -950,7 +993,7 @@
    "title": "shanselman/gputaskman",
    "desc": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
    "url": "https://github.com/shanselman/gputaskman",
-   "stars": 627,
+   "stars": 796,
    "topics": [
     "모델릴리스",
     "인프라·칩",
@@ -1292,5 +1335,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-08 11:38"
+ "enriched_at": "2026-11-08 18:16"
 }
