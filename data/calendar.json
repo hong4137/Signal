@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-08T06:30:00+09:00",
+ "generated_at": "2026-11-09T06:50:00+09:00",
  "window": {
-  "from": "2026-11-08",
-  "to": "2026-11-11"
+  "from": "2026-11-09",
+  "to": "2026-11-12"
  },
  "events": [
   {
@@ -12,12 +12,26 @@
    "category": "기업 행사",
    "title": "엔비디아 AI 데이 서울 2026 (코엑스, 11/9~10)",
    "importance": 4,
-   "why": "엔비디아 AI 기술 발표 행사, 국내 AI 인프라 파트너 참여",
+   "why": "엔비디아 국내 AI 행사, 삼성·SK·LG·네이버 등 20개 파트너 참여",
    "consensus": null,
    "previous": null,
    "source": "https://www.nvidia.com/ko-kr/ai-days/",
    "verified": true,
-   "note": "1일차 키노트·세션, 2일차는 개발자 유료 워크숍. 키노트 시각 미확인"
+   "note": "1일차 세션 중심, 2일차는 개발자 유료 워크숍. 키노트 시각 미확인"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "03:00",
+   "region": "US",
+   "category": "시장",
+   "title": "미국 3년물 국채 입찰",
+   "importance": 3,
+   "why": "단기 금리 수급 확인용, 장기물 입찰 전 흐름 참고",
+   "consensus": null,
+   "previous": null,
+   "source": "https://home.treasury.gov/",
+   "verified": true,
+   "note": "미 동부 13:00 입찰, 한국 시각 환산"
   },
   {
    "date": "2026-11-10",
@@ -31,21 +45,35 @@
    "previous": null,
    "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
    "verified": true,
-   "note": "미 동부 08:30 발표(서머타임 종료 후 한국 시각 +14시간)"
+   "note": "미 동부 08:30 발표, 서머타임 종료 후 한국 시각 +14시간. 예상치는 미확인"
   },
   {
    "date": "2026-11-10",
    "time": null,
    "region": "US",
    "category": "기업 행사",
-   "title": "마이크로소프트 .NET Conf 2026 키노트",
+   "title": ".NET Conf 2026 키노트",
    "importance": 3,
-   "why": "MS 개발자 행사, .NET 11 공개 무대로 알려짐",
+   "why": "마이크로소프트 개발자 행사, .NET 11 공개 무대",
    "consensus": null,
    "previous": null,
    "source": "https://dotnet.microsoft.com/en-us/conf/2026/agenda/KEY001",
    "verified": true,
-   "note": "11/10~12 개최. 키노트 시각은 자료마다 달라 미정"
+   "note": "미 태평양 시간 기준 11/10 키노트. 한국 날짜로는 다음 날일 수 있음, 시각 미확인"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "03:00",
+   "region": "US",
+   "category": "시장",
+   "title": "미국 10년물 국채 입찰",
+   "importance": 4,
+   "why": "장기 금리 기준이 되는 입찰, CPI 발표 직후에 열림",
+   "consensus": null,
+   "previous": null,
+   "source": "https://home.treasury.gov/system/files/221/TBACRecommendedFinancingTableByRefundingQuarter-11042026.pdf",
+   "verified": true,
+   "note": "미 동부 11/10 13:00 입찰, 한국 시각 환산. 재무부 11월 리펀딩 일정 기준"
   },
   {
    "date": "2026-11-11",
@@ -54,24 +82,41 @@
    "category": "실적",
    "title": "코어위브(CoreWeave) 3분기 실적 발표",
    "importance": 4,
-   "why": "AI 데이터센터 투자 바로미터, 엔비디아 등 AI 인프라 수요 참고",
+   "why": "AI 데이터센터 인프라 기업 실적, AI 투자 흐름 점검용",
    "consensus": null,
    "previous": null,
    "source": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Date-of-Third-Quarter-2026-Financial-Results-and-Conference-Call/default.aspx",
    "verified": true,
-   "note": "회사 보도자료: 11/10 17:00 ET 컨퍼런스콜 = 한국 11/11 07:00. 일부 캘린더의 다른 날짜는 제외"
+   "note": "미 동부 11/10 17:00 컨퍼런스콜, 한국 시각 환산. 회사 IR 공지 및 두 매체 일치"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "22:30",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 주간 신규 실업수당 청구",
+   "importance": 3,
+   "why": "매주 나오는 고용 지표, 노동시장 흐름 확인용",
+   "consensus": null,
+   "previous": null,
+   "source": "https://fred.stlouisfed.org/release?rid=180",
+   "verified": true,
+   "note": "미 동부 08:30 관행 시각. 예상치 미확인"
   }
  ],
  "notes": [
-  "원자료 calendar_raw.json(2026-11-07 07:56 KST, 오늘 판): 공식 API 범위 안 일정은 미국 CPI 1건. FRED 실업수당(11/12)·PPI(11/13)는 범위 밖. Finnhub·FOMC 0건.",
-  "DART 키 없음(filings 0건) — 국내 공시 일정은 검색으로만 확인.",
-  "미확정으로 뺌: NHN 3분기 실적 — 11/6 기사는 '10일', 일정 사이트는 11/16으로 상충.",
-  "미확정으로 뺌: 관세청 11월 1~10일 수출입 잠정치 — 2025년 관행(11일)만 확인, 2026년 공식 일정 미확인.",
-  "미확정으로 뺌: 미국 제외(Section 301) 만기 11/9 — 출처별 상충. 중국 CPI 11/9 — 제3자 사이트 1건뿐.",
-  "미확정으로 뺌: 금융당국 증시 신용공여 담보비율 면제 조치 — 기사에 날짜가 명확하지 않음.",
-  "범위 밖 확인: 한은 금통위 11/26(블로그 근거), 미국 소매판매 11/17, 미국 실업수당 11/12, PPI 11/13, 엔비디아 실적 11/18.",
-  "범위 안 확정 일정이 4건뿐 — 기준 미달 후보를 뺀 결과. 주말(11/8~9)은 공식 확인된 일정이 드묾.",
-  "계획표 window(11/7~11/14)는 여유분으로 보고 지면 범위는 과제 기준 11/8~11/11로 적용."
+  "원자료(calendar_raw.json)는 어제 06:40 생성분이라 '원자료 지연'. 그대로 쓰고 공식 출처 검색으로 재확인했다.",
+  "DART 실패(DART_API_KEY 없음): 국내 기업 공시·IR 일정 0건. 국내 대형주 실적 일정은 확인하지 못했다.",
+  "확정 7건으로 8건 기준에 못 미친다. 확정되지 않은 것은 싣지 않았다.",
+  "미확정으로 뺌: 관세청 11월 1~10일 수출입 잠정치(통상 11일, 2026년 발표일 확인 못 함).",
+  "미확정으로 뺌: 중국 10월 CPI(11/9 09:30 CST 보도는 일정 사이트 1곳뿐, 국가통계국 확인 못 함).",
+  "미확정으로 뺌: 미중 관세 유예 시한 11/10(1월 연장 보도와 상충, 공식 문서 확인 못 함).",
+  "미확정으로 뺌: 코스피200 옵션 만기 11/12(블로그 1곳, 둘째 목요일 규칙과 일치하나 KRX 공지 확인 못 함).",
+  "미확정으로 뺌: 국가데이터처 10월 고용동향 11/11 추정(2026년 발표 일정 확인 못 함).",
+  "미확정으로 뺌: 앤트로픽 나스닥 로드쇼·공모가 시점(익명 소식통 보도, 공식 확정 없음).",
+  "미확정으로 뺌: 인텔 AI 서밋 서울 11/12(보도 1곳), SK AI 서밋 2026(일정 미확인).",
+  "범위 밖: 미국 PPI 11/13, 미국 30년물 입찰 11/13 KST, 한국은행 금통위 11/26, 엔비디아 실적 11/18, FOMC 의사록 11/18.",
+  "연준: 11/9~12 사이 공식 연준 행사 일정은 확인되지 않았다."
  ],
- "searches": 32
+ "searches": 37
 }
