@@ -1,23 +1,57 @@
 {
- "updated": "2026-11-09 11:29",
+ "updated": "2026-11-09 22:30",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 16,
-  "reddit": 26,
+  "hn": 17,
+  "reddit": 30,
   "hf": 15,
-  "github": 7,
+  "github": 8,
   "trust": 100
  },
  "reddit_mode": "rss",
  "by_volume": [
   {
    "layer": "hn",
+   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+   "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+   "discussion": "https://news.ycombinator.com/item?id=50418016",
+   "points": 756,
+   "comments": 860,
+   "r": 1.14,
+   "at": "2026-11-08",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nvidianews.nvidia.com/news/a-message-to-our-company",
+   "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "I'm not convinced the AI bubble exists",
+   "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+   "discussion": "https://news.ycombinator.com/item?id=50418975",
+   "points": 378,
+   "comments": 646,
+   "r": 1.71,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+   "summary_ko": "AI 모델 훈련 비용이 인프라 투자라기보다 천문학적인 상시 운영 비용에 가깝다는 지적이 나왔다. 일각에서는 모델 성능 향상이 모든 영역에서 고르게 나타나지 않으며, 공급망 제약이 쉽게 해소되지 않을 것이라는 회의론도 제기됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 318,
-   "comments": 624,
+   "points": 320,
+   "comments": 627,
    "r": 1.96,
    "at": "2026-11-06",
    "topics": [],
@@ -32,9 +66,9 @@
    "title": "Goodbye Claude, hello Pi",
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 705,
-   "comments": 436,
-   "r": 0.62,
+   "points": 781,
+   "comments": 477,
+   "r": 0.61,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스"
@@ -47,12 +81,30 @@
   },
   {
    "layer": "hn",
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "discussion": "https://news.ycombinator.com/item?id=50415628",
+   "points": 812,
+   "comments": 435,
+   "r": 0.54,
+   "at": "2026-11-08",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "summary_ko": "골드만삭스의 클로드 코드 차단 조치를 두고, 금융권의 엄격한 보안 및 데이터 유출 방지 조치라는 의견과 업무 효율성을 저해하는 과도한 규제라는 반응이 엇갈렸다. 일각에서는 법인 플랜 비용 문제나 라이선스 회피 리스크를 방어하기 위한 불가피한 결정으로 보기도 했다.",
+   "is_event": true,
+   "kr_query": "골드만삭스 클로드 코드 보안 차단",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 592,
-   "comments": 400,
-   "r": 0.68,
+   "points": 611,
+   "comments": 411,
+   "r": 0.67,
    "at": "2026-11-07",
    "topics": [
     "모델릴리스"
@@ -75,87 +127,21 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-   "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-   "discussion": "https://news.ycombinator.com/item?id=50418016",
-   "points": 375,
-   "comments": 393,
-   "r": 1.05,
-   "at": "2026-11-08",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-   "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "discussion": "https://news.ycombinator.com/item?id=50415628",
-   "points": 619,
-   "comments": 361,
-   "r": 0.58,
-   "at": "2026-11-08",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "summary_ko": "골드만삭스의 클로드 코드 차단 조치를 두고, 금융권의 엄격한 보안 및 데이터 유출 방지 조치라는 의견과 업무 효율성을 저해하는 과도한 규제라는 반응이 엇갈렸다. 일각에서는 법인 플랜 비용 문제나 라이선스 회피 리스크를 방어하기 위한 불가피한 결정으로 보기도 했다.",
-   "is_event": true,
-   "kr_query": "골드만삭스 클로드 코드 보안 차단",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "AI is dramatically accelerating AI research",
-   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-   "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 373,
-   "comments": 354,
-   "r": 0.95,
-   "at": "2026-11-06",
-   "topics": [],
-   "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-   "summary_ko": "AI가 머신러닝 연구 속도를 높이고 있다는 주장에 대해 실무 연구자들은 코드 작성과 실험 생산성이 증가한 것은 맞지만 초지능 출현으로 직결되지는 않는다고 지적했습니다. 토론자들은 최근 비용 대비 성능 향상이 독점 해제와 오픈소스 모델 추격 같은 시장 요인 때문인지에 대해 논의했습니다. 또한 정부 차원의 규제 필요성과 향후 모델 발전의 한계선에 대해서도 다양한 의견이 오갔습니다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "The end of Microsoft Research's AI Frontiers group",
-   "url": "https://hunch.net/?p=13764006",
-   "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 497,
-   "comments": 305,
-   "r": 0.61,
-   "at": "2026-11-07",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:hunch.net/?p=13764006",
-   "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹 해체를 두고 대형 언어 모델의 확장 한계와 투자 대비 효용에 대한 논쟁이 오갔다. 일각에서는 컴퓨팅 자원과 데이터 병목 현상으로 인해 AI 발전 속도가 정체기에 접어들었다고 보는 반면, 여전히 내부적으로 엄청난 연구 성과가 숨겨져 있을 것이라는 의견도 존재했다.",
-   "is_event": true,
-   "kr_query": "마이크로소프트 리서치 AI 프론티어스 그룹 해산",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+   "title": "Statement from Nvidia board of directors",
    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
    "discussion": "https://news.ycombinator.com/item?id=50416801",
-   "points": 398,
-   "comments": 297,
-   "r": 0.75,
+   "points": 473,
+   "comments": 358,
+   "r": 0.76,
    "at": "2026-11-08",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+   "trust": [
+    "AI Supremacy"
+   ],
+   "trust_match": "link",
    "summary_ko": "댓글에서는 엔비디아 이사회가 젠슨 황 CEO를 공식 조사하기 시작한 것을 두고 거센 공방이 벌어졌다. 최고 권력자의 부적절한 처신과 간첩 연루 가능성이 기업 안보에 치명적이라는 지적이 우세한 한편, 사생활 문제일 뿐 과장되었다는 시각도 존재했다.",
    "is_event": true,
    "kr_query": "엔비디아 젠슨 황 이사회 조사",
@@ -185,20 +171,36 @@
   },
   {
    "layer": "hn",
-   "title": "Blender's UI and Runtime: Much Faster Than GPUI",
-   "url": "https://github.com/ppmpreetham/BUI",
-   "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 735,
-   "comments": 290,
-   "r": 0.39,
+   "title": "AI is dramatically accelerating AI research",
+   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "discussion": "https://news.ycombinator.com/item?id=50397994",
+   "points": 374,
+   "comments": 354,
+   "r": 0.95,
    "at": "2026-11-06",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:ppmpreetham/bui",
-   "summary_ko": "댓글에서는 블렌더의 독창적인 UI와 렌더링 성능에 대해 놀라움을 표하는 의견과 함께, 과거 오픈소스 UI 디자인의 한계나 단색 아이콘의 가독성 문제를 지적하는 목소리가 공존했다. 일부 개발자들은 자신만의 GUI 툴킷을 개발해온 경험을 공유하며 깊은 관심을 보였다.",
+   "topics": [],
+   "story_key": "url:planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "summary_ko": "AI가 머신러닝 연구 속도를 높이고 있다는 주장에 대해 실무 연구자들은 코드 작성과 실험 생산성이 증가한 것은 맞지만 초지능 출현으로 직결되지는 않는다고 지적했습니다. 토론자들은 최근 비용 대비 성능 향상이 독점 해제와 오픈소스 모델 추격 같은 시장 요인 때문인지에 대해 논의했습니다. 또한 정부 차원의 규제 필요성과 향후 모델 발전의 한계선에 대해서도 다양한 의견이 오갔습니다.",
    "is_event": false,
    "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "The end of Microsoft Research's AI Frontiers group",
+   "url": "https://hunch.net/?p=13764006",
+   "discussion": "https://news.ycombinator.com/item?id=50406563",
+   "points": 504,
+   "comments": 309,
+   "r": 0.61,
+   "at": "2026-11-07",
+   "topics": [
+    "안전·거버넌스"
+   ],
+   "story_key": "url:hunch.net/?p=13764006",
+   "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹 해체를 두고 대형 언어 모델의 확장 한계와 투자 대비 효용에 대한 논쟁이 오갔다. 일각에서는 컴퓨팅 자원과 데이터 병목 현상으로 인해 AI 발전 속도가 정체기에 접어들었다고 보는 반면, 여전히 내부적으로 엄청난 연구 성과가 숨겨져 있을 것이라는 의견도 존재했다.",
+   "is_event": true,
+   "kr_query": "마이크로소프트 리서치 AI 프론티어스 그룹 해산",
    "kr": []
   },
   {
@@ -206,7 +208,7 @@
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 366,
+   "points": 368,
    "comments": 253,
    "r": 0.69,
    "at": "2026-11-06",
@@ -247,9 +249,9 @@
    "title": "Why I will not be using LLMs in my coding",
    "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
    "discussion": "https://news.ycombinator.com/item?id=50412591",
-   "points": 108,
-   "comments": 222,
-   "r": 2.06,
+   "points": 116,
+   "comments": 232,
+   "r": 2.0,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
@@ -260,28 +262,12 @@
   },
   {
    "layer": "hn",
-   "title": "I struggle to believe that AI R&D is ingenious",
-   "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-   "discussion": "https://news.ycombinator.com/item?id=50388513",
-   "points": 220,
-   "comments": 220,
-   "r": 1.0,
-   "at": "2026-11-06",
-   "topics": [],
-   "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
-   "summary_ko": "댓글에서는 최근 AI 모델의 스케일링 법칙이 한계에 부딪혀 수확체감 현상을 보이고 있다는 주장이 제기되었다. 반면 전문적인 추론 능력이 향상되면서 복잡한 수학 문제나 연구 문헌 검토 등에서 실질적인 성과를 내고 있다는 반박도 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI raises $11B at a $1.25T valuation",
    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
    "discussion": "https://news.ycombinator.com/item?id=50413822",
-   "points": 181,
-   "comments": 203,
-   "r": 1.12,
+   "points": 188,
+   "comments": 209,
+   "r": 1.11,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought",
@@ -295,9 +281,9 @@
    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
    "url": "https://github.com/synchopate/llama-modchip",
    "discussion": "https://news.ycombinator.com/item?id=50411961",
-   "points": 371,
-   "comments": 161,
-   "r": 0.43,
+   "points": 440,
+   "comments": 196,
+   "r": 0.45,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스",
@@ -305,6 +291,41 @@
    ],
    "story_key": "gh:synchopate/llama-modchip",
    "summary_ko": "GPU 없이 램만으로 대형 모델을 구동하는 방식의 실효성과 오픈웨이트 모델의 경제성을 두고 다양한 의견이 오갔다. 일부 사용자들은 구형 프로세서에서의 빌드 복잡성이나 전기 요금 등 현실적인 제약을 지적한 반면, 프라이버시 보호와 비용 절감 측면에서 로컬 모델의 가치를 높게 평가했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "discussion": "https://news.ycombinator.com/item?id=50416363",
+   "points": 277,
+   "comments": 192,
+   "r": 0.69,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "summary_ko": "댓글에서는 AI가 생성한 문구나 반복적인 답변에 피로감을 느낀다는 공감이 이어졌다. 동시에 여러 AI 세션을 동시에 관리하며 작업 속도를 높이는 방식이 능률을 높인다는 의견과, 오히려 집중력을 흐리고 뇌 기능을 저하시킨다는 우려가 교차했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+   "url": "https://ketchup3d.github.io/app/",
+   "discussion": "https://news.ycombinator.com/item?id=50418176",
+   "points": 582,
+   "comments": 172,
+   "r": 0.3,
+   "at": "2026-11-08",
+   "topics": [
+    "인프라·칩",
+    "개발도구"
+   ],
+   "story_key": "url:ketchup3d.github.io/app",
+   "summary_ko": "러스트와 웹GPU로 제작된 오픈소스 스케치업 대안인 KetchUp에 대해 개발자들은 성능과 효율성을 높이 평가했다. 한편으로는 AI가 생성한 코드나 일명 슬롭(slop)의 품질과 신뢰성에 대한 우려의 목소리도 적지 않았다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -330,16 +351,16 @@
   },
   {
    "layer": "hn",
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "discussion": "https://news.ycombinator.com/item?id=50416363",
-   "points": 159,
-   "comments": 130,
-   "r": 0.82,
+   "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+   "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+   "discussion": "https://news.ycombinator.com/item?id=50415817",
+   "points": 96,
+   "comments": 123,
+   "r": 1.28,
    "at": "2026-11-08",
    "topics": [],
-   "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "summary_ko": "댓글에서는 AI가 생성한 문구나 반복적인 답변에 피로감을 느낀다는 공감이 이어졌다. 동시에 여러 AI 세션을 동시에 관리하며 작업 속도를 높이는 방식이 능률을 높인다는 의견과, 오히려 집중력을 흐리고 뇌 기능을 저하시킨다는 우려가 교차했다.",
+   "story_key": "url:wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+   "summary_ko": "실리콘밸리의 AI가 질병을 정복할 것이라는 주장에 대해 제약사 CEO들은 생물학의 복잡성과 임상 시험의 현실을 근거로 회의적인 반응을 보였다. 반면 단백질 구조 예측처럼 일부 분야에서는 GPU를 통한 규모 확장 가능성을 긍정적으로 보는 의견도 있었다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -351,9 +372,9 @@
    "title": "Why I will not be using LLMs in my coding",
    "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
    "discussion": "https://news.ycombinator.com/item?id=50412591",
-   "points": 108,
-   "comments": 222,
-   "r": 2.06,
+   "points": 116,
+   "comments": 232,
+   "r": 2.0,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
@@ -367,8 +388,8 @@
    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "discussion": "https://news.ycombinator.com/item?id=50394906",
-   "points": 318,
-   "comments": 624,
+   "points": 320,
+   "comments": 627,
    "r": 1.96,
    "at": "2026-11-06",
    "topics": [],
@@ -380,12 +401,90 @@
   },
   {
    "layer": "hn",
+   "title": "I'm not convinced the AI bubble exists",
+   "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+   "discussion": "https://news.ycombinator.com/item?id=50418975",
+   "points": 378,
+   "comments": 646,
+   "r": 1.71,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+   "_comments": [
+    "Training is not infrastructure. It’s not capex, not “investment”. It’s really an ordinary running cost of what they do, and it’s absolutely enormous.",
+    "Yes, but what's interesting here is that everything didn't get better. The original \"interesting\" for transformers was that a translation AI turned out to also be good at generating novel prose. But if we now need to focus to train new capabilities into the models and those don't yield better behavior everywhere then we're no longer in the \"free lunch\" period of LLMs.",
+    "Yes it is a supply-side crunch (chip manufacturing), but IMHO, it is not temporary. Only two things will remove the supply constraint.- Demand drops like a stone: raw TFLOPS / per model. This will happen if someone figures out insanely fast and power-efficient math (specifically, multiplication) for existing chip architectures, that makes it dirt-cheap to keep re-computing ever-better SOTA LLMs, as well as to on-line compute inference with ever-bigger models (scaling laws rule). These are different workloads, AFAIK.- Moore's law re-starts, because someone figures out entirely new transistor designs that can deliver at least up to 100x per-core frequency gains over Si transistors (which would",
+    "It means that the companies have to be highly cost-competitive, they can't win market share and then raise margins. If (as is the case today) astra is bad value for money compared to opus-5-5, then I'm switching, and if (as is the case today) for lots of stuff gemini can do the low hanging fruit, I'm switching. And all of this is happening before my company has really put any boundaries on our spend, in the future I'm going to be on a budget and that's really going to impact my decisions.",
+    "Well, this website https://usinterestrates.com/corporate-bond-yields says that currently, B-grade bonds go at around 8.5%. So bonds paying 10% would be below B, pretty much in junk bond territory https://www.investopedia.com/terms/j/junkbond.asp .So maybe it's not high risk enough for you, but it is definitely high risk enough for the market.But the best approach is just comparing rates. Go to https://archive.epa.gov/epawaste/nonhaz/municipal/web/pdf/bo... , and you will see a huge list of companies whose bonds are classified by armies of analysts as \"less risky\" than these 10% Anthropic bonds. Is Anthropic less risky than AT&T, or BP, or Firestone Tire & Rubber Co? The market says \"no\".",
+    "Even if we allow for the strange “it’s only a one-time cost” hypothesis, the author’s next paragraph outlines another actual bubble, just 5-10 years from now:> Once all the data centres are built, AI spending is going to plummet.",
+    "Y'all love to project nefarious things. Breaking things is what scientists and artists do.I'm starting to hate hacker news. You're all bleak and depressed angry people.",
+    "> The $2 for every $1 inference cost quote from Anthropic I presume includes all opexNo, it does not, its just revenue minus compute. Per their S1, Anthropic has never turned an operational profit.",
+    "Power generation is also extremely expensive ongoing - either through gas turbines that eat fuel or on-grid power that datacenters will need to pay to capitalize (depending on ratepayer agreements of course - but clearly people aren’t stoked about subsidizing these)",
+    "That only explains why the price of those GPUs at resale is high, but it doesn't invalidate the fact that those GPUs are still very useful way past a 2 to 3 years depreciation schedule advocated by Michael Burry et al.Older GPUs can still be used to run model inference, albeit more slowly than newer GPUs. We already see frontier labs turning this insight into an opportunity to charge a premium on token delivery speed, when models run on newer hardware. As AI becomes more widely spread throughout the economy, not all workloads will require fast inference, and there will be many use cases for previous generation hardware. The only exception is if the latest batch of specialised chips become ub",
+    "Here [1] are some various benchmarks for a RTX 4090 on models like Qwen 3.8, where it usually hits around 43 tokens/s. You can find similar vids on YouTube showing it live for comparison, 'proof' if you doubt, etc. And yes, it is frontier tier.[1] - https://getrigbase.com/gpus/rtx-4090/",
+    "I reckon it depends on how hot they run GPUs for how long. Running any chip at clock or overclocked (likely) will burn it out faster than \"business as usual\" workloads.Defraying of capex also depends on how the hyperscalers scrap used hardware.AFAIK, all hyperscaler hardware is effectively a consumable. Disks, memory, boards, chips; all the high-value pieces do not get refurbished into new computers for sale into secondary markets. The commercial and legal liability is too high---leaking their own proprietary IP as well as leaking customer IP, not to mention secrets and hardening configs and so forth.I can't recall where I read it, but if a datacenter is modeled as a bunch of black-box hot-s"
+   ],
+   "summary_ko": "AI 모델 훈련 비용이 인프라 투자라기보다 천문학적인 상시 운영 비용에 가깝다는 지적이 나왔다. 일각에서는 모델 성능 향상이 모든 영역에서 고르게 나타나지 않으며, 공급망 제약이 쉽게 해소되지 않을 것이라는 회의론도 제기됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+   "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+   "discussion": "https://news.ycombinator.com/item?id=50415817",
+   "points": 96,
+   "comments": 123,
+   "r": 1.28,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+   "_comments": [
+    "> They've already been proven in the other countries -- higher numbers of patients than you have in normal clinical trials -- but because the approval rules are excessively rigid and unreasonable, that doesn't count.You are wrong. You absolutely can get drugs approved in the US based on real-world studies or observational data. The reason this happens so infrequently is actually because it's virtually impossible to prove a drug is safe and effective using real-world studies or observational data.We don't rely on (super expensive) RCTs because FDA says you need RCTs. We rely on them because FDA says you need to prove your drugs are safe and effective, and no one knows a better/cheaper/faster ",
+    "Math is an entirely different problem to solve.Look at the showcase AI proof of the Naiver-Stokes existence. It basically took an equation and proved it was valid across all possible variables.That’s a problem in a closed system. There is no question how the function works. The tools needed to solve it are known.Biology is like solving a math equation we only have a crude approximation for. Parts of the equation are missing and there are variables we aren’t aware of. You also have a limited set of tools to test the equation.",
+    "Yep agree - but this is not an LLM. Which we are assured will solve all problems.",
+    "We do not understand the human body well enough to be able to directly jump from drug design to effect on the human body. Hell, I'm not even sure you could even do that on a single cell level, apart from the obvious \"this kills the cell\". The whole field of biology is a huge mess, and it is very hard to generalize results from the different scales (protein -> proteins -> single cell -> tissue -> living creature -> human). Not only that, long-term effects take, by definition, a long time to surface and cannot be accelerated.This is what AI companies either have a hard time understanding, or choose to ignore.",
+    "Just like all the mathematicians were applying all that they know to solve the math problems.. and AI certainly can't do that...Yes, biology is different and experimental evidence is very different than mathmatics, but the ability to pull from a lot of known information and formulate possible problems that biologists didn't anticipate isn't really a stretch from where we are on the capability curve right now.",
+    "Worth noting, too, that even without LLMs contributing significantly, we've been making huge strides in curing many cancers, mostly with mRNA vaccines and similar medical technology.",
+    "Sure, but \"taking up time unnecessarily\" is only what bureaucracy does from a particular outside perspective.If you actually look at bureaucracy, what you'll see is that, on the whole, it keeps many abuses and neglects in check, though there are some who manage to abuse it to cause trouble as well.You can't just say \"this is what I perceive this system as doing\" and then throw POSIWID at anyone who disagrees with you.",
+    "Even if your 1st sentence is true, you'll have to come up with a better explanation than your 2nd one.",
+    "Promising for mercenaries who chase short-term profits and don't care about consequences. I'm glad the drug company CEOs still have their survival instincts intact.",
+    "I typically distinguish between complexity and complication when discussing biology. I don’t consider most molecular biology/biology to be complicated, rather it is “just” a hugely diverse set of largely orthogonal subsystems. Protein folding prediction kind of proves my point. The techniques of structure templating have been around since before current ML era, but it took GPUs to scale that simple technique out to the level that we could get useful structure prediction. It is fair to assume our understanding of molecular machinery can scale similarly, but we are limited in our capacity to manipulate and test these diverse things.",
+    "Oh look more rhetoric the grammatical rules for which only make sense within themselves in some reductive recursive way until the point is achieved and the syntax structure endsI can do that too. What obligation to accept this has any meaningful relationship to my existence?I agree with Lecun there is no intelligence embedded implicitly to language syntax; but he's wrong about code because it does capture an observable physical state relative to a machine.Context matters.The same has yet to be said of human semantics as awareness of them is never uniformly distributed.That's why small models uniquely tuned to local context and ability will eventually succeed as everyone will just run their o",
+    "It's also likely that \"keep the bosses rich\" is the purpose of most currently existing institutions that make money.I actually don't think anyone involved gives a shit about the carbon dioxide. Even oil barons don't - they care about selling oil, and if an emissionless way to burn oil were discovered, they wouldn't mind. \"... using oil\" may be part of the purpose."
+   ],
+   "summary_ko": "실리콘밸리의 AI가 질병을 정복할 것이라는 주장에 대해 제약사 CEO들은 생물학의 복잡성과 임상 시험의 현실을 근거로 회의적인 반응을 보였다. 반면 단백질 구조 예측처럼 일부 분야에서는 GPU를 통한 규모 확장 가능성을 긍정적으로 보는 의견도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+   "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+   "discussion": "https://news.ycombinator.com/item?id=50418016",
+   "points": 756,
+   "comments": 860,
+   "r": 1.14,
+   "at": "2026-11-08",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nvidianews.nvidia.com/news/a-message-to-our-company",
+   "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "OpenAI raises $11B at a $1.25T valuation",
    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
    "discussion": "https://news.ycombinator.com/item?id=50413822",
-   "points": 181,
-   "comments": 203,
-   "r": 1.12,
+   "points": 188,
+   "comments": 209,
+   "r": 1.11,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought",
@@ -396,58 +495,10 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-   "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-   "discussion": "https://news.ycombinator.com/item?id=50418016",
-   "points": 375,
-   "comments": 393,
-   "r": 1.05,
-   "at": "2026-11-08",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-   "_comments": [
-    "What part of that struck you as fantasy?Again, this isn't some low-level clerk that just needs a handjob or some Grindr kompromat--this is the CEO of the second largest company in the world by market cap.Is it the assertion was that they'll do research on you (which is why having a gambling problem, large debts, or lying during a clearance interview is an issue)?Is it the assertion that they'll pick a very pretty woman instead of some plain-looking one (which is why historically the NKVD recruited from theater and ballet schools)?The \"Hollywood fantasy\" is real, it just happens in a vanishingly small set of cases.For a truly bizarre version (even stranger than this!), see the case of Shi Pei",
-    "> using 'girl' robs the woman of agency... only if she hates the word 'girl', I guess. Which we don't know. Personally, I know many grown women (30's, 40's+) who are perfectly alright with the word \"girl\". It is contextual, and often times cultural (i.e. your background).No offense, but this is why it can often be pernicious to do drive-by virtue-signaling online.> Unlike some other Americans Huang seems to at least have a preference for people who are no longer minorsWhat does this even mean?... do you think what you're implying is exclusive to Americans? Honestly that's what it sounds like.",
-    "He has full agency over his actions, so yes, it's an automatic fact. He knew what he was doing and he knew what the effects would be on his wife. He knew what would happen when this came out. If you're saying he DIDN'T know what would happen, then you're saying he's extremely stupid. I haven't seen any evidence that he is even a little bit stupid.Are you saying this was an accident and he didn't have control over himself?If he doesn't have control over himself and he isn't accountable for his actions, then how does that factor into him being the CEO of the most important globally strategic company in the world? Are you saying that he is capable of making actions that he isn't in full control",
-    "You say “mostly initiated by the woman” like it proves something about women maliciously ending marriages to make off with their husbands’ earnings. Have you met men? Many are eminently divorcible. A lot of people have bad relationships that should’ve never started, and it’s not surprising that it falls to the woman to eventually call it quits.",
-    "Seriously. They're asking us to give this guy more grace than any other cheater because he's wealthy.",
-    "That trail may not have existed beforehand. You can't find breadcrumbs before they're laid. Perhaps it was her notifying her handlers of her success that was noticed.",
-    "That is not an automatic fact. Humans are very emotionally complex creatures. And Jensen didn't call his secretary and say \"can you pencil in 'humiliating my wife and kids around 4PM'? You can? Great, thanks\".",
-    "Yes, this is real sexpionage. Not the Hollywood fantasy described upthread. The scenario described is not what has played out in reality.",
-    "> A significant proportion of the people I know that won the startup lotteryMaybe he only knows one person who \"won the startup lottery\"",
-    "True, but we’re talking about him being manipulated by intelligence or a gold-digger, then betrayed. His relationship troubles with Chrisann Brennan happened before he got famous, and it doesn’t seem like she manipulated him, rather his obsession with work and rudeness put her off (which is the opposite of “thinking with his dick” too). Then he had a smooth relationship with Laurene Powell for over 20 years.",
-    ">serious personality flawexactly, although I would double down that that is precisely the kind of personality being selected for by the system",
-    "It’s much more than Japan: Chinese in other countries, Philippines, etc. I’ve met in person sons and daughters from “second families”.Also the French, so it’s not exclusively a practice of East Asian people."
-   ],
-   "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "I struggle to believe that AI R&D is ingenious",
-   "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-   "discussion": "https://news.ycombinator.com/item?id=50388513",
-   "points": 220,
-   "comments": 220,
-   "r": 1.0,
-   "at": "2026-11-06",
-   "topics": [],
-   "story_key": "url:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
-   "summary_ko": "댓글에서는 최근 AI 모델의 스케일링 법칙이 한계에 부딪혀 수확체감 현상을 보이고 있다는 주장이 제기되었다. 반면 전문적인 추론 능력이 향상되면서 복잡한 수학 문제나 연구 문헌 검토 등에서 실질적인 성과를 내고 있다는 반박도 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "AI is dramatically accelerating AI research",
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "discussion": "https://news.ycombinator.com/item?id=50397994",
-   "points": 373,
+   "points": 374,
    "comments": 354,
    "r": 0.95,
    "at": "2026-11-06",
@@ -460,61 +511,21 @@
   },
   {
    "layer": "hn",
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "discussion": "https://news.ycombinator.com/item?id=50416363",
-   "points": 159,
-   "comments": 130,
-   "r": 0.82,
-   "at": "2026-11-08",
-   "topics": [],
-   "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "_comments": [
-    "I could instantly detect it's claudiness too. I'm not sure what it is, but it's almost like it is physically injuring my brain when I read stuff like \"Then comes the part that matters most\". Perhaps because it's wearing a channel through repetition. One of my greatest fears is that this exposure starts to make us all talk and think in the same way. I honestly think that it's probably doing that already. Gah.",
-    "I also run as many as 12 at once, but since coding, research, docs, and handling requests from customers and colleagues are all mixed together, it seems hard to do it in one unified way. But I think the reason I end up doing this is, in the end, inference speed. Even if I want to focus on one thing, once I run it, it goes for 5 minutes to an hour, and even 5 minutes is hard to just sit there doing nothing, so I end up like this. The number of parallel tasks ends up proportional to how much time is left after kicking off each task. Even with a parallel work tool set up like this, if the inference speed problem gets solved (not sure it's possible, since there's also the power problem that's ha",
-    "I feel like I’m starting to have my own psychosis where if I read a blog article and I get a whiff of AI smell my brain turns off and I can’t read anymore.I’m not blaming the author maybe this is their original idea and its edited by AI but I physically can’t keep reading it. AI blindness or something.",
-    "Brittle by building ever more increasing numbers of abstractions rather that take a coherent view of some things. So over time you have these \"seams\" that the code base ends up looking like a punk motor cycle jacket.",
-    "Event Catalogue is something I have been using for this https://www.eventcatalog.dev/ only thing is no longer MIT license.",
-    "Remember when we got interactive collaborative text editing?The future will be this, but it will be interactive collaborative agent sessions, and stuff like pi durable is already heading that direction.",
-    "I feel like you should do the opposite? Use your brain for real life coding exercises while working. The kind of problems you solve with LeetCode are so disconnected from real life complex systems",
-    "I.e. a “manager” schedule not a “maker” schedule. [1]The agents are the makers; you switch among them. Either that or watch grass grow.[1] https://www.paulgraham.com/makersschedule.html",
-    "Can you explain how please, in detail? I'm failing to see how something that needs a lot of hand holding (the AI we have), when sped up is somehow capable of taking our jobs.",
-    "Agreed -- I only do 2 active things at a time, and maybe something third that is long-running in the background (like training a model or classifying thousands of files, where I just need to check in occasionally to make sure it hasn't veered off-track).It's rare that with my 2 active things, they're both busy, since one usually finishes while I'm drafting my reply to the other.When it occasionally happens that both are busy for the next 5 min, I just get to enjoy the break and stretch my legs and walk to the kitchen or something.",
-    "The system described here comes close to the new Projects (Beta) feature in Claude Code: capture work in Git, Agents (threads) work in cycles, decisions come back to you, each thread can be reviewed, and work is queued by Resolved, Idle, or Working.",
-    "You get used to it. Is it better than than waiting 54s? For me, yes, it's better to juggle a few sessions than stare at the wall while I wait.Better to have my concentration split up among multiple tasks than to have it be completely broken while waiting for one of my agents to finish."
-   ],
-   "summary_ko": "댓글에서는 AI가 생성한 문구나 반복적인 답변에 피로감을 느낀다는 공감이 이어졌다. 동시에 여러 AI 세션을 동시에 관리하며 작업 속도를 높이는 방식이 능률을 높인다는 의견과, 오히려 집중력을 흐리고 뇌 기능을 저하시킨다는 우려가 교차했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+   "title": "Statement from Nvidia board of directors",
    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
    "discussion": "https://news.ycombinator.com/item?id=50416801",
-   "points": 398,
-   "comments": 297,
-   "r": 0.75,
+   "points": 473,
+   "comments": 358,
+   "r": 0.76,
    "at": "2026-11-08",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-   "_comments": [
-    "The GP edited their comment. The original version said only \"I find that hard to believe.\" In that context, my response made a lot more sense.aigalaxiome: thanks for making me look like a jerk.",
-    "I'm confident it occurred to Jensen almost immediately that she might be a spy - so I think he banged her but also never leaked any info or left her alone with his unlocked phone or laptop. While he may not have known for sure if she was a Chinese spy, he did know she was a board director and, until recently, the COO of a major Nvidia customer anxious to gain favorable business terms and glean insight on Nvidia GPU allocations for their data centers (and before that she was a journalist(!)).Jensen isn't dumb, and in his position, nearly everyone he meets wants something from him; whether info, insight or a favor. Many of them dutifully report back to someone, whether an employer, government ",
-    "Unless he has been up front with the board from the beginning about his affair, he has done something wrong.This is Jensen Huang we are talking about. One of the most significantly influential people on earth right now, one of the planet’s most obvious espionage and blackmail targets, someone who both companies and nations will be spying on, and he is shagging a foreign national — a Chinese citizen! — in secret.Even if he has enlisted no company employees or resources in his deception of his wife, this is remarkably negligent behaviour on a professional level. Just enormous.Be serious: this is a huge deal and they are for sure looking at his conduct.",
-    "You don't need to like Trump to see China with more than a little suspicion. China it not a friend of the west.",
-    "Him banging a Chinese intelligence asset was already reported in the news last month, and that story broke on a Thursday. What's new today is his apology letter/admission, and the board investigation. The timing of those announcements was up to Nvidia, so it being outside of trading hours is not at all suspicious.",
-    "There's some kind of a cognitive bias here similar to the base rate fallacy but not quite the same.Yes, 40% is pretty high in the abstract. But a 60% chance of getting removed is insanely high compared to the base rate for this concrete case! Before this news broke, what were the odds of Huang not being a CEO of Nvidia a year from now for any reason. I'd definitely have taken the under at 1%, and the over maybe at 0.1%?Like, what other risks were on the horizon? Him getting bored or tired? Not that man. A terminal illness that was diagnosed too late to treat? That happens very rarely for the ultra rich with their access to infinite high quality health care. A freak accident, e.g. airplane cr",
-    "Eh, the original title is meaningless. “A Statement” isn’t a title. It’s common for functionally untitled works to get a title here.All of which distracts from the misinformation that Huang is not being investigated by his Board.",
-    "‘Nvidia said on Sunday that it was opening an investigation into Jensen Huang, its chief executive and co-founder, after he acknowledged to the company’s board that he had been intimate with a business executive who U.S. intelligence determined was a Chinese spy.’New York Times (paywalled) is happy to call it an investigation into the CEOs conduct. https://www.nytimes.com/2026/11/08/technology/nvidia-investi...",
-    "Innate female hypergamy. It makes no sense to use a high-positioned male spy in order to catch a way less valuable woman. The whole point of spying is to use less to get more.",
-    "Crazy of you to assume that every HN user is an American and supports Trump's interests in confronting China.",
-    "I made no such assumption. My post was about “cheating,” because that is what Huang did.",
-    "Well said.Proverbs 16:18 \"Pride goes before destruction, a haughty spirit before a fall.\""
+   "trust": [
+    "AI Supremacy"
    ],
+   "trust_match": "link",
    "summary_ko": "댓글에서는 엔비디아 이사회가 젠슨 황 CEO를 공식 조사하기 시작한 것을 두고 거센 공방이 벌어졌다. 최고 권력자의 부적절한 처신과 간첩 연루 가능성이 기업 안보에 치명적이라는 지적이 우세한 한편, 사생활 문제일 뿐 과장되었다는 시각도 존재했다.",
    "is_event": true,
    "kr_query": "엔비디아 젠슨 황 이사회 조사",
@@ -566,7 +577,7 @@
    "title": "Gemini Omni 1.2 Flash",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "discussion": "https://news.ycombinator.com/item?id=50392118",
-   "points": 366,
+   "points": 368,
    "comments": 253,
    "r": 0.69,
    "at": "2026-11-06",
@@ -604,12 +615,28 @@
   },
   {
    "layer": "hn",
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "discussion": "https://news.ycombinator.com/item?id=50416363",
+   "points": 277,
+   "comments": 192,
+   "r": 0.69,
+   "at": "2026-11-08",
+   "topics": [],
+   "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "summary_ko": "댓글에서는 AI가 생성한 문구나 반복적인 답변에 피로감을 느낀다는 공감이 이어졌다. 동시에 여러 AI 세션을 동시에 관리하며 작업 속도를 높이는 방식이 능률을 높인다는 의견과, 오히려 집중력을 흐리고 뇌 기능을 저하시킨다는 우려가 교차했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 592,
-   "comments": 400,
-   "r": 0.68,
+   "points": 611,
+   "comments": 411,
+   "r": 0.67,
    "at": "2026-11-07",
    "topics": [
     "모델릴리스"
@@ -635,9 +662,9 @@
    "title": "Goodbye Claude, hello Pi",
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 705,
-   "comments": 436,
-   "r": 0.62,
+   "points": 781,
+   "comments": 477,
+   "r": 0.61,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스"
@@ -653,8 +680,8 @@
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 497,
-   "comments": 305,
+   "points": 504,
+   "comments": 309,
    "r": 0.61,
    "at": "2026-11-07",
    "topics": [
@@ -671,28 +698,14 @@
    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "discussion": "https://news.ycombinator.com/item?id=50415628",
-   "points": 619,
-   "comments": 361,
-   "r": 0.58,
+   "points": 812,
+   "comments": 435,
+   "r": 0.54,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "_comments": [
-    "You have tax and management overhead for all of these companies, it's not free, and certainly costs more than just using the enterprise plan. Plus Anthropic can sue you arguing the corporate structure is just a workaround to avoid paying the enterprise plan, and you'd probably just settle out of court anyway and have to switch to the enterprise plan.The reason _some_ (but certainly not all, or even the majority) large companies break up into subsidiaries is usually for liability purposes (so one mistake by one part of the conglomerate can't expose other parts to the full risk).",
-    "given that claude has found vm escapes, you might consider going one step further and just getting a claude only laptop",
-    "If they had never used it, maybe it wouldn't matter, but if they were allowed to use it and then got blocked, I think the sense of going backwards would be huge. Simply blocking it does look like it would become a bottleneck for work efficiency, but it seems like a decision made after really weighing which matters more for those jobs, work efficiency or security. Developers would of course lose a lot of efficiency without something like Claude Code, but I don't know the jobs mentioned in enough detail.",
-    "To be clear the lethal trifecta is something most of us can get away with it, but not someone who is clearly a high value target (such as every single trader at GS).",
-    "What does using a local model have to do with it? I’m not worried about the secrets going to Bob, I’m worried about them going to Eve.",
-    "Honestly, for most casual business work (document analysis, data science, web scraping, basic scripting, etc) the Gemini Pro models are pretty well rounded and competent.The problem is we now have a two tier infrastructure where some teams get Claude and some get Gemini and IT has so support both.",
-    "Their support probably has a big pile of horror stories from their clients by now, it can be an indirect source of concern.",
-    "We never risk using Sonnet or Haiku. Too many mistakes. The cost is worth it to always use Opus 5.5 even in the subagents.",
-    "I could never work somewhere that my work machine was locked down like that. I guess it's good I won't have to worry about ever being employed again, soon lol",
-    "Serious question: is the increase in performance not enough to justify the cost?",
-    "What are you doing with your subagents? I find that as long as I use Opus at the top level and Sonnet/Haiku for subagents I generally don't run into usage limits.",
-    "Also working in a finance role and it is exactly that. They don't want to give us access to any fun tools.Things that are common on dev machines like a working copy of python...nope. Admin...nope. Even RPA tools that automate clicking on things are no bueno because they could be used to bulk extract data from intraweb sitesGreat deal of access...but it's calibrated towards low bandwidth human uses. Which indirectly prevents bulk data exfil"
-   ],
    "summary_ko": "골드만삭스의 클로드 코드 차단 조치를 두고, 금융권의 엄격한 보안 및 데이터 유출 방지 조치라는 의견과 업무 효율성을 저해하는 과도한 규제라는 반응이 엇갈렸다. 일각에서는 법인 플랜 비용 문제나 라이선스 회피 리스크를 방어하기 위한 불가피한 결정으로 보기도 했다.",
    "is_event": true,
    "kr_query": "골드만삭스 클로드 코드 보안 차단",
@@ -703,29 +716,15 @@
    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
    "url": "https://github.com/synchopate/llama-modchip",
    "discussion": "https://news.ycombinator.com/item?id=50411961",
-   "points": 371,
-   "comments": 161,
-   "r": 0.43,
+   "points": 440,
+   "comments": 196,
+   "r": 0.45,
    "at": "2026-11-08",
    "topics": [
     "모델릴리스",
     "인프라·칩"
    ],
    "story_key": "gh:synchopate/llama-modchip",
-   "_comments": [
-    "debt has to be paid by their customers at some point. Do you really think on top of the raised hardware costs they have a big enough budget to pay? Or would they switch to open weight as long it is good enough. I'm not sure which side here is the ideology. Where is the profit spike from all these AI customers?",
-    "> I don't see how anyone justifies a claude subscription.I want more than \"functional\"",
-    "> I don't see how anyone justifies a claude subscription.Certainly I see the benefits in terms of privacy and security. But if you're trying to justify local models on economic grounds, you also need to factor in electricity costs.(Also, people will say that \"less than a year ago\" represents an enormous capability gap. But people were already ranting and raving about how capable the models are and how cooked the industry is, considerably longer than \"less than a year ago\"; so.)",
-    "Could I perhaps get an overview of how this works that doesn't require me to understand Claude-speak nor the jargon of domain experts?",
-    "Perhaps, but there’s nothing you or I can do about one end of that. I can only control how I respond.",
-    "I hope so too, but not using the best AI will only put me at a massive disadvantage, and won’t change the macro picture at all.",
-    "That's wishful thinking IMO. Hardware hasn't been improving at a rapid rate and clearly these companies are losing money and burning investor cash at a ridiculous rate. The party has to stop eventually. The price will go up. I expect everyone will have to pay API rates eventually, possibly even higher API rates than the current ones.",
-    "> 25% of people will feel similarly enough to endure a meaningful drop in quality and intelligence in pursuit of those things you mentioned?Anthropic continues to serve haiku - which suggests people have a use for less-than sota models.A bugatti is undoubtedly a higher performance car than a honda civic. Yet if you're commuting to work in rush hour traffic, both cars will get you there in the same amount of time - and one is going to cost you a lot less.The pitch of the frontier labs is that you need a bugatti for everything. I don't buy that.",
-    "As much as I might agree with your points, is it reasonable to think that the majority of people or even say 25% of people will feel similarly enough to endure a meaningful drop in quality and intelligence in pursuit of those things you mentioned?I think most people unfortunately don't care about any of those things, or at least they don't care enough as we are about to see by the trillion dollar IPOs of these AI megalabs.",
-    "I got to the point of figuring out that none of the precompiled binaries will work on my Xeon (it's a Haswell-era processor with no AVX-512) and I'd have to rebuild everything from scratch. But the repo doesn't include clear instructions or scripts to rebuild its special llama.cpp variant, only a few patch files (which don't seem to be enough on their own?). So I'm not going to pursue it further.",
-    "GLM5.3 costs $1.40/M on openrouter. 5.2M tokens per day is $7.28/day, which makes break-even take 83 days.But let's compare apples to almost-apples! Qwen3.8 flash next is $0.47/M on openrouter, so $2.44 per day, so 246 days to break even. I say almost-apples because on this $600 system we're running an IQ3_S quantization. The hosted model is running... nobody knows what quant. It probably varies bases on the time of day.",
-    "For what I do, that works. In exchange I get privacy, i get to not fund the big labs eating the world, I get to not worry about hitting plan limits, and I don't have to worry about them killing my account if I ask about the wrong thing."
-   ],
    "summary_ko": "GPU 없이 램만으로 대형 모델을 구동하는 방식의 실효성과 오픈웨이트 모델의 경제성을 두고 다양한 의견이 오갔다. 일부 사용자들은 구형 프로세서에서의 빌드 복잡성이나 전기 요금 등 현실적인 제약을 지적한 반면, 프라이버시 보호와 비용 절감 측면에서 로컬 모델의 가치를 높게 평가했다.",
    "is_event": false,
    "kr_query": "",
@@ -733,18 +732,33 @@
   },
   {
    "layer": "hn",
-   "title": "Blender's UI and Runtime: Much Faster Than GPUI",
-   "url": "https://github.com/ppmpreetham/BUI",
-   "discussion": "https://news.ycombinator.com/item?id=50389333",
-   "points": 735,
-   "comments": 290,
-   "r": 0.39,
-   "at": "2026-11-06",
+   "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+   "url": "https://ketchup3d.github.io/app/",
+   "discussion": "https://news.ycombinator.com/item?id=50418176",
+   "points": 582,
+   "comments": 172,
+   "r": 0.3,
+   "at": "2026-11-08",
    "topics": [
-    "인프라·칩"
+    "인프라·칩",
+    "개발도구"
    ],
-   "story_key": "gh:ppmpreetham/bui",
-   "summary_ko": "댓글에서는 블렌더의 독창적인 UI와 렌더링 성능에 대해 놀라움을 표하는 의견과 함께, 과거 오픈소스 UI 디자인의 한계나 단색 아이콘의 가독성 문제를 지적하는 목소리가 공존했다. 일부 개발자들은 자신만의 GUI 툴킷을 개발해온 경험을 공유하며 깊은 관심을 보였다.",
+   "story_key": "url:ketchup3d.github.io/app",
+   "_comments": [
+    "So what's the full disclosure here? Do you know every line of code that has been pushed or not? Btw 240fps? Browser's fps are capped to monitor refresh rate",
+    "The slop you are talking about is the slop non-developers produce. I have been a developer for the past 20+ years. I know how to scale and stress-test an application. For instance (real data), my slop runs the exact same file at 240 FPS VS 45 on SketchUp.There are good and bad slops.",
+    "I work on a similar tool and felt the need to prove the engine myself, check out https://shopspec.io/galleryI have a few projects that are in progress while continuing to build out ShopSpec. This is so that I can address any rough edges as they come up. For instance, material handling and safety during sheet breakdown.",
+    "Very cool. And I am working on some wood projects in the garage at the moment…If you ever have/get any, a photo of any of the things on your site, actually built, would be a cool addition—make it real.",
+    "> if the AI can't write it right, the AI probably can't fix itThis doesn't match my experience at all. Frontier models are quite good at finding the cause of and fixing bugs, if they have access to the right tooling. LLMs can easily fix bugs that they introduced with the level of detail in the average bug report.",
+    "Is this a slopified version of SketchUp or? I'm not interested in free AI clones, quality wise they're way worse and all it takes to see that is that after a bunch of clicks eveything blows up(artcraft is such an example). I'm in this positioning where I don't trust anymore any new software, the only next software I'll pay a licenze for will be one that has clear AI disclosure and how they avoid slop, or no AI usage at all. I want quality, we are getting back steaming shit",
+    "Same for https://hew3d.com/, I'm not sure which is better but both are open source.",
+    "What is the point though. The maintainer can generate the same code you can. And they can iterate on it quickly without having to go through a review process.",
+    "Out of curiosity, how do you tell the agent what you want - just describing it in words? Or draw something and scan it in?",
+    "The link says KetchUp but the actual website says \"BenchUp\" I'm confused about the naming situation.",
+    "I've been working on addressing a similar need, but for CNC machines and from a very different perspective and UI approach --- small, specialized tools which allow making one thing/doing one task:- Flatten aboard: https://studio.flet.dev/run/46tp8GPq9g/- Make rabbeted box w/ optional sliding lid: https://community.carbide3d.com/t/rabbet-box-designer-on-fle... (working on a hinged option now)drawing on what I learned putting together: https://github.com/WillAdams/gcodepreview and https://willadams.gitbook.io/design-into-3d",
+    "Until you upgrade to a new Mac which doesn't have the Intel chip which that version is compiled for and which lacks Rosetta."
+   ],
+   "summary_ko": "러스트와 웹GPU로 제작된 오픈소스 스케치업 대안인 KetchUp에 대해 개발자들은 성능과 효율성을 높이 평가했다. 한편으로는 AI가 생성한 코드나 일명 슬롭(slop)의 품질과 신뢰성에 대한 우려의 목소리도 적지 않았다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -798,10 +812,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation: This will completely change everything!",
+   "url": "https://arxiv.org/abs/2610.14162",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr6krp/nextconcept_modeling_fast_parallel_coarsetofine/",
+   "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "arxiv:2610.14162"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "tencent/Qwen3.8-27B-DSpine-b16 · Hugging Face",
    "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2aaa/tencentqwen3827bdspineb16_hugging_face/",
-   "rank": 4,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -810,20 +838,6 @@
     "모델릴리스"
    ],
    "story_key": "hf:tencent/qwen3.8-27b-dspine-b16"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation: This will completely change everything!",
-   "url": "https://arxiv.org/abs/2610.14162",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr6krp/nextconcept_modeling_fast_parallel_coarsetofine/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "arxiv:2610.14162"
   },
   {
    "layer": "reddit",
@@ -842,10 +856,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Joined the 4x R9700 Club | Initial Benchmarks for QFN 3.8 Below",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Intel Arc Pro B70 32GB ($1,299) vs NVIDIA RTX 5090 ($6,500+) on Qwen3.8-27B: about 1/2 speed gen (1/3 speed prefill) for 1/5 price, after best setup",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
-   "rank": 7,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -859,16 +887,32 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Joined the 4x R9700 Club | Initial Benchmarks for QFN 3.8 Below",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for/",
-   "rank": 8,
+   "title": "L11 N8147 is a neuron that will make Qwen-3.5-4B get things confidently wrong while being weirdly snarky... But also makes it write interesting poetry",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "What are people finding local models actually useful for?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually"
   },
   {
    "layer": "reddit",
@@ -876,7 +920,7 @@
    "title": "Motion graphics video made with Qwen3.8 Flash Next GSQ RCO IQ3_XXS on strata",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3qes/motion_graphics_video_made_with_qwen38_flash_next/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3qes/motion_graphics_video_made_with_qwen38_flash_next/",
-   "rank": 9,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -889,24 +933,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "OpenClaw Retrospective",
-   "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xqs2sh/openclaw_retrospective/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:spaces/joelniklaus"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "I fine-tuned Qwen3.5-0.8B to turn plain English into bash. What I learnt",
    "url": "https://manuelgs.com/en/blog/dale-case-study/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr0ykk/i_finetuned_qwen3508b_to_turn_plain_english_into/",
-   "rank": 11,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -922,7 +952,7 @@
    "title": "The Qwen Flash Next alibaba URL thing happened to me too just now",
    "url": "https://hastebin.com/share/ayawowirix.swift",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3ifw/the_qwen_flash_next_alibaba_url_thing_happened_to/",
-   "rank": 12,
+   "rank": 13,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -935,59 +965,86 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "What are people finding local models actually useful for?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
-   "rank": 13,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Artificial Analysis: multimodal decision model Drex Max ranks #1. Both achieving SOTA and Pareto frontier.",
-   "url": "https://huggingface.co/papers/2611.07854",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2rqk/artificial_analysis_multimodal_decision_model/",
+   "title": "Nous Research Arete-27B GGUF quants",
+   "url": "https://huggingface.co/AtomicChat/Arete-27B-GGUF",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrarta/nous_research_arete27b_gguf_quants/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "hf:papers/2611.07854"
+   "topics": [],
+   "story_key": "hf:atomicchat/arete-27b-gguf"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I ran Qwen3.5-0.8B in pure Assembly",
-   "url": "https://github.com/suayptalha/qwen3%5C_5-assembly",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr18t3/i_ran_qwen3508b_in_pure_assembly/",
+   "title": "Kimi-K3.1-Pro-Coder (2.8T) | 1.77 TB -> 775 GB (-56%) | 36.8 TPS (Batch) / 10.8 TPS on 1x Blackwell | 96.7% on both AIME 2025 and LiveCodeBench",
+   "url": "https://github.com/grawnchtoader/strata",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xr777l/kimik31procoder_28t_177_tb_775_gb_56_368_tps/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:suayptalha/qwen3%5c_5-assembly"
+   "topics": [],
+   "story_key": "gh:grawnchtoader/strata"
   }
  ],
- "quiet_important": [],
+ "quiet_important": [
+  {
+   "layer": "hn",
+   "title": "Statement from Nvidia board of directors",
+   "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+   "discussion": "https://news.ycombinator.com/item?id=50416801",
+   "points": 473,
+   "comments": 358,
+   "r": 0.76,
+   "at": "2026-11-08",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+   "trust": [
+    "AI Supremacy"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 엔비디아 이사회가 젠슨 황 CEO를 공식 조사하기 시작한 것을 두고 거센 공방이 벌어졌다. 최고 권력자의 부적절한 처신과 간첩 연루 가능성이 기업 안보에 치명적이라는 지적이 우세한 한편, 사생활 문제일 뿐 과장되었다는 시각도 존재했다.",
+   "is_event": true,
+   "kr_query": "엔비디아 젠슨 황 이사회 조사",
+   "kr": [
+    {
+     "t": "젠슨황, 불륜 시인…엔비디아 이사회 독립 조사 착수",
+     "u": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8707071&ref=A",
+     "d": "Mon, 09 Nov 2026",
+     "why": [
+      "엔비디아",
+      "이사회",
+      "조사"
+     ]
+    },
+    {
+     "t": "엔비디아 이사회, 젠슨 황 조사 착수…CEO 자리 지킬까",
+     "u": "https://www.sedaily.com/article/20111771?ref=naver",
+     "d": "Mon, 09 Nov 2026",
+     "why": [
+      "엔비디아",
+      "이사회",
+      "젠슨",
+      "조사"
+     ]
+    }
+   ]
+  }
+ ],
  "models": [
   {
    "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 795,
-   "likes": 1397,
-   "downloads": 22854,
+   "trending": 816,
+   "likes": 1505,
+   "downloads": 24747,
    "topics": [
     "모델릴리스"
    ],
@@ -997,9 +1054,9 @@
    "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 696,
-   "likes": 861,
-   "downloads": 7088,
+   "trending": 783,
+   "likes": 975,
+   "downloads": 11755,
    "topics": [
     "모델릴리스"
    ],
@@ -1009,9 +1066,9 @@
    "layer": "hf",
    "title": "moonshotai/Kimi-K3.1-Pro",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-   "trending": 563,
-   "likes": 1730,
-   "downloads": 25569,
+   "trending": 576,
+   "likes": 1764,
+   "downloads": 27926,
    "topics": [
     "모델릴리스"
    ],
@@ -1021,9 +1078,9 @@
    "layer": "hf",
    "title": "ricursiveAI/Ripple-65B-Preview",
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-   "trending": 396,
-   "likes": 406,
-   "downloads": 5087,
+   "trending": 414,
+   "likes": 426,
+   "downloads": 5835,
    "topics": [
     "모델릴리스"
    ],
@@ -1033,9 +1090,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 392,
-   "likes": 11138,
-   "downloads": 2661026,
+   "trending": 390,
+   "likes": 11193,
+   "downloads": 2720096,
    "topics": [
     "모델릴리스"
    ],
@@ -1045,9 +1102,9 @@
    "layer": "hf",
    "title": "ccore/Qwen3.5-4B-3D-Coder",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 387,
-   "likes": 921,
-   "downloads": 254053,
+   "trending": 368,
+   "likes": 934,
+   "downloads": 289466,
    "topics": [
     "모델릴리스"
    ],
@@ -1055,23 +1112,11 @@
   },
   {
    "layer": "hf",
-   "title": "Qwen/Qwen3.8-27B",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 321,
-   "likes": 19419,
-   "downloads": 7668187,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:qwen/qwen3.8-27b"
-  },
-  {
-   "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 319,
-   "likes": 2711,
-   "downloads": 1553252,
+   "trending": 331,
+   "likes": 2738,
+   "downloads": 1530688,
    "topics": [
     "모델릴리스"
    ],
@@ -1079,11 +1124,23 @@
   },
   {
    "layer": "hf",
+   "title": "Qwen/Qwen3.8-27B",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "trending": 319,
+   "likes": 19453,
+   "downloads": 7508158,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:qwen/qwen3.8-27b"
+  },
+  {
+   "layer": "hf",
    "title": "NousResearch/Arete-27B",
    "url": "https://huggingface.co/NousResearch/Arete-27B",
-   "trending": 286,
-   "likes": 294,
-   "downloads": 1747,
+   "trending": 316,
+   "likes": 326,
+   "downloads": 2407,
    "topics": [
     "모델릴리스"
    ],
@@ -1093,9 +1150,9 @@
    "layer": "hf",
    "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-   "trending": 273,
-   "likes": 3108,
-   "downloads": 67230,
+   "trending": 264,
+   "likes": 3117,
+   "downloads": 69992,
    "topics": [
     "인프라·칩"
    ],
@@ -1108,7 +1165,7 @@
    "title": "KKKKhazix/agent-autoloop",
    "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
    "url": "https://github.com/KKKKhazix/agent-autoloop",
-   "stars": 4132,
+   "stars": 4242,
    "topics": [
     "에이전트"
    ],
@@ -1119,7 +1176,7 @@
    "title": "sarpstar/cinecode",
    "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, desi",
    "url": "https://github.com/sarpstar/cinecode",
-   "stars": 1614,
+   "stars": 1818,
    "topics": [
     "에이전트"
    ],
@@ -1130,7 +1187,7 @@
    "title": "Sandflow-ai/sand3d",
    "desc": "3D modeling in Python, built for LLMs.",
    "url": "https://github.com/Sandflow-ai/sand3d",
-   "stars": 1427,
+   "stars": 1556,
    "topics": [
     "개발도구"
    ],
@@ -1138,21 +1195,10 @@
   },
   {
    "layer": "github",
-   "title": "voyager-so/vork",
-   "desc": "Headless 3D and VFX engine for agents. Research preview.",
-   "url": "https://github.com/voyager-so/vork",
-   "stars": 1140,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:voyager-so/vork"
-  },
-  {
-   "layer": "github",
    "title": "shanselman/gputaskman",
    "desc": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
    "url": "https://github.com/shanselman/gputaskman",
-   "stars": 1075,
+   "stars": 1346,
    "topics": [
     "모델릴리스",
     "인프라·칩",
@@ -1165,7 +1211,7 @@
    "title": "DIYgod/pinky",
    "desc": "Let AI agents use your phone, with you in the loop.",
    "url": "https://github.com/DIYgod/pinky",
-   "stars": 877,
+   "stars": 1290,
    "topics": [
     "에이전트"
    ],
@@ -1173,15 +1219,70 @@
   },
   {
    "layer": "github",
+   "title": "voyager-so/vork",
+   "desc": "Headless 3D and VFX engine for agents. Research preview.",
+   "url": "https://github.com/voyager-so/vork",
+   "stars": 1237,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:voyager-so/vork"
+  },
+  {
+   "layer": "github",
+   "title": "janestreet/agent_skills",
+   "desc": "Agent skills",
+   "url": "https://github.com/janestreet/agent_skills",
+   "stars": 1158,
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "gh:janestreet/agent_skills"
+  },
+  {
+   "layer": "github",
    "title": "IainKay/ram-altman",
    "desc": "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI.",
    "url": "https://github.com/IainKay/ram-altman",
-   "stars": 794,
+   "stars": 1121,
    "topics": [],
    "story_key": "gh:iainkay/ram-altman"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "The Web Is More Than Enough, by Paul Ford",
+   "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+   "at": "2026-11-09T04:32",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/9/hn-50421091",
+   "link_keys": [
+    "hn:50416456",
+    "url:claude.ai/share/e56d163e-2793-4677-aa11-191d5058b414",
+    "url:static.simonwillison.net/static/2026/Hidden-Reef-Egg-Vanilla-WebGL.html",
+    "url:static.simonwillison.net/static/2026/Hidden-Reef-Egg-threejs.html"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "at": "2026-11-09T04:25",
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/9/details-summary",
+   "link_keys": [
+    "gh:datasette/datasette-agent",
+    "gh:simonw/datasette",
+    "gh:simonw/llm"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1212,6 +1313,20 @@
     "gh:simonw/datasette",
     "url:bugzilla.mozilla.org/show_bug.cgi?id=175418",
     "url:developer.mozilla.org/en-US/docs/Glossary/Prefetch"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Terry Pratchett's Study",
+   "url": "https://simonwillison.net/2026/Nov/7/hn-50407316/",
+   "at": "2026-11-07T19:34",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/7/hn-50407316",
+   "link_keys": [
+    "hn:50405674",
+    "url:chibuikeani.blogspot.com/2017/02/the-price-of-happiness-horizontal-vs.html"
    ],
    "is_roundup": false
   },
@@ -1305,6 +1420,19 @@
     "url:github.com/remote-controlled-man",
     "url:github.com/tao-hpu",
     "url:llm.datasette.io/"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "AI is destroying my CS degree",
+   "url": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
+   "at": "2026-11-03T16:42",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/3/hn-50354278",
+   "link_keys": [
+    "hn:50353300"
    ],
    "is_roundup": false
   },
@@ -1456,70 +1584,8 @@
     "url:parameter.ai/labs/we-found-a-gap-at-openai"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "datasette-llm 0.1a9",
-   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
-   "at": "2026-10-31T22:10",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Oct/31/datasette-llm",
-   "link_keys": [
-    "gh:datasette/datasette-llm",
-    "url:agent.datasette.io/",
-    "url:llm.datasette.io/"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "dbreunig/nesformer",
-   "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
-   "at": "2026-10-30T21:59",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/30/nesformer",
-   "link_keys": [
-    "gh:christopherpow/nes-test-roms",
-    "gh:dbreunig/nesformer",
-    "hn:50306442",
-    "url:divagr.com/blog/qwenputer"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "API credits benefit for eligible ChatGPT subscriptions",
-   "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
-   "at": "2026-10-29T22:48",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Oct/29/api-credits",
-   "link_keys": [
-    "url:help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Building a multiplayer game world with autonomous Fable-class models",
-   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-   "at": "2026-10-29T17:00",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world",
-   "link_keys": [
-    "url:en.wikipedia.org/wiki/Continuous_deployment",
-    "url:spawn.co/"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-09 02:30"
+ "enriched_at": "2026-11-09 13:30"
 }
