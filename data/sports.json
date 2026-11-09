@@ -1,7 +1,143 @@
 {
- "updated": "2026-11-09 20:24 KST",
+ "updated": "2026-11-10 07:16 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
+  {
+   "id": "401873051",
+   "path": "football/nfl",
+   "league": "NFL",
+   "name": "Buffalo Bills at Minnesota Vikings",
+   "date": "2026-11-10T01:15Z",
+   "kst": "2026-11-10 10:15",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "regular-season",
+   "us_tv": [
+    "ESPN",
+    "ABC"
+   ],
+   "venue": "U.S. Bank Stadium",
+   "tv": "영국 Sky Sports NFL · 미국 ESPN",
+   "sport": "nfl",
+   "home": {
+    "name": "Minnesota Vikings",
+    "ko": "Minnesota Vikings",
+    "abbr": "MIN",
+    "id": "16",
+    "score": "0",
+    "winner": null,
+    "record": "6-1",
+    "form": "승승승승패"
+   },
+   "away": {
+    "name": "Buffalo Bills",
+    "ko": "Buffalo Bills",
+    "abbr": "BUF",
+    "id": "2",
+    "score": "0",
+    "winner": null,
+    "record": "6-1",
+    "form": "승패승승승"
+   },
+   "title": "Minnesota Vikings vs Buffalo Bills",
+   "score": 4,
+   "why": [],
+   "detail": {
+    "leaders": [
+     {
+      "team": "Minnesota Vikings",
+      "cat": "Passing Yards",
+      "who": "Kyler Murray",
+      "val": "100/154 · 1 ·022 YDS · 5 TD · 3 INT"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "cat": "Rushing Yards",
+      "who": "Aaron Jones Sr.",
+      "val": "110 CAR · 458 YDS · 2 TD"
+     },
+     {
+      "team": "Buffalo Bills",
+      "cat": "Passing Yards",
+      "who": "Josh Allen",
+      "val": "135/205 · 1 ·793 YDS · 11 TD · 5 INT"
+     },
+     {
+      "team": "Buffalo Bills",
+      "cat": "Rushing Yards",
+      "who": "James Cook III",
+      "val": "138 CAR · 707 YDS · 7 TD"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "Minnesota Vikings",
+      "who": "Demond Claiborne",
+      "status": "Out"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Jauan Jennings",
+      "status": "Out"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Kyler Murray",
+      "status": "Out"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Jay Ward",
+      "status": "Questionable"
+     },
+     {
+      "team": "Buffalo Bills",
+      "who": "Joshua Palmer",
+      "status": "Injured Reserve"
+     },
+     {
+      "team": "Buffalo Bills",
+      "who": "Alec Anderson",
+      "status": "Questionable"
+     },
+     {
+      "team": "Buffalo Bills",
+      "who": "Dion Dawkins",
+      "status": "Questionable"
+     },
+     {
+      "team": "Buffalo Bills",
+      "who": "Tyrell Shavers",
+      "status": "Out"
+     }
+    ],
+    "predictor": {
+     "home": "34.1",
+     "away": "65.6"
+    },
+    "preview": []
+   },
+   "stars": 1,
+   "tv_kr": "쿠팡플레이(추정)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports NFL"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "ESPN"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "CTV·TSN"
+    }
+   ]
+  },
   {
    "id": "401909959",
    "path": "basketball/nba",
@@ -80,6 +216,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Gary Payton II",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Will Richard",
       "status": "Out"
      },
@@ -94,8 +235,18 @@
       "status": "Out"
      },
      {
-      "team": "골든스테이트",
-      "who": "Moses Moody",
+      "team": "New Orleans Pelicans",
+      "who": "Zion Williamson",
+      "status": "Out"
+     },
+     {
+      "team": "New Orleans Pelicans",
+      "who": "Trendon Watford",
+      "status": "Out"
+     },
+     {
+      "team": "New Orleans Pelicans",
+      "who": "Trey Murphy III",
       "status": "Out"
      },
      {
@@ -272,6 +423,11 @@
     "injuries": [
      {
       "team": "Houston Rockets",
+      "who": "Oscar Tshiebwe",
+      "status": "Out"
+     },
+     {
+      "team": "Houston Rockets",
       "who": "Clint Capela",
       "status": "Out"
      },
@@ -279,6 +435,11 @@
       "team": "Houston Rockets",
       "who": "Steven Adams",
       "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Gary Payton II",
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
@@ -293,11 +454,6 @@
      {
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Moses Moody",
       "status": "Out"
      }
     ],
@@ -652,18 +808,23 @@
     "injuries": [
      {
       "team": "San Antonio Spurs",
+      "who": "Devin Vassell",
+      "status": "Out"
+     },
+     {
+      "team": "San Antonio Spurs",
       "who": "Tobias Harris",
       "status": "Out"
      },
      {
       "team": "San Antonio Spurs",
-      "who": "Devin Vassell",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "San Antonio Spurs",
       "who": "Jayden Quaintance",
       "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Gary Payton II",
+      "status": "Day-To-Day"
      },
      {
       "team": "골든스테이트",
@@ -678,11 +839,6 @@
      {
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Moses Moody",
       "status": "Out"
      }
     ],
@@ -704,45 +860,6 @@
      "country": "MENA",
      "label": "아랍",
      "ch": "beIN SPORTS(일부 경기)"
-    }
-   ]
-  },
-  {
-   "id": "600061400",
-   "path": "mma/ufc",
-   "league": "UFC",
-   "name": "UFC 334: Gane vs. Hokit",
-   "date": "2026-11-15T02:00Z",
-   "kst": "2026-11-15 11:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "season": "regular-season",
-   "us_tv": [],
-   "venue": "Madison Square Garden",
-   "tv": "국내 tvN SPORTS · 영국 TNT Sports · 캐나다 Sportsnet",
-   "sport": "mma",
-   "title": "UFC 334: Gane vs. Hokit",
-   "main": "Josh Hokit vs Ciryl Gane",
-   "score": 4,
-   "why": [],
-   "stars": 1,
-   "tv_kr": "티빙",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "tvN SPORTS"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "TNT Sports"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "Sportsnet"
     }
    ]
   },
@@ -819,17 +936,17 @@
     "injuries": [
      {
       "team": "Detroit Lions",
-      "who": "Jacob Saylors",
-      "status": "Out"
-     },
-     {
-      "team": "Detroit Lions",
-      "who": "Mekhi Wingo",
-      "status": "Out"
-     },
-     {
-      "team": "Detroit Lions",
       "who": "DJ Wonnum",
+      "status": "Out"
+     },
+     {
+      "team": "Detroit Lions",
+      "who": "D.J. Reed",
+      "status": "Out"
+     },
+     {
+      "team": "Detroit Lions",
+      "who": "Jacob Saylors",
       "status": "Out"
      },
      {
@@ -839,23 +956,23 @@
      },
      {
       "team": "New England Patriots",
+      "who": "A.J. Brown",
+      "status": "Out"
+     },
+     {
+      "team": "New England Patriots",
+      "who": "Charles Woods",
+      "status": "Out"
+     },
+     {
+      "team": "New England Patriots",
+      "who": "TreVeyon Henderson",
+      "status": "Out"
+     },
+     {
+      "team": "New England Patriots",
       "who": "Ben Brown",
-      "status": "Questionable"
-     },
-     {
-      "team": "New England Patriots",
-      "who": "Brenden Schooler",
-      "status": "Questionable"
-     },
-     {
-      "team": "New England Patriots",
-      "who": "Will Campbell",
-      "status": "Questionable"
-     },
-     {
-      "team": "New England Patriots",
-      "who": "Rhamondre Stevenson",
-      "status": "Questionable"
+      "status": "Doubtful"
      }
     ],
     "predictor": {
@@ -986,12 +1103,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Fermín López delivers brace as Barcelona defeat Atlético Madrid",
-      "url": "https://www.espn.com/video/clip/_/id/50428424/fermin-lopez-delivers-brace-barcelona-defeat-atletico-madrid"
+      "title": "Barcelona's Pau Cubarsí crowned 2026 Golden Boy",
+      "url": "https://www.espn.com/soccer/story/_/id/50433569/barcelona-spain-pau-cubarsi-wins-2026-golden-boy-award"
      },
      {
-      "title": "Diego Simeone: Atlético Madrid need Julián Álvarez at his 'best' to succeed",
-      "url": "https://www.espn.com/soccer/story/_/id/50427000/diego-simeone-atletico-madrid-need-julian-alvarez-best-succeed"
+      "title": "Fermín López delivers brace as Barcelona defeat Atlético Madrid",
+      "url": "https://www.espn.com/video/clip/_/id/50428424/fermin-lopez-delivers-brace-barcelona-defeat-atletico-madrid"
      }
     ],
     "result": {
@@ -1410,76 +1527,6 @@
    }
   },
   {
-   "id": "600057448",
-   "path": "racing/f1",
-   "league": "F1",
-   "name": "MSC Cruises São Paulo Grand Prix",
-   "date": "2026-11-08T17:00Z",
-   "kst": "2026-11-09 02:00",
-   "state": "post",
-   "status": "Final",
-   "note": "",
-   "season": "regular-season",
-   "us_tv": [],
-   "venue": "",
-   "tv": "쿠팡플레이(스포츠패스)",
-   "sport": "f1",
-   "sessions": [
-    {
-     "name": "FP1",
-     "date": "2026-11-06T15:30Z",
-     "kst": "2026-11-07 00:30"
-    },
-    {
-     "name": "FP2",
-     "date": "2026-11-06T19:00Z",
-     "kst": "2026-11-07 04:00"
-    },
-    {
-     "name": "FP3",
-     "date": "2026-11-07T14:30Z",
-     "kst": "2026-11-07 23:30"
-    },
-    {
-     "name": "Qual",
-     "date": "2026-11-07T18:00Z",
-     "kst": "2026-11-08 03:00"
-    },
-    {
-     "name": "Race",
-     "date": "2026-11-08T17:00Z",
-     "kst": "2026-11-09 02:00"
-    }
-   ],
-   "detail": {
-    "result": {
-     "podium": [
-      "Lando Norris",
-      "Max Verstappen",
-      "Isack Hadjar"
-     ],
-     "top10": [
-      "Lando Norris",
-      "Max Verstappen",
-      "Isack Hadjar",
-      "George Russell",
-      "Kimi Antonelli",
-      "Oscar Piastri",
-      "Liam Lawson",
-      "Charles Leclerc",
-      "Lewis Hamilton",
-      "Nico Hülkenberg"
-     ]
-    }
-   },
-   "title": "상파울루 그랑프리",
-   "score": 46,
-   "why": [
-    "그랑프리 결승"
-   ],
-   "stars": 3
-  },
-  {
    "id": "401884741",
    "path": "soccer/ger.1",
    "league": "분데스리가",
@@ -1800,6 +1847,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Gary Payton II",
+      "status": "Day-To-Day"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Will Richard",
       "status": "Out"
      },
@@ -1811,11 +1863,6 @@
      {
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Moses Moody",
       "status": "Out"
      },
      {
@@ -1839,12 +1886,7 @@
       "status": "Out"
      }
     ],
-    "preview": [
-     {
-      "title": "Kings face the Magic on 3-game skid",
-      "url": "http://www.espn.com/nba/preview?gameId=401909964"
-     }
-    ],
+    "preview": [],
     "result": {
      "score": "골든스테이트 126 : 119 Orlando Magic",
      "goals": [],
@@ -1987,155 +2029,6 @@
        "played": true
       }
      ]
-    }
-   }
-  },
-  {
-   "id": "401884740",
-   "path": "soccer/ger.1",
-   "league": "분데스리가",
-   "name": "Bayern Munich at Mainz",
-   "date": "2026-11-07T14:30Z",
-   "kst": "2026-11-07 23:30",
-   "state": "post",
-   "status": "Full Time",
-   "note": "",
-   "season": "2026-27-german-bundesliga",
-   "us_tv": [],
-   "venue": "MEWA ARENA",
-   "tv": "쿠팡플레이(스포츠패스)",
-   "sport": "soccer",
-   "home": {
-    "name": "Mainz",
-    "ko": "마인츠",
-    "abbr": "M05",
-    "id": "2950",
-    "score": "1",
-    "winner": false,
-    "record": "3-1-5",
-    "rank": "12",
-    "pts": "10",
-    "form": "패승패패패"
-   },
-   "away": {
-    "name": "Bayern Munich",
-    "ko": "바이에른 뮌헨",
-    "abbr": "MUN",
-    "id": "132",
-    "score": "2",
-    "winner": true,
-    "record": "6-3-0",
-    "rank": "1",
-    "pts": "21",
-    "form": "무승승무승"
-   },
-   "title": "마인츠 vs 바이에른 뮌헨",
-   "kp": {
-    "ko": "김민재",
-    "opp": "마인츠"
-   },
-   "score": 82,
-   "why": [
-    "김민재 · 이재성 · 홍현석 출전 팀",
-    "한국 저녁 시간",
-    "선두 경기"
-   ],
-   "stars": 3,
-   "detail": {
-    "h2h": {
-     "summary": "바이에른 뮌헨 우세 (3승 1무 1패)",
-     "last": [
-      {
-       "date": "2026-04-25",
-       "score": "마인츠 3 바이에른 뮌헨 4"
-      },
-      {
-       "date": "2025-12-14",
-       "score": "바이에른 뮌헨 2 마인츠 2"
-      },
-      {
-       "date": "2025-04-26",
-       "score": "바이에른 뮌헨 3 마인츠 0"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "마인츠",
-      "cat": "Total Shots",
-      "who": "Nadiem Amiri",
-      "val": "3"
-     },
-     {
-      "team": "마인츠",
-      "cat": "Accurate Passes",
-      "who": "Nadiem Amiri",
-      "val": "33"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Total Shots",
-      "who": "Harry Kane",
-      "val": "6"
-     },
-     {
-      "team": "바이에른 뮌헨",
-      "cat": "Accurate Passes",
-      "who": "Aleksandar Pavlovic",
-      "val": "116"
-     }
-    ],
-    "injuries": [],
-    "preview": [
-     {
-      "title": "Ballon d'Or winner Harry Kane notches two assists as Bayern Munich beat Mainz",
-      "url": "http://www.espn.com/soccer/report/_/gameId/401884740"
-     },
-     {
-      "title": "Transfer rumors, news: Liverpool's Rio Ngumoha still a Bayern Munich target",
-      "url": "https://www.espn.com/soccer/story/_/id/50406508/transfer-rumors-news-liverpool-rio-ngumoha-bayern-munich"
-     }
-    ],
-    "result": {
-     "score": "마인츠 1 : 2 바이에른 뮌헨",
-     "goals": [
-      {
-       "min": "14'",
-       "text": "Goal! Mainz 0, Bayern Munich 1. Joshua Kimmich (Bayern Munich) right footed shot from outside the box to the top right corner. Assisted by H"
-      },
-      {
-       "min": "57'",
-       "text": "Goal! Mainz 0, Bayern Munich 2. Lennart Karl (Bayern Munich) right footed shot from the centre of the box to the centre of the goal. Assiste"
-      },
-      {
-       "min": "90'+2'",
-       "text": "Goal! Mainz 1, Bayern Munich 2. Phillip Tietz (Mainz) header from the centre of the box to the bottom right corner. Assisted by Benedict Hol"
-      }
-     ],
-     "korean": [
-      {
-       "ko": "이재성",
-       "starter": true,
-       "sub_in": false,
-       "goals": "0",
-       "assists": "0",
-       "shots": "2",
-       "played": true
-      },
-      {
-       "ko": "김민재",
-       "starter": false,
-       "sub_in": false,
-       "goals": "0",
-       "assists": "0",
-       "shots": "0",
-       "played": false
-      }
-     ],
-     "video": {
-      "title": "Kompany 'on a good road to recovery' after collapse, says Bayern assistant coach",
-      "url": "https://www.espn.com/video/clip/_/id/50400513/kompany-good-road-recovery-collapse-says-bayern-assistant-coach"
-     }
     }
    }
   }
