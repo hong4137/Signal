@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-10 13:32",
+ "updated": "2026-11-10 22:09",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 17,
-  "reddit": 27,
+  "hn": 21,
+  "reddit": 30,
   "hf": 15,
-  "github": 5,
+  "github": 4,
   "trust": 100
  },
  "reddit_mode": "rss",
@@ -16,14 +16,18 @@
    "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
    "discussion": "https://news.ycombinator.com/item?id=50418016",
-   "points": 952,
-   "comments": 1223,
-   "r": 1.28,
+   "points": 964,
+   "comments": 1241,
+   "r": 1.29,
    "at": "2026-11-08",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:nvidianews.nvidia.com/news/a-message-to-our-company",
+   "trust": [
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
    "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
    "is_event": false,
    "kr_query": "",
@@ -34,9 +38,9 @@
    "title": "I'm not convinced the AI bubble exists",
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "discussion": "https://news.ycombinator.com/item?id=50418975",
-   "points": 545,
-   "comments": 942,
-   "r": 1.73,
+   "points": 557,
+   "comments": 948,
+   "r": 1.7,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
@@ -50,15 +54,16 @@
    "title": "Claude Fable 5.2 and Mythos 5.2",
    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "discussion": "https://news.ycombinator.com/item?id=50429068",
-   "points": 324,
-   "comments": 671,
-   "r": 2.07,
+   "points": 692,
+   "comments": 856,
+   "r": 1.24,
    "at": "2026-11-09",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:anthropic.com/claude-fable-and-mythos-5-2",
    "trust": [
+    "AI Supremacy",
     "Simon Willison"
    ],
    "trust_match": "link",
@@ -72,8 +77,8 @@
    "title": "Goodbye Claude, hello Pi",
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 805,
-   "comments": 485,
+   "points": 808,
+   "comments": 488,
    "r": 0.6,
    "at": "2026-11-08",
    "topics": [
@@ -90,8 +95,8 @@
    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "discussion": "https://news.ycombinator.com/item?id=50415628",
-   "points": 885,
-   "comments": 475,
+   "points": 891,
+   "comments": 483,
    "r": 0.54,
    "at": "2026-11-08",
    "topics": [
@@ -108,8 +113,8 @@
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 622,
-   "comments": 422,
+   "points": 623,
+   "comments": 424,
    "r": 0.68,
    "at": "2026-11-07",
    "topics": [
@@ -137,7 +142,7 @@
    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
    "discussion": "https://news.ycombinator.com/item?id=50416801",
    "points": 490,
-   "comments": 406,
+   "comments": 407,
    "r": 0.83,
    "at": "2026-11-08",
    "topics": [
@@ -176,8 +181,8 @@
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 509,
-   "comments": 309,
+   "points": 510,
+   "comments": 310,
    "r": 0.61,
    "at": "2026-11-07",
    "topics": [
@@ -191,12 +196,34 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+   "discussion": "https://news.ycombinator.com/item?id=50431144",
+   "points": 355,
+   "comments": 255,
+   "r": 0.72,
+   "at": "2026-11-09",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:artificialanalysis.ai/models/claude-fable-5-2",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 클로드의 높은 API 비용과 토큰 효율성 문제를 지적하며 오픈AI나 타 모델과의 가성비를 비교하는 의견이 주를 이뤘다. 일각에서는 LLM이 실제 역량을 대체하지 못하며 마케팅에 불과하다는 회의적인 반응도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Why I will not be using LLMs in my coding",
    "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
    "discussion": "https://news.ycombinator.com/item?id=50412591",
-   "points": 117,
-   "comments": 238,
-   "r": 2.03,
+   "points": 119,
+   "comments": 239,
+   "r": 2.01,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
@@ -207,29 +234,11 @@
   },
   {
    "layer": "hn",
-   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-   "discussion": "https://news.ycombinator.com/item?id=50431144",
-   "points": 313,
-   "comments": 230,
-   "r": 0.73,
-   "at": "2026-11-09",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:artificialanalysis.ai/models/claude-fable-5-2",
-   "summary_ko": "댓글에서는 클로드의 높은 API 비용과 토큰 효율성 문제를 지적하며 오픈AI나 타 모델과의 가성비를 비교하는 의견이 주를 이뤘다. 일각에서는 LLM이 실제 역량을 대체하지 못하며 마케팅에 불과하다는 회의적인 반응도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
    "url": "https://ketchup3d.github.io/app/",
    "discussion": "https://news.ycombinator.com/item?id=50418176",
-   "points": 735,
-   "comments": 225,
+   "points": 746,
+   "comments": 228,
    "r": 0.31,
    "at": "2026-11-08",
    "topics": [
@@ -248,7 +257,7 @@
    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
    "discussion": "https://news.ycombinator.com/item?id=50413822",
    "points": 189,
-   "comments": 213,
+   "comments": 214,
    "r": 1.13,
    "at": "2026-11-08",
    "topics": [],
@@ -263,9 +272,9 @@
    "title": "How I'm fighting the AI brain fry",
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "discussion": "https://news.ycombinator.com/item?id=50416363",
-   "points": 303,
-   "comments": 211,
-   "r": 0.7,
+   "points": 307,
+   "comments": 212,
+   "r": 0.69,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
@@ -279,7 +288,7 @@
    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
    "url": "https://github.com/synchopate/llama-modchip",
    "discussion": "https://news.ycombinator.com/item?id=50411961",
-   "points": 475,
+   "points": 481,
    "comments": 205,
    "r": 0.43,
    "at": "2026-11-08",
@@ -298,9 +307,9 @@
    "title": "A year after the 100% AI mandate nobody understands our code",
    "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
    "discussion": "https://news.ycombinator.com/item?id=50433079",
-   "points": 116,
-   "comments": 143,
-   "r": 1.23,
+   "points": 133,
+   "comments": 168,
+   "r": 1.26,
    "at": "2026-11-09",
    "topics": [],
    "story_key": "url:reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
@@ -311,12 +320,92 @@
   },
   {
    "layer": "hn",
+   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "discussion": "https://news.ycombinator.com/item?id=50435660",
+   "points": 175,
+   "comments": 153,
+   "r": 0.87,
+   "at": "2026-11-10",
+   "topics": [],
+   "story_key": "url:cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "summary_ko": "AI 인프라 투자를 위한 자금 조달 과정에서 신용 경색 우려와 함께 AI 모델 훈련 비용을 매출총이익 산정 시 어떻게 회계 처리해야 할지 갑론을박이 이어졌다. 추론 마진의 높고 낮음을 떠나 천문학적인 훈련 비용을 지속해서 감당할 수 있는지에 대해 회의적인 시각이 적지 않다.",
+   "is_event": true,
+   "kr_query": "코어위브 AI 채권 금리",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Google Gemini routes personal Drive files and emails to human annotators",
+   "url": "https://github.com/thisisme6598/gemini_files/",
+   "discussion": "https://news.ycombinator.com/item?id=50429426",
+   "points": 653,
+   "comments": 139,
+   "r": 0.21,
+   "at": "2026-11-09",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:thisisme6598/gemini_files",
+   "summary_ko": "댓글에서는 구글이 제미나이를 통해 개인 드라이브 파일과 이메일을 수집하고 사람 검토자에게 노출하는 방식에 대해 강한 우려를 표명하고 있다. 특히 GDPR 위반 가능성이나 프라이버시 침해 문제를 지적하는 의견이 많았으며, 애플 인텔리전스 등 다른 빅테크의 유사한 관행을 비판하거나 구글 계정 사용을 중단하겠다는 반응이 이어졌다.",
+   "is_event": true,
+   "kr_query": "구글 제미나이 개인정보 수집 사람 검토자",
+   "kr": [
+    {
+     "t": "오픈AI o3 발표, 구글 제미나이 2.0에 대한 대답",
+     "u": "https://slownews.kr/124665",
+     "d": "Mon, 23 Dec 2024",
+     "why": [
+      "구글",
+      "제미나이"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "Muse Ember: Our smallest, most efficient model",
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "discussion": "https://news.ycombinator.com/item?id=50429024",
+   "points": 314,
+   "comments": 135,
+   "r": 0.43,
+   "at": "2026-11-09",
+   "topics": [],
+   "story_key": "url:research.meta.ai/blog/muse-ember",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "신규 소형 모델 공개와 함께 AI 모델들이 점점 비슷해져 가면서 결과물이 획일화되고 있다는 지적이 나왔다. 복잡한 프롬프트에서 이미지 생성이나 추론 수준을 결정하는 별도의 디시전 모델 도입 방식을 두고 사용자 경험 측면에서 장단점 의견이 갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "discussion": "https://news.ycombinator.com/item?id=50438318",
+   "points": 107,
+   "comments": 131,
+   "r": 1.22,
+   "at": "2026-11-10",
+   "topics": [],
+   "story_key": "url:evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
+   "summary_ko": "AI를 활용한 코딩이 장기적으로 취약하고 유지보수가 어려운 코드베이스를 양산한다는 우려가 제기됐다. 일부는 테스트 코드 추가나 엄격한 모듈화로 극복할 수 있다고 보지만, AI가 쓴 코드가 기술 부채로 돌아올 것이라는 비판에 무게가 실린다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
    "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
    "discussion": "https://news.ycombinator.com/item?id=50415817",
    "points": 98,
-   "comments": 126,
-   "r": 1.29,
+   "comments": 127,
+   "r": 1.3,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
@@ -331,8 +420,8 @@
    "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
    "discussion": "https://news.ycombinator.com/item?id=50421426",
    "points": 113,
-   "comments": 121,
-   "r": 1.07,
+   "comments": 124,
+   "r": 1.1,
    "at": "2026-11-09",
    "topics": [],
    "story_key": "url:stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
@@ -364,48 +453,12 @@
  "by_debate": [
   {
    "layer": "hn",
-   "title": "Claude Fable 5.2 and Mythos 5.2",
-   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-   "discussion": "https://news.ycombinator.com/item?id=50429068",
-   "points": 324,
-   "comments": 671,
-   "r": 2.07,
-   "at": "2026-11-09",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:anthropic.com/claude-fable-and-mythos-5-2",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "_comments": [
-    "The average person uses social media, and Microsoft office suite. They really don’t require much else. Social media doesn’t get disrupted by software, and MS Office was already disrupted by Google suite, if you didn’t make the transition then, you ain’t gonna make it now.",
-    "They are generally things I don't particularly want to share, as I view them as ideas close to my heart. The general pattern was what felt like redirecting from the harder problems and an unwillingness, if we can call it that, to go there. In some sense though, it's hard to understand how these more advanced models get around that, because these models are tuned to the most probable answer. When you come at them with a novel idea, they always seem to water it down in the end.",
-    "Don't shoot the messenger, but maybe the idea is this:You're smart, and you know what can go wrong, so you use models slowly, and you check their work. Your bet is that it will make a bad mistake.Your coworker is reckless, they don't know or care what can go wrong, so they use models quickly. Their bet is that the model won't make a bad mistake.If the model doesn't make a bad mistake, your coworker is creating more value to your employer, and your employer doesn't really care if you understand the code. They just want something that works.Over the last year, it sure seems like models are making less mistakes, so the expectations on the bets are changing too.",
-    "If you're so upset with my stated hypothetical, then just reverse me and the colleague. I'll be the productive person who doesn't understand anything, and maybe I'm that person in real life, but my point will still stand.If I misinterpreted, then let me know, because nothing was intentional.Also, I didn't downvote or edit anything, so I'm not sure what you mean.",
-    "im not reading it. and im using fable up front earlier then having sonnet/opus implement and verify.",
-    "If this were true you could do a talk now and measure it and do it every week and see if it was still true or not and be the first to catch them in the act!",
-    "It's possible \"tech companies\" die as tech no longer becomes a differentiator. Businesses will just ask their agents for whatever tech they need.",
-    "New feature, rearchitecture -> Fable uses superpowers to create planDebugging/analysis/small scripts -> OpusNon software engineering -> Sonnet",
-    "There's nothing valid about comparing to a feat that's already been accomplished and is poisoning the data set. The shorter resulting proof only supports that conclusion, where the model likely intuitively knew what intermediate points it had to reach, generalizing better.",
-    "My read of what is being suggested is that the level at which one should aim to understand and be comfortable with is slightly more abstract than reading the code and reviewing every line of it. It is like how one is comfortable not understanding the byte-level code or assembly language code. I know that this analogy doesn’t hold very well because compilation is a deterministic process while llms are not, but that is precisely the point being made. “Trust” that llm will produce the right output, even though the output might not be reproducible word for word the next time you give the same prompt.To your point about becoming redundant without understanding, not understanding things will be a ",
-    "Are you saying that's you're seeing stuckness of that form, or are you paraphrasing some kind of misunderstanding of my question?",
-    "I just tried Fable 5.2 side-by-side with Opus 5.5 on the same prompt and I think you're right, n=1 but with strong signal.Fable got right to the point, had cleaner/better responses and reasoning for its conclusions, got less distracted with secondary concerns, and still showed signs of the cleaner writing style compared to Opus, which improved a lot with 5.5 but can still be hard to parse sometimes.I will keep using Opus for implementation tasks (e.g. building web apps to explore model predictions) but I think I'll try using Fable this week for the real DS stuff. Thanks!"
-   ],
-   "summary_ko": "신규 모델의 성능과 효율성에 대해 개발자들 간에 평가가 엇갈렸다. 복잡한 추론 작업에서 더 직관적이고 깔끔한 결과를 보여준다는 긍정적인 의견과 함께, 여전히 정교한 구현이나 디버깅에는 기존 모델과 병행해 검증이 필요하다는 신중론이 공존했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Why I will not be using LLMs in my coding",
    "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
    "discussion": "https://news.ycombinator.com/item?id=50412591",
-   "points": 117,
-   "comments": 238,
-   "r": 2.03,
+   "points": 119,
+   "comments": 239,
+   "r": 2.01,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:polso.info/why-i-will-not-be-using-llms-coding",
@@ -419,9 +472,9 @@
    "title": "I'm not convinced the AI bubble exists",
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "discussion": "https://news.ycombinator.com/item?id=50418975",
-   "points": 545,
-   "comments": 942,
-   "r": 1.73,
+   "points": 557,
+   "comments": 948,
+   "r": 1.7,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
@@ -436,8 +489,8 @@
    "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
    "discussion": "https://news.ycombinator.com/item?id=50415817",
    "points": 98,
-   "comments": 126,
-   "r": 1.29,
+   "comments": 127,
+   "r": 1.3,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
@@ -451,14 +504,18 @@
    "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
    "discussion": "https://news.ycombinator.com/item?id=50418016",
-   "points": 952,
-   "comments": 1223,
-   "r": 1.28,
+   "points": 964,
+   "comments": 1241,
+   "r": 1.29,
    "at": "2026-11-08",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:nvidianews.nvidia.com/news/a-message-to-our-company",
+   "trust": [
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
    "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
    "is_event": false,
    "kr_query": "",
@@ -469,27 +526,66 @@
    "title": "A year after the 100% AI mandate nobody understands our code",
    "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
    "discussion": "https://news.ycombinator.com/item?id=50433079",
-   "points": 116,
-   "comments": 143,
-   "r": 1.23,
+   "points": 133,
+   "comments": 168,
+   "r": 1.26,
    "at": "2026-11-09",
    "topics": [],
    "story_key": "url:reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-   "_comments": [
-    "But if you verify the code generated using the Harry Potter spell using spells from other wizards and possibly even a mortal human, the risk of code incantation can be mitigated.",
-    "Thankfully, Claude is pretty good at refactoring and bug sweeping. :) You have to keep at it for a while, but eventually, sanity will prevail.",
-    "My real point is you shouldn't be sitting there waiting so you can tell the agent to \"continue.\" Spec stuff out more and let it do it's thing. Whether you yolo-ship it or not is another matter.",
-    "So his thoroughly-researched book, that he spent years working on, and based on thousands of individuals submitting their experiences, is completely bogus because.... you haven't had the experience that millions of others absolutely have?Sure pal. All jobs are totally important and not at all pointless, wasteful make-work.",
-    "No one with cash funded the 8 hour workday either. Working people bled for it, in the good old days when the oligarchs were aware what they risked by not making the occasional concession.",
-    "If you weren't trying to miss the analogy, you'd realize every significant technology of the last few centuries gave working people hope for less work for them. And it never happened. So expecting it with AI is fool's gold.",
-    "If you are not using literate programming in the age of AI to maintain code, you have failed as an organisation. You really have no excuse.https://pbr-book.org/",
-    "> because people didn't understand code in many (most?) companies already beforeOkay let's not be revisionist. That's just not true, not even close to true for a vast majority.If it was true we wouldn't have a term for it.",
-    "i have no idea what you are accusing me of, did you want to make it a bit clearer what i am supposedly projecting? to me, the act of doing something is outsourced to entity X, when entity X is requested to do that thing (and proceeds to do it). are you saying the only actual thinking that occurs in human structures occurs at the planning level, therefore plan execution involves no further scope for learning?",
-    "From my vibes Pangram is very good. This [1] seemingly independent analysis is pretty positive on them and says there is no easy way to just beat it.Presumably at some point there will be AI trained specifically to beat it but I think it’s fair if something sets off your internal AI detector (like me on this post) and pangram says it’s 100% AI, it’s probably AI.[1] https://www.layer3labs.io/guides/is-pangram-accurate",
-    "the non-disparagement clause of my contract precludes me from naming names unless I feel like suffering great financial harm through civil litigation..",
-    "\"Now you know how everyone felt when horses were replaced by cars\"A horse can't do 70mph for 600 miles between feeds. A horse can travel across obstacles that a car would find impossible.It's horses for courses and a mangled analogy."
-   ],
    "summary_ko": "AI를 전면 도입한 이후 코드의 가독성과 유지보수성이 저하되었다는 우려가 제기됐다. 일각에서는 AI가 반복적인 리팩토링이나 디버깅 부담을 크게 줄여준다고 반박한 반면, 코드베이스 전체를 이해하는 사람이 사라져 장기적으로는 심각한 기술 부채가 될 것이라는 경고도 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Claude Fable 5.2 and Mythos 5.2",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "discussion": "https://news.ycombinator.com/item?id=50429068",
+   "points": 692,
+   "comments": 856,
+   "r": 1.24,
+   "at": "2026-11-09",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:anthropic.com/claude-fable-and-mythos-5-2",
+   "trust": [
+    "AI Supremacy",
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "신규 모델의 성능과 효율성에 대해 개발자들 간에 평가가 엇갈렸다. 복잡한 추론 작업에서 더 직관적이고 깔끔한 결과를 보여준다는 긍정적인 의견과 함께, 여전히 정교한 구현이나 디버깅에는 기존 모델과 병행해 검증이 필요하다는 신중론이 공존했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "discussion": "https://news.ycombinator.com/item?id=50438318",
+   "points": 107,
+   "comments": 131,
+   "r": 1.22,
+   "at": "2026-11-10",
+   "topics": [],
+   "story_key": "url:evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
+   "_comments": [
+    "Humans still havent't accepted The Bitter Lesson[1].Compute > Insight. Every time.We can keep searching for essential human characteristics that humans have and AI lacks, but every attempt increasingly resembles an ego-preserving negotiation with the inevitable march. It's reminiscent of the God of the Gaps[2], but for human exceptionalism. As AI competency encroaches on more and more of human ability, we'll retreat into smaller and smaller gaps - foxholes of inimitablity.As long as human value is justified by ability, quality, or characteristic, this problem will endure. The one escape hatch is the classical liberal idea that human value isn't tied to anything, that, by virtue of being huma",
+    "It would add tests for exact error messages, for example. It would add tests that the process exited with very specific error codes. Basically tests that I would never ever write myself.And yes everyone works in different domains. I work at a database vendor myself, so mostly lower-level work.I’m very happy and successful with LLMs, I just don’t think that these “just move all your tests to your type system!” or “get 100% test coverage” rules are an answer in the long term as we haven’t yet figured out how to do this well.I personally treat tests as components that need to be well architected, maintained, and add them risks increasing technical debt and needs to be treated as such.",
+    "How do you suppose project leads, principal engineers, EMs provide guidance? You don’t have to read the code being written by entire teams/departments for that.",
+    "I have been QA testing, fixing bugs, and adding new features near full-time for the last seven months.I have a pretty good idea about what maintenance looks like. Particularly so about the technical aspects of how effective the models are at refactoring or fixing bugs.Even if I were to accept the argument that users would have entirely different expectations for my app than I do, it hardly changes the fact that I already know I can easily implement large changes in the code base.",
+    "Coming soon: language models trained on 2000 years of tactile, proprioceptive, spatio-temporal, calorific, olfactory, gustational, humidity, temperature and barometric data.The downside: the model doesn't always have words to describe what it's feeling.",
+    "> That's a bit silly to assume the LLM will 10x all of the code.Where else did you think they came up with the \"10x developer\" thing?(Yes I know LoC is a useless productivity measure, that's just a joke. Obviously it's number of PRs..)",
+    "FWIW, I guess it probably doesn't always matter too much in a tool where you want a logical, correct, standard, robust outcome like agentic coding.Those outcomes are more easily averaged and we are after all talking about artificial intelligence.I just think it's important to note, every now and then, that words aren't feelings or thoughts, and that an author's next book cannot be calculated from only the words of their previous books, etc.",
+    "AI in software development should be limited to security scans and maybe occasional bug-fixing. We'll have the best of all worlds: more secure code bases, happier & not unemployed developers, human understanding of what the code does, and far less money for companies that are hijacking our future by developing a god-like artificial super-intelligence.",
+    "> Is it an issue? you could think that in the long term it'll beThis raises alarm bells. It's a deeply unserious take on software development that I hope doesn't spread (but I know will). YOLO it all.We absolutely will regret the slop AI, as it will become load-bearing (ahem) in short order. There will be critical outages and people will die.",
+    "You want to reduce lines of code? Next you'll be trying to reduce the number of PRs, then what will you use for productivity metrics?",
+    "thanks. I guess the problem is more acute in larger codebases, where the code AI writes takes \"inspiration\" from existing human-written code (i.e. conforms to earlier human opinions), so it doesn't go out of its way to write meaningfully verifiable new code - because that would stick out like a sore-thumb in a code-review.Writing modular, verifiable code was always an engineering tenet - but the use of AI in codebases that ignored those foundations ends up having several gaps.",
+    "LLMS definitely improve but it's the model updates.Teams are often hierarchical where the leaders define everything and people under them have less things to say about it. Not much different than an LLM team."
+   ],
+   "summary_ko": "AI를 활용한 코딩이 장기적으로 취약하고 유지보수가 어려운 코드베이스를 양산한다는 우려가 제기됐다. 일부는 테스트 코드 추가나 엄격한 모듈화로 극복할 수 있다고 보지만, AI가 쓴 코드가 기술 부채로 돌아올 것이라는 비판에 무게가 실린다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -500,7 +596,7 @@
    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
    "discussion": "https://news.ycombinator.com/item?id=50413822",
    "points": 189,
-   "comments": 213,
+   "comments": 214,
    "r": 1.13,
    "at": "2026-11-08",
    "topics": [],
@@ -516,25 +612,11 @@
    "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
    "discussion": "https://news.ycombinator.com/item?id=50421426",
    "points": 113,
-   "comments": 121,
-   "r": 1.07,
+   "comments": 124,
+   "r": 1.1,
    "at": "2026-11-09",
    "topics": [],
    "story_key": "url:stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-   "_comments": [
-    "I don't see why that would make a difference. A lot of my prompts are stuff like \"Tune tok/s. Change one thing at a time, check 2nd step speed to decide how long to sleep, treat it as multi armed bandit\". This burns tokens doing many turns trying stuff and fixing whatever breaks. At the end I get a table of the 100 combinations it tried with confidence intervals for each and a small patch with the 5 new settings that together doubled speed.",
-    "Because if you spend 50k per year per employee but see a return on that investment you would keep spending.You cut it when you have evidence that it was wasteful.",
-    "Please point me to a tool that does the following:- Emits normal PPTX- Can import any PPTX- Representation can easily be edited by an LLM- Handles most PPTX features -- rich text, transforms, charts/tables, images- Can be templatedThings I tried:- python-pptx, PptxGenJS- Marp- Google Slides + Google Sheets + Google AppScript",
-    "Techie types seem particularly susceptible to spending massive effort re-inventing things that have already existed for a while.See also, Matt Levine’s recurring joke about the crypto community constantly re-inventing/re-discovering the need for financial regulations that the larger finance industry have had for a while.",
-    "> what's the business value for something like this?We already generated slide decks from a template. The decks generated were consistently missing data, incorrectly formatted, and required many manual edits.This led to hiring contractors to fix up the decks before being sent internally before being presented to clients.So, thousands of contractor hours every year going towards fixing up decks in additional to the engineering effort from ~5 bugs each month due to bugs in the deck or feature gaps.> Then they use tool a few times and ultimately forget about it or throw it away.This is a running production service> More time gets spent tweaking/iterating with the LLM than it would take to make ",
-    "LLMs are so cool.It's kinda like commuting in the autobahn with a Porsche.Some agentic madness is like doing donuts in the parking lot drinking beer impressing the local baddies.So, so much fun. But at the end of the day we used to get so much more done with much, much less computer power, energy, mental drain.It's always more software tooling, more moving parts, more apps, more more more. Fun. Looks neat. Used sooo much energy, I feel so drained. It was fun.But at the end of the day, for the long run what I want in my life is to win at rally on a dependable machine with a nice navigator I'm friends with. Or have a shed full of tractors making money for my family on the farm everyday.LLMs ar",
-    "Token-maxxing aside, what's the business value for something like this? Slide-deck generators have been around for a long time already. And at least for me, the LLM-authored decks I've created have always needed tweaking / editing to really make sure the content is useful and correct.At my company at least, I think our developers waste a ton of labor and money on getting LLMs to produce tools like this. Then they use tool a few times and ultimately forget about it or throw it away. At the end, they've spent a few hundred dollars on frontier tokens for the effort.More time gets spent tweaking/iterating with the LLM than it would take to make the decks by hand. And sharing takes effort, so our",
-    "when I still had access to flat rate seats at work (I think equivalent to the consumer 200/mo) I was at estimated ~8000-ish/month api costs at 100% usage, which is 400/workday. This with maxing out the 50% fable usage and using opus for the rest, usually 1-3 concurrent sessions.Having moved to api billing (where my spend is not allowed to be nowhere near that high), I think that estimate was conservative and I wouldn't be surprised if it was more like 500/workday equivalent.I am glad I was able to do a lot of experimenting and learning while we were on flat rate, and I am surprised a lot of coworkers did not take advantage while they could.",
-    "As an example earlier this year I wrote a program to:- Convert PPTX to TypeScript- Allow editing of that TypeScript via an LLM interface- Convert TypeScript to PPTXThe intent was to create slide deck templates via code. The first step was to convert our existing templates to this new format.So I had it write a harness, gave them problem to Opus, and a couple thousand dollars later the import/export worked near perfectly.",
-    "I don’t agree. You should be empowering your engineers. A higher budget allows them to:- freely experiment and understand the limitations of AI- create things outside of what they are officially expected toI’m not advocating for people who burn tokens for the sake of it. But I do think a single engineer has more potential for impact today than ever before and a high budget unlocks that.It also isn’t _that_ much more when a fully loaded mid-level engineer is costing you $300k+",
-    "You caught me. I would guess though, that at the end user/retail level, more money is spent on lottery tickets than AI subscriptions. Does that work better?",
-    "> That's why those plans are only available to small companies with 150 employees or less.As far as I can tell, that's not the limit. A team plan may not have more than 150 members but the size of the company doesn't matter. I you have 150 people who need to use it inside an organization of 200, 500, 5,000, whatever, that's fine."
-   ],
    "summary_ko": "애플이 엔지니어들의 일일 AI 사용 예산을 200달러로 제한한 조치를 두고 논쟁이 벌어졌다. 무분별한 토큰 낭비를 막고 비용 대비 효율을 검증하려는 합리적인 조치라는 시각과, 직원들의 자율적인 실험과 혁신을 가로막는 과도한 통제라는 비판이 맞섰다.",
    "is_event": true,
    "kr_query": "애플 엔지니어 AI 예산 제한",
@@ -561,11 +643,41 @@
   },
   {
    "layer": "hn",
+   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "discussion": "https://news.ycombinator.com/item?id=50435660",
+   "points": 175,
+   "comments": 153,
+   "r": 0.87,
+   "at": "2026-11-10",
+   "topics": [],
+   "story_key": "url:cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "_comments": [
+    "> Again, \"inference has high gross margins\" and \"training is extremely expensive\" can both be true at the same time.The problem I have with this is that the claim that \"inference has high gross margins\" is paraded around as something that automatically makes all this make sense.My concern here is something that you described with more nuance, the cost of training cannot just set aside as if it doesn't need to be recovered. R&D makes sense if we consider that research and development eventually gets to a model that doesn't need to be trained anymore, and can be served at relatively low cost indefinitely. Otherwise the constant need to train new models needs to be taken into account; you can o",
+    "> Chinese Communist Party, guide us to Capitalism?Yes please.> capitalists can learn how to redistributeBy that measure, the West hasn't been capitalist since Roosevelt. Which would be accurate btw.",
+    "Is Mexico stable enough to house very expensive and easily stolen GPUs (or whatever we call them now)?",
+    "> what happens every time communists seize power: everyone will get poorer, because they will be outcompeted by more sane jurisdictions, eg China.Chinese Communist Party, guide us to Capitalism?If the communists can learn how to use markets, capitalists can learn how to redistribute. It's not impossible, we did it 100 years ago last time capitalism drunk-drove the world economy into a ditch, I just hope we can do it without a Great Depression and World War this time.",
+    "There are only two possible reasons:1. Humans are searching less on Google.2. Humans get the answer from Google AI answers at the top, which means AI is better at finding what the human wanted than traditional Google search results.Both are bad for Google.",
+    "i don't think it is. when you sell something you take into account the production cost associated. you don't have inference without the model production cost.",
+    "It doesn't fit agriculture, but yes, there is a legitimate argument that you could treat model training like TV and movie production costs.Under US GAAP, production costs are capitalized when they're incurred and then amortized into cost of revenue over the period when the content actually earns revenue. Because content usually earns more revenue early and then tapers off, the amortization is usually front-loaded.The one problem with this is that not all training actually goes into what's sold to customers. There are experiments, failed runs, various studies, etc. So you would need to come up with a way to cost only the final production run (and perhaps post-training) to come up with a numbe",
+    "There's one problem with your comment: \"cost of goods sold\" is a basic accounting metric for which there is a definition. It's not arbitrary at all.A company selling potatoes would not include land in COGS. Land is a a fixed asset. Even if a farm rented/leased the land, the payments would fall under OpEx, not COGS.Seeds, pesticide/fungicide/herbicide, direct labor, water and electricity for irrigation, etc. would all be COGS.Would it make sense to spend $1 billion on land to grow $1 million worth of potatoes every year? Probably not. But that doesn't mean you couldn't sell potatoes on your $1 billion land at a positive gross margin if revenue exceeded COGS.This is the AI debate that is impos",
+    "Oracle have non Ai revenue ... CoreWeave's non Ai revenue would be in the 10s millions against debt in the 10s of billions.",
+    "I'm regularly using thousands of dollars worth of tokens for a flat fee of $200. Their API margins may be good, but not that good. This is below cost. Therefore, if tokens are so scarce, so valuable, in such high demand, why are they still handing out such generous packages? Clearly there must be enough excess capacity to run this advertising campaign, and clearly the advertising campaign must be deemed necessary to maintain the belief in massive future demand growth.",
+    "> They are when they say that inference is incredibly profitable. It is incredibly profits exist only when you pretend that models have 0 cost to be created (since they are a digital asset that can't depreciate), and R&D is a imaginary thing that exists only as a fixed cost of doing business that doesn't need to be recovered.Expensing the cost of training a model isn't treating it as free. The whole cost is charged to the income statement the year it's incurred, which is actually faster than depreciation would ever recognize it. Calling something R&D does not make the cost \"imaginary\". It means the cost is counted. It's just not in gross margin.We are actually asking the same basic question ",
+    "But a large reason for the price increase has been because companies have been hoarding them in warehouses as they wait for DC buildout. If you sell then you remove that pressure and prices decrease."
+   ],
+   "summary_ko": "AI 인프라 투자를 위한 자금 조달 과정에서 신용 경색 우려와 함께 AI 모델 훈련 비용을 매출총이익 산정 시 어떻게 회계 처리해야 할지 갑론을박이 이어졌다. 추론 마진의 높고 낮음을 떠나 천문학적인 훈련 비용을 지속해서 감당할 수 있는지에 대해 회의적인 시각이 적지 않다.",
+   "is_event": true,
+   "kr_query": "코어위브 AI 채권 금리",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Statement from Nvidia board of directors",
    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
    "discussion": "https://news.ycombinator.com/item?id=50416801",
    "points": 490,
-   "comments": 406,
+   "comments": 407,
    "r": 0.83,
    "at": "2026-11-08",
    "topics": [
@@ -604,28 +716,18 @@
    "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "discussion": "https://news.ycombinator.com/item?id=50431144",
-   "points": 313,
-   "comments": 230,
-   "r": 0.73,
+   "points": 355,
+   "comments": 255,
+   "r": 0.72,
    "at": "2026-11-09",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:artificialanalysis.ai/models/claude-fable-5-2",
-   "_comments": [
-    "I ask Opus and Sol to dig me a ditch, and they build an international airport.The difference is the Opus API cost is $1200, and Sol charges $50, and finished in about 6 hours less.Is the Opus airport better? Maybe, possibly, but I'm a lot less annoyed with Sol because I can correct course a lot quicker.Plus Sol's prose is substantially less obnoxious.",
-    "Using DS-Flash is like using local models that use all your hardware.It's fine for slow tasks but if you need something done quickly, I find that DS just spents at lot of time thinking.After using Claude for the first time for about 2 weeks, I've been impressed by the quality and speed of Sonnet 5.5 to do code changes (~20 seconds). Meanwhile DS would have taken 2-5 minutes.",
-    "If you think llm usage provide that much value I got a bridge in Brooklyn to sell you.. Their main value is as a tool for wage theft (which im cool with, jusy recognize it), so lazy people can cheat at their jobs and get by doing less. Basically every RFH engineer admits this to me. Work two hours, company pays for 8 plus a tool that does mediocre work, that everyone else has access too and thus provides no edge.Fable class models are for people who fall for cheap marketing and are lazy and think they can now bypass a meritocracy and buy themselves competency. Really they'll just continue to be lazy, and the people with more competency will run circles around them with 1/10th the amount or l",
-    "The llm induced Dunning Kruger is getting really old.You dont need Fable to do most things. Your video game is still a \"CRUD\" app and you certainly wont make a great video game because you have access to fable. But marketing works well, people actually believe they can buy competency for themselves.It hasnt eliminated the barrier to hacking. Please go find me a valid crit on any program on h1 with your fable 5.2 within the next 3 days, Ill bet my entire life savings it can't, and if you did it would cost 3x the bounty. You've been reading too much engagement farming articles/postsSecurity has always been highly important, not any more than it is now. Companies are not going to suddenly start",
-    "It’s my understanding this model has even fewer of those than the models with higher cost per successful task.As a result, a simple “cost per task” metric makes the most sense to use for me, when paired with the eval scores.",
-    "Claude dollars just seem to go further on the subscription. Opus just gets more done at good quality. I have both subscriptions @ $200 and use them a lot",
-    "That is the exact \"your subscription buys this much in tokens at API pricing\" kind of analysis that I mentioned. Which is one way to look at it, but it ignores the 2x pricing difference, and the token efficiency difference.Per task, Opus 5.5 costs ~6x of Sol 6.1. Then you add on the lack of a 5-hour limit, no limit on which models (like Fable's 50% of usage limit) you can use, very frequent resets, and that OpenAI doubled the usage limits after that analysis was performed.Even though the Claude subscription is equivalent to 5x the $ value of API priced tokens, it seems like Codex is the better value for getting things done.https://artificialanalysis.ai/?models=claude-fable-5-2-high%...",
-    "They publish their methodology here:https://artificialanalysis.ai/methodologyIf they published their private benchmarks the Chinese labs would simply train on the data to make it look like they are close to the frontier and anyone who uses them regularly knows they are far, far behind and always have been.It's not perfect. But it's the best we have. You are welcome to provide a better source.",
-    "They have it at maxed out reasoning. Go into the dropdown and select high or medium, which are what people actually use. It's a decent bump while both being faster and costing less (per task).The worst thing about AA is defaulting to the highest reasoning value for everything.",
-    "The Semi-analysis analysis piece is quite good: https://newsletter.semianalysis.com/p/anthropic-subscription...There was some chatter on Twitter, Reddit and here when an earlier version of this came out where people normalized it by completed AA or Epoch task and Claude models still came out well ahead.In practice OpenAI subscriptions are more competitive than they appear because OpenAI does a lot more subscription resets. But that's hard to account for!Personally, for coding tasks I've found Sol 6.1 High is about as good as Opus 5.5 Medium for well defined tasks, but Opus is much better at orchestrating.I have both subscriptions, and when using Claude I use Opus Medium to orchestrate other ",
-    "I'm not sure I understand your complaint. The default reasoning effort for Fable on their harness is medium, not max. It also uses the latest version of Fable by default.So a standard user will see a ~10% performance bump, better reasoning, and an ~50% price drop. And they can just... use the old model if they want?How is that bad?",
-    "Very interested if you have any citations for how Claude subscriptions give \"much better value\". I've recently been researching this with mixed analysis.It seems like most analysis is basically \"how many tokens do you get with a subscription and how much would those tokens cost at API rates\". Looking at it that way, you do get more dollars of API equivalent usage for your subscription.But Anthropic's API pricing is a lot higher than OpenAI's (Opus 5.5 is 2x of GPT-6.1 Sol). The number of tokens consumed per completed task is also far higher than GPT-6. So when you look at the number of tasks you can complete within a subscription, OpenAI looks like a much better value.That is before you cons"
+   "trust": [
+    "Simon Willison"
    ],
+   "trust_match": "link",
    "summary_ko": "댓글에서는 클로드의 높은 API 비용과 토큰 효율성 문제를 지적하며 오픈AI나 타 모델과의 가성비를 비교하는 의견이 주를 이뤘다. 일각에서는 LLM이 실제 역량을 대체하지 못하며 마케팅에 불과하다는 회의적인 반응도 나왔다.",
    "is_event": false,
    "kr_query": "",
@@ -636,9 +738,9 @@
    "title": "How I'm fighting the AI brain fry",
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "discussion": "https://news.ycombinator.com/item?id=50416363",
-   "points": 303,
-   "comments": 211,
-   "r": 0.7,
+   "points": 307,
+   "comments": 212,
+   "r": 0.69,
    "at": "2026-11-08",
    "topics": [],
    "story_key": "url:sergeykuhne.com/blog/fighting-ai-brain-fry",
@@ -652,8 +754,8 @@
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "discussion": "https://news.ycombinator.com/item?id=50407882",
-   "points": 622,
-   "comments": 422,
+   "points": 623,
+   "comments": 424,
    "r": 0.68,
    "at": "2026-11-07",
    "topics": [
@@ -680,8 +782,8 @@
    "title": "The end of Microsoft Research's AI Frontiers group",
    "url": "https://hunch.net/?p=13764006",
    "discussion": "https://news.ycombinator.com/item?id=50406563",
-   "points": 509,
-   "comments": 309,
+   "points": 510,
+   "comments": 310,
    "r": 0.61,
    "at": "2026-11-07",
    "topics": [
@@ -698,8 +800,8 @@
    "title": "Goodbye Claude, hello Pi",
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "discussion": "https://news.ycombinator.com/item?id=50410107",
-   "points": 805,
-   "comments": 485,
+   "points": 808,
+   "comments": 488,
    "r": 0.6,
    "at": "2026-11-08",
    "topics": [
@@ -716,8 +818,8 @@
    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "discussion": "https://news.ycombinator.com/item?id=50415628",
-   "points": 885,
-   "comments": 475,
+   "points": 891,
+   "comments": 483,
    "r": 0.54,
    "at": "2026-11-08",
    "topics": [
@@ -734,7 +836,7 @@
    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
    "url": "https://github.com/synchopate/llama-modchip",
    "discussion": "https://news.ycombinator.com/item?id=50411961",
-   "points": 475,
+   "points": 481,
    "comments": 205,
    "r": 0.43,
    "at": "2026-11-08",
@@ -750,11 +852,45 @@
   },
   {
    "layer": "hn",
+   "title": "Muse Ember: Our smallest, most efficient model",
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "discussion": "https://news.ycombinator.com/item?id=50429024",
+   "points": 314,
+   "comments": 135,
+   "r": 0.43,
+   "at": "2026-11-09",
+   "topics": [],
+   "story_key": "url:research.meta.ai/blog/muse-ember",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "_comments": [
+    "Not just pelicans, but pelicans with commentary. simonw is accidentally running the world's least efficient hill climbing algorithm.",
+    "It actually goes the opposite way. Before we had translation models, summarization models, computer vision -- now one big llm does it all and better",
+    "Doesn't it, or do we not know the answer? I'd ask people to start adding elements to the picture and see how quickly the fish appears.There aren't that many associations left once we're primed with a bike and a pelican. It's like that old mental trick \"What's the colour of the clouds? What's the colour of the snow? What do cows drink?\"",
+    "It's not bragging, it's to make it clear to their users that it's in competition with Luna and Haiku.",
+    "Even now, after so many bicycles, none of them overlaps correctly the elements according to their 3D positions, so it is still very easy to distinguish the drawings done by an LLM from those done by any competent human.",
+    "But which effort level should I use for the decider model?(I think there's at least some evidence that it is difficult for decider models to predict the complexity of a task ahead of time with any level of reliability.)",
+    "You use a decider model which reads your prompt and picks the right reasoning level.",
+    "The models do all seem to converge in ways that, on occasion, wouldn’t seem obvious. But I suppose since they’re all products of the same core training data it’s inevitable that when they’re given the opportunity to fill in the blanks they come to the same conclusions. This seems to be true regardless of what modality you’re working with.If there isn’t a concerted effort against it the world is going to start to look and feel ever more homogenous.",
+    "This was true a year ago, but definitely not today. Their biggest models are pretty much at the frontier, and Glimmer is arguably the best non-Chinese model in the \"small\" weight class (see my hacky benchmark http://botbowlbench.com/)",
+    "The open version model card says it had extra safety post-training because meta can’t prefilter prompts with a classifier model if you’re running it on your own hardware. They don’t want to get sued I guess if it comes out that someone used their model irresponsibly or something",
+    "It feels like an antipattern to add so many reasoning levels as options. How am I as user reasonably going to choose between them?",
+    "> The shorter and vaguer a prompt you give to an LLM, the more it fills in further details using associations they've developed through training.I can see that for stuff like facing right because characters in images generally do face right, and roads generally do have dashed white line separators. But putting a fish in a basket seems like a stretch of creativity—one that I would rather it not make unless prompted to—so it's surprising that every single model now seems to insist on it."
+   ],
+   "summary_ko": "신규 소형 모델 공개와 함께 AI 모델들이 점점 비슷해져 가면서 결과물이 획일화되고 있다는 지적이 나왔다. 복잡한 프롬프트에서 이미지 생성이나 추론 수준을 결정하는 별도의 디시전 모델 도입 방식을 두고 사용자 경험 측면에서 장단점 의견이 갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
    "url": "https://ketchup3d.github.io/app/",
    "discussion": "https://news.ycombinator.com/item?id=50418176",
-   "points": 735,
-   "comments": 225,
+   "points": 746,
+   "comments": 228,
    "r": 0.31,
    "at": "2026-11-08",
    "topics": [
@@ -766,16 +902,72 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Google Gemini routes personal Drive files and emails to human annotators",
+   "url": "https://github.com/thisisme6598/gemini_files/",
+   "discussion": "https://news.ycombinator.com/item?id=50429426",
+   "points": 653,
+   "comments": 139,
+   "r": 0.21,
+   "at": "2026-11-09",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:thisisme6598/gemini_files",
+   "_comments": [
+    "I wonder what the various EU information commissioners responsible for GDPR think.",
+    "I just use a wireguard VPN with a domain name I already had and DDNS configured, what benefits does Tailscale bring for a situation where only a couple of devices need access?",
+    "It is, actually. It's the first step of a 3-2-1 backup strategy. For most people, this is a massive, huge improvement by itself.I wouldn't recommend rsync though, better something that can allow you to get back files you deleted before the last backup.",
+    "> This data is used to create personal insights about you, your relationships, and the people and things in your world.From what we found out about a few days ago, Apple Intelligence does the same thing on your device using your data without any consent prompt.At least they claim the associations never leave your device, while Google is cloud-first.",
+    "> Important: Please don't connect your apps to Gemini Apps if they contain confidential information that you wouldn’t want a reviewer to see.But also we will keep pestering you to allow access to all your emails and files. Like why would anything in my gmail be non confidential, its not a message board.",
+    "https://support.google.com/gemini/answer/16836988> How your data is used> This data is used to create personal insights about you, your relationships, and the people and things in your world. For example, depending on your settings, your Google Photos data is used to infer your interests, relationships to people in your photos, and where you've been, including by associating your face with corresponding location data and timestamps. This data is also used to do things for you, like look up your info or add items to your grocery list, and to improve Google services, including training generative AI.https://support.google.com/gemini/answer/16836988#common_que...> How your Connected Apps data i",
+    "In my perspective the interconnection between all their services paired with lingering danger of all encompassing ban in case of perceived misuse is serving as big deterrent - I won't be trying any Gemini or AI offer from them because I don't want to have all my accounts banned without recourse in case of for example some incorrectly interpreted \"cyber\" usage.",
+    "I like Ente. It's cloud photos storage but e2e encrypted.But if you have them already on your server then just some tailscale/wireguard perhaps might work for you.",
+    "It's really not though. It has become 1 click to install a self hosted google photos/drive. We just need people to be more aware of the alternatives",
+    "Google has been doing this kind of shady, privacy destroying, stuff for forever, this has little to do with AI and everything to do what a bad company google is.",
+    "Thank you so much for sharing this. I got tired of denying the popup that Google shows you almost every other time to use Google Search (AI mode shows up by default) and Gemini. Eventually I relented and clicked allow just to stop getting the notification. I spent the last 30 minutes reviewing and undoing that.Please note - I had to disconnect connected apps from both the Gemini App and Google search separately. They don't share settings. Just Google things I guess.I look forward to stop using more and more Google products and shift to alternatives completely.",
+    "Morbidly amusing to see the tech giants reinvent the Mechanical Turk from first principles."
+   ],
+   "summary_ko": "댓글에서는 구글이 제미나이를 통해 개인 드라이브 파일과 이메일을 수집하고 사람 검토자에게 노출하는 방식에 대해 강한 우려를 표명하고 있다. 특히 GDPR 위반 가능성이나 프라이버시 침해 문제를 지적하는 의견이 많았으며, 애플 인텔리전스 등 다른 빅테크의 유사한 관행을 비판하거나 구글 계정 사용을 중단하겠다는 반응이 이어졌다.",
+   "is_event": true,
+   "kr_query": "구글 제미나이 개인정보 수집 사람 검토자",
+   "kr": [
+    {
+     "t": "오픈AI o3 발표, 구글 제미나이 2.0에 대한 대답",
+     "u": "https://slownews.kr/124665",
+     "d": "Mon, 23 Dec 2024",
+     "why": [
+      "구글",
+      "제미나이"
+     ]
+    }
+   ]
   }
  ],
  "reddit_top": [
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Is ArtificialAnalysis biased against open weight models?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
+   "rank": 1,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "More interesting and unusual Qwen3.5-4B neurons",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrydgx/more_interesting_and_unusual_qwen354b_neurons/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrydgx/more_interesting_and_unusual_qwen354b_neurons/",
-   "rank": 1,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -788,40 +980,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "L11 N8147 is a neuron that will make Qwen-3.5-4B get things confidently wrong while being weirdly snarky... But also makes it write interesting poetry",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xrkomn/l11_n8147_is_a_neuron_that_will_make_qwen354b_get"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Is ArtificialAnalysis biased against open weight models?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Got another good reminder why local matters today",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs3y17/got_another_good_reminder_why_local_matters_today/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs3y17/got_another_good_reminder_why_local_matters_today/",
-   "rank": 4,
+   "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -835,7 +997,7 @@
    "title": "From the finest minds of our age to the dumbest monkeys on the planet",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs0izk/from_the_finest_minds_of_our_age_to_the_dumbest/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs0izk/from_the_finest_minds_of_our_age_to_the_dumbest/",
-   "rank": 5,
+   "rank": 4,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -849,7 +1011,7 @@
    "title": "Muse Ember: Zuck promised to open source muse spark 1.2 but continues to release to more closed models",
    "url": "https://artificialanalysis.ai/models/muse-ember",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs0qmx/muse_ember_zuck_promised_to_open_source_muse/",
-   "rank": 6,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -862,10 +1024,40 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Fable 5.2 not only has guardrails against AI acceleration, its capabilities were capped in training too",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai/",
+   "rank": 6,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Same prompt, DeepSeek V4.1 Flash vs Qwen 3.8 FN: 94 tok/s vs 350 tok/s",
+   "url": "https://basalt.jgulfo.com/showcase/v8-engine/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs7ffm/same_prompt_deepseek_v41_flash_vs_qwen_38_fn_94/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:basalt.jgulfo.com/showcase/v8-engine"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Drummer's Orion 26B A4B v1 and v1.1! ... Plus a new project from yours truly.",
    "url": "https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xruzry/drummers_orion_26b_a4b_v1_and_v11_plus_a_new/",
-   "rank": 7,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -876,10 +1068,26 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Qwen 3.8 FN getting stressed from messing up",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "ConceptCountry/qwen-concept-27b · Hugging Face",
    "url": "https://huggingface.co/ConceptCountry/qwen-concept-27b",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrxwg1/conceptcountryqwenconcept27b_hugging_face/",
-   "rank": 8,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -895,45 +1103,13 @@
    "title": "meituan-longcat/LongCat-2.5 · Hugging Face",
    "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xrsptp/meituanlongcatlongcat25_hugging_face/",
-   "rank": 9,
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
    "story_key": "hf:meituan-longcat/longcat-2.5"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Qwen 3.8 FN getting stressed from messing up",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xs2okh/qwen_38_fn_getting_stressed_from_messing_up"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Same prompt, DeepSeek V4.1 Flash vs Qwen 3.8 FN: 94 tok/s vs 350 tok/s",
-   "url": "https://basalt.jgulfo.com/showcase/v8-engine/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xs7ffm/same_prompt_deepseek_v41_flash_vs_qwen_38_fn_94/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:basalt.jgulfo.com/showcase/v8-engine"
   },
   {
    "layer": "reddit",
@@ -968,25 +1144,25 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "I fine-tuned a 2B decision model to play Doom on my Mac in 43 minutes (open source, MLX)",
-   "url": "https://github.com/armbues/mlx-decision",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xryvbg/i_finetuned_a_2b_decision_model_to_play_doom_on/",
+   "title": "Decision model to edit LLM weight directly - No training",
+   "url": "https://www.kaggle.com/code/nandakishorconvai/fast-edits-decsion-model",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xski9d/decision_model_to_edit_llm_weight_directly_no/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [
-    "안전·거버넌스"
+    "모델릴리스"
    ],
-   "story_key": "gh:armbues/mlx-decision"
+   "story_key": "url:kaggle.com/code/nandakishorconvai/fast-edits-decsion-model"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Weight-space programming: editing Qwen3.5 into a top decision model",
-   "url": "https://opper.ai/blog/jevlar-weight-space-programming",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xruwlf/weightspace_programming_editing_qwen35_into_a_top/",
+   "title": "Qwen3.8-Flash-Next: Have you tried swapping the ngrams as per their latest version?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbmbx/qwen38flashnext_have_you_tried_swapping_the/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbmbx/qwen38flashnext_have_you_tried_swapping_the/",
    "rank": 15,
    "points": 0,
    "comments": 0,
@@ -995,7 +1171,7 @@
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:opper.ai/blog/jevlar-weight-space-programming"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xsbmbx/qwen38flashnext_have_you_tried_swapping_the"
   }
  ],
  "quiet_important": [
@@ -1004,19 +1180,84 @@
    "title": "Claude Fable 5.2 and Mythos 5.2",
    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "discussion": "https://news.ycombinator.com/item?id=50429068",
-   "points": 324,
-   "comments": 671,
-   "r": 2.07,
+   "points": 692,
+   "comments": 856,
+   "r": 1.24,
    "at": "2026-11-09",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:anthropic.com/claude-fable-and-mythos-5-2",
    "trust": [
+    "AI Supremacy",
     "Simon Willison"
    ],
    "trust_match": "link",
    "summary_ko": "신규 모델의 성능과 효율성에 대해 개발자들 간에 평가가 엇갈렸다. 복잡한 추론 작업에서 더 직관적이고 깔끔한 결과를 보여준다는 긍정적인 의견과 함께, 여전히 정교한 구현이나 디버깅에는 기존 모델과 병행해 검증이 필요하다는 신중론이 공존했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+   "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+   "discussion": "https://news.ycombinator.com/item?id=50418016",
+   "points": 964,
+   "comments": 1241,
+   "r": 1.29,
+   "at": "2026-11-08",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nvidianews.nvidia.com/news/a-message-to-our-company",
+   "trust": [
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
+   "summary_ko": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+   "discussion": "https://news.ycombinator.com/item?id=50431144",
+   "points": 355,
+   "comments": 255,
+   "r": 0.72,
+   "at": "2026-11-09",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:artificialanalysis.ai/models/claude-fable-5-2",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 클로드의 높은 API 비용과 토큰 효율성 문제를 지적하며 오픈AI나 타 모델과의 가성비를 비교하는 의견이 주를 이뤘다. 일각에서는 LLM이 실제 역량을 대체하지 못하며 마케팅에 불과하다는 회의적인 반응도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Muse Ember: Our smallest, most efficient model",
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "discussion": "https://news.ycombinator.com/item?id=50429024",
+   "points": 314,
+   "comments": 135,
+   "r": 0.43,
+   "at": "2026-11-09",
+   "topics": [],
+   "story_key": "url:research.meta.ai/blog/muse-ember",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "신규 소형 모델 공개와 함께 AI 모델들이 점점 비슷해져 가면서 결과물이 획일화되고 있다는 지적이 나왔다. 복잡한 프롬프트에서 이미지 생성이나 추론 수준을 결정하는 별도의 디시전 모델 도입 방식을 두고 사용자 경험 측면에서 장단점 의견이 갈렸다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -1027,9 +1268,9 @@
    "layer": "hf",
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 854,
-   "likes": 1658,
-   "downloads": 24747,
+   "trending": 896,
+   "likes": 1754,
+   "downloads": 26470,
    "topics": [
     "모델릴리스"
    ],
@@ -1039,9 +1280,9 @@
    "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 844,
-   "likes": 1067,
-   "downloads": 11755,
+   "trending": 884,
+   "likes": 1123,
+   "downloads": 14378,
    "topics": [
     "모델릴리스"
    ],
@@ -1051,9 +1292,9 @@
    "layer": "hf",
    "title": "moonshotai/Kimi-K3.1-Pro",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-   "trending": 591,
-   "likes": 1803,
-   "downloads": 27926,
+   "trending": 602,
+   "likes": 1828,
+   "downloads": 30721,
    "topics": [
     "모델릴리스"
    ],
@@ -1063,9 +1304,9 @@
    "layer": "hf",
    "title": "ricursiveAI/Ripple-65B-Preview",
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-   "trending": 440,
-   "likes": 458,
-   "downloads": 5835,
+   "trending": 451,
+   "likes": 469,
+   "downloads": 6480,
    "topics": [
     "모델릴리스"
    ],
@@ -1075,9 +1316,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 392,
-   "likes": 11280,
-   "downloads": 2720096,
+   "trending": 391,
+   "likes": 11312,
+   "downloads": 2791606,
    "topics": [
     "모델릴리스"
    ],
@@ -1087,9 +1328,9 @@
    "layer": "hf",
    "title": "NousResearch/Arete-27B",
    "url": "https://huggingface.co/NousResearch/Arete-27B",
-   "trending": 355,
-   "likes": 370,
-   "downloads": 2407,
+   "trending": 365,
+   "likes": 380,
+   "downloads": 3431,
    "topics": [
     "모델릴리스"
    ],
@@ -1099,9 +1340,9 @@
    "layer": "hf",
    "title": "ccore/Qwen3.5-4B-3D-Coder",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 349,
-   "likes": 955,
-   "downloads": 289466,
+   "trending": 350,
+   "likes": 966,
+   "downloads": 319405,
    "topics": [
     "모델릴리스"
    ],
@@ -1111,9 +1352,9 @@
    "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 342,
-   "likes": 2786,
-   "downloads": 1530688,
+   "trending": 348,
+   "likes": 2808,
+   "downloads": 1459029,
    "topics": [
     "모델릴리스"
    ],
@@ -1123,9 +1364,9 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 321,
-   "likes": 19499,
-   "downloads": 7508158,
+   "trending": 322,
+   "likes": 19533,
+   "downloads": 7443748,
    "topics": [
     "모델릴리스"
    ],
@@ -1133,24 +1374,33 @@
   },
   {
    "layer": "hf",
-   "title": "LiquidAI/LFM3-1.7B",
-   "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-   "trending": 257,
-   "likes": 1575,
-   "downloads": 78750,
+   "title": "webAI-Official/TwIL-8B",
+   "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+   "trending": 263,
+   "likes": 269,
+   "downloads": 43175,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:liquidai/lfm3-1.7b"
+   "story_key": "hf:webai-official/twil-8b"
   }
  ],
  "new_repos": [
   {
    "layer": "github",
+   "title": "IainKay/ram-altman",
+   "desc": "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI.",
+   "url": "https://github.com/IainKay/ram-altman",
+   "stars": 1659,
+   "topics": [],
+   "story_key": "gh:iainkay/ram-altman"
+  },
+  {
+   "layer": "github",
    "title": "DIYgod/pinky",
    "desc": "Let AI agents use your phone, with you in the loop.",
    "url": "https://github.com/DIYgod/pinky",
-   "stars": 1494,
+   "stars": 1615,
    "topics": [
     "에이전트"
    ],
@@ -1158,19 +1408,10 @@
   },
   {
    "layer": "github",
-   "title": "IainKay/ram-altman",
-   "desc": "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI.",
-   "url": "https://github.com/IainKay/ram-altman",
-   "stars": 1489,
-   "topics": [],
-   "story_key": "gh:iainkay/ram-altman"
-  },
-  {
-   "layer": "github",
    "title": "voyager-so/vork",
    "desc": "Headless 3D and VFX engine for agents. Research preview.",
    "url": "https://github.com/voyager-so/vork",
-   "stars": 1302,
+   "stars": 1341,
    "topics": [
     "에이전트"
    ],
@@ -1181,26 +1422,60 @@
    "title": "JosssphZhou/poki",
    "desc": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
    "url": "https://github.com/JosssphZhou/poki",
-   "stars": 790,
+   "stars": 875,
    "topics": [
     "에이전트",
     "보안·사고"
    ],
    "story_key": "gh:josssphzhou/poki"
-  },
-  {
-   "layer": "github",
-   "title": "majorminorlabs/hermes-voice",
-   "desc": "Talk to a Hermes Agent profile through Home Assistant Assist",
-   "url": "https://github.com/majorminorlabs/hermes-voice",
-   "stars": 625,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:majorminorlabs/hermes-voice"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+   "at": "2026-11-10T07:28",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/10/muse-ember",
+   "link_keys": [
+    "gh:simonw/185cff7ff0b11379725abf7f78d5d2b2",
+    "url:llm-prices.com/",
+    "url:research.meta.ai/blog/muse-ember",
+    "url:tools.simonwillison.net/markdown-svg-renderer"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Quoting Prompting Claude Fable 5.2",
+   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+   "at": "2026-11-10T05:34",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
+   "link_keys": [
+    "url:platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Yonkers Rises",
+   "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+   "at": "2026-11-10T03:53",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/10/yonkers-rises",
+   "link_keys": [
+    "url:claude.ai/share/97443910-2e0a-4e17-9b9e-11d14d8ff65c",
+    "url:tools.simonwillison.net/yonkers-rises"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1214,6 +1489,7 @@
    "link_keys": [
     "gh:simonw/llm-anthropic",
     "url:anthropic.com/claude-fable-and-mythos-5-2",
+    "url:artificialanalysis.ai/models/claude-fable-5-2",
     "url:tools.simonwillison.net/markdown-svg-renderer"
    ],
    "is_roundup": false
@@ -1479,71 +1755,8 @@
     "gh:sponsors/simonw"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm 0.37",
-   "url": "https://simonwillison.net/2026/Nov/2/llm/",
-   "at": "2026-11-02T23:49",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/2/llm",
-   "link_keys": [
-    "gh:simonw/llm",
-    "url:deepmind.google/models/gemini/embedding",
-    "url:github.com/0d00ciallo0721",
-    "url:github.com/Pajimo",
-    "url:github.com/ac1982",
-    "url:github.com/allenflux",
-    "url:github.com/bianyh",
-    "url:github.com/chrikrah",
-    "url:github.com/er-s-an",
-    "url:github.com/ethanstoner",
-    "url:github.com/feiiiiii5",
-    "url:github.com/nosmile99",
-    "url:github.com/porkedchop",
-    "url:github.com/sharatchandrasai999-sketch",
-    "url:llm.datasette.io/en/stable/other-models.html"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "at": "2026-11-02T13:31",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
-   "link_keys": [
-    "url:apolloacademy.com/ai-adoption-rate-trending-down-for-large-companies",
-    "url:census.gov/hfp/btos/about",
-    "url:census.gov/hfp/btos/data",
-    "url:census.gov/hfp/btos/data_downloads",
-    "url:census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf",
-    "url:census.gov/hfp/btos/downloads/BTOS%20Content%20V5%20Core%20Round%203,%204.pdf",
-    "url:chatgpt.com/share/6ae89e86-8658-83e8-85fd-c4ef2d4f3b89",
-    "url:static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png",
-    "url:static.simonwillison.net/static/2026/BTOS-Content-V5-Core-Round-3-4.pdf",
-    "url:static.simonwillison.net/static/2026/Employment-Size-Class-Nov-1-2026-copy.xlsx",
-    "url:whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "If in doubt, delete the uv.lock file",
-   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
-   "at": "2026-11-01T23:24",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/1/delete-uv-lock-first",
-   "link_keys": [],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-10 04:32"
+ "enriched_at": "2026-11-10 13:09"
 }
