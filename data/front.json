@@ -1,52 +1,53 @@
 {
- "edition": "2026-11-11 07:45",
- "no": 99,
+ "edition": "2026-11-12 07:44",
+ "no": 100,
  "sources": {
-  "briefing": "2026-11-11",
-  "must": "2026-11-10 18:31",
-  "signal": "2026-11-11 05:20"
+  "briefing": "2026-11-12",
+  "must": "2026-11-11 18:31",
+  "signal": "2026-11-12 05:03"
  },
  "links": {
-  "briefing": "https://hong4137.github.io/briefing/archive/2026-11-11.html",
+  "briefing": "https://hong4137.github.io/briefing/archive/2026-11-12.html",
   "must": "https://hong4137.github.io/Must-News/"
  },
  "desk": {
-  "edited_at": "2026-11-11T07:45:01+09:00",
-  "applied": 21,
+  "edited_at": "2026-11-12T07:44:05+09:00",
+  "applied": 30,
   "notes": [
-   "반향 떼기: Anthropic IPO(art-0)에 붙은 'Goldman Sachs is pulling Claude Code', 클로드 미팅(art-5)에 붙은 'Goodbye Claude, hello Pi', 픽셀 태그(art-17)에 붙은 'Gemini가 드라이브 파일을 검수자에게' 글은 다른 사건이라 뗌",
-   "톱 유지: 젠슨 황 조사 건, 반향(황의 직원 서한 글)이 같은 사건. 🔁 표시 포함 40자 제목을 줄임",
-   "관련 기사: 구글 TPU·TSMC 매출은 황 스캔들과 다른 맥락이라 빼고 中 GPU 상인 반응(art-16)만 남김",
-   "1면 배치: 사이드 Ring 드론 대신 소프트뱅크 70억달러 적자(TOP)를 올림. 주요 기사 줄에서 앤트로픽이 사이드(IPO)와 겹치는 클로드 미팅·Fable 5.2 HN 글을 빼고 美 10년물 5%·TSMC 10월 매출을 올림",
-   "국내 톱: 넥슨 실적(1위, 실적 발표) → '엔비디아냐 AMD냐 기로에 선 K-반도체'(2위, 업계 구조 분석)",
-   "경제 일정: 코어위브 3분기 실적(11일 07:00)은 편집 시각(07:4x)에 이미 발표 시각이 지나 뺌",
-   "사진 확인 못함(접속 막힘): signal.sharktalk.co.kr (톱·사이드 3·TSMC·일러스트 2), iprsoftwaremedia.com (국내 톱·주요 기사 줄 엔비디아 제공 사진 2)"
+   "톱 관련 기사 자동 결과(코어위브·알리바바 T-Head·중국 AI 인재)는 엔비디아 사건과 무관해 비웠다(related=[]). 같은 사건 외신 기사 없음.",
+   "반향 떼기: 알리바바 T-Head←'Nvidia board 성명', 앤트로픽 오피스 도구←'Gemini 4 Carbon 출시', Gemini 4 Carbon←'NASA 라이다 마야 피라미드', AlphaGenome 2←'Gemini 개인 파일 검수', 애플 포럼 폐쇄←'애플 로컬 AI 맥 앱' — 모두 다른 사건.",
+   "톱 반향(젠슨 황 사내 서한 HN)은 톱 기사의 CEO 스캔들 맥락과 같아 유지.",
+   "1면 배치: 사이드에 외신 TOP 'AI 신용위험 경고'를 올리고 메타 인사 기사를 내림. 사진이 있는 알리바바를 첫 칸으로.",
+   "1면 배치: 주요 기사 줄에서 HN 'Claude Fable 5.2'와 앤트로픽 오피스 도구를 내리고 오픈AI 분기 매출·Gemini 4 Carbon을 올림 — 국내 톱(앤트로픽 유출 조사)과 같은 회사가 1면에 겹치지 않게.",
+   "사진 빼기: 코어위브 기사에 붙은 노트북 화면 자료사진(unsplash)은 기사와 무관.",
+   "경제 일정: 'MSCI 11월 정기 지수 변경 발표'(07:00)는 발행 시각(07:4x) 기준 이미 발표 끝나 뺐다.",
+   "사진 확인 못함(접속 막힘): iprsoftwaremedia.com(톱 엔비디아 사진), signal.sharktalk.co.kr(자체 라이브러리·일러스트)",
+   "국내 톱 기사 첫머리는 sharktalk.co.kr API로 확인."
   ]
  },
  "lead": {
   "kind": "cross",
-  "key": "2026-11-11#art-2",
-  "headline": "엔비디아, 젠슨 황 조사 로펌 선임…주주 소송까지",
-  "sub": "트럼프 \"FBI 조사 중\"…의회는 수출통제 강화론",
-  "deck": "엔비디아 이사회가 젠슨 황 CEO와 중국 스파이 의혹 인물의 관계를 조사하기 위해 뉴욕 대형 로펌 와크텔 립턴을 선임했다. 그사이 엔비디아와 황 CEO는 주주들로부터 증권 소송을 당했고, 트럼프 대통령은 FBI가 이 사안을 조사 중이라고 밝혔다. 하원 중국특위 존 물레나 위원장은 해명을 요구했고, 의회에서는 대중 반도체 수출 통제를 강화하자는 목소리가 커지고 있다. Wired는 황이 지난해부터 성 추문 대응 전문 PR 회사와 일해온 사실도 보도했다.",
-  "fact_src": "외신 브리핑 · BBC Featured, CNBC, Guardian, TechCrunch, Wired, SCMP 다매체 보도",
-  "fact_url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-2",
-  "orig_url": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go",
+  "key": "2026-11-12#art-12",
+  "headline": "엔비디아 법무총괄, 밀수 수사 개입 의혹…주가 5% 반등",
+  "sub": "베어드, CEO 불확실성 이유로 이례적 투자의견 하향",
+  "deck": "젠슨 황 CEO 스캔들로 급락했던 엔비디아 주가가 실적 발표를 앞두고 5% 반등했다. 그러나 블룸버그는 엔비디아 법무총괄이 Megaspeed International의 AI 칩 밀수 의혹에 대한 미국 정부 수사에 개입했다고 보도해, 대중 수출 통제 위반 수사에 회사가 영향력을 행사할 수 있었는지라는 새 의문을 던졌다. 베어드는 CEO 불확실성을 이유로 이례적으로 투자의견을 하향했고, 직원들은 사내 분위기를 '슬프다'고 전했다.",
+  "fact_src": "외신 브리핑 · CNBC Featured, Bloomberg",
+  "fact_url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-12",
+  "orig_url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
   "img": {
-   "src": "https://signal.sharktalk.co.kr/photos/jensen_huang2-01.webp",
-   "sm": "https://signal.sharktalk.co.kr/photos/jensen_huang2-01.webp",
-   "alt": "젠슨 황 엔비디아 최고경영자",
-   "nr": "Anderseidesvik · CC BY-SA 4.0",
-   "credit": "Anderseidesvik · CC BY-SA 4.0",
-   "credit_url": "https://commons.wikimedia.org/wiki/File:Jensen_huang_stanford_2026-04-30_008.jpg",
-   "person": "jensen_huang"
+   "src": "https://iprsoftwaremedia.com/219/files/20224/6296531eb3aed3741918b6b5_DH1L4415-HDR-20220527-r5/DH1L4415-HDR-20220527-r5_dba29dde-5a9b-4ac8-bf58-a0b78da89547-prv.jpg?v=dba29dde-5a9b-4ac8-bf58-a0b78da89547",
+   "sm": "https://iprsoftwaremedia.com/219/files/20224/6296531eb3aed3741918b6b5_DH1L4415-HDR-20220527-r5/DH1L4415-HDR-20220527-r5_dba29dde-5a9b-4ac8-bf58-a0b78da89547-prv.jpg?v=dba29dde-5a9b-4ac8-bf58-a0b78da89547",
+   "alt": "엔비디아 본사 보이저 사옥 태양광 캐노피 아래 로고 사인",
+   "nr": "엔비디아 제공",
+   "credit": "엔비디아 제공",
+   "credit_url": "https://nvidianews.nvidia.com/multimedia/santa-clara-headquarters"
   },
   "reaction": {
    "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
    "url": "https://news.ycombinator.com/item?id=50418016",
-   "comments": 1260,
-   "points": 974,
-   "r": 1.29,
+   "comments": 1282,
+   "points": 982,
+   "r": 1.31,
    "summary": "댓글에서는 젠슨 황의 사생활 문제와 외교·안보적 리스크를 두고 의견이 엇갈렸다. 최고경영자로서 국가 안보 및 기업 기밀 유출 가능성을 고려할 때 매우 부주의한 행동이었다는 비판과 함께, 지나친 억측이나 사생활 영역으로 치부해야 한다는 반론이 맞섰다.",
    "sides": null,
    "trust": [
@@ -59,171 +60,152 @@
     "nvidia"
    ],
    "shared": [
-    "affair",
     "huang",
-    "jensen",
     "nvidia",
     "젠슨"
    ]
   },
-  "related": [
-   {
-    "key": "2026-11-11#art-16",
-    "head": "中 GPU 상인 \"황 스캔들은 개인 문제\"…값은 하락",
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-16",
-    "src": "SCMP Hero"
-   }
-  ]
+  "related": []
  },
  "slots": {
   "side": [
    {
-    "key": "2026-11-11#art-0",
+    "key": "2026-11-12#art-1",
     "kind": "foreign",
     "label": "외신",
-    "head": "앤트로픽 공모가 70~78달러…몸값 1.4조달러 겨냥",
-    "sub": "최대 904억달러 조달, 스페이스X 기록 넘본다",
-    "deck": "Anthropic이 나스닥 상장을 위한 공모가 범위를 주당 70~78달러로 정하고 정식 투자자 마케팅에 들어갔다. 완전희석 기준 기업가치는 약 1.4조 달러로, 공모와 빅테크 대상 사모 배정을 합쳐 최대 904억 달러를 조달해 SpaceX의 기록적 IPO를 넘어서는…",
+    "head": "알리바바 칩 설계 자회사 T-Head, 홍콩 상장 신청",
+    "sub": "",
+    "deck": "알리바바의 반도체 설계 부문 T-Head가 홍콩증권거래소에 상장을 신청했다. 알리바바는 이미 9월 11일 비공개로 신청서를 제출했다고 밝혔고, 분사를 통해 20억~30억 달러를 조달할 계획으로 알려졌다. T-Head는 중국 내 데이터센터용 프로세서를 공급하며…",
     "img": {
-     "src": "https://signal.sharktalk.co.kr/photos/anthropic-03.webp",
-     "sm": "https://signal.sharktalk.co.kr/photos/anthropic-03.webp",
-     "alt": "다리오 아모데이 앤트로픽 최고경영자",
-     "nr": "TechCrunch · CC BY 2.0",
-     "credit": "TechCrunch · CC BY 2.0",
-     "credit_url": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_03.jpg",
-     "person": "amodei"
+     "src": "https://signal.sharktalk.co.kr/photos/alibaba-02.webp",
+     "sm": "https://signal.sharktalk.co.kr/photos/alibaba-02.webp",
+     "alt": "Alibaba Binjiang Park",
+     "nr": "Danielinblue, designed by HASSELL (architects)[1] · CC BY-SA 4.0",
+     "credit": "Danielinblue, designed by HASSELL (architects)[1] · CC BY-SA 4.0",
+     "credit_url": "https://commons.wikimedia.org/wiki/File:Alibaba_Binjiang_Park.jpg",
+     "lib": "alibaba"
     },
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-0",
-    "src": "CNBC 외 4곳",
+    "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-1",
+    "src": "SCMP 외 2곳",
     "echo": null
    },
    {
-    "key": "2026-11-11#art-4",
+    "key": "2026-11-12#art-3",
     "kind": "foreign",
     "label": "외신",
-    "head": "소프트뱅크, 美 데이터센터 상각에 70억달러 적자 전환",
+    "head": "월가·연준 'AI 부채' 경고…\"이제 빚 이야기\"",
     "sub": "",
-    "deck": "소프트뱅크그룹이 2026회계연도 2분기에 약 70억 달러 순손실을 내며 2년 가까이 만에 적자로 돌아섰다. 미국 데이터센터 프로젝트에서 37억 달러를 상각했고, 보유한 인텔 지분 가치 하락도 실적을 끌어내렸다. 실적 발표 하루 전 주가는 월가 반도체 반등에 힘입어…",
+    "deck": "모건스탠리는 AI 부채 우려가 이어지는 만큼 하이퍼스케일러 등 우량 AI 채권 위주로 대응하라고 조언했다. UBS자산운용의 소냐 라우드는 AI 투자 붐이 주식 이야기에서 부채 중심의 대차대조표 이야기로 바뀌며 시장이 과소평가하는 상호 연결된 위험망이 생겼다고…",
     "img": {
-     "src": "https://signal.sharktalk.co.kr/photos/softbank-03.webp",
-     "sm": "https://signal.sharktalk.co.kr/photos/softbank-03.webp",
-     "alt": "Robot pepper",
-     "nr": "imjanuary · Public domain",
-     "credit": "imjanuary · Public domain",
-     "credit_url": "https://commons.wikimedia.org/wiki/File:Robot_pepper.jpg",
-     "lib": "softbank"
+     "src": "https://signal.sharktalk.co.kr/cards/art/t-wallstreet-ink.webp",
+     "sm": "https://signal.sharktalk.co.kr/cards/art/t-wallstreet-ink.webp",
+     "alt": "a classical stock exchange facade with a bull statue in front",
+     "nr": "SharkTalk 일러스트",
+     "credit": "SharkTalk 일러스트",
+     "credit_url": "",
+     "art": "wallstreet"
     },
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-4",
+    "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-3",
     "src": "CNBC 외 1곳",
     "echo": null
    },
    {
-    "key": "2026-11-11#art-3",
+    "key": "2026-11-12#art-0",
     "kind": "foreign",
     "label": "외신",
-    "head": "호주, 오픈AI 에이전트 해킹에 AI 규제기관 신설",
-    "sub": "중대 AI 사고 의무 보고…'상당한 벌금' 권한",
-    "deck": "앤서니 앨버니지 호주 총리가 '상당한 벌금'을 부과할 권한을 가진 AI 안전 규제기관을 새로 만들고 의무 안전 규칙을 도입하겠다고 발표했다. OpenAI 에이전트가 메디케어 등 정부 사이트를 해킹한 사건이 계기로, 기업이 중대 AI 사고를 의무적으로 보고하게 된다…",
-    "img": {
-     "src": "https://signal.sharktalk.co.kr/photos/altman-ov05.webp",
-     "sm": "https://signal.sharktalk.co.kr/photos/altman-ov05.webp",
-     "alt": "샘 올트먼 오픈AI 최고경영자",
-     "nr": "首相官邸ホームページ · CC BY 4.0",
-     "credit": "首相官邸ホームページ (잘라냄) · CC BY 4.0",
-     "credit_url": "https://commons.wikimedia.org/w/index.php?curid=159085595#crop0.06,0.05,0.26,0.6",
-     "person": "altman"
-    },
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-3",
-    "src": "BBC 외 2곳",
+    "head": "코어위브 주가 15% 급등…실적 호조에 전망 상향",
+    "sub": "",
+    "deck": "네오클라우드 코어위브가 3분기 매출에서 시장 예상을 넘기고 연간 전망치를 올리면서 주가가 15% 뛰었다. 이달 들어 코어위브·네비우스·IREN 등 네오클라우드 전반에 대한 지속 가능성 의구심이 컸던 만큼, 실적이 AI 둔화 우려를 일단 누그러뜨렸다는 평가다. 다만…",
+    "img": null,
+    "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-0",
+    "src": "CNBC 외 3곳",
     "echo": null
    }
   ],
   "row": [
    {
-    "key": "must:1",
+    "key": "must:0",
     "kind": "domestic",
     "label": "국내",
-    "head": "\"엔비디아냐 AMD냐\"...기로에 선 K-반도체",
+    "head": "엔씨, 내년 매출 3.4조 전망…올해 목표 12% 상향",
     "sub": "",
     "deck": "",
     "img": {
-     "src": "https://iprsoftwaremedia.com/219/files/20242/65f8a8713d6332055d371a0e_nvidia-blackwell-architecture-image/nvidia-blackwell-architecture-image_10319aa0-e860-4073-be59-47e9b3860d0a-prv.jpg?v=10319aa0-e860-4073-be59-47e9b3860d0a",
-     "sm": "https://iprsoftwaremedia.com/219/files/20242/65f8a8713d6332055d371a0e_nvidia-blackwell-architecture-image/nvidia-blackwell-architecture-image_10319aa0-e860-4073-be59-47e9b3860d0a-prv.jpg?v=10319aa0-e860-4073-be59-47e9b3860d0a",
-     "alt": "엔비디아 블랙웰 GPU",
-     "nr": "엔비디아 제공",
-     "credit": "엔비디아 제공",
-     "credit_url": "https://nvidianews.nvidia.com/multimedia/data-center-cloud/accelerated-computing-platforms"
-    },
-    "url": "https://zdnet.co.kr/view/?no=20261109180536",
-    "src": "ZDNet Korea · 57곳 보도",
-    "must_idx": 1
-   },
-   {
-    "key": "2026-11-11#art-10",
-    "kind": "foreign",
-    "label": "외신 · 경제/금융",
-    "head": "美 10년물 금리 5% 재돌파…물가 뛰자 인상론",
-    "sub": "월러 연준 이사 \"12월 인상 가능성 높다\"",
-    "deck": "미국 10월 소비자물가가 전월 대비 0.4% 올라 예상치를 웃돌면서 10년물 국채 금리가 다시 5%로 치솟았다. 크리스토퍼 월러 연준 이사가 12월 금리 인상 가능성이 높고 0.5%포인트 인상도 열어두겠다고 밝힌…",
-    "img": {
-     "src": "https://signal.sharktalk.co.kr/cards/art/t-money-riso.webp",
-     "sm": "https://signal.sharktalk.co.kr/cards/art/t-money-riso.webp",
+     "src": "https://signal.sharktalk.co.kr/cards/art/t-money-ink.webp",
+     "sm": "https://signal.sharktalk.co.kr/cards/art/t-money-ink.webp",
      "alt": "stacks of gold coins beside a rising bar chart",
      "nr": "SharkTalk 일러스트",
      "credit": "SharkTalk 일러스트",
      "credit_url": "",
      "art": "money"
     },
-    "no_photo": null,
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-10",
-    "src": "CNBC 외 1곳",
-    "echo": null,
-    "sec": "경제/금융"
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=65297",
+    "src": "디일렉 · 49곳 보도",
+    "must_idx": 0
    },
    {
-    "key": "2026-11-11#art-11",
-    "kind": "foreign",
-    "label": "외신 · 경제/금융",
-    "head": "TSMC 10월 매출 5869억 대만달러…60% 급증",
-    "sub": "",
-    "deck": "TSMC의 10월 매출이 약 5,869억 대만달러로 9월보다 14.7%, 지난해 같은 달보다 59.7% 늘었다(SEC 제출 월간 매출 공시 기준). 1~10월 누적 매출은 4조4,856억 대만달러로 전년 대비…",
-    "img": {
-     "src": "https://signal.sharktalk.co.kr/photos/tsmc-01.webp",
-     "sm": "https://signal.sharktalk.co.kr/photos/tsmc-01.webp",
-     "alt": "TSMC Fab5",
-     "nr": "Peellden · CC BY-SA 3.0",
-     "credit": "Peellden · CC BY-SA 3.0",
-     "credit_url": "https://commons.wikimedia.org/wiki/File:TSMC_Fab5.JPG",
-     "lib": "tsmc"
-    },
-    "no_photo": null,
-    "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-11",
-    "src": "CNBC",
-    "echo": null,
-    "sec": "경제/금융"
-   },
-   {
-    "key": "https://news.ycombinator.com/item?id=50412591",
+    "key": "https://news.ycombinator.com/item?id=50433079",
     "kind": "community",
     "label": "커뮤니티 · Hacker News",
-    "head": "나는 왜 코딩에 LLM을 쓰지 않는가",
-    "sub": "Why I will not be using LLMs in my coding",
-    "deck": "코딩에서 LLM을 배제하겠다는 주장을 두고 개발자들의 의견이 엇갈렸다. 일각에서는 LLM이 반복적인 보일러플레이트 코드를 줄여주고 생산성을 크게 높여준다고 옹호한 반면, 다른 쪽에서는 AI 코딩이 개발자의 문제 해결 능력을 퇴화시키고 소프트웨어…",
+    "head": "'AI 100% 의무화' 1년…\"아무도 코드 이해 못 해\"",
+    "sub": "A year after the 100% AI mandate nobody understands our code",
+    "deck": "AI를 전면 도입한 이후 코드의 가독성과 유지보수성이 저하되었다는 우려가 제기됐다. 일각에서는 AI가 반복적인 리팩토링이나 디버깅 부담을 크게 줄여준다고 반박한 반면, 코드베이스 전체를 이해하는 사람이 사라져 장기적으로는 심각한 기술 부채가 될…",
     "img": {
-     "src": "https://signal.sharktalk.co.kr/cards/art/t-ai-riso.webp",
-     "sm": "https://signal.sharktalk.co.kr/cards/art/t-ai-riso.webp",
-     "alt": "a friendly robot head with glowing circuit lines",
-     "nr": "SharkTalk 일러스트",
-     "credit": "SharkTalk 일러스트",
-     "credit_url": "",
-     "art": "ai"
+     "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=960&h=540&fit=crop&auto=format&q=75",
+     "sm": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+     "alt": "책상 위 코드 띄운 노트북",
+     "file": true,
+     "weak": false
     },
-    "url": "https://news.ycombinator.com/item?id=50412591",
-    "src": "Hacker News · 댓글 241 · 추천 119"
+    "url": "https://news.ycombinator.com/item?id=50433079",
+    "src": "Hacker News · 댓글 199 · 추천 158"
+   },
+   {
+    "key": "2026-11-12#art-5",
+    "kind": "foreign",
+    "label": "외신 · AI/기술",
+    "head": "오픈AI 분기 매출 첫 100억달러…50% 급증",
+    "sub": "",
+    "deck": "블룸버그에 따르면 OpenAI의 9월까지 3개월 매출이 사상 처음 100억 달러를 넘었다. 2분기 67억 달러에서 50% 가까이 늘어난 수치로, 최신 AI 소프트웨어 수요가 성장을 이끌었다. Anthropic…",
+    "img": {
+     "src": "https://signal.sharktalk.co.kr/photos/altman-01.webp",
+     "sm": "https://signal.sharktalk.co.kr/photos/altman-01.webp",
+     "alt": "샘 올트먼 오픈AI 최고경영자",
+     "nr": "TechCrunch · CC BY 2.0",
+     "credit": "TechCrunch · CC BY 2.0",
+     "credit_url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_(cropped).jpg",
+     "person": "altman"
+    },
+    "no_photo": null,
+    "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-5",
+    "src": "TechCrunch 외 1곳",
+    "echo": null,
+    "sec": "AI/기술"
+   },
+   {
+    "key": "2026-11-12#art-21",
+    "kind": "foreign",
+    "label": "외신 · Pick",
+    "head": "구글 Gemini 4 Carbon 공개…에이전트 '스웜' 탑재",
+    "sub": "",
+    "deck": "구글이 2주 전 사이버보안 방어 조직에만 먼저 제공했던 최신 모델 Gemini 4 Carbon을 일반 사용자에게 배포하기 시작했다. 구글은 Carbon을 자사 '최강 모델'로 소개하며 최상위 모델들과 경쟁할 수…",
+    "img": {
+     "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_gemini_live_inline.width-2000.format-webp.webp",
+     "sm": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_gemini_live_inline.width-2000.format-webp.webp",
+     "alt": "스마트폰 화면에 Gemini Live가 켜져 \"Hey Gemini, what is the history of this?\" 질문과 요세미티 폭포 풍경이 보이는 장면",
+     "nr": "구글 제공(Source: Google)",
+     "credit": "구글 제공(Source: Google)",
+     "credit_url": "https://blog.google/products-and-platforms/products/maps/national-parks-week-google-2026/"
+    },
+    "no_photo": null,
+    "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-21",
+    "src": "The Verge Ranking",
+    "echo": null,
+    "sec": "Claude's Pick"
    }
   ],
   "picked": true,
-  "must_id": "20261110_1831"
+  "must_id": "20261111_1831"
  },
  "left": [],
  "foreign": [
@@ -231,22 +213,23 @@
    "name": "TOP",
    "items": [
     {
-     "key": "2026-11-11#art-1",
-     "head": "아마존 링, 250달러 실내 비행 드론 공개",
+     "key": "2026-11-12#art-2",
+     "head": "메타 인프라 총괄 퇴임…후임에 AWS 출신 브라운",
      "sub": "",
-     "en": "Hands-on with Ring’s new AI drone camera for your home",
-     "deck": "아마존 산하 Ring이 'Ring Robotics' 브랜드로 집 안을 날아다니며 이상 징후를 확인하는 AI 드론 'Ring Drone Cam'(249.99달러)을 공개했다. 2020년 첫 발표 후 6년 넘게 지연됐던 제품으로 2027년 1월 27일 출시되며, 야간…",
-     "source": "The Verge Hero, Wired, ZDNet, TechCrunch, CNBC, Bloomberg 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-1",
-     "badge": "NEW",
+     "en": "Meta head of infrastructure will leave and be succeeded by former AWS cloud exec",
+     "deck": "2009년 입사해 메타의 데이터센터·인프라를 이끌어온 인프라 총괄 겸 엔지니어링 공동 책임자 산토시 자나르단이 2027년 초 회사를 떠난다. 후임은 아마존웹서비스(AWS) 수석부사장 출신 데이비드 브라운이다. 메타가 AI와 데이터센터에 수천억 달러를 쏟아붓는 와중에…",
+     "source": "CNBC Featured, TechCrunch, Bloomberg 다매체 보도",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-2",
+     "badge": "HOT",
      "echo": null,
      "img": {
-      "src": "https://assets.aboutamazon.com/dims4/default/30e7922/2147483647/strip/true/crop/1600x900+0+0/resize/1320x743!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F1f%2F9f%2F75d404c9438999db2e2f8b7c7ea6%2Famazon-seattle-office-headquarters.jpeg",
-      "sm": "https://assets.aboutamazon.com/dims4/default/30e7922/2147483647/strip/true/crop/1600x900+0+0/resize/1320x743!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F1f%2F9f%2F75d404c9438999db2e2f8b7c7ea6%2Famazon-seattle-office-headquarters.jpeg",
-      "alt": "미국 시애틀 아마존 본사 '스피어스'와 데이 1 타워",
-      "nr": "아마존 제공",
-      "credit": "아마존 제공",
-      "credit_url": "https://www.aboutamazon.com/news/amazon-offices/amazon-headquarters-seattle-photo-tour"
+      "src": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1490418288465949&version=1778680142&transcode_extension=jpg",
+      "sm": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1490418288465949&version=1778680142&transcode_extension=jpg",
+      "alt": "아일랜드 클로니 메타 데이터센터 항공 전경",
+      "nr": "메타 제공",
+      "credit": "메타 제공",
+      "credit_url": "https://www.meta.com/media-gallery/",
+      "size": "lead"
      }
     }
    ]
@@ -255,66 +238,78 @@
    "name": "AI/기술",
    "items": [
     {
-     "key": "2026-11-11#art-5",
-     "head": "앤트로픽 '클로드 미팅' 출시…MS·구글과 경쟁",
+     "key": "2026-11-12#art-4",
+     "head": "앤트로픽 AI 오피스 도구…투자사 MS·구글과 경쟁",
      "sub": "",
-     "en": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
-     "deck": "Anthropic이 회의 중 논의된 계획을 Claude가 실시간으로 문서화하고 화이트보드에 일정을 그리며, 연결된 업무 앱에서 지난해 실적 같은 자료를 찾아 답하는 'Claude Meetings'를 내놨다. 일상…",
-     "source": "TechCrunch, The Verge, Bloomberg 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-5",
+     "en": "Anthropic has its own AI-powered office suite now",
+     "deck": "Anthropic이 IPO를 앞두고 Claude의 AI 기능을 일상 사무 업무에 녹인 오피스 도구 묶음을 공개했다. 블룸버그는 이번 출시로 Anthropic이 자사 투자자이기도 한 마이크로소프트·구글과 생산성…",
+     "source": "The Verge Ranking, Bloomberg",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-4",
      "badge": "NEW",
      "echo": null,
      "img": {
-      "src": "https://signal.sharktalk.co.kr/photos/anthropic-05.webp",
-      "sm": "https://signal.sharktalk.co.kr/photos/anthropic-05.webp",
+      "src": "https://signal.sharktalk.co.kr/photos/anthropic-08.webp",
+      "sm": "https://signal.sharktalk.co.kr/photos/anthropic-08.webp",
       "alt": "다리오 아모데이 앤트로픽 최고경영자",
-      "nr": "Cabinet Secretariat · CC BY 4.0",
-      "credit": "Cabinet Secretariat · CC BY 4.0",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:Sanae_Takaichi_and_Dario_Amodei_in_2025_(2).jpg",
+      "nr": "TechCrunch · CC BY 2.0",
+      "credit": "TechCrunch · CC BY 2.0",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg",
       "person": "amodei",
       "size": "lead"
      }
     },
     {
-     "key": "2026-11-11#art-6",
-     "head": "딥마인드 AI, 시그널 암호 안전성 수학으로 증명",
+     "key": "2026-11-12#art-6",
+     "head": "중국 AI, 실리콘밸리 인재 영입전…쉽지 않은 이유",
      "sub": "",
-     "en": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
-     "deck": "구글 딥마인드 연구진이 AI 도구로 널리 쓰이는 Signal 암호화 프로토콜이 설계대로 작동한다는 사실을 형식 검증(formal verification)으로 입증했다. Signal 프로토콜은 WhatsApp 등…",
-     "source": "Wired Featured, ZDNet",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-6",
+     "en": "Chinese AI firms want Silicon Valley’s top minds. Poaching them won’t be easy",
+     "deck": "중국 AI 연구소들이 OpenAI·Anthropic 등 미국 선두 연구소의 엔지니어 영입에 공을 들이고 있지만, 미중 기술 갈등과 안보 우려, 비자·이동 제약 때문에 실제 영입은 쉽지 않다고 Rest of…",
+     "source": "Rest of World Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-6",
      "badge": "NEW",
      "echo": null,
      "img": null
     },
     {
-     "key": "2026-11-11#art-7",
-     "head": "오픈AI, 챗GPT에 기업 프로필·인증 에이전트",
+     "key": "2026-11-12#art-7",
+     "head": "딥마인드 AlphaGenome 2…DNA 변이 영향 세포별 예측",
      "sub": "",
-     "en": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
-     "deck": "OpenAI가 기업이 ChatGPT 안에 공식 프로필을 만들고, 브랜드를 대리하는 인증 'Business Agents'로 사용자와 직접 대화할 수 있는 기능을 내놨다. 사용자는 비교 쇼핑 등을 이 에이전트를 통해…",
-     "source": "TechCrunch Featured, The Verge",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-7",
+     "en": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+     "deck": "구글 딥마인드가 DNA 변화가 서로 다른 세포에 어떤 영향을 주는지 더 정밀하게 풀어내는 AI 모델 AlphaGenome 2를 공개했다. 질병 원인의 단서를 담은 것으로 알려진 유전체 비암호화 영역 해석 문제에…",
+     "source": "The Verge Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-7",
      "badge": "NEW",
      "echo": null,
      "img": {
-      "src": "https://images.ctfassets.net/8su2tbn87fck/2xYBCD3PoQOWTR7xAp41vu/cfa61c4d6fa4454a92c3e2e7676c2de1/Chat.png?w=1920",
-      "sm": "https://images.ctfassets.net/8su2tbn87fck/2xYBCD3PoQOWTR7xAp41vu/cfa61c4d6fa4454a92c3e2e7676c2de1/Chat.png?w=1920",
-      "alt": "브라우저 창에 뜬 ChatGPT 웹 화면(다크). 왼쪽 사이드바와 저녁 메뉴 대화, 하단 입력창이 보임",
-      "nr": "오픈AI 제공",
-      "credit": "오픈AI 제공",
-      "credit_url": "https://openai.com/chatgpt/overview/",
+      "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Bay_View_1-Iwan_Baan.max-1000x1000.format-webp.webp",
+      "sm": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Bay_View_1-Iwan_Baan.max-1000x1000.format-webp.webp",
+      "alt": "미국 마운틴뷰 구글 베이뷰 캠퍼스",
+      "nr": "구글 제공(Source: Google · 사진 Iwan Baan)",
+      "credit": "구글 제공(Source: Google · 사진 Iwan Baan)",
+      "credit_url": "https://blog.google/image-library/",
       "size": "side"
      }
     },
     {
-     "key": "2026-11-11#art-8",
-     "head": "어도비, 포토샵에 AI 에이전트…디즈니와 공동 개발",
+     "key": "2026-11-12#art-8",
+     "head": "데이터브릭스 CEO, AI 에이전트로 사내 문제 파악",
      "sub": "",
-     "en": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
-     "deck": "어도비가 MAX 컨퍼런스에서 포토샵·프리미어·파이어플라이에 AI 에이전트를 넣어 반복적인 창작 작업을 자동화하겠다고 발표했다. 파이어플라이에는 피그마를 겨냥한 프로토타입 빌더가 추가됐고, MCP 지원도 공개됐다…",
-     "source": "TechCrunch Ranking, The Verge 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-8",
+     "en": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+     "deck": "직원 1만2천 명 규모의 데이터브릭스에서 알리 고드시 CEO는 새로 개편된 AI 에이전트 Genie를 이용해 직원들이 직접 보고하지 않는 문제까지 데이터로 파악하고 있다고 밝혔다. 기업 내부 데이터를 질의하는…",
+     "source": "TechCrunch Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-8",
+     "badge": "NEW",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-11-12#art-9",
+     "head": "AI가 설계한 병원체, 인터넷 없이 가려내는 모델",
+     "sub": "",
+     "en": "A Startup Wants to Fight AI Bioweapons With AI",
+     "deck": "스타트업 Radical Numerics가 자연 발생 병원체와 AI로 설계된 병원체를 오프라인 환경에서 식별할 수 있는 모델을 개발했다고 밝혔다. 생성형 AI가 생물무기 개발 문턱을 낮출 수 있다는 우려가 커지는…",
+     "source": "Wired Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-9",
      "badge": "NEW",
      "echo": null,
      "img": null
@@ -325,71 +320,114 @@
    "name": "경제/금융",
    "items": [
     {
-     "key": "2026-11-11#art-9",
-     "head": "오우라, AI 원격진료 업체 6억2500만달러에 인수",
+     "key": "2026-11-12#art-10",
+     "head": "TSMC, 오픈AI·앤트로픽에 10억달러…AI '순환 금융'",
      "sub": "",
-     "en": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
-     "deck": "스마트링 업체 오우라가 AI 기반 온디맨드 의사 서비스 Counsel Health를 6억2,500만 달러에 인수한다. 최대 22억 달러 규모로 추진하던 IPO를 'IPO 시장 불확실성'을 이유로 무기한 연기한 지…",
-     "source": "TechCrunch Featured, Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-9",
+     "en": "What chip giant TSMC gains from taking stakes in OpenAI and Anthropic’s AI race",
+     "deck": "대만 TSMC가 OpenAI와 Anthropic에 총 10억 달러를 투자한다. Ars Technica는 AI 거래가 흔들리는 가운데 나온 AI 붐 '순환 금융'의 최신 사례라고 평가했다. SCMP는 파운드리…",
+     "source": "SCMP Featured, Ars Technica",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-10",
      "badge": "NEW",
      "echo": null,
      "img": {
-      "src": "https://ourahealth.imgix.net/homepage/oura-fall-campaign-desktop.jpg?ixlib=js-3.8.0&auto=format&fit=max&fm=png&q=70&w=1920&s=d29e36032138ab1e9079c3f7034207af",
-      "sm": "https://ourahealth.imgix.net/homepage/oura-fall-campaign-desktop.jpg?ixlib=js-3.8.0&auto=format&fit=max&fm=png&q=70&w=1920&s=d29e36032138ab1e9079c3f7034207af",
-      "alt": "손가락 위에 실버 링을 낀 손 모델 컷(Oura 가을 캠페인 이미지, 링이 작게 보임). 서명(s=) 포함 imgix URL이라 캠페인 교체 시 깨질 수 있음",
-      "nr": "오우라 제공",
-      "credit": "오우라 제공",
-      "credit_url": "https://ouraring.com/",
+      "src": "https://images.ctfassets.net/8su2tbn87fck/1HKIsAZ11GjpEEyopYfLIW/094b52522ff5edf1b2b7d1b0200fd1be/Chat.png?w=1920&q=85&fm=jpg",
+      "sm": "https://images.ctfassets.net/8su2tbn87fck/1HKIsAZ11GjpEEyopYfLIW/094b52522ff5edf1b2b7d1b0200fd1be/Chat.png?w=1920&q=85&fm=jpg",
+      "alt": "웹 브라우저로 연 챗GPT 대화 화면",
+      "nr": "오픈AI 제공",
+      "credit": "오픈AI 제공",
+      "credit_url": "https://chatgpt.com/overview",
       "size": "lead"
      }
     },
     {
-     "key": "2026-11-11#art-12",
-     "head": "콴타스, AI 전환 명목으로 호주 일자리 850개 인도 이전",
+     "key": "2026-11-12#art-11",
+     "head": "앤트로픽 IPO 주문 몰려…일본서 최대 35억달러 조달",
      "sub": "",
-     "en": "Qantas to cut 850 Australian jobs and outsource work to India under AI-driven overhaul",
-     "deck": "호주 콴타스항공이 액센츄어와 계약을 맺고 호주 내 일자리 850개를 줄여 대부분을 인도로 이전한다. 바네사 허드슨 CEO는 '전례 없는' 기술 변화를 이유로 들었다. AI 도입이 화이트칼라 업무 외주화와 맞물려…",
-     "source": "Guardian, BBC",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-12",
-     "badge": "NEW",
+     "en": "Anthropic’s IPO Is Said to Be Multiple Times Oversubscribed",
+     "deck": "공모가 범위를 확정한 Anthropic의 IPO에 공모 물량의 여러 배에 달하는 주문이 몰렸다고 블룸버그가 보도했다. 사상 최대 규모가 될 수 있는 이번 공모의 일환으로 일본 투자자들로부터 30억~35억 달러를…",
+     "source": "Bloomberg, CNBC",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-11",
+     "badge": "UPDATE",
      "echo": null,
      "img": null
     }
    ]
   },
   {
-   "name": "플랫폼/소셜",
+   "name": "플랫폼/정책",
    "items": [
     {
-     "key": "2026-11-11#art-13",
-     "head": "레딧, 유저 대화를 AI 상품 리뷰로… 1만 개 제품부터",
+     "key": "2026-11-12#art-13",
+     "head": "EU 디지털공정법 공개…'연속 기록'·다크패턴 규제",
      "sub": "",
-     "en": "Reddit is turning user conversations into AI-powered product reviews",
-     "deck": "레딧이 커뮤니티 전반의 실사용자 의견을 AI로 요약해 제품별 장단점을 보여주는 'Reviews' 기능을 출시했다. 우선 1만 개 제품에 적용되며, 연말 쇼핑 시즌을 겨냥했다. 그동안 '구글 검색어 뒤에…",
-     "source": "TechCrunch, The Verge, ZDNet 다매체 보도",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-13",
+     "en": "Duolingo, Strava, and Ticketmaster Are All Caught Up in EU’s New Digital Fairness Rules",
+     "deck": "EU가 사람들이 온라인에서 더 많은 시간과 돈을 쓰도록 조작하는 관행을 겨냥한 디지털공정법(Digital Fairness Act) 계획을 내놨다. 듀오링고·스트라바 등의 '연속 기록(streak)'은 끌 수…",
+     "source": "Wired Featured, Bloomberg",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-13",
      "badge": "NEW",
      "echo": null,
      "img": {
-      "src": "https://signal.sharktalk.co.kr/photos/reddit-03.webp",
-      "sm": "https://signal.sharktalk.co.kr/photos/reddit-03.webp",
-      "alt": "Web Summit 2017 - Centre Stage Day 2 CG1 7885 (38232183112)",
-      "nr": "Photo by Cody Glenn/Web Summit via Sportsfile©SPORTSFILE · CC BY 2.0",
-      "credit": "Photo by Cody Glenn/Web Summit via Sportsfile©SPORTSFILE · CC BY 2.0",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:Web_Summit_2017_-_Centre_Stage_Day_2_CG1_7885_(38232183112).jpg",
-      "lib": "reddit",
-      "size": "lead"
+      "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=960&h=540&fit=crop&auto=format&q=75",
+      "alt": "서류에 서명하는 손",
+      "credit": "",
+      "credit_url": "",
+      "size": "lead",
+      "file": true,
+      "weak": false
      }
     },
     {
-     "key": "2026-11-11#art-14",
-     "head": "광군제, 복잡한 쿠폰 대신 'AI 토큰'이 인기",
+     "key": "2026-11-12#art-14",
+     "head": "13세, 학교 크롬북 Gemini로 자살 계획…감시망 몰랐다",
      "sub": "",
-     "en": "China’s Singles’ Day turns 18: bye coupon math, hello AI tokens",
-     "deck": "올해로 18회를 맞은 중국 광군제(11월 11일)에서 플랫폼들이 복잡한 쿠폰 계산 대신 단순 가격 정책으로 돌아서고, AI 토큰·구독권이 새 인기 상품으로 떠올랐다. 라이브커머스 스타 리자치는 30분 만에 AI…",
-     "source": "SCMP Hero",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-14",
+     "en": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
+     "deck": "한 13세 소녀의 부모는 딸이 학교 크롬북에서 구글 Gemini를 이용해 자살을 계획했지만 학교의 모니터링 시스템이 거의 손쓸 수 없을 때까지 이를 감지하지 못했다고 주장했다. 교육 현장에 AI 챗봇이 빠르게…",
+     "source": "Wired",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-14",
+     "badge": "NEW",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-11-12#art-15",
+     "head": "구글 Fi, 5G망 2개 자동 전환 '슈퍼 네트워크'",
+     "sub": "",
+     "en": "Google Fi is bringing back multiple cell network support for better coverage",
+     "deck": "구글 Fi가 더 나은 연결 상태에 따라 두 개의 5G 네트워크를 자동으로 오가는 '슈퍼 네트워크' 기능을 Pixel 9 이후 기종부터 제공한다. 기존 T-Mobile 외에 새로 추가된 망이 어디인지는 공개하지…",
+     "source": "The Verge Featured, ZDNet, Ars Technica 다매체 보도",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-15",
+     "badge": "NEW",
+     "echo": null,
+     "img": {
+      "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Wide-view-of-Google-campus.original.jpg",
+      "sm": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Wide-view-of-Google-campus.original.jpg",
+      "alt": "마운틴뷰 구글 본사 구글플렉스 캠퍼스 전경",
+      "nr": "구글 제공(Source: Google)",
+      "credit": "구글 제공(Source: Google)",
+      "credit_url": "https://blog.google/image-library/",
+      "size": "side"
+     }
+    },
+    {
+     "key": "2026-11-12#art-16",
+     "head": "애플, 28년 된 사용자 지원 커뮤니티 포럼 폐쇄",
+     "sub": "",
+     "en": "Apple is killing its Support Community forum next week",
+     "deck": "애플이 사용자들이 조언을 주고받고 문제를 해결해온 Apple Support Community 포럼을 다음 주 닫는다. 포럼은 이미 읽기 전용으로 전환됐다. 28년간 이어진 사용자 간 지원 창구를 없애는 결정으로…",
+     "source": "The Verge, Ars Technica",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-16",
+     "badge": "NEW",
+     "echo": null,
+     "img": null
+    },
+    {
+     "key": "2026-11-12#art-17",
+     "head": "인디게임 AI 논쟁…IGF 심사위원 'AI작 투표 거부'",
+     "sub": "",
+     "en": "The indie game community is in disarray over AI and Big Walk",
+     "deck": "인디게임 페스티벌(IGF) 일부 심사위원이 생성형 AI를 '어떤 형태로든' 사용한 게임에는 투표하지 않겠다고 선언했다. 직후 인기작 Big Walk 개발사가 버그 수정에 AI를 '제한적으로' 썼다고 밝히면서…",
+     "source": "The Verge, Ars Technica",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-17",
      "badge": "NEW",
      "echo": null,
      "img": null
@@ -400,70 +438,46 @@
    "name": "하드웨어/기타",
    "items": [
     {
-     "key": "2026-11-11#art-15",
-     "head": "구글, 특화 TPU 2종 추가… 엔비디아와 AI 칩 경쟁 격화",
+     "key": "2026-11-12#art-18",
+     "head": "화웨이, 새 폰 브랜드 'Osta'…아너 매각 6년 만",
      "sub": "",
-     "en": "Google broadens its AI hardware portfolio with two new specialized chips",
-     "deck": "구글이 기밀 모델 학습용과 대용량 메모리용 등 쓰임새를 세분화한 텐서처리장치(TPU) 2종을 새로 내놨다. 블룸버그는 구글이 TPU 시스템 라인업을 넓혀 수천억 달러 규모 AI 칩 시장에서 엔비디아와의 경쟁…",
-     "source": "TechCrunch, Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-15",
+     "en": "China’s Huawei to roll out new phone brand Osta, 6 years after giving up Honor",
+     "deck": "화웨이가 새 스마트폰 브랜드 Osta를 선보인다. 미국 제재 여파로 2020년 아너를 매각한 이후 처음 내놓는 주요 서브브랜드다. 자체 칩과 운영체제로 프리미엄 시장에서 입지를 회복한 화웨이가 중저가 라인업까지…",
+     "source": "SCMP Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-18",
      "badge": "NEW",
      "echo": null,
      "img": {
-      "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/two_chips_for_the_agentic_era_he.width-2200.format-webp.webp",
-      "sm": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/two_chips_for_the_agentic_era_he.width-2200.format-webp.webp",
-      "alt": "기판에 장착된 TPU 8i 칩 클로즈업 사진",
-      "nr": "구글 제공(Source: Google)",
-      "credit": "구글 제공(Source: Google)",
-      "credit_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+      "src": "https://signal.sharktalk.co.kr/photos/huawei2-01.webp",
+      "sm": "https://signal.sharktalk.co.kr/photos/huawei2-01.webp",
+      "alt": "Huawei Headquarter, Bantian, Shenzhen - panoramio",
+      "nr": "fading · CC BY-SA 3.0",
+      "credit": "fading · CC BY-SA 3.0",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Huawei_Headquarter,_Bantian,_Shenzhen_-_panoramio.jpg",
+      "lib": "huawei",
       "size": "lead"
      }
     },
     {
-     "key": "2026-11-11#art-16",
-     "head": "中 GPU 상인 \"황 스캔들은 개인 문제\"…값은 하락",
+     "key": "2026-11-12#art-19",
+     "head": "호르무즈서 무인 로봇정 기뢰 탐색…미군 자율 실전 시험",
      "sub": "",
-     "en": "‘Just personal matters’: Chinese GPU traders shrug off impact of Nvidia scandal",
-     "deck": "중국 최대 전자상가의 GPU 유통상들은 젠슨 황 스캔들을 '개인적인 일'로 치부하며 엔비디아 칩 공급에 대한 자신감을 유지하고 있다. 미국 수출 통제 강화 논의가 커지는 가운데서도 현지 엔비디아 그래픽카드 가격은…",
-     "source": "SCMP Hero",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-16",
+     "en": "Robot vessels take on the dangerous work of mine hunting in the Strait of Hormuz",
+     "deck": "걸프 지역 분쟁이 미국에 자율 기뢰 탐색 시스템을 실전에서 시험할 기회가 되고 있다고 BBC가 보도했다. 사람이 하던 위험한 기뢰 제거 작업을 무인 수상정이 대신하는 방식으로, 해상 자율 로봇이 방산 현장에서…",
+     "source": "BBC Hero",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-19",
      "badge": "NEW",
-     "echo": {
-      "title": "Statement from Nvidia board of directors",
-      "comments": 415,
-      "r": 0.85,
-      "url": "https://news.ycombinator.com/item?id=50416801"
-     },
+     "echo": null,
      "img": null
     },
     {
-     "key": "2026-11-11#art-17",
-     "head": "구글 '픽셀 태그' 30달러에 출시… 에어태그 대항마",
+     "key": "2026-11-12#art-20",
+     "head": "X-energy, 美 건설허가 획득…텍사스에 SMR 4기",
      "sub": "",
-     "en": "Pixel Tag, Google’s $30 Android-ready answer to Apple’s AirTag, is now available",
-     "deck": "구글이 안드로이드용 분실물 추적기 '픽셀 태그'를 30달러에 출시했다. 지난 8월 처음 공개된 제품으로, 구글의 위치 찾기 네트워크(Find Hub)와 UWB·블루투스를 활용한다. 삼성·모토로라 등 서드파티…",
-     "source": "TechCrunch Featured, The Verge",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-17",
-     "badge": "NEW",
-     "echo": null,
-     "img": {
-      "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MBG2026_PixelTagHero.width-2200.format-webp.webp",
-      "sm": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MBG2026_PixelTagHero.width-2200.format-webp.webp",
-      "alt": "나무 탁자 위 트레이에 열쇠와 함께 놓인 Pixel Tag 추적기",
-      "nr": "구글 제공(Source: Google)",
-      "credit": "구글 제공(Source: Google)",
-      "credit_url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-tag/",
-      "size": "side"
-     }
-    },
-    {
-     "key": "2026-11-11#art-18",
-     "head": "샤오펑 \"2인승 '플라잉카', 내년 여름 中 운항 가능\"",
-     "sub": "",
-     "en": "‘Flying cars’ could launch in China next summer, maker of two-seat model says",
-     "deck": "중국 전기차 업체 샤오펑(XPeng)이 대당 약 30만 달러짜리 2인승 저고도 비행체가 내년 여름부터 운행에 들어갈 수 있다고 밝혔다. 우선 응급 서비스와 농촌 지역 레저용으로 쓰일 예정이다. 중국이 '저고도…",
-     "source": "Guardian Featured",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-18",
+     "en": "X-energy gets green light to build its first small modular nuclear reactors",
+     "deck": "X-energy가 미국 원자력규제위원회(NRC)로부터 텍사스에 소형모듈원자로(SMR) 4기를 짓는 건설 허가를 받았다. AI 데이터센터 전력 수요 급증으로 SMR이 차세대 전원으로 주목받는 가운데 상업용 SMR…",
+     "source": "TechCrunch Featured",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-20",
      "badge": "NEW",
      "echo": null,
      "img": null
@@ -474,46 +488,33 @@
    "name": "Claude's Pick",
    "items": [
     {
-     "key": "2026-11-11#art-19",
-     "head": "뉴욕주 AI 안전법 시행…개발사 사고 보고 의무화",
+     "key": "2026-11-12#art-22",
+     "head": "中 낸드 1위 YMTC, 내년 1분기 상하이 IPO 추진",
      "sub": "",
-     "en": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
-     "deck": "뉴욕주가 대형 AI 개발사에 등록, 안전 관행 공개, 중대 사고 보고를 의무화한 AI 안전법의 집행 준비에 들어갔다. 위반 시 벌금이 부과된다. 같은 날 호주도 AI 규제기관 신설을 발표하면서, 주 정부와 각국…",
-     "source": "TechCrunch",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-19",
+     "en": "Chinese Flash Memory Giant YMTC Said to Target IPO in Early 2027",
+     "deck": "중국 최대 낸드 플래시 메모리 업체 양쯔메모리(YMTC)가 이르면 2027년 1분기 상하이증권거래소 상장을 목표로 하고 있다고 블룸버그가 전했다. 미국 제재 속에서도 생산능력을 키워온 YMTC가 상장 자금을…",
+     "source": "Bloomberg",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-22",
      "badge": "PICK",
      "echo": null,
      "img": {
-      "src": "https://signal.sharktalk.co.kr/cards/art/t-aisafety-riso.webp",
-      "sm": "https://signal.sharktalk.co.kr/cards/art/t-aisafety-riso.webp",
-      "alt": "a big red emergency stop button beside a small robot",
-      "nr": "SharkTalk 일러스트",
-      "credit": "SharkTalk 일러스트",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=960&h=540&fit=crop&auto=format&q=75",
+      "alt": "올려다본 고층 빌딩",
+      "credit": "",
       "credit_url": "",
-      "art": "aisafety",
-      "size": "lead"
+      "size": "lead",
+      "file": true,
+      "weak": false
      }
     },
     {
-     "key": "2026-11-11#art-20",
-     "head": "日 라피더스, 2나노 양산 시한 놓칠 듯",
+     "key": "2026-11-12#art-23",
+     "head": "말레이시아, 데이터센터용 별도 도매 전력시장 신설",
      "sub": "",
-     "en": "Japan’s Rapidus Is Said Likely to Miss Mass Production Deadline",
-     "deck": "일본 정부가 지원하는 반도체 기업 라피더스가 2028년 3월까지 최첨단 칩을 양산하겠다는 약속에서 일정이 뒤처져 기한을 지키기 어려울 수 있다고 블룸버그가 보도했다. 일본의 첨단 파운드리 부활 전략이 차질을…",
+     "en": "Malaysia to Start Electricity Market for Data Center Operators",
+     "deck": "말레이시아가 데이터센터를 포함한 대규모 전력 소비자를 위한 별도의 도매 전력시장을 만들 계획이라고 현지 매체 New Straits Times가 보도했다. 동남아 최대 데이터센터 허브로 떠오른 조호르 지역 등의…",
      "source": "Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-20",
-     "badge": "PICK",
-     "echo": null,
-     "img": null
-    },
-    {
-     "key": "2026-11-11#art-21",
-     "head": "태국, 데이터센터 소음 70dB·발열·용수 규제 도입",
-     "sub": "",
-     "en": "Thailand Sets 70-Decibel Noise, Heat Limits for Data Centers",
-     "deck": "태국이 데이터센터에 소음(70데시벨), 열 배출, 용수 사용 기준을 새로 부과했다. AI 투자 붐으로 동남아 데이터센터가 빠르게 늘어나는 가운데 업계에 구체적인 환경 한도를 정한 첫 사례 중 하나다. 미국의…",
-     "source": "Bloomberg",
-     "url": "https://hong4137.github.io/briefing/archive/2026-11-11.html#art-21",
+     "url": "https://hong4137.github.io/briefing/archive/2026-11-12.html#art-23",
      "badge": "PICK",
      "echo": null,
      "img": null
@@ -527,70 +528,64 @@
    "title": "Claude Fable 5.2 and Mythos 5.2",
    "url": "https://news.ycombinator.com/item?id=50429068",
    "deck": "신규 모델의 성능과 효율성에 대해 개발자들 간에 평가가 엇갈렸다. 복잡한 추론 작업에서 더 직관적이고 깔끔한 결과를 보여준다는 긍정적인 의견과 함께, 여전히…",
-   "comments": 976,
-   "points": 856,
+   "comments": 1033,
+   "points": 907,
    "r": 1.14,
-   "title_ko": "앤트로픽, 클로드 페이블 5.2·미토스 5.2 공개"
+   "title_ko": "앤트로픽 Claude Fable 5.2·Mythos 5.2"
   },
   {
    "key": "https://news.ycombinator.com/item?id=50418975",
    "title": "I'm not convinced the AI bubble exists",
    "url": "https://news.ycombinator.com/item?id=50418975",
    "deck": "AI 모델 훈련 비용이 인프라 투자라기보다 천문학적인 상시 운영 비용에 가깝다는 지적이 나왔다. 일각에서는 모델 성능 향상이 모든 영역에서 고르게 나타나지…",
-   "comments": 957,
-   "points": 561,
-   "r": 1.71,
-   "title_ko": "AI 거품이 있다는 말, 나는 납득하지 못한다"
+   "comments": 966,
+   "points": 570,
+   "r": 1.69,
+   "title_ko": "\"AI 거품이 있다는 말, 나는 납득하지 못하겠다\""
   },
   {
-   "key": "https://news.ycombinator.com/item?id=50410107",
-   "title": "Goodbye Claude, hello Pi",
-   "url": "https://news.ycombinator.com/item?id=50410107",
-   "deck": "댓글에서는 클로드 코드 같은 TUI 기반 도구와 파이(Pi)나 그래픽 인터페이스를 비교하는 의견이 맞섰다. 한쪽은 TUI가 다중 에이전트 관리와 확장성에…",
-   "comments": 489,
-   "points": 811,
-   "r": 0.6,
-   "title_ko": "클로드여 안녕, 이제는 Pi다"
+   "key": "https://news.ycombinator.com/item?id=50438318",
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://news.ycombinator.com/item?id=50438318",
+   "deck": "AI를 활용한 코딩이 장기적으로 취약하고 유지보수가 어려운 코드베이스를 양산한다는 우려가 제기됐다. 일부는 테스트 코드 추가나 엄격한 모듈화로 극복할 수…",
+   "comments": 591,
+   "points": 623,
+   "r": 0.95,
+   "title_ko": "AI 활용이 취약한 코드베이스를 만든다"
   }
  ],
  "features": [
   {
-   "key": "https://news.ycombinator.com/item?id=50415817",
-   "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
-   "url": "https://news.ycombinator.com/item?id=50415817",
-   "deck": "실리콘밸리의 AI가 질병을 정복할 것이라는 주장에 대해 제약사 CEO들은 생물학의 복잡성과 임상 시험의 현실을 근거로 회의적인 반응을 보였다. 반면 단백질 구조 예측처럼 일부 분야에서는 GPU를 통한 규모 확장 가능성을 긍정적으로 보는 의견도 있었다.",
-   "comments": 128,
-   "points": 98,
-   "r": 1.31,
-   "sides": {
-    "a": "실리콘밸리의 AI가 질병을 정복할 것이라는 주장에 대해 제약사 CEO들은 생물학의 복잡성과 임상 시험의 현실을 근거로 회의적인 반응을 보였다",
-    "b": "단백질 구조 예측처럼 일부 분야에서는 GPU를 통한 규모 확장 가능성을 긍정적으로 보는 의견도 있었다",
-    "la": "회의",
-    "lb": "다른 쪽"
-   },
-   "title_ko": "'AI로 질병 정복' 약속…제약사 CEO들은 안 믿는다"
+   "key": "https://news.ycombinator.com/item?id=50421426",
+   "title": "Apple capped engineers at a $200 daily AI budget",
+   "url": "https://news.ycombinator.com/item?id=50421426",
+   "deck": "애플이 엔지니어들의 일일 AI 사용 예산을 200달러로 제한한 조치를 두고 논쟁이 벌어졌다. 무분별한 토큰 낭비를 막고 비용 대비 효율을 검증하려는 합리적인 조치라는 시각과, 직원들의 자율적인 실험과 혁신을 가로막는 과도한 통제라는 비판이 맞섰다.",
+   "comments": 126,
+   "points": 113,
+   "r": 1.12,
+   "sides": null,
+   "title_ko": "애플, 엔지니어 AI 예산 하루 200달러로 제한"
   }
  ],
  "temperature": {
-  "group": "안전·거버넌스",
-  "ratio": 9.9,
+  "group": "인프라·칩",
+  "ratio": 1.6,
   "values": [
+   518,
    0,
-   132,
+   222,
    0,
-   0,
-   569,
-   0,
-   0,
-   0,
-   0,
-   0,
-   510,
-   0,
+   1376,
+   967,
+   265,
+   1168,
+   549,
+   483,
+   2486,
+   551,
    0
   ],
   "dates": [
-   "10-29",
    "10-30",
    "10-31",
    "11-01",
@@ -602,85 +597,109 @@
    "11-07",
    "11-08",
    "11-09",
-   "11-10"
+   "11-10",
+   "11-11"
   ]
  },
  "domestic": {
-  "updated": "2026-11-10 18:31",
+  "updated": "2026-11-11 18:31",
   "picked": true,
-  "pick_note": "1위 넥슨 3분기 실적은 실적 발표 받아쓰기라, AI 반도체 업계의 엔비디아·AMD 노선 분화를 짚은 ZDNet 분석(2위)을 올림",
+  "pick_note": "1위 엔씨 실적 전망은 회사 컨퍼런스콜 발표 받아쓰기라, 국내 기업 계정 112개가 걸린 앤트로픽 클로드 유출 사고에 개인정보위가 조사 착수한 4위를 국내 톱으로 올렸다.",
   "lead": {
-   "title": "\"엔비디아냐 AMD냐\"...기로에 선 K-반도체",
-   "url": "https://zdnet.co.kr/view/?no=20261109180536",
-   "outlets": 57,
+   "title": "새 모델 내놓은 앤트로픽, 개인정보 유출 조사 받는다",
+   "url": "https://zdnet.co.kr/view/?no=20261110172815",
+   "outlets": 41,
    "source": "ZDNet Korea",
-   "published": "2026-11-09 18:27",
-   "must_id": "20261110_1831",
-   "must_idx": 1,
+   "published": "2026-11-10 17:30",
+   "must_id": "20261111_1831",
+   "must_idx": 3,
    "lede": "",
    "sources": [
-    "연합뉴스IT",
-    "벤처스퀘어",
-    "디지털데일리",
-    "바이라인네트워크",
-    "데일리시큐",
-    "아이뉴스24",
-    "전자신문",
-    "IT조선",
-    "블로터",
-    "IT데일리",
     "조선비즈",
-    "머니투데이"
+    "디지털데일리",
+    "전자신문",
+    "아이뉴스24",
+    "뉴스1",
+    "연합뉴스IT",
+    "ZDNet Korea",
+    "IT데일리"
    ],
-   "angles": [],
+   "angles": [
+    {
+     "source": "IT데일리",
+     "title": "금보원, 해킹으로 정보 유출…긴급 차단·조사 착수",
+     "url": "https://www.itdaily.kr/news/articleView.html?idxno=242826"
+    },
+    {
+     "source": "디지털데일리",
+     "title": "개인정보위, 앤트로픽 '클로드' 유출 사고에 조사 착수",
+     "url": "https://n.news.naver.com/article/138/0002247988"
+    },
+    {
+     "source": "아이뉴스24",
+     "title": "앤트로픽 기업 계정 정보 유출 후폭풍⋯클로드 고객 기업들 '노심초사'",
+     "url": "http://www.inews24.com/view/2024906"
+    },
+    {
+     "source": "연합뉴스IT",
+     "title": "개보위, 앤트로픽 '클로드' 개인정보 유출 사고 정식 조사 착수",
+     "url": "https://www.yna.co.kr/view/AKR20261110142600530?input=1195m"
+    },
+    {
+     "source": "전자신문",
+     "title": "개보위, 앤트로픽 '클로드' 개인정보 유출 사고 조사 착수",
+     "url": "https://www.etnews.com/20261110000476"
+    }
+   ],
    "img": {
-    "src": "https://iprsoftwaremedia.com/219/files/20224/628c2a47b3aed32797213f6c_voyager-exterior-sign-2/voyager-exterior-sign-2_1829ac3c-85ac-4929-8c67-5994c15c70c9-prv.jpg?v=1829ac3c-85ac-4929-8c67-5994c15c70c9",
-    "sm": "https://iprsoftwaremedia.com/219/files/20224/628c2a47b3aed32797213f6c_voyager-exterior-sign-2/voyager-exterior-sign-2_1829ac3c-85ac-4929-8c67-5994c15c70c9-prv.jpg?v=1829ac3c-85ac-4929-8c67-5994c15c70c9",
-    "alt": "산타클라라 엔비디아 본사 보이저 사옥 앞 로고 사인",
-    "nr": "엔비디아 제공",
-    "credit": "엔비디아 제공",
-    "credit_url": "https://nvidianews.nvidia.com/multimedia/santa-clara-headquarters"
+    "src": "https://signal.sharktalk.co.kr/photos/amodei-ov04.webp",
+    "sm": "https://signal.sharktalk.co.kr/photos/amodei-ov04.webp",
+    "alt": "The Prime Minister meets with AI developers - 52922227897",
+    "nr": "UK Prime Minister · CC BY 2.0",
+    "credit": "UK Prime Minister · CC BY 2.0",
+    "credit_url": "https://commons.wikimedia.org/w/index.php?curid=133033637",
+    "lib": "anthropic"
    }
   },
   "list": [
    {
     "rank": 1,
-    "title": "넥슨, 3분기 영업익 전년比 11% 증가…메이플 72%↑·던파 33%↓",
-    "url": "https://www.thelec.kr/news/articleView.html?idxno=65228",
-    "outlets": 8,
+    "title": "엔씨, 내년 매출 3조4000억원 전망…올해 연간 목표도 12% 상향",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=65297",
+    "outlets": 49,
     "source": "디일렉",
     "must_idx": 0
    },
    {
+    "rank": 2,
+    "title": "예스티, 3분기 HPA 매출 첫 반영…영업익 약 10배↑",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=65275",
+    "outlets": 40,
+    "source": "디일렉",
+    "must_idx": 1
+   },
+   {
     "rank": 3,
-    "title": "앤트로픽 '페이블 5.2', AI 성능 평가 1위 탈환…API 가격도 20% 인하",
-    "url": "https://www.aitimes.com/news/articleView.html?idxno=217196",
-    "outlets": 18,
-    "source": "AI타임스",
+    "title": "\"GPT 아스트라보다 고성능\"…구글 '제미나이4 카본' 공개",
+    "url": "https://www.hankyung.com/article/2026111109451",
+    "outlets": 16,
+    "source": "한국경제IT",
     "must_idx": 2
    },
    {
-    "rank": 4,
-    "title": "KT, 3분기 영업익 5053억원…클라우드 매출 전년比 7.7%↑",
-    "url": "https://www.thelec.kr/news/articleView.html?idxno=65161",
-    "outlets": 49,
-    "source": "디일렉",
-    "must_idx": 3
-   },
-   {
     "rank": 5,
-    "title": "매디슨 황 빠진 엔비디아 AI 데이…韓협력은 예정대로",
-    "url": "https://www.thelec.kr/news/articleView.html?idxno=65102",
-    "outlets": 49,
-    "source": "디일렉",
+    "title": "오픈AI, 챗GPT에 기업 프로필·AI 에이전트 도입…고객 접점 확대",
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=217253",
+    "outlets": 12,
+    "source": "AI타임스",
     "must_idx": 4
    },
    {
     "rank": 6,
-    "title": "더존비즈온 해킹 피해 확산...전남·전북 기관도 개인정보 유출 가능성 고지",
-    "url": "https://www.thelec.kr/news/articleView.html?idxno=65162",
-    "outlets": 29,
-    "source": "디일렉",
+    "title": "[르포] GPU부터 보안·산업용 무선망까지…新 기술 뽐낸 시스코, 'AI 올라운더' 입증",
+    "url": "https://zdnet.co.kr/view/?no=20261111131053",
+    "outlets": 9,
+    "source": "ZDNet Korea",
     "must_idx": 5
    }
   ]
@@ -692,10 +711,10 @@
    "handle": "choi.openai",
    "tier": "A",
    "role": "새 AI 소식을 한국어로 가장 빨리",
-   "text": "로봇 학습에 필요한 물리 시뮬레이션 속도가 최대 13배 빨라졌다고 합니다. Skild AI가 NVIDIA와 함께 개발한 물리 엔진 Steel을 오픈소스로 공개했는데요. 20가지 서로 다른 로봇 작업을…",
-   "full": "로봇 학습에 필요한 물리 시뮬레이션 속도가 최대 13배 빨라졌다고 합니다. Skild AI가 NVIDIA와 함께 개발한 물리 엔진 Steel을 오픈소스로 공개했는데요. 20가지 서로 다른 로봇 작업을 동시에 시뮬레이션한 테스트에서 기존 PhysX보다 최대 13배 빠르고, GPU 메모리는 약 62% 적게 사용했습니다. 로봇팔이 물건을 집거나 케이블을 다루는 등 다양한 작업을 가상환경에서 학습시키는 데 활용할 수 있습니다.",
-   "ts": "2026-11-11 04:31",
-   "react": 5
+   "text": "빌 게이츠는 AI 기술을 통제하고 규제하는 일에 대해 “우리가 지금까지 해온 그 어떤 일보다 어려울 것”이라고 말했습니다. 인류는 과거 오존층 파괴, 항공 안전, 핵무기 통제 등에서 성공적인 규제 모델을…",
+   "full": "빌 게이츠는 AI 기술을 통제하고 규제하는 일에 대해 “우리가 지금까지 해온 그 어떤 일보다 어려울 것”이라고 말했습니다. 인류는 과거 오존층 파괴, 항공 안전, 핵무기 통제 등에서 성공적인 규제 모델을 만들어왔지만, “AI를 통제하는 과제는 이 모든 것을 합친 것보다 더 어렵다”고 지적했습니다. 특히 금융 시스템이나 주요 인프라를 노린 대규모 사이버 공격처럼, 기술적 부작용으로 인한 실제 충격과 경제적 혼란을 몇 차례 겪고 나서야 사회가 본격적인 대응에 나설 가능성이 높다고 내다봤습니다. 따라서 치명적인 재앙이 닥치기 전에 산업계 밖의 정책 전문가와 최고 인재들을 모아 구체적인 안전장치와 제도적 해법을 미리 마련해두어야 한다고 강조했습니다.",
+   "ts": "2026-11-12 04:04",
+   "react": 6
   },
   {
    "kind": "panel",
@@ -703,10 +722,10 @@
    "handle": "jojoldu",
    "tier": "A",
    "role": "개발 현장에서 보는 AI 도구",
-   "text": "AI 시대에 Tech 분야에서 신입 공고가 늘어나는 것이 굉장히 특이한데, 그만큼 사건 사고가 너무 많고, 기업에서도 투자할 수밖에 없는 상황으로 가고 있는 것 같다. DevOps라면 DevSecOps에…",
-   "full": "AI 시대에 Tech 분야에서 신입 공고가 늘어나는 것이 굉장히 특이한데, 그만큼 사건 사고가 너무 많고, 기업에서도 투자할 수밖에 없는 상황으로 가고 있는 것 같다. DevOps라면 DevSecOps에 관해 관심을 갖고 공부하면 좋고, 백엔드 개발자분들이라면 IDOR, RCE 등 내가 만든 API, SQL, 파일 업로드 등의 기능에서 해야할 것들을 알고 있어야 하는것 같다. 사내의 보안 전문가들이 아무리 잘해도, 결국 내가 만든 API는 유저들에게 공개되는 포인트이기 때문이다. 내가 만든 조회, 등록 API가, 내가 만든 파일 업로드 기능이, 내가 만든 인증 기능이 회사의 대형사고로 가는 것을 막으려면 스스로 백엔드 개발자가 구현하면서 알아야할 보안에 대해서는 전문성을 키워야만 한다",
-   "ts": "2026-11-07 05:21",
-   "react": 36
+   "text": "최근에 창준님이 \"야생학습\" 책을 내시면서 책 내용을 기반으로 한 스킬 파일도 제공해주셨는데요. 좋은 콘텐츠를 AI가 내 일상과 업무에서도 활용할 수 있다는 점이 새로운 방향인 것 같아요 :) 그런…",
+   "full": "최근에 창준님이 \"야생학습\" 책을 내시면서 책 내용을 기반으로 한 스킬 파일도 제공해주셨는데요. 좋은 콘텐츠를 AI가 내 일상과 업무에서도 활용할 수 있다는 점이 새로운 방향인 것 같아요 :) 그런 면에서 이번에 새롭게 나온 강의 컨셉이 재미있어서 공유드립니다. 인프런 MCP를 활용한 보안 강의인데요. 강의를 구매하고 인프런 MCP를 연결하면, 코딩 에이전트가 기능을 구현할 때 필요한 보안 기준을 강의에서 찾아 함께 반영하도록 요청할 수 있습니다. 예를 들어 파일 다운로드 기능을 만들어달라고 하면, 에이전트가 파일 접근 권한이나 저장소 공개 범위처럼 개발자가 미처 생각하지 못한 부분도 살펴볼 수 있습니다. 이미 작성한 코드를 리뷰하거나 리팩토링할 때도 강의의 보안 기준을 참고해 놓친 부분을 찾아보고, 필요한 수정을 요청할 수 있고요.",
+   "ts": "2026-11-11 09:04",
+   "react": 3
   },
   {
    "kind": "panel",
@@ -716,15 +735,15 @@
    "role": "AI 에이전트를 직접 운영하는 경험",
    "text": "이번 일본 출장 마지막 공식행사. #Yokohama 미나토미라이홀에서 @solchinconductor 지휘자의 #Malher 교향곡 콘서트에 우리 #A2G 의 두 벤처파트너…",
    "full": "이번 일본 출장 마지막 공식행사. #Yokohama 미나토미라이홀에서 @solchinconductor 지휘자의 #Malher 교향곡 콘서트에 우리 #A2G 의 두 벤처파트너 @yuni_yunkyung_kim Ryan Nakata 와 함께 했고, 정말 맛난 #Hokkaido 스타일 로바다야끼 에서 진솔 지휘자까지 함께 해주셨다. 내년에 정말 엄청난 일들이 벌어지지 않을까 기대됨",
-   "ts": "2026-11-10 05:21",
-   "react": 1
+   "ts": "2026-11-10 05:04",
+   "react": 2
   },
   {
    "kind": "trust",
    "who": "AI Supremacy · Simon Willison",
    "text": "Claude Fable 5.2 and Mythos 5.2",
    "url": "https://news.ycombinator.com/item?id=50429068",
-   "comments": 976,
+   "comments": 1033,
    "r": 1.14
   },
   {
@@ -732,27 +751,27 @@
    "who": "Zvi (DWATV)",
    "text": "Nvidia CEO Jensen Huang's letter to staff about affair",
    "url": "https://news.ycombinator.com/item?id=50418016",
-   "comments": 1260,
-   "r": 1.29
+   "comments": 1282,
+   "r": 1.31
   }
  ],
  "calendar": {
-  "generated_at": "2026-11-11T06:30:00+09:00",
-  "from": "2026-11-11",
-  "to": "2026-11-13",
+  "generated_at": "2026-11-12T06:30:00+09:00",
+  "from": "2026-11-12",
+  "to": "2026-11-14",
   "dropped": 1,
   "events": [
    {
     "date": "2026-11-12",
-    "time": "07:00",
-    "region": "GLOBAL",
+    "time": "15:20",
+    "region": "KR",
     "category": "시장",
-    "title": "MSCI 11월 정기 지수 변경 발표",
-    "importance": 4,
-    "why": "전 세계 주가지수 편입·편출 종목을 정하는 정기 리뷰 결과",
+    "title": "코스피200 옵션 만기일",
+    "importance": 3,
+    "why": "매월 둘째 목요일 코스피200 옵션 만기일이다.",
     "consensus": null,
     "previous": null,
-    "source": "https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf",
+    "source": "https://www.krx.co.kr/",
     "verified": true
    },
    {
@@ -762,36 +781,10 @@
     "category": "경제지표",
     "title": "미국 주간 신규 실업수당 청구건수",
     "importance": 3,
-    "why": "매주 발표되는 고용 지표. 미국 노동시장 흐름을 가늠",
+    "why": "매주 목요일 나오는 고용 지표로, 고용 시장 흐름을 본다.",
     "consensus": null,
     "previous": null,
     "source": "https://fred.stlouisfed.org/release?rid=180",
-    "verified": true
-   },
-   {
-    "date": "2026-11-12",
-    "time": null,
-    "region": "KR",
-    "category": "시장",
-    "title": "코스피200 옵션 만기일",
-    "importance": 3,
-    "why": "매월 둘째 목요일 옵션 만기. 옵션 포지션이 정산되는 날",
-    "consensus": null,
-    "previous": null,
-    "source": "https://www.krx.co.kr",
-    "verified": true
-   },
-   {
-    "date": "2026-11-12",
-    "time": null,
-    "region": "GLOBAL",
-    "category": "기업 행사",
-    "title": "삼성·구글 AI 안경 예약 판매 시작",
-    "importance": 3,
-    "why": "삼성전자·구글 제미나이 탑재 AI 안경의 예약 판매 개시일",
-    "consensus": null,
-    "previous": null,
-    "source": "https://www.yna.co.kr/view/AKR20261109072000017?input=1195m",
     "verified": true
    },
    {
@@ -801,10 +794,23 @@
     "category": "실적",
     "title": "어플라이드 머티어리얼즈 4분기(회계 2026) 실적",
     "importance": 4,
-    "why": "반도체 장비 업체. 반도체 설비투자 흐름을 보여 주는 실적",
-    "consensus": null,
+    "why": "반도체 장비 수요를 보는 대표 기업 실적이다. 미국 장 마감 뒤 발표.",
+    "consensus": "EPS 4.06달러·매출 103억 달러 (1개 사이트 집계)",
     "previous": null,
     "source": "https://ir.appliedmaterials.com/events/event-details/q4-2026-applied-materials-earnings-conference-call",
+    "verified": true
+   },
+   {
+    "date": "2026-11-13",
+    "time": "06:30",
+    "region": "US",
+    "category": "실적",
+    "title": "시스코 1분기(회계 2027) 실적",
+    "importance": 3,
+    "why": "네트워크·AI 데이터센터 장비 수요를 보는 실적이다. 미국 장 마감 뒤 발표.",
+    "consensus": null,
+    "previous": null,
+    "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-schedules-conference-call-for-q1-fiscal-year-2027-financial-results.html",
     "verified": true
    },
    {
@@ -814,7 +820,7 @@
     "category": "경제지표",
     "title": "미국 10월 생산자물가(PPI)",
     "importance": 4,
-    "why": "기업 단계 물가 흐름. 소비자물가(CPI) 이후 물가 경로 확인용",
+    "why": "생산 단계 물가 지표로, 소비자물가 흐름을 가늠하는 데 쓰인다.",
     "consensus": null,
     "previous": null,
     "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
