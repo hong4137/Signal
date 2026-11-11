@@ -1,24 +1,10 @@
 {
- "generated_at": "2026-11-11T06:30:00+09:00",
+ "generated_at": "2026-11-12T06:30:00+09:00",
  "window": {
-  "from": "2026-11-11",
-  "to": "2026-11-14"
+  "from": "2026-11-12",
+  "to": "2026-11-15"
  },
  "events": [
-  {
-   "date": "2026-11-11",
-   "time": "07:00",
-   "region": "US",
-   "category": "실적",
-   "title": "코어위브(CoreWeave) 3분기 실적",
-   "importance": 4,
-   "why": "AI 데이터센터 인프라 기업. AI 인프라 투자 흐름을 보여 주는 실적",
-   "consensus": null,
-   "previous": null,
-   "source": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Date-of-Third-Quarter-2026-Financial-Results-and-Conference-Call/default.aspx",
-   "verified": true,
-   "note": "미 동부 11/10(화) 17:00 컨퍼런스콜 → 한국 11/11 07:00. 회사 IR 공지와 Benzinga 보도 일치"
-  },
   {
    "date": "2026-11-12",
    "time": "07:00",
@@ -26,12 +12,26 @@
    "category": "시장",
    "title": "MSCI 11월 정기 지수 변경 발표",
    "importance": 4,
-   "why": "전 세계 주가지수 편입·편출 종목을 정하는 정기 리뷰 결과",
+   "why": "분기 정기 리뷰 결과(편입·제외 종목)가 공개된다.",
    "consensus": null,
    "previous": null,
    "source": "https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf",
    "verified": true,
-   "note": "MSCI 사전 공지상 발표일 11/11, 현지 시각 23:00 전후 → 한국 11/12 07:00 전후. 2개 출처 일치"
+   "note": "MSCI 사전 공지: 11월 11일(현지) 발표, 공개 시각 CET 23시 경 → 한국 시각 12일 07시경(환산값)."
+  },
+  {
+   "date": "2026-11-12",
+   "time": "15:20",
+   "region": "KR",
+   "category": "시장",
+   "title": "코스피200 옵션 만기일",
+   "importance": 3,
+   "why": "매월 둘째 목요일 코스피200 옵션 만기일이다.",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.krx.co.kr/",
+   "verified": true,
+   "note": "날짜는 복수 안내로 확인. 거래 종료 15:20이나 일부 일정표는 15:45로 적혀 있어 KRX 공지로 재확인 필요."
   },
   {
    "date": "2026-11-12",
@@ -40,40 +40,12 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구건수",
    "importance": 3,
-   "why": "매주 발표되는 고용 지표. 미국 노동시장 흐름을 가늠",
+   "why": "매주 목요일 나오는 고용 지표로, 고용 시장 흐름을 본다.",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "미 동부 08:30 발표 → 한국 22:30 (서머타임 종료 후 +14시간)"
-  },
-  {
-   "date": "2026-11-12",
-   "time": null,
-   "region": "KR",
-   "category": "시장",
-   "title": "코스피200 옵션 만기일",
-   "importance": 3,
-   "why": "매월 둘째 목요일 옵션 만기. 옵션 포지션이 정산되는 날",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.krx.co.kr",
-   "verified": true,
-   "note": "투자 일정표·블로그 2곳 일치. 거래소 공지는 직접 확인 못 함. 종료 시각은 증권사 공지 확인"
-  },
-  {
-   "date": "2026-11-12",
-   "time": null,
-   "region": "GLOBAL",
-   "category": "기업 행사",
-   "title": "삼성·구글 AI 안경 예약 판매 시작",
-   "importance": 3,
-   "why": "삼성전자·구글 제미나이 탑재 AI 안경의 예약 판매 개시일",
-   "consensus": null,
-   "previous": null,
-   "source": "https://www.yna.co.kr/view/AKR20261109072000017?input=1195m",
-   "verified": true,
-   "note": "여러 매체가 12일 예약 판매 개시를 보도. 국가별 예약 방식은 기사마다 달라 날짜만 표기, 시각 미정"
+   "note": "미 동부 08:30 관행 시각 기준 한국 시각(서머타임 종료 후 +14시간)."
   },
   {
    "date": "2026-11-13",
@@ -82,12 +54,26 @@
    "category": "실적",
    "title": "어플라이드 머티어리얼즈 4분기(회계 2026) 실적",
    "importance": 4,
-   "why": "반도체 장비 업체. 반도체 설비투자 흐름을 보여 주는 실적",
-   "consensus": null,
+   "why": "반도체 장비 수요를 보는 대표 기업 실적이다. 미국 장 마감 뒤 발표.",
+   "consensus": "EPS 4.06달러·매출 103억 달러 (1개 사이트 집계)",
    "previous": null,
    "source": "https://ir.appliedmaterials.com/events/event-details/q4-2026-applied-materials-earnings-conference-call",
    "verified": true,
-   "note": "미 동부 11/12(목) 16:30 컨퍼런스콜 → 한국 11/13 06:30. 회사 IR 공지 기준"
+   "note": "회사 IR: 11월 12일 미 동부 16:30(컨퍼런스콜) 발표 → 한국 시각 13일 06:30."
+  },
+  {
+   "date": "2026-11-13",
+   "time": "06:30",
+   "region": "US",
+   "category": "실적",
+   "title": "시스코 1분기(회계 2027) 실적",
+   "importance": 3,
+   "why": "네트워크·AI 데이터센터 장비 수요를 보는 실적이다. 미국 장 마감 뒤 발표.",
+   "consensus": null,
+   "previous": null,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-schedules-conference-call-for-q1-fiscal-year-2027-financial-results.html",
+   "verified": true,
+   "note": "회사 발표(11월 3일): 11월 12일 미 동부 16:30 컨퍼런스콜 → 한국 13일 06:30. 회사 가이던스 매출 180~182억 달러, 비GAAP EPS 1.32~1.34달러."
   },
   {
    "date": "2026-11-13",
@@ -96,27 +82,24 @@
    "category": "경제지표",
    "title": "미국 10월 생산자물가(PPI)",
    "importance": 4,
-   "why": "기업 단계 물가 흐름. 소비자물가(CPI) 이후 물가 경로 확인용",
+   "why": "생산 단계 물가 지표로, 소비자물가 흐름을 가늠하는 데 쓰인다.",
    "consensus": null,
    "previous": null,
    "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
    "verified": true,
-   "note": "미 동부 08:30 발표 → 한국 22:30. BLS 공식 일정과 FRED 일치"
+   "note": "BLS 11월 일정(11/13 08:30 ET)과 FRED 공식 일정 일치. 미 동부 기준 → 한국 시각 환산. 컨센서스는 확인 못 함."
   }
  ],
  "notes": [
-  "확정 7건으로 기준(8건 이상)에 못 미쳤다. 확인되지 않은 후보는 싣지 않았다.",
-  "원자료(calendar_raw.json)는 2026-11-10 10:23 KST 생성분이라 오늘 03시 이전 것 — 원자료 지연. 그대로 사용.",
-  "실행 환경 시계는 2026-11-11 06:24 KST였다. 시스템 날짜(11/10)는 UTC 기준이라 '오늘'을 11/11로 잡았다.",
-  "미국 10월 CPI(11/10 22:30 발표)는 어제 일이라 윈도우 밖. 예상치는 단일 IB 전망(헤드라인 전월비 +0.30%)만 확인, 컨센서스 미확인.",
-  "미확정으로 뺌: 관세청 11월 1~10일 수출입 잠정치 (규칙상 11일 09:00이나 2026 공지 미확인. 2025년 11월분은 10일 발표).",
-  "미확정으로 뺌: 국가데이터처 10월 고용동향 (11/11 예정 — 공표일정 사이트 1곳만 확인).",
-  "미확정으로 뺌: 시스코 1분기(회계 2027) 실적 (일정 사이트 '미정' 표기만 확인). 더블유게임즈·KT밀리의서재 3분기 컨퍼런스콜 12일 (2026년 날짜 확인 안 됨).",
-  "국내 대형주 3분기 실적은 삼성전자 10/29, SK하이닉스 10/28에 이미 발표. LG전자·현대차·네이버·카카오 등 이번 주 일정은 DART 키 없어 확인 못 함.",
-  "엔비디아 AI 데이 서울(11/9~10, 코엑스)은 이미 진행 중이라 제외.",
-  "확인 못 함: 중국 이번 주 지표, 정부 반도체·AI 발표 및 국회 일정(11/11~16), 미국 관세 유예 시한(11/10 00:01 EST, 2025년 행정명령 기준 — 현행 여부 미확인).",
-  "ECB·BOJ 11월 금리 회의 없음은 확인 못 함 (10월 말 회의는 확인).",
-  "범위 밖(참고): 미국 FOMC 의사록 11/18, 엔비디아 실적 11/17~18, 한은 금통위 11/26, BEA GDP·개인소득 11/25, 지스타 11/19~22."
+  "원자료(calendar_raw.json)는 2026-11-11 08:05 KST 생성분이라 오늘 03시 이전 것 — 원자료 지연. FRED 날짜는 BLS 공식 일정과 대조해 그대로 사용.",
+  "확정 6건으로 8건 기준에 못 미쳤다. 확인되지 않은 후보는 싣지 않았다.",
+  "미확정으로 뺌: 관세청 11월 1~10일 수출입 잠정치 (규칙상 11일, 2026 공지 미확인. 어제 발표 여부도 확인 못 함).",
+  "미확정으로 뺌: 시스코·AMAT 외 원자료의 중국 10월 산업생산·소매판매 (11월 중순 통상 발표, 2026년 일정 검색 실패).",
+  "미확정으로 뺌: 애플 신제품 11월 13일 출시 (MacRumors 단일 매체), 삼성·구글 AI 안경 예약 판매 (재확인 못 함).",
+  "미확정으로 뺌: 한국 대형주 3분기 실적 — DART 키 없음, 검색으로 2026년 일정 확인 못 함. 삼성전자(10/29)·SK하이닉스(10/28) 기발표.",
+  "확인 못 함: 연준 연설 일정, 미국 관세·정부 예산 시한, 반도체·AI 정부 발표와 국회 일정, 국내 개발자 콘퍼런스 2026년 일정, 빅테크 신제품 행사(11/12~15).",
+  "범위 밖(참고): 미국 10월 CPI는 11/10 발표 완료(BLS). 수입물가·소매판매·산업생산 11/17, FOMC 의사록 11/18, 엔비디아 실적 11/18, 한은 금통위 11/26~27(보도 엇갈림), 지스타 11/19~22.",
+  "ECB·BOJ는 10/29~30 이후 다음 회의가 12월 17~18일로 나와, 이번 주 범위에 회의 없음."
  ],
- "searches": 37
+ "searches": 31
 }
