@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-13 12:17",
+ "updated": "2026-11-13 21:44",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 17,
-  "reddit": 30,
+  "hn": 20,
+  "reddit": 28,
   "hf": 15,
   "github": 9,
   "trust": 100
@@ -16,8 +16,8 @@
    "title": "Nvidia is preparing to oust Jensen Huang",
    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
    "discussion": "https://news.ycombinator.com/item?id=50459703",
-   "points": 1215,
-   "comments": 1636,
+   "points": 1219,
+   "comments": 1641,
    "r": 1.35,
    "at": "2026-11-11",
    "topics": [
@@ -25,6 +25,7 @@
    ],
    "story_key": "url:wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
    "trust": [
+    "Latent Space",
     "Zvi (DWATV)"
    ],
    "trust_match": "title",
@@ -38,13 +39,14 @@
    "title": "Anthropic IPO",
    "url": "https://ipo.anthropic.com/us/",
    "discussion": "https://news.ycombinator.com/item?id=50465829",
-   "points": 842,
-   "comments": 818,
-   "r": 0.97,
+   "points": 957,
+   "comments": 873,
+   "r": 0.91,
    "at": "2026-11-12",
    "topics": [],
    "story_key": "url:ipo.anthropic.com/us",
    "trust": [
+    "Latent Space",
     "Simon Willison"
    ],
    "trust_match": "link",
@@ -58,8 +60,8 @@
    "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "discussion": "https://news.ycombinator.com/item?id=50458900",
-   "points": 661,
-   "comments": 688,
+   "points": 673,
+   "comments": 697,
    "r": 1.04,
    "at": "2026-11-11",
    "topics": [
@@ -92,28 +94,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-   "discussion": "https://news.ycombinator.com/item?id=50438318",
-   "points": 639,
-   "comments": 624,
-   "r": 0.98,
-   "at": "2026-11-10",
-   "topics": [],
-   "story_key": "url:evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-   "summary_ko": "AI를 활용한 코딩이 장기적으로 취약하고 유지보수가 어려운 코드베이스를 양산한다는 우려가 제기됐다. 일부는 테스트 코드 추가나 엄격한 모듈화로 극복할 수 있다고 보지만, AI가 쓴 코드가 기술 부채로 돌아올 것이라는 비판에 무게가 실린다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Apple has new Mac app coming to make running local AI models easy",
    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "discussion": "https://news.ycombinator.com/item?id=50446520",
-   "points": 552,
-   "comments": 551,
-   "r": 1.0,
+   "points": 557,
+   "comments": 554,
+   "r": 0.99,
    "at": "2026-11-10",
    "topics": [],
    "story_key": "url:9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
@@ -124,10 +110,33 @@
   },
   {
    "layer": "hn",
+   "title": "Nvidia employees petition to bring back Jensen Huang",
+   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+   "discussion": "https://news.ycombinator.com/item?id=50477231",
+   "points": 657,
+   "comments": 489,
+   "r": 0.74,
+   "at": "2026-11-13",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
+   "trust": [
+    "Latent Space",
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
+   "summary_ko": "젠슨 황의 복귀를 요구하는 엔비디아 직원들의 탄원서가 등장하면서 논란이 벌어졌다. 일부는 사내 규정 위반과 윤리적 문제를 지적하며 CEO로서 부적절했다고 비판한 반면, 그의 리더십과 중국과의 연결고리가 오픈소스 AI 생태계에 필수적이었다며 옹호하는 의견도 팽팽히 맞섰다.",
+   "is_event": true,
+   "kr_query": "엔비디아 젠슨 황 복귀 탄원서",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "My AI agents found an unmapped Maya site?",
    "url": "https://pietromiotti.com/latest/maya-site",
    "discussion": "https://news.ycombinator.com/item?id=50452455",
-   "points": 1029,
+   "points": 1032,
    "comments": 391,
    "r": 0.38,
    "at": "2026-11-11",
@@ -142,12 +151,50 @@
   },
   {
    "layer": "hn",
+   "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+   "discussion": "https://news.ycombinator.com/item?id=50473190",
+   "points": 320,
+   "comments": 349,
+   "r": 1.09,
+   "at": "2026-11-12",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
+   "summary_ko": "엔비디아 CEO 젠슨 황과 관련된 스캔들 보도에 대해, 커뮤니티에서는 내부 고발의 시기와 배경을 두고 다양한 추측이 오갔습니다. 일각에서는 고위 임원들이 스캔들의 파장을 줄이기 위해 의도적으로 정보를 흘렸을 가능성을 제기한 반면, 지정학적 음모론이나 사생활에 대한 엇갈린 반응도 나타났습니다.",
+   "is_event": true,
+   "kr_query": "젠슨 황 엔비디아 CEO 스캔들",
+   "kr": [
+    {
+     "t": "'스캔들 파문' 젠슨황 엔비디아 CEO 사실상 해임…33년만에 퇴진(종합)",
+     "u": "https://www.yna.co.kr/view/AKR20261112185951071?input=1195m",
+     "d": "Thu, 12 Nov 2026",
+     "why": [
+      "ceo",
+      "스캔들",
+      "엔비디아"
+     ]
+    },
+    {
+     "t": "33년 쌓아 올린 업적 ‘와르르’…‘불륜 스캔들’에 쫓겨난 젠슨 황",
+     "u": "https://www.mk.co.kr/article/12207601",
+     "d": "Fri, 13 Nov 2026",
+     "why": [
+      "스캔들",
+      "젠슨"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Gemini 4 Hydrogen",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 478,
-   "comments": 302,
-   "r": 0.63,
+   "points": 541,
+   "comments": 338,
+   "r": 0.62,
    "at": "2026-11-12",
    "topics": [
     "모델릴리스"
@@ -177,7 +224,7 @@
    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "discussion": "https://news.ycombinator.com/item?id=50455394",
-   "points": 578,
+   "points": 582,
    "comments": 273,
    "r": 0.47,
    "at": "2026-11-11",
@@ -195,7 +242,7 @@
    "title": "Tracking Anthropic-discovered vulnerabilities",
    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
    "discussion": "https://news.ycombinator.com/item?id=50447074",
-   "points": 457,
+   "points": 458,
    "comments": 221,
    "r": 0.48,
    "at": "2026-11-10",
@@ -210,30 +257,12 @@
   },
   {
    "layer": "hn",
-   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-   "discussion": "https://news.ycombinator.com/item?id=50443716",
-   "points": 291,
-   "comments": 217,
-   "r": 0.75,
-   "at": "2026-11-10",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:claude.com/resources/articles/sheets-whiteboards-data",
-   "summary_ko": "댓글에서는 앤트로픽의 새 도구들이 기존 오피스 프로그램을 대체할 혁신이라는 평가와, 단순히 얇은 래퍼에 불과해 자체 구축이 쉽고 해자(moat)가 없다는 우려가 팽팽히 맞섰다. 일각에서는 AI 네이티브 도구가 기존 소프트웨어를 무력화하고 업무 방식을 바꿀 것이라고 보았으나, 다른 한편으로는 에이전트 생태계와의 통합이 부족하고 불투명하다는 비판도 제기됐다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Data centers need power – lower income, rural residents pay the price",
    "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
    "discussion": "https://news.ycombinator.com/item?id=50473231",
-   "points": 172,
-   "comments": 202,
-   "r": 1.17,
+   "points": 190,
+   "comments": 220,
+   "r": 1.16,
    "at": "2026-11-12",
    "topics": [
     "인프라·칩"
@@ -246,11 +275,63 @@
   },
   {
    "layer": "hn",
+   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "discussion": "https://news.ycombinator.com/item?id=50443716",
+   "points": 294,
+   "comments": 218,
+   "r": 0.74,
+   "at": "2026-11-10",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.com/resources/articles/sheets-whiteboards-data",
+   "summary_ko": "댓글에서는 앤트로픽의 새 도구들이 기존 오피스 프로그램을 대체할 혁신이라는 평가와, 단순히 얇은 래퍼에 불과해 자체 구축이 쉽고 해자(moat)가 없다는 우려가 팽팽히 맞섰다. 일각에서는 AI 네이티브 도구가 기존 소프트웨어를 무력화하고 업무 방식을 바꿀 것이라고 보았으나, 다른 한편으로는 에이전트 생태계와의 통합이 부족하고 불투명하다는 비판도 제기됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "discussion": "https://news.ycombinator.com/item?id=50481187",
+   "points": 273,
+   "comments": 213,
+   "r": 0.78,
+   "at": "2026-11-13",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:status.claude.com/incidents/nn11wk485zfn",
+   "summary_ko": "클로드 서비스 장애 속에서 개발 생산성이 AI에 과도하게 의존하고 있다는 점을 지적하는 목소리가 나왔다. 일각에서는 AI 없이 코딩하던 시절로 돌아갈 수 없으며 코딩 도구의 변화 속도가 너무 빠르다는 반응을 보였다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+   "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+   "discussion": "https://news.ycombinator.com/item?id=50474311",
+   "points": 182,
+   "comments": 205,
+   "r": 1.13,
+   "at": "2026-11-12",
+   "topics": [],
+   "story_key": "url:synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+   "summary_ko": "앱 스토어 검증 과정이 너무 느리고 자의적이라는 개발자들의 불만이 이어지고 있다. 반면 대형 앱이나 게임은 신속하게 처리된다는 특혜 의혹과 함께, AI로 생성된 앱의 품질과 스팸 차단을 위해 엄격한 필터링이 필요하다는 옹호 의견도 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Retirement Savings Are Fueling the AI Bubble",
    "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
    "discussion": "https://news.ycombinator.com/item?id=50457164",
    "points": 165,
-   "comments": 194,
+   "comments": 195,
    "r": 1.18,
    "at": "2026-11-11",
    "topics": [],
@@ -258,22 +339,6 @@
    "summary_ko": "패시브 인덱스 펀드와 은퇴 자금이 AI 테마주에 과도하게 집중되어 시장 전체의 위험을 키우고 있다는 지적이 나온다. 반면 대다수 일반 투자자에게는 비용 효율적으로 시장 평균 수익을 좇는 인덱스 투자가 여전히 가장 합리적인 선택이라는 반박도 존재한다.",
    "is_event": false,
    "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-   "discussion": "https://news.ycombinator.com/item?id=50435660",
-   "points": 196,
-   "comments": 192,
-   "r": 0.98,
-   "at": "2026-11-10",
-   "topics": [],
-   "story_key": "url:cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-   "summary_ko": "AI 인프라 투자를 위한 자금 조달 과정에서 신용 경색 우려와 함께 AI 모델 훈련 비용을 매출총이익 산정 시 어떻게 회계 처리해야 할지 갑론을박이 이어졌다. 추론 마진의 높고 낮음을 떠나 천문학적인 훈련 비용을 지속해서 감당할 수 있는지에 대해 회의적인 시각이 적지 않다.",
-   "is_event": true,
-   "kr_query": "코어위브 AI 채권 금리",
    "kr": []
   },
   {
@@ -303,8 +368,8 @@
    "title": "Gemini Decisions API",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
    "discussion": "https://news.ycombinator.com/item?id=50456791",
-   "points": 555,
-   "comments": 157,
+   "points": 562,
+   "comments": 160,
    "r": 0.28,
    "at": "2026-11-11",
    "topics": [
@@ -344,48 +409,26 @@
   },
   {
    "layer": "hn",
-   "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
-   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-   "discussion": "https://news.ycombinator.com/item?id=50473190",
-   "points": 121,
-   "comments": 156,
-   "r": 1.29,
+   "title": "I'm making LLMs work on small and old devices",
+   "url": "https://github.com/hyperionaidev/smolmaxxing/",
+   "discussion": "https://news.ycombinator.com/item?id=50468888",
+   "points": 395,
+   "comments": 147,
+   "r": 0.37,
    "at": "2026-11-12",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
-   "summary_ko": "엔비디아 CEO 젠슨 황과 관련된 스캔들 보도에 대해, 커뮤니티에서는 내부 고발의 시기와 배경을 두고 다양한 추측이 오갔습니다. 일각에서는 고위 임원들이 스캔들의 파장을 줄이기 위해 의도적으로 정보를 흘렸을 가능성을 제기한 반면, 지정학적 음모론이나 사생활에 대한 엇갈린 반응도 나타났습니다.",
-   "is_event": true,
-   "kr_query": "젠슨 황 엔비디아 CEO 스캔들",
-   "kr": [
-    {
-     "t": "'스캔들 파문' 젠슨황 엔비디아 CEO 사실상 해임…33년만에 퇴진(종합)",
-     "u": "https://www.yna.co.kr/view/AKR20261112185951071?input=1195m",
-     "d": "Thu, 12 Nov 2026",
-     "why": [
-      "ceo",
-      "스캔들",
-      "엔비디아"
-     ]
-    },
-    {
-     "t": "33년 쌓아 올린 업적 ‘와르르’…‘불륜 스캔들’에 쫓겨난 젠슨 황",
-     "u": "https://www.mk.co.kr/article/12207601",
-     "d": "Fri, 13 Nov 2026",
-     "why": [
-      "스캔들",
-      "젠슨"
-     ]
-    }
-   ]
+   "topics": [],
+   "story_key": "gh:hyperionaidev/smolmaxxing",
+   "summary_ko": "댓글에서는 저사양 넷북이나 라즈베리 파이, 오래된 폰 등에서 LLM을 구동하려는 시도에 공감하며 다양한 하드웨어 테스트 경험을 공유했다. 특히 대형 모델을 압축하거나 파인튜닝하여 저전력 기기에서 효율을 뽑아내는 방법과 엣지 디바이스 가속 가능성에 대해 활발한 논의가 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "discussion": "https://news.ycombinator.com/item?id=50443812",
-   "points": 434,
+   "points": 440,
    "comments": 145,
    "r": 0.33,
    "at": "2026-11-10",
@@ -397,6 +440,28 @@
    "is_event": false,
    "kr_query": "",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Gemini 4 Hydrogen and Orchestrator",
+   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+   "discussion": "https://news.ycombinator.com/item?id=50472260",
+   "points": 437,
+   "comments": 126,
+   "r": 0.29,
+   "at": "2026-11-12",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
+   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   }
  ],
  "by_debate": [
@@ -405,8 +470,8 @@
    "title": "Nvidia is preparing to oust Jensen Huang",
    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
    "discussion": "https://news.ycombinator.com/item?id=50459703",
-   "points": 1215,
-   "comments": 1636,
+   "points": 1219,
+   "comments": 1641,
    "r": 1.35,
    "at": "2026-11-11",
    "topics": [
@@ -414,6 +479,7 @@
    ],
    "story_key": "url:wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
    "trust": [
+    "Latent Space",
     "Zvi (DWATV)"
    ],
    "trust_match": "title",
@@ -424,63 +490,11 @@
   },
   {
    "layer": "hn",
-   "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
-   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-   "discussion": "https://news.ycombinator.com/item?id=50473190",
-   "points": 121,
-   "comments": 156,
-   "r": 1.29,
-   "at": "2026-11-12",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
-   "_comments": [
-    "Jensen: “You're not talking to someone who woke up a loser. That loser attitude, that loser premise makes no sense to me.”",
-    "The affairs were probably open secrets to those high up for a while. Once Jensen's reputation passes a perceived point of no return, it makes sense for the other higher ups to leak everything they know to the media to shorten the duration of the scandal. The worst has happened, their action will not change, so no need to drag it out.",
-    "I click on these ant kitchen people expecting some new account with 3 karma, nope, old ass accounts with lots of karma. Humans and bots converging in functionality.",
-    "I wonder if he followed a modern trend and was on TRT, it seems like a pattern for celebrity/powerful men of age these days: get on TRT, get in shape, cheat on your wife.",
-    "This is an obvious Chinese government op in coordination with US media to get him removed.China manufactures their own AI chips now. It’s in their national interest to impede US progress in this area.",
-    ">Big music artists could totally sell cheaper tickets and still make enormous piles of cash.>Nvidia could have continued supporting the consumer market alongside their AI ambitions.No, in both cases they'll just get scalped. If you're selling something for $1 that the market is willing to pay $10 for, the market will find a way to equalize this.>Companies don't exist in a vacuum, they are entities in our community, and we should expect them to behave in a way that is beneficial and fair, and sometimes that might be at the expense of unrealised profits. Not bankruptcy obviously, but there's a wide gamut of extreme prosperity between bankrupt and trillion dollar market cap.Give me a break. Thi",
-    "She didn't marry a hundred-billionaire. They met as students at Oregon State. :(",
-    "Annoying whataboutism. No one mentioned anything other than hoping the media doesn't hound these women.",
-    "Completely tangential but I always find it interesting how different expressions become attached to specific contexts in people's heads.\"This old house as got good bones\" is the realtor 'slaps roof of car' meme that seems to have caught on during the 2010s and peaked during COVID. Now I hear people mindlessly propagating it whenever they talk about renovating/buying an old home.I'm sure that we'll be hearing this ants in the kitchen of the house with good bones thing forever now.",
-    "It shouldn't be surprise we are seeing so many of these posts surface.After all, when you see two ants in the kitchen..",
-    "(This must have originally been posted to https://news.ycombinator.com/item?id=50473868 - we've since merged the threads.)",
-    "Possibly Nathan Calvin on Twitter in August: If you find two ants in your kitchen, the best estimate of the total number of ants in your kitchen is not twoAugust 5th about Open AI:https://x.com/_NathanCalvin/status/2084856543561093535September 4th.. still about Open AI:https://x.com/_NathanCalvin/status/2095854095139537064November 11th.. Alex Lawsen on Twitter, referencing Nathan's post (above):https://x.com/lxrjl/status/2120640689620861335"
-   ],
-   "summary_ko": "엔비디아 CEO 젠슨 황과 관련된 스캔들 보도에 대해, 커뮤니티에서는 내부 고발의 시기와 배경을 두고 다양한 추측이 오갔습니다. 일각에서는 고위 임원들이 스캔들의 파장을 줄이기 위해 의도적으로 정보를 흘렸을 가능성을 제기한 반면, 지정학적 음모론이나 사생활에 대한 엇갈린 반응도 나타났습니다.",
-   "is_event": true,
-   "kr_query": "젠슨 황 엔비디아 CEO 스캔들",
-   "kr": [
-    {
-     "t": "'스캔들 파문' 젠슨황 엔비디아 CEO 사실상 해임…33년만에 퇴진(종합)",
-     "u": "https://www.yna.co.kr/view/AKR20261112185951071?input=1195m",
-     "d": "Thu, 12 Nov 2026",
-     "why": [
-      "ceo",
-      "스캔들",
-      "엔비디아"
-     ]
-    },
-    {
-     "t": "33년 쌓아 올린 업적 ‘와르르’…‘불륜 스캔들’에 쫓겨난 젠슨 황",
-     "u": "https://www.mk.co.kr/article/12207601",
-     "d": "Fri, 13 Nov 2026",
-     "why": [
-      "스캔들",
-      "젠슨"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
    "title": "Retirement Savings Are Fueling the AI Bubble",
    "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
    "discussion": "https://news.ycombinator.com/item?id=50457164",
    "points": 165,
-   "comments": 194,
+   "comments": 195,
    "r": 1.18,
    "at": "2026-11-11",
    "topics": [],
@@ -495,28 +509,14 @@
    "title": "Data centers need power – lower income, rural residents pay the price",
    "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
    "discussion": "https://news.ycombinator.com/item?id=50473231",
-   "points": 172,
-   "comments": 202,
-   "r": 1.17,
+   "points": 190,
+   "comments": 220,
+   "r": 1.16,
    "at": "2026-11-12",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
-   "_comments": [
-    "It’s 46% and it’s irrelevant if it’s not replacing any existing power generation.There is more excess data center power demand than there is capability to build plants over the next 10 years, so if this plant isn’t built the likely result is 1 less data center and not releasing carbon from 5.5 million tons of timber per year.",
-    "Residential customers aren’t getting power below market prices. By definition, they are paying market prices for that power.It’s the market that is being distorted by all the additional datacenters coming online and wanting to suck down all the power that the entire rest of the country needs.That market distortion is what needs to be fixed. Datacenter builders need to cover ALL the costs of ALL of the additional infrastructure needed to support their operation, plus the standard daily OpEx once all the infrastructure is in place.And they need to comply with all national and international laws regarding their operation, including adherence to Dark Sky rules for lighting in-site, ensuring that",
-    "I took the steel mill example from a comparison I made in a Finnish context. Outokumpu's steel mill in Tornio employs ~2000 people directly, plus an unknown number of subcontractors. Its revenues have varied between €3.5 billion/year and €7 billion/year recently, and its average power consumption is ~400 MW.Nebius is currently building a 310 MW data center in Lappeenranta. The construction phase employs ~700 people, and the finished data center is expected to have ~100 employees.",
-    "I love renewable energy as much as anyone I know, but they have some major and well-known problems.One problem is that they only produce when the sun is shining, or the wind is blowing, etc…. These can be ameliorated with batteries, but that still takes a significant additional expense.The bigger problem is location. They’re only cost-effective if you put them in the right places, and that’s usually far away from where people want to use that power. Which means you need transmission lines. And those take as long or longer to permit and build as do nuclear or combined-cycle natural gas power plants. These things tend to be delivered in terms of 120 months, or more. Not 120 days, like the data",
-    ">isn't the simplest solution to upgrade the grid?On paper, sure.In reality they'd probably have to secede from the state to do it.",
-    "How manny times does the snow plow go down that road in the same 5yr period? What's the axle group loading for a snow plow? The same federal maximum as the log truck you say?The prevalence of dirt roads in VT is an intentional policy decision.",
-    "Exactly. Nobody ever wants to ask the next question.Why can't these rural areas just let this outside money build power infra at the drop of a hat?Rules.Who's rules?Well it wasn't the town in the middle of nowhere that got screwed when steel mill closed or the glass cookware plant packed up for Vietnam who wrote the rules that's for sure...",
-    "The problem isn't one of scale, but one of paying for the increased infrastructure. It gets passed along to all customers, not only the ones that caused the increased demand.Eventually you would expect a lower price, but that's long down the road. In the short run increased demand drives up the price.",
-    "Data centers account for something like 5% of the increase in electricity costs (Rana, Kaps Wharton/Harvard study).Of course, the real reason energy prices are rising is that regulatory complexity makes it extraordinarily expensive and risky to build new generation, or even to upgrade transmission. Did you know that an upgrade across an already existing and built out right of way --- just making smaller wires bigger --- requires a full NEPA review?",
-    "> When I did the math there’s not enough available scrap in the entire country to power this thing.Which tracks since it's in England and they're getting pellets from the US, Canada and Europe.> Over 50-100 years for short lived species. And much longer for longer lived species.But who is logging old growth trees for biomass?In if someone is cutting down a tree in a first world country it's generally either because the tree was grown intending to cut it down and they immediately start growing new trees there, or because it's going to be cut down regardless of what you do with the tree because they're removing it in order to make some other use of the land.Moreover, you can always find that o",
-    "Sounds like Tennessee Valley Authority, in which case 50% of your energy mix is fossil fuels and 0% of the biomass plant is fossil fuel and the incremental effect is potentially negative on atmospheric carbon.",
-    "> Even if that supply is built, it will be more expensive because it is built at today's prices, not the prices of 20+ years ago when the community's previous generation capacity was builtMuch of today's higher prices are attributable to the high cost of the permitting process. If you want the government to fix something, have them fix that.Moreover, renewable generation isn't actually more expensive. LCoE for solar and wind is now something like $0.06/kWh, which is better than fossil fuels. That doesn't count the storage you'd need to use them for 100% of the grid, but we're nowhere near using them for 100% of the grid so that isn't relevant yet, and using them for e.g. 50% of the grid does"
-   ],
    "summary_ko": "AI와 데이터 센터의 급증으로 인한 전력 수요 증가가 저소득층과 농어촌 지역 주민에게 경제적 부담을 전가하고 있다는 지적이 나왔습니다. 댓글에서는 데이터 센터 건설이 전력망과 요금 구조에 미치는 왜곡을 비판하며 인프라 비용을 기업이 전액 부담해야 한다는 의견과, 엄격한 규제와 송배전망 확충의 어려움이 진짜 원인이라는 주장이 팽팽히 맞섰습니다.",
    "is_event": false,
    "kr_query": "",
@@ -524,11 +524,79 @@
   },
   {
    "layer": "hn",
+   "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+   "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+   "discussion": "https://news.ycombinator.com/item?id=50474311",
+   "points": 182,
+   "comments": 205,
+   "r": 1.13,
+   "at": "2026-11-12",
+   "topics": [],
+   "story_key": "url:synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+   "_comments": [
+    "Update for my app has been in review on the App Store since November 3rd.Meanwhile on Android updates are just flying through.",
+    "You do that only once. And on iOS you can't install any app? Only signed apps for one week at a time.",
+    "it kept sitting waiting for review for a week and then getting rejected for bullshit reasons, over and over again",
+    "> You can avoid the 12 beta testers if you create an LLCYeah that is an easy option. In my jurisdiction that costs above 500€ for legal paperwork (notarized stuff) and now you have to submit double-entry bookeping records and tax forms every year. THAT is not an alternative to anything. Dissolving costs around 300€ just the notary appointment. Again, am in Europe.",
+    "To enable sideloading, you have to wait 24h on the device. So no \"simply pass it to your friends\".",
+    "It usually takes a couple of days, the first time, then it's almost immediate, until the next version bump.I use TestFlight almost from the start of a project. Great way to involve non-tech folks, and work out UI design issues quickly.",
+    "Apple complied in bad faith and it's still impossible to do direct installs on mobile.",
+    "> I suspect Apple knows that most of their revenue comes from the top 500 casino games for children. They probably get all their reviews fast-tracked to keep them happy.Trust me they know, that's why every single marketing page on the appstore (do not take my word for it, go check it) almost only talks about either education or productivity apps.",
+    "Maybe I’m just lucky, but we’ve had under 24 hour review times for all of our iOS app reviews over the past few months, including our first submission of the app on a new account. Our Android app first release took longer at about 48 hours, and an update after they less than 24.",
+    "Your logic or understanding is bad. The video is only requested after a rejection, not before submission. So Apple are not saving themselves time here, quite the opposite they are causing multiple rounds of review.The app/game is already proven to work at the time it is compiled and again as it is uploaded and put through Apple’s first line of App Store checks.Apple is already putting large demands on developers with enforced SDK changes and new devices, we need them to do more for us not less. Large companies might be able to eat the time required to do these videos, but as an indie developer it already takes hours or days to prepare the app store page. This is not good by any measure.",
+    "This may be unpopular opinion, but IMO this is a good approach from Google. If you can't get 12 people to download your app then there is no reason to spam and keep it in the Google Play. I went through this process a few times as well and while I found it frustrating as well, I believe it's a good initial filter for spammers.",
+    "I don’t think it’s that and I think you know that; this article had a clear agenda. There is an obvious implication that AI-made means “worse”. As a Software Engineer of 13 years and someone who makes things with AI in their spare time, I hold both to the same standard of quality. To most people it shouldn’t matter who made it, while devs have been spinning the “AI-slop” trope. At some point people are going to have to get over it."
+   ],
+   "summary_ko": "앱 스토어 검증 과정이 너무 느리고 자의적이라는 개발자들의 불만이 이어지고 있다. 반면 대형 앱이나 게임은 신속하게 처리된다는 특혜 의혹과 함께, AI로 생성된 앱의 품질과 스팸 차단을 위해 엄격한 필터링이 필요하다는 옹호 의견도 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+   "discussion": "https://news.ycombinator.com/item?id=50473190",
+   "points": 320,
+   "comments": 349,
+   "r": 1.09,
+   "at": "2026-11-12",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12",
+   "summary_ko": "엔비디아 CEO 젠슨 황과 관련된 스캔들 보도에 대해, 커뮤니티에서는 내부 고발의 시기와 배경을 두고 다양한 추측이 오갔습니다. 일각에서는 고위 임원들이 스캔들의 파장을 줄이기 위해 의도적으로 정보를 흘렸을 가능성을 제기한 반면, 지정학적 음모론이나 사생활에 대한 엇갈린 반응도 나타났습니다.",
+   "is_event": true,
+   "kr_query": "젠슨 황 엔비디아 CEO 스캔들",
+   "kr": [
+    {
+     "t": "'스캔들 파문' 젠슨황 엔비디아 CEO 사실상 해임…33년만에 퇴진(종합)",
+     "u": "https://www.yna.co.kr/view/AKR20261112185951071?input=1195m",
+     "d": "Thu, 12 Nov 2026",
+     "why": [
+      "ceo",
+      "스캔들",
+      "엔비디아"
+     ]
+    },
+    {
+     "t": "33년 쌓아 올린 업적 ‘와르르’…‘불륜 스캔들’에 쫓겨난 젠슨 황",
+     "u": "https://www.mk.co.kr/article/12207601",
+     "d": "Fri, 13 Nov 2026",
+     "why": [
+      "스캔들",
+      "젠슨"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "discussion": "https://news.ycombinator.com/item?id=50458900",
-   "points": 661,
-   "comments": 688,
+   "points": 673,
+   "comments": 697,
    "r": 1.04,
    "at": "2026-11-11",
    "topics": [
@@ -564,9 +632,9 @@
    "title": "Apple has new Mac app coming to make running local AI models easy",
    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "discussion": "https://news.ycombinator.com/item?id=50446520",
-   "points": 552,
-   "comments": 551,
-   "r": 1.0,
+   "points": 557,
+   "comments": 554,
+   "r": 0.99,
    "at": "2026-11-10",
    "topics": [],
    "story_key": "url:9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
@@ -577,48 +645,17 @@
   },
   {
    "layer": "hn",
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-   "discussion": "https://news.ycombinator.com/item?id=50438318",
-   "points": 639,
-   "comments": 624,
-   "r": 0.98,
-   "at": "2026-11-10",
-   "topics": [],
-   "story_key": "url:evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-   "summary_ko": "AI를 활용한 코딩이 장기적으로 취약하고 유지보수가 어려운 코드베이스를 양산한다는 우려가 제기됐다. 일부는 테스트 코드 추가나 엄격한 모듈화로 극복할 수 있다고 보지만, AI가 쓴 코드가 기술 부채로 돌아올 것이라는 비판에 무게가 실린다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-   "discussion": "https://news.ycombinator.com/item?id=50435660",
-   "points": 196,
-   "comments": 192,
-   "r": 0.98,
-   "at": "2026-11-10",
-   "topics": [],
-   "story_key": "url:cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-   "summary_ko": "AI 인프라 투자를 위한 자금 조달 과정에서 신용 경색 우려와 함께 AI 모델 훈련 비용을 매출총이익 산정 시 어떻게 회계 처리해야 할지 갑론을박이 이어졌다. 추론 마진의 높고 낮음을 떠나 천문학적인 훈련 비용을 지속해서 감당할 수 있는지에 대해 회의적인 시각이 적지 않다.",
-   "is_event": true,
-   "kr_query": "코어위브 AI 채권 금리",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic IPO",
    "url": "https://ipo.anthropic.com/us/",
    "discussion": "https://news.ycombinator.com/item?id=50465829",
-   "points": 842,
-   "comments": 818,
-   "r": 0.97,
+   "points": 957,
+   "comments": 873,
+   "r": 0.91,
    "at": "2026-11-12",
    "topics": [],
    "story_key": "url:ipo.anthropic.com/us",
    "trust": [
+    "Latent Space",
     "Simon Willison"
    ],
    "trust_match": "link",
@@ -629,12 +666,81 @@
   },
   {
    "layer": "hn",
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "discussion": "https://news.ycombinator.com/item?id=50481187",
+   "points": 273,
+   "comments": 213,
+   "r": 0.78,
+   "at": "2026-11-13",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:status.claude.com/incidents/nn11wk485zfn",
+   "_comments": [
+    "Yes, but my company does not pay me every 5 years. I don't know about you, but if I wait 5 years, I won't get a salary in the meantime.If I wait until tomorrow, though, my company won't see the difference.",
+    "They will reduce the frequency of these transient errors if the IPO price goes back to $2T from $1T. Or else...",
+    "Software documentation was a little different when it went through a publication process as a part of a larger waterfall. I was going to say better but I'm not sure about that part, but it was certainly verbose.",
+    ">No, and that's also not necessary. We are reliant on our systems. The correct response is to harden our systems, not to foster some illusion of independence.I'm not sure if this is your intent, but this paragraph reads like satire given current real world events.The systems you mention in your second sentence are failing at the \"right response\" you mention in your third, which dictates that contrary to your first sentence alternative action is necessary.You cannot harden systems you have no control over. Societal level assurances require law and goverment regulation and enforcement. It is juvenile to pretend otherwise. If we were talking about government services, then as a taxpayer you wou",
+    "I heard I'm not even supposed to own RAM, its all meant to live in data centers.",
+    "Depending on company size and security posture (like mine), we only have one provider claude and the company outright bans all other ones, even local models unless approved via a lengthy process",
+    "Let's just post company names as title then, so people talk about whatever problem they have with the it, not the thread topic.",
+    "I've seen every one of the things you listed, sometimes all at the same company. None of them add much in the way of effort/time to do the work.- JIRA ticket - audit trail- PR format - easier for people to scan, and to make sure things aren't forgotten (you can even have the template inserted when it's created)- address review comments separately - not sure what to say on this one because I don't understand how _else_ you would address them - I've always addressed each one individually",
+    "Should you receive a salary if you can't work without AI? If a crane stops working for a construction worker it doesn't stop at all",
+    "If the tractor is intelligent and can operate itself, what exactly is your role?",
+    "You would also probably prefer a surgeon who forges ahead without it if the AI is down and you are going to die.Claude is going to write a banger medical drama about this",
+    "just want to remind HN that it was as little as a year when I mentioned I used LLMs to do all my coding, totally hands off and people here found it a curiosity. One year later and its madness to even contemplate coding manually.Im not complaining Im just pointing out how quickly the overton window is shifting."
+   ],
+   "summary_ko": "클로드 서비스 장애 속에서 개발 생산성이 AI에 과도하게 의존하고 있다는 점을 지적하는 목소리가 나왔다. 일각에서는 AI 없이 코딩하던 시절로 돌아갈 수 없으며 코딩 도구의 변화 속도가 너무 빠르다는 반응을 보였다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia employees petition to bring back Jensen Huang",
+   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+   "discussion": "https://news.ycombinator.com/item?id=50477231",
+   "points": 657,
+   "comments": 489,
+   "r": 0.74,
+   "at": "2026-11-13",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
+   "trust": [
+    "Latent Space",
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
+   "_comments": [
+    "Some shareholders would like a CEO to do whatever he or she can get away with to the benefit of the company.",
+    "In 1995 you didn’t have: raspberry anything, flipper zero, qemu, commodity smartphones, mail-order circuit board fab—-and that’s just the stuff under $200.",
+    "Possibly knowingly selling your product illegally when you’re instructed to not do that, as well as conducting numerous affairs with direct reports cannot be defined as running the company well.Even leaving out the sale to China part, sleeping with direct reports is unethical and presents so many conflicts of interest. He was lucky the damage was minimal for so long",
+    "Agreed. For all the people saying \"multiple affairs are his private business\" - if someone shows a pattern of breaking company and legal policy, and covering it up, then who knows what else they're covering up. You simply can't have that in a CEO.",
+    "Dont you think that now Mr Jensen is free to be with ms spy? Or become a spy? Or the competition?",
+    "I believe the average person is going to be worse off without Jensen sending chips to China because that will be the end of frontier level open weight models. Jensen was making a huge push towards developing their own open weight models too, NVIDIA in general was aligned to that mission.Right now I can run DS or Kimi locally or find providers who run them E2EE and have actual faith in privacy. Meanwhile, one of Notions data processors got hacked and it turns out their “zero data retention” policy was a complete lie. That’s par for the course in corporate America.Our options after this are going to be spyware, censored models from a duopoly. We are fucked into a surveillance state without ope",
+    "> Allegedly you guys use the widest range of frequencies for vocalization which is advantageous in acquiring foreign languages.That sounds like you are remembering one of those Tomatis charts, which are simply bullshit. All natural languages are quite similar in terms of their \"frequency bands\", what is different is the clustering of their phonemes within those bands, e.g. Russian has lots of consonant sounds but very few vowels when compared to English.",
+    "\"It's national security!\"Seriously? He is of Chinese heritage, speaks Madarin. He watches Chinese films, reads Chinese books, listens to Chinese music, probably follows Chinese language social media. He's married to a South East Asian women, his affair is with a Chinese ethnicity.National Security?Let the man be, he's a geek what loves building technology. He made many people rich, and his products drive modern AI. All of humanity will benefit from his work.National Security?",
+    "This a blatant takeover of Nvidia and nothing less. Look at the early life of the \"interim\" CFO→CEO.",
+    "Ram Altman was able to pull this off before, we are rooting for you team Jensen!",
+    "This should age like milk. I bet Jensen wouldn't even sign this petition. No way, it was just one, I mean two, okay three affairs but that was all, I pinky promise. Imagine how many failed approaches and warnings there were, that went silent because it wasn't plausible. It certainly is now and these people would be compensated for their account. We haven't even heard his wife's account yet which may paint him in a glowing or very dark light in the sphere or public opinion. Jensen blew it.",
+    "I agree that the guy was an asshole to his wife. but the reason he is being ousted is because someone wants someone else. I dont know if there is intention to scale bad sentiments with China, I dont know if there was really any spy or gpu's in china due to his actions, but they make it seem it was because his affairs and not his connections with other chinese companies and politics which i find concerning."
+   ],
+   "summary_ko": "젠슨 황의 복귀를 요구하는 엔비디아 직원들의 탄원서가 등장하면서 논란이 벌어졌다. 일부는 사내 규정 위반과 윤리적 문제를 지적하며 CEO로서 부적절했다고 비판한 반면, 그의 리더십과 중국과의 연결고리가 오픈소스 AI 생태계에 필수적이었다며 옹호하는 의견도 팽팽히 맞섰다.",
+   "is_event": true,
+   "kr_query": "엔비디아 젠슨 황 복귀 탄원서",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
    "discussion": "https://news.ycombinator.com/item?id=50443716",
-   "points": 291,
-   "comments": 217,
-   "r": 0.75,
+   "points": 294,
+   "comments": 218,
+   "r": 0.74,
    "at": "2026-11-10",
    "topics": [
     "모델릴리스"
@@ -650,9 +756,9 @@
    "title": "Gemini 4 Hydrogen",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 478,
-   "comments": 302,
-   "r": 0.63,
+   "points": 541,
+   "comments": 338,
+   "r": 0.62,
    "at": "2026-11-12",
    "topics": [
     "모델릴리스"
@@ -704,7 +810,7 @@
    "title": "Tracking Anthropic-discovered vulnerabilities",
    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
    "discussion": "https://news.ycombinator.com/item?id=50447074",
-   "points": 457,
+   "points": 458,
    "comments": 221,
    "r": 0.48,
    "at": "2026-11-10",
@@ -722,7 +828,7 @@
    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "discussion": "https://news.ycombinator.com/item?id=50455394",
-   "points": 578,
+   "points": 582,
    "comments": 273,
    "r": 0.47,
    "at": "2026-11-11",
@@ -740,7 +846,7 @@
    "title": "My AI agents found an unmapped Maya site?",
    "url": "https://pietromiotti.com/latest/maya-site",
    "discussion": "https://news.ycombinator.com/item?id=50452455",
-   "points": 1029,
+   "points": 1032,
    "comments": 391,
    "r": 0.38,
    "at": "2026-11-11",
@@ -755,10 +861,40 @@
   },
   {
    "layer": "hn",
+   "title": "I'm making LLMs work on small and old devices",
+   "url": "https://github.com/hyperionaidev/smolmaxxing/",
+   "discussion": "https://news.ycombinator.com/item?id=50468888",
+   "points": 395,
+   "comments": 147,
+   "r": 0.37,
+   "at": "2026-11-12",
+   "topics": [],
+   "story_key": "gh:hyperionaidev/smolmaxxing",
+   "_comments": [
+    "Well, my netbook. Atom n270, 1GB of RAM, 1.5GB potentially with ZRAM. If it can run in that, a Pentium 4 with SSE2 would be the closest setup down.",
+    "Limits pushed again this time on phones..Qwen3.6-35B-A3B at 4.9-5.7 tok/s Qwen3-Next-80B-A3B at 2.8 tok/sAnd targeting 10 tok/s for both, 35B modified is on hugging face and 80B is uploading..",
+    "\"double typo\"When you find two sants in the kitchen, you are certain to find more sants. Won't fool ME.",
+    "Vapes typically have less than 100KB of RAM, though I haven't been able to find specs for the Rifbars yet. But I assumed even if they're 1MB that's still not enough to run any kind of LLM right?",
+    "I had this case in fine tuned small models (up to 27B) in finance and legal, over bigger models (cost-wise, on-prem for a regulated institution, and better perofrmance because we owned the data pipeline)",
+    "Decent!! Also I love the idea of the live chat, would you mind if I put a reference to it on my repo?",
+    "actually the pi zero is a nice target to play with next, will give a shot and report",
+    "Not sure about 1b but 2.5 years old gemma 2 2B was very capable and useful model I used for summarizing aricles then.",
+    "I want AI octopus. This is only a single iPhone generation away from happening, imho. (Waterproof variant.)",
+    "Yes please, my Indy, O2 and Octane2 are all sitting there waiting for some hot Terminator LLM action.",
+    "I haven't written a new blog post for it yet but there's currently a demo live of my FPGA running bonsai 8b on the same FPGA herehttps://www.mikeayles.com/blog/on-chip-llm-kv260/Its right up against the wall of DDR bandwidth, so I'm trying every trick in the book to get the speed up",
+    "I'm also working on this thread in parallel because it has interesting business aspects, would be happy to see your progress when you release it"
+   ],
+   "summary_ko": "댓글에서는 저사양 넷북이나 라즈베리 파이, 오래된 폰 등에서 LLM을 구동하려는 시도에 공감하며 다양한 하드웨어 테스트 경험을 공유했다. 특히 대형 모델을 압축하거나 파인튜닝하여 저전력 기기에서 효율을 뽑아내는 방법과 엣지 디바이스 가속 가능성에 대해 활발한 논의가 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "discussion": "https://news.ycombinator.com/item?id=50443812",
-   "points": 434,
+   "points": 440,
    "comments": 145,
    "r": 0.33,
    "at": "2026-11-10",
@@ -773,11 +909,47 @@
   },
   {
    "layer": "hn",
+   "title": "Gemini 4 Hydrogen and Orchestrator",
+   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+   "discussion": "https://news.ycombinator.com/item?id=50472260",
+   "points": 437,
+   "comments": 126,
+   "r": 0.29,
+   "at": "2026-11-12",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
+   "_comments": [
+    "I'm not sure that the atomic number for argon is more common knowledge than the fact that the earth is larger than the moon",
+    "I would hope that a good harness would not just hoover up a large codebase into the context. Rather use some form of RAG (or similar) tech tuned for chunking, indexing, and searching code.",
+    "Same for me. I find myself using Google’s $20/month plan, plus running really good local models with occasional use of Deepseek Harness with their flash model, occasionally a $6/month Alibaba subscription for their strong qwen-3.8-max model, and about every third month getting a Anthropic subscription if I need more access to Opus.This is a lot of purchasing complexity for an old retired guy like myself!I wish Google had finer grained $30/month and $40/month subs: then I would probably just make my life easier by only using local models and Google (their sub also provides some Opus, but the Anthropic subscription is better if all you care about is Opus or Fable.)",
+    "> Before doing any task, Gemini feels the need to hover up a bazillion files into its context when the task is something simple like “update the docs of this controller”)Yeah, I noticed this with Argon also. It did a good job on my tasks, but the absurd amount of reading it needed to do first seemed really weird, relative to other models.It also felt more robotic than Claude or any of the other models (GLM-5.3 is basically an excited teenager, while claude is a teacher's pet (sorry Dave, I can't let you do that)).",
+    "Hydrogen is the cheapest of the new models, so it goes into lower tier accounts to - but Orchestrator requires Carbon so it's only on Ultra for now",
+    "Honestly Antigravity becomes competetive with $100 subscription, I used $20 quite well in the past but that was dominated by benefit of having other services bundled into it.",
+    "I would like to see those hallucinations, because I haven't generally got any, and with my current loops in agy anytime they do minor hallucinations they get caught by adversarial review part.Using 3.x flash series heavily over last 6 months, and along with experiences on Argon and Carbon (haven't yet played much with Hydrogen, but initial experience looks great too)",
+    "I solved some of that with running a very biased subagent (so fresh context) but using same model (back still with 3.8 and 4-Argon).The problem is when 3.8 or Argon were reviewing things with context poisoned by what they were working with, as gemini models generally feel over optimistic about things.",
+    "I'm experimenting currently with reducing the hoovering aspect in my configuration of antigravity, on the other hand at least once when I thought the model was \"too deep into sauce\" it turned out Argon deducted a thing I considered completely unrelated was cause for crashes I asked it to debug.",
+    "AFAIK the real issue, and also driving the pricing structure for API and the \"50% discount on new model\" thing, is frankly capacity of the TPUs they have. Not enough TPUs, not helped by renting some of them to Claude (lots of enterprise users there, so at least it pays to GCP, eh?) and now OpenAI",
+    "A model can have high token / s and still be slow to complete a task. They tend to have vastly different verbosity characteristics.E.g. something like Haiku is \"obviously\" faster than Opus. Yet if you test Opus 5.5 on medium vs Haiku on max (because Haiku needs to be cranked pretty high on effort to be reasonably intelligent), you'll observe that Opus is ~2x faster to complete.",
+    "Yes. Its extra confusing knowing the periodic table and atomic weights. At least argon carbon was in alphabetical order or something. But I really think they could have just picked noble gasses if they wanted elements."
+   ],
+   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Gemini Decisions API",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
    "discussion": "https://news.ycombinator.com/item?id=50456791",
-   "points": 555,
-   "comments": 157,
+   "points": 562,
+   "comments": 160,
    "r": 0.28,
    "at": "2026-11-11",
    "topics": [
@@ -820,24 +992,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "So this will be true in couple of years?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Jensen Huang's mistake was being too pro LocalAI, which was a threat to companies like ClosedAI and Anthropic which are about to go IPO",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xujb7c/jensen_huangs_mistake_was_being_too_pro_localai/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xujb7c/jensen_huangs_mistake_was_being_too_pro_localai/",
-   "rank": 2,
+   "rank": 1,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -848,10 +1006,59 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Stories coming out about Jensen",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuvexw/stories_coming_out_about_jensen/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuvexw/stories_coming_out_about_jensen/",
+   "rank": 2,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xuvexw/stories_coming_out_about_jensen"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "So this will be true in couple of years?",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
+   "rank": 3,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuxxmb/bring_back_the_boss_nvidia_employees_petition_for/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuxxmb/bring_back_the_boss_nvidia_employees_petition_for/",
+   "rank": 4,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xuxxmb/bring_back_the_boss_nvidia_employees_petition_for",
+   "trust": [
+    "Latent Space",
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Nvidia's Jensen Huang Resigns as CEO, Colette Kress Named Interim",
    "url": "https://www.bloomberg.com/news/live-blog/2026-11-11/nvidia-turmoil-board-to-weigh-ceo-jensen-huang-future-over-alleged-affairs",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xudeev/nvidias_jensen_huang_resigns_as_ceo_colette_kress/",
-   "rank": 3,
+   "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -861,6 +1068,7 @@
    ],
    "story_key": "url:bloomberg.com/news/live-blog/2026-11-11/nvidia-turmoil-board-to-weigh-ceo-jensen-huang-future-over-alleged-affairs",
    "trust": [
+    "Latent Space",
     "Zvi (DWATV)"
    ],
    "trust_match": "title"
@@ -871,7 +1079,7 @@
    "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang's exit",
    "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xut4o7/hugging_face_ceo_vows_to_keep_fighting_for_open/",
-   "rank": 4,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -882,26 +1090,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "The regulation of local AI could/should be viewed as the largest censorship implementation in the history of mankind.",
-   "url": "https://www.reuters.com/world/china/us-china-should-stay-clear-eyed-ai-cooperation-competition-bessent-says-2026-11-11/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xu2mdo/the_regulation_of_local_ai_couldshould_be_viewed/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:reuters.com/world/china/us-china-should-stay-clear-eyed-ai-cooperation-competition-bessent-says-2026-11-11"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "CMP170hx now fully unlockabke and more, full 120 SMs —> Techie uses voltage glitching hack to turn $2,500 Nvidia 8GB cryptomining GPU into a full-fat $20,000 A100 with 80GB of VRAM — hack carefully blows onboard fuses to unlock entire VRAM and shader modules",
    "url": "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuijih/cmp170hx_now_fully_unlockabke_and_more_full_120/",
-   "rank": 6,
+   "rank": 7,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -914,56 +1106,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Meet the people behind MOSS-Image, plus a few answers from their AMA here",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuad5c/meet_the_people_behind_mossimage_plus_a_few/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuad5c/meet_the_people_behind_mossimage_plus_a_few/",
-   "rank": 7,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xuad5c/meet_the_people_behind_mossimage_plus_a_few"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "KQuant - new quantization technique, 3.7× better quants for Qwen Flash Next 180B, Qwen 27B, 35B, 9B (measured in KL-divergence reduction) (MLX)",
-   "url": "https://github.com/nace-ai/kapitsa",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/",
-   "rank": 8,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:nace-ai/kapitsa"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Jensen today at Nvidia board meeting",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xumhm3/jensen_today_at_nvidia_board_meeting/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xumhm3/jensen_today_at_nvidia_board_meeting/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xumhm3/jensen_today_at_nvidia_board_meeting"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "Alleged GeForce RTX 5090 with 96GB listed for sale in China",
    "url": "https://videocardz.com/newz/alleged-geforce-rtx-5090-with-96gb-listed-for-sale-in-china",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xucffq/alleged_geforce_rtx_5090_with_96gb_listed_for/",
-   "rank": 10,
+   "rank": 8,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -974,10 +1120,24 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "A100 prices down 20-30% since my post about them collapsing",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuxbeb/a100_prices_down_2030_since_my_post_about_them/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuxbeb/a100_prices_down_2030_since_my_post_about_them/",
+   "rank": 9,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xuxbeb/a100_prices_down_2030_since_my_post_about_them"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "New Model \"Ernie 5.5 Flash Preview\" hits strongly at a low parameter count (280B, 14B Active)",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xune1i/new_model_ernie_55_flash_preview_hits_strongly_at/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xune1i/new_model_ernie_55_flash_preview_hits_strongly_at/",
-   "rank": 11,
+   "rank": 10,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -988,18 +1148,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "Gemma4-31b latent space discovery: Caring and Contempt for user controlled by the same 3 neurons! Plus, how to find your own steering recipes and export to GGUF steering vector for llama.cpp",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and/",
-   "rank": 12,
+   "title": "thinkingmachines/Inkling-2-Small is released!",
+   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuqplg/thinkingmachinesinkling2small_is_released/",
+   "rank": 11,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and"
+   "topics": [],
+   "story_key": "hf:thinkingmachines/inkling-2-small"
   },
   {
    "layer": "reddit",
@@ -1007,7 +1165,7 @@
    "title": "Used datacenter/workstation GPU prices on eBay this week, ranked by $/GB of VRAM",
    "url": "https://rackbites.com",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xur9ud/used_datacenterworkstation_gpu_prices_on_ebay/",
-   "rank": 13,
+   "rank": 12,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1020,40 +1178,126 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "thinkingmachines/Inkling-2-Small is released!",
-   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuqplg/thinkingmachinesinkling2small_is_released/",
+   "title": "llama.cpp : bump version to 1.0.0 by ggerganov · Pull Request #32190 · ggml-org/llama.cpp",
+   "url": "https://github.com/ggml-org/llama.cpp/pull/32190",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xv3cyt/llamacpp_bump_version_to_100_by_ggerganov_pull/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:ggml-org/llama.cpp"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Lawyer with too many GPUs, part 5: DeepSeek-V4.1-Flash at near-NVFP4 quality on eight V100s from 2018. 524K context, 100+ tok/s decode, ~160 tok/s with two chats at once, and my legal harness now runs on it, 100% local",
+   "url": "https://github.com/ProprietaryLegal/Volta-Max-uPLIft-FP4-DeepSeek-V4.1-Flash-1017-NVFP4-8xV100-SXM2-PP2xTP4",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xus81t/lawyer_with_too_many_gpus_part_5_deepseekv41flash/",
    "rank": 14,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:thinkingmachines/inkling-2-small"
+   "topics": [
+    "모델릴리스",
+    "인프라·칩"
+   ],
+   "story_key": "gh:proprietarylegal/volta-max-uplift-fp4-deepseek-v4.1-flash-1017-nvfp4-8xv100-sxm2-pp2xtp4"
   },
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "After four years of development, are LLMs capable of writing high-quality prose?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xub4s2/after_four_years_of_development_are_llms_capable/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xub4s2/after_four_years_of_development_are_llms_capable/",
+   "title": "Edge0-145B: Open-Source On-Device AI with 145B Parameters",
+   "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xuuq0b/edge0145b_opensource_ondevice_ai_with_145b/",
    "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xub4s2/after_four_years_of_development_are_llms_capable"
+   "story_key": "url:edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
   }
  ],
  "quiet_important": [
   {
    "layer": "hn",
+   "title": "Nvidia is preparing to oust Jensen Huang",
+   "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+   "discussion": "https://news.ycombinator.com/item?id=50459703",
+   "points": 1219,
+   "comments": 1641,
+   "r": 1.35,
+   "at": "2026-11-11",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+   "trust": [
+    "Latent Space",
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
+   "summary_ko": "최고경영자의 사생활 논란과 스파이 연루설을 두고 도덕적 책임과 기업의 이익 중 무엇이 우선인가에 대해 의견이 엇갈리고 있다. 일각에서는 국가 안보와 핵심 기술 경쟁이 치열한 시기인 만큼 실무적으로 그를 해임할 수 없으며 리스크를 덮고 넘어가야 한다고 주장한다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "discussion": "https://news.ycombinator.com/item?id=50465829",
+   "points": 957,
+   "comments": 873,
+   "r": 0.91,
+   "at": "2026-11-12",
+   "topics": [],
+   "story_key": "url:ipo.anthropic.com/us",
+   "trust": [
+    "Latent Space",
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "앤트로픽의 상장 가능성을 두고 기업용 AI 시장에서의 AWS 역할과 전환 비용에 대한 토론이 오갔다. 일각에서는 대형 클라우드 제공업체처럼 높은 전환 비용을 갖추게 될 것이라 보는 반면, 핫한 IPO가 초기 투자자와 직원들에게만 유리하며 수익성 검증이 더 필요하다는 신중론도 제기됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia employees petition to bring back Jensen Huang",
+   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+   "discussion": "https://news.ycombinator.com/item?id=50477231",
+   "points": 657,
+   "comments": 489,
+   "r": 0.74,
+   "at": "2026-11-13",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:wired.com/story/nvidia-employees-petition-for-jensen-huangs-return",
+   "trust": [
+    "Latent Space",
+    "Zvi (DWATV)"
+   ],
+   "trust_match": "title",
+   "summary_ko": "젠슨 황의 복귀를 요구하는 엔비디아 직원들의 탄원서가 등장하면서 논란이 벌어졌다. 일부는 사내 규정 위반과 윤리적 문제를 지적하며 CEO로서 부적절했다고 비판한 반면, 그의 리더십과 중국과의 연결고리가 오픈소스 AI 생태계에 필수적이었다며 옹호하는 의견도 팽팽히 맞섰다.",
+   "is_event": true,
+   "kr_query": "엔비디아 젠슨 황 복귀 탄원서",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Gemini Decisions API",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
    "discussion": "https://news.ycombinator.com/item?id=50456791",
-   "points": 555,
-   "comments": 157,
+   "points": 562,
+   "comments": 160,
    "r": 0.28,
    "at": "2026-11-11",
    "topics": [
@@ -1093,54 +1337,12 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia is preparing to oust Jensen Huang",
-   "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-   "discussion": "https://news.ycombinator.com/item?id=50459703",
-   "points": 1215,
-   "comments": 1636,
-   "r": 1.35,
-   "at": "2026-11-11",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-   "trust": [
-    "Zvi (DWATV)"
-   ],
-   "trust_match": "title",
-   "summary_ko": "최고경영자의 사생활 논란과 스파이 연루설을 두고 도덕적 책임과 기업의 이익 중 무엇이 우선인가에 대해 의견이 엇갈리고 있다. 일각에서는 국가 안보와 핵심 기술 경쟁이 치열한 시기인 만큼 실무적으로 그를 해임할 수 없으며 리스크를 덮고 넘어가야 한다고 주장한다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "discussion": "https://news.ycombinator.com/item?id=50465829",
-   "points": 842,
-   "comments": 818,
-   "r": 0.97,
-   "at": "2026-11-12",
-   "topics": [],
-   "story_key": "url:ipo.anthropic.com/us",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "앤트로픽의 상장 가능성을 두고 기업용 AI 시장에서의 AWS 역할과 전환 비용에 대한 토론이 오갔다. 일각에서는 대형 클라우드 제공업체처럼 높은 전환 비용을 갖추게 될 것이라 보는 반면, 핫한 IPO가 초기 투자자와 직원들에게만 유리하며 수익성 검증이 더 필요하다는 신중론도 제기됐다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Gemini 4 Hydrogen",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 478,
-   "comments": 302,
-   "r": 0.63,
+   "points": 541,
+   "comments": 338,
+   "r": 0.62,
    "at": "2026-11-12",
    "topics": [
     "모델릴리스"
@@ -1186,6 +1388,28 @@
    "is_event": true,
    "kr_query": "구글 제미나이 카본 출시",
    "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Gemini 4 Hydrogen and Orchestrator",
+   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+   "discussion": "https://news.ycombinator.com/item?id=50472260",
+   "points": 437,
+   "comments": 126,
+   "r": 0.29,
+   "at": "2026-11-12",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+   "trust": [
+    "Latent Space"
+   ],
+   "trust_match": "link",
+   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   }
  ],
  "models": [
@@ -1193,9 +1417,9 @@
    "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 2926,
-   "likes": 4746,
-   "downloads": 18933,
+   "trending": 2974,
+   "likes": 4849,
+   "downloads": 21586,
    "topics": [
     "모델릴리스"
    ],
@@ -1205,9 +1429,9 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-H3-Image",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-   "trending": 830,
-   "likes": 878,
-   "downloads": 306718,
+   "trending": 883,
+   "likes": 946,
+   "downloads": 437039,
    "topics": [
     "모델릴리스"
    ],
@@ -1217,9 +1441,9 @@
    "layer": "hf",
    "title": "NousResearch/Arete-27B",
    "url": "https://huggingface.co/NousResearch/Arete-27B",
-   "trending": 462,
-   "likes": 491,
-   "downloads": 4669,
+   "trending": 476,
+   "likes": 514,
+   "downloads": 5545,
    "topics": [
     "모델릴리스"
    ],
@@ -1227,23 +1451,11 @@
   },
   {
    "layer": "hf",
-   "title": "speridlabs/idol",
-   "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 419,
-   "likes": 2238,
-   "downloads": 29904,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:speridlabs/idol"
-  },
-  {
-   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 406,
-   "likes": 11643,
-   "downloads": 2782513,
+   "trending": 404,
+   "likes": 11688,
+   "downloads": 2778909,
    "topics": [
     "모델릴리스"
    ],
@@ -1251,11 +1463,23 @@
   },
   {
    "layer": "hf",
+   "title": "speridlabs/idol",
+   "url": "https://huggingface.co/speridlabs/idol",
+   "trending": 398,
+   "likes": 2259,
+   "downloads": 31367,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:speridlabs/idol"
+  },
+  {
+   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 359,
-   "likes": 19751,
-   "downloads": 7094218,
+   "trending": 370,
+   "likes": 19800,
+   "downloads": 6960395,
    "topics": [
     "모델릴리스"
    ],
@@ -1265,9 +1489,9 @@
    "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 349,
-   "likes": 2984,
-   "downloads": 1599836,
+   "trending": 341,
+   "likes": 3007,
+   "downloads": 1639400,
    "topics": [
     "모델릴리스"
    ],
@@ -1275,23 +1499,11 @@
   },
   {
    "layer": "hf",
-   "title": "ccore/Qwen3.5-4B-3D-Coder",
-   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-   "trending": 291,
-   "likes": 1051,
-   "downloads": 368236,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
-  },
-  {
-   "layer": "hf",
    "title": "Comfy-Org/MiniMax-H3-Image",
    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-   "trending": 281,
-   "likes": 299,
-   "downloads": 835593,
+   "trending": 295,
+   "likes": 322,
+   "downloads": 1257301,
    "topics": [
     "모델릴리스"
    ],
@@ -1299,15 +1511,27 @@
   },
   {
    "layer": "hf",
-   "title": "ricursiveAI/Ripple-65B-Preview",
-   "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-   "trending": 238,
-   "likes": 537,
-   "downloads": 7667,
+   "title": "ccore/Qwen3.5-4B-3D-Coder",
+   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+   "trending": 267,
+   "likes": 1069,
+   "downloads": 392582,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:ricursiveai/ripple-65b-preview"
+   "story_key": "hf:ccore/qwen3.5-4b-3d-coder"
+  },
+  {
+   "layer": "hf",
+   "title": "black-forest-labs/flux-3-image-klein-comfy",
+   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+   "trending": 224,
+   "likes": 3058,
+   "downloads": 1330289,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:black-forest-labs/flux-3-image-klein-comfy"
   }
  ],
  "new_repos": [
@@ -1316,7 +1540,7 @@
    "title": "HybridRobotics/supermimic",
    "desc": "Humanoid whole-body motion tracking with one differentiable world model.",
    "url": "https://github.com/HybridRobotics/supermimic",
-   "stars": 1330,
+   "stars": 1401,
    "topics": [],
    "story_key": "gh:hybridrobotics/supermimic"
   },
@@ -1325,7 +1549,7 @@
    "title": "agentes-chat/agentes-chat",
    "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok,",
    "url": "https://github.com/agentes-chat/agentes-chat",
-   "stars": 1215,
+   "stars": 1275,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1338,7 +1562,7 @@
    "title": "apex-compute/ANR",
    "desc": "Apex Neural Rendering (ANR) by Apex Compute",
    "url": "https://github.com/apex-compute/ANR",
-   "stars": 1023,
+   "stars": 1229,
    "topics": [
     "인프라·칩"
    ],
@@ -1349,7 +1573,7 @@
    "title": "FrigadeHQ/yogurt",
    "desc": "Private AI meeting notes. Free and open source.",
    "url": "https://github.com/FrigadeHQ/yogurt",
-   "stars": 983,
+   "stars": 1132,
    "topics": [],
    "story_key": "gh:frigadehq/yogurt"
   },
@@ -1358,7 +1582,7 @@
    "title": "Goblinmine/homelab-diagram",
    "desc": "Renders an r/homelab-style network diagram from a YAML inventory (Python → SVG/PNG). Written with Claude.",
    "url": "https://github.com/Goblinmine/homelab-diagram",
-   "stars": 945,
+   "stars": 966,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1370,28 +1594,16 @@
    "title": "dabingfy-dot/solo-to-team-skills",
    "desc": "Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。",
    "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
-   "stars": 796,
+   "stars": 830,
    "topics": [],
    "story_key": "gh:dabingfy-dot/solo-to-team-skills"
-  },
-  {
-   "layer": "github",
-   "title": "lxe/phoneuse",
-   "desc": "See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents.",
-   "url": "https://github.com/lxe/phoneuse",
-   "stars": 636,
-   "topics": [
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "gh:lxe/phoneuse"
   },
   {
    "layer": "github",
    "title": "alexeyw/lot-map",
    "desc": "A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 ",
    "url": "https://github.com/alexeyw/lot-map",
-   "stars": 619,
+   "stars": 679,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1400,10 +1612,22 @@
   },
   {
    "layer": "github",
+   "title": "lxe/phoneuse",
+   "desc": "See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents.",
+   "url": "https://github.com/lxe/phoneuse",
+   "stars": 644,
+   "topics": [
+    "에이전트",
+    "개발도구"
+   ],
+   "story_key": "gh:lxe/phoneuse"
+  },
+  {
+   "layer": "github",
    "title": "JDhruv14/line-art-animation",
    "desc": "A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.",
    "url": "https://github.com/JDhruv14/line-art-animation",
-   "stars": 595,
+   "stars": 626,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1734,5 +1958,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-13 03:17"
+ "enriched_at": "2026-11-13 12:45"
 }
