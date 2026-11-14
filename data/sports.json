@@ -1,96 +1,7 @@
 {
- "updated": "2026-11-14 15:13 KST",
+ "updated": "2026-11-14 22:28 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "401916337",
-   "path": "soccer/fifa.friendly",
-   "league": "A매치 친선",
-   "name": "Brazil at Japan",
-   "date": "2026-11-14T10:15Z",
-   "kst": "2026-11-14 19:15",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "season": "2026-international-friendly",
-   "us_tv": [],
-   "venue": "Singapore National Stadium",
-   "tv": "TV조선·tvN · 쿠팡플레이",
-   "sport": "soccer",
-   "home": {
-    "name": "Japan",
-    "ko": "Japan",
-    "abbr": "JPN",
-    "id": "627",
-    "score": "0",
-    "winner": false,
-    "record": "",
-    "form": "승무패승승"
-   },
-   "away": {
-    "name": "Brazil",
-    "ko": "Brazil",
-    "abbr": "BRA",
-    "id": "205",
-    "score": "0",
-    "winner": false,
-    "record": "",
-    "form": "승패무승승"
-   },
-   "title": "Japan vs Brazil",
-   "score": 22,
-   "why": [
-    "한국 저녁 시간"
-   ],
-   "detail": {
-    "h2h": {
-     "summary": "Brazil 우세 (3승 2패)",
-     "last": [
-      {
-       "date": "2026-06-29",
-       "score": "Brazil 2 Japan 1"
-      },
-      {
-       "date": "2025-10-14",
-       "score": "Japan 3 Brazil 2"
-      },
-      {
-       "date": "2022-06-06",
-       "score": "Japan 0 Brazil 1"
-      }
-     ]
-    },
-    "leaders": [
-     {
-      "team": "Japan",
-      "cat": "Goals",
-      "who": "Ayase Ueda",
-      "val": "5경기 · 3골"
-     },
-     {
-      "team": "Japan",
-      "cat": "Assists",
-      "who": "Keito Nakamura",
-      "val": "5경기 · 2도움"
-     },
-     {
-      "team": "Brazil",
-      "cat": "Goals",
-      "who": "Vinícius Júnior",
-      "val": "7경기 · 2골"
-     },
-     {
-      "team": "Brazil",
-      "cat": "Assists",
-      "who": "Vinícius Júnior",
-      "val": "7경기 · 2도움"
-     }
-    ],
-    "injuries": [],
-    "preview": []
-   },
-   "stars": 2
-  },
   {
    "id": "401930236",
    "path": "soccer/fifa.friendly",
@@ -98,8 +9,8 @@
    "name": "Malaysia at China",
    "date": "2026-11-14T12:00Z",
    "kst": "2026-11-14 21:00",
-   "state": "pre",
-   "status": "Scheduled",
+   "state": "in",
+   "status": "Second Half",
    "note": "",
    "season": "2026-international-friendly",
    "us_tv": [],
@@ -111,7 +22,7 @@
     "ko": "China",
     "abbr": "CHN",
     "id": "658",
-    "score": "0",
+    "score": "2",
     "winner": false,
     "record": "",
     "form": "무승패패패"
@@ -152,17 +63,89 @@
     "leaders": [
      {
       "team": "China",
-      "cat": "Goals",
-      "who": "Wang Ziming",
-      "val": "4경기 · 3골"
+      "cat": "Total Shots",
+      "who": "Wang Yudong",
+      "val": "2"
      },
      {
       "team": "China",
-      "cat": "Assists",
-      "who": "Wang Shangyuan",
-      "val": "8경기 · 1도움"
+      "cat": "Accurate Passes",
+      "who": "Han Pengfei",
+      "val": "41"
+     },
+     {
+      "team": "Malaysia",
+      "cat": "Total Shots",
+      "who": "Romel Morales",
+      "val": "3"
+     },
+     {
+      "team": "Malaysia",
+      "cat": "Accurate Passes",
+      "who": "Dominic Tan",
+      "val": "47"
      }
     ],
+    "injuries": [],
+    "preview": []
+   },
+   "stars": 2
+  },
+  {
+   "id": "401930243",
+   "path": "soccer/fifa.friendly",
+   "league": "A매치 친선",
+   "name": "Kyrgyz Republic at Chinese Taipei",
+   "date": "2026-11-14T12:00Z",
+   "kst": "2026-11-14 21:00",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "2026-international-friendly",
+   "us_tv": [],
+   "venue": "Thien Truong Stadium",
+   "tv": "TV조선·tvN · 쿠팡플레이",
+   "sport": "soccer",
+   "home": {
+    "name": "Chinese Taipei",
+    "ko": "Chinese Taipei",
+    "abbr": "TPE",
+    "id": "14561",
+    "score": "0",
+    "winner": false,
+    "record": "",
+    "form": "패패패패패"
+   },
+   "away": {
+    "name": "Kyrgyz Republic",
+    "ko": "Kyrgyz Republic",
+    "abbr": "KGZ",
+    "id": "6724",
+    "score": "0",
+    "winner": false,
+    "record": "",
+    "form": "패패무승승"
+   },
+   "title": "Chinese Taipei vs Kyrgyz Republic",
+   "score": 22,
+   "why": [
+    "한국 저녁 시간"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "Kyrgyz Republic 우세 (2승 0패)",
+     "last": [
+      {
+       "date": "2024-03-26",
+       "score": "Kyrgyz Republic 5 Chinese Taipei 1"
+      },
+      {
+       "date": "2024-03-21",
+       "score": "Chinese Taipei 0 Kyrgyz Republic 2"
+      }
+     ]
+    },
+    "leaders": [],
     "injuries": [],
     "preview": []
    },
@@ -284,7 +267,16 @@
      "home": "52.6",
      "away": "47"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
+      "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich"
+     },
+     {
+      "title": "Patriots are 6-0 after a regular-season loss under Vrabel: Can they do it again?",
+      "url": "https://www.espn.com/nfl/story/_/id/50475264/patriots-lions-germany-week-10-mike-vrabel"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(추정)",
@@ -375,13 +367,13 @@
       "team": "New Orleans Pelicans",
       "cat": "Points",
       "who": "Zion Williamson",
-      "val": "21.7"
+      "val": "21.8"
      },
      {
       "team": "New Orleans Pelicans",
       "cat": "Assists",
       "who": "Jeremiah Fears",
-      "val": "4.9"
+      "val": "5.1"
      },
      {
       "team": "골든스테이트",
@@ -393,7 +385,7 @@
       "team": "골든스테이트",
       "cat": "Assists",
       "who": "Draymond Green",
-      "val": "7.5"
+      "val": "7.1"
      }
     ],
     "injuries": [
@@ -439,15 +431,10 @@
      }
     ],
     "predictor": {
-     "home": "40.1",
-     "away": "59.9"
+     "home": "40.8",
+     "away": "59.2"
     },
-    "preview": [
-     {
-      "title": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "url": "http://www.espn.com/nba/recap?gameId=401909302"
-     }
-    ]
+    "preview": []
    },
    "stars": 3,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -534,13 +521,13 @@
       "team": "대한민국",
       "cat": "Goals",
       "who": "Son Heung-Min",
-      "val": "8경기 · 5골"
+      "val": "9경기 · 5골"
      },
      {
       "team": "대한민국",
       "cat": "Assists",
       "who": "Seol Young-Woo",
-      "val": "7경기 · 1도움"
+      "val": "8경기 · 2도움"
      }
     ],
     "injuries": [],
@@ -642,7 +629,7 @@
       "team": "골든스테이트",
       "cat": "Assists",
       "who": "Draymond Green",
-      "val": "7.5"
+      "val": "7.1"
      }
     ],
     "injuries": [
@@ -688,15 +675,10 @@
      }
     ],
     "predictor": {
-     "home": "64.4",
-     "away": "35.6"
+     "home": "68",
+     "away": "32"
     },
-    "preview": [
-     {
-      "title": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "url": "http://www.espn.com/nba/recap?gameId=401909302"
-     }
-    ]
+    "preview": []
    },
    "stars": 2,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -871,13 +853,13 @@
       "team": "Memphis Grizzlies",
       "cat": "Points",
       "who": "Ty Jerome",
-      "val": "26.2"
+      "val": "25.4"
      },
      {
       "team": "Memphis Grizzlies",
       "cat": "Assists",
-      "who": "Cameron Boozer",
-      "val": "5.5"
+      "who": "Ty Jerome",
+      "val": "5.3"
      },
      {
       "team": "골든스테이트",
@@ -889,7 +871,7 @@
       "team": "골든스테이트",
       "cat": "Assists",
       "who": "Draymond Green",
-      "val": "7.5"
+      "val": "7.1"
      }
     ],
     "injuries": [
@@ -935,15 +917,10 @@
      }
     ],
     "predictor": {
-     "home": "57.2",
-     "away": "42.8"
+     "home": "63.3",
+     "away": "36.7"
     },
-    "preview": [
-     {
-      "title": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "url": "http://www.espn.com/nba/recap?gameId=401909302"
-     }
-    ]
+    "preview": []
    },
    "stars": 2,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -1061,6 +1038,121 @@
   }
  ],
  "results": [
+  {
+   "id": "401916337",
+   "path": "soccer/fifa.friendly",
+   "league": "A매치 친선",
+   "name": "Brazil at Japan",
+   "date": "2026-11-14T10:15Z",
+   "kst": "2026-11-14 19:15",
+   "state": "post",
+   "status": "Full Time",
+   "note": "",
+   "season": "2026-international-friendly",
+   "us_tv": [],
+   "venue": "Singapore National Stadium",
+   "tv": "TV조선·tvN · 쿠팡플레이",
+   "sport": "soccer",
+   "home": {
+    "name": "Japan",
+    "ko": "Japan",
+    "abbr": "JPN",
+    "id": "627",
+    "score": "3",
+    "winner": true,
+    "record": "",
+    "form": "승무패승승"
+   },
+   "away": {
+    "name": "Brazil",
+    "ko": "Brazil",
+    "abbr": "BRA",
+    "id": "205",
+    "score": "2",
+    "winner": false,
+    "record": "",
+    "form": "승패무승승"
+   },
+   "title": "Japan vs Brazil",
+   "score": 22,
+   "why": [
+    "한국 저녁 시간"
+   ],
+   "stars": 2,
+   "detail": {
+    "h2h": {
+     "summary": "Brazil 우세 (3승 2패)",
+     "last": [
+      {
+       "date": "2026-06-29",
+       "score": "Brazil 2 Japan 1"
+      },
+      {
+       "date": "2025-10-14",
+       "score": "Japan 3 Brazil 2"
+      },
+      {
+       "date": "2022-06-06",
+       "score": "Japan 0 Brazil 1"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "Japan",
+      "cat": "Total Shots",
+      "who": "Daizen Maeda",
+      "val": "2"
+     },
+     {
+      "team": "Japan",
+      "cat": "Accurate Passes",
+      "who": "Ao Tanaka",
+      "val": "50"
+     },
+     {
+      "team": "Brazil",
+      "cat": "Total Shots",
+      "who": "Vinícius Júnior",
+      "val": "4"
+     },
+     {
+      "team": "Brazil",
+      "cat": "Accurate Passes",
+      "who": "Gabriel Magalhães",
+      "val": "74"
+     }
+    ],
+    "injuries": [],
+    "preview": [],
+    "result": {
+     "score": "Japan 3 : 2 Brazil",
+     "goals": [
+      {
+       "min": "15'",
+       "text": "Goal! Japan 1, Brazil 0. Takefusa Kubo (Japan) left footed shot from the centre of the box to the bottom right corner. Assisted by Ritsu Doa"
+      },
+      {
+       "min": "19'",
+       "text": "Goal! Japan 2, Brazil 0. Keito Nakamura (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Shuto Na"
+      },
+      {
+       "min": "33'",
+       "text": "Goal! Japan 2, Brazil 1. Vinícius Júnior (Brazil) right footed shot from outside the box to the top left corner. Assisted by Bruno Guimarães"
+      },
+      {
+       "min": "75'",
+       "text": "Goal! Japan 2, Brazil 2. Vinícius Júnior (Brazil) right footed shot from outside the box to the bottom left corner. Assisted by Bruno Guimar"
+      },
+      {
+       "min": "90'+1'",
+       "text": "Goal! Japan 3, Brazil 2. Tatsuhiro Sakamoto (Japan) right footed shot from the right side of the six yard box to the top left corner.Goal co"
+      }
+     ],
+     "korean": []
+    }
+   }
+  },
   {
    "id": "401909302",
    "path": "basketball/nba",
@@ -1182,12 +1274,7 @@
       "status": "Out"
      }
     ],
-    "preview": [
-     {
-      "title": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "url": "http://www.espn.com/nba/recap?gameId=401909302"
-     }
-    ],
+    "preview": [],
     "result": {
      "score": "San Antonio Spurs 123 : 85 골든스테이트",
      "goals": [],
@@ -1751,16 +1838,7 @@
       "status": "Out"
      }
     ],
-    "preview": [
-     {
-      "title": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "url": "http://www.espn.com/nba/recap?gameId=401909302"
-     },
-     {
-      "title": "Alperen Sengun's 43-point double-double lifts Rockets over Jazz",
-      "url": "https://www.espn.com/video/clip/_/id/50477468/alperen-sengun-43-point-double-double-lifts-rockets-jazz"
-     }
-    ],
+    "preview": [],
     "result": {
      "score": "Houston Rockets 115 : 108 골든스테이트",
      "goals": [],
