@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-15 21:24",
+ "updated": "2026-11-16 04:17",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 20,
-  "reddit": 30,
+  "hn": 19,
+  "reddit": 23,
   "hf": 15,
   "github": 10,
   "trust": 100
@@ -16,9 +16,9 @@
    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "discussion": "https://news.ycombinator.com/item?id=50484658",
-   "points": 471,
-   "comments": 707,
-   "r": 1.5,
+   "points": 478,
+   "comments": 722,
+   "r": 1.51,
    "at": "2026-11-13",
    "topics": [],
    "story_key": "yt:IRK8h67ol7Q",
@@ -32,7 +32,7 @@
    "title": "Nvidia employees petition to bring back Jensen Huang",
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "discussion": "https://news.ycombinator.com/item?id=50477231",
-   "points": 815,
+   "points": 817,
    "comments": 691,
    "r": 0.85,
    "at": "2026-11-13",
@@ -55,9 +55,9 @@
    "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "discussion": "https://news.ycombinator.com/item?id=50493251",
-   "points": 1077,
-   "comments": 641,
-   "r": 0.6,
+   "points": 1090,
+   "comments": 646,
+   "r": 0.59,
    "at": "2026-11-14",
    "topics": [
     "인프라·칩"
@@ -108,6 +108,22 @@
   },
   {
    "layer": "hn",
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "discussion": "https://news.ycombinator.com/item?id=50507303",
+   "points": 755,
+   "comments": 404,
+   "r": 0.54,
+   "at": "2026-11-15",
+   "topics": [],
+   "story_key": "url:jakub.jankiewicz.org/blog/ai-code-open-source",
+   "summary_ko": "AI가 생성한 코드를 오픈소스화해야 한다는 주장을 두고 의견이 팽팽하다. AI 학습 데이터의 저작권 침해 문제를 지적하며 결과물 역시 자유롭게 배포되어야 한다는 입장이 있는 반면, 인간과 LLM의 학습 과정을 동일시할 수 없으며 라이선스 준수의 실효성에 의문을 제기하는 목소리도 적지 않다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "discussion": "https://news.ycombinator.com/item?id=50481187",
@@ -126,35 +142,21 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 569,
-   "comments": 352,
-   "r": 0.62,
-   "at": "2026-11-12",
+   "title": "AI is destroying the trust between writers and readers",
+   "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+   "discussion": "https://news.ycombinator.com/item?id=50481870",
+   "points": 369,
+   "comments": 234,
+   "r": 0.63,
+   "at": "2026-11-13",
    "topics": [
-    "모델릴리스"
+    "개발도구"
    ],
-   "story_key": "url:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "구글의 신규 모델 네이밍과 원소 기호 작명 방식을 두고 혼란스럽다는 의견과 직관적이라는 의견이 갈렸다. 일부 개발자들은 실제 벤치마크 테스트에서 속도가 빨라지고 비용이 절감되었다며 긍정적인 평가를 남겼다.",
-   "is_event": true,
-   "kr_query": "구글 제미나이 4 하이드로젠",
-   "kr": [
-    {
-     "t": "구글, 차세대 경량 모델 '하이드로젠' 테스트…출시 임박 관측",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=217308",
-     "d": "Thu, 12 Nov 2026",
-     "why": [
-      "구글",
-      "하이드로젠"
-     ]
-    }
-   ]
+   "story_key": "url:theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
+   "summary_ko": "생성형 AI가 글쓴이와 독자 간의 신뢰를 무너뜨린다는 주장에 대해 논쟁이 벌어졌다. 인간의 고유한 창작 행위와 진정성이 훼손된다며 AI를 비판하는 입장이 있는가 하면, 기존 글쓰기 시장도 대필 작가나 PR 전문가 등으로 이미 신뢰하기 어려웠으며 AI가 오히려 독자들의 경각심을 높여준다는 반박도 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
   },
   {
    "layer": "hn",
@@ -179,8 +181,8 @@
    "title": "AI is turning Apple's app review process into a nightmare for synth developers",
    "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
    "discussion": "https://news.ycombinator.com/item?id=50474311",
-   "points": 198,
-   "comments": 233,
+   "points": 199,
+   "comments": 234,
    "r": 1.18,
    "at": "2026-11-12",
    "topics": [],
@@ -192,30 +194,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI is destroying the trust between writers and readers",
-   "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-   "discussion": "https://news.ycombinator.com/item?id=50481870",
-   "points": 366,
-   "comments": 232,
-   "r": 0.63,
-   "at": "2026-11-13",
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "url:theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
-   "summary_ko": "생성형 AI가 글쓴이와 독자 간의 신뢰를 무너뜨린다는 주장에 대해 논쟁이 벌어졌다. 인간의 고유한 창작 행위와 진정성이 훼손된다며 AI를 비판하는 입장이 있는가 하면, 기존 글쓰기 시장도 대필 작가나 PR 전문가 등으로 이미 신뢰하기 어려웠으며 AI가 오히려 독자들의 경각심을 높여준다는 반박도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
    "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
    "discussion": "https://news.ycombinator.com/item?id=50501631",
-   "points": 427,
-   "comments": 216,
-   "r": 0.51,
+   "points": 436,
+   "comments": 227,
+   "r": 0.52,
    "at": "2026-11-14",
    "topics": [
     "인프라·칩"
@@ -249,9 +233,9 @@
    "title": "Will we put data centers in space?",
    "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space",
    "discussion": "https://news.ycombinator.com/item?id=50498945",
-   "points": 66,
-   "comments": 196,
-   "r": 2.97,
+   "points": 68,
+   "comments": 207,
+   "r": 3.04,
    "at": "2026-11-14",
    "topics": [
     "인프라·칩"
@@ -267,8 +251,8 @@
    "title": "The Claude Delusion",
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "discussion": "https://news.ycombinator.com/item?id=50496921",
-   "points": 148,
-   "comments": 195,
+   "points": 149,
+   "comments": 197,
    "r": 1.32,
    "at": "2026-11-14",
    "topics": [
@@ -285,29 +269,13 @@
    "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
    "url": "https://text.npr.org/nx-s1-6029408",
    "discussion": "https://news.ycombinator.com/item?id=50484960",
-   "points": 194,
-   "comments": 194,
-   "r": 1.0,
+   "points": 195,
+   "comments": 196,
+   "r": 1.01,
    "at": "2026-11-13",
    "topics": [],
    "story_key": "url:text.npr.org/nx-s1-6029408",
    "summary_ko": "구글이 AI 없는 검색 기능을 학교에서 차단한 배경을 두고 의견이 엇갈리고 있다. AI 검색 결과의 잦은 환각 현상과 불필요한 답변을 피하려는 학교의 선택이 정당하다는 목소리와 함께, 맞춤형 검색 환경을 유지하는 비용이 너무 커 구글이 이를 포기했다는 분석이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "I'm making LLMs work on small and old devices",
-   "url": "https://github.com/hyperionaidev/smolmaxxing/",
-   "discussion": "https://news.ycombinator.com/item?id=50468888",
-   "points": 479,
-   "comments": 180,
-   "r": 0.38,
-   "at": "2026-11-12",
-   "topics": [],
-   "story_key": "gh:hyperionaidev/smolmaxxing",
-   "summary_ko": "댓글에서는 저사양 넷북이나 라즈베리 파이, 오래된 폰 등에서 LLM을 구동하려는 시도에 공감하며 다양한 하드웨어 테스트 경험을 공유했다. 특히 대형 모델을 압축하거나 파인튜닝하여 저전력 기기에서 효율을 뽑아내는 방법과 엣지 디바이스 가속 가능성에 대해 활발한 논의가 오갔다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -335,9 +303,9 @@
    "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
    "url": "https://unemploymentlabs.com/checkpoint-forensics",
    "discussion": "https://news.ycombinator.com/item?id=50474883",
-   "points": 402,
-   "comments": 176,
-   "r": 0.44,
+   "points": 419,
+   "comments": 178,
+   "r": 0.42,
    "at": "2026-11-12",
    "topics": [
     "안전·거버넌스",
@@ -351,32 +319,10 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini 4 Hydrogen and Orchestrator",
-   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-   "discussion": "https://news.ycombinator.com/item?id=50472260",
-   "points": 503,
-   "comments": 164,
-   "r": 0.33,
-   "at": "2026-11-12",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "link",
-   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
    "url": "https://brave.com/blog/search-api-agentic-payments/",
    "discussion": "https://news.ycombinator.com/item?id=50477649",
-   "points": 261,
+   "points": 262,
    "comments": 151,
    "r": 0.58,
    "at": "2026-11-13",
@@ -402,11 +348,50 @@
   },
   {
    "layer": "hn",
+   "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+   "discussion": "https://news.ycombinator.com/item?id=50506180",
+   "points": 325,
+   "comments": 142,
+   "r": 0.44,
+   "at": "2026-11-15",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+   "summary_ko": "러트닉이 가족 사업과 연관된 반도체 규제 완화를 추진했다는 소식에 대해 정치권의 고질적인 부패를 지적하는 반응이 주를 이뤘다. 특정 정파나 행정부만의 문제가 아니며 미국의 권력 구조상 유력 인사들에 대한 실질적인 처벌이나 책임 추궁은 어려울 것이라는 냉소적인 의견이 많았다.",
+   "is_event": true,
+   "kr_query": "러트닉 반도체 규제 가족 사업",
+   "kr": [
+    {
+     "t": "\"러트닉, 가족 회사와 연관된 반도체 수출규제 완화 추진\"",
+     "u": "https://www.yna.co.kr/view/AKR20261116001300071?input=1195m",
+     "d": "Mon, 16 Nov 2026",
+     "why": [
+      "가족",
+      "러트닉",
+      "반도체"
+     ]
+    },
+    {
+     "t": "NYT \"러트닉, 가족 회사와 연관된 반도체 수출규제 완화 추진\"",
+     "u": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008846932&plink=ORI&cooper=NAVER",
+     "d": "Mon, 16 Nov 2026",
+     "why": [
+      "가족",
+      "러트닉",
+      "반도체"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "No AI Slop: A Manifesto",
    "url": "https://www.slopmanifesto.com/",
    "discussion": "https://news.ycombinator.com/item?id=50488769",
-   "points": 220,
-   "comments": 131,
+   "points": 221,
+   "comments": 133,
    "r": 0.6,
    "at": "2026-11-13",
    "topics": [],
@@ -427,9 +412,9 @@
    "title": "Will we put data centers in space?",
    "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space",
    "discussion": "https://news.ycombinator.com/item?id=50498945",
-   "points": 66,
-   "comments": 196,
-   "r": 2.97,
+   "points": 68,
+   "comments": 207,
+   "r": 3.04,
    "at": "2026-11-14",
    "topics": [
     "인프라·칩"
@@ -445,9 +430,9 @@
    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "discussion": "https://news.ycombinator.com/item?id=50484658",
-   "points": 471,
-   "comments": 707,
-   "r": 1.5,
+   "points": 478,
+   "comments": 722,
+   "r": 1.51,
    "at": "2026-11-13",
    "topics": [],
    "story_key": "yt:IRK8h67ol7Q",
@@ -461,8 +446,8 @@
    "title": "The Claude Delusion",
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "discussion": "https://news.ycombinator.com/item?id=50496921",
-   "points": 148,
-   "comments": 195,
+   "points": 149,
+   "comments": 197,
    "r": 1.32,
    "at": "2026-11-14",
    "topics": [
@@ -479,8 +464,8 @@
    "title": "AI is turning Apple's app review process into a nightmare for synth developers",
    "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
    "discussion": "https://news.ycombinator.com/item?id=50474311",
-   "points": 198,
-   "comments": 233,
+   "points": 199,
+   "comments": 234,
    "r": 1.18,
    "at": "2026-11-12",
    "topics": [],
@@ -551,9 +536,9 @@
    "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
    "url": "https://text.npr.org/nx-s1-6029408",
    "discussion": "https://news.ycombinator.com/item?id=50484960",
-   "points": 194,
-   "comments": 194,
-   "r": 1.0,
+   "points": 195,
+   "comments": 196,
+   "r": 1.01,
    "at": "2026-11-13",
    "topics": [],
    "story_key": "url:text.npr.org/nx-s1-6029408",
@@ -585,7 +570,7 @@
    "title": "Nvidia employees petition to bring back Jensen Huang",
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "discussion": "https://news.ycombinator.com/item?id=50477231",
-   "points": 815,
+   "points": 817,
    "comments": 691,
    "r": 0.85,
    "at": "2026-11-13",
@@ -626,8 +611,8 @@
    "title": "AI is destroying the trust between writers and readers",
    "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
    "discussion": "https://news.ycombinator.com/item?id=50481870",
-   "points": 366,
-   "comments": 232,
+   "points": 369,
+   "comments": 234,
    "r": 0.63,
    "at": "2026-11-13",
    "topics": [
@@ -641,61 +626,11 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 569,
-   "comments": 352,
-   "r": 0.62,
-   "at": "2026-11-12",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "구글의 신규 모델 네이밍과 원소 기호 작명 방식을 두고 혼란스럽다는 의견과 직관적이라는 의견이 갈렸다. 일부 개발자들은 실제 벤치마크 테스트에서 속도가 빨라지고 비용이 절감되었다며 긍정적인 평가를 남겼다.",
-   "is_event": true,
-   "kr_query": "구글 제미나이 4 하이드로젠",
-   "kr": [
-    {
-     "t": "구글, 차세대 경량 모델 '하이드로젠' 테스트…출시 임박 관측",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=217308",
-     "d": "Thu, 12 Nov 2026",
-     "why": [
-      "구글",
-      "하이드로젠"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-   "discussion": "https://news.ycombinator.com/item?id=50493251",
-   "points": 1077,
-   "comments": 641,
-   "r": 0.6,
-   "at": "2026-11-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-   "summary_ko": "엔비디아가 AI 스타트업에 자금을 대어 자사 GPU를 구매하게 함으로써 인위적인 품귀 현상을 유도했다는 의혹을 두고 공방이 벌어진다. 일각에서는 이를 재고 처분과 자금난 해소를 위한 순환 금융이자 월스트리트 은행 영역을 침범한 행위로 비판하는 반면, 실질적인 병목은 전력과 인프라이며 관련 보도가 근거 없는 음해성 공격이라는 반박도 맞선다.",
-   "is_event": true,
-   "kr_query": "엔비디아 GPU 스타트업 자금 지원",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "No AI Slop: A Manifesto",
    "url": "https://www.slopmanifesto.com/",
    "discussion": "https://news.ycombinator.com/item?id=50488769",
-   "points": 220,
-   "comments": 131,
+   "points": 221,
+   "comments": 133,
    "r": 0.6,
    "at": "2026-11-13",
    "topics": [],
@@ -711,10 +646,28 @@
   },
   {
    "layer": "hn",
+   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "discussion": "https://news.ycombinator.com/item?id=50493251",
+   "points": 1090,
+   "comments": 646,
+   "r": 0.59,
+   "at": "2026-11-14",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "summary_ko": "엔비디아가 AI 스타트업에 자금을 대어 자사 GPU를 구매하게 함으로써 인위적인 품귀 현상을 유도했다는 의혹을 두고 공방이 벌어진다. 일각에서는 이를 재고 처분과 자금난 해소를 위한 순환 금융이자 월스트리트 은행 영역을 침범한 행위로 비판하는 반면, 실질적인 병목은 전력과 인프라이며 관련 보도가 근거 없는 음해성 공격이라는 반박도 맞선다.",
+   "is_event": true,
+   "kr_query": "엔비디아 GPU 스타트업 자금 지원",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
    "url": "https://brave.com/blog/search-api-agentic-payments/",
    "discussion": "https://news.ycombinator.com/item?id=50477649",
-   "points": 261,
+   "points": 262,
    "comments": 151,
    "r": 0.58,
    "at": "2026-11-13",
@@ -758,31 +711,47 @@
   },
   {
    "layer": "hn",
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "discussion": "https://news.ycombinator.com/item?id=50507303",
+   "points": 755,
+   "comments": 404,
+   "r": 0.54,
+   "at": "2026-11-15",
+   "topics": [],
+   "story_key": "url:jakub.jankiewicz.org/blog/ai-code-open-source",
+   "_comments": [
+    "It looked in the database(model) built on top of stolen data which matched prompt the best. Machines don't have \"inspiration\".",
+    "How is the LLM case similar at all? As soon as the student’s use of the museum piece crosses into the commercial realm (eg pay the student to draw it for you), I expect you to have legal trouble.",
+    "> Buggy and bad compared to my codeIt probably is, if they didn't have the chops to write it internally. But to them, the trade-off is probably worth the benefit of ditching a component with AGPL.Personally I just release everything I publish under MIT to make it as easy a as possibly to use.",
+    "So, do they follow MIT license and \"include the original copyright notice and a copy of the MIT license text in all copies\"?",
+    "\"Prompt to do stuff\" could mean \"make me a game. make it good\" or it could mean line by line guidance and specific input on every algorithm.Sometimes I prompt simply to save me typing.",
+    "From the developer's perspective the difference between those licenses isn't that big when you open source your stuff anyway.But please don't forget about the users. Only the copyleft licenses guarantee (legally) that the user gets to enjoy the freedoms, too.",
+    "What problem does this solve exactly? I think when most code becomes generated it’s all from the same hivemind of the human collective. I see arguments that code is not the hard part of development, so why are we treating it so sanctimoniously now?",
+    "I’m not sure these concepts even matter anymore.You can decompile just about anything and clean room recreate most software now to get around copyright.",
+    "Humans are not LLMs. Humans have not ingested the whole Internet. If an LLM is compared to a human, maybe we should also apply anti-slavery laws to it? Not saying we can't have some legal fiction where they are treated the same, it should just be a conscious choice, not the default assumption.I live in the EU, we actually have new regulation about this since it is something new that deserves thought on how it should be regulated. You can say if you want your material to be trained on or not. Next to no one does training in the EU...",
+    "Clean room is sufficient, but not necessary, btw. Humans can create legally distinct works after reviewing copyrighted code. The same principle probably extends to AI systems -- they have just learned on a much broader corpus than any one human.",
+    "What are you talking about? How did you manage to involve, soul and, LOL, God?Machine is not a person. It legally is not. It can't be \"inspired\", \"taught\", \"have purpose\".You have a black box. You feed it stolen code. This code is used to write another code. It does not matter what's inside unless there is a human being.Stolen content as input, stolen content as output. That's it.Without that code which was fed to the box you wouldn't get the output you're getting.All this nonsense about \"inspiration\", \"education\" and whatnot is just a legal gaslighting.Want to prove me wrong? Create a model without all that stolen code as training data. Tweak all those weights by hand and we'll talk then.",
+    "> I don't want some dependency to dictate under which terms I can release my own software.Then you shouldn't release it under the MIT license, which has restrictions and requirements on speech. You have to release it to the public domain. Pretending MIT doesn't dictate terms under which you can release your own software is just a fantasy."
+   ],
+   "summary_ko": "AI가 생성한 코드를 오픈소스화해야 한다는 주장을 두고 의견이 팽팽하다. AI 학습 데이터의 저작권 침해 문제를 지적하며 결과물 역시 자유롭게 배포되어야 한다는 입장이 있는 반면, 인간과 LLM의 학습 과정을 동일시할 수 없으며 라이선스 준수의 실효성에 의문을 제기하는 목소리도 적지 않다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
    "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
    "discussion": "https://news.ycombinator.com/item?id=50501631",
-   "points": 427,
-   "comments": 216,
-   "r": 0.51,
+   "points": 436,
+   "comments": 227,
+   "r": 0.52,
    "at": "2026-11-14",
    "topics": [
     "인프라·칩"
    ],
    "story_key": "url:techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "_comments": [
-    "I hope you're right, but the word on the street is it's part of why Qwen is releasing v4 later than they originally planned. That's only a rumour though, so maybe its complete nonsense!",
-    "I don't think so? A Chapter 11 is only possible if you can demonstrate clearly to the court that the underlying business would be viable without the debts. It also wipes out the investors.AI startups are characterized by:1) Market dumping. They are burning investor capital to buy market share.2) A need to constantly raise money to pay for (1).A Chapter 11 bankruptcy would make no sense in this situation. They haven't demonstrated that their business model is viable, so if a court ordered a Chapter 11 these firms would just immediately go bankrupt again, and that's usually a criteria to require a different and harsher kind of bankruptcy.But even if for some reason a court did allow it, they'd",
-    "Same level of understanding as thinking going to the town square and screaming \"I declare bankruptcy!\" frees you from your debt.",
-    "Isn't the lesson of \"640k is enough for anyone\" that people will end up wanting more? Nobody today will buy a computer with 640KB of RAM, even though surely this would be cheaper.",
-    "No, it's that it goes in a larger circle, involving many companies and gets counted as revenue multiple times",
-    "I known 0 \"normies\" that work on a desktop computer, or that would even remotely care to invest 2k upfront to not pay for ai subscription, or have a tiniest effort cpaacity to learn how to install it.Why do you think everyone still pays for icloud or google drive instead of just self gosting a foss on nas at home? Hell, even me as an engineer know how to do it and know i would save money but i just can't be bothered because of convenience",
-    "You aren't hitting almost 2x decode with speculation on a MoE model, but it's irrelevant. Electricity will cost more for most people than API will, even with free hardware. And 4-bit qwen next will be a major competitive disadvantage compared to larger models.",
-    "Outside of dev people typically don't use LLMs on a desktop computer.To be competitive with frontier offerings, it must be multidevice, available on any network, and integrated with all the apps people are used to use AI with.Most tech enthusiasts don't self host super trivial things like a local DNS resolver, Their web presence, or email despite the huge incentives and the super low computing requirements, what makes you think they would build and run at least 12/24 a day a dedicated fan buzzing computer (to be useful for the whole family, it can't be the same as the gaming machine) in their home to be available for whatever request their family members may want to do to a model?",
-    "No shit? I thought that was obvious. This is no mystical “market forces”, just greed and simple planning.",
-    "I imagine that if the company's goals were disclosed, potential shareholders could make that determination for themselves. Not to be snarky but even among investors, who are possibly more a monolith than most groups of people, they are not necessarily all motivated by the idea of \"maximize\".",
-    "If it dropped to 2,000, I'd rebuild my server all over again with 384GB vram.DSV4.1F is enough.",
-    "I read articles here about price fixing being discovered from time to time, here on hacker news, but couldn't find any articles of price droppings. Does the law and regulation not work anymore?"
-   ],
    "summary_ko": "엔비디아가 순환 자금 조달 방식을 통해 높은 GPU 가격을 유지했다는 의혹에 대해, 댓글에서는 이것이 단순한 시장 논리가 아닌 계획된 탐욕이라는 지적이 나왔다. 일각에서는 대형 하드웨어나 AI 모델의 실효성 및 일반 소비자의 자체 호스팅 편의성에 대한 회의적인 시각도 함께 제기되었다.",
    "is_event": false,
    "kr_query": "",
@@ -790,12 +759,65 @@
   },
   {
    "layer": "hn",
+   "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+   "discussion": "https://news.ycombinator.com/item?id=50506180",
+   "points": 325,
+   "comments": 142,
+   "r": 0.44,
+   "at": "2026-11-15",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+   "_comments": [
+    "Let’s not pretend this is unique to this administration. Successive administrations and politicians on both sides have made their fortunes in DC. Maybe this time people will vote for change, but I doubt it.",
+    "> If Apple truly has become a critical part of the nation's infrastructureIt’s a beloved brand. Ban imports of Kewpie or Keurig and you’ll also get a fiasco, that doesn’t mean they’re critical.",
+    "I suspect it will be 2032, trump will not stop criming, but the dems will fumble and flail all the way there (being cynical/realistic)Chuck Schumer annointing himself like a king is not a good sign. His corruption runs deep and his daughter lobbies for OpenAI",
+    "I think you've got the tail wagging the dog. People don't get brainwashed by the media, the consume the media that aligns with how they already feel. And the recent elections buck your theory anyway. Trump won the because voters felt they were being left behind, life was hard and getting harder. Now they've punished Trump for the exact same reasons.",
+    "failure to vote is not a \"silent vote\"; it's too lazy to care and they shouldn't be counted by either side as a relevant position.",
+    "and they are establishing themselves for after by wrecking the government that would prosecute them for crimes that come after, because there will be broad pardons for what they did while in office",
+    "> no evidence that Cantor’s investments influenced Mr. Lutnick’s deliberations.There's no evidence that Huang's infidelty lead to national security comprimises either, yet he's looking for a new job; why shouldn't Lutnick be updating his LinkedIn too?",
+    "Yes, as he was obviously involved in establishing and covering up the sale of restricted hardware to Chinese firms through Singapore.And while we're at it, same for Musk (wrt. to the Star Shield throttling).Both these guys have decided they have unilateral veto power over US foreign policy. Their freedom ought to be taken away, for good.",
+    "We should want to get rich by providing good services and products. It seems to me that more and more people are trying to skip that and go straight to rich without doing anything useful.",
+    "It is a fantasy to think anyone will go to prison.The US system is built such that powerful or well connected people don’t experience any consequences.",
+    "This is a misreading, people have been biting based on how their wallet feels for a couple decades now.Top issues this cycle were affordability (consistent) and corruption (new)",
+    "> offshoring hasn't run it's course, we still have places all over the country with no real economic prospectsThis doesn't follow. By \"run its course\", I mean that most labor-intensive-manufacturing has already been dismantled and shipped away, apart from a few strategic / protected industries (eg military industrial complex, vehicles). Like show me an industry that is still working to carry out offshoring plans in 2026.> we also need to do our own infrastructure buildup ... we still have places all over the country with no real economic prospectsThis does follow, and I agree. I'd say the best recent attempts were things like the Infrastructure and Jobs Act (direct spending on infrastructure"
+   ],
+   "summary_ko": "러트닉이 가족 사업과 연관된 반도체 규제 완화를 추진했다는 소식에 대해 정치권의 고질적인 부패를 지적하는 반응이 주를 이뤘다. 특정 정파나 행정부만의 문제가 아니며 미국의 권력 구조상 유력 인사들에 대한 실질적인 처벌이나 책임 추궁은 어려울 것이라는 냉소적인 의견이 많았다.",
+   "is_event": true,
+   "kr_query": "러트닉 반도체 규제 가족 사업",
+   "kr": [
+    {
+     "t": "\"러트닉, 가족 회사와 연관된 반도체 수출규제 완화 추진\"",
+     "u": "https://www.yna.co.kr/view/AKR20261116001300071?input=1195m",
+     "d": "Mon, 16 Nov 2026",
+     "why": [
+      "가족",
+      "러트닉",
+      "반도체"
+     ]
+    },
+    {
+     "t": "NYT \"러트닉, 가족 회사와 연관된 반도체 수출규제 완화 추진\"",
+     "u": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008846932&plink=ORI&cooper=NAVER",
+     "d": "Mon, 16 Nov 2026",
+     "why": [
+      "가족",
+      "러트닉",
+      "반도체"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
    "url": "https://unemploymentlabs.com/checkpoint-forensics",
    "discussion": "https://news.ycombinator.com/item?id=50474883",
-   "points": 402,
-   "comments": 176,
-   "r": 0.44,
+   "points": 419,
+   "comments": 178,
+   "r": 0.42,
    "at": "2026-11-12",
    "topics": [
     "안전·거버넌스",
@@ -806,54 +828,30 @@
    "is_event": true,
    "kr_query": "중국 AI 모델 엔비디아 GPU 수출 통제",
    "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "I'm making LLMs work on small and old devices",
-   "url": "https://github.com/hyperionaidev/smolmaxxing/",
-   "discussion": "https://news.ycombinator.com/item?id=50468888",
-   "points": 479,
-   "comments": 180,
-   "r": 0.38,
-   "at": "2026-11-12",
-   "topics": [],
-   "story_key": "gh:hyperionaidev/smolmaxxing",
-   "summary_ko": "댓글에서는 저사양 넷북이나 라즈베리 파이, 오래된 폰 등에서 LLM을 구동하려는 시도에 공감하며 다양한 하드웨어 테스트 경험을 공유했다. 특히 대형 모델을 압축하거나 파인튜닝하여 저전력 기기에서 효율을 뽑아내는 방법과 엣지 디바이스 가속 가능성에 대해 활발한 논의가 오갔다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Gemini 4 Hydrogen and Orchestrator",
-   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-   "discussion": "https://news.ycombinator.com/item?id=50472260",
-   "points": 503,
-   "comments": 164,
-   "r": 0.33,
-   "at": "2026-11-12",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "link",
-   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
   }
  ],
  "reddit_top": [
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "EUROPA, the EU's open AI model, is aiming for nearly 1 trillion parameters",
+   "url": "https://maccus.fr/en/eu-open-ai-model-europa/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwr917/europa_the_eus_open_ai_model_is_aiming_for_nearly/",
+   "rank": 1,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:maccus.fr/en/eu-open-ai-model-europa"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "Hot take: frontier models haven’t actually become much smarter",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwegdi/hot_take_frontier_models_havent_actually_become/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwegdi/hot_take_frontier_models_havent_actually_become/",
-   "rank": 1,
+   "rank": 2,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -869,27 +867,13 @@
    "title": "Finally clicked for me: local AI is the future, not cloud AI",
    "url": "https://www.youtube.com/watch?v=jHT4iHJxzOI",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwf8bb/finally_clicked_for_me_local_ai_is_the_future_not/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "yt:jHT4iHJxzOI"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "EUROPA, the EU's open AI model, is aiming for nearly 1 trillion parameters",
-   "url": "https://maccus.fr/en/eu-open-ai-model-europa/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwr917/europa_the_eus_open_ai_model_is_aiming_for_nearly/",
    "rank": 3,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:maccus.fr/en/eu-open-ai-model-europa"
+   "story_key": "yt:jHT4iHJxzOI"
   },
   {
    "layer": "reddit",
@@ -908,30 +892,16 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "The lawyer who posts here about his V100s got his story picked up by Tom’s Hardware",
-   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xw2ogq/the_lawyer_who_posts_here_about_his_v100s_got_his/",
+   "title": "I finally succeed the CMP 170HX voltage glitch and get 80GB VRAM + 126sm! !",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwxzgj/i_finally_succeed_the_cmp_170hx_voltage_glitch/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwxzgj/i_finally_succeed_the_cmp_170hx_voltage_glitch/",
    "rank": 5,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
-   "story_key": "url:tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Why don’t we have national open AI models?",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw4ue3/why_dont_we_have_national_open_ai_models/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xw4ue3/why_dont_we_have_national_open_ai_models/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xw4ue3/why_dont_we_have_national_open_ai_models"
+   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xwxzgj/i_finally_succeed_the_cmp_170hx_voltage_glitch"
   },
   {
    "layer": "reddit",
@@ -939,13 +909,29 @@
    "title": "RASA will cause total chaos to open LLMs and beyond",
    "url": "https://explainx.ai/blog/commerce-final-rule-chinese-ai-firms-remote-nvidia-chips-the-information-2026",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwmnkw/rasa_will_cause_total_chaos_to_open_llms_and/",
-   "rank": 7,
+   "rank": 6,
    "points": 0,
    "comments": 0,
    "r": 0.0,
    "has_metrics": false,
    "topics": [],
    "story_key": "url:explainx.ai/blog/commerce-final-rule-chinese-ai-firms-remote-nvidia-chips-the-information-2026"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Latest version of strata made my Qwen3.8-Flash-Next dumb and useless",
+   "url": "http://0.1.42.0",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/",
+   "rank": 7,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:0.1.42.0/"
   },
   {
    "layer": "reddit",
@@ -964,56 +950,10 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
-   "title": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU",
-   "url": "https://tiny-voca.n4ze3m.com",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:tiny-voca.n4ze3m.com/"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Microsoft patent describes turning idle gaming GPUs into paid AI training hardware",
-   "url": "https://videocardz.com/newz/microsoft-could-pay-gamers-for-using-spare-gpu-capacity-to-train-ai",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwe9i5/microsoft_patent_describes_turning_idle_gaming/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:videocardz.com/newz/microsoft-could-pay-gamers-for-using-spare-gpu-capacity-to-train-ai"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Update: tandem.cpp — DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support",
-   "url": "https://github.com/ewhacc/tandem.cpp",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwan2j/update_tandemcpp_deepseekv41_on_a_64_gb_pc_with_a/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ewhacc/tandem.cpp"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
    "title": "[Paper] No Second Run: Does RSI Stop at Frontier Pre-training? - 801-30B-A3B-Base Coming Soon",
    "url": "https://github.com/GAIR-NLP/801-30B",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwt3ri/paper_no_second_run_does_rsi_stop_at_frontier/",
-   "rank": 12,
+   "rank": 9,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1026,10 +966,84 @@
   {
    "layer": "reddit",
    "sub": "LocalLLaMA",
+   "title": "Basalt 0.4.0: More models, still as fast - Qwen 27B up to 770 tok/s on a 5090",
+   "url": "https://basalt.jgulfo.com/",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up/",
+   "rank": 10,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:basalt.jgulfo.com/"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Microsoft patent describes turning idle gaming GPUs into paid AI training hardware",
+   "url": "https://videocardz.com/newz/microsoft-could-pay-gamers-for-using-spare-gpu-capacity-to-train-ai",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwe9i5/microsoft_patent_describes_turning_idle_gaming/",
+   "rank": 11,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:videocardz.com/newz/microsoft-could-pay-gamers-for-using-spare-gpu-capacity-to-train-ai"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "higurashi-ai/Haru-4B · Hugging Face",
+   "url": "https://github.com/higurashi-ai/Haru",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xww5o2/higurashiaiharu4b_hugging_face/",
+   "rank": 12,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "gh:higurashi-ai/haru"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Probable GLM model",
+   "url": "http://Z.ai",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwy3ka/probable_glm_model/",
+   "rank": 13,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:z.ai/"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
+   "title": "Spotted a very interesting detail about Intel's upcoming CPU platform (LGA 1954)",
+   "url": "https://en.wikipedia.org/wiki/LGA_1954",
+   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwxbjk/spotted_a_very_interesting_detail_about_intels/",
+   "rank": 14,
+   "points": 0,
+   "comments": 0,
+   "r": 0.0,
+   "has_metrics": false,
+   "topics": [],
+   "story_key": "url:en.wikipedia.org/wiki/LGA_1954"
+  },
+  {
+   "layer": "reddit",
+   "sub": "LocalLLaMA",
    "title": "The best (and AMD-est) computer I've ever owned",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwqvd2/the_best_and_amdest_computer_ive_ever_owned/",
    "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xwqvd2/the_best_and_amdest_computer_ive_ever_owned/",
-   "rank": 13,
+   "rank": 15,
    "points": 0,
    "comments": 0,
    "r": 0.0,
@@ -1038,36 +1052,6 @@
     "인프라·칩"
    ],
    "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xwqvd2/the_best_and_amdest_computer_ive_ever_owned"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "nex-agi/Nex-N2.6 · Hugging Face",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xw9mpa/nexaginexn26_hugging_face/",
-   "rank": 14,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "hf:zai-org/glm-5.3-flash-bf16"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Qwen4 Flash wishlist",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw36op/qwen4_flash_wishlist/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xw36op/qwen4_flash_wishlist/",
-   "rank": 15,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xw36op/qwen4_flash_wishlist"
   }
  ],
  "quiet_important": [
@@ -1076,7 +1060,7 @@
    "title": "Nvidia employees petition to bring back Jensen Huang",
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "discussion": "https://news.ycombinator.com/item?id=50477231",
-   "points": 815,
+   "points": 817,
    "comments": 691,
    "r": 0.85,
    "at": "2026-11-13",
@@ -1096,65 +1080,11 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "discussion": "https://news.ycombinator.com/item?id=50471431",
-   "points": 569,
-   "comments": 352,
-   "r": 0.62,
-   "at": "2026-11-12",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "구글의 신규 모델 네이밍과 원소 기호 작명 방식을 두고 혼란스럽다는 의견과 직관적이라는 의견이 갈렸다. 일부 개발자들은 실제 벤치마크 테스트에서 속도가 빨라지고 비용이 절감되었다며 긍정적인 평가를 남겼다.",
-   "is_event": true,
-   "kr_query": "구글 제미나이 4 하이드로젠",
-   "kr": [
-    {
-     "t": "구글, 차세대 경량 모델 '하이드로젠' 테스트…출시 임박 관측",
-     "u": "https://www.aitimes.com/news/articleView.html?idxno=217308",
-     "d": "Thu, 12 Nov 2026",
-     "why": [
-      "구글",
-      "하이드로젠"
-     ]
-    }
-   ]
-  },
-  {
-   "layer": "hn",
-   "title": "Gemini 4 Hydrogen and Orchestrator",
-   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-   "discussion": "https://news.ycombinator.com/item?id=50472260",
-   "points": 503,
-   "comments": 164,
-   "r": 0.33,
-   "at": "2026-11-12",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
-   "trust": [
-    "Latent Space"
-   ],
-   "trust_match": "link",
-   "summary_ko": "사용자들은 새 모델이 단순한 작업에도 너무 많은 파일을 컨텍스트에 한 번에 불러오는 경향이 있어 비효율적이라고 지적했다. 반면 일부는 이 과정에서 모델이 의외의 원인을 찾아내거나 훌륭한 디버깅 성능을 보여준다는 긍정적 의견을 내놓기도 했다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "No AI Slop: A Manifesto",
    "url": "https://www.slopmanifesto.com/",
    "discussion": "https://news.ycombinator.com/item?id=50488769",
-   "points": 220,
-   "comments": 131,
+   "points": 221,
+   "comments": 133,
    "r": 0.6,
    "at": "2026-11-13",
    "topics": [],
@@ -1174,8 +1104,8 @@
    "layer": "hf",
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-   "trending": 4203,
-   "likes": 7447,
+   "trending": 4151,
+   "likes": 7494,
    "downloads": 27037,
    "topics": [
     "모델릴리스"
@@ -1186,8 +1116,8 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-H3-Image",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-   "trending": 1038,
-   "likes": 1143,
+   "trending": 1059,
+   "likes": 1171,
    "downloads": 571067,
    "topics": [
     "모델릴리스"
@@ -1198,8 +1128,8 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 441,
-   "likes": 20057,
+   "trending": 440,
+   "likes": 20092,
    "downloads": 6547772,
    "topics": [
     "모델릴리스"
@@ -1210,8 +1140,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 419,
-   "likes": 11980,
+   "trending": 409,
+   "likes": 12032,
    "downloads": 2754355,
    "topics": [
     "모델릴리스"
@@ -1222,8 +1152,8 @@
    "layer": "hf",
    "title": "Comfy-Org/MiniMax-H3-Image",
    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-   "trending": 359,
-   "likes": 396,
+   "trending": 367,
+   "likes": 407,
    "downloads": 1973388,
    "topics": [
     "모델릴리스"
@@ -1234,8 +1164,8 @@
    "layer": "hf",
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 358,
-   "likes": 3140,
+   "trending": 357,
+   "likes": 3155,
    "downloads": 1708637,
    "topics": [
     "모델릴리스"
@@ -1244,22 +1174,10 @@
   },
   {
    "layer": "hf",
-   "title": "speridlabs/idol",
-   "url": "https://huggingface.co/speridlabs/idol",
-   "trending": 326,
-   "likes": 2353,
-   "downloads": 33423,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:speridlabs/idol"
-  },
-  {
-   "layer": "hf",
    "title": "Zyphra/ZONOS3-Mini",
    "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
-   "trending": 326,
-   "likes": 366,
+   "trending": 341,
+   "likes": 381,
    "downloads": 39862,
    "topics": [
     "모델릴리스"
@@ -1270,8 +1188,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Small",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-   "trending": 314,
-   "likes": 328,
+   "trending": 320,
+   "likes": 336,
    "downloads": 7329,
    "topics": [
     "모델릴리스"
@@ -1280,15 +1198,27 @@
   },
   {
    "layer": "hf",
-   "title": "NousResearch/Arete-27B",
-   "url": "https://huggingface.co/NousResearch/Arete-27B",
-   "trending": 309,
-   "likes": 605,
-   "downloads": 7497,
+   "title": "speridlabs/idol",
+   "url": "https://huggingface.co/speridlabs/idol",
+   "trending": 310,
+   "likes": 2359,
+   "downloads": 33423,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:nousresearch/arete-27b"
+   "story_key": "hf:speridlabs/idol"
+  },
+  {
+   "layer": "hf",
+   "title": "unsloth/Qwen3.8-27B-GGUF",
+   "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+   "trending": 298,
+   "likes": 5991,
+   "downloads": 6566295,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:unsloth/qwen3.8-27b-gguf"
   }
  ],
  "new_repos": [
@@ -1297,7 +1227,7 @@
    "title": "deepseek-ai/chat-demo",
    "desc": "Chat Demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
-   "stars": 2069,
+   "stars": 2755,
    "topics": [
     "모델릴리스"
    ],
@@ -1308,7 +1238,7 @@
    "title": "apex-compute/ANR",
    "desc": "Apex Neural Rendering (ANR) by Apex Compute",
    "url": "https://github.com/apex-compute/ANR",
-   "stars": 1932,
+   "stars": 2092,
    "topics": [
     "인프라·칩"
    ],
@@ -1319,7 +1249,7 @@
    "title": "FrigadeHQ/yogurt",
    "desc": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
    "url": "https://github.com/FrigadeHQ/yogurt",
-   "stars": 1560,
+   "stars": 1608,
    "topics": [
     "인프라·칩",
     "개발도구"
@@ -1331,7 +1261,7 @@
    "title": "HybridRobotics/supermimic",
    "desc": "Humanoid whole-body motion tracking with one differentiable world model.",
    "url": "https://github.com/HybridRobotics/supermimic",
-   "stars": 1526,
+   "stars": 1544,
    "topics": [],
    "story_key": "gh:hybridrobotics/supermimic"
   },
@@ -1340,7 +1270,7 @@
    "title": "agentes-chat/agentes-chat",
    "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok,",
    "url": "https://github.com/agentes-chat/agentes-chat",
-   "stars": 1458,
+   "stars": 1483,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1350,10 +1280,32 @@
   },
   {
    "layer": "github",
+   "title": "duwqijlk/muse-protocol",
+   "desc": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
+   "url": "https://github.com/duwqijlk/muse-protocol",
+   "stars": 953,
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "gh:duwqijlk/muse-protocol"
+  },
+  {
+   "layer": "github",
+   "title": "Noniv/abyssal-garden",
+   "desc": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code wi",
+   "url": "https://github.com/Noniv/abyssal-garden",
+   "stars": 948,
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "gh:noniv/abyssal-garden"
+  },
+  {
+   "layer": "github",
    "title": "alexeyw/lot-map",
    "desc": "A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 ",
    "url": "https://github.com/alexeyw/lot-map",
-   "stars": 852,
+   "stars": 875,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1365,7 +1317,7 @@
    "title": "JDhruv14/line-art-animation",
    "desc": "A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.",
    "url": "https://github.com/JDhruv14/line-art-animation",
-   "stars": 803,
+   "stars": 817,
    "topics": [
     "모델릴리스",
     "개발도구"
@@ -1374,36 +1326,12 @@
   },
   {
    "layer": "github",
-   "title": "duwqijlk/muse-protocol",
-   "desc": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
-   "url": "https://github.com/duwqijlk/muse-protocol",
-   "stars": 758,
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "gh:duwqijlk/muse-protocol"
-  },
-  {
-   "layer": "github",
-   "title": "Noniv/abyssal-garden",
-   "desc": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code wi",
-   "url": "https://github.com/Noniv/abyssal-garden",
-   "stars": 690,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:noniv/abyssal-garden"
-  },
-  {
-   "layer": "github",
-   "title": "Topkiflare74/ai--manus2.0",
-   "desc": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-   "url": "https://github.com/Topkiflare74/ai--manus2.0",
-   "stars": 678,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "gh:topkiflare74/ai--manus2.0"
+   "title": "ZiChuanLan/freebie-radar",
+   "desc": "白嫖资源聚合雷达：57 个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+   "url": "https://github.com/ZiChuanLan/freebie-radar",
+   "stars": 764,
+   "topics": [],
+   "story_key": "gh:zichuanlan/freebie-radar"
   }
  ],
  "trust_recent": [
@@ -1736,5 +1664,5 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-15 12:24"
+ "enriched_at": "2026-11-15 19:18"
 }
