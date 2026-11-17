@@ -1,17 +1,17 @@
 {
- "at": "2026-11-17 04:51",
+ "at": "2026-11-17 13:10",
  "stats": {
   "nol": {
    "got": 24,
-   "new": 6
+   "new": 8
   },
   "ticketlink": {
    "got": 30,
-   "new": 1
+   "new": 5
   },
   "sejong": {
    "got": 10,
-   "new": 0
+   "new": 1
   },
   "lgart": {
    "got": 5,
@@ -22,7 +22,7 @@
    "new": 0
   },
   "snkrs": {
-   "got": 20,
+   "got": 0,
    "new": 0
   },
   "netflix": {
@@ -31,18 +31,18 @@
   },
   "yes24": {
    "got": 40,
-   "new": 5
+   "new": 4
   },
   "melon": {
+   "got": 20,
+   "new": 10
+  },
+  "popply": {
    "got": 0,
    "new": 0
   },
-  "popply": {
-   "got": 9,
-   "new": 9
-  },
   "popga": {
-   "got": 6,
+   "got": 78,
    "new": 0
   },
   "lotteworldmall": {
@@ -63,15 +63,15 @@
   },
   "pokemon": {
    "got": 19,
-   "new": 1
+   "new": 0
   },
   "newswire": {
-   "got": 30,
-   "new": 1
+   "got": 43,
+   "new": 13
   },
   "heypop": {
    "got": 10,
-   "new": 0
+   "new": 1
   },
   "theedit": {
    "got": 10,
@@ -80,28 +80,30 @@
  },
  "log": [
   "▶ nol",
-  "  24건 · 새 6",
+  "  24건 · 새 8",
   "▶ ticketlink",
-  "  30건 · 새 1",
+  "  30건 · 새 5",
   "▶ sejong",
-  "  10건 · 새 0",
+  "  10건 · 새 1",
   "▶ lgart",
   "  5건 · 새 0",
   "▶ dive",
   "  5건 · 새 0",
   "▶ snkrs",
-  "  20건 · 새 0",
+  "  ! 오류 AttributeError 'list' object has no attribute 'get'",
+  "  0건 · 새 0",
   "▶ netflix",
   "  19건 · 새 0",
   "▶ yes24",
-  "  40건 · 새 5",
+  "  40건 · 새 4",
   "▶ melon",
-  "  ! 실패 https://ticket.melon.com/csoon/ajax/listTicketOpen.htm?orderType=0&pageIndex=1&schGcode=GE HTTPError HTTP Error 423: Locked",
-  "  0건 · 새 0",
+  "  20건 · 새 10",
   "▶ popply",
-  "  9건 · 새 9",
+  "  0건 · 새 0",
   "▶ popga",
-  "  6건 · 새 0",
+  "  ! 실패 https://popga.co.kr/popup/18115 HTTPError HTTP Error 429: Too Many Requests",
+  "  ! 실패 https://popga.co.kr/popup/18119 HTTPError HTTP Error 429: Too Many Requests",
+  "  78건 · 새 0",
   "▶ lotteworldmall",
   "  22건 · 새 0",
   "▶ linefriends_event",
@@ -111,16 +113,16 @@
   "▶ starbucks",
   "  10건 · 새 0",
   "▶ pokemon",
-  "  19건 · 새 1",
+  "  19건 · 새 0",
   "▶ newswire",
-  "  30건 · 새 1",
+  "  43건 · 새 13",
   "▶ heypop",
-  "  10건 · 새 0",
+  "  10건 · 새 1",
   "▶ theedit",
   "  10건 · 새 0",
   "  ! 실패 https://popply.co.kr/popup/6464 HTTPError HTTP Error 404: Not Found",
   "  ! 실패 https://popply.co.kr/popup/6465 HTTPError HTTP Error 404: Not Found",
-  "▶ 팝플리 재측정 58 건",
+  "▶ 팝플리 재측정 22 건",
   "▶ NOL 랭킹 46건",
   "▶ YouTube 인기 130건"
  ]
