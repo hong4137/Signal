@@ -1,6 +1,6 @@
 {
  "_note": "sharktalk-mirror/scripts/export-signal.mjs 가 만든다 — 손으로 고치지 말 것. 카드뉴스·브리핑 사이트와 같은 이름 규칙·사진. build_front.pick_library 가 회사 공식 사진이 없을 때 Unsplash 자료사진보다 먼저 쓴다. 정규식은 JS 문법(파이썬 re.ASCII 로 읽는다).",
- "updated": "2026-11-03",
+ "updated": "2026-11-17",
  "base_photo": "https://signal.sharktalk.co.kr/photos/",
  "base_art": "https://signal.sharktalk.co.kr/cards/art/",
  "entities": [
@@ -813,8 +813,16 @@
    "person": false
   },
   {
+   "k": "polymarket",
+   "re": "폴리마켓|Polymarket",
+   "i": true,
+   "photo": "polymarket",
+   "broad": false,
+   "person": false
+  },
+  {
    "k": "kalshi",
-   "re": "칼시|Kalshi|폴리마켓|Polymarket|예측\\s*시장|prediction\\s*market",
+   "re": "칼시|Kalshi|예측\\s*시장|prediction\\s*market",
    "i": true,
    "photo": "kalshi",
    "broad": false,
@@ -825,6 +833,62 @@
    "re": "오우라|\\bOura\\b",
    "i": true,
    "photo": "oura",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "lumentum",
+   "re": "루멘텀|Lumentum",
+   "i": true,
+   "photo": "lumentum",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "nscale",
+   "re": "엔스케일|Nscale",
+   "i": true,
+   "photo": "nscale",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "characterai",
+   "re": "캐릭터\\.?\\s*AI|Character\\.?AI",
+   "i": true,
+   "photo": "characterai",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "reliance",
+   "re": "릴라이언스|Reliance\\s*(?:Jio|Industries|Intelligence)|\\bJio\\b|지오\\s*플랫폼|암바니|Ambani",
+   "i": true,
+   "photo": "reliance",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "foxconn",
+   "re": "폭스콘|훙하이|홍하이|Foxconn|Hon\\s*Hai",
+   "i": true,
+   "photo": "foxconn",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "binance",
+   "re": "바이낸스|Binance|자오창펑|Changpeng\\s*Zhao",
+   "i": true,
+   "photo": "binance",
+   "broad": false,
+   "person": false
+  },
+  {
+   "k": "yandex",
+   "re": "얀덱스|Yandex",
+   "i": true,
+   "photo": "yandex",
    "broad": false,
    "person": false
   },
@@ -1086,8 +1150,8 @@
   },
   {
    "k": "ice",
-   "re": "\\bICE\\b|이민세관|이민\\s*단속",
-   "i": false,
+   "re": "이민세관|이민\\s*단속|\\bICE\\b(?=.{0,40}(?:이민|요원|추방|단속|구금|agent|raid|deport|immigra))|(?:이민|immigration).{0,30}\\bICE\\b",
+   "i": true,
    "photo": "ice",
    "broad": true,
    "person": false
