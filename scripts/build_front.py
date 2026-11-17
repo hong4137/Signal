@@ -95,6 +95,19 @@ STOP = {"있다", "했다", "한다", "이다", "대한", "위해", "통해", "�
 BRIEFING_DIR = os.environ.get("BRIEFING_DIR")
 MUST_DIR = os.environ.get("MUST_DIR")
 
+# 경제 브리핑 (2026-11-18~) — hong4137/economic_briefing. 06:45 루틴이 editions/<날짜>.json 을 발행한다.
+#   ECON_DIR = 리포 클론(main) 경로 / ECON_RAW = data 가지의 raw.json 경로(가격)
+#   없으면 raw.githubusercontent 에서 받는다 (로컬 시험용).
+# 1면은 발행본을 읽어 고르고 덜어낼 뿐, 다시 해석해 쓰지 않는다.
+ECON_DIR = os.environ.get("ECON_DIR")
+ECON_RAW = os.environ.get("ECON_RAW")
+SRC_ECON_ED = "https://raw.githubusercontent.com/hong4137/economic_briefing/main/editions/%s.json"
+SRC_ECON_RAW = "https://raw.githubusercontent.com/hong4137/economic_briefing/data/raw.json"
+LINK_ECON = "https://econ.sharktalk.co.kr/"
+LINK_ECON_DAY = "https://econ.sharktalk.co.kr/archive/%s.html"
+# 제호 아래 시장 띠 — 경제 수집기 가격(raw.json prices)에서 이 순서로
+MARKET = ["S&P 500", "나스닥", "코스피", "미국 10년", "원/달러", "WTI 유가", "금", "비트코인"]
+
 
 def get_local_or_web(local, url):
     if local and os.path.exists(local):
@@ -516,6 +529,46 @@ def trim(s, n):
     return cut.rstrip(" ,.") + "…"
 
 
+def econ_edition(now):
+    """오늘 경제 브리핑 발행본. 오늘 판이 없으면 어제 판까지(일요일 아침엔 토요일 판), 그보다 오래되면 None."""
+    for back in (0, 1):
+        day = (now.date() - timedelta(days=back)).isoformat()
+        try:
+            if ECON_DIR:      # 클론이 있으면 클론만 본다 (웹 캐시의 옛 판을 집지 않게)
+                f = os.path.join(ECON_DIR, "editions", day + ".json")
+                E = json.load(io.open(f, encoding="utf-8")) if os.path.exists(f) else None
+            else:
+                E = get(SRC_ECON_ED % day)
+        except Exception:
+            continue
+        if isinstance(E, dict) and E.get("verdict"):
+            E["_stale"] = back > 0
+            return E
+    return None
+
+
+def econ_market():
+    """시장 띠 — 전일 대비. pct 는 %, bp 는 금리 변화(bp)."""
+    try:
+        R = load(ECON_RAW) if ECON_RAW else get(SRC_ECON_RAW)
+        if not R:
+            return None
+    except Exception as e:
+        print("  [경제 가격] 실패: %s" % e, file=sys.stderr)
+        return None
+    P = {p.get("name"): p for p in (R.get("prices") or []) if p.get("ok") and p.get("value") is not None and p.get("prev")}
+
+    def one(nm):
+        p = P[nm]
+        v, pr = float(p["value"]), float(p["prev"])
+        chg = round((v - pr) * 100, 1) if p.get("unit") == "bp" else round((v / pr - 1) * 100, 2)
+        return {"name": nm, "value": round(v, 4), "chg": chg, "unit": "bp" if p.get("unit") == "bp" else "%",
+                "date": p.get("date", "")}
+    items = [one(nm) for nm in MARKET if nm in P]
+    # all = 경제면 '숫자' 칸(국제 정세·한국)이 이름으로 찾아 쓴다
+    return {"asof": R.get("generated_at", ""), "items": items, "all": {nm: one(nm) for nm in P}} if P else None
+
+
 def main():
     now = datetime.now(KST)
     latest = load(os.path.join(DATA, "latest.json"), {}) or {}
@@ -535,6 +588,32 @@ def main():
         M = {}
 
     blink = LINK_BRIEFING % brief["date"] if brief.get("date") else None
+
+    # ── 경제 브리핑 — 1면 후보(키 econ:top:N · econ:geo:N · econ:kr:N)와 경제면 ──
+    E = econ_edition(now)
+    market = econ_market()
+    elink = (LINK_ECON_DAY % E["date"]) if E and E.get("date") else LINK_ECON
+    econ_items = {}
+    if E:
+        def esrc(t):
+            ss = t.get("src") or ([{"name": t["by"], "url": t.get("url")}] if t.get("by") else [])
+            return ss
+        groups = [("econ:top", E.get("top") or [], "#top", None),
+                  ("econ:geo", (E.get("geo") or {}).get("items") or [], "#world", "국제 정세"),
+                  ("econ:kr", (E.get("korea") or {}).get("items") or [], "#korea", "한국 경제")]
+        for pre, arr, anc, lab in groups:
+            for i, t in enumerate(arr):
+                if not t.get("title"):
+                    continue
+                ss = esrc(t)
+                econ_items["%s:%d" % (pre, i)] = {
+                    "key": "%s:%d" % (pre, i), "kind": "econ",
+                    "label": "경제 · " + (lab or t.get("kicker") or "주요") + (" · " + t["tag"] if t.get("tag") else ""),
+                    "head": t["title"], "sub": "", "deck": trim(t.get("body"), 150), "full": t.get("body", ""),
+                    "why": t.get("why", ""), "img": None, "url": elink + anc,
+                    "orig": (ss[0] if ss else {}).get("url"),
+                    "src": "경제 브리핑" + (" · " + " · ".join(x["name"] for x in ss[:2] if x.get("name")) if ss else ""),
+                    "sec": "경제/금융"}
 
     # ── 편집 데스크 (data/desk.json) ──
     # 편집국 루틴(클로드)이 매일 아침 적어두는 손질. 없으면 원본 그대로 낸다.
@@ -636,7 +715,18 @@ def main():
     pick = next((i for i, x in enumerate(arts) if desk.get("lead") and x.get("key") == desk["lead"]), None)
     if pick is None and cand:
         pick = max(cand)[1]
-    if pick is not None:
+    # 편집국이 경제 기사를 톱으로 고르면 (desk.json "lead": "econ:top:0" 등) — 그날 가장 중요한 게 경제일 때
+    econ_lead = desk.get("lead") if desk.get("lead") in econ_items else None
+    if econ_lead:
+        x = econ_items[econ_lead]
+        lead = {
+            "kind": "econ", "key": econ_lead,
+            "headline": x["head"], "sub": "",
+            "deck": trim(x["full"], 260), "why_econ": trim(x["why"], 200),
+            "fact_src": x["src"], "fact_url": x["url"], "orig_url": x["orig"], "img": None,
+            "reaction": None, "why": None,
+        }
+    elif pick is not None:
         ai = pick
         m = echo_of.get(ai)
         art = arts[ai]
@@ -672,6 +762,8 @@ def main():
     # "related": [키…] 로 지정하면 그걸 쓴다.
     if lead and lead.get("key"):
         lt = " ".join((lead["headline"], lead.get("sub", ""), lead.get("deck", "")))
+        if lead.get("kind") == "econ":      # 경제 톱 본문은 여러 시장을 훑어 회사 이름이 스친다 — 제목만 본다
+            lt = lead["headline"]
         le, _ = tags(lt)
         lk = ko_nouns(lt)
         scored = []
@@ -741,7 +833,7 @@ def main():
     # 톱에 사진이 없으면(브리핑이 안 달았거나 편집국이 뺐거나) 검수된 자료사진을 붙인다 — 신문 톱은 사진이 있다
     if lead and lead.get("key") and not lead.get("img") and not (dx.get(lead["key"]) or {}).get("no_photo"):
         ph = pick_photo(pool, {"head": lead["headline"], "sub": lead.get("sub", ""), "en": "",
-                               "deck": lead.get("deck", "")}, "AI/기술", set())
+                               "deck": lead.get("deck", "")}, "경제/금융" if lead.get("kind") == "econ" else "AI/기술", set())
         if ph:
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=80"
             lead["img"] = {"src": photo(src, 1200, 675), "sm": photo(src, 640, 360), "alt": ph["alt"],
@@ -873,6 +965,16 @@ def main():
                           "src": plat(f["url"]) + " · 댓글 {:,}".format(f["comments"]) +
                                  (" · 추천 {:,}".format(f["points"]) if f.get("points") else "")}
 
+    # 경제 — 1면에 올릴 수 있는 후보. 기본 배치에는 넣지 않는다(편집국이 중요도로 고른다)
+    for k, x in econ_items.items():
+        if lead and lead.get("key") == k:
+            continue
+        d = dx.get(k) or {}
+        if d:
+            applied += 1
+        cand[k] = dict({kk: x[kk] for kk in ("key", "kind", "label", "deck", "img", "url", "src", "sec")},
+                       head=d.get("headline") or x["head"], sub=d.get("sub", ""), no_photo=bool(d.get("drop_photo")))
+
     dom_key = "must:%d" % must_order.index(dom_lead) if dom_lead else None
     side_def = [it["key"] for it in left][:3]
     row_def = [k for k in ([dom_key] + [f["key"] for f in features[:1]] + [w["key"] for w in wire[:1]] +
@@ -1001,12 +1103,79 @@ def main():
                                                    "why", "consensus", "previous", "source", "verified")}
                            for e in cal_ev]} if cal_ev else None
 
+    # ── 경제면 — 경제 브리핑 발행본에서 1면에 오르지 않은 것 ──
+    econ = None
+    if E:
+        placed_e = set(side + row) | ({lead["key"]} if lead and lead.get("kind") == "econ" else set())
+        allp = (market or {}).get("all") or {}
+
+        def rest(pre, arr):
+            return [dict(t, key="%s:%d" % (pre, i)) for i, t in enumerate(arr)
+                    if t.get("title") and "%s:%d" % (pre, i) not in placed_e]
+
+        def nums(names):
+            # 기사 옆 숫자는 그 판과 같은 날 가격일 때만 — 어제 판에 오늘 시세를 붙이면 본문('1.9% 하락')과 어긋난다
+            if E.get("_stale"):
+                return []
+            return [allp[n] for n in (names or []) if n in allp]
+        # 국내면(Must News 상위 6건)과 같은 기사는 경제면 한국 칸에서 뺀다 — 주소가 같거나 제목 명사가 반 넘게 겹치면
+        m_urls = {a.get("url") for a in marts}
+        m_nouns = [ko_nouns(a["title"]) for a in marts]
+
+        def dup_must(t):
+            if t.get("url") in m_urls:
+                return True
+            n = ko_nouns(t["title"])
+            return any(n and mn and len(n & mn) >= max(2, (min(len(n), len(mn)) + 1) // 2) for mn in m_nouns)
+        G, K = E.get("geo") or {}, E.get("korea") or {}
+        kr = rest("econ:kr", K.get("items") or [])
+        econ = {
+            "date": E.get("date", ""), "stale": E.get("_stale", False), "label": E.get("date_label", ""),
+            "basis": E.get("basis", ""), "link": elink, "home": LINK_ECON,
+            "verdict": E.get("verdict", ""), "verdict_sub": E.get("verdict_sub", ""),
+            "chain": (E.get("chain") or [])[:6],
+            "top": [{"key": t["key"], "kicker": t.get("kicker", ""), "title": (dx.get(t["key"]) or {}).get("headline") or t["title"],
+                     "body": t.get("body", ""), "why": t.get("why", ""), "nums": nums(t.get("nums")),
+                     "src": [x for x in (t.get("src") or []) if x.get("url")][:3]} for t in rest("econ:top", E.get("top") or [])],
+            "geo": {"lead": G.get("lead", ""), "nums": nums(G.get("nums")),
+                    "items": [{"key": t["key"], "title": t["title"], "body": t.get("body", ""), "tag": t.get("tag", ""),
+                               "by": t.get("by", ""), "url": t.get("url")} for t in rest("econ:geo", G.get("items") or [])]},
+            "korea": {"lead": K.get("lead", ""), "nums": nums(K.get("nums")),
+                      "items": [{"key": t["key"], "title": t["title"], "body": t.get("body", ""), "by": t.get("by", ""),
+                                 "url": t.get("url")} for t in kr if not dup_must(t)],
+                      "dup": sum(1 for t in kr if dup_must(t))},
+            "decisions": [{"who": d.get("who", ""), "title": d.get("title", ""), "url": d.get("url")}
+                          for d in (E.get("decisions") or []) if d.get("title")][:5],
+            "watch": (E.get("watch") or [])[:6],
+        }
+        # 경제 '한 줄' 상자(1면 오른쪽)를 톱과 겹치지 않게 — 경제 기사가 톱이면 상자는 사슬만
+        econ["lead_is_econ"] = bool(lead and lead.get("kind") == "econ")
+
+        # 테크↔경제 연결 — 1면·외신면 기사의 회사가 오늘 경제면(주요 3건·볼 것)에도 나오면 칩을 단다
+        # 트럼프는 거의 매일 양쪽에 나와서 연결 근거로 쓰지 않는다
+        # 양쪽 다 '제목'에 나온 회사로만 잇는다 — 본문에 스친 이름(11-17 엔비디아 기사 본문의 '앤트로픽 상장')으로 엮지 않게
+        ebank = [({"t": trim(t["title"], 40), "w": False}, tags(t["title"])[0] - {"trump"}) for t in (E.get("top") or [])] +                 [({"t": trim(w, 40), "w": True}, tags(w)[0] - {"trump"}) for w in (E.get("watch") or [])]
+
+        def link_econ(it, title):
+            if not it or it.get("kind") == "econ":
+                return
+            te = tags(title)[0] - {"trump"}
+            hit = next((ref for ref, ee in ebank if te & ee), None)
+            if hit:
+                it["econ_ref"] = hit
+        if lead and lead.get("kind") != "econ":
+            link_econ(lead, lead.get("headline", ""))
+        for it in (slots.get("side") or []) + (slots.get("row") or []) + [i for sc in foreign for i in sc["items"]]:
+            link_econ(it, it.get("head", ""))
+
     out = {
         "edition": now.strftime("%Y-%m-%d %H:%M"),
         "no": no,
         "sources": {"briefing": brief.get("date", ""), "must": M.get("updated", ""),
-                    "signal": latest.get("updated", "")},
-        "links": {"briefing": blink, "must": LINK_MUST},
+                    "signal": latest.get("updated", ""), "econ": (E or {}).get("date", "")},
+        "links": {"briefing": blink, "must": LINK_MUST, "econ": elink},
+        "market": {k: v for k, v in (market or {}).items() if k != "all"} or None,
+        "econ": econ,
         "desk": {"edited_at": desk.get("edited_at"), "applied": applied,
                  "notes": desk.get("notes") or []},
         "lead": lead, "slots": slots, "left": [], "foreign": foreign, "wire": wire, "features": features,
@@ -1023,6 +1192,14 @@ def main():
             print("     교차 근거: 개체 %s · 공유 %s" % (lead["why"]["entities"], lead["why"]["shared"]))
     print("  1면 사이드 %s · 줄 %s%s" % ([x["kind"][0] for x in slots["side"]], [x["kind"][0] for x in slots["row"]],
                                      " (편집국 배치)" if slots["picked"] else ""))
+    if econ:
+        print("  경제 %s%s · 주요 %d · 정세 %d · 한국 %d(국내면과 겹쳐 뺀 %d) · 연결 칩 %d · 시장 띠 %d" % (
+            econ["date"], " (어제 판)" if econ["stale"] else "", len(econ["top"]), len(econ["geo"]["items"]),
+            len(econ["korea"]["items"]), econ["korea"]["dup"],
+            sum(1 for it in [lead or {}] + (slots.get("side") or []) + (slots.get("row") or []) + [i for sc in foreign for i in sc["items"]] if it.get("econ_ref")),
+            len((market or {}).get("items") or [])))
+    else:
+        print("  경제 — 발행본 없음(오늘·어제)")
     print("  외신 %d건(좌측 %d · 외신면 %d) · 반향 붙음 %d · 해외 %d · 피처 %d · 온도 %s · 국내 %d · 해석 %d" % (
         len(arts), len(left), sum(len(f["items"]) for f in foreign), len(echo_of), len(wire), len(features), temp["group"] if temp else "-",
         len(domestic["list"]) + (1 if domestic["lead"] else 0), len(voices)))
