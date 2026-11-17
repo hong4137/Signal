@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-17 23:00",
+ "updated": "2026-11-18 06:33",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 10,
-  "reddit": 30,
+  "hn": 13,
+  "reddit": 0,
   "hf": 15,
-  "github": 12,
+  "github": 10,
   "trust": 100
  },
- "reddit_mode": "rss",
+ "reddit_mode": "none",
  "by_volume": [
   {
    "layer": "hn",
    "title": "All AI-generated code should be Open Source",
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "discussion": "https://news.ycombinator.com/item?id=50507303",
-   "points": 1274,
-   "comments": 664,
+   "points": 1278,
+   "comments": 668,
    "r": 0.52,
    "at": "2026-11-15",
    "topics": [],
@@ -32,8 +32,8 @@
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "discussion": "https://news.ycombinator.com/item?id=50512235",
-   "points": 476,
-   "comments": 578,
+   "points": 481,
+   "comments": 583,
    "r": 1.21,
    "at": "2026-11-15",
    "topics": [
@@ -50,9 +50,9 @@
    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "discussion": "https://news.ycombinator.com/item?id=50524736",
-   "points": 663,
-   "comments": 522,
-   "r": 0.79,
+   "points": 701,
+   "comments": 580,
+   "r": 0.83,
    "at": "2026-11-16",
    "topics": [
     "에이전트"
@@ -65,11 +65,46 @@
   },
   {
    "layer": "hn",
+   "title": "GPT‑6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "discussion": "https://news.ycombinator.com/item?id=50535230",
+   "points": 853,
+   "comments": 521,
+   "r": 0.61,
+   "at": "2026-11-17",
+   "topics": [],
+   "story_key": "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+   "summary_ko": "오픈블록의 신규 모델 성능을 두고 자율성과 작업 완료 성향이 눈에 띄게 좋아졌다는 호평과, 경쟁사 대비 속도가 여전히 느리다는 불만이 엇갈렸다. 일부 사용자는 구독당 제공되는 토큰 양이 줄었다고 지적한 반면, 성능 저하 음모론은 체감하기 어렵다는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "오픈AI GPT-6.2 아스트라 솔",
+   "kr": [
+    {
+     "t": "GPT-6.2 아스트라, 3D 평가 1318점 1위…클로드 페이블 5.2 47점 앞서",
+     "u": "https://www.tokenpost.kr/news/ai/440032",
+     "d": "Wed, 18 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    },
+    {
+     "t": "미소스 5.5·GPT-6.2 아스트라 잇달아 포착…최첨단 모델 출시설",
+     "u": "https://www.aitimes.com/news/articleView.html?idxno=216894",
+     "d": "Mon, 02 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Qwen4-Max",
    "url": "https://qwen.ai/blog?id=qwen4-max",
    "discussion": "https://news.ycombinator.com/item?id=50513215",
-   "points": 867,
-   "comments": 479,
+   "points": 872,
+   "comments": 483,
    "r": 0.55,
    "at": "2026-11-16",
    "topics": [
@@ -96,8 +131,8 @@
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
    "discussion": "https://news.ycombinator.com/item?id=50506180",
-   "points": 540,
-   "comments": 258,
+   "points": 542,
+   "comments": 261,
    "r": 0.48,
    "at": "2026-11-15",
    "topics": [
@@ -135,9 +170,9 @@
    "title": "Nvidia was in trouble before the Jensen Huang mess",
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
-   "points": 281,
-   "comments": 253,
-   "r": 0.9,
+   "points": 287,
+   "comments": 261,
+   "r": 0.91,
    "at": "2026-11-16",
    "topics": [
     "인프라·칩"
@@ -173,20 +208,18 @@
   },
   {
    "layer": "hn",
-   "title": "Will we put data centers in space?",
-   "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space",
-   "discussion": "https://news.ycombinator.com/item?id=50498945",
-   "points": 73,
-   "comments": 226,
-   "r": 3.1,
-   "at": "2026-11-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:forethought.org/research/will-we-really-put-data-centers-in-space",
-   "summary_ko": "댓글에서는 우주 데이터 센터 구축이 규제 회피와 냉각 효율 측면에서 이점이 있다는 주장이 제기되었다. 반면 막대한 비용과 기술적 비효율성을 지적하며 마케팅용 과장광고나 사기에 불과하다는 비판도 팽배했다.",
-   "is_event": false,
-   "kr_query": "",
+   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "discussion": "https://news.ycombinator.com/item?id=50531751",
+   "points": 177,
+   "comments": 232,
+   "r": 1.31,
+   "at": "2026-11-17",
+   "topics": [],
+   "story_key": "url:scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "summary_ko": "댓글에서는 AI가 소프트웨어 분야와 달리 모든 산업에서 곧바로 비용 대비 수익을 내기에는 한계가 있다는 의견이 공감대를 얻었다. 반면 중국 기업들이 저렴한 오픈소스 모델로 가격 경쟁을 주도하며 글로벌 시장에서 파장을 일으키고 있다는 분석도 제기되었다.",
+   "is_event": true,
+   "kr_query": "바이두 샤오미 AI 거품 수익성 경고",
    "kr": []
   },
   {
@@ -195,8 +228,8 @@
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 191,
-   "r": 1.08,
+   "comments": 195,
+   "r": 1.1,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -237,12 +270,30 @@
   },
   {
    "layer": "hn",
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "discussion": "https://news.ycombinator.com/item?id=50529612",
+   "points": 225,
+   "comments": 176,
+   "r": 0.78,
+   "at": "2026-11-17",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+   "summary_ko": "일부 댓글에서는 AI 에이전트가 코드의 단순성이나 아키텍처의 일관성보다는 겉으로 작동하는 결과에만 치중해 스파게티 코드를 양산할 수 있다고 우려했다. 반면 반복적인 CRUD API 작성이나 포맷팅 변경 같은 단순 작업에서는 검증과 자동화가 매우 유용하다는 반응도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
    "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
    "discussion": "https://news.ycombinator.com/item?id=50509883",
    "points": 135,
-   "comments": 132,
-   "r": 0.98,
+   "comments": 135,
+   "r": 1.0,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -277,6 +328,32 @@
       "복귀",
       "엔비디아",
       "젠슨"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "US will say \"no\" to global ban on killer robots",
+   "url": "https://www.newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
+   "discussion": "https://news.ycombinator.com/item?id=50524728",
+   "points": 91,
+   "comments": 129,
+   "r": 1.42,
+   "at": "2026-11-16",
+   "topics": [],
+   "story_key": "url:newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
+   "summary_ko": "댓글에서는 자율주행 무기 규제가 실효성이 있을지 의문을 제기하며, 이미 지뢰 같은 무인 살상 무기가 수십 년간 사용되어 왔다는 지적이 나왔다. 또한 기술 자체를 금지하기보다 국가 간의 기본 원칙과 제재가 더 중요하다는 의견과 함께 전쟁의 참혹함에 대한 비판이 이어졌다.",
+   "is_event": true,
+   "kr_query": "미국 자율주행 무기 킬러로봇 금지 반대",
+   "kr": [
+    {
+     "t": "미국의 미래 전쟁의 주역 '로봇 병사'",
+     "u": "http://www.newstown.co.kr/news/articleView.html?idxno=711090",
+     "d": "Mon, 03 Aug 2026",
+     "why": [
+      "미국",
+      "킬러로봇"
      ]
     }
    ]
@@ -285,20 +362,72 @@
  "by_debate": [
   {
    "layer": "hn",
-   "title": "Will we put data centers in space?",
-   "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space",
-   "discussion": "https://news.ycombinator.com/item?id=50498945",
-   "points": 73,
-   "comments": 226,
-   "r": 3.1,
-   "at": "2026-11-14",
-   "topics": [
-    "인프라·칩"
+   "title": "US will say \"no\" to global ban on killer robots",
+   "url": "https://www.newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
+   "discussion": "https://news.ycombinator.com/item?id=50524728",
+   "points": 91,
+   "comments": 129,
+   "r": 1.42,
+   "at": "2026-11-16",
+   "topics": [],
+   "story_key": "url:newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
+   "_comments": [
+    "Were killed, but not with a tireless machine that hunts you and only you and can wait forever on some place until you appear.My bet is that warmongers will became suddenly reasonable when war will knock directly into their doors. In any case we'll need this money for the climate disasters that will just accelerate from now on. I wonder if this robots can be destroyed with a high pressure salt water stream, because for sure we will have plenty of saltwater in many of our cities.",
+    "It's widely understood that sanctions don't prevent countries from getting the parts, they just make it incredibly expensive to do so.I'm all in favor of more severe sanctions, but have realistic expectations. There's good news - Russia is already delaying paychecks to soldiers. Sanctions are having the expected effect. But they aren't going to stop the war.",
+    "Ukraine, Belarus and Kazakhstan all gave up their nuclear weapons, and in exchange, Russia, the US and the UK promised to respect their independence.We all know how that went.",
+    "In past 15 years: War in Syria, Ukraine, Sudan has seen usage of chemical weapons",
+    "Neat. Yeah, that remains the purpose of the 2A!I recently talked to an Iranian fellow who lamented his country's state, and was clear that he believed an armed population would let Iran get out of the mess it's in, but also would've prevented the mess in the first place.",
+    "Hmm.Maybe the argument is: given that the other guy will feel free to do it to me if I do it to him, NBC weapons aren't useful. Which is pretty much the same thing I was saying, it's a norm underpinned by not exactly mutually assured destruction, but something similar in the game theory.Thinking about it first-order, it seems like at least nuclear and chemical weapons would be \"useful\". If the Soviets / Chinese weren't nuclear-armed and backing up North Korea / Vietnam, why not nuke 'em a bit to show them we mean business and get them to surrender that way? Holding other things constant, I bet that would have been the strategy.(I think we're agreeing)",
+    "The Americans do regulate ownership of those and all other bearable arms. I think in most states though, it is totally possible (though extremely difficult and expensive) to own such \"destructive devices\".",
+    "Suddenly we're talking about women and children huh? When men die in the trenches by the hundreds of thousands all is fine, but god forbid the women at home face the same danger.",
+    "I'm not sure banning particular technologies works very well. General principles like don't invade and kill people are good but we've had autonomous killing machines in the form of mines for decades and they don't seem to go away when there's an army invading.",
+    "Betrayal? Big words coming from a country that committed an act of war against its ally Germany and continually antagonizes its other ally Poland to appease all the anti-Polish ethnonationalists in its military ranks.",
+    "Quite a lot of Russian generals have been killed and they've made many attempts on Zelensky, although not using AI. But the Russia view never seems to be we should stop this stuff, just threatening to hit back harder.",
+    "The worst barbarity seems to come from leaders who value their citizens lives very little."
    ],
-   "story_key": "url:forethought.org/research/will-we-really-put-data-centers-in-space",
-   "summary_ko": "댓글에서는 우주 데이터 센터 구축이 규제 회피와 냉각 효율 측면에서 이점이 있다는 주장이 제기되었다. 반면 막대한 비용과 기술적 비효율성을 지적하며 마케팅용 과장광고나 사기에 불과하다는 비판도 팽배했다.",
-   "is_event": false,
-   "kr_query": "",
+   "summary_ko": "댓글에서는 자율주행 무기 규제가 실효성이 있을지 의문을 제기하며, 이미 지뢰 같은 무인 살상 무기가 수십 년간 사용되어 왔다는 지적이 나왔다. 또한 기술 자체를 금지하기보다 국가 간의 기본 원칙과 제재가 더 중요하다는 의견과 함께 전쟁의 참혹함에 대한 비판이 이어졌다.",
+   "is_event": true,
+   "kr_query": "미국 자율주행 무기 킬러로봇 금지 반대",
+   "kr": [
+    {
+     "t": "미국의 미래 전쟁의 주역 '로봇 병사'",
+     "u": "http://www.newstown.co.kr/news/articleView.html?idxno=711090",
+     "d": "Mon, 03 Aug 2026",
+     "why": [
+      "미국",
+      "킬러로봇"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
+   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "discussion": "https://news.ycombinator.com/item?id=50531751",
+   "points": 177,
+   "comments": 232,
+   "r": 1.31,
+   "at": "2026-11-17",
+   "topics": [],
+   "story_key": "url:scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "_comments": [
+    "Fable and Astra can already one shot GTA in different setting with a huge token budget.Building digital twins has never been easier.",
+    "What does genuinely create something mean? Is it creating if you are inspired by anything? Is it creating if you have any prior information on the topic? Is it creating if you rewrite or build upon something existing? If it creating if you take a little part of something existing and copy it I to your creation? Is it creating if you take something, but reference the author? Is it creating if you are building something with an autocomplete/line completion/statistical model? Is it creating if you have an agent that searches the internet and helps you find the little snippets or material that might help you? It is creating if your idea needs you to use an AI to make a baseline in a certain \"sty",
+    "I think the challenge is it’s usually not a one-to-one relationship. Often what can be done by AI is a fraction of each person’s individual role so it’s hard to replace a single headcount purely with AI. On the other hand, they do seem to be examples of companies going balls to the wall, but that is a much larger restructuring and as you said it’s entirely Greenfield company organization structure.. for example I just read an article by a company of 10 people who spend 30x headcount on AI. I think most companies can’t imagine spending multiples of their labor costs on AI and what that may or may not do for them.",
+    "Have you used XiaoMi models?MiMo is pretty good for its extremely low price. I use it frequently as a reviewer.",
+    "AI has industrialised and automated plagiarism in a way that we've never seen before, its 3 orders of magnitude worse. These AI companies stole literally everything on the planetWhat we had previously wasn't ideal, but it was nowhere near as bad",
+    "I don't know, I feel like there's already room for a lot of improvements with scheduling and communication that are currently just handled by some guy in between all his other work. I'm saying this from the perspective of someone who worked in the office of a construction company, the amount of time that was wasted trying to coordinate between parties was unbelievable. We have the technology for functionally instantaneous, global, 100% reliable communication, but we sure don't live in a world that's utilizing it (partially because we don't actually have it implemented like that).Sure, a lot of the time the bottleneck is an actual human being, but I feel like it's not enough of the time (or i",
+    "Wut, PRC businesses primary goal has always been undermine/involute each other, and everyone else (globally) gets caught in blast radius.PRC open source / cheap tokens not difficult to understand, Deepseek is build on hedge fund couch change as hobby. He opensouces and commoditizes price, naturally every other competitor has to follow. No one wants to FOMO on AI, so everyone involutes commodity token due to compute limits, and thanks to export controls, they can't go into existential debt like US labs... so they are basically spending relatively peanuts to be at pareto frontier.This all generic progression of PRC competitiveness. Like undermining US labs valuation obviously nice bonus - but ",
+    "No I did read further. I just don't think your perspective is correct. Baidu has doubled its cloud revenue YoY and so has Xiaomi's AI division. They are making money. They are worried that they will not be able to sustainably maintain that growth.> Baidu and Xiaomi experiment with models. Test the efficacy of different models. Get an idea of the relative economics of different models. Maybe create a model of their own to see if they can improve the business case in one dimension or another. > Baidu and Xiaomi are trying to figure out how to make money. Not how to make models. Making models is not their business and they don't want to be in that business. China is full of dime a dozen PhDs wh",
+    "I think a part of it is that AI companies are software companies, and of course software development is the field that (so far) has been most revolutionized by language models.So AI CEOs are seeing around them, everywhere, the absolute best case scenario for how a field can be transformed - in their own organizations. It's pretty easy to drink that kool-aid and extrapolate out from there.Investors don't seem to mind, and all of these companies are all-in thinking that what happened to software is going to happen to every field, but you have to wonder how long the expectations vs reality \"gap\" will be tolerated.",
+    "schrödinger's ai: it's taking all our jobs and is autonomously attacking everything but also is a big bubble that has no impact on anything",
+    "> Especially if we believe that there will be a market correction that will force the good things to rise to the top, and everything else to go away.Do we believe that, truly?",
+    "If US AMerican companies and European companies are not 'allowed' to use Chinese models due to national security risk than its relevant what the impact of Chinese open Models will be on the position of Anthropic and OpenAI.While I no longer trust US America, nearly every company in germany has Microsoft products.Regarding the distilling: its not about consumers which care but companies if they want to have the frontier model and not 'just a second best' model. Distilling currnetly smears the progress between US American Frontiermodels and Chinese Models. If you know how much impact it has, you know how much better US American Frontiercompanies actually are."
+   ],
+   "summary_ko": "댓글에서는 AI가 소프트웨어 분야와 달리 모든 산업에서 곧바로 비용 대비 수익을 내기에는 한계가 있다는 의견이 공감대를 얻었다. 반면 중국 기업들이 저렴한 오픈소스 모델로 가격 경쟁을 주도하며 글로벌 시장에서 파장을 일으키고 있다는 분석도 제기되었다.",
+   "is_event": true,
+   "kr_query": "바이두 샤오미 AI 거품 수익성 경고",
    "kr": []
   },
   {
@@ -306,8 +435,8 @@
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "discussion": "https://news.ycombinator.com/item?id=50512235",
-   "points": 476,
-   "comments": 578,
+   "points": 481,
+   "comments": 583,
    "r": 1.21,
    "at": "2026-11-15",
    "topics": [
@@ -325,8 +454,8 @@
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 191,
-   "r": 1.08,
+   "comments": 195,
+   "r": 1.1,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -371,8 +500,8 @@
    "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
    "discussion": "https://news.ycombinator.com/item?id=50509883",
    "points": 135,
-   "comments": 132,
-   "r": 0.98,
+   "comments": 135,
+   "r": 1.0,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -416,9 +545,9 @@
    "title": "Nvidia was in trouble before the Jensen Huang mess",
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
-   "points": 281,
-   "comments": 253,
-   "r": 0.9,
+   "points": 287,
+   "comments": 261,
+   "r": 0.91,
    "at": "2026-11-16",
    "topics": [
     "인프라·칩"
@@ -439,9 +568,9 @@
    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "discussion": "https://news.ycombinator.com/item?id=50524736",
-   "points": 663,
-   "comments": 522,
-   "r": 0.79,
+   "points": 701,
+   "comments": 580,
+   "r": 0.83,
    "at": "2026-11-16",
    "topics": [
     "에이전트"
@@ -454,11 +583,92 @@
   },
   {
    "layer": "hn",
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "discussion": "https://news.ycombinator.com/item?id=50529612",
+   "points": 225,
+   "comments": 176,
+   "r": 0.78,
+   "at": "2026-11-17",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+   "_comments": [
+    "Reading this makes me better able to understand how claude code was an absolute memory hog on the computer.For all of it's checks, there are not one mention about simplicity, conciseness or architectural coherence. And when you don't have your AI agents care about those things when you run them by the hundreds. You'll get spaghetti that works on a surface level, for now.",
+    "Are you arguing that the PR is unnecessary for AI/agents? Or that human review is mandatory?All productivity metrics have flaws (usually deep ones). Doesn’t mean they’re not instructional though.",
+    "I really don't need to spend time in my day \"reviewing\" a PR that does a formatting change, or adds boilerplate CRUD APIs.",
+    "Analytics and data teams alone burned 20k€ in AWS bills, plus easy grand or two on different AI platforms.6k for deployments that help a hundred or more devs is a drop in the bucket.",
+    "That's a weak man fallacy. The strongest parts of the argument are costs and efficiency.",
+    "Darn near every 100%-coverage project looks like that, in my experience. It's not always a bad thing, but there's a TON of cargo-culting of those test structures, in part because they can be applied mindlessly to reach arbitrarily high coverage.",
+    "If this didn't say Claude, even potentially it could be largely rewritten not to deal with LLMs...under those circumstances this would be seen as a pretty decent article about testing quality.The projection of some hurt feelings (or actively hostile actors?) in these comments is kind of insane.",
+    "Yeah, people don't realize what terrifies me most about stuff like Mythos, the employees can throw \"unlimited\" compute at it, to the point where it could go off and do something off-rails that they cannot react quickly enough to prevent. At what point is any of this okay? Honestly, I hope I'm wrong and it never happens.",
+    "For some contrast, my first job where the team used source control was in 2015 – 15 years after the Joel test came out. That was after switching jobs in manufacturing or finance to tech.",
+    "My main issue right now is that more verification would be more test runs, but running evals can get expensive easily. The only part I can’t really verify is UX (partly I can) and agent workflows itself.The rest of stuff I barely care anymore. To me my current setup it just works.",
+    "Its surprising Anthropic hasn't released a product that is baked around their dev process...",
+    "Hey, Boris from the team here. If you're hitting a specific bug, more happy to take a look."
+   ],
+   "summary_ko": "일부 댓글에서는 AI 에이전트가 코드의 단순성이나 아키텍처의 일관성보다는 겉으로 작동하는 결과에만 치중해 스파게티 코드를 양산할 수 있다고 우려했다. 반면 반복적인 CRUD API 작성이나 포맷팅 변경 같은 단순 작업에서는 검증과 자동화가 매우 유용하다는 반응도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "GPT‑6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "discussion": "https://news.ycombinator.com/item?id=50535230",
+   "points": 853,
+   "comments": 521,
+   "r": 0.61,
+   "at": "2026-11-17",
+   "topics": [],
+   "story_key": "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+   "_comments": [
+    "Do you use subscriptions or API? I suspect it's only the subscriptions that are impacted.",
+    "Big progress, for my types of workloads.When given my benchmark suite, which involves a couple of long horizon tasks where the agent decides when to consider the task well executed, its the first OpenAI model that does not want to finish as soon as some minimal level of quality has been achieved. Like Fable, Opus and Sonnet it now runs the maximum allowed iterations and does not stop at 'satisfactory', gold plating the solution to my delight.(I don't work like this on work projects, but for everything hobby, I am testing how much autonomy I can give to the coding agents, and thats what my benchmark suite tests; I have the basic suite which completes in 2-4hrs, and the long running suite whic",
+    "Tested both models, no change in speed from the 20-80tps I was seeing with the previous Astra/Sol models. I'm not sure when this happened exactly but it's strange to me that OpenAI's models are now around 5x slower than Anthropic's. Is this the new norm? Are other people seeing the same thing?",
+    "I've found this to also be true on their respective subreddits. They both have very \"the sky is falling!!!!\" vibes. Two of the truest truisms are at work:1. If you make an app, most of the happy users say nothing. Whereas seemingly all of the unhappy users will be vocal complainers.2. The grass is always greener on the other side of the fence.I feel the \"grass is greener\" mentality is particularly silly in this case, because for an extra $20/month you can just keep a cheap subscription to the \"other\" one. I realize not everybody has $20/month, but I think most people who can afford <= $20 for one subscription can probably afford another $20/mo for the other one.",
+    "You and I have the exact opposite requirements. My workflow is that I always like to talk through the problem and the solution first, before codex just starts ripping through the coding portion. I used to have consistent issues getting that kind of workflow. The more recent models from OpenAI are so much better at building a plan collaboratively.",
+    "Unfortunately the sentiment from our favorite, perhaps ill-chosen, tech influencers has reached a critical threshold of value to these labs - the economic incentive to sway these opinions renders them ~meaningless.For anyone lost in the sauce re: polarized reactions, I'd recommend just taking a half hour to try the models yourself.",
+    "Sorry Ted but your plots suck. Just look at that first one, Agents' Last Exam v1.1. All the data points are overlapping on the left side. I can't even see what is what",
+    "curious, i haven't experienced what you describe so far. Astra and Sol 6.2 have both gone off and done jsut what I wanted, and as the set of prompts I test against become more vague and handwavy, they both went on to fill in the gaps and produce somehting I was satisfied with.",
+    "I've been testing sol, and opus, almost weekly as new models are released. I haven't seen any evidence of the nerfing conspiracy theories. https://slopcop.com/power-rankingEdit: But it does look like you get about 20% less tokens for your subscription with OpenAI than you did until a couple months ago.",
+    "I don’t have benchmarks but it’s crazily fast. I couldn’t imagine reaching that speed with frontier models. I suspect they are leveraging Taalas or something to “print” the model directly to the chip, somehow analogously to ASIC miners for cryptos.",
+    "ts-rust was his benchmark for \"task he once thought was impossible for AI to do\". Opus, however, was able to do it, apparently. So he's seeing now if the latest OpenAI model can improve it at all. Seems like he's not impressed with the results.",
+    "> I work at OpenAI and I made the plots.Have you not considered log scale for the \"Agents' Last Exam v1.1\" plot? Like this the left is so crowded I can't see a thing..."
+   ],
+   "summary_ko": "오픈블록의 신규 모델 성능을 두고 자율성과 작업 완료 성향이 눈에 띄게 좋아졌다는 호평과, 경쟁사 대비 속도가 여전히 느리다는 불만이 엇갈렸다. 일부 사용자는 구독당 제공되는 토큰 양이 줄었다고 지적한 반면, 성능 저하 음모론은 체감하기 어렵다는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "오픈AI GPT-6.2 아스트라 솔",
+   "kr": [
+    {
+     "t": "GPT-6.2 아스트라, 3D 평가 1318점 1위…클로드 페이블 5.2 47점 앞서",
+     "u": "https://www.tokenpost.kr/news/ai/440032",
+     "d": "Wed, 18 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    },
+    {
+     "t": "미소스 5.5·GPT-6.2 아스트라 잇달아 포착…최첨단 모델 출시설",
+     "u": "https://www.aitimes.com/news/articleView.html?idxno=216894",
+     "d": "Mon, 02 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Qwen4-Max",
    "url": "https://qwen.ai/blog?id=qwen4-max",
    "discussion": "https://news.ycombinator.com/item?id=50513215",
-   "points": 867,
-   "comments": 479,
+   "points": 872,
+   "comments": 483,
    "r": 0.55,
    "at": "2026-11-16",
    "topics": [
@@ -503,8 +713,8 @@
    "title": "All AI-generated code should be Open Source",
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "discussion": "https://news.ycombinator.com/item?id=50507303",
-   "points": 1274,
-   "comments": 664,
+   "points": 1278,
+   "comments": 668,
    "r": 0.52,
    "at": "2026-11-15",
    "topics": [],
@@ -519,8 +729,8 @@
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
    "discussion": "https://news.ycombinator.com/item?id=50506180",
-   "points": 540,
-   "comments": 258,
+   "points": 542,
+   "comments": 261,
    "r": 0.48,
    "at": "2026-11-15",
    "topics": [
@@ -554,251 +764,16 @@
    ]
   }
  ],
- "reddit_top": [
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "maxwell-model/Maxwell-V1-Flash · Hugging Face",
-   "url": "https://github.com/maxwell-model/Maxwell-V1-Flash",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/",
-   "rank": 1,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "gh:maxwell-model/maxwell-v1-flash"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Stop worrying about Qwen 4's AA index",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxqfqr/stop_worrying_about_qwen_4s_aa_index/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxqfqr/stop_worrying_about_qwen_4s_aa_index/",
-   "rank": 2,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xxqfqr/stop_worrying_about_qwen_4s_aa_index"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Your daily dose of Qwopium:",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xy4xsx/your_daily_dose_of_qwopium/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xy4xsx/your_daily_dose_of_qwopium/",
-   "rank": 3,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xy4xsx/your_daily_dose_of_qwopium"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "miHoYo Gamer: A Generalist Game Agent",
-   "url": "https://mihoyo-gamer.github.io/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxy7eb/mihoyo_gamer_a_generalist_game_agent/",
-   "rank": 4,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:mihoyo-gamer.github.io/"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Open weight models account for 30% usage at enterprises to save money",
-   "url": "https://x.com/pwendell/status/2122377964784611636",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxxbt9/open_weight_models_account_for_30_usage_at/",
-   "rank": 5,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/pwendell/status/2122377964784611636"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "OVH announces Olala mini 7A1B",
-   "url": "https://corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xygtj4/ovh_announces_olala_mini_7a1b/",
-   "rank": 6,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "I am sick of doomposting about demise of local AI",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxzk23/i_am_sick_of_doomposting_about_demise_of_local_ai/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxzk23/i_am_sick_of_doomposting_about_demise_of_local_ai/",
-   "rank": 7,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xxzk23/i_am_sick_of_doomposting_about_demise_of_local_ai"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Small Gemma 4 tokenizers were recently updated by Google - fix for an issue that caused nonsense output when encountering certain tokens",
-   "url": "https://huggingface.co/google/gemma-4-E4B-it/discussions/50",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxxs0a/small_gemma_4_tokenizers_were_recently_updated_by/",
-   "rank": 8,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "hf:google/gemma-4-e4b-it"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Censorship is turning me into a true Local LLM believer",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/",
-   "rank": 9,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Intel Shares First Benchmarks of Its Next-Gen Crescent Island \"D270\" GPU, Claiming a 5.9x Throughput Over RTX PRO 6000 As Xe3P Goes Big On FP64",
-   "url": "https://wccftech.com/intel-first-benchmarks-crescent-island-d270-xe3p-gpu-a-5-9x-faster-rtx-pro-6000-fp64/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xyioi8/intel_shares_first_benchmarks_of_its_nextgen/",
-   "rank": 10,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:wccftech.com/intel-first-benchmarks-crescent-island-d270-xe3p-gpu-a-5-9x-faster-rtx-pro-6000-fp64"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "I don't get all the Strata hates around here",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxz46x/i_dont_get_all_the_strata_hates_around_here/",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxz46x/i_dont_get_all_the_strata_hates_around_here/",
-   "rank": 11,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:reddit.com/r/LocalLLaMA/comments/1xxz46x/i_dont_get_all_the_strata_hates_around_here"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
-   "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xyi3aa/nvidiaqwen38flashnextnvfp4qad/",
-   "rank": 12,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스",
-    "인프라·칩"
-   ],
-   "story_key": "hf:nvidia/qwen3.8-flash-next-nvfp4-qad"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Rotate K/V read order for better L2 cache hit rates by gaugarg-nv · Pull Request #32407 · ggml-org/llama.cpp",
-   "url": "https://github.com/ggml-org/llama.cpp/pull/32407",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xyi6hj/rotate_kv_read_order_for_better_l2_cache_hit/",
-   "rank": 13,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:ggml-org/llama.cpp",
-   "trust": [
-    "Latent Space",
-    "Simon Willison"
-   ],
-   "trust_match": "link"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "Gemma on a printer",
-   "url": "https://x.com/osanseviero/status/2122646098418491739",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xyjkts/gemma_on_a_printer/",
-   "rank": 14,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [],
-   "story_key": "url:x.com/osanseviero/status/2122646098418491739"
-  },
-  {
-   "layer": "reddit",
-   "sub": "LocalLLaMA",
-   "title": "nvidia/Nemotron-Labs-Sigma 8B/3B",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B",
-   "discussion": "https://www.reddit.com/r/LocalLLaMA/comments/1xxwg6w/nvidianemotronlabssigma_8b3b/",
-   "rank": 15,
-   "points": 0,
-   "comments": 0,
-   "r": 0.0,
-   "has_metrics": false,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "hf:nvidia/nemotron-labs-sigma-8b"
-  }
- ],
+ "reddit_top": [],
  "quiet_important": [
   {
    "layer": "hn",
    "title": "Nvidia was in trouble before the Jensen Huang mess",
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
-   "points": 281,
-   "comments": 253,
-   "r": 0.9,
+   "points": 287,
+   "comments": 261,
+   "r": 0.91,
    "at": "2026-11-16",
    "topics": [
     "인프라·칩"
@@ -820,8 +795,8 @@
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 191,
-   "r": 1.08,
+   "comments": 195,
+   "r": 1.1,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -866,8 +841,8 @@
    "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
    "discussion": "https://news.ycombinator.com/item?id=50509883",
    "points": 135,
-   "comments": 132,
-   "r": 0.98,
+   "comments": 135,
+   "r": 1.0,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -912,8 +887,8 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-H3-Image",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-   "trending": 1154,
-   "likes": 1378,
+   "trending": 852,
+   "likes": 1439,
    "downloads": 727110,
    "topics": [
     "모델릴리스"
@@ -924,8 +899,8 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 478,
-   "likes": 20346,
+   "trending": 498,
+   "likes": 20404,
    "downloads": 6942530,
    "topics": [
     "모델릴리스"
@@ -934,22 +909,10 @@
   },
   {
    "layer": "hf",
-   "title": "Comfy-Org/MiniMax-H3-Image",
-   "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-   "trending": 399,
-   "likes": 510,
-   "downloads": 2660341,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:comfy-org/minimax-h3-image"
-  },
-  {
-   "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 398,
-   "likes": 12329,
+   "trending": 394,
+   "likes": 12387,
    "downloads": 2828071,
    "topics": [
     "모델릴리스"
@@ -960,8 +923,8 @@
    "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 369,
-   "likes": 471,
+   "trending": 383,
+   "likes": 492,
    "downloads": 4445,
    "topics": [
     "모델릴리스"
@@ -972,8 +935,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Small",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-   "trending": 346,
-   "likes": 433,
+   "trending": 347,
+   "likes": 438,
    "downloads": 18359,
    "topics": [
     "모델릴리스"
@@ -984,8 +947,8 @@
    "layer": "hf",
    "title": "unsloth/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-   "trending": 321,
-   "likes": 6115,
+   "trending": 324,
+   "likes": 6132,
    "downloads": 6827598,
    "topics": [
     "모델릴리스"
@@ -994,22 +957,22 @@
   },
   {
    "layer": "hf",
-   "title": "Zyphra/ZONOS3-Mini",
-   "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
-   "trending": 319,
-   "likes": 500,
-   "downloads": 93909,
+   "title": "Comfy-Org/MiniMax-H3-Image",
+   "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+   "trending": 282,
+   "likes": 518,
+   "downloads": 2660341,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:zyphra/zonos3-mini"
+   "story_key": "hf:comfy-org/minimax-h3-image"
   },
   {
    "layer": "hf",
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-   "trending": 223,
-   "likes": 3380,
+   "trending": 221,
+   "likes": 3403,
    "downloads": 1062051,
    "topics": [
     "모델릴리스"
@@ -1018,15 +981,27 @@
   },
   {
    "layer": "hf",
-   "title": "facebook/sam3",
-   "url": "https://huggingface.co/facebook/sam3",
-   "trending": 213,
-   "likes": 6843,
-   "downloads": 1971023,
+   "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+   "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+   "trending": 207,
+   "likes": 489,
+   "downloads": 160748,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:facebook/sam3"
+   "story_key": "hf:chatrlabs/qwen-image-2.1-uncensored-omni-quantized"
+  },
+  {
+   "layer": "hf",
+   "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+   "trending": 192,
+   "likes": 3286,
+   "downloads": 1759757,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:davidau/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf"
   }
  ],
  "new_repos": [
@@ -1035,7 +1010,7 @@
    "title": "deepseek-ai/chat-demo",
    "desc": "Chat Demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
-   "stars": 4422,
+   "stars": 4507,
    "topics": [
     "모델릴리스"
    ],
@@ -1046,7 +1021,7 @@
    "title": "apex-compute/ANR",
    "desc": "Apex Neural Rendering (ANR) by Apex Compute",
    "url": "https://github.com/apex-compute/ANR",
-   "stars": 2548,
+   "stars": 2579,
    "topics": [
     "인프라·칩"
    ],
@@ -1054,23 +1029,10 @@
   },
   {
    "layer": "github",
-   "title": "hitkeeen/blender-ai-mcp-addon",
-   "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI a",
-   "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-   "stars": 2390,
-   "topics": [
-    "모델릴리스",
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "gh:hitkeeen/blender-ai-mcp-addon"
-  },
-  {
-   "layer": "github",
    "title": "Noniv/abyssal-garden",
    "desc": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code wi",
    "url": "https://github.com/Noniv/abyssal-garden",
-   "stars": 2001,
+   "stars": 2123,
    "topics": [
     "인프라·칩"
    ],
@@ -1078,10 +1040,19 @@
   },
   {
    "layer": "github",
+   "title": "Immortal-Protocols/lastbook",
+   "desc": "Offline knowledge AI, maps and videos for survival and rebuilding",
+   "url": "https://github.com/Immortal-Protocols/lastbook",
+   "stars": 1627,
+   "topics": [],
+   "story_key": "gh:immortal-protocols/lastbook"
+  },
+  {
+   "layer": "github",
    "title": "duwqijlk/muse-protocol",
    "desc": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
    "url": "https://github.com/duwqijlk/muse-protocol",
-   "stars": 1559,
+   "stars": 1578,
    "topics": [
     "개발도구"
    ],
@@ -1092,27 +1063,39 @@
    "title": "ZiChuanLan/freebie-radar",
    "desc": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
    "url": "https://github.com/ZiChuanLan/freebie-radar",
-   "stars": 1370,
+   "stars": 1417,
    "topics": [],
    "story_key": "gh:zichuanlan/freebie-radar"
   },
   {
    "layer": "github",
-   "title": "Immortal-Protocols/lastbook",
-   "desc": "Offline knowledge AI, maps and videos for survival and rebuilding",
-   "url": "https://github.com/Immortal-Protocols/lastbook",
-   "stars": 1211,
-   "topics": [],
-   "story_key": "gh:immortal-protocols/lastbook"
+   "title": "sybil-solutions/inference-optimisation-skill",
+   "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+   "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+   "stars": 876,
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "gh:sybil-solutions/inference-optimisation-skill"
   },
   {
    "layer": "github",
    "title": "haziqahmedqasmi/PeakCut",
    "desc": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
    "url": "https://github.com/haziqahmedqasmi/PeakCut",
-   "stars": 767,
+   "stars": 851,
    "topics": [],
    "story_key": "gh:haziqahmedqasmi/peakcut"
+  },
+  {
+   "layer": "github",
+   "title": "n4ze3m/tiny-voca",
+   "desc": "A 4.5M-parameter two-voice English text-to-speech model, trained from scratch",
+   "url": "https://github.com/n4ze3m/tiny-voca",
+   "stars": 686,
+   "topics": [],
+   "story_key": "gh:n4ze3m/tiny-voca"
   },
   {
    "layer": "github",
@@ -1124,18 +1107,41 @@
     "개발도구"
    ],
    "story_key": "gh:linknimiball1974/ai-texture-forge"
-  },
-  {
-   "layer": "github",
-   "title": "n4ze3m/tiny-voca",
-   "desc": "A 4.5M-parameter two-voice English text-to-speech model, trained from scratch",
-   "url": "https://github.com/n4ze3m/tiny-voca",
-   "stars": 663,
-   "topics": [],
-   "story_key": "gh:n4ze3m/tiny-voca"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "at": "2026-11-17T16:48",
+   "topics": [
+    "개발도구"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/17/datasette-lite",
+   "link_keys": [
+    "gh:coleifer/pysqlite3",
+    "gh:datasette/datasette-maplibre",
+    "gh:datasette/pysqlite3-wasm-wheels",
+    "gh:pypi/warehouse",
+    "gh:simonw/75ececf61d50e6e8d50f0c150150ee81",
+    "gh:simonw/datasette",
+    "gh:simonw/datasette-lite",
+    "gh:simonw/research",
+    "url:datasette.github.io/pysqlite3-wasm-wheels",
+    "url:datasette.io/",
+    "url:developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "url:developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "url:gist.github.com/",
+    "url:gist.githubusercontent.com/simonw/39fa5d399465766039549912e2b3d291/raw/f6dfba99a75cbb8b5d9386223220eb52272767ee/metadata.yml",
+    "url:gisthost.github.io/",
+    "url:lite.datasette.io/",
+    "url:pyodide.org/",
+    "url:til.simonwillison.net/sqlite/sqlite-version-macos-python"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1443,23 +1449,8 @@
     "url:tools.simonwillison.net/markdown-svg-renderer"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Quoting Prompting Claude Fable 5.2",
-   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
-   "at": "2026-11-10T05:34",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
-   "link_keys": [
-    "url:platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-17 14:01"
+ "enriched_at": "2026-11-17 21:35"
 }
