@@ -977,8 +977,21 @@ def main():
 
     dom_key = "must:%d" % must_order.index(dom_lead) if dom_lead else None
     side_def = [it["key"] for it in left][:3]
-    row_def = [k for k in ([dom_key] + [f["key"] for f in features[:1]] + [w["key"] for w in wire[:1]] +
-                           [sec["items"][0]["key"] for sec in foreign[:1] if sec["items"]]) if k]
+    # 주요 기사 줄 기본 = 국내 · 커뮤니티 · 외신 · 경제 한 건씩 (2026-11-18 사용자)
+    # 경제는 주요 기사 중 톱·사이드와 같은 회사를 다루지 않는 첫 건 — 같은 사건이 1면에 두 번 나오지 않게
+    taken_ents = set()
+    for t in [(lead or {}).get("headline", "")] + [cand[k]["head"] for k in side_def if k in cand]:
+        taken_ents |= tags(t)[0] - {"trump"}
+    eks = [k for k in econ_items if not (lead and lead.get("key") == k)]
+    econ_def = next((k for k in eks if k.startswith("econ:top") and not ((tags(econ_items[k]["head"])[0] - {"trump"}) & taken_ents)), None)         or next((k for k in eks if not ((tags(econ_items[k]["head"])[0] - {"trump"}) & taken_ents)), None)
+    comm = [f["key"] for f in features[:1]] or [w["key"] for w in wire[:1]]
+    row_def = [k for k in ([dom_key] + comm + [sec["items"][0]["key"] for sec in foreign[:1] if sec["items"]] + [econ_def]) if k]
+    # 경제 판이 없는 날 등 4칸이 안 차면 커뮤니티·외신으로 채운다
+    for k in [w["key"] for w in wire[:1]] + [f["key"] for f in features[1:2]] + [i["key"] for sec in foreign[:2] for i in sec["items"][1:2]]:
+        if len(row_def) >= 4:
+            break
+        if k not in row_def:
+            row_def.append(k)
     fr = desk.get("front") or {}
     side = [k for k in (fr.get("side") or []) if k in cand][:3]
     picked_front = len(side) >= 2
