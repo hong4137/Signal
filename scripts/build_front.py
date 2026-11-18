@@ -211,9 +211,13 @@ def pick_photo(pool, it, sec, used):
     n_title = len(wants)
     wants += [t for pat, t in PHOTO_TOPIC if t not in wants and re.search(pat, it.get("deck", ""), re.I)]
     wants += [PHOTO_SEC.get(sec, "ai")] + PHOTO_ANY
+    if it.get("domestic"):
+        # 11-18: 국내 톱 '정부, 수능시험장 스마트기기 차단' 에 '집무실에서 서명한 트럼프' 가 붙었다 — 자료사진의 정부 주제는 미국 것뿐
+        wants = [w for w in wants if w != "government"]
     seed = sum(ord(ch) for ch in (it.get("en") or it.get("head") or ""))
     for i, want in enumerate(wants):
-        cand = [x for x in pool if x["url"] not in used and want in x["tags"]]
+        cand = [x for x in pool if x["url"] not in used and want in x["tags"]
+                and not (it.get("domestic") and "trump" in x["tags"] and "trump" not in wants)]
         if cand:
             ph = cand[seed % len(cand)]
             used.add(ph["url"])
@@ -914,10 +918,12 @@ def main():
     }
 
     # 국내 톱 사진 — 검수된 자료사진에서 주제로. 1면 줄에 같은 기사가 오르면 같은 사진을 쓴다.
-    if domestic["lead"]:
-        ph = pick_photo(pool, {"head": domestic["lead"]["title"], "sub": "", "en": "", "deck": ""},
+    dom_drop = bool(domestic["lead"]) and bool((dx.get("must:%d" % domestic["lead"]["must_idx"]) or {}).get("drop_photo"))
+    if domestic["lead"] and not dom_drop:
+        ph = pick_photo(pool, {"head": domestic["lead"]["title"], "sub": "", "en": "", "deck": "", "domestic": True},
                         "반도체/인프라", used_ph)
-        if ph:
+        # 제목 주제와 맞는 사진일 때만 — 못 찾아 기본값으로 채운 사진은 엉뚱하다(11-18 수능 부정행위 기사에 'RGB 조명 게이밍 PC')
+        if ph and ph["from"] == "title":
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
             domestic["lead"]["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270),
                                        "alt": ph["alt"], "file": True, "weak": ph["from"] != "title"}
@@ -1008,8 +1014,11 @@ def main():
         it = cand[k]
         if it.get("img") or it.get("no_photo") or (dx.get(k) or {}).get("drop_photo"):
             continue
-        ph = pick_photo(pool, {"head": it["head"], "sub": it["sub"], "en": "", "deck": it["deck"]},
-                        it.get("sec") or ("AI/기술" if it["kind"] != "domestic" else "반도체/인프라"), used_ph)
+        dom = it["kind"] == "domestic"
+        ph = pick_photo(pool, {"head": it["head"], "sub": it["sub"], "en": "", "deck": it["deck"], "domestic": dom},
+                        it.get("sec") or ("AI/기술" if not dom else "반도체/인프라"), used_ph)
+        if ph and dom and ph["from"] != "title":
+            ph = None          # 국내 기사는 제목 주제와 맞는 사진만 (11-18 수능 기사에 '회로 기판 위 칩')
         if ph:
             src = ph["url"] + "?w=1&h=1&fit=crop&auto=format&q=75"
             it["img"] = {"src": photo(src, 960, 540), "sm": photo(src, 480, 270), "alt": ph["alt"], "file": True,
@@ -1093,8 +1102,8 @@ def main():
         nr_swap(lead, lead.get("headline"), lead.get("sub"), lead.get("deck"), lead.get("key"))
     for it in (slots.get("side") or []) + (slots.get("row") or []):
         nr_swap(it, it.get("head"), it.get("sub"), it.get("deck"), it.get("key"))
-    if domestic.get("lead"):
-        nr_swap(domestic["lead"], domestic["lead"].get("title"), "", domestic["lead"].get("lede"), None)
+    if domestic.get("lead") and not dom_drop:
+        nr_swap(domestic["lead"], domestic["lead"].get("title"), "", domestic["lead"].get("lede"), "must:%d" % domestic["lead"]["must_idx"])
     for sec in foreign:
         for it in sec["items"]:
             if it.get("img"):
@@ -1164,22 +1173,11 @@ def main():
         # 경제 '한 줄' 상자(1면 오른쪽)를 톱과 겹치지 않게 — 경제 기사가 톱이면 상자는 사슬만
         econ["lead_is_econ"] = bool(lead and lead.get("kind") == "econ")
 
-        # 테크↔경제 연결 — 1면·외신면 기사의 회사가 오늘 경제면(주요 3건·볼 것)에도 나오면 칩을 단다
-        # 트럼프는 거의 매일 양쪽에 나와서 연결 근거로 쓰지 않는다
-        # 양쪽 다 '제목'에 나온 회사로만 잇는다 — 본문에 스친 이름(11-17 엔비디아 기사 본문의 '앤트로픽 상장')으로 엮지 않게
-        ebank = [({"t": trim(t["title"], 40), "w": False}, tags(t["title"])[0] - {"trump"}) for t in (E.get("top") or [])] +                 [({"t": trim(w, 40), "w": True}, tags(w)[0] - {"trump"}) for w in (E.get("watch") or [])]
-
-        def link_econ(it, title):
-            if not it or it.get("kind") == "econ":
-                return
-            te = tags(title)[0] - {"trump"}
-            hit = next((ref for ref, ee in ebank if te & ee), None)
-            if hit:
-                it["econ_ref"] = hit
-        if lead and lead.get("kind") != "econ":
-            link_econ(lead, lead.get("headline", ""))
-        for it in (slots.get("side") or []) + (slots.get("row") or []) + [i for sc in foreign for i in sc["items"]]:
-            link_econ(it, it.get("head", ""))
+        # 테크↔경제 연결 칩은 껐다 (2026-11-18 사용자 지적 — 11-18 첫 판에서 같은 문구가 엔비디아 기사 5곳에 반복).
+        #   · 회사 이름만 맞으면 붙어서 '엔비디아 투자 ○○'·'엔비디아 고객사 수사'까지 엮였다
+        #   · 경제판은 전날 장 마감 기준이라 '실적 앞두고 약세'가 '실적 예상 상회' 기사에 붙는 시점 역전이 났다
+        #   · 경제면은 섹션 메뉴·1면 '오늘의 경제' 상자로 이미 한 번에 닿는다
+        # 다시 켤 때는 한 판에 한 번, 같은 사건(시점 포함)일 때만 — 편집국이 고르는 방식이 맞다.
 
     out = {
         "edition": now.strftime("%Y-%m-%d %H:%M"),

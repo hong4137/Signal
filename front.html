@@ -134,6 +134,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .mkt .v{font-family:var(--mono);font-variant-numeric:tabular-nums}
 .mkt .c{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:11.5px;font-weight:700}
 .up{color:var(--heat)} .dn{color:var(--weight)} .fl{color:var(--muted)}
+.mkt em.old{font-style:normal;font-size:10.5px;color:var(--muted);border:1px solid var(--hair);border-radius:4px;padding:0 4px;margin-left:2px}
 /* 연결 칩 — 테크 기사 → 오늘 경제면 */
 .eref{display:inline-flex;align-items:center;gap:5px;max-width:100%;margin-top:8px;font-size:11.5px;font-weight:700;color:var(--econ);
   border:1px solid currentColor;border-radius:999px;padding:2px 9px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -148,7 +149,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .chain li:not(:last-child)::after{content:"";position:absolute;left:9px;top:25px;bottom:-4px;width:1px;background:var(--econ);opacity:.45}
 .ecobox .go{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:700;color:var(--econ);cursor:pointer}
 /* 경제면 */
-.ecohead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:30px;align-items:start;
+.ecohead{display:block;
   padding:20px 22px;margin-bottom:22px;border-radius:14px;
   background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--econ) 13%,transparent),transparent 62%),var(--soft)}
 .ecohead .stl{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--econ);margin-bottom:8px}
@@ -712,8 +713,13 @@ function mchg(x){
 function marketStrip(M){
   const el = $('#mkt');
   if (!M || !(M.items || []).length) { el.hidden = true; return; }
+  /* 가장 최근 날짜보다 늦은 값은 날짜를 붙인다 — 11-18 판: 코스피만 11-16 종가였는데 표시가 없어 '5천선 붕괴'(11-17) 기사와 어긋나 보였다 */
+  /* 비교는 주가지수끼리만 — 비트코인·환율은 24시간이라 늘 날짜가 앞서서, 모두와 비교하면 미국 지수가 매일 '어제'로 찍힌다 */
+  const EQ = new Set(['S&P 500', '나스닥', '코스피']);
+  const newest = M.items.filter(x => EQ.has(x.name)).reduce((a, x) => (x.date > a ? x.date : a), '');
+  const md = d => { const p = String(d || '').split('-'); return p.length === 3 ? `${+p[1]}.${+p[2]}` : ''; };
   el.innerHTML = `<div class="mh">시장<small>전일 대비</small></div><ul>${M.items.map(x =>
-    `<li title="${esc(x.date)} 종가"><b>${esc(x.name)}</b><span class="v">${mval(x)}</span>${mchg(x)}</li>`).join('')}</ul>`;
+    `<li title="${esc(x.date)} 종가"><b>${esc(x.name)}</b><span class="v">${mval(x)}</span>${mchg(x)}${EQ.has(x.name) && x.date && x.date < newest ? `<em class="old">${md(x.date)}</em>` : ''}</li>`).join('')}</ul>`;
   el.hidden = false;
 }
 function econBox(EC){            // 1면 오른쪽 — 오늘의 경제 한 줄 + 원인→결과 사슬
@@ -746,8 +752,7 @@ function econSection(EC){
       `<li><i>${String(i + 1).padStart(2, '0')}</i><span>${esc(w)}</span></li>`).join('')}</ol></div>` : '';
   return `<section class="secn" id="economy">
     <div class="secthd"><h2>경제<small>경제 브리핑 · ${esc(d)}${EC.stale ? ' (어제 판)' : ''} · ${esc(EC.basis || '')}</small></h2><a href="${esc(EC.link)}">경제 브리핑 전체 →</a></div>
-    <div class="ecohead"><div><div class="stl">TODAY'S ECONOMY</div><h3 class="vd">${hd(EC.verdict)}</h3>${EC.verdict_sub ? `<p class="vs">${esc(EC.verdict_sub)}</p>` : ''}</div>
-      ${(EC.chain || []).length ? `<ol class="chain">${EC.chain.map(c => `<li>${esc(c)}</li>`).join('')}</ol>` : ''}</div>
+    <div class="ecohead"><div><div class="stl">TODAY'S ECONOMY</div><h3 class="vd">${hd(EC.verdict)}</h3>${EC.verdict_sub ? `<p class="vs">${esc(EC.verdict_sub)}</p>` : ''}</div></div>
     <div class="ecogrid"><div class="ecotop">${top}</div>
       <div class="ecoside">${blk('국제 정세', EC.geo, '#world')}${blk('한국', EC.korea, '#korea')}</div></div>
     ${dec || wat ? `<div class="ecofoot">${dec}${wat}</div>` : ''}
