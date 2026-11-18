@@ -38,10 +38,10 @@ DATA = os.path.join(ROOT, "data")
 KST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "Mozilla/5.0 (compatible; SignalFront/1.0)"}
 
-SRC_BRIEFING = "https://hong4137.github.io/briefing/briefings.json"
-SRC_MUST = "https://hong4137.github.io/Must-News/data/ranking.json"
-LINK_BRIEFING = "https://hong4137.github.io/briefing/archive/%s.html"
-LINK_MUST = "https://hong4137.github.io/Must-News/"
+SRC_BRIEFING = "https://news.sharktalk.co.kr/briefings.json"
+SRC_MUST = "https://must.sharktalk.co.kr/data/ranking.json"
+LINK_BRIEFING = "https://news.sharktalk.co.kr/archive/%s.html"   # 옛 github.io 는 Pages 를 끄면 죽는다 (2026-11-19)
+LINK_MUST = "https://must.sharktalk.co.kr/"
 
 # 패널 글은 사적인 일상도 섞인다(반응은 오히려 그쪽이 크다). 1면 해석 칸에는
 # AI·개발 이야기만 올린다.
