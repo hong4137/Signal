@@ -699,7 +699,8 @@ function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 
 
 /* ── 경제 ── */
 /* 연결 칩 — 기사 카드(링크) 안이라 링크가 아니라 span, 누르면 경제면으로 */
-const eref = x => x && x.econ_ref ? `<span class="eref" role="link" tabindex="0" title="${esc(x.econ_ref.t)}">${x.econ_ref.w ? '이번 주 볼 것' : '오늘 경제'} · ${esc(x.econ_ref.t)} ↓</span>` : '';
+const EREF_ON = false;   /* 11-18 사용자 지적으로 끔 — 같은 문구 반복. 조판도 더는 econ_ref 를 만들지 않는다 */
+const eref = x => EREF_ON && x && x.econ_ref ? `<span class="eref" role="link" tabindex="0" title="${esc(x.econ_ref.t)}">${x.econ_ref.w ? '이번 주 볼 것' : '오늘 경제'} · ${esc(x.econ_ref.t)} ↓</span>` : '';
 function mval(x){
   const v = Number(x.value);
   if (x.unit === 'bp') return v.toFixed(2) + '%';
