@@ -1,64 +1,7 @@
 {
- "updated": "2026-11-18 20:33 KST",
+ "updated": "2026-11-19 05:26 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "ten-187509",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP ATP 파이널스",
-   "name": "Daniil Medvedev vs Carlos Alcaraz",
-   "title": "메드베데프 vs 알카라스",
-   "date": "2026-11-18T13:00Z",
-   "kst": "2026-11-18 22:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "Group Stage",
-   "venue": "",
-   "tv": "국내 tvN SPORTS(추정) · 영국 Sky Sports · 미국 Tennis Channel",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "score": 73,
-   "why": [
-    "알카라스 경기",
-    "한국 저녁 시간"
-   ],
-   "stars": 3,
-   "tv_kr": "티빙 · tvN SPORTS(추정)",
-   "tv_world": [
-    {
-     "country": "Korea Republic",
-     "label": "국내",
-     "ch": "tvN SPORTS(추정)"
-    },
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports"
-    },
-    {
-     "country": "USA",
-     "label": "미국",
-     "ch": "Tennis Channel"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
-  },
   {
    "id": "401910016",
    "path": "basketball/nba",
@@ -155,6 +98,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Brandon Williams",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Day-To-Day"
      },
@@ -167,16 +115,11 @@
       "team": "골든스테이트",
       "who": "Stephen Curry",
       "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Brandon Williams",
-      "status": "Out"
      }
     ],
     "predictor": {
-     "home": "65.2",
-     "away": "34.8"
+     "home": "65.3",
+     "away": "34.7"
     },
     "preview": []
    },
@@ -308,6 +251,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Brandon Williams",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Day-To-Day"
      },
@@ -319,11 +267,6 @@
      {
       "team": "골든스테이트",
       "who": "Stephen Curry",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Brandon Williams",
       "status": "Out"
      }
     ],
@@ -791,7 +734,7 @@
     "injuries": [],
     "preview": []
    },
-   "stars": 2,
+   "stars": 3,
    "tv_kr": "쿠팡플레이(스포츠패스)",
    "tv_world": [
     {
@@ -806,6 +749,130 @@
     }
    ],
    "tv_src": "https://www.livesoccertv.com/match/mainz-05-vs-augsburg/257ie"
+  },
+  {
+   "id": "401878755",
+   "path": "soccer/eng.1",
+   "league": "EPL",
+   "name": "Manchester United at Liverpool",
+   "date": "2026-11-22T16:30Z",
+   "kst": "2026-11-23 01:30",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "",
+   "season": "2026-27-english-premier-league",
+   "us_tv": [
+    "USA Net",
+    "Tele"
+   ],
+   "venue": "Anfield",
+   "tv": "영국 Sky Sports Main Event · 미국 USA Network",
+   "sport": "soccer",
+   "home": {
+    "name": "Liverpool",
+    "ko": "리버풀",
+    "abbr": "LIV",
+    "id": "364",
+    "score": "0",
+    "winner": false,
+    "record": "5-3-2",
+    "rank": "4",
+    "pts": "18",
+    "form": "승승패패승"
+   },
+   "away": {
+    "name": "Manchester United",
+    "ko": "맨유",
+    "abbr": "MAN",
+    "id": "360",
+    "score": "0",
+    "winner": false,
+    "record": "1-5-4",
+    "rank": "18",
+    "pts": "8",
+    "form": "패패패승무"
+   },
+   "title": "리버풀 vs 맨유",
+   "score": 48,
+   "why": [
+    "라이벌전"
+   ],
+   "detail": {
+    "h2h": {
+     "summary": "동률 (2승 2패)",
+     "last": [
+      {
+       "date": "2026-05-03",
+       "score": "맨유 3 리버풀 2"
+      },
+      {
+       "date": "2025-10-19",
+       "score": "리버풀 1 맨유 2"
+      },
+      {
+       "date": "2025-01-05",
+       "score": "리버풀 2 맨유 2"
+      }
+     ]
+    },
+    "leaders": [
+     {
+      "team": "리버풀",
+      "cat": "Goals",
+      "who": "Alexander Isak",
+      "val": "9경기 · 7골"
+     },
+     {
+      "team": "리버풀",
+      "cat": "Assists",
+      "who": "Florian Wirtz",
+      "val": "10경기 · 3도움"
+     },
+     {
+      "team": "맨유",
+      "cat": "Goals",
+      "who": "Bryan Mbeumo",
+      "val": "10경기 · 4골"
+     },
+     {
+      "team": "맨유",
+      "cat": "Assists",
+      "who": "Matheus Cunha",
+      "val": "10경기 · 2도움"
+     }
+    ],
+    "injuries": [],
+    "preview": [
+     {
+      "title": "Pochettino addresses Manchester United supporters for the first time",
+      "url": "https://www.espn.com/video/clip/_/id/50521970/pochettino-addresses-manchester-united-supporters-first"
+     },
+     {
+      "title": "Mauricio Pochettino arrives at Man United: 'You will see, give me time'",
+      "url": "https://www.espn.com/soccer/story/_/id/50518493/mauricio-pochettino-man-united-premier-league"
+     }
+    ]
+   },
+   "stars": 2,
+   "tv_kr": "쿠팡플레이(스포츠패스)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports Main Event"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "USA Network"
+    },
+    {
+     "country": "Qatar",
+     "label": "아랍",
+     "ch": "beIN Sports HD 1"
+    }
+   ],
+   "tv_src": "https://www.livesoccertv.com/match/liverpool-vs-manchester-united/17y15"
   },
   {
    "id": "401882803",
@@ -1033,6 +1100,11 @@
     "injuries": [
      {
       "team": "골든스테이트",
+      "who": "Brandon Williams",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Day-To-Day"
      },
@@ -1045,16 +1117,11 @@
       "team": "골든스테이트",
       "who": "Stephen Curry",
       "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Brandon Williams",
-      "status": "Out"
      }
     ],
     "predictor": {
-     "home": "24.7",
-     "away": "75.3"
+     "home": "25.1",
+     "away": "74.9"
     },
     "preview": []
    },
@@ -1075,6 +1142,40 @@
   }
  ],
  "results": [
+  {
+   "id": "ten-187509",
+   "path": "tennis/atp",
+   "sport": "tennis",
+   "league": "ATP ATP 파이널스",
+   "name": "Daniil Medvedev vs Carlos Alcaraz",
+   "title": "메드베데프 vs 알카라스",
+   "date": "2026-11-18T13:10Z",
+   "kst": "2026-11-18 22:10",
+   "state": "post",
+   "status": "Final",
+   "note": "Group Stage",
+   "venue": "",
+   "tv": "티빙 · tvN SPORTS(추정)",
+   "time_tbc": true,
+   "follow": {
+    "kind": "athlete",
+    "path": "tennis/atp",
+    "en": "Carlos Alcaraz",
+    "ko": "알카라스",
+    "w": 55
+   },
+   "detail": {
+    "result": {
+     "score": "알카라스 승 6-2 6-4"
+    }
+   },
+   "score": 73,
+   "why": [
+    "알카라스 경기",
+    "한국 저녁 시간"
+   ],
+   "stars": 3
+  },
   {
    "id": "401931477",
    "path": "soccer/fifa.friendly",
@@ -1402,6 +1503,11 @@
      },
      {
       "team": "골든스테이트",
+      "who": "Brandon Williams",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
       "who": "Draymond Green",
       "status": "Day-To-Day"
      },
@@ -1413,11 +1519,6 @@
      {
       "team": "골든스테이트",
       "who": "Stephen Curry",
-      "status": "Out"
-     },
-     {
-      "team": "골든스테이트",
-      "who": "Brandon Williams",
       "status": "Out"
      }
     ],
@@ -1432,40 +1533,6 @@
      }
     }
    }
-  },
-  {
-   "id": "ten-187511",
-   "path": "tennis/atp",
-   "sport": "tennis",
-   "league": "ATP ATP 파이널스",
-   "name": "Frances Tiafoe vs Carlos Alcaraz",
-   "title": "티아포 vs 알카라스",
-   "date": "2026-11-16T13:10Z",
-   "kst": "2026-11-16 22:10",
-   "state": "post",
-   "status": "Final",
-   "note": "Group Stage",
-   "venue": "",
-   "tv": "티빙 · tvN SPORTS(추정)",
-   "time_tbc": true,
-   "follow": {
-    "kind": "athlete",
-    "path": "tennis/atp",
-    "en": "Carlos Alcaraz",
-    "ko": "알카라스",
-    "w": 55
-   },
-   "detail": {
-    "result": {
-     "score": "알카라스 승 6-2 6-2"
-    }
-   },
-   "score": 73,
-   "why": [
-    "알카라스 경기",
-    "한국 저녁 시간"
-   ],
-   "stars": 3
   }
  ],
  "manual": [
