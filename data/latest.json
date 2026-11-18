@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-18 06:33",
+ "updated": "2026-11-18 13:04",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 13,
+  "hn": 14,
   "reddit": 0,
   "hf": 15,
   "github": 10,
@@ -13,67 +13,19 @@
  "by_volume": [
   {
    "layer": "hn",
-   "title": "All AI-generated code should be Open Source",
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-   "discussion": "https://news.ycombinator.com/item?id=50507303",
-   "points": 1278,
-   "comments": 668,
-   "r": 0.52,
-   "at": "2026-11-15",
-   "topics": [],
-   "story_key": "url:jakub.jankiewicz.org/blog/ai-code-open-source",
-   "summary_ko": "AI가 생성한 코드를 오픈소스화해야 한다는 주장을 두고 의견이 팽팽하다. AI 학습 데이터의 저작권 침해 문제를 지적하며 결과물 역시 자유롭게 배포되어야 한다는 입장이 있는 반면, 인간과 LLM의 학습 과정을 동일시할 수 없으며 라이선스 준수의 실효성에 의문을 제기하는 목소리도 적지 않다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "What's Next for Nvidia?",
-   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
-   "discussion": "https://news.ycombinator.com/item?id=50512235",
-   "points": 481,
-   "comments": 583,
-   "r": 1.21,
-   "at": "2026-11-15",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:steveblank.com/2026/11/15/whats-next-for-nvidia",
-   "summary_ko": "엔비디아의 미래와 젠슨 황의 거취를 두고 커뮤니티 의견이 갈렸다. 일각에서는 뛰어난 비전과 대체 불가능한 리더십을 옹호하는 반면, 지나친 리스크 노출과 독점 구조에 대한 우려를 제기하는 목소리도 적지 않다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
-   "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-   "discussion": "https://news.ycombinator.com/item?id=50524736",
-   "points": 701,
-   "comments": 580,
-   "r": 0.83,
-   "at": "2026-11-16",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:xusheng.dev/posts/windows-coding-agent-telemetry",
-   "summary_ko": "댓글에서는 윈도우의 데이터 수집 행위에 대한 불만이 리눅스 전환 경험담과 듀얼 부팅 팁 공유로 이어졌다. 일각에서는 리눅스의 실사용 난이도와 기업형 운영체제의 폐쇄성을 비판하거나 옹호하는 의견이 갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "GPT‑6.2 Astra and Sol",
    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
    "discussion": "https://news.ycombinator.com/item?id=50535230",
-   "points": 853,
-   "comments": 521,
-   "r": 0.61,
+   "points": 1145,
+   "comments": 724,
+   "r": 0.63,
    "at": "2026-11-17",
    "topics": [],
    "story_key": "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
    "summary_ko": "오픈블록의 신규 모델 성능을 두고 자율성과 작업 완료 성향이 눈에 띄게 좋아졌다는 호평과, 경쟁사 대비 속도가 여전히 느리다는 불만이 엇갈렸다. 일부 사용자는 구독당 제공되는 토큰 양이 줄었다고 지적한 반면, 성능 저하 음모론은 체감하기 어렵다는 의견도 있었다.",
    "is_event": true,
    "kr_query": "오픈AI GPT-6.2 아스트라 솔",
@@ -100,10 +52,62 @@
   },
   {
    "layer": "hn",
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "discussion": "https://news.ycombinator.com/item?id=50507303",
+   "points": 1279,
+   "comments": 669,
+   "r": 0.52,
+   "at": "2026-11-15",
+   "topics": [],
+   "story_key": "url:jakub.jankiewicz.org/blog/ai-code-open-source",
+   "summary_ko": "AI가 생성한 코드를 오픈소스화해야 한다는 주장을 두고 의견이 팽팽하다. AI 학습 데이터의 저작권 침해 문제를 지적하며 결과물 역시 자유롭게 배포되어야 한다는 입장이 있는 반면, 인간과 LLM의 학습 과정을 동일시할 수 없으며 라이선스 준수의 실효성에 의문을 제기하는 목소리도 적지 않다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+   "discussion": "https://news.ycombinator.com/item?id=50524736",
+   "points": 713,
+   "comments": 593,
+   "r": 0.83,
+   "at": "2026-11-16",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:xusheng.dev/posts/windows-coding-agent-telemetry",
+   "summary_ko": "댓글에서는 윈도우의 데이터 수집 행위에 대한 불만이 리눅스 전환 경험담과 듀얼 부팅 팁 공유로 이어졌다. 일각에서는 리눅스의 실사용 난이도와 기업형 운영체제의 폐쇄성을 비판하거나 옹호하는 의견이 갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "What's Next for Nvidia?",
+   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+   "discussion": "https://news.ycombinator.com/item?id=50512235",
+   "points": 482,
+   "comments": 585,
+   "r": 1.21,
+   "at": "2026-11-15",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:steveblank.com/2026/11/15/whats-next-for-nvidia",
+   "summary_ko": "엔비디아의 미래와 젠슨 황의 거취를 두고 커뮤니티 의견이 갈렸다. 일각에서는 뛰어난 비전과 대체 불가능한 리더십을 옹호하는 반면, 지나친 리스크 노출과 독점 구조에 대한 우려를 제기하는 목소리도 적지 않다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "Qwen4-Max",
    "url": "https://qwen.ai/blog?id=qwen4-max",
    "discussion": "https://news.ycombinator.com/item?id=50513215",
-   "points": 872,
+   "points": 876,
    "comments": 483,
    "r": 0.55,
    "at": "2026-11-16",
@@ -131,8 +135,8 @@
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
    "discussion": "https://news.ycombinator.com/item?id=50506180",
-   "points": 542,
-   "comments": 261,
+   "points": 543,
+   "comments": 262,
    "r": 0.48,
    "at": "2026-11-15",
    "topics": [
@@ -171,7 +175,7 @@
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
    "points": 287,
-   "comments": 261,
+   "comments": 262,
    "r": 0.91,
    "at": "2026-11-16",
    "topics": [
@@ -190,30 +194,12 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-   "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "discussion": "https://news.ycombinator.com/item?id=50501631",
-   "points": 451,
-   "comments": 240,
-   "r": 0.53,
-   "at": "2026-11-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "summary_ko": "엔비디아가 순환 자금 조달 방식을 통해 높은 GPU 가격을 유지했다는 의혹에 대해, 댓글에서는 이것이 단순한 시장 논리가 아닌 계획된 탐욕이라는 지적이 나왔다. 일각에서는 대형 하드웨어나 AI 모델의 실효성 및 일반 소비자의 자체 호스팅 편의성에 대한 회의적인 시각도 함께 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
    "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
    "discussion": "https://news.ycombinator.com/item?id=50531751",
-   "points": 177,
-   "comments": 232,
-   "r": 1.31,
+   "points": 185,
+   "comments": 244,
+   "r": 1.32,
    "at": "2026-11-17",
    "topics": [],
    "story_key": "url:scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
@@ -224,12 +210,59 @@
   },
   {
    "layer": "hn",
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "discussion": "https://news.ycombinator.com/item?id=50529612",
+   "points": 275,
+   "comments": 218,
+   "r": 0.79,
+   "at": "2026-11-17",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+   "summary_ko": "일부 댓글에서는 AI 에이전트가 코드의 단순성이나 아키텍처의 일관성보다는 겉으로 작동하는 결과에만 치중해 스파게티 코드를 양산할 수 있다고 우려했다. 반면 반복적인 CRUD API 작성이나 포맷팅 변경 같은 단순 작업에서는 검증과 자동화가 매우 유용하다는 반응도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "discussion": "https://news.ycombinator.com/item?id=50534631",
+   "points": 428,
+   "comments": 211,
+   "r": 0.49,
+   "at": "2026-11-17",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "summary_ko": "엔비디아가 싱가포르 매출 공개를 중단한 것을 두고, 대중국 수출 규제 우회 및 통제 회피와 관련된 조치라는 분석이 이어졌다. 일부 댓글러들은 미국 정부의 엄격한 수출 통제와 글로벌 공급망의 허점을 지적하며 복잡한 이해관계를 논의했다.",
+   "is_event": true,
+   "kr_query": "엔비디아 싱가포르 매출 수출 규제",
+   "kr": [
+    {
+     "t": "엔비디아, '젠슨황 내연녀' 싱가포르 매출 왜 숨겼나",
+     "u": "https://www.edaily.co.kr/News/Read?newsId=01823686645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "d": "Wed, 18 Nov 2026",
+     "why": [
+      "매출",
+      "싱가포르",
+      "엔비디아"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Jensen Huang might return to Nvidia as CEO",
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 195,
-   "r": 1.1,
+   "comments": 190,
+   "r": 1.07,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -270,18 +303,18 @@
   },
   {
    "layer": "hn",
-   "title": "How the Claude Code team thinks about verification",
-   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-   "discussion": "https://news.ycombinator.com/item?id=50529612",
-   "points": 225,
-   "comments": 176,
-   "r": 0.78,
+   "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+   "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+   "discussion": "https://news.ycombinator.com/item?id=50538303",
+   "points": 89,
+   "comments": 137,
+   "r": 1.54,
    "at": "2026-11-17",
    "topics": [
-    "모델릴리스"
+    "에이전트"
    ],
-   "story_key": "url:claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
-   "summary_ko": "일부 댓글에서는 AI 에이전트가 코드의 단순성이나 아키텍처의 일관성보다는 겉으로 작동하는 결과에만 치중해 스파게티 코드를 양산할 수 있다고 우려했다. 반면 반복적인 CRUD API 작성이나 포맷팅 변경 같은 단순 작업에서는 검증과 자동화가 매우 유용하다는 반응도 있었다.",
+   "story_key": "url:complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
+   "summary_ko": "댓글에서는 AI가 코드를 대량으로 찍어내면서 코드 리뷰와 시스템 설계가 새로운 병목 현상이 되었다는 데 공감했다. 다만 철저한 리뷰가 경제적으로 지속 가능하지 않으며, 기존의 PR(풀 리퀘스트) 중심 리뷰 방식 자체를 근본적으로 바꿔야 한다는 주장이 맞섰다.",
    "is_event": false,
    "kr_query": "",
    "kr": []
@@ -337,8 +370,8 @@
    "title": "US will say \"no\" to global ban on killer robots",
    "url": "https://www.newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
    "discussion": "https://news.ycombinator.com/item?id=50524728",
-   "points": 91,
-   "comments": 129,
+   "points": 93,
+   "comments": 132,
    "r": 1.42,
    "at": "2026-11-16",
    "topics": [],
@@ -362,29 +395,47 @@
  "by_debate": [
   {
    "layer": "hn",
+   "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+   "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+   "discussion": "https://news.ycombinator.com/item?id=50538303",
+   "points": 89,
+   "comments": 137,
+   "r": 1.54,
+   "at": "2026-11-17",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
+   "_comments": [
+    "With how much code AI can write in such a short period of time, code review and system design are really the only things left to do.",
+    "\"how can we design the system to prevent that from mattering\"you can'tthere is no way around itwe need far more review than we economically are motivated to sustainand hence issues like we've been having over the past week will continue and perhaps worsensoftware will (as it already has been) get crappier and crappier overtime",
+    "It is very bold of them to assume people are reviewing code. People nowadays are just triggering an agentic review manually.This does not spark joy.",
+    "Agreed, by the time the study is done, they're studying the well established and past.Of course for industries and corporate it might not be an issue.",
+    "\"We're not writing kernel code or safety critical code\"I do. There is a lot of code out there that needs to work correctly or it will have serious consequences. Payments, inventory tracking, medical stuff, payroll. Many, many areas where it just needs to work.",
+    "You're reviewing _something_ at the end of the day. (Unless you are somehow magically one-shotting problems) If you are reviewing the description of the work, or reviewing the functionality of the app.I know it's not the same as code, but it is similarly exhausting",
+    "I pine for those days. It was kind of fun hunting down a bug with git bisect (especially after the pain of SVN) instead of just pointing an agent at it. Not to mention ribbing the new hires or underlings for breaking the build. This new-fangled proompt engineering is boring AF.",
+    "I find it extremely exhausting. And the better the AI code gets, the more tempting it is to do a very shallow review or skip it entirely. In the end, it's very similar to dealing with offshore teams. You spend an enormous amount of time and energy on writing specifications and you spend a lot of energy on code reviews. If you don't do that, it's very likely the project will slowly go off the rails.I have no idea how the Linux maintainers do that job over a long time.",
+    "Neither one of these replies seems to have the least understanding of what I said.I'm saying we need to move away from \"LGTM\" focused PR reviews. Most companies have a PR reviews focused on getting thumbs-up emojis in the comments, then they merge and have a sprint planning. Nobody ever reviews the entire system. Nobody ever asks \"assuming there is a mistake in this PR, would it matter? How can we make it so that it wouldn't matter?\"I never claimed AI makes no mistakes. People make mistakes, and reviewers make mistakes too.I've worked at a lot of mediocre companies where the plan to keep the system working is \"the developer will not make a mistake, and the code reviewer will not make a mista",
+    "Is code review a solution to the problem of human written code or AI generated code? Its not the same thing and we seem to be force fitting an elder years solution to a new problem. Coding is not the same problem it was when code was written by hand. We need to take a systems view here.",
+    "> The way forward could involve dropping code reviews altogether.I unironically agree. At least, the current form of code reviews needs to go.Currently we spend all effort reviewing individual changes and no effort reviewing the entire system, or the underlying dependencies.If you sat down to learn a legacy codebase, you would not review it in the order of commits. Reviewing individual commits is inefficient.It would be better to have an entire team of reviewers systematically reviewing ALL the code, over and over, including the code of dependencies.We need better tooling and heuristics to help focus review efforts on the code that is most risky.",
+    "If it ain't testable or can't be automatically enforced with some other form of guardrails then it doesn't matter."
+   ],
+   "summary_ko": "댓글에서는 AI가 코드를 대량으로 찍어내면서 코드 리뷰와 시스템 설계가 새로운 병목 현상이 되었다는 데 공감했다. 다만 철저한 리뷰가 경제적으로 지속 가능하지 않으며, 기존의 PR(풀 리퀘스트) 중심 리뷰 방식 자체를 근본적으로 바꿔야 한다는 주장이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "kr": []
+  },
+  {
+   "layer": "hn",
    "title": "US will say \"no\" to global ban on killer robots",
    "url": "https://www.newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
    "discussion": "https://news.ycombinator.com/item?id=50524728",
-   "points": 91,
-   "comments": 129,
+   "points": 93,
+   "comments": 132,
    "r": 1.42,
    "at": "2026-11-16",
    "topics": [],
    "story_key": "url:newsweek.com/us-expected-to-block-killer-robot-treaty-talks-12722369",
-   "_comments": [
-    "Were killed, but not with a tireless machine that hunts you and only you and can wait forever on some place until you appear.My bet is that warmongers will became suddenly reasonable when war will knock directly into their doors. In any case we'll need this money for the climate disasters that will just accelerate from now on. I wonder if this robots can be destroyed with a high pressure salt water stream, because for sure we will have plenty of saltwater in many of our cities.",
-    "It's widely understood that sanctions don't prevent countries from getting the parts, they just make it incredibly expensive to do so.I'm all in favor of more severe sanctions, but have realistic expectations. There's good news - Russia is already delaying paychecks to soldiers. Sanctions are having the expected effect. But they aren't going to stop the war.",
-    "Ukraine, Belarus and Kazakhstan all gave up their nuclear weapons, and in exchange, Russia, the US and the UK promised to respect their independence.We all know how that went.",
-    "In past 15 years: War in Syria, Ukraine, Sudan has seen usage of chemical weapons",
-    "Neat. Yeah, that remains the purpose of the 2A!I recently talked to an Iranian fellow who lamented his country's state, and was clear that he believed an armed population would let Iran get out of the mess it's in, but also would've prevented the mess in the first place.",
-    "Hmm.Maybe the argument is: given that the other guy will feel free to do it to me if I do it to him, NBC weapons aren't useful. Which is pretty much the same thing I was saying, it's a norm underpinned by not exactly mutually assured destruction, but something similar in the game theory.Thinking about it first-order, it seems like at least nuclear and chemical weapons would be \"useful\". If the Soviets / Chinese weren't nuclear-armed and backing up North Korea / Vietnam, why not nuke 'em a bit to show them we mean business and get them to surrender that way? Holding other things constant, I bet that would have been the strategy.(I think we're agreeing)",
-    "The Americans do regulate ownership of those and all other bearable arms. I think in most states though, it is totally possible (though extremely difficult and expensive) to own such \"destructive devices\".",
-    "Suddenly we're talking about women and children huh? When men die in the trenches by the hundreds of thousands all is fine, but god forbid the women at home face the same danger.",
-    "I'm not sure banning particular technologies works very well. General principles like don't invade and kill people are good but we've had autonomous killing machines in the form of mines for decades and they don't seem to go away when there's an army invading.",
-    "Betrayal? Big words coming from a country that committed an act of war against its ally Germany and continually antagonizes its other ally Poland to appease all the anti-Polish ethnonationalists in its military ranks.",
-    "Quite a lot of Russian generals have been killed and they've made many attempts on Zelensky, although not using AI. But the Russia view never seems to be we should stop this stuff, just threatening to hit back harder.",
-    "The worst barbarity seems to come from leaders who value their citizens lives very little."
-   ],
    "summary_ko": "댓글에서는 자율주행 무기 규제가 실효성이 있을지 의문을 제기하며, 이미 지뢰 같은 무인 살상 무기가 수십 년간 사용되어 왔다는 지적이 나왔다. 또한 기술 자체를 금지하기보다 국가 간의 기본 원칙과 제재가 더 중요하다는 의견과 함께 전쟁의 참혹함에 대한 비판이 이어졌다.",
    "is_event": true,
    "kr_query": "미국 자율주행 무기 킬러로봇 금지 반대",
@@ -405,26 +456,12 @@
    "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
    "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
    "discussion": "https://news.ycombinator.com/item?id=50531751",
-   "points": 177,
-   "comments": 232,
-   "r": 1.31,
+   "points": 185,
+   "comments": 244,
+   "r": 1.32,
    "at": "2026-11-17",
    "topics": [],
    "story_key": "url:scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-   "_comments": [
-    "Fable and Astra can already one shot GTA in different setting with a huge token budget.Building digital twins has never been easier.",
-    "What does genuinely create something mean? Is it creating if you are inspired by anything? Is it creating if you have any prior information on the topic? Is it creating if you rewrite or build upon something existing? If it creating if you take a little part of something existing and copy it I to your creation? Is it creating if you take something, but reference the author? Is it creating if you are building something with an autocomplete/line completion/statistical model? Is it creating if you have an agent that searches the internet and helps you find the little snippets or material that might help you? It is creating if your idea needs you to use an AI to make a baseline in a certain \"sty",
-    "I think the challenge is it’s usually not a one-to-one relationship. Often what can be done by AI is a fraction of each person’s individual role so it’s hard to replace a single headcount purely with AI. On the other hand, they do seem to be examples of companies going balls to the wall, but that is a much larger restructuring and as you said it’s entirely Greenfield company organization structure.. for example I just read an article by a company of 10 people who spend 30x headcount on AI. I think most companies can’t imagine spending multiples of their labor costs on AI and what that may or may not do for them.",
-    "Have you used XiaoMi models?MiMo is pretty good for its extremely low price. I use it frequently as a reviewer.",
-    "AI has industrialised and automated plagiarism in a way that we've never seen before, its 3 orders of magnitude worse. These AI companies stole literally everything on the planetWhat we had previously wasn't ideal, but it was nowhere near as bad",
-    "I don't know, I feel like there's already room for a lot of improvements with scheduling and communication that are currently just handled by some guy in between all his other work. I'm saying this from the perspective of someone who worked in the office of a construction company, the amount of time that was wasted trying to coordinate between parties was unbelievable. We have the technology for functionally instantaneous, global, 100% reliable communication, but we sure don't live in a world that's utilizing it (partially because we don't actually have it implemented like that).Sure, a lot of the time the bottleneck is an actual human being, but I feel like it's not enough of the time (or i",
-    "Wut, PRC businesses primary goal has always been undermine/involute each other, and everyone else (globally) gets caught in blast radius.PRC open source / cheap tokens not difficult to understand, Deepseek is build on hedge fund couch change as hobby. He opensouces and commoditizes price, naturally every other competitor has to follow. No one wants to FOMO on AI, so everyone involutes commodity token due to compute limits, and thanks to export controls, they can't go into existential debt like US labs... so they are basically spending relatively peanuts to be at pareto frontier.This all generic progression of PRC competitiveness. Like undermining US labs valuation obviously nice bonus - but ",
-    "No I did read further. I just don't think your perspective is correct. Baidu has doubled its cloud revenue YoY and so has Xiaomi's AI division. They are making money. They are worried that they will not be able to sustainably maintain that growth.> Baidu and Xiaomi experiment with models. Test the efficacy of different models. Get an idea of the relative economics of different models. Maybe create a model of their own to see if they can improve the business case in one dimension or another. > Baidu and Xiaomi are trying to figure out how to make money. Not how to make models. Making models is not their business and they don't want to be in that business. China is full of dime a dozen PhDs wh",
-    "I think a part of it is that AI companies are software companies, and of course software development is the field that (so far) has been most revolutionized by language models.So AI CEOs are seeing around them, everywhere, the absolute best case scenario for how a field can be transformed - in their own organizations. It's pretty easy to drink that kool-aid and extrapolate out from there.Investors don't seem to mind, and all of these companies are all-in thinking that what happened to software is going to happen to every field, but you have to wonder how long the expectations vs reality \"gap\" will be tolerated.",
-    "schrödinger's ai: it's taking all our jobs and is autonomously attacking everything but also is a big bubble that has no impact on anything",
-    "> Especially if we believe that there will be a market correction that will force the good things to rise to the top, and everything else to go away.Do we believe that, truly?",
-    "If US AMerican companies and European companies are not 'allowed' to use Chinese models due to national security risk than its relevant what the impact of Chinese open Models will be on the position of Anthropic and OpenAI.While I no longer trust US America, nearly every company in germany has Microsoft products.Regarding the distilling: its not about consumers which care but companies if they want to have the frontier model and not 'just a second best' model. Distilling currnetly smears the progress between US American Frontiermodels and Chinese Models. If you know how much impact it has, you know how much better US American Frontiercompanies actually are."
-   ],
    "summary_ko": "댓글에서는 AI가 소프트웨어 분야와 달리 모든 산업에서 곧바로 비용 대비 수익을 내기에는 한계가 있다는 의견이 공감대를 얻었다. 반면 중국 기업들이 저렴한 오픈소스 모델로 가격 경쟁을 주도하며 글로벌 시장에서 파장을 일으키고 있다는 분석도 제기되었다.",
    "is_event": true,
    "kr_query": "바이두 샤오미 AI 거품 수익성 경고",
@@ -435,8 +472,8 @@
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "discussion": "https://news.ycombinator.com/item?id=50512235",
-   "points": 481,
-   "comments": 583,
+   "points": 482,
+   "comments": 585,
    "r": 1.21,
    "at": "2026-11-15",
    "topics": [
@@ -454,8 +491,8 @@
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 195,
-   "r": 1.1,
+   "comments": 190,
+   "r": 1.07,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -546,7 +583,7 @@
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
    "points": 287,
-   "comments": 261,
+   "comments": 262,
    "r": 0.91,
    "at": "2026-11-16",
    "topics": [
@@ -568,8 +605,8 @@
    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "discussion": "https://news.ycombinator.com/item?id=50524736",
-   "points": 701,
-   "comments": 580,
+   "points": 713,
+   "comments": 593,
    "r": 0.83,
    "at": "2026-11-16",
    "topics": [
@@ -586,28 +623,14 @@
    "title": "How the Claude Code team thinks about verification",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "discussion": "https://news.ycombinator.com/item?id=50529612",
-   "points": 225,
-   "comments": 176,
-   "r": 0.78,
+   "points": 275,
+   "comments": 218,
+   "r": 0.79,
    "at": "2026-11-17",
    "topics": [
     "모델릴리스"
    ],
    "story_key": "url:claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
-   "_comments": [
-    "Reading this makes me better able to understand how claude code was an absolute memory hog on the computer.For all of it's checks, there are not one mention about simplicity, conciseness or architectural coherence. And when you don't have your AI agents care about those things when you run them by the hundreds. You'll get spaghetti that works on a surface level, for now.",
-    "Are you arguing that the PR is unnecessary for AI/agents? Or that human review is mandatory?All productivity metrics have flaws (usually deep ones). Doesn’t mean they’re not instructional though.",
-    "I really don't need to spend time in my day \"reviewing\" a PR that does a formatting change, or adds boilerplate CRUD APIs.",
-    "Analytics and data teams alone burned 20k€ in AWS bills, plus easy grand or two on different AI platforms.6k for deployments that help a hundred or more devs is a drop in the bucket.",
-    "That's a weak man fallacy. The strongest parts of the argument are costs and efficiency.",
-    "Darn near every 100%-coverage project looks like that, in my experience. It's not always a bad thing, but there's a TON of cargo-culting of those test structures, in part because they can be applied mindlessly to reach arbitrarily high coverage.",
-    "If this didn't say Claude, even potentially it could be largely rewritten not to deal with LLMs...under those circumstances this would be seen as a pretty decent article about testing quality.The projection of some hurt feelings (or actively hostile actors?) in these comments is kind of insane.",
-    "Yeah, people don't realize what terrifies me most about stuff like Mythos, the employees can throw \"unlimited\" compute at it, to the point where it could go off and do something off-rails that they cannot react quickly enough to prevent. At what point is any of this okay? Honestly, I hope I'm wrong and it never happens.",
-    "For some contrast, my first job where the team used source control was in 2015 – 15 years after the Joel test came out. That was after switching jobs in manufacturing or finance to tech.",
-    "My main issue right now is that more verification would be more test runs, but running evals can get expensive easily. The only part I can’t really verify is UX (partly I can) and agent workflows itself.The rest of stuff I barely care anymore. To me my current setup it just works.",
-    "Its surprising Anthropic hasn't released a product that is baked around their dev process...",
-    "Hey, Boris from the team here. If you're hitting a specific bug, more happy to take a look."
-   ],
    "summary_ko": "일부 댓글에서는 AI 에이전트가 코드의 단순성이나 아키텍처의 일관성보다는 겉으로 작동하는 결과에만 치중해 스파게티 코드를 양산할 수 있다고 우려했다. 반면 반복적인 CRUD API 작성이나 포맷팅 변경 같은 단순 작업에서는 검증과 자동화가 매우 유용하다는 반응도 있었다.",
    "is_event": false,
    "kr_query": "",
@@ -618,26 +641,16 @@
    "title": "GPT‑6.2 Astra and Sol",
    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
    "discussion": "https://news.ycombinator.com/item?id=50535230",
-   "points": 853,
-   "comments": 521,
-   "r": 0.61,
+   "points": 1145,
+   "comments": 724,
+   "r": 0.63,
    "at": "2026-11-17",
    "topics": [],
    "story_key": "url:openai.com/index/introducing-gpt-6-2-astra-sol",
-   "_comments": [
-    "Do you use subscriptions or API? I suspect it's only the subscriptions that are impacted.",
-    "Big progress, for my types of workloads.When given my benchmark suite, which involves a couple of long horizon tasks where the agent decides when to consider the task well executed, its the first OpenAI model that does not want to finish as soon as some minimal level of quality has been achieved. Like Fable, Opus and Sonnet it now runs the maximum allowed iterations and does not stop at 'satisfactory', gold plating the solution to my delight.(I don't work like this on work projects, but for everything hobby, I am testing how much autonomy I can give to the coding agents, and thats what my benchmark suite tests; I have the basic suite which completes in 2-4hrs, and the long running suite whic",
-    "Tested both models, no change in speed from the 20-80tps I was seeing with the previous Astra/Sol models. I'm not sure when this happened exactly but it's strange to me that OpenAI's models are now around 5x slower than Anthropic's. Is this the new norm? Are other people seeing the same thing?",
-    "I've found this to also be true on their respective subreddits. They both have very \"the sky is falling!!!!\" vibes. Two of the truest truisms are at work:1. If you make an app, most of the happy users say nothing. Whereas seemingly all of the unhappy users will be vocal complainers.2. The grass is always greener on the other side of the fence.I feel the \"grass is greener\" mentality is particularly silly in this case, because for an extra $20/month you can just keep a cheap subscription to the \"other\" one. I realize not everybody has $20/month, but I think most people who can afford <= $20 for one subscription can probably afford another $20/mo for the other one.",
-    "You and I have the exact opposite requirements. My workflow is that I always like to talk through the problem and the solution first, before codex just starts ripping through the coding portion. I used to have consistent issues getting that kind of workflow. The more recent models from OpenAI are so much better at building a plan collaboratively.",
-    "Unfortunately the sentiment from our favorite, perhaps ill-chosen, tech influencers has reached a critical threshold of value to these labs - the economic incentive to sway these opinions renders them ~meaningless.For anyone lost in the sauce re: polarized reactions, I'd recommend just taking a half hour to try the models yourself.",
-    "Sorry Ted but your plots suck. Just look at that first one, Agents' Last Exam v1.1. All the data points are overlapping on the left side. I can't even see what is what",
-    "curious, i haven't experienced what you describe so far. Astra and Sol 6.2 have both gone off and done jsut what I wanted, and as the set of prompts I test against become more vague and handwavy, they both went on to fill in the gaps and produce somehting I was satisfied with.",
-    "I've been testing sol, and opus, almost weekly as new models are released. I haven't seen any evidence of the nerfing conspiracy theories. https://slopcop.com/power-rankingEdit: But it does look like you get about 20% less tokens for your subscription with OpenAI than you did until a couple months ago.",
-    "I don’t have benchmarks but it’s crazily fast. I couldn’t imagine reaching that speed with frontier models. I suspect they are leveraging Taalas or something to “print” the model directly to the chip, somehow analogously to ASIC miners for cryptos.",
-    "ts-rust was his benchmark for \"task he once thought was impossible for AI to do\". Opus, however, was able to do it, apparently. So he's seeing now if the latest OpenAI model can improve it at all. Seems like he's not impressed with the results.",
-    "> I work at OpenAI and I made the plots.Have you not considered log scale for the \"Agents' Last Exam v1.1\" plot? Like this the left is so crowded I can't see a thing..."
+   "trust": [
+    "Simon Willison"
    ],
+   "trust_match": "link",
    "summary_ko": "오픈블록의 신규 모델 성능을 두고 자율성과 작업 완료 성향이 눈에 띄게 좋아졌다는 호평과, 경쟁사 대비 속도가 여전히 느리다는 불만이 엇갈렸다. 일부 사용자는 구독당 제공되는 토큰 양이 줄었다고 지적한 반면, 성능 저하 음모론은 체감하기 어렵다는 의견도 있었다.",
    "is_event": true,
    "kr_query": "오픈AI GPT-6.2 아스트라 솔",
@@ -667,7 +680,7 @@
    "title": "Qwen4-Max",
    "url": "https://qwen.ai/blog?id=qwen4-max",
    "discussion": "https://news.ycombinator.com/item?id=50513215",
-   "points": 872,
+   "points": 876,
    "comments": 483,
    "r": 0.55,
    "at": "2026-11-16",
@@ -692,29 +705,11 @@
   },
   {
    "layer": "hn",
-   "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-   "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "discussion": "https://news.ycombinator.com/item?id=50501631",
-   "points": 451,
-   "comments": 240,
-   "r": 0.53,
-   "at": "2026-11-14",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-   "summary_ko": "엔비디아가 순환 자금 조달 방식을 통해 높은 GPU 가격을 유지했다는 의혹에 대해, 댓글에서는 이것이 단순한 시장 논리가 아닌 계획된 탐욕이라는 지적이 나왔다. 일각에서는 대형 하드웨어나 AI 모델의 실효성 및 일반 소비자의 자체 호스팅 편의성에 대한 회의적인 시각도 함께 제기되었다.",
-   "is_event": false,
-   "kr_query": "",
-   "kr": []
-  },
-  {
-   "layer": "hn",
    "title": "All AI-generated code should be Open Source",
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "discussion": "https://news.ycombinator.com/item?id=50507303",
-   "points": 1278,
-   "comments": 668,
+   "points": 1279,
+   "comments": 669,
    "r": 0.52,
    "at": "2026-11-15",
    "topics": [],
@@ -726,11 +721,54 @@
   },
   {
    "layer": "hn",
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "discussion": "https://news.ycombinator.com/item?id=50534631",
+   "points": 428,
+   "comments": 211,
+   "r": 0.49,
+   "at": "2026-11-17",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "_comments": [
+    "I think it's more accurate to say that most people are coy about who they're sleeping with, no matter who they are.I mean, in white bougie software land, many people are still only a couple of decades out from sex out of wedlock isn't a universal scandal. Most of the population of the planet still lives under that regime (to the point that people are literally executed for doing so).",
+    ">I don't understand one thing. Why does the end user (China) need the physical chips??1. Control.2. Reverse Engineering. (Remember keyboard warriors, reverse engineering is generally legal.)Possibly capex vs opex considerations.",
+    ">I suspected that Jensen was fired for helping evade sanctions, but now I'm sure.Yeah he is a hero thats true.",
+    "Its crazy that there are people in the year of our lord Two Thousand and Twenty Six who would absolutely support crypto export controls and clipper chip nonsense.",
+    "It happens all over, including the US, but it's not correct to say that it's the norm in the vast majority of the world. It's frowned upon pretty much everywhere.Also, your argument that because some action was seen as normal in the past justifies it now can be applied to some pretty horrific stuff.I mostly agree with your general point that it's not worth taking down the US economy over, but you don't need to argue that extra marital relationships with clear power imbalance are good for that to be true. Not to mention the spy stuff.",
+    "I have a few emails from SparkFun like this thermal camera order:Your recent SparkFun order contains 1x KIT-13233: FLiR Dev Kit. This item is export controlled by the United States government. By law, we are required to gather the following information from you as the importer:1) Do you intend to sell or send this item to anyone in any of the following countries: Cuba, Iran, North Korea, Sudan, or Syria?2) Will this be used in any military applications?3) Will you be the ultimate end user of this item? If no, please go to 3.a.3.a) If you are not the end user, who will this item be sold or transferred to? Please include full name, physical address, end use and confirmation that they will not ",
+    "And what about the company rules and procedures that were violated? I’m pretty nonplussed about executives having affairs, I’m a little more concerned with executives breaking the _rules that they themselves made_.",
+    "America has a lot of ethnically Irish but I don't see anyone accusing them of selling secrets to government of Ireland.",
+    "It’s still kinda surprising that half of Nvidia’s revenue comes from Asia/Pacific, given the (apparently laxly enforced) export restrictions to the largest market in that region.",
+    "Personally, yeah, I think it is fine for a boss to sleep with a subordinate. It is the norm in the vast majority of the world, the main plot point of countless movies, and the starting point of an unfathomable number of happy relationships.The basis on which this is considered a moral travesty is built upon about half a decade of neuroses that have built up in only one single very specific corner of this planet that has 8.4B people living on it, and if you really believe that the yawning gulf between the power of a CEO and that of a multi-multi-millionaire VP of a multi-trillion dollar company is such an unfathomably dark and twisted power differential that it is our moral imperative to torp",
+    "This has been widely known for a while. The export restrictions were very narrowly written regarding the sale of hardware containing certain chips when the end customer is in china.The export controls did not constrain manufacturing in of these systems in China or China's purchasing of compute (from Amazon for example) running on these chips. Chinese entities in a third country were legally able to purchase the chips and deploy that compute in the third country.",
+    "Wait til the media finds out these export restricted cards are manufactured _in_ China."
+   ],
+   "summary_ko": "엔비디아가 싱가포르 매출 공개를 중단한 것을 두고, 대중국 수출 규제 우회 및 통제 회피와 관련된 조치라는 분석이 이어졌다. 일부 댓글러들은 미국 정부의 엄격한 수출 통제와 글로벌 공급망의 허점을 지적하며 복잡한 이해관계를 논의했다.",
+   "is_event": true,
+   "kr_query": "엔비디아 싱가포르 매출 수출 규제",
+   "kr": [
+    {
+     "t": "엔비디아, '젠슨황 내연녀' 싱가포르 매출 왜 숨겼나",
+     "u": "https://www.edaily.co.kr/News/Read?newsId=01823686645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "d": "Wed, 18 Nov 2026",
+     "why": [
+      "매출",
+      "싱가포르",
+      "엔비디아"
+     ]
+    }
+   ]
+  },
+  {
+   "layer": "hn",
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
    "discussion": "https://news.ycombinator.com/item?id=50506180",
-   "points": 542,
-   "comments": 261,
+   "points": 543,
+   "comments": 262,
    "r": 0.48,
    "at": "2026-11-15",
    "topics": [
@@ -772,7 +810,7 @@
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "discussion": "https://news.ycombinator.com/item?id=50518567",
    "points": 287,
-   "comments": 261,
+   "comments": 262,
    "r": 0.91,
    "at": "2026-11-16",
    "topics": [
@@ -795,8 +833,8 @@
    "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
    "discussion": "https://news.ycombinator.com/item?id=50511982",
    "points": 177,
-   "comments": 195,
-   "r": 1.1,
+   "comments": 190,
+   "r": 1.07,
    "at": "2026-11-15",
    "topics": [
     "인프라·칩"
@@ -880,6 +918,45 @@
      ]
     }
    ]
+  },
+  {
+   "layer": "hn",
+   "title": "GPT‑6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "discussion": "https://news.ycombinator.com/item?id=50535230",
+   "points": 1145,
+   "comments": 724,
+   "r": 0.63,
+   "at": "2026-11-17",
+   "topics": [],
+   "story_key": "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "오픈블록의 신규 모델 성능을 두고 자율성과 작업 완료 성향이 눈에 띄게 좋아졌다는 호평과, 경쟁사 대비 속도가 여전히 느리다는 불만이 엇갈렸다. 일부 사용자는 구독당 제공되는 토큰 양이 줄었다고 지적한 반면, 성능 저하 음모론은 체감하기 어렵다는 의견도 있었다.",
+   "is_event": true,
+   "kr_query": "오픈AI GPT-6.2 아스트라 솔",
+   "kr": [
+    {
+     "t": "GPT-6.2 아스트라, 3D 평가 1318점 1위…클로드 페이블 5.2 47점 앞서",
+     "u": "https://www.tokenpost.kr/news/ai/440032",
+     "d": "Wed, 18 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    },
+    {
+     "t": "미소스 5.5·GPT-6.2 아스트라 잇달아 포착…최첨단 모델 출시설",
+     "u": "https://www.aitimes.com/news/articleView.html?idxno=216894",
+     "d": "Mon, 02 Nov 2026",
+     "why": [
+      "gpt",
+      "아스트라"
+     ]
+    }
+   ]
   }
  ],
  "models": [
@@ -887,8 +964,8 @@
    "layer": "hf",
    "title": "MiniMaxAI/MiniMax-H3-Image",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-   "trending": 852,
-   "likes": 1439,
+   "trending": 739,
+   "likes": 1490,
    "downloads": 727110,
    "topics": [
     "모델릴리스"
@@ -899,8 +976,8 @@
    "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 498,
-   "likes": 20404,
+   "trending": 515,
+   "likes": 20451,
    "downloads": 6942530,
    "topics": [
     "모델릴리스"
@@ -909,22 +986,10 @@
   },
   {
    "layer": "hf",
-   "title": "Lightricks/LTX-2.5",
-   "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 394,
-   "likes": 12387,
-   "downloads": 2828071,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:lightricks/ltx-2.5"
-  },
-  {
-   "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 383,
-   "likes": 492,
+   "trending": 406,
+   "likes": 521,
    "downloads": 4445,
    "topics": [
     "모델릴리스"
@@ -933,10 +998,22 @@
   },
   {
    "layer": "hf",
+   "title": "Lightricks/LTX-2.5",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5",
+   "trending": 388,
+   "likes": 12419,
+   "downloads": 2828071,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:lightricks/ltx-2.5"
+  },
+  {
+   "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Small",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-   "trending": 347,
-   "likes": 438,
+   "trending": 350,
+   "likes": 442,
    "downloads": 18359,
    "topics": [
     "모델릴리스"
@@ -947,8 +1024,8 @@
    "layer": "hf",
    "title": "unsloth/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-   "trending": 324,
-   "likes": 6132,
+   "trending": 329,
+   "likes": 6147,
    "downloads": 6827598,
    "topics": [
     "모델릴리스"
@@ -959,8 +1036,8 @@
    "layer": "hf",
    "title": "Comfy-Org/MiniMax-H3-Image",
    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-   "trending": 282,
-   "likes": 518,
+   "trending": 229,
+   "likes": 522,
    "downloads": 2660341,
    "topics": [
     "모델릴리스"
@@ -972,7 +1049,7 @@
    "title": "black-forest-labs/flux-3-image-klein-comfy",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
    "trending": 221,
-   "likes": 3403,
+   "likes": 3414,
    "downloads": 1062051,
    "topics": [
     "모델릴리스"
@@ -983,8 +1060,8 @@
    "layer": "hf",
    "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
    "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-   "trending": 207,
-   "likes": 489,
+   "trending": 220,
+   "likes": 515,
    "downloads": 160748,
    "topics": [
     "모델릴리스"
@@ -993,15 +1070,15 @@
   },
   {
    "layer": "hf",
-   "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-   "trending": 192,
-   "likes": 3286,
-   "downloads": 1759757,
+   "title": "sensenova/SenseNova-Loop-9B",
+   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+   "trending": 209,
+   "likes": 213,
+   "downloads": 0,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:davidau/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf"
+   "story_key": "hf:sensenova/sensenova-loop-9b"
   }
  ],
  "new_repos": [
@@ -1010,7 +1087,7 @@
    "title": "deepseek-ai/chat-demo",
    "desc": "Chat Demo",
    "url": "https://github.com/deepseek-ai/chat-demo",
-   "stars": 4507,
+   "stars": 4589,
    "topics": [
     "모델릴리스"
    ],
@@ -1018,21 +1095,10 @@
   },
   {
    "layer": "github",
-   "title": "apex-compute/ANR",
-   "desc": "Apex Neural Rendering (ANR) by Apex Compute",
-   "url": "https://github.com/apex-compute/ANR",
-   "stars": 2579,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:apex-compute/anr"
-  },
-  {
-   "layer": "github",
    "title": "Noniv/abyssal-garden",
    "desc": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code wi",
    "url": "https://github.com/Noniv/abyssal-garden",
-   "stars": 2123,
+   "stars": 2200,
    "topics": [
     "인프라·칩"
    ],
@@ -1043,7 +1109,7 @@
    "title": "Immortal-Protocols/lastbook",
    "desc": "Offline knowledge AI, maps and videos for survival and rebuilding",
    "url": "https://github.com/Immortal-Protocols/lastbook",
-   "stars": 1627,
+   "stars": 1844,
    "topics": [],
    "story_key": "gh:immortal-protocols/lastbook"
   },
@@ -1052,7 +1118,7 @@
    "title": "duwqijlk/muse-protocol",
    "desc": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
    "url": "https://github.com/duwqijlk/muse-protocol",
-   "stars": 1578,
+   "stars": 1600,
    "topics": [
     "개발도구"
    ],
@@ -1063,7 +1129,7 @@
    "title": "ZiChuanLan/freebie-radar",
    "desc": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
    "url": "https://github.com/ZiChuanLan/freebie-radar",
-   "stars": 1417,
+   "stars": 1455,
    "topics": [],
    "story_key": "gh:zichuanlan/freebie-radar"
   },
@@ -1072,7 +1138,7 @@
    "title": "sybil-solutions/inference-optimisation-skill",
    "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-   "stars": 876,
+   "stars": 950,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1084,32 +1150,85 @@
    "title": "haziqahmedqasmi/PeakCut",
    "desc": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
    "url": "https://github.com/haziqahmedqasmi/PeakCut",
-   "stars": 851,
+   "stars": 894,
    "topics": [],
    "story_key": "gh:haziqahmedqasmi/peakcut"
+  },
+  {
+   "layer": "github",
+   "title": "huggingface/pybot",
+   "desc": "PyBot: a chatbot written in pure Python by a swarm of agents. No weights, no training, just rules.",
+   "url": "https://github.com/huggingface/pybot",
+   "stars": 707,
+   "topics": [
+    "에이전트",
+    "개발도구"
+   ],
+   "story_key": "gh:huggingface/pybot"
   },
   {
    "layer": "github",
    "title": "n4ze3m/tiny-voca",
    "desc": "A 4.5M-parameter two-voice English text-to-speech model, trained from scratch",
    "url": "https://github.com/n4ze3m/tiny-voca",
-   "stars": 686,
+   "stars": 699,
    "topics": [],
    "story_key": "gh:n4ze3m/tiny-voca"
   },
   {
    "layer": "github",
-   "title": "linknimiball1974/ai-texture-forge",
-   "desc": "An AI-powered texture forge for Blender — turn text prompts into seamless PBR materials, concept art and scene-wide projections with local or cloud diffusion mo",
-   "url": "https://github.com/linknimiball1974/ai-texture-forge",
-   "stars": 685,
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "gh:linknimiball1974/ai-texture-forge"
+   "title": "mit-han-lab/pear",
+   "desc": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+   "url": "https://github.com/mit-han-lab/pear",
+   "stars": 623,
+   "topics": [],
+   "story_key": "gh:mit-han-lab/pear"
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "External sandboxes for coding agents",
+   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+   "at": "2026-11-17T22:52",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+   "link_keys": [
+    "gh:copy/v86",
+    "gh:microsoft/quicksand",
+    "gh:orgs/prime-radiant-inc",
+    "gh:prime-radiant-inc/external-sandbox-container",
+    "gh:prime-radiant-inc/external-sandbox-quicksand",
+    "gh:prime-radiant-inc/external-sandbox-v86",
+    "url:blog.primeradiant.com/external-sandboxes-for-coding-agents",
+    "url:primeradiant.com/"
+   ],
+   "is_roundup": false
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+   "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+   "at": "2026-11-17T22:38",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+   "link_keys": [
+    "gh:simonw/6b44c588a1321b60799dbbfd13db6d23",
+    "url:llm.datasette.io/en/stable/changelog.html",
+    "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+    "url:static.simonwillison.net/static/2026/openai-pelicans-november-2026.html",
+    "url:static.simonwillison.net/static/2026/yonkers-gpt-6.2-astra-ultra/index.html",
+    "url:static.simonwillison.net/static/2026/yonkers-gpt-6.2-sol-ultra/index.html",
+    "url:static.simonwillison.net/static/2026/yonkers-mech-standalone.html",
+    "url:tools.simonwillison.net/markdown-svg-renderer",
+    "url:tools.simonwillison.net/yonkers-rises"
+   ],
+   "is_roundup": false
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1412,45 +1531,8 @@
     "url:ipo.anthropic.com/us"
    ],
    "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.36",
-   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-   "at": "2026-11-10T20:09",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/10/llm-gemini",
-   "link_keys": [
-    "gh:simonw/llm-gemini",
-    "url:aistudio.google.com/apps/bundled/pelican-campus-quest",
-    "url:blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-    "url:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
-    "url:static.simonwillison.net/static/2026/yonkers-mech-standalone.html",
-    "url:tools.simonwillison.net/markdown-svg-renderer",
-    "yt:dNbkThtNzS8"
-   ],
-   "is_roundup": false
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
-   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-   "at": "2026-11-10T07:28",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/10/muse-ember",
-   "link_keys": [
-    "gh:simonw/185cff7ff0b11379725abf7f78d5d2b2",
-    "url:llm-prices.com/",
-    "url:research.meta.ai/blog/muse-ember",
-    "url:tools.simonwillison.net/markdown-svg-renderer"
-   ],
-   "is_roundup": false
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-17 21:35"
+ "enriched_at": "2026-11-18 04:05"
 }
