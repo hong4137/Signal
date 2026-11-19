@@ -2,7 +2,7 @@
  "_note": "Sports UptoDate '이번 주 문화' 칸 — 개봉 대작(movie) · 공연(show)·전시(exhibit) · 예매 오픈(ticket). 자동 수집 로직은 아직 없다. 2026-10-10 첫 묶음은 트렌드세터 위키 회차 001 후보(loop/회차/001_후보.md)에서 기준 v0.1 ★★ 이상·개봉 주 유명작 칸·화제 상위만 손으로 옮김. 시각을 모르는 개봉·전시는 allday:true(시각을 지어내지 않는다).",
  "_schema": {
   "id": "고유 ID",
-  "type": "movie | show | exhibit | ticket",
+  "type": "movie | show | exhibit | ticket | game",
   "title": "제목",
   "kst": "YYYY-MM-DD HH:MM (개봉일·공연 시작·예매 오픈 시각; allday 면 12:00 자리표시)",
   "allday": "시각 미정·하루 종일(개봉·전시)이면 true",
@@ -12,7 +12,8 @@
   "note": "한 줄 이유",
   "url": "공식 안내·예매 링크",
   "stars": "1~3",
-  "verified": "true 만 싣는다"
+  "verified": "true 만 싣는다",
+  "manual": "true 면 새벽 루틴이 갈아 끼우지 않는다 — expires(YYYY-MM-DD) 가 지나면 루틴이 뺀다"
  },
  "events": [
   {
@@ -36,9 +37,35 @@
    "show_date": "2026-12-22~2027-02-28",
    "venue": "블루스퀘어 우리은행홀",
    "where": "YES24·NOL",
-   "note": "12/22~2/28 두 달 한시 시즌. NOL 뮤지컬 예매 순위 2위(11/18)",
+   "note": "1차 10/8·2차 11/4·추가 회차 11/12 에 이은 프리뷰 회차(12/22~) 오픈. 12/22~2/28 두 달 한시 시즌, NOL 뮤지컬 예매 순위 2위(11/18)",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18850",
    "stars": 2,
+   "verified": true
+  },
+  {
+   "id": "m-gstar-2026",
+   "type": "exhibit",
+   "title": "지스타 2026 — 11/22까지",
+   "kst": "2026-11-22 12:00",
+   "allday": true,
+   "venue": "부산 벡스코 제1·2전시장",
+   "where": "온라인 사전 예매만(관람 전날 자정까지)",
+   "note": "11/19 개막. 일반 관람 19~22일, 입장 마감 17:30. 현장 판매 없음. OWCS 아시아 결승(20~22일)은 별도 티켓",
+   "url": "https://busan.net/guide/gstar-2026/",
+   "stars": 2,
+   "verified": true,
+   "manual": true,
+   "expires": "2026-11-23"
+  },
+  {
+   "id": "m-gta6",
+   "type": "game",
+   "title": "GTA6 출시 (PS5·Xbox Series X|S)",
+   "kst": "2026-11-19 12:00",
+   "allday": true,
+   "note": "한국 11/19 0시 해금. 스탠다드 89,800원·얼티밋 112,800원, 용량 최대 212GB. PC판 미정",
+   "url": "https://blog.ko.playstation.com/2026/11/12/20261112-gta-2/",
+   "stars": 3,
    "verified": true
   }
  ]

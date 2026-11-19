@@ -802,6 +802,8 @@ SOURCES = [
     ("newswire", src_newswire),
     ("heypop", lambda s: src_rss("https://heypop.kr/feed/?post_type=n", "heypop", "article")),
     ("theedit", lambda s: src_rss("https://the-edit.co.kr/feed", "theedit", "article")),
+    # 게임 출시·사전 다운로드(GTA6 를 놓친 뒤 2026-11-19 추가). 락스타 공식은 robots 가 ClaudeBot 금지라 쓰지 않는다
+    ("psblog", lambda s: src_rss("https://blog.ko.playstation.com/feed/", "psblog", "game")),
 ]
 
 
