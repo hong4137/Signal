@@ -782,8 +782,79 @@ def src_snkrs(state):
     return out
 
 
+# ───────── 2026-11-20 추가: 게임 발매·게임/애니/팬 행사·박람회 (GTA6·지스타를 놓친 뒤 실측 — 위키 raw/조사/2026-11-20_*) ─────────
+
+GAME_KW = re.compile(r"출시|발매|사전\s?(다운|예약|등록|구매)|정식|런칭|론칭|오픈|행사|개최|참가|지스타|G-?STAR|AGF|페스티벌|팝업|"
+                     r"티켓|쇼케이스|결승|오프라인|팬\s?미팅|팬\s?페스타|콜라보|한정|굿즈|Launch|Release|Pre-?order|Pre-?install|Out Now|Available", re.I)
+
+
+def src_rss_kw(url, source, kind, limit=40):
+    """RSS 중 행사·발매성 제목만(게임 매체는 하루 수십 건 — 채점은 루틴이)."""
+    return [c for c in src_rss(url, source, kind, limit) if GAME_KW.search(c.get("title") or "")]
+
+
+def src_kintex(state):
+    """킨텍스 행사 일정 — robots 가 ClaudeBot 도 명시 허용. 오늘~+180일. seq(YYMMDDNN) 앞 6자리는 등록일로 보인다(추정)."""
+    a, b = NOW.strftime("%Y-%m-%d"), (NOW + timedelta(days=180)).strftime("%Y-%m-%d")
+    h = fetch(f"https://www.kintex.com/web/ko/event/list.do?pageIndex=1&pageUnit=60&searchStartDt={a}&searchEndDt={b}")
+    out = []
+    for blk in re.split(r'<div class="grid-frame-cell', h or "")[1:]:
+        sid = re.search(r"fnView\('\./view\.do',\s*'?(\d+)", blk)
+        lab = re.search(r'event-label-ko">([^<]+)<', blk)
+        per = re.search(r"(\d{4}\.\d{2}\.\d{2})\s*~\s*(\d{4}\.\d{2}\.\d{2})", blk)
+        if not sid or not per:
+            continue
+        toks = [t.strip() for t in re.split(r"<[^>]+>", blk) if t.strip() and not re.search(r"-->|^[\"'\s>]+$|grid-|EXHIBITION|CULTURE|CONFERENCE|EVENT|MEETING", t)]
+        toks = [t for t in toks if t != (lab.group(1) if lab else "")]
+        title = unescape(toks[0]) if toks else ""
+        s = sid.group(1)
+        out.append({"source": "kintex", "kind": "event" if lab and "문화" in lab.group(1) else "expo", "id": f"kintex:{s}",
+                    "url": f"https://www.kintex.com/web/ko/event/view.do?seq={s}", "title": title[:200],
+                    "category": lab.group(1) if lab else None, "venue": "킨텍스", "start": d10(per.group(1)), "end": d10(per.group(2)),
+                    "created_at": f"20{s[:2]}-{s[2:4]}-{s[4:6]}" if len(s) >= 6 else None})
+    return out
+
+
+def src_setec(state):
+    """SETEC(서울 대치동) 행사 일정 — 보드게임·인디게임·캣페스타 같은 생활형 대형 행사."""
+    h = fetch("https://www.setec.or.kr/front/schedule/list.do")
+    txt = re.sub(r"[ \t]+", " ", re.sub(r"<[^>]+>", "\n", h or ""))
+    out = []
+    for m in re.finditer(r"\n\s*(\d{1,4})\s*\n[\s\n]*([^\n]{2,80}?)\s*\n[\s\n]*기간\s*:\s*(\d{4}-\d\d-\d\d)\s*~\s*(\d{4}-\d\d-\d\d)[\s\n]*장소\s*:\s*([^\n]+)", txt):
+        out.append({"source": "setec", "kind": "expo", "id": f"setec:{m.group(1)}", "url": "https://www.setec.or.kr/front/schedule/list.do",
+                    "title": unescape(m.group(2)).strip()[:200], "venue": "SETEC " + m.group(5).strip()[:60],
+                    "start": m.group(3), "end": m.group(4)})
+    return out
+
+
+def src_gamemeca(state):
+    """게임메카 게임 일정(이번 달·다음 달) — 공개 JSON, robots Crawl-delay 30 이라 두 요청 사이 30초."""
+    out = []
+    for k, ym in enumerate((NOW.strftime("%Y%m"), (NOW.replace(day=1) + timedelta(days=32)).strftime("%Y%m"))):
+        if k:
+            time.sleep(30)
+        j = fetch(f"https://www.gamemeca.com/json.php?rts=json/index/gmdb_schedule&type=list&ym={ym}")
+        try:
+            d = json.loads(j or "[]")
+        except Exception:
+            continue
+        rows = d if isinstance(d, list) else next((v for v in d.values() if isinstance(v, list)), [])
+        for r in rows:
+            if not r.get("gmid"):
+                continue
+            out.append({"source": "gamemeca", "kind": "game", "id": f"gamemeca:{r['gmid']}",
+                        "url": f"https://www.gamemeca.com/gmdb.php?gid={r['gmid']}", "title": unescape(r.get("title") or "")[:200],
+                        "start": d10(r.get("symd"))})
+    return out
+
+
 SOURCES = [
     ("nol", src_nol),
+    ("kintex", src_kintex),
+    ("setec", src_setec),
+    ("gamemeca", src_gamemeca),
+    ("xbox", lambda s: src_rss_kw("https://news.xbox.com/en-us/feed/", "xbox", "game")),
+    ("inven", lambda s: src_rss_kw("http://feeds.feedburner.com/inven", "inven", "game")),
     ("ticketlink", src_ticketlink),
     ("sejong", src_sejong),
     ("lgart", src_lgart),
