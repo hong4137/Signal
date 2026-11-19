@@ -29,12 +29,13 @@
    · 작은 고정폭 꼬리표 대신 읽히는 고딕 꼬리표. 숫자만 고정폭.
    ───────────────────────────────────────────────────────────── */
 :root{
-  --ground:#EDEEF2; --sheet:#FFFFFF; --ink:#111216; --ink-2:#4A4D57; --muted:#7A7E8A;
-  --rule:#111216; --hair:#E6E7EC; --soft:#F4F4F7;
+  /* 라이트 = 종이 베이지 (11-19). 바깥 #EAE3D5 · 지면 #FAF6EE · 글자 짙은 갈색 */
+  --ground:#EAE3D5; --sheet:#FAF6EE; --ink:#1F1B16; --ink-2:#574E42; --muted:#8A8070;
+  --rule:#1F1B16; --hair:#E5DDCD; --soft:#F2ECE0; --pill:#D6CBB7; --tb-ink:#574E42;
   --heat:#E2264F; --weight:#3D63F0; --violet:#8B5CF6; --econ:#0B9B6C;
   --blue:#4E74FA; --pur:#AC7DFF; --pink:#F94E6F; --bar:#141519;
   --grad:linear-gradient(90deg,#4E74FA 0%,#AC7DFF 55%,#F94E6F 100%);
-  --shadow:0 1px 0 rgba(13,17,23,.04),0 18px 40px -24px rgba(13,17,23,.28);
+  --shadow:0 1px 0 rgba(60,45,20,.05),0 18px 40px -24px rgba(60,45,20,.30);
   /* 데이터 그림 — 테마와 무관하게 어둡다 (사진 자리) */
   --c-bg:#0A0D14; --c-ink:#E8E6E1; --c-ink2:#AFB6C0; --c-mut:#7E8996; --c-rule:#232B38;
   --c-heat:#F94E6F; --c-weight:#4E74FA;
@@ -47,7 +48,7 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
-    --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C;
+    --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C; --pill:#2C3352; --tb-ink:#B7BBCB;
     --heat:#FF5C7C; --weight:#7C95FF; --violet:#B794FF; --econ:#3DD6A3; --bar:#000000;
     --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
     --c-bg:#05070B; --c-rule:#1C2330;
@@ -55,7 +56,7 @@
 }
 :root[data-theme="dark"]{
   --ground:#04060E; --sheet:#090E21; --ink:#F3F4F8; --ink-2:#B7BBCB; --muted:#8C91A6;
-  --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C;
+  --rule:#F3F4F8; --hair:#1E2440; --soft:#11162C; --pill:#2C3352; --tb-ink:#B7BBCB;
   --heat:#FF5C7C; --weight:#7C95FF; --violet:#B794FF; --econ:#3DD6A3; --bar:#000000;
   --shadow:0 0 0 1px #161C26,0 24px 60px -30px rgba(0,0,0,.8);
   --c-bg:#05070B; --c-rule:#1C2330;
@@ -77,14 +78,14 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 
 /* ── 상단 띠 · 제호 · 날짜줄 ── */
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 36px;margin:0 -36px;
-  font-size:12.5px;color:#C9CBD3;background:var(--bar)}
+  font-size:12.5px;color:var(--tb-ink);background:var(--sheet);border-bottom:1px solid var(--hair)}   /* 11-19: 검은 띠 → 지면색 */
 .topbar nav{display:flex;gap:4px}
-.topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:#E7E8EE;border:1px solid #3A3D47;background:none;
+.topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:var(--ink);border:1px solid var(--pill);background:none;
   border-radius:999px;padding:3px 12px;cursor:pointer}
 .topbar nav a.on{color:#fff;background:var(--grad);border-color:transparent}
 /* 자매지 바로가기 — 메뉴와 구분되게 점선 테두리·라틴 글꼴, 작게 */
 .topbar nav a.sis i{font-style:normal}
-.topbar nav a.sis{font-family:var(--latin);font-size:11px;font-weight:700;letter-spacing:.06em;border-style:dashed;margin-left:6px;color:#C9CDF5}
+.topbar nav a.sis{font-family:var(--latin);font-size:11px;font-weight:700;letter-spacing:.06em;border-style:dashed;margin-left:6px;color:var(--ink-2)}
 /* 5칸: 왼쪽 귀 | 빈칸 | 제호 | 빈칸 | 오른쪽 귀 — 두 귀 사이 남는 자리를 제호 양옆에 똑같이 나눈다
    (11-19 사용자: 오른쪽 지표에 로고가 눌려 보인다) */
 .mast{display:grid;grid-template-columns:minmax(0,240px) minmax(16px,1fr) auto minmax(16px,1fr) max-content;align-items:center;

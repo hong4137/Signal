@@ -11,8 +11,9 @@
    순서: 오늘 밤·내일 새벽 → 이번 주 볼 경기(자세히 펼치기) → 지난 경기 결과(스포일러 가림) → KBO·LCK(조용한 칸).
    색·글꼴은 Daily UptoDate 와 같다. 그라데이션은 장치(꼬리표·밑줄·테두리)에만. */
 :root{
-  --ground:#EDEEF2; --sheet:#FFFFFF; --ink:#111216; --ink-2:#4A4D57; --muted:#7A7E8A;
-  --hair:#E6E7EC; --soft:#F4F4F7; --bar:#141519;
+  /* 라이트 = 종이 베이지 (11-19, Daily UptoDate 와 같이) */
+  --ground:#EAE3D5; --sheet:#FAF6EE; --ink:#1F1B16; --ink-2:#574E42; --muted:#8A8070;
+  --hair:#E5DDCD; --soft:#F2ECE0; --bar:#141519;
   --heat:#E2264F; --weight:#3D63F0; --win:#11875A; --draw:#8A8F9C; --loss:#C23A4E;
   --grad:linear-gradient(90deg,#4E74FA 0%,#AC7DFF 55%,#F94E6F 100%);
   --ko:"Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
@@ -28,8 +29,8 @@
 html,body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--ko);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto;background:var(--sheet);min-height:100vh}
-.topbar{background:var(--bar);color:#fff;font-size:12px;padding:8px 28px;display:flex;justify-content:space-between;gap:12px}
-.topbar a{color:#cfd3e0;text-decoration:none}
+.topbar{background:var(--sheet);color:var(--ink-2);border-bottom:1px solid var(--hair);font-size:12px;padding:8px 28px;display:flex;justify-content:space-between;gap:12px}
+.topbar a{color:var(--ink);text-decoration:none;font-weight:600}
 .mast{padding:26px 28px 18px;border-bottom:1px solid var(--hair);display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .wm{font-family:var(--latin);line-height:.95}
 .wm small{display:block;font-size:12px;letter-spacing:.32em;font-weight:700;color:var(--muted)}
