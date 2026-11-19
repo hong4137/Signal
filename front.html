@@ -907,7 +907,7 @@ function render(F){
       ${L.kind === 'econ' ? `<div class="by"><span>${esc(L.fact_src || '경제 브리핑')}</span>
         ${L.orig_url ? `<a href="${esc(L.orig_url)}">원문 ↗</a>` : ''}<a href="${esc(L.fact_url || '#')}">경제 브리핑에서 보기 →</a></div>`
       : `<div class="by"><span>외신 브리핑${L.fact_src && L.fact_src.includes('·') ? ' · ' + esc(shortSrc(L.fact_src.split('·').slice(1).join('·'))) : ''}</span>
-        ${L.orig_url ? `<a href="${esc(L.orig_url)}">원문 ↗</a>` : ''}<a href="${esc(L.fact_url || '#')}">외신 브리핑에서 보기 →</a></div>`}
+        ${L.orig_url ? `<a href="${esc(L.orig_url)}">원문 ↗</a>` : ''}<a href="${esc(L.fact_url || '#')}">${/\/cards\//.test(L.fact_url || '') ? '카드뉴스로 보기' : '외신 브리핑에서 보기'} →</a></div>`}
       ${eref(L)}
       ${R ? issueBox(R) : ''}
       ${rel.length ? `<div class="relh">관련 기사</div><ul class="rel">${rel.join('')}</ul>` : ''}

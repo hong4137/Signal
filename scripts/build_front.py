@@ -41,6 +41,10 @@ UA = {"User-Agent": "Mozilla/5.0 (compatible; SignalFront/1.0)"}
 SRC_BRIEFING = "https://news.sharktalk.co.kr/briefings.json"
 SRC_MUST = "https://must.sharktalk.co.kr/data/ranking.json"
 LINK_BRIEFING = "https://news.sharktalk.co.kr/archive/%s.html"   # 옛 github.io 는 Pages 를 끄면 죽는다 (2026-11-19)
+# 외신 기사 하나를 누르면 그 기사의 카드뉴스 장으로 바로 간다 (2026-11-20 사용자 요청).
+#   카드뉴스(/cards/<날짜>)는 #art-N 을 받아 그 카드로 넘긴다 — 카드 순서 = 브리핑 원문 art-N 순서
+#   (11-19·14·07, 10-30·12 다섯 날짜 전수 대조 일치).
+LINK_CARDS = "https://news.sharktalk.co.kr/cards/%s"
 LINK_MUST = "https://must.sharktalk.co.kr/"
 
 # 패널 글은 사적인 일상도 섞인다(반응은 오히려 그쪽이 크다). 1면 해석 칸에는
@@ -461,7 +465,7 @@ def briefing_articles(date):
             "summary": _grab(r'class="article-summary">(.*?)</p>', body),
             "source": _grab(r'class="source">(.*?)</span>', body),
             "url": html.unescape(cu.group(1)) if cu else None,
-            "link": url + ("#" + aid.group(1) if aid else ""),
+            "link": (LINK_CARDS % date + "#" + aid.group(1)) if aid else url,
         })
     return out
 
