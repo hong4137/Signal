@@ -479,7 +479,9 @@ def src_newswire(state):
             continue
         t = unescape(title.group(1)).strip()
         # 보도자료는 하루 수십 건 — 문화·이벤트성 제목만 남긴다(채점은 루틴이)
-        if not re.search(r"팝업|오픈|출시|한정|콜라보|컬래버|전시|공연|페스티벌|축제|굿즈|사전예약|예약|선착순|응모|론칭|런칭|기념|에디션|체험|행사|개최|내한|시즌", t):
+        # 참가·출격·부스·박람회류는 2026-11-20 추가 — 지스타 출전 보도자료 3건(11/10·12·17)을 놓쳤다
+        if not re.search(r"팝업|오픈|출시|한정|콜라보|컬래버|전시|공연|페스티벌|축제|굿즈|사전예약|예약|선착순|응모|론칭|런칭|기념|에디션|체험|행사|개최|내한|시즌|"
+                         r"참가|출격|부스|박람회|게임쇼|엑스포|지스타|G-?STAR", t):
             continue
         u = unescape(loc.group(1))
         out.append({"source": "newswire", "kind": "press", "id": "newswire:" + (re.search(r"no=(\d+)", u) or [None, u[-40:]])[1],
@@ -793,6 +795,55 @@ def src_rss_kw(url, source, kind, limit=40):
     return [c for c in src_rss(url, source, kind, limit) if GAME_KW.search(c.get("title") or "")]
 
 
+# 전문지 뉴스 sitemap — 지스타 2026 은 조직위 발표를 받아 쓴 게임·IT 전문지가 D-261 에 처음 알렸다(2026-11-20 역추적).
+# 행사명·박람회·입장권 같은 '먼저 알기' 제목만 남긴다(채점은 루틴이).
+PRESS_KW = re.compile(r"지스타|G-?STAR|AGF|플레이엑스포|플레이X4|BIC|게임쇼|게임스컴|도쿄게임쇼|전시회|박람회|엑스포|페스티벌|축제|개최|입장권|얼리버드|"
+                      r"참가사|사전\s?(등록|예약|구매|다운)|티켓|팝업|출시일|발매일|정식 출시|글로벌 출시|쇼케이스|팬\s?(미팅|페스타)|콘서트|시상식|어워드", re.I)
+
+
+def src_news_sitemap(url, source, kw=PRESS_KW, limit=100):
+    x = fetch(url)
+    out = []
+    for blk in re.findall(r"<url>(.*?)</url>", x or "", re.S)[:limit]:
+        loc = re.search(r"<loc>(.*?)</loc>", blk)
+        title = re.search(r"<news:title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</news:title>", blk, re.S)
+        pub = re.search(r"<news:publication_date>(.*?)</news:publication_date>", blk)
+        if not loc or not title:
+            continue
+        t = re.sub(r"\s+", " ", unescape(title.group(1))).strip()
+        if not kw.search(t):
+            continue
+        u = unescape(loc.group(1)).strip()
+        out.append({"source": source, "kind": "press", "id": f"{source}:{re.sub(r'[^0-9A-Za-z]', '', u)[-24:]}", "url": u,
+                    "title": t[:200], "created_at": pub.group(1) if pub else None})
+    return out
+
+
+def src_popga_magazine(state):
+    """팝가 매거진(sitemap/3) — 지스타를 팝업 항목(D-39)보다 40일 앞선 D-79 에 다뤘다. 새 글만 og:title 을 읽는다."""
+    x = fetch("https://popga.co.kr/sitemap/3.xml")
+    ids = {}
+    for blk in re.findall(r"<url>(.*?)</url>", x or "", re.S):
+        m = re.search(r"popga\.co\.kr/content/magazine/(\d+)", blk)
+        lm = re.search(r"<lastmod>(.*?)</lastmod>", blk)
+        if m:
+            ids[int(m.group(1))] = lm.group(1) if lm else None
+    if not ids:
+        return []
+    seen = set(state.get("popga_mag_seen", []))
+    new = sorted(set(ids) - seen)[-BOOT:] if seen else sorted(ids)[-15:]
+    out = []
+    for mid in new:
+        h = fetch(f"https://popga.co.kr/content/magazine/{mid}") or ""
+        t = re.search(r'<meta[^>]+property="og:title"[^>]+content="([^"]*)"', h) or re.search(r"<title>(.*?)</title>", h, re.S)
+        if not t:
+            continue
+        out.append({"source": "popga_mag", "kind": "article", "id": f"popga_mag:{mid}", "url": f"https://popga.co.kr/content/magazine/{mid}",
+                    "title": unescape(t.group(1)).strip()[:200], "created_at": ids.get(mid)})
+    state["popga_mag_seen"] = sorted(ids)
+    return out
+
+
 def src_kintex(state):
     """킨텍스 행사 일정 — robots 가 ClaudeBot 도 명시 허용. 오늘~+180일. seq(YYMMDDNN) 앞 6자리는 등록일로 보인다(추정)."""
     a, b = NOW.strftime("%Y-%m-%d"), (NOW + timedelta(days=180)).strftime("%Y-%m-%d")
@@ -850,6 +901,9 @@ def src_gamemeca(state):
 
 SOURCES = [
     ("nol", src_nol),
+    ("ddaily", lambda s: src_news_sitemap("https://www.ddaily.co.kr/sitemap.xml", "ddaily")),
+    ("gamechosun", lambda s: src_news_sitemap("https://www.gamechosun.co.kr/sitemap_news.php", "gamechosun")),
+    ("popga_mag", src_popga_magazine),
     ("kintex", src_kintex),
     ("setec", src_setec),
     ("gamemeca", src_gamemeca),
