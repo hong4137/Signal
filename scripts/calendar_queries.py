@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from calendar_rules import rules  # noqa: E402
 
 KST = timezone(timedelta(hours=9))
+WINDOW_DAYS = 10
 PB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "calendar_playbook.json")
 EN_MONTH = ["January", "February", "March", "April", "May", "June", "July", "August",
             "September", "October", "November", "December"]
@@ -82,9 +83,9 @@ def plan(d0):
             continue
         qs.append({"id": x["id"], "q": fill(x["q"], var), "why": x.get("why", ""),
                    "status": x.get("status", "core")})
-    d5 = d0 + timedelta(days=5)
-    return {"today": d0.isoformat(), "window": [d0.isoformat(), d5.isoformat()],
-            "queries": qs, "rule_candidates": rules(d0, d5),
+    d10 = d0 + timedelta(days=WINDOW_DAYS)   # 싣는 범위 = 오늘~10일 뒤 (메인 대시보드가 이 파일을 읽는다, 2026-11-20). 1면은 3일치만
+    return {"today": d0.isoformat(), "window": [d0.isoformat(), d10.isoformat()],
+            "queries": qs, "rule_candidates": rules(d0, d10),
             "trusted": pb.get("trusted", {}), "events_annual": pb.get("events_annual", []),
             "learned": pb.get("learned", [])[-10:]}
 

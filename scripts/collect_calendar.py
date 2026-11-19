@@ -31,7 +31,7 @@ KST = timezone(timedelta(hours=9))
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "data")
 UA = "Mozilla/5.0 (DailyUptoDate calendar collector)"
-DAYS = 7                       # 원자료는 지면 범위(5일)보다 넉넉히
+DAYS = 12                      # 원자료는 싣는 범위(10일, 메인 대시보드도 읽음 — 2026-11-20)보다 넉넉히
 
 # FRED 발표 이름 → (한국어 제목, 중요도, 미국 동부 발표 시각)
 FRED_PICK = [
@@ -261,7 +261,7 @@ def main():
     if r and len(r) > 2:
         sources["네이버뉴스"]["per_query"] = r[2]
     run("FOMC", fomc, d0, d1)
-    fixed = rules(d0, d0 + timedelta(days=5))
+    fixed = rules(d0, d0 + timedelta(days=10))
 
     out = {"generated_at": datetime.now(KST).isoformat(timespec="seconds"),
            "window": {"from": d0.isoformat(), "to": d1.isoformat()},
