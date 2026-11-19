@@ -5,16 +5,16 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%234E74FA%22/%3E%3Cstop offset=%22.55%22 stop-color=%22%23AC7DFF%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F94E6F%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23090E21%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2225%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%224.5%22/%3E%3Cpath d=%22M24 22v11a8 8 0 0 0 16 0v-6%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%225%22 stroke-linecap=%22round%22/%3E%3Cpath d=%22M35 28l5-6 5 6%22 fill=%22none%22 stroke=%22%23F94E6F%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
 <!--og:start-->
 <!-- 미리보기 태그는 고정이다. 썸네일은 scripts/og_static.html 로 찍은 data/og.png 한 장. -->
-<meta name="description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
+<meta name="description" content="글로벌 비즈니스, 테크 분야 뉴스와 커뮤니티 트렌드 총정리. 매일 아침 8시 전에 나오는 1면.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Daily UptoDate">
 <meta property="og:title" content="Daily UptoDate">
-<meta property="og:description" content="외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것. 매일 아침 8시 전에 나오는 AI·테크 1면.">
+<meta property="og:description" content="글로벌 비즈니스, 테크 분야 뉴스와 커뮤니티 트렌드 총정리. 매일 아침 8시 전에 나오는 1면.">
 <meta property="og:url" content="https://signal.sharktalk.co.kr/front.html">
 <meta property="og:image" content="https://signal.sharktalk.co.kr/data/og.png?v=static2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Daily UptoDate — 외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것">
+<meta property="og:image:alt" content="Daily UptoDate — 글로벌 비즈니스, 테크 분야 뉴스와 커뮤니티 트렌드 총정리">
 <meta name="twitter:card" content="summary_large_image">
 <!--og:end-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -85,19 +85,27 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 /* 자매지 바로가기 — 메뉴와 구분되게 점선 테두리·라틴 글꼴, 작게 */
 .topbar nav a.sis i{font-style:normal}
 .topbar nav a.sis{font-family:var(--latin);font-size:11px;font-weight:700;letter-spacing:.06em;border-style:dashed;margin-left:6px;color:#C9CDF5}
-.mast{border-bottom:1px solid var(--rule);padding:22px 0 14px;text-align:center}
+/* 5칸: 왼쪽 귀 | 빈칸 | 제호 | 빈칸 | 오른쪽 귀 — 두 귀 사이 남는 자리를 제호 양옆에 똑같이 나눈다
+   (11-19 사용자: 오른쪽 지표에 로고가 눌려 보인다) */
+.mast{display:grid;grid-template-columns:minmax(0,240px) minmax(16px,1fr) auto minmax(16px,1fr) max-content;align-items:center;
+  border-bottom:3px double var(--rule);padding:18px 0 16px}
+.mast .ear.l{grid-column:1}
+.mast .name{grid-column:3;justify-self:center}
+.mast .ear.r{grid-column:5}
 .name{margin:0;line-height:1}
 .name a{display:inline-flex;align-items:center;gap:clamp(12px,1.6vw,20px)}
-.name .seal{width:clamp(58px,7vw,92px);height:auto;flex:none;color:var(--ink)}
+.name .seal{width:clamp(58px,6vw,80px);height:auto;flex:none;color:var(--ink)}
 #seal{display:flex}
 .name .wm{display:flex;flex-direction:column;align-items:flex-start;font-family:var(--latin);font-weight:800;
-  font-size:clamp(44px,6.2vw,80px);letter-spacing:-.045em;line-height:.95;color:var(--ink)}
+  font-size:clamp(44px,5.2vw,66px);letter-spacing:-.045em;line-height:.95;color:var(--ink)}
 .name .wm small{font:700 clamp(10px,1vw,13px)/1 var(--latin);letter-spacing:.42em;color:var(--muted);margin:0 0 .28em .12em}
 .name .wm b{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.tag{margin-top:7px;font-size:12.5px;letter-spacing:.12em;color:var(--ink-2)}
-.dateline{display:flex;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;border-bottom:3px double var(--rule);
-  padding:8px 0 7px;font-size:12.5px;color:var(--ink-2)}
-.dateline b{color:var(--ink);font-weight:700}
+/* 왼쪽 귀 — 날짜·호수·판 시각·기준 시각 */
+.dateline{font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+.dateline b{display:block;color:var(--ink);font-weight:800;font-size:16px;letter-spacing:-.01em;margin-bottom:2px}
+.dateline .no{display:block}
+.dateline .src3{display:block;margin-top:5px;font-size:11.5px;color:var(--muted);line-height:1.5}
+.dateline .nw{white-space:nowrap}
 
 .secnav{display:flex;justify-content:center;gap:28px;padding:9px 0 8px;border-bottom:1px solid var(--hair);
   font-size:14px;font-weight:700}
@@ -134,6 +142,23 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .mkt .v{font-family:var(--mono);font-variant-numeric:tabular-nums}
 .mkt .c{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:11.5px;font-weight:700}
 .up{color:var(--heat)} .dn{color:var(--weight)} .fl{color:var(--muted)}
+@media(min-width:701px){
+  .mast .mkt{display:block;justify-self:end;border:0;padding:0;overflow:visible}
+  .mast .mkt[hidden]{display:none}
+  .mast .mkt .mh{display:none}
+  .mast .mkt ul{display:grid;grid-template-columns:repeat(2,auto);gap:4px 18px}
+  .mast .mkt li{display:grid;grid-template-columns:68px auto auto;column-gap:7px;align-items:baseline;padding:0;border:0;font-size:12.5px}
+  .mast .mkt li b{font-size:12px;white-space:nowrap}
+  .mast .mkt em.old{padding:0 2px;margin-left:2px;font-size:10px}
+  .mast .mkt .v{text-align:right}
+}
+/* 태블릿 폭 — 귀 두 개와 제호가 한 줄에 안 들어가면 제호를 위에, 귀를 그 아래 양쪽에 */
+@media(min-width:701px) and (max-width:1160px){
+  .mast{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"n n" "l r";row-gap:14px;column-gap:24px}
+  .mast .name{grid-area:n}
+  .mast .ear.l{grid-area:l}
+  .mast .ear.r{grid-area:r}
+}
 .mkt em.old{font-style:normal;font-size:10.5px;color:var(--muted);border:1px solid var(--hair);border-radius:4px;padding:0 4px;margin-left:2px}
 /* 연결 칩 — 테크 기사 → 오늘 경제면 */
 .eref{display:inline-flex;align-items:center;gap:5px;max-width:100%;margin-top:8px;font-size:11.5px;font-weight:700;color:var(--econ);
@@ -470,9 +495,13 @@ footer a{color:var(--weight)}
   .ecotop{padding:0}
   .ecoside{padding:18px 0 0;border:0;border-top:2px solid var(--rule);margin-top:4px}
   .ecofoot{gap:16px}
-  .mast{padding:10px 0 8px}
+  .mast{display:flex;flex-direction:column;align-items:stretch;text-align:center;padding:10px 0 0;border-bottom:3px double var(--rule)}
+  .mast .name{order:-1;margin-bottom:6px}
+  .mast>*{min-width:0}                /* 시장 띠가 내용 폭만큼 늘어나 페이지를 넓히지 않게 — 띠 안에서 옆으로 민다 */
+  .dateline{text-align:center;padding:0 0 7px}
+  .dateline b{display:inline;font-size:12.5px;margin:0}
+  .dateline .no{display:inline;margin-left:8px}
   .name{font-size:38px}
-  .tag{font-size:11.5px;letter-spacing:.04em}
   .dateline{font-size:12px}
   .dateline .src3{display:none}
   .secnav{position:sticky;top:0;z-index:15;background:var(--sheet);justify-content:flex-start;gap:22px;
@@ -557,7 +586,7 @@ footer a{color:var(--weight)}
 
 <div class="sheet">
   <div class="topbar">
-    <span>AI·테크 1면 — 외신 · 국내 · 커뮤니티</span>
+    <span>글로벌 비즈니스, 테크 분야 뉴스와 커뮤니티 트렌드 총정리</span>
     <nav>
       <a class="on" href="front.html">1면</a>
       <a href="index.html">커뮤니티 동향</a>
@@ -567,12 +596,12 @@ footer a{color:var(--weight)}
       <button id="tgl" type="button" aria-label="테마 전환">◐</button>
     </nav>
   </div>
+  <!-- 상단 3단 (2026-11-19): 제호 양쪽 '귀'에 날짜와 시장 — 한국 일간지 1면이 제호 옆에 날짜·지수를 두는 방식 -->
   <header class="mast" id="top">
+    <div class="ear l dateline" id="dateline"><span>…</span></div>
     <h1 class="name"><a href="/" title="홈으로" aria-label="Daily UptoDate"><span id="seal"></span><span class="wm"><small>DAILY</small><span>Upto<b>Date</b></span></span></a></h1>
-    <div class="tag">외신이 보도하고 · 국내가 받아쓰고 · 커뮤니티가 다툰 것</div>
+    <div class="ear r mkt" id="mkt" hidden></div>
   </header>
-  <div class="dateline" id="dateline"><span>…</span></div>
-  <div class="mkt" id="mkt" hidden></div>
   <nav class="secnav" aria-label="섹션"><a href="#top">1면</a><a href="#foreign">외신</a><a href="#economy">경제</a><a href="#domestic">국내</a><a href="#community">커뮤니티</a></nav>
 
   <main id="main"><div class="err">지면을 짜는 중…</div></main>
@@ -720,7 +749,7 @@ function marketStrip(M){
   const newest = M.items.filter(x => EQ.has(x.name)).reduce((a, x) => (x.date > a ? x.date : a), '');
   const md = d => { const p = String(d || '').split('-'); return p.length === 3 ? `${+p[1]}.${+p[2]}` : ''; };
   el.innerHTML = `<div class="mh">시장<small>전일 대비</small></div><ul>${M.items.map(x =>
-    `<li title="${esc(x.date)} 종가"><b>${esc(x.name)}</b><span class="v">${mval(x)}</span>${mchg(x)}${EQ.has(x.name) && x.date && x.date < newest ? `<em class="old">${md(x.date)}</em>` : ''}</li>`).join('')}</ul>`;
+    `<li title="${esc(x.date)} 종가"><b>${esc(x.name)}${EQ.has(x.name) && x.date && x.date < newest ? `<em class="old">${md(x.date)}</em>` : ''}</b><span class="v">${mval(x)}</span>${mchg(x)}</li>`).join('')}</ul>`;
   el.hidden = false;
 }
 function econBox(EC){            // 1면 오른쪽 — 오늘의 경제 한 줄 + 원인→결과 사슬
@@ -852,8 +881,10 @@ function render(F){
   const L = F.lead, R = L && L.reaction, S = F.sources || {}, SL = F.slots || { side: [], row: [] };
   const ymd = (F.edition || '').slice(0, 10);
   if (ymd) document.getElementById('seal').innerHTML = sealSVG(ymd);
-  $('#dateline').innerHTML = `<span><b>${esc(korDate(ymd))}</b></span><span>제 ${F.no ?? '–'}호</span>
-    <span class="src3">기준 시각 — 외신 ${esc(S.briefing || '–')} · 경제 ${esc((S.econ || '–').slice(5))} · 국내 ${esc((S.must || '–').slice(5))} · 커뮤니티 ${esc((S.signal || '–').slice(5))}</span>`;
+  /* 연도는 로고 소인(NOV · 2026)에 있어서 귀에서는 뺀다 */
+  $('#dateline').innerHTML = `<b>${esc(korDate(ymd).replace(/^\d{4}년 /, ''))}</b><span class="no">제 ${F.no ?? '–'}호 · ${esc((F.edition || '').slice(11, 16))} 판</span>
+    <span class="src3">${[['기준 — 외신', S.briefing], ['경제', S.econ], ['국내', S.must], ['커뮤니티', S.signal]]
+      .map(([k, v]) => `<span class="nw">${k} ${esc((v || '–').slice(5))}</span>`).join(' · ')}</span>`;
 
   /* 톱 */
   let lead = '';
