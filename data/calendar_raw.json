@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-20T09:30:46+09:00",
+ "generated_at": "2026-11-21T08:53:53+09:00",
  "window": {
-  "from": "2026-11-20",
-  "to": "2026-12-02"
+  "from": "2026-11-21",
+  "to": "2026-12-03"
  },
  "sources": {
   "FRED": {
@@ -19,24 +19,24 @@
   },
   "네이버뉴스": {
    "ok": true,
-   "count": 286,
+   "count": 278,
    "per_query": {
-    "nv-nextweek": 11,
-    "nv-thisweek": 21,
+    "nv-nextweek": 8,
+    "nv-thisweek": 20,
     "nv-weekly": 0,
     "nv-earnings": 30,
     "nv-ir": 30,
     "nv-bok": 8,
     "nv-stats": 0,
-    "nv-export": 9,
+    "nv-export": 7,
     "nv-policy": 30,
-    "nv-ipo": 29,
+    "nv-ipo": 30,
     "nv-us": 30,
-    "nv-fomc": 29,
-    "nv-event": 5,
+    "nv-fomc": 30,
+    "nv-event": 6,
     "nv-devconf": 30,
-    "nv-keynote": 19,
-    "nv-unpacked": 5
+    "nv-keynote": 18,
+    "nv-unpacked": 1
    }
   },
   "FOMC": {
@@ -60,20 +60,17 @@
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
    "rule": "매주 목요일 08:30 ET"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "09:00",
+   "region": "KR",
+   "title": "11월 수출입 동향(산업부)",
+   "importance": 4,
+   "rule": "매월 1일 전월치 — 주말에도 발표하는 관행"
   }
  ],
  "events": [
-  {
-   "src": "FRED",
-   "kind": "event",
-   "date": "2026-11-21",
-   "time": "00:00",
-   "region": "US",
-   "title": "미국 미시간대 소비자심리",
-   "importance": 3,
-   "detail": "Surveys of Consumers (미 동부 2026-11-20 10:00 관행 시각)",
-   "url": "https://fred.stlouisfed.org/release?rid=91"
-  },
   {
    "src": "FRED",
    "kind": "event",
@@ -150,10 +147,32 @@
    "importance": 4,
    "detail": "Gross Domestic Product by County (미 동부 2026-12-02 08:30 관행 시각)",
    "url": "https://fred.stlouisfed.org/release?rid=397"
+  },
+  {
+   "src": "FRED",
+   "kind": "event",
+   "date": "2026-12-03",
+   "time": "22:30",
+   "region": "US",
+   "title": "미국 주간 신규 실업수당 청구",
+   "importance": 3,
+   "detail": "Unemployment Insurance Weekly Claims Report (미 동부 2026-12-03 08:30 관행 시각)",
+   "url": "https://fred.stlouisfed.org/release?rid=180"
   }
  ],
  "filings": [],
  "news": [
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-nextweek",
+   "date": null,
+   "published": "2026-11-20 17:25",
+   "region": "KR",
+   "title": "[퇴근길머니] AI 커닝 부담에 '감독관 보험' 눈길…K-주식 파는 외국인들",
+   "detail": "간밤 미국 뉴욕증시가 AI 관련주 약세로 하락 마감하면서 가상자산 시장도 흔들린 것으로 보이고요. 또... 다음 주 주요 일정도 짚어주시죠. [기자] 다음주 한국은행은 이번 달 소비자심리지수를 발표합니다. 또 올해...",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH202611201724082bm"
+  },
   {
    "src": "네이버뉴스",
    "kind": "news",
@@ -230,50 +249,6 @@
    "title": "[증시 UP&DOWN] 다음주 코스피, 바이오·로봇·부품주 '뜨고' 실적부진주...",
    "detail": "국내 증시가 다음 주 미국의 물가지표 발표와 외국인 선물 수급을 분수령으로 본격적인 바닥 다지기에... 출시 일정 지연 우려가 겹치며 주요 증권사들이 일제히 목표주가를 낮춰 잡았다. 실제로 3분기 리니지M과...",
    "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=325922"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-nextweek",
-   "date": null,
-   "published": "2026-11-13 17:21",
-   "region": "KR",
-   "title": "[퇴근길머니] 33년 공든 탑 '와르르'…AI 제국서 쫓겨난 황제",
-   "detail": "다만 낙폭을 일부 만회하면서 뉴욕증시에서 4% 넘게 하락 마감했습니다. 젠슨 황 해임의 충격에도 반도체... [앵커] 마지막으로 다음주 주요 일정 살펴볼까요? [기자] 네, 다음주 한국은행이 3분기 가계신용 잠정치를...",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261113171959Xvk"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-nextweek",
-   "date": null,
-   "published": "2026-11-13 16:45",
-   "region": "KR",
-   "title": "나흘만에 외국인 \"팔자\" 돌변→코스피 '미끌'…몸 사리라는 증권가, 왜...",
-   "detail": "다음주 국내 증시는 젠슨 황 전 CEO(최고경영자) 리스크로 불안한 엔비디아의 실적 발표와 앤트로픽 상장 등 AI(인공지능) 업계 주요 일정을 앞두고 있다. 미국과 이란 갈등으로 인한 금리·유가 상승에 따른 매크로...",
-   "url": "https://www.mt.co.kr/stock/2026/11/13/2026111316140054759"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-nextweek",
-   "date": null,
-   "published": "2026-11-13 10:18",
-   "region": "KR",
-   "title": "코스피 5460선…젠슨 황 사임에도 삼전·닉스 강세",
-   "detail": "출시 일정의 변경 여부에 달렸다고 봤다. 이경민 대신증권 연구원은 코어위브 실적과 국내 반도체 수출 호조를 AI 수요가 이어지고 있다는 근거로 꼽았다. 그는 \"다음주 엔비디아 실적에서 긍정적 전망이...",
-   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=315290"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-nextweek",
-   "date": null,
-   "published": "2026-11-13 10:09",
-   "region": "KR",
-   "title": "젠슨황 사임에 코스피 '불확실성 완화'…2%대 강세",
-   "detail": "젠슨 황 엔비디아 최고경영자(CEO)의 전격 사임 소식에 간밤 미국 증시가 일제히 하락했지만 국내 증시는... 가운데 다음주 엔비디아 실적에서 긍정적 전망이 확인된다면 투자심리가 추가적으로 개선될 것\"이라고...",
-   "url": "https://view.asiae.co.kr/article/2026111310030406497"
   },
   {
    "src": "네이버뉴스",
@@ -498,13 +473,101 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-thisweek",
+   "query_id": "nv-earnings",
    "date": null,
-   "published": "2026-11-13 09:00",
+   "published": "2026-11-21 07:00",
    "region": "KR",
-   "title": "[그것을 알려주마] 앤트로픽 기업공개 D-7…흔들리는 'AI붐' 구원자될까",
-   "detail": "이로 인해 잰슨 황 CEO는 '엔비디아 AI 데이 서울 2026'에 불참하게 되는 등 일정 수행에 차질을 빚었으며... 필라델피아반도체 지수는 엔비디아의 주가 부진 속에서도 이번주 월요일부터 3일 연속 상승하면서...",
-   "url": "https://www.itbiznews.com/news/articleView.html?idxno=231208"
+   "title": "삼성, 메모리 값 급등 MX 원가 부담 가중…“갤럭시 가격 또 올리나”",
+   "detail": "특히 내년 출시 예정인 갤럭시 S27 시리즈에는 기존 일반·플러스·울트라 3종에 고급형 ‘프로’ 모델이... 삼성전자는 지난달 진행한 3분기 실적발표 컨퍼런스콜에서 “원가 상승 압박은 2027년에도 이어질 전망”...",
+   "url": "https://www.ceoscoredaily.com/page/view/2026111717081991457"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 16:40",
+   "region": "KR",
+   "title": "[금융권 이모저모]한국투자증권, 청년 창업가 5개 팀 자립 지원 外",
+   "detail": "지난 2016년 5월부터 2023년 4월까지 약 7년간 엔비디아코리아 대표를 지낸 경험을 바탕으로 엔비디아의 경쟁력과 조직문화, 최근 실적발표 및 컨퍼런스콜의 주요 내용을 분석할 예정이다. 2부에서는 엔비디아를 편입한...",
+   "url": "https://www.businessplus.kr/news/articleView.html?idxno=120233"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 16:12",
+   "region": "KR",
+   "title": "LG디스플레이, 3조 투자 접는다…TV말고 선택한 OLED의 미래",
+   "detail": "LG디스플레이는 2023년 3월 투자 완료 예정일을 2028년 3월까지 연장했다. 올해 4월에는 신규 투자를 잠정... LG디스플레이는 3분기 실적발표 컨퍼런스콜에서 올해 대형 OLED 출하량을 700만 대 후반으로 예상하며, 이 중...",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=140954"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 15:20",
+   "region": "KR",
+   "title": "하나자산운용, 엔비디아 실적·경영 불확실성 진단…20일 긴급 웹세미나",
+   "detail": "공식 발표했다. 실적은 큰 폭으로 증가했다. 엔비디아가 지난 17일(현지시간) 발표한 2027회계연도 3분기... 3분기 실적과 컨퍼런스콜 내용을 분석하고 AI 반도체 시장에서 확보한 경쟁력과 향후 전망을 설명할 예정이...",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593177622296"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 14:30",
+   "region": "KR",
+   "title": "JB금융, CET1 하락에도 주주친화책은 계속",
+   "detail": "김 회장은 2월 실적발표 컨퍼런스콜에서 올해 상·하반기 각각 450억원씩 자사주를 매입해 연간... 주주환원 규모와 방식은 그룹의 실적, 자본적정성 및 경영환경 등을 종합적으로 고려해 결정할 예정\"이라고 밝혔다.",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=720491"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 14:12",
+   "region": "KR",
+   "title": "이준희 삼성SDS 대표 체제 '굳건'…실적 안정 속 노사관계 시험대",
+   "detail": "삼성SDS는 내년 3월 엔비디아 베라 루빈 기반 GPU 서비스를 시작할 예정이며 AI 플랫폼 '패브릭스'와 협업... 이 대표는 지난달 29일 3분기 실적발표 컨퍼런스콜에서 \"AI 인프라 사업 로드맵을 차질 없이 실행하고 AI...",
+   "url": "https://zdnet.co.kr/view/?no=20261120130354"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 13:58",
+   "region": "KR",
+   "title": "카카오 김범수 2심도 '무죄'…카뱅, 카드·증권사 M&A 청신호 켜졌다",
+   "detail": "권태훈 카카오뱅크 최고재무책임자(CFO)는 지난 4일 3분기 실적발표 컨퍼런스콜에서 \"마스턴캐피탈 M&A 외에... 모색할 예정\"이라고 설명했다. 김 센터장 등에 대한 항소심 무죄 판결은 카카오뱅크가 당시 언급했던 사업...",
+   "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=259406"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 10:42",
+   "region": "KR",
+   "title": "사장 승진자 ‘0명’ 삼성 DX… 스마트폰 내려놓은 노태문, 신사업 수익...",
+   "detail": "삼성전자는 지난달 29일 3분기 실적 발표 컨퍼런스콜에서 내년 TV 시장 수요가 올해와 비슷하거나 소폭... 삼성전자는 조만간 부사장 이하 정기 임원인사와 조직개편도 확정해 발표할 예정이다. 후속 인사에서는 기존...",
+   "url": "https://biz.chosun.com/it-science/ict/2026/11/20/XJYP23QKPFBHHL3FRNI7BVMIIE/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-earnings",
+   "date": null,
+   "published": "2026-11-20 10:04",
+   "region": "KR",
+   "title": "[신한의 Leading DNA-上] 순익 5兆시대, 자본관리 전략적 디테일 '주효'",
+   "detail": "올해 예정된 자사주 취득 규모는 1조6000억원으로 전년 대비 28% 증가했다. 연간 주당배당금도 현재 분기... 장정훈 신한금융지주 최고재무책임자(CFO)는 지난달 실적발표 컨퍼런스콜에서 \"앞으로도 적재 적소에...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506008"
   },
   {
    "src": "네이버뉴스",
@@ -740,431 +803,343 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-earnings",
+   "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-18 15:28",
+   "published": "2026-11-21 06:02",
    "region": "KR",
-   "title": "2700억이 7조원으로? … 앤트로픽 상장에 SK텔레콤 '돈방석' [앤트로픽 ...",
-   "detail": "18일 외신과 업계에 따르면 앤트로픽은 오는 19일(현지시간) 나스닥에 종목 코드 'ANT'로 상장할 예정이... SK텔레콤은 3분기 실적 발표 컨퍼런스콜에서 \"앤트로픽 지분 매각 여부는 양사 간 사업 연계 가능성과...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/18/2026111850274.html"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 15:21",
-   "region": "KR",
-   "title": "샤힌 준공 D-7… 줄인 만큼 늘어나는 석화 설비에 구조개편 ‘안갯속’",
-   "detail": "롯데케미칼은 지난 6일 3분기 실적발표 컨퍼런스콜에서 “대산과 여수의 NCC 감축이 진행되더라도 샤힌 프로젝트가 가동될 예정이어서 극적인 시황 회복을 기대하기는 어렵다”고 밝혔다. LG화학도 내년에 글로벌 설비...",
-   "url": "https://biz.chosun.com/industry/company/2026/11/18/7TEO7QTR5FAYLCR3IQO7VSNQJI/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 14:40",
-   "region": "KR",
-   "title": "엔비디아, 베라루빈 역대 최단 램프업...삼성·SK HBM4 청신호",
-   "detail": "(8~10월) 실적발표 후 진행한 컨퍼런스콜에서 \"베라 루빈 플랫폼은 생산 첫 분기 200억달러에 달하는 매출을... 또 실적발표에서 \"내년에는 베라 루빈 울트라를, 2028년에는 파인만(Feynman)을 출시할 예정\"이라면서...",
-   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1426474"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 14:03",
-   "region": "KR",
-   "title": "삼전닉스향 매출 34% 뛴 심텍…3796억원 시설 증설에 '현금 창출력' 시험...",
-   "detail": "실적발표에서 고성능 DDR5와 서버용 SSD 판매를 확대하겠다고 밝혔으며, SK하이닉스 역시 3분기 컨퍼런스콜... 본격화될 예정이며, 매출채권 증가는 반도체 다운턴 기간 심텍홀딩스 산하 말레이시아법인 지원으로...",
-   "url": "https://www.newspim.com/news/view/20261118000800"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 13:02",
-   "region": "KR",
-   "title": "SKC, 동박 생산거점 재편 마무리…내년 흑자 전환 기대",
-   "detail": "기여할 예정\"이라고 말했다. 인상 폭과 적용 시점은 고객사별 제품 사양과 지역, 계약 물량 등에 따라... 박동주 SKC 재무부문장은 3분기 실적발표 컨퍼런스콜에서 \"전지박과 반도체용 회로박 수요가 동시에 증가하는...",
-   "url": "https://dealsite.co.kr/articles/172908"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 12:39",
-   "region": "KR",
-   "title": "'AI 중앙은행' 된 엔비디아…3분기 매출 2배 뛰어도 안심 못 하나",
-   "detail": "이번 실적 발표에서 엔비디아는 반도체 공급을 위해 수천억 달러의 장기 구매 약정을 맺고, 고객사가... 콜레트 크레스 엔비디아 임시 최고경영자(CEO)는 컨퍼런스콜에서 2028회계연도 매출 증가율 전망을 기존 70%에서...",
-   "url": "https://magazine.hankyung.com/business/article/202611184491b"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 12:02",
-   "region": "KR",
-   "title": "6G, '세계 최초' 보다 '쓸 이유'…통신3사, 서비스 차별화 과제",
-   "detail": "3분기 실적발표 컨퍼런스콜에서 \"2029년 6G는 기술 표준화 목표로 진행 중인 단계\"라며 \"향후 고객 서비스와 주요 수요, 기술 생태계 등을 고려해 단계적으로 도입을 검토할 예정\"이라고 밝혔다. 하지만 업계에서는 6G 도입...",
-   "url": "https://dealsite.co.kr/articles/172903"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 11:28",
-   "region": "KR",
-   "title": "3%대 급반등하다 '뚝'…코스피, 보합권에서 등락",
-   "detail": "실적 발표 전 뉴욕증시는 마감했으며, 시간외거래에서 엔비디아 주가가 4% 넘게 상승하기도 했다. 또 엔비디아 측은 컨퍼런스 콜에서 그간 젠슨 황 전 CEO 체제 하에서 이어져 온 AI 생태계 투자 전략은 변함없을...",
-   "url": "https://www.yna.co.kr/view/AKR20261118087600008?input=1195m"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-earnings",
-   "date": null,
-   "published": "2026-11-18 11:13",
-   "region": "KR",
-   "title": "[글로벌 이슈K] \"엔비디아도 못 피한 원가 압박\"…삼성·SK하이닉스, 가...",
-   "detail": "엔비디아는 17일(현지시간) 2027회계연도 3분기(8~10월) 실적을 발표하며 매출이 1158억달러(약 154조6500억원)... 콜레트 크레스 엔비디아 임시 최고경영자(CEO) 겸 최고재무책임자(CFO)는 이날 컨퍼런스콜에서 \"지난 분기...",
-   "url": "https://www.newspim.com/news/view/20261118000363"
+   "title": "연기금 돈만 넣으면 되나…코스닥 상장사 절반 “우리도 분석 좀”",
+   "detail": "중소 상장사 대상 전문 IR 컨설팅과 공시 교육 지원을 요구한 기업은 19.3%, 거래소와 금융기관이 주관하는 코스닥 기업설명회 개최는 13.3%였다. 증권사의 중소형주 애널리스트 커버리지 확대와 리서치 비용 지원을...",
+   "url": "https://www.kukinews.com/article/view/kuk202611200170"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 09:17",
+   "published": "2026-11-20 23:26",
    "region": "KR",
-   "title": "KOTRA, 에코바디스와 협력 강화…'수출기업 ESG 대응' 지원",
-   "detail": "또한 지난 2024년부터 3년 연속 실무 대응 설명회를 개최했다. 총 1000여명이 참여한 가운데 국제 평가 기준과 국내 기업의 우수사례를 공유하고 맞춤형 상담을 진행했다. 이번 협약 갱신을 통해 3개 기관은 기존 교육...",
-   "url": "https://www.newspim.com/news/view/20261120000160"
+   "title": "한수원, 체코 두코바니 원전 냉각탑 입찰 현장설명회 마무리 … 내년 상...",
+   "detail": "한수원은 지난 18일부터 19일까지 이틀간 체코 현지에서 두코바니 원전 냉각탑 입찰에 참여하는 잠재 공급사를 대상으로 현장설명회를 개최했다고 20일 밝혔다. 이번 설명회는 입찰 참여 기업들이 사업 내용을 충분히...",
+   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=92424"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 09:05",
+   "published": "2026-11-20 22:00",
    "region": "KR",
-   "title": "고양시, 기업 투자 유치 총력…‘미래산업 거점’ 조성 박차",
-   "detail": "투자설명회’를 개최하고 우수 기업 유치에 나선다. 이번 설명회에는 바이오·의료기기·방송영상 등 전략산업 분야 기업 관계자 150여 명이 참석할 예정이다. 시는 1부에서 투자 여건과 기업 지원 혜택, 일산테크노밸리...",
-   "url": "https://sports.donga.com/region/article/all/20261120/135058239/1"
+   "title": "전남광주특별시, 중소·중견기업 탄소중립 국가 지원사업 설명회 개최",
+   "detail": "전남광주통합특별시는 오는 24일 오후 2시 서구 김대중컨벤션센터에서 ‘중소·중견기업 탄소중립 이행 국가 지원사업 설명회’를 개최한다고 밝혔다. 이번...",
+   "url": "http://www.breaknews.com/1252807"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 09:00",
+   "published": "2026-11-20 21:52",
    "region": "KR",
-   "title": "코스닥 연 1회 IR 의무화 추진…'참여 확대' 넘어 실효성 과제",
-   "detail": "한국거래소가 코스닥 상장기업의 기업설명회(IR)를 연 1회 의무화하는 방안을 추진한다. 코스닥 기업의 정보... ◆코스닥 IR 개최 기업 456곳…인력 부족 넘어 복합적인 원인 한국거래소 기업공시포털(KIND)의 IR 공시를...",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903733"
+   "title": "청년 취업정보·고용정책 한자리에…청주·전주서 현장형 팝업스토어 열...",
+   "detail": "호남권을 개최지로 선정했다. 고등학생부터 대학생, 재학생과 구직자까지 폭넓게 참여할 수 있도록... 체험·정책 안내·기업설명회까지…취업 준비 지원 강화 팝업스토어는 청년들이 자신의 상황에 맞는 지원제도를...",
+   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=92415"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 08:50",
+   "published": "2026-11-20 18:46",
    "region": "KR",
-   "title": "한국투자증권, '독점 글로벌 리서치' 조회수 1000만 돌파…해외투자 수...",
-   "detail": "올해 들어 모간스탠리운용, 핌코, 피델리티, JP모간, 국태해통 등 글로벌 탑티어 금융사들의 보고서도 단독 제공하고 있으며, 지난 9월 미국 뉴욕에서 개최한 글로벌 기업설명회 'KIS 나이트 in 뉴욕'을 계기로 유수의 글로벌...",
-   "url": "https://www.thepublic.kr/news/articleView.html?idxno=327666"
+   "title": "코스피·코스닥 주요 공시(20일)",
+   "detail": "코넥스시장 기업설명회(IR) 개최 결과 각각 공시 △파생상품시장 - KRX 반도체 지수선물과 한미반도체·DB하이텍·삼성전기·이수페타시스 등 관련 파생상품의 하락 방향 2단계 가격제한폭 확대요건 도달 공시 34건...",
+   "url": "http://www.kjdaily.com/article.php?aid=1795167904693002276"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 08:44",
+   "published": "2026-11-20 18:22",
    "region": "KR",
-   "title": "중진공, 첫 우수기업 IR마트 개최…민간 투자 연계 모색",
-   "detail": "중진공은 19일 서울 강남구 노보텔 앰배서더에서 '2026년 KOSME 우수기업 IR마트'를 처음 개최했다고 20일 밝혔다. 이번 행사는 올해 중진공이 진행한 9차례 기업설명회(IR) 참여기업과 직접 투자기업 가운데 우수기업 6곳을...",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81817"
+   "title": "서울 AI 허브, 신용보증기금과 협력체계 구축",
+   "detail": "협약에 따라 양 기관은 △우수 AI 스타트업 발굴 및 상호 추천 △투자·보증·교육 등 스타트업 지원 프로그램 연계 △유망 스타트업 대상 공동 기업설명회(IR) 개최 △공동 투자 및 후속 투자 협력 △정기적인 정보 교류...",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240007"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 08:26",
+   "published": "2026-11-20 17:34",
    "region": "KR",
-   "title": "한국투자증권·NH투자증권, 개인투자자 대상 서비스·이벤트 내놓아",
-   "detail": "한국투자증권은 지난 9월 미국 뉴욕에서 글로벌 기업설명회(IR) 'KIS 나이트 인 뉴욕'을 독자적으로 개최했다. 한국투자증권은 이를 계기로 글로벌 금융사들과 신규 협력 논의를 진행하고 있다. 한국투자증권은 검증된...",
-   "url": "http://www.dailypop.kr/news/articleView.html?idxno=104801"
+   "title": "이노비즈협회,'2026 중소기업 기술혁신주간' 성황리 마무리",
+   "detail": "중소기업 기술혁신주간(K-INNO WEEK)'을 성황리에 개최했다고 20일 밝혔다. 'Next W.A.V.E of Innovation(혁신의 큰... 특히 기존 전시 중심에서 벗어나 기술 컨퍼런스와 투자설명회, 기업 간 협력 프로그램을 연계해...",
+   "url": "https://www.koit.co.kr/news/articleView.html?idxno=210026"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 07:23",
+   "published": "2026-11-20 17:24",
    "region": "KR",
-   "title": "고양시, 12월 14일 ‘투자설명회’ 개최… 소노캄 고양 다이아몬드홀서",
-   "detail": "투자설명회’를 개최한다. 20일 고양시에 따르면 이번 투자설명회는 바이오·의료기기, 방송영상 등 시가 미래 성장동력으로 육성하고 있는 산업 분야의 기업 관계자 150여 명을 초청해 진행한다. 시는 우수 기업 유치를...",
-   "url": "https://www.munhwa.com/article/11632710?ref=naver"
+   "title": "한림대 창업지원본부, '2026 연합 액셀러레이터 쇼케이스' 공동 개최",
+   "detail": "창업기업의 투자유치 역량 강화와 창업 생태계 교류 확대를 위한 '2026 연합 액셀러레이터 쇼케이스'를 개최... 대상으로 기업설명회(IR) 발표를 진행한다. 춘천권에서는 아토매트릭스, 에임랩, 오슬로, 윈드바이오...",
+   "url": "https://www.gosiweek.com/article/1065601240493305"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 07:10",
+   "published": "2026-11-20 17:12",
    "region": "KR",
-   "title": "\"투자금 모으고 끝 아니다\"…동남권 투자업계, LP 신뢰 쌓기 모색",
-   "detail": "(LunchSAI)를 개최했다. 런치사이는 점심 식사를 함께하며 투자 실무 지식과 경험을 나누는 프로그램이다. 이번... 지역 네트워크와 기업설명회(IR)를 활용한 출자자 모집 경험도 공유했다. 박 대표는 \"LP가 바라는 것은 결국...",
-   "url": "https://www.news1.kr/industry/sb-founded/6360254"
+   "title": "LG화학 AI 신시장 선점 나서, 반도체·모빌리티·항암 신약 중심 사업 재...",
+   "detail": "지난 8월에는 독립이사가 참여하는 해외 기업설명회(NDR)를 처음으로 개최했다. 경영진 보상 체계 개선은 2027년 평가부터 도입하는 것을 목표로 추진한다. LG화학 관계자는 \"고객 중심의 기술이 강한 소재 기업으로...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=452559"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 06:26",
+   "published": "2026-11-20 16:57",
    "region": "KR",
-   "title": "코트라, 'K-메디테크 데이' 상담회 및 '미·EU 통상환경 대응 설명회' 개...",
-   "detail": "실무전략 설명회'를 개최했다. 강상엽 코트라 부사장 겸 중소중견기업본부장이 개회사를 하고 있다. 코트라가 미국 중간선거 직후 '2026 미국 중간선거 결과 및 시사점' 보고서 발간과 관련 온라인 설명회를 연 데 이어...",
-   "url": "https://www.cstimes.com/news/articleView.html?idxno=728669"
+   "title": "생산성본부, 에코바디스·KOTRA와 협력 강화…지속가능경영으로 수출길...",
+   "detail": "특히 2024년부터 3년 연속 에코바디스 평가 대응 설명회를 공동 개최하며 기업의 평가 이해도를 높이는 데 힘써 왔다. 2025년에는 400여명, 올해 10월에는 300여명의 기업과 유관기관 관계자가 참석하는 등 최근 2년간 약...",
+   "url": "https://www.dailian.co.kr/news/view/1717891/?sc=Naver"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 06:06",
+   "published": "2026-11-20 16:52",
    "region": "KR",
-   "title": "해외 금융사 보고서 시차 없이 본다…한투證 ‘독점 글로벌 리서치’ 1...",
-   "detail": "9월 미국 뉴욕에서 개최한 글로벌 기업설명회(IR) ‘KIS 나이트 인 뉴욕’을 계기로 다른 해외 금융사와도 협력을 논의하고 있다. 한국투자증권은 검증된 글로벌 파트너들의 투자 인사이트와 금융 상품을 국내 시장에...",
-   "url": "https://www.sedaily.com/article/20116725?ref=naver"
+   "title": "한중 콘텐츠 사전심사 비차별 첫 명문화…대중음악은 빠졌다",
+   "detail": "개최 시기는 아직 밝히지 않았다. 협의회는 회원 단체와 함께 장르별 중국 사업 현황과 애로 사항 등을 조사해 정부에 전달하고, 기업 대상 설명회를 열겠다고 전했다. 앞서 지난 19일에는 한국게임산업협회...",
+   "url": "https://www.niceeconomy.co.kr/news/articleView.html?idxno=91927"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 06:02",
+   "published": "2026-11-20 16:50",
    "region": "KR",
-   "title": "믿음 줘야 큰손 온다…기관은 길게, 기업은 투명하게",
-   "detail": "한국거래소 기업공시채널에 따르면 이달 11일까지 코스닥 상장사 1821곳 가운데 올해 기업설명회(IR) 개최 공시를 두 차례 이상 낸 기업은 260곳(14.3%)에 그쳤다. 1366곳(75.0%)은 한 차례도 없었고, 최근 5년간 IR 개최 공시가...",
-   "url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2240622"
+   "title": "전남광주통합특별시, 중소·중견기업 탄소중립 지원 설명회 24일 개최",
+   "detail": "설명회를 개최한다. 이번 설명회는 탄소배출량 관리와 감축 요구가 확대되는 국내외 산업환경에 기업들이 대응할 수 있도록 정부 지원제도와 활용 방안을 안내하기 위해 마련됐다. 중소벤처기업진흥공단과...",
+   "url": "https://www.ngetnews.com/news/articleView.html?idxno=556171"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 01:20",
+   "published": "2026-11-20 16:32",
    "region": "KR",
-   "title": "토모큐브, 서울서 26~27일 국내 기관투자자 IR",
-   "detail": "토모큐브(475960)가 오는 26~27일 서울에서 국내 기관투자자를 대상으로 사업 현황과 경영 실적을 설명하는 기업설명회를 개최한다. 회사가 19일 금융감독원 전자공시시스템에 제출한 ‘기업설명회(IR)개최’ 공시에...",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=407957"
+   "title": "디유파트너스, ‘2026 인수창업 설명회’ 에 창업자들 높은 관심",
+   "detail": "인수창업 설명회’를 개최했다. 디유파트너스는 기술보증기금 기업승계 M&A 중개기관이자 한국벤처캐피탈협회 M&A 자문기관이다. 이번 설명회에는 기업 매각을 검토하는 매도자, 인수를 희망하는 예비 창업가·기업인...",
+   "url": "https://www.livesnews.com/news/article.html?no=66230"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 00:06",
+   "published": "2026-11-20 15:56",
    "region": "KR",
-   "title": "산업은행·신보·기보, 스타트업 해외 투자유치·창업 금융지원 확대",
-   "detail": "2016년 8월 출범한 'KDB 넥스트라운드'는 올해 10월 말까지 927차례 개최돼 3,543개 기업이 투자유치 설명회에 참여했다. 이 가운데 1,099개 기업이 약 12조3,000억원의 투자를 유치했다. 신용보증기금·신한은행, K-콘텐츠...",
-   "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2382154"
+   "title": "“133개 기업 혁신기술 집결”…중소기업 기술혁신주간 성료",
+   "detail": "기술혁신주간'을 개최했다고 20일 밝혔다. 이번 행사는 '혁신의 큰 물결, 국가 메가프로젝트의 성공을 열다'를 주제로 진행됐다. 기존 전시 중심의 행사에서 기술 콘퍼런스와 투자설명회, 기업 간 협력 프로그램...",
+   "url": "https://www.sentv.co.kr/article/view/sentv202611200188"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-20 00:00",
+   "published": "2026-11-20 15:46",
    "region": "KR",
-   "title": "납품대금 연동제 대상, 전기·가스 등 '에너지경비'까지 확대",
-   "detail": "설동민 한국물가협회 연동확산지원본부 부장은 중소기업중앙회와 한국물가협회가 17일 개최한 '에너지연동제 실무전략과 납품대금 제값받기 시스템 활용 설명회'에서 \"에너지경비 연동제는 비용이 상승하면 자동으로...",
-   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38538"
+   "title": "해진공, 국내 기업 동남아 물류거점 확보 지원 강화 나서",
+   "detail": "사업설명회'를 개최했다고 전했다. 이번 설명회는 제조·물류기업의 진출이 늘고 있는 베트남을 다시 찾아 아시아 지역 기업과 투자기관 간 협력 네트워크를 강화하는 데 목적을 두고 있다. 이날 설명회에서는...",
+   "url": "https://www.klnews.co.kr/news/articleView.html?idxno=323638"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 22:58",
+   "published": "2026-11-20 15:46",
    "region": "KR",
-   "title": "RFHIC, 11월 30일부터 홍콩·싱가포르서 IR",
-   "detail": "대상으로 기업설명회를 연다. 이번 설명회는 한국투자증권이 주관하는 해외 NDR(기업설명회)로, 대면... 기준 오전 9시부터 오후 6시까지다. 회사는 19일 금융감독원 전자공시시스템에 개최 일정과 내용을 공시했다.",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=407911"
+   "title": "성호전자, IR 공시 당일 5.94% 하락 마감",
+   "detail": "회사는 이날 기업설명회 개최를 공시했으며 최근 전환사채와 신주인수권부사채 관련 공시도 이어졌다. 거래대금과 장중 가격 범위가 커진 만큼 단기 수급과 기업가치 변화를 구분해 볼 필요가 있다. 수급 변화가...",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239937"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 21:42",
+   "published": "2026-11-20 15:46",
    "region": "KR",
-   "title": "KCC글라스, 24일 기관투자자 대상 3분기 설명회",
-   "detail": "회사가 19일 금융감독원 전자공시시스템에 제출한 기업설명회(IR) 개최 안내공시에 따르면 행사는 컨퍼런스콜 방식으로 진행된다. 설명회에서는 영업실적과 주요 경영환경을 다루고 질의응답을 진행한다....",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=407876"
+   "title": "YGPA, 지역 화주 초청 여수광양항 설명회 개최",
+   "detail": "설명회'를 개최했다고 밝혔다. 이번 설명회는 여수 지역 기업에 여수광양항의 최신 정보를 제공하고, 항만 이용 과정에서 겪는 애로 사항을 직접 청취해 항만 이용 확대 방안을 함께 모색하기 위해 마련됐다. 행사에는...",
+   "url": "https://www.klnews.co.kr/news/articleView.html?idxno=323640"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 19:31",
+   "published": "2026-11-20 15:44",
    "region": "KR",
-   "title": "[교육소식]공주대 글로컬대학사업단 기업 채용설명회 등",
-   "detail": "국립공주대학교 글로컬대학사업단은 19일 천안캠퍼스에서 공과대학 학부 및 대학원생을 대상으로 에스비비테크 기업 채용설명회를 개최했다. 에스비비테크는 사업 분야와 채용 절차를 안내하고, 생산혁신·품질경영...",
-   "url": "https://www.newsis.com/view/NISX20261119_0003875350"
+   "title": "청년 고용정책·지역 채용정보 한곳에…청주·전주서 팝업 운영",
+   "detail": "참여하는 기업설명회도 진행한다. 청년고용정책 팝업스토어 포스터.(자료=고용노동부) 이번 행사는... 수도권을 넘어 지역 청년의 정책체험 기회를 확대하기 위해 충청권(청주)과 호남권(전주)에서 개최하게 됐다. 고교...",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976183&call_from=naver_news"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 18:56",
+   "published": "2026-11-20 15:41",
    "region": "KR",
-   "title": "'통합 진에어' 앞둔 한진그룹, 주주 소통에 팔걷다",
-   "detail": "19일 금융감독원 전자공시시스템에 따르면 진에어는 오는 24일 서울 여의도 한국투자증권 본사에서 기업설명회를 개최한다. 주주와 대면해 진에어·에어부산·에어서울 합병의 주요 내용을 설명하고 질문에 답할...",
-   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130992"
+   "title": "K-콘텐츠업계, 한중 FTA 후속협상 타결 환영…\"조속한 발효 필요\"",
+   "detail": "협의회는 중국음상디지털출판협회(CADPA)와 '한중 콘텐츠산업 교류회'를 조속히 개최하고, 장르별 중국 사업 현황과 애로사항을 조사할 방침이다. 기업 설명회를 비롯해 공동제작 활성화와 저작권 보호를 위한 협력 사업도...",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000084999"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 18:29",
+   "published": "2026-11-20 15:39",
    "region": "KR",
-   "title": "초기투자액셀러레이터협회, 부산서 ‘LunchSAI’ 개최…LP 관리·펀드 운...",
-   "detail": "(런치사이)’를 개최했다. 초기투자액셀러레이터협회 동남권 본부가 부산창조경제혁신센터에서 투자... 출자자 모집과 관련해서는 지역 투자 네트워크와 기업설명회(IR)를 활용한 사례가 공유됐다. 참석자들은 투자...",
-   "url": "https://www.venturesquare.net/1130024/"
+   "title": "커지는 ‘한한령’ 해제 기대에…K콘텐츠업계 “세심한 후속 조치 필요...",
+   "detail": "협의회는 중국의 콘텐츠 산업 협회인 중국음상디지털출판협의회와의 ‘한중 콘텐츠산업 교류회’를 조속히 개최하고, 장르별 중국 사업 현황·애로 조사 및 기업 설명회 개최, 공동제작 및 저작권 보호 공조 등을 협의회...",
+   "url": "https://www.khan.co.kr/article/202611201539001"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 18:04",
+   "published": "2026-11-20 15:36",
    "region": "KR",
-   "title": "중진공, 첫 우수기업 IR마트 개최…6개사 선정 투자 연계 모색",
-   "detail": "단발성 기업설명회(IR)에 그치지 않고 성장 가능성이 높은 기업을 선별해 추가 투자 기회를 제공한다는... 우수기업 6개사가 참여하는 '2026년 KOSME 우수기업 IR마트'를 처음 개최했다고 밝혔다. 이번 행사는 올해 진행한...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506069"
+   "title": "고양시, 전략산업 기업 유치 위한 투자설명회 개최",
+   "detail": "고양특례시가 바이오·의료기기와 방송영상 등 미래 전략산업 분야의 우수 기업 유치를 위해 오는 12월 14일 소노캄 고양 다이아몬드홀에서 '2026 고양특례시 투자설명회'를 개최한다. 이번 설명회에는 전략산업 분야 기업...",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239910"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 18:02",
+   "published": "2026-11-20 15:28",
    "region": "KR",
-   "title": "[증권 NOW] 한국투자증권·NH투자증권·KB증권·하나증권",
-   "detail": "아울러 지난 9월 미국 뉴욕에서 독자적으로 개최한 글로벌 기업설명회(IR) 'KIS 나이트 인 뉴욕(KIS Night in New York)'을 계기로 유수의 글로벌 금융사들과 신규 협력 논의도 진행하고 있다. 한국투자증권은 '고객 수익'을...",
-   "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=194935"
+   "title": "고양시 내달 14일 기업 대상 '투자설명회' 개최",
+   "detail": "경기 고양시가 전략 산업 거점 조성 등을 위한 투자설명회를 개최한다. 고양시는 12월14일 소노캄 고양... 시는 투자설명회 참여 기업들에게 실제 개발 현장 등을 눈으로 확인할 수 있도록 한 프로그램을 준비했다. 바이오...",
+   "url": "https://www.newsis.com/view/NISX20261120_0003876983"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:52",
+   "published": "2026-11-20 15:26",
    "region": "KR",
-   "title": "한자연, 미래車 부품 기업 설명회 개최",
-   "detail": "부품산업 생태계 강화…지정 기업 지원 아주경제=김수지 기자 sujiq@ajunews.com 19일 서울 강남구에서 열린 2026 미래자동차부품 전문기업 설명회 [사진=한국자동차연구원] 한국자동차연구원이 미래자동차 부품 산업 생태계...",
-   "url": "https://www.ajunews.com/view/20261119174821232"
+   "title": "서울 AI 허브, 신용보증기금과 AI 스타트업 투자 지원 확대",
+   "detail": "유망 기업을 투자자에게 소개하는 공동 기업설명회(IR)를 개최하고 공동 투자와 후속 투자 협력도 추진한다. 서울 AI 허브가 발굴·육성한 기업이 신용보증기금의 금융 지원 프로그램을 활용하거나 투자 기회를...",
+   "url": "https://zdnet.co.kr/view/?no=20261120152456"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:50",
+   "published": "2026-11-20 15:16",
    "region": "KR",
-   "title": "한국투자증권, '독점 글로벌 리서치' 조회수 1000만 돌파",
-   "detail": "아울러 지난 9월 미국 뉴욕에서 독자적으로 개최한 글로벌 기업설명회(IR) 'KIS 나이트 인 뉴욕(KIS Night in New York)'을 계기로 유수의 글로벌 금융사들과 신규 협력 논의도 진행하고 있다. 한국투자증권은 '고객 수익'을...",
-   "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140432"
+   "title": "LG화학, 반도체·모빌리티·항암 신약 중심으로 성장사업 재편",
+   "detail": "구성된 회의체를 정기적으로 운영하고 있다고 설명했다. 회사는 지난 8월에 독립이사가 참여하는 해외 기업설명회(NDR)를 처음 개최했다. 경영진 보상체계 개선은 2027년 평가부터 도입하는 것을 목표로 추진한다.",
+   "url": "http://www.newsfc.co.kr/news/articleView.html?idxno=82628"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:30",
+   "published": "2026-11-20 15:03",
    "region": "KR",
-   "title": "[바이오 마감 브리핑]코스닥150 편입 예정주 동반 상승…씨어스·알지노...",
-   "detail": "전날에는 기관투자자와 애널리스트를 대상으로 오는 26일 기업설명회(IR)를 개최한다고 공시했다. 주요 사업 진행현황과 신제품, 향후 사업 추진 방향을 설명할 예정이다. 다만 이날 상한가를 특정 발표와 직접...",
-   "url": "https://www.medicopharma.co.kr/news/articleView.html?idxno=70552"
+   "title": "한중 FTA 후속협상 실질타결에…K-콘텐츠 업계 \"환영\"",
+   "detail": "아울러 협의회 차원에서도 중국음상디지털출판협회(CADPA)와의 '한중 콘텐츠산업 교류회' 조속 개최, 장르별 중국 사업 현황·애로 조사 및 기업 설명회 개최, 공동제작 및 저작권 보호 공조 등 양국 협력 사업 발굴 등에...",
+   "url": "https://www.yna.co.kr/view/AKR20261120113100005?input=1195m"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:22",
+   "published": "2026-11-20 14:52",
    "region": "KR",
-   "title": "한국투자증권, 글로벌 리서치 서비스 누적 조회수 1000만회 기록",
-   "detail": "해외 금융사와의 협력은 글로벌 기업설명회(IR)를 계기로 더욱 확대됐다. 한국투자증권은 지난 9월 미국 뉴욕에서 개최한 'KIS 나이트 인 뉴욕'을 통해 피델리티와 핌코, 칼라일 등 글로벌 금융사들과 금융상품 공급 및...",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239689"
+   "title": "LG화학, AI·로봇·신약 집중..핵심 사업 매출 비중 3배로",
+   "detail": "8월에는 독립이사가 참여하는 해외 기업설명회(NDR)를 처음 개최했다. 이와 함께 독립이사회에 주주 의견을 보고하는 체계를 구축하고 2027년 경영성과 평가부터 개선된 경영진 보상체계를 도입할 계획이다.",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2122337"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:20",
+   "published": "2026-11-20 14:50",
    "region": "KR",
-   "title": "한자연, ‘미래차 부품 전문기업’ 육성 나선다…최대 40곳 선발해 집중...",
-   "detail": "한자연은 19일 서울 강남구 한국과학기술회관 과학기술컨벤션센터에서 ‘2026 미래자동차 부품 전문기업 설명회’를 개최했다고 밝혔다. 이날 행사에는 수도권 소재 자동차 부품기업과 유관기관 관계자 등 100여 명이...",
-   "url": "https://www.sedaily.com/article/20116582?ref=naver"
+   "title": "한수원, 체코 원전 공급망 구축 속도…전기설비 기술 협력도 강화",
+   "detail": "한수원은 지난 9월 16일 프라하와 30일 서울에서 각각 보조기기 입찰설명회를 열었다. 10월 14일에는 체코 현지에서 체코 기업 약 50개사와 한국 기업 17개사가 참여한 한·체코 파트너십 프로그램을 개최했다. 당시 양국...",
+   "url": "https://www.news2day.co.kr/article/20261120500174"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:08",
+   "published": "2026-11-20 14:46",
    "region": "KR",
-   "title": "메인비즈협회, 中企 혁신성과 조명…우수기업 성장 지원 확대",
-   "detail": "중소기업 경영혁신 대상 시상식 및 수상기업 IR 쇼케이스'를 개최했다고 19일 밝혔다. 이번 행사는... 시상식 이후에는 선정기업 8개사가 참여하는 기업설명회(IR) 쇼케이스가 진행됐다. 기업들은 핵심 사업모델과...",
-   "url": "https://www.m-i.kr/news/articleView.html?idxno=2021078"
+   "title": "전남광주통합특별시, 중소·중견기업 탄소중립 전환 지원",
+   "detail": "위한 '중소·중견기업 탄소중립 이행 국가 지원사업 설명회'를 개최한다. 이번 설명회는 글로벌 공급망의 탄소관리 요구가 커지면서 탄소배출량 관리 역량이 새로운 경영 경쟁력으로 떠오름에 따라, 지역 기업이 변화하는...",
+   "url": "http://www.metroseoul.co.kr/article/20261120500158"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:08",
+   "published": "2026-11-20 14:18",
    "region": "KR",
-   "title": "한국투자증권, 독점 글로벌 리서치 누적 조회수 1000만회 돌파",
-   "detail": "지난 9월 미국 뉴욕에서 개최한 글로벌 기업설명회(IR) 'KIS 나이트 인 뉴욕'을 계기로 다른 글로벌 금융사들과도 협력 논의를 진행하고 있다. 해외투자 정보는 현지 시장과 기업에 대한 분석뿐 아니라 국내 투자자가...",
-   "url": "https://www.cnbizm.com/news/articleView.html?idxno=322047"
+   "title": "한중 FTA 실질타결에 韓 콘텐츠 업계도 반색…\"후속 절차와 실행방안 마...",
+   "detail": "조속히 개최해 산업별·장르별 업무협약과 교류 정례화를 이끌어내는 한편, 장르별 중국 사업 현황과 애로사항을 조사해 정부에 전달하고 기업 대상 설명회를 열 예정이다. 아울러 공동제작 확대와 저작권 보호 공조 등...",
+   "url": "https://www.mydaily.co.kr/page/view/2026112014120472378"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-ir",
    "date": null,
-   "published": "2026-11-19 17:04",
+   "published": "2026-11-20 14:14",
    "region": "KR",
-   "title": "한국투자증권, '독점 글로벌 리서치' 누적 조회수 1000만회 돌파",
-   "detail": "지난 9월 미국 뉴욕에서 개최한 글로벌 기업설명회(IR) ‘KIS 나이트 인 뉴욕(KIS Night in New York)’을 계기로 해외 금융회사들과 신규 협력 방안도 논의하고 있다. 김성환 한국투자증권 사장은 “국내 투자자들의 눈높이에...",
-   "url": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/11/19/2026111980198.html"
+   "title": "LG화학, 반도체·모빌리티·항암 신약 중심으로 성장사업 재편",
+   "detail": "구성된 회의체를 정기적으로 운영하고 있다고 설명했다. 회사는 지난 8월에 독립이사가 참여하는 해외 기업설명회(NDR)를 처음 개최했다. 경영진 보상체계 개선은 2027년 평가부터 도입하는 것을 목표로 추진한다.",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445771"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ir",
+   "query_id": "nv-bok",
    "date": null,
-   "published": "2026-11-19 17:02",
+   "published": "2026-11-21 08:34",
    "region": "KR",
-   "title": "[금융 게시판] IBK기업은행, 코스닥 활성화 기업 수요 조사…국민·우리...",
-   "detail": "은행에 기대하는 지원은 상장 준비 자금 우대(58.4%), 기업설명회(IR) 연계 및 투자자 매칭(50.0%), 상장 컨설팅... 지난 6월에는 삼성청년SW·AI아카데미(SSAFY) 교육생과 함께 AI 금융소비자보호 아이디어 경진대회를 개최했...",
-   "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=211698"
+   "title": "한은 11월 0.25%p 인상·동결 전망 맞서",
+   "detail": "한국은행의 11월 기준금리 결정을 앞두고 기관 전망이 갈렸다. DBS 그룹 리서치와 하나증권은... 하나증권은 11월 19일자 「11월 금통위 프리뷰」에서 11월 회의의 만장일치 0.25%포인트 인상을 예상했다....",
+   "url": "https://www.tokenpost.kr/news/economy/441892"
   },
   {
    "src": "네이버뉴스",
@@ -1246,17 +1221,6 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-bok",
-   "date": null,
-   "published": "2026-11-13 07:42",
-   "region": "KR",
-   "title": "[오늘의 이슈]젠슨 황 떠난 엔비디아, 하이닉스엔 악재일까",
-   "detail": "◇미 장기금리 5% 재돌파, 금통위 앞두고 부담 미국 10년물 국채금리는 12일 장중 다시 연 5%를 넘었다.... 한국은행은 26일 올해 마지막 금융통화위원회(금통위)를 열어 기준금리(연 3.00%)를 결정한다. 미국 10월...",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=107964"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
    "query_id": "nv-export",
    "date": null,
    "published": "2026-11-19 15:56",
@@ -1334,24 +1298,123 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-export",
+   "query_id": "nv-policy",
    "date": null,
-   "published": "2026-11-13 14:44",
+   "published": "2026-11-21 06:01",
    "region": "KR",
-   "title": "수출 1조 달러 대기록에도 '서학개미'가 돌아오지 않는 이유",
-   "detail": "관세청에 따르면 이달 1~10일 수출액(통관 기준 잠정치)은 335억 달러로, 지난해 같은 기간보다 111.9%나 급증했다. 특히 1~10일 수출액 기준으로는 9월(350억 달러)에 이어 두 번째로 많은 금액이다. 이에 올해 누적...",
-   "url": "https://bizhankook.com/articles/why-investors-avoid-korean-stocks.html"
+   "title": "[산업X파일] ‘작은 원전’ SMR, 곳곳서 차질… 한국 계획은 괜찮나",
+   "detail": "인공지능(AI) 데이터센터와 반도체 공장이 늘면서 전력 수요는 급증해서 빠른 전력 공급이 필요하다.... 우리나라는 2035년에 부산 기장에 첫 SMR를 도입할 예정이지만, 벌써부터 건설비가 계획보다 4조원이상 들 수...",
+   "url": "https://www.chosun.com/economy/economy_general/2026/11/21/HMRSXGFH6FAHVEUCJTGGIZTKXU/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-export",
+   "query_id": "nv-policy",
    "date": null,
-   "published": "2026-11-13 08:02",
+   "published": "2026-11-21 00:57",
    "region": "KR",
-   "title": "\"美 데이터센터 투자에\"...반도체주 추가 상승 \"분수령\"",
-   "detail": "한편 관세청이 11일 발표한 수출입 현황에 따르면 이달 1~10일 반도체 수출액은 통관 기준 잠정치로 166억달러를 기록했다. 전년 동기보다 331.2% 늘어난 규모다. iM증권은 최근 수출 실적을 보면 국내 반도체 업황이...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=229710"
+   "title": "‘전기 먹는 하마’ 데이터센터, 2060년엔 전력 13배 필요…재생에너지...",
+   "detail": "중·장기적 대책 마련이 필요하다는 목소리를 내고 있다. 데이터센터는 서버 등 정보기술(IT) 장비의 연산... 고대역폭메모리(HBM) 등 반도체로 글로벌 AI 공급망의 중심축으로 떠오른 삼성전자와 SK하이닉스는...",
+   "url": "https://www.joongang.co.kr/article/25480613"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-21 00:00",
+   "region": "KR",
+   "title": "서울 집, 고가 1주택자는 양도세 늘기 전에 팔고 세입자는 전세 불안에...",
+   "detail": "한국부동산원이 19일 발표한 11월 셋째 주(16일 기준) 주간 동향에서 서울 아파트 매매가격은 전주보다 0.03... 반도체 성과급이 주택 수요와 이어지는 흐름도 확인된다. 한국은행은 지난 10월 22일 삼성전자 반도체...",
+   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38582"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 22:56",
+   "region": "KR",
+   "title": "[김병철 시선⑧] 이상일 시장, 반도체 산단 주민불편 대책 내년 1월 공개...",
+   "detail": "이상일 용인특례시장 용인특례시가 반도체 산업단지 공사로 늘어나는 차량과 건설인력에 대응해 주변 도로... 다만 제한 대상 차량과 적용 구간, 시간대가 확정돼 시행되고 있다는 발표는 아니다. 해당 내용은 종합대책...",
+   "url": "http://www.newstown.co.kr/news/articleView.html?idxno=722827"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 22:00",
+   "region": "KR",
+   "title": "AI 데이터센터 건설 규제 확 푼다…인허가 간소화·비수도권 전력평가 ...",
+   "detail": "정부가 반도체·AI·데이터센터 등 3대 메가프로젝트를 발표한 지난 6월 29일 경기도 용인시 용인반도체클러스... 이를 방지하기 위해 사업자는 신고일로부터 1년 이내에 자체적으로 착공 예정일을 정해 신고해야 한다....",
+   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=92416"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 20:22",
+   "region": "KR",
+   "title": "\"'한전 부채 209兆'에도 '100% 자회사' 고수\"…발전5사 노조 \"정부 출자해...",
+   "detail": "직무전환 대책을 마련해야 한다는 것이다. 박지혜 더불어민주당 의원이 20일 오후 서울 영등포구 여의도... 석탄발전 폐지로 기존 사업 기반이 줄어드는 반면 반도체와 인공지능(AI) 데이터센터 등 신규 산업의 전력수요가...",
+   "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7195041"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 18:02",
+   "region": "KR",
+   "title": "내년 경제성장전략에 쏠린 눈…정부, 성장 전망 4%대로 올릴까",
+   "detail": "KDI·씨티 등 내년 성장률 4% 안팎 전망…정부도 '반도체 가중치' 주시 반도체 호황이 내년까지 이어질... 위한 대책이 담길 예정이다. 20일 관계부처에 따르면 재정경제부는 올해 말 발표를 목표로 '2027년 경제성장전략...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445804"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 17:49",
+   "region": "KR",
+   "title": "[단독] 한국 안방 노리는 中…정부 '250만원 카드' 꺼냈다",
+   "detail": "이번 대책엔 배터리업계가 요구한 국내생산세액공제 직접 환급 방안은 담기지 않을 예정이다. 이들... 지난 8월 재정경제부의 첫 발표 당시엔 반도체, 2차전지, 태양광, 풍력, 핵심소재, 인공지능(AI) 로봇 부품 등 6개...",
+   "url": "https://www.hankyung.com/article/2026112007481"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 16:30",
+   "region": "KR",
+   "title": "순천대 의대 확정에도 불구하고, 왜 동부권은 '소외'를 말하나",
+   "detail": "통신사·지역신문·방송의 주요 보도를 특별법, 정부 발표, 시정연설과 대조했다. 공개 자료에서 확인하기 어려운 청사별 실제 결재권과 권역별 순투자액은 판단을 유보했다. 광주 반도체, 서부 공항과 에너지, 동부는...",
+   "url": "https://www.newswhoplus.com/news/articleView.html?idxno=75016"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 11:24",
+   "region": "KR",
+   "title": "[르포] 용인 산도체 산단의 \"대책 없는 속도전\"…주민 이주 못 끝내고 착...",
+   "detail": "처인구의 반도체 국가산단 예정지를 찾았다. 18일 새만금 신공항 사업의 적법성에 제동을 건 판결이... 용인 반도체 국가산단은 윤석열 정부가 2023년 3월 국가첨단산업 육성전략의 일환으로 발표한 사업이다. 정권이...",
+   "url": "https://news.cpbc.co.kr/article/1177152?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-policy",
+   "date": null,
+   "published": "2026-11-20 07:50",
+   "region": "KR",
+   "title": "동해시 GS그룹 AIDC 특구 지정 및 클러스터 조성 추진",
+   "detail": "삼성전자 충청 반도체 인프라 확충 다음으로 ‘이재명정부 메가프로젝트’의 추진 속도가 빠른... 이어 GS건설이 공사 일정과 안전관리 대책을 발표하고 주민 질의응답을 진행한다. 동해시는 사업시행자 및 시공사와...",
+   "url": "https://biz.heraldcorp.com/article/10943393?ref=naver"
   },
   {
    "src": "네이버뉴스",
@@ -1565,123 +1628,244 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 13:38",
+   "published": "2026-11-21 06:02",
    "region": "KR",
-   "title": "경기도, 8개 시 잇는 '반도체 메가클러스터' 추진… 초격차 전략 본격화",
-   "detail": "혁신대책' 및 반도체클러스터 조성 전략을 발표했다. 이날 전략위원회 첫 회의에서는 기획조정·인프라... 경기도와 8개 시는 산업통상부가 클러스터 지정 공모를 공고하면 공동으로 신청할 예정이다. 도는 이와 함께...",
-   "url": "https://www.asiatime.co.kr/article/20261118500253"
+   "title": "대어 사라진 IPO 시장…새내기주도 90% 공모가 하회",
+   "detail": "일반청약을 하루 앞둔 17일 공모를 접었다. 이로써 올해 코스피에 신규 상장한 기업은 지난 3월 입성한... 대형 IPO 후보들의 상장 일정도 밀리고 있다. 상장예비심사를 청구한 소노인터내셔널과 무신사는 국세청...",
+   "url": "https://news.mtn.co.kr/article/2026112014181541669"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 10:29",
+   "published": "2026-11-21 04:58",
    "region": "KR",
-   "title": "벤처투자 12.6조·펀드 결성 13조 ‘나란히 역대 최대’",
-   "detail": "혁신대책은 반도체 생산거점 가속, 산업생태계 고도화, 미래성장 기반 강화 등 3대 전략과 14개 세부... 최종 합격자 발표는 12월 11일(금)로 예정돼 있다. ▶기사 바로가기:고금리·젠슨황·앤트로픽 3중 악재…유가...",
-   "url": "https://www.sedaily.com/article/20115805?ref=naver"
+   "title": "비트코인, 9월 말 고점 대비 약 26% 하락…앤트로픽 IPO 공모가 범위 발...",
+   "detail": "제시, 상장으로 이어졌다. 세 시점의 가격 흐름이 모두 같지는 않아, 일정이 겹친다는 이유만으로 공모주 청약 자금의 이동을 확정하기는 어렵다. Farside Investors 집계에 따르면, 11월 첫째 주 미국 현물...",
+   "url": "https://www.tokenpost.kr/news/cryptocurrency/441776"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 08:52",
+   "published": "2026-11-21 00:10",
    "region": "KR",
-   "title": "전남광주특별시, ‘전남광주노동포럼’ 건설산업 첫 회의 참석",
-   "detail": "전남광주통합특별시가 인공지능(AI)과 반도체 등 첨단산업 중심으로 재편되는... 실질적인 대책을 모색했다고 밝혔다. 이날 회의에는 전남광주통합특별시...",
-   "url": "http://www.breaknews.com/1251786"
+   "title": "IPO 시장 급랭…상장 철회 18곳·공모주 청약 3년 10개월 만에 미달",
+   "detail": "11일 상장 계획을 접었다. 두 회사는 3~9일 기관 수요예측을 마쳤지만 일반청약을 하루 앞두고 잔여 공모 일정을 취소했다. 유기발광다이오드(OLED) 소재 기업 에스에프씨 역시 지난 17일 기관 수요예측을 마친 뒤...",
+   "url": "http://www.kjdaily.com/article.php?aid=1795187230692977276"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 08:16",
+   "published": "2026-11-21 00:06",
    "region": "KR",
-   "title": "반도체 동맹이 물 부족 부르나…필리핀 환경단체, 트럼프에 항의",
-   "detail": "반도체와 첨단산업에 필요한 핵심 광물의 가공·처리시설이 들어서면 화학물질과 중금속이 포함된 폐수와 산업폐기물이 발생할 수 있다. 환경단체들은 사업의 환경영향평가와 폐수 처리, 장기적인 오염 방지 대책을...",
-   "url": "https://www.newscj.com/news/articleView.html?idxno=3449635"
+   "title": "[IPO한파] 아델·에스에프씨 줄줄이 철회하고 넥스아이는 첫날 39% 급락…...",
+   "detail": "IPO 시장 얼어붙어…상장 철회 잇따르고 청약 미달도 올해 상장예비심사나 공모 절차를 중단한 국내... 투자은행(IB) 업계에서는 상반기 '중복상장' 규제 여파로 연말에 공모 일정이 몰린 점과, 신규 상장 종목들의...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629246"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 07:03",
+   "published": "2026-11-20 20:32",
    "region": "KR",
-   "title": "충남 태안 해상서 7명 탄 어선 실종…해경 수색[오늘아침]",
-   "detail": "정부는 이런 방안을 포함한 AI 부정행위 방지대책을 발표했습니다. 모든 수험생의 안경은 전수 검사를 받고... 반도체 대장주도 동반 약세를 보여 삼성전자는 3%대 하락한 19만 원 선에서 장을 마쳤고 SK하이닉스도 2...",
-   "url": "https://www.nocutnews.co.kr/news/6608490?utm_source=naver&utm_medium=article&utm_campaign=20261118070347"
+   "title": "[특징주] 급락장 속 '새내기' 하나에어로, 상장 첫날 왜 출렁였나",
+   "detail": "기관 수요예측에서 1,051.38대 1의 경쟁률을 기록해 희망 밴드 상단인 5,700원으로 공모가를 확정했고, 일반 청약에서도 1,851.14대 1의 경쟁률과 함께 약 5조 8,033억 원의 증거금을 모았다. 상장 직후 초기 수급이 몰리며...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8691"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 07:00",
+   "published": "2026-11-20 19:20",
    "region": "KR",
-   "title": "반도체는 호황인데 깊어진 격차...'균형경제'를 제안한다",
-   "detail": "반론이 있을 경우 적극  게재할 예정이다. / 편집인 주 반도체가 끌어올린 올해 한국 경제의 성적표는... 11월 11일 정부는 경제부총리를 팀장으로 하는 범정부 양극화 대응 TF의 추진 방향을 발표했다. 노동시장 이중구조...",
-   "url": "https://www.newsverse.kr/news/articleView.html?idxno=11929"
+   "title": "[매크로 인사이트] 허준영 교수 “美 9월 저축률 3.8%…K자형 양극화·데...",
+   "detail": "공모가 83달러를 확정한 앤트로픽 IPO에 대해서는 “기업가치가 2조 달러에서 1.4조 달러 수준으로 조정됐음에도 청약 초과 수요가 몰리며 흥행에 성공했다”며 “다만 상장 이후에는 분기별 실적 의무 공시가...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611200129&t=NN"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 04:40",
+   "published": "2026-11-20 18:40",
    "region": "KR",
-   "title": "추미애 경기도지사, 반도체 초격차 전략위원회 출범·혁신대책 발표",
-   "detail": "이날 발표한 'K-반도체 초격차 혁신대책'은 반도체 생산거점 가속, 산업생태계 고도화, 미래성장 기반 강화 등... 신청할 예정이다. 대규모 투자에 필요한 전력·용수·교통 기반시설이 제때 공급되도록 관계기관과도...",
-   "url": "https://www.m-i.kr/news/articleView.html?idxno=2019856"
+   "title": "'1.4조 기술수출' 아델마저 상장 철회 … 연말 IPO 시장 '찬바람'",
+   "detail": "지난 11일 씨앤엠과 제이앤티지가 일반청약을 코앞에 두고 나란히 철회신고서를 냈고, 지난 17일에는 유가증권시장(코스피) 상장을 추진하던 에스에프씨 역시 공모 일정을 중단했다. 아델은 이번 상장 철회로 공모를...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/20/2026112050262.html"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 02:58",
+   "published": "2026-11-20 18:16",
    "region": "KR",
-   "title": "경기도·8개 시, 반도체클러스터 공동지정 추진… 연구·설계·제조 연계",
-   "detail": "열고 반도체 혁신대책과 클러스터 조성 전략을 발표했다. 공동지정에 참여하는 도시는 수원·용인·화성... 도와 8개 시는 지정 신청을 준비하고 있으며, 산업통상부가 공모를 공고하면 신청할 예정이다. 이번 구상은 각...",
-   "url": "https://www.thereport.co.kr/news/articleView.html?idxno=93462"
+   "title": "\"IPO 한파\"…11월 공모장서 4곳 ‘상장 다음에’",
+   "detail": "아델도 공모 철회 희망가 하단 밑도는 기관 주문에 청약 일정 취소 공모가 낮추고 상장한 기업은 주가 부진…일반청약 미달도 /아델 공모가를 낮춰 상장하거나 청약 일정을 접는 기업이 잇따르고 있다....",
+   "url": "http://www.metroseoul.co.kr/article/20261120500232"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-18 00:52",
+   "published": "2026-11-20 17:06",
    "region": "KR",
-   "title": "경기도, 8개 시 반도체 산업 묶는다… 수원 연구개발 등 지역별 분담",
-   "detail": "방안을 발표했다. 이번 전략은 경기도가 추진하는 'K-반도체 초격차 혁신대책'의 일환으로 기존 반도체... 산업통상부가 지정 공모를 공고하면 공동 신청에 나설 예정이다. 지역별 역할도 구체화했다. 수원은 반도체...",
-   "url": "https://www.newscj.com/news/articleView.html?idxno=3449626"
+   "title": "[마켓H] 연말 IPO 시장 '한파'…상장 철회·공모가 하향 잇따라",
+   "detail": "잔여 일정을 취소하기로 했다\"고 밝혔다. 최근 IPO 시장에서는 공모 철회를 선택하는 기업이 이어지고... 기관 수요예측 부진에 따른 상장 철회와 공모가 하향 조정에 이어 일반청약 미달까지 나타나면서 IPO 시장의...",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=885660"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-17 22:02",
+   "published": "2026-11-20 16:32",
    "region": "KR",
-   "title": "[아주경제 오늘의 뉴스 종합] 엔비디아 리스크에 속수무책 韓증시…288일...",
-   "detail": "AI 반도체 우회 수출 차단 통제 대책이 발표된 게 영향을 미쳤다. 특히 젠슨 황 스캔들 이후 20여 일간... 안씨는 “첨단 부정행위에 대한 실효적인 방지 체계가 충분히 확보되지 않은 상태에서 예정대로 시험을 실시하는...",
-   "url": "https://www.ajunews.com/view/20261117203002502"
+   "title": "얼어붙은 IPO시장 …잇단 상장철회에 공모청약 미달도",
+   "detail": "신규 상장 종목들의 주가 부진이 이어지는 가운데 일반투자자 청약에서도 3년 10개월 만에 미달 사례가... 코스닥시장 상장을 위한 잔여 공모 일정을 취소했습니다. 아델은 지난 12∼18일 기관투자자 대상 수요예측을...",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005963824"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-policy",
+   "query_id": "nv-ipo",
    "date": null,
-   "published": "2026-11-17 18:54",
+   "published": "2026-11-20 15:58",
    "region": "KR",
-   "title": "추미애 지사, ‘K-반도체 초격차’ 드라이브",
-   "detail": "행사는 K-반도체 초격차 혁신대책 보고, 반도체클러스터 조성 전략 발표, 비전 선포, 현장 생생토크 순으로... 산업통상부가 공모를 공고하면 신청에 나설 예정이다. 도는 대규모 투자에 필요한 기반시설이 제때 공급되도록...",
-   "url": "https://www.sedaily.com/article/20115624?ref=naver"
+   "title": "유캐스트, 공모가 낮추고도 일반청약 0.89대 1 미달…유진투자증권 실권...",
+   "detail": "수요예측에 참여한 기관 절반 이상이 1만9000원보다 낮은 가격을 써낸 데 이어 19일 마감한 일반청약에서... 유캐스트는 17일 희망 범위 하단인 1만9000원에 공모가를 확정했다. 기관 가운데 상장 후 일정 기간 주식을...",
+   "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=515326"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 15:44",
+   "region": "KR",
+   "title": "[경제쏙] \"약세장 특성‥작은 악재에도 민감 반응‥우리 증시, 연말 '산...",
+   "detail": "그래서 물론 우리 기업들이 미국에다 공장 짓고 투자하는 것도 일정 부분 필요합니다. 그런데 국내 생산이... ◎ 진행자 > 앤트로픽 상장 말씀해 주셨는데 오늘 새벽 상장이 계속 거래가 되고 있더라고요. 공모가가...",
+   "url": "https://imnews.imbc.com/replay/2026/nw1400/article/6867299_36974.html"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 15:34",
+   "region": "KR",
+   "title": "증시 급락에 상장 철회 잇따라…공모주 청약도 3년 10개월 만에 미달",
+   "detail": "증시 급락으로 연말 기업공개 시장이 위축되면서 상장을 철회하는 기업이 잇따르고, 공모주 일반청약에서... 코스닥 상장을 위한 공모 일정을 취소했습니다. 또 신약 개발기업 '넥스아이'는 희망 범위 하단보다 24...",
+   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4119887"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 15:02",
+   "region": "KR",
+   "title": "[더벨][데스틴파워 IPO] 데이터센터 규제를 기회로…연료전지 인버터 수...",
+   "detail": "월별 납품 일정이 계약서에 명시된 정식 공급계약으로 프로젝트 지연에 따른 자동 취소 조항은 없다.... 11~14일 청약을 받는다. 납입기일은 16일이다. 공모주식 수는 220만주, 희망공모가는 8000~1만1000원이며 상장주관사는...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611201346054240108788"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 15:01",
+   "region": "KR",
+   "title": "급락장에 IPO시장 '꽁꽁'…잇단 상장철회에 공모청약 미달도",
+   "detail": "신규 상장 종목들의 주가 부진이 이어지는 가운데 일반투자자 청약에서도 3년 10개월 만에 미달 사례가... 코스닥시장 상장을 위한 잔여 공모 일정을 취소했다. 아델은 지난 12∼18일 기관투자자 대상 수요예측을...",
+   "url": "https://www.yna.co.kr/view/AKR20261120114800008?input=1195m"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 14:22",
+   "region": "KR",
+   "title": "[IPO] 하나에어로, 코스닥 데뷔 첫날 강세…내년 벨 공급 확대",
+   "detail": "항공기 부품·구조물 제조업체 하나에어로다이내믹스가 20일 코스닥에 상장해 장중 공모가를 30% 넘게... 공모가는 희망 범위(4700~5700원) 상단에서 결정됐다. 지난 10~11일 일반투자자 청약 경쟁률은 1851.14대 1로, 약...",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=302228"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 14:20",
+   "region": "KR",
+   "title": "[Invest]앤트로픽은 잘나갔는데…'청약에 5조원 몰려도 상장일 약세' 국...",
+   "detail": "기관도 상장 후 손실 가능성을 감안해 더 낮은 가격을 써낼 수 있다는 분석이다.공모 일정을 접거나 미루는 기업도 속출하고 있다. 제이앤티지와 씨앤엠은 기관 수요예측을 마친 뒤 일반청약을 하루 앞둔 지난 11일...",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080121.html"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 13:43",
+   "region": "KR",
+   "title": "연말 IPO 시장 막바지 러시…증시 유동 '블랙홀' 우려",
+   "detail": "20일 한국거래소에 따르면 이달 중순부터 다음 달까지 스팩 상장을 포함해 10여곳 안팎의 기업이 일반투자자 대상 공모청약과 신규 상장 일정을 연이어 소화한다. 11월에만 이날 상장한 하나에어로를 비롯해 에이엘로봇...",
+   "url": "https://news.tf.co.kr/read/economy/2391430.htm"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 13:12",
+   "region": "KR",
+   "title": "노랑풍선 회전율 85.57%…항공·화장품주 손바뀜 활발",
+   "detail": "회전율은 일정 기간 거래량을 전체 상장주식 수로 나눈 비율이다. 수치가 높을수록 상장주식 수에... 공모 단계에서 높은 청약 경쟁률을 보인 데 이어 상장 첫날 대규모 거래가 발생했다. 다만 회전율이 100...",
+   "url": "http://www.kjdaily.com/article.php?aid=1795147004692973276"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 13:04",
+   "region": "KR",
+   "title": "[여전한 뻥튀기 상장 ① 무책임한 공모가 산정] 얼어붙은 IPO 시장…코스...",
+   "detail": "상장 기업들의 주가가 하락하면서 개인투자자들의 피해도 속출하고 있다. 이런 가운데 IPO 과정에서 일정... 한 청약 과열과 상장 후 매도 집중이 반복되며 공모가격의 적정성과 시장 신뢰에 대한 문제가 제기되고...",
+   "url": "https://www.naeil.com/news/read/609550?ref=naver"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 11:22",
+   "region": "KR",
+   "title": "아델, IPO 철회…공모주 시장 한파 '직격'",
+   "detail": "잔여 일정을 취소했다는 설명이다. 청약 전이어서 투자자 보호상 문제는 없다고도 덧붙였다. 아델은 지난 12일부터 18일까지 기관투자자 대상 수요예측을 진행했다. 공모가 희망밴드는 1만8000~2만5000원을 제시했다....",
+   "url": "https://www.the-stock.kr/news/articleView.html?idxno=33882"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-ipo",
+   "date": null,
+   "published": "2026-11-20 09:58",
+   "region": "KR",
+   "title": "[트럼프 스톡커] ‘AI 개별기업 성공’으로 끝난 2000조 신규 상장",
+   "detail": "상장 일정을 내년 이후로 미룬 상태다. 상장 대표주관사는 골드만삭스와 모건스탠리가 맡았으며, 투자은행(IB) 20여 곳이 주관사단으로 참여했다. 주관사단은 30일 안에 최대 1억 2375만 주(기본 물량의 15%)를 추가로...",
+   "url": "https://www.sedaily.com/article/20116815?ref=naver"
   },
   {
    "src": "네이버뉴스",
@@ -1757,7 +1941,7 @@
    "published": "2026-11-19 18:06",
    "region": "KR",
    "title": "유캐스트, 3년 10개월 만에 공모주 청약 미달",
-   "detail": "일반투자자 대상 공모주 청약에서 올해 처음으로 미달 사태가 발생했다. 최근 신규 상장 종목이 상장... 일정 기간 공모주를 팔지 않겠다고 약속하는 확약 비율도 1%대에 그쳤다. 통상 수요예측에서 희망 가격 하단...",
+   "detail": "대상 공모주 청약에서 올해 처음으로 미달 사태가 발생했다. 최근 신규 상장 종목이 상장 첫날부터... 일정 기간 공모주를 팔지 않겠다고 약속하는 확약 비율도 1%대에 그쳤다. 통상 수요예측에서 희망 가격 하단...",
    "url": "https://www.hankyung.com/article/2026111981661"
   },
   {
@@ -1774,563 +1958,453 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-ipo",
+   "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 17:18",
+   "published": "2026-11-21 08:35",
    "region": "KR",
-   "title": "연말 IPO 쏠림에 묶이는 청약 증거금…'상장 중단' 中과 엇갈린 韓 수급",
-   "detail": "문제는 증시가 대외 악재로 약세를 보이는 가운데 상장 일정까지 집중됐다는 점이다. 미국 중간선거 여파와 고금리 장기화, 유럽 경기 침체 우려로 한국과 중국 증시가 동반 하락하는 상황에서 공모주 청약에...",
-   "url": "https://www.ajunews.com/view/20261119164414918"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 15:26",
-   "region": "KR",
-   "title": "143조원 '메가 IPO'…코스피 반등 공식 통할까",
-   "detail": "대형 공모주 청약을 앞두고 현금을 확보하려는 매물이 상장 직전에 몰리기 때문입니다. 반면 상장 당일... 조사 일정보다 앞당겨 심사가 정상화됐습니다. 해당 소식이 중요한 이유는 데이터센터 시설 확보가 늦어지면서...",
-   "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611190055&t=NNv"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 14:38",
-   "region": "KR",
-   "title": "[기획] IPO 사전정보 거래규제 '빈틈'",
-   "detail": "자본시장법 제174조는 상장법인과 일정한 상장예정법인의 미공개중요정보를 이용한 특정증권 등의 거래를 금지하고 있다. 개정 제도는 사전수요예측과 사전 청약을 위한 정보 제공에 예외를 인정하지만, 제공받은 정보를...",
-   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668270"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 14:01",
-   "region": "KR",
-   "title": "록히드마틴·코어위브 잣대 들이대더니… 올해 새내기주 94% 공모가 밑돌...",
-   "detail": "일반청약을 하루 앞두고 각각 철회신고서를 냈다.에스에프씨 측은 회사 가치를 제대로 평가받기 어려운 시장 여건을 고려해 잔여 일정을 취소했다고 밝혔다. 공모가를 낮춰 상장을 이어가는 기업도 있다. 5세대...",
-   "url": "https://biz.chosun.com/stock/stock_general/2026/11/19/WRAKO4GWSJHC3L3CHW762K7WPE/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 11:26",
-   "region": "KR",
-   "title": "앤트로픽 125조 '괴물 IPO' 오늘밤 상장…AI주 반등 변곡점 될까",
-   "detail": "넘는 공모가 한꺼번에 진행돼 투자자들의 현금 확보 수요를 자극했다는 것이다. 최근 미국 기술주와 국내 증시의 급락 과정에도 앤트로픽 청약을 앞둔 자금 이동이 일정 부분 영향을 미쳤다는 분석이 나온다. 상장이...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732270"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 10:22",
-   "region": "KR",
-   "title": "따따블 가려나?…'유캐스트' 청약, 오늘까지",
-   "detail": "대상 공모주 청약을 마감한다. 확정 공모가는 희망 범위 하단인 1만 9000원으로 책정됐으며, 상장... 유진투자증권과 신영증권을 통해 진행되는 이번 일반청약은 총 공모주식수 80만 주 중 25%에 해당하는 20만 주를...",
-   "url": "https://www.wikitree.co.kr/articles/1175855"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 07:53",
-   "region": "KR",
-   "title": "[비즈 나우] 앤트로픽 '흥행몰이'…스페이스X 넘어 '역대 최대 IPO'",
-   "detail": "이번 IPO는 공모주 청약이 시작되자마자 모든 물량에 대한 주문이 진즉에 확정됐고, 일부 기존 투자자들이... 상장 첫날 개인 순매수액만 2억5천만 달러, 우리돈 3천3백억 원이 넘어갈 걸로 전망되고 있는데, 앞선...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000347454?division=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 07:02",
-   "region": "KR",
-   "title": "[Invest]26년 만에 상장 '단 1건'...코스피 IPO 이례적 한파",
-   "detail": "중복상장 규제 강화로 대기업 계열사들이 상장 일정을 늦춘 가운데, 연내 상장을 추진하던 에스에프씨도 일반청약을 하루 앞두고 공모를 철회했다. 지난 3월 상장한 케이뱅크가 올해 유일한 코스피 공모 상장사로...",
-   "url": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880115.html"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-19 07:02",
-   "region": "KR",
-   "title": "[IPO 돋보기] 수요예측 나선 아델, 뇌질환 치료제 기대감 높인다",
-   "detail": "IB업계 관계자는 <뉴스투데이>에 “사노피에 기술이전으로 거둔 성과는 최근 상장한 국내 바이오 기업과 아델의 차이점을 보여주는 유의미한 사례다”며 “최근 증시 변동성으로 다수의 공모주들이 일정을...",
-   "url": "https://www.news2day.co.kr/article/20261118500145"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 23:36",
-   "region": "KR",
-   "title": "[미국 특징주] 앤스로픽, 사상 최대 IPO 초읽기…공모가 상단 이상 확정...",
-   "detail": "앤스로픽이 역대 최대 규모가 될 수 있는 기업공개(IPO) 공모가 확정을 눈앞에 두고 있다. 최근 며칠간 이어진 기술주 변동성이 오랫동안 기다려온 상장에 부담이 될 것이라는 우려를 딛고 일정을 밀고 나가는...",
-   "url": "https://www.newspim.com/news/view/20261118001467"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 22:42",
-   "region": "KR",
-   "title": "바로팜 주가 급락 영향? 상장 첫날 환매청구권 5억원 행사",
-   "detail": "환매청구권은 일반 청약자가 상장 후 주가가 공모가를 밑돌 경우 일정기간 내에 주관사에 공모가의 90% 가격으로 주식을 되팔 수 있는 권리다. 이익미실현 특례인 테슬라 요건으로 상장하는 기업의 일반 투자자...",
-   "url": "https://www.dailypharm.com/user/news/344762?REFERER=NP"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 21:14",
-   "region": "KR",
-   "title": "[김철운 칼럼] 투자란 미끼비용을 감수하는 것이다",
-   "detail": "일정한 이자 손실이나 기회비용을 '미끼비용'으로 감수하며 가능성이 있는 투자처에 지속해서 참여한다.... 공교롭게도 큰 물고기는 대개 그 이후에 찾아온다.지난 9월 상장한 공모주 글로벌테크놀로지의 사례도 이와 궤를...",
-   "url": "https://www.ksmnews.co.kr/news/view.php?idx=630312"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 16:10",
-   "region": "KR",
-   "title": "증시 변동성에 IPO 시장 ‘급속냉각’…“뭐 하나 좋은 게 없다”",
-   "detail": "IB업계는 연말 들어 증시 변동성과 공모 일정 쏠림도 IPO 한파에 영향을 준 것으로 보고 있다. 또 다른 IB업계 관계자는 “청약하고 상장까지 최소 5일에서 일주일을 기다려야 하는데, 지수가 불안하면 그다음에 대한...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261118023591533"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 16:04",
-   "region": "KR",
-   "title": "[공모주 현황] 유캐스트 청약 1일차 일정 종료, 증권사별 균등 배정주식...",
-   "detail": "18일 오후 4시경 공모주 유캐스트의 청약 1일차 일정이 종료됐다. 유진투자증권과 신영증권을 통해... 유캐스트는 19일 청약 2일차를 거쳐 오는 30일 상장할 예정이다. 상장 당일 어떤 주가 흐름을 보일지도 관심이...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=628174"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 15:48",
-   "region": "KR",
-   "title": "하반기 대어 에스에프씨도 공모 철회…연말 IPO ‘줄철회’ 우려",
-   "detail": "이달 상장한 9개사 중 4개사의 일반청약 경쟁률이 30대 1을 밑돈 것이다. 이미 공모 일정을 제시한 기업도 수요예측에서 기관의 가격 제시 수준이나 참여 규모가 기대에 못 미치면 일정을 연기하거나 철회할 여지가...",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=03706406645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 13:11",
-   "region": "KR",
-   "title": "상장 문턱 넘고도 울상…기업공개 기업들, 몸값 낮추거나 상장 포기",
-   "detail": "희망 공모가는 3만1600~3만6100원, 상장 후 예상 시가총액은 최대 7300억원 수준이었다. 기관 수요예측을 마친 뒤 일반청약을 하루 앞두고 일정을 취소한 것이다. 회사는 철회신고서에서 최근 회사 가치를 적절히 평가받기...",
-   "url": "https://www.mk.co.kr/article/12212242"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 11:46",
-   "region": "KR",
-   "title": "에이엘로봇, 코스닥 상장 첫날 8% 하락…4.4조 청약 열기에도 공모가 밑...",
-   "detail": "◯ 청약 증거금 4조4074억원…상장 직후 유통 가능 물량 35% 에이엘로봇의 상장 첫날 약세는 공모주 청약... 의무보유 확약은 기관투자자가 배정받은 주식을 일정 기간 매도하지 않겠다고 약속하는 제도다. 확약...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16279723"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 07:20",
-   "region": "KR",
-   "title": "[KFT 모닝 브리프] 2026.11.18 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-   "detail": "1조4000억달러, 청약 수요 공모 물량의 6~7배(보도별) ♣인사이트: 확정된 공모가보다 상장 첫날 주가가 AI... 주목할 일정 ▲11/18(수) — 한국은행 3분기 가계신용(잠정)·KDI 하반기 경제전망 발표, APEC 정상회의...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202611180709235657141825007d_18"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-18 01:30",
-   "region": "KR",
-   "title": "[뉴스이슈&비즈] 젠슨황·앤트로픽·금리 '삼중고'에 코스피 9개월만에...",
-   "detail": "앤트로픽은 19일 상장을 앞두고 있으며, 기관 청약 수요는 13일 기준 공모 물량의 약 6배로 집계됐다. AI... 출시 일정은 지연됐다. 올해 1~9월 공장 가동률은 국내외 판매 물량에 직접 반영됐다. ◇ SK브로드밴드 분사...",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81700"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-17 17:48",
-   "region": "KR",
-   "title": "유캐스트, 상장 강행에…기관 \"시장 훼손하는 결정\"",
-   "detail": "써냈는데도 공모가를 하단에 확정하고 청약에 나선다. 공모가를 밴드 아래로 낮추거나 상장을 미루지... 전체 신청가격을 수량으로 가중평균하면 1만6832원으로 확정 공모가보다 11% 낮다. 상장 후 일정 기간 팔지...",
-   "url": "https://www.the-stock.kr/news/articleView.html?idxno=33834"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-ipo",
-   "date": null,
-   "published": "2026-11-17 16:32",
-   "region": "KR",
-   "title": "성장률은 오르고 코스피는 무너졌다…5000 붕괴의 역설",
-   "detail": "서킷브레이커는 지수가 짧은 시간에 일정 폭 이상 급락할 때 매매를 일시 정지하는 장치다. 결정타는... 19일에는 앤트로픽이 상장한다. 공모 청약에 6배가 넘는 수요가 몰린 것으로 전해졌다. 상장이 흥행하면 AI...",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=108078"
+   "title": "[인사이트 뉴스] 비트코인 4개월 만에 6만달러 붕괴…2022년 이후 최장 ...",
+   "detail": "인공지능(AI) 산업의 투자 수익성에 대한 의구심이 뉴욕증시를 강타한 데 이어 가상자산 시장으로까지... 매수 수요가 회복되지 않는다면 비트코인이 5만달러대까지 추가 하락할 수 있다는 전망도 나온다. 21일 가상자산...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8693"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 09:04",
+   "published": "2026-11-21 08:34",
    "region": "KR",
-   "title": "美 기술주 급락에 원·달러 환율 반등…1340원선 다시 시험",
-   "detail": "20일 서울 외환시장에 따르면, 전날 원·달러 환율은 전 거래일보다 3원 내린 1330원에 주간 거래를 마쳤다.... 20일 환율은 미국 기술주 급락과 글로벌 위험회피 심리 확대에 영향을 받을 전망이다. 간밤 뉴욕증시는...",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=580077&class=18&grp="
+   "title": "[뉴욕증시] 앤트로픽의 역설? '패닉', 나스닥 5%↓·필리 11%↓···AI 테...",
+   "detail": "앤트로픽 상장 둘째날, 뉴욕증시에서 패닉 장세가 연출됐다. 주요지수가 일제히 급락한 가운데 인공지능... 3대 지수는 주간 단위로도 각각 8% 넘게 폭락했다. 다우지수가 8.0%, S&P500과 나스닥지수는 각각 8.6%, 10.0...",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=643535"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 09:04",
+   "published": "2026-11-21 08:32",
    "region": "KR",
-   "title": "젠슨 황 떠난 엔비디아, 경쟁사에겐 새로운 기회...\"AI 시장 다극화 가능...",
-   "detail": "4분기 매출 전망치는 1300억 달러(오차범위 ±3%)로 제시했다. 월가 기대치인 1250억 달러 안팎을 웃도는 수준이다. 실적 발표 직후 뉴욕증시 시간외 거래에서 엔비디아 주가는 한때 4% 넘게 올랐다. 다만 이달 들어 주가가...",
-   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=54950"
+   "title": "비트코인 5만8000달러선 하회에 암호화폐주 비명…스트래티지·코인베이...",
+   "detail": "21일(현지시간) 뉴욕증시와 가상자산 업계에 따르면 가상자산 관련 종목들은 이번 주 들어 비트코인 가격 급락의 직격탄을 맞으며 주간 기준 큰 폭의 하락세를 기록했다. 비트코인이 5만 8000달러선을 밑돌자 비트코인을...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506545"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 08:12",
+   "published": "2026-11-21 08:04",
    "region": "KR",
-   "title": "AI 투심 또 꺾이나… 원/달러 환율, 강달러 타고 1340원선 넘본다",
-   "detail": "서울 외환시장에서 20일 원/달러 환율은 1340원대까지 고점을 높일 전망이다. 민경원 우리은행 선임연구원은... 그는 \"뉴욕증시는 아시아와 유럽장에서 상승했지만 본장에서 다시 매도세가 집중되며 하락 마감했다\"며...",
-   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=731732"
+   "title": "[뉴욕증시 마감] 나스닥 5%↓·엔비디아 14%↓…S&P500·다우 조정 국면",
+   "detail": "미국 뉴욕증시가 20일(현지시간) 인공지능(AI)·반도체주 투매에 급락하며 S&P500과 다우지수가 조정... CNBC에 따르면 엔비디아는 7주 연속 주간 하락해 2008년 이후 가장 긴 연속 하락을 기록했다. 이 기간 주가는...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95013"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:55",
+   "published": "2026-11-21 07:46",
    "region": "KR",
-   "title": "[AI MY 증시전망] 앤스로픽 상장에도 美 증시 급락…코스피 '먹구름'",
-   "detail": "이 기사는 뉴스핌 'AI MY 뉴스'의 AI 어시스턴트 기능을 활용해 작성된 'AI MY 증시전망' 콘텐츠입니다. AI가... 국내 증시에서도 외국인 매도세와 반도체 대형주의 변동성 확대가 예상된다. 19일(현지시간) 뉴욕증시에서...",
-   "url": "https://www.newspim.com/news/view/20261120000073"
+   "title": "'AI 패닉'에 나스닥 5.28% 폭락·연간 상승분 전액 반납…엔비디아 14% 추...",
+   "detail": "미국 뉴욕증시가 인공지능(AI) 테마 전반을 덮친 투매 광풍에 휘말리며 일제히 폭락했다. 20일(현지시간)... 주간 기준으로는 S&P500지수가 8.6%(651.28포인트) 내려 18개월여 만에 최대 낙폭을 기록했고, 다우지수와...",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065565703235008"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:44",
+   "published": "2026-11-21 07:40",
    "region": "KR",
-   "title": "[채권/외환] AI주 급락에 안전자산 선호…국채 금리 하락·달러 강세",
-   "detail": "(IPO)에도 뉴욕 증시가 급락하면서 안전자산인 미국 국채와 달러화로 자금이 몰린 영향이다. 인플레이션 우려에 따른 연방준비제도(Fed·연준)의 추가 금리 인상 전망도 달러화 강세를 뒷받침했다. 로이터통신에...",
-   "url": "https://www.newspim.com/news/view/20261120000061"
+   "title": "뉴욕증시, 기술주 집중매도에 급락…나스닥 5.8% 폭락",
+   "detail": "뉴욕증시가 20일(현지시간) 급락세로 거래를 마쳤다. 인공지능(AI) 반도체주 대장주인 엔비디아의 젠슨 황 전 최고경영자(CEO)의 불륜 스캔들과 시장 전망을 웃돈 3분기 실적, '흥행 대박'을 친 앤트로픽의 상장 성공...",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=887956"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:42",
+   "published": "2026-11-21 07:29",
    "region": "KR",
-   "title": "[마켓 프리뷰] 코스피 등락 끝 상승…앤트로픽 상장 이후 수급 촉각",
-   "detail": "달러·원, 주간거래 3.0원 하락…1330.0원 기록 - 中 한한령 완화 기대감 확대…수혜 예상 업종 매수세... 오늘(20일) 증시 전망과 함께 투자 전략 부탁드립니다. - 뉴욕증시, 앤트로픽 상장에도 주요지수 2%대 급락 - AI...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000347723?division=NAVER"
+   "title": "\"월가 AI 투자 무너진다\"…나스닥 5.3% 급락 '검은 금요일'(종합)",
+   "detail": "20일(현지시간) 미국 뉴욕증시가 인공지능(AI) 관련주 투매로 급락하면서 스탠더드앤드푸어스(S&P)500지수... 최대 주간 하락률을 기록했다. 월가의 '공포지수'로 불리는 시카고옵션거래소(CBOE) 변동성지수(VIX)는 종가...",
+   "url": "https://www.news1.kr/world/usa-canada/6361491"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:38",
+   "published": "2026-11-21 07:26",
    "region": "KR",
-   "title": "[오늘의 이슈] 앤트로픽 역대 최대 상장에도 뉴욕증시 2% 급락",
-   "detail": "미국 역사상 가장 큰 기업공개(IPO)가 이뤄진 19일(현지시간) 뉴욕증시는 2% 넘게 떨어졌다. 인공지능(AI)... 월마트는 3분기 매출이 1888억달러로 5.2% 늘고 연간 실적 전망을 올렸지만 주가는 1% 남짓 내렸다. 금리...",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=108154"
+   "title": "나스닥 5.3% 폭락…AMD·마이크론 13% 급락",
+   "detail": "미국 뉴욕증시가 20일(현지시간) 인공지능(AI) 관련주 매도세에 일제히 급락하며 나스닥 종합지수가 5.3... 기업용 소프트웨어 업종에서는 인튜이트가 연간 매출 성장률 전망을 낮췄다. 인튜이트는 2021년 약...",
+   "url": "https://www.ddaily.co.kr/page/view/2026112107251226435"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:30",
+   "published": "2026-11-21 07:20",
    "region": "KR",
-   "title": "[넥스트-샷] 축포 뒤 매도 폭탄···'AI 구원투수' 앤트로픽 떠도 돈 줄...",
-   "detail": "매출 전망을 높인 뒤 6.44% 올라 종목별 흐름이 갈렸습니다. 미국의 주간 신규 실업수당 청구 건수는 20만3000건으로 전주보다 1000건 늘었습니다. 미 10년물 국채금리는 안전자산 선호 속에 뉴욕 거래 후반 5.04...",
-   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=261405"
+   "title": "뉴욕증시 급락…나스닥 5.28%↓·S&P500 조정장 진입",
+   "detail": "미국 뉴욕증시가 20일(현지시간) 인공지능(AI) 관련주 매도세에 일제히 급락했다. 나스닥지수는 5% 넘게... 주간 하락률도 2020년 3월 이후 가장 컸다. 이번 하락의 중심에는 AI 관련 기업들의 기업가치와 대규모 투자에...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95011"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:30",
+   "published": "2026-11-21 07:14",
    "region": "KR",
-   "title": "[KFT 모닝 브리프] 2026.11.20 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-   "detail": "0원에 주간거래를 마쳐 4거래일 연속 하락했다. 글로벌 달러 가치가 19개월 만의 최고 수준으로 오른... 경제전망), 미국 추수감사절(뉴욕증시 휴장) ▲11/30(월) — 한화M&S 2차 공개매수 종료, 삼성바이오로직스...",
-   "url": "https://www.fntimes.com/html/view.php?ud=20261120071256267141825007d_18"
+   "title": "나스닥 하루 5%, 일주일 10% 추락…AI주 투매 공포[월스트리트in]",
+   "detail": "20일(현지시간) 뉴욕증시는 인공지능(AI) 투자에 대한 기대가 흔들리는 가운데 장 막판 엔비디아 회계 조사... 월스트리트저널(WSJ)에 따르면 엔비디아는 이번 주 약 23% 내려 2008년 이후 최악의 주간 하락률을 기록했다....",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01607206645648016&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 07:01",
+   "published": "2026-11-21 07:06",
    "region": "KR",
-   "title": "매경이 전하는 세상의 지식 (매-세-지, 11월 20일)",
-   "detail": "이번 회담은 국제질서 재편의 중대한 분수령이 될 전망입니다. 이번 회담은 이해당사국을 배제한 채... 블루투스 이어폰을 소지한 사실이 적발되기도 했습니다. ☞ 생생한 미국 증시, 뉴욕 특파원에게 직접 듣고 싶다면?",
-   "url": "https://www.mk.co.kr/article/12213882"
+   "title": "‘AI 투매’에 나스닥 5.3% 추락하며 올해 상승분 반납…엔비디아 14%↓",
+   "detail": "미국 뉴욕증시가 인공지능(AI) 산업의 과잉 투자 우려와 기술주 중심의 차익실현 매물에 휩쓸리며 일제히... 주간 기준 낙폭도 두드러졌다. 다우지수는 이번 주 8% 떨어져 2020년 3월 이후 가장 부진한 성적을...",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=580141&class=53&grp="
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 06:46",
+   "published": "2026-11-21 07:00",
    "region": "KR",
-   "title": "[뉴욕마감] 앤트로픽 상장 첫날 17% 상승에도 AI주 투매…나스닥 2.25% 급...",
-   "detail": "미국 뉴욕증시가 19일(현지시간) 일제히 2% 넘게 급락했다. 인공지능(AI) 기업 앤트로픽이 역대 최대 규모의... S&P500지수는 6거래일 연속 하락하며 2025년 4월 이후 최대 주간 낙폭을 기록할 가능성이 커졌다. 앤트로픽 17...",
-   "url": "https://www.news1.kr/world/international-economy/6360310"
+   "title": "[다음주 환율전망] 강달러에 다시 고개 든 환율…한은 금통위가 방향 가...",
+   "detail": "고용시장 둔화 신호에도 연준의 긴축 우려와 뉴욕증시 조정에 따른 안전자산 선호가 맞물리면서 달러화는 강보합세를 나타냈다. 민경원 우리은행 선임연구원은 20일 환율 전망에서 AI 기술주 투자심리 회복 실패에 따른...",
+   "url": "https://www.goodkyung.com/news/articleView.html?idxno=293696"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 06:36",
+   "published": "2026-11-21 06:56",
    "region": "KR",
-   "title": "뉴욕증시 일제히 하락…앤트로픽 상장 흥행에도 AI 반도체·데이터센터...",
-   "detail": "미국 뉴욕증시가 19일(현지시간) 인공지능(AI) 기업 앤트로픽(Anthropic)의 역대 최대 기업공개(IPO)에도... 시장 기대를 웃도는 분기 실적과 매출 전망을 내놨지만 젠슨 황(Jensen Huang) 전 최고경영자(CEO) 사임 이후...",
-   "url": "https://www.ddaily.co.kr/page/view/2026112006350247153"
+   "title": "엔비디아 '회계 스캔들' 터지나…주가 14% 대폭락에 월가 '발칵'",
+   "detail": "넘어설 전망이다. 다우존스 마켓 데이터에 따르면 이는 지난주 기록한 5,730억 달러 감소를 뛰어넘는 기업... 엔비디아발 악재가 확산하면서 반도체 업종은 물론 뉴욕증시 전반으로 매도세가 번지고 있다. 이인수...",
+   "url": "https://www.g-enews.com/view.php?ud=202611210649565881e250e8e188_1"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 06:24",
+   "published": "2026-11-21 06:46",
    "region": "KR",
-   "title": "뉴욕증시, 앤스로픽 상장에도 급락 마감…다우 5만 선 하회",
-   "detail": "김민정 특파원 = 19일(현지시간) 미국 뉴욕증시에서 주요 지수가 급락했다. 사상 최대 규모로 기록된... 주간 기준으로는 2025년 4월 이후 가장 큰 낙폭을 기록할 것으로 예상된다. 앤스로픽은 전날 밤 결정된 공모가...",
-   "url": "https://www.newspim.com/news/view/20261120000052"
+   "title": "실적보다 커진 AI 거품론…뉴욕증시, 조정 한파 속 나스닥 5.28%↓",
+   "detail": "미국 뉴욕증시가 일제히 급락했다. 엔비디아 호실적과 앤스로픽 기업공개(IPO) 흥행에도 기술주 매도세가... 주간 낙폭도 컸다. S&P500지수는 한 주간 8.6%, 다우지수는 8.0%, 나스닥지수는 10.0% 떨어졌다. 특히 나스닥의...",
+   "url": "https://www.news2day.co.kr/article/20261121500002"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-20 02:55",
+   "published": "2026-11-21 06:26",
    "region": "KR",
-   "title": "앤트로픽 상장 성공에도 뉴욕증시 하락중…AI 투자심리 회복 역부족",
-   "detail": "19일(현지시간) 오후 뉴욕증시가 주요 지수 모두 하락 중이다. 인공지능(AI) 기업 앤트로픽이 역대 최대... 수 주간 매도세가 이어진 가운데 이뤄졌다. 앤트로픽의 주요 투자사인 아마존은 0.8% 하락했지만...",
-   "url": "https://www.news1.kr/world/usa-canada/6360293"
+   "title": "[종합] 뉴욕증시, AI 매도세 폭발에 급락 마감…나스닥 5.3%↓",
+   "detail": "뉴욕증시에서 3대 지수가 20일(현지시간) 일제히 급락 마감했다. 인공지능(AI) 거래를 둘러싼 몇 주간의... 미 연방준비제도(Fed)의 12월 인상 전망에도 균열이 생겼다. CME 페드워치 기준 25bp 인상 확률은 92% 수준으로...",
+   "url": "https://www.newspim.com/news/view/20261121000021"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 21:36",
+   "published": "2026-11-21 06:03",
    "region": "KR",
-   "title": "뉴욕증시 프리뷰, 나스닥 선물 2%대 급등…앤스로픽 역대 최대 IPO에 AI주...",
-   "detail": "미국 뉴욕 증시의 주요 주가지수 선물이 19일(현지시간) 일제히 상승하고 있다. 인공지능(AI) 기업... 엔비디아는 낙관적인 매출 전망에도 젠슨 황 전 CEO의 사임과 AI 투자 수익성에 대한 우려로 전날까지 5거래일...",
-   "url": "https://www.newspim.com/news/view/20261119001464"
+   "title": "[속보]AI주 투매에 나스닥 5%대 급락…올해 상승분 반납",
+   "detail": "뉴욕증시가 20일(현지시간) 인공지능(AI) 관련주 투매 속에 급락했다. 엔비디아의 호실적과 앤스로픽의... 데이터센터 건설 둔화와 자금 공급 축소, 높은 차입 비용이 기업의 성장 전망을 압박했다. 리처드 새퍼스틴...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01275926645648016&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 19:26",
+   "published": "2026-11-21 06:02",
    "region": "KR",
-   "title": "[亞증시-종합] 혼조세로 마감…대만, 공매도 규제 강화",
-   "detail": "일본 국내 투자신탁 운용역들은 \"AI 시장 전망에 대한 불확실성은 여전하지만, 미국 앤트로픽 관련 소식... 앤트로픽은 18일(현지시간) 뉴욕증시 마감 후 클래스 A 보통주의 공모 가격을 주당 83.00달러로 책정했다고...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445611"
+   "title": "[주간증시전망] 실적은 견조한데…코스피 5000선 회복할까, 美 물가·수...",
+   "detail": "국내 증시는 인공지능(AI) 산업의 성장 기대와 기업 실적 개선을 바탕으로 반등을 모색할 전망이다. 최근... 21일 한국거래소에 따르면 전날 국내 증시는 미국 뉴욕증시 급락 여파로 동반 하락했다. 코스피는 직전...",
+   "url": "https://www.ajunews.com/view/20261120164429410"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 18:40",
+   "published": "2026-11-21 04:23",
    "region": "KR",
-   "title": "[월街 Watch] WSJ 논평 : 월시의 FOMC 개조 - 의논은 많이 발표는 적게",
-   "detail": "경제전망(SEP)치 발표 중단 - 연준개혁을 위한 5개 TK발표 - 이에 더해 2027년 가을 부터는 FOMC회의가... [그림1] 뉴욕 증시 3대 지수 주간 변동(전주 금=100) : (*) 자료:네이버 증권, 인베스팅 닷컴(달러 인덱스) 3...",
-   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=WallWatch&wr_id=186"
+   "title": "다우·S&P500도 장중 조정 진입…나스닥, 올해 상승분 다 잃었다",
+   "detail": "인공지능(AI) 관련주에서 시작된 매도세가 뉴욕증시 전반을 압박하면서 다우존스30산업평균지수와... 투자 증가세가 둔화하거나 자금 조달이 어려워지면 칩 공급업체와 전문 클라우드 업체의 성장 전망도 영향을...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01180806645648016&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 17:30",
+   "published": "2026-11-21 03:51",
    "region": "KR",
-   "title": "[마감 시황] 외국인 4천억 매도 뚫고 코스피 5,137선 탈환…코스닥 3%대...",
-   "detail": "한국시간으로 19일 밤 개장하는 뉴욕증시에서 앤트로픽의 상장 첫날 주가 흐름이 국내 반도체 및 AI 밸류체인 종목들의 향방을 가를 핵심 변수로 꼽힌다. 또한 같은 날 밤 발표되는 미국의 주간 신규 실업수당...",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=281733"
+   "title": "뉴욕 증시, 기술주 투자 심리 위축 속 동반 하락세",
+   "detail": "뉴욕 증시 3대 지수는 기술주 투자 심리가 위축된 가운데 일제히 하락세를 보이고 있습니다. 미 동부... 최대 주간 하락률을 기록할 거로 예상됩니다. 전날 앤트로픽이 성공적으로 나스닥에 데뷔했지만...",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611210351240356"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 17:26",
+   "published": "2026-11-21 01:42",
    "region": "KR",
-   "title": "[오늘증시] 코스피, 외국인 매도 딛고 5100선 회복…반도체주 강세에 이...",
-   "detail": "엔비디아가 시장 기대를 웃도는 매출과 실적 전망을 제시하면서 AI 인프라 투자 확대와 관련 공급망... 간밤 뉴욕증시에서 엔비디아는 양호한 실적에도 불구하고 경영 공백 우려 등의 영향으로 2.89% 하락했다....",
-   "url": "http://www.queen.co.kr/news/articleView.html?idxno=466633"
+   "title": "[뉴욕증시 개장] 앤트로픽 10%↓·반도체지수 7%↓…나스닥 2%대 하락",
+   "detail": "미국 뉴욕증시에서 20일(현지시간) 장 초반 인공지능(AI)·반도체주 하락이 이어지며 나스닥지수가 2... 인베스팅닷컴은 금값이 주간 기준으로 8개월 만에 가장 큰 폭으로 떨어질 처지라고 전했다. 비트코인은 52주...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95009"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 10:32",
+   "published": "2026-11-21 00:18",
    "region": "KR",
-   "title": "금시세(금값) 약세",
-   "detail": "이번에는 연준의 추가 긴축 전망에 달러 강세까지 더해져 국제 금가격이 압박을 받았다. 다만 장기 국채금리 하락이 금시장의 매도세를 막지는 못했다. ■ 뉴욕증시 혼조...",
-   "url": "http://www.kjdaily.com/article.php?aid=1795051804692869227"
+   "title": "앤트로픽 상장 이틀째 9% 급락 출발…AI 투자 불안 확산",
+   "detail": "하락 전망, 2020년 이후 최장…채권 금리↓ 김연숙 특파원 = 20일(현지시간) 미국 뉴욕증시 상장 이틀 차인... 최대 주간 하락률을 기록할 것으로 예상된다. 안전자산 선호 심리가 힘을 받으면서 채권 금리는...",
+   "url": "https://www.yna.co.kr/view/AKR20261121000600072?input=1195m"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 09:54",
+   "published": "2026-11-20 23:26",
    "region": "KR",
-   "title": "[신윤우의 외환분석] 수능날 어떤 '선물' 받을까",
-   "detail": "이뤄질 전망이다. 다만, 강달러로 인한 하단 지지력이 만만치 않을 것으로 보인다. 간밤 공개된 10월... 간밤 뉴욕증시가 혼조세를 보인 가운데 기술주는 오르막을 걸었다. 다우존스30산업평균지수와 S&P500지수가 각각...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445484"
+   "title": "\"좋은 뉴스에도 매도\"…앤스로픽 상장 이틀째 글로벌 AI주 투매",
+   "detail": "사진=AFP 블룸버그에 따르면 앤스로픽 주가는 20일(현지시간) 뉴욕증시 개장 전 거래에서 한때 10% 하락했다.... 유럽 스톡스600 기술업종지수는 이날 약 4% 하락해 6년 만에 최대 주간 낙폭을 기록할 전망이다. ASML과...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04483766645647688&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 09:38",
+   "published": "2026-11-20 20:54",
    "region": "KR",
-   "title": "美 긴축 우려에도 원·달러 환율 하락…1320원대서 거래",
-   "detail": "이날 오전 6시 기준 환율은 전장 주간거래 기준가 대비 0.7원 오른 1333.7원에 거래됐다. 미국... 뉴욕증시는 혼조세로 마감했다. 다우존스30 산업평균지수는 전 거래일보다 561.25포인트(1.11%) 내린 5만198.17에...",
-   "url": "https://www.ajunews.com/view/20261119090921076"
+   "title": "뉴욕증시 프리뷰, 주가 선물 일제 하락…앤스로픽 상장에도 AI주 매도세...",
+   "detail": "전날 뉴욕 증시의 3대 지수가 모두 2% 넘게 급락한 데 이어 아시아와 유럽 증시에서도 매도세가... 최대 주간 낙폭을 기록하게 된다. 기업 실적이 전반적으로 양호한데도 매도세는 좀처럼 진정되지 않고 있다....",
+   "url": "https://www.newspim.com/news/view/20261120001066"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 09:04",
+   "published": "2026-11-20 17:18",
    "region": "KR",
-   "title": "[뉴욕마켓워치] 엔비디아 호실적도 못 살린 투심…주식·채권 혼조·달러...",
-   "detail": "하지만 국제유가가 공급 과잉 전망 속에 하락하고 뉴욕증시도 기력이 강하지 않은 모습을 보이자 흐름이... 이날 미 에너지정보청(EIA)에 따르면 지난 13일로 끝난 주간의 미국 원유 재고는 전주 대비 338만배럴...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445463"
+   "title": "코스피, 앤트로픽 상장 흥행에도 5%대 급락...10개월 만 최저",
+   "detail": "원·달러 환율은 전 거래일(1476.4원)보다 19.1원 오른 1495.5원에 주간 거래를 마감했다. /뉴시스 20일... 이번 하락장은 전날 미국 뉴욕증시에서 앤트로픽(Anthropic)의 상장 소식에도 불구하고 AI 섹터 전반이...",
+   "url": "https://futurechosun.com/?p=167285"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 08:54",
+   "published": "2026-11-20 16:18",
    "region": "KR",
-   "title": "[모닝 리포트] 달러/원 환율 1330원대 중반 등락 전망…수출 네고가 강달...",
-   "detail": "움직일 전망이다. 반도체 수출 호조로 달러 매도 물량이 꾸준히 유입되면서 환율 상승폭을 제한할 것으로... 안전자산 선호심리가 강화되는 가운데 뉴욕증시의 부진이 국내 증시와 외국인 자금 흐름에 영향을 미칠...",
-   "url": "https://www.newspim.com/news/view/20261119000135"
+   "title": "더 짙은 '검은 금요일' … '앤트로픽·AMD 더블 강타'에 코스피 5%대 폭락...",
+   "detail": "간밤 뉴욕증시에서 AI 챗봇 '클로드' 개발사 앤트로픽의 역대 최대 규모 상장(IPO) 직후 기존 AI·기술주... (트랜드포스 전망)까지 겹쳐 국내 반도체 투심을 얼어붙게 했다. 유가증권시장 시가총액 상위 종목들은...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/20/2026112050251.html"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 08:38",
+   "published": "2026-11-20 15:37",
    "region": "KR",
-   "title": "[해외시황] 뉴욕증시, 엔비디아 호실적에도 '혼조'…나스닥 0.42%↑",
-   "detail": "뉴욕증시가 엔비디아의 호실적에도 인공지능(AI) 투자에 대한 우려와 미국 연방준비제도(Fed·연준)의... 끝난 주간 원유 재고는 전주 대비 340만배럴 증가한 4억1780만배럴을 기록했다. 이는 시장 전망치인...",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=755570"
+   "title": "원·달러 환율, 6.2원 오른 1336.2원",
+   "detail": "미 달러화 대비 원화 환율(원·달러 환율)은 20일 오후 3시 30분 1336.2원으로 주간 거래를 마쳤다. 직전... 19일(현지 시각) 뉴욕 증시에서도 스탠더드앤드푸어스(S&P)500 지수는 2.02%, 나스닥 종합지수는 2.25...",
+   "url": "https://biz.chosun.com/policy/policy_sub/2026/11/20/KPN2KONFS5F2LE323S7ENAX4IM/?utm_source=naver&utm_medium=original&utm_campaign=biz"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 08:34",
+   "published": "2026-11-20 10:59",
    "region": "KR",
-   "title": "국채선물, 유가 하락 속 상승…10년물 10틱↑",
-   "detail": "국채선물은 야간 거래에서 국제유가가 공급 과잉 전망 속에 하락한 가운데 상승했다. 19일... 하지만 유가가 하락하고 뉴욕증시도 기력이 강하지 않은 모습을 보이자 흐름이 반전됐다. 월러 이사는 CNBC와...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445456"
+   "title": "[글로벌 마켓 리포트 11월 20일]",
+   "detail": "19일(현지시간) 미국 뉴욕증시 주요 지수는 급락했다. 다우존스30산업평균지수는 전장보다 1101.11포인트... 주간 기준으로는 2025년 4월 이후 가장 큰 낙폭을 기록할 것으로 예상된다. 앤스로픽의 최고경영자(CEO)...",
+   "url": "https://www.newspim.com/news/view/20261120000409"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 08:24",
+   "published": "2026-11-20 10:10",
    "region": "KR",
-   "title": "[굿모닝! 글로벌 뉴욕증시] AI 실적은 좋은데 주가는 왜?…엔비디아 2.9...",
-   "detail": "앤스로픽 IPO는 AI 기업에 대한 투자 수요를 확인할 수 있는 계기가 될 전망이지만 기존 반도체와 클라우드 기업에 대한 자금조달·수익성 우려까지 해소할 수 있을지는 미지수다. 이날 뉴욕증시는 엔비디아의...",
-   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=305362"
+   "title": "금시세(금값) 급락",
+   "detail": "인상 전망 -뉴욕증시 2%대 급락에도 금 동반 약세…단기 전망 3천500달러까지 국내외... 14일로 끝난 주간 신규 실업보험 청구 건수는 20만3천건으로 전주보다 1천건 늘었다....",
+   "url": "http://www.kjdaily.com/article.php?aid=1795136886692968227"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 07:30",
+   "published": "2026-11-20 09:42",
    "region": "KR",
-   "title": "[넥스트-샷] 호실적에도 매도, 공모가는 상향···'83달러' 앤트로픽 상...",
-   "detail": "18일 뉴욕증시는 엔비디아가 2.89% 하락한 가운데 다우와 S&P500이 동반 하락했습니다. 나스닥은 닷새 만에... 4분기 매출 전망도 시장 예상을 웃도는 1300억달러(±3%)로 제시해 AI 반도체 수요가 여전히 강하다는 점을...",
-   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=261358"
+   "title": "환율 1336원대로 반등…미국 증시 부진에 안전자산 선호 현상",
+   "detail": "원·달러 환율 1336.20원…전일 종가대비 3.20↑ 미국 증시 부진에 금리 인상 전망 겹쳐 원화는 수출 네고... 있고, 뉴욕 증시도 조정되면서 안전자산 선호가 이어졌다\"며 달러 강세 배경을 설명했다. 달러 강세 압력이...",
+   "url": "https://www.news2day.co.kr/article/20261120500046"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
    "query_id": "nv-us",
    "date": null,
-   "published": "2026-11-19 07:26",
+   "published": "2026-11-20 09:32",
    "region": "KR",
-   "title": "[KFT 모닝 브리프] 2026.11.19 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-   "detail": "2026.11.19(목) 코스피가 18일 기관 순매수에 힘입어 하루 만에 5000선을 되찾았지만, 간밤 뉴욕증시에서는... ③ [금융·시장] 환율 1333원 마감…장중 1320원대 진입 원/달러 환율이 18일 하락해 1333.0원에 주간거래를...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202611190712172370141825007d_18"
+   "title": "[잠든 사이 월가] 다우 1,101포인트·엔비디아 3.3% 하락…상장 첫날 앤...",
+   "detail": "19일(현지시간) 뉴욕증시는 사상 최대 기업공개(IPO)인 앤트로픽 상장이 인공지능(AI) 투자 심리를... ■ 월마트, 실적 전망 또 올렸다 월마트는 3분기 조정 주당순이익(EPS) 0.65달러, 매출 1888억 4000만 달러(약...",
+   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38570"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-us",
+   "query_id": "nv-fomc",
    "date": null,
-   "published": "2026-11-19 06:40",
+   "published": "2026-11-21 06:54",
    "region": "KR",
-   "title": "뉴욕증시, 엔비디아 호실적에도 혼조⋯다우 1.11%↓[종합]",
-   "detail": "이투데이=고대영 기자 | 뉴욕증시는 엔비디아 호실적에도 혼조 마감했다. 18일(현지시간)... 것”이라고 전망했다. 다만 “지금처럼 AI 인프라 구축과 AI 관련 지출이 확대되는 환경에선 기업들의 이익 증가세가...",
-   "url": "https://www.etoday.co.kr/news/view/2650057"
+   "title": "금리에 눌리고 AI에 밀리고…비트코인, 5만 달러 추락 경고등",
+   "detail": "및 현물 거래량이 늘어나는지 확인이 필요하다\"고 밝혔다. 그러면서 \"다음 달 8~9일 FOMC를 앞두고 금리 인상 폭에 대한 기대 변화가 미국 국채금리와 비트코인 가격에 어떻게 반영되는지도 살펴야 한다\"고 덧붙였다",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026112011255017526"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 16:18",
+   "region": "KR",
+   "title": "[국제금융 브리핑] 미중러 정상 ‘평화’ 공동성명…S&P500 2% 급락·12월...",
+   "detail": "시장의 관심은 12월 연방공개시장위원회(FOMC)로 이동할 수 있으나 최근 연준 인사 다수가 인플레이션... 내년 대선을 앞두고 국민연합의 르펜 대표가 EU 분담금 삭감을 공약해 회원국 간 긴장이 커질 수 있지만, 대선...",
+   "url": "https://www.tokenpost.kr/news/economy/441435"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 14:48",
+   "region": "KR",
+   "title": "앤트로픽 역대급 IPO의 두 얼굴…반도체 산업엔 호재, 주가엔 부담인 까...",
+   "detail": "앤트로픽 상장을 앞두고 이어진 자금 이동이 일단락되면 국내 반도체주에 대한 외국인 매도 압력이... 11월 18일 공개된 연준의 10월 연방공개시장위원회(FOMC) 정례회의 의사록에 따르면 거의 모든 참석자가 향후...",
+   "url": "https://ilyo.co.kr/?ac=article_view&entry_id=513728"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 13:58",
+   "region": "KR",
+   "title": "달러지수 103.9, 19개월 고점 부근…8거래일 연속 상승",
+   "detail": "달러는 4주 연속 상승을 앞두고 있으며, 인공지능(AI) 투자 열기에 대한 불안이 커지면서 투자자들이... 연준은 10월 27~28일 연방공개시장위원회(FOMC)에서 기준금리 목표 범위를 연 3.75~4.00%로 유지했다. 당시...",
+   "url": "https://www.tokenpost.kr/news/economy/441364"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 13:38",
+   "region": "KR",
+   "title": "미국 연준 고위인사 \"AI로 경제 과열...모든 선택지 가능\"",
+   "detail": "내달 연방공개시장위원회(FOMC) 회의를 앞두고 기준금리 인상과 관련해 모든 가능성을 열어둬야 한다는 의견도 나왔습니다. 블룸버그통신 등에 따르면 오스탄 굴스비 시카고 연방준비은행(연은) 총재는 현지 시간 19일...",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611201338178460"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 13:26",
+   "region": "KR",
+   "title": "[금리·물가 예측] 월러 ‘50bp’ 던졌지만 외면…12월 25bp 인상 93%",
+   "detail": "오늘의 확률 온도계연준이 12월 FOMC에서 기준금리를 0.25%p 올릴까현재 확률 93% · 전일 대비 +1%p12월 25bp... 연방공개시장위원회(FOMC) 의사록이 겹쳤지만, 12월 0.25%p(25bp) 인상은 사실상 가격에 반영됐다. 시장의...",
+   "url": "http://coinreaders.com/271929"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 11:24",
+   "region": "KR",
+   "title": "[다음 주 경제일정] 한국은행 기준금리 인상 가능성…'추수감사절' 美 ...",
+   "detail": "미국 연방준비제도가 12월 FOMC 회의를 2주 앞두고 최신 경기동향 보고서, 베이지북을 공개합니다. 우리 시간으로는 목요일 새벽 4시입니다. 시장은 다음 달 기준금리 인상을 기정사실로 보고 있기 때문에 인플레이션 관련...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000347783?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 11:02",
+   "region": "KR",
+   "title": "'빅스텝' 다시 살아나나? 美연준서 잇따라 '경고' 발언",
+   "detail": "미국 연방준비제도(Fed·연준) 고위 인사들이 잇따라 내달 연방공개시장위원회(FOMC) 회의를 앞두고 경고 발언을 냈습니다. 19일(현지시간) 블룸버그·로이터 통신에 따르면 오스탄 굴스비 시카고 연방준비은행(연은)...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000347789?division=NAVER"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 09:48",
+   "region": "KR",
+   "title": "앤트로픽 기대감에 올랐던 비트코인, 6만2000달러 하회⋯\"투심 극히 저조...",
+   "detail": "앤트로픽 공모를 앞두고 일부 자금이 가상자산 시장을 떠났다는 해석과 미국의 추가 금리 인상 우려가... 미국 연방준비제도(Fed·연준)가 18일 공개한 10월 연방공개시장위원회(FOMC) 의사록에 따르면 거의 모든...",
+   "url": "https://www.etoday.co.kr/news/view/2650754"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 09:46",
+   "region": "KR",
+   "title": "美연준 고위인사 \"AI로 경제 과열…모든 선택지 가능\"",
+   "detail": "내달 연방공개시장위원회(FOMC) 회의를 앞두고 기준금리 인상과 관련해 모든 가능성을 열어둬야 한다는 의견도 나왔다. 19일(현지시간) 블룸버그·로이터 통신에 따르면 오스탄 굴스비 시카고 연방준비은행(연은) 총재는...",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=news_board&wr_id=57591"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 09:40",
+   "region": "KR",
+   "title": "中 반도체 장비 싱가포르 수입 4배 급증…우회 조달 의혹",
+   "detail": "10월 FOMC 의사록에서도 위원 2명은 인플레이션 지표가 악화하면 빅스텝 가능성을 열어둬야 한다는... 운용사 한국투자파트너스는 펀드 만기(2030년 4월)를 앞두고 내년부터 순차 매각에 나설 것으로 전망된다....",
+   "url": "https://www.sedaily.com/article/20116794?ref=naver"
   },
   {
    "src": "네이버뉴스",
@@ -2375,6 +2449,17 @@
    "title": "[박정식의 국내 주식시황] 앤트로픽 IPO 흥행에도 美 기술주 급락…코스...",
    "detail": "시장에서는 12월 미국 연방공개시장위원회(FOMC) 회의를 앞두고 당분간 관망세가 이어질 가능성이 있다. 미국의 물가와 금리 불확실성이 남아 있는 만큼 반도체와 AI 관련주의 강한 반등보다는 지수의 바닥 확인 과정이...",
    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=305454"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
+   "published": "2026-11-20 06:48",
+   "region": "KR",
+   "title": "AI주 팔아 앤트로픽? 뉴욕증시 돈이 말랐다",
+   "detail": "또 다음 주에 PCE 지수, GDP를 앞두고 있는 상황에서 위험자산 비중을 줄이려는 움직임이 겹친 건데, 중요한... FOMC 의사록도 금리 인상 얘기하는 상황에서 기술주를 한번 덜어내고 가는 측면의 흐름. 오늘 장 초반 분위기는...",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611200648426890"
   },
   {
    "src": "네이버뉴스",
@@ -2491,6 +2576,17 @@
    "kind": "news",
    "query_id": "nv-fomc",
    "date": null,
+   "published": "2026-11-19 15:26",
+   "region": "KR",
+   "title": "143조원 '메가 IPO'…코스피 반등 공식 통할까",
+   "detail": "초대형 청약을 앞두고 발생했던 현금화 수요가 상장을 시작으로 해소되면서 증시 전반의 유동성과... 연방공개시장위원회(FOMC)와 한국은행의 기준금리 인상, SK하이닉스의 ADR(미국주식예탁증서) 발행 등 악재가...",
+   "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611190055&t=NNv"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-fomc",
+   "date": null,
    "published": "2026-11-19 15:11",
    "region": "KR",
    "title": "[오후장 체크포인트] 호실적도 못살린 삼전닉스 \"바닥 조금씩 다져가는...",
@@ -2522,134 +2618,13 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-fomc",
+   "query_id": "nv-event",
    "date": null,
-   "published": "2026-11-19 10:53",
+   "published": "2026-11-20 10:40",
    "region": "KR",
-   "title": "코스피, 앤트로픽 상장 앞두고 '출렁'…다시 5000선 아래로",
-   "detail": "월러 이사는 지난 10일에도 \"12월 연방공개시장위원회(FOMC) 회의에서 50bp 인상을 고려해야 한다\"고 언급한 바 있다. 다만 국제유가가 원유 재고 증가 등의 영향으로 하락세를 이어갈 경우 연준이 당장 빅스텝에...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611190041&t=NN"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:52",
-   "region": "KR",
-   "title": "美 추가 인상 경고에도 10년물 금리는 하락…국고채 시장 엇갈린 신호",
-   "detail": "19일 금융투자업계에 따르면 연준이 18일(현지시간) 공개한 10월 27~28일 연방공개시장위원회(FOMC)... 특히 오는 26일 한국은행 금융통화위원회를 앞두고 국내 통화정책에 대한 기대가 외국인 국채선물 포지션 조정과...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732256"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:41",
-   "region": "KR",
-   "title": "코스피 하루 만에 다시 5000선 아래로…외국인 5거래일 연속 순매도",
-   "detail": "월러 이사는 지난 10일에도 \"12월 연방공개시장위원회(FOMC) 회의에서 50bp 인상을 고려해야 한다\"고... 앤트로픽 나스닥 상장 앞두고 수급 불안 확대 현지시간 19일 나스닥 상장을 앞두고 있는 앤트로픽의 공모가는...",
-   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000084406"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:38",
-   "region": "KR",
-   "title": "코스피, 5020선 등락···엔비디아 호실적에도 AI 투자 우려 지속",
-   "detail": "시즌을 앞두고 실적과 전망에 대한 기대가 반영되며 타깃이 4.01% 상승했다. 연방준비제도(Fed·연준)의 통화정책 불확실성도 투자심리를 압박했다. 이날 공개된 10월 연방공개시장위원회(FOMC) 의사록에는...",
-   "url": "https://www.smartbizn.com/news/articleView.html?idxno=159931"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:37",
-   "region": "KR",
-   "title": "코스피, 앤트로픽 상장 앞두고 1%대↓…상승출발후 하락전환(종합)",
-   "detail": "월러 이사는 지난 10일에도 \"12월 연방공개시장위원회(FOMC) 회의에서 50bp 인상을 고려해야 한다\"고... 현지시간 19일 나스닥 상장을 앞두고 있는 앤트로픽의 공모가는 83달러로 확정됐다. 이에 따라 앤트로픽이...",
-   "url": "https://www.yna.co.kr/view/AKR20261119063200008?input=1195m"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:34",
-   "region": "KR",
-   "title": "상승 출발한 코스피, 반도체주 급락에 다시 5000선 아래로 [마켓시그널...",
-   "detail": "연준이 공개한 10월 연방공개시장위원회(FOMC) 의사록에서는 대다수 위원이 물가 안정을 위해 추가 금리... 대규모 IPO를 앞두고 투자자들이 자금 확보를 위해 국내 주식을 매도했을 가능성이 제기되는 만큼 상장...",
-   "url": "https://www.sedaily.com/article/20116317?ref=naver"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 10:22",
-   "region": "KR",
-   "title": "美 연준 매파 기조에 비트코인 '흔들'…ETF 자금 유출도 부담",
-   "detail": "ETF 자금 유출, 박스권 이탈 압력이라는 세 가지 부담을 동시에 안게 됐다. 향후 시장은 12월 FOMC를 앞두고 금리 경로에 대한 기대 변화와 현물 ETF 자금 흐름이 비트코인 가격의 방향성을 좌우할 가능성이 커졌다.",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=716601"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 09:38",
-   "region": "KR",
-   "title": "[뉴욕 브리핑] 엔비디아 호실적에도 美증시 약세…나스닥만 0.4% 상승",
-   "detail": "◇연준, 10월 FOMC서 추가 금리인상 공감대 미국 연방준비제도(연준)가 18일(현지시간) 공개한 10월27~28일... 하락 압력을 더했다. -연말 쇼핑 시즌을 앞두고 양호한 실적과 전망을 제시한 타깃은 4.01% 올랐다.",
-   "url": "https://news.dealsitetv.com/articles/178841"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 09:34",
-   "region": "KR",
-   "title": "[잠든 사이 월가] 엔비디아, 실적 좋은데 주가는 5일째 하락",
-   "detail": "장 마감 뒤에는 앤트로픽이 19일 나스닥 상장을 앞두고 공모가를 희망 범위보다 높은 83달러로 정했다.... (연공위·FOMC)에서 0.5%포인트 금리 인상이 필요할 수 있다고 말했고, 같은 날 공개된 10월...",
-   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38553"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 09:34",
-   "region": "KR",
-   "title": "엔비디아 '깜짝 실적'도 못 달랬다…뉴욕증시 혼조, 다우 1.11%↓·나스닥...",
-   "detail": "연말 쇼핑 시즌을 앞두고 긍정적인 실적과 전망을 제시한 타깃은 4.01% 상승했다. 연방준비제도의 10월 연방공개시장위원회(FOMC) 의사록도 투자심리에 부담을 줬다. 의사록에 따르면 다수 연준 위원은 인플레이션...",
-   "url": "https://www.thepublic.kr/news/articleView.html?idxno=327448"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 09:24",
-   "region": "KR",
-   "title": "[글로벌 마켓 리포트 11월 19일]",
-   "detail": "연방공개시장위원회(FOMC) 의사록에서 확인된 매파 기조가 투자 심리를 눌렀다. 이날 공개된 10월 FOMC... 테이크투인터랙티브는 '그랜드 테프트 오토 6' 출시를 앞두고 호평이 이어지며 상승했다. 월마트 실적은...",
-   "url": "https://www.newspim.com/news/view/20261119000220"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-fomc",
-   "date": null,
-   "published": "2026-11-19 09:14",
-   "region": "KR",
-   "title": "“코스피, 美 긴축 우려에 하락 출발 전망…외국인 매도 완화 기대”<키...",
-   "detail": "엔비디아 호실적에도 미국 증시 혼조세 마감 앤트로픽 IPO 앞두고 AI주 투심 회복 가능성 주목 외국인... 크리스토퍼 월러 연준 이사의 12월 기준금리 0.5%포인트 인상 주장과 10월 연방공개시장위원회(FOMC) 의사록에서...",
-   "url": "https://www.news2day.co.kr/article/20261119500079"
+   "title": "와이드폴드 '돌풍' 주역 최원준, 삼성폰 새 사령탑…AI·폴더블 이끈다",
+   "detail": "갤럭시 AI와 폴더블폰 등 모바일 사업의 성과를 바탕으로 경영 능력을 인정받아 DX부문 전체를 총괄하는 역할에 집중하게 됐다는 해석이 나온다. 이번 인사로 갤럭시 신제품 공개 행사인 '갤럭시 언팩'에도 변화가...",
+   "url": "https://www.news1.kr/it-science/mobile/6360557"
   },
   {
    "src": "네이버뉴스",
@@ -2705,6 +2680,50 @@
    "title": "삼성전자, CES 2027 최고 혁신상 4개 포함 19개 수상…'폴드8 울트라' 첫...",
    "detail": "추천하는 'AI 맞춤+'와 세탁·건조가 끝나면 문이 자동으로 열려 내부를 쾌적하게 유지하는 '오토 오픈 도어+' 기능도 갖췄다. 삼성전자는 수상 제품을 내년 CES 행사 기간 전시관에서 공개할 예정이다. / 저작권자...",
    "url": "https://www.econovill.com/news/articleView.html?idxno=757286"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-11-20 21:16",
+   "region": "KR",
+   "title": "[지스타 2026] 게임 시연부터 코스프레까지…이틀째 체험 열기 이어져",
+   "detail": "게임 개발자와 콘텐츠 창작자들이 참여한 국제게임콘퍼런스 ‘G-CON 2026’도 이날 일정을 마쳤다. ‘블루... 스마일게이트 희망스튜디오와 한국게임산업협회가 개최한 ‘플레이 펀앤굿 포럼’에서는 게임을 활용한...",
+   "url": "https://sateconomy.co.kr/news/view/1065605767429547"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-11-20 17:28",
+   "region": "KR",
+   "title": "한·태 게임협회 3곳, 국내 최초 게임 개발자 콘퍼런스 ‘KGC’ 재개 추...",
+   "detail": "KGC는 한국게임개발자협회가 개최해 온 국내 최초의 게임 개발자 콘퍼런스다. 세 협회는 프로그램을 공동 기획하고 국내외 연사 섭외와 국제 세션 구성, 행사 운영에 협력한다. 한국게임개발자협회는 행사 기획과...",
+   "url": "https://www.gameshot.net/common/con_view.php?code=GA6b0002f46c9cd"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-11-20 16:58",
+   "region": "KR",
+   "title": "[지스타 2026] \"대형사 공백 안 느껴져요\"…외연 확장 실험 통했나",
+   "detail": "국제 게임 콘퍼런스 'G-CON 2026' 역시 게임 개발자뿐만 아니라 장항준·이병헌 영화감독과 이동건 웹툰 작가... 올해로 22주년을 맞이한 2026 지스타는 오는 22일까지 나흘간 부산 벡스코에서 개최된다. 41개국, 1237개사가...",
+   "url": "https://news.dealsitetv.com/articles/178951"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-devconf",
+   "date": null,
+   "published": "2026-11-20 11:34",
+   "region": "KR",
+   "title": "지스타 2026, 게임 넘어 AI·모빌리티로 확장…산업간 경계 허문다",
+   "detail": "파이널'을 개최한다. 자동차 브랜드 경험을 게임으로 확장하면서 잠재 고객과의 접점을 넓히려는... 국제 게임 콘퍼런스 'G-CON'에도 장항준·이병헌·박인제 감독 등 영화계 인사들이 참여했다. 게임 개발자들과 함께...",
+   "url": "http://www.seouleconews.com/news/articleView.html?idxno=95156"
   },
   {
    "src": "네이버뉴스",
@@ -2995,46 +3014,35 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-devconf",
+   "query_id": "nv-keynote",
    "date": null,
-   "published": "2026-11-19 10:24",
+   "published": "2026-11-20 18:56",
    "region": "KR",
-   "title": "[지스타 2026] 게임 팬들 축제 개막…나흘간 부산 달군다",
-   "detail": "올해 지스타는 '시야를 확장하라(Expand your Horizons)'를 슬로건으로 게임 전시와 비즈니스 상담, 콘퍼런스... 인디게임 개발자 축제인 '지스타 인디 쇼케이스 2.0: 갤럭시'는 250부스 규모로 열린다. 총 28개국 108개...",
-   "url": "https://theviewers.co.kr/View.aspx?No=4319890"
+   "title": "[지스타 2026] 스마일게이트, 유저가 체감하는 기부…미덕 아닌 전략",
+   "detail": "진행한 키노트와 함께 호요버스, 스마일게이트, 게임 이용자, 모스픽의 발표가 이어졌다. 경민규... 김 팀장은 \"지금까지 소개했던 프로젝트 외에도 같은 포맷을 다른 프로젝트에 적용할 예정\"이라며 \"꾸준함은 미덕이...",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1427581"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-devconf",
+   "query_id": "nv-keynote",
    "date": null,
-   "published": "2026-11-19 10:11",
+   "published": "2026-11-20 17:50",
    "region": "KR",
-   "title": "부산시, 지스타 2026 개막…41개국 1,237개사 부산 집결",
-   "detail": "분홍색 배경에 게임 캐릭터와 행사 로고를 배치하고 개최 일정과 장소를 안내하고 있다. (자료 제공/부산시)... 개발자들의 새로운 게임 콘텐츠도 접할 수 있다. 게임산업의 지식과 경험을 공유하는 국제 게임 콘퍼런스도...",
-   "url": "http://www.newstown.co.kr/news/articleView.html?idxno=722502"
+   "title": "이진희 CJ올리브영 총괄 \"쇼핑 서비스에 AI 활용\"…첫 테크 콘퍼런스 진...",
+   "detail": "연결할 예정이다. ◆옴니채널 인프라 구축…오늘드림 배송·픽업부터 전자라벨·스킨스캔까지 이번 콘퍼런스에서 올리브영은 3대 핵심 글로벌 커머스 트렌드를 발표했다. ▲오프라인 공간을 즐기는 '리테일테인먼트...",
+   "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=370182"
   },
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-devconf",
+   "query_id": "nv-keynote",
    "date": null,
-   "published": "2026-11-19 10:05",
+   "published": "2026-11-20 11:26",
    "region": "KR",
-   "title": "게임과 AI 융합 한눈에…국내 최대 게임쇼 지스타 오늘 개막",
-   "detail": "행사를 개최합니다. 문화체육관광부 산하 한국콘텐츠진흥원은 현장에서 '게임문화축제'와 '콘솔게임... 메인 콘퍼런스 G-CON이 벡스코 오디토리움에서 열립니다. G-CON에서는 국내외 유명 게임 개발자와 콘텐츠...",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008853285&plink=ORI&cooper=NAVER"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-devconf",
-   "date": null,
-   "published": "2026-11-19 09:50",
-   "region": "KR",
-   "title": "[지스타 2026] 게임 넘어 AI·모빌리티까지…'지스타 2026' 개막",
-   "detail": "현대자동차는 특별 전시 부스를 운영하고, '2026 현대 N 버추얼컵 그랜드 파이널'을 개최한다. 게임과 웹툰... 게임 개발자 콘퍼런스 '지콘 2026'은 지난해에 이어 내러티브를 주제로 게임 속 이야기 구성과 이용자 선택의...",
-   "url": "https://www.ddaily.co.kr/page/view/2026111909363928303"
+   "title": "CJ올리브영, 첫 테크 콘퍼런스서 글로벌·AI 전략 공개",
+   "detail": "올리브영 테크콘퍼런스에서 이진희 플랫폼사업총괄이 키노트 연사로 발표를 진행하고 있다. CJ올리브영이... 올리브영은 상품 정보와 리뷰, 재고, 주문 데이터를 AI가 이해하고 활용할 수 있도록 정비할 예정이다....",
+   "url": "http://www.ktnews.com/news/articleView.html?idxno=150352"
   },
   {
    "src": "네이버뉴스",
@@ -3076,6 +3084,17 @@
    "date": null,
    "published": "2026-11-20 06:00",
    "region": "KR",
+   "title": "'상품 탐색부터 장바구니까지 AI가 척척'…CJ올리브영, 에이전틱 커머스...",
+   "detail": "플랫폼사업총괄이 키노트 연사로 발표를 진행하는 모습. [사진=CJ올리브영] 이진희 CJ올리브영... 강화할 예정이다. 운영 현장에서도 AI 활용 범위를 넓히고 있다. 상품 발주 자동화와 AI 기반 진열 상태·재고 파악 등을...",
+   "url": "https://www.newspim.com/news/view/20261119001280"
+  },
+  {
+   "src": "네이버뉴스",
+   "kind": "news",
+   "query_id": "nv-keynote",
+   "date": null,
+   "published": "2026-11-20 06:00",
+   "region": "KR",
    "title": "CJ올리브영, AI·글로벌 플랫폼으로 옴니채널 경쟁력 높인다",
    "detail": "미국에서도 현지 사업 속도에 맞춰 국내와 같은 옴니채널 인프라를 갖출 예정이다. AI가 상품 탐색과 비교... 19일 서울 성수동에서 열린 올리브영 테크콘퍼런스에서 이진희 플랫폼사업총괄이 키노트 연사로 발표를...",
    "url": "https://www.seoultimes.news/news/article.html?no=2000102437"
@@ -3090,17 +3109,6 @@
    "title": "K-뷰티에 AI테크를…올리브영의 플랫폼 진화",
    "detail": "올리브영 테크콘퍼런스 키노트 발표 현장. 연사는 이진희 플랫폼사업총괄. 사진/CJ올리브영 20일 업계에... 이를 위해 상품 정보와 리뷰, 재고, 주문 등 분산된 데이터를 AI가 활용할 수 있는 형태로 정비할 예정이다. 매장...",
    "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=366349"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-keynote",
-   "date": null,
-   "published": "2026-11-20 06:00",
-   "region": "KR",
-   "title": "'상품 탐색부터 장바구니까지 AI가 척척'…CJ올리브영, 에이전틱 커머스...",
-   "detail": "플랫폼사업총괄이 키노트 연사로 발표를 진행하는 모습. [사진=CJ올리브영] 이진희 CJ올리브영... 강화할 예정이다. 운영 현장에서도 AI 활용 범위를 넓히고 있다. 상품 발주 자동화와 AI 기반 진열 상태·재고 파악 등을...",
-   "url": "https://www.newspim.com/news/view/20261119001280"
   },
   {
    "src": "네이버뉴스",
@@ -3204,101 +3212,13 @@
   {
    "src": "네이버뉴스",
    "kind": "news",
-   "query_id": "nv-keynote",
-   "date": null,
-   "published": "2026-11-13 18:36",
-   "region": "KR",
-   "title": "한국방송기술인연합회, 11월 19일 코엑스에서 BroadcastTechCON 2026 개최",
-   "detail": "‘BroadcastTechCON 2026’는 △애플리케이션으로 확장되는 방송 서비스의 진화 △키노트: 지상파 UHD... 예정이다. 이어 박기주 정보통신기획평가원(IITP) PM이 ‘방송 관련 정부 R&D 계획’에 대해 발표한다. 세...",
-   "url": "http://journal.kobeta.com/?post_type=post&p=64446"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-keynote",
-   "date": null,
-   "published": "2026-11-13 15:10",
-   "region": "KR",
-   "title": "AI로 일하는 엔지니어 한자리에…'나는 엔지니어다 2026' 19일 코엑스서...",
-   "detail": "행사는 키노트를 시작으로 4개 트랙, 부스 전시, 핸즈온 세션으로 구성된다. 행사 전체를 관통하는 질문은 \"4개 트랙, 하나의 질문 — 무엇이 실제로 작동하는가\"다. 발표 트랙 및 참여 기업 트랙 1은 'AI가 연결하고...",
-   "url": "https://www.hellot.net/news/article.html?no=116288"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-keynote",
-   "date": null,
-   "published": "2026-11-13 11:40",
-   "region": "KR",
-   "title": "뤼튼, 지스타 2026 메인 스폰서… 200부스 ‘크랙’ 전시관 연다",
-   "detail": "40m 파노라마 LED·체험존… 스탬프 이벤트로 굿즈 증정 이 세영 대표·이동재 CPO 키노트… G-CON 오프닝도... 발표한다. 김 실장은 크랙 사례를 중심으로 AI가 콘텐츠 생산·소비 방식을 어떻게 바꾸는지 설명할 예정이다....",
-   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611131129249860937"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-keynote",
-   "date": null,
-   "published": "2026-11-13 09:40",
-   "region": "KR",
-   "title": "뤼튼, 지스타 2026 메인 스폰서 참가…AI 콘텐츠 창작 미래 선보인다",
-   "detail": "대규모 전시공간 마련…AI 창작 플랫폼 '크랙' 체험 QWER 미니 콘서트·경영진 키노트 발표 등 다양한 행사... 선보일 예정이다. 전시공간에는 AI 콘텐츠 플랫폼 '크랙'의 인기 작품을 소개하는 '명예의 전당'을 비롯해...",
-   "url": "https://news.tf.co.kr/read/economy/2388343.htm"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
    "query_id": "nv-unpacked",
    "date": null,
-   "published": "2026-11-13 15:55",
+   "published": "2026-11-20 10:12",
    "region": "KR",
-   "title": "[TOP's Pick] [전자·IT] 삼성전자, 제미나이 탑재한 '인텔리전트 아이웨...",
-   "detail": "지난 5월 구글 I/O와 7월 갤럭시 언팩에서 공개한 4종을 포함해 젠틀몬스터 16종과 워비파커 14종 등 총... 선보일 예정. 행사에는 인기 버추얼 아이돌 그룹 ‘이세계아이돌’과 ‘이브닛(IVNIT)’을 비롯해 총 28명의...",
-   "url": "https://www.topdaily.kr/articles/112909"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-unpacked",
-   "date": null,
-   "published": "2026-11-13 11:36",
-   "region": "KR",
-   "title": "삼성전자, 'AI 안경' 전체 라인업 공개…12월 10일 국내 출시",
-   "detail": "앞서 지난 5월 구글 I/O, 7월 갤럭시 언팩 행사에서 4종이 공개된 바 있다. 이번에 공개된 제품은 젠틀몬스터... 출시할 예정이다. 젠틀몬스터 컬렉션은 6가지 디자인을 기반으로 블랙, 그레이, 다크레드 등 프레임 색상을...",
-   "url": "https://www.koit.co.kr/news/articleView.html?idxno=209893"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-unpacked",
-   "date": null,
-   "published": "2026-11-13 09:46",
-   "region": "KR",
-   "title": "삼성 인공지능 안경, 젠틀몬스터와 워비파커 디자인의 완벽한 만남",
-   "detail": "뉴욕에서 열린 발표 행사에서 삼성전자는 젠틀몬스터와 워비파커의 독창적인 디자인을 바탕으로 한 총 30종의 인텔리전트 아이웨어를 공개했다. 구글의 첨단 AI 기술인 제미나이를 탑재하여 실시간 번역, 길 안내, 회의...",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=885374"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-unpacked",
-   "date": null,
-   "published": "2026-11-13 09:44",
-   "region": "KR",
-   "title": "'AI 안경 시험 논란' 속 삼성전자, 30종 라인업 공개…제미나이와 함께...",
-   "detail": "공개했다. 삼성전자는 현지시간 12일 미국 뉴욕에서 행사를 열고, 지난 5월 구글 I/O와 7월 갤럭시 언팩에서... 미국에서는 젠틀몬스터와 워비파커 전체 라인업을 선보이며, 국내에는 젠틀몬스터 컬렉션이 출시될 예정이...",
-   "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=194592"
-  },
-  {
-   "src": "네이버뉴스",
-   "kind": "news",
-   "query_id": "nv-unpacked",
-   "date": null,
-   "published": "2026-11-13 09:28",
-   "region": "KR",
-   "title": "삼성전자·최종현학술원, 구글-젠틀몬스터-워비파커와 '인텔리전트 아이...",
-   "detail": "앞서 지난 5월 구글 I/O와 7월 갤럭시 언팩에서 공개한 4종을 포함해 젠틀몬스터 16종과 워비파커 14종 등 총... 출시할 예정이다. 젠틀몬스터와 워비파커는 이달 12일부터 공식 온라인 채널을 통해 사전판매를 시작했으며...",
-   "url": "http://www.wsobi.com/news/articleView.html?idxno=321680"
+   "title": "삼성 DX '분업'… 최원준 갤럭시 새 수장, 노태문은 로봇 집중",
+   "detail": "올해 2월 미국 샌프란시스코에서 열린 '갤럭시 언팩 2026'에서 행사를 마무리하는 마지막 발표자로 최... 집중할 예정이다. 최우선 과제는 DX부문의 실적 반등이다. 메모리 가격 상승으로 스마트폰 원가 부담이 커진...",
+   "url": "https://www.newspim.com/news/view/20261120000346"
   }
  ]
 }
