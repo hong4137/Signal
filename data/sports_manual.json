@@ -1,94 +1,111 @@
 {
- "_note": "KBO·LCK·V리그 반자동 칸 — 공식 사이트 자동 수집이 막혀 있어(KBO robots·약관 금지, KOVO user-api robots 'Disallow: /', LCK 비공식 API) 편집 루틴이 보도로 확정된 일정만 넣는다. verified=true 만 캘린더에 들어간다. pick=true 면 '이번 주 볼 경기' 카드로도 올라간다(V리그 큰 경기). 형식: {id, sport(kbo|lck|volleyball), league, title, date(UTC ISO), kst, tv(국내 TV — OTT 제외), why[], stars, pick, verified, source, result}",
- "events": [
-  {
-   "id": "kovo-2026-1120-m",
-   "sport": "volleyball",
-   "league": "V리그 남자부",
-   "title": "현대캐피탈 vs 한국전력",
-   "date": "2026-11-20T10:00:00Z",
-   "kst": "2026-11-20 19:00",
-   "venue": "천안 유관순체육관",
-   "tv": "중계 편성 미발표",
-   "why": [
-    "남자부 1위 현대캐피탈 대 2위 한국전력 — 선두 굳히기 일전(기사 제목)"
-   ],
-   "stars": 2,
-   "pick": true,
-   "verified": true,
-   "source": "https://www.topstarnews.net/news/articleView.html?idxno=16277704"
-  }
- ],
- "archive": [
-  {
-   "id": "kovo-2026-1031-m",
-   "sport": "volleyball",
-   "league": "V리그 남자부",
-   "title": "대한항공 vs 현대캐피탈",
-   "date": "2026-10-31T05:00:00Z",
-   "kst": "2026-10-31 14:00",
-   "venue": "인천 계양체육관",
-   "tv": "중계 편성 미발표",
-   "why": [
-    "개막전",
-    "지난 시즌 챔피언결정전 재대결"
-   ],
-   "stars": 3,
-   "pick": true,
-   "verified": true,
-   "source": "https://m.news.nate.com/view/20260818n27653"
-  },
-  {
-   "id": "kovo-2026-1031-w",
-   "sport": "volleyball",
-   "league": "V리그 여자부",
-   "title": "GS칼텍스 vs 한국도로공사",
-   "date": "2026-10-31T08:00:00Z",
-   "kst": "2026-10-31 17:00",
-   "venue": "서울 장충체육관",
-   "tv": "중계 편성 미발표",
-   "why": [
-    "개막전",
-    "지난 시즌 챔피언결정전 재대결"
-   ],
-   "stars": 3,
-   "pick": true,
-   "verified": true,
-   "source": "https://m.news.nate.com/view/20260818n27653"
-  },
-  {
-   "id": "kovo-2026-1101-w",
-   "sport": "volleyball",
-   "league": "V리그 여자부",
-   "title": "흥국생명 vs SOOP",
-   "date": "2026-11-01T07:00:00Z",
-   "kst": "2026-11-01 16:00",
-   "venue": "인천 삼산월드체육관",
-   "tv": "중계 편성 미발표",
-   "why": [
-    "신생팀 SOOP 창단 첫 경기"
-   ],
-   "stars": 2,
-   "pick": true,
-   "verified": true,
-   "source": "https://sports.news.nate.com/view/20260818n23466"
-  },
-  {
-   "id": "kovo-2026-1105-w",
-   "sport": "volleyball",
-   "league": "V리그 여자부",
-   "title": "SOOP vs 한국도로공사",
-   "date": "",
-   "kst": "2026-11-05 시각 미정",
-   "venue": "광주 염주체육관",
-   "tv": "중계 편성 미발표",
-   "why": [
-    "신생팀 SOOP의 첫 홈경기"
-   ],
-   "stars": 2,
-   "pick": false,
-   "verified": false,
-   "source": "https://wikidocs.net/blog/@mythos/29227"
-  }
- ]
+  "_note": "KBO·LCK·V리그 반자동 칸 — 공식 사이트 자동 수집이 막혀 있어(KBO robots·약관 금지, KOVO user-api robots 'Disallow: /', LCK 비공식 API) 편집 루틴이 보도로 확정된 일정만 넣는다. verified=true 만 캘린더에 들어간다. pick=true 면 '이번 주 볼 경기' 카드로도 올라간다(V리그 큰 경기). 형식: {id, sport(kbo|lck|volleyball), league, title, date(UTC ISO), kst, tv(국내 TV — OTT 제외), why[], stars, pick, verified, source, result}",
+  "events": [
+    {
+      "id": "kovo-2026-1120-m",
+      "sport": "volleyball",
+      "league": "V리그 남자부",
+      "title": "현대캐피탈 vs 한국전력",
+      "date": "2026-11-20T10:00:00Z",
+      "kst": "2026-11-20 19:00",
+      "venue": "천안 유관순체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "남자부 1위 현대캐피탈 대 2위 한국전력 — 선두 굳히기 일전(기사 제목)"
+      ],
+      "stars": 2,
+      "pick": true,
+      "verified": true,
+      "source": "https://www.topstarnews.net/news/articleView.html?idxno=16277704"
+    },
+    {
+      "id": "kovo-2026-1122-w",
+      "sport": "volleyball",
+      "league": "V리그 여자부",
+      "title": "현대건설 vs 흥국생명",
+      "date": "2026-11-22T05:00:00Z",
+      "kst": "2026-11-22 14:00",
+      "venue": "수원체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "톱스타뉴스 일정 기사의 주요 맞대결(순위·빅매치 표현은 확인 못 함)"
+      ],
+      "stars": 2,
+      "pick": false,
+      "verified": true,
+      "source": "https://www.topstarnews.net/news/articleView.html?idxno=16277704"
+    }
+  ],
+  "archive": [
+    {
+      "id": "kovo-2026-1031-m",
+      "sport": "volleyball",
+      "league": "V리그 남자부",
+      "title": "대한항공 vs 현대캐피탈",
+      "date": "2026-10-31T05:00:00Z",
+      "kst": "2026-10-31 14:00",
+      "venue": "인천 계양체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "개막전",
+        "지난 시즌 챔피언결정전 재대결"
+      ],
+      "stars": 3,
+      "pick": true,
+      "verified": true,
+      "source": "https://m.news.nate.com/view/20260818n27653"
+    },
+    {
+      "id": "kovo-2026-1031-w",
+      "sport": "volleyball",
+      "league": "V리그 여자부",
+      "title": "GS칼텍스 vs 한국도로공사",
+      "date": "2026-10-31T08:00:00Z",
+      "kst": "2026-10-31 17:00",
+      "venue": "서울 장충체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "개막전",
+        "지난 시즌 챔피언결정전 재대결"
+      ],
+      "stars": 3,
+      "pick": true,
+      "verified": true,
+      "source": "https://m.news.nate.com/view/20260818n27653"
+    },
+    {
+      "id": "kovo-2026-1101-w",
+      "sport": "volleyball",
+      "league": "V리그 여자부",
+      "title": "흥국생명 vs SOOP",
+      "date": "2026-11-01T07:00:00Z",
+      "kst": "2026-11-01 16:00",
+      "venue": "인천 삼산월드체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "신생팀 SOOP 창단 첫 경기"
+      ],
+      "stars": 2,
+      "pick": true,
+      "verified": true,
+      "source": "https://sports.news.nate.com/view/20260818n23466"
+    },
+    {
+      "id": "kovo-2026-1105-w",
+      "sport": "volleyball",
+      "league": "V리그 여자부",
+      "title": "SOOP vs 한국도로공사",
+      "date": "",
+      "kst": "2026-11-05 시각 미정",
+      "venue": "광주 염주체육관",
+      "tv": "중계 편성 미발표",
+      "why": [
+        "신생팀 SOOP의 첫 홈경기"
+      ],
+      "stars": 2,
+      "pick": false,
+      "verified": false,
+      "source": "https://wikidocs.net/blog/@mythos/29227"
+    }
+  ]
 }
