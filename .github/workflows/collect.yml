@@ -54,20 +54,29 @@ jobs:
             --min-comments "${{ github.event.inputs.min_comments || '120' }}" \
             --top 30
 
-      # ── 2. 보강 — 한국어 요약 + 국내 매칭 ──
-      #    키가 없으면 조용히 건너뛴다(수집 결과는 그대로 남는다)
+      # ── 2. 보강 — 한국어 요약 + 쟁점 + 국내 매칭 ──
+      #    2026-11-20 부터 Claude Haiku 5.5(enrich_claude.py). ANTHROPIC_API_KEY 가 있으면 Claude,
+      #    없으면 예전 Gemini 길. 되돌리려면 저장소 Variables 에 SIGNAL_LLM=gemini.
+      #    키가 둘 다 없으면 조용히 건너뛴다(수집 결과는 그대로 남는다)
       - name: Enrich
         if: ${{ github.event.inputs.skip_enrich != '1' }}
         continue-on-error: true
         env:
+          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
+          SIGNAL_LLM:           ${{ vars.SIGNAL_LLM }}
           GEMINI_API_KEY:       ${{ secrets.GEMINI_API_KEY }}
           NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
         run: |
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "GEMINI_API_KEY 미설정 — 보강 건너뜀"; exit 0
+          if [ -z "$ANTHROPIC_API_KEY" ] && [ -z "$GEMINI_API_KEY" ]; then
+            echo "AI 키 미설정 — 보강 건너뜀"; exit 0
           fi
-          python enrich.py --limit 12 --batch 3 --max-calls 40
+          if [ -n "$ANTHROPIC_API_KEY" ] && [ "$SIGNAL_LLM" != "gemini" ]; then
+            pip install -q "anthropic>=1.15"
+            python enrich.py
+          else
+            python enrich.py --limit 12 --batch 3 --max-calls 40
+          fi
 
       # ── 3. Threads 패널 — Cloudflare Worker 호출 ──
       #    Worker 가 브라우저를 대신 띄운다. Actions 에는 브라우저가 필요 없다.

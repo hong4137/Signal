@@ -27,6 +27,9 @@ collect.py 가 만든 data/latest.json 을 읽어 각 항목에 붙인다.
    python enrich.py                 기본
    python enrich.py --limit 10      상위 10개만
    python enrich.py --dry-run       Gemini 호출 없이 대상만 확인
+
+2026-11-20: 기본은 Claude(enrich_claude.py). ANTHROPIC_API_KEY 가 있으면 그쪽으로 간다.
+   SIGNAL_LLM=gemini 이면 이 파일의 예전 Gemini 길(되돌리기용).
 """
 import argparse
 import io
@@ -396,7 +399,8 @@ def rematch():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, default=14, help="보강할 항목 수")
+    ap.add_argument("--limit", type=int, default=None,
+                    help="보강할 항목 수. Gemini 는 비우면 14, Claude 는 비우면 상한 없음")
     ap.add_argument("--batch", type=int, default=3, help="한 호출에 묶을 항목 수")
     ap.add_argument("--max-calls", type=int, default=40,
                     help="성공 호출 상한. 무료 등급은 **모델당** 하루 20회라 "
@@ -410,6 +414,16 @@ def main():
 
     if args.rematch:
         return rematch()
+
+    # 2026-11-20 부터 Claude Haiku 5.5 가 기본(사용자 결정 "균형안, Haiku").
+    # SIGNAL_LLM=gemini 로 두면 아래 예전 Gemini 길로 되돌아간다. 지우지 않는다.
+    llm = (os.environ.get("SIGNAL_LLM") or
+           ("claude" if os.environ.get("ANTHROPIC_API_KEY") else "gemini")).lower()
+    if llm == "claude":
+        import enrich_claude
+        return enrich_claude.run(args)
+    if args.limit is None:
+        args.limit = 14
 
     key = os.environ.get("GEMINI_API_KEY")
     if not key and not args.dry_run:
