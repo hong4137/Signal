@@ -400,6 +400,9 @@ def run(args):
     latest["enriched"] = True
     latest["enriched_at"] = time.strftime("%Y-%m-%d %H:%M")
     latest["enriched_by"] = MODEL
+    # 실행마다 사용량을 남긴다 — Actions 로그를 못 봐도 data 커밋만으로 월 비용을 다시 맞출 수 있게
+    latest["enrich_usage"] = dict(_usage, model=MODEL, items=got,
+                                  cost_usd=round((_usage["in"] * PRICE_IN + _usage["out"] * PRICE_OUT) / 1e6, 5))
     io.open(os.path.join(E.DATA, "latest.json"), "w", encoding="utf-8").write(
         json.dumps(latest, ensure_ascii=False, indent=1))
 
