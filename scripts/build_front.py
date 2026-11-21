@@ -1130,18 +1130,22 @@ def main():
             if it.get("img"):
                 nr_swap(it, it.get("head"), it.get("sub"), it.get("deck"), it.get("key"))
 
-    # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json 에서 오늘~2일 뒤(3일치) ──
+    # ── 주요 경제 일정 — 경제 일정 루틴(06:20)이 쓴 data/calendar.json (오늘~10일 뒤) ──
     # 확정(verified)된 것만 싣는다. 편집국이 desk.json "calendar_drop": [제목…] 으로 뺄 수 있다.
+    # 1면 칸은 오늘부터 3일(from~to)이 본판이다. 2026-11-21: 주말처럼 사흘 안이 비거나 적으면 칸이
+    # '사흘 안에 일정 없음'으로 비었다 → 10일치(next_to 까지)를 넘기고, front.html 이 사흘 안이
+    # 3건이 안 되면 그 뒤 가장 가까운 중요 일정을 '다음 일정'으로 이어 붙인다.
     cal = load(os.path.join(DATA, "calendar.json"), {}) or {}
     d0 = now.date().isoformat()
     d2 = (now.date() + timedelta(days=2)).isoformat()
+    d10 = (now.date() + timedelta(days=10)).isoformat()
     cal_drop = {str(t).strip() for t in (desk.get("calendar_drop") or [])}
     cal_ev = [e for e in (cal.get("events") or [])
-              if isinstance(e, dict) and d0 <= str(e.get("date", "")) <= d2 and e.get("title")
+              if isinstance(e, dict) and d0 <= str(e.get("date", "")) <= d10 and e.get("title")
               and e.get("verified") is True and int(e.get("importance") or 0) >= 3
               and str(e["title"]).strip() not in cal_drop]
     cal_ev.sort(key=lambda e: (e["date"], e.get("time") or "99:99"))
-    calendar = {"generated_at": cal.get("generated_at"), "from": d0, "to": d2, "dropped": len(cal_drop),
+    calendar = {"generated_at": cal.get("generated_at"), "from": d0, "to": d2, "next_to": d10, "dropped": len(cal_drop),
                 "events": [{k: e.get(k) for k in ("date", "time", "region", "category", "title", "importance",
                                                    "why", "consensus", "previous", "source", "verified")}
                            for e in cal_ev]} if cal_ev else None

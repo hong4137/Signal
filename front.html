@@ -320,6 +320,7 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
   background:linear-gradient(var(--sheet),var(--sheet)) padding-box,var(--grad) border-box}
 .calbox .mini{margin-top:0;border-top:0;padding-top:0}
 .calnone{margin:10px 0 0}
+.cday.later{opacity:.92}   /* 사흘 뒤 '다음 일정' — 2026-11-21 주말 빈 칸 대책 */
 .cpager{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--muted)}
 .cpager i{font-style:normal;font-family:var(--mono)}
 .cpager button{width:28px;height:28px;border-radius:50%;border:1px solid var(--hair);background:none;color:var(--ink);cursor:pointer;font-size:15px;line-height:1}
@@ -710,23 +711,38 @@ function numBox(T){             // 숫자로 본 오늘 — 주제군 온도
 const REG = { KR: '한국', US: '미국', CN: '중국', JP: '일본', EU: '유럽', GLOBAL: '세계' };
 function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 확정된 것만, 한국 시간
   /* '오늘'은 판 날짜가 아니라 읽는 시점(한국 시간) — 지난 일정은 뺀다 */
-  const ymd = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  const kst = new Date(Date.now() + 9 * 3600e3).toISOString();
+  const ymd = kst.slice(0, 10), hm = kst.slice(11, 16);
   const end = new Date(Date.parse(ymd + 'T00:00:00Z') + 2 * 864e5).toISOString().slice(0, 10);
-  const evs = ((C && C.events) || []).filter(e => e.date >= ymd && e.date <= end && e.verified !== false);
+  /* 지난 시각은 뺀다(오늘인데 발표 시각이 이미 지난 것). 시각 없는 오늘 일정은 남긴다 */
+  const all = ((C && C.events) || []).filter(e => e.verified !== false && e.date >= ymd && !(e.date === ymd && e.time && e.time < hm));
+  const evs = all.filter(e => e.date <= end);
+  /* 2026-11-21: 주말처럼 사흘 안이 비거나 3건이 안 되면, 그 뒤 가장 가까운 중요 일정(4·5)을 '다음 일정'으로 잇는다.
+     모자란 만큼 채우되 마지막 날은 자르지 않는다(최대 5건) */
+  let nxt = [];
+  if (evs.length < 3) {
+    const later = all.filter(e => e.date > end && (e.importance || 0) >= 4);
+    const need = 3 - evs.length;
+    later.forEach(e => { if (nxt.length < 5 && (nxt.length < need || e.date === nxt[nxt.length - 1].date)) nxt.push(e); });
+  }
   const day = d => { const x = new Date(d + 'T00:00:00+09:00'); return `${x.getMonth()+1}.${x.getDate()} (${DOW[x.getDay()]})`; };
-  const rel = d => d === ymd ? '오늘' : d === new Date(Date.parse(ymd + 'T00:00:00Z') + 864e5).toISOString().slice(0, 10) ? '내일' : '';
-  const groups = {};
-  evs.forEach(e => (groups[e.date] = groups[e.date] || []).push(e));
-  const html = Object.keys(groups).sort().map(d => `<div class="cday"><b>${day(d)}<span>${rel(d)}</span></b><ul>${
+  const dleft = d => Math.round((Date.parse(d + 'T00:00:00Z') - Date.parse(ymd + 'T00:00:00Z')) / 864e5);
+  const rel = d => d === ymd ? '오늘' : dleft(d) === 1 ? '내일' : dleft(d) > 2 ? `D-${dleft(d)}` : '';
+  /* later: '다음 일정' 묶음 — 표시는 날짜 머리(<b>)에 넣는다(쪽 넘김이 <b> 만 복사하므로 따로 된 줄은 떨어져 남는다) */
+  const block = (list, later) => { const groups = {};
+  list.forEach(e => (groups[e.date] = groups[e.date] || []).push(e));
+  return Object.keys(groups).sort().map((d, k) => `<div class="cday${later ? ' later' : ''}"><b>${day(d)}<span>${later && k === 0 ? '다음 일정 · ' : ''}${rel(d)}</span></b><ul>${
     groups[d].map(e => {
       const cv = [e.consensus && '예상 ' + e.consensus, e.previous && '직전 ' + e.previous].filter(Boolean).join(' · ');
       const nm = esc(e.title);          // 지역 꼬리표는 왼쪽 시각 아래 — 제목이 두 줄이 돼도 왼쪽 끝이 가지런하다
       return `<li class="ce${e.importance >= 5 ? ' i5' : ''}"><span class="ct">${esc(e.time || '–')}<em class="rg">${esc(REG[e.region] || e.region || '')}</em></span><div>
         ${e.source ? `<a class="cn" href="${esc(e.source)}" target="_blank" rel="noopener">${nm}</a>` : `<span class="cn">${nm}</span>`}
         ${e.why ? `<p>${esc(e.why)}</p>` : ''}${cv ? `<p class="cv">${esc(cv)}</p>` : ''}</div></li>`;
-    }).join('')}</ul></div>`).join('');
+    }).join('')}</ul></div>`).join(''); };
+  const html = (evs.length ? block(evs) : '<p class="src calnone">사흘 안에는 확정된 주요 일정이 없다</p>')
+    + (nxt.length ? block(nxt, true) : '');
   return `<div class="calbox" id="calbox"><div class="mini">주요 경제 일정<span>오늘부터 3일 · 한국 시간</span></div>
-    ${html || '<p class="src calnone">사흘 안에 확정된 주요 일정이 없다</p>'}</div>`;
+    ${(evs.length || nxt.length) ? html : '<p class="src calnone">사흘 안에 확정된 주요 일정이 없다</p>'}</div>`;
 }
 
 
