@@ -35,7 +35,8 @@ import enrich as E
 MODEL = os.environ.get("SIGNAL_CLAUDE_MODEL", "claude-haiku-5-5")
 # Claude Haiku 5.5 가격(1M 토큰당, 프롬프트 10만 토큰 이하). 사용량 로그로 월 비용을 다시 맞추는 데 쓴다.
 PRICE_IN, PRICE_OUT = 0.10, 0.50
-VERSION = 2                 # 캐시 판. 1 = Gemini 시절(댓글 12개) — 화면에 보이는 것은 한 번 다시 만든다
+VERSION = 3                 # 캐시 판. 1 = Gemini 시절(댓글 12개), 2 = 쟁점 판정이 느슨했던 판(11-21)
+SPLIT_MIN_SHARE = 20        # 소수 편이 이보다 작으면 갈림이 아니다(11-21 사용자 "엄격하게")
 WANT_COMMENTS = 100
 ARTICLE_CHARS = 12000
 ONELINE_CACHE = os.path.join(E.DATA, "oneline_cache.json")
@@ -159,12 +160,19 @@ def article_text(url):
 
 ITEM_SYSTEM = E.SYSTEM + """
 
-쟁점 판정 (debate)
-- 댓글이 실제로 갈렸는지 먼저 본다(split). 대부분 같은 반응이면 split=false 로 두고
-  consensus 에 대체로 어떤 반응인지 한 문장. 억지로 두 편을 만들지 않는다.
-- 갈렸으면 axis 에 '무엇으로 갈렸나'를 한 구절로(예: "오픈소스 라이선스 변경이 배신인가").
-- sides 는 2~3개. 각 편의 입장(stance)·근거 논리(logic, 한 문장)·대략 비율(share, 0~100 정수).
-  비율은 댓글 수와 #순위(앞 순위일수록 많이 지지받은 댓글)로 어림한다. 합이 100 이 되게.
+쟁점 판정 (debate) — 엄격하게
+- split=true 는 **같은 질문에 결론·평가가 반대인 두 편**이 있고, 소수 편도 대략 20% 이상일 때만이다.
+  예) "이 가격은 거품이다" vs "가치에 걸맞다", "이 변경은 배신이다" vs "합리적 결정이다".
+- 다음은 갈림이 아니다 → split=false:
+  · 같은 의견을 표현만 달리한 것, 같은 쪽 안에서 근거가 여러 가지인 것
+  · 세부 보충·곁가지·농담·딴 이야기(예: 토론자 개인에 대한 잡담)
+  · 대다수가 한쪽이고 반대가 몇 개뿐인 것(20% 미만)
+  · 애매하면 split=false. 억지로 두 편을 만들지 않는다.
+- consensus 는 언제나 채운다 — 댓글 전체의 대체적인 반응 한 문장.
+- split=true 일 때만 axis('무엇으로 갈렸나' 한 구절, 반드시 찬반이 갈리는 질문 꼴)와
+  sides(2~3개: 입장 stance·근거 논리 logic 한 문장·대략 비율 share 0~100 정수, 합 100)를 채운다.
+  셋째 편은 앞 두 편과 결론이 또 다를 때만 둔다. split=false 면 axis 는 빈 문자열, sides 는 빈 배열.
+  비율은 댓글 수와 #순위(앞 순위일수록 많이 지지받은 댓글)로 어림한다.
 - 원문 기사가 주어지면 '기사가 말한 것'과 '댓글이 반응한 것'을 섞지 않는다.
   summary_ko 는 여전히 댓글 반응이 중심이다."""
 
@@ -196,6 +204,17 @@ ITEM_SCHEMA = {
 }
 
 
+def strict_debate(d):
+    """모델이 느슨하게 갈렸다고 해도 검사로 한 번 더 거른다.
+    20% 미만 편은 버리고, 남은 편이 둘 미만이면 갈림이 아니다."""
+    sides = [x for x in (d.get("sides") or []) if (x.get("share") or 0) >= SPLIT_MIN_SHARE]
+    if d.get("split") and len(sides) >= 2 and (d.get("axis") or "").strip():
+        return {"split": True, "axis": d["axis"].strip(), "consensus": (d.get("consensus") or "").strip(),
+                "sides": sides[:3]}
+    return {"split": False, "axis": "", "sides": [],
+            "consensus": (d.get("consensus") or "").strip()}
+
+
 def enrich_item(client, b):
     sid = E.hn_id(b)
     comments, selftext = hn_thread(sid) if sid else ([], "")
@@ -210,6 +229,7 @@ def enrich_item(client, b):
                schema=ITEM_SCHEMA, effort="medium")
     if out is None:
         return None
+    out["debate"] = strict_debate(out.get("debate") or {})
     out["n_comments_read"] = len(comments)
     out["article_read"] = bool(art)
     return out

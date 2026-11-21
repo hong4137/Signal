@@ -261,6 +261,8 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .issue .ih b{font-size:14.5px;font-weight:800}
 .issue .ih span{font-size:12.5px;color:var(--muted)}
 .issue .ih .num{color:var(--heat);font-weight:700}
+.iax{font-size:14.5px;font-weight:700;line-height:1.45;color:var(--ink);margin:0 0 10px}
+.iax span{font-size:11px;font-weight:800;color:var(--heat);margin-right:8px;letter-spacing:.04em}
 .sides{display:grid;grid-template-columns:1fr 1fr;gap:0}
 .sides>div{padding:0 14px 0 0;font-size:14px;line-height:1.62;color:var(--ink)}
 .sides>div+div{padding:0 0 0 14px;border-left:1px solid var(--hair)}
@@ -683,6 +685,7 @@ function issueBox(R){           // 쟁점 박스 — 커뮤니티 반응을 찬�
   const S = R.sides;
   return `<div class="issue">
     <div class="ih"><b>해외 개발자 커뮤니티 반응</b><span>Hacker News 댓글 <span class="num">${fmt(R.comments)}</span> · 추천 ${fmt(R.points)}${R.r >= 1 ? ' · 추천보다 댓글이 많은 글 — 의견이 갈렸다' : ''}</span></div>
+    ${S && S.axis ? `<div class="iax"><span>갈린 지점</span>${esc(S.axis)}</div>` : ''}
     ${S ? `<div class="sides"><div class="a"><span class="t">${esc(S.la)}</span><div>${esc(S.a)}</div></div>
       <div class="b"><span class="t">${esc(S.lb)}</span><div>${esc(S.b)}</div></div></div>`
         : `<p>${esc(R.summary)}</p>`}

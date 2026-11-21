@@ -512,6 +512,23 @@ def sides(summary):
     return None
 
 
+def sides_of(g):
+    """쟁점 — enrich_claude.py 의 debate 판정이 있으면 그걸 쓴다(2026-11-21).
+    갈리지 않았다고 판정된 글은 두 진영으로 쪼개지 않는다(None → 요약 문단).
+    판정이 없는 옛 항목만 예전처럼 요약 문장에서 가른다."""
+    d = g.get("debate")
+    if d:
+        sd = d.get("sides") or []
+        if not (d.get("split") and len(sd) >= 2):
+            return None
+        a, b = sd[0], sd[1]
+        return {"a": trim(a.get("logic", ""), 110), "b": trim(b.get("logic", ""), 110),
+                "la": "%d%% %s" % (a.get("share", 0), trim(a.get("stance", ""), 28)),
+                "lb": "%d%% %s" % (b.get("share", 0), trim(b.get("stance", ""), 28)),
+                "axis": d.get("axis", ""), "pa": a.get("share", 0), "pb": b.get("share", 0)}
+    return sides(g.get("summary_ko"))
+
+
 STANCE = ("옹호", "지지", "환영", "기대", "낙관", "비판", "반박", "우려", "회의", "경계",
           "지적", "반론", "의문", "냉소")
 
@@ -672,7 +689,7 @@ def main():
     def reaction(g):
         return {"title": g["title"], "url": g.get("discussion") or g.get("url"),
                 "comments": g["comments"], "points": g["points"], "r": g["r"],
-                "summary": g.get("summary_ko", ""), "sides": sides(g.get("summary_ko")),
+                "summary": g.get("summary_ko", ""), "sides": sides_of(g),
                 "trust": g.get("trust", []), "kr": (g.get("kr") or [])[:2]}
 
     def pair(art, g):
@@ -868,7 +885,7 @@ def main():
         "key": g.get("discussion") or g.get("url"),
         "title": g["title"], "url": g.get("discussion") or g.get("url"),
         "deck": trim(g.get("summary_ko"), 140), "comments": g["comments"],
-        "points": g["points"], "r": g["r"], "sides": sides(g.get("summary_ko")),
+        "points": g["points"], "r": g["r"], "sides": sides_of(g),
     } for g in feats]
     for f in features:
         d = dx.get(f["key"] or "")
