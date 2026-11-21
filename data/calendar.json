@@ -1,37 +1,23 @@
 {
- "generated_at": "2026-11-21T06:30:00+09:00",
+ "generated_at": "2026-11-22T06:30:00+09:00",
  "window": {
-  "from": "2026-11-21",
-  "to": "2026-12-01"
+  "from": "2026-11-22",
+  "to": "2026-12-02"
  },
  "events": [
   {
-   "date": "2026-11-21",
-   "time": "00:00",
-   "region": "US",
-   "category": "경제지표",
-   "title": "미국 미시간대 소비자심리(11월)",
-   "importance": 3,
-   "why": "소비자 물가·경기 기대 지표, 연준 금리 전망에 간접 영향",
-   "consensus": null,
-   "previous": null,
-   "source": "https://fred.stlouisfed.org/release?rid=91",
-   "verified": true,
-   "note": "FRED 공식 일정. 미 동부 11/20 10:00 관행 시각을 한국 시각으로 환산"
-  },
-  {
    "date": "2026-11-24",
-   "time": "07:00",
+   "time": "06:00",
    "region": "US",
    "category": "실적",
-   "title": "HPE 4분기(회계 2026) 실적",
+   "title": "Zoom 3분기(회계 2027) 실적",
    "importance": 3,
-   "why": "AI 서버 수요와 기록적 수주잔고 흐름을 확인할 실적",
-   "consensus": "회사 가이던스 매출 139~148억 달러, 주당순이익 1.20~1.30달러",
+   "why": "화상회의 대표 기업의 분기 매출과 AI 사업 현황",
+   "consensus": null,
    "previous": null,
-   "source": "https://investors.hpe.com/",
+   "source": "https://investors.zoom.us",
    "verified": true,
-   "note": "IR 페이지의 11/23 콘퍼런스콜(미 동부 17:00)을 한국 시각으로 환산. 11/2 보도자료와 교차 확인"
+   "note": "미 동부 11/23(월) 장 마감 후 발표 기준 시각. 회사 공지(10/29) 확인."
   },
   {
    "date": "2026-11-24",
@@ -40,12 +26,12 @@
    "category": "실적",
    "title": "아날로그디바이시스(ADI) 4분기 실적",
    "importance": 4,
-   "why": "아날로그·산업·데이터센터 수요 회복 속도를 가늠하는 실적",
-   "consensus": "회사 가이던스 매출 43억 달러 ±1억 달러",
-   "previous": "3분기 매출 40.2억 달러",
+   "why": "아날로그·산업용 반도체 업황을 보는 주요 지표",
+   "consensus": "회사 가이던스 매출 43억달러±1억달러",
+   "previous": "3분기 매출 40.2억달러",
    "source": "https://www.analog.com/en/newsroom/press-releases/2026/10-22-2026-adi-report-4q-fy2026-financial-results.html",
    "verified": true,
-   "note": "회사 보도자료(미 동부 11/24 07:00) 기준. finviz 재게재로 교차 확인"
+   "note": "미 동부 07:00 발표·10:00 콘퍼런스콜 기준. 회사 가이던스 매출 43억달러±1억달러."
   },
   {
    "date": "2026-11-24",
@@ -54,12 +40,40 @@
    "category": "경제지표",
    "title": "미국 산업생산·설비가동률",
    "importance": 3,
-   "why": "제조업 생산과 설비 가동률로 경기 둔화 여부 확인",
+   "why": "제조업·광업 생산과 설비 가동률로 경기 흐름 점검",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=13",
    "verified": true,
-   "note": "FRED 공식 일정. 미 동부 09:15 관행 시각 환산"
+   "note": "미 동부 09:15 관행 시각 기준(FRED 일정)."
+  },
+  {
+   "date": "2026-11-25",
+   "time": "05:30",
+   "region": "US",
+   "category": "실적",
+   "title": "워크데이 3분기(FY2027) 실적",
+   "importance": 3,
+   "why": "기업용 소프트웨어·AI 실적, 소프트웨어 업황 점검",
+   "consensus": null,
+   "previous": null,
+   "source": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24-2026/default.aspx",
+   "verified": true,
+   "note": "미 동부 11/24(화) 장 마감 후, 콘퍼런스콜 16:30 ET 기준 시각. 회사 공지(11/2) 확인."
+  },
+  {
+   "date": "2026-11-25",
+   "time": "07:00",
+   "region": "US",
+   "category": "실적",
+   "title": "HP 4분기(회계 2026) 실적",
+   "importance": 3,
+   "why": "PC·프린터 실적과 다음 분기 전망 발표",
+   "consensus": null,
+   "previous": null,
+   "source": "https://www.hp.com/investor/2026Q4Webcast",
+   "verified": true,
+   "note": "미 동부 11/24 17:00 발표 기준 시각(회사 공지)."
   },
   {
    "date": "2026-11-25",
@@ -68,12 +82,12 @@
    "category": "경제지표",
    "title": "미국 10월 개인소득·지출(PCE 물가)",
    "importance": 5,
-   "why": "연준이 가장 중시하는 물가지표. 금리 경로 판단의 핵심",
+   "why": "연준이 중시하는 물가지표, 금리 기대에 직결",
    "consensus": null,
    "previous": null,
-   "source": "https://www.bea.gov/news/schedule/next-year",
+   "source": "https://www.bea.gov/index.php/news/schedule/full",
    "verified": true,
-   "note": "BEA 발표 일정과 FRED 일정 일치(미 동부 08:30)"
+   "note": "미 동부 08:30 발표 기준(BEA 일정). 추수감사절 주간."
   },
   {
    "date": "2026-11-25",
@@ -82,12 +96,12 @@
    "category": "경제지표",
    "title": "미국 3분기 GDP 수정치(2차 추정)",
    "importance": 4,
-   "why": "속보 3.4%(연율)가 수정되는지, 소비·투자 흐름 확인",
+   "why": "3분기 성장률 수정치와 투자·정부지출 항목 확인",
    "consensus": null,
-   "previous": "속보치 연율 3.4%",
+   "previous": null,
    "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026/",
    "verified": true,
-   "note": "BEA 발표 페이지의 다음 일정. FRED 'GDP' 항목(부채/GDP 비율)은 오매핑이라 제외"
+   "note": "미 동부 08:30 발표 기준(BEA 1차 발표문 일정). 1차 추정은 연율 3.4%."
   },
   {
    "date": "2026-11-25",
@@ -96,12 +110,26 @@
    "category": "경제지표",
    "title": "미국 주간 신규 실업수당 청구",
    "importance": 3,
-   "why": "고용 시장 온도계. 추수감사절 주라 수요일에 나온다",
+   "why": "미국 고용 상황을 주 단위로 보는 지표",
    "consensus": null,
    "previous": null,
    "source": "https://fred.stlouisfed.org/release?rid=180",
    "verified": true,
-   "note": "FRED 공식 일정(미 동부 11/25 08:30). 목요일 정기 발표가 휴일 때문에 앞당겨짐"
+   "note": "추수감사절 주라 목요일이 아닌 수요일 발표(FRED 일정)."
+  },
+  {
+   "date": "2026-11-25",
+   "time": "22:30",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 주택착공",
+   "importance": 3,
+   "why": "건설 경기와 금리 민감 업종 흐름 확인",
+   "consensus": null,
+   "previous": null,
+   "source": "https://fred.stlouisfed.org/release?rid=27",
+   "verified": true,
+   "note": "미 동부 08:30 관행 시각 기준(FRED 일정)."
   },
   {
    "date": "2026-11-25",
@@ -110,26 +138,12 @@
    "category": "실적",
    "title": "디어앤컴퍼니 4분기 실적",
    "importance": 3,
-   "why": "농기계·건설장비 수요로 본 제조업 경기 온도",
+   "why": "농기계 실적과 미국 농가 경기 흐름 점검",
    "consensus": null,
    "previous": null,
-   "source": "https://www.deere.com",
+   "source": "https://www.johndeere.com/earnings",
    "verified": true,
-   "note": "회사 공지(미 중부 9:00 콘퍼런스콜)를 한국 시각으로 환산. 2개 매체에서 확인"
-  },
-  {
-   "date": "2026-11-25",
-   "time": null,
-   "region": "US",
-   "category": "실적",
-   "title": "워크데이 FY2027 3분기 실적",
-   "importance": 3,
-   "why": "기업용 AI·소프트웨어 수요 흐름을 점검하는 실적",
-   "consensus": null,
-   "previous": null,
-   "source": "https://stockhub.kr/en/newswire/prn/302924361",
-   "verified": true,
-   "note": "미 동부 11/24 장 마감 후 발표라 한국 시각은 11/25 새벽. 정확한 시각은 미확인"
+   "note": "미 중부 09:00 콘퍼런스콜 기준(회사 공지)."
   },
   {
    "date": "2026-11-26",
@@ -138,12 +152,12 @@
    "category": "통화정책",
    "title": "한국은행 금융통화위원회 기준금리 결정",
    "importance": 5,
-   "why": "올해 마지막 회의. 3분기 성장률·10월 물가 반영 여부 주목",
+   "why": "올해 마지막 금통위, 현재 기준금리 연 3.00%",
    "consensus": null,
-   "previous": "기준금리 3.00% (10/22 동결)",
+   "previous": null,
    "source": "https://www.bok.or.kr",
    "verified": true,
-   "note": "11/26 결정일은 비즈워치·코리안센터 등 복수 매체 보도로 확인. 시각 10:00은 관행이고 한은 보도자료 미확인"
+   "note": "시각 10:00은 관행. 날짜는 언론 2곳 보도 근거이며 한은 공식 공지는 미확인 — 발표 전 bok.or.kr 확인 필요."
   },
   {
    "date": "2026-11-26",
@@ -152,38 +166,69 @@
    "category": "시장",
    "title": "미국 증시 추수감사절 휴장",
    "importance": 3,
-   "why": "뉴욕증시·나스닥 휴장. 이번 주 미국 거래일이 줄어든다",
+   "why": "뉴욕증시 휴장, 11/27(금)은 13시 조기폐장",
    "consensus": null,
    "previous": null,
-   "source": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+   "source": "https://www.fidelity.com/learning-center/smart-money/stock-market-holidays",
    "verified": true,
-   "note": "BLS 일정에 추수감사절 연방 공휴일로 나옴. 뉴욕증시 휴장은 관행. 27일 조기 폐장은 단일 출처라 뺌"
+   "note": "미 동부 기준 11/26(목) 종일 휴장, 11/27 13시 조기폐장. 채권시장은 11/27 14시 조기폐장 권고."
   },
   {
-   "date": "2026-12-01",
+   "date": "2026-11-29",
    "time": null,
-   "region": "KR",
-   "category": "경제지표",
-   "title": "11월 수출입 동향(산업통상부)",
+   "region": "GLOBAL",
+   "category": "정책",
+   "title": "OPEC+ 회의",
    "importance": 4,
-   "why": "반도체 수출이 얼마나 이어졌는지 확인하는 월간 수출 지표",
+   "why": "원유 생산 방침을 정하는 회의, 유가 흐름의 변수",
    "consensus": null,
-   "previous": "10월 수출 1,152.8억 달러 (+93.7%)",
-   "source": "https://www.motir.go.kr",
+   "previous": null,
+   "source": "https://www.opec.org/pr-detail/2033620-1-november-2026.html",
    "verified": true,
-   "note": "매월 1일 발표가 관행(10월분 11/1 발표 보도 확인). 시각은 미확인"
+   "note": "OPEC 11/1 보도자료에 명시된 차기 회의일. 시각·장소는 미확인."
+  },
+  {
+   "date": "2026-12-02",
+   "time": "00:00",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 11월 ISM 제조업 PMI",
+   "importance": 4,
+   "why": "미국 제조업 경기 선행지표, 신규주문·물가 항목 주목",
+   "consensus": null,
+   "previous": null,
+   "source": "https://ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/",
+   "verified": true,
+   "note": "미 동부 12/1(화) 10:00 발표 기준(ISM 공식 일정). 금융 캘린더 사이트도 같은 날짜."
+  },
+  {
+   "date": "2026-12-02",
+   "time": "00:00",
+   "region": "US",
+   "category": "경제지표",
+   "title": "미국 10월 구인·이직(JOLTS)",
+   "importance": 4,
+   "why": "구인 건수로 본 노동시장 열기 확인",
+   "consensus": null,
+   "previous": null,
+   "source": "https://fred.stlouisfed.org/release?rid=192",
+   "verified": true,
+   "note": "미 동부 12/1 10:00 관행 시각 기준(FRED 일정)."
   }
  ],
  "notes": [
-  "원자료 지연: calendar_raw.json 생성 시각이 11/20 09:30 KST(어제 것)라 그대로 쓰되 검색으로 보강.",
-  "원자료 출처 실패: Finnhub·DART·FOMC 0건. 실적·공시 일정은 검색으로 메움. FRED '미국 GDP'(rid 263)는 부채/GDP라 오매핑이어서 BEA 일정으로 대체했고, 12/2 발표 항목(JOLTS·GDP by County)은 범위 밖이라 뺌.",
-  "미확정으로 뺌: 관세청 11월 1~20일 잠정치(21일이 토요일, 발표 여부 미확인).",
-  "미확정으로 뺌: Dell 3분기 FY27 실적(11/24 추정. 공식 공지를 못 찾음), Zoom 3분기 FY27(11/23. 출처별 날짜 엇갈림), Symbotic 4분기(11/23 장 마감 후. 재게재 1곳뿐), 연준 베이지북(11/25. 단일 출처).",
-  "11/21~23 확정 일정은 미시간대 소비자심리 1건뿐. 월요일 미국 HPE 실적은 한국 11/24 새벽이라 4일차에 실었다. 주말·월요일 국내 일정은 검색으로 찾지 못했다.",
-  "지난 일정 제외: 엔비디아 3분기 실적(11/17 발표), 앤트로픽 IPO(11/18 가격 확정, 11/19 거래 시작), FOMC 의사록(11/18), 미국 10월 CPI(11/10), BLS 주정부 고용(11/20).",
-  "시각은 관행 시각 기준(금통위 10:00 KST 등). 한은 보도자료 확인 전까지 시각은 미확정.",
-  "한국 3분기 GDP 속보는 10/27 발표 완료라 11/27 발표 기사는 오기로 판단.",
-  "검색 35회: 계획 검색 25회, 추가 확인 10회."
+  "원자료 지연: calendar_raw.json 생성 시각이 11/21 08:53 KST(어제 것)라 그대로 쓰되 검색으로 보강.",
+  "원자료 출처 실패: Finnhub·DART·FOMC 0건(관심 종목 공시 0건 포함). 실적·연준 일정은 검색으로 메움.",
+  "FRED '미국 GDP'(rid 263·397)는 부채/GDP 오매핑이라 뺐고, 3분기 GDP 2차 추정은 BEA 공식 일정(11/25)으로 실었다.",
+  "HPE 11/24 07:00 항목(어제 목록)은 이번 검색에서 확인되지 않아 빼고, HP Inc(회사 공지: 미 동부 11/24 17시 → 11/25 07:00 KST)로 대체했다.",
+  "미확정으로 뺌: 산업부 11월 수출입동향(12/1) — 보도자료 일정을 찾지 못함(어제 목록의 확정 표시는 이번에 재확인 안 됨). 국가데이터처 11월 소비자물가(12/2)·고용·산업활동 공표일, 한은 11월 소비자심리·BSI(11/24~25), 관세청 잠정치, Dell 3분기(11/24 추정, 공지 못 찾음), 중국 11월 지표(12월 초 추정).",
+  "미확정으로 뺌: 연준 연설 일정, 관세·정부 예산 마감, 벡스코 행사 — 검색으로 확인 못 함. Beige Book(11/25)은 연준 달력에 있으나 시각이 없어 뺌.",
+  "금통위 11/26: 한은 공식 공지는 못 찾았고 언론 2곳(코리안센터·신한 인사이트)이 같은 날짜를 전함. 발표 전 bok.or.kr 확인 필요.",
+  "11/22~24 국내 일정: 검색으로 찾은 확정 일정 없음(1면 3일 중 실린 것은 미국 일정 3건). 국내 대형주 실적은 10월 말에 끝나 범위 밖.",
+  "시각 변환: 미 동부 → KST는 11/1 이후 +14시간. FRED·BEA 발표는 관행 08:30 ET = 22:30 KST.",
+  "지난 일정 제외: 미시간대 소비자심리(11/21), 엔비디아 실적·FOMC 의사록(11/18), 앤트로픽 IPO, 엔비디아 AI 데이 서울(11/9~10).",
+  "범위 밖 참고: 미국 11월 고용 12/4, CPI 12/10, Broadcom 12/9, ECB 12/17, BOJ 12/18.",
+  "검색 42회: 계획 검색 24회 + 추가 확인 18회."
  ],
- "searches": 35
+ "searches": 42
 }
