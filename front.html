@@ -83,9 +83,9 @@ h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
 .topbar nav a,.topbar button{font:inherit;font-size:12.5px;color:var(--ink);border:1px solid var(--pill);background:none;
   border-radius:999px;padding:3px 12px;cursor:pointer}
 .topbar nav a.on{color:#fff;background:var(--grad);border-color:transparent}
-/* 자매지 바로가기 — 메뉴와 구분되게 점선 테두리·라틴 글꼴, 작게 */
+/* 자매지 바로가기 — 메뉴와 구분되게 점선 테두리 (11-21: 이름 한글 경제·스포츠, 기록 버튼 뺌) */
 .topbar nav a.sis i{font-style:normal}
-.topbar nav a.sis{font-family:var(--latin);font-size:11px;font-weight:700;letter-spacing:.06em;border-style:dashed;margin-left:6px;color:var(--ink-2)}
+.topbar nav a.sis{font-weight:600;border-style:dashed;margin-left:6px;color:var(--ink-2)}
 /* 5칸: 왼쪽 귀 | 빈칸 | 제호 | 빈칸 | 오른쪽 귀 — 두 귀 사이 남는 자리를 제호 양옆에 똑같이 나눈다
    (11-19 사용자: 오른쪽 지표에 로고가 눌려 보인다) */
 .mast{display:grid;grid-template-columns:minmax(0,240px) minmax(16px,1fr) auto minmax(16px,1fr) max-content;align-items:center;
@@ -489,7 +489,7 @@ footer a{color:var(--weight)}
   .topbar>span{display:none}
   .topbar nav{width:100%;justify-content:flex-end;flex-wrap:nowrap}
   .topbar nav a,.topbar button{padding:3px 10px;white-space:nowrap}
-  .topbar nav a.sis{margin-left:2px;padding:3px 7px;letter-spacing:.02em}
+  .topbar nav a.sis{margin-left:2px;padding:3px 7px}
   .topbar nav a.sis i{display:none}   /* 자매지 둘이 들어가면 375px 에서 넘친다 */
   .mkt{margin:0 -16px;padding:7px 16px;gap:10px}
   .mkt ul{flex-wrap:nowrap}
@@ -594,9 +594,8 @@ footer a{color:var(--weight)}
     <nav>
       <a class="on" href="front.html">1면</a>
       <a href="index.html">커뮤니티 동향</a>
-      <a href="archive.html">기록</a>
-      <a class="sis" href="sports.html" title="자매지 Sports UptoDate — 이번 주 볼 경기">SPORTS<i> ↗</i></a>
-      <a class="sis" href="https://econ.sharktalk.co.kr/" title="경제 브리핑 — 금리·물가·환율·원자재·국제 정세">ECON<i> ↗</i></a>
+      <a class="sis" href="sports.html" title="자매지 Sports UptoDate — 이번 주 볼 경기">스포츠<i> ↗</i></a>
+      <a class="sis" href="https://econ.sharktalk.co.kr/" title="경제 브리핑 — 금리·물가·환율·원자재·국제 정세">경제<i> ↗</i></a>
       <button id="tgl" type="button" aria-label="테마 전환">◐</button>
     </nav>
   </div>
@@ -709,7 +708,7 @@ function numBox(T){             // 숫자로 본 오늘 — 주제군 온도
 }
 
 const REG = { KR: '한국', US: '미국', CN: '중국', JP: '일본', EU: '유럽', GLOBAL: '세계' };
-function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 확정된 것만, 한국 시간
+function calBox(C){              // 주요 경제 일정 — 오늘부터 3일 + 10일 안 중요도 5는 늘, 확정된 것만, 한국 시간
   /* '오늘'은 판 날짜가 아니라 읽는 시점(한국 시간) — 지난 일정은 뺀다 */
   const kst = new Date(Date.now() + 9 * 3600e3).toISOString();
   const ymd = kst.slice(0, 10), hm = kst.slice(11, 16);
@@ -725,6 +724,9 @@ function calBox(C){              // 주요 경제 일정 — 오늘부터 3일, 
     const need = 3 - evs.length;
     later.forEach(e => { if (nxt.length < 5 && (nxt.length < need || e.date === nxt[nxt.length - 1].date)) nxt.push(e); });
   }
+  /* 2026-11-21 사용자 결정 "늘 넣어": 중요도 5는 사흘이 차 있든, 5건이 넘든 10일 안이면 항상 '다음 일정'에 넣는다 */
+  all.forEach(e => { if (e.date > end && (e.importance || 0) >= 5 && !nxt.includes(e)) nxt.push(e); });
+  nxt.sort((a, b) => (a.date + (a.time || '99:99')).localeCompare(b.date + (b.time || '99:99')));
   const day = d => { const x = new Date(d + 'T00:00:00+09:00'); return `${x.getMonth()+1}.${x.getDate()} (${DOW[x.getDay()]})`; };
   const dleft = d => Math.round((Date.parse(d + 'T00:00:00Z') - Date.parse(ymd + 'T00:00:00Z')) / 864e5);
   const rel = d => d === ymd ? '오늘' : dleft(d) === 1 ? '내일' : dleft(d) > 2 ? `D-${dleft(d)}` : '';
