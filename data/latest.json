@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21 12:51",
+ "updated": "2026-11-21 22:10",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 20,
+  "hn": 18,
   "reddit": 0,
   "hf": 15,
-  "github": 8,
+  "github": 7,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,8 +16,8 @@
    "title": "Anthropic’s Nasdaq debut",
    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
    "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1131,
-   "comments": 2299,
+   "points": 1134,
+   "comments": 2301,
    "r": 2.03,
    "at": "2026-11-19",
    "topics": [],
@@ -71,9 +71,9 @@
    "title": "Anthropic prices initial public offering",
    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "discussion": "https://news.ycombinator.com/item?id=50553843",
-   "points": 420,
-   "comments": 790,
-   "r": 1.88,
+   "points": 421,
+   "comments": 795,
+   "r": 1.89,
    "at": "2026-11-18",
    "topics": [],
    "story_key": "url:anthropic.com/news/anthropic-prices-initial-public-offering",
@@ -131,8 +131,8 @@
    "title": "Gemini 4 Neon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
    "discussion": "https://news.ycombinator.com/item?id=50552424",
-   "points": 1050,
-   "comments": 776,
+   "points": 1056,
+   "comments": 778,
    "r": 0.74,
    "at": "2026-11-18",
    "topics": [
@@ -179,40 +179,46 @@
   },
   {
    "layer": "hn",
-   "title": "AI is killing All About Berlin",
-   "url": "https://nicolasbouliane.com/blog/death-by-ai",
-   "discussion": "https://news.ycombinator.com/item?id=50542705",
-   "points": 813,
-   "comments": 712,
-   "r": 0.88,
-   "at": "2026-11-18",
+   "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "discussion": "https://news.ycombinator.com/item?id=50574383",
+   "points": 361,
+   "comments": 661,
+   "r": 1.83,
+   "at": "2026-11-20",
    "topics": [],
-   "story_key": "url:nicolasbouliane.com/blog/death-by-ai",
-   "summary_ko": "올ბ라웃 베를린 운영자는 구글 AI 개요 도입 뒤 트래픽이 70~75% 줄었다고 밝혔고, 댓글에서는 AI가 웹 콘텐츠를 무임승차해 원천 사이트를 고사시킨다는 비판이 주를 이뤘다. 반면 정확한 정보를 빠르게 얻을 수 있어 AI 요약이 낫다는 사용자 의견과, 애초에 구글 트래픽에 의존한 사업 구조가 문제였다는 반론도 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "url:theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "summary_ko": "앤트로픽 상장 이틀째 주가가 공모가 부근까지 밀리며 나스닥 전체가 하락한 데 대해, 댓글들은 대체로 IPO 가격 설정과 대주주 매도, 과열된 AI 밸류에이션에 대한 불신을 이야기했다. 일부는 이를 자연스러운 IPO 조정이나 거품 붕괴의 신호로 봤고, 다른 일부는 시장 변동을 과장한 기사 해석이나 아직 의미 있는 하락이 아니라는 쪽이었다. 한쪽에서는 AI가 지식노동을 대체해 가치가 떨어진다고 보고, 다른 쪽에서는 AI 수요가 여전히 강하다고 본다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 주가 하락 나스닥",
    "debate": {
-    "split": true,
-    "axis": "AI 요약이 원천 웹사이트의 생존을 위협하는 것이 문제인가, 아니면 사용자에게 더 나은 정보 제공 방식인가",
-    "consensus": "댓글 대다수는 AI 요약이 콘텐츠 창작자의 수익을 무너뜨리고 있다는 데 공감하며, 구글과 AI 기업의 무임승차에 대한 우려가 주된 반응이다.",
-    "sides": [
-     {
-      "stance": "AI 요약은 창작자의 노동을 무단으로 흡수해 웹 생태계를 갉아먹는 부당한 방식이다",
-      "logic": "콘텐츠를 학습·요약에 쓰면서 트래픽과 수익은 돌려주지 않아, 결국 원천 정보가 사라지고 AI 품질도 떨어진다",
-      "share": 60
-     },
-     {
-      "stance": "AI 요약이 사용자에게 더 편하고 나은 경험을 주므로 수요에 맞춘 자연스러운 변화다",
-      "logic": "광고 많은 웹페이지와 SEO 잡음을 건너뛰고 원하는 답을 얻는 것은 사용자 입장에서 합리적이며, 광고 기반 모델 자체가 문제였다",
-      "share": 30
-     }
-    ]
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 앤트로픽 주가 급락을 IPO 특성과 AI 밸류에이션 거품 우려의 결과로 보며 과열이 꺼지는 과정으로 받아들이는 분위기다."
    },
    "n_comments_read": 100,
    "article_read": true,
-   "kr": [],
+   "kr": [
+    {
+     "t": "‘화려한 데뷔’ 앤트로픽 다음 날 바로 급락…AI투자 회의론 확산 [지...",
+     "u": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719122&ref=A",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "나스닥 5.3% 폭락 '검은 금요일'‥올해 상승분 모두 반납",
+     "u": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867504_37004.html",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
    "v": 3,
-   "comments_at": 712,
+   "comments_at": 661,
    "model": "claude-haiku-5-5"
   },
   {
@@ -275,8 +281,8 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 632,
-   "comments": 329,
+   "points": 651,
+   "comments": 340,
    "r": 0.52,
    "at": "2026-11-20",
    "topics": [],
@@ -313,8 +319,8 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 526,
-   "comments": 310,
+   "points": 556,
+   "comments": 327,
    "r": 0.59,
    "at": "2026-11-20",
    "topics": [
@@ -353,9 +359,9 @@
    "title": "Claude solves two open problems in the physics of black holes",
    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 553,
+   "points": 559,
    "comments": 270,
-   "r": 0.49,
+   "r": 0.48,
    "at": "2026-11-19",
    "topics": [
     "모델릴리스"
@@ -393,7 +399,7 @@
    "title": "AI agents ask better questions than KPMG accountants in audit trial",
    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
    "discussion": "https://news.ycombinator.com/item?id=50547777",
-   "points": 496,
+   "points": 497,
    "comments": 262,
    "r": 0.53,
    "at": "2026-11-18",
@@ -447,49 +453,11 @@
   },
   {
    "layer": "hn",
-   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
-   "url": "https://thedataexchange.media/pete-warden-moonshine/",
-   "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 269,
-   "comments": 247,
-   "r": 0.92,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
-   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
-    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
-    "sides": [
-     {
-      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
-      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
-      "share": 55
-     },
-     {
-      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
-      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 247,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Fuck Your AI Safeguards",
    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
    "discussion": "https://news.ycombinator.com/item?id=50562262",
-   "points": 600,
-   "comments": 246,
+   "points": 609,
+   "comments": 249,
    "r": 0.41,
    "at": "2026-11-19",
    "topics": [],
@@ -523,12 +491,50 @@
   },
   {
    "layer": "hn",
+   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+   "url": "https://thedataexchange.media/pete-warden-moonshine/",
+   "discussion": "https://news.ycombinator.com/item?id=50561508",
+   "points": 270,
+   "comments": 247,
+   "r": 0.91,
+   "at": "2026-11-19",
+   "topics": [],
+   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
+   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
+    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
+    "sides": [
+     {
+      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
+      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
+      "share": 55
+     },
+     {
+      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
+      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
+      "share": 35
+     }
+    ]
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 247,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
    "discussion": "https://news.ycombinator.com/item?id=50564366",
    "points": 114,
-   "comments": 243,
-   "r": 2.13,
+   "comments": 246,
+   "r": 2.16,
    "at": "2026-11-19",
    "topics": [
     "안전·거버넌스"
@@ -571,8 +577,8 @@
    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 367,
-   "comments": 241,
+   "points": 370,
+   "comments": 243,
    "r": 0.66,
    "at": "2026-11-19",
    "topics": [
@@ -608,56 +614,12 @@
   },
   {
    "layer": "hn",
-   "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
-   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 192,
-   "comments": 233,
-   "r": 1.21,
-   "at": "2026-11-20",
-   "topics": [],
-   "story_key": "url:theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "summary_ko": "댓글 반응은 대체로 회의적이다. 상장 자체를 AI 정점의 신호로 읽는 의견이 많고, 한 참가자는 Anthropic 모델이 경쟁사에 뒤처진다고 보며 거품이 꺼질 것이라 예측했다. 반면 상장 직후 하락은 고베타 종목의 일반적 움직임이라 개인 투자자 손실과 직결되지 않는다는 지적도 나왔다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 상장 나스닥 급락",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 Anthropic 상장과 이후 AI 관련주 급락을 AI 버블의 정점 신호로 보며 회의적이다."
-   },
-   "n_comments_read": 33,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "앤트로픽 상장 이틀째 급락‥나스닥 5.3%↓",
-     "u": "https://imnews.imbc.com/replay/2026/nwtoday/article/6867428_37012.html",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "앤트로픽, 상장 이틀 차에 8.5% 급락…AI 투자 회의론 작용",
-     "u": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5232113",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 233,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Google workers tell their employer not to punish schools that don't want AI",
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 271,
-   "comments": 198,
-   "r": 0.73,
+   "points": 277,
+   "comments": 214,
+   "r": 0.77,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
@@ -703,50 +665,6 @@
    ],
    "v": 3,
    "comments_at": 198,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
-   "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
-   "discussion": "https://news.ycombinator.com/item?id=50578794",
-   "points": 184,
-   "comments": 187,
-   "r": 1.02,
-   "at": "2026-11-20",
-   "topics": [],
-   "story_key": "url:nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
-   "summary_ko": "앤트로픽 상장 직후 주가가 급락하면서 댓글에서는 IPO 가격 설정과 락업 해제 구조가 투자자 이탈을 부른 '펌프앤덤프'였다는 비판이 많았다. 반면 초과청약이 커서 가격이 낮게 책정됐다는 반론과, 상장 초기 급등 후 조정은 흔한 패턴이라는 지적도 함께 나왔다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 상장 주가 급락",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "상장 직후 주가 하락을 두고 IPO 구조와 AI 거품에 대한 회의적 시각이 우세하며, 공모가 설정과 내부자 매도에 대한 비판이 주를 이룬다."
-   },
-   "n_comments_read": 45,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "앤트로픽, 상장 이틀 차에 8.5% 급락…AI 투자 회의론 작용",
-     "u": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5232113",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "앤트로픽, 상장 이틀째 8.5% 급락…공모가까지 위협",
-     "u": "https://www.etnews.com/20261121000022",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 186,
    "model": "claude-haiku-5-5"
   },
   {
@@ -798,9 +716,9 @@
    "title": "The AI Superintelligence Debate Has Serious Flaws",
    "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
    "discussion": "https://news.ycombinator.com/item?id=50559140",
-   "points": 104,
-   "comments": 163,
-   "r": 1.57,
+   "points": 105,
+   "comments": 164,
+   "r": 1.56,
    "at": "2026-11-19",
    "topics": [
     "안전·거버넌스"
@@ -835,52 +753,12 @@
   },
   {
    "layer": "hn",
-   "title": "Why is Gemini 4 Carbon taking so long?",
-   "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-   "discussion": "https://news.ycombinator.com/item?id=50541790",
-   "points": 284,
-   "comments": 140,
-   "r": 0.49,
-   "at": "2026-11-18",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long",
-   "summary_ko": "댓글에서는 Gemini 4 Carbon이 느린 이유를 두고 실사용 경험이 엇갈린다. 여러 사용자는 토큰 효율이 낮고 쓸데없는 감사·방어 코드 작업이 많아 답답하다고 지적했고, 다른 쪽에서는 꼼꼼히 짚어내는 깊이 있는 분석과 설계 품질 때문에 느린 만큼 값어치가 있다고 평가했다. 전반적으로는 속도 문제에 대한 공감이 크다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "느린 속도를 감수할 만큼 Carbon의 작업 품질이 가치 있는가",
-    "consensus": "대다수 댓글은 Carbon이 확실히 느리고 토큰을 많이 쓴다는 데 동의하며, 속도 문제 자체는 인정하는 분위기다.",
-    "sides": [
-     {
-      "stance": "느려도 가치가 있다",
-      "logic": "신중하고 깊이 있는 분석으로 다른 모델이 놓친 최적화나 구조적 문제를 짚어내며, 지시 없이도 끝까지 완성도 높게 마무리한다는 평가다(#2, #4, #11, #22).",
-      "share": 45
-     },
-     {
-      "stance": "너무 느려서 쓸 수 없다",
-      "logic": "불필요한 작업과 과도한 도구 호출로 시간과 토큰만 낭비하고, 간단한 작업에서는 특히 비효율적이라는 주장이다(#6, #9, #18, #19, #30).",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 52,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 140,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 252,
-   "comments": 133,
-   "r": 0.53,
+   "points": 291,
+   "comments": 157,
+   "r": 0.54,
    "at": "2026-11-20",
    "topics": [
     "인프라·칩"
@@ -928,6 +806,44 @@
    ],
    "v": 3,
    "comments_at": 130,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
+   "discussion": "https://news.ycombinator.com/item?id=50577265",
+   "points": 430,
+   "comments": 126,
+   "r": 0.29,
+   "at": "2026-11-20",
+   "topics": [],
+   "story_key": "arxiv:2611.21885",
+   "summary_ko": "HN 댓글은 이 논문이 말하는 '자기 가중치 재작성'이 실제로 새로운지에 회의적인 반응이 많았다. 한 댓글은 모델이 한 수정이 추론 길이 축소 같은 단순한 것이었고 기존 'weight-space programming' 연구와 비슷하다고 지적했고, 다른 이들은 구글 'sleep' 논문이나 abliteration 같은 기존 기법과의 유사성을 들었다. 반면 RLVR로 확장될 가능성이나 안전성(정렬) 문제를 우려하는 목소리도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "자기 가중치 재작성이 새로운 진전인가, 기존 기법의 재포장인가",
+    "consensus": "대체로 논문의 주장이 과장됐거나 기존 연구(weight-space programming, abliteration)와 비슷하다는 회의적 반응이 우세하지만, 잠재력은 인정하는 분위기다.",
+    "sides": [
+     {
+      "stance": "기존 기법의 재포장이며 과장됐다",
+      "logic": "모델이 한 수정은 추론 길이 축소나 단순 rank-1 abliteration 같은 기존 기법 수준이고, 'first time' 주장은 근거가 약하다는 주장.",
+      "share": 60
+     },
+     {
+      "stance": "작은 결과라도 방향성이 중요하며 RLVR 등으로 확장될 수 있다",
+      "logic": "현재 효과는 미미하지만 모델이 스스로 가중치를 고칠 수 있다는 사실 자체가 RSI 방향에서 의미 있다는 주장.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 57,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 126,
    "model": "claude-haiku-5-5"
   }
  ],
@@ -938,8 +854,8 @@
    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
    "discussion": "https://news.ycombinator.com/item?id=50564366",
    "points": 114,
-   "comments": 243,
-   "r": 2.13,
+   "comments": 246,
+   "r": 2.16,
    "at": "2026-11-19",
    "topics": [
     "안전·거버넌스"
@@ -982,8 +898,8 @@
    "title": "Anthropic’s Nasdaq debut",
    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
    "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1131,
-   "comments": 2299,
+   "points": 1134,
+   "comments": 2301,
    "r": 2.03,
    "at": "2026-11-19",
    "topics": [],
@@ -1037,9 +953,9 @@
    "title": "Anthropic prices initial public offering",
    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "discussion": "https://news.ycombinator.com/item?id=50553843",
-   "points": 420,
-   "comments": 790,
-   "r": 1.88,
+   "points": 421,
+   "comments": 795,
+   "r": 1.89,
    "at": "2026-11-18",
    "topics": [],
    "story_key": "url:anthropic.com/news/anthropic-prices-initial-public-offering",
@@ -1094,12 +1010,56 @@
   },
   {
    "layer": "hn",
+   "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "discussion": "https://news.ycombinator.com/item?id=50574383",
+   "points": 361,
+   "comments": 661,
+   "r": 1.83,
+   "at": "2026-11-20",
+   "topics": [],
+   "story_key": "url:theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "summary_ko": "앤트로픽 상장 이틀째 주가가 공모가 부근까지 밀리며 나스닥 전체가 하락한 데 대해, 댓글들은 대체로 IPO 가격 설정과 대주주 매도, 과열된 AI 밸류에이션에 대한 불신을 이야기했다. 일부는 이를 자연스러운 IPO 조정이나 거품 붕괴의 신호로 봤고, 다른 일부는 시장 변동을 과장한 기사 해석이나 아직 의미 있는 하락이 아니라는 쪽이었다. 한쪽에서는 AI가 지식노동을 대체해 가치가 떨어진다고 보고, 다른 쪽에서는 AI 수요가 여전히 강하다고 본다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 주가 하락 나스닥",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 앤트로픽 주가 급락을 IPO 특성과 AI 밸류에이션 거품 우려의 결과로 보며 과열이 꺼지는 과정으로 받아들이는 분위기다."
+   },
+   "n_comments_read": 100,
+   "article_read": true,
+   "kr": [
+    {
+     "t": "‘화려한 데뷔’ 앤트로픽 다음 날 바로 급락…AI투자 회의론 확산 [지...",
+     "u": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719122&ref=A",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "나스닥 5.3% 폭락 '검은 금요일'‥올해 상승분 모두 반납",
+     "u": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867504_37004.html",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 661,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "The AI Superintelligence Debate Has Serious Flaws",
    "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
    "discussion": "https://news.ycombinator.com/item?id=50559140",
-   "points": 104,
-   "comments": 163,
-   "r": 1.57,
+   "points": 105,
+   "comments": 164,
+   "r": 1.56,
    "at": "2026-11-19",
    "topics": [
     "안전·거버넌스"
@@ -1134,100 +1094,12 @@
   },
   {
    "layer": "hn",
-   "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
-   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 192,
-   "comments": 233,
-   "r": 1.21,
-   "at": "2026-11-20",
-   "topics": [],
-   "story_key": "url:theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "summary_ko": "댓글 반응은 대체로 회의적이다. 상장 자체를 AI 정점의 신호로 읽는 의견이 많고, 한 참가자는 Anthropic 모델이 경쟁사에 뒤처진다고 보며 거품이 꺼질 것이라 예측했다. 반면 상장 직후 하락은 고베타 종목의 일반적 움직임이라 개인 투자자 손실과 직결되지 않는다는 지적도 나왔다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 상장 나스닥 급락",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 Anthropic 상장과 이후 AI 관련주 급락을 AI 버블의 정점 신호로 보며 회의적이다."
-   },
-   "n_comments_read": 33,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "앤트로픽 상장 이틀째 급락‥나스닥 5.3%↓",
-     "u": "https://imnews.imbc.com/replay/2026/nwtoday/article/6867428_37012.html",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "앤트로픽, 상장 이틀 차에 8.5% 급락…AI 투자 회의론 작용",
-     "u": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5232113",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 233,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
-   "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
-   "discussion": "https://news.ycombinator.com/item?id=50578794",
-   "points": 184,
-   "comments": 187,
-   "r": 1.02,
-   "at": "2026-11-20",
-   "topics": [],
-   "story_key": "url:nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
-   "summary_ko": "앤트로픽 상장 직후 주가가 급락하면서 댓글에서는 IPO 가격 설정과 락업 해제 구조가 투자자 이탈을 부른 '펌프앤덤프'였다는 비판이 많았다. 반면 초과청약이 커서 가격이 낮게 책정됐다는 반론과, 상장 초기 급등 후 조정은 흔한 패턴이라는 지적도 함께 나왔다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 상장 주가 급락",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "상장 직후 주가 하락을 두고 IPO 구조와 AI 거품에 대한 회의적 시각이 우세하며, 공모가 설정과 내부자 매도에 대한 비판이 주를 이룬다."
-   },
-   "n_comments_read": 45,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "앤트로픽, 상장 이틀 차에 8.5% 급락…AI 투자 회의론 작용",
-     "u": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5232113",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "앤트로픽, 상장 이틀째 8.5% 급락…공모가까지 위협",
-     "u": "https://www.etnews.com/20261121000022",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 186,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
    "url": "https://thedataexchange.media/pete-warden-moonshine/",
    "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 269,
+   "points": 270,
    "comments": 247,
-   "r": 0.92,
+   "r": 0.91,
    "at": "2026-11-19",
    "topics": [],
    "story_key": "url:thedataexchange.media/pete-warden-moonshine",
@@ -1260,40 +1132,57 @@
   },
   {
    "layer": "hn",
-   "title": "AI is killing All About Berlin",
-   "url": "https://nicolasbouliane.com/blog/death-by-ai",
-   "discussion": "https://news.ycombinator.com/item?id=50542705",
-   "points": 813,
-   "comments": 712,
-   "r": 0.88,
-   "at": "2026-11-18",
+   "title": "Google workers tell their employer not to punish schools that don't want AI",
+   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+   "discussion": "https://news.ycombinator.com/item?id=50577901",
+   "points": 277,
+   "comments": 214,
+   "r": 0.77,
+   "at": "2026-11-20",
    "topics": [],
-   "story_key": "url:nicolasbouliane.com/blog/death-by-ai",
-   "summary_ko": "올ბ라웃 베를린 운영자는 구글 AI 개요 도입 뒤 트래픽이 70~75% 줄었다고 밝혔고, 댓글에서는 AI가 웹 콘텐츠를 무임승차해 원천 사이트를 고사시킨다는 비판이 주를 이뤘다. 반면 정확한 정보를 빠르게 얻을 수 있어 AI 요약이 낫다는 사용자 의견과, 애초에 구글 트래픽에 의존한 사업 구조가 문제였다는 반론도 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "url:motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
+   "summary_ko": "댓글에서는 구글이 AI 기능을 끌 수 없는 학교의 검색 접근을 막겠다는 정책 자체를 두고 비판이 많았다. 학교가 DuckDuckGo나 Bing 같은 다른 검색엔진으로 옮기면 된다는 의견과, 학교 IT가 확장 프로그램 등으로 쉽게 차단할 수 있다는 실무적 지적이 이어졌다. 반면 구글이 검색을 AI 중심으로 바꾼 것 자체는 기업의 제품 방향이므로 벌이 아니라 '대체 옵션을 안 주는 것'일 뿐이라는 반론도 있었다.",
+   "is_event": true,
+   "kr_query": "구글 학교 검색 AI 차단 정책",
    "debate": {
     "split": true,
-    "axis": "AI 요약이 원천 웹사이트의 생존을 위협하는 것이 문제인가, 아니면 사용자에게 더 나은 정보 제공 방식인가",
-    "consensus": "댓글 대다수는 AI 요약이 콘텐츠 창작자의 수익을 무너뜨리고 있다는 데 공감하며, 구글과 AI 기업의 무임승차에 대한 우려가 주된 반응이다.",
+    "axis": "학교가 AI를 거부할 때 구글이 검색 접근을 막는 것이 정당한가",
+    "consensus": "댓글 대다수는 구글의 정책을 이윤 추구의 결과로 보며 비판적이고, 학교는 다른 검색엔진을 쓰면 된다는 실용적 해법을 제시한다.",
     "sides": [
      {
-      "stance": "AI 요약은 창작자의 노동을 무단으로 흡수해 웹 생태계를 갉아먹는 부당한 방식이다",
-      "logic": "콘텐츠를 학습·요약에 쓰면서 트래픽과 수익은 돌려주지 않아, 결국 원천 정보가 사라지고 AI 품질도 떨어진다",
-      "share": 60
+      "stance": "정책은 부당하며 구글이 아이들을 AI에 길들이려 한다",
+      "logic": "교육 현장의 선택권을 빼앗고 어린 사용자를 일찍부터 제품에 묶으려는 전략이라는 주장",
+      "share": 55
      },
      {
-      "stance": "AI 요약이 사용자에게 더 편하고 나은 경험을 주므로 수요에 맞춘 자연스러운 변화다",
-      "logic": "광고 많은 웹페이지와 SEO 잡음을 건너뛰고 원하는 답을 얻는 것은 사용자 입장에서 합리적이며, 광고 기반 모델 자체가 문제였다",
+      "stance": "정당한 제품 방향이며 학교가 다른 검색을 쓰면 된다",
+      "logic": "기업이 제품 로드맵을 정하는 것은 당연하고, 원치 않으면 다른 서비스를 선택하면 된다는 주장",
       "share": 30
      }
     ]
    },
-   "n_comments_read": 100,
+   "n_comments_read": 31,
    "article_read": true,
-   "kr": [],
+   "kr": [
+    {
+     "t": "“AI 끄고 구글 검색? 서비스 차단하겠다”...강제 정책에 美 교육계 반...",
+     "u": "https://www.mk.co.kr/article/12196163",
+     "d": "Wed, 04 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "구글, AI 거부 학교엔 검색도 차단…미국서 ‘AI 끼워팔기’ 논란",
+     "u": "https://www.hani.co.kr/arti/economy/it/1285751.html",
+     "d": "Wed, 04 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
    "v": 3,
-   "comments_at": 712,
+   "comments_at": 198,
    "model": "claude-haiku-5-5"
   },
   {
@@ -1345,8 +1234,8 @@
    "title": "Gemini 4 Neon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
    "discussion": "https://news.ycombinator.com/item?id=50552424",
-   "points": 1050,
-   "comments": 776,
+   "points": 1056,
+   "comments": 778,
    "r": 0.74,
    "at": "2026-11-18",
    "topics": [
@@ -1393,66 +1282,11 @@
   },
   {
    "layer": "hn",
-   "title": "Google workers tell their employer not to punish schools that don't want AI",
-   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
-   "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 271,
-   "comments": 198,
-   "r": 0.73,
-   "at": "2026-11-20",
-   "topics": [],
-   "story_key": "url:motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
-   "summary_ko": "댓글에서는 구글이 AI 기능을 끌 수 없는 학교의 검색 접근을 막겠다는 정책 자체를 두고 비판이 많았다. 학교가 DuckDuckGo나 Bing 같은 다른 검색엔진으로 옮기면 된다는 의견과, 학교 IT가 확장 프로그램 등으로 쉽게 차단할 수 있다는 실무적 지적이 이어졌다. 반면 구글이 검색을 AI 중심으로 바꾼 것 자체는 기업의 제품 방향이므로 벌이 아니라 '대체 옵션을 안 주는 것'일 뿐이라는 반론도 있었다.",
-   "is_event": true,
-   "kr_query": "구글 학교 검색 AI 차단 정책",
-   "debate": {
-    "split": true,
-    "axis": "학교가 AI를 거부할 때 구글이 검색 접근을 막는 것이 정당한가",
-    "consensus": "댓글 대다수는 구글의 정책을 이윤 추구의 결과로 보며 비판적이고, 학교는 다른 검색엔진을 쓰면 된다는 실용적 해법을 제시한다.",
-    "sides": [
-     {
-      "stance": "정책은 부당하며 구글이 아이들을 AI에 길들이려 한다",
-      "logic": "교육 현장의 선택권을 빼앗고 어린 사용자를 일찍부터 제품에 묶으려는 전략이라는 주장",
-      "share": 55
-     },
-     {
-      "stance": "정당한 제품 방향이며 학교가 다른 검색을 쓰면 된다",
-      "logic": "기업이 제품 로드맵을 정하는 것은 당연하고, 원치 않으면 다른 서비스를 선택하면 된다는 주장",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 31,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "“AI 끄고 구글 검색? 서비스 차단하겠다”...강제 정책에 美 교육계 반...",
-     "u": "https://www.mk.co.kr/article/12196163",
-     "d": "Wed, 04 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "구글, AI 거부 학교엔 검색도 차단…미국서 ‘AI 끼워팔기’ 논란",
-     "u": "https://www.hani.co.kr/arti/economy/it/1285751.html",
-     "d": "Wed, 04 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 198,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 367,
-   "comments": 241,
+   "points": 370,
+   "comments": 243,
    "r": 0.66,
    "at": "2026-11-19",
    "topics": [
@@ -1546,8 +1380,8 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 526,
-   "comments": 310,
+   "points": 556,
+   "comments": 327,
    "r": 0.59,
    "at": "2026-11-20",
    "topics": [
@@ -1583,10 +1417,67 @@
   },
   {
    "layer": "hn",
+   "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+   "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+   "discussion": "https://news.ycombinator.com/item?id=50581438",
+   "points": 291,
+   "comments": 157,
+   "r": 0.54,
+   "at": "2026-11-20",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+   "summary_ko": "댓글에서는 SEC의 엔비디아 회계 조사 소식을 두고 순환 금융(circular financing)과 엔론 사태에 빗대는 반응이 주를 이뤘다. 일부는 최고재무책임자(CFO)였던 인물이 임시 CEO가 된 점과 중국 매출 공시 문제를 근거로 우려를 키웠고, 다른 쪽은 엔론처럼 노골적인 회계 사기는 나오기 어렵다며 SEC보다 DOJ 쪽이 더 큰 변수라고 봤다. 주가 급락과 AI 거품 붕괴 가능성에 대한 비관론도 함께 이어졌다.",
+   "is_event": true,
+   "kr_query": "엔비디아 SEC 회계 조사",
+   "debate": {
+    "split": true,
+    "axis": "엔비디아의 회계 문제가 엔론 같은 대형 회계 스캔들로 번질 가능성이 있는가",
+    "consensus": "댓글 대다수는 순환 금융과 중국 매출 관련 의혹으로 엔비디아와 AI 투자 구조에 대한 우려를 표했고, 주가 하락과 AI 거품 붕괴 가능성을 비관적으로 보는 분위기다.",
+    "sides": [
+     {
+      "stance": "엔론급 스캔들로 번질 수 있다",
+      "logic": "순환 금융, SPV 활용, 감가상각 연장 등 구조가 엔론과 닮았고 CFO 출신 임시 CEO 등 내부 연루 정황이 의심된다는 주장",
+      "share": 60
+     },
+     {
+      "stance": "엔론식 스캔들은 어렵다",
+      "logic": "엔비디아는 회계 규칙을 아슬아슬하게 해석할 전문 인력이 많아 명백한 위법을 찾기 어렵고, 조사는 헤드라인 수준이며 실제 위험은 DOJ나 시장 재평가에 있다는 주장",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 35,
+   "article_read": false,
+   "kr": [
+    {
+     "t": "\"美증권위, 엔비디아 회계조사\"…싱가포르 매출기준 변경 주목",
+     "u": "https://www.yna.co.kr/view/AKR20261121008700072?input=1195m",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "美증권위, 엔비디아 회계 조사…대중국 수출·반독점 이어 사법 리스크...",
+     "u": "https://biz.chosun.com/international/international_general/2026/11/21/PXYH3O4QTRDXJFF4Q54VMBJHJI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+     "d": "Sat, 21 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 130,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "AI agents ask better questions than KPMG accountants in audit trial",
    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
    "discussion": "https://news.ycombinator.com/item?id=50547777",
-   "points": 496,
+   "points": 497,
    "comments": 262,
    "r": 0.53,
    "at": "2026-11-18",
@@ -1640,68 +1531,11 @@
   },
   {
    "layer": "hn",
-   "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
-   "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
-   "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 252,
-   "comments": 133,
-   "r": 0.53,
-   "at": "2026-11-20",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
-   "summary_ko": "댓글에서는 SEC의 엔비디아 회계 조사 소식을 두고 순환 금융(circular financing)과 엔론 사태에 빗대는 반응이 주를 이뤘다. 일부는 최고재무책임자(CFO)였던 인물이 임시 CEO가 된 점과 중국 매출 공시 문제를 근거로 우려를 키웠고, 다른 쪽은 엔론처럼 노골적인 회계 사기는 나오기 어렵다며 SEC보다 DOJ 쪽이 더 큰 변수라고 봤다. 주가 급락과 AI 거품 붕괴 가능성에 대한 비관론도 함께 이어졌다.",
-   "is_event": true,
-   "kr_query": "엔비디아 SEC 회계 조사",
-   "debate": {
-    "split": true,
-    "axis": "엔비디아의 회계 문제가 엔론 같은 대형 회계 스캔들로 번질 가능성이 있는가",
-    "consensus": "댓글 대다수는 순환 금융과 중국 매출 관련 의혹으로 엔비디아와 AI 투자 구조에 대한 우려를 표했고, 주가 하락과 AI 거품 붕괴 가능성을 비관적으로 보는 분위기다.",
-    "sides": [
-     {
-      "stance": "엔론급 스캔들로 번질 수 있다",
-      "logic": "순환 금융, SPV 활용, 감가상각 연장 등 구조가 엔론과 닮았고 CFO 출신 임시 CEO 등 내부 연루 정황이 의심된다는 주장",
-      "share": 60
-     },
-     {
-      "stance": "엔론식 스캔들은 어렵다",
-      "logic": "엔비디아는 회계 규칙을 아슬아슬하게 해석할 전문 인력이 많아 명백한 위법을 찾기 어렵고, 조사는 헤드라인 수준이며 실제 위험은 DOJ나 시장 재평가에 있다는 주장",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 35,
-   "article_read": false,
-   "kr": [
-    {
-     "t": "\"美증권위, 엔비디아 회계조사\"…싱가포르 매출기준 변경 주목",
-     "u": "https://www.yna.co.kr/view/AKR20261121008700072?input=1195m",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "美증권위, 엔비디아 회계 조사…대중국 수출·반독점 이어 사법 리스크...",
-     "u": "https://biz.chosun.com/international/international_general/2026/11/21/PXYH3O4QTRDXJFF4Q54VMBJHJI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-     "d": "Sat, 21 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 130,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 632,
-   "comments": 329,
+   "points": 651,
+   "comments": 340,
    "r": 0.52,
    "at": "2026-11-20",
    "topics": [],
@@ -1738,9 +1572,9 @@
    "title": "Claude solves two open problems in the physics of black holes",
    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 553,
+   "points": 559,
    "comments": 270,
-   "r": 0.49,
+   "r": 0.48,
    "at": "2026-11-19",
    "topics": [
     "모델릴리스"
@@ -1775,51 +1609,11 @@
   },
   {
    "layer": "hn",
-   "title": "Why is Gemini 4 Carbon taking so long?",
-   "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-   "discussion": "https://news.ycombinator.com/item?id=50541790",
-   "points": 284,
-   "comments": 140,
-   "r": 0.49,
-   "at": "2026-11-18",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long",
-   "summary_ko": "댓글에서는 Gemini 4 Carbon이 느린 이유를 두고 실사용 경험이 엇갈린다. 여러 사용자는 토큰 효율이 낮고 쓸데없는 감사·방어 코드 작업이 많아 답답하다고 지적했고, 다른 쪽에서는 꼼꼼히 짚어내는 깊이 있는 분석과 설계 품질 때문에 느린 만큼 값어치가 있다고 평가했다. 전반적으로는 속도 문제에 대한 공감이 크다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "느린 속도를 감수할 만큼 Carbon의 작업 품질이 가치 있는가",
-    "consensus": "대다수 댓글은 Carbon이 확실히 느리고 토큰을 많이 쓴다는 데 동의하며, 속도 문제 자체는 인정하는 분위기다.",
-    "sides": [
-     {
-      "stance": "느려도 가치가 있다",
-      "logic": "신중하고 깊이 있는 분석으로 다른 모델이 놓친 최적화나 구조적 문제를 짚어내며, 지시 없이도 끝까지 완성도 높게 마무리한다는 평가다(#2, #4, #11, #22).",
-      "share": 45
-     },
-     {
-      "stance": "너무 느려서 쓸 수 없다",
-      "logic": "불필요한 작업과 과도한 도구 호출로 시간과 토큰만 낭비하고, 간단한 작업에서는 특히 비효율적이라는 주장이다(#6, #9, #18, #19, #30).",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 52,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 140,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Fuck Your AI Safeguards",
    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
    "discussion": "https://news.ycombinator.com/item?id=50562262",
-   "points": 600,
-   "comments": 246,
+   "points": 609,
+   "comments": 249,
    "r": 0.41,
    "at": "2026-11-19",
    "topics": [],
@@ -1850,6 +1644,44 @@
    "v": 3,
    "comments_at": 246,
    "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
+   "discussion": "https://news.ycombinator.com/item?id=50577265",
+   "points": 430,
+   "comments": 126,
+   "r": 0.29,
+   "at": "2026-11-20",
+   "topics": [],
+   "story_key": "arxiv:2611.21885",
+   "summary_ko": "HN 댓글은 이 논문이 말하는 '자기 가중치 재작성'이 실제로 새로운지에 회의적인 반응이 많았다. 한 댓글은 모델이 한 수정이 추론 길이 축소 같은 단순한 것이었고 기존 'weight-space programming' 연구와 비슷하다고 지적했고, 다른 이들은 구글 'sleep' 논문이나 abliteration 같은 기존 기법과의 유사성을 들었다. 반면 RLVR로 확장될 가능성이나 안전성(정렬) 문제를 우려하는 목소리도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "자기 가중치 재작성이 새로운 진전인가, 기존 기법의 재포장인가",
+    "consensus": "대체로 논문의 주장이 과장됐거나 기존 연구(weight-space programming, abliteration)와 비슷하다는 회의적 반응이 우세하지만, 잠재력은 인정하는 분위기다.",
+    "sides": [
+     {
+      "stance": "기존 기법의 재포장이며 과장됐다",
+      "logic": "모델이 한 수정은 추론 길이 축소나 단순 rank-1 abliteration 같은 기존 기법 수준이고, 'first time' 주장은 근거가 약하다는 주장.",
+      "share": 60
+     },
+     {
+      "stance": "작은 결과라도 방향성이 중요하며 RLVR 등으로 확장될 수 있다",
+      "logic": "현재 효과는 미미하지만 모델이 스스로 가중치를 고칠 수 있다는 사실 자체가 RSI 방향에서 의미 있다는 주장.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 57,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 126,
+   "model": "claude-haiku-5-5"
   }
  ],
  "reddit_top": [],
@@ -1859,9 +1691,9 @@
    "title": "Anthropic prices initial public offering",
    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "discussion": "https://news.ycombinator.com/item?id=50553843",
-   "points": 420,
-   "comments": 790,
-   "r": 1.88,
+   "points": 421,
+   "comments": 795,
+   "r": 1.89,
    "at": "2026-11-18",
    "topics": [],
    "story_key": "url:anthropic.com/news/anthropic-prices-initial-public-offering",
@@ -1919,8 +1751,8 @@
    "title": "Gemini 4 Neon",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
    "discussion": "https://news.ycombinator.com/item?id=50552424",
-   "points": 1050,
-   "comments": 776,
+   "points": 1056,
+   "comments": 778,
    "r": 0.74,
    "at": "2026-11-18",
    "topics": [
@@ -2015,9 +1847,9 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 553,
-   "likes": 785,
-   "downloads": 136,
+   "trending": 982,
+   "likes": 1254,
+   "downloads": 7944,
    "topics": [
     "모델릴리스"
    ],
@@ -2028,9 +1860,9 @@
    "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 314,
-   "likes": 5697,
-   "downloads": 7323,
+   "trending": 628,
+   "likes": 812,
+   "downloads": 8120,
    "topics": [
     "모델릴리스"
    ],
@@ -2041,9 +1873,9 @@
    "layer": "hf",
    "title": "harness-hub/Qwen3.8-27B-pi-adapted",
    "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 294,
-   "likes": 866,
-   "downloads": 1874,
+   "trending": 615,
+   "likes": 851,
+   "downloads": 2383,
    "topics": [
     "모델릴리스"
    ],
@@ -2054,8 +1886,8 @@
    "layer": "hf",
    "title": "Sentinel7/h3",
    "url": "https://huggingface.co/Sentinel7/h3",
-   "trending": 273,
-   "likes": 350,
+   "trending": 563,
+   "likes": 656,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -2067,9 +1899,9 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 238,
-   "likes": 259,
-   "downloads": 0,
+   "trending": 392,
+   "likes": 410,
+   "downloads": 238152,
    "topics": [
     "모델릴리스"
    ],
@@ -2078,37 +1910,11 @@
   },
   {
    "layer": "hf",
-   "title": "Qwen/Qwen3.8-27B",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 230,
-   "likes": 20815,
-   "downloads": 6454419,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:qwen/qwen3.8-27b",
-   "one_line": "Qwen 팀이 올린 27B 규모 모델로 표기되어 있으나, 출시 배경과 세부 성능은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
-   "title": "Lightricks/LTX-2.5",
-   "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 182,
-   "likes": 12916,
-   "downloads": 2964523,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:lightricks/ltx-2.5",
-   "one_line": "Lightricks가 만든 LTX 계열 영상 생성 모델로 알려져 있으며, 2.5 버전의 세부 내용은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
    "title": "tencent/Hy4-flash",
    "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 178,
-   "likes": 553,
-   "downloads": 3949,
+   "trending": 365,
+   "likes": 563,
+   "downloads": 5588,
    "topics": [
     "모델릴리스"
    ],
@@ -2117,29 +1923,55 @@
   },
   {
    "layer": "hf",
-   "title": "sensenova/SenseNova-Loop-9B",
-   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-   "trending": 171,
-   "likes": 451,
-   "downloads": 1631,
+   "title": "Lightricks/LTX-2.5",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5",
+   "trending": 355,
+   "likes": 12863,
+   "downloads": 3000544,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:sensenova/sensenova-loop-9b",
-   "one_line": "sensenova가 공개한 9B급 SenseNova-Loop 모델로 표기되어 있으나, 세부 기능은 확인되지 않습니다."
+   "story_key": "hf:lightricks/ltx-2.5",
+   "one_line": "Lightricks가 만든 LTX 계열 영상 생성 모델로 알려져 있으며, 2.5 버전의 세부 내용은 확인되지 않습니다."
   },
   {
    "layer": "hf",
-   "title": "MiniMaxAI/MiniMax-H3-Image",
-   "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-   "trending": 168,
-   "likes": 1708,
-   "downloads": 876986,
+   "title": "inworld/voice-isolator",
+   "url": "https://huggingface.co/inworld/voice-isolator",
+   "trending": 342,
+   "likes": 519,
+   "downloads": 0,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:minimaxai/minimax-h3-image",
-   "one_line": "MiniMaxAI가 공개한 MiniMax-H3 계열 이미지 모델로 표기되어 있으나, 세부 사양은 확인되지 않습니다."
+   "story_key": "hf:inworld/voice-isolator",
+   "one_line": "inworld/voice-isolator는 Inworld AI가 공개한 음성 분리 모델로, 잡음 속에서 사람의 목소리만 남기는 용도로 쓰인다."
+  },
+  {
+   "layer": "hf",
+   "title": "apple/FastFrames-L",
+   "url": "https://huggingface.co/apple/FastFrames-L",
+   "trending": 327,
+   "likes": 497,
+   "downloads": 0,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:apple/fastframes-l",
+   "one_line": "apple/FastFrames-L은 Apple이 공개한 모델로, 영상 프레임 생성 속도를 높이는 것을 목표로 한 대형 모델이다."
+  },
+  {
+   "layer": "hf",
+   "title": "meituan-longcat/LongCat-Video-Avatar-1.6",
+   "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+   "trending": 253,
+   "likes": 400,
+   "downloads": 3031,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:meituan-longcat/longcat-video-avatar-1.6",
+   "one_line": "meituan-longcat/LongCat-Video-Avatar-1.6은 중국 Meituan의 LongCat 팀이 만든 모델로, 음성과 이미지를 바탕으로 아바타 영상을 생성하는 용도다."
   }
  ],
  "new_repos": [
@@ -2148,7 +1980,7 @@
    "title": "bookwjitchieni1986/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI a",
    "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-   "stars": 1813,
+   "stars": 1928,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -2159,10 +1991,22 @@
   },
   {
    "layer": "github",
+   "title": "iamajmeena/neonclipping",
+   "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+   "url": "https://github.com/iamajmeena/neonclipping",
+   "stars": 1542,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:iamajmeena/neonclipping",
+   "one_line": "유튜브 링크를 넣으면 자막이 붙은 9:16 세로 클립을 만드는 오픈소스 도구로, 로컬 LLM을 사용한다."
+  },
+  {
+   "layer": "github",
    "title": "sybil-solutions/inference-optimisation-skill",
    "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-   "stars": 1355,
+   "stars": 1419,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -2172,27 +2016,25 @@
   },
   {
    "layer": "github",
-   "title": "iamajmeena/neonclipping",
-   "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
-   "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 1275,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:iamajmeena/neonclipping",
-   "one_line": "유튜브 링크를 넣으면 자막이 붙은 9:16 세로 클립을 만드는 오픈소스 도구로, 로컬 LLM을 사용한다."
-  },
-  {
-   "layer": "github",
    "title": "boringmarketer/boring-marketing-skills",
    "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
    "url": "https://github.com/boringmarketer/boring-marketing-skills",
-   "stars": 745,
+   "stars": 761,
    "topics": [
     "에이전트"
    ],
    "story_key": "gh:boringmarketer/boring-marketing-skills",
    "one_line": "리서치, 카피, SEO, 광고 등 마케팅 작업용 스킬 32개를 AI 에이전트에 추가하는 MIT 라이선스 패키지다."
+  },
+  {
+   "layer": "github",
+   "title": "hatsunemiku-ai/google-one-tools",
+   "desc": "",
+   "url": "https://github.com/hatsunemiku-ai/google-one-tools",
+   "stars": 686,
+   "topics": [],
+   "story_key": "gh:hatsunemiku-ai/google-one-tools",
+   "one_line": "저장소 이름으로 미루어 Google One 관련 도구 모음으로 보이나, 구체적인 기능은 확인하지 못했다."
   },
   {
    "layer": "github",
@@ -2219,32 +2061,6 @@
    ],
    "story_key": "gh:weightcashiercupola/gemini-config-checker-",
    "one_line": "프록시 설정을 검사해 Google AI Studio와 Gemini 접속 가능 여부를 확인한다고 소개하는 도구다."
-  },
-  {
-   "layer": "github",
-   "title": "WindGatorRise37/Gemini-Config-Checker-",
-   "desc": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android) ",
-   "url": "https://github.com/WindGatorRise37/Gemini-Config-Checker-",
-   "stars": 472,
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:windgatorrise37/gemini-config-checker-",
-   "one_line": "프록시 설정 지역 검사 도구로, Google AI Studio와 Gemini 접속을 목표로 한다고 소개되어 있다."
-  },
-  {
-   "layer": "github",
-   "title": "WyrmClimberManacle/Gemini-Config-Checker-",
-   "desc": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android) ",
-   "url": "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-",
-   "stars": 472,
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "gh:wyrmclimbermanacle/gemini-config-checker-",
-   "one_line": "프록시 설정을 찾아 Google AI Studio와 Gemini 접속을 시도하는 용도로 소개된 지역 검사 도구다."
   }
  ],
  "trust_recent": [
@@ -2615,16 +2431,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-21 03:51",
+ "enriched_at": "2026-11-21 13:11",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 0,
-  "in": 0,
-  "out": 0,
+  "calls": 5,
+  "in": 23603,
+  "out": 1610,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 0,
-  "cost_usd": 0.0
+  "items": 2,
+  "cost_usd": 0.00317
  }
 }

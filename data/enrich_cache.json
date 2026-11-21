@@ -3592,29 +3592,29 @@
   "at": "2026-11-21 03:35"
  },
  "50574383": {
-  "summary_ko": "댓글 반응은 대체로 회의적이다. 상장 자체를 AI 정점의 신호로 읽는 의견이 많고, 한 참가자는 Anthropic 모델이 경쟁사에 뒤처진다고 보며 거품이 꺼질 것이라 예측했다. 반면 상장 직후 하락은 고베타 종목의 일반적 움직임이라 개인 투자자 손실과 직결되지 않는다는 지적도 나왔다.",
+  "summary_ko": "앤트로픽 상장 이틀째 주가가 공모가 부근까지 밀리며 나스닥 전체가 하락한 데 대해, 댓글들은 대체로 IPO 가격 설정과 대주주 매도, 과열된 AI 밸류에이션에 대한 불신을 이야기했다. 일부는 이를 자연스러운 IPO 조정이나 거품 붕괴의 신호로 봤고, 다른 일부는 시장 변동을 과장한 기사 해석이나 아직 의미 있는 하락이 아니라는 쪽이었다. 한쪽에서는 AI가 지식노동을 대체해 가치가 떨어진다고 보고, 다른 쪽에서는 AI 수요가 여전히 강하다고 본다.",
   "is_event": true,
-  "kr_query": "앤트로픽 상장 나스닥 급락",
+  "kr_query": "앤트로픽 상장 주가 하락 나스닥",
   "debate": {
    "split": false,
    "axis": "",
    "sides": [],
-   "consensus": "댓글 대다수는 Anthropic 상장과 이후 AI 관련주 급락을 AI 버블의 정점 신호로 보며 회의적이다."
+   "consensus": "댓글 대다수는 앤트로픽 주가 급락을 IPO 특성과 AI 밸류에이션 거품 우려의 결과로 보며 과열이 꺼지는 과정으로 받아들이는 분위기다."
   },
-  "n_comments_read": 33,
+  "n_comments_read": 100,
   "article_read": true,
   "kr": [
    {
-    "t": "앤트로픽 상장 이틀째 급락‥나스닥 5.3%↓",
-    "u": "https://imnews.imbc.com/replay/2026/nwtoday/article/6867428_37012.html",
+    "t": "‘화려한 데뷔’ 앤트로픽 다음 날 바로 급락…AI투자 회의론 확산 [지...",
+    "u": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719122&ref=A",
     "d": "Sat, 21 Nov 2026",
     "why": [
      "Claude 판정"
     ]
    },
    {
-    "t": "앤트로픽, 상장 이틀 차에 8.5% 급락…AI 투자 회의론 작용",
-    "u": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5232113",
+    "t": "나스닥 5.3% 폭락 '검은 금요일'‥올해 상승분 모두 반납",
+    "u": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867504_37004.html",
     "d": "Sat, 21 Nov 2026",
     "why": [
      "Claude 판정"
@@ -3622,9 +3622,9 @@
    }
   ],
   "v": 3,
-  "comments_at": 233,
+  "comments_at": 661,
   "model": "claude-haiku-5-5",
-  "at": "2026-11-21 03:35"
+  "at": "2026-11-21 13:11"
  },
  "50578794": {
   "summary_ko": "앤트로픽 상장 직후 주가가 급락하면서 댓글에서는 IPO 가격 설정과 락업 해제 구조가 투자자 이탈을 부른 '펌프앤덤프'였다는 비판이 많았다. 반면 초과청약이 커서 가격이 낮게 책정됐다는 반론과, 상장 초기 급등 후 조정은 흔한 패턴이라는 지적도 함께 나왔다.",
@@ -3781,5 +3781,34 @@
   "comments_at": 130,
   "model": "claude-haiku-5-5",
   "at": "2026-11-21 03:35"
+ },
+ "50577265": {
+  "summary_ko": "HN 댓글은 이 논문이 말하는 '자기 가중치 재작성'이 실제로 새로운지에 회의적인 반응이 많았다. 한 댓글은 모델이 한 수정이 추론 길이 축소 같은 단순한 것이었고 기존 'weight-space programming' 연구와 비슷하다고 지적했고, 다른 이들은 구글 'sleep' 논문이나 abliteration 같은 기존 기법과의 유사성을 들었다. 반면 RLVR로 확장될 가능성이나 안전성(정렬) 문제를 우려하는 목소리도 함께 나왔다.",
+  "is_event": false,
+  "kr_query": "",
+  "debate": {
+   "split": true,
+   "axis": "자기 가중치 재작성이 새로운 진전인가, 기존 기법의 재포장인가",
+   "consensus": "대체로 논문의 주장이 과장됐거나 기존 연구(weight-space programming, abliteration)와 비슷하다는 회의적 반응이 우세하지만, 잠재력은 인정하는 분위기다.",
+   "sides": [
+    {
+     "stance": "기존 기법의 재포장이며 과장됐다",
+     "logic": "모델이 한 수정은 추론 길이 축소나 단순 rank-1 abliteration 같은 기존 기법 수준이고, 'first time' 주장은 근거가 약하다는 주장.",
+     "share": 60
+    },
+    {
+     "stance": "작은 결과라도 방향성이 중요하며 RLVR 등으로 확장될 수 있다",
+     "logic": "현재 효과는 미미하지만 모델이 스스로 가중치를 고칠 수 있다는 사실 자체가 RSI 방향에서 의미 있다는 주장.",
+     "share": 30
+    }
+   ]
+  },
+  "n_comments_read": 57,
+  "article_read": true,
+  "kr": [],
+  "v": 3,
+  "comments_at": 126,
+  "model": "claude-haiku-5-5",
+  "at": "2026-11-21 13:11"
  }
 }
