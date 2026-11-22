@@ -1,74 +1,7 @@
 {
- "updated": "2026-11-22 10:14 KST",
+ "updated": "2026-11-22 20:13 KST",
  "source": "ESPN (비공식 공개 API)",
  "picks": [
-  {
-   "id": "600057449",
-   "path": "racing/f1",
-   "league": "F1",
-   "name": "Heineken Las Vegas Grand Prix",
-   "date": "2026-11-22T04:00Z",
-   "kst": "2026-11-22 13:00",
-   "state": "pre",
-   "status": "Scheduled",
-   "note": "",
-   "season": "regular-season",
-   "us_tv": [],
-   "venue": "",
-   "tv": "영국 Sky Sports F1 · 캐나다 TSN",
-   "sport": "f1",
-   "sessions": [
-    {
-     "name": "FP1",
-     "date": "2026-11-20T00:30Z",
-     "kst": "2026-11-20 09:30"
-    },
-    {
-     "name": "FP2",
-     "date": "2026-11-20T04:00Z",
-     "kst": "2026-11-20 13:00"
-    },
-    {
-     "name": "FP3",
-     "date": "2026-11-21T00:30Z",
-     "kst": "2026-11-21 09:30"
-    },
-    {
-     "name": "Qual",
-     "date": "2026-11-21T04:00Z",
-     "kst": "2026-11-21 13:00"
-    },
-    {
-     "name": "Race",
-     "date": "2026-11-22T04:00Z",
-     "kst": "2026-11-22 13:00"
-    }
-   ],
-   "title": "라스베이거스 그랑프리",
-   "score": 42,
-   "why": [
-    "그랑프리 결승"
-   ],
-   "stars": 3,
-   "tv_kr": "쿠팡플레이(스포츠패스)",
-   "tv_world": [
-    {
-     "country": "Great Britain",
-     "label": "영국",
-     "ch": "Sky Sports F1"
-    },
-    {
-     "country": "Canada",
-     "label": "캐나다",
-     "ch": "TSN"
-    },
-    {
-     "country": "MENA",
-     "label": "아랍",
-     "ch": "beIN SPORTS"
-    }
-   ]
-  },
   {
    "id": "401884733",
    "path": "soccer/ger.1",
@@ -275,8 +208,12 @@
     "injuries": [],
     "preview": [
      {
-      "title": "Transfer rumors, news: Liverpool, Man United want Scalvini",
-      "url": "https://www.espn.com/soccer/story/_/id/50548678/transfer-rumors-news-scott-mctominay-man-united-return"
+      "title": "Bruno Fernandes confirms Manchester United contract talks on hold, 'priority is winning'",
+      "url": "https://www.espn.com/soccer/story/_/id/50560581/bruno-fernandes-manchester-united-premier-league-mauricio-pochettino"
+     },
+     {
+      "title": "Will Mauricio Pochettino start strongly at Man United? What his career stats say",
+      "url": "https://www.espn.com/soccer/story/_/id/50509480/mauricio-pochettino-manchester-united-tottenham-chelsea"
      }
     ]
    },
@@ -358,6 +295,141 @@
    ]
   },
   {
+   "id": "401873077",
+   "path": "football/nfl",
+   "league": "NFL",
+   "name": "Minnesota Vikings at San Francisco 49ers",
+   "date": "2026-11-23T01:20Z",
+   "kst": "2026-11-23 10:20",
+   "state": "pre",
+   "status": "Scheduled",
+   "note": "NFL Mexico City Game",
+   "season": "regular-season",
+   "us_tv": [
+    "NBC"
+   ],
+   "venue": "Estadio Banorte",
+   "tv": "영국 Sky Sports NFL · 미국 NBC",
+   "sport": "nfl",
+   "home": {
+    "name": "San Francisco 49ers",
+    "ko": "San Francisco 49ers",
+    "abbr": "SF",
+    "id": "25",
+    "score": "0",
+    "winner": null,
+    "record": "8-1",
+    "form": "승승패승승"
+   },
+   "away": {
+    "name": "Minnesota Vikings",
+    "ko": "Minnesota Vikings",
+    "abbr": "MIN",
+    "id": "16",
+    "score": "0",
+    "winner": null,
+    "record": "7-2",
+    "form": "승승패패승"
+   },
+   "title": "San Francisco 49ers vs Minnesota Vikings",
+   "score": 4,
+   "why": [],
+   "detail": {
+    "leaders": [
+     {
+      "team": "San Francisco 49ers",
+      "cat": "Passing Yards",
+      "who": "Brock Purdy",
+      "val": "185/264 · 2 ·369 YDS · 20 TD · 5 INT"
+     },
+     {
+      "team": "San Francisco 49ers",
+      "cat": "Rushing Yards",
+      "who": "Christian McCaffrey",
+      "val": "115 CAR · 519 YDS · 10 TD"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "cat": "Passing Yards",
+      "who": "Kyler Murray",
+      "val": "100/154 · 1 ·022 YDS · 5 TD · 3 INT"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "cat": "Rushing Yards",
+      "who": "Aaron Jones Sr.",
+      "val": "126 CAR · 521 YDS · 3 TD"
+     }
+    ],
+    "injuries": [
+     {
+      "team": "San Francisco 49ers",
+      "who": "Nate Hobbs",
+      "status": "Injured Reserve"
+     },
+     {
+      "team": "San Francisco 49ers",
+      "who": "Dre Greenlaw",
+      "status": "Questionable"
+     },
+     {
+      "team": "San Francisco 49ers",
+      "who": "Jordan James",
+      "status": "Questionable"
+     },
+     {
+      "team": "San Francisco 49ers",
+      "who": "Mac Jones",
+      "status": "Questionable"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Isaiah Rodgers",
+      "status": "Questionable"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Kyler Murray",
+      "status": "Out"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Bo Richter",
+      "status": "Injured Reserve"
+     },
+     {
+      "team": "Minnesota Vikings",
+      "who": "Jay Ward",
+      "status": "Questionable"
+     }
+    ],
+    "predictor": {
+     "home": "63",
+     "away": "36.7"
+    },
+    "preview": []
+   },
+   "stars": 1,
+   "tv_kr": "쿠팡플레이(추정)",
+   "tv_world": [
+    {
+     "country": "Great Britain",
+     "label": "영국",
+     "ch": "Sky Sports NFL"
+    },
+    {
+     "country": "USA",
+     "label": "미국",
+     "ch": "NBC"
+    },
+    {
+     "country": "Canada",
+     "label": "캐나다",
+     "ch": "CTV·TSN"
+    }
+   ]
+  },
+  {
    "id": "401910035",
    "path": "basketball/nba",
    "league": "NBA",
@@ -389,8 +461,8 @@
     "id": "2",
     "score": "0",
     "winner": null,
-    "record": "11-4",
-    "form": "승승승패패"
+    "record": "11-5",
+    "form": "승승패패패"
    },
    "title": "골든스테이트 vs 보스턴 셀틱스",
    "follow": {
@@ -446,11 +518,6 @@
     "injuries": [
      {
       "team": "골든스테이트",
-      "who": "Draymond Green",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Brandon Williams",
       "status": "Out"
      },
@@ -462,6 +529,11 @@
      {
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
       "status": "Out"
      },
      {
@@ -481,12 +553,21 @@
      }
     ],
     "predictor": {
-     "home": "29.6",
-     "away": "70.4"
+     "home": "23.8",
+     "away": "76.2"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Murray's putback with 5 seconds left lifts Kings to 97-96 win over Celtics, ending 8-game skid",
+      "url": "http://www.espn.com/nba/recap?gameId=401910028"
+     },
+     {
+      "title": "Boston Celtics vs. Sacramento Kings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50559624/game-highlights"
+     }
+    ]
    },
-   "stars": 1,
+   "stars": 2,
    "tv_kr": "쿠팡플레이(스포츠패스)",
    "tv_world": [
     {
@@ -857,8 +938,8 @@
     "id": "23",
     "score": "0",
     "winner": null,
-    "record": "1-14",
-    "form": "패패패패패"
+    "record": "2-14",
+    "form": "패패패패승"
    },
    "title": "골든스테이트 vs Sacramento Kings",
    "follow": {
@@ -906,21 +987,16 @@
       "team": "Sacramento Kings",
       "cat": "Points",
       "who": "Darius Acuff Jr.",
-      "val": "25.7"
+      "val": "25.4"
      },
      {
       "team": "Sacramento Kings",
       "cat": "Assists",
       "who": "Darius Acuff Jr.",
-      "val": "7.3"
+      "val": "7.4"
      }
     ],
     "injuries": [
-     {
-      "team": "골든스테이트",
-      "who": "Draymond Green",
-      "status": "Day-To-Day"
-     },
      {
       "team": "골든스테이트",
       "who": "Brandon Williams",
@@ -937,9 +1013,9 @@
       "status": "Out"
      },
      {
-      "team": "Sacramento Kings",
-      "who": "Precious Achiuwa",
-      "status": "Day-To-Day"
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
      },
      {
       "team": "Sacramento Kings",
@@ -953,10 +1029,19 @@
      }
     ],
     "predictor": {
-     "home": "72.6",
-     "away": "27.4"
+     "home": "72.4",
+     "away": "27.6"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Murray's putback with 5 seconds left lifts Kings to 97-96 win over Celtics, ending 8-game skid",
+      "url": "http://www.espn.com/nba/recap?gameId=401910028"
+     },
+     {
+      "title": "Boston Celtics vs. Sacramento Kings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50559624/game-highlights"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -995,8 +1080,8 @@
     "id": "22",
     "score": "0",
     "winner": null,
-    "record": "10-5",
-    "form": "승승패패승"
+    "record": "10-6",
+    "form": "승패패승패"
    },
    "away": {
     "name": "Golden State Warriors",
@@ -1042,13 +1127,13 @@
       "team": "Portland Trail Blazers",
       "cat": "Points",
       "who": "Deni Avdija",
-      "val": "24.2"
+      "val": "23.9"
      },
      {
       "team": "Portland Trail Blazers",
       "cat": "Assists",
       "who": "Deni Avdija",
-      "val": "6.1"
+      "val": "6.0"
      },
      {
       "team": "골든스테이트",
@@ -1086,11 +1171,6 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Draymond Green",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Brandon Williams",
       "status": "Out"
      },
@@ -1103,13 +1183,23 @@
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
       "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
+      "status": "Out"
      }
     ],
     "predictor": {
-     "home": "80.6",
-     "away": "19.4"
+     "home": "80.4",
+     "away": "19.6"
     },
-    "preview": []
+    "preview": [
+     {
+      "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
+      "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers"
+     }
+    ]
    },
    "stars": 1,
    "tv_kr": "쿠팡플레이(스포츠패스)",
@@ -1128,6 +1218,76 @@
   }
  ],
  "results": [
+  {
+   "id": "600057449",
+   "path": "racing/f1",
+   "league": "F1",
+   "name": "Heineken Las Vegas Grand Prix",
+   "date": "2026-11-22T04:00Z",
+   "kst": "2026-11-22 13:00",
+   "state": "post",
+   "status": "Final",
+   "note": "",
+   "season": "regular-season",
+   "us_tv": [],
+   "venue": "",
+   "tv": "쿠팡플레이(스포츠패스)",
+   "sport": "f1",
+   "sessions": [
+    {
+     "name": "FP1",
+     "date": "2026-11-20T00:30Z",
+     "kst": "2026-11-20 09:30"
+    },
+    {
+     "name": "FP2",
+     "date": "2026-11-20T04:00Z",
+     "kst": "2026-11-20 13:00"
+    },
+    {
+     "name": "FP3",
+     "date": "2026-11-21T00:30Z",
+     "kst": "2026-11-21 09:30"
+    },
+    {
+     "name": "Qual",
+     "date": "2026-11-21T04:00Z",
+     "kst": "2026-11-21 13:00"
+    },
+    {
+     "name": "Race",
+     "date": "2026-11-22T04:00Z",
+     "kst": "2026-11-22 13:00"
+    }
+   ],
+   "detail": {
+    "result": {
+     "podium": [
+      "Max Verstappen",
+      "Lando Norris",
+      "Oscar Piastri"
+     ],
+     "top10": [
+      "Max Verstappen",
+      "Lando Norris",
+      "Oscar Piastri",
+      "Kimi Antonelli",
+      "Pierre Gasly",
+      "Franco Colapinto",
+      "Lewis Hamilton",
+      "Carlos Sainz",
+      "George Russell",
+      "Charles Leclerc"
+     ]
+    }
+   },
+   "title": "라스베이거스 그랑프리",
+   "score": 42,
+   "why": [
+    "그랑프리 결승"
+   ],
+   "stars": 3
+  },
   {
    "id": "401880152",
    "path": "soccer/eng.2",
@@ -1436,11 +1596,6 @@
      },
      {
       "team": "골든스테이트",
-      "who": "Draymond Green",
-      "status": "Day-To-Day"
-     },
-     {
-      "team": "골든스테이트",
       "who": "Brandon Williams",
       "status": "Out"
      },
@@ -1452,6 +1607,11 @@
      {
       "team": "골든스테이트",
       "who": "Kristaps Porzingis",
+      "status": "Out"
+     },
+     {
+      "team": "골든스테이트",
+      "who": "Moses Moody",
       "status": "Out"
      }
     ],
