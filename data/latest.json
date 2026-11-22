@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-22 11:55",
+ "updated": "2026-11-22 21:57",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 13,
+  "hn": 14,
   "reddit": 0,
   "hf": 15,
   "github": 6,
@@ -16,8 +16,8 @@
    "title": "Anthropic’s Nasdaq debut",
    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
    "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1139,
-   "comments": 2319,
+   "points": 1140,
+   "comments": 2323,
    "r": 2.04,
    "at": "2026-11-19",
    "topics": [],
@@ -71,8 +71,8 @@
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 501,
-   "comments": 877,
+   "points": 514,
+   "comments": 899,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -115,9 +115,9 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 668,
-   "comments": 353,
-   "r": 0.53,
+   "points": 671,
+   "comments": 360,
+   "r": 0.54,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:architectlabs.com/blog/frostbite",
@@ -153,8 +153,8 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 571,
-   "comments": 336,
+   "points": 576,
+   "comments": 342,
    "r": 0.59,
    "at": "2026-11-20",
    "topics": [
@@ -190,10 +190,48 @@
   },
   {
    "layer": "hn",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "discussion": "https://news.ycombinator.com/item?id=50597612",
+   "points": 218,
+   "comments": 323,
+   "r": 1.48,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+   "summary_ko": "댓글에서는 Anthropic의 데이터센터 전력 중 약 87%가 가스, 11%가 석탄에서 나올 것이라는 분석에 대해 기후 악화와 외부비용을 규제 없이 방치하는 기업 행태를 비판하는 목소리가 주를 이뤘다. 반면 전력 수요를 감당할 현실적 대안이 가스뿐이며 재생에너지 확충이나 원전 도입은 시간이 걸린다는 현실론도 적지 않았다. 일부는 AI 모델 효율화나 규제 강화, 재생에너지 의무화를 대안으로 제시했다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "데이터센터 전력 공급을 현재 가능한 가스 중심으로 두는 것이 불가피한가, 아니면 재생에너지와 규제로 바꿔야 하는가",
+    "consensus": "대다수 댓글은 AI 데이터센터의 화석연료 의존과 기업의 책임 회피를 비판하며 규제 필요성에 공감한다.",
+    "sides": [
+     {
+      "stance": "재생에너지·규제로 전환해야 한다",
+      "logic": "태양광·풍력과 배터리가 이미 값싸고 신규 발전은 대부분 재생에너지이므로, 가스 대신 재생에너지 의무화나 화석연료 제한으로 충분히 대응할 수 있다는 입장이다.",
+      "share": 55
+     },
+     {
+      "stance": "당장은 가스가 현실적 선택이다",
+      "logic": "데이터센터가 요구하는 대규모 전력을 짧은 기간에 공급할 수 있는 것은 가스뿐이고, 원전은 건설이 길며 재생에너지는 간헐성 때문에 즉시 대체가 어렵다는 입장이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 61,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 323,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Claude solves two open problems in the physics of black holes",
    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 568,
+   "points": 572,
    "comments": 274,
    "r": 0.48,
    "at": "2026-11-19",
@@ -275,6 +313,44 @@
   },
   {
    "layer": "hn",
+   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+   "url": "https://thedataexchange.media/pete-warden-moonshine/",
+   "discussion": "https://news.ycombinator.com/item?id=50561508",
+   "points": 272,
+   "comments": 250,
+   "r": 0.92,
+   "at": "2026-11-19",
+   "topics": [],
+   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
+   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
+    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
+    "sides": [
+     {
+      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
+      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
+      "share": 55
+     },
+     {
+      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
+      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
+      "share": 35
+     }
+    ]
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 247,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Fuck Your AI Safeguards",
    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
    "discussion": "https://news.ycombinator.com/item?id=50562262",
@@ -313,48 +389,10 @@
   },
   {
    "layer": "hn",
-   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
-   "url": "https://thedataexchange.media/pete-warden-moonshine/",
-   "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 270,
-   "comments": 248,
-   "r": 0.92,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
-   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
-    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
-    "sides": [
-     {
-      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
-      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
-      "share": 55
-     },
-     {
-      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
-      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 247,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 374,
+   "points": 375,
    "comments": 246,
    "r": 0.66,
    "at": "2026-11-19",
@@ -394,9 +432,9 @@
    "title": "Google workers tell their employer not to punish schools that don't want AI",
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 279,
-   "comments": 228,
-   "r": 0.82,
+   "points": 282,
+   "comments": 229,
+   "r": 0.81,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
@@ -446,12 +484,39 @@
   },
   {
    "layer": "hn",
+   "title": "The Mythology of Conscious AI",
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+   "discussion": "https://news.ycombinator.com/item?id=50595537",
+   "points": 85,
+   "comments": 182,
+   "r": 2.14,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
+   "summary_ko": "이 글은 의식이 계산보다 생명의 속성이라며 의식 있는 AI 제작이 나쁜 생각이라고 주장한다. 댓글은 의식의 정의조차 불분명하니 판단을 유보해야 한다는 쪽과, 생명·물질 관점이나 튜링 머신 논리를 근거로 AI 의식을 부정하는 쪽으로 주로 나뉘었다. 다만 '의식은 사실상 모른다'는 불가지론이 가장 많은 공감을 얻었고, 글의 논리 일관성(생명 기반이라면서 만들지 말라는 주장)을 지적하는 비판도 눈에 띄었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의식의 정의와 발생 조건을 아무도 모르니 AI 의식을 단정하기 어렵다는 입장이며, 글의 논리 모순과 철학적 접근의 한계를 지적하는 반응이 많다."
+   },
+   "n_comments_read": 55,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 182,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 302,
-   "comments": 165,
-   "r": 0.55,
+   "points": 303,
+   "comments": 169,
+   "r": 0.56,
    "at": "2026-11-20",
    "topics": [
     "인프라·칩"
@@ -503,52 +568,12 @@
   },
   {
    "layer": "hn",
-   "title": "The AI Superintelligence Debate Has Serious Flaws",
-   "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
-   "discussion": "https://news.ycombinator.com/item?id=50559140",
-   "points": 105,
-   "comments": 164,
-   "r": 1.56,
-   "at": "2026-11-19",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:spectrum.ieee.org/ai-superintelligence-debate",
-   "summary_ko": "원문은 초지능(ASI) 실현 가능성에 회의적인 컴퓨터과학자 Cal Newport의 글로, 재귀적 자기개선(RSI)의 근거 부족과 계산 가능성 문제를 지적한다. 댓글에서는 학습 데이터 한계나 RSI 진행 상황에 대해 랩 측의 반론이 가능하다는 지적과, 기사가 AI 위험론을 과소평가한다는 반응이 함께 나왔다. 다만 '초지능이 실현 가능한가'보다 Anthropic 측의 멸종 위험 발언이 기업 전략으로서 얼마나 모순적인지를 짚는 반응이 두드러졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "초지능 위험을 현재 진지하게 다뤄야 하는가",
-    "consensus": "댓글 대다수는 기사의 회의적 논지에 부분적으로 동의하나, 초지능 위험을 가볍게 볼 수 없다는 반론과 AI 기업의 발언 모순을 지적하는 목소리가 함께 나왔다.",
-    "sides": [
-     {
-      "stance": "초지능 위험은 과장되었고 현실 문제에 집중해야 한다",
-      "logic": "RSI와 계산 가능성 주장은 근거가 불확실하며, 인간 조직의 정렬 실패 같은 현존 문제가 더 시급하다.",
-      "share": 55
-     },
-     {
-      "stance": "불확실성 자체가 위험이므로 사전 대응이 필요하다",
-      "logic": "확률이 낮아도 전 인류 규모의 위험이라면 높은 안전 확신이 요구되며, 기사의 회의론만으로는 충분하지 않다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 52,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 163,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 481,
-   "comments": 142,
-   "r": 0.3,
+   "points": 487,
+   "comments": 143,
+   "r": 0.29,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "arxiv:2611.21885",
@@ -628,11 +653,38 @@
   },
   {
    "layer": "hn",
+   "title": "The Mythology of Conscious AI",
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+   "discussion": "https://news.ycombinator.com/item?id=50595537",
+   "points": 85,
+   "comments": 182,
+   "r": 2.14,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
+   "summary_ko": "이 글은 의식이 계산보다 생명의 속성이라며 의식 있는 AI 제작이 나쁜 생각이라고 주장한다. 댓글은 의식의 정의조차 불분명하니 판단을 유보해야 한다는 쪽과, 생명·물질 관점이나 튜링 머신 논리를 근거로 AI 의식을 부정하는 쪽으로 주로 나뉘었다. 다만 '의식은 사실상 모른다'는 불가지론이 가장 많은 공감을 얻었고, 글의 논리 일관성(생명 기반이라면서 만들지 말라는 주장)을 지적하는 비판도 눈에 띄었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의식의 정의와 발생 조건을 아무도 모르니 AI 의식을 단정하기 어렵다는 입장이며, 글의 논리 모순과 철학적 접근의 한계를 지적하는 반응이 많다."
+   },
+   "n_comments_read": 55,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 182,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic’s Nasdaq debut",
    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
    "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1139,
-   "comments": 2319,
+   "points": 1140,
+   "comments": 2323,
    "r": 2.04,
    "at": "2026-11-19",
    "topics": [],
@@ -686,8 +738,8 @@
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 501,
-   "comments": 877,
+   "points": 514,
+   "comments": 899,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -727,42 +779,40 @@
   },
   {
    "layer": "hn",
-   "title": "The AI Superintelligence Debate Has Serious Flaws",
-   "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
-   "discussion": "https://news.ycombinator.com/item?id=50559140",
-   "points": 105,
-   "comments": 164,
-   "r": 1.56,
-   "at": "2026-11-19",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "url:spectrum.ieee.org/ai-superintelligence-debate",
-   "summary_ko": "원문은 초지능(ASI) 실현 가능성에 회의적인 컴퓨터과학자 Cal Newport의 글로, 재귀적 자기개선(RSI)의 근거 부족과 계산 가능성 문제를 지적한다. 댓글에서는 학습 데이터 한계나 RSI 진행 상황에 대해 랩 측의 반론이 가능하다는 지적과, 기사가 AI 위험론을 과소평가한다는 반응이 함께 나왔다. 다만 '초지능이 실현 가능한가'보다 Anthropic 측의 멸종 위험 발언이 기업 전략으로서 얼마나 모순적인지를 짚는 반응이 두드러졌다.",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "discussion": "https://news.ycombinator.com/item?id=50597612",
+   "points": 218,
+   "comments": 323,
+   "r": 1.48,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+   "summary_ko": "댓글에서는 Anthropic의 데이터센터 전력 중 약 87%가 가스, 11%가 석탄에서 나올 것이라는 분석에 대해 기후 악화와 외부비용을 규제 없이 방치하는 기업 행태를 비판하는 목소리가 주를 이뤘다. 반면 전력 수요를 감당할 현실적 대안이 가스뿐이며 재생에너지 확충이나 원전 도입은 시간이 걸린다는 현실론도 적지 않았다. 일부는 AI 모델 효율화나 규제 강화, 재생에너지 의무화를 대안으로 제시했다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "초지능 위험을 현재 진지하게 다뤄야 하는가",
-    "consensus": "댓글 대다수는 기사의 회의적 논지에 부분적으로 동의하나, 초지능 위험을 가볍게 볼 수 없다는 반론과 AI 기업의 발언 모순을 지적하는 목소리가 함께 나왔다.",
+    "axis": "데이터센터 전력 공급을 현재 가능한 가스 중심으로 두는 것이 불가피한가, 아니면 재생에너지와 규제로 바꿔야 하는가",
+    "consensus": "대다수 댓글은 AI 데이터센터의 화석연료 의존과 기업의 책임 회피를 비판하며 규제 필요성에 공감한다.",
     "sides": [
      {
-      "stance": "초지능 위험은 과장되었고 현실 문제에 집중해야 한다",
-      "logic": "RSI와 계산 가능성 주장은 근거가 불확실하며, 인간 조직의 정렬 실패 같은 현존 문제가 더 시급하다.",
+      "stance": "재생에너지·규제로 전환해야 한다",
+      "logic": "태양광·풍력과 배터리가 이미 값싸고 신규 발전은 대부분 재생에너지이므로, 가스 대신 재생에너지 의무화나 화석연료 제한으로 충분히 대응할 수 있다는 입장이다.",
       "share": 55
      },
      {
-      "stance": "불확실성 자체가 위험이므로 사전 대응이 필요하다",
-      "logic": "확률이 낮아도 전 인류 규모의 위험이라면 높은 안전 확신이 요구되며, 기사의 회의론만으로는 충분하지 않다.",
-      "share": 45
+      "stance": "당장은 가스가 현실적 선택이다",
+      "logic": "데이터센터가 요구하는 대규모 전력을 짧은 기간에 공급할 수 있는 것은 가스뿐이고, 원전은 건설이 길며 재생에너지는 간헐성 때문에 즉시 대체가 어렵다는 입장이다.",
+      "share": 30
      }
     ]
    },
-   "n_comments_read": 52,
+   "n_comments_read": 61,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 163,
+   "comments_at": 323,
    "model": "claude-haiku-5-5"
   },
   {
@@ -770,8 +820,8 @@
    "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
    "url": "https://thedataexchange.media/pete-warden-moonshine/",
    "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 270,
-   "comments": 248,
+   "points": 272,
+   "comments": 250,
    "r": 0.92,
    "at": "2026-11-19",
    "topics": [],
@@ -808,9 +858,9 @@
    "title": "Google workers tell their employer not to punish schools that don't want AI",
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 279,
-   "comments": 228,
-   "r": 0.82,
+   "points": 282,
+   "comments": 229,
+   "r": 0.81,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
@@ -863,7 +913,7 @@
    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 374,
+   "points": 375,
    "comments": 246,
    "r": 0.66,
    "at": "2026-11-19",
@@ -903,8 +953,8 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 571,
-   "comments": 336,
+   "points": 576,
+   "comments": 342,
    "r": 0.59,
    "at": "2026-11-20",
    "topics": [
@@ -943,9 +993,9 @@
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 302,
-   "comments": 165,
-   "r": 0.55,
+   "points": 303,
+   "comments": 169,
+   "r": 0.56,
    "at": "2026-11-20",
    "topics": [
     "인프라·칩"
@@ -1000,9 +1050,9 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 668,
-   "comments": 353,
-   "r": 0.53,
+   "points": 671,
+   "comments": 360,
+   "r": 0.54,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:architectlabs.com/blog/frostbite",
@@ -1038,7 +1088,7 @@
    "title": "Claude solves two open problems in the physics of black holes",
    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 568,
+   "points": 572,
    "comments": 274,
    "r": 0.48,
    "at": "2026-11-19",
@@ -1116,9 +1166,9 @@
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 481,
-   "comments": 142,
-   "r": 0.3,
+   "points": 487,
+   "comments": 143,
+   "r": 0.29,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "arxiv:2611.21885",
@@ -1157,9 +1207,9 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 701,
-   "likes": 3142,
-   "downloads": 7944,
+   "trending": 800,
+   "likes": 3953,
+   "downloads": 23543,
    "topics": [
     "모델릴리스"
    ],
@@ -1170,9 +1220,9 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 597,
-   "likes": 642,
-   "downloads": 238152,
+   "trending": 702,
+   "likes": 756,
+   "downloads": 805993,
    "topics": [
     "모델릴리스"
    ],
@@ -1181,23 +1231,10 @@
   },
   {
    "layer": "hf",
-   "title": "tencent/Hy4-flash",
-   "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 390,
-   "likes": 547,
-   "downloads": 5588,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:tencent/hy4-flash",
-   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 383,
-   "likes": 523,
+   "trending": 421,
+   "likes": 569,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -1207,10 +1244,23 @@
   },
   {
    "layer": "hf",
+   "title": "tencent/Hy4-flash",
+   "url": "https://huggingface.co/tencent/Hy4-flash",
+   "trending": 406,
+   "likes": 577,
+   "downloads": 6617,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:tencent/hy4-flash",
+   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
    "title": "apple/FastFrames-L",
    "url": "https://huggingface.co/apple/FastFrames-L",
-   "trending": 339,
-   "likes": 493,
+   "trending": 351,
+   "likes": 510,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -1222,9 +1272,9 @@
    "layer": "hf",
    "title": "harness-hub/Qwen3.8-27B-pi-adapted",
    "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 319,
-   "likes": 937,
-   "downloads": 2383,
+   "trending": 322,
+   "likes": 953,
+   "downloads": 2831,
    "topics": [
     "모델릴리스"
    ],
@@ -1235,9 +1285,9 @@
    "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 304,
-   "likes": 845,
-   "downloads": 8120,
+   "trending": 294,
+   "likes": 857,
+   "downloads": 8608,
    "topics": [
     "모델릴리스"
    ],
@@ -1246,11 +1296,24 @@
   },
   {
    "layer": "hf",
+   "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "trending": 221,
+   "likes": 357,
+   "downloads": 129693,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:atomicchat/inkling-2-mini-uncensored-gguf",
+   "one_line": "AtomicChat이 올린 Inkling-2-Mini 모델의 검열 해제 GGUF 변환본으로, 로컬 추론용 경량 채팅 모델이라고 알려져 있으나 세부 크기와 원작자 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 216,
-   "likes": 20817,
-   "downloads": 6298190,
+   "trending": 210,
+   "likes": 20837,
+   "downloads": 6297396,
    "topics": [
     "모델릴리스"
    ],
@@ -1259,29 +1322,16 @@
   },
   {
    "layer": "hf",
-   "title": "sensenova/SenseNova-Loop-9B",
-   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-   "trending": 184,
-   "likes": 462,
-   "downloads": 1745,
+   "title": "apple/DepthPro2",
+   "url": "https://huggingface.co/apple/DepthPro2",
+   "trending": 195,
+   "likes": 230,
+   "downloads": 0,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:sensenova/sensenova-loop-9b",
-   "one_line": "sensenova가 공개한 9B급 SenseNova-Loop 모델로 표기되어 있으나, 세부 기능은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
-   "title": "Lightricks/LTX-2.5",
-   "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 178,
-   "likes": 12950,
-   "downloads": 3000544,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:lightricks/ltx-2.5",
-   "one_line": "Lightricks가 만든 LTX 계열 영상 생성 모델로 알려져 있으며, 2.5 버전의 세부 내용은 확인되지 않습니다."
+   "story_key": "hf:apple/depthpro2",
+   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
   }
  ],
  "new_repos": [
@@ -1290,7 +1340,7 @@
    "title": "bookwjitchieni1986/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI a",
    "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-   "stars": 2524,
+   "stars": 2738,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1304,7 +1354,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 1749,
+   "stars": 1955,
    "topics": [
     "모델릴리스"
    ],
@@ -1316,7 +1366,7 @@
    "title": "sybil-solutions/inference-optimisation-skill",
    "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-   "stars": 1697,
+   "stars": 1842,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1329,7 +1379,7 @@
    "title": "hatsunemiku-ai/google-one-tools",
    "desc": "",
    "url": "https://github.com/hatsunemiku-ai/google-one-tools",
-   "stars": 1084,
+   "stars": 1205,
    "topics": [],
    "story_key": "gh:hatsunemiku-ai/google-one-tools",
    "one_line": "저장소 이름으로 미루어 Google One 관련 도구 모음으로 보이나, 구체적인 기능은 확인하지 못했다."
@@ -1339,7 +1389,7 @@
    "title": "boringmarketer/boring-marketing-skills",
    "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
    "url": "https://github.com/boringmarketer/boring-marketing-skills",
-   "stars": 778,
+   "stars": 789,
    "topics": [
     "에이전트"
    ],
@@ -1348,15 +1398,16 @@
   },
   {
    "layer": "github",
-   "title": "CocoSgt/riemann-hypothesis-lean",
-   "desc": "Mirror of Levent Alpöge's Lean proof of the Riemann Hypothesis (with Claude). All credit to Levent Alpöge. Source: alpo.ge",
-   "url": "https://github.com/CocoSgt/riemann-hypothesis-lean",
-   "stars": 447,
+   "title": "EL4CTEO/fast-anything",
+   "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
+   "url": "https://github.com/EL4CTEO/fast-anything",
+   "stars": 775,
    "topics": [
-    "모델릴리스"
+    "에이전트",
+    "개발도구"
    ],
-   "story_key": "gh:cocosgt/riemann-hypothesis-lean",
-   "one_line": "레반트 알포게(Levent Alpöge)가 작성한 리만 가설의 Lean 증명을 미러링한 저장소로, 원저자 크레딧을 명시하고 있습니다."
+   "story_key": "gh:el4cteo/fast-anything",
+   "one_line": "Python, Node, Ruby 앱을 프로파일링해 느린 핫스팟 함수만 골라 Rust 등으로 포팅하고 동작 동일성을 검증하는 도구로 보인다."
   }
  ],
  "trust_recent": [
@@ -1385,6 +1436,7 @@
     "url:grahamdumpleton.me/posts/2026/11/muru-scaling-from-what-the-workers-report",
     "url:grahamdumpleton.me/posts/2026/11/muru-scaling-to-zero",
     "url:grahamdumpleton.me/posts/2026/11/muru-tracing-in-the-toolbar",
+    "url:grahamdumpleton.me/posts/2026/11/muru-when-lazy-imports-help",
     "url:grahamdumpleton.me/posts/2026/11/muru-working-with-kubernetes-not-around-it",
     "url:grahamdumpleton.me/posts/2026/11/muru-wsgi-and-asgi-together",
     "url:grahamdumpleton.me/posts/2026/11/twenty-years-of-mod-wsgi",
@@ -1741,16 +1793,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-22 02:55",
+ "enriched_at": "2026-11-22 12:58",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 2,
-  "in": 1866,
-  "out": 197,
+  "calls": 4,
+  "in": 22414,
+  "out": 1444,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 0,
-  "cost_usd": 0.00029
+  "items": 2,
+  "cost_usd": 0.00296
  }
 }
