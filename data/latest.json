@@ -1,78 +1,23 @@
 {
- "updated": "2026-11-22 21:57",
+ "updated": "2026-11-23 05:12",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
+  "hn": 9,
   "reddit": 0,
   "hf": 15,
-  "github": 6,
+  "github": 7,
   "trust": 100
  },
  "reddit_mode": "none",
  "by_volume": [
   {
    "layer": "hn",
-   "title": "Anthropic’s Nasdaq debut",
-   "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-   "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1140,
-   "comments": 2323,
-   "r": 2.04,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19",
-   "summary_ko": "앤트로픽의 나스닥 상장 첫날 주가를 두고 댓글에서는 고평가와 버블 우려가 주를 이뤘다. 시가총액이 2조 달러라는 보도는 완전희석 기준이라 실제 1.2~1.5조 달러 수준이라는 지적이 많았고, 상장 직후 주가가 공모가 83달러 위로 올랐다가 하락 마감한 점, 락업 해제 물량에 대한 우려도 함께 거론됐다. 한편 SWE 일자리 감소와 AI 도구의 실용성을 두고는 개인 체감 사례가 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 나스닥 상장 첫날",
-   "debate": {
-    "split": true,
-    "axis": "앤트로픽의 현재 기업가치가 정당한가",
-    "consensus": "대체로 기업가치가 과도하며 상장 첫날 주가 흐름도 불안하다는 회의적 반응이 우세하다.",
-    "sides": [
-     {
-      "stance": "기업가치가 과도하며 버블이라고 본다",
-      "logic": "매출 대비 20배 수준이고 영업이익이 없으며, 락업 해제로 물량이 늘고 공모가 주변 가격이 무너지고 있다는 점을 근거로 든다.",
-      "share": 70
-     },
-     {
-      "stance": "기업가치가 과장된 수치가 아니라 합리적 범위라고 본다",
-      "logic": "2조 달러는 완전희석 기준 계산이고 미래 주식 발행을 포함한 것이라 실제 시가총액은 다르지만, 성장 기대와 AI 수요를 감안하면 설명 가능하다고 본다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 101,
-   "article_read": false,
-   "kr": [
-    {
-     "t": "앤트로픽 상장 첫날 97.17달러로 마감…공모가 대비 17% 상승",
-     "u": "https://www.yna.co.kr/view/AKR20261120014100091?input=1195m",
-     "d": "Fri, 20 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "SKT, 앤트로픽 '5조 잭팟'에도 10% 폭락…수혜주 향방은",
-     "u": "https://www.newsis.com/view/NISX20261120_0003876438",
-     "d": "Fri, 20 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 2299,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 514,
-   "comments": 899,
+   "points": 525,
+   "comments": 919,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -112,11 +57,76 @@
   },
   {
    "layer": "hn",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "discussion": "https://news.ycombinator.com/item?id=50597612",
+   "points": 690,
+   "comments": 744,
+   "r": 1.08,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+   "summary_ko": "원문은 Anthropic 데이터센터 전력의 약 87%가 2028년까지 가스에서, 11%가 석탄에서 나올 것으로 추정하며 재생에너지 약정이 미국에서는 없다고 지적한다. 댓글은 대체로 Anthropic을 비판하며 재생에너지 의무화와 규제 필요성을 주장하는 쪽이 많다. 반면 전력 수요를 감당하려면 현실적으로 가스가 불가피하다거나, 재생에너지만으로는 부족하다는 반론도 일부 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "데이터센터 전력을 재생에너지 중심으로 바꿔야 하는가, 아니면 당장은 가스가 불가피한가",
+    "consensus": "댓글 전반은 Anthropic의 재생에너지 외면과 미국의 규제 부재를 비판하는 분위기다.",
+    "sides": [
+     {
+      "stance": "재생에너지 의무화·규제로 가스 의존을 막아야 한다",
+      "logic": "외부비용을 지역사회가 떠안고 있으므로 재생에너지 의무 비율이나 가스·석탄 신규 대형 부하 금지 같은 규제가 필요하다는 주장이다.",
+      "share": 55
+     },
+     {
+      "stance": "재생에너지만으로는 데이터센터 전력 수요를 감당하기 어렵고 가스·원전이 현실적이다",
+      "logic": "데이터센터는 24시간 안정 전력이 필요하고 태양광·풍력은 간헐적이며, 원전은 건설이 오래 걸려 단기적으로 가스 외에 대안이 없다는 주장이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 99,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 744,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "The Mythology of Conscious AI",
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+   "discussion": "https://news.ycombinator.com/item?id=50595537",
+   "points": 145,
+   "comments": 420,
+   "r": 2.9,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
+   "summary_ko": "댓글에서는 의식이 계산의 산물인지 생명의 속성인지에 대해 의견이 여럿으로 나뉘었지만, 논쟁은 주로 '의식의 정의 자체가 불분명하다'는 점에 머물렀다. 기사의 '생명 기반 의식' 논리는 세포 단위 생명체 대부분이 의식이 없다는 반론과 함께, 튜링 해석이나 물리적 처치-튜링 논제를 두고 철학자들이 CS 이론을 잘못 다룬다는 비판도 받았다. 전반적으로 AI 의식 가능성 자체보다 개념 정의와 학문적 엄밀성에 대한 불만이 많았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의식의 정의가 불분명해 AI 의식 여부를 단정하기 어렵다는 입장이며, 기사의 논리 전개(생명 vs 계산, 튜링 해석)에 대한 비판이 두드러진다."
+   },
+   "n_comments_read": 101,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 420,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 671,
-   "comments": 360,
+   "points": 675,
+   "comments": 362,
    "r": 0.54,
    "at": "2026-11-20",
    "topics": [],
@@ -153,9 +163,9 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 576,
-   "comments": 342,
-   "r": 0.59,
+   "points": 577,
+   "comments": 346,
+   "r": 0.6,
    "at": "2026-11-20",
    "topics": [
     "에이전트"
@@ -190,210 +200,11 @@
   },
   {
    "layer": "hn",
-   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-   "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 218,
-   "comments": 323,
-   "r": 1.48,
-   "at": "2026-11-22",
-   "topics": [],
-   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-   "summary_ko": "댓글에서는 Anthropic의 데이터센터 전력 중 약 87%가 가스, 11%가 석탄에서 나올 것이라는 분석에 대해 기후 악화와 외부비용을 규제 없이 방치하는 기업 행태를 비판하는 목소리가 주를 이뤘다. 반면 전력 수요를 감당할 현실적 대안이 가스뿐이며 재생에너지 확충이나 원전 도입은 시간이 걸린다는 현실론도 적지 않았다. 일부는 AI 모델 효율화나 규제 강화, 재생에너지 의무화를 대안으로 제시했다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "데이터센터 전력 공급을 현재 가능한 가스 중심으로 두는 것이 불가피한가, 아니면 재생에너지와 규제로 바꿔야 하는가",
-    "consensus": "대다수 댓글은 AI 데이터센터의 화석연료 의존과 기업의 책임 회피를 비판하며 규제 필요성에 공감한다.",
-    "sides": [
-     {
-      "stance": "재생에너지·규제로 전환해야 한다",
-      "logic": "태양광·풍력과 배터리가 이미 값싸고 신규 발전은 대부분 재생에너지이므로, 가스 대신 재생에너지 의무화나 화석연료 제한으로 충분히 대응할 수 있다는 입장이다.",
-      "share": 55
-     },
-     {
-      "stance": "당장은 가스가 현실적 선택이다",
-      "logic": "데이터센터가 요구하는 대규모 전력을 짧은 기간에 공급할 수 있는 것은 가스뿐이고, 원전은 건설이 길며 재생에너지는 간헐성 때문에 즉시 대체가 어렵다는 입장이다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 61,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 323,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Claude solves two open problems in the physics of black holes",
-   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-   "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 572,
-   "comments": 274,
-   "r": 0.48,
-   "at": "2026-11-19",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:anthropic.com/research/claude-black-hole-physics",
-   "summary_ko": "Claude가 블랙홀 열역학 관련 두 개의 이론물리 난제를 풀었다는 Anthropic 발표 글에 대해, 댓글들은 결과의 의미보다 주장 방식과 홍보성에 더 많이 반응했다. 한편에서는 두 번째 결과(2차원 부트스트랩 질량 상한의 엄밀한 증명)가 흥미롭다는 평가가 있었고, 다른 한편에서는 기사가 말하는 '양자 중첩' 설명을 지적하거나 AI가 물리 문제를 풀었다는 것 자체를 의심하는 반응이 많았다. 또 AI 결과에 프롬프트와 작업 과정을 공개하라는 요구, 그리고 기업 IPO 시점과 맞물린 홍보라는 의심이 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Claude의 물리 연구 결과를 실질적 성과로 인정할 수 있는가, 아니면 기업 홍보로 봐야 하는가",
-    "consensus": "댓글 대다수는 결과의 물리적 의미를 깊이 검토하기보다, Anthropic의 홍보성 발표와 IPO 시점, AI 주체 표현 방식에 회의적인 반응을 보였다.",
-    "sides": [
-     {
-      "stance": "결과 자체는 진짜 성과로 볼 만하다",
-      "logic": "두 번째 결과는 부트스트랩 상한을 엄밀히 증명했다는 점에서 의미가 있고, 수학적 창의성을 요구하는 문제라 AI 벤치마크로도 가치가 있다는 입장이다.",
-      "share": 35
-     },
-     {
-      "stance": "홍보·IPO용 과장이며 검증이 부족하다",
-      "logic": "독립 검토 없이 기업이 성공을 주장했고, 결과가 실제 물리 응용과 무관하며 IPO 시기와 겹쳐 있어 신뢰하기 어렵다는 입장이다.",
-      "share": 50
-     }
-    ]
-   },
-   "n_comments_read": 59,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 270,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-   "discussion": "https://news.ycombinator.com/item?id=50564366",
-   "points": 115,
-   "comments": 258,
-   "r": 2.24,
-   "at": "2026-11-19",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "yt:lwfewYL7X0o",
-   "summary_ko": "댓글의 대부분은 정부 규제 자체보다 규제 주체에 대한 불신에 초점을 맞췄다. 기업과 정부 모두 권력을 집중시키는 존재라는 주장, 얼랑트(정렬) 명분이 규제 포획과 진입장벽으로 쓰인다는 주장, 책임(배상) 체계로 해결하자는 주장이 이어졌다. 토론자 Coxon의 과거 발언과 이력을 두고 인신 비판도 적지 않았고, 토론 승자 판정에 대해서는 Hanson 쪽이 낫다는 평가가 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 개발을 정부가 규제·감속해야 하는가",
-    "consensus": "댓글 대다수는 정부 규제보다 기업·정부의 권력 집중과 정렬 명분의 오용을 더 경계하며, 토론 자체에는 회의적이다.",
-    "sides": [
-     {
-      "stance": "정부가 규제해야 한다",
-      "logic": "중국 등 일부 국가를 제외하면 대형 모델 학습 전력 규모상 감시가 가능하고, 배포 규제나 재생에너지 의무화 같은 수단으로 속도를 늦출 수 있다는 입장이다.",
-      "share": 25
-     },
-     {
-      "stance": "규제보다 책임(배상) 체계가 먼저다",
-      "logic": "AI 행위자에게 사람과 같은 면책을 주지 말고 사용자나 제공자에게 손해 책임을 묻는 방식이면 과속을 억제할 수 있다는 입장이다.",
-      "share": 35
-     },
-     {
-      "stance": "정부 규제는 권력 집중과 규제 포획만 낳는다",
-      "logic": "정렬을 명분으로 한 규제는 소수 대형 연구소의 진입장벽이 되고, 개인이 컴퓨팅 자원을 소유하거나 로컬 AI를 쓰는 쪽이 낫다는 입장이다.",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 41,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 243,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
-   "url": "https://thedataexchange.media/pete-warden-moonshine/",
-   "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 272,
-   "comments": 250,
-   "r": 0.92,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
-   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
-    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
-    "sides": [
-     {
-      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
-      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
-      "share": 55
-     },
-     {
-      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
-      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 247,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Fuck Your AI Safeguards",
-   "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
-   "discussion": "https://news.ycombinator.com/item?id=50562262",
-   "points": 616,
-   "comments": 249,
-   "r": 0.4,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:ounapuu.ee/posts/2026/11/19/unsafeguards",
-   "summary_ko": "댓글들은 AI 안전장치가 보안 점검이나 정당한 개발 작업까지 막는다는 원문 불만에 대체로 공감하며, 범죄자는 abliterated 오픈웨이트 모델로 우회하므로 막히는 쪽은 선량한 개발자뿐이라고 지적했다. 반면 일부는 악용을 막으려면 어느 정도 제약이 불가피하고 통제 접근 프로그램(CVP 등)이 있으니 그걸 쓰면 된다며, 오픈 모델 선택은 사용자 몫이라는 입장을 냈다. 앤트로픽의 안전 정책이 실제로는 시장 독점과 규제 해자를 위한 것 아니냐는 의심도 여럿 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 안전장치가 보안 방어에 도움이 되는가, 아니면 선량한 사용자만 막는가",
-    "consensus": "댓글 대다수는 과도한 안전장치가 정당한 보안 작업을 막고 범죄자는 우회한다는 원문 불만에 공감하며, 오픈 웨이트 모델로 옮겨가는 분위기다.",
-    "sides": [
-     {
-      "stance": "안전장치는 선량한 개발자만 막고 실효성이 없으니 폐지하거나 완화해야 한다",
-      "logic": "범죄자는 안전장치 없는 모델을 쓰므로 방어자만 불편해지고 전체 보안 수준이 오히려 떨어진다.",
-      "share": 70
-     },
-     {
-      "stance": "악용 방지를 위해 일정 수준의 제약과 심사는 필요하며, 통제 접근 프로그램을 쓰면 된다",
-      "logic": "완전한 제약 없는 모델은 범죄에 악용될 수 있고, 심사 절차 자체는 대부분 생각보다 쉽게 통과된다는 경험도 있다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 100,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 246,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
    "points": 375,
-   "comments": 246,
+   "comments": 248,
    "r": 0.66,
    "at": "2026-11-19",
    "topics": [
@@ -432,7 +243,7 @@
    "title": "Google workers tell their employer not to punish schools that don't want AI",
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 282,
+   "points": 283,
    "comments": 229,
    "r": 0.81,
    "at": "2026-11-20",
@@ -484,38 +295,11 @@
   },
   {
    "layer": "hn",
-   "title": "The Mythology of Conscious AI",
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-   "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 85,
-   "comments": 182,
-   "r": 2.14,
-   "at": "2026-11-22",
-   "topics": [],
-   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
-   "summary_ko": "이 글은 의식이 계산보다 생명의 속성이라며 의식 있는 AI 제작이 나쁜 생각이라고 주장한다. 댓글은 의식의 정의조차 불분명하니 판단을 유보해야 한다는 쪽과, 생명·물질 관점이나 튜링 머신 논리를 근거로 AI 의식을 부정하는 쪽으로 주로 나뉘었다. 다만 '의식은 사실상 모른다'는 불가지론이 가장 많은 공감을 얻었고, 글의 논리 일관성(생명 기반이라면서 만들지 말라는 주장)을 지적하는 비판도 눈에 띄었다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의식의 정의와 발생 조건을 아무도 모르니 AI 의식을 단정하기 어렵다는 입장이며, 글의 논리 모순과 철학적 접근의 한계를 지적하는 반응이 많다."
-   },
-   "n_comments_read": 55,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 182,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 303,
-   "comments": 169,
+   "points": 306,
+   "comments": 170,
    "r": 0.56,
    "at": "2026-11-20",
    "topics": [
@@ -571,8 +355,8 @@
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 487,
-   "comments": 143,
+   "points": 490,
+   "comments": 144,
    "r": 0.29,
    "at": "2026-11-20",
    "topics": [],
@@ -608,129 +392,29 @@
  "by_debate": [
   {
    "layer": "hn",
-   "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-   "discussion": "https://news.ycombinator.com/item?id=50564366",
-   "points": 115,
-   "comments": 258,
-   "r": 2.24,
-   "at": "2026-11-19",
-   "topics": [
-    "안전·거버넌스"
-   ],
-   "story_key": "yt:lwfewYL7X0o",
-   "summary_ko": "댓글의 대부분은 정부 규제 자체보다 규제 주체에 대한 불신에 초점을 맞췄다. 기업과 정부 모두 권력을 집중시키는 존재라는 주장, 얼랑트(정렬) 명분이 규제 포획과 진입장벽으로 쓰인다는 주장, 책임(배상) 체계로 해결하자는 주장이 이어졌다. 토론자 Coxon의 과거 발언과 이력을 두고 인신 비판도 적지 않았고, 토론 승자 판정에 대해서는 Hanson 쪽이 낫다는 평가가 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 개발을 정부가 규제·감속해야 하는가",
-    "consensus": "댓글 대다수는 정부 규제보다 기업·정부의 권력 집중과 정렬 명분의 오용을 더 경계하며, 토론 자체에는 회의적이다.",
-    "sides": [
-     {
-      "stance": "정부가 규제해야 한다",
-      "logic": "중국 등 일부 국가를 제외하면 대형 모델 학습 전력 규모상 감시가 가능하고, 배포 규제나 재생에너지 의무화 같은 수단으로 속도를 늦출 수 있다는 입장이다.",
-      "share": 25
-     },
-     {
-      "stance": "규제보다 책임(배상) 체계가 먼저다",
-      "logic": "AI 행위자에게 사람과 같은 면책을 주지 말고 사용자나 제공자에게 손해 책임을 묻는 방식이면 과속을 억제할 수 있다는 입장이다.",
-      "share": 35
-     },
-     {
-      "stance": "정부 규제는 권력 집중과 규제 포획만 낳는다",
-      "logic": "정렬을 명분으로 한 규제는 소수 대형 연구소의 진입장벽이 되고, 개인이 컴퓨팅 자원을 소유하거나 로컬 AI를 쓰는 쪽이 낫다는 입장이다.",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 41,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 243,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "The Mythology of Conscious AI",
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 85,
-   "comments": 182,
-   "r": 2.14,
+   "points": 145,
+   "comments": 420,
+   "r": 2.9,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
-   "summary_ko": "이 글은 의식이 계산보다 생명의 속성이라며 의식 있는 AI 제작이 나쁜 생각이라고 주장한다. 댓글은 의식의 정의조차 불분명하니 판단을 유보해야 한다는 쪽과, 생명·물질 관점이나 튜링 머신 논리를 근거로 AI 의식을 부정하는 쪽으로 주로 나뉘었다. 다만 '의식은 사실상 모른다'는 불가지론이 가장 많은 공감을 얻었고, 글의 논리 일관성(생명 기반이라면서 만들지 말라는 주장)을 지적하는 비판도 눈에 띄었다.",
+   "summary_ko": "댓글에서는 의식이 계산의 산물인지 생명의 속성인지에 대해 의견이 여럿으로 나뉘었지만, 논쟁은 주로 '의식의 정의 자체가 불분명하다'는 점에 머물렀다. 기사의 '생명 기반 의식' 논리는 세포 단위 생명체 대부분이 의식이 없다는 반론과 함께, 튜링 해석이나 물리적 처치-튜링 논제를 두고 철학자들이 CS 이론을 잘못 다룬다는 비판도 받았다. 전반적으로 AI 의식 가능성 자체보다 개념 정의와 학문적 엄밀성에 대한 불만이 많았다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": false,
     "axis": "",
     "sides": [],
-    "consensus": "댓글 대다수는 의식의 정의와 발생 조건을 아무도 모르니 AI 의식을 단정하기 어렵다는 입장이며, 글의 논리 모순과 철학적 접근의 한계를 지적하는 반응이 많다."
+    "consensus": "댓글 대다수는 의식의 정의가 불분명해 AI 의식 여부를 단정하기 어렵다는 입장이며, 기사의 논리 전개(생명 vs 계산, 튜링 해석)에 대한 비판이 두드러진다."
    },
-   "n_comments_read": 55,
+   "n_comments_read": 101,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 182,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Anthropic’s Nasdaq debut",
-   "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-   "discussion": "https://news.ycombinator.com/item?id=50562754",
-   "points": 1140,
-   "comments": 2323,
-   "r": 2.04,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19",
-   "summary_ko": "앤트로픽의 나스닥 상장 첫날 주가를 두고 댓글에서는 고평가와 버블 우려가 주를 이뤘다. 시가총액이 2조 달러라는 보도는 완전희석 기준이라 실제 1.2~1.5조 달러 수준이라는 지적이 많았고, 상장 직후 주가가 공모가 83달러 위로 올랐다가 하락 마감한 점, 락업 해제 물량에 대한 우려도 함께 거론됐다. 한편 SWE 일자리 감소와 AI 도구의 실용성을 두고는 개인 체감 사례가 엇갈렸다.",
-   "is_event": true,
-   "kr_query": "앤트로픽 나스닥 상장 첫날",
-   "debate": {
-    "split": true,
-    "axis": "앤트로픽의 현재 기업가치가 정당한가",
-    "consensus": "대체로 기업가치가 과도하며 상장 첫날 주가 흐름도 불안하다는 회의적 반응이 우세하다.",
-    "sides": [
-     {
-      "stance": "기업가치가 과도하며 버블이라고 본다",
-      "logic": "매출 대비 20배 수준이고 영업이익이 없으며, 락업 해제로 물량이 늘고 공모가 주변 가격이 무너지고 있다는 점을 근거로 든다.",
-      "share": 70
-     },
-     {
-      "stance": "기업가치가 과장된 수치가 아니라 합리적 범위라고 본다",
-      "logic": "2조 달러는 완전희석 기준 계산이고 미래 주식 발행을 포함한 것이라 실제 시가총액은 다르지만, 성장 기대와 AI 수요를 감안하면 설명 가능하다고 본다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 101,
-   "article_read": false,
-   "kr": [
-    {
-     "t": "앤트로픽 상장 첫날 97.17달러로 마감…공모가 대비 17% 상승",
-     "u": "https://www.yna.co.kr/view/AKR20261120014100091?input=1195m",
-     "d": "Fri, 20 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "SKT, 앤트로픽 '5조 잭팟'에도 10% 폭락…수혜주 향방은",
-     "u": "https://www.newsis.com/view/NISX20261120_0003876438",
-     "d": "Fri, 20 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 2299,
+   "comments_at": 420,
    "model": "claude-haiku-5-5"
   },
   {
@@ -738,8 +422,8 @@
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 514,
-   "comments": 899,
+   "points": 525,
+   "comments": 919,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -782,75 +466,37 @@
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 218,
-   "comments": 323,
-   "r": 1.48,
+   "points": 690,
+   "comments": 744,
+   "r": 1.08,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-   "summary_ko": "댓글에서는 Anthropic의 데이터센터 전력 중 약 87%가 가스, 11%가 석탄에서 나올 것이라는 분석에 대해 기후 악화와 외부비용을 규제 없이 방치하는 기업 행태를 비판하는 목소리가 주를 이뤘다. 반면 전력 수요를 감당할 현실적 대안이 가스뿐이며 재생에너지 확충이나 원전 도입은 시간이 걸린다는 현실론도 적지 않았다. 일부는 AI 모델 효율화나 규제 강화, 재생에너지 의무화를 대안으로 제시했다.",
+   "summary_ko": "원문은 Anthropic 데이터센터 전력의 약 87%가 2028년까지 가스에서, 11%가 석탄에서 나올 것으로 추정하며 재생에너지 약정이 미국에서는 없다고 지적한다. 댓글은 대체로 Anthropic을 비판하며 재생에너지 의무화와 규제 필요성을 주장하는 쪽이 많다. 반면 전력 수요를 감당하려면 현실적으로 가스가 불가피하다거나, 재생에너지만으로는 부족하다는 반론도 일부 나왔다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "데이터센터 전력 공급을 현재 가능한 가스 중심으로 두는 것이 불가피한가, 아니면 재생에너지와 규제로 바꿔야 하는가",
-    "consensus": "대다수 댓글은 AI 데이터센터의 화석연료 의존과 기업의 책임 회피를 비판하며 규제 필요성에 공감한다.",
+    "axis": "데이터센터 전력을 재생에너지 중심으로 바꿔야 하는가, 아니면 당장은 가스가 불가피한가",
+    "consensus": "댓글 전반은 Anthropic의 재생에너지 외면과 미국의 규제 부재를 비판하는 분위기다.",
     "sides": [
      {
-      "stance": "재생에너지·규제로 전환해야 한다",
-      "logic": "태양광·풍력과 배터리가 이미 값싸고 신규 발전은 대부분 재생에너지이므로, 가스 대신 재생에너지 의무화나 화석연료 제한으로 충분히 대응할 수 있다는 입장이다.",
+      "stance": "재생에너지 의무화·규제로 가스 의존을 막아야 한다",
+      "logic": "외부비용을 지역사회가 떠안고 있으므로 재생에너지 의무 비율이나 가스·석탄 신규 대형 부하 금지 같은 규제가 필요하다는 주장이다.",
       "share": 55
      },
      {
-      "stance": "당장은 가스가 현실적 선택이다",
-      "logic": "데이터센터가 요구하는 대규모 전력을 짧은 기간에 공급할 수 있는 것은 가스뿐이고, 원전은 건설이 길며 재생에너지는 간헐성 때문에 즉시 대체가 어렵다는 입장이다.",
+      "stance": "재생에너지만으로는 데이터센터 전력 수요를 감당하기 어렵고 가스·원전이 현실적이다",
+      "logic": "데이터센터는 24시간 안정 전력이 필요하고 태양광·풍력은 간헐적이며, 원전은 건설이 오래 걸려 단기적으로 가스 외에 대안이 없다는 주장이다.",
       "share": 30
      }
     ]
    },
-   "n_comments_read": 61,
+   "n_comments_read": 99,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 323,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
-   "url": "https://thedataexchange.media/pete-warden-moonshine/",
-   "discussion": "https://news.ycombinator.com/item?id=50561508",
-   "points": 272,
-   "comments": 250,
-   "r": 0.92,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:thedataexchange.media/pete-warden-moonshine",
-   "summary_ko": "댓글에서는 로컬 AI를 실제로 쓰고 있다는 경험담이 많이 올라왔다. 27B급 Qwen 모델을 $1500 안팎의 개인 장비에서 돌리며 클라우드 사용의 대부분을 대체했다는 사례가 있는 반면, 전기료와 초기 하드웨어 비용을 생각하면 데이터센터가 여전히 경제적이라는 반론도 강했다. 개인 사용자가 자가 호스팅을 실제로 선택할지에 대해서는 일반 소비자는 관심이 없을 것이라는 회의론과, 편의성만 갖추면 가능하다는 의견이 맞섰다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "로컬 AI가 클라우드 AI를 실용적으로 대체할 수 있는가, 그리고 일반 사용자가 이를 선택할 것인가",
-    "consensus": "성능과 편의성은 빠르게 좋아지고 있지만, 비용과 일반 사용자의 관심이라는 면에서는 아직 클라우드가 우위라는 대체적 반응이다.",
-    "sides": [
-     {
-      "stance": "로컬 AI가 이미 실용 수준이며 클라우드 사용을 상당 부분 대체한다",
-      "logic": "27B급 모델을 개인 장비에서 돌려 대부분의 대화와 작업을 처리하고 있고, 프라이버시와 검열 없는 사용이 장점이라는 경험담이 중심이다.",
-      "share": 55
-     },
-     {
-      "stance": "경제성과 대중성 때문에 로컬 AI는 소수 취향에 머문다",
-      "logic": "데이터센터가 가동률과 전기료 측면에서 유리하고, 일반 소비자는 수천 달러짜리 하드웨어를 사지 않으며 자가 호스팅은 수십 년째 대중화되지 않았다는 논리다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 247,
+   "comments_at": 744,
    "model": "claude-haiku-5-5"
   },
   {
@@ -858,7 +504,7 @@
    "title": "Google workers tell their employer not to punish schools that don't want AI",
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "discussion": "https://news.ycombinator.com/item?id=50577901",
-   "points": 282,
+   "points": 283,
    "comments": 229,
    "r": 0.81,
    "at": "2026-11-20",
@@ -914,7 +560,7 @@
    "url": "https://git-aarvin.github.io/mei/",
    "discussion": "https://news.ycombinator.com/item?id=50568130",
    "points": 375,
-   "comments": 246,
+   "comments": 248,
    "r": 0.66,
    "at": "2026-11-19",
    "topics": [
@@ -953,9 +599,9 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 576,
-   "comments": 342,
-   "r": 0.59,
+   "points": 577,
+   "comments": 346,
+   "r": 0.6,
    "at": "2026-11-20",
    "topics": [
     "에이전트"
@@ -993,8 +639,8 @@
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 303,
-   "comments": 169,
+   "points": 306,
+   "comments": 170,
    "r": 0.56,
    "at": "2026-11-20",
    "topics": [
@@ -1050,8 +696,8 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 671,
-   "comments": 360,
+   "points": 675,
+   "comments": 362,
    "r": 0.54,
    "at": "2026-11-20",
    "topics": [],
@@ -1085,89 +731,11 @@
   },
   {
    "layer": "hn",
-   "title": "Claude solves two open problems in the physics of black holes",
-   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-   "discussion": "https://news.ycombinator.com/item?id=50563148",
-   "points": 572,
-   "comments": 274,
-   "r": 0.48,
-   "at": "2026-11-19",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:anthropic.com/research/claude-black-hole-physics",
-   "summary_ko": "Claude가 블랙홀 열역학 관련 두 개의 이론물리 난제를 풀었다는 Anthropic 발표 글에 대해, 댓글들은 결과의 의미보다 주장 방식과 홍보성에 더 많이 반응했다. 한편에서는 두 번째 결과(2차원 부트스트랩 질량 상한의 엄밀한 증명)가 흥미롭다는 평가가 있었고, 다른 한편에서는 기사가 말하는 '양자 중첩' 설명을 지적하거나 AI가 물리 문제를 풀었다는 것 자체를 의심하는 반응이 많았다. 또 AI 결과에 프롬프트와 작업 과정을 공개하라는 요구, 그리고 기업 IPO 시점과 맞물린 홍보라는 의심이 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Claude의 물리 연구 결과를 실질적 성과로 인정할 수 있는가, 아니면 기업 홍보로 봐야 하는가",
-    "consensus": "댓글 대다수는 결과의 물리적 의미를 깊이 검토하기보다, Anthropic의 홍보성 발표와 IPO 시점, AI 주체 표현 방식에 회의적인 반응을 보였다.",
-    "sides": [
-     {
-      "stance": "결과 자체는 진짜 성과로 볼 만하다",
-      "logic": "두 번째 결과는 부트스트랩 상한을 엄밀히 증명했다는 점에서 의미가 있고, 수학적 창의성을 요구하는 문제라 AI 벤치마크로도 가치가 있다는 입장이다.",
-      "share": 35
-     },
-     {
-      "stance": "홍보·IPO용 과장이며 검증이 부족하다",
-      "logic": "독립 검토 없이 기업이 성공을 주장했고, 결과가 실제 물리 응용과 무관하며 IPO 시기와 겹쳐 있어 신뢰하기 어렵다는 입장이다.",
-      "share": 50
-     }
-    ]
-   },
-   "n_comments_read": 59,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 270,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Fuck Your AI Safeguards",
-   "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
-   "discussion": "https://news.ycombinator.com/item?id=50562262",
-   "points": 616,
-   "comments": 249,
-   "r": 0.4,
-   "at": "2026-11-19",
-   "topics": [],
-   "story_key": "url:ounapuu.ee/posts/2026/11/19/unsafeguards",
-   "summary_ko": "댓글들은 AI 안전장치가 보안 점검이나 정당한 개발 작업까지 막는다는 원문 불만에 대체로 공감하며, 범죄자는 abliterated 오픈웨이트 모델로 우회하므로 막히는 쪽은 선량한 개발자뿐이라고 지적했다. 반면 일부는 악용을 막으려면 어느 정도 제약이 불가피하고 통제 접근 프로그램(CVP 등)이 있으니 그걸 쓰면 된다며, 오픈 모델 선택은 사용자 몫이라는 입장을 냈다. 앤트로픽의 안전 정책이 실제로는 시장 독점과 규제 해자를 위한 것 아니냐는 의심도 여럿 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 안전장치가 보안 방어에 도움이 되는가, 아니면 선량한 사용자만 막는가",
-    "consensus": "댓글 대다수는 과도한 안전장치가 정당한 보안 작업을 막고 범죄자는 우회한다는 원문 불만에 공감하며, 오픈 웨이트 모델로 옮겨가는 분위기다.",
-    "sides": [
-     {
-      "stance": "안전장치는 선량한 개발자만 막고 실효성이 없으니 폐지하거나 완화해야 한다",
-      "logic": "범죄자는 안전장치 없는 모델을 쓰므로 방어자만 불편해지고 전체 보안 수준이 오히려 떨어진다.",
-      "share": 70
-     },
-     {
-      "stance": "악용 방지를 위해 일정 수준의 제약과 심사는 필요하며, 통제 접근 프로그램을 쓰면 된다",
-      "logic": "완전한 제약 없는 모델은 범죄에 악용될 수 있고, 심사 절차 자체는 대부분 생각보다 쉽게 통과된다는 경험도 있다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 100,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 246,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 487,
-   "comments": 143,
+   "points": 490,
+   "comments": 144,
    "r": 0.29,
    "at": "2026-11-20",
    "topics": [],
@@ -1207,8 +775,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 800,
-   "likes": 3953,
+   "trending": 874,
+   "likes": 4758,
    "downloads": 23543,
    "topics": [
     "모델릴리스"
@@ -1220,8 +788,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 702,
-   "likes": 756,
+   "trending": 773,
+   "likes": 851,
    "downloads": 805993,
    "topics": [
     "모델릴리스"
@@ -1233,8 +801,8 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 421,
-   "likes": 569,
+   "trending": 454,
+   "likes": 613,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -1244,36 +812,10 @@
   },
   {
    "layer": "hf",
-   "title": "tencent/Hy4-flash",
-   "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 406,
-   "likes": 577,
-   "downloads": 6617,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:tencent/hy4-flash",
-   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
-   "title": "apple/FastFrames-L",
-   "url": "https://huggingface.co/apple/FastFrames-L",
-   "trending": 351,
-   "likes": 510,
-   "downloads": 0,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:apple/fastframes-l",
-   "one_line": "apple/FastFrames-L은 Apple이 공개한 모델로, 영상 프레임 생성 속도를 높이는 것을 목표로 한 대형 모델이다."
-  },
-  {
-   "layer": "hf",
    "title": "harness-hub/Qwen3.8-27B-pi-adapted",
    "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 322,
-   "likes": 953,
+   "trending": 329,
+   "likes": 983,
    "downloads": 2831,
    "topics": [
     "모델릴리스"
@@ -1285,8 +827,8 @@
    "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 294,
-   "likes": 857,
+   "trending": 284,
+   "likes": 885,
    "downloads": 8608,
    "topics": [
     "모델릴리스"
@@ -1298,8 +840,8 @@
    "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 221,
-   "likes": 357,
+   "trending": 270,
+   "likes": 453,
    "downloads": 129693,
    "topics": [
     "모델릴리스"
@@ -1309,10 +851,36 @@
   },
   {
    "layer": "hf",
+   "title": "apple/DepthPro2",
+   "url": "https://huggingface.co/apple/DepthPro2",
+   "trending": 221,
+   "likes": 268,
+   "downloads": 0,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:apple/depthpro2",
+   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
+   "title": "tencent/Hy4-flash",
+   "url": "https://huggingface.co/tencent/Hy4-flash",
+   "trending": 210,
+   "likes": 615,
+   "downloads": 6617,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:tencent/hy4-flash",
+   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 210,
-   "likes": 20837,
+   "trending": 208,
+   "likes": 20875,
    "downloads": 6297396,
    "topics": [
     "모델릴리스"
@@ -1322,16 +890,16 @@
   },
   {
    "layer": "hf",
-   "title": "apple/DepthPro2",
-   "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 195,
-   "likes": 230,
-   "downloads": 0,
+   "title": "sensenova/SenseNova-Loop-9B",
+   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+   "trending": 192,
+   "likes": 510,
+   "downloads": 1863,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:apple/depthpro2",
-   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
+   "story_key": "hf:sensenova/sensenova-loop-9b",
+   "one_line": "sensenova가 공개한 9B급 SenseNova-Loop 모델로 표기되어 있으나, 세부 기능은 확인되지 않습니다."
   }
  ],
  "new_repos": [
@@ -1340,7 +908,7 @@
    "title": "bookwjitchieni1986/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI a",
    "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-   "stars": 2738,
+   "stars": 2744,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1354,7 +922,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 1955,
+   "stars": 2070,
    "topics": [
     "모델릴리스"
    ],
@@ -1366,7 +934,7 @@
    "title": "sybil-solutions/inference-optimisation-skill",
    "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-   "stars": 1842,
+   "stars": 1926,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1376,20 +944,23 @@
   },
   {
    "layer": "github",
-   "title": "hatsunemiku-ai/google-one-tools",
-   "desc": "",
-   "url": "https://github.com/hatsunemiku-ai/google-one-tools",
-   "stars": 1205,
-   "topics": [],
-   "story_key": "gh:hatsunemiku-ai/google-one-tools",
-   "one_line": "저장소 이름으로 미루어 Google One 관련 도구 모음으로 보이나, 구체적인 기능은 확인하지 못했다."
+   "title": "EL4CTEO/fast-anything",
+   "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
+   "url": "https://github.com/EL4CTEO/fast-anything",
+   "stars": 1687,
+   "topics": [
+    "에이전트",
+    "개발도구"
+   ],
+   "story_key": "gh:el4cteo/fast-anything",
+   "one_line": "Python, Node, Ruby 앱을 프로파일링해 느린 핫스팟 함수만 골라 Rust 등으로 포팅하고 동작 동일성을 검증하는 도구로 보인다."
   },
   {
    "layer": "github",
    "title": "boringmarketer/boring-marketing-skills",
    "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
    "url": "https://github.com/boringmarketer/boring-marketing-skills",
-   "stars": 789,
+   "stars": 794,
    "topics": [
     "에이전트"
    ],
@@ -1398,16 +969,29 @@
   },
   {
    "layer": "github",
-   "title": "EL4CTEO/fast-anything",
-   "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
-   "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 775,
+   "title": "CocoSgt/riemann-hypothesis-lean",
+   "desc": "Mirror of Levent Alpöge's Lean proof of the Riemann Hypothesis (with Claude). All credit to Levent Alpöge. Source: alpo.ge",
+   "url": "https://github.com/CocoSgt/riemann-hypothesis-lean",
+   "stars": 502,
    "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:cocosgt/riemann-hypothesis-lean",
+   "one_line": "레반트 알포게(Levent Alpöge)가 작성한 리만 가설의 Lean 증명을 미러링한 저장소로, 원저자 크레딧을 명시하고 있습니다."
+  },
+  {
+   "layer": "github",
+   "title": "INK-Q/agy-fast",
+   "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
+   "url": "https://github.com/INK-Q/agy-fast",
+   "stars": 484,
+   "topics": [
+    "모델릴리스",
     "에이전트",
     "개발도구"
    ],
-   "story_key": "gh:el4cteo/fast-anything",
-   "one_line": "Python, Node, Ruby 앱을 프로파일링해 느린 핫스팟 함수만 골라 Rust 등으로 포팅하고 동작 동일성을 검증하는 도구로 보인다."
+   "story_key": "gh:ink-q/agy-fast",
+   "one_line": "Google Antigravity(CLI/데스크톱/IDE)용 비침투형 MCP 가속 플러그인으로, LLM 호출 횟수와 토큰 사용량, 업로드 트래픽을 줄이는 것을 목표로 한다."
   }
  ],
  "trust_recent": [
@@ -1793,16 +1377,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-22 12:58",
+ "enriched_at": "2026-11-22 20:13",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 4,
-  "in": 22414,
-  "out": 1444,
+  "calls": 3,
+  "in": 30787,
+  "out": 1224,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
   "items": 2,
-  "cost_usd": 0.00296
+  "cost_usd": 0.00369
  }
 }
