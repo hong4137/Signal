@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 05:12",
+ "updated": "2026-11-23 12:36",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
@@ -16,8 +16,8 @@
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 525,
-   "comments": 919,
+   "points": 527,
+   "comments": 921,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -60,9 +60,9 @@
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 690,
-   "comments": 744,
-   "r": 1.08,
+   "points": 911,
+   "comments": 908,
+   "r": 1.0,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
@@ -98,9 +98,9 @@
    "title": "The Mythology of Conscious AI",
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 145,
-   "comments": 420,
-   "r": 2.9,
+   "points": 171,
+   "comments": 489,
+   "r": 2.86,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
@@ -125,9 +125,9 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 675,
+   "points": 678,
    "comments": 362,
-   "r": 0.54,
+   "r": 0.53,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:architectlabs.com/blog/frostbite",
@@ -163,7 +163,7 @@
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 577,
+   "points": 578,
    "comments": 346,
    "r": 0.6,
    "at": "2026-11-20",
@@ -196,46 +196,6 @@
    "kr": [],
    "v": 3,
    "comments_at": 310,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-   "url": "https://git-aarvin.github.io/mei/",
-   "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 375,
-   "comments": 248,
-   "r": 0.66,
-   "at": "2026-11-19",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:git-aarvin.github.io/mei",
-   "summary_ko": "댓글 반응은 대체로 긍정적이다. 코딩·문서 작업에서 Neon이 Opus 5.5나 Fable에 근접하고 속도가 빠르다는 사용 후기가 많았고, 프로토타입, 회로 설계, 번역 등 여러 분야에서 만족을 표한 이들이 적지 않았다. 반면 벤치마크 자체에 대한 불신도 컸다. 제출자가 직접 만든 지수이고 Neon은 8개 중 3개 벤치마크만 반영돼 있어 공정하지 않다는 지적이 여럿이었다. 실제 사용에서는 에이전트 작업 중 대규모 회귀를 일으켰다는 부정적 경험담도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Neon이 실사용에서 Opus급 성능을 내는가, 벤치마크 지수 자체를 신뢰할 수 있는가",
-    "consensus": "실제 써본 사용자는 Neon을 Opus 5.5에 근접하거나 빠른 모델로 평가하지만, 이 지수는 방법론이 부실하다는 반응이 우세하다.",
-    "sides": [
-     {
-      "stance": "Neon은 실사용에서 Opus급이며 속도와 가독성이 좋다",
-      "logic": "코드 품질, 문서 작업, 회로 설계 등에서 직접 써본 결과 Opus와 비슷하거나 낫고 응답이 빠르다는 후기가 많다.",
-      "share": 65
-     },
-     {
-      "stance": "이 지수는 신뢰할 수 없고 Neon의 실력도 과장됐다",
-      "logic": "8개 중 3개 벤치마크만 반영돼 있고 제출자가 직접 만들었으며, 일부 사용자는 에이전트 작업에서 회귀와 오진을 겪었다고 보고한다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 64,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 241,
    "model": "claude-haiku-5-5"
   },
   {
@@ -298,8 +258,8 @@
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 306,
-   "comments": 170,
+   "points": 307,
+   "comments": 171,
    "r": 0.56,
    "at": "2026-11-20",
    "topics": [
@@ -355,9 +315,9 @@
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 490,
-   "comments": 144,
-   "r": 0.29,
+   "points": 491,
+   "comments": 145,
+   "r": 0.3,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "arxiv:2611.21885",
@@ -387,6 +347,47 @@
    "v": 3,
    "comments_at": 126,
    "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "discussion": "https://news.ycombinator.com/item?id=50603845",
+   "points": 299,
+   "comments": 128,
+   "r": 0.43,
+   "at": "2026-11-22",
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "url:gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "summary_ko": "Unsloth Desktop과 Qwen3.8-27B(4비트 양자화)를 써서 집에서 로컬 AI를 돌리는 입문 가이드다. 댓글에서는 32GB VRAM 장비 가격에 대한 부담과 '보급형 GPU나 구형 카드, 통합 메모리 Mac으로도 충분하다'는 반론이 주로 오갔고, 로컬 모델이 클라우드 모델을 얼마나 대체할 수 있는지에 대해서는 회의적인 의견과 긍정적인 경험담이 함께 나왔다. 기사 자체는 사건이 아닌 튜토리얼이다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "로컬 AI가 클라우드 구독을 실질적으로 대체할 만큼 쓸 만한가?",
+    "consensus": "하드웨어 비용이 진입 장벽이라는 데는 대체로 동의하지만, 보급형 GPU나 Mac으로도 실사용이 가능하다는 경험담이 많고, 클라우드 모델과의 성능 격차에 대해서는 의견이 엇갈린다.",
+    "sides": [
+     {
+      "stance": "로컬 AI는 아직 클라우드 구독을 대체하기 어렵다",
+      "logic": "32GB급 GPU 비용이 과하고, 클라우드 최상위 모델과 성능 차이가 커서 일반 사용자에게는 구독이 여전히 합리적이라는 주장이다.",
+      "share": 45
+     },
+     {
+      "stance": "보급형 하드웨어나 구형 GPU로도 충분히 실용적이다",
+      "logic": "P40, Radeon VII, 12~16GB 카드, 통합 메모리 Mac 등으로 20~100 tok/s를 얻어 일상 작업에 쓸 만하다는 경험을 근거로 든다.",
+      "share": 55
+     }
+    ]
+   },
+   "n_comments_read": 53,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 128,
+   "model": "claude-haiku-5-5"
   }
  ],
  "by_debate": [
@@ -395,9 +396,9 @@
    "title": "The Mythology of Conscious AI",
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 145,
-   "comments": 420,
-   "r": 2.9,
+   "points": 171,
+   "comments": 489,
+   "r": 2.86,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
@@ -422,8 +423,8 @@
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
    "discussion": "https://news.ycombinator.com/item?id=50574383",
-   "points": 525,
-   "comments": 919,
+   "points": 527,
+   "comments": 921,
    "r": 1.75,
    "at": "2026-11-20",
    "topics": [],
@@ -466,9 +467,9 @@
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 690,
-   "comments": 744,
-   "r": 1.08,
+   "points": 911,
+   "comments": 908,
+   "r": 1.0,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
@@ -556,50 +557,10 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-   "url": "https://git-aarvin.github.io/mei/",
-   "discussion": "https://news.ycombinator.com/item?id=50568130",
-   "points": 375,
-   "comments": 248,
-   "r": 0.66,
-   "at": "2026-11-19",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:git-aarvin.github.io/mei",
-   "summary_ko": "댓글 반응은 대체로 긍정적이다. 코딩·문서 작업에서 Neon이 Opus 5.5나 Fable에 근접하고 속도가 빠르다는 사용 후기가 많았고, 프로토타입, 회로 설계, 번역 등 여러 분야에서 만족을 표한 이들이 적지 않았다. 반면 벤치마크 자체에 대한 불신도 컸다. 제출자가 직접 만든 지수이고 Neon은 8개 중 3개 벤치마크만 반영돼 있어 공정하지 않다는 지적이 여럿이었다. 실제 사용에서는 에이전트 작업 중 대규모 회귀를 일으켰다는 부정적 경험담도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Neon이 실사용에서 Opus급 성능을 내는가, 벤치마크 지수 자체를 신뢰할 수 있는가",
-    "consensus": "실제 써본 사용자는 Neon을 Opus 5.5에 근접하거나 빠른 모델로 평가하지만, 이 지수는 방법론이 부실하다는 반응이 우세하다.",
-    "sides": [
-     {
-      "stance": "Neon은 실사용에서 Opus급이며 속도와 가독성이 좋다",
-      "logic": "코드 품질, 문서 작업, 회로 설계 등에서 직접 써본 결과 Opus와 비슷하거나 낫고 응답이 빠르다는 후기가 많다.",
-      "share": 65
-     },
-     {
-      "stance": "이 지수는 신뢰할 수 없고 Neon의 실력도 과장됐다",
-      "logic": "8개 중 3개 벤치마크만 반영돼 있고 제출자가 직접 만들었으며, 일부 사용자는 에이전트 작업에서 회귀와 오진을 겪었다고 보고한다.",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 64,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 241,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "discussion": "https://news.ycombinator.com/item?id=50572348",
-   "points": 577,
+   "points": 578,
    "comments": 346,
    "r": 0.6,
    "at": "2026-11-20",
@@ -639,8 +600,8 @@
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "discussion": "https://news.ycombinator.com/item?id=50581438",
-   "points": 306,
-   "comments": 170,
+   "points": 307,
+   "comments": 171,
    "r": 0.56,
    "at": "2026-11-20",
    "topics": [
@@ -696,9 +657,9 @@
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
    "url": "https://architectlabs.com/blog/frostbite",
    "discussion": "https://news.ycombinator.com/item?id=50572503",
-   "points": 675,
+   "points": 678,
    "comments": 362,
-   "r": 0.54,
+   "r": 0.53,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "url:architectlabs.com/blog/frostbite",
@@ -731,12 +692,53 @@
   },
   {
    "layer": "hn",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "discussion": "https://news.ycombinator.com/item?id=50603845",
+   "points": 299,
+   "comments": 128,
+   "r": 0.43,
+   "at": "2026-11-22",
+   "topics": [
+    "모델릴리스",
+    "개발도구"
+   ],
+   "story_key": "url:gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "summary_ko": "Unsloth Desktop과 Qwen3.8-27B(4비트 양자화)를 써서 집에서 로컬 AI를 돌리는 입문 가이드다. 댓글에서는 32GB VRAM 장비 가격에 대한 부담과 '보급형 GPU나 구형 카드, 통합 메모리 Mac으로도 충분하다'는 반론이 주로 오갔고, 로컬 모델이 클라우드 모델을 얼마나 대체할 수 있는지에 대해서는 회의적인 의견과 긍정적인 경험담이 함께 나왔다. 기사 자체는 사건이 아닌 튜토리얼이다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "로컬 AI가 클라우드 구독을 실질적으로 대체할 만큼 쓸 만한가?",
+    "consensus": "하드웨어 비용이 진입 장벽이라는 데는 대체로 동의하지만, 보급형 GPU나 Mac으로도 실사용이 가능하다는 경험담이 많고, 클라우드 모델과의 성능 격차에 대해서는 의견이 엇갈린다.",
+    "sides": [
+     {
+      "stance": "로컬 AI는 아직 클라우드 구독을 대체하기 어렵다",
+      "logic": "32GB급 GPU 비용이 과하고, 클라우드 최상위 모델과 성능 차이가 커서 일반 사용자에게는 구독이 여전히 합리적이라는 주장이다.",
+      "share": 45
+     },
+     {
+      "stance": "보급형 하드웨어나 구형 GPU로도 충분히 실용적이다",
+      "logic": "P40, Radeon VII, 12~16GB 카드, 통합 메모리 Mac 등으로 20~100 tok/s를 얻어 일상 작업에 쓸 만하다는 경험을 근거로 든다.",
+      "share": 55
+     }
+    ]
+   },
+   "n_comments_read": 53,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 128,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "discussion": "https://news.ycombinator.com/item?id=50577265",
-   "points": 490,
-   "comments": 144,
-   "r": 0.29,
+   "points": 491,
+   "comments": 145,
+   "r": 0.3,
    "at": "2026-11-20",
    "topics": [],
    "story_key": "arxiv:2611.21885",
@@ -775,8 +777,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 874,
-   "likes": 4758,
+   "trending": 948,
+   "likes": 5049,
    "downloads": 23543,
    "topics": [
     "모델릴리스"
@@ -788,8 +790,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 773,
-   "likes": 851,
+   "trending": 822,
+   "likes": 908,
    "downloads": 805993,
    "topics": [
     "모델릴리스"
@@ -801,8 +803,8 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 454,
-   "likes": 613,
+   "trending": 484,
+   "likes": 646,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -812,62 +814,10 @@
   },
   {
    "layer": "hf",
-   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 329,
-   "likes": 983,
-   "downloads": 2831,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
-   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
-   "title": "higurashi-ai/Haru-4B",
-   "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 284,
-   "likes": 885,
-   "downloads": 8608,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:higurashi-ai/haru-4b",
-   "one_line": "higurashi-ai가 올린 Haru-4B 모델로 보이나, 용도와 세부 사양은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
-   "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 270,
-   "likes": 453,
-   "downloads": 129693,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:atomicchat/inkling-2-mini-uncensored-gguf",
-   "one_line": "AtomicChat이 올린 Inkling-2-Mini 모델의 검열 해제 GGUF 변환본으로, 로컬 추론용 경량 채팅 모델이라고 알려져 있으나 세부 크기와 원작자 정보는 확인되지 않는다."
-  },
-  {
-   "layer": "hf",
-   "title": "apple/DepthPro2",
-   "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 221,
-   "likes": 268,
-   "downloads": 0,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:apple/depthpro2",
-   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
-  },
-  {
-   "layer": "hf",
    "title": "tencent/Hy4-flash",
    "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 210,
-   "likes": 615,
+   "trending": 425,
+   "likes": 623,
    "downloads": 6617,
    "topics": [
     "모델릴리스"
@@ -877,10 +827,62 @@
   },
   {
    "layer": "hf",
+   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+   "trending": 332,
+   "likes": 993,
+   "downloads": 2831,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
+   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
+   "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "trending": 304,
+   "likes": 506,
+   "downloads": 129693,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:atomicchat/inkling-2-mini-uncensored-gguf",
+   "one_line": "AtomicChat이 올린 Inkling-2-Mini 모델의 검열 해제 GGUF 변환본으로, 로컬 추론용 경량 채팅 모델이라고 알려져 있으나 세부 크기와 원작자 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
+   "title": "higurashi-ai/Haru-4B",
+   "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+   "trending": 278,
+   "likes": 897,
+   "downloads": 8608,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:higurashi-ai/haru-4b",
+   "one_line": "higurashi-ai가 올린 Haru-4B 모델로 보이나, 용도와 세부 사양은 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
+   "title": "apple/DepthPro2",
+   "url": "https://huggingface.co/apple/DepthPro2",
+   "trending": 247,
+   "likes": 349,
+   "downloads": 0,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:apple/depthpro2",
+   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-   "trending": 208,
-   "likes": 20875,
+   "trending": 202,
+   "likes": 20940,
    "downloads": 6297396,
    "topics": [
     "모델릴리스"
@@ -892,8 +894,8 @@
    "layer": "hf",
    "title": "sensenova/SenseNova-Loop-9B",
    "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-   "trending": 192,
-   "likes": 510,
+   "trending": 196,
+   "likes": 552,
    "downloads": 1863,
    "topics": [
     "모델릴리스"
@@ -908,7 +910,7 @@
    "title": "bookwjitchieni1986/blender-ai-mcp-addon",
    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI a",
    "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-   "stars": 2744,
+   "stars": 2752,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -922,7 +924,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 2070,
+   "stars": 2114,
    "topics": [
     "모델릴리스"
    ],
@@ -931,23 +933,10 @@
   },
   {
    "layer": "github",
-   "title": "sybil-solutions/inference-optimisation-skill",
-   "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-   "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-   "stars": 1926,
-   "topics": [
-    "모델릴리스",
-    "에이전트"
-   ],
-   "story_key": "gh:sybil-solutions/inference-optimisation-skill",
-   "one_line": "로컬 LLM 서빙 속도를 디코딩, 추측 디코딩, KV 캐시 등 항목별로 개선하도록 돕는 에이전트 스킬이다."
-  },
-  {
-   "layer": "github",
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 1687,
+   "stars": 2056,
    "topics": [
     "에이전트",
     "개발도구"
@@ -957,22 +946,24 @@
   },
   {
    "layer": "github",
-   "title": "boringmarketer/boring-marketing-skills",
-   "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
-   "url": "https://github.com/boringmarketer/boring-marketing-skills",
-   "stars": 794,
+   "title": "INK-Q/agy-fast",
+   "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
+   "url": "https://github.com/INK-Q/agy-fast",
+   "stars": 579,
    "topics": [
-    "에이전트"
+    "모델릴리스",
+    "에이전트",
+    "개발도구"
    ],
-   "story_key": "gh:boringmarketer/boring-marketing-skills",
-   "one_line": "리서치, 카피, SEO, 광고 등 마케팅 작업용 스킬 32개를 AI 에이전트에 추가하는 MIT 라이선스 패키지다."
+   "story_key": "gh:ink-q/agy-fast",
+   "one_line": "Google Antigravity(CLI/데스크톱/IDE)용 비침투형 MCP 가속 플러그인으로, LLM 호출 횟수와 토큰 사용량, 업로드 트래픽을 줄이는 것을 목표로 한다."
   },
   {
    "layer": "github",
    "title": "CocoSgt/riemann-hypothesis-lean",
    "desc": "Mirror of Levent Alpöge's Lean proof of the Riemann Hypothesis (with Claude). All credit to Levent Alpöge. Source: alpo.ge",
    "url": "https://github.com/CocoSgt/riemann-hypothesis-lean",
-   "stars": 502,
+   "stars": 518,
    "topics": [
     "모델릴리스"
    ],
@@ -981,20 +972,46 @@
   },
   {
    "layer": "github",
-   "title": "INK-Q/agy-fast",
-   "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
-   "url": "https://github.com/INK-Q/agy-fast",
-   "stars": 484,
+   "title": "danielwh2/sprite-stacking",
+   "desc": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
+   "url": "https://github.com/danielwh2/sprite-stacking",
+   "stars": 490,
    "topics": [
     "모델릴리스",
-    "에이전트",
-    "개발도구"
+    "에이전트"
    ],
-   "story_key": "gh:ink-q/agy-fast",
-   "one_line": "Google Antigravity(CLI/데스크톱/IDE)용 비침투형 MCP 가속 플러그인으로, LLM 호출 횟수와 토큰 사용량, 업로드 트래픽을 줄이는 것을 목표로 한다."
+   "story_key": "gh:danielwh2/sprite-stacking",
+   "one_line": "픽셀 아트 네 방향 이미지를 입력받아 회전 가능한 가짜 3D 스프라이트를 만드는 에이전트 스킬로, Claude Code, Codex, Cursor 등에서 동작한다고 소개된다."
+  },
+  {
+   "layer": "github",
+   "title": "sybil-solutions/skill-distill",
+   "desc": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
+   "url": "https://github.com/sybil-solutions/skill-distill",
+   "stars": 462,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:sybil-solutions/skill-distill",
+   "one_line": "잘 진행된 Claude Code·Codex 세션을 증류해, 오픈 웨이트 모델이 따라 하며 같은 작업을 재현할 수 있는 스킬로 만드는 도구다."
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Select Styling Specimens",
+   "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+   "at": "2026-11-22T19:45",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/22/select-styling",
+   "link_keys": [
+    "url:claude.ai/share/a82c181c-0ea6-4fec-a659-8de653cb3e7b",
+    "url:tools.simonwillison.net/select-styling"
+   ],
+   "is_roundup": false,
+   "one_line": "Simon Willison이 HTML select 상자를 브라우저마다 다르게 보이지 않도록 스타일링하는 방법을 모은 글로, 그가 고른 CSS 예시와 Claude로 만든 데모 페이지를 소개한다."
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1358,35 +1375,19 @@
    ],
    "is_roundup": false,
    "one_line": "datasette-apps 0.4a0 출시 글로, 앱 간 URL 프래그먼트 링크 기능을 추가해 한 앱에서 다른 앱의 레코드를 연결할 수 있게 했다."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "datasette-agent 0.6a0",
-   "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
-   "at": "2026-11-15T03:49",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/15/datasette-agent",
-   "link_keys": [
-    "gh:datasette/datasette-agent"
-   ],
-   "is_roundup": false,
-   "one_line": "datasette-agent 0.6a0 출시 글로, 홈페이지에 에이전트 프롬프트를 추가하고 테이블·쿼리 해시 멘션을 지원하도록 한 소규모 수정 모음이다."
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-22 20:13",
+ "enriched_at": "2026-11-23 03:37",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
   "calls": 3,
-  "in": 30787,
-  "out": 1224,
+  "in": 13729,
+  "out": 977,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 2,
-  "cost_usd": 0.00369
+  "items": 1,
+  "cost_usd": 0.00186
  }
 }
