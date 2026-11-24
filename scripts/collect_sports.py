@@ -212,8 +212,10 @@ def first_score(ev):
     """요약을 보기 전 1차 점수 — 관심 리그·한국 선수·포스트시즌·시간대."""
     lg = CFG["leagues"][ev["path"]]
     s, why = lg["w"], []
-    fol = ev.get("follow") or next((f for f in FOLLOW if f.get("kind") == "team" and f["name"] in
-                                    {(ev.get("home") or {}).get("name"), (ev.get("away") or {}).get("name")}), None)
+    # 팀 follow 에 path 가 있으면 그 대회에서만 — 여자 대표팀도 ESPN 이름은 'South Korea'(A대표와 같다). 대회가 맞는 항목을 먼저 — 2026-11-25
+    tn = {(ev.get("home") or {}).get("name"), (ev.get("away") or {}).get("name")}
+    tf = [f for f in FOLLOW if f.get("kind") == "team" and f["name"] in tn and f.get("path") in (None, ev.get("path"))]
+    fol = ev.get("follow") or next(iter(sorted(tf, key=lambda f: f.get("path") is None)), None)
     if fol:                                      # 사용자가 챙기는 선수·팀 — F1·알카라스는 축구만큼 중요하다
         s += fol["w"]; why.append(fol["ko"] + " 경기"); ev["follow"] = fol
     ks = korean_in(ev)
