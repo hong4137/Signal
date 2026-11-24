@@ -51,6 +51,10 @@ def sport_of(path):
 
 
 def ko(name):
+    # 연령별 대표(ESPN 'South Korea U17'·'Ecuador U20')는 나라 이름 + U-17 — 2026-11-24
+    m = re.match(r"^(.*\S)\s+U-?(17|20|23)$", name or "")
+    if m and name not in TEAMS:
+        return "%s U-%s" % (TEAMS.get(m.group(1), m.group(1)), m.group(2))
     return TEAMS.get(name, name)
 
 
