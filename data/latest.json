@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24 15:51",
+ "updated": "2026-11-25 00:27",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 7,
+  "hn": 9,
   "reddit": 0,
   "hf": 15,
-  "github": 8,
+  "github": 7,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,9 +16,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2433,
-   "comments": 3372,
-   "r": 1.39,
+   "points": 2707,
+   "comments": 3557,
+   "r": 1.31,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -75,50 +75,12 @@
   },
   {
    "layer": "hn",
-   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-   "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 1029,
-   "comments": 1007,
-   "r": 0.98,
-   "at": "2026-11-22",
-   "topics": [],
-   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-   "summary_ko": "원문은 Anthropic 데이터센터 전력의 약 87%가 2028년까지 가스에서, 11%가 석탄에서 나올 것으로 추정하며 재생에너지 약정이 미국에서는 없다고 지적한다. 댓글은 대체로 Anthropic을 비판하며 재생에너지 의무화와 규제 필요성을 주장하는 쪽이 많다. 반면 전력 수요를 감당하려면 현실적으로 가스가 불가피하다거나, 재생에너지만으로는 부족하다는 반론도 일부 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "데이터센터 전력을 재생에너지 중심으로 바꿔야 하는가, 아니면 당장은 가스가 불가피한가",
-    "consensus": "댓글 전반은 Anthropic의 재생에너지 외면과 미국의 규제 부재를 비판하는 분위기다.",
-    "sides": [
-     {
-      "stance": "재생에너지 의무화·규제로 가스 의존을 막아야 한다",
-      "logic": "외부비용을 지역사회가 떠안고 있으므로 재생에너지 의무 비율이나 가스·석탄 신규 대형 부하 금지 같은 규제가 필요하다는 주장이다.",
-      "share": 55
-     },
-     {
-      "stance": "재생에너지만으로는 데이터센터 전력 수요를 감당하기 어렵고 가스·원전이 현실적이다",
-      "logic": "데이터센터는 24시간 안정 전력이 필요하고 태양광·풍력은 간헐적이며, 원전은 건설이 오래 걸려 단기적으로 가스 외에 대안이 없다는 주장이다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 99,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 744,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
    "url": "https://twitter.com/ylecun/status/2124550037912920090",
    "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 1496,
-   "comments": 842,
-   "r": 0.56,
+   "points": 1877,
+   "comments": 1084,
+   "r": 0.58,
    "at": "2026-11-23",
    "topics": [],
    "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
@@ -151,12 +113,50 @@
   },
   {
    "layer": "hn",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "discussion": "https://news.ycombinator.com/item?id=50597612",
+   "points": 1034,
+   "comments": 1007,
+   "r": 0.97,
+   "at": "2026-11-22",
+   "topics": [],
+   "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+   "summary_ko": "원문은 Anthropic 데이터센터 전력의 약 87%가 2028년까지 가스에서, 11%가 석탄에서 나올 것으로 추정하며 재생에너지 약정이 미국에서는 없다고 지적한다. 댓글은 대체로 Anthropic을 비판하며 재생에너지 의무화와 규제 필요성을 주장하는 쪽이 많다. 반면 전력 수요를 감당하려면 현실적으로 가스가 불가피하다거나, 재생에너지만으로는 부족하다는 반론도 일부 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "데이터센터 전력을 재생에너지 중심으로 바꿔야 하는가, 아니면 당장은 가스가 불가피한가",
+    "consensus": "댓글 전반은 Anthropic의 재생에너지 외면과 미국의 규제 부재를 비판하는 분위기다.",
+    "sides": [
+     {
+      "stance": "재생에너지 의무화·규제로 가스 의존을 막아야 한다",
+      "logic": "외부비용을 지역사회가 떠안고 있으므로 재생에너지 의무 비율이나 가스·석탄 신규 대형 부하 금지 같은 규제가 필요하다는 주장이다.",
+      "share": 55
+     },
+     {
+      "stance": "재생에너지만으로는 데이터센터 전력 수요를 감당하기 어렵고 가스·원전이 현실적이다",
+      "logic": "데이터센터는 24시간 안정 전력이 필요하고 태양광·풍력은 간헐적이며, 원전은 건설이 오래 걸려 단기적으로 가스 외에 대안이 없다는 주장이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 99,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 744,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "The Mythology of Conscious AI",
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50595537",
    "points": 181,
-   "comments": 550,
-   "r": 3.04,
+   "comments": 556,
+   "r": 3.07,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
@@ -181,8 +181,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1099,
-   "comments": 359,
+   "points": 1146,
+   "comments": 375,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -224,9 +224,9 @@
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 752,
-   "comments": 304,
-   "r": 0.4,
+   "points": 766,
+   "comments": 312,
+   "r": 0.41,
    "at": "2026-11-22",
    "topics": [
     "모델릴리스",
@@ -262,12 +262,97 @@
   },
   {
    "layer": "hn",
+   "title": "Anthropic Breaks Below $83 IPO Price in Premarket Trading",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+   "discussion": "https://news.ycombinator.com/item?id=50627836",
+   "points": 120,
+   "comments": 180,
+   "r": 1.5,
+   "at": "2026-11-24",
+   "topics": [],
+   "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+   "summary_ko": "댓글은 대체로 비관적이다. 오픈웨이트 모델과 특화 증류 모델이 저렴한 가격으로 경쟁하면 앤트로픽의 최상위 모델 우위(10~15%)가 높은 가격과 밸류에이션을 지지하기 어렵다는 주장이 중심이다. 상장 직후 부진한 주가는 장기 성과와 큰 상관이 없다는 반응도 있으나 소수이며, 상장을 창업자·초기 투자자의 엑싯으로 보는 시각과 투자 손실을 농담처럼 다루는 글이 많다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 공모가 하회",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 앤트로픽의 해자가 약하고 오픈 모델과 가격 경쟁이 심해질 것이라며 회의적이며, 공모가 하회 자체보다 사업 구조와 상장 목적에 관심이 쏠려 있다."
+   },
+   "n_comments_read": 31,
+   "article_read": false,
+   "kr": [
+    {
+     "t": "앤트로픽 주가, 개장전 거래서 나흘만에 공모가 아래로 하락",
+     "u": "https://www.newsis.com/view/NISX20261124_0003881781",
+     "d": "Tue, 24 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "앤트로픽 창업자 남매, 상장으로 5억6000만 달러 현금화…주가는 공모가...",
+     "u": "https://www.jemin.com/news/articleView.html?idxno=848376",
+     "d": "Tue, 24 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 180,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "discussion": "https://news.ycombinator.com/item?id=50627340",
+   "points": 402,
+   "comments": 175,
+   "r": 0.44,
+   "at": "2026-11-24",
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "url:michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you",
+   "summary_ko": "댓글에서는 Claude가 Bandcamp의 접근 제한을 우회하지 않으면서 YouTube 다운로드는 돕는 것이 모순이라는 글쓴이의 문제 제기에 대해 의견이 엇갈렸다. 한편에서는 사이트 이용약관과 스크래핑 차단을 존중하는 것이 옳고 AI가 규칙을 무시하면 오히려 해롭다고 보았고, 다른 편에서는 사용자 대신 움직이는 에이전트라면 robots.txt나 차단을 따를 의무가 없으며 모델 제공사가 사용자 의도를 대신 판단하는 것은 문제라고 반박했다. 이 논쟁은 결국 로컬 모델과 오픈 웨이트 모델을 써야 한다는 주장으로 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI 에이전트가 사이트 접근 제한을 따라야 하는가, 사용자 의도를 우선해야 하는가",
+    "consensus": "댓글 대다수는 AI 기업이 모델을 통제해 사용자 이익이 뒷전이 되는 문제에 공감하며 로컬·오픈 모델의 필요성에 동의하지만, Bandcamp 같은 사이트의 이용 제한을 어기는 것이 옳은지에는 입장이 갈린다.",
+    "sides": [
+     {
+      "stance": "에이전트는 사이트 이용약관과 접근 차단을 존중해야 한다",
+      "logic": "스크래핑 에이전트가 무분별하게 사이트를 긁으면 인터넷이 스팸과 사기로 뒤덮이므로, 제공사가 규칙을 지키는 것이 장기적으로 모두에게 이롭다.",
+      "share": 45
+     },
+     {
+      "stance": "사용자를 대신하는 에이전트는 사이트 제한을 따를 의무가 없고 사용자 의도를 따라야 한다",
+      "logic": "망치가 가게 출입을 막는 표지를 무시하듯, 사용자가 직접 지시한 요청을 robots.txt 같은 크롤러용 규칙으로 거부하는 것은 부당하며 모델 제공사가 판단할 일이 아니다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 95,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 175,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Agent swarm trying to solve P vs. NP",
    "url": "https://pequalnp.com/",
    "discussion": "https://news.ycombinator.com/item?id=50604314",
-   "points": 191,
-   "comments": 170,
-   "r": 0.89,
+   "points": 205,
+   "comments": 171,
+   "r": 0.83,
    "at": "2026-11-22",
    "topics": [
     "에이전트"
@@ -308,8 +393,8 @@
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "discussion": "https://news.ycombinator.com/item?id=50595537",
    "points": 181,
-   "comments": 550,
-   "r": 3.04,
+   "comments": 556,
+   "r": 3.07,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
@@ -331,12 +416,56 @@
   },
   {
    "layer": "hn",
+   "title": "Anthropic Breaks Below $83 IPO Price in Premarket Trading",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+   "discussion": "https://news.ycombinator.com/item?id=50627836",
+   "points": 120,
+   "comments": 180,
+   "r": 1.5,
+   "at": "2026-11-24",
+   "topics": [],
+   "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+   "summary_ko": "댓글은 대체로 비관적이다. 오픈웨이트 모델과 특화 증류 모델이 저렴한 가격으로 경쟁하면 앤트로픽의 최상위 모델 우위(10~15%)가 높은 가격과 밸류에이션을 지지하기 어렵다는 주장이 중심이다. 상장 직후 부진한 주가는 장기 성과와 큰 상관이 없다는 반응도 있으나 소수이며, 상장을 창업자·초기 투자자의 엑싯으로 보는 시각과 투자 손실을 농담처럼 다루는 글이 많다.",
+   "is_event": true,
+   "kr_query": "앤트로픽 상장 공모가 하회",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 앤트로픽의 해자가 약하고 오픈 모델과 가격 경쟁이 심해질 것이라며 회의적이며, 공모가 하회 자체보다 사업 구조와 상장 목적에 관심이 쏠려 있다."
+   },
+   "n_comments_read": 31,
+   "article_read": false,
+   "kr": [
+    {
+     "t": "앤트로픽 주가, 개장전 거래서 나흘만에 공모가 아래로 하락",
+     "u": "https://www.newsis.com/view/NISX20261124_0003881781",
+     "d": "Tue, 24 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "앤트로픽 창업자 남매, 상장으로 5억6000만 달러 현금화…주가는 공모가...",
+     "u": "https://www.jemin.com/news/articleView.html?idxno=848376",
+     "d": "Tue, 24 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 180,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2433,
-   "comments": 3372,
-   "r": 1.39,
+   "points": 2707,
+   "comments": 3557,
+   "r": 1.31,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -396,9 +525,9 @@
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
-   "points": 1029,
+   "points": 1034,
    "comments": 1007,
-   "r": 0.98,
+   "r": 0.97,
    "at": "2026-11-22",
    "topics": [],
    "story_key": "url:betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
@@ -434,9 +563,9 @@
    "title": "Agent swarm trying to solve P vs. NP",
    "url": "https://pequalnp.com/",
    "discussion": "https://news.ycombinator.com/item?id=50604314",
-   "points": 191,
-   "comments": 170,
-   "r": 0.89,
+   "points": 205,
+   "comments": 171,
+   "r": 0.83,
    "at": "2026-11-22",
    "topics": [
     "에이전트"
@@ -474,9 +603,9 @@
    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
    "url": "https://twitter.com/ylecun/status/2124550037912920090",
    "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 1496,
-   "comments": 842,
-   "r": 0.56,
+   "points": 1877,
+   "comments": 1084,
+   "r": 0.58,
    "at": "2026-11-23",
    "topics": [],
    "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
@@ -509,12 +638,53 @@
   },
   {
    "layer": "hn",
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "discussion": "https://news.ycombinator.com/item?id=50627340",
+   "points": 402,
+   "comments": 175,
+   "r": 0.44,
+   "at": "2026-11-24",
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "url:michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you",
+   "summary_ko": "댓글에서는 Claude가 Bandcamp의 접근 제한을 우회하지 않으면서 YouTube 다운로드는 돕는 것이 모순이라는 글쓴이의 문제 제기에 대해 의견이 엇갈렸다. 한편에서는 사이트 이용약관과 스크래핑 차단을 존중하는 것이 옳고 AI가 규칙을 무시하면 오히려 해롭다고 보았고, 다른 편에서는 사용자 대신 움직이는 에이전트라면 robots.txt나 차단을 따를 의무가 없으며 모델 제공사가 사용자 의도를 대신 판단하는 것은 문제라고 반박했다. 이 논쟁은 결국 로컬 모델과 오픈 웨이트 모델을 써야 한다는 주장으로 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI 에이전트가 사이트 접근 제한을 따라야 하는가, 사용자 의도를 우선해야 하는가",
+    "consensus": "댓글 대다수는 AI 기업이 모델을 통제해 사용자 이익이 뒷전이 되는 문제에 공감하며 로컬·오픈 모델의 필요성에 동의하지만, Bandcamp 같은 사이트의 이용 제한을 어기는 것이 옳은지에는 입장이 갈린다.",
+    "sides": [
+     {
+      "stance": "에이전트는 사이트 이용약관과 접근 차단을 존중해야 한다",
+      "logic": "스크래핑 에이전트가 무분별하게 사이트를 긁으면 인터넷이 스팸과 사기로 뒤덮이므로, 제공사가 규칙을 지키는 것이 장기적으로 모두에게 이롭다.",
+      "share": 45
+     },
+     {
+      "stance": "사용자를 대신하는 에이전트는 사이트 제한을 따를 의무가 없고 사용자 의도를 따라야 한다",
+      "logic": "망치가 가게 출입을 막는 표지를 무시하듯, 사용자가 직접 지시한 요청을 robots.txt 같은 크롤러용 규칙으로 거부하는 것은 부당하며 모델 제공사가 판단할 일이 아니다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 95,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 175,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 752,
-   "comments": 304,
-   "r": 0.4,
+   "points": 766,
+   "comments": 312,
+   "r": 0.41,
    "at": "2026-11-22",
    "topics": [
     "모델릴리스",
@@ -553,8 +723,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1099,
-   "comments": 359,
+   "points": 1146,
+   "comments": 375,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -599,9 +769,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2433,
-   "comments": 3372,
-   "r": 1.39,
+   "points": 2707,
+   "comments": 3557,
+   "r": 1.31,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -661,8 +831,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1099,
-   "comments": 359,
+   "points": 1146,
+   "comments": 375,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -705,9 +875,9 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1148,
-   "likes": 5560,
-   "downloads": 41888,
+   "trending": 1198,
+   "likes": 5674,
+   "downloads": 69042,
    "topics": [
     "모델릴리스"
    ],
@@ -718,9 +888,9 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1012,
-   "likes": 1148,
-   "downloads": 1292888,
+   "trending": 1059,
+   "likes": 1201,
+   "downloads": 1913407,
    "topics": [
     "모델릴리스"
    ],
@@ -731,9 +901,9 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 577,
-   "likes": 753,
-   "downloads": 0,
+   "trending": 603,
+   "likes": 779,
+   "downloads": 12733,
    "topics": [
     "모델릴리스"
    ],
@@ -742,11 +912,24 @@
   },
   {
    "layer": "hf",
+   "title": "tencent/Hy4-flash",
+   "url": "https://huggingface.co/tencent/Hy4-flash",
+   "trending": 458,
+   "likes": 667,
+   "downloads": 9167,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:tencent/hy4-flash",
+   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 405,
-   "likes": 680,
-   "downloads": 329497,
+   "trending": 423,
+   "likes": 710,
+   "downloads": 573775,
    "topics": [
     "모델릴리스"
    ],
@@ -757,9 +940,9 @@
    "layer": "hf",
    "title": "harness-hub/Qwen3.8-27B-pi-adapted",
    "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 354,
-   "likes": 1047,
-   "downloads": 3132,
+   "trending": 347,
+   "likes": 1052,
+   "downloads": 3529,
    "topics": [
     "모델릴리스"
    ],
@@ -770,9 +953,9 @@
    "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 247,
-   "likes": 946,
-   "downloads": 9087,
+   "trending": 239,
+   "likes": 951,
+   "downloads": 9575,
    "topics": [
     "모델릴리스"
    ],
@@ -781,24 +964,11 @@
   },
   {
    "layer": "hf",
-   "title": "tencent/Hy4-flash",
-   "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 225,
-   "likes": 659,
-   "downloads": 7696,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:tencent/hy4-flash",
-   "one_line": "tencent가 공개한 Hy4-flash 모델로 표기되어 있으나, 크기와 용도 등 세부 정보는 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 215,
-   "likes": 861,
-   "downloads": 133732,
+   "trending": 224,
+   "likes": 872,
+   "downloads": 160965,
    "topics": [
     "모델릴리스"
    ],
@@ -809,9 +979,9 @@
    "layer": "hf",
    "title": "sensenova/SenseNova-Loop-9B",
    "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-   "trending": 210,
-   "likes": 652,
-   "downloads": 2036,
+   "trending": 203,
+   "likes": 664,
+   "downloads": 2696,
    "topics": [
     "모델릴리스"
    ],
@@ -822,8 +992,8 @@
    "layer": "hf",
    "title": "apple/FastFrames-L",
    "url": "https://huggingface.co/apple/FastFrames-L",
-   "trending": 191,
-   "likes": 575,
+   "trending": 194,
+   "likes": 582,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -838,7 +1008,7 @@
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 3294,
+   "stars": 3502,
    "topics": [
     "에이전트",
     "개발도구"
@@ -851,7 +1021,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 2334,
+   "stars": 2407,
    "topics": [
     "모델릴리스"
    ],
@@ -863,7 +1033,7 @@
    "title": "R0Y00/Xbox2Windows",
    "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
    "url": "https://github.com/R0Y00/Xbox2Windows",
-   "stars": 1663,
+   "stars": 1829,
    "topics": [
     "인프라·칩"
    ],
@@ -875,7 +1045,7 @@
    "title": "INK-Q/agy-fast",
    "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
    "url": "https://github.com/INK-Q/agy-fast",
-   "stars": 829,
+   "stars": 1013,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -889,7 +1059,7 @@
    "title": "danielwh2/sprite-stacking",
    "desc": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
    "url": "https://github.com/danielwh2/sprite-stacking",
-   "stars": 698,
+   "stars": 749,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -899,10 +1069,22 @@
   },
   {
    "layer": "github",
+   "title": "sybil-solutions/skill-distill",
+   "desc": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
+   "url": "https://github.com/sybil-solutions/skill-distill",
+   "stars": 627,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:sybil-solutions/skill-distill",
+   "one_line": "잘 진행된 Claude Code·Codex 세션을 증류해, 오픈 웨이트 모델이 따라 하며 같은 작업을 재현할 수 있는 스킬로 만드는 도구다."
+  },
+  {
+   "layer": "github",
    "title": "ThreatDefence/agentic-attack-detections",
    "desc": "Detection rules and IOCs for AI agent attack frameworks: ARTEX, Cairn, PentAGI, HexStrike, CyberStrikeAI, Strix, Hermes Agent, Agent Zero, RedAmon, Xalgorix, Pe",
    "url": "https://github.com/ThreatDefence/agentic-attack-detections",
-   "stars": 579,
+   "stars": 608,
    "topics": [
     "에이전트",
     "보안·사고",
@@ -910,30 +1092,6 @@
    ],
    "story_key": "gh:threatdefence/agentic-attack-detections",
    "one_line": "ARTEX, PentAGI, Strix 등 AI 에이전트 공격 프레임워크를 탐지하기 위한 탐지 룰과 IOC(침해지표)를 모은 저장소다."
-  },
-  {
-   "layer": "github",
-   "title": "CocoSgt/riemann-hypothesis-lean",
-   "desc": "Mirror of Levent Alpöge's Lean proof of the Riemann Hypothesis (with Claude). All credit to Levent Alpöge. Source: alpo.ge",
-   "url": "https://github.com/CocoSgt/riemann-hypothesis-lean",
-   "stars": 553,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:cocosgt/riemann-hypothesis-lean",
-   "one_line": "레반트 알포게(Levent Alpöge)가 작성한 리만 가설의 Lean 증명을 미러링한 저장소로, 원저자 크레딧을 명시하고 있습니다."
-  },
-  {
-   "layer": "github",
-   "title": "sybil-solutions/skill-distill",
-   "desc": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
-   "url": "https://github.com/sybil-solutions/skill-distill",
-   "stars": 533,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:sybil-solutions/skill-distill",
-   "one_line": "잘 진행된 Claude Code·Codex 세션을 증류해, 오픈 웨이트 모델이 따라 하며 같은 작업을 재현할 수 있는 스킬로 만드는 도구다."
   }
  ],
  "trust_recent": [
@@ -1334,16 +1492,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-24 06:51",
+ "enriched_at": "2026-11-24 15:27",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 1,
-  "in": 1758,
-  "out": 246,
+  "calls": 3,
+  "in": 19554,
+  "out": 2481,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 0,
-  "cost_usd": 0.0003
+  "items": 2,
+  "cost_usd": 0.0032
  }
 }
