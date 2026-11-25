@@ -467,7 +467,7 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
       : `<p class="ph0">${hint}</p>`}</div>`; };
   const seasonIcon = c => c.type === 'show' ? '🎤 ' : c.type === 'ticket' ? '🎟️ ' : c.type === 'exhibit' ? '✨ ' : '';
   const seasonBox = season && seasonItems.length ? `<div class="cbox season"><h3>🎄 ${esc(season.title)}<small>${seasonItems.length}건 · ${esc(season.to.slice(5).replace('-', '/'))}까지</small></h3><ul>${seasonItems.sort((a, b) => a.kst < b.kst ? -1 : 1).map(c => { const t = T(c.kst);
-      const when = c.allday ? `${t.d}${c.until ? ' ~ ' + esc(c.until.slice(5).replace('-', '/')) : ''}` : `${dayRel(t.key)} ${t.d} ${t.h}`;
+      const when = c.allday ? `${t.d}${c.until && c.until.slice(0, 10) !== c.kst.slice(0, 10) ? ' ~ ' + esc(c.until.slice(5, 10).replace('-', '/')) : ''}` : `${dayRel(t.key)} ${t.d} ${t.h}`;
       return `<li><b>${seasonIcon(c)}${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>` : esc(c.title)}</b><span>${when}${c.venue ? ' · ' + esc(c.venue) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span>${c.note ? `<span style="display:block">${esc(c.note)}</span>` : ''}</li>`; }).join('')}</ul></div>` : '';
   document.getElementById('culture').innerHTML = seasonBox +
     box('movie', '이번 주 개봉·출시 대작', '아무 영화·게임이나 싣지 않습니다. 많은 사람이 기다리던 큰 작품만 — 기준을 다듬는 중입니다.') +
