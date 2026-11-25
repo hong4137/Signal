@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25 07:57",
+ "updated": "2026-11-25 14:18",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 13,
+  "hn": 12,
   "reddit": 0,
   "hf": 15,
-  "github": 6,
+  "github": 4,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,9 +16,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2781,
-   "comments": 3683,
-   "r": 1.32,
+   "points": 2805,
+   "comments": 3746,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -78,8 +78,8 @@
    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
    "url": "https://twitter.com/ylecun/status/2124550037912920090",
    "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 1978,
-   "comments": 1166,
+   "points": 1987,
+   "comments": 1171,
    "r": 0.59,
    "at": "2026-11-23",
    "topics": [],
@@ -117,7 +117,7 @@
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
    "points": 1038,
-   "comments": 1007,
+   "comments": 1008,
    "r": 0.97,
    "at": "2026-11-22",
    "topics": [],
@@ -154,9 +154,9 @@
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 293,
-   "comments": 583,
-   "r": 1.99,
+   "points": 371,
+   "comments": 728,
+   "r": 1.96,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
@@ -206,82 +206,12 @@
   },
   {
    "layer": "hn",
-   "title": "The Mythology of Conscious AI",
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-   "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 181,
-   "comments": 560,
-   "r": 3.09,
-   "at": "2026-11-22",
-   "topics": [],
-   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
-   "summary_ko": "댓글에서는 의식이 계산의 산물인지 생명의 속성인지에 대해 의견이 여럿으로 나뉘었지만, 논쟁은 주로 '의식의 정의 자체가 불분명하다'는 점에 머물렀다. 기사의 '생명 기반 의식' 논리는 세포 단위 생명체 대부분이 의식이 없다는 반론과 함께, 튜링 해석이나 물리적 처치-튜링 논제를 두고 철학자들이 CS 이론을 잘못 다룬다는 비판도 받았다. 전반적으로 AI 의식 가능성 자체보다 개념 정의와 학문적 엄밀성에 대한 불만이 많았다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의식의 정의가 불분명해 AI 의식 여부를 단정하기 어렵다는 입장이며, 기사의 논리 전개(생명 vs 계산, 튜링 해석)에 대한 비판이 두드러진다."
-   },
-   "n_comments_read": 101,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 420,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-   "url": "https://z.ai/blog/glm-5.4",
-   "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1161,
-   "comments": 380,
-   "r": 0.33,
-   "at": "2026-11-23",
-   "topics": [],
-   "story_key": "url:z.ai/blog/glm-5.4",
-   "trust": [
-    "Latent Space",
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글에서는 GLM-5.4가 루프 트랜스포머(같은 레이어를 여러 번 재사용하는 구조)를 도입한 점에 대한 기술적 관심이 중심이었다. 중국 업체가 기술 세부를 투명하게 공개한 점을 높이 평가하는 반응이 있었지만, 벤치마크와 가격이 빠진 발표에 대해서는 의구심과 실망이 함께 나왔다. 루프 구조가 추론 메모리 대역폭을 줄이는지, 실질적 이점이 있는지를 두고는 기술적 반론이 오갔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "루프 트랜스포머 구조가 실질적 이득이 있는가",
-    "consensus": "기술 공개의 투명성은 호평받았으나 벤치마크 부재와 루프 구조의 실효성에 대해 회의와 기술적 반론이 많았다.",
-    "sides": [
-     {
-      "stance": "루프 구조는 파라미터 대비 깊이를 늘리는 효율적 방법이며 의미가 있다",
-      "logic": "같은 파라미터 예산에서 더 많은 연산을 하게 해주고, 30B 실험에서 훈련 연산이 약 10%만 늘어도 성능 향상이 확인됐다고 본다.",
-      "share": 55
-     },
-     {
-      "stance": "루프 구조는 실익이 불분명하고 실용적 단점이 크다",
-      "logic": "추론·학습 연산을 줄이지 못하고 고정 루프 횟수가 필요해 서빙이 어려우며, 이득은 이론적 수준에 머문다고 본다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 58,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 225,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 855,
-   "comments": 355,
-   "r": 0.42,
+   "points": 951,
+   "comments": 393,
+   "r": 0.41,
    "at": "2026-11-24",
    "topics": [
     "모델릴리스",
@@ -322,12 +252,55 @@
   },
   {
    "layer": "hn",
+   "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+   "url": "https://z.ai/blog/glm-5.4",
+   "discussion": "https://news.ycombinator.com/item?id=50609685",
+   "points": 1170,
+   "comments": 380,
+   "r": 0.32,
+   "at": "2026-11-23",
+   "topics": [],
+   "story_key": "url:z.ai/blog/glm-5.4",
+   "trust": [
+    "Latent Space",
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글에서는 GLM-5.4가 루프 트랜스포머(같은 레이어를 여러 번 재사용하는 구조)를 도입한 점에 대한 기술적 관심이 중심이었다. 중국 업체가 기술 세부를 투명하게 공개한 점을 높이 평가하는 반응이 있었지만, 벤치마크와 가격이 빠진 발표에 대해서는 의구심과 실망이 함께 나왔다. 루프 구조가 추론 메모리 대역폭을 줄이는지, 실질적 이점이 있는지를 두고는 기술적 반론이 오갔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "루프 트랜스포머 구조가 실질적 이득이 있는가",
+    "consensus": "기술 공개의 투명성은 호평받았으나 벤치마크 부재와 루프 구조의 실효성에 대해 회의와 기술적 반론이 많았다.",
+    "sides": [
+     {
+      "stance": "루프 구조는 파라미터 대비 깊이를 늘리는 효율적 방법이며 의미가 있다",
+      "logic": "같은 파라미터 예산에서 더 많은 연산을 하게 해주고, 30B 실험에서 훈련 연산이 약 10%만 늘어도 성능 향상이 확인됐다고 본다.",
+      "share": 55
+     },
+     {
+      "stance": "루프 구조는 실익이 불분명하고 실용적 단점이 크다",
+      "logic": "추론·학습 연산을 줄이지 못하고 고정 루프 횟수가 필요해 서빙이 어려우며, 이득은 이론적 수준에 머문다고 본다.",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 58,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 225,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 769,
+   "points": 773,
    "comments": 313,
-   "r": 0.41,
+   "r": 0.4,
    "at": "2026-11-22",
    "topics": [
     "모델릴리스",
@@ -366,9 +339,9 @@
    "title": "Tidal bans AI-generated music",
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
-   "points": 310,
-   "comments": 295,
-   "r": 0.95,
+   "points": 320,
+   "comments": 308,
+   "r": 0.96,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
@@ -401,12 +374,39 @@
   },
   {
    "layer": "hn",
+   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+   "url": "https://news.ycombinator.com/item?id=50630809",
+   "discussion": "https://news.ycombinator.com/item?id=50630809",
+   "points": 237,
+   "comments": 177,
+   "r": 0.75,
+   "at": "2026-11-24",
+   "topics": [],
+   "story_key": "hn:50630809",
+   "summary_ko": "앤트로픽으로부터 API를 이용한 모델 증류(distillation) 혐의를 받은 개발자가 24시간 안에 결백을 증명해야 하는 상황을 두고 댓글이 이어졌다. 다수는 '부정을 증명하기 어렵고 기준이 앤트로픽 손에 있다'며 앤트로픽의 일방적 차단을 비판하고, 특정 공급사에 의존하지 말고 라우터로 여러 모델을 병행하라고 조언했다. 일부는 증거 문서를 Claude로 검토해보라거나 변호사에게 항의 서한을 보내라는 실무적 제안을 내놓았고, 혐의 자체가 과도하다는 반응도 많았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 앤트로픽의 일방적이고 불투명한 계정 차단과 증명 책임 전가를 비판하며, 단일 AI 공급사에 대한 의존 위험을 강조한다."
+   },
+   "n_comments_read": 84,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 160,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Agent swarm trying to solve P vs. NP",
    "url": "https://pequalnp.com/",
    "discussion": "https://news.ycombinator.com/item?id=50604314",
    "points": 207,
-   "comments": 172,
-   "r": 0.83,
+   "comments": 173,
+   "r": 0.84,
    "at": "2026-11-22",
    "topics": [
     "에이전트"
@@ -444,8 +444,8 @@
    "title": "Who in Washington owns and trades Nvidia stock",
    "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
    "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 280,
-   "comments": 163,
+   "points": 282,
+   "comments": 164,
    "r": 0.58,
    "at": "2026-11-24",
    "topics": [
@@ -470,37 +470,10 @@
   },
   {
    "layer": "hn",
-   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-   "url": "https://news.ycombinator.com/item?id=50630809",
-   "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 206,
-   "comments": 160,
-   "r": 0.78,
-   "at": "2026-11-24",
-   "topics": [],
-   "story_key": "hn:50630809",
-   "summary_ko": "앤트로픽으로부터 API를 이용한 모델 증류(distillation) 혐의를 받은 개발자가 24시간 안에 결백을 증명해야 하는 상황을 두고 댓글이 이어졌다. 다수는 '부정을 증명하기 어렵고 기준이 앤트로픽 손에 있다'며 앤트로픽의 일방적 차단을 비판하고, 특정 공급사에 의존하지 말고 라우터로 여러 모델을 병행하라고 조언했다. 일부는 증거 문서를 Claude로 검토해보라거나 변호사에게 항의 서한을 보내라는 실무적 제안을 내놓았고, 혐의 자체가 과도하다는 반응도 많았다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 앤트로픽의 일방적이고 불투명한 계정 차단과 증명 책임 전가를 비판하며, 단일 AI 공급사에 대한 의존 위험을 강조한다."
-   },
-   "n_comments_read": 84,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 160,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "GPUI is getting its own repository",
    "url": "https://github.com/zed-industries/gpui",
    "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 377,
+   "points": 381,
    "comments": 140,
    "r": 0.37,
    "at": "2026-11-23",
@@ -539,39 +512,12 @@
  "by_debate": [
   {
    "layer": "hn",
-   "title": "The Mythology of Conscious AI",
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-   "discussion": "https://news.ycombinator.com/item?id=50595537",
-   "points": 181,
-   "comments": 560,
-   "r": 3.09,
-   "at": "2026-11-22",
-   "topics": [],
-   "story_key": "url:noemamag.com/the-mythology-of-conscious-ai",
-   "summary_ko": "댓글에서는 의식이 계산의 산물인지 생명의 속성인지에 대해 의견이 여럿으로 나뉘었지만, 논쟁은 주로 '의식의 정의 자체가 불분명하다'는 점에 머물렀다. 기사의 '생명 기반 의식' 논리는 세포 단위 생명체 대부분이 의식이 없다는 반론과 함께, 튜링 해석이나 물리적 처치-튜링 논제를 두고 철학자들이 CS 이론을 잘못 다룬다는 비판도 받았다. 전반적으로 AI 의식 가능성 자체보다 개념 정의와 학문적 엄밀성에 대한 불만이 많았다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의식의 정의가 불분명해 AI 의식 여부를 단정하기 어렵다는 입장이며, 기사의 논리 전개(생명 vs 계산, 튜링 해석)에 대한 비판이 두드러진다."
-   },
-   "n_comments_read": 101,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 420,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 293,
-   "comments": 583,
-   "r": 1.99,
+   "points": 371,
+   "comments": 728,
+   "r": 1.96,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
@@ -624,9 +570,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2781,
-   "comments": 3683,
-   "r": 1.32,
+   "points": 2805,
+   "comments": 3746,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -687,7 +633,7 @@
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "discussion": "https://news.ycombinator.com/item?id=50597612",
    "points": 1038,
-   "comments": 1007,
+   "comments": 1008,
    "r": 0.97,
    "at": "2026-11-22",
    "topics": [],
@@ -724,9 +670,9 @@
    "title": "Tidal bans AI-generated music",
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
-   "points": 310,
-   "comments": 295,
-   "r": 0.95,
+   "points": 320,
+   "comments": 308,
+   "r": 0.96,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
@@ -763,8 +709,8 @@
    "url": "https://pequalnp.com/",
    "discussion": "https://news.ycombinator.com/item?id=50604314",
    "points": 207,
-   "comments": 172,
-   "r": 0.83,
+   "comments": 173,
+   "r": 0.84,
    "at": "2026-11-22",
    "topics": [
     "에이전트"
@@ -802,9 +748,9 @@
    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
    "url": "https://news.ycombinator.com/item?id=50630809",
    "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 206,
-   "comments": 160,
-   "r": 0.78,
+   "points": 237,
+   "comments": 177,
+   "r": 0.75,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "hn:50630809",
@@ -829,8 +775,8 @@
    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
    "url": "https://twitter.com/ylecun/status/2124550037912920090",
    "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 1978,
-   "comments": 1166,
+   "points": 1987,
+   "comments": 1171,
    "r": 0.59,
    "at": "2026-11-23",
    "topics": [],
@@ -867,8 +813,8 @@
    "title": "Who in Washington owns and trades Nvidia stock",
    "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
    "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 280,
-   "comments": 163,
+   "points": 282,
+   "comments": 164,
    "r": 0.58,
    "at": "2026-11-24",
    "topics": [
@@ -896,9 +842,9 @@
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 855,
-   "comments": 355,
-   "r": 0.42,
+   "points": 951,
+   "comments": 393,
+   "r": 0.41,
    "at": "2026-11-24",
    "topics": [
     "모델릴리스",
@@ -942,9 +888,9 @@
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 769,
+   "points": 773,
    "comments": 313,
-   "r": 0.41,
+   "r": 0.4,
    "at": "2026-11-22",
    "topics": [
     "모델릴리스",
@@ -983,7 +929,7 @@
    "title": "GPUI is getting its own repository",
    "url": "https://github.com/zed-industries/gpui",
    "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 377,
+   "points": 381,
    "comments": 140,
    "r": 0.37,
    "at": "2026-11-23",
@@ -1023,9 +969,9 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1161,
+   "points": 1170,
    "comments": 380,
-   "r": 0.33,
+   "r": 0.32,
    "at": "2026-11-23",
    "topics": [],
    "story_key": "url:z.ai/blog/glm-5.4",
@@ -1069,9 +1015,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2781,
-   "comments": 3683,
-   "r": 1.32,
+   "points": 2805,
+   "comments": 3746,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -1131,9 +1077,9 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1161,
+   "points": 1170,
    "comments": 380,
-   "r": 0.33,
+   "r": 0.32,
    "at": "2026-11-23",
    "topics": [],
    "story_key": "url:z.ai/blog/glm-5.4",
@@ -1175,8 +1121,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1234,
-   "likes": 5770,
+   "trending": 1257,
+   "likes": 5821,
    "downloads": 69042,
    "topics": [
     "모델릴리스"
@@ -1188,8 +1134,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1087,
-   "likes": 1248,
+   "trending": 1109,
+   "likes": 1272,
    "downloads": 1913407,
    "topics": [
     "모델릴리스"
@@ -1201,8 +1147,8 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 625,
-   "likes": 813,
+   "trending": 636,
+   "likes": 824,
    "downloads": 12733,
    "topics": [
     "모델릴리스"
@@ -1214,8 +1160,8 @@
    "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 435,
-   "likes": 747,
+   "trending": 444,
+   "likes": 762,
    "downloads": 573775,
    "topics": [
     "모델릴리스"
@@ -1225,23 +1171,10 @@
   },
   {
    "layer": "hf",
-   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 308,
-   "likes": 1069,
-   "downloads": 3529,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
-   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 234,
-   "likes": 897,
+   "trending": 284,
+   "likes": 949,
    "downloads": 160965,
    "topics": [
     "모델릴리스"
@@ -1251,10 +1184,23 @@
   },
   {
    "layer": "hf",
+   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+   "trending": 279,
+   "likes": 1079,
+   "downloads": 3529,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
+   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
+  },
+  {
+   "layer": "hf",
    "title": "higurashi-ai/Haru-4B",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 233,
-   "likes": 977,
+   "trending": 222,
+   "likes": 979,
    "downloads": 9575,
    "topics": [
     "모델릴리스"
@@ -1266,8 +1212,8 @@
    "layer": "hf",
    "title": "tencent/Hy4-flash",
    "url": "https://huggingface.co/tencent/Hy4-flash",
-   "trending": 232,
-   "likes": 679,
+   "trending": 222,
+   "likes": 683,
    "downloads": 9167,
    "topics": [
     "모델릴리스"
@@ -1277,29 +1223,29 @@
   },
   {
    "layer": "hf",
-   "title": "apple/FastFrames-L",
-   "url": "https://huggingface.co/apple/FastFrames-L",
-   "trending": 190,
-   "likes": 594,
-   "downloads": 0,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:apple/fastframes-l",
-   "one_line": "apple/FastFrames-L은 Apple이 공개한 모델로, 영상 프레임 생성 속도를 높이는 것을 목표로 한 대형 모델이다."
-  },
-  {
-   "layer": "hf",
    "title": "apple/DepthPro2",
    "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 190,
-   "likes": 1192,
+   "trending": 193,
+   "likes": 1200,
    "downloads": 0,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:apple/depthpro2",
    "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
+   "title": "Lightricks/LTX-2.5",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5",
+   "trending": 162,
+   "likes": 13332,
+   "downloads": 3024745,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:lightricks/ltx-2.5",
+   "one_line": "Lightricks가 만든 LTX 계열 영상 생성 모델로 알려져 있으며, 2.5 버전의 세부 내용은 확인되지 않습니다."
   }
  ],
  "new_repos": [
@@ -1308,7 +1254,7 @@
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 3582,
+   "stars": 3683,
    "topics": [
     "에이전트",
     "개발도구"
@@ -1321,7 +1267,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 2480,
+   "stars": 2515,
    "topics": [
     "모델릴리스"
    ],
@@ -1333,7 +1279,7 @@
    "title": "R0Y00/Xbox2Windows",
    "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
    "url": "https://github.com/R0Y00/Xbox2Windows",
-   "stars": 1897,
+   "stars": 1924,
    "topics": [
     "인프라·칩"
    ],
@@ -1345,7 +1291,7 @@
    "title": "INK-Q/agy-fast",
    "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
    "url": "https://github.com/INK-Q/agy-fast",
-   "stars": 1157,
+   "stars": 1267,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1353,34 +1299,34 @@
    ],
    "story_key": "gh:ink-q/agy-fast",
    "one_line": "Google Antigravity(CLI/데스크톱/IDE)용 비침투형 MCP 가속 플러그인으로, LLM 호출 횟수와 토큰 사용량, 업로드 트래픽을 줄이는 것을 목표로 한다."
-  },
-  {
-   "layer": "github",
-   "title": "danielwh2/sprite-stacking",
-   "desc": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
-   "url": "https://github.com/danielwh2/sprite-stacking",
-   "stars": 770,
-   "topics": [
-    "모델릴리스",
-    "에이전트"
-   ],
-   "story_key": "gh:danielwh2/sprite-stacking",
-   "one_line": "픽셀 아트 네 방향 이미지를 입력받아 회전 가능한 가짜 3D 스프라이트를 만드는 에이전트 스킬로, Claude Code, Codex, Cursor 등에서 동작한다고 소개된다."
-  },
-  {
-   "layer": "github",
-   "title": "sybil-solutions/skill-distill",
-   "desc": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
-   "url": "https://github.com/sybil-solutions/skill-distill",
-   "stars": 709,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:sybil-solutions/skill-distill",
-   "one_line": "잘 진행된 Claude Code·Codex 세션을 증류해, 오픈 웨이트 모델이 따라 하며 같은 작업을 재현할 수 있는 스킬로 만드는 도구다."
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "at": "2026-11-24T23:02",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/24/llm-inflection-points",
+   "link_keys": [
+    "url:ai.engineer/code/2026",
+    "url:anthropic.com/news/claude-3-7-sonnet",
+    "url:anthropic.com/news/claude-opus-4-5",
+    "url:docs.datasette.io/en/latest/changelog.html",
+    "url:gamingbolt.com/gta-6-is-the-last-pre-ai-blockbuster-video-game-of-its-kind-says-former-take-two-ceo",
+    "url:kotaku.com/big-walk-ai-disclosure-igf-awards-vg-chat-2000755514",
+    "url:llm.datasette.io/en/stable/changelog.html",
+    "url:static.simonwillison.net/static/2026/gemini-4-neon-yonkers/index.html",
+    "url:til.simonwillison.net/llms/blender-coding-agents-macos",
+    "yt:9RKrSF9d2SE"
+   ],
+   "is_roundup": false,
+   "one_line": "Simon Willison이 AI Engineer Code Summit 기조연설 내용을 바탕으로, 지난 12개월 동안 LLM과 코딩 에이전트의 능력에서 나타난 세 번의 변곡점을 정리한 글이다."
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1743,52 +1689,19 @@
    ],
    "is_roundup": false,
    "one_line": "OpenAI의 GPT-6.2 Astra와 Sol 모델 출시 소식으로, 가격과 저자가 실행한 펠리컨 및 애니메이션 테스트 결과를 정리함."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
-   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
-   "at": "2026-11-17T16:48",
-   "topics": [
-    "개발도구"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/17/datasette-lite",
-   "link_keys": [
-    "gh:coleifer/pysqlite3",
-    "gh:datasette/datasette-maplibre",
-    "gh:datasette/pysqlite3-wasm-wheels",
-    "gh:pypi/warehouse",
-    "gh:simonw/75ececf61d50e6e8d50f0c150150ee81",
-    "gh:simonw/datasette",
-    "gh:simonw/datasette-lite",
-    "gh:simonw/research",
-    "url:datasette.github.io/pysqlite3-wasm-wheels",
-    "url:datasette.io/",
-    "url:developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
-    "url:developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
-    "url:gist.github.com/",
-    "url:gist.githubusercontent.com/simonw/39fa5d399465766039549912e2b3d291/raw/f6dfba99a75cbb8b5d9386223220eb52272767ee/metadata.yml",
-    "url:gisthost.github.io/",
-    "url:lite.datasette.io/",
-    "url:pyodide.org/",
-    "url:til.simonwillison.net/sqlite/sqlite-version-macos-python"
-   ],
-   "is_roundup": false,
-   "one_line": "Datasette Lite를 서비스 워커와 Pyodide로 전면 재작성해 Datasette 서버 앱과 거의 같은 동작을 브라우저에서 구현했다는 소개 글이다."
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-24 22:57",
+ "enriched_at": "2026-11-25 05:18",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 9,
-  "in": 58654,
-  "out": 3801,
+  "calls": 1,
+  "in": 1284,
+  "out": 112,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 6,
-  "cost_usd": 0.00777
+  "items": 0,
+  "cost_usd": 0.00018
  }
 }
