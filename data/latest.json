@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-26 00:11",
+ "updated": "2026-11-26 07:13",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
+  "hn": 12,
   "reddit": 0,
   "hf": 15,
-  "github": 5,
+  "github": 4,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,9 +16,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2823,
-   "comments": 3765,
-   "r": 1.33,
+   "points": 2838,
+   "comments": 3796,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -78,9 +78,9 @@
    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
    "url": "https://twitter.com/ylecun/status/2124550037912920090",
    "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 2005,
-   "comments": 1187,
-   "r": 0.59,
+   "points": 2010,
+   "comments": 1199,
+   "r": 0.6,
    "at": "2026-11-23",
    "topics": [],
    "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
@@ -116,8 +116,8 @@
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 412,
-   "comments": 778,
+   "points": 418,
+   "comments": 792,
    "r": 1.89,
    "at": "2026-11-24",
    "topics": [],
@@ -171,8 +171,8 @@
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 985,
-   "comments": 406,
+   "points": 998,
+   "comments": 410,
    "r": 0.41,
    "at": "2026-11-24",
    "topics": [
@@ -217,8 +217,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1174,
-   "comments": 384,
+   "points": 1177,
+   "comments": 385,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -260,9 +260,9 @@
    "title": "Tidal bans AI-generated music",
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
-   "points": 333,
-   "comments": 318,
-   "r": 0.95,
+   "points": 334,
+   "comments": 330,
+   "r": 0.99,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
@@ -295,168 +295,40 @@
   },
   {
    "layer": "hn",
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 773,
-   "comments": 315,
-   "r": 0.41,
-   "at": "2026-11-22",
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "url:gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "summary_ko": "이 글은 Unsloth Desktop으로 집에서 로컬 AI를 구축하는 초보 가이드이며, 댓글은 하드웨어 진입장벽을 주로 다룬다. 댓글들은 RTX 5090 같은 고가 GPU 전제를 비판하는 한편, P40·Radeon VII·맥북 등 저가 대안과 구형 카드에서 양자화 모델을 돌린 경험을 공유한다. 반면 로컬 모델은 클라우드 최상위 모델에 못 미치므로 구독이 더 실용적이라는 의견도 많아, 로컬 AI의 현실성에 대한 평가가 엇갈린다.",
+   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+   "url": "https://news.ycombinator.com/item?id=50630809",
+   "discussion": "https://news.ycombinator.com/item?id=50630809",
+   "points": 432,
+   "comments": 328,
+   "r": 0.76,
+   "at": "2026-11-24",
+   "topics": [],
+   "story_key": "hn:50630809",
+   "summary_ko": "Anthropic으로부터 API 증류(distillation) 혐의를 받은 한 회사가 결백을 증명할 방법을 묻는 글에 댓글 다수는 '부정을 증명하기는 어렵다'는 점에 동의하며, 키 유출 가능성을 먼저 점검하고 로그·테스트 하네스 기록을 근거로 제출하라고 권한다. 반면 다른 편에서는 혐의 입증 책임이 Anthropic에 있다며 강하게 반발하고, 여러 제공자를 쓰는 구조로 전환하거나 구독을 끊으라는 의견이 많다. 한편 LLM 기업들도 학습 데이터를 무단 사용했다는 위선 지적이 함께 제기됐다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "로컬 AI가 개인 사용자에게 실용적인 대안인가",
-    "consensus": "고가 GPU 전제와 광고성 글에 대한 비판이 많고, 저가 하드웨어 대안과 로컬 모델의 한계에 대한 실용적 논의가 주를 이룬다.",
+    "axis": "Anthropic의 증류 혐의에 맞서 증거를 제출해 대응해야 하는가, 아니면 거래를 끊고 다른 제공자로 옮겨야 하는가?",
+    "consensus": "부정을 증명하기 어렵다는 데 대체로 공감하며, 키 유출 여부 점검과 여러 AI 제공자를 쓰는 구조로의 전환이 실질적 대비책으로 거론된다.",
     "sides": [
      {
-      "stance": "로컬 AI는 아직 실용성이 낮아 클라우드 구독이 현실적이다",
-      "logic": "로컬 모델은 최상위 클라우드 모델보다 성능이 떨어지고, 고사양 하드웨어 비용이 커서 월 구독료보다 효율이 낮다.",
+      "stance": "증거를 준비해 선의를 보여주고 소통을 시도해야 한다",
+      "logic": "로그·테스트 하네스·git 이력을 정리해 제출하고, 키를 교체해 협조 의사를 보이면 계정 복구 가능성이 있다는 주장",
       "share": 45
      },
      {
-      "stance": "저가 장비와 양자화로 충분히 쓸 만하고 프라이버시 가치가 크다",
-      "logic": "P40, Radeon VII, 맥 등 중고·저가 장비로도 실사용이 가능하며, 데이터와 IP를 외부에 보내지 않는 장점이 있다.",
+      "stance": "대응하지 말고 다른 제공자로 옮기거나 구독을 끊어라",
+      "logic": "혐의 입증 책임이 Anthropic에 없다고 보더라도 계약상 일방적 해지가 가능하므로, 신뢰가 깨진 고객사와 거래를 지속할 이유가 없다는 주장",
       "share": 40
      }
     ]
    },
-   "n_comments_read": 74,
+   "n_comments_read": 101,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 262,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-   "url": "https://news.ycombinator.com/item?id=50630809",
-   "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 385,
-   "comments": 300,
-   "r": 0.78,
-   "at": "2026-11-24",
-   "topics": [],
-   "story_key": "hn:50630809",
-   "summary_ko": "앤트로픽으로부터 API를 이용한 모델 증류(distillation) 혐의를 받은 개발자가 24시간 안에 결백을 증명해야 하는 상황을 두고 댓글이 이어졌다. 다수는 '부정을 증명하기 어렵고 기준이 앤트로픽 손에 있다'며 앤트로픽의 일방적 차단을 비판하고, 특정 공급사에 의존하지 말고 라우터로 여러 모델을 병행하라고 조언했다. 일부는 증거 문서를 Claude로 검토해보라거나 변호사에게 항의 서한을 보내라는 실무적 제안을 내놓았고, 혐의 자체가 과도하다는 반응도 많았다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 앤트로픽의 일방적이고 불투명한 계정 차단과 증명 책임 전가를 비판하며, 단일 AI 공급사에 대한 의존 위험을 강조한다."
-   },
-   "n_comments_read": 84,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 160,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Agent swarm trying to solve P vs. NP",
-   "url": "https://pequalnp.com/",
-   "discussion": "https://news.ycombinator.com/item?id=50604314",
-   "points": 209,
-   "comments": 174,
-   "r": 0.83,
-   "at": "2026-11-22",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:pequalnp.com/",
-   "summary_ko": "HN 댓글은 AI 에이전트 군집이 P vs NP를 공개적으로 증명하려는 프로젝트에 대해 흥미와 회의가 섞여 있다. 한편에서는 난제 증명이 밀실 연구실 대신 공개 포럼에서 진행되는 모습에 기대를 드러내고, 다른 편에서는 결과물이 그럴듯하지만 실질 없는 'slop'이며 보상 해킹에 빠진 것이라고 비판한다. 또한 P=NP가 증명되면 암호 인프라가 흔들릴 수 있다는 우려도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 에이전트 군집의 공개 난제 증명 시도가 실질적 진전인가, 아니면 그럴듯한 결과물만 쏟아내는 slop인가",
-    "consensus": "공개적으로 진행되는 시도 자체는 흥미롭다는 반응이 많지만, 모델 수준과 결과의 실효성에는 회의적인 목소리가 뒤따른다.",
-    "sides": [
-     {
-      "stance": "흥미롭고 가치 있는 실험이다",
-      "logic": "난제 증명이 공개 포럼에서 실시간으로 진행되는 것 자체가 낙관을 주고, 유휴 토큰을 기여하는 협업 모델이 가능하다고 본다.",
-      "share": 55
-     },
-     {
-      "stance": "slop이며 실질 가치가 낮다",
-      "logic": "보상 해킹과 그럴듯한 보조 보고가 많고, 최신 모델이 아닌 중급 모델로는 난제 진전이 어렵다고 본다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 38,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 146,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Who in Washington owns and trades Nvidia stock",
-   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
-   "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 286,
-   "comments": 166,
-   "r": 0.58,
-   "at": "2026-11-24",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
-   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 163,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
-   "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 196,
-   "comments": 151,
-   "r": 0.77,
-   "at": "2026-11-25",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "summary_ko": "댓글에서는 퍼블릭 도메인인 동요 가사를 제미니가 거부하는 것을 과잉 검열이라고 비판하는 반응이 대부분이었다. AI 스튜디오와 구글 검색 AI 모드에서는 가사가 나오지만 gemini.google.com에서는 거부하는 등 일관성이 없다는 재현 보고도 이어졌다. 저작물로 학습하면서 출력만 막는 것은 위선이라는 지적과 저작권 보호기간이 지나치게 길다는 주장도 나왔고, 소수는 구글이 질의 비용을 부담한다며 제한을 옹호했다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "제미니의 가사 거부는 퍼블릭 도메인 작품에 대한 과잉 검열이며 일관성도 없다는 비판이 주를 이루고, 저작권 제도와 AI 학습 데이터의 이중잣대를 함께 문제 삼는 반응이 많다."
-   },
-   "n_comments_read": 65,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 151,
+   "comments_at": 328,
    "model": "claude-haiku-5-5"
   },
   {
@@ -464,9 +336,9 @@
    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
    "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 343,
-   "comments": 142,
-   "r": 0.41,
+   "points": 431,
+   "comments": 186,
+   "r": 0.43,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
@@ -499,10 +371,68 @@
   },
   {
    "layer": "hn",
+   "title": "Who in Washington owns and trades Nvidia stock",
+   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
+   "discussion": "https://news.ycombinator.com/item?id=50626861",
+   "points": 289,
+   "comments": 166,
+   "r": 0.57,
+   "at": "2026-11-24",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
+   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 163,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
+   "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+   "discussion": "https://news.ycombinator.com/item?id=50638320",
+   "points": 212,
+   "comments": 164,
+   "r": 0.77,
+   "at": "2026-11-25",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+   "summary_ko": "댓글에서는 퍼블릭 도메인인 동요 가사를 제미니가 거부하는 것을 과잉 검열이라고 비판하는 반응이 대부분이었다. AI 스튜디오와 구글 검색 AI 모드에서는 가사가 나오지만 gemini.google.com에서는 거부하는 등 일관성이 없다는 재현 보고도 이어졌다. 저작물로 학습하면서 출력만 막는 것은 위선이라는 지적과 저작권 보호기간이 지나치게 길다는 주장도 나왔고, 소수는 구글이 질의 비용을 부담한다며 제한을 옹호했다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "제미니의 가사 거부는 퍼블릭 도메인 작품에 대한 과잉 검열이며 일관성도 없다는 비판이 주를 이루고, 저작권 제도와 AI 학습 데이터의 이중잣대를 함께 문제 삼는 반응이 많다."
+   },
+   "n_comments_read": 65,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 151,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "GPUI is getting its own repository",
    "url": "https://github.com/zed-industries/gpui",
    "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 384,
+   "points": 385,
    "comments": 140,
    "r": 0.36,
    "at": "2026-11-23",
@@ -542,9 +472,9 @@
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 219,
-   "comments": 125,
-   "r": 0.57,
+   "points": 222,
+   "comments": 135,
+   "r": 0.61,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist",
@@ -587,8 +517,8 @@
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 412,
-   "comments": 778,
+   "points": 418,
+   "comments": 792,
    "r": 1.89,
    "at": "2026-11-24",
    "topics": [],
@@ -642,9 +572,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2823,
-   "comments": 3765,
-   "r": 1.33,
+   "points": 2838,
+   "comments": 3796,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -704,9 +634,9 @@
    "title": "Tidal bans AI-generated music",
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
-   "points": 333,
-   "comments": 318,
-   "r": 0.95,
+   "points": 334,
+   "comments": 330,
+   "r": 0.99,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
@@ -739,78 +669,11 @@
   },
   {
    "layer": "hn",
-   "title": "Agent swarm trying to solve P vs. NP",
-   "url": "https://pequalnp.com/",
-   "discussion": "https://news.ycombinator.com/item?id=50604314",
-   "points": 209,
-   "comments": 174,
-   "r": 0.83,
-   "at": "2026-11-22",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:pequalnp.com/",
-   "summary_ko": "HN 댓글은 AI 에이전트 군집이 P vs NP를 공개적으로 증명하려는 프로젝트에 대해 흥미와 회의가 섞여 있다. 한편에서는 난제 증명이 밀실 연구실 대신 공개 포럼에서 진행되는 모습에 기대를 드러내고, 다른 편에서는 결과물이 그럴듯하지만 실질 없는 'slop'이며 보상 해킹에 빠진 것이라고 비판한다. 또한 P=NP가 증명되면 암호 인프라가 흔들릴 수 있다는 우려도 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 에이전트 군집의 공개 난제 증명 시도가 실질적 진전인가, 아니면 그럴듯한 결과물만 쏟아내는 slop인가",
-    "consensus": "공개적으로 진행되는 시도 자체는 흥미롭다는 반응이 많지만, 모델 수준과 결과의 실효성에는 회의적인 목소리가 뒤따른다.",
-    "sides": [
-     {
-      "stance": "흥미롭고 가치 있는 실험이다",
-      "logic": "난제 증명이 공개 포럼에서 실시간으로 진행되는 것 자체가 낙관을 주고, 유휴 토큰을 기여하는 협업 모델이 가능하다고 본다.",
-      "share": 55
-     },
-     {
-      "stance": "slop이며 실질 가치가 낮다",
-      "logic": "보상 해킹과 그럴듯한 보조 보고가 많고, 최신 모델이 아닌 중급 모델로는 난제 진전이 어렵다고 본다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 38,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 146,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-   "url": "https://news.ycombinator.com/item?id=50630809",
-   "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 385,
-   "comments": 300,
-   "r": 0.78,
-   "at": "2026-11-24",
-   "topics": [],
-   "story_key": "hn:50630809",
-   "summary_ko": "앤트로픽으로부터 API를 이용한 모델 증류(distillation) 혐의를 받은 개발자가 24시간 안에 결백을 증명해야 하는 상황을 두고 댓글이 이어졌다. 다수는 '부정을 증명하기 어렵고 기준이 앤트로픽 손에 있다'며 앤트로픽의 일방적 차단을 비판하고, 특정 공급사에 의존하지 말고 라우터로 여러 모델을 병행하라고 조언했다. 일부는 증거 문서를 Claude로 검토해보라거나 변호사에게 항의 서한을 보내라는 실무적 제안을 내놓았고, 혐의 자체가 과도하다는 반응도 많았다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 앤트로픽의 일방적이고 불투명한 계정 차단과 증명 책임 전가를 비판하며, 단일 AI 공급사에 대한 의존 위험을 강조한다."
-   },
-   "n_comments_read": 84,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 160,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
    "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
    "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 196,
-   "comments": 151,
+   "points": 212,
+   "comments": 164,
    "r": 0.77,
    "at": "2026-11-25",
    "topics": [
@@ -835,69 +698,40 @@
   },
   {
    "layer": "hn",
-   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-   "url": "https://twitter.com/ylecun/status/2124550037912920090",
-   "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 2005,
-   "comments": 1187,
-   "r": 0.59,
-   "at": "2026-11-23",
+   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+   "url": "https://news.ycombinator.com/item?id=50630809",
+   "discussion": "https://news.ycombinator.com/item?id=50630809",
+   "points": 432,
+   "comments": 328,
+   "r": 0.76,
+   "at": "2026-11-24",
    "topics": [],
-   "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
-   "summary_ko": "댓글은 LeCun의 주장에 대체로 동조하며, Dario Amodei가 위험을 과장해 오픈 웨이트 모델을 규제하려 한다는 의심이 주류를 이룬다. 다만 Dario의 위험 우려가 진심이라는 반론도 적지 않고, 실제 위험(생물무기, 안전 문제)을 인정하면서도 규제 방식과 동기를 따지는 신중한 목소리가 함께 있다. 오픈 모델은 필요하다는 공감대가 강하다.",
+   "story_key": "hn:50630809",
+   "summary_ko": "Anthropic으로부터 API 증류(distillation) 혐의를 받은 한 회사가 결백을 증명할 방법을 묻는 글에 댓글 다수는 '부정을 증명하기는 어렵다'는 점에 동의하며, 키 유출 가능성을 먼저 점검하고 로그·테스트 하네스 기록을 근거로 제출하라고 권한다. 반면 다른 편에서는 혐의 입증 책임이 Anthropic에 있다며 강하게 반발하고, 여러 제공자를 쓰는 구조로 전환하거나 구독을 끊으라는 의견이 많다. 한편 LLM 기업들도 학습 데이터를 무단 사용했다는 위선 지적이 함께 제기됐다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "Dario Amodei의 AI 위험 경고가 진심인가, 규제 독점을 위한 전략인가",
-    "consensus": "댓글 대다수는 Dario의 동기를 의심하며 오픈 웨이트 모델 규제에 반대하지만, 위험 자체를 전부 부정하지는 않는다.",
+    "axis": "Anthropic의 증류 혐의에 맞서 증거를 제출해 대응해야 하는가, 아니면 거래를 끊고 다른 제공자로 옮겨야 하는가?",
+    "consensus": "부정을 증명하기 어렵다는 데 대체로 공감하며, 키 유출 여부 점검과 여러 AI 제공자를 쓰는 구조로의 전환이 실질적 대비책으로 거론된다.",
     "sides": [
      {
-      "stance": "위험 경고는 규제 포획·시장 독점을 위한 수단이다",
-      "logic": "오픈 모델이 불법화되면 Anthropic이 통제를 유지하고 경쟁자가 사라지므로, 경고는 이해관계에 따른 여론전이라는 주장.",
-      "share": 70
+      "stance": "증거를 준비해 선의를 보여주고 소통을 시도해야 한다",
+      "logic": "로그·테스트 하네스·git 이력을 정리해 제출하고, 키를 교체해 협조 의사를 보이면 계정 복구 가능성이 있다는 주장",
+      "share": 45
      },
      {
-      "stance": "Dario는 위험을 진심으로 믿고 있다",
-      "logic": "Hinton처럼 사익을 버리고 경고한 사례가 있고, 실제 오용 위험(생물무기, 해킹)이 존재하므로 동기를 단정하기 어렵다는 주장.",
-      "share": 30
+      "stance": "대응하지 말고 다른 제공자로 옮기거나 구독을 끊어라",
+      "logic": "혐의 입증 책임이 Anthropic에 없다고 보더라도 계약상 일방적 해지가 가능하므로, 신뢰가 깨진 고객사와 거래를 지속할 이유가 없다는 주장",
+      "share": 40
      }
     ]
    },
-   "n_comments_read": 100,
+   "n_comments_read": 101,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 608,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Who in Washington owns and trades Nvidia stock",
-   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
-   "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 286,
-   "comments": 166,
-   "r": 0.58,
-   "at": "2026-11-24",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
-   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 163,
+   "comments_at": 328,
    "model": "claude-haiku-5-5"
   },
   {
@@ -905,9 +739,9 @@
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 219,
-   "comments": 125,
-   "r": 0.57,
+   "points": 222,
+   "comments": 135,
+   "r": 0.61,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist",
@@ -945,11 +779,116 @@
   },
   {
    "layer": "hn",
+   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+   "url": "https://twitter.com/ylecun/status/2124550037912920090",
+   "discussion": "https://news.ycombinator.com/item?id=50615308",
+   "points": 2010,
+   "comments": 1199,
+   "r": 0.6,
+   "at": "2026-11-23",
+   "topics": [],
+   "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
+   "summary_ko": "댓글은 LeCun의 주장에 대체로 동조하며, Dario Amodei가 위험을 과장해 오픈 웨이트 모델을 규제하려 한다는 의심이 주류를 이룬다. 다만 Dario의 위험 우려가 진심이라는 반론도 적지 않고, 실제 위험(생물무기, 안전 문제)을 인정하면서도 규제 방식과 동기를 따지는 신중한 목소리가 함께 있다. 오픈 모델은 필요하다는 공감대가 강하다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "Dario Amodei의 AI 위험 경고가 진심인가, 규제 독점을 위한 전략인가",
+    "consensus": "댓글 대다수는 Dario의 동기를 의심하며 오픈 웨이트 모델 규제에 반대하지만, 위험 자체를 전부 부정하지는 않는다.",
+    "sides": [
+     {
+      "stance": "위험 경고는 규제 포획·시장 독점을 위한 수단이다",
+      "logic": "오픈 모델이 불법화되면 Anthropic이 통제를 유지하고 경쟁자가 사라지므로, 경고는 이해관계에 따른 여론전이라는 주장.",
+      "share": 70
+     },
+     {
+      "stance": "Dario는 위험을 진심으로 믿고 있다",
+      "logic": "Hinton처럼 사익을 버리고 경고한 사례가 있고, 실제 오용 위험(생물무기, 해킹)이 존재하므로 동기를 단정하기 어렵다는 주장.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 100,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 608,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Who in Washington owns and trades Nvidia stock",
+   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
+   "discussion": "https://news.ycombinator.com/item?id=50626861",
+   "points": 289,
+   "comments": 166,
+   "r": 0.57,
+   "at": "2026-11-24",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
+   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 163,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+   "discussion": "https://news.ycombinator.com/item?id=50637686",
+   "points": 431,
+   "comments": 186,
+   "r": 0.43,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
+    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
+    "sides": [
+     {
+      "stance": "현실성이 낮아 과장된 주장이다",
+      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
+      "share": 55
+     },
+     {
+      "stance": "공개로 인해 위험이 현실화될 수 있다",
+      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 38,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 142,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 985,
-   "comments": 406,
+   "points": 998,
+   "comments": 410,
    "r": 0.41,
    "at": "2026-11-24",
    "topics": [
@@ -991,89 +930,10 @@
   },
   {
    "layer": "hn",
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "discussion": "https://news.ycombinator.com/item?id=50603845",
-   "points": 773,
-   "comments": 315,
-   "r": 0.41,
-   "at": "2026-11-22",
-   "topics": [
-    "모델릴리스",
-    "개발도구"
-   ],
-   "story_key": "url:gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "summary_ko": "이 글은 Unsloth Desktop으로 집에서 로컬 AI를 구축하는 초보 가이드이며, 댓글은 하드웨어 진입장벽을 주로 다룬다. 댓글들은 RTX 5090 같은 고가 GPU 전제를 비판하는 한편, P40·Radeon VII·맥북 등 저가 대안과 구형 카드에서 양자화 모델을 돌린 경험을 공유한다. 반면 로컬 모델은 클라우드 최상위 모델에 못 미치므로 구독이 더 실용적이라는 의견도 많아, 로컬 AI의 현실성에 대한 평가가 엇갈린다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "로컬 AI가 개인 사용자에게 실용적인 대안인가",
-    "consensus": "고가 GPU 전제와 광고성 글에 대한 비판이 많고, 저가 하드웨어 대안과 로컬 모델의 한계에 대한 실용적 논의가 주를 이룬다.",
-    "sides": [
-     {
-      "stance": "로컬 AI는 아직 실용성이 낮아 클라우드 구독이 현실적이다",
-      "logic": "로컬 모델은 최상위 클라우드 모델보다 성능이 떨어지고, 고사양 하드웨어 비용이 커서 월 구독료보다 효율이 낮다.",
-      "share": 45
-     },
-     {
-      "stance": "저가 장비와 양자화로 충분히 쓸 만하고 프라이버시 가치가 크다",
-      "logic": "P40, Radeon VII, 맥 등 중고·저가 장비로도 실사용이 가능하며, 데이터와 IP를 외부에 보내지 않는 장점이 있다.",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 74,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 262,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 343,
-   "comments": 142,
-   "r": 0.41,
-   "at": "2026-11-25",
-   "topics": [],
-   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
-    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
-    "sides": [
-     {
-      "stance": "현실성이 낮아 과장된 주장이다",
-      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
-      "share": 55
-     },
-     {
-      "stance": "공개로 인해 위험이 현실화될 수 있다",
-      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 38,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 142,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "GPUI is getting its own repository",
    "url": "https://github.com/zed-industries/gpui",
    "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 384,
+   "points": 385,
    "comments": 140,
    "r": 0.36,
    "at": "2026-11-23",
@@ -1113,8 +973,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1174,
-   "comments": 384,
+   "points": 1177,
+   "comments": 385,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -1159,9 +1019,9 @@
    "title": "Nvidia Reinstates Jensen Huang as CEO",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
    "discussion": "https://news.ycombinator.com/item?id=50611576",
-   "points": 2823,
-   "comments": 3765,
-   "r": 1.33,
+   "points": 2838,
+   "comments": 3796,
+   "r": 1.34,
    "at": "2026-11-23",
    "topics": [
     "인프라·칩"
@@ -1221,8 +1081,8 @@
    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
    "url": "https://z.ai/blog/glm-5.4",
    "discussion": "https://news.ycombinator.com/item?id=50609685",
-   "points": 1174,
-   "comments": 384,
+   "points": 1177,
+   "comments": 385,
    "r": 0.33,
    "at": "2026-11-23",
    "topics": [],
@@ -1265,8 +1125,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1280,
-   "likes": 5912,
+   "trending": 1314,
+   "likes": 6013,
    "downloads": 96527,
    "topics": [
     "모델릴리스"
@@ -1278,8 +1138,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1121,
-   "likes": 1314,
+   "trending": 1147,
+   "likes": 1364,
    "downloads": 2445633,
    "topics": [
     "모델릴리스"
@@ -1291,8 +1151,8 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 656,
-   "likes": 852,
+   "trending": 645,
+   "likes": 891,
    "downloads": 15244,
    "topics": [
     "모델릴리스"
@@ -1304,8 +1164,8 @@
    "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 454,
-   "likes": 797,
+   "trending": 464,
+   "likes": 834,
    "downloads": 762491,
    "topics": [
     "모델릴리스"
@@ -1317,8 +1177,8 @@
    "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 320,
-   "likes": 993,
+   "trending": 352,
+   "likes": 1054,
    "downloads": 189735,
    "topics": [
     "모델릴리스"
@@ -1330,8 +1190,8 @@
    "layer": "hf",
    "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-   "trending": 229,
-   "likes": 244,
+   "trending": 272,
+   "likes": 310,
    "downloads": 59366,
    "topics": [
     "모델릴리스"
@@ -1341,23 +1201,10 @@
   },
   {
    "layer": "hf",
-   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "trending": 218,
-   "likes": 1085,
-   "downloads": 3844,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
-   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
-  },
-  {
-   "layer": "hf",
    "title": "apple/DepthPro2",
    "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 196,
-   "likes": 1215,
+   "trending": 202,
+   "likes": 1246,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -1367,29 +1214,42 @@
   },
   {
    "layer": "hf",
-   "title": "higurashi-ai/Haru-4B",
-   "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-   "trending": 196,
-   "likes": 987,
-   "downloads": 10026,
+   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+   "trending": 192,
+   "likes": 1114,
+   "downloads": 3844,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:higurashi-ai/haru-4b",
-   "one_line": "higurashi-ai가 올린 Haru-4B 모델로 보이나, 용도와 세부 사양은 확인되지 않습니다."
+   "story_key": "hf:harness-hub/qwen3.8-27b-pi-adapted",
+   "one_line": "harness-hub가 올린 Qwen3.8-27B 기반 어댑티드 모델로 표기되어 있으나, 세부 내용은 확인되지 않습니다."
   },
   {
    "layer": "hf",
    "title": "llamaindex/OCRia-nano-1",
    "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-   "trending": 178,
-   "likes": 202,
+   "trending": 186,
+   "likes": 225,
    "downloads": 126,
    "topics": [
     "모델릴리스"
    ],
    "story_key": "hf:llamaindex/ocria-nano-1",
    "one_line": "LlamaIndex가 공개한 소형 OCR(문서 텍스트 인식) 모델로, 문서 이미지에서 텍스트를 추출하는 용도로 소개되어 있다."
+  },
+  {
+   "layer": "hf",
+   "title": "higurashi-ai/Haru-4B",
+   "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+   "trending": 177,
+   "likes": 1023,
+   "downloads": 10026,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:higurashi-ai/haru-4b",
+   "one_line": "higurashi-ai가 올린 Haru-4B 모델로 보이나, 용도와 세부 사양은 확인되지 않습니다."
   }
  ],
  "new_repos": [
@@ -1398,7 +1258,7 @@
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 3843,
+   "stars": 3932,
    "topics": [
     "에이전트",
     "개발도구"
@@ -1411,7 +1271,7 @@
    "title": "iamajmeena/neonclipping",
    "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
    "url": "https://github.com/iamajmeena/neonclipping",
-   "stars": 2591,
+   "stars": 2621,
    "topics": [
     "모델릴리스"
    ],
@@ -1423,7 +1283,7 @@
    "title": "R0Y00/Xbox2Windows",
    "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
    "url": "https://github.com/R0Y00/Xbox2Windows",
-   "stars": 1942,
+   "stars": 1951,
    "topics": [
     "인프라·칩"
    ],
@@ -1432,22 +1292,10 @@
   },
   {
    "layer": "github",
-   "title": "Zettrox/ztrx",
-   "desc": "Run the Xbox Series build of the game natively on Windows PCs with NVIDIA GPUs",
-   "url": "https://github.com/Zettrox/ztrx",
-   "stars": 1487,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:zettrox/ztrx",
-   "one_line": "Zettrox/ztrx는 NVIDIA GPU를 탑재한 Windows PC에서 Xbox Series용 게임 빌드를 네이티브로 실행하는 것을 목표로 하는 도구입니다. 세부 구현 방식은 설명에서 확인되지 않습니다."
-  },
-  {
-   "layer": "github",
    "title": "INK-Q/agy-fast",
    "desc": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affec",
    "url": "https://github.com/INK-Q/agy-fast",
-   "stars": 1458,
+   "stars": 1500,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1848,16 +1696,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-25 15:12",
+ "enriched_at": "2026-11-25 22:13",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 5,
-  "in": 23906,
-  "out": 4158,
+  "calls": 1,
+  "in": 8584,
+  "out": 794,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 3,
-  "cost_usd": 0.00447
+  "items": 1,
+  "cost_usd": 0.00126
  }
 }
