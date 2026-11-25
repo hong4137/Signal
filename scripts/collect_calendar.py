@@ -1,4 +1,4 @@
-"""경제 일정 원자료 수집 — LLM 없이 API·공식 일정표만 돈다. GitHub Actions 03:00 KST.
+"""경제 일정 원자료 수집 — LLM 없이 API·공식 일정표만 돈다. GitHub Actions 전날 18:17 KST.
 
 결과 data/calendar_raw.json 을 06:20 경제 일정 루틴(LLM)이 읽어 고르고 다듬는다.
 키가 없는 출처는 건너뛰고 sources 에 이유를 남긴다.
