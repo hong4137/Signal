@@ -152,6 +152,10 @@ footer{padding:18px 28px;font-size:12px;color:var(--muted);line-height:1.7}
 .cbox li b{display:block}
 .cbox li span{font-size:12px;color:var(--muted)}
 .cbox .ph0{font-size:13px;color:var(--muted);line-height:1.6}
+.cbox.season{grid-column:1/-1;--sc:#C2410C;background:linear-gradient(135deg,rgba(194,65,12,.10),rgba(22,163,74,.08)),var(--soft)}
+.cbox.season ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));column-gap:18px}
+.cbox.season li:nth-child(-n+3){border-top:0}
+@media (max-width:640px){.cbox.season li:nth-child(-n+3){border-top:1px dashed var(--hair)}.cbox.season li:first-child{border-top:0}}
 .pick.cul-card .ph{cursor:default}
 .tk{display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:var(--heat);border-radius:6px;padding:1px 7px;margin-left:6px}
 @media (max-width:700px){
@@ -364,8 +368,13 @@ function resultCard(p){
 const get = u => fetch(u + '?t=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}));
 Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) => {
   document.getElementById('upd').textContent = '갱신 ' + (D.updated || '-');
-  const culture = (C.events || []).filter(c => c.kst && c.verified !== false).map(c => ({...c, kind: 'culture', sport: c.type}));
-  const all = [...(D.picks || []), ...culture].sort((a, b) => a.kst < b.kst ? -1 : 1);
+  const cultureAll = (C.events || []).filter(c => c.kst && c.verified !== false).map(c => ({...c, kind: 'culture', sport: c.type}));
+  // 시즌 특집(크리스마스 등) — 기간 안일 때만, 일반 칸과 따로. 기간형(allday) 항목은 주간 판에 올리지 않는다(판이 넘친다)
+  const todayKey = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);   // KST 날짜
+  const season = C.season && C.season.from <= todayKey && todayKey <= C.season.to ? C.season : null;
+  const seasonItems = season ? cultureAll.filter(c => c.season === season.id) : [];
+  const culture = cultureAll.filter(c => !c.season);
+  const all = [...(D.picks || []), ...culture, ...seasonItems.filter(c => !c.allday)].sort((a, b) => a.kst < b.kst ? -1 : 1);
 
   // ── 지금 줄 + 주간 판 ──
   const nowK = new Date(NOW + 9 * 3600e3), nh = nowK.getUTCHours(), nm = String(nowK.getUTCMinutes()).padStart(2, '0');
@@ -456,7 +465,11 @@ Promise.all([get('data/sports.json'), get('data/culture.json')]).then(([D, C]) =
     return `<div class="cbox" style="--sc:${s[2]}"><h3>${s[0]} ${label}<small>${list.length ? list.length + '건' : ''}</small></h3>${list.length
       ? `<ul>${list.map(c => { const t = T(c.kst); return `<li><b>${c.type === 'exhibit' ? '🖼️ ' : c.type === 'game' ? '🕹️ ' : ''}${esc(c.title)}</b><span>${dayRel(t.key)} ${t.d} ${c.allday ? (c.type === 'movie' ? '개봉' : c.type === 'game' ? '출시' : '') : t.h}${ty === 'ticket' && c.show_date ? ' · 공연 ' + esc(c.show_date) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span></li>`; }).join('')}</ul>`
       : `<p class="ph0">${hint}</p>`}</div>`; };
-  document.getElementById('culture').innerHTML =
+  const seasonIcon = c => c.type === 'show' ? '🎤 ' : c.type === 'ticket' ? '🎟️ ' : c.type === 'exhibit' ? '✨ ' : '';
+  const seasonBox = season && seasonItems.length ? `<div class="cbox season"><h3>🎄 ${esc(season.title)}<small>${seasonItems.length}건 · ${esc(season.to.slice(5).replace('-', '/'))}까지</small></h3><ul>${seasonItems.sort((a, b) => a.kst < b.kst ? -1 : 1).map(c => { const t = T(c.kst);
+      const when = c.allday ? `${t.d}${c.until ? ' ~ ' + esc(c.until.slice(5).replace('-', '/')) : ''}` : `${dayRel(t.key)} ${t.d} ${t.h}`;
+      return `<li><b>${seasonIcon(c)}${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>` : esc(c.title)}</b><span>${when}${c.venue ? ' · ' + esc(c.venue) : ''}${c.where ? ' · ' + esc(c.where) : ''}</span>${c.note ? `<span style="display:block">${esc(c.note)}</span>` : ''}</li>`; }).join('')}</ul></div>` : '';
+  document.getElementById('culture').innerHTML = seasonBox +
     box('movie', '이번 주 개봉·출시 대작', '아무 영화·게임이나 싣지 않습니다. 많은 사람이 기다리던 큰 작품만 — 기준을 다듬는 중입니다.') +
     box('show', '이번 주 공연·전시', '이번 주에 열리거나 끝나는, 놓치면 아쉬운 공연·전시를 모읍니다 — 준비 중입니다.') +
     box('ticket', '이번 주 예매 오픈', '공연은 몇 달 뒤라도 예매가 이번 주에 열리면 여기에 띄웁니다. 오픈 시각은 달력·캘린더에도 들어갑니다 — 준비 중입니다.');
