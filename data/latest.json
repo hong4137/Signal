@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-26 23:37",
+ "updated": "2026-11-27 07:11",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 14,
+  "hn": 15,
   "reddit": 0,
   "hf": 15,
   "github": 4,
@@ -13,50 +13,12 @@
  "by_volume": [
   {
    "layer": "hn",
-   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-   "url": "https://twitter.com/ylecun/status/2124550037912920090",
-   "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 2017,
-   "comments": 1200,
-   "r": 0.59,
-   "at": "2026-11-23",
-   "topics": [],
-   "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
-   "summary_ko": "댓글은 LeCun의 주장에 대체로 동조하며, Dario Amodei가 위험을 과장해 오픈 웨이트 모델을 규제하려 한다는 의심이 주류를 이룬다. 다만 Dario의 위험 우려가 진심이라는 반론도 적지 않고, 실제 위험(생물무기, 안전 문제)을 인정하면서도 규제 방식과 동기를 따지는 신중한 목소리가 함께 있다. 오픈 모델은 필요하다는 공감대가 강하다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Dario Amodei의 AI 위험 경고가 진심인가, 규제 독점을 위한 전략인가",
-    "consensus": "댓글 대다수는 Dario의 동기를 의심하며 오픈 웨이트 모델 규제에 반대하지만, 위험 자체를 전부 부정하지는 않는다.",
-    "sides": [
-     {
-      "stance": "위험 경고는 규제 포획·시장 독점을 위한 수단이다",
-      "logic": "오픈 모델이 불법화되면 Anthropic이 통제를 유지하고 경쟁자가 사라지므로, 경고는 이해관계에 따른 여론전이라는 주장.",
-      "share": 70
-     },
-     {
-      "stance": "Dario는 위험을 진심으로 믿고 있다",
-      "logic": "Hinton처럼 사익을 버리고 경고한 사례가 있고, 실제 오용 위험(생물무기, 해킹)이 존재하므로 동기를 단정하기 어렵다는 주장.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 100,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 608,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 428,
-   "comments": 796,
-   "r": 1.86,
+   "points": 433,
+   "comments": 797,
+   "r": 1.84,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
@@ -106,11 +68,62 @@
   },
   {
    "layer": "hn",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "discussion": "https://news.ycombinator.com/item?id=50647673",
+   "points": 639,
+   "comments": 513,
+   "r": 0.8,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "뉴욕타임스가 프리랜서 사진가에게 Photoshop 2027(28.0.0 이상) 사용을 금지했다는 소식에 댓글에서는 AI 태그(C2PA 메타데이터)가 무심코 붙는 문제를 두고 논쟁이 벌어졌다. 한쪽은 힐링 브러시나 콘텐츠 인식 채우기도 픽셀을 새로 만드는 점에서 AI와 큰 차이가 없고 정책이 모호하다고 지적했고, 다른 쪽은 보도 사진은 원래 조작하면 안 되며 AI 픽셀이 섞이는 것 자체가 신뢰 문제라고 봤다. 대체 소프트웨어(Affinity, Krita, ArtCraft 등)를 추천하는 댓글도 많았다.",
+   "is_event": true,
+   "kr_query": "뉴욕타임스 포토샵 AI 사용 금지",
+   "debate": {
+    "split": true,
+    "axis": "AI 기능이 들어간 최신 Photoshop 사용을 보도 사진가에게 막는 것이 합리적인가",
+    "consensus": "댓글 대다수는 보도 사진에 AI 픽셀이 섞이는 것에 반감을 보이면서도, 기존 편집 도구와의 경계가 모호해 정책이 과하거나 부정확하다는 쪽에 기울어 있다.",
+    "sides": [
+     {
+      "stance": "합리적이고 필요한 정책이다",
+      "logic": "보도 사진은 원래 최소한의 보정만 허용되며, 생성형 AI 픽셀이나 AI 태그가 붙으면 독자 신뢰가 무너지므로 사전 차단이 맞다.",
+      "share": 45
+     },
+     {
+      "stance": "정책이 모호하고 과잉이다",
+      "logic": "힐링 브러시나 자동 선택처럼 오래된 도구도 AI로 분류될 수 있고, 실제 문제는 도구 전체가 아니라 생성형 기능 사용 여부인데 도구 단위 금지는 부정확하다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 74,
+   "article_read": true,
+   "kr": [
+    {
+     "t": "뉴욕타임스, 포토샵 사용금지…AI 기능에 무슨 일이",
+     "u": "https://www.bntnews.co.kr/article/view/bnt202611250009",
+     "d": "Wed, 25 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 513,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 1019,
-   "comments": 411,
+   "points": 1026,
+   "comments": 412,
    "r": 0.4,
    "at": "2026-11-24",
    "topics": [
@@ -152,66 +165,11 @@
   },
   {
    "layer": "hn",
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 488,
-   "comments": 408,
-   "r": 0.84,
-   "at": "2026-11-25",
-   "topics": [],
-   "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "summary_ko": "뉴욕타임스가 프리랜서 사진기자들에게 2027년판 포토샵(28.0.0 이후) 사용을 피하라고 통보한 것을 두고, 댓글에서는 포토샵의 AI 기능이 '의도치 않게' C2PA 메타데이터에 AI 생성 표시를 남길 수 있다는 점에 공감이 많았다. 다만 일부는 단순 색보정이나 선택 영역 같은 기능까지 AI로 묶이는 것은 과장이라며, 대안으로 Krita·Lightroom·Affinity 등을 언급했다. 소프트웨어 구독화와 AI 거부 정서를 함께 비판하는 목소리도 이어졌다.",
-   "is_event": true,
-   "kr_query": "뉴욕타임스 포토샵 AI 사용 금지",
-   "debate": {
-    "split": true,
-    "axis": "포토샵의 AI 기능 변화가 사진 편집의 신뢰 문제로 이어지는 것이 정당한 우려인가, 아니면 과잉 반응인가",
-    "consensus": "AI 생성 태그가 붙는 위험과 AI 거부 정서에 대한 공감이 크지만, 기사 속 조치의 실질적 범위에는 회의적인 반응이 많다.",
-    "sides": [
-     {
-      "stance": "정당한 우려이며 언론사의 조치는 이해된다",
-      "logic": "AI 기능이 기존 단순 편집 도구에 암묵적으로 섞여 메타데이터에 AI 편집 표시가 남으면 보도 신뢰가 훼손되며, 사용자들도 AI 콘텐츠에 강하게 반감을 갖고 있다.",
-      "share": 60
-     },
-     {
-      "stance": "과잉 반응이거나 AI 반대 정서에 편승한 조치다",
-      "logic": "색보정이나 결정론적 조정은 생성형 AI가 아니며, NYT 정책상 이미 금지된 조작이 기존 포토샵에도 가능했으므로 실질적 근거가 부족하다는 주장이다.",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 43,
-   "article_read": true,
-   "kr": [
-    {
-     "t": "[AI는 지금] AI 탑재 경쟁에 제동 걸리나…NYT, 최신 포토샵 사용 막은 ...",
-     "u": "https://zdnet.co.kr/view/?no=20261126102225",
-     "d": "Thu, 26 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "뉴욕타임스, 포토샵 사용금지…AI 기능에 무슨 일이",
-     "u": "https://www.bntnews.co.kr/article/view/bnt202611250009",
-     "d": "Wed, 25 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
-   "v": 3,
-   "comments_at": 229,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
    "url": "https://news.ycombinator.com/item?id=50630809",
    "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 456,
-   "comments": 352,
+   "points": 463,
+   "comments": 356,
    "r": 0.77,
    "at": "2026-11-24",
    "topics": [],
@@ -245,50 +203,12 @@
   },
   {
    "layer": "hn",
-   "title": "Tidal bans AI-generated music",
-   "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
-   "discussion": "https://news.ycombinator.com/item?id=50630309",
-   "points": 337,
-   "comments": 333,
-   "r": 0.99,
-   "at": "2026-11-24",
-   "topics": [],
-   "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-   "summary_ko": "Tidal이 완전히 AI로 생성된 곡을 2026년 12월 9일부터 카탈로그에서 제거하겠다고 발표하자, 댓글에서는 스팸 정리로 보는 찬성과 AI 음악을 즐겨 듣는 사용자들의 반발이 맞섰다. 많은 댓글은 AI 곡이 재생 0회인 비율이 높다는 점에서 조치가 타당하다고 보았고, 반면 AI 음악을 선호하는 청취자들은 필터 옵션이 더 나았다고 지적했다. 또한 '완전 AI 생성'의 경계가 모호해 실제 집행이 어렵다는 회의론도 많았다.",
-   "is_event": true,
-   "kr_query": "타이달 AI 생성 음악 금지",
-   "debate": {
-    "split": true,
-    "axis": "AI 생성 음악을 플랫폼에서 전면 금지하는 것이 사용자에게 이로운가, 아니면 필터나 표시 방식으로 충분한가",
-    "consensus": "스팸성 AI 곡이 넘쳐나는 문제에는 대체로 공감하지만, 완전 금지의 실효성과 탐지 가능성에는 회의가 많다.",
-    "sides": [
-     {
-      "stance": "전면 금지를 지지한다",
-      "logic": "재생 0회인 AI 곡이 대부분이고 플랫폼을 쓸 만하게 유지하려면 강한 조치가 필요하다는 주장",
-      "share": 50
-     },
-     {
-      "stance": "금지보다 필터·표시가 낫다",
-      "logic": "AI 음악을 즐겨 듣는 사용자의 선택권을 빼앗으며, 라벨링이나 사용자 설정으로 해결해야 한다는 주장",
-      "share": 35
-     }
-    ]
-   },
-   "n_comments_read": 80,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 295,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 495,
-   "comments": 303,
-   "r": 0.61,
+   "points": 542,
+   "comments": 343,
+   "r": 0.63,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "gh:lsernau/grh-lean",
@@ -321,40 +241,40 @@
   },
   {
    "layer": "hn",
-   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 460,
-   "comments": 210,
-   "r": 0.46,
-   "at": "2026-11-25",
+   "title": "Tidal bans AI-generated music",
+   "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+   "discussion": "https://news.ycombinator.com/item?id=50630309",
+   "points": 337,
+   "comments": 343,
+   "r": 1.02,
+   "at": "2026-11-24",
    "topics": [],
-   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
-   "is_event": false,
-   "kr_query": "",
+   "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
+   "summary_ko": "Tidal이 완전히 AI로 생성된 곡을 2026년 12월 9일부터 카탈로그에서 제거하겠다고 발표하자, 댓글에서는 스팸 정리로 보는 찬성과 AI 음악을 즐겨 듣는 사용자들의 반발이 맞섰다. 많은 댓글은 AI 곡이 재생 0회인 비율이 높다는 점에서 조치가 타당하다고 보았고, 반면 AI 음악을 선호하는 청취자들은 필터 옵션이 더 나았다고 지적했다. 또한 '완전 AI 생성'의 경계가 모호해 실제 집행이 어렵다는 회의론도 많았다.",
+   "is_event": true,
+   "kr_query": "타이달 AI 생성 음악 금지",
    "debate": {
     "split": true,
-    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
-    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
+    "axis": "AI 생성 음악을 플랫폼에서 전면 금지하는 것이 사용자에게 이로운가, 아니면 필터나 표시 방식으로 충분한가",
+    "consensus": "스팸성 AI 곡이 넘쳐나는 문제에는 대체로 공감하지만, 완전 금지의 실효성과 탐지 가능성에는 회의가 많다.",
     "sides": [
      {
-      "stance": "현실성이 낮아 과장된 주장이다",
-      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
-      "share": 55
+      "stance": "전면 금지를 지지한다",
+      "logic": "재생 0회인 AI 곡이 대부분이고 플랫폼을 쓸 만하게 유지하려면 강한 조치가 필요하다는 주장",
+      "share": 50
      },
      {
-      "stance": "공개로 인해 위험이 현실화될 수 있다",
-      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
-      "share": 30
+      "stance": "금지보다 필터·표시가 낫다",
+      "logic": "AI 음악을 즐겨 듣는 사용자의 선택권을 빼앗으며, 라벨링이나 사용자 설정으로 해결해야 한다는 주장",
+      "share": 35
      }
     ]
    },
-   "n_comments_read": 38,
+   "n_comments_read": 80,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 142,
+   "comments_at": 295,
    "model": "claude-haiku-5-5"
   },
   {
@@ -362,9 +282,9 @@
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 365,
-   "comments": 202,
-   "r": 0.55,
+   "points": 449,
+   "comments": 258,
+   "r": 0.57,
    "at": "2026-11-26",
    "topics": [
     "모델릴리스"
@@ -408,11 +328,87 @@
   },
   {
    "layer": "hn",
+   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+   "discussion": "https://news.ycombinator.com/item?id=50637686",
+   "points": 463,
+   "comments": 217,
+   "r": 0.47,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
+    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
+    "sides": [
+     {
+      "stance": "현실성이 낮아 과장된 주장이다",
+      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
+      "share": 55
+     },
+     {
+      "stance": "공개로 인해 위험이 현실화될 수 있다",
+      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 38,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 142,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Tracking Diseases Cured by AI",
+   "url": "https://diseasescuredbyai.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50657307",
+   "points": 287,
+   "comments": 176,
+   "r": 0.61,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:diseasescuredbyai.com/",
+   "summary_ko": "HN 댓글은 이 카운터가 AI 신약 평가로 공정한지를 두고 갈렸다. 한쪽은 임상 3상과 FDA 승인 기간을 고려하면 0은 당연하며 기준도 타당하다고 보고, 다른 쪽은 '치료'와 '완치'를 엄격히 구분하면 기준이 과하고 AI 효과를 과소평가한다고 반박했다. 많은 댓글이 사이트 문체가 적대적이고 AI 생성 글로 보인다며 신뢰를 문제 삼았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI 신약 성과를 '완치' 기준과 3상 승인으로 엄격히 평가하는 것이 공정한가",
+    "consensus": "댓글 전체는 AI가 신약 연구를 돕고 있다는 점에는 대체로 동의하지만, 완치 선언이나 단기 성과 기대에는 회의적인 분위기다.",
+    "sides": [
+     {
+      "stance": "기준이 타당하다, 0은 시간 문제일 뿐이다",
+      "logic": "3상 시험과 승인에는 6~10년이 걸리므로 현재 0은 당연하며, 완치 기준은 과장 광고를 걸러내는 필요한 장치다.",
+      "share": 55
+     },
+     {
+      "stance": "기준이 너무 가혹하다, 증상 관리도 가치가 있다",
+      "logic": "HIV 치료제처럼 완치는 아니어도 삶을 크게 바꾸는 약은 많으며, 완치만 성공으로 치면 AI의 실질적 기여를 놓친다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 86,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 176,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
    "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
    "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 218,
-   "comments": 172,
+   "points": 221,
+   "comments": 174,
    "r": 0.79,
    "at": "2026-11-25",
    "topics": [
@@ -437,10 +433,39 @@
   },
   {
    "layer": "hn",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "discussion": "https://news.ycombinator.com/item?id=50653477",
+   "points": 168,
+   "comments": 171,
+   "r": 1.02,
+   "at": "2026-11-26",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:techstackups.com/articles/google-workspace-ai-agents-mcp",
+   "summary_ko": "구글이 2027년 2월 1일부터 AI 에이전트가 Gmail·Drive 등 Workspace에 접근할 때 MCP 서버를 거치도록 약관을 바꾸면서, 댓글에서는 이것이 스팸 방지나 보안 명분의 우회적 통제인지, 아니면 파트너 전용 기능을 통한 대형 AI 업체 우대와 수익화인지를 두고 의심이 많았다. 특히 Gmail 발송·답장 기능이 파트너 전용이라는 점에 대한 불만이 컸고, 사용자 데이터 활용을 제한하는 것에 대해 소유권 문제를 제기하는 목소리도 있었다. 다른 쪽에서는 자체 SMTP·IMAP 연동이나 Fastmail 같은 대안으로 옮기자는 반응이 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 구글의 MCP 의무화와 파트너 전용 도구 제한을 빅테크의 통제 강화·락인으로 보고 불신하며, Gmail 대안이나 IMAP/SMTP 등 우회 방법을 논의하는 쪽으로 기울었다."
+   },
+   "n_comments_read": 61,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 171,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Who in Washington owns and trades Nvidia stock",
    "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
    "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 291,
+   "points": 292,
    "comments": 167,
    "r": 0.57,
    "at": "2026-11-24",
@@ -466,42 +491,48 @@
   },
   {
    "layer": "hn",
-   "title": "GPUI is getting its own repository",
-   "url": "https://github.com/zed-industries/gpui",
-   "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 386,
-   "comments": 141,
-   "r": 0.37,
-   "at": "2026-11-23",
+   "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "discussion": "https://news.ycombinator.com/item?id=50645978",
+   "points": 76,
+   "comments": 155,
+   "r": 2.04,
+   "at": "2026-11-25",
    "topics": [
     "인프라·칩"
    ],
-   "story_key": "gh:zed-industries/gpui",
-   "summary_ko": "GPUI가 Zed 에디터 저장소에서 분리되어 독립 저장소로 옮겨간다는 소식에 댓글에서는 환영과 회의가 함께 나왔다. 여러 사용자가 GPUI 기반 앱을 직접 만들고 커스터마이즈하는 경험을 좋게 평가했지만, 한편에서는 아직 어렵고 알파 수준이며 접근성·문서가 미흡하다는 비판이 이어졌다. 과거 분리 후 커뮤니티 포크가 생겼다 다시 합쳐진 이력 때문에 이번 발표가 오래 갈지 의심하는 반응도 있었고, UI 요소의 라이선스 제약이 기업 사용을 막는다는 지적도 나왔다.",
+   "story_key": "url:cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "summary_ko": "FCC가 스페이스X의 궤도 데이터센터 위성 100만 기 배치 신청을 승인했다는 기사에 대해 댓글에서는 우주 공유지에 대한 국가 허가의 정당성, 고도(500~1,000km)에 따른 충돌 연쇄(케슬러 신드롬)와 천문 관측 피해, 위성 수명과 잦은 교체에 따른 잔해 문제가 주로 거론됐다. 한편 실현 가능성 자체에 회의적인 목소리가 많았고, 승인이 주가 부양용 홍보일 수 있다는 냉소도 나왔다.",
    "is_event": true,
-   "kr_query": "GPUI 독립 저장소 Zed 앤트로픽",
+   "kr_query": "스페이스X 궤도 데이터센터 위성 FCC 승인",
    "debate": {
-    "split": true,
-    "axis": "GPUI가 Rust GUI 프레임워크로서 실용적인가, 아직 시기상조인가",
-    "consensus": "GPUI 독립 저장소 분리는 환영받지만, 프레임워크 완성도와 라이선스·장기 유지에 대한 우려가 함께 제기된다.",
-    "sides": [
-     {
-      "stance": "실용적이고 강력하다",
-      "logic": "GPUI로 만든 앱을 실시간으로 재구성할 수 있을 만큼 유연하고 성능이 좋으며, Kit 컴포넌트 생태계도 풍부하다.",
-      "share": 55
-     },
-     {
-      "stance": "아직 미성숙하다",
-      "logic": "어렵고 한계가 예상 밖의 곳에 있으며, 접근성·문서·예제가 부족하고 알파 수준이라 주목받을 만한 이유를 모르겠다.",
-      "share": 45
-     }
-    ]
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 우주 데이터센터의 기술적 실현 가능성과 천문·우주 잔해 문제에 회의적이며, FCC의 승인 방식과 머스크 기업의 의도에도 비판적이다."
    },
-   "n_comments_read": 33,
+   "n_comments_read": 29,
    "article_read": true,
-   "kr": [],
+   "kr": [
+    {
+     "t": "美FCC, 스페이스X '우주 데이터센터' 위성 100만기 배치 승인",
+     "u": "https://www.yna.co.kr/view/AKR20261126004600091?input=1195m",
+     "d": "Thu, 26 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    },
+    {
+     "t": "스페이스X, ‘우주 AI 데이터센터’ 위성 100만기 승인받았다",
+     "u": "https://www.hani.co.kr/arti/international/america/1289166.html",
+     "d": "Thu, 26 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
    "v": 3,
-   "comments_at": 140,
+   "comments_at": 125,
    "model": "claude-haiku-5-5"
   },
   {
@@ -509,8 +540,8 @@
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 223,
-   "comments": 140,
+   "points": 224,
+   "comments": 142,
    "r": 0.63,
    "at": "2026-11-24",
    "topics": [],
@@ -549,48 +580,40 @@
   },
   {
    "layer": "hn",
-   "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "discussion": "https://news.ycombinator.com/item?id=50645978",
-   "points": 73,
-   "comments": 139,
-   "r": 1.9,
-   "at": "2026-11-25",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "summary_ko": "FCC가 스페이스X의 궤도 데이터센터 위성 100만 기 배치 신청을 승인했다는 기사에 대해 댓글에서는 우주 공유지에 대한 국가 허가의 정당성, 고도(500~1,000km)에 따른 충돌 연쇄(케슬러 신드롬)와 천문 관측 피해, 위성 수명과 잦은 교체에 따른 잔해 문제가 주로 거론됐다. 한편 실현 가능성 자체에 회의적인 목소리가 많았고, 승인이 주가 부양용 홍보일 수 있다는 냉소도 나왔다.",
-   "is_event": true,
-   "kr_query": "스페이스X 궤도 데이터센터 위성 FCC 승인",
+   "title": "OpenAI may be in cost control mode",
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "discussion": "https://news.ycombinator.com/item?id=50652527",
+   "points": 160,
+   "comments": 140,
+   "r": 0.88,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
+   "summary_ko": "댓글에서는 OpenAI가 GPT-6.2(Astra·Sol)를 비용 절감 목적으로 추론량을 줄여 튜닝했다는 분석을 두고, 비용 효율 확보를 위한 합리적 조정이라는 반응과 코딩 품질 저하를 우려하는 반응이 함께 나왔다. 다수는 OpenAI가 수익성이나 IPO 압박 때문에 비용을 줄이는 것으로 보았고, 일부는 벤치마크상 성능 유지와 실사용 체감 차이를 지적했다. 추론 토큰 감소가 효율화인지 성능 저하인지는 댓글에서도 의견이 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
    "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 우주 데이터센터의 기술적 실현 가능성과 천문·우주 잔해 문제에 회의적이며, FCC의 승인 방식과 머스크 기업의 의도에도 비판적이다."
+    "split": true,
+    "axis": "GPT-6.2의 추론량 감소가 효율화로 볼 만한가, 성능 저하로 볼 만한가",
+    "consensus": "대다수 댓글은 OpenAI가 비용 절감을 위해 모델을 조정했다는 데 동의하며, 수익성과 IPO 압박 속에서 나온 결정으로 보는 분위기다.",
+    "sides": [
+     {
+      "stance": "효율화이므로 문제가 아니다",
+      "logic": "추론 토큰이 줄어도 과제를 제대로 완료하면 더 똑똑한 모델이며, 벤치마크에서 6.2가 같은 비용에 더 높은 성능을 보인다는 근거를 든다.",
+      "share": 40
+     },
+     {
+      "stance": "실사용에서는 성능이 떨어졌고 비용 절감의 부작용이다",
+      "logic": "실제 사용자 대결 데이터와 코딩 체감에서 6.1보다 나빠졌고, 벤치마크 수치는 실무 품질을 반영하지 못한다는 주장이다.",
+      "share": 45
+     }
+    ]
    },
-   "n_comments_read": 29,
+   "n_comments_read": 49,
    "article_read": true,
-   "kr": [
-    {
-     "t": "美FCC, 스페이스X '우주 데이터센터' 위성 100만기 배치 승인",
-     "u": "https://www.yna.co.kr/view/AKR20261126004600091?input=1195m",
-     "d": "Thu, 26 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
-    {
-     "t": "스페이스X, ‘우주 AI 데이터센터’ 위성 100만기 승인받았다",
-     "u": "https://www.hani.co.kr/arti/international/america/1289166.html",
-     "d": "Thu, 26 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    }
-   ],
+   "kr": [],
    "v": 3,
-   "comments_at": 125,
+   "comments_at": 140,
    "model": "claude-haiku-5-5"
   }
  ],
@@ -600,9 +623,9 @@
    "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
-   "points": 73,
-   "comments": 139,
-   "r": 1.9,
+   "points": 76,
+   "comments": 155,
+   "r": 2.04,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -646,9 +669,9 @@
    "title": "Anthropic breaks below $83 IPO price",
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
-   "points": 428,
-   "comments": 796,
-   "r": 1.86,
+   "points": 433,
+   "comments": 797,
+   "r": 1.84,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
@@ -702,8 +725,8 @@
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
    "points": 337,
-   "comments": 333,
-   "r": 0.99,
+   "comments": 343,
+   "r": 1.02,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "url:variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
@@ -736,46 +759,109 @@
   },
   {
    "layer": "hn",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "discussion": "https://news.ycombinator.com/item?id=50653477",
+   "points": 168,
+   "comments": 171,
+   "r": 1.02,
+   "at": "2026-11-26",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:techstackups.com/articles/google-workspace-ai-agents-mcp",
+   "summary_ko": "구글이 2027년 2월 1일부터 AI 에이전트가 Gmail·Drive 등 Workspace에 접근할 때 MCP 서버를 거치도록 약관을 바꾸면서, 댓글에서는 이것이 스팸 방지나 보안 명분의 우회적 통제인지, 아니면 파트너 전용 기능을 통한 대형 AI 업체 우대와 수익화인지를 두고 의심이 많았다. 특히 Gmail 발송·답장 기능이 파트너 전용이라는 점에 대한 불만이 컸고, 사용자 데이터 활용을 제한하는 것에 대해 소유권 문제를 제기하는 목소리도 있었다. 다른 쪽에서는 자체 SMTP·IMAP 연동이나 Fastmail 같은 대안으로 옮기자는 반응이 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 구글의 MCP 의무화와 파트너 전용 도구 제한을 빅테크의 통제 강화·락인으로 보고 불신하며, Gmail 대안이나 IMAP/SMTP 등 우회 방법을 논의하는 쪽으로 기울었다."
+   },
+   "n_comments_read": 61,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 171,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "OpenAI may be in cost control mode",
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "discussion": "https://news.ycombinator.com/item?id=50652527",
+   "points": 160,
+   "comments": 140,
+   "r": 0.88,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
+   "summary_ko": "댓글에서는 OpenAI가 GPT-6.2(Astra·Sol)를 비용 절감 목적으로 추론량을 줄여 튜닝했다는 분석을 두고, 비용 효율 확보를 위한 합리적 조정이라는 반응과 코딩 품질 저하를 우려하는 반응이 함께 나왔다. 다수는 OpenAI가 수익성이나 IPO 압박 때문에 비용을 줄이는 것으로 보았고, 일부는 벤치마크상 성능 유지와 실사용 체감 차이를 지적했다. 추론 토큰 감소가 효율화인지 성능 저하인지는 댓글에서도 의견이 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "GPT-6.2의 추론량 감소가 효율화로 볼 만한가, 성능 저하로 볼 만한가",
+    "consensus": "대다수 댓글은 OpenAI가 비용 절감을 위해 모델을 조정했다는 데 동의하며, 수익성과 IPO 압박 속에서 나온 결정으로 보는 분위기다.",
+    "sides": [
+     {
+      "stance": "효율화이므로 문제가 아니다",
+      "logic": "추론 토큰이 줄어도 과제를 제대로 완료하면 더 똑똑한 모델이며, 벤치마크에서 6.2가 같은 비용에 더 높은 성능을 보인다는 근거를 든다.",
+      "share": 40
+     },
+     {
+      "stance": "실사용에서는 성능이 떨어졌고 비용 절감의 부작용이다",
+      "logic": "실제 사용자 대결 데이터와 코딩 체감에서 6.1보다 나빠졌고, 벤치마크 수치는 실무 품질을 반영하지 못한다는 주장이다.",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 49,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 140,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 488,
-   "comments": 408,
-   "r": 0.84,
+   "points": 639,
+   "comments": 513,
+   "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "summary_ko": "뉴욕타임스가 프리랜서 사진기자들에게 2027년판 포토샵(28.0.0 이후) 사용을 피하라고 통보한 것을 두고, 댓글에서는 포토샵의 AI 기능이 '의도치 않게' C2PA 메타데이터에 AI 생성 표시를 남길 수 있다는 점에 공감이 많았다. 다만 일부는 단순 색보정이나 선택 영역 같은 기능까지 AI로 묶이는 것은 과장이라며, 대안으로 Krita·Lightroom·Affinity 등을 언급했다. 소프트웨어 구독화와 AI 거부 정서를 함께 비판하는 목소리도 이어졌다.",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "뉴욕타임스가 프리랜서 사진가에게 Photoshop 2027(28.0.0 이상) 사용을 금지했다는 소식에 댓글에서는 AI 태그(C2PA 메타데이터)가 무심코 붙는 문제를 두고 논쟁이 벌어졌다. 한쪽은 힐링 브러시나 콘텐츠 인식 채우기도 픽셀을 새로 만드는 점에서 AI와 큰 차이가 없고 정책이 모호하다고 지적했고, 다른 쪽은 보도 사진은 원래 조작하면 안 되며 AI 픽셀이 섞이는 것 자체가 신뢰 문제라고 봤다. 대체 소프트웨어(Affinity, Krita, ArtCraft 등)를 추천하는 댓글도 많았다.",
    "is_event": true,
    "kr_query": "뉴욕타임스 포토샵 AI 사용 금지",
    "debate": {
     "split": true,
-    "axis": "포토샵의 AI 기능 변화가 사진 편집의 신뢰 문제로 이어지는 것이 정당한 우려인가, 아니면 과잉 반응인가",
-    "consensus": "AI 생성 태그가 붙는 위험과 AI 거부 정서에 대한 공감이 크지만, 기사 속 조치의 실질적 범위에는 회의적인 반응이 많다.",
+    "axis": "AI 기능이 들어간 최신 Photoshop 사용을 보도 사진가에게 막는 것이 합리적인가",
+    "consensus": "댓글 대다수는 보도 사진에 AI 픽셀이 섞이는 것에 반감을 보이면서도, 기존 편집 도구와의 경계가 모호해 정책이 과하거나 부정확하다는 쪽에 기울어 있다.",
     "sides": [
      {
-      "stance": "정당한 우려이며 언론사의 조치는 이해된다",
-      "logic": "AI 기능이 기존 단순 편집 도구에 암묵적으로 섞여 메타데이터에 AI 편집 표시가 남으면 보도 신뢰가 훼손되며, 사용자들도 AI 콘텐츠에 강하게 반감을 갖고 있다.",
-      "share": 60
+      "stance": "합리적이고 필요한 정책이다",
+      "logic": "보도 사진은 원래 최소한의 보정만 허용되며, 생성형 AI 픽셀이나 AI 태그가 붙으면 독자 신뢰가 무너지므로 사전 차단이 맞다.",
+      "share": 45
      },
      {
-      "stance": "과잉 반응이거나 AI 반대 정서에 편승한 조치다",
-      "logic": "색보정이나 결정론적 조정은 생성형 AI가 아니며, NYT 정책상 이미 금지된 조작이 기존 포토샵에도 가능했으므로 실질적 근거가 부족하다는 주장이다.",
+      "stance": "정책이 모호하고 과잉이다",
+      "logic": "힐링 브러시나 자동 선택처럼 오래된 도구도 AI로 분류될 수 있고, 실제 문제는 도구 전체가 아니라 생성형 기능 사용 여부인데 도구 단위 금지는 부정확하다.",
       "share": 40
      }
     ]
    },
-   "n_comments_read": 43,
+   "n_comments_read": 74,
    "article_read": true,
    "kr": [
-    {
-     "t": "[AI는 지금] AI 탑재 경쟁에 제동 걸리나…NYT, 최신 포토샵 사용 막은 ...",
-     "u": "https://zdnet.co.kr/view/?no=20261126102225",
-     "d": "Thu, 26 Nov 2026",
-     "why": [
-      "Claude 판정"
-     ]
-    },
     {
      "t": "뉴욕타임스, 포토샵 사용금지…AI 기능에 무슨 일이",
      "u": "https://www.bntnews.co.kr/article/view/bnt202611250009",
@@ -786,7 +872,7 @@
     }
    ],
    "v": 3,
-   "comments_at": 229,
+   "comments_at": 513,
    "model": "claude-haiku-5-5"
   },
   {
@@ -794,8 +880,8 @@
    "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
    "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
    "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 218,
-   "comments": 172,
+   "points": 221,
+   "comments": 174,
    "r": 0.79,
    "at": "2026-11-25",
    "topics": [
@@ -823,8 +909,8 @@
    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
    "url": "https://news.ycombinator.com/item?id=50630809",
    "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 456,
-   "comments": 352,
+   "points": 463,
+   "comments": 356,
    "r": 0.77,
    "at": "2026-11-24",
    "topics": [],
@@ -858,11 +944,49 @@
   },
   {
    "layer": "hn",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
+   "discussion": "https://news.ycombinator.com/item?id=50648050",
+   "points": 542,
+   "comments": 343,
+   "r": 0.63,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "gh:lsernau/grh-lean",
+   "summary_ko": "댓글에서는 1,700만 줄 증명을 7만 6천 줄로 줄인 점과 기계 검증이 통과했다는 사실에 감탄하는 반응이 많았다. 반면 Anthropic 소속이라는 주장에 의문을 제기하는 목소리가 있었고, 코드가 너무 난해해 사람이 검증하기 어렵다는 지적도 나왔다. 기계 검증만으로 충분하다는 쪽과 사람이 이해할 수 있는 수학 논문이 필요하다는 쪽이 맞섰다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "기계 검증된 증명만으로 충분한가, 아니면 사람이 이해할 수 있어야 가치가 있는가?",
+    "consensus": "대체로 성과에 감탄하면서도, 코드 가독성과 소유권·검증 주체에 대한 의문이 함께 제기되었다.",
+    "sides": [
+     {
+      "stance": "기계 검증이 통과했다면 충분하다",
+      "logic": "코드가 컴파일되고 공리만 쓴다면 정확성은 확인된 것이므로, 코드를 사람이 다 읽을 필요는 없다는 입장이다.",
+      "share": 55
+     },
+     {
+      "stance": "사람이 이해할 수 있는 수학적 설명이 필요하다",
+      "logic": "증명이 아무리 짧아져도 Lean 코드는 난해하므로, 핵심 논리를 설명하는 수학 논문과 전문가 발표가 있어야 실질적 이해와 가치가 생긴다는 입장이다.",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 45,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 176,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 223,
-   "comments": 140,
+   "points": 224,
+   "comments": 142,
    "r": 0.63,
    "at": "2026-11-24",
    "topics": [],
@@ -901,36 +1025,36 @@
   },
   {
    "layer": "hn",
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
-   "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 495,
-   "comments": 303,
+   "title": "Tracking Diseases Cured by AI",
+   "url": "https://diseasescuredbyai.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50657307",
+   "points": 287,
+   "comments": 176,
    "r": 0.61,
-   "at": "2026-11-25",
+   "at": "2026-11-26",
    "topics": [],
-   "story_key": "gh:lsernau/grh-lean",
-   "summary_ko": "댓글에서는 1,700만 줄 증명을 7만 6천 줄로 줄인 점과 기계 검증이 통과했다는 사실에 감탄하는 반응이 많았다. 반면 Anthropic 소속이라는 주장에 의문을 제기하는 목소리가 있었고, 코드가 너무 난해해 사람이 검증하기 어렵다는 지적도 나왔다. 기계 검증만으로 충분하다는 쪽과 사람이 이해할 수 있는 수학 논문이 필요하다는 쪽이 맞섰다.",
+   "story_key": "url:diseasescuredbyai.com/",
+   "summary_ko": "HN 댓글은 이 카운터가 AI 신약 평가로 공정한지를 두고 갈렸다. 한쪽은 임상 3상과 FDA 승인 기간을 고려하면 0은 당연하며 기준도 타당하다고 보고, 다른 쪽은 '치료'와 '완치'를 엄격히 구분하면 기준이 과하고 AI 효과를 과소평가한다고 반박했다. 많은 댓글이 사이트 문체가 적대적이고 AI 생성 글로 보인다며 신뢰를 문제 삼았다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "기계 검증된 증명만으로 충분한가, 아니면 사람이 이해할 수 있어야 가치가 있는가?",
-    "consensus": "대체로 성과에 감탄하면서도, 코드 가독성과 소유권·검증 주체에 대한 의문이 함께 제기되었다.",
+    "axis": "AI 신약 성과를 '완치' 기준과 3상 승인으로 엄격히 평가하는 것이 공정한가",
+    "consensus": "댓글 전체는 AI가 신약 연구를 돕고 있다는 점에는 대체로 동의하지만, 완치 선언이나 단기 성과 기대에는 회의적인 분위기다.",
     "sides": [
      {
-      "stance": "기계 검증이 통과했다면 충분하다",
-      "logic": "코드가 컴파일되고 공리만 쓴다면 정확성은 확인된 것이므로, 코드를 사람이 다 읽을 필요는 없다는 입장이다.",
+      "stance": "기준이 타당하다, 0은 시간 문제일 뿐이다",
+      "logic": "3상 시험과 승인에는 6~10년이 걸리므로 현재 0은 당연하며, 완치 기준은 과장 광고를 걸러내는 필요한 장치다.",
       "share": 55
      },
      {
-      "stance": "사람이 이해할 수 있는 수학적 설명이 필요하다",
-      "logic": "증명이 아무리 짧아져도 Lean 코드는 난해하므로, 핵심 논리를 설명하는 수학 논문과 전문가 발표가 있어야 실질적 이해와 가치가 생긴다는 입장이다.",
-      "share": 45
+      "stance": "기준이 너무 가혹하다, 증상 관리도 가치가 있다",
+      "logic": "HIV 치료제처럼 완치는 아니어도 삶을 크게 바꾸는 약은 많으며, 완치만 성공으로 치면 AI의 실질적 기여를 놓친다.",
+      "share": 30
      }
     ]
    },
-   "n_comments_read": 45,
+   "n_comments_read": 86,
    "article_read": true,
    "kr": [],
    "v": 3,
@@ -939,79 +1063,12 @@
   },
   {
    "layer": "hn",
-   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-   "url": "https://twitter.com/ylecun/status/2124550037912920090",
-   "discussion": "https://news.ycombinator.com/item?id=50615308",
-   "points": 2017,
-   "comments": 1200,
-   "r": 0.59,
-   "at": "2026-11-23",
-   "topics": [],
-   "story_key": "url:twitter.com/ylecun/status/2124550037912920090",
-   "summary_ko": "댓글은 LeCun의 주장에 대체로 동조하며, Dario Amodei가 위험을 과장해 오픈 웨이트 모델을 규제하려 한다는 의심이 주류를 이룬다. 다만 Dario의 위험 우려가 진심이라는 반론도 적지 않고, 실제 위험(생물무기, 안전 문제)을 인정하면서도 규제 방식과 동기를 따지는 신중한 목소리가 함께 있다. 오픈 모델은 필요하다는 공감대가 강하다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Dario Amodei의 AI 위험 경고가 진심인가, 규제 독점을 위한 전략인가",
-    "consensus": "댓글 대다수는 Dario의 동기를 의심하며 오픈 웨이트 모델 규제에 반대하지만, 위험 자체를 전부 부정하지는 않는다.",
-    "sides": [
-     {
-      "stance": "위험 경고는 규제 포획·시장 독점을 위한 수단이다",
-      "logic": "오픈 모델이 불법화되면 Anthropic이 통제를 유지하고 경쟁자가 사라지므로, 경고는 이해관계에 따른 여론전이라는 주장.",
-      "share": 70
-     },
-     {
-      "stance": "Dario는 위험을 진심으로 믿고 있다",
-      "logic": "Hinton처럼 사익을 버리고 경고한 사례가 있고, 실제 오용 위험(생물무기, 해킹)이 존재하므로 동기를 단정하기 어렵다는 주장.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 100,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 608,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Who in Washington owns and trades Nvidia stock",
-   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
-   "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 291,
-   "comments": 167,
-   "r": 0.57,
-   "at": "2026-11-24",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
-   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
-   },
-   "n_comments_read": 42,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 163,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 365,
-   "comments": 202,
-   "r": 0.55,
+   "points": 449,
+   "comments": 258,
+   "r": 0.57,
    "at": "2026-11-26",
    "topics": [
     "모델릴리스"
@@ -1055,12 +1112,41 @@
   },
   {
    "layer": "hn",
+   "title": "Who in Washington owns and trades Nvidia stock",
+   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
+   "discussion": "https://news.ycombinator.com/item?id=50626861",
+   "points": 292,
+   "comments": 167,
+   "r": 0.57,
+   "at": "2026-11-24",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
+   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 163,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
    "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 460,
-   "comments": 210,
-   "r": 0.46,
+   "points": 463,
+   "comments": 217,
+   "r": 0.47,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
@@ -1096,8 +1182,8 @@
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 1019,
-   "comments": 411,
+   "points": 1026,
+   "comments": 412,
    "r": 0.4,
    "at": "2026-11-24",
    "topics": [
@@ -1136,57 +1222,69 @@
    "v": 3,
    "comments_at": 355,
    "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "GPUI is getting its own repository",
-   "url": "https://github.com/zed-industries/gpui",
-   "discussion": "https://news.ycombinator.com/item?id=50619103",
-   "points": 386,
-   "comments": 141,
-   "r": 0.37,
-   "at": "2026-11-23",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:zed-industries/gpui",
-   "summary_ko": "GPUI가 Zed 에디터 저장소에서 분리되어 독립 저장소로 옮겨간다는 소식에 댓글에서는 환영과 회의가 함께 나왔다. 여러 사용자가 GPUI 기반 앱을 직접 만들고 커스터마이즈하는 경험을 좋게 평가했지만, 한편에서는 아직 어렵고 알파 수준이며 접근성·문서가 미흡하다는 비판이 이어졌다. 과거 분리 후 커뮤니티 포크가 생겼다 다시 합쳐진 이력 때문에 이번 발표가 오래 갈지 의심하는 반응도 있었고, UI 요소의 라이선스 제약이 기업 사용을 막는다는 지적도 나왔다.",
-   "is_event": true,
-   "kr_query": "GPUI 독립 저장소 Zed 앤트로픽",
-   "debate": {
-    "split": true,
-    "axis": "GPUI가 Rust GUI 프레임워크로서 실용적인가, 아직 시기상조인가",
-    "consensus": "GPUI 독립 저장소 분리는 환영받지만, 프레임워크 완성도와 라이선스·장기 유지에 대한 우려가 함께 제기된다.",
-    "sides": [
-     {
-      "stance": "실용적이고 강력하다",
-      "logic": "GPUI로 만든 앱을 실시간으로 재구성할 수 있을 만큼 유연하고 성능이 좋으며, Kit 컴포넌트 생태계도 풍부하다.",
-      "share": 55
-     },
-     {
-      "stance": "아직 미성숙하다",
-      "logic": "어렵고 한계가 예상 밖의 곳에 있으며, 접근성·문서·예제가 부족하고 알파 수준이라 주목받을 만한 이유를 모르겠다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 33,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 140,
-   "model": "claude-haiku-5-5"
   }
  ],
  "reddit_top": [],
- "quiet_important": [],
+ "quiet_important": [
+  {
+   "layer": "hn",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "discussion": "https://news.ycombinator.com/item?id=50647673",
+   "points": 639,
+   "comments": 513,
+   "r": 0.8,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "뉴욕타임스가 프리랜서 사진가에게 Photoshop 2027(28.0.0 이상) 사용을 금지했다는 소식에 댓글에서는 AI 태그(C2PA 메타데이터)가 무심코 붙는 문제를 두고 논쟁이 벌어졌다. 한쪽은 힐링 브러시나 콘텐츠 인식 채우기도 픽셀을 새로 만드는 점에서 AI와 큰 차이가 없고 정책이 모호하다고 지적했고, 다른 쪽은 보도 사진은 원래 조작하면 안 되며 AI 픽셀이 섞이는 것 자체가 신뢰 문제라고 봤다. 대체 소프트웨어(Affinity, Krita, ArtCraft 등)를 추천하는 댓글도 많았다.",
+   "is_event": true,
+   "kr_query": "뉴욕타임스 포토샵 AI 사용 금지",
+   "debate": {
+    "split": true,
+    "axis": "AI 기능이 들어간 최신 Photoshop 사용을 보도 사진가에게 막는 것이 합리적인가",
+    "consensus": "댓글 대다수는 보도 사진에 AI 픽셀이 섞이는 것에 반감을 보이면서도, 기존 편집 도구와의 경계가 모호해 정책이 과하거나 부정확하다는 쪽에 기울어 있다.",
+    "sides": [
+     {
+      "stance": "합리적이고 필요한 정책이다",
+      "logic": "보도 사진은 원래 최소한의 보정만 허용되며, 생성형 AI 픽셀이나 AI 태그가 붙으면 독자 신뢰가 무너지므로 사전 차단이 맞다.",
+      "share": 45
+     },
+     {
+      "stance": "정책이 모호하고 과잉이다",
+      "logic": "힐링 브러시나 자동 선택처럼 오래된 도구도 AI로 분류될 수 있고, 실제 문제는 도구 전체가 아니라 생성형 기능 사용 여부인데 도구 단위 금지는 부정확하다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 74,
+   "article_read": true,
+   "kr": [
+    {
+     "t": "뉴욕타임스, 포토샵 사용금지…AI 기능에 무슨 일이",
+     "u": "https://www.bntnews.co.kr/article/view/bnt202611250009",
+     "d": "Wed, 25 Nov 2026",
+     "why": [
+      "Claude 판정"
+     ]
+    }
+   ],
+   "v": 3,
+   "comments_at": 513,
+   "model": "claude-haiku-5-5"
+  }
+ ],
  "models": [
   {
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1369,
-   "likes": 6148,
+   "trending": 1398,
+   "likes": 6230,
    "downloads": 96527,
    "topics": [
     "모델릴리스"
@@ -1198,8 +1296,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1200,
-   "likes": 1425,
+   "trending": 1231,
+   "likes": 1488,
    "downloads": 2445633,
    "topics": [
     "모델릴리스"
@@ -1211,8 +1309,8 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 547,
-   "likes": 927,
+   "trending": 505,
+   "likes": 958,
    "downloads": 15244,
    "topics": [
     "모델릴리스"
@@ -1224,8 +1322,8 @@
    "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 489,
-   "likes": 879,
+   "trending": 504,
+   "likes": 929,
    "downloads": 762491,
    "topics": [
     "모델릴리스"
@@ -1237,8 +1335,8 @@
    "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 458,
-   "likes": 1169,
+   "trending": 478,
+   "likes": 1208,
    "downloads": 189735,
    "topics": [
     "모델릴리스"
@@ -1250,8 +1348,8 @@
    "layer": "hf",
    "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-   "trending": 403,
-   "likes": 449,
+   "trending": 441,
+   "likes": 511,
    "downloads": 59366,
    "topics": [
     "모델릴리스"
@@ -1263,8 +1361,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 316,
-   "likes": 13506,
+   "trending": 332,
+   "likes": 13584,
    "downloads": 3041405,
    "topics": [
     "모델릴리스"
@@ -1276,8 +1374,8 @@
    "layer": "hf",
    "title": "apple/DepthPro2",
    "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 214,
-   "likes": 1272,
+   "trending": 218,
+   "likes": 1313,
    "downloads": 0,
    "topics": [
     "모델릴리스"
@@ -1289,8 +1387,8 @@
    "layer": "hf",
    "title": "llamaindex/OCRia-nano-1",
    "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-   "trending": 211,
-   "likes": 254,
+   "trending": 218,
+   "likes": 280,
    "downloads": 126,
    "topics": [
     "모델릴리스"
@@ -1302,8 +1400,8 @@
    "layer": "hf",
    "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-   "trending": 194,
-   "likes": 226,
+   "trending": 209,
+   "likes": 269,
    "downloads": 218,
    "topics": [
     "인프라·칩"
@@ -1318,7 +1416,7 @@
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 4151,
+   "stars": 4209,
    "topics": [
     "에이전트",
     "개발도구"
@@ -1331,7 +1429,7 @@
    "title": "R0Y00/Xbox2Windows",
    "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
    "url": "https://github.com/R0Y00/Xbox2Windows",
-   "stars": 1963,
+   "stars": 1965,
    "topics": [
     "인프라·칩"
    ],
@@ -1340,10 +1438,22 @@
   },
   {
    "layer": "github",
-   "title": "qianyiai/kurocat",
+   "title": "alesha-pro/llm.asm",
+   "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly.",
+   "url": "https://github.com/alesha-pro/llm.asm",
+   "stars": 1438,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "gh:alesha-pro/llm.asm",
+   "one_line": "순수 x86-64 NASM 어셈블리로 작성된 LLM 도구 모음으로, Qwen3-0.6B 추론 엔진, 베어메탈 부팅 OS, 실시간 점자 TUI를 갖춘 미니 GPT 학습기를 포함한다."
+  },
+  {
+   "layer": "github",
+   "title": "qianyiai/KuroCat",
    "desc": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/L",
-   "url": "https://github.com/qianyiai/kurocat",
-   "stars": 1288,
+   "url": "https://github.com/qianyiai/KuroCat",
+   "stars": 1333,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1351,21 +1461,23 @@
    ],
    "story_key": "gh:qianyiai/kurocat",
    "one_line": "KuroCat는 키보드 타이핑에 반응하는 3D·2D 데스크톱 고양이 캐릭터로, Tauri v2와 Rust 기반의 오픈소스 프로그램이며 Claude, Codex, DeepSeek 등 AI 도구와 연동하는 기능을 제공한다."
-  },
-  {
-   "layer": "github",
-   "title": "alesha-pro/llm.asm",
-   "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly.",
-   "url": "https://github.com/alesha-pro/llm.asm",
-   "stars": 1106,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "gh:alesha-pro/llm.asm",
-   "one_line": "순수 x86-64 NASM 어셈블리로 작성된 LLM 도구 모음으로, Qwen3-0.6B 추론 엔진, 베어메탈 부팅 OS, 실시간 점자 TUI를 갖춘 미니 GPT 학습기를 포함한다."
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "Quoting Jack Despain Zhou",
+   "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "at": "2026-11-26T15:09",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/26/jack-despain-zhou",
+   "link_keys": [
+    "url:tracingwoodgrains.com/p/spitting-in-the-face-of-glaude"
+   ],
+   "is_roundup": false,
+   "one_line": "Simon Willison이 인용한 Jack Despain Zhou의 글로, AI 확산으로 개인의 목소리와 개성이 사라지고 어디서나 Claude 같은 획일적 문체가 들린다고 비판한다."
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1385,6 +1497,21 @@
    ],
    "is_roundup": false,
    "one_line": "SQLite 원격 복사 도구인 sqlite3_rsync를 소개하며, 로컬 전체 복사본 없이 SSH로 데이터베이스 스냅샷을 옮기고 동기화할 수 있다는 점을 짚는다."
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "at": "2026-11-26T05:08",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/26/hn-50651685",
+   "link_keys": [
+    "hn:50647673",
+    "url:nytimes.com/2026/02/02/technology/moltbook-ai-social-media.html"
+   ],
+   "is_roundup": false,
+   "one_line": "뉴욕타임스가 사진기자에게 Photoshop의 AI 기능이 포함된 업데이트를 하지 말라고 경고했다는 소식에 대해, Willison이 자신이 겪은 NYT 촬영 경험을 덧붙인 댓글이다."
   },
   {
    "layer": "trust",
@@ -1706,56 +1833,19 @@
    ],
    "is_roundup": false,
    "one_line": "PostgreSQL 19 출시 소식으로, 대기 서버에서 쓰기 직후 읽기 일관성을 보장하는 WAIT FOR LSN 명령 추가가 핵심 기능으로 소개됨."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.38",
-   "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
-   "at": "2026-11-18T23:59",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:simonwillison.net/2026/Nov/18/llm-gemini",
-   "link_keys": [
-    "gh:simonw/llm-gemini",
-    "url:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
-    "url:static.simonwillison.net/static/2026/gemini-4-carbon-neon-hydrogen.html",
-    "url:static.simonwillison.net/static/2026/gemini-4-neon-yonkers/index.html",
-    "url:tools.simonwillison.net/markdown-svg-renderer"
-   ],
-   "is_roundup": false,
-   "one_line": "llm-gemini 0.38 릴리스 소식으로, Gemini 4 Neon 모델 추가와 복잡한 가격 체계에 대한 비판 및 펠리컨 그림 비교를 다룸."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "datasette-arrows 0.1a0",
-   "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
-   "at": "2026-11-18T17:09",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/18/datasette-arrows",
-   "link_keys": [
-    "gh:datasette/datasette-arrows",
-    "url:arrow.apache.org/docs/python/ipc.html",
-    "url:docs.datasette.io/en/latest/changelog.html",
-    "url:docs.datasette.io/en/latest/plugin_hooks.html"
-   ],
-   "is_roundup": false,
-   "one_line": "datasette-arrows 0.1a0 플러그인 출시 소식으로, Datasette에서 Apache Arrow IPC 형식의 스트리밍 내보내기를 지원하게 한 내용."
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-26 14:38",
+ "enriched_at": "2026-11-26 22:11",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 5,
-  "in": 12195,
-  "out": 1126,
+  "calls": 6,
+  "in": 41084,
+  "out": 2962,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 1,
-  "cost_usd": 0.00178
+  "items": 4,
+  "cost_usd": 0.00559
  }
 }
