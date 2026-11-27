@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-27 07:11",
+ "updated": "2026-11-27 13:52",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 15,
+  "hn": 16,
   "reddit": 0,
   "hf": 15,
   "github": 4,
@@ -17,7 +17,7 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
    "points": 433,
-   "comments": 797,
+   "comments": 798,
    "r": 1.84,
    "at": "2026-11-24",
    "topics": [],
@@ -71,9 +71,9 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 639,
-   "comments": 513,
-   "r": 0.8,
+   "points": 661,
+   "comments": 525,
+   "r": 0.79,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
@@ -122,8 +122,8 @@
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 1026,
-   "comments": 412,
+   "points": 1030,
+   "comments": 413,
    "r": 0.4,
    "at": "2026-11-24",
    "topics": [
@@ -168,9 +168,9 @@
    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
    "url": "https://news.ycombinator.com/item?id=50630809",
    "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 463,
+   "points": 466,
    "comments": 356,
-   "r": 0.77,
+   "r": 0.76,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "hn:50630809",
@@ -206,8 +206,8 @@
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 542,
-   "comments": 343,
+   "points": 551,
+   "comments": 349,
    "r": 0.63,
    "at": "2026-11-25",
    "topics": [],
@@ -245,7 +245,7 @@
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
    "points": 337,
-   "comments": 343,
+   "comments": 344,
    "r": 1.02,
    "at": "2026-11-24",
    "topics": [],
@@ -279,12 +279,50 @@
   },
   {
    "layer": "hn",
+   "title": "OpenAI may be in cost control mode",
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "discussion": "https://news.ycombinator.com/item?id=50652527",
+   "points": 307,
+   "comments": 314,
+   "r": 1.02,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
+   "summary_ko": "원문 분석은 GPT-6.2 계열(Astra, Sol)이 6.1 대비 출력 토큰과 추론 토큰을 줄여 비용 절감 튜닝된 것으로 보인다는 주장이다. 댓글에서는 비용 절감이나 IPO 앞둔 수익성 확보 때문이라는 시각이 많았고, 과금 버그 보상·사용량 축소 등 OpenAI 정책 변화를 근거로 든 이들도 많았다. 반면 효율화 자체는 나쁘지 않다거나, 벤치마크 대비 실사용 평가가 엇갈리며 Sol은 코딩에서 특히 나쁘다는 반응도 있었다. 원문의 통계 분석과 달리 실제 성능 저하 여부는 댓글에서도 결론이 나지 않았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "OpenAI의 토큰 감소가 비용 절감을 위한 성능 희생인가, 아니면 더 효율적인 모델의 정상적 진화인가",
+    "consensus": "댓글 전반은 OpenAI가 비용·수익성을 위해 모델을 조정했을 가능성이 높다고 보지만, 실제 성능 저하의 폭과 원인에 대해서는 의견이 엇갈린다.",
+    "sides": [
+     {
+      "stance": "비용 절감을 위한 튜닝이며 성능 저하가 실제로 있다",
+      "logic": "IPO 앞둔 수익성 압박, 과금 버그 이후 사용량 축소, 실사용 코딩에서 Sol이 크게 떨어진다는 체감 등을 근거로 든다.",
+      "share": 60
+     },
+     {
+      "stance": "효율화는 정상적이며 문제로 볼 근거가 부족하다",
+      "logic": "출력 토큰이 줄어도 더 똑똑해져 결론에 빨리 도달했을 수 있고, 벤치마크 파레토 프런티어에서는 오히려 우위라는 주장이다. 단일 데이터 포인트로 과장하지 말라는 입장도 있다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 76,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 314,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 449,
-   "comments": 258,
-   "r": 0.57,
+   "points": 475,
+   "comments": 263,
+   "r": 0.55,
    "at": "2026-11-26",
    "topics": [
     "모델릴리스"
@@ -328,10 +366,77 @@
   },
   {
    "layer": "hn",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "discussion": "https://news.ycombinator.com/item?id=50653477",
+   "points": 290,
+   "comments": 240,
+   "r": 0.83,
+   "at": "2026-11-26",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:techstackups.com/articles/google-workspace-ai-agents-mcp",
+   "summary_ko": "구글이 2027년 2월 1일부터 AI 에이전트가 Gmail·Drive 등 Workspace에 접근할 때 MCP 서버를 거치도록 약관을 바꾸면서, 댓글에서는 이것이 스팸 방지나 보안 명분의 우회적 통제인지, 아니면 파트너 전용 기능을 통한 대형 AI 업체 우대와 수익화인지를 두고 의심이 많았다. 특히 Gmail 발송·답장 기능이 파트너 전용이라는 점에 대한 불만이 컸고, 사용자 데이터 활용을 제한하는 것에 대해 소유권 문제를 제기하는 목소리도 있었다. 다른 쪽에서는 자체 SMTP·IMAP 연동이나 Fastmail 같은 대안으로 옮기자는 반응이 이어졌다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 구글의 MCP 의무화와 파트너 전용 도구 제한을 빅테크의 통제 강화·락인으로 보고 불신하며, Gmail 대안이나 IMAP/SMTP 등 우회 방법을 논의하는 쪽으로 기울었다."
+   },
+   "n_comments_read": 61,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 171,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "discussion": "https://news.ycombinator.com/item?id=50660180",
+   "points": 443,
+   "comments": 238,
+   "r": 0.54,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:janlukas.blog/posts/ai-self-hosting",
+   "summary_ko": "댓글들은 AI 덕분에 셀프호스팅이 다시 재미있어졌다는 데 대체로 공감한다. 많은 이가 에이전트로 홈랩을 구축·유지하고 NixOS, Ansible 같은 자동화와 결합해 개인 도구를 만든다고 밝혔다. 반면 AI가 만들어낸 '만들 수 있다'는 충동에 대한 경계, 취약점 패치 부담과 봇 트래픽 증가로 인한 노출 위험, 셀프호스팅은 원래도 쉬웠다는 반박도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI 도움으로 셀프호스팅이 더 쉽고 즐거워졌는가, 아니면 보안 부담과 위험이 더 커졌는가",
+    "consensus": "대체로 AI 에이전트 덕분에 홈랩 구축과 자동화가 쉬워져 즐겁다는 반응이 우세하며, 보안 패치와 과잉 구축에 대한 경계가 함께 언급된다.",
+    "sides": [
+     {
+      "stance": "AI 덕분에 더 쉽고 재미있어졌다",
+      "logic": "에이전트가 설정·배포·백업·업데이트를 대신해 주어 아이디어를 바로 실행할 수 있고, 학습과 실험의 문턱이 낮아졌다.",
+      "share": 70
+     },
+     {
+      "stance": "보안 부담과 노출 위험이 커져 오히려 어려워졌다",
+      "logic": "CVE 패치 속도 요구와 봇 트래픽 증가로 공개 서버 유지가 힘들어졌으니, 인터넷에 노출하지 말고 VPN 뒤에 숨기는 편이 낫다는 주장이다.",
+      "share": 20
+     }
+    ]
+   },
+   "n_comments_read": 95,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 238,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
    "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 463,
+   "points": 465,
    "comments": 217,
    "r": 0.47,
    "at": "2026-11-25",
@@ -369,9 +474,9 @@
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 287,
-   "comments": 176,
-   "r": 0.61,
+   "points": 306,
+   "comments": 184,
+   "r": 0.6,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:diseasescuredbyai.com/",
@@ -407,9 +512,9 @@
    "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
    "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
    "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 221,
+   "points": 222,
    "comments": 174,
-   "r": 0.79,
+   "r": 0.78,
    "at": "2026-11-25",
    "topics": [
     "모델릴리스"
@@ -429,35 +534,6 @@
    "kr": [],
    "v": 3,
    "comments_at": 151,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
-   "discussion": "https://news.ycombinator.com/item?id=50653477",
-   "points": 168,
-   "comments": 171,
-   "r": 1.02,
-   "at": "2026-11-26",
-   "topics": [
-    "에이전트"
-   ],
-   "story_key": "url:techstackups.com/articles/google-workspace-ai-agents-mcp",
-   "summary_ko": "구글이 2027년 2월 1일부터 AI 에이전트가 Gmail·Drive 등 Workspace에 접근할 때 MCP 서버를 거치도록 약관을 바꾸면서, 댓글에서는 이것이 스팸 방지나 보안 명분의 우회적 통제인지, 아니면 파트너 전용 기능을 통한 대형 AI 업체 우대와 수익화인지를 두고 의심이 많았다. 특히 Gmail 발송·답장 기능이 파트너 전용이라는 점에 대한 불만이 컸고, 사용자 데이터 활용을 제한하는 것에 대해 소유권 문제를 제기하는 목소리도 있었다. 다른 쪽에서는 자체 SMTP·IMAP 연동이나 Fastmail 같은 대안으로 옮기자는 반응이 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 구글의 MCP 의무화와 파트너 전용 도구 제한을 빅테크의 통제 강화·락인으로 보고 불신하며, Gmail 대안이나 IMAP/SMTP 등 우회 방법을 논의하는 쪽으로 기울었다."
-   },
-   "n_comments_read": 61,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 171,
    "model": "claude-haiku-5-5"
   },
   {
@@ -495,8 +571,8 @@
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
    "points": 76,
-   "comments": 155,
-   "r": 2.04,
+   "comments": 159,
+   "r": 2.09,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -540,7 +616,7 @@
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 224,
+   "points": 225,
    "comments": 142,
    "r": 0.63,
    "at": "2026-11-24",
@@ -577,44 +653,6 @@
    "v": 3,
    "comments_at": 125,
    "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "OpenAI may be in cost control mode",
-   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
-   "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 160,
-   "comments": 140,
-   "r": 0.88,
-   "at": "2026-11-26",
-   "topics": [],
-   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
-   "summary_ko": "댓글에서는 OpenAI가 GPT-6.2(Astra·Sol)를 비용 절감 목적으로 추론량을 줄여 튜닝했다는 분석을 두고, 비용 효율 확보를 위한 합리적 조정이라는 반응과 코딩 품질 저하를 우려하는 반응이 함께 나왔다. 다수는 OpenAI가 수익성이나 IPO 압박 때문에 비용을 줄이는 것으로 보았고, 일부는 벤치마크상 성능 유지와 실사용 체감 차이를 지적했다. 추론 토큰 감소가 효율화인지 성능 저하인지는 댓글에서도 의견이 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "GPT-6.2의 추론량 감소가 효율화로 볼 만한가, 성능 저하로 볼 만한가",
-    "consensus": "대다수 댓글은 OpenAI가 비용 절감을 위해 모델을 조정했다는 데 동의하며, 수익성과 IPO 압박 속에서 나온 결정으로 보는 분위기다.",
-    "sides": [
-     {
-      "stance": "효율화이므로 문제가 아니다",
-      "logic": "추론 토큰이 줄어도 과제를 제대로 완료하면 더 똑똑한 모델이며, 벤치마크에서 6.2가 같은 비용에 더 높은 성능을 보인다는 근거를 든다.",
-      "share": 40
-     },
-     {
-      "stance": "실사용에서는 성능이 떨어졌고 비용 절감의 부작용이다",
-      "logic": "실제 사용자 대결 데이터와 코딩 체감에서 6.1보다 나빠졌고, 벤치마크 수치는 실무 품질을 반영하지 못한다는 주장이다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 49,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 140,
-   "model": "claude-haiku-5-5"
   }
  ],
  "by_debate": [
@@ -624,8 +662,8 @@
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
    "points": 76,
-   "comments": 155,
-   "r": 2.04,
+   "comments": 159,
+   "r": 2.09,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -670,7 +708,7 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
    "discussion": "https://news.ycombinator.com/item?id=50627836",
    "points": 433,
-   "comments": 797,
+   "comments": 798,
    "r": 1.84,
    "at": "2026-11-24",
    "topics": [],
@@ -725,7 +763,7 @@
    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
    "discussion": "https://news.ycombinator.com/item?id=50630309",
    "points": 337,
-   "comments": 343,
+   "comments": 344,
    "r": 1.02,
    "at": "2026-11-24",
    "topics": [],
@@ -759,12 +797,50 @@
   },
   {
    "layer": "hn",
+   "title": "OpenAI may be in cost control mode",
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "discussion": "https://news.ycombinator.com/item?id=50652527",
+   "points": 307,
+   "comments": 314,
+   "r": 1.02,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
+   "summary_ko": "원문 분석은 GPT-6.2 계열(Astra, Sol)이 6.1 대비 출력 토큰과 추론 토큰을 줄여 비용 절감 튜닝된 것으로 보인다는 주장이다. 댓글에서는 비용 절감이나 IPO 앞둔 수익성 확보 때문이라는 시각이 많았고, 과금 버그 보상·사용량 축소 등 OpenAI 정책 변화를 근거로 든 이들도 많았다. 반면 효율화 자체는 나쁘지 않다거나, 벤치마크 대비 실사용 평가가 엇갈리며 Sol은 코딩에서 특히 나쁘다는 반응도 있었다. 원문의 통계 분석과 달리 실제 성능 저하 여부는 댓글에서도 결론이 나지 않았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "OpenAI의 토큰 감소가 비용 절감을 위한 성능 희생인가, 아니면 더 효율적인 모델의 정상적 진화인가",
+    "consensus": "댓글 전반은 OpenAI가 비용·수익성을 위해 모델을 조정했을 가능성이 높다고 보지만, 실제 성능 저하의 폭과 원인에 대해서는 의견이 엇갈린다.",
+    "sides": [
+     {
+      "stance": "비용 절감을 위한 튜닝이며 성능 저하가 실제로 있다",
+      "logic": "IPO 앞둔 수익성 압박, 과금 버그 이후 사용량 축소, 실사용 코딩에서 Sol이 크게 떨어진다는 체감 등을 근거로 든다.",
+      "share": 60
+     },
+     {
+      "stance": "효율화는 정상적이며 문제로 볼 근거가 부족하다",
+      "logic": "출력 토큰이 줄어도 더 똑똑해져 결론에 빨리 도달했을 수 있고, 벤치마크 파레토 프런티어에서는 오히려 우위라는 주장이다. 단일 데이터 포인트로 과장하지 말라는 입장도 있다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 76,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 314,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
-   "points": 168,
-   "comments": 171,
-   "r": 1.02,
+   "points": 290,
+   "comments": 240,
+   "r": 0.83,
    "at": "2026-11-26",
    "topics": [
     "에이전트"
@@ -788,50 +864,12 @@
   },
   {
    "layer": "hn",
-   "title": "OpenAI may be in cost control mode",
-   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
-   "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 160,
-   "comments": 140,
-   "r": 0.88,
-   "at": "2026-11-26",
-   "topics": [],
-   "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
-   "summary_ko": "댓글에서는 OpenAI가 GPT-6.2(Astra·Sol)를 비용 절감 목적으로 추론량을 줄여 튜닝했다는 분석을 두고, 비용 효율 확보를 위한 합리적 조정이라는 반응과 코딩 품질 저하를 우려하는 반응이 함께 나왔다. 다수는 OpenAI가 수익성이나 IPO 압박 때문에 비용을 줄이는 것으로 보았고, 일부는 벤치마크상 성능 유지와 실사용 체감 차이를 지적했다. 추론 토큰 감소가 효율화인지 성능 저하인지는 댓글에서도 의견이 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "GPT-6.2의 추론량 감소가 효율화로 볼 만한가, 성능 저하로 볼 만한가",
-    "consensus": "대다수 댓글은 OpenAI가 비용 절감을 위해 모델을 조정했다는 데 동의하며, 수익성과 IPO 압박 속에서 나온 결정으로 보는 분위기다.",
-    "sides": [
-     {
-      "stance": "효율화이므로 문제가 아니다",
-      "logic": "추론 토큰이 줄어도 과제를 제대로 완료하면 더 똑똑한 모델이며, 벤치마크에서 6.2가 같은 비용에 더 높은 성능을 보인다는 근거를 든다.",
-      "share": 40
-     },
-     {
-      "stance": "실사용에서는 성능이 떨어졌고 비용 절감의 부작용이다",
-      "logic": "실제 사용자 대결 데이터와 코딩 체감에서 6.1보다 나빠졌고, 벤치마크 수치는 실무 품질을 반영하지 못한다는 주장이다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 49,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 140,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 639,
-   "comments": 513,
-   "r": 0.8,
+   "points": 661,
+   "comments": 525,
+   "r": 0.79,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
@@ -880,9 +918,9 @@
    "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
    "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
    "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 221,
+   "points": 222,
    "comments": 174,
-   "r": 0.79,
+   "r": 0.78,
    "at": "2026-11-25",
    "topics": [
     "모델릴리스"
@@ -909,9 +947,9 @@
    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
    "url": "https://news.ycombinator.com/item?id=50630809",
    "discussion": "https://news.ycombinator.com/item?id=50630809",
-   "points": 463,
+   "points": 466,
    "comments": 356,
-   "r": 0.77,
+   "r": 0.76,
    "at": "2026-11-24",
    "topics": [],
    "story_key": "hn:50630809",
@@ -947,8 +985,8 @@
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 542,
-   "comments": 343,
+   "points": 551,
+   "comments": 349,
    "r": 0.63,
    "at": "2026-11-25",
    "topics": [],
@@ -985,7 +1023,7 @@
    "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
    "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
    "discussion": "https://news.ycombinator.com/item?id=50631210",
-   "points": 224,
+   "points": 225,
    "comments": 142,
    "r": 0.63,
    "at": "2026-11-24",
@@ -1028,9 +1066,9 @@
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 287,
-   "comments": 176,
-   "r": 0.61,
+   "points": 306,
+   "comments": 184,
+   "r": 0.6,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:diseasescuredbyai.com/",
@@ -1063,12 +1101,41 @@
   },
   {
    "layer": "hn",
+   "title": "Who in Washington owns and trades Nvidia stock",
+   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
+   "discussion": "https://news.ycombinator.com/item?id=50626861",
+   "points": 292,
+   "comments": 167,
+   "r": 0.57,
+   "at": "2026-11-24",
+   "topics": [
+    "인프라·칩"
+   ],
+   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
+   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
+   },
+   "n_comments_read": 42,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 163,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 449,
-   "comments": 258,
-   "r": 0.57,
+   "points": 475,
+   "comments": 263,
+   "r": 0.55,
    "at": "2026-11-26",
    "topics": [
     "모델릴리스"
@@ -1112,31 +1179,40 @@
   },
   {
    "layer": "hn",
-   "title": "Who in Washington owns and trades Nvidia stock",
-   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
-   "discussion": "https://news.ycombinator.com/item?id=50626861",
-   "points": 292,
-   "comments": 167,
-   "r": 0.57,
-   "at": "2026-11-24",
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "url:kadoa.com/congress/insights/trump-nvidia",
-   "summary_ko": "댓글에서는 의원·대통령의 엔비디아 주식 거래가 내부자 거래인지, 아니면 무작위 매매에 가까운지를 두고 논쟁이 이어졌다. 한편에서는 젠슨 황 복귀 전후 거래 타이밍과 의회의 주식 거래 허용 자체를 문제 삼았고, 다른 편에서는 차트상 특별한 편향이 없고 신고 지연으로 데이터도 불완전하다며 과장을 경계했다. 민주당 의원 중 앤트로픽 후원을 받은 이들을 겨냥하는 정치적 반응도 함께 나왔다.",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "discussion": "https://news.ycombinator.com/item?id=50660180",
+   "points": 443,
+   "comments": 238,
+   "r": 0.54,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:janlukas.blog/posts/ai-self-hosting",
+   "summary_ko": "댓글들은 AI 덕분에 셀프호스팅이 다시 재미있어졌다는 데 대체로 공감한다. 많은 이가 에이전트로 홈랩을 구축·유지하고 NixOS, Ansible 같은 자동화와 결합해 개인 도구를 만든다고 밝혔다. 반면 AI가 만들어낸 '만들 수 있다'는 충동에 대한 경계, 취약점 패치 부담과 봇 트래픽 증가로 인한 노출 위험, 셀프호스팅은 원래도 쉬웠다는 반박도 함께 나왔다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 의회 주식 거래 규제 필요성에 공감하면서도, 이 데이터만으로는 내부자 거래를 단정하기 어렵다는 회의적 입장이다."
+    "split": true,
+    "axis": "AI 도움으로 셀프호스팅이 더 쉽고 즐거워졌는가, 아니면 보안 부담과 위험이 더 커졌는가",
+    "consensus": "대체로 AI 에이전트 덕분에 홈랩 구축과 자동화가 쉬워져 즐겁다는 반응이 우세하며, 보안 패치와 과잉 구축에 대한 경계가 함께 언급된다.",
+    "sides": [
+     {
+      "stance": "AI 덕분에 더 쉽고 재미있어졌다",
+      "logic": "에이전트가 설정·배포·백업·업데이트를 대신해 주어 아이디어를 바로 실행할 수 있고, 학습과 실험의 문턱이 낮아졌다.",
+      "share": 70
+     },
+     {
+      "stance": "보안 부담과 노출 위험이 커져 오히려 어려워졌다",
+      "logic": "CVE 패치 속도 요구와 봇 트래픽 증가로 공개 서버 유지가 힘들어졌으니, 인터넷에 노출하지 말고 VPN 뒤에 숨기는 편이 낫다는 주장이다.",
+      "share": 20
+     }
+    ]
    },
-   "n_comments_read": 42,
+   "n_comments_read": 95,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 163,
+   "comments_at": 238,
    "model": "claude-haiku-5-5"
   },
   {
@@ -1144,7 +1220,7 @@
    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
    "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 463,
+   "points": 465,
    "comments": 217,
    "r": 0.47,
    "at": "2026-11-25",
@@ -1182,8 +1258,8 @@
    "title": "LLM agents work for their parent companies, not for you",
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "discussion": "https://news.ycombinator.com/item?id=50627340",
-   "points": 1026,
-   "comments": 412,
+   "points": 1030,
+   "comments": 413,
    "r": 0.4,
    "at": "2026-11-24",
    "topics": [
@@ -1231,9 +1307,9 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 639,
-   "comments": 513,
-   "r": 0.8,
+   "points": 661,
+   "comments": 525,
+   "r": 0.79,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
@@ -1283,8 +1359,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1398,
-   "likes": 6230,
+   "trending": 1416,
+   "likes": 6289,
    "downloads": 96527,
    "topics": [
     "모델릴리스"
@@ -1296,8 +1372,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1231,
-   "likes": 1488,
+   "trending": 1248,
+   "likes": 1508,
    "downloads": 2445633,
    "topics": [
     "모델릴리스"
@@ -1307,23 +1383,10 @@
   },
   {
    "layer": "hf",
-   "title": "inworld/voice-isolator",
-   "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 505,
-   "likes": 958,
-   "downloads": 15244,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:inworld/voice-isolator",
-   "one_line": "inworld/voice-isolator는 Inworld AI가 공개한 음성 분리 모델로, 잡음 속에서 사람의 목소리만 남기는 용도로 쓰인다."
-  },
-  {
-   "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 504,
-   "likes": 929,
+   "trending": 514,
+   "likes": 944,
    "downloads": 762491,
    "topics": [
     "모델릴리스"
@@ -1335,8 +1398,8 @@
    "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 478,
-   "likes": 1208,
+   "trending": 495,
+   "likes": 1228,
    "downloads": 189735,
    "topics": [
     "모델릴리스"
@@ -1346,10 +1409,23 @@
   },
   {
    "layer": "hf",
+   "title": "inworld/voice-isolator",
+   "url": "https://huggingface.co/inworld/voice-isolator",
+   "trending": 479,
+   "likes": 971,
+   "downloads": 15244,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:inworld/voice-isolator",
+   "one_line": "inworld/voice-isolator는 Inworld AI가 공개한 음성 분리 모델로, 잡음 속에서 사람의 목소리만 남기는 용도로 쓰인다."
+  },
+  {
+   "layer": "hf",
    "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-   "trending": 441,
-   "likes": 511,
+   "trending": 467,
+   "likes": 538,
    "downloads": 59366,
    "topics": [
     "모델릴리스"
@@ -1362,7 +1438,7 @@
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
    "trending": 332,
-   "likes": 13584,
+   "likes": 13609,
    "downloads": 3041405,
    "topics": [
     "모델릴리스"
@@ -1372,23 +1448,10 @@
   },
   {
    "layer": "hf",
-   "title": "apple/DepthPro2",
-   "url": "https://huggingface.co/apple/DepthPro2",
-   "trending": 218,
-   "likes": 1313,
-   "downloads": 0,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:apple/depthpro2",
-   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
-  },
-  {
-   "layer": "hf",
    "title": "llamaindex/OCRia-nano-1",
    "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-   "trending": 218,
-   "likes": 280,
+   "trending": 225,
+   "likes": 287,
    "downloads": 126,
    "topics": [
     "모델릴리스"
@@ -1400,14 +1463,27 @@
    "layer": "hf",
    "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-   "trending": 209,
-   "likes": 269,
+   "trending": 224,
+   "likes": 285,
    "downloads": 218,
    "topics": [
     "인프라·칩"
    ],
    "story_key": "hf:nvidia/nemotron-labs-image-30b-a3b",
    "one_line": "NVIDIA가 공개한 Nemotron-Labs-Image-30B-A3B는 이미지 이해를 다루는 약 300억 파라미터 규모의 모델로 보이나, 세부 사양은 확인이 필요하다."
+  },
+  {
+   "layer": "hf",
+   "title": "apple/DepthPro2",
+   "url": "https://huggingface.co/apple/DepthPro2",
+   "trending": 216,
+   "likes": 1324,
+   "downloads": 0,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:apple/depthpro2",
+   "one_line": "Apple이 공개한 단안 깊이 추정 모델 DepthPro의 후속으로 알려진 이름이나, 구체적인 구조와 성능 정보는 확인되지 않는다."
   }
  ],
  "new_repos": [
@@ -1416,7 +1492,7 @@
    "title": "EL4CTEO/fast-anything",
    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the sa",
    "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 4209,
+   "stars": 4283,
    "topics": [
     "에이전트",
     "개발도구"
@@ -1426,22 +1502,10 @@
   },
   {
    "layer": "github",
-   "title": "R0Y00/Xbox2Windows",
-   "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
-   "url": "https://github.com/R0Y00/Xbox2Windows",
-   "stars": 1965,
-   "topics": [
-    "인프라·칩"
-   ],
-   "story_key": "gh:r0y00/xbox2windows",
-   "one_line": "Xbox Series X|S 소프트웨어를 x64 Windows에서 실행하기 위한 정적 재컴파일 연구 프로젝트로, 전체 게임 구동은 아직 검증되지 않았다."
-  },
-  {
-   "layer": "github",
    "title": "alesha-pro/llm.asm",
    "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly.",
    "url": "https://github.com/alesha-pro/llm.asm",
-   "stars": 1438,
+   "stars": 1652,
    "topics": [
     "모델릴리스"
    ],
@@ -1453,7 +1517,7 @@
    "title": "qianyiai/KuroCat",
    "desc": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/L",
    "url": "https://github.com/qianyiai/KuroCat",
-   "stars": 1333,
+   "stars": 1494,
    "topics": [
     "모델릴리스",
     "에이전트",
@@ -1461,6 +1525,19 @@
    ],
    "story_key": "gh:qianyiai/kurocat",
    "one_line": "KuroCat는 키보드 타이핑에 반응하는 3D·2D 데스크톱 고양이 캐릭터로, Tauri v2와 Rust 기반의 오픈소스 프로그램이며 Claude, Codex, DeepSeek 등 AI 도구와 연동하는 기능을 제공한다."
+  },
+  {
+   "layer": "github",
+   "title": "nexu-io/opengame",
+   "desc": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full",
+   "url": "https://github.com/nexu-io/opengame",
+   "stars": 1280,
+   "topics": [
+    "모델릴리스",
+    "에이전트"
+   ],
+   "story_key": "gh:nexu-io/opengame",
+   "one_line": "nexu-io/opengame은 여러 AI 코딩 에이전트를 게임 개발에 활용하도록 돕는 도구로, 설명에 따르면 100개 이상의 게임을 리믹스할 수 있다고 합니다. 자세한 기능은 저장소 설명만으로는 확인하기 어렵습니다."
   }
  ],
  "trust_recent": [
@@ -1836,16 +1913,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-26 22:11",
+ "enriched_at": "2026-11-27 04:53",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 6,
-  "in": 41084,
-  "out": 2962,
+  "calls": 3,
+  "in": 24684,
+  "out": 1646,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 4,
-  "cost_usd": 0.00559
+  "items": 2,
+  "cost_usd": 0.00329
  }
 }
