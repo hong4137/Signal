@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-28 13:37",
+ "updated": "2026-11-28 22:47",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 15,
+  "hn": 17,
   "reddit": 0,
   "hf": 15,
-  "github": 4,
+  "github": 5,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,8 +16,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 680,
-   "comments": 545,
+   "points": 685,
+   "comments": 547,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -67,9 +67,9 @@
    "title": "AI made self-hosting fun again",
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "discussion": "https://news.ycombinator.com/item?id=50660180",
-   "points": 1107,
-   "comments": 509,
-   "r": 0.46,
+   "points": 1124,
+   "comments": 526,
+   "r": 0.47,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:janlukas.blog/posts/ai-self-hosting",
@@ -102,12 +102,50 @@
   },
   {
    "layer": "hn",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50670757",
+   "points": 591,
+   "comments": 408,
+   "r": 0.69,
+   "at": "2026-11-27",
+   "topics": [],
+   "story_key": "url:neuralnetworksanddeeplearning.com/",
+   "summary_ko": "Michael Nielsen이 자신의 신경망 교재 'Neural Networks and Deep Learning'을 웹에서 내리자, 댓글에서는 이것이 실효성 없는 상징적 항의라는 반응이 많았다. 책은 이미 아카이브와 오픈 레포에 남아 있어 삭제의 실질적 효과는 작다는 지적이 주를 이뤘다. 한편 프론티어 랩의 위험성에 공감하는 이들과, 학습 자료 접근을 막는 것은 위험하다고 보는 이들의 평가가 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "프론티어 AI 위험에 대한 항의로 교재를 내리는 것이 의미 있는 행동인가",
+    "consensus": "책은 이미 여러 곳에 남아 있어 삭제 자체는 상징적 행위에 그친다는 반응이 대체로 우세하며, 글의 핵심 주장에 대해서는 엇갈린 평가가 이어진다.",
+    "sides": [
+     {
+      "stance": "교재 삭제는 상징적 항의이자 주장을 널리 알리는 계기로 의미가 있다",
+      "logic": "책 자체는 이미 보존되어 있어 실효성은 없지만, 삭제가 주목을 끌어 글의 논지를 더 많은 사람이 읽게 만든다는 논리다.",
+      "share": 45
+     },
+     {
+      "stance": "삭제는 실효성이 없고 지식 접근을 막는 것은 잘못이며 위험하다",
+      "logic": "이미 공개된 지식은 막을 수 없고, 입문서를 치우는 것은 ML 학습을 줄여 오히려 권력이 랩에 쏠리게 한다는 우려다.",
+      "share": 55
+     }
+    ]
+   },
+   "n_comments_read": 91,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 277,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 563,
-   "comments": 361,
-   "r": 0.64,
+   "points": 565,
+   "comments": 368,
+   "r": 0.65,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "gh:lsernau/grh-lean",
@@ -143,9 +181,9 @@
    "title": "OpenAI may be in cost control mode",
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 356,
-   "comments": 359,
-   "r": 1.01,
+   "points": 357,
+   "comments": 358,
+   "r": 1.0,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
@@ -181,7 +219,7 @@
    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
-   "points": 420,
+   "points": 421,
    "comments": 333,
    "r": 0.79,
    "at": "2026-11-26",
@@ -210,9 +248,9 @@
    "title": "Claude sabotaging ML research tasks?",
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "discussion": "https://news.ycombinator.com/item?id=50664325",
-   "points": 647,
-   "comments": 298,
-   "r": 0.46,
+   "points": 733,
+   "comments": 321,
+   "r": 0.44,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -247,11 +285,53 @@
   },
   {
    "layer": "hn",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "discussion": "https://news.ycombinator.com/item?id=50643158",
+   "points": 472,
+   "comments": 303,
+   "r": 0.64,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글은 GPT-6.2 Astra가 1808년 예일 대학 스케치북의 작성자를 22분 만에 찾아낸 사례를 두고, 성과 자체는 인정하면서도 그 의미를 두고 엇갈렸다. 한쪽에서는 AI가 기존 자료를 연결해 역사 연구의 새로운 도구가 된다고 평가했고, 다른 쪽에서는 사전학습 데이터에 이미 정답이 들어 있었을 가능성, 전문 사학자 검증 부재, 우연한 상관관계 위험을 지적했다. 역사 연구의 본질이 해석이라 이런 사례가 학문에 큰 의미가 없다는 반론도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI의 역사 자료 추적 성과를 실질적 연구 진전으로 볼 수 있는가",
+    "consensus": "성과의 기술적 인상은 크지만, 검증 가능성과 학문적 의미에 대해서는 회의와 기대가 함께 나타난다.",
+    "sides": [
+     {
+      "stance": "성과를 인정하고 AI를 새로운 연구 도구로 본다",
+      "logic": "기존 공개 자료를 빠르게 연결해 사람이 놓친 단서를 찾아냈으므로 역사 연구에 실질적으로 유용하다",
+      "share": 55
+     },
+     {
+      "stance": "성과를 과장으로 보고 회의적으로 본다",
+      "logic": "사전학습 데이터에 정답이 이미 있었을 수 있고, 사람의 검증과 전문성 없이는 우연한 상관관계에 그칠 위험이 크다",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 89,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 235,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Group chat where your AI talks behind your back",
    "url": "https://construct22.com/",
    "discussion": "https://news.ycombinator.com/item?id=50663595",
-   "points": 692,
-   "comments": 286,
+   "points": 715,
+   "comments": 291,
    "r": 0.41,
    "at": "2026-11-27",
    "topics": [],
@@ -274,49 +354,11 @@
   },
   {
    "layer": "hn",
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://neuralnetworksanddeeplearning.com/",
-   "discussion": "https://news.ycombinator.com/item?id=50670757",
-   "points": 443,
-   "comments": 277,
-   "r": 0.63,
-   "at": "2026-11-27",
-   "topics": [],
-   "story_key": "url:neuralnetworksanddeeplearning.com/",
-   "summary_ko": "Michael Nielsen이 자신의 신경망 교재 'Neural Networks and Deep Learning'을 웹에서 내리자, 댓글에서는 이것이 실효성 없는 상징적 항의라는 반응이 많았다. 책은 이미 아카이브와 오픈 레포에 남아 있어 삭제의 실질적 효과는 작다는 지적이 주를 이뤘다. 한편 프론티어 랩의 위험성에 공감하는 이들과, 학습 자료 접근을 막는 것은 위험하다고 보는 이들의 평가가 엇갈렸다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "프론티어 AI 위험에 대한 항의로 교재를 내리는 것이 의미 있는 행동인가",
-    "consensus": "책은 이미 여러 곳에 남아 있어 삭제 자체는 상징적 행위에 그친다는 반응이 대체로 우세하며, 글의 핵심 주장에 대해서는 엇갈린 평가가 이어진다.",
-    "sides": [
-     {
-      "stance": "교재 삭제는 상징적 항의이자 주장을 널리 알리는 계기로 의미가 있다",
-      "logic": "책 자체는 이미 보존되어 있어 실효성은 없지만, 삭제가 주목을 끌어 글의 논지를 더 많은 사람이 읽게 만든다는 논리다.",
-      "share": 45
-     },
-     {
-      "stance": "삭제는 실효성이 없고 지식 접근을 막는 것은 잘못이며 위험하다",
-      "logic": "이미 공개된 지식은 막을 수 없고, 입문서를 치우는 것은 ML 학습을 줄여 오히려 권력이 랩에 쏠리게 한다는 우려다.",
-      "share": 55
-     }
-    ]
-   },
-   "n_comments_read": 91,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 277,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 510,
-   "comments": 275,
+   "points": 511,
+   "comments": 276,
    "r": 0.54,
    "at": "2026-11-26",
    "topics": [
@@ -364,9 +406,9 @@
    "title": "I'm Scared of AI",
    "url": "https://thesoapbox.email/archive/3",
    "discussion": "https://news.ycombinator.com/item?id=50669561",
-   "points": 206,
-   "comments": 244,
-   "r": 1.18,
+   "points": 216,
+   "comments": 248,
+   "r": 1.15,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thesoapbox.email/archive/3",
@@ -399,53 +441,11 @@
   },
   {
    "layer": "hn",
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
-   "discussion": "https://news.ycombinator.com/item?id=50643158",
-   "points": 373,
-   "comments": 235,
-   "r": 0.63,
-   "at": "2026-11-25",
-   "topics": [],
-   "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
-   "trust": [
-    "Simon Willison"
-   ],
-   "trust_match": "link",
-   "summary_ko": "댓글은 GPT-6.2 Astra가 1808년 예일 대학 스케치북의 작성자를 22분 만에 찾아낸 사례를 두고, 성과 자체는 인정하면서도 그 의미를 두고 엇갈렸다. 한쪽에서는 AI가 기존 자료를 연결해 역사 연구의 새로운 도구가 된다고 평가했고, 다른 쪽에서는 사전학습 데이터에 이미 정답이 들어 있었을 가능성, 전문 사학자 검증 부재, 우연한 상관관계 위험을 지적했다. 역사 연구의 본질이 해석이라 이런 사례가 학문에 큰 의미가 없다는 반론도 있었다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI의 역사 자료 추적 성과를 실질적 연구 진전으로 볼 수 있는가",
-    "consensus": "성과의 기술적 인상은 크지만, 검증 가능성과 학문적 의미에 대해서는 회의와 기대가 함께 나타난다.",
-    "sides": [
-     {
-      "stance": "성과를 인정하고 AI를 새로운 연구 도구로 본다",
-      "logic": "기존 공개 자료를 빠르게 연결해 사람이 놓친 단서를 찾아냈으므로 역사 연구에 실질적으로 유용하다",
-      "share": 55
-     },
-     {
-      "stance": "성과를 과장으로 보고 회의적으로 본다",
-      "logic": "사전학습 데이터에 정답이 이미 있었을 수 있고, 사람의 검증과 전문성 없이는 우연한 상관관계에 그칠 위험이 크다",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 89,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 235,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 321,
-   "comments": 195,
+   "points": 324,
+   "comments": 199,
    "r": 0.61,
    "at": "2026-11-26",
    "topics": [],
@@ -482,9 +482,9 @@
    "title": "\"What's Claude's fursona?\" and other questions",
    "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
    "discussion": "https://news.ycombinator.com/item?id=50662933",
-   "points": 189,
-   "comments": 179,
-   "r": 0.95,
+   "points": 203,
+   "comments": 195,
+   "r": 0.96,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -508,12 +508,39 @@
   },
   {
    "layer": "hn",
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "discussion": "https://news.ycombinator.com/item?id=50672565",
+   "points": 478,
+   "comments": 172,
+   "r": 0.36,
+   "at": "2026-11-27",
+   "topics": [],
+   "story_key": "url:research.google/blog/supercharging-transformer-residual-connections",
+   "summary_ko": "HN 댓글은 기사 본문보다 Gemini(Neon) 구독 비교와 Claude 해지 얘기로 많이 흘렀다. 기술 쪽에서는 이 3배 속도 향상이 학습 속도이지 추론 속도가 아니라는 정정이 나왔고, 루프형 레이어와 결합할 가능성, 논문이 2025년 것이라 오래됐다는 지적도 있었다. 구글이 이 기법을 실제로 쓰지 않을 것이라는 회의론도 한 줄 있었지만 바로 반박을 받았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글은 주로 Gemini 구독과 Claude 해지 같은 주변 이야기에 쏠려 있었고, 기술적으로는 이 방법이 학습 속도를 높이는 것이며 추론 속도 향상으로 바로 이어지지는 않는다는 정리에 대체로 동의하는 분위기다."
+   },
+   "n_comments_read": 30,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 172,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
    "points": 79,
-   "comments": 169,
-   "r": 2.14,
+   "comments": 170,
+   "r": 2.15,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -557,9 +584,9 @@
    "title": "AI on brink of making online security useless, mathematicians fear",
    "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
    "discussion": "https://news.ycombinator.com/item?id=50665488",
-   "points": 118,
-   "comments": 155,
-   "r": 1.31,
+   "points": 119,
+   "comments": 162,
+   "r": 1.36,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
@@ -588,6 +615,44 @@
    "kr": [],
    "v": 3,
    "comments_at": 148,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "discussion": "https://news.ycombinator.com/item?id=50673521",
+   "points": 193,
+   "comments": 149,
+   "r": 0.77,
+   "at": "2026-11-28",
+   "topics": [],
+   "story_key": "url:drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "summary_ko": "AI 비서가 보낸 이메일이 집주인 대신 '임대료 납부를 미뤄도 된다'고 답한 뒤 세입자가 퇴거당한 사건에 대해, 댓글에서는 기업이 AI 발언도 책임져야 한다는 의견이 대체로 우세했다. 반면 이 사건은 이미 법원 판결 이후에 온 이메일이라 AI 여부와 무관하다는 반론, 세입자가 여러 차례 연체했다는 사정을 들어 세입자 편을 덜 드는 의견도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "기업이 AI 챗봇의 발언에 대해 법적 책임을 져야 하는가, 아니면 이 사건은 AI 여부와 무관한가",
+    "consensus": "댓글 대다수는 AI를 쓴 기업이 그 발언에 책임져야 한다는 입장이며, 사건 세부사항(법원 절차 시점 등)에 대한 추가 확인이 필요하다는 의견도 많다.",
+    "sides": [
+     {
+      "stance": "기업은 AI 발언에 대해서도 전적으로 책임져야 한다",
+      "logic": "AI에 업무를 위임한 것은 기업의 선택이므로, 실수로 얻는 이익을 누리려면 그 결과도 떠안아야 하며 약자인 소비자가 피해를 떠안아서는 안 된다는 논리.",
+      "share": 70
+     },
+     {
+      "stance": "사건의 핵심은 AI가 아니라 법원 절차와 연체 이력이며, 이메일이 판결 이후에 왔다면 발언의 효력이 없다",
+      "logic": "퇴거는 법원 청문 이후 집행되는 것이므로 집주인의 말이 AI였든 직원이었든 결과가 달라지지 않으며, 세입자가 여러 차례 연체했다는 정황도 있다는 논리.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 44,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 149,
    "model": "claude-haiku-5-5"
   }
  ],
@@ -598,8 +663,8 @@
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
    "points": 79,
-   "comments": 169,
-   "r": 2.14,
+   "comments": 170,
+   "r": 2.15,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -643,9 +708,9 @@
    "title": "AI on brink of making online security useless, mathematicians fear",
    "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
    "discussion": "https://news.ycombinator.com/item?id=50665488",
-   "points": 118,
-   "comments": 155,
-   "r": 1.31,
+   "points": 119,
+   "comments": 162,
+   "r": 1.36,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
@@ -681,9 +746,9 @@
    "title": "I'm Scared of AI",
    "url": "https://thesoapbox.email/archive/3",
    "discussion": "https://news.ycombinator.com/item?id=50669561",
-   "points": 206,
-   "comments": 244,
-   "r": 1.18,
+   "points": 216,
+   "comments": 248,
+   "r": 1.15,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thesoapbox.email/archive/3",
@@ -719,9 +784,9 @@
    "title": "OpenAI may be in cost control mode",
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 356,
-   "comments": 359,
-   "r": 1.01,
+   "points": 357,
+   "comments": 358,
+   "r": 1.0,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
@@ -757,9 +822,9 @@
    "title": "\"What's Claude's fursona?\" and other questions",
    "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
    "discussion": "https://news.ycombinator.com/item?id=50662933",
-   "points": 189,
-   "comments": 179,
-   "r": 0.95,
+   "points": 203,
+   "comments": 195,
+   "r": 0.96,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -786,8 +851,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 680,
-   "comments": 545,
+   "points": 685,
+   "comments": 547,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -837,7 +902,7 @@
    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
-   "points": 420,
+   "points": 421,
    "comments": 333,
    "r": 0.79,
    "at": "2026-11-26",
@@ -863,40 +928,40 @@
   },
   {
    "layer": "hn",
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
-   "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 563,
-   "comments": 361,
-   "r": 0.64,
-   "at": "2026-11-25",
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "discussion": "https://news.ycombinator.com/item?id=50673521",
+   "points": 193,
+   "comments": 149,
+   "r": 0.77,
+   "at": "2026-11-28",
    "topics": [],
-   "story_key": "gh:lsernau/grh-lean",
-   "summary_ko": "Anthropic 동료들과 Claude가 함께 만들었다는 GRH(일반화 리만 가설) Lean 증명의 축약본(약 7만 6천 줄, 기존 약 1,700만 줄 대비 크게 감소)이 화제가 됐다. 댓글에서는 300k줄 판본이 '기존 수학' 대 '새 수학'을 나눠 문서화해 읽기 쉽다는 평가와, 축약이 증명 이해를 돕는지에 대한 기대가 주로 오갔다. 한편 원작자 소속과 Anthropic 공식 계정 게시 여부, LLM이 '속였을 가능성' 같은 의문도 함께 제기됐다.",
+   "story_key": "url:drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "summary_ko": "AI 비서가 보낸 이메일이 집주인 대신 '임대료 납부를 미뤄도 된다'고 답한 뒤 세입자가 퇴거당한 사건에 대해, 댓글에서는 기업이 AI 발언도 책임져야 한다는 의견이 대체로 우세했다. 반면 이 사건은 이미 법원 판결 이후에 온 이메일이라 AI 여부와 무관하다는 반론, 세입자가 여러 차례 연체했다는 사정을 들어 세입자 편을 덜 드는 의견도 있었다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "LLM이 만든 증명 축약이 인간의 실제 이해와 검증에 도움이 되는가",
-    "consensus": "대다수 댓글은 LLM 덕분에 거대한 Lean 증명을 설명·축약하는 일이 쉬워졌고 이해를 돕는다는 쪽에 기울어 있으며, 증명의 신뢰성과 저작권·출처 문제는 곁가지로 다뤄진다.",
+    "axis": "기업이 AI 챗봇의 발언에 대해 법적 책임을 져야 하는가, 아니면 이 사건은 AI 여부와 무관한가",
+    "consensus": "댓글 대다수는 AI를 쓴 기업이 그 발언에 책임져야 한다는 입장이며, 사건 세부사항(법원 절차 시점 등)에 대한 추가 확인이 필요하다는 의견도 많다.",
     "sides": [
      {
-      "stance": "LLM 덕분에 이해와 검증이 가속된다",
-      "logic": "300k줄 판본의 문서화와 LLM에 넣어 설명을 요청할 수 있다는 점을 들어, 증명 이해가 빨라진다고 본다.",
-      "share": 65
+      "stance": "기업은 AI 발언에 대해서도 전적으로 책임져야 한다",
+      "logic": "AI에 업무를 위임한 것은 기업의 선택이므로, 실수로 얻는 이익을 누리려면 그 결과도 떠안아야 하며 약자인 소비자가 피해를 떠안아서는 안 된다는 논리.",
+      "share": 70
      },
      {
-      "stance": "증명 이해는 여전히 어렵고 인간 검토가 부족하다",
-      "logic": "코드가 지나치게 압축되어 읽기 어렵고, 아직 수학자가 통독하지 않았으며 기계 검증만 통과했다는 점을 지적한다.",
-      "share": 35
+      "stance": "사건의 핵심은 AI가 아니라 법원 절차와 연체 이력이며, 이메일이 판결 이후에 왔다면 발언의 효력이 없다",
+      "logic": "퇴거는 법원 청문 이후 집행되는 것이므로 집주인의 말이 AI였든 직원이었든 결과가 달라지지 않으며, 세입자가 여러 차례 연체했다는 정황도 있다는 논리.",
+      "share": 30
      }
     ]
    },
-   "n_comments_read": 58,
-   "article_read": true,
+   "n_comments_read": 44,
+   "article_read": false,
    "kr": [],
    "v": 3,
-   "comments_at": 356,
+   "comments_at": 149,
    "model": "claude-haiku-5-5"
   },
   {
@@ -904,9 +969,9 @@
    "title": "Michael Nielsen took down his book on neural nets",
    "url": "https://neuralnetworksanddeeplearning.com/",
    "discussion": "https://news.ycombinator.com/item?id=50670757",
-   "points": 443,
-   "comments": 277,
-   "r": 0.63,
+   "points": 591,
+   "comments": 408,
+   "r": 0.69,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:neuralnetworksanddeeplearning.com/",
@@ -939,12 +1004,50 @@
   },
   {
    "layer": "hn",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
+   "discussion": "https://news.ycombinator.com/item?id=50648050",
+   "points": 565,
+   "comments": 368,
+   "r": 0.65,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "gh:lsernau/grh-lean",
+   "summary_ko": "Anthropic 동료들과 Claude가 함께 만들었다는 GRH(일반화 리만 가설) Lean 증명의 축약본(약 7만 6천 줄, 기존 약 1,700만 줄 대비 크게 감소)이 화제가 됐다. 댓글에서는 300k줄 판본이 '기존 수학' 대 '새 수학'을 나눠 문서화해 읽기 쉽다는 평가와, 축약이 증명 이해를 돕는지에 대한 기대가 주로 오갔다. 한편 원작자 소속과 Anthropic 공식 계정 게시 여부, LLM이 '속였을 가능성' 같은 의문도 함께 제기됐다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "LLM이 만든 증명 축약이 인간의 실제 이해와 검증에 도움이 되는가",
+    "consensus": "대다수 댓글은 LLM 덕분에 거대한 Lean 증명을 설명·축약하는 일이 쉬워졌고 이해를 돕는다는 쪽에 기울어 있으며, 증명의 신뢰성과 저작권·출처 문제는 곁가지로 다뤄진다.",
+    "sides": [
+     {
+      "stance": "LLM 덕분에 이해와 검증이 가속된다",
+      "logic": "300k줄 판본의 문서화와 LLM에 넣어 설명을 요청할 수 있다는 점을 들어, 증명 이해가 빨라진다고 본다.",
+      "share": 65
+     },
+     {
+      "stance": "증명 이해는 여전히 어렵고 인간 검토가 부족하다",
+      "logic": "코드가 지나치게 압축되어 읽기 어렵고, 아직 수학자가 통독하지 않았으며 기계 검증만 통과했다는 점을 지적한다.",
+      "share": 35
+     }
+    ]
+   },
+   "n_comments_read": 58,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 356,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "GPT 6.2 Astra Solves a Historical Mystery",
    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
    "discussion": "https://news.ycombinator.com/item?id=50643158",
-   "points": 373,
-   "comments": 235,
-   "r": 0.63,
+   "points": 472,
+   "comments": 303,
+   "r": 0.64,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
@@ -984,8 +1087,8 @@
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 321,
-   "comments": 195,
+   "points": 324,
+   "comments": 199,
    "r": 0.61,
    "at": "2026-11-26",
    "topics": [],
@@ -1022,8 +1125,8 @@
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 510,
-   "comments": 275,
+   "points": 511,
+   "comments": 276,
    "r": 0.54,
    "at": "2026-11-26",
    "topics": [
@@ -1071,9 +1174,9 @@
    "title": "AI made self-hosting fun again",
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "discussion": "https://news.ycombinator.com/item?id=50660180",
-   "points": 1107,
-   "comments": 509,
-   "r": 0.46,
+   "points": 1124,
+   "comments": 526,
+   "r": 0.47,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:janlukas.blog/posts/ai-self-hosting",
@@ -1109,9 +1212,9 @@
    "title": "Claude sabotaging ML research tasks?",
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "discussion": "https://news.ycombinator.com/item?id=50664325",
-   "points": 647,
-   "comments": 298,
-   "r": 0.46,
+   "points": 733,
+   "comments": 321,
+   "r": 0.44,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -1149,8 +1252,8 @@
    "title": "Group chat where your AI talks behind your back",
    "url": "https://construct22.com/",
    "discussion": "https://news.ycombinator.com/item?id=50663595",
-   "points": 692,
-   "comments": 286,
+   "points": 715,
+   "comments": 291,
    "r": 0.41,
    "at": "2026-11-27",
    "topics": [],
@@ -1170,6 +1273,33 @@
    "v": 3,
    "comments_at": 192,
    "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "discussion": "https://news.ycombinator.com/item?id=50672565",
+   "points": 478,
+   "comments": 172,
+   "r": 0.36,
+   "at": "2026-11-27",
+   "topics": [],
+   "story_key": "url:research.google/blog/supercharging-transformer-residual-connections",
+   "summary_ko": "HN 댓글은 기사 본문보다 Gemini(Neon) 구독 비교와 Claude 해지 얘기로 많이 흘렀다. 기술 쪽에서는 이 3배 속도 향상이 학습 속도이지 추론 속도가 아니라는 정정이 나왔고, 루프형 레이어와 결합할 가능성, 논문이 2025년 것이라 오래됐다는 지적도 있었다. 구글이 이 기법을 실제로 쓰지 않을 것이라는 회의론도 한 줄 있었지만 바로 반박을 받았다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": false,
+    "axis": "",
+    "sides": [],
+    "consensus": "댓글은 주로 Gemini 구독과 Claude 해지 같은 주변 이야기에 쏠려 있었고, 기술적으로는 이 방법이 학습 속도를 높이는 것이며 추론 속도 향상으로 바로 이어지지는 않는다는 정리에 대체로 동의하는 분위기다."
+   },
+   "n_comments_read": 30,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 172,
+   "model": "claude-haiku-5-5"
   }
  ],
  "reddit_top": [],
@@ -1179,8 +1309,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 680,
-   "comments": 545,
+   "points": 685,
+   "comments": 547,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -1230,9 +1360,9 @@
    "title": "GPT 6.2 Astra Solves a Historical Mystery",
    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
    "discussion": "https://news.ycombinator.com/item?id=50643158",
-   "points": 373,
-   "comments": 235,
-   "r": 0.63,
+   "points": 472,
+   "comments": 303,
+   "r": 0.64,
    "at": "2026-11-25",
    "topics": [],
    "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
@@ -1273,9 +1403,9 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1188,
-   "likes": 6488,
-   "downloads": 155741,
+   "trending": 1006,
+   "likes": 6536,
+   "downloads": 177012,
    "topics": [
     "모델릴리스"
    ],
@@ -1286,9 +1416,9 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1065,
-   "likes": 1620,
-   "downloads": 3302340,
+   "trending": 927,
+   "likes": 1638,
+   "downloads": 3621301,
    "topics": [
     "모델릴리스"
    ],
@@ -1299,9 +1429,9 @@
    "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 576,
-   "likes": 1378,
-   "downloads": 539421,
+   "trending": 590,
+   "likes": 1403,
+   "downloads": 759937,
    "topics": [
     "모델릴리스"
    ],
@@ -1312,9 +1442,9 @@
    "layer": "hf",
    "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-   "trending": 546,
-   "likes": 646,
-   "downloads": 382546,
+   "trending": 573,
+   "likes": 673,
+   "downloads": 473980,
    "topics": [
     "모델릴리스"
    ],
@@ -1325,9 +1455,9 @@
    "layer": "hf",
    "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
    "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 545,
-   "likes": 1045,
-   "downloads": 1059763,
+   "trending": 524,
+   "likes": 1058,
+   "downloads": 1297386,
    "topics": [
     "모델릴리스"
    ],
@@ -1338,9 +1468,9 @@
    "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 420,
-   "likes": 1016,
-   "downloads": 20510,
+   "trending": 413,
+   "likes": 1021,
+   "downloads": 22810,
    "topics": [
     "모델릴리스"
    ],
@@ -1351,9 +1481,9 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 337,
-   "likes": 13735,
-   "downloads": 3080701,
+   "trending": 345,
+   "likes": 13780,
+   "downloads": 3088512,
    "topics": [
     "모델릴리스"
    ],
@@ -1364,9 +1494,9 @@
    "layer": "hf",
    "title": "llamaindex/OCRia-nano-1",
    "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-   "trending": 259,
-   "likes": 360,
-   "downloads": 626,
+   "trending": 273,
+   "likes": 377,
+   "downloads": 9982,
    "topics": [
     "모델릴리스"
    ],
@@ -1377,9 +1507,9 @@
    "layer": "hf",
    "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-   "trending": 249,
-   "likes": 342,
-   "downloads": 1692,
+   "trending": 259,
+   "likes": 353,
+   "downloads": 2042,
    "topics": [
     "인프라·칩"
    ],
@@ -1390,9 +1520,9 @@
    "layer": "hf",
    "title": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
    "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
-   "trending": 229,
-   "likes": 290,
-   "downloads": 24931,
+   "trending": 251,
+   "likes": 314,
+   "downloads": 97896,
    "topics": [
     "모델릴리스"
    ],
@@ -1406,7 +1536,7 @@
    "title": "trustno1-coder/VIctory-NVIDIA",
    "desc": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-",
    "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
-   "stars": 3907,
+   "stars": 5422,
    "topics": [
     "인프라·칩",
     "개발도구"
@@ -1419,7 +1549,7 @@
    "title": "nexu-io/opengame",
    "desc": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full",
    "url": "https://github.com/nexu-io/opengame",
-   "stars": 2397,
+   "stars": 2725,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1432,7 +1562,7 @@
    "title": "alesha-pro/llm.asm",
    "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly.",
    "url": "https://github.com/alesha-pro/llm.asm",
-   "stars": 2299,
+   "stars": 2542,
    "topics": [
     "모델릴리스"
    ],
@@ -1444,12 +1574,22 @@
    "title": "ZigZagBoi1/ScarlettPort",
    "desc": "Native PC port layer for an Xbox Series X|S title: the game's x64 code runs on your CPU and its RDNA2 GPU code is recompiled for your graphics card. Bring your ",
    "url": "https://github.com/ZigZagBoi1/ScarlettPort",
-   "stars": 1356,
+   "stars": 1476,
    "topics": [
     "인프라·칩"
    ],
    "story_key": "gh:zigzagboi1/scarlettport",
    "one_line": "Xbox Series X|S 타이틀의 x64 코드를 PC CPU에서 실행하고, RDNA2 GPU 코드를 그래픽카드용으로 재컴파일하는 네이티브 PC 포트 레이어입니다."
+  },
+  {
+   "layer": "github",
+   "title": "DeadInternetStudios/100x-engineer-skill",
+   "desc": "100x is a skill by a former Cursor engineer that turns prompts into formally verified, production-ready code",
+   "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+   "stars": 1440,
+   "topics": [],
+   "story_key": "gh:deadinternetstudios/100x-engineer-skill",
+   "one_line": "전 Cursor 엔지니어가 만든 스킬로, 프롬프트를 형식 검증된 프로덕션 수준 코드로 바꾸는 도구입니다."
   }
  ],
  "trust_recent": [
@@ -1824,16 +1964,16 @@
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-28 04:38",
+ "enriched_at": "2026-11-28 13:47",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 4,
-  "in": 25089,
-  "out": 1795,
+  "calls": 3,
+  "in": 13922,
+  "out": 1626,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
   "items": 2,
-  "cost_usd": 0.00341
+  "cost_usd": 0.00221
  }
 }
