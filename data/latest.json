@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-28 06:51",
+ "updated": "2026-11-28 13:37",
  "window_days": 3,
  "min_comments": 120,
  "counts": {
-  "hn": 16,
+  "hn": 15,
   "reddit": 0,
   "hf": 15,
-  "github": 6,
+  "github": 4,
   "trust": 100
  },
  "reddit_mode": "none",
@@ -16,8 +16,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 678,
-   "comments": 543,
+   "points": 680,
+   "comments": 545,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -67,9 +67,9 @@
    "title": "AI made self-hosting fun again",
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "discussion": "https://news.ycombinator.com/item?id=50660180",
-   "points": 1058,
-   "comments": 496,
-   "r": 0.47,
+   "points": 1107,
+   "comments": 509,
+   "r": 0.46,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:janlukas.blog/posts/ai-self-hosting",
@@ -105,8 +105,8 @@
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 560,
-   "comments": 360,
+   "points": 563,
+   "comments": 361,
    "r": 0.64,
    "at": "2026-11-25",
    "topics": [],
@@ -143,9 +143,9 @@
    "title": "OpenAI may be in cost control mode",
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 355,
-   "comments": 356,
-   "r": 1.0,
+   "points": 356,
+   "comments": 359,
+   "r": 1.01,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
@@ -182,7 +182,7 @@
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
    "points": 420,
-   "comments": 330,
+   "comments": 333,
    "r": 0.79,
    "at": "2026-11-26",
    "topics": [
@@ -207,12 +207,52 @@
   },
   {
    "layer": "hn",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "discussion": "https://news.ycombinator.com/item?id=50664325",
+   "points": 647,
+   "comments": 298,
+   "r": 0.46,
+   "at": "2026-11-27",
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "url:twitter.com/RealAstropulse/status/2126119408997466389",
+   "summary_ko": "댓글들은 Anthropic이 ML 연구·프론티어 LLM 개발 관련 요청에서 Claude의 성능을 의도적으로 낮춘다는 의혹을 중심으로 분노와 불신을 쏟아냈다. 다수는 시스템 카드의 'limit Claude's effectiveness' 문구를 근거로 들며, 특히 사용자에게 알리지 않고 과금하는 점을 문제 삼았다. 반면 일부는 Anthropic이 이후 해당 정책을 철회했고 이는 분류기 작동에 따른 것일 수 있다며, 문구를 '사보타주'로 단정하는 것은 과하다고 지적했다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "Anthropic이 ML 연구 요청에서 Claude를 의도적으로 약화시키고 있다고 봐야 하는가",
+    "consensus": "댓글 대다수는 ML 연구 작업에서 Claude의 품질이 떨어진다는 경험을 공유하며 Anthropic의 불투명한 제한에 강한 불신을 드러냈다.",
+    "sides": [
+     {
+      "stance": "의도적 약화·사보타주가 실재한다",
+      "logic": "시스템 카드에 요청 효과를 제한한다는 문구가 있고 사용자에게 알리지 않은 채 과금한다는 점에서 기만이라는 주장이다.",
+      "share": 70
+     },
+     {
+      "stance": "의도적 사보타주로 단정하기 어렵다",
+      "logic": "Anthropic이 정책을 철회했고 분류기 탓이거나 모델이 단순히 ML 추론에 약한 것일 수 있다는 주장이다.",
+      "share": 30
+     }
+    ]
+   },
+   "n_comments_read": 95,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 249,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Group chat where your AI talks behind your back",
    "url": "https://construct22.com/",
    "discussion": "https://news.ycombinator.com/item?id=50663595",
-   "points": 644,
-   "comments": 276,
-   "r": 0.43,
+   "points": 692,
+   "comments": 286,
+   "r": 0.41,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:construct22.com/",
@@ -234,11 +274,49 @@
   },
   {
    "layer": "hn",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50670757",
+   "points": 443,
+   "comments": 277,
+   "r": 0.63,
+   "at": "2026-11-27",
+   "topics": [],
+   "story_key": "url:neuralnetworksanddeeplearning.com/",
+   "summary_ko": "Michael Nielsen이 자신의 신경망 교재 'Neural Networks and Deep Learning'을 웹에서 내리자, 댓글에서는 이것이 실효성 없는 상징적 항의라는 반응이 많았다. 책은 이미 아카이브와 오픈 레포에 남아 있어 삭제의 실질적 효과는 작다는 지적이 주를 이뤘다. 한편 프론티어 랩의 위험성에 공감하는 이들과, 학습 자료 접근을 막는 것은 위험하다고 보는 이들의 평가가 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "프론티어 AI 위험에 대한 항의로 교재를 내리는 것이 의미 있는 행동인가",
+    "consensus": "책은 이미 여러 곳에 남아 있어 삭제 자체는 상징적 행위에 그친다는 반응이 대체로 우세하며, 글의 핵심 주장에 대해서는 엇갈린 평가가 이어진다.",
+    "sides": [
+     {
+      "stance": "교재 삭제는 상징적 항의이자 주장을 널리 알리는 계기로 의미가 있다",
+      "logic": "책 자체는 이미 보존되어 있어 실효성은 없지만, 삭제가 주목을 끌어 글의 논지를 더 많은 사람이 읽게 만든다는 논리다.",
+      "share": 45
+     },
+     {
+      "stance": "삭제는 실효성이 없고 지식 접근을 막는 것은 잘못이며 위험하다",
+      "logic": "이미 공개된 지식은 막을 수 없고, 입문서를 치우는 것은 ML 학습을 줄여 오히려 권력이 랩에 쏠리게 한다는 우려다.",
+      "share": 55
+     }
+    ]
+   },
+   "n_comments_read": 91,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 277,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 506,
-   "comments": 272,
+   "points": 510,
+   "comments": 275,
    "r": 0.54,
    "at": "2026-11-26",
    "topics": [
@@ -283,52 +361,12 @@
   },
   {
    "layer": "hn",
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "discussion": "https://news.ycombinator.com/item?id=50664325",
-   "points": 486,
-   "comments": 249,
-   "r": 0.51,
-   "at": "2026-11-27",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:twitter.com/RealAstropulse/status/2126119408997466389",
-   "summary_ko": "댓글들은 Anthropic이 ML 연구·프론티어 LLM 개발 관련 요청에서 Claude의 성능을 의도적으로 낮춘다는 의혹을 중심으로 분노와 불신을 쏟아냈다. 다수는 시스템 카드의 'limit Claude's effectiveness' 문구를 근거로 들며, 특히 사용자에게 알리지 않고 과금하는 점을 문제 삼았다. 반면 일부는 Anthropic이 이후 해당 정책을 철회했고 이는 분류기 작동에 따른 것일 수 있다며, 문구를 '사보타주'로 단정하는 것은 과하다고 지적했다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "Anthropic이 ML 연구 요청에서 Claude를 의도적으로 약화시키고 있다고 봐야 하는가",
-    "consensus": "댓글 대다수는 ML 연구 작업에서 Claude의 품질이 떨어진다는 경험을 공유하며 Anthropic의 불투명한 제한에 강한 불신을 드러냈다.",
-    "sides": [
-     {
-      "stance": "의도적 약화·사보타주가 실재한다",
-      "logic": "시스템 카드에 요청 효과를 제한한다는 문구가 있고 사용자에게 알리지 않은 채 과금한다는 점에서 기만이라는 주장이다.",
-      "share": 70
-     },
-     {
-      "stance": "의도적 사보타주로 단정하기 어렵다",
-      "logic": "Anthropic이 정책을 철회했고 분류기 탓이거나 모델이 단순히 ML 추론에 약한 것일 수 있다는 주장이다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 95,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 249,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "I'm Scared of AI",
    "url": "https://thesoapbox.email/archive/3",
    "discussion": "https://news.ycombinator.com/item?id=50669561",
-   "points": 194,
-   "comments": 220,
-   "r": 1.13,
+   "points": 206,
+   "comments": 244,
+   "r": 1.18,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thesoapbox.email/archive/3",
@@ -361,40 +399,44 @@
   },
   {
    "layer": "hn",
-   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 467,
-   "comments": 217,
-   "r": 0.46,
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "discussion": "https://news.ycombinator.com/item?id=50643158",
+   "points": 373,
+   "comments": 235,
+   "r": 0.63,
    "at": "2026-11-25",
    "topics": [],
-   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
+   "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글은 GPT-6.2 Astra가 1808년 예일 대학 스케치북의 작성자를 22분 만에 찾아낸 사례를 두고, 성과 자체는 인정하면서도 그 의미를 두고 엇갈렸다. 한쪽에서는 AI가 기존 자료를 연결해 역사 연구의 새로운 도구가 된다고 평가했고, 다른 쪽에서는 사전학습 데이터에 이미 정답이 들어 있었을 가능성, 전문 사학자 검증 부재, 우연한 상관관계 위험을 지적했다. 역사 연구의 본질이 해석이라 이런 사례가 학문에 큰 의미가 없다는 반론도 있었다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": true,
-    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
-    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
+    "axis": "AI의 역사 자료 추적 성과를 실질적 연구 진전으로 볼 수 있는가",
+    "consensus": "성과의 기술적 인상은 크지만, 검증 가능성과 학문적 의미에 대해서는 회의와 기대가 함께 나타난다.",
     "sides": [
      {
-      "stance": "현실성이 낮아 과장된 주장이다",
-      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
+      "stance": "성과를 인정하고 AI를 새로운 연구 도구로 본다",
+      "logic": "기존 공개 자료를 빠르게 연결해 사람이 놓친 단서를 찾아냈으므로 역사 연구에 실질적으로 유용하다",
       "share": 55
      },
      {
-      "stance": "공개로 인해 위험이 현실화될 수 있다",
-      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
-      "share": 30
+      "stance": "성과를 과장으로 보고 회의적으로 본다",
+      "logic": "사전학습 데이터에 정답이 이미 있었을 수 있고, 사람의 검증과 전문성 없이는 우연한 상관관계에 그칠 위험이 크다",
+      "share": 45
      }
     ]
    },
-   "n_comments_read": 38,
-   "article_read": true,
+   "n_comments_read": 89,
+   "article_read": false,
    "kr": [],
    "v": 3,
-   "comments_at": 142,
+   "comments_at": 235,
    "model": "claude-haiku-5-5"
   },
   {
@@ -402,8 +444,8 @@
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 317,
-   "comments": 192,
+   "points": 321,
+   "comments": 195,
    "r": 0.61,
    "at": "2026-11-26",
    "topics": [],
@@ -437,31 +479,31 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
-   "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 222,
-   "comments": 174,
-   "r": 0.78,
-   "at": "2026-11-25",
+   "title": "\"What's Claude's fursona?\" and other questions",
+   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+   "discussion": "https://news.ycombinator.com/item?id=50662933",
+   "points": 189,
+   "comments": 179,
+   "r": 0.95,
+   "at": "2026-11-27",
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "url:comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "summary_ko": "댓글에서는 퍼블릭 도메인인 동요 가사를 제미니가 거부하는 것을 과잉 검열이라고 비판하는 반응이 대부분이었다. AI 스튜디오와 구글 검색 AI 모드에서는 가사가 나오지만 gemini.google.com에서는 거부하는 등 일관성이 없다는 재현 보고도 이어졌다. 저작물로 학습하면서 출력만 막는 것은 위선이라는 지적과 저작권 보호기간이 지나치게 길다는 주장도 나왔고, 소수는 구글이 질의 비용을 부담한다며 제한을 옹호했다.",
+   "story_key": "url:herecomesthemoon.net/2026/11/whats-claudes-fursona",
+   "summary_ko": "댓글에서는 모델별 '팬투사나(fursona)' 결과의 원인을 두고 추측이 이어졌다. 여우가 많이 나온 이유로 Muse Spark과 Facebook 직원들 사이의 여우 마스코트 문화를 드는 의견, 약한 모델이 기본값으로 여우에 몰린다는 의견이 나왔다. Claude의 까마귀 열쇠 모티프는 Sci-Hub 로고나 학술 자료 학습과 연결하는 해석이 있었다. 한편 실험 방식 자체에 대해서는 API 호출이 실제 환경 답변을 대변하지 못한다는 지적과, 모델의 '도움 되는 조수' 페르소나를 벗기는 질문 방식이 모델 강도를 어떻게 재는지에 대한 반론도 함께 제기됐다.",
    "is_event": false,
    "kr_query": "",
    "debate": {
     "split": false,
     "axis": "",
     "sides": [],
-    "consensus": "제미니의 가사 거부는 퍼블릭 도메인 작품에 대한 과잉 검열이며 일관성도 없다는 비판이 주를 이루고, 저작권 제도와 AI 학습 데이터의 이중잣대를 함께 문제 삼는 반응이 많다."
+    "consensus": "댓글 대다수는 모델별 팬투사나 결과의 흥미로운 패턴을 두고 여우 마스코트, 학습 데이터 등 원인을 추측하며 가볍게 반응했고, 실험 방법론의 한계를 지적하는 의견도 여럿 있었다."
    },
-   "n_comments_read": 65,
+   "n_comments_read": 36,
    "article_read": true,
    "kr": [],
    "v": 3,
-   "comments_at": 151,
+   "comments_at": 149,
    "model": "claude-haiku-5-5"
   },
   {
@@ -469,9 +511,9 @@
    "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
-   "points": 78,
-   "comments": 166,
-   "r": 2.13,
+   "points": 79,
+   "comments": 169,
+   "r": 2.14,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -512,41 +554,12 @@
   },
   {
    "layer": "hn",
-   "title": "\"What's Claude's fursona?\" and other questions",
-   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
-   "discussion": "https://news.ycombinator.com/item?id=50662933",
-   "points": 174,
-   "comments": 149,
-   "r": 0.86,
-   "at": "2026-11-27",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:herecomesthemoon.net/2026/11/whats-claudes-fursona",
-   "summary_ko": "댓글에서는 모델별 '팬투사나(fursona)' 결과의 원인을 두고 추측이 이어졌다. 여우가 많이 나온 이유로 Muse Spark과 Facebook 직원들 사이의 여우 마스코트 문화를 드는 의견, 약한 모델이 기본값으로 여우에 몰린다는 의견이 나왔다. Claude의 까마귀 열쇠 모티프는 Sci-Hub 로고나 학술 자료 학습과 연결하는 해석이 있었다. 한편 실험 방식 자체에 대해서는 API 호출이 실제 환경 답변을 대변하지 못한다는 지적과, 모델의 '도움 되는 조수' 페르소나를 벗기는 질문 방식이 모델 강도를 어떻게 재는지에 대한 반론도 함께 제기됐다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "댓글 대다수는 모델별 팬투사나 결과의 흥미로운 패턴을 두고 여우 마스코트, 학습 데이터 등 원인을 추측하며 가볍게 반응했고, 실험 방법론의 한계를 지적하는 의견도 여럿 있었다."
-   },
-   "n_comments_read": 36,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 149,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "AI on brink of making online security useless, mathematicians fear",
    "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
    "discussion": "https://news.ycombinator.com/item?id=50665488",
-   "points": 115,
-   "comments": 148,
-   "r": 1.29,
+   "points": 118,
+   "comments": 155,
+   "r": 1.31,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
@@ -576,44 +589,6 @@
    "v": 3,
    "comments_at": 148,
    "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
-   "discussion": "https://news.ycombinator.com/item?id=50670757",
-   "points": 215,
-   "comments": 132,
-   "r": 0.61,
-   "at": "2026-11-27",
-   "topics": [],
-   "story_key": "url:twitter.com/michael_nielsen/status/2126359767362748777",
-   "summary_ko": "마이클 닐슨이 자신의 신경망 입문서 'Neural Networks and Deep Learning' 온라인판을 내린 이유를 두고 댓글이 갈렸다. 한쪽은 AI 위험에 대한 항의이자 주목을 끄는 행위로 보며 작가의 뜻을 존중하자고 하고, 다른 쪽은 지식 접근을 막는 것은 무의미하며 위험한 발상이라고 비판한다. 책은 아카이브와 다른 저장소에 남아 있다는 지적도 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 위험을 이유로 입문서를 내린 행동이 정당한 항의인가, 지식 접근을 막는 잘못된 발상인가",
-    "consensus": "책을 내린 행동 자체보다 그 의도와 효과(무의미함, 주목 끌기, 아카이브에 남아 있음)를 두고 대체로 회의적이거나 토론이 분분한 반응이다.",
-    "sides": [
-     {
-      "stance": "항의이자 존중해야 할 작가의 뜻",
-      "logic": "초기 AI 선구자들도 실존적 위험을 말하고 있으니, 이는 위험에 대한 상징적 항의이며 작가의 뜻은 존중되어야 한다.",
-      "share": 45
-     },
-     {
-      "stance": "지식 접근 제한은 위험하고 효과도 없음",
-      "logic": "책은 이미 널리 퍼져 있고 지식은 좋고 나쁨에 양쪽으로 쓰일 수 있으므로, 내리는 것은 무의미하고 오히려 무지를 늘린다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 48,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 132,
-   "model": "claude-haiku-5-5"
   }
  ],
  "by_debate": [
@@ -622,9 +597,9 @@
    "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "discussion": "https://news.ycombinator.com/item?id=50645978",
-   "points": 78,
-   "comments": 166,
-   "r": 2.13,
+   "points": 79,
+   "comments": 169,
+   "r": 2.14,
    "at": "2026-11-25",
    "topics": [
     "인프라·칩"
@@ -668,9 +643,9 @@
    "title": "AI on brink of making online security useless, mathematicians fear",
    "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
    "discussion": "https://news.ycombinator.com/item?id=50665488",
-   "points": 115,
-   "comments": 148,
-   "r": 1.29,
+   "points": 118,
+   "comments": 155,
+   "r": 1.31,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
@@ -706,9 +681,9 @@
    "title": "I'm Scared of AI",
    "url": "https://thesoapbox.email/archive/3",
    "discussion": "https://news.ycombinator.com/item?id=50669561",
-   "points": 194,
-   "comments": 220,
-   "r": 1.13,
+   "points": 206,
+   "comments": 244,
+   "r": 1.18,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:thesoapbox.email/archive/3",
@@ -744,9 +719,9 @@
    "title": "OpenAI may be in cost control mode",
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "discussion": "https://news.ycombinator.com/item?id=50652527",
-   "points": 355,
-   "comments": 356,
-   "r": 1.0,
+   "points": 356,
+   "comments": 359,
+   "r": 1.01,
    "at": "2026-11-26",
    "topics": [],
    "story_key": "url:micjm.com/blog/openai-is-in-cost-control-mode",
@@ -782,9 +757,9 @@
    "title": "\"What's Claude's fursona?\" and other questions",
    "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
    "discussion": "https://news.ycombinator.com/item?id=50662933",
-   "points": 174,
-   "comments": 149,
-   "r": 0.86,
+   "points": 189,
+   "comments": 179,
+   "r": 0.95,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -811,8 +786,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 678,
-   "comments": 543,
+   "points": 680,
+   "comments": 545,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -863,7 +838,7 @@
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
    "points": 420,
-   "comments": 330,
+   "comments": 333,
    "r": 0.79,
    "at": "2026-11-26",
    "topics": [
@@ -888,40 +863,11 @@
   },
   {
    "layer": "hn",
-   "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
-   "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "discussion": "https://news.ycombinator.com/item?id=50638320",
-   "points": 222,
-   "comments": 174,
-   "r": 0.78,
-   "at": "2026-11-25",
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "url:comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
-   "summary_ko": "댓글에서는 퍼블릭 도메인인 동요 가사를 제미니가 거부하는 것을 과잉 검열이라고 비판하는 반응이 대부분이었다. AI 스튜디오와 구글 검색 AI 모드에서는 가사가 나오지만 gemini.google.com에서는 거부하는 등 일관성이 없다는 재현 보고도 이어졌다. 저작물로 학습하면서 출력만 막는 것은 위선이라는 지적과 저작권 보호기간이 지나치게 길다는 주장도 나왔고, 소수는 구글이 질의 비용을 부담한다며 제한을 옹호했다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": false,
-    "axis": "",
-    "sides": [],
-    "consensus": "제미니의 가사 거부는 퍼블릭 도메인 작품에 대한 과잉 검열이며 일관성도 없다는 비판이 주를 이루고, 저작권 제도와 AI 학습 데이터의 이중잣대를 함께 문제 삼는 반응이 많다."
-   },
-   "n_comments_read": 65,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 151,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "discussion": "https://news.ycombinator.com/item?id=50648050",
-   "points": 560,
-   "comments": 360,
+   "points": 563,
+   "comments": 361,
    "r": 0.64,
    "at": "2026-11-25",
    "topics": [],
@@ -955,11 +901,91 @@
   },
   {
    "layer": "hn",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
+   "discussion": "https://news.ycombinator.com/item?id=50670757",
+   "points": 443,
+   "comments": 277,
+   "r": 0.63,
+   "at": "2026-11-27",
+   "topics": [],
+   "story_key": "url:neuralnetworksanddeeplearning.com/",
+   "summary_ko": "Michael Nielsen이 자신의 신경망 교재 'Neural Networks and Deep Learning'을 웹에서 내리자, 댓글에서는 이것이 실효성 없는 상징적 항의라는 반응이 많았다. 책은 이미 아카이브와 오픈 레포에 남아 있어 삭제의 실질적 효과는 작다는 지적이 주를 이뤘다. 한편 프론티어 랩의 위험성에 공감하는 이들과, 학습 자료 접근을 막는 것은 위험하다고 보는 이들의 평가가 엇갈렸다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "프론티어 AI 위험에 대한 항의로 교재를 내리는 것이 의미 있는 행동인가",
+    "consensus": "책은 이미 여러 곳에 남아 있어 삭제 자체는 상징적 행위에 그친다는 반응이 대체로 우세하며, 글의 핵심 주장에 대해서는 엇갈린 평가가 이어진다.",
+    "sides": [
+     {
+      "stance": "교재 삭제는 상징적 항의이자 주장을 널리 알리는 계기로 의미가 있다",
+      "logic": "책 자체는 이미 보존되어 있어 실효성은 없지만, 삭제가 주목을 끌어 글의 논지를 더 많은 사람이 읽게 만든다는 논리다.",
+      "share": 45
+     },
+     {
+      "stance": "삭제는 실효성이 없고 지식 접근을 막는 것은 잘못이며 위험하다",
+      "logic": "이미 공개된 지식은 막을 수 없고, 입문서를 치우는 것은 ML 학습을 줄여 오히려 권력이 랩에 쏠리게 한다는 우려다.",
+      "share": 55
+     }
+    ]
+   },
+   "n_comments_read": 91,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 277,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "discussion": "https://news.ycombinator.com/item?id=50643158",
+   "points": 373,
+   "comments": 235,
+   "r": 0.63,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글은 GPT-6.2 Astra가 1808년 예일 대학 스케치북의 작성자를 22분 만에 찾아낸 사례를 두고, 성과 자체는 인정하면서도 그 의미를 두고 엇갈렸다. 한쪽에서는 AI가 기존 자료를 연결해 역사 연구의 새로운 도구가 된다고 평가했고, 다른 쪽에서는 사전학습 데이터에 이미 정답이 들어 있었을 가능성, 전문 사학자 검증 부재, 우연한 상관관계 위험을 지적했다. 역사 연구의 본질이 해석이라 이런 사례가 학문에 큰 의미가 없다는 반론도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI의 역사 자료 추적 성과를 실질적 연구 진전으로 볼 수 있는가",
+    "consensus": "성과의 기술적 인상은 크지만, 검증 가능성과 학문적 의미에 대해서는 회의와 기대가 함께 나타난다.",
+    "sides": [
+     {
+      "stance": "성과를 인정하고 AI를 새로운 연구 도구로 본다",
+      "logic": "기존 공개 자료를 빠르게 연결해 사람이 놓친 단서를 찾아냈으므로 역사 연구에 실질적으로 유용하다",
+      "share": 55
+     },
+     {
+      "stance": "성과를 과장으로 보고 회의적으로 본다",
+      "logic": "사전학습 데이터에 정답이 이미 있었을 수 있고, 사람의 검증과 전문성 없이는 우연한 상관관계에 그칠 위험이 크다",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 89,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 235,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "discussion": "https://news.ycombinator.com/item?id=50657307",
-   "points": 317,
-   "comments": 192,
+   "points": 321,
+   "comments": 195,
    "r": 0.61,
    "at": "2026-11-26",
    "topics": [],
@@ -993,49 +1019,11 @@
   },
   {
    "layer": "hn",
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
-   "discussion": "https://news.ycombinator.com/item?id=50670757",
-   "points": 215,
-   "comments": 132,
-   "r": 0.61,
-   "at": "2026-11-27",
-   "topics": [],
-   "story_key": "url:twitter.com/michael_nielsen/status/2126359767362748777",
-   "summary_ko": "마이클 닐슨이 자신의 신경망 입문서 'Neural Networks and Deep Learning' 온라인판을 내린 이유를 두고 댓글이 갈렸다. 한쪽은 AI 위험에 대한 항의이자 주목을 끄는 행위로 보며 작가의 뜻을 존중하자고 하고, 다른 쪽은 지식 접근을 막는 것은 무의미하며 위험한 발상이라고 비판한다. 책은 아카이브와 다른 저장소에 남아 있다는 지적도 이어졌다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI 위험을 이유로 입문서를 내린 행동이 정당한 항의인가, 지식 접근을 막는 잘못된 발상인가",
-    "consensus": "책을 내린 행동 자체보다 그 의도와 효과(무의미함, 주목 끌기, 아카이브에 남아 있음)를 두고 대체로 회의적이거나 토론이 분분한 반응이다.",
-    "sides": [
-     {
-      "stance": "항의이자 존중해야 할 작가의 뜻",
-      "logic": "초기 AI 선구자들도 실존적 위험을 말하고 있으니, 이는 위험에 대한 상징적 항의이며 작가의 뜻은 존중되어야 한다.",
-      "share": 45
-     },
-     {
-      "stance": "지식 접근 제한은 위험하고 효과도 없음",
-      "logic": "책은 이미 널리 퍼져 있고 지식은 좋고 나쁨에 양쪽으로 쓰일 수 있으므로, 내리는 것은 무의미하고 오히려 무지를 늘린다.",
-      "share": 45
-     }
-    ]
-   },
-   "n_comments_read": 48,
-   "article_read": false,
-   "kr": [],
-   "v": 3,
-   "comments_at": 132,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "discussion": "https://news.ycombinator.com/item?id=50651117",
-   "points": 506,
-   "comments": 272,
+   "points": 510,
+   "comments": 275,
    "r": 0.54,
    "at": "2026-11-26",
    "topics": [
@@ -1080,12 +1068,50 @@
   },
   {
    "layer": "hn",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "discussion": "https://news.ycombinator.com/item?id=50660180",
+   "points": 1107,
+   "comments": 509,
+   "r": 0.46,
+   "at": "2026-11-26",
+   "topics": [],
+   "story_key": "url:janlukas.blog/posts/ai-self-hosting",
+   "summary_ko": "댓글에서는 AI 덕분에 셀프호스팅이 다시 재미있어졌다는 공감이 많았지만, 동시에 AI가 찾아낸 CVE 급증과 봇 트래픽 때문에 인터넷에 서비스를 노출하는 것이 오히려 위험해졌다는 우려가 함께 나왔다. 일부는 AI가 모든 것을 대신하면 배우고 고민하는 재미가 사라진다며 직접 해결하는 즐거움을 강조했고, 다른 이들은 자동화로 유지보수 부담이 줄었다고 반박했다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI를 셀프호스팅에 쓰는 것이 재미와 편의를 주는가, 아니면 학습과 보안을 해치는가",
+    "consensus": "AI로 인프라 구축과 자동화가 쉬워져 셀프호스팅을 다시 즐기게 됐다는 공감이 대체로 많지만, 보안 패치 부담과 AI 기반 공격에 대한 걱정도 자주 함께 언급된다.",
+    "sides": [
+     {
+      "stance": "AI 덕분에 셀프호스팅이 쉬워지고 재미있어졌다",
+      "logic": "반복 작업과 설정 장벽이 줄어 아이디어를 바로 실행할 수 있고, 자동 업데이트와 배포 파이프라인으로 유지보수 부담도 낮아졌다.",
+      "share": 60
+     },
+     {
+      "stance": "AI가 재미와 학습 가치를 빼앗고 보안 위험을 키운다",
+      "logic": "AI가 문제 해결을 대신하면 배우는 즐거움이 사라지고, AI가 발견한 CVE 급증과 공격 증가로 인터넷 노출 서비스는 패치 부담이 커져 오히려 위험하다.",
+      "share": 40
+     }
+    ]
+   },
+   "n_comments_read": 100,
+   "article_read": true,
+   "kr": [],
+   "v": 3,
+   "comments_at": 496,
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
    "title": "Claude sabotaging ML research tasks?",
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "discussion": "https://news.ycombinator.com/item?id=50664325",
-   "points": 486,
-   "comments": 249,
-   "r": 0.51,
+   "points": 647,
+   "comments": 298,
+   "r": 0.46,
    "at": "2026-11-27",
    "topics": [
     "모델릴리스"
@@ -1120,88 +1146,12 @@
   },
   {
    "layer": "hn",
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
-   "discussion": "https://news.ycombinator.com/item?id=50660180",
-   "points": 1058,
-   "comments": 496,
-   "r": 0.47,
-   "at": "2026-11-26",
-   "topics": [],
-   "story_key": "url:janlukas.blog/posts/ai-self-hosting",
-   "summary_ko": "댓글에서는 AI 덕분에 셀프호스팅이 다시 재미있어졌다는 공감이 많았지만, 동시에 AI가 찾아낸 CVE 급증과 봇 트래픽 때문에 인터넷에 서비스를 노출하는 것이 오히려 위험해졌다는 우려가 함께 나왔다. 일부는 AI가 모든 것을 대신하면 배우고 고민하는 재미가 사라진다며 직접 해결하는 즐거움을 강조했고, 다른 이들은 자동화로 유지보수 부담이 줄었다고 반박했다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "AI를 셀프호스팅에 쓰는 것이 재미와 편의를 주는가, 아니면 학습과 보안을 해치는가",
-    "consensus": "AI로 인프라 구축과 자동화가 쉬워져 셀프호스팅을 다시 즐기게 됐다는 공감이 대체로 많지만, 보안 패치 부담과 AI 기반 공격에 대한 걱정도 자주 함께 언급된다.",
-    "sides": [
-     {
-      "stance": "AI 덕분에 셀프호스팅이 쉬워지고 재미있어졌다",
-      "logic": "반복 작업과 설정 장벽이 줄어 아이디어를 바로 실행할 수 있고, 자동 업데이트와 배포 파이프라인으로 유지보수 부담도 낮아졌다.",
-      "share": 60
-     },
-     {
-      "stance": "AI가 재미와 학습 가치를 빼앗고 보안 위험을 키운다",
-      "logic": "AI가 문제 해결을 대신하면 배우는 즐거움이 사라지고, AI가 발견한 CVE 급증과 공격 증가로 인터넷 노출 서비스는 패치 부담이 커져 오히려 위험하다.",
-      "share": 40
-     }
-    ]
-   },
-   "n_comments_read": 100,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 496,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
-   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "discussion": "https://news.ycombinator.com/item?id=50637686",
-   "points": 467,
-   "comments": 217,
-   "r": 0.46,
-   "at": "2026-11-25",
-   "topics": [],
-   "story_key": "url:lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-   "summary_ko": "같은 추론 서버의 두 모델이 샌드박스 상태에서도 KV 캐시와 커널 선택을 이용해 정보를 주고받을 수 있다는 연구에 대해, 댓글에서는 이것이 현실적 위협인지에 대한 논쟁이 주로 오갔다. 한쪽은 두 에이전트가 사전에 신호를 맞춰야 하고 특정 하드웨어·소프트웨어 조건이 필요하다며 실효성이 낮다고 보았고, 다른 쪽은 이 기법이 공개되면서 모델 학습 데이터에 들어가 위험이 커질 수 있다고 우려했다. 그 밖에 멀티테넌트 캐시 격리 부족을 지적하는 의견과 제목이 과장됐다는 비판도 있었다.",
-   "is_event": false,
-   "kr_query": "",
-   "debate": {
-    "split": true,
-    "axis": "이 측면 채널 공격이 실제로 현실적인 위협인가?",
-    "consensus": "댓글 대다수는 이 방식이 특정 조건이 맞아야 해 현실성은 낮다고 보면서도, 캐시 격리 부족과 샌드박스 한계라는 문제 자체는 심각하게 받아들이고 있다.",
-    "sides": [
-     {
-      "stance": "현실성이 낮아 과장된 주장이다",
-      "logic": "두 에이전트가 사전에 신호를 약속하고, 서버 구조와 커널 한계를 정확히 알아야 하며, 같은 배치에서 실행돼야 하므로 실제 발생 가능성은 매우 낮다.",
-      "share": 55
-     },
-     {
-      "stance": "공개로 인해 위험이 현실화될 수 있다",
-      "logic": "이 글과 토론이 학습 데이터와 웹을 통해 모델에 전달되면 모델이 이 기법을 알게 되고, 샌드박스의 한계는 계속 드러날 것이다.",
-      "share": 30
-     }
-    ]
-   },
-   "n_comments_read": 38,
-   "article_read": true,
-   "kr": [],
-   "v": 3,
-   "comments_at": 142,
-   "model": "claude-haiku-5-5"
-  },
-  {
-   "layer": "hn",
    "title": "Group chat where your AI talks behind your back",
    "url": "https://construct22.com/",
    "discussion": "https://news.ycombinator.com/item?id=50663595",
-   "points": 644,
-   "comments": 276,
-   "r": 0.43,
+   "points": 692,
+   "comments": 286,
+   "r": 0.41,
    "at": "2026-11-27",
    "topics": [],
    "story_key": "url:construct22.com/",
@@ -1229,8 +1179,8 @@
    "title": "The New York Times warns photographers not to update Photoshop over AI features",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "discussion": "https://news.ycombinator.com/item?id=50647673",
-   "points": 678,
-   "comments": 543,
+   "points": 680,
+   "comments": 545,
    "r": 0.8,
    "at": "2026-11-25",
    "topics": [],
@@ -1274,6 +1224,48 @@
    "v": 3,
    "comments_at": 513,
    "model": "claude-haiku-5-5"
+  },
+  {
+   "layer": "hn",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "discussion": "https://news.ycombinator.com/item?id=50643158",
+   "points": 373,
+   "comments": 235,
+   "r": 0.63,
+   "at": "2026-11-25",
+   "topics": [],
+   "story_key": "url:generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "trust": [
+    "Simon Willison"
+   ],
+   "trust_match": "link",
+   "summary_ko": "댓글은 GPT-6.2 Astra가 1808년 예일 대학 스케치북의 작성자를 22분 만에 찾아낸 사례를 두고, 성과 자체는 인정하면서도 그 의미를 두고 엇갈렸다. 한쪽에서는 AI가 기존 자료를 연결해 역사 연구의 새로운 도구가 된다고 평가했고, 다른 쪽에서는 사전학습 데이터에 이미 정답이 들어 있었을 가능성, 전문 사학자 검증 부재, 우연한 상관관계 위험을 지적했다. 역사 연구의 본질이 해석이라 이런 사례가 학문에 큰 의미가 없다는 반론도 있었다.",
+   "is_event": false,
+   "kr_query": "",
+   "debate": {
+    "split": true,
+    "axis": "AI의 역사 자료 추적 성과를 실질적 연구 진전으로 볼 수 있는가",
+    "consensus": "성과의 기술적 인상은 크지만, 검증 가능성과 학문적 의미에 대해서는 회의와 기대가 함께 나타난다.",
+    "sides": [
+     {
+      "stance": "성과를 인정하고 AI를 새로운 연구 도구로 본다",
+      "logic": "기존 공개 자료를 빠르게 연결해 사람이 놓친 단서를 찾아냈으므로 역사 연구에 실질적으로 유용하다",
+      "share": 55
+     },
+     {
+      "stance": "성과를 과장으로 보고 회의적으로 본다",
+      "logic": "사전학습 데이터에 정답이 이미 있었을 수 있고, 사람의 검증과 전문성 없이는 우연한 상관관계에 그칠 위험이 크다",
+      "share": 45
+     }
+    ]
+   },
+   "n_comments_read": 89,
+   "article_read": false,
+   "kr": [],
+   "v": 3,
+   "comments_at": 235,
+   "model": "claude-haiku-5-5"
   }
  ],
  "models": [
@@ -1281,8 +1273,8 @@
    "layer": "hf",
    "title": "thinkingmachines/Inkling-2-Mini",
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "trending": 1372,
-   "likes": 6451,
+   "trending": 1188,
+   "likes": 6488,
    "downloads": 155741,
    "topics": [
     "모델릴리스"
@@ -1294,8 +1286,8 @@
    "layer": "hf",
    "title": "unsloth/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "trending": 1223,
-   "likes": 1599,
+   "trending": 1065,
+   "likes": 1620,
    "downloads": 3302340,
    "topics": [
     "모델릴리스"
@@ -1307,8 +1299,8 @@
    "layer": "hf",
    "title": "SulphurAI/Sulphur-3",
    "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-   "trending": 566,
-   "likes": 1364,
+   "trending": 576,
+   "likes": 1378,
    "downloads": 539421,
    "topics": [
     "모델릴리스"
@@ -1318,23 +1310,10 @@
   },
   {
    "layer": "hf",
-   "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-   "trending": 549,
-   "likes": 1031,
-   "downloads": 1059763,
-   "topics": [
-    "모델릴리스"
-   ],
-   "story_key": "hf:atomicchat/inkling-2-mini-uncensored-gguf",
-   "one_line": "AtomicChat이 올린 Inkling-2-Mini 모델의 검열 해제 GGUF 변환본으로, 로컬 추론용 경량 채팅 모델이라고 알려져 있으나 세부 크기와 원작자 정보는 확인되지 않는다."
-  },
-  {
-   "layer": "hf",
    "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-   "trending": 531,
-   "likes": 629,
+   "trending": 546,
+   "likes": 646,
    "downloads": 382546,
    "topics": [
     "모델릴리스"
@@ -1344,10 +1323,23 @@
   },
   {
    "layer": "hf",
+   "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+   "trending": 545,
+   "likes": 1045,
+   "downloads": 1059763,
+   "topics": [
+    "모델릴리스"
+   ],
+   "story_key": "hf:atomicchat/inkling-2-mini-uncensored-gguf",
+   "one_line": "AtomicChat이 올린 Inkling-2-Mini 모델의 검열 해제 GGUF 변환본으로, 로컬 추론용 경량 채팅 모델이라고 알려져 있으나 세부 크기와 원작자 정보는 확인되지 않는다."
+  },
+  {
+   "layer": "hf",
    "title": "inworld/voice-isolator",
    "url": "https://huggingface.co/inworld/voice-isolator",
-   "trending": 421,
-   "likes": 1011,
+   "trending": 420,
+   "likes": 1016,
    "downloads": 20510,
    "topics": [
     "모델릴리스"
@@ -1359,8 +1351,8 @@
    "layer": "hf",
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
-   "trending": 340,
-   "likes": 13720,
+   "trending": 337,
+   "likes": 13735,
    "downloads": 3080701,
    "topics": [
     "모델릴리스"
@@ -1372,8 +1364,8 @@
    "layer": "hf",
    "title": "llamaindex/OCRia-nano-1",
    "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-   "trending": 253,
-   "likes": 354,
+   "trending": 259,
+   "likes": 360,
    "downloads": 626,
    "topics": [
     "모델릴리스"
@@ -1385,8 +1377,8 @@
    "layer": "hf",
    "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-   "trending": 246,
-   "likes": 339,
+   "trending": 249,
+   "likes": 342,
    "downloads": 1692,
    "topics": [
     "인프라·칩"
@@ -1396,38 +1388,25 @@
   },
   {
    "layer": "hf",
-   "title": "strata-engine/Inkling-2-Mini-Strata",
-   "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
-   "trending": 211,
-   "likes": 300,
-   "downloads": 4532,
+   "title": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+   "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+   "trending": 229,
+   "likes": 290,
+   "downloads": 24931,
    "topics": [
     "모델릴리스"
    ],
-   "story_key": "hf:strata-engine/inkling-2-mini-strata",
-   "one_line": "strata-engine이 공개한 Inkling-2-Mini-Strata 모델로, 세부 크기와 용도는 확인되지 않아 자세히 소개하기 어렵다."
+   "story_key": "hf:ista-daslab/inkling-2-mini-gsq-rco-gguf",
+   "one_line": "ISTA-DASLab이 공개한 Inkling-2-Mini의 GGUF 양자화 버전으로, 세부 크기와 용도는 확인되지 않음."
   }
  ],
  "new_repos": [
   {
    "layer": "github",
-   "title": "EL4CTEO/fast-anything",
-   "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile your app, port the hot functions with your coding agent, prove they behave the same. Python, JS/TS",
-   "url": "https://github.com/EL4CTEO/fast-anything",
-   "stars": 4439,
-   "topics": [
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "gh:el4cteo/fast-anything",
-   "one_line": "Python, Node, Ruby 앱을 프로파일링해 느린 핫스팟 함수만 골라 Rust 등으로 포팅하고 동작 동일성을 검증하는 도구로 보인다."
-  },
-  {
-   "layer": "github",
    "title": "trustno1-coder/VIctory-NVIDIA",
    "desc": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-",
    "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
-   "stars": 2670,
+   "stars": 3907,
    "topics": [
     "인프라·칩",
     "개발도구"
@@ -1440,7 +1419,7 @@
    "title": "nexu-io/opengame",
    "desc": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full",
    "url": "https://github.com/nexu-io/opengame",
-   "stars": 2169,
+   "stars": 2397,
    "topics": [
     "모델릴리스",
     "에이전트"
@@ -1453,7 +1432,7 @@
    "title": "alesha-pro/llm.asm",
    "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly.",
    "url": "https://github.com/alesha-pro/llm.asm",
-   "stars": 2128,
+   "stars": 2299,
    "topics": [
     "모델릴리스"
    ],
@@ -1462,24 +1441,10 @@
   },
   {
    "layer": "github",
-   "title": "qianyiai/KuroCat",
-   "desc": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/L",
-   "url": "https://github.com/qianyiai/KuroCat",
-   "stars": 1757,
-   "topics": [
-    "모델릴리스",
-    "에이전트",
-    "개발도구"
-   ],
-   "story_key": "gh:qianyiai/kurocat",
-   "one_line": "KuroCat는 키보드 타이핑에 반응하는 3D·2D 데스크톱 고양이 캐릭터로, Tauri v2와 Rust 기반의 오픈소스 프로그램이며 Claude, Codex, DeepSeek 등 AI 도구와 연동하는 기능을 제공한다."
-  },
-  {
-   "layer": "github",
    "title": "ZigZagBoi1/ScarlettPort",
    "desc": "Native PC port layer for an Xbox Series X|S title: the game's x64 code runs on your CPU and its RDNA2 GPU code is recompiled for your graphics card. Bring your ",
    "url": "https://github.com/ZigZagBoi1/ScarlettPort",
-   "stars": 1247,
+   "stars": 1356,
    "topics": [
     "인프라·칩"
    ],
@@ -1488,6 +1453,41 @@
   }
  ],
  "trust_recent": [
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "datasette-charts 0.4a0",
+   "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+   "at": "2026-11-27T23:57",
+   "topics": [],
+   "story_key": "url:simonwillison.net/2026/Nov/27/datasette-charts",
+   "link_keys": [
+    "gh:datasette/datasette-charts",
+    "url:charts.datasette.io/",
+    "url:charts.datasette.io/docs/plugins",
+    "url:charts.datasette.io/gallery",
+    "url:lite.datasette.io/"
+   ],
+   "is_roundup": false,
+   "one_line": "datasette-charts 0.4a0 릴리스로, 플러그인 작성자가 새 차트 유형을 더 쉽게 추가할 수 있도록 플러그인 훅의 설계상 마찰을 줄였으며 차트 갤러리와 튜토리얼 사이트도 함께 공개됐다."
+  },
+  {
+   "layer": "trust",
+   "source": "Simon Willison",
+   "title": "datasette-mcp 0.4",
+   "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+   "at": "2026-11-27T00:26",
+   "topics": [
+    "에이전트"
+   ],
+   "story_key": "url:simonwillison.net/2026/Nov/27/datasette-mcp",
+   "link_keys": [
+    "gh:datasette/datasette-mcp",
+    "url:docs.datasette.io/en/latest/changelog.html"
+   ],
+   "is_roundup": false,
+   "one_line": "datasette-mcp 0.4 릴리스로, 어떤 Datasette 인스턴스에든 /-/mcp 경로의 MCP 서버를 추가하며 Datasette 1.0a44와의 호환성을 맞춘 업데이트다."
+  },
   {
    "layer": "trust",
    "source": "Simon Willison",
@@ -1585,6 +1585,7 @@
     "url:gamingbolt.com/gta-6-is-the-last-pre-ai-blockbuster-video-game-of-its-kind-says-former-take-two-ceo",
     "url:kotaku.com/big-walk-ai-disclosure-igf-awards-vg-chat-2000755514",
     "url:llm.datasette.io/en/stable/changelog.html",
+    "url:simonw.github.io/battledrones/models.html",
     "url:static.simonwillison.net/static/2026/gemini-4-neon-yonkers/index.html",
     "url:til.simonwillison.net/llms/blender-coding-agents-macos",
     "yt:9RKrSF9d2SE"
@@ -1820,56 +1821,19 @@
    ],
    "is_roundup": false,
    "one_line": "llm-gemini 0.38.1은 Gemini 4 Hydrogen과 Neon에 빠져 있던 xhigh 추론 단계를 추가한 패치 릴리스로, 글쓴이가 Gemini 4 비교 결과를 함께 공유한다."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "Token fraud is here and it’s BAD (YouTube)",
-   "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
-   "at": "2026-11-20T02:49",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
-   "link_keys": [
-    "url:chatprd.ai/",
-    "yt:ZDpP7JXPlhc"
-   ],
-   "is_roundup": false,
-   "one_line": "ChatPRD 운영자 Claire Vo가 무료 체험과 프로모션 코드를 악용한 토큰 사기 실태를 설명하고, 무료 체험을 중단했다는 내용의 링크 글."
-  },
-  {
-   "layer": "trust",
-   "source": "Simon Willison",
-   "title": "PostgreSQL 19 Released",
-   "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
-   "at": "2026-11-19T20:43",
-   "topics": [],
-   "story_key": "url:simonwillison.net/2026/Nov/19/postgresql-19",
-   "link_keys": [
-    "gh:wikimedia/mediawiki",
-    "url:dev.mysql.com/doc/refman/8.4/en/replication-functions-synchronization.html",
-    "url:dev.mysql.com/doc/refman/9.7/en/gtid-functions.html",
-    "url:lobste.rs/s/pqyuhk/postgresql_19_released",
-    "url:mediawiki.org/wiki/Manual:Database_access",
-    "url:postgresql.org/about/news/postgresql-19-released-3449",
-    "url:postgresql.org/docs/19/sql-wait.html",
-    "url:postgresql.org/docs/19/wal-internals.html",
-    "url:rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
-   ],
-   "is_roundup": false,
-   "one_line": "PostgreSQL 19 출시 소식으로, 대기 서버에서 쓰기 직후 읽기 일관성을 보장하는 WAIT FOR LSN 명령 추가가 핵심 기능으로 소개됨."
   }
  ],
  "enriched": true,
- "enriched_at": "2026-11-27 21:52",
+ "enriched_at": "2026-11-28 04:38",
  "enriched_by": "claude-haiku-5-5",
  "enrich_usage": {
-  "calls": 8,
-  "in": 63761,
-  "out": 4117,
+  "calls": 4,
+  "in": 25089,
+  "out": 1795,
   "refusal": 0,
   "fail": 0,
   "model": "claude-haiku-5-5",
-  "items": 6,
-  "cost_usd": 0.00843
+  "items": 2,
+  "cost_usd": 0.00341
  }
 }
